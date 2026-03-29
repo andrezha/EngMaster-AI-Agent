@@ -6,16 +6,14 @@
   <property name="windowTitle"><string>高考英语 AI 助教</string></property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="main_layout">
-    <property name="spacing"><number>0</number></property>
-    <property name="margin"><number>0</number></property>
     <item>
      <widget class="QFrame" name="nav_bar">
       <property name="minimumSize"><size><width>160</width><height>0</height></size></property>
       <property name="styleSheet"><string>background-color: #2c3e50; color: white; border: none;</string></property>
       <layout class="QVBoxLayout" name="nav_v_layout">
        <item><widget class="QPushButton" name="btn_nav_vocab"><property name="minimumSize"><size><width>0</width><height>50</height></size></property><property name="text"><string>📝 词汇闯关</string></property></widget></item>
-       <item><widget class="QPushButton" name="btn_nav_scan"><property name="minimumSize"><size><width>0</width><height>50</height></size></property><property name="text"><string>📸 扫描解析</string></property></widget></item>
-       <item><spacer name="v_spacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>40</height></size></property></spacer></item>
+       <item><widget class="QPushButton" name="btn_nav_scan"><property name="minimumSize"><size><width>0</width><height>50</height></size></property><property name="text"><string>📝 题目精讲</string></property></widget></item>
+       <item><spacer name="verticalSpacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>40</height></size></property></spacer></item>
       </layout>
      </widget>
     </item>
@@ -24,32 +22,25 @@
       <property name="currentIndex"><number>0</number></property>
       <widget class="QWidget" name="page_vocab">
        <layout class="QVBoxLayout" name="vocab_v_layout">
-        <item><widget class="QLabel" name="timer_label"><property name="text"><string>10</string></property><property name="alignment"><set>Qt::AlignRight</set></property><property name="styleSheet"><string>font-size: 20px; color: red;</string></property></widget></item>
-        <item><widget class="QTextEdit" name="vocab_display"><property name="readOnly"><bool>true</bool></property><property name="styleSheet"><string>font-size: 40px; border: none;</string></property></widget></item>
-        <item><widget class="QLineEdit" name="vocab_input"><property name="minimumSize"><size><width>0</width><height>60</height></size></property><property name="placeholderText"><string>请在此输入对应的英文单词...</string></property><property name="styleSheet"><string>font-size: 24px; border: 2px solid #bdc3c7; border-radius: 10px;</string></property></widget></item>
-        <item><spacer name="v_spacer_v"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>40</height></size></property></spacer></item>
+        <item><widget class="QLabel" name="timer_label"><property name="text"><string>15</string></property><property name="alignment"><set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set></property><property name="styleSheet"><string>font-size: 24px; color: #e74c3c; font-weight: bold;</string></property></widget></item>
+        <item><widget class="QTextEdit" name="vocab_display"><property name="readOnly"><bool>true</bool></property><property name="styleSheet"><string>font-size: 40px; border: none; background: transparent;</string></property></widget></item>
+        <item><widget class="QLineEdit" name="vocab_input"><property name="minimumSize"><size><width>0</width><height>60</height></size></property><property name="placeholderText"><string>请在此输入对应的英文单词...</string></property><property name="styleSheet"><string>font-size: 24px; border: 2px solid #bdc3c7; border-radius: 10px; padding: 5px;</string></property></widget></item>
+        <item><widget class="QPushButton" name="btn_confirm"><property name="minimumSize"><size><width>0</width><height>50</height></size></property><property name="text"><string>确定 (Enter)</string></property><property name="styleSheet"><string>background-color: #3498db; color: white; font-size: 20px; font-weight: bold; border-radius: 10px;</string></property></widget></item>
+        <item><spacer name="verticalSpacer_2"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>40</height></size></property></spacer></item>
        </layout>
       </widget>
       <widget class="QWidget" name="page_scan">
        <layout class="QVBoxLayout" name="scan_v_layout">
         <item>
          <layout class="QHBoxLayout" name="scan_h_btns">
-          <item><widget class="QPushButton" name="btn_scan"><property name="text"><string>📸 选择图片</string></property></widget></item>
-          <item><widget class="QPushButton" name="btn_start_ai"><property name="text"><string>🚀 开始扫描</string></property></widget></item>
-          <item><spacer name="h_spacer_s"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
+          <item><widget class="QPushButton" name="btn_scan"><property name="text"><string>🧹 清空内容</string></property></widget></item>
+          <item><widget class="QPushButton" name="btn_start_ai"><property name="text"><string>🚀 开始解析</string></property></widget></item>
          </layout>
         </item>
         <item>
          <layout class="QHBoxLayout" name="scan_content_layout">
-          <item><widget class="QTextEdit" name="raw_text_area"><property name="placeholderText"><string>显示选中的题目图片路径...</string></property></widget></item>
+          <item><widget class="QTextEdit" name="raw_text_area"><property name="placeholderText"><string>在此粘贴题目文字...</string></property></widget></item>
           <item><widget class="QTextEdit" name="ai_answer_area"><property name="readOnly"><bool>true</bool></property><property name="placeholderText"><string>这里显示 AI 的解析结果...</string></property></widget></item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="scan_bottom_ask">
-          <item><widget class="QLineEdit" name="ask_input"><property name="placeholderText"><string>不懂就问...</string></property></widget></item>
-          <item><widget class="QPushButton" name="btn_send"><property name="text"><string>发送</string></property></widget></item>
-          <item><widget class="QPushButton" name="btn_finish"><property name="text"><string>结束</string></property></widget></item>
          </layout>
         </item>
        </layout>
