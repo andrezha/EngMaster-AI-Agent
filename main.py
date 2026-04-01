@@ -16,6 +16,9 @@ class HighSchoolEnglishAI(QMainWindow):
         ui_path = os.path.join(self.base_path, "resources", "main_window.ui")
         uic.loadUi(ui_path, self)
 
+        self.vocab_ctrl = VocabManager(self)
+        self.analyzer_ctrl = AnalyzerManager(self)
+
         # 2. 抓取 UI 控件
         self.stack = self.findChild(QtWidgets.QStackedWidget, "stackedWidget")
         self.btn_nav_vocab = self.findChild(QtWidgets.QPushButton, "btn_nav_vocab")
