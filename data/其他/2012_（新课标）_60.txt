@@ -1,0 +1,15 @@
+Question:
+21. — Which  one of these  do you want?     —        . Either  will do. 
+A. I don’t mind       B. I’m sure       C. No problem        D. Go ahead
+
+
+Answers:
+['A']
+
+Analysis:
+【解答】答案 A．B项"我肯定 "；C项"没问题 "；D项"1．表示同意对方的请求 ，
+根据情况可译为：说吧，做吧，开始吧，进行吧． 2．表示请对方继续说、继续
+做等，通常可译为：继续 …吧． 3．表示请对方先走或先做某事，其意为：你先
+走一步，你先请 "．A项"我不介意 "；根据句意 "（两个）随便哪一个都行 "可知，
+并不介意． 因此 A项符合语境， 故选 A． 
+【点评】

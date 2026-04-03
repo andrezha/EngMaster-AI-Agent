@@ -1,0 +1,14 @@
+Question:
+15. Linda , make  sure the tables  ____  before  the guests  arrive .  
+A. be set B. set C. are set D. are setting
+
+
+Answers:
+['C']
+
+Analysis:
+【解答】答案： C. make  sure后面加宾语从句 . 根据动词 set与其逻辑主语即句子
+的主语 the tables之间的关系可知， set tables桌子是被摆放的，所以需用被动语
+态，排除选项 B和D；另外根据题干中的 make  sure可知，后面跟陈述语气的宾
+语从句，不接虚拟语气， 所以排除选项 A. 故选 C.  
+【点评】

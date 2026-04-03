@@ -1,0 +1,14 @@
+Question:
+29. It may not be a great  suggestion.  But before  _______  is put forward,  we’ll  make  
+do with it. 
+A. a good  one     B. a better  one       C. the best one       D. a best one
+
+
+Answers:
+['B']
+
+Analysis:
+【解答】答案： B. 考查比较级的用法。不定冠词 +比较级，表示泛指，意为“一
+个更（好） ......的......”。根据句意：它或许不是很好的建议。但是在一个更好的
+  被提出来之前，我们不得不将就一下。 故选 B. 
+【点评】

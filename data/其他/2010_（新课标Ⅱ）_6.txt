@@ -1,0 +1,56 @@
+Question:
+B 
+When  you’re lying  on the white  sands  of the Mexican  Riviera , the stresses（压
+力） of the world  seem  a million  miles  away . Hey, stop!  This is no vacation ---yon 
+have  to finish  something!  
+  Here  lies the problem  fat travel  writer  and food critic（评论家） Edie Jarolim . “I 
+always  loved  traveling  and always  liked  to eat, but it never  occurred  to me that I could  
+make  money  doing  both of those  things . ” Jarolim  said. Now  you can read her travel  
+advice  everywhere  --- in Arts and Antiques , in Brides , or in one of her three  books .  
+The Complete  Idiot  Travel  Guide  to Mexico ’s Beach  Resorts .  
+Her job in travel  writing  began  Some  eight  years  ago. After  getting  a PhD in 
+English  in Canada , she took a test for Frommer ’s travel  guides , passed  it, and got the 
+job. After  working  at Frommer ’s, Jarolim  worked  for a while  at Rough  Guides  in 
+London , then Fodor ’s, where  she fell so in love with a description  of the Southwest  of 
+the U. S. that she moved  there .  
+Now  as a travel  writer , she spends  one-third  of her year on the road. The rest of 
+the time is spent  completing  her tasks  and writing  reviews  of restaurants  at home  in 
+Tucson , Arizona .  
+As adventurous  as the job sounds , the hard part is fact --- checking  all the 
+information . Sure, it’s great  to write  about  a tourist  attraction , but you’d better  get the 
+local（当地的） museum  hours  correct  or you could  really  ruin someone ’s vacation .  
+46. Which  country  does Jarolim  have  in now？　   　 
+A. Mexico .      B. The U.S.       C. The U.K.       D. Canada . 
+47. What  is most  difficult  for Jarolim？　   　 
+A. Working  in different  places  to collect  information . 
+B. Checking  all the facts  to be written  in the guides .  
+C. Finishing  her work  as soon  as possible .  
+D. Passing  a test to write  travel  guides .  
+48. What  do we know  about  Jarolim  from  the text？　   　 
+A. She is successful  in her job.  
+B. She finds  her life full of stresses .  
+C. She spends  half of her time traveling .  
+D. She is especially  interested  in museums .  
+49. What  would  be the best title for the text? 　   　 
+A. Adventures  in Travel  Writing       B. Working  as a Food  Critic  
+  C. Travel  Guides  on the Market        D. Vacationing  for a Living
+
+
+Answers:
+['B', 'B', 'A', 'D']
+
+Analysis:
+46. 答案 B. 细节理解题 . 根据文章第二段 "where  she fell so in love with a 
+description  of the Southwest  of the U.S. that she moved  there"和第三段 "Now  as a 
+travel  writer，she spends  one-third  of her year on the road"可知，现在 Jarolim  居住
+在美国的西南部 . 故选 B.
+47. 答案 B. 细节理解题 . 根据文章最后一段 "the hard part is fact-checking  all the 
+information" 可知， Jarolim最困难的部分是对所有的信息进行事实检查 . 故选 B.
+48. 答案 A. 细节理解题 . 根据文章第一段 "it never  occurred  to me that I could  make  
+money  doing  both of those  things"和"Now  you can read her travel  advice  everywhere  
+--- in Arts and Antiques . in Brides . or in one of her three  books"可知，人们可以到处
+读到她写的书，可见她的工作很成功 . 故选 A.
+49. 答案 D. 主旨大意题 . 通读全文， 可知本文介绍了 Jarolim以及她的工作 . AC
+错误 . 又从文章 "As adventurous  as the job sounds"和"I always  loved  traveling  and 
+always  liked  to eat，but it never  occurred  to me that I could  make  money  doing  both of 
+those  things . "可知她是一个以旅游为生的作家和评论家 . 故选 D.

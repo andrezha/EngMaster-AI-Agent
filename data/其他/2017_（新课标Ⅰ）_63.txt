@@ -1,0 +1,53 @@
+Question:
+D 
+  A buld-it-yourself  solar  still（蒸馏器 ）is one of the best ways  to obtain  drinking  
+water  in areas  where  the liquid  is not readily  available.  Developed  by two doctors  in 
+the U.S. Department  of Agriculture,  it’s an excellent  water  collector.  Unfortunately,  
+you must  carry  the necessary  equipment  with you, since  it’s all but impossible  to find 
+natural  substitutes.  The only components  required,  though,  are a 5'×5'  sheet  of clear  or 
+slightly  milky  plastic,  six feet of plastic  tube,  and a container  — perhaps  just a 
+drinking  cup — to catch  the water.  These  pieces  can be folded  into a neat little pack  
+and fastened  on your belt. 
+    To construct  a working  still, use a sharp  stick  or rock to dig a hole four feet 
+across  and three  feet deep.  Try to make  the hole in a damp  area to increase  the water  
+catcher’s  productivity.  Place  your cup in the deepest  part of the hole.  Then  lay the 
+tube in place  so that one end rests all the way in the cup and the rest of the line runs 
+up — and out — the side of the hole.  
+Next,  cover  the hole with the plastic  sheet,  securing  the edges  of the plastic  with 
+dirt and weighting  the sheet’s  center  down  with a rock.  The plastic  should  now form  a 
+cone  (圆锥体 ) with 45-degree-angled  sides.  The low point  of the sheet  must  be 
+centered  directly  over,  and no more  than three  inches  above,  the cup.  
+The solar  still works  by creating  a greenhouse  under  the plastic.  Ground  water  
+evaporates  (蒸发 ) and collects  on the sheet  until small  drops  of water  form,  run down  
+the material  and fall off into the cup. When  the container  is full, you can suck the 
+refreshment  out through  the tube,  and won’t  have  to break  down  the still every  time 
+you need  a drink.   
+32. What  do we know  about  the solar  still equipment  from  the first paragraph?  
+A. It’s delicate.    B. It’s expensive.    C. It’s complex.    D. It’s portable.  
+33. What  does the underlined  phrase  “the water  catcher”  in paragraph  2 refer  to? 
+A. The tube.       B. The still.       C. The hole.       D. The cup. 
+34. What’s  the last step of constructing  a working  solar  still?  
+A. Dig a hole of a certain  size.       B. Put the cup in place.  
+C. Weight  the sheet’s  center  down.     D. Cover  the hole with the plastic  sheet.  
+35. When  a solar  still works,  drops  of water  come  into the cup form           . 
+  A. the plastic  tube            B. outside  the hole 
+C. the open  air               D. beneath  the sheet
+
+
+Answers:
+['D', 'B', 'C', 'D']
+
+Analysis:
+32．D  细节理解题．根据第一段第三句前半句  Unfortunately , you must  carry  the 
+necessary  equipment  with you …可知，太阳能蒸馏器设备必须被携带，因此其是
+可以携带的，其余选项文章均未提及， 故正确答案为 D．
+33．B  推理判断题．根据第二段划线词组前面的句子可知，其为蒸馏器的制作
+过程以及放置地点．后面的  increase  productivity  为增加产量，因此可以推断该
+词组为蒸馏器， 故正确答案为 B．
+34．C  细节理解题．根据文章第三段第一句后半句  …weighting  the sheet ’s center  
+down  with a rock 可知，用石头让塑料布中心下降是制造太阳能蒸馏器的最后一
+步，后文没有再介绍制造过程， 故正确答案为 C．
+35．D 细节理解题 ．根据文章随后一段第二句  Ground  water  evaporates  and collects  
+on the sheet  until small  drops  of water  form , run down  the material  and fall off into 
+the cup 可知，地面上的水蒸发并且在塑料布上，形成小水滴后落在杯子里，因
+此可以得知水滴来自塑料布下方， 故正确答案为 D．

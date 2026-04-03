@@ -1,0 +1,116 @@
+Question:
+阅读下面短文 ，从短文后各题所给的 A、B、C和D四个选项中 ，选出可以
+填入空白处的最佳选项。  
+During  my second  year at the city college , I was told that the education  
+department  was offering  a “free” course,  called  Thinking  Chess,  for three  credits.  I  
+41  the idea of taking  the class  because , after all, who doesn ’t want  to  42  a few 
+dollars?  More  than that, I’d always  wanted  to learn  chess.  And,  even  if I weren’t   43  
+enough  about  free credits,  news  about  our  44   was appealing  enough  to me. He 
+  was an international  grandmaster,  which   45  I would  be learning  from  one of the 
+game ’s   46  . I could  hardly  wait to 47  him. 
+Maurice  Ashley  was kind and smart,  a former  graduate  returning  to teach,  and 
+this  48  was no game  for him: he meant  business.  In his introduction,  he made  it  
+49  that our credits  would  be hard-earned.  In order  to   50  the class,  among  other  
+criteria,  we had to write  a paper  on how we plan to 51 what  we would  learn  in class  to 
+our future  professions  and,   52  , to our lives.  I managed  to get an A in that   53  
+and learned  life lessons  that have  served  me well beyond  the  54  . 
+Ten years  after my chess  class  with Ashley,  I’m still putting  to use what  he 55 
+me: “The  absolute  most  important   56  that you learn  when  you play chess  is how 
+to make  good   57  . On every  single  move  you have  to  58  a situation,  process  
+what  your opponent  (对手 ) is doing  and 59   the best move  from  among  all your 
+options.”  These  words  still ring true today  in my   60  as a journalist.  
+41. A. put forward   B. jumped  at  C. tried  out   D. turned  down  
+42. A. waste    B. earn        C. save        D. pay 
+43. A. excited    B. worried    C. moved   D. tired 
+44. A. title   B. competitor   C. textbook      D. instructor  
+45. A. urged    B. demanded   C. held   D. meant  
+46. A. fastest    B. easiest    C. best   D. rarest  
+47.A.  interview      B. meet    C. challenge   D.  beat 
+48. A. chance    B. qualification   C. honor    D. job 
+49. A. real      B. perfect      C. clear       D.possible  
+50. A. attend    B. pass       C. skip   D. observe  
+51. A. add    B. expose    C. apply    D. compare  
+52. A. eventually   B. naturally     C. directly       D. normally  
+53. A. game    B. presentation   C. course   D. experiment    
+54. A. criterion    B. classroom   C. department   D. situation   
+55. A. taught    B. wrote    C. questioned  D. promised   
+56. A. fact   B. step   C. manner   D. skill 
+57. A. grades   B. decisions   C. impressions   D. comments  
+  58. A. analyze   B. describe   C. rebuild   D. control   
+59. A. announce      B. signal   C. block    D. evaluate  
+60. A. role     B. desire    C. concern   D. behavior
+
+
+Answers:
+['B', 'C', 'A', 'D', 'D', 'C', 'B', 'D', 'C', 'B', 'C', 'A', 'C', 'B', 'A', 'D', 'B', 'A', 'D', 'A']
+
+Analysis:
+41．B．考查动词短语及语境理解． A．put forward提出； B．jumped  at急于接
+受；C．tried out 试用；D．turned  down拒绝；根据 More  than that, I’d always  wanted  
+to learn  chess可知作者迫不及待地要去学习这门课程 ，因为自己一直想学习国际
+象棋，故答案为 B．
+42．C．考查动词及语境理解． A．waste浪费； B．earn赚得； C．save节约，
+拯救； D．pay支付；根据前文 I was told that the education  department  was offering  
+a "free"  course可知这门课是免费的 ，作者认为谁不想节省几美元呢 ，故答案为 C
+．
+43．A．考查形容词及语境理解 ．A．excited激动的；B．worried担心的；C．moved
+激动的；D．tired疲惫的；根据下文 was appealing  enough  to me可知尽管学分并
+不让作者足够激动， 故答案为 A．
+44．D．考查名词及语境理解 ．A．title标题；B．competitor 竞争者；C．textbook
+教科书；D．instructor 指导者，教师；根据下文 He was an international  grandmaster
+可知这位国际大师级的教练足够吸引作者了， 故答案为 D．
+45．D．考查动词及语境理解． A．urged催促；B．demanded 要求；C．held举
+行； D．meant  意味着； 根据 which   45  I would  be learning  from  one of the 
+game ’s   可知这对于作者来说意味着可以从最擅长这个游戏的人之一那学到技
+  能，故答案为 D．
+46．C．考查形容词及语境理解 ．A．fastest最快的；B．easiest最容易的；C．best
+最好的； D．rarest最稀有的； 根据前文 He was an international  grandmaster 可知
+这位教练是最好的教练之一， 故答案为 C．
+47．B．考查动词及语境理解 ．A．interview 采访，面试；B．meet遇见；C．challenge
+挑战； D．beat击败；根据前文 news  about  our  44   was appealing  enough  to 
+me.可知作者迫不及待地要见到这位教练， 故答案为 B．
+48．D．考查名词及语境理解． A．chance机会；B．qualification 资格；C．honor
+荣誉； D．job工作；根据前文 a former  graduate  returning  to teach可知这位教练
+是往届毕业生，又回校教授国际象棋，这对于他来说是份工作， 故答案为 D．
+49．C．考查形容词及语境理解． A．real真正的； B．perfect完美的； C．clear
+清楚的；D．possible可能的；根据 In his introduction,  he made  it  49  that our credits  
+would  be hard-earned.  可知在介绍中，教练清楚地阐明了他的课程的学分将会很
+难取得， 故答案为 C．
+50．B．考查动词及语境理解． A．attend参加；B．pass通过；C．skip跳过；D
+．observe观察；根据前文 our credits  would  be hard-earned可知由于学分很难取得
+，此处是作者为了通过课程， 故答案为 B．
+51．C．考查动词及语境理解． A．add增加； B．expose暴露； C．apply申请，
+运用；D．compare比较；根据 we had to write  a paper  on how we plan to 51 what  we 
+would  learn  in class  to our future  professions  可知作者必须写一篇论文，说明打算
+如何把课堂上学到的东西应用到将来的职业中去， 故答案为 C．
+52．A．考查副词及语境理解 ．A．eventually 最后；B．naturally 自然地；C．directly
+直接地； D．normally 正常地； 根据 we had to write  a paper  on how we plan to 51 
+what  we would  learn  in class  to our future  professions  and,   52  , to our lives.可知
+作者必须写一篇论文 ，说明打算如何把课堂上学到的东西应用到将来的职业中去
+，并最终运用到生活中去， 故答案为 A．
+53．C．考查名词及语境理解． A．game比赛，游戏；B．presentation 展示；C．
+course课程；D．experiment 实验；根据前文 I was told that the education  department  
+was offering  a "free"  course可知作者在这门课程中获得了 A，故答案为 C．
+54．B．考查名词及语境理解． A．criterion规范，标准；B．classroom 教室；C． 
+department 部门；D．situation情形；根据前文 learned  life lessons  that have  served  me 
+well beyond  the可知作者学到了在课堂之外为他服务的生活课程 ，故答案为 B．
+55．A．考查动词及语境理解． A．taught教；B．wrote写；C．questioned 质问
+； D．promised 允诺；根据前文 Maurice  Ashley  was kind and smart , a former  
+graduate  returning  to teach可知 Maurice  Ashley是作者的教练 ，此处应该是教给作
+者的知识， 故答案为 A．
+56．D．考查名词及语境理解． A．fact事实； B．step脚步，步骤； C．manner
+行为； D．skill技能；根据 The absolute  most  important   56  that you learn可知
+此处指的是作者学到的最重要的技能， 故答案为 D．
+57．B．考查名词及语境理解 ．A．grades等级；B．decisions 决定；C．impressions
+印象；D．comments 评论；根据下文 the best move  from  among  all your options可
+知最重要的技能是如何作出决定， 故答案为 B．
+58．A．考查动词及语境理解． A．analyze分析； B．describe描述； C．rebuild
+重建； D．control控制；根据常识及  every  single  move  you have  to  58  a 
+situation,  process  what  your opponent  (对手 ) is doing  可知下象棋的时候需要分析
+每一步棋，还要分析对手会怎么做， 故答案为 A．
+59．D．考查动词及语境理解 ．A． announce 宣告； B． signal发信号； C． block
+阻碍；  D． evaluate评估；根据下文 the best move  from  among  all your options可
+知要评估哪一步是最好的一步棋， 故答案为 D．
+60．A．考查名词及语境理解． A．role角色；B．desire欲望；C．concern关心
+； D．behavior  行为；根据 These  words  still ring true today  in my   60  as a 
+journalist. 可知在我担任记者的角色的今天，这些话仍然是真实的， 故答案为 A．

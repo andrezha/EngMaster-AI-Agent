@@ -1,0 +1,14 @@
+Question:
+32. Film  has a much  shorter  history,  especially  when          such art forms  as 
+music  and painting.  
+A. having  compared  to    B. comparing  to     C. compare  to     D. compared  to
+
+
+Answers:
+['D']
+
+Analysis:
+【解答】答案： D．此句是一个省略句．当从句的主语和主句的主语一致，而且
+从句又有 it is时，常常省略 it is．补充完整为： when  it is compared  to such … 因
+此应该用过去分词，是被动语态． 故D项正确．  
+【点评】

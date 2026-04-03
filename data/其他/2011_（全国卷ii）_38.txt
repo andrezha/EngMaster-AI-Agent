@@ -1,0 +1,13 @@
+Question:
+14. This shop  will be closed  for repairs        further  notice . 
+A. with B. until C. for D. at
+
+
+Answers:
+['B']
+
+Analysis:
+【解答】 答案 B．with 和，跟；随着；关于；  和…一致； for为了，由于； at （
+表示位置）在；  在（某时间或时刻）；  until 到…为止；  在…以前．结合句意
+"直到另行通知为止 "可知 until符合句意， 故选 B项．  
+【点评】

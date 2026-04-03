@@ -1,0 +1,59 @@
+Question:
+C 
+Terrafugia  Inc. said Monday  that its new flying  car has completed  its first flight,  
+bringing  the company  closer  to its goal of selling  the flying  car within  the next year.  
+The vehicle  — named  the Transition  – has two seats , four wheels  and wings  that fold 
+up so it can be driven  like a car. The Transition,  which  flew at 1,400  feet for eight  
+minutes  last month,  can reach  around  70 miles  per hour on the road and 115 in the air. 
+It flies using  a 23-gallon  tank of gas and bums  5 gallons  per hour in the air. On the 
+ground,  it gets 35 miles  per gallon.  
+Around  100 people  have  already  put down  a $10,000  deposit  to get a Transition  
+when  they go on sale, and those  numbers  will likely  rise after Terrafugia  introduces  
+  the Transition  to the public  later this week  at the New  York  Auto  Show.  But don’t  
+expect  it to show  up in too many  driveways.  It’s expected  to cost $279,000.  And it 
+won’t  help if you’re  stuck  in traffic.  The car needs  a runway.  
+Inventors  have  been  trying  to make  flying  cars since  the 1930s,  according  to 
+Robert  Mann,  an airline  industry  expert.  But Mann  thinks  Terrafugia  has come  closer  
+than anyone  to making  the flying  car a reality.  The govemment  has already  permitted  
+the company  to use special  materials  to make  it easier  for the vehicle  to fly. The 
+Transition  is now going  through  crash  tests to make  sure it meets  federal  safety  
+standards.  
+Mann  said Terrafugia  was helped  by the Federal  Aviation  Administration’s  
+decision  five years  ago to create  a separate  set of standards  for light sport  aircraft,  
+which  are lower  than those  pilots  of larger  planes . Terrafugia  says an owner  would  
+need  to pass a test and complete  20 hours  of flying  time to be able to fly the 
+Transition,  a requirement  pilots  would  find redatively  easy to meet.  
+28. What  is the first paragraph  mainly  about?  
+A. The basic  data of the Transition.      B. The advantages  of flying  cars. 
+C. The potential  market  for flying  cars.  D. The designers  of the Transition.  
+29. Why  is the Transition  unlikely  to show  up in too many  driveways?  
+A. It causes  traffic  jams.              B. It is difficult  to operate.  
+C. It is very expensive.               D. It bums  too much  fuel. 
+30. What  is the government’s  attitude  to the development  of the flying  car? 
+A. Cautious .      B. Favorable.      C. Ambiguous.     D. Disapproving.  
+31. What  is the best title for the text?  
+A. Flying  Car at Auto  Show .          B. The Transition’s  Fist Flight . 
+C. Pilots’  Dream  Coming  True .        D. Flying  Car Closer  to Reality .
+
+
+Answers:
+['A', 'C', 'B', 'D']
+
+Analysis:
+28. A 细节理解题 . 根据句子 The Transition , which  flew at 1,400 feet for eight  
+minutes  last month , can reach  around  70 miles  per hour on the road and 115 in the air. 
+It flies using  a 23-gallon  tank of gas and bums  5 gallons  per hour in the air. On the 
+ground , it gets 35 miles  per gallon . 可以看出列出的都是 Transition 的基本数据 ，所
+以答案选 A.
+29. C 推理判断题 . 根据句子 But don’t expect  it to show  up in too many  driveways . 
+It’s expected  to cost $279 ,000. 但不要指望它出现在太多的车道，它的预计成本
+$279 ,000. 由此可以推断出  Transition  太昂贵了，很少有人买得起， 所以答案选
+C.
+30. B 推理判断题 . 根据句子 The government  has already  permitted  the company  to 
+use special  materials  to make  it easier  for the vehicle  to fly. 政府已经允许该公司使
+用特殊材料，使车辆更容易飞行 . 可以推断出政府对于制造这种车是赞许的，
+favourable  "赞许的 ".
+31. D 标题大意题 . 根据文章第一段第一句可知新的飞行汽车已经完成了第一次
+飞行，使该公司更接近其在明年出售飞行汽车的目标 . 以及最后一段说一个车主
+需要通过一个测试， 完成 20个小时的飞行时间， 由此可见 Flying  Car Closer  to 
+Reality符合本文的主旨， 所以答案选 D.

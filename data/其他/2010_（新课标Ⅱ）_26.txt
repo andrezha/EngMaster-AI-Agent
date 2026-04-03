@@ -1,0 +1,13 @@
+Question:
+17. I’m afraid  Mr. Harding  ____  see you now, he’s busy .  
+A. can’t B. mustn ’t C. shouldn ’t D. needn ’t
+
+
+Answers:
+['A']
+
+Analysis:
+【解答】答案 A. can't "不能，不可能 "；mustn 't "禁止，不允许 "；shouldn 't "不应
+该"；needn 't "不需要，没必要 ". 根据句意，他在忙，说明他现在 "不能 "见你 . 故
+选A.  
+【点评】

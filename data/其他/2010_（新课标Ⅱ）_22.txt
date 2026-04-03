@@ -1,0 +1,15 @@
+Question:
+13. The island  is ____  attractive  in spring  and autumn  because  of the pleasant  weather  
+in both seasons .  
+A. partly  B. merely  C. nearly  D. equally
+
+
+Answers:
+['D']
+
+Analysis:
+【解答】 答案： D，本题考查副词辨析 . A. partly  部分的， B. merely  只是，仅仅
+，C. nearly  几乎的， D. equally  相等的，同样的 . 根据题干的意思：这个岛屿在
+春天和秋天都同样的（ equally）迷人，因为这两季的惬意的天气 . 所以本题选择
+D.  
+【点评】

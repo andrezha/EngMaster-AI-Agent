@@ -1,0 +1,57 @@
+Question:
+A 
+In the coming  months,  we are bringing  together  artists  form  all over the globe,  to 
+enjoy  speaking  Shakespeare’s  plays  in their own language,  in our Globe,  within  the 
+architecture  Shakespeare  wrote  for. Please  come  and join us. 
+National  Theatre  of China    Beijing  | Chinese  
+This great  occasion  (盛会 ) will be the National  Theatre  of China’s  first visit to 
+the UK. The company’s  productions  show  the new face of 21st century  Chinese  
+theatre.  This production  of Shakespeare’s  Richard  III will be directed  by the 
+National’s  Associate  Director , Wang  Xiaoying.  
+Date  & Time:  Saturday  28 April,  2:30pm  & Sunday  29 April,  1:30pm  & 6:30pm  
+ 
+Marjanishvili  Theatre    Tbilisi  | Georgian   
+One of the most  famous  theatres  in Georgia,  the Marjanishvili,  founded  in 1928,  
+appears  regularly  at theatre  festivals  all over the world.  This new production  of As 
+You Like It is helmed（指导） by the company’s  Artistic  Director  Levan  Tsuladze.  
+Date  & Time:  Friday  18 May,  2:30pm  & Saturday  19 May,  7:30pm  
+ 
+Deafinitely  Theatre   London  | British  Sign Language （BSL） 
+By translating  the rich and humourous  text of Love’s  Labour’s  Lost into the 
+physical  language  of BSL,  Deafinitely  Theatre  creates  a new interpretation  of 
+Shakespeare’s  comedy  and aims  to build  a bridge  between  deaf and hearing  worlds  by 
+performing  to both groups  as one audience.  
+Date  & Time:  Tuesday  22 May,  2:30pm  & Wednesday  23 May,  7:30pm  
+ 
+Habima  National  Theatre    Tel Aviv  | Hebrew  
+  The Habima  is the centre  of Hebrew-language  theatre  worldwide,  Founded  in 
+Moscow  after the 1905  revolution,  the company  eventually  settled  in Tel Aviv  in the 
+late 1920s . Since  1958,  they have  been  recognised  as the national  theatre  of Israel.  
+This production  of Shakespeare’s  The Merchant  of Venice  marks  their first visit to the 
+UK. 
+Date  & Time:  Monday  28 May,  7:30pm & Tuesday  29 May,  7:30pm  
+21. Which play will be performed  by the National  Theatre  of China?  
+A. Richard  Ⅲ.                B. Lover’s  Labour’s  Lost. 
+C. As You Like It.              D. The Merchant  of Venice . 
+22. What  is special  about  Deafinitely  Theatre?  
+A. It has two groups  of actors .    B. It is the leading  theatre  in London . 
+C. It performs  plays  in BSL.      D. It is good  at producing  comedies . 
+23. When  can you see a play in Hebrew?  
+A. On Saturday  28 April.          B. On Sunday  29 April . 
+C. On Tuesday  22 May.           D. On Tuesday  29 May.
+
+
+Answers:
+['A', 'C', 'D']
+
+Analysis:
+21. A 细节理解题 . 在National  Theatre  Of China    Beijing| Chinese中，根据句子 This 
+production  of Shakespeare ’s Richard  III will be directed  by the National ’s Associate  
+Director , Wang  Xiaoying . 可以看出要上演的剧目是 Richard  III，所以答案选 A.
+22. C 细节理解题 . By translating  the rich and humourous  taxt of Love ’s Labour ’s 
+Lost into the physical  language  of BSL 通过用丰富幽默的文字把 Love ’s Labour ’s 
+Lost 翻译成 BSL的肢体语言， 所以答案选 C.
+23. D 细节理解题 . Habima  National  Theatre  Tel Aviv| Hebrew中的 Date&Time : 
+  Monday  28 May, 7:30 pm & Tuesday  29 May, 7:30 pm可知在 Hebrew看戏的时间
+是五月 28日星期一的晚上七点半；五月二十九日星期二晚上七点半，所以答案
+选D.

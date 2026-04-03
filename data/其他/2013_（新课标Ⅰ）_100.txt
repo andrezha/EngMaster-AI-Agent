@@ -1,0 +1,13 @@
+Question:
+31. India  attained           independence  in 1947,  after           long struggle.  
+A. 不填 ; a   B. the; a   C. an; 不填     D. an; the
+
+
+Answers:
+['A']
+
+Analysis:
+【解答】 答案 A．  attain  independence 获得独立， independence 为抽象名词，前
+不加冠词； after a long struggle表示经过一段长时间的抗争， 用不定冠词 a表示
+数量．故选 A． 
+【点评】

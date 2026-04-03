@@ -1,0 +1,15 @@
+Question:
+24. If we          now to protect  the environment,  we’ll  live to regret  it. 
+A. hadn’t acted     B. haven ’t acted     C. don’t act    D. won’t act
+
+
+Answers:
+['C']
+
+Analysis:
+【解答】答案： C 句子成分分析： if引导条件状语从句， act为从句中谓语动词 ．
+逗号后为主句 ，live为主句谓语动词 ，to protect和to regret是非谓语动词做状语
+． 
+  根据 if主句中的时态是一般将来时态 ，可知从句应使用一般现在时态 ，且有 now
+作为现在时态的标志词， 所以选择 C． 
+【点评】

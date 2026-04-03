@@ -1,0 +1,37 @@
+Question:
+阅读下面短文，在空白处填入1个适当的单词或括号内单词的正确形式。
+China has become the first country to land a spacecraft on the far side of the moon. The unmanned Chang’e-4 probe (探测器) - the name was inspired by an ancient Chinese moon goddess ___61___ (touch) down last week in the South Pole-Aitken basin. Landing on the moon’s far side is ___62___ (extreme) challenging. Because the moon’s body blocks direct radio communication with a probe, China first had to put a satellite in orbit above the moon in a spot ___63___ it could send signals to the spacecraft and to Earth. The far side of the moon is of particular ___64___ (interesting) to scientists because it has a lot of deep craters (环形山)， more so ___65___ the familiar near side. Chinese researchers hope to use the instruments onboard Chang’e-4 ___66___ (find) and study areas of the South Pole-Aitken basin. ＂This really excites scientists,＂ Carle Pieters, a scientist at Brown University, says, ＂because it ___67___ (mean) we have the chance to obtain information about how the moon ___68___ (construct)＂ Data about the moon’s composition, such as how ___69___ ice and other treasures it contains, could help China decide whether ____70____ (it) plans for a future lunar (月球的) base are practical.
+
+
+Answers:
+【答案】61. touched    
+62. extremely    
+63. where    64. interest    
+65. than    66. to find    
+67. means    68. is constructed    
+69. much    70. its
+
+
+Analysis:
+【解析】
+这是一篇说明文。中国成为第一个将航天器降落在月球背面的国家，文章主要介绍了中国无人月球探测器嫦娥四号发射的意义。
+【61题详解】
+.考查时态。句意：无人月球探测器嫦娥四号——名字的灵感来源于古代的中国月亮女神——上周在南极艾特肯盆地着陆。此处是句子的谓语，根据时间状语last week可知应使用一般过去时，故填touched。
+【62题详解】
+考查副词。句意：登录月球的背面是极其有挑战性的。空处修饰形容词challenging，应使用extreme的副词形式，故填extremely。
+【63题详解】
+考查定语从句。句意：中国首先必须把一颗人造卫星送入月球轨道上的一个点，人造卫星可以在这个点向航天器和地球发射信号。分析句子可知，空处引导一个定语从句，先行词是a spot，关系词替代先行词在从句中作地点状语，应用where引导。故填where。
+【64题详解】
+考查名词。句意：月球背面让科学家尤其感兴趣。根据空前形容词particular可知，空处应填名词，interest是不可数名词，be of interest to sb.意为“(某物)使某人感兴趣”。故填interest。
+【65题详解】
+考查介词。句意：因为它比熟悉的一面有更多的深环形山。根据空前的比较级more so可知，此处填介词than，表示“比……更”。故填than。
+【66题详解】
+考查非谓语动词。句意：中国的研究者希望使用嫦娥四号上的设备来发现和研究南极艾特肯盆地。此处表示目的，应使用不定式作目的状语。故填to find。
+【67题详解】
+考查时态和主谓一致。句意：“这真的使科学家们激动，”布朗大学的一位科学家Carle Pieters说：“因为它意味着我们有机会获得月球是如何构造的信息。”根据上文“This really excites scientists”可知，此处也使用一般现在时，主语是it，所以空处谓语动词使用第三人称单数形式means，故填means。
+【68题详解】
+考查时态、语态和主谓一致。句意同上。分析句子可知，此处是宾语从句谓语动词，谓语construct与主语the moon之间是被动关系，应使用被动语态，再由上下文可知此处应使用一般现在时，主语the moon是单数，故填is constructed。
+【69题详解】
+考查形容词。句意：关于月亮构成的数据，比如它含有多少水和其他财富，可以帮助中国决定它未来月球基地的计划是否实用。ice是不可数名词，应使用much修饰，故填much。
+【70题详解】
+考查代词。句意同上。根据空后的名词plans可知，此处应使用形容词性物主代词its，故填its。

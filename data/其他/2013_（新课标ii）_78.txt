@@ -1,0 +1,14 @@
+Question:
+24. When  I arrived,  Bryan  took me to see the house           I would  be staying.  
+A. what    B. when        C. where    D. which
+
+
+Answers:
+['C']
+
+Analysis:
+【解答】 答案： C 考查定语从句． what不能引导定语从句，所以排除；定语从
+句中主语是 I，谓语动词 stay为不及物动词 ，故不缺宾语 ，所以排除 D，而应该
+用关系副词 ；先行词为 house，指地点范畴 ，所以排除 when，而用关系副词 where
+． 
+【点评】

@@ -1,0 +1,50 @@
+Question:
+C 
+I am Peter  Hodes,  a volunteer  stem  courier . Since  March  2012,  I’ve done  89 trips 
+— of those  , 51 have  been  abroad,  I have  42 hours  to carry  stem  cells (干细胞 ) in my 
+little box because  I’ve got two ice packs  and that’s  how long they last. In all, from  the 
+time the stem  cells are harvested  from  a donor  (捐献者 ) to the time they can be 
+implanted  in the patient,  we’ve  got 72 hours  at most,  So I am always  conscious  of 
+time.  
+I had one trip last year where  I was caught  by a hurricane  in America.  I picked  
+up the stem  cells in Providence,  Rhode  Island,  and was meant  to fly to Washington  
+then back  to London.  But when  I arrived  at the check-in  desk at Providence,  the lady 
+on the desk said:  “Well,  I’m really  sorry,  I’ve got some  bad news  for you — there  are 
+no flights  from  Washington.”  So I took my box and put it on the desk and I said:  “In 
+this box are some  stem  cells that are urgently  needed  for a patient  — please,  please,  
+you’ve  got to get me back  to the United  Kingdom.”  She just dropped  everything.  She 
+arranged  for a flight  on a small  plane  to be held for me. re-routed  (改道 ) me through  
+Newark  and got me back  to the UK even  earlier  than originally  scheduled.  
+For this courier  job, you’re  consciously  aware  that in that box you’ve  got 
+something  that is potentially  going  to save somebody’s  life. 
+29. Which  of the following  can replace  the underlined  word  “courier”  in Paragraph  1? 
+A. provider     B. delivery  man     C. collector     D. medical  doctor  
+30. Why  does Peter  have  to complete  his trip within  42 hours?  
+A. He cannot  stay away  from  his job too long.  
+B. The donor  can only wait for that long.  
+C. The operation  needs  that much  time.  
+  D. The ice won’t  last any longer.  
+31. Which  flight  did the woman  put Peter  on first?  
+A. To London.     B. To Newark.     C. To Providence.     D. To 
+Washington.
+
+
+Answers:
+['B', 'D', 'B']
+
+Analysis:
+29．B 词义猜测题．由于 "a volunteer  stem  cell courier"在句中作 peter  Hodes的同
+位语，所以 courier应该是表示一种职业 ；根据第一段 "I’ve done  89 trips我已经运
+送了 89次造血干细胞 "；"I have  42 hours  to carry  stem  cells干细胞在我的小箱子
+里只能存放 42小时 "以及第二段作者讲述了他在运送干细胞时被困的经历 ；可知
+作者是运送干细胞的人， 即B．delivery  man 送货员． A．供应商； C．收藏家 ；
+D．医学博士； 故选 B．
+30．D 细节理解题．根据第一段 "I have  42 hours  to carry  stem  cells in my little box 
+because  I’ve got two ice packs  and that’s how long they last．干细胞在我的小箱子里
+只能存放 42小时，因为箱子里面的两个冰包只能维持这么长时间 ．"可知冰包将
+不能存放更长的时间． 故选 D．
+31．B 细节理解题 ．根据第二段 "She  arranged  for a flight  on a small  plane  to be held 
+for me, re-routed  me through  Newark  and got me back  to the UK…她安排了一架小
+型飞机为我组织了一次飞行，并为我更改了航线，经由  Newark，使我先于预定
+的时间到达了英国 ．"由此出可知那位女士先将 Peter安排在了飞往 Newark的航
+班上；故选 B．

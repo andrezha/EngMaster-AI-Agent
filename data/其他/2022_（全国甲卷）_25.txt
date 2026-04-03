@@ -1,0 +1,36 @@
+Question:
+根据短文内容，从短文后的选项中选出能填入空白处的最佳选项。选项中有两项为多余选项。
+Important Things to Know When Dining Out
+Cultural dining etiquette (礼节) might surprise you with some of its important rules. ___16___. Knowing some tips will help ensure that you have an enjoyable meal with friends or family — no matter where you are in the world. 
+Chopstick Rules 
+The way you handle chopsticks is important to avoid annoying your companions. When you put them down between bites, always put them down together so they are parallel with the edge of the table in front of you. ___17___ . 
+Hands or Utensils (餐具)
+In India and the Middle East, it’s considered very rude to eat with your left hand. People in France expect you to eat with a utensil in each hand. ___18___, instead preferring to use their hands. In Chile, you may never touch any food with your fingers. People in Thailand generally use their forks only to push food onto their spoons. 
+Making Requests 
+___19___ . In Portugal, this would be a serious mistake, because it shows the chef that you don’t like their seasoning skills. Similarly, in Italy, never ask for extra cheese to add to your food. 
+Some of these cultural dining etiquette rules may seem random and strange, but they are important in various countries. ___20___ , the more comfortable you’ll begin to feel with its foreign cultural practices.
+A. The more friends you make in your lifetime
+B. The more time you spend in any given country
+C. Mexicans consider it inappropriate to eat with utensils
+D. Don’t get caught making an embarrassing mistake at a restaurant
+E. It’s a good sign for the chef if you make a mess around your plate
+F. Never stick them upright in your food or cross them as you use them
+G. It may seem like a simple request to ask for salt and pepper at a meal
+
+
+Answers:
+['D', 'F', 'C', 'G', 'B']
+
+Analysis:
+【解析】
+【导语】本文是一篇说明文。文章主要介绍了一些外出就餐时要知道的一些重要事情。
+【16题详解】
+根据文章标题“Important Things to Know When Dining Out (外出就餐时要知道的重要事情)”可知，本文主要介绍的是外出就餐时应该知道的重要事情。由此可知，D项“Don’t get caught making an embarrassing mistake at a restaurant (不要在餐馆犯尴尬的错误)”符合语境，其中“at a restaurant”对应标题中的“When Dining Out”，同时引起下文“Knowing some tips will help ensure that you have an enjoyable meal with friends or family — no matter where you are in the world. (知道一些技巧将有助于确保你和朋友或家人一起享受一顿愉快的晚餐——无论你在世界的哪个地方)”。故选D。
+【17题详解】
+根据本段小标题“Chopstick Rules”可知，本段主要讲述的是使用筷子的规则。根据上文“When you put them down between bites, always put them down together so they are parallel with the edge of the table in front of you. (当你在吃的间隙把它们放下来的时候，一定要把它们放在一起，这样它们就和你面前的桌子边缘平行了)”可知，此处讲述了正确使用筷子的方式。由此可知，F项“Never stick them upright in your food or cross them as you use them (不要把它们笔直地插在你的食物中，也不要在使用它们时交叉放置)”讲述的也是使用筷子时的注意事项，符合此处语境，其中“them”指的是上文的“chopsticks”。故选F。
+【18题详解】
+根据本段小标题“Hands or Utensils (餐具)”可知，本段主要讲述的是手和餐具的问题。根据上文“In India and the Middle East, it’s considered very rude to eat with your left hand. People in France expect you to eat with a utensil in each hand. (在印度和中东，用左手吃饭被认为是非常不礼貌的。法国人希望你每只手拿一个餐具吃饭)”及下文“instead preferring to use their hands (相反更愿意使用他们的双手)”可知，此处在讲述不同国家就餐时习惯使用哪只手的问题。由此可知，C项“Mexicans consider it inappropriate to eat with utensils (墨西哥人认为用餐具吃饭是不合适的)”符合语境，与下文形成转折关系。故选C。
+【19题详解】
+根据本段小标题“Making Requests”可知，本段主要讲述的是用餐时提请求的问题。根据下文“In Portugal, this would be a serious mistake, because it shows the chef that you don’t like their seasoning skills. Similarly, in Italy, never ask for extra cheese to add to your food. (在葡萄牙，这将是一个严重的错误，因为这向厨师表明你不喜欢他们的调味技巧。同样，在意大利，永远不要要求在食物中添加额外的奶酪)”可推知，在一些国家，用餐时提出要求是很无礼的。由此可知，G项“It may seem like simple request to ask for salt and pepper at a meal (吃饭时要盐和胡椒看似很简单)”符合此处语境，其中“request”是关键词，说明，在用餐时提出一些我们看来很平常的要求在某些国家是无礼的。故选G。
+【20题详解】
+根据下文“the more comfortable you’ll begin to feel with its foreign cultural practices. (你就会对它的外国文化习俗感到越舒服)”可推知，此处指在一个国家待得越久，就会越习惯当地习俗，且此处是“the+比较级，the+比较级”结构，B项“The more time you spend in any given country (你在某个国家待的时间越长)”符合文意，引出下文。故选B。

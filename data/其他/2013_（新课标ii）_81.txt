@@ -1,0 +1,14 @@
+Question:
+27. We        very early  so we packed  the night  before.  
+A. leave        B. had left       C. were  leaving         D. have  left
+
+
+Answers:
+['C']
+
+Analysis:
+【解答】答案：C，题干的意思是 ："我们很早 ________ ，因此我们前一晚上就把
+东西打包了 ．"根据句中的 packed可知此处应用过去的时态 ，所以排除 A、D两
+项．根据常识及句意可知， pack  要发生在 leave  之前，所以排除 B项， had left
+表示动作发生在 "过去的过去 "．故选 C项，leave的过去进行时态表示过去将来 ． 
+【点评】

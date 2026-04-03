@@ -1,0 +1,13 @@
+Question:
+27. The next thing  he saw was smoke  _______from  behind  the house.  
+A. rose         B. rising          C. to rise      D. risen
+
+
+Answers:
+['B']
+
+Analysis:
+【解答】答案：B．本题考察非谓语动词的用法， 先分析句子的主干为 ：The next 
+thing  was smoke．risng与所修饰的名词 smoke之间的关系是主动的关系， 故用
+rising  from  behind  the house  做后置定语． 故选 B． 
+  【点评】

@@ -1,0 +1,13 @@
+Question:
+7. Tom  was about  to close  the windows_____his  attention  was caught  by a bird.  
+A. when  B. if C. and D. till
+
+
+Answers:
+['A']
+
+Analysis:
+【解答】 答案 A. be about  to do…when… 正要做 …突然 . when作并列连词，相当
+于and at that time. 根据句意 ：汤姆正要关窗户 "突然 "他的注意力被一只鸟吸引了 . 
+故选 A.  
+【点评】

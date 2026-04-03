@@ -1,0 +1,56 @@
+Question:
+A 
+My color  television  has given  me nothing  but a headache.  I was able to buy it a 
+little over a year ago because  I had my relatives  give me money  for my birthday  
+instead  of a lot of clothes  that wouldn’t  fit. I let a salesclerk  fool me into buying  a 
+discontinued  model.  I realized  this a day late, when  I saw newspaper  advertisements  
+for the set at seventy-five  dollars  less than I had paid.  The set worked  so beautifully  
+when  I first got it home  that I would  keep  it on until stations  signed  off for the night.  
+Fortunately,  I didn’t  got any channels  showing  all-night  movies  or I would  never  have  
+gotten  to bed. 
+Then  I started  developing  a problem  with the set that involved  static  (静电 ) 
+noise.  For some  reason,  when  certain  shows  switched  into a commercial,  a loud noise  
+would  sound  for a few seconds.  Gradually,  this noise  began  to appear  during  a show,  
+and to get rid of it, I had to change  to another  channel  and then change  it back.  
+Sometimes  this technique  would  not work,  and I had to pick up the set and shake  it to 
+remove  the sound.  I actually  began  to build  up my arm muscles  (肌肉 ) shaking  my 
+set. 
+When  neither  of these  methods  removed  the static  noise,  I would  sit helplessly  
+and wait for the noise  to go away.  At last I ended  up hitting  the set with my fist, and it 
+stopped  working  altogether.  My trip to the repair  shop  cost me $62, and the set is 
+working  well now,  but I keep  expecting  more  trouble.  
+21. Why  did the author  say he was fooled  into buying  the TV set? 
+A. He got an older  model  than he had expected.  
+B. He couldn’t  return  it when  it was broken.  
+C. He could  have  bought  it at a lower  price.  
+  D. He failed  to find any movie  shows  on it. 
+22. Which  of the following  can best replace  the phrase  “signed  off” in Paragraph  1? 
+A. ended  all their programs .       B. provided  fewer  channels . 
+C. changed  to commercials .       D. showed  all-night  movies . 
+23. How  did the author  finally  get his TV set working  again?  
+A. By shaking  and hitting  it.      B. By turning  it on and off. 
+C. By switching  channels.         D. By having  it repaired.  
+24. How  does the another  sound  when  telling  the story  ? 
+A. Curious       B. Anxious        C. Cautious        D. Humorous
+
+
+Answers:
+['C', 'A', 'D', 'D']
+
+Analysis:
+21. C 细节推理题 . 根据第一段 . "I realized  this a day late, when  I saw newspaper  
+advertisements  for the set at seventy -five dollars  less than I had paid"当我看到这种
+电视的报纸广告上是 75美元，要比我买的便宜时，我意识到我上当了 . 答案 C 
+  他本来能以更低的价格买到它 . 故选 C.
+22. A 词义推测题 . 根据后一句 "Fortunately , I didn’t got any channels  showing  
+all-night  movies  or I would  never  have  gotten  to bed.（"幸好，我没有发现哪个频道
+是放一整晚影片的，否则，我会一夜不睡觉 . ）可知，应该是 "我常把它开到晚
+上节目结束 "，所以 "signed  off"应该是 "停止播放 "的意思，也就是没有节目了 . 故
+选A.
+23. D 细节理解题 . 根据文章最后一段 "My trip to the repair  shop  cost me $62, and 
+the set is working  well now."我去修理厂花费了 62美元，现在电视修好了 . 故选
+D.
+24. D 推理判断题 . 根据 "I had to pick up the set and shake  it to remove  the sound . I 
+actually  began  to build  up my arm muscles（肌肉）shaking  my set."为了去掉这种声
+音，我只好搬起电视来回晃动 . 实际上，晃电视的同时，我还锻炼了胳膊上的肌
+肉. "可知作者语调幽默 . 故选 D.

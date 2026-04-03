@@ -1,0 +1,13 @@
+Question:
+23. I was glad to meet  Jenny  again,          I didn’t want  to spend  all day with her. 
+A. but         B. and       C.so          D.or
+
+
+Answers:
+['A']
+
+Analysis:
+【解答】答案： A 考查并列连词． and"和"，表并列和递进； but"但是 "，表转折 ；
+or"或者 "，表选择； so"因此 "，表因果．句意 "非常高兴能再次见到 Jenny，但是
+我不想和她呆一整天． "根据句意可知，前后表示转折的含义， 故选 A． 
+【点评】

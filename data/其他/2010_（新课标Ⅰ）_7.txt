@@ -1,0 +1,14 @@
+Question:
+28. When  you are home , give a call to let me know  you        safely . 
+A. are arriving  B. have  arrived  C. had arrived  D. will arrive
+
+
+Answers:
+['B']
+
+Analysis:
+【解答】 答案 B．本题主要考查动词时态．根据题意可知，这里要表达 "回家后
+打电话确认已经安全到达 "，所以应该用现在完成时 ，答案为 B项．A项和 D项
+均表示将来，没有 "完成 "之意，所以排除 ；C项为过去完成时，不符合题意，所
+以排除． 故选 B． 
+【点评】

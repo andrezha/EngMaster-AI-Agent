@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GaokaoPage</class>
+ <widget class="QWidget" name="page_gaokao">
+  <layout class="QHBoxLayout" name="gk_main_row">
+   <item>
+    <layout class="QVBoxLayout" name="gk_left_col">
+     <item>
+      <widget class="QTextEdit" name="gk_question_body">
+       <property name="placeholderText">
+        <string>真题文章加载中...</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QScrollArea" name="gk_answer_scroll">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="gk_answer_content">
+        <layout class="QVBoxLayout" name="dynamic_answer_layout"/>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="gk_btn_row">
+       <item>
+        <widget class="QPushButton" name="btn_gk_submit">
+         <property name="text">
+          <string>✅ 提交并判分</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_gk_next">
+         <property name="text">
+          <string>⏭️ 下一题</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="gk_right_col">
+     <item>
+      <widget class="QTextEdit" name="gk_ai_display">
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="placeholderText">
+        <string>AI 老师解析区...</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="gk_chat_input_row">
+       <item>
+        <widget class="QLineEdit" name="gk_chat_input">
+         <property name="placeholderText">
+          <string>有什么不懂的问 AI 老师...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_gk_chat_send">
+         <property name="text">
+          <string>发送</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+</ui>

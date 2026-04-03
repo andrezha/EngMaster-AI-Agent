@@ -1,0 +1,16 @@
+Question:
+28. The watch  was very good,  and he         20 percent  down  for it. 
+A. paid          B. cost          C. bought            D. spent
+
+
+Answers:
+['A']
+
+Analysis:
+【解答】 答案： A. A. sb.+ pay some  money  for sth. "某人花钱买某物 "；B. cost 的
+主语通常指物 ：sth. + cost sb. some  money  "某物花费某人多少钱 "，C. buy的主语
+是人，其后跟双宾语 ：buy sth. for sb.或者 buy sb. sth "某人为 …买某物 "；D. spend
+的主语是人， "sb. spend  time/money  in/on  doing  sth. 某人在某事上花费时间或金
+钱"；根据句意可知， 此处的意思是 ：他花了低于原价 20%的价格买了这块手表 ；
+故选 A. 
+【点评】

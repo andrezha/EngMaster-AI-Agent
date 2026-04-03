@@ -1,0 +1,33 @@
+Question:
+根据短文内容，从短文后的选项中选出能填入空白处的最佳选项。选项中有两项为多余选项。
+According to Jessica Hagy, author of How to Be Interesting, it’s not difficult to make yourself interesting at a dinner party. 
+___36___, if you’re out of your comfort zone or if you’re wandering into somebody’s house for the first time. So the main thing is just to show up and be adventurous, trying different foods and talking to strangers. 
+People love to talk about themselves. If you can start the conversation with a question other than “What do you do for a living?”, you’ll be able to get a lot more interesting conversation out of whomever it is you’re talking to. ___37___, it can bring in “I have this old, broken-down vehicle” or “I rode the bus with these crazy people who were laughing at silly jokes in the back.” It just opens up conversation. 
+___38___? If you can’t take their wine away, you should certainly try to take away their soapbox （讲台）. If you’re the host, you can ask them to help you in the kitchen with something and just remove them from the situation.___39___.
+And what about that other dinner-party killer: awkward silence? If you’re faced with an awkward silence at a dinner party, the only thing that always gets everyone talking again is to give the host a compliment（赞扬）. ___40___. Just quickly turn around and say, “This cake is extremely delicious and you have to tell me all about it.”
+So being interesting at a dinner party isn’t that hard.
+A. How do you know the host
+B. The first step is to go exploring
+C. If you ask the question “How did you get here?”
+D. Be prepared to have awkward conversations with strangers
+E. Or turn the conversation into a topic where they have little to say
+F. What about that person who had too much to drink or won’t stop talking
+G. He or she is the person who is feeling the weight of that awkwardness the most
+
+
+Answers:
+['B', 'C', 'F', 'E', 'G']
+
+Analysis:
+【解析】
+【分析】本文是一篇说明文。文章主要介绍了在晚宴上让自己表现得有趣的一些方法。
+【36题详解】
+根据上文“it’s not difficult to make yourself interesting at a dinner party (在晚宴上让自己变得有趣并不难)”可知，下文应主要讲述如何在晚宴上让自己变得有趣。下文“So the main thing is just to show up and be adventurous, trying different foods and talking to strangers. (所以最主要的事情就是去尝试，去冒险，尝试不同的食物，和陌生人交谈)”可推知，本段主要说明想在晚宴上让自己变得有趣，就要勇于冒险，勇于探索。由此可知，B项“The first step is to go exploring(第一步是去探索)”承上启下，符合题意。故选B项。
+【37题详解】
+根据下文“it can bring in “I have this old, broken-down vehicle” or “I rode the bus with these crazy people who were laughing at silly jokes in the back.” It just opens up conversation. (它可以带入“我有这辆破旧的车”或“我和那些在后面嘲笑愚蠢笑话的疯子一起乘坐公共汽车。”它只是打开了对话)”可知，设空处应该是提了一个不太好的问题，只是开始交流，但并不会给人留下有趣的印象。由此可知，C项“If you ask the question “How did you get here?”(如果你问“你是怎么到这里来的？”这个问题)”能够承接下文，符合题意。故选C项。
+【38题详解】
+根据下文“If you can’t take their wine away, you should certainly try to take away their soapbox. If you’re the host, you can ask them to help you in the kitchen with something and just remove them from the situation. (如果你不能拿走他们的酒，你当然应该让他们离开讲话的地方。如果你是主人，你可以让他们到厨房帮你做点什么，只是为了让他们摆脱那种情景)”可知，此处指出了一个问题的解决办法。由此推知，设空处提到了一个棘手的问题。F项“What about the person who has had too much to drink or won’t stop talking(喝太多酒或一直说个不停的人怎么办)”正是提出的问题，引出下文的解决办法，符合题意。故选F项。
+【39题详解】
+根据上文“If you can’t take their wine away, you should certainly try to take away their soapbox (讲台). If you’re the host, you can ask them to help you in the kitchen with something and just remove them from the situation. (如果你不能拿走他们的酒，你当然应该让他们离开讲话的地方。如果你是主人，你可以让他们到厨房帮你做点什么，只是为了让他们摆脱那种情景)”可知，本段主要是为解决“喝太多酒或一直说个不停”这个问题提供方法。由此可知，E项“Or turn the conversation into a topic where they have little to say(或者把谈话变成他们没什么可说的话题)”是提出的另一个解决办法，承接上文，符合题意。故选E项。
+【40题详解】
+根据上文“If you’re faced with an awkward silence at a dinner party, the only thing that always gets everyone talking again is to give the host a compliment.(如果你在晚宴上遭遇了尴尬的沉默，唯一能让大家再次交谈的方法就是赞美主人)”可知，此处指出赞美主人可以缓解尴尬的沉默，设空处承上启下，下文“This cake is extremely delicious and you have to tell me all about it.(这蛋糕特别好吃，你得告诉我它的一切)”对主人进行了赞美。由此可知，宴会上出现尴尬的沉默时，最尴尬的就是主人，所以需要赞美主人来缓解尴尬。G项“He or she is the person who is feeling the weight of that awkwardness the most(他或她是最能感受到那种尴尬的人)”承上启下，符合题意。故选G项

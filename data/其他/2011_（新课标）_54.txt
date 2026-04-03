@@ -1,0 +1,12 @@
+Question:
+30. The form  cannot  be signed  by anyone  _______yourself.  
+A. rather  than      B. other  than       C. more  than     D. better  than
+
+
+Answers:
+['B']
+
+Analysis:
+【解答】答案：B．A项"而不是 "；B"除了 "；C"多于，不仅仅 "；D"好于 "．由cannot  
+be signed  by anyone可知，只能由你本人签字 ．所以是 "除了 "你自己．故选 B项． 
+【点评】

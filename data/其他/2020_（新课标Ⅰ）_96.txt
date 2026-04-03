@@ -1,0 +1,40 @@
+Question:
+A
+Train Information
+All customers travelling on TransLink services must be in possession of a valid ticket before boarding. For ticket information，please ask at your local station or call 13 12 30.
+While Queensland Rail makes every effort to ensure trains run as scheduled，there can be no guarantee of connections between trains or between train services and bus services.
+Lost property(失物招领)
+Call Lost Property on 13 16 17 during business hours for items lost on Queensland Rail services.
+The lost property office is open Monday to Friday 7:30am to 5:00pm and is located(位于)at Roma Street station.
+Public holidays
+On public holidays, generally a Sunday timetable operates. On certain major event days，i.e.
+Australia Day, Anzac Day, sporting and cultural days, special additional services may operate.
+Christmas Day services operate to a Christmas Day timetable，Before travel please visit translink. com. au or call TransLink on 13 12 30 anytime.
+Customers using mobility devices
+Many stations have wheelchair access from the car park or entrance to the station platforms.
+For assistance, please Queensland Rail on 13 16 17.
+Guardian trains (outbound)
+
+
+
+21. What would you do get ticker information?
+A. Call 13 16 17.	B. Visit translink .com.au.
+C. Ask at the local station.	D. Check the train schedule.
+22. At which station can you find the lost property office?
+A. Altandi.	B. Roma Street.	C. Varsity Lakes.	D. Fortitude Valley.
+23. Which train would you take if you go from Central to Varsity Lakes?
+A. 6:42 pm.	B. 7:29 pm.	C. 8:57 pm.	D. 11:02 pm.
+
+
+Answers:
+['C', 'B', 'B']
+
+Analysis:
+【解析】
+这是一篇应用文。文章主要介绍了一些火车信息，包括失物招领、公共假期安排以及列车出发时间等信息。
+【21题详解】
+细节理解题。根据第一段中For ticket information, please ask your local station or call 13 12 30.可知查询车票信息，请向您当地的车站询问或拨打131230。由此可知，你可以询问当地车站或拨打131230来获得车票信息。故选C。
+【22题详解】
+细节理解题。根据Lost property部分中The lost property office is open Monday to Friday 7:30am to 5:00pm and is located at Roma Street station.可知失物招领处周一至周五早上7:30到下午5:00营业，位于罗马街车站。由此可知，在Roma Street你可以找到失物招领办公室。故选B。
+【23题详解】
+细节理解题。根据Guardian trans部分中信息，可知从起始地Central出发，开往目的地Varsity Lakes的火车是下午7:29开车。由此可知，如果你要从Central去往Varsity Lakes，你应当乘坐下午7:29的火车。故选B。

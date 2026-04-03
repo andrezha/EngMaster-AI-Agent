@@ -1,0 +1,14 @@
+Question:
+33. I had been  working  on math  for the whole  afternoon  and the numbers           
+before  my eyes.  
+A. swim            B. swum          C. swam          D. had swum
+
+
+Answers:
+['C']
+
+Analysis:
+【解答】答案 C．在整个题目中， and 连接两个并列句，前面的句子使用的是过
+去完成时表示过去一直在学习数学 ，由语境可知 ，空白处表示的是发生在过去的
+一个动作，应该用一般过去时， 故选 C． 
+【点评】

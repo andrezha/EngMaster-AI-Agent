@@ -1,0 +1,42 @@
+Question:
+B
+Returning to a book you’ve read many times can feel like drinks with an old friend. There’s a welcome familiarity - but also sometimes a slight suspicion that time has changed you both, and thus the relationship. But books don’t change, people do. And that’s what makes the act of rereading so rich and transformative.
+The beauty of rereading lies in the idea that our bond with the work is based on our present mental register. It’s true, the older I get, the more I feel time has wings. But with reading, it’s all about the present. It’s about the now and what one contributes to the now, because reading is a give and take between author and reader. Each has to pull their own weight.
+There are three books I reread annually The first, which I take to reading every spring is Emest Hemningway’s A Moveable Feast. Published in 1964, it’s his classic memoir of 1920s Paris. The language is almost intoxicating (令人陶醉的)，an aging writer looking back on an ambitious yet simpler time. Another is Annie Dillard’s Holy the Firm, her poetic 1975 ramble (随笔) about everything and nothing. The third book is Julio Cortazar’s Save Twilight: Selected Poems, because poetry. And because Cortazar.
+While I tend to buy a lot of books, these three were given to me as gifs, which might add to the meaning I attach to them. But I imagine that, while money is indeed wonderful and necessary, rereading an author’s work is the highest currency a reader can pay them. The best books are the ones that open further as time passes. But remember, it’s you that has to grow and read and reread in order to better understand your friends.
+24. Why does the author like rereading?
+A. It evaluates the writer-reader relationship.
+B. It’s a window to a whole new world.
+C. It’s a substitute for drinking with a friend.
+D. It extends the understanding of oneself.
+25. What do we know about the book A Moveable Feas!?
+A. It’s a brief account of a trip.
+B. It’s about Hemingway’s life as a young man.
+C. It’s a record of a historic event.
+D. It’s about Hemingway’s friends in Paris.
+26. What does the underlined word ＂currency＂ in paragraph 4 refer to?
+A. Debt
+B. Reward.
+C. Allowance.
+D. Face value.
+27. What can we infer about the author from the text?
+A. He loves poetry.
+B. He’s an editor.
+C. He’s very ambitious.
+D. He teaches reading.
+
+
+Answers:
+['D', 'B', 'B', 'A']
+
+Analysis:
+【解析】
+这是一篇说明文。短文介绍了重新阅读的意义和益处并向读者介绍了作者每年重读的三本书。作者鼓励读者去重新阅读书籍。
+【24题详解】
+推理判断题。根据第一段最后两句“But books don’t change, people do. And that’s what makes the act of rereading so rich and transformative.(但是书没变，人变了。那就是使重新阅读行为如此丰富和富于变化之处)”和第二段“The beauty of rereading lies in that our bond with the work is based on our present register. It is true, the older I get, the more I feel time has wings.(重新阅读的美妙之处在于我们与作品的联系是基于我们现在的心理状态。真的，我年纪越大，就越觉得时光飞逝。)”可推知，作者喜欢重新阅读是因为重新阅读可以扩展对自己的理解。故选D项。
+【25题详解】
+推理判断题。根据倒数第二段“Published in 1964, it’s his classic memoir of 1920s Paris.”及“an aging writer looking back on an ambitious yet simpler time”可知，这本书出版于1964年，这是他关于20世纪20年代在巴黎的经典回忆录，是他老年时对那些野心勃勃却更简单的日子的回顾。由此可判断出A Movable Feast是关于海明威年轻时的生活。故选B项。
+【26题详解】
+词义猜测题。根据最后一段中“while money is indeed wonderful and necessary,(虽然金钱确实是美妙而必要的)”可知，前后句为转折关系，根据上下文的语境可推知，“rereading an author’s work is the highest currency a reader can pay them.”意为“但是但重新阅读作品是读者能支付给他们的最高回报”，由此判断出划线词的意思是“回报”。故选B项。
+【27题详解】
+推理判断题。根据倒数第二段“The third book is Julio Cortázar’s Save Twilight: selected poems, because poetry.(第三本书是胡里奥·科塔扎的《拯救暮光之城: 诗歌精选》，因为诗歌)”可知，作者是由于喜欢诗歌而喜欢这本书。故选A项。

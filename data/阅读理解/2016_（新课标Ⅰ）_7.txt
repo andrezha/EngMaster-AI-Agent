@@ -1,0 +1,50 @@
+Question:
+根据短文内容 ，从短文后的选项中选出能填入空白处的最佳选项 ，选项中有
+两项为多余选项。  
+Secret  codes  (密码 ) keep  messages  private . Banks,  companies,  and government  
+agencies  use secret  codes  in doing  business,  especially  when  information  is sent by 
+computer.  
+People  have  used secret  codes  for thousands  of years.     36    Code  breaking  
+never  lags (落后 ) far behind  code  making.  The science  of creating  and reading  coded  
+messages  is called  cryptography.  
+There  are three  main  types  of cryptography.     37    For example,  the first 
+letters  of “My elephant  eats too many  eels”  spell out the hidden  message  “Meet  me.”  
+   38    You might  represent  each letter  with a number,  for example.  Let’s  
+number  the letters  of the alphabet,  in order,  from  1 to 26. If we substitute  a number  for 
+each letter,  the message  “Meet  me” would  read “13 5 5 20 13 5.” 
+A code  uses symbols  to replace  words,  phrases,  or sentences.  To read the 
+message  of a real code,  you must  have  a code  book.     39    For example,  
+“bridge”  might  stand  for “meet”  and “out”  might  stand  for “me.”  The message  
+  “Bridge  out” would  actually  mean  “Meet  me.”     40    However,  it is also hard to 
+keep  a code  book  secret  for long.  So codes  must  be changed  frequently.  
+A. It is very hard to break  a code  without  the code  book.  
+B. In any language,  some  letters  are used more  than others.  
+C. Only  people  who know  the keyword  can read the message.  
+D. As long as there  have  been  codes,  people  have  tried to break  them.  
+E. You can hide a message  by having  the first letters  of each word  spell  it out. 
+F. With  a code  book,  you might  write  down  words  that would  stand  for other  words.  
+G. Another  way to hide a message  is to use symbols  to stand  for specific  letters  of the 
+alphabet.
+
+
+Answers:
+['D', 'E', 'G', 'F', 'A']
+
+Analysis:
+36．D本题考察是逻辑关系，根据下一句 "code  breaking  never  lags behind  code  
+making"可知上一句是只要出现密码，就会有人去解码， 选项 D中的 break与空
+格后面句中的 breaking构成一种复现； 故选 D．
+37．E 本题考察是句子之间的例证关系，从后面文章的举例中 "For example , the 
+first letters  are ‘My elephant  eats too many  eels’ spell  out the hidden  message  ‘Meet  
+me.’"那么前一句应该是对例子的概括，即我们可以知道是运用每个单词的首字
+母来组成密码， E选项正确
+38．G 本题考察是文章的篇章结构，前一段是讲到了第一种方法，根据篇章结
+构，下一段应该是讲述第二种设置密码的方法 ，而根据该段的例子 ，即字母表中
+字母排列顺序转化成为数字信息， 所以这里关键词是 another  way 还有 alphabet，
+故选 G．
+39．F 本题考察的是逻辑关系，从上一句 "To read the message  of a real code , you 
+must  have  a code  book"你需要借用解码书来找出密码单词所对应真正意思， F选
+项表示你应该找出解码书中密码所代表的词语， 故F正确．
+40．A 本题考察的是关键词以及转折关系 ，根据下一句出现 "it is also hard to keep  
+a code  book  secret  for long,"这里出现了 also hard，所以上一句关键词为 hard；另
+外however表示转折关系，证明上一句与下一句表达相对应； 故选 A．

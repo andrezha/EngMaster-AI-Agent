@@ -1,0 +1,95 @@
+Question:
+阅读下面短文 ，从短文后面各题锁哥的四个选项 (A、B、C和D)中选出可以
+填入空白处的最佳选项，并在答题卡上将该项涂黑。  
+Michael  Greenberg  is a very popular  New  Yorker.  He is not famous  in sports  or 
+the  arts. But people  in the streets   36  him, especially  those  who are    37  . 
+For those  people,  he is “Gloves ” Greenberg.  How  did he get that  38  ? 
+He looks  like any other businessman,  wearing  a suit and carrying  a briefcase  (公
+文箱 ). But he’s  39   . His briefcase  always  has some  gloves . 
+In winter,  Mr. Greenberg  does not  40  like other  New  Yorkers,  who look at 
+the sidewalk  and  41  the street.  He looks  around  at   42  . He stops  when  he   
+43  someone  with no gloves.  He gives  them  a pair and then he   44  , looking  for 
+more  people  with cold   45  . 
+On winter  days,  Mr. Greenberg    46  gloves.  During  the rest of the year,  he   
+  47  gloves.  People  who have  heard  about  him   48  him gloves,  and he has many  
+in his apartment.  
+Mr. Greenberg     49   doing  this 21 years  ago. Now,  many  poor New  Yorkers  
+know  him and    50  his behavior.  But people  who don’t know  him are sometimes     
+51    him. They  don’t realize  that he just wants  to make  them    52   . 
+It runs in the   53   . Michael ’s father  always  helped  the poor as he believed  it 
+made  everyone  happier.  Michael  Greenberg  feels  the   54   . A pair of gloves  may 
+be a   55   thing,  but it can make  a big difference  in winter.  
+36. A. know  about   B. learn  from   C. cheer  for   D. look after 
+37. A. old    B. busy     C. kind    D.poor  
+38. A. iob    B. name     C. chance      D. message  
+39. A.calm     B. different    C. crazy     D. curious  
+40. A. act    B. sound    C. feel    D. dress  
+41. A. cross  over   B. drive  along   C. hurry  down   D. keep  off 
+42. A. cars    B. people    C. street  numbers  D. traffic  lights  
+43. A. helps     B. chooses    C. greets     D. sees 
+44. A. holds  up   B. hangs  out   C. moves  on   D. turns  around  
+45. A. hands     B. ears    C. faces     D. eyes 
+46. A. searches  for   B. stores  up   C. gives  away    D. puts on 
+47. A. borrows     B. sells     C. returns    D. buys  
+48. A. call     B. send    C. lend    D. show  
+49. A. delayed     B. remembered    C. began     D. enjoyed  
+50. A. understand    B. dislike    C. study     D. excuse  
+51. A. sorry  for   B. satisfied  with  C. proud  of   D. surprised  by 
+52. A. smart     B. rich    C. special    D. happy  
+53. A. city    B. family    C. neighborhood   D. company  
+54. A. honor     B. pain    C. same     D. cold 
+55. A. small     B. useful    C. delightful    D. comforting
+
+
+Answers:
+['A', 'D', 'B', 'B', 'A', 'C', 'B', 'D', 'C', 'A', 'C', 'D', 'B', 'C', 'A', 'D', 'D', 'B', 'C', 'A']
+
+Analysis:
+36．A  考查动词短语辨析；根据文意应为 "Michael  Greenberg  是一个受人欢迎
+的纽约人．虽然他不是体育或是艺术方面的名人，但是，街上的行人都知道他 ．
+"此题，通过文章第一句的提示信息 "受欢迎的 "，可知选 A．
+37．D  考查形容词辨析．根据后文的行文内容可知， Michael  Greenberg 总是会
+在冬天的时候将首套送给街上遇到的穷人． 故选 D．
+38．B  考查名词．根据语境可知，对于那些人来说，他是 ""Gloves"  Greenberg" ，
+而这当然是一个名字． 故选 B．
+39．B  考查形容词辨析．根据语境可知，前面说他看起来和其他商人差不多，
+穿着西装 ，带着公文箱 ，但是他的公文箱里有一些手套 ，这就与众不同 （different
+）了．
+40．A  考查动词．根据下文提到 "who  look at the sidewalk" ，和 "He looks  around"
+等，这些都是人的行为表现（ act）．故选 A．
+41．C  考查动词短语辨析辨析．根据语境可知，前面说他和别的纽约人不同，
+他会四处看 ，见到没有手套的人会停下来 ，而其他人则是看着人行道 ，匆忙走过
+（hurry  down）街道． 故选 C．
+42．B   考查名词．下文出现了 "someone ；them；more  people"，可知他在看人（
+people）．故选 B．
+43．D  考查动词．根据文意可知， "当他看见某些没有手套的人，他就会停下
+脚步来 "，故选 D．
+44．C   考查动词短语辨析．根据语境可知，他四处看人，看到没有手套的，
+  就停下来给他们手套 ，然后继续前进 （moves  on），寻找更多需要手套的人 ．故
+选C．
+45．A   考查名词． 因为 Michael  Greenberg 在街上送的是手套，因此，根据文
+意他要寻找的应该是由于没有手套手冷的穷人． 故选 A．
+46．C  考查动词短语辨析．上一段说到他送手套给别人，此处再次说他赠送（
+gives  away）手套． 故选 C．
+47．D  考查动词． 根据上文信息 Michael  Greenberg 是要将这些手套送给穷人，
+是不需要这些穷人还给他的． 故选 D．
+48．B  考查动词． 由于 Michael  Greenberg 是要将这些手套送给穷人，是不需要
+这些穷人还给他的 ，因此，那些听说了他的事情的纽约人应该是送手套给 Michael  
+Greenberg ．故选 B．
+49．C  考查动词．根据文意可知， 应该是在回忆 Michael  Greenberg 二十年前开
+始帮助别人的情景． 故选 C．
+50．A   考查动词．根据语境可知，他做了这么长时间，很多人都熟悉了，因
+此能够理解（ understand ）他的行为． 故选 A．
+51．D  考查形容词短语辨析．根据语境可知，前面说许多纽约穷人知道他，理
+解他的行为 ；但是不认识他的人有时就会对他感到惊奇（ surprised  by）．故选 D
+．
+52．D  考查形容词．此题可以根据同词复现原则来得到答案；我们可以在文章
+的最后一段的第一句话里找到 happier这个复现词． 故选 D．
+53．B 考查名词． 由于后文有提示信息为 Michael  Greenberg 的父亲总是帮助其
+他人并且对他有很深刻的影响；  Michael  Greenberg 的行为的产生主要是家庭因
+素的影响． 故选 B．
+54．C 考查名词辨析．根据句意可知，前一句说他的父亲觉得帮助别人会让别
+人觉得快乐， 后面要表达的意思就是 Michael  Greenberg 的想法和感受跟他的父
+亲是一致的． 故选 C．
+55．A 考查形容词辨析．根据语境可知， "虽然一双手套是很小的东西但是它却
+可以起到很大的作用 "．故选 A．

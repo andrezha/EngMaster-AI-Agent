@@ -1,0 +1,75 @@
+Question:
+阅读下面短文，从短文后各题所给的A、B、C和D四个选项中，选出可以填入空白处的最佳选项。
+The small town of Rjukan in Norway is situated between several mountains and does not get direct sunlight from late September to mid-March- ___41___ six months out of the year.
+Of course, we ___42___ it when the sun is shining," says Karin Ro, who works for the town’s tourism office. “We see the sky is ___43___, but down in the valley it’s darker — it’s like on a ___44___ day.”
+But that ___45___ when a system of high-tech ___46___ was introduced to reflect sunlight from neighboring peaks(山峰)into the valley below. Wednesday, residents(居民)of Rjukan ___47___ their very first ray of winter sunshine: A row of reflective boards on a nearby mountainside were put to ___48___. The mirrors are controlled by a computer that ___49___ them to turn along with the sun throughout the ___50___ and to close during windy weather. They reflect a concentrated beam(束)of light onto the town’s central ___51___, creating an area of sunlight roughly 600 square meters. When the light ___52___, Rjukan residents gathered together.
+“People have been ___53___ there and standing there and taking ___54___ of each other," Ro says. "The town square was totally ___55___. I think almost all the people in the town were there. "The 3,500 residents cannot all ___56___ the sunshine at the same time. ___57___, the new light feels like more than enough for the town’s ___58___ residents.
+"It's not very ___59___,” she says, "but it is enough when we are ___60___.”
+41. A. only	B. obviously	C. nearly	D. precisely
+42. A. fear	B. believe	C. hear	D. notice
+43. A. empty	B. blue	C. high	D. wide
+44. A. cloudy	B. normal	C. different	D. warm
+45. A. helped	B. changed	C. happened	D. mattered
+46. A. computers	B. telescopes	C. mirrors	D. cameras
+47. A. remembered	B. forecasted	C. received	D. imagined
+48. A. repair	B. risk	C. rest	D. use
+49. A. forbids	B. directs	C. predicts	D. follows
+50. A. day	B. night	C. month	D. year
+51. A. library	B. hall	C. square	D. street
+52. A. appeared	B. returned	C. faded	D. stopped
+53. A. driving	B. hiding	C. camping	D. siting
+54. A. pictures	B. notes	C. care	D. hold
+55. A. new	B. full	C. flat	D. silent
+56. A. block	B. avoid	C. enjoy	D. store
+57. A. Instead	B. However	C. Gradually	D. Similarly
+58. A. nature-loving	B. energy-saving	C. weather-beaten	D. sun-starved
+59. A. big	B. clear	C. cold	D. easy
+60. A. trying	B. waiting	C. watching	D. sharing
+
+
+Answers:
+['C', 'D', 'B', 'A', 'B', 'C', 'C', 'D', 'B', 'A', 'C', 'A', 'D', 'A', 'B', 'C', 'B', 'D', 'A', 'D']
+
+Analysis:
+【解析】
+本文属于记叙文，讲述北欧一个小镇长达半年没有阳光照射，为此在附近的山顶安装了一套镜子设备把阳光反射到小镇的广场。每当光线照射的时候，人们就聚集在广场上，为寒冷的冬季增添一丝明亮。
+【41题详解】
+考查副词词义辨析。A. only仅仅；B. obviously    显然地；C. nearly几乎；D. precisely准确的。根据前文from late September to mid-March可知，从九月底到三月中旬，差不多半年，故选C。
+42题详解】
+考查动词词义辨析。A. fear害怕；B. believe相信；C. hear听见；D. notice注意。根据后文We see the sky is 43 , but down in the valley it's darker可知，我们看到天空是蓝色，但是到山谷的时候，就会变得更暗了，故可知，太阳照耀的时候，我们观察得到，故选D。
+【43题详解】
+考查形容词词义辨析。A. empty空的；B. blue蓝色的；C. high搞得；D. wide宽的。根据常识可知，有太阳的时候，天空是蓝色的，故选B。
+【44题详解】
+考查形容词词义辨析。A. cloudy多云的；B. normal正常的；C. different不同的；D. warm温暖的。根据前文down in the valley it's darker可知，到山谷的时候，天变暗了，像阴天一样，故选A。
+【45题详解】
+考查动词词义辨析。A. helped帮助；B. changed改变；C. happened发生；D. mattered关系重大。根据后文可知，该镇引入一套阳光反射镜来改变这种情况，故选B。
+【46题详解】
+考查名词词义辨析。A. computers电脑；B. telescopes望远镜；C. mirrors镜子；D. cameras相机。根据后文to reflect sunlight from neighboring peaks可知，从附近的山顶上反射太阳光，故可知，为一枚镜子，故选C。
+【47题详解】
+考查动词词义辨析。A. remembered记得；B. forecasted预报；C. received获得，收到；D. imagined想象。根据句意可知，该镇的居民获得了冬天里的第一缕阳光，故选C。
+【48题详解】
+考查名词词义辨析。A. repair修理；B. risk风险；C. rest    休息；D. use使用。根据前一句their very first ray of winter sunshine可知，获得了冬天的第一缕阳光，是由于反射板投入使用了，故选D。 put sth to use把某物投入使用。
+【49题详解】
+考查动词词义辨析。句意：这些镜子由电脑控制，指导他们整天跟着太阳的位置移动而移动，在大风的天气就自动关闭。A. forbids禁止；B. directs指导，导演；C. predicts预测；D. follows跟随，追随。本句描述这套系统的工作原理，电脑控制镜子的移动，故选B。
+【50题详解】
+考查名词词义辨析。A. day白天；B. night夜晚；C. month月；D. year年。根据文章可知，太阳光出现在白天，故选A。
+【51题详解】
+考查名词词义辨析。A. library图书馆；B. hall大厅；C. square广场；D. street街道。根据后文The town square可知，镜子反射聚集的光会照在小镇的中心广场上，故选C。
+【52题详解】
+考查动词词义辨析。A. appeared出现；B. returned归还；C. faded褪去；D. stopped停止。根据后文Rjukan residents gathered together可知，当光照出现的时候，居民出来，故选A。
+【53题详解】
+考查动词词义辨析。A. driving驾驶；B. hiding隐藏；C. camping露营；D. sitting坐。根据本句and standing there可知，光照出现的时候，人们会出来活动，坐在那里，站在那里，故选D。
+【54题详解】
+考查名词词义辨析。A. pictures照片，图片；B. notes笔记；C. care照顾；D. hold抓住。根据文章可知，会彼此拍照，故选A。
+【55题详解】
+考查形容词词义辨析。A. new新的；B. full满的；C. flat平坦的；D. silent沉默的。根据后文I think almost all the people in the town were there.可知，差不多全镇的人都在广场上，故可知广场全是人，故选B。
+【56题详解】
+考查动词词义辨析。A. block阻挡；B. avoid避免；C. enjoy喜欢，享受；D. store储存。根据句意可知，并不是3500名居民都能同时享受到太阳光，故选C。
+【57题详解】
+考查副词词义辨析。A. Instead代替；B. However然而；C. Gradually逐渐地；D. Similarly相似地。前一句意思为并不是3500名居民都能同时享受到太阳光，后一句，新的光线为小镇人们的意义不仅仅提供光线，故可知前后句属于转折关系，故选B。
+【58题详解】
+考查形容词词义辨析。A. nature-loving热爱自然的；B. energy-saving节能的；C. weather-beaten受风雨侵蚀的；D. sun-starved渴望阳光的。根据前文可知，小镇差不多半年没有阳光，故可知小镇人们渴望阳光，故选D。
+【59题详解】
+考查形容词词义辨析。A. big大的；B. clear清晰的；C. cold冷的；D. easy容易的。根据前文可知，镜子反射的光线有限，范围不够大，故选A。
+【60题详解】
+考查动词词义辨析。A. trying尝试；B. waiting    等待；C. watching    观看；D. sharing分享。根据句意可知，大家一起晒太阳就足够了，故选D。

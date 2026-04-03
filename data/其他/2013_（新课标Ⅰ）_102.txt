@@ -1,0 +1,13 @@
+Question:
+33. “You  can’t  judge  a book  by its cover,”  ________  .  
+A. as the saying  goes old      B. goes as the old saying    
+C. as the old saying  goes      D. goes as old the saying
+
+
+Answers:
+['C']
+
+Analysis:
+【解答】答案： C． as引导非限制性定语从句，表示 "正如 "，不用倒装． 故选 C
+． 
+【点评】
