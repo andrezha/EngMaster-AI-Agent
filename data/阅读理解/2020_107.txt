@@ -1,0 +1,31 @@
+YEAR: 2020
+CAT: （新课标Ⅲ）
+==================================================
+[PASSAGE]
+D
+We are the products of evolution, and not just evolution that occurred billions of years ago. As scientists look deeper into our genes (基因), they are finding examples of human evolution in just the past few thousand years. People in Ethiopian highlands have adapted to living at high altitudes. Cattle -raising people in East Africa and northern Europe have gained a mutation (突变) that helps them digest milk as adults.
+On Thursday in an article published in Cell, a team of researchers reported a new kind of adaptation - not to air or to food, but to the ocean. A group of sea-dwelling people in Southeast Asia have evolved into better divers. The Bajau, as these people are known, number in the hundreds of thousands in Indonesia, Malaysia and the Philippines. They have traditionally lived on houseboats; in recent times, they’ve also built houses on stilts (支柱) in coastal waters. “They are simply a stranger to the land,” said Redney C. Jubilado, a University of Hawaii researcher who studies the Bajau.
+Dr. Jubilado first met the Bajau while growing up on Samal Island in the Philippines. They made a living as divers, spearfishing or harvesting shellfish. “We were so amazed that they could stay underwater much longer than us local islanders,” Dr. Jubilado said. “I could see them actually walking under the sea.”
+In2015, Melissa Ilardo, then a graduate student in genetics at the University of Copenhagen, heard about the Bajau. She wondered if centuries of diving could have led to the evolution of physical characteristics that made the task easier for them. “it seemed like the perfect chance for natural selection to act on a population,” said Dr. Ilardo. She also said there were likely a number of other genes that help the Bajau dive.
+
+==================================================
+[QUESTIONS]
+
+--- Q_32 (ANSWER: B) ---
+What does the author want to tell us by the examples in paragraph 1?
+A. Environmental adaptation of cattle raisers.	B. New knowledge of human evolution.
+C. Recent findings of human origin.	D. Significance of food selection.
+
+--- Q_33 (ANSWER: D) ---
+Where do the Bajau build their houses?
+A. In valleys.	B. Near rivers.	C. On the beach.	D. Off the coast.
+
+--- Q_34 (ANSWER: C) ---
+Why was the young Jubilado astonished at the Bajau?
+A. They could walk on stilts all day.	B. They had a superb way of fishing.
+C. They could stay long underwater.	D. They lived on both land and water.
+
+--- Q_35 (ANSWER: A) ---
+What can be a suitable title for the text?
+A. Bodies Remodeled for a Life at Sea	B. Highlanders’ Survival Skills
+C. Basic Methods of Genetic Research	D. The World’s Best Divers

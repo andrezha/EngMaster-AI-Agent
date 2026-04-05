@@ -1,0 +1,46 @@
+YEAR: 2018
+CAT: （新课标ⅲ）
+==================================================
+[PASSAGE]
+A
+Welcome to Holker Hall & Gardens
+Visitor Information
+How to Get to Holker
+By Car：Follow brown signs on A590 from J36, M6. Approximale travel times: 
+Windermere—20 minutes, Kendal—25 minutes, Lancaster—45 minutes, Manchester—1 hour 30 minutes.
+By Rail: The nearest station is Cark-in-Cartmel with trains to Carnforth, Lancaster Preston for connections to major cities & airports.
+Opening Times
+Sunday—Friday (closed on Saturday)11:00 am—4:00pm, 30th March—2nd November.
+Admission Charges
+Hall & Gardens			  Gardens
+Adults:			  £12.00					£8.00
+Groups			  £9						£5.50
+
+Special Events
+Producers’ Market   13th April
+Join us to taste a variety of fresh local food and drinks. Meet the producers and get some excellent recipe ideas.
+Holker Garden Festival   30th May
+    The event celebrate its 22nd anniversary with a great show of the very best of gardening,  making it one of the most popular events in gardening.
+National Garden Day   28th August
+Holker once again opens its gardens in aid of the disadvantaged. For just a small donation you can take a tour with our garden guide.
+Winter Market   8th November
+This is an event for all the family. Wander among a variety of shops selling gifts while enjoying a live music show and nice street entertainment.
+
+==================================================
+[QUESTIONS]
+
+--- Q_21 (ANSWER: D) ---
+How long does it probably take a tourist to drive to Holker from Manchester?
+A. 20minutes.		B. 25 minutes.		C. 45 minutes.		 D. 90 minutes.
+
+--- Q_22 (ANSWER: B) ---
+How much should a member of a tour group pay to visit to Hall & Cardens?
+A. £12.00.      B. £9.00.		  C. £8.00.		D. £5.
+
+--- Q_50 (ANSWER: D) ---
+
+
+--- Q_23 (ANSWER: MISSING) ---
+Which event will you go to if you want to see a live music show? 
+A. Producers’ Market.					B. Holker Garden Festival.
+C. National Garden Day.					D. Winter Market.

@@ -1,0 +1,28 @@
+YEAR: 2022
+CAT: （全国乙卷）
+==================================================
+[PASSAGE]
+C
+Can a small group of drones(无人机)guarantee the safety and reliability of railways and, at the same time, help railway operators save billions of euros each year? That is the very likely future of applying today’s “eyes in the sky” technology to making sure that the millions of kilometres of rail tracks and infrastructure(基础设施)worldwide are safe for trains on a 24/7 basis. 
+Drones are already being used to examine high-tension electrical lines. They could do precisely the same thing to inspect railway lines and other vital aspects of rail infrastructure such as the correct position of railway tracks and switching points. The more regularly they can be inspected, the more railway safety, reliability and on-time performance will be improved. Costs would be cut and operations would be more efficient(高效)across the board. 
+That includes huge savings in maintenance costs and better protection of railway personnel safety. It is calculated that European railways alone spend approximately 20 billion euros a year on maintenance, including sending maintenance staff, often at night, to inspect and repair the rail infrastructure. That can be dangerous work that could be avoided with drones assisting the crews’ efforts. 
+By using the latest technologies, drones could also start providing higher-value services for railways, detecting faults in the rail or switches, before they can cause any safety problems. To perform these tasks, drones for rail don’t need to be flying overhead. Engineers are now working on a new concept: the rail drones of the future. They will be moving on the track ahead of the train, and programmed to run autonomously. Very small drones with advanced sensors and AI and travelling ahead of the train could guide it like a co-pilot. With their ability to see ahead, they could signal any problem, so that fast-moving trains would be able to react in time.
+8. What makes the application of drones to rail lines possible?
+A. The use of drones in checking on power lines.	B. Drones’ ability to work at high altitudes.
+C. The reduction of cost in designing drones.	D. Drones’ reliable performance in remote areas.
+9. What does “maintenance” underlined in paragraph 3 refer to?
+A. Personnel safety.	B. Assistance from drones.
+C. Inspection and repair.	D. Construction of infrastructure.
+10. What function is expected of the rail drones?
+ATo provide early warning.	B. To make trains run automatically.
+C. To earn profits for the crews.	D. To accelerate transportation.
+
+==================================================
+[QUESTIONS]
+
+--- Q_11 (ANSWER: A) ---
+Which is the most suitable title for the text?
+A. What Faults Can Be Detected with Drones
+B. How Production of Drones Can Be Expanded
+C. What Difficulty Drone Development Will Face
+DHow Drones Will Change the Future of Railways

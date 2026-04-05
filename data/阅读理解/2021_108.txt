@@ -1,0 +1,31 @@
+YEAR: 2021
+CAT: （新课标Ⅰ）
+==================================================
+[PASSAGE]
+A
+The Biggest Stadiums in the World
+People have been pouring into stadiums since the days of ancient Greece. In around 80 A.D., the Romans built the Colosseum, which remains the world’s best known stadium and continues to inform contemporary design. Rome’s Colosseum was 157 feet tall and had 80 entrances, seating 50,000 people. However, that was small fry compared with the city’s Circus Maximus, which accommodated around 250,000 people.
+These days, safety regulations-not to mention the modern sports fan’s desire for a good view and comfortable seat—tend to keep stadium capacities（容量） slightly lower. Even soccer fans tend to have a seat each; gone are the days of thousands standing to watch the match. 
+For the biggest stadiums in the world, we have used data supplied by the World Atlas list so far, which ranks them by their stated permanent capacity, as well as updated information from official stadium websites. 
+All these stadiums are still funtiona1, still open and still hosting the biggest events in world sport. 
+·Rungrado 1st of May Stadium, Pyongyang D.P.R. Korea. Capacity: 150,000. Opened: May 1,1989. 
+·Michigan Stadium, Ann Arbor, Michigan, U. S. Capacity: 107,601. Opened: October 1, 1927. 
+·Beaver Stadium, State College, Pennsylvania, U. S. Capacity: 106,572. Opened: September 17, 1960. 
+·Ohio Stadium, Columbus, Ohio, U. S. Capacity: 104,944. Opened: October 7,1922.
+·Kyle Field, College Station, Texas, U. S. Capacity: 102,512. Opened: September 24, 1927.
+
+==================================================
+[QUESTIONS]
+
+--- Q_21 (ANSWER: D) ---
+How many people could the Circus Maximus hold?
+A. 104,944.	B. 107,601.	C. About 150,000.	D. About 250,000.
+
+--- Q_22 (ANSWER: C) ---
+Of the following stadiums, which is the oldest?
+A. Michigan Stadium.	B. Beaver Stadium.	C. Ohio Stadium.	D. Kyle Field.
+
+--- Q_23 (ANSWER: A) ---
+What do the listed stadiums have in common?
+A. They host big games.	B. They have become tourist attractions.
+C. They were built by Americans.	D. They are favored by architects.

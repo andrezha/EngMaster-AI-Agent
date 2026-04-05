@@ -1,0 +1,56 @@
+YEAR: 2017
+CAT: （新课标ⅱ）
+==================================================
+[PASSAGE]
+D 
+When  a leafy  plant  is under  attack , it doesn’t  sit quietly.  Back  in 1983,  two 
+scientists,  Jack Schultz  and Ian Baldwin,  reported  that young  maple  trees  getting  
+bitten  by insects  send out a particular  smell  that neighboring  plants  can get. These  
+  chemicals  come  from  the injured  parts  of the plant  and seem  to be an alarm.  What  the 
+plants  pump  through  the air is a mixture  of chemicals  known  as volatile  organic  
+compounds,  VOCs  for short.  
+Scientists  have  found  that all kinds  of plants  give out VOCs  when  being  
+attacked.  It’s a plant’s  way of crying  out. But is anyone  listening?  Apparently.  
+Because  we can watch  the neighbours  react.  
+Some  plants  pump  out smelly  chemicals  to keep  insects  away.  But others  do 
+double  duty.  They  pump  out perfumes  designed  to attract  different  insects  who are 
+natural  enemies  to the attackers.  Once  they arrive,  the tables  are turned . The attacker  
+who was lunching  now becomes  lunch.  
+In study  after study,  it appears  that these  chemical  conversations  help the 
+neighbors.  The damage  is usually  more  serious  on the first plant,  but the neighbors,  
+relatively  speaking,  stay safer  because  they heard  the alarm  and knew  what  to do. 
+Does  this mean  that plants  talk to each other?  Scientists  don’t  know.  Maybe  the 
+first plant  just made  a cry of pain or was sending  a message  to its own branches,  and 
+so, in effect,  was talking  to itself.  Perhaps  the neighbors  just happened  to “overhear”  
+the cry. So information  was exchanged,  but it wasn’t  a true, intentional  back  and 
+forth.  
+Charles  Darwin,  over 150 years  ago, imagined  a world  far busier,  noisier  and 
+more  intimate  (亲密的 ) than the world  we can see and hear.  Our senses  are weak.  
+There’s  a whole  lot going  on.
+
+==================================================
+[QUESTIONS]
+
+--- Q_32 (ANSWER: D) ---
+What  does a plant  do when  it is under  attack?  
+A. It makes  noises.      B. It gets help from  other  plants.  
+C. It stands  quietly      D. It sends  out certain  chemicals.
+
+--- Q_33 (ANSWER: A) ---
+What  does the author  mean  by “the tables  are turned”  in paragraph  3? 
+A. The attackers  get attacked.  
+B. The insects  gather  under  the table.  
+C. The plants  get ready  to fight  back.  
+D. The perfumes  attract  natural  enemies.
+
+--- Q_34 (ANSWER: B) ---
+Scientists  find from  their studies  that plants  can           . 
+  A. predict  natural  disasters            B. protect  themselves  against  insects  
+C. talk to one another  intentionally      D. help their neighbors  when  necessary
+
+--- Q_35 (ANSWER: C) ---
+What can we infer  from  the last paragraph?  
+A. The world is changing  faster  than ever.  
+B. People  have  stronger  senses  than before  
+C. The world  is more  complex  than it seems  
+D. People  in Darwin’s  time were  more  imaginative.

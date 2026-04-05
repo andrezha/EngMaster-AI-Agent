@@ -58,6 +58,7 @@ class HighSchoolEnglishAI(QMainWindow):
             self.btn_nav_scan.clicked.connect(self.switch_to_scan)
         if self.btn_nav_gaokao:
             self.btn_nav_gaokao.clicked.connect(self.switch_to_gaokao)
+        
 
     # --- 导航切换函数 ---
     def switch_to_vocab(self):

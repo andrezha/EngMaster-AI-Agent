@@ -1,0 +1,33 @@
+YEAR: 2022
+CAT: （全国乙卷）
+==================================================
+[PASSAGE]
+D
+The Government's sugar tax on soft drinks has brought in half as much money as Ministers first predicted it would generate, the first official data on the policy has shown. 
+First announced in April, 2016, the tax which applies to soft drinks containing more than 5g of sugar per 100ml, was introduced to help reduce childhood obesity（肥胖）. It is believed that today's children and teenagers are consuming three times the recommended level of sugar, putting them at a higher risk of the disease. 
+Initially the sugar tax was expected to make £520m a year for the Treasury. However, data of the first six months showed it would make less than half this amount. At present it is expected to generate £240m for the year ending in April 2019, which will go to school sports. 
+It comes after more than half of soft drinks sold in shops have had their sugar levels cut by manufacturers（制造商）so they can avoid paying the tax. Drinks now contain 45 million fewer kilos of sugar as a result of manufacturers' efforts to avoid the charge, according to Treasury figures. Since April drinks companies have been forced to pay between 18p and 24p for every litre of sugary drink they produce or import, depending on the sugar content. 
+However, some high sugar brands, like Classic Coca Cola, have accepted the sugar tax and are refusing to change for fear of upsetting consumers. Fruit juices, milk-based drinks and most alcoholic drinks are free of the tax, as are small companies manufacturing fewer than 1m litres per year. 
+Today's figures, according to one government official, show the positive influence the sugar tax is having by raising millions of pounds for sports facilities（设施）and healthier eating in schools. Helping the next generation to have a healthy and active childhood is of great importance, and the industry is playing its part.
+
+==================================================
+[QUESTIONS]
+
+--- Q_12 (ANSWER: C) ---
+Why was the sugar tax introduced?
+A. To collect money for schools.	B. To improve the quality of drinks.
+C. To protect children’s health.	D. To encourage research in education.
+
+--- Q_13 (ANSWER: D) ---
+How did some drinks companies respond to the sugar tax?
+A. They turned to overseas markets.	B. They raised the prices of their products.
+C. They cut down on their production.	D. They reduced their products’ sugar content.
+
+--- Q_14 (ANSWER: D) ---
+From which of the following is the sugar tax collected?
+A. Most alcoholic drinks.	B. Milk-based drinks.	C. Fruit juices.	D. Classic Coke.
+
+--- Q_15 (ANSWER: B) ---
+What can be inferred about the adoption of the sugar tax policy?
+A. It is a short-sighted decision.	B. It is a success story.
+C. It benefits manufacturers.	D. It upsets customers.

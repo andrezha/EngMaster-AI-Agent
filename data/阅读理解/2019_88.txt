@@ -1,0 +1,37 @@
+YEAR: 2019
+CAT: （新课标Ⅱ）
+==================================================
+[PASSAGE]
+A
+My Favourite Books
+Jo Usmar is a writer for Cosmopolitan and co-author of the This Book Will series(系列)of lifestyle books. Here she picks her top reads.
+Matilda
+Roald Dahl
+I once wrote a paper on the influence of fairy tales on Roald Dahl's writing and it gave me a new appreciation for his strange and delightful words. Matilda's battles with her cruel me parents and the bossy headmisres，Miss Trunchbull，are equally fumy and frightening，but they're also aspirational.
+After Dark
+Haruki Murakami
+It’s about two sisters-Eri，a model who either won’t or can’t stop sleeping，and Mari, a young student . In trying to connect to her sister. Mari starts changing her life and discovers a world of diverse ”night people” who are hiding secrets.
+Gone Girl
+Gillian Fynn
+There was a bit of me that didn't want to love this when everyone else on the planet did but the horror story is brilliant. There's tension and anxiety from the beginning as Nick and Amy battle for your trust. It's a real whodunit and the frustration when you realise what's going on is horribly enjoyable
+The Stand
+Stephen King
+This is an excellent fantasy novel from one of the best storytellers around. After a serious flu outbreak wipes out 99.4% of the world's population, a battle unfolds between good and evil among those let. Randall Flagg is one of the scariest characters ever.
+
+==================================================
+[QUESTIONS]
+
+--- Q_21 (ANSWER: C) ---
+Who does "I" refer to in the text?
+A. Stephen King.	B. Gillian Flynn.
+C. Jo Usmar.	D. Roald Dahl
+
+--- Q_22 (ANSWER: C) ---
+Which of the following tells about Mari and Eri?
+A. Cosmopolitan.	B. Matilda.
+C. After Dark	D. The Stand.
+
+--- Q_23 (ANSWER: D) ---
+What kind of book is Gone Girl?)
+A. A folk tale.	B. A biography.
+C. A love story.	D. A horror story.

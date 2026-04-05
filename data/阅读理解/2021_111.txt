@@ -1,0 +1,31 @@
+YEAR: 2021
+CAT: （新课标Ⅰ）
+==================================================
+[PASSAGE]
+D
+During an interview for one of my books, my interviewer said something I still think about often. Annoyed by the level of distraction（干扰）in his open office, he said, “That’s why I have a membership at the coworking space across the street — so I can focus”. His comment struck me as strange. After all, coworking spaces also typically use an open office layout（布局）. But I recently came across a study that shows why his approach works. 
+The researchers examined various levels of noise on participants as they completed tests of creative thinking. They were randomly divided into four groups and exposed to various noise levels in the background, from total silence to 50 decibels（分贝）, 70 decibels, and 85 decibels. The differences between most of the groups were statistically insignificant; however, the participants in the 70 decibels group — those exposed to a level of noise similar to background chatter in a coffee shop — significantly outperformed the other groups. Since the effects were small, this may suggest that our creative thinking does not differ that much in response to total silence and 85 decibels of background noise. 
+But since the results at 70 decibels were significant, the study also suggests that the right level of background noise — not too loud and not total silence — may actually improve one’s creative thinking ability. The right level of background noise may interrupt our normal patterns of thinking just enough to allow our imaginations to wander, without making it impossible to focus. This kind of “distracted focus” appears to be the best state for working on creative tasks. 
+So why do so many of us hate our open offices? The problem may be that, in our offices, we can’t stop ourselves from getting drawn into others’ conversations while we’re trying to focus. Indeed, the researchers found that face-to-face interactions and conversations affect the creative process, and yet a coworking space or a coffee shop provides a certain level of noise while also providing freedom from interruptions.
+32 Why does the interviewer prefer a coworking space?
+A. It helps him concentrate.	B. It blocks out background noise.
+C. It has a pleasant atmosphere.	D. It encourages face-to-face interactions.
+
+==================================================
+[QUESTIONS]
+
+--- Q_33 (ANSWER: A) ---
+Which level of background noise may promote creative thinking ability?
+A. Total silence.	B. 50 decibels	C. 70 decibels.	D. 8 5 decibels.
+
+--- Q_34 (ANSWER: C) ---
+What makes an open office unwelcome to many people?
+A. Personal privacy unprotected.	B. Limited working space.
+C. Restrictions on group discussion.	D. Constant interruptions.
+
+--- Q_35 (ANSWER: D) ---
+What can we infer about the author from the text?
+A. He’s a news reporter.
+B. He’s an office manager.
+C. He’s a professional designer.
+D. He’s a published writer.

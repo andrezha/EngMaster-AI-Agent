@@ -6,77 +6,57 @@
    <item>
     <layout class="QVBoxLayout" name="gk_left_col">
      <item>
-      <widget class="QTextEdit" name="gk_question_body">
-       <property name="placeholderText">
-        <string>真题文章加载中...</string>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-      </widget>
+      <layout class="QHBoxLayout" name="gk_type_selector_row">
+       <property name="spacing"><number>8</number></property>
+       <item><widget class="QPushButton" name="gk_btn_cloze"><property name="text"><string>完形填空</string></property></widget></item>
+       <item><widget class="QPushButton" name="gk_btn_reading"><property name="text"><string>阅读理解</string></property></widget></item>
+       <item><widget class="QPushButton" name="gk_btn_seven_five"><property name="text"><string>七选五</string></property></widget></item>
+       <item><widget class="QPushButton" name="gk_btn_grammar"><property name="text"><string>语法填空</string></property></widget></item>
+       <item><spacer name="gk_top_spacer"><property name="orientation"><enum>Qt::Horizontal</enum></property></spacer></item>
+      </layout>
      </item>
+     <item><widget class="QTextEdit" name="gk_question_body"><property name="readOnly"><bool>true</bool></property></widget></item>
      <item>
       <widget class="QScrollArea" name="gk_answer_scroll">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>200</height>
-        </size>
-       </property>
-       <property name="widgetResizable">
-        <bool>true</bool>
-       </property>
-       <widget class="QWidget" name="gk_answer_content">
-        <layout class="QVBoxLayout" name="dynamic_answer_layout"/>
-       </widget>
+       <property name="minimumSize"><size><width>0</width><height>200</height></size></property>
+       <property name="widgetResizable"><bool>true</bool></property>
+       <widget class="QWidget" name="gk_answer_content"><layout class="QVBoxLayout" name="dynamic_answer_layout"/></widget>
       </widget>
      </item>
      <item>
       <layout class="QHBoxLayout" name="gk_btn_row">
-       <item>
-        <widget class="QPushButton" name="btn_gk_submit">
-         <property name="text">
-          <string>✅ 提交并判分</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="btn_gk_next">
-         <property name="text">
-          <string>⏭️ 下一题</string>
-         </property>
-        </widget>
-       </item>
+       <item><widget class="QPushButton" name="btn_gk_submit"><property name="text"><string>提交并判分</string></property></widget></item>
+       <item><widget class="QPushButton" name="btn_gk_next"><property name="text"><string>下一题</string></property></widget></item>
       </layout>
      </item>
     </layout>
    </item>
+
    <item>
     <layout class="QVBoxLayout" name="gk_right_col">
+    <item>
+     <widget class="QTextEdit" name="gk_result_panel">
+      <property name="readOnly"><bool>true</bool></property>
+      <property name="placeholderText"><string>✅ 提交后此处显示正确答案</string></property>
+     </widget>
+    </item>     
      <item>
       <widget class="QTextEdit" name="gk_ai_display">
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-       <property name="placeholderText">
-        <string>AI 老师解析区...</string>
-       </property>
+       <property name="readOnly"><bool>true</bool></property>
+       <property name="placeholderText"><string>🤖 AI 老师深度解析区...</string></property>
       </widget>
      </item>
+     
      <item>
       <layout class="QHBoxLayout" name="gk_chat_input_row">
        <item>
         <widget class="QLineEdit" name="gk_chat_input">
-         <property name="placeholderText">
-          <string>有什么不懂的问 AI 老师...</string>
-         </property>
+         <property name="placeholderText"><string>有什么不懂的问 AI 老师...</string></property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="btn_gk_chat_send">
-         <property name="text">
-          <string>发送</string>
-         </property>
+         <property name="text"><string>发送</string></property>
         </widget>
        </item>
       </layout>

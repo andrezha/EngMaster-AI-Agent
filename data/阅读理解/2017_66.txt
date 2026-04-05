@@ -1,0 +1,50 @@
+YEAR: 2017
+CAT: （新课标ⅱ）
+==================================================
+[PASSAGE]
+C 
+Terrafugia  Inc. said Monday  that its new flying  car has completed  its first flight,  
+bringing  the company  closer  to its goal of selling  the flying  car within  the next year.  
+The vehicle  — named  the Transition  – has two seats , four wheels  and wings  that fold 
+up so it can be driven  like a car. The Transition,  which  flew at 1,400  feet for eight  
+minutes  last month,  can reach  around  70 miles  per hour on the road and 115 in the air. 
+It flies using  a 23-gallon  tank of gas and bums  5 gallons  per hour in the air. On the 
+ground,  it gets 35 miles  per gallon.  
+Around  100 people  have  already  put down  a $10,000  deposit  to get a Transition  
+when  they go on sale, and those  numbers  will likely  rise after Terrafugia  introduces  
+  the Transition  to the public  later this week  at the New  York  Auto  Show.  But don’t  
+expect  it to show  up in too many  driveways.  It’s expected  to cost $279,000.  And it 
+won’t  help if you’re  stuck  in traffic.  The car needs  a runway.  
+Inventors  have  been  trying  to make  flying  cars since  the 1930s,  according  to 
+Robert  Mann,  an airline  industry  expert.  But Mann  thinks  Terrafugia  has come  closer  
+than anyone  to making  the flying  car a reality.  The govemment  has already  permitted  
+the company  to use special  materials  to make  it easier  for the vehicle  to fly. The 
+Transition  is now going  through  crash  tests to make  sure it meets  federal  safety  
+standards.  
+Mann  said Terrafugia  was helped  by the Federal  Aviation  Administration’s  
+decision  five years  ago to create  a separate  set of standards  for light sport  aircraft,  
+which  are lower  than those  pilots  of larger  planes . Terrafugia  says an owner  would  
+need  to pass a test and complete  20 hours  of flying  time to be able to fly the 
+Transition,  a requirement  pilots  would  find redatively  easy to meet.
+
+==================================================
+[QUESTIONS]
+
+--- Q_28 (ANSWER: A) ---
+What  is the first paragraph  mainly  about?  
+A. The basic  data of the Transition.      B. The advantages  of flying  cars. 
+C. The potential  market  for flying  cars.  D. The designers  of the Transition.
+
+--- Q_29 (ANSWER: C) ---
+Why  is the Transition  unlikely  to show  up in too many  driveways?  
+A. It causes  traffic  jams.              B. It is difficult  to operate.  
+C. It is very expensive.               D. It bums  too much  fuel.
+
+--- Q_30 (ANSWER: B) ---
+What  is the government’s  attitude  to the development  of the flying  car? 
+A. Cautious .      B. Favorable.      C. Ambiguous.     D. Disapproving.
+
+--- Q_31 (ANSWER: D) ---
+What  is the best title for the text?  
+A. Flying  Car at Auto  Show .          B. The Transition’s  Fist Flight . 
+C. Pilots’  Dream  Coming  True .        D. Flying  Car Closer  to Reality .

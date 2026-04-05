@@ -1,0 +1,44 @@
+YEAR: 2019
+CAT: （新课标Ⅲ）
+==================================================
+[PASSAGE]
+A
+OPENINGS AND PREVIEWS
+Animals Out of Paper
+Yolo！Productions and the Great Griffon present the play by Rajiv Joseph，in which an origami(折纸术)artist invites a teenage talent and his teacher into her studio. Merri Milwe directs. In previews. Opens Feb.
+
+==================================================
+[QUESTIONS]
+
+--- Q_12 (ANSWER: A) ---
+(West Park Presbyterian Church，165 W.86th St.212-868-4444.)
+The Audience
+Helen Mirren stars in the play by Peter Morgan，about Queen Elizabeth II of the UK and her private meetings with twelve Prime Ministers in the course of sixty years. Stephen Daldry directs. Also starring Dylan Baker and Judith Ivey. Previews begin Feb.
+
+--- Q_14 (ANSWER: D) ---
+(Schoenfeld，236 W.45th St.212-239-6200.)
+Hamilton
+Lin-Manuel Miranda wrote this musical about Alexander Hamilton，in which the birth of America is presented as an immigrant story. Thomas Kail directs. In previews. Opens Feb.
+
+--- Q_17 (ANSWER: C) ---
+(Public，425 Lafayette St.212-967-7555.)
+On the Twentieth Century
+Kristin Chenoweth and Peter Gallagher star in the musical comedy by Betty Comden and Adolph Green，about a Broadway producer who tries to win a movie star's love during a cross-country train journey. Scott Ellis directs，for Roundabout Theatre Company. Previews begin Feb.
+
+--- Q_12 (ANSWER: MISSING) ---
+(American Airlines Theatre，227 W.42nd St.212-719-1300.)
+
+--- Q_21 (ANSWER: MISSING) ---
+What is the play by Rajiv Joseph probably about?.
+A. A type of art.	B. A teenager's studio.
+C. A great teacher.	D. A group of animals.
+
+--- Q_22 (ANSWER: MISSING) ---
+Who is the director of The Audience?
+A. Helen Mirren.	B. Peter Morgan.
+C. Dylan Baker.	D. Stephen Daldry.
+
+--- Q_23 (ANSWER: MISSING) ---
+Which play will you go to if you are interested in American history?
+A. Animals Out of Paper.	B. The Audience.
+C. Hamilton.	D. On the Twentieth Century.
