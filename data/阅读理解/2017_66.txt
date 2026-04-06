@@ -30,21 +30,50 @@ Transition,  a requirement  pilots  would  find redatively  easy to meet.
 ==================================================
 [QUESTIONS]
 
---- Q_28 (ANSWER: A) ---
-What  is the first paragraph  mainly  about?  
-A. The basic  data of the Transition.      B. The advantages  of flying  cars. 
-C. The potential  market  for flying  cars.  D. The designers  of the Transition.
+[Q_28] (ANS: A)
+What  is the first paragraph  mainly  about?
+A. The basic  data of the Transition.
+B. The advantages  of flying  cars.
+C. The potential  market  for flying  cars.
+D. The designers  of the Transition.
 
---- Q_29 (ANSWER: C) ---
-Why  is the Transition  unlikely  to show  up in too many  driveways?  
-A. It causes  traffic  jams.              B. It is difficult  to operate.  
-C. It is very expensive.               D. It bums  too much  fuel.
+[Q_29] (ANS: C)
+Why  is the Transition  unlikely  to show  up in too many  driveways?
+A. It causes  traffic  jams.
+B. It is difficult  to operate.
+C. It is very expensive.
+D. It bums  too much  fuel.
 
---- Q_30 (ANSWER: B) ---
-What  is the government’s  attitude  to the development  of the flying  car? 
-A. Cautious .      B. Favorable.      C. Ambiguous.     D. Disapproving.
+[Q_30] (ANS: B)
+What  is the government’s  attitude  to the development  of the flying  car?
+A. Cautious .
+B. Favorable.
+C. Ambiguous.
+D. Disapproving.
 
---- Q_31 (ANSWER: D) ---
-What  is the best title for the text?  
-A. Flying  Car at Auto  Show .          B. The Transition’s  Fist Flight . 
-C. Pilots’  Dream  Coming  True .        D. Flying  Car Closer  to Reality .
+[Q_31] (ANS: D)
+What  is the best title for the text?
+A. Flying  Car at Auto  Show .
+B. The Transition’s  Fist Flight .
+C. Pilots’  Dream  Coming  True .
+D. Flying  Car Closer  to Reality .
+
+==================================================
+[ANALYSIS]
+28. A 细节理解题 . 根据句子 The Transition , which  flew at 1,400 feet for eight  
+minutes  last month , can reach  around  70 miles  per hour on the road and 115 in the air. 
+It flies using  a 23-gallon  tank of gas and bums  5 gallons  per hour in the air. On the 
+ground , it gets 35 miles  per gallon . 可以看出列出的都是 Transition 的基本数据 ，所
+以答案选 A.
+29. C 推理判断题 . 根据句子 But don’t expect  it to show  up in too many  driveways . 
+It’s expected  to cost $279 ,000. 但不要指望它出现在太多的车道，它的预计成本
+$279 ,000. 由此可以推断出  Transition  太昂贵了，很少有人买得起， 所以答案选
+C.
+30. B 推理判断题 . 根据句子 The government  has already  permitted  the company  to 
+use special  materials  to make  it easier  for the vehicle  to fly. 政府已经允许该公司使
+用特殊材料，使车辆更容易飞行 . 可以推断出政府对于制造这种车是赞许的，
+favourable  "赞许的 ".
+31. D 标题大意题 . 根据文章第一段第一句可知新的飞行汽车已经完成了第一次
+飞行，使该公司更接近其在明年出售飞行汽车的目标 . 以及最后一段说一个车主
+需要通过一个测试， 完成 20个小时的飞行时间， 由此可见 Flying  Car Closer  to 
+Reality符合本文的主旨， 所以答案选 D.

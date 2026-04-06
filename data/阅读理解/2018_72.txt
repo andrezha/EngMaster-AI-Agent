@@ -34,18 +34,37 @@ water.  All riders  are equipped  with reflective  vests  and safety  lights.
 ==================================================
 [QUESTIONS]
 
---- Q_21 (ANSWER: A) ---
-Which  tour do you need  to book  in advance?  
-A. Cherry  Blossom  like Tour  in Washington,  D.C.  
-B. Washington  capital  Monuments  Bicycle  Tour.  
-C. Capital  City Bike  Tour  in Washington,  D.C.  
+[Q_21] (ANS: A)
+Which  tour do you need  to book  in advance?
+A. Cherry  Blossom  like Tour  in Washington,
+D.C.
+B. Washington  capital  Monuments  Bicycle  Tour.
+C. Capital  City Bike  Tour  in Washington,
+D.C.
 D. Washington  Capital  Sites  at Night  Bicycle  Tour.
 
---- Q_22 (ANSWER: D) ---
-What  will you do on the Capital  City Bike  Tour?   
-A. Meet  famous  people.             B. Go to a national  park.  
-C. Visit  well-known  museums.       D. Enjoy  interesting  stories.
+[Q_22] (ANS: D)
+What  will you do on the Capital  City Bike  Tour?
+A. Meet  famous  people.
+B. Go to a national  park.
+C. Visit  well-known  museums.
+D. Enjoy  interesting  stories.
 
---- Q_23 (ANSWER: D) ---
-Which  of the following  does the bicycle  tour at night  provide?  
-A. City maps.  B. Cameras.       C. Meals        D. Safety  lights
+[Q_23] (ANS: D)
+Which  of the following  does the bicycle  tour at night  provide?
+A. City maps.
+B. Cameras.
+C. Meals
+D. Safety  lights
+
+==================================================
+[ANALYSIS]
+21．A．细节理解题 ．在Cherry  Blossom  Bike  Tour  in Washington , D.C.中Reserve  
+your spot before  availability  --- and the cherry  blossoms  disappear! 可知樱花消失之
+前要提前预定自己的位置， 故答案为 A．
+22．D．细节理解题．根据  Knowledgeable  guides  will entrtain  you with the most  
+interesting  stories  about  Presidents , Congress , memorials , and parks可知知识渊博的
+导游会给你带来最有趣的关于总统 、国会、纪念馆和公园的故事 ，由此判断答案
+为D．
+23．D．细节理解题． 根据 All riders  are equipped  with reflective  vests  and safety  
+lights可知所有骑手都配有反光背心和安全灯， 由此判断答案为 D．

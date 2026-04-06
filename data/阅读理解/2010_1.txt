@@ -36,24 +36,46 @@ The basketball  team  helped  pay for cups.
 ==================================================
 [QUESTIONS]
 
---- Q_59 (ANSWER: B) ---
-What  is the text mainly  about？　   　 
-A. A best-selling  coffee .             B. A special  educational  program . 
-C. Government  support  for schools .   D. A new type of teacher -student  relationship .
+[Q_59] (ANS: B)
+What  is the text mainly  about？
+A. A best-selling  coffee .
+B. A special  educational  program .
+C. Government  support  for schools .
+D. A new type of teacher -student  relationship .
 
---- Q_60 (ANSWER: C) ---
-The Dixie  PIT program  was introduced  in order  to　   　. 
-A. raise  money  for school  affairs        B. do some  research  on nutrition  
-C. develop  students ’ practical  skills      D. supply  teachers  with drinks
+[Q_60] (ANS: C)
+The Dixie  PIT program  was introduced  in order  to　   　.
+A. raise  money  for school  affairs
+B. do some  research  on nutrition
+C. develop  students ’ practical  skills
+D. supply  teachers  with drinks
 
---- Q_61 (ANSWER: C) ---
-How  did Christy  McKinley  know  Ms. Schatzman ’s opinion  of the chi tea?　   　 
-A. She met her in the shop .          B. She heard  her telling  others . 
-C. She talked  to her on the phone .     D. She went  to her office  to deliver  the tea.
+[Q_61] (ANS: C)
+How  did Christy  McKinley  know  Ms. Schatzman ’s opinion  of the chi tea?
+A. She met her in the shop .
+B. She heard  her telling  others .
+C. She talked  to her on the phone .
+D. She went  to her office  to deliver  the tea.
 
---- Q_62 (ANSWER: B) ---
-We know  from  the text that Ginger  Gray　   　. 
-A. manages  the Dixie  PIT program  in Kenton  County  
-B. sees that the drinks  meet  health  standards  
-C. teaches  at Dixie  Heights  High  School  
+[Q_62] (ANS: B)
+We know  from  the text that Ginger  Gray　   　.
+A. manages  the Dixie  PIT program  in Kenton  County
+B. sees that the drinks  meet  health  standards
+C. teaches  at Dixie  Heights  High  School
 D. owns  the school ’s coffee  shop
+
+==================================================
+[ANALYSIS]
+59．B  主旨大意题． 本篇文章讲的是在 Dixie  Heights  High  School，里面开了一
+家咖啡店是由那些有特殊学习需要的学生来经营的一个实验试点 ．根据文章所讲
+的，故选 B项．
+60．C  推理判断题 ．根据文章的第五段和第六段 "Although  some  of the students  are 
+not disabled , many  are, and the PIT helps  them  prepare  for life after high school ."和
+"They  learn  not only how to run a coffee  shop  but also how to deal with their affairs . 
+  They  keep  a timecard  and receive  paychecks , which  they keep  in check  registers ."可
+知，这家咖啡店的开展主要是为了培养学生的实践能力， 故选 C项．
+61．C  细节判断题．根据第四段中 "after  hanging  up with the teacher ."，"hang  up 
+是挂断电话的意思 "，故选 C项．
+62．B  推理判断题 ．根据文章倒数第二段中 "Kenton  County  Food  Service  Director  
+Ginger  Gray  helped . She made  sure all the drinks , which  use non-fat milk, fell within  
+nutrition  guidelines ."可知，饮品符合健康标准， 故选 B项．

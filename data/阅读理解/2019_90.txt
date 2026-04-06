@@ -12,30 +12,42 @@ That freedom to choose is one reason more people like to eat alone. There was a 
 ==================================================
 [QUESTIONS]
 
---- Q_28 (ANSWER: B) ---
+[Q_28] (ANS: B)
 What are the statistics in paragraph 2 about?
 A. Food variety.
 B. Eating habits.
 C. Table manners.
 D. Restaurant service.
 
---- Q_29 (ANSWER: C) ---
+[Q_29] (ANS: C)
 Why does Bechtel prefer to go out for lunch?
 A. To meet with her coworkers.
 B. To catch up with her work.
 C. To have some time on her own.
 D. To collect data for her report.
 
---- Q_30 (ANSWER: D) ---
+[Q_30] (ANS: D)
 What do we know about Mazoleny?
 A. He makes videos for the bar.
 B. He’s fond of the food at the bar.
 C. He interviews customers at the bar.
 D. He’s familiar with the barkeeper.
 
---- Q_31 (ANSWER: A) ---
+[Q_31] (ANS: A)
 What is the text mainly about?
 A. The trend of having meals alone.
 B. The importance of self-reflection.
 C. The stress from working overtime.
 D. The advantage of wireless technology.
+
+==================================================
+[ANALYSIS]
+【解析】
+【28题详解】
+推理判断题。根据第二段可知，在美国，约有46%的人们独自用餐，53%的人们独自吃早餐，46%的人们独自吃午餐，只有74%的人们晚餐不是独自享用，故可知本段的数据是关于用餐习惯，故选B。
+【29题详解】
+细节理解题。根据第三段A lunchtime escape allows her to keep a boss from tapping her on the shoulder. Today, I just wanted some time to myself.可知，Bechtel一个人吃午饭可以让她逃离老板的关注，给自己留一些自由时间，故选C。
+【30题详解】
+推理判断题。根据第四段he likes that he can sit and check his phone in peace or chat up the barkeeper with whom he’s on a first-name basis if he wants to have a little interaction.可知Mazoleny喜欢这样的气氛，因为可以坐在那里，查看手机信息，或者想聊天了，可以直呼吧台服务员名字和他聊天，故可知，他与服务员很熟悉，可以直呼对方名字，故选D。
+【31题详解】
+主旨大意题。本文通过一份调查结果显示，很大比例的人选择独自用餐，原因很多，比如逃离工作氛围，或者反思自己，但是独自用餐正慢慢成为一种趋势，故选A。

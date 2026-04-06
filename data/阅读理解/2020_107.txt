@@ -11,21 +11,44 @@ In2015, Melissa Ilardo, then a graduate student in genetics at the University of
 ==================================================
 [QUESTIONS]
 
---- Q_32 (ANSWER: B) ---
+[Q_32] (ANS: B)
 What does the author want to tell us by the examples in paragraph 1?
-A. Environmental adaptation of cattle raisers.	B. New knowledge of human evolution.
-C. Recent findings of human origin.	D. Significance of food selection.
+A. Environmental adaptation of cattle raisers.
+B. New knowledge of human evolution.
+C. Recent findings of human origin.
+D. Significance of food selection.
 
---- Q_33 (ANSWER: D) ---
+[Q_33] (ANS: D)
 Where do the Bajau build their houses?
-A. In valleys.	B. Near rivers.	C. On the beach.	D. Off the coast.
+A. In valleys.
+B. Near rivers.
+C. On the beach.
+D. Off the coast.
 
---- Q_34 (ANSWER: C) ---
+[Q_34] (ANS: C)
 Why was the young Jubilado astonished at the Bajau?
-A. They could walk on stilts all day.	B. They had a superb way of fishing.
-C. They could stay long underwater.	D. They lived on both land and water.
+A. They could walk on stilts all day.
+B. They had a superb way of fishing.
+C. They could stay long underwater.
+D. They lived on both land and water.
 
---- Q_35 (ANSWER: A) ---
+[Q_35] (ANS: A)
 What can be a suitable title for the text?
-A. Bodies Remodeled for a Life at Sea	B. Highlanders’ Survival Skills
-C. Basic Methods of Genetic Research	D. The World’s Best Divers
+A. Bodies Remodeled for a Life at Sea
+B. Highlanders’ Survival Skills
+C. Basic Methods of Genetic Research
+D. The World’s Best Divers
+
+==================================================
+[ANALYSIS]
+【解析】
+这是一篇说明文。最近一项对人类基因的研究发现，人类的进化不仅仅发生在数十亿年前，而且最近几千年也有。Bajau人因为靠海为生，他们的身体已经进化成更能适应海洋生活。
+【32题详解】
+推理判断题。根据第一段的we are the products of evolution, and not just evolution that occurred billions of years ago. As scientists look deeper into our genes, they are finding examples of human evolution in just the past few thousand years.(我们是进化的产物，而且不仅仅是数十亿年前的产物。当科学家更深入的研究我们的基因时，他们发现了人类在过去几千年进化的例子)可知，作者列举第一段的例子是为了告诉我们关于人类进化的一个新信息，那就是人类在最近几千年也在进化。B. New knowledge of human evolution.(人类进化的新知识)符合以上说法，故选B项。
+【33题详解】
+细节理解题。根据第二段的The Bajau, as these people are known, number in hundreds of thousands in Indonesia, Malaysia and the Philippines. They have traditionally live on houseboats; in recent times, they've also built houses on stilts in coastal waters.(这些人被称为Bajau，在印度尼西亚、马来西亚和菲律宾有数十万人。他们一直住在船屋上；最近他们也把房子建在沿海水域的吊脚楼上)可知，Bajau把房子建在沿海区域。D. Off the coast.(沿海)符合以上说法，故选D项。
+【34题详解】
+细节理解题。根据第三段的we were so amazed that they could stay underwater much longer than us local islanders.(我们很惊讶，他们在水下待的时间比我们当地的岛民要长的多)可知，让Jubilado感到吃惊的是Bajau人能在水下待更长的时间。C. They could stay long underwater. (他们能在水下待很长时间)符合以上说法，故选C项。
+【35题详解】
+主旨大意题。根据文章的主要内容，尤其是第二段的On Thursday in an article published in Cell, a team of researchers reported a new kind of adaption-not to air or to food, but to the ocean.(周四，在《细胞》杂志上发表的一篇文章中，一群研究人员报道了一种新的适应——不是空气也不是食物，而是海洋)可知，本文主要讲述了一种新的进化，即长期生活在海边，靠海为生的生活方式，让Bajau人的身体进化成更适应海洋生活。A. Bodies Remodeled for a Life at Sea.(身体为适应海洋生活而重塑)可以作为本文标题，故选A项。
+第二节

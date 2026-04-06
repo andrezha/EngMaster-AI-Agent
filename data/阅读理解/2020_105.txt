@@ -11,28 +11,42 @@ In some cases, it’s not so much the treatment of the animals on set in the stu
 ==================================================
 [QUESTIONS]
 
---- Q_24 (ANSWER: D) ---
+[Q_24] (ANS: D)
 Why did the animal activists gather on Hollywood Boulevard?
 A. To see famous film stars.
 B. To oppose wearing fur coats.
 C. To raise money for animal protection.
 D. To express thanks to some filmmakers.
-25 What does paragraph 2 mainly talk about?
+[Q_25] (ANS: B)
+What does paragraph 2 mainly talk about?
 A. The cost of making “Apes.”
 B. The creation of digitalized apes.
 C. The publicity about “Apes.”
 D. The performance of real apes.
 
---- Q_26 (ANSWER: B) ---
+[Q_26] (ANS: B)
 What does the underlined phrase “keeping tabs on” in paragraph 3 probably mean?
 A. Listing completely.
 B. Directing professionally.
 C. Promoting successfully.
 D. Watching carefully.
 
---- Q_27 (ANSWER: D) ---
+[Q_27] (ANS: D)
 What can we infer from the last paragraph about animal actors?
 A. They may be badly treated.
 B. They should take further training.
 C. They could be traded illegally
 D. They would lose popularity.
+
+==================================================
+[ANALYSIS]
+【解析】
+这是一篇新闻报道。短文报道了电影“猩球崛起”上个月首次与公众见面。动物爱好者聚集在好莱坞前，感谢电影制作者，在电影拍摄时，没有使用真的类人猿。现在的动物拍摄使用的是数字化人猿的创造技术，而一些电影的拍摄却存在着虐地动物的现象，这让一个非盈利的组织密切关注此事。但有些拍摄也是不能够被监测到的。
+【24题详解】
+细节理解题。根据第一段“Instead, one activist ,dressed in a full -body monkey suit ,had arrived with a sign praising the filmmakers:“Thanks for not using real apes”可知，相反，一名身穿全套猴服的活动人士来到现场，手里拿着一块牌子，称赞电影制作人:“感谢你们不用真正的猿猴。所以动物保护者聚集在好莱坞大道是为了向电影制作者表示感谢。故选D项。
+【25题详解】
+主旨大意题。根据第二段“The creative team behind "Apes" used motion-capture (动作捕捉) technology to create digitalized animals, spending tens of millions of dollars on technology that I records an actor’s performance and later processes it with computer graphics to create a final image (图像). ”可知，“人猿”背后的创作团队利用动作捕捉技术创造数字化的动物，在记录演员表演的技术上，花费数千万美元，然后用电脑图形处理，以产生最终的影像。由此可知，第二段主要是关于数字化人猿的创造。故选B项。
+【26题详解】
+词句猜测题。根据第三段划线前的句子“One nonprofit organization, which monitors the treatment or animals in filmed entertainment”（一个非营利组织，监控动物在电影娱乐中的待遇）以及下文Already, a number of films, including "Water for Elephants," "The Hangover Part Ⅱ" and "Zookeeper," have drawn the anger of activists who say the creatures acting in them haven’t been treated properly.（许多电影,包括“大象的眼泪”,“宿醉Ⅱ”和“管理员”,引起了动物保护人士的愤怒，他们说影片中的动物没有遭到很好的对待。）由此可知，其中一家监控动物待遇的非营利组织，今年正密切关注着2000多部影片。由此判断出，划线词的意思是“密切关注”。故选D项。
+【27题详解】
+推理判断题。根据最后一段In some cases, it’s not so much the treatment of the animals on set in the studio that has activists worried; it’s the off-set training and living conditions that are raising concerns. And there are questions about the films made outside the States, which sometimes are not monitored as closely as productions filmed in the Sates.”（在某些情况下，让活动人士担心的并不是电影棚里对动物的待遇;让人担忧的是训练和生活条件。还有一些关于在美国以外拍摄的电影的问题，这些电影有时不像在美国拍摄的电影那样受到严密的监控。）可知，在某些情况下，让活动人士担心的并不是工作室里动物的待遇;令人担忧的是训练和生活条件。由此判断出动物演员可能受到虐待。故选A项。

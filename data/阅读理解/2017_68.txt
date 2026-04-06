@@ -32,17 +32,30 @@ Advance reservations required.
 ==================================================
 [QUESTIONS]
 
---- Q_21 (ANSWER: A) ---
+[Q_21] (ANS: A)
 Which of the tours is available in March?
-A. San Francisco Winery Tour.     B. Back to the Fifties Tour.
-C. Spooky Hallowen Tour.        D. Holiday Lights Tour.
+A. San Francisco Winery Tour.
+B. Back to the Fifties Tour.
+C. Spooky Hallowen Tour.
+D. Holiday Lights Tour.
 
---- Q_22 (ANSWER: C) ---
+[Q_22] (ANS: C)
 What can tourists do on Back to the Fifties Tours?
-A. Go to Treasure Island.      B. Enjoy the holiday scenes.
-C. Have free ice cream.        D. Visit the Presidio district.
+A. Go to Treasure Island.
+B. Enjoy the holiday scenes.
+C. Have free ice cream.
+D. Visit the Presidio district.
 
---- Q_23 (ANSWER: D) ---
+[Q_23] (ANS: D)
 What are tourists required to do to go on Holiday Lights Tour?
-A. Take some drinks.        B. Set off early in the morning.
-C. Wear warm clothes.       D. Make reservations in advance.
+A. Take some drinks.
+B. Set off early in the morning.
+C. Wear warm clothes.
+D. Make reservations in advance.
+
+==================================================
+[ANALYSIS]
+【解答】ACD
+21．A．细节理解题．根据February 1st through April 30th可知，旧金山酒庄之旅的开放时间是2月1日到4月30日．故在三月
+22．C．细节理解题．根据the 1950s! Enjoy fun history as we take you through San Francisco for a free taste of ice cream可知，回到五十年代之旅中可以吃免费的冰淇淋．故选C．
+23．D．细节理解题．根据Advance reservations required．可知，游客需要提前预定去灯光度假之旅．故选D．

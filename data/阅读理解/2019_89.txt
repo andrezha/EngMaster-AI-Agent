@@ -12,30 +12,43 @@ In that sense, I’m pretty sure volunteering is more of a selfish act than I’
 ==================================================
 [QUESTIONS]
 
---- Q_24 (ANSWER: C) ---
+[Q_24] (ANS: C)
 What can we infer about the parent from her reply in paragraph l？
 A. She knows little about the club.
 B. She isn't good at sports.
 C. She just doesn't want to volunteer.
 D. She's unable to meet her schedule.
 
---- Q_25 (ANSWER: B) ---
+[Q_25] (ANS: B)
 What does the underlined phrase“tug at the heartstrings”in paragraph 2 mean ?
 A. Encourage team work.
 B. Appeal to feeling.
 C. Promote good deeds
 D. Provide advice.
 
---- Q_26 (ANSWER: D) ---
+[Q_26] (ANS: D)
 What can we learn about the parent from paragraph 3?
 A. She gets interested in lacrosse.
 B. She is proud of her kids.
 C. She’ll work for another season.
 D. She becomes a good helper.
 
---- Q_27 (ANSWER: B) ---
+[Q_27] (ANS: B)
 Why does the author like doing volunteer work?
 A. It gives her a sense of duty.
 B. It makes her very happy.
 C. It enables her to work hard.
 D. It brings her material rewards.
+
+==================================================
+[ANALYSIS]
+【解析】
+本文是一篇夹叙夹议文。文中讲述了作者成功说服了一个家长参加志愿者团队，作为一名志愿者作者发挥了自己的作用，并获得了快乐。
+【24题详解】
+推理判断题。根据文章第一段中的 You can use me as a last resort（选择）, and if  nobody else volunteers，then I will do it.可知，你可以当我是最后的候选人，如果没有其他的志愿者，那么我就做。由此可推断出，她不想做自愿者。故选C。
+【25题详解】
+词义猜测题。根据划线前句she may just need a little persuading.和下面的一句话I mention the single parent with four kids running the show and I talk about the dad coaching a team that his kids aren't even on ...可知，作者为了劝服这位家长，举了两个例子。故可知，划线句此处应是“煽情”之意。故选B。
+【26题详解】
+细节理解题。根据第三段中这位家长作出的贡献及the same parent ends up becoming an invaluable member of the team可知，她最终成为了志愿者队伍中的重要的一员，也即是说，她成了一个好帮手。故选D。
+【27题详解】
+细节理解题。题干问作者为什么喜欢做志愿者工作。根据第四最两句Connecting to the community（社区）as you freely give your time, money, skills, or services provides a real joy. Volunteering just feels so good.可知，为社区做贡献可以带来真正的快乐， 参加志愿者活动活动能让人感觉快乐。故选B。

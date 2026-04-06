@@ -33,23 +33,40 @@ about  their intelligence  in a better  way.”
 ==================================================
 [QUESTIONS]
 
---- Q_45 (ANSWER: B) ---
-What  can mirror  tests tell us about  animals ? 　   　 
-A. Whether  they have  large  brains . 
-B. Whether  they have  self-awareness . 
-C. Whether  they enjoy  outdoor  exercises . 
+[Q_45] (ANS: B)
+What  can mirror  tests tell us about  animals ?
+A. Whether  they have  large  brains .
+B. Whether  they have  self-awareness .
+C. Whether  they enjoy  outdoor  exercises .
 D. Whether  they enjoy  playing  with mirrors .
 
---- Q_46 (ANSWER: D) ---
-Why  does the author  mention  apes and dolphins  in the text? 　   　 
-A. They  are most  familiar  to readers . 
-  B. They  are big favorites  with zoo visitors . 
-C. They  are included  in the study  by Reiss . 
+[Q_46] (ANS: D)
+Why  does the author  mention  apes and dolphins  in the text?
+A. They  are most  familiar  to readers .
+B. They  are big favorites  with zoo visitors .
+C. They  are included  in the study  by Reiss .
 D. They  are already  known  to be intelligent .
 
---- Q_47 (ANSWER: B) ---
-What  made  Happy  different  from  Maxine  and Patty ? 　   　 
-A. She used her nose to search  behind  the mirror . 
-B. She recognized  her own image  in the mirror . 
-C. She painted  a mark  on her own face. 
+[Q_47] (ANS: B)
+What  made  Happy  different  from  Maxine  and Patty ?
+A. She used her nose to search  behind  the mirror .
+B. She recognized  her own image  in the mirror .
+C. She painted  a mark  on her own face.
 D. She found  the hidden  camera .
+
+==================================================
+[ANALYSIS]
+45：B细节题．由第二段第一句 "Awareness  can be tested  by studying  whether  the 
+animal  recognizes  itself  in the mirror"可以通过研究动物是否能够认出镜中的自己
+，既是自己反射出的影像来测试意识．  可知正确答案为 B．
+46：D推断题．由第一段第一句 "For those  who study  the development  of 
+intelligence  in the animal  world，self-awareness  is an important  measurement ."可知，
+自我意识是衡量智力的一个重要标准．而第二段 "Only  humans  and some  
+intelligent  animals  like apes and dolphins，have  been  shown  to recognize  that the 
+image  in the mirror  is of themselves ."告诉我们只有大猩猩和海豚能像人类一样通
+过镜像测试，所以他们是有较高智力的， 故正确答案为 D．
+47：B细节题．由第七段第一句 "Of the three，Happy  then passed  the test，in which  
+a clear  mark  was painted  on one side of her face．She could  tell the mark  was there  by 
+looking  in the mirror，and she used the mirror  to touch  the mark  with her long nose."
+可知  Happy  通过镜子看到自己脸上的图画，而  Maxine  和 Patty  没有，故正确
+答案为 B．

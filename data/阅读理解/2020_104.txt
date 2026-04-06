@@ -16,15 +16,34 @@ Join Prof. Pedar Foss on our in-depth Tunisian tour. Tour highlights include the
 ==================================================
 [QUESTIONS]
 
---- Q_21 (ANSWER: A) ---
+[Q_21] (ANS: A)
 What can visitors see in both Classical Provence and Southern Spain？
-A. Historical monuments.	B. Fields of flowers.
-C. Van Gogh’s paintings.	D. Greek buildings.
+A. Historical monuments.
+B. Fields of flowers.
+C. Van Gogh’s paintings.
+D. Greek buildings.
 
---- Q_22 (ANSWER: C) ---
+[Q_22] (ANS: C)
 Which country is Prof. Thorp most knowledgeable about？
-A. France.	B. Spain.	C. China.	D. Tunisia.
+A. France.
+B. Spain.
+C. China.
+D. Tunisia.
 
---- Q_23 (ANSWER: B) ---
+[Q_23] (ANS: B)
 Which of the following highlight the Tunisian tour？
-A. White towns.	B. Underground cities.	C. Tile-roofed villages.	D. Rolling hills.
+A. White towns.
+B. Underground cities.
+C. Tile-roofed villages.
+D. Rolling hills.
+
+==================================================
+[ANALYSIS]
+【解析】
+这是一篇应用文。文章主要介绍了四个国家中，那些可以让人们回顾过去的著名景点。
+【21题详解】
+细节理解题。根据第一部分的We will visit some of the best-preserved Roman monuments in the world. (我们将参观一些世界上保存最完好的罗马建筑遗迹)和第二部分的we explore historical monuments and architecture.(我们探索历史遗迹和建筑)可知，在Classical Provence 和Southern Spain游客们可以参观历史遗迹。A. Historical monuments（历史遗迹）符合以上说法，故选A项。
+【22题详解】
+推理判断题。根据第三部分的China's Sacred Landscapes (21days)(中华神山 21天)和Discover the China of ''past ages'', its walled cities, temples and mountain scenery with Prof Robert Thorp. Highlights include China's most sacred peaks at Mount Tai and Hangzhou's rolling hills, waterways and peaceful temples (和Robert教授一起发现中国的过去，有墙的城市、寺庙和山景。精彩之处包括中国最神圣的泰山之巅，杭州起伏的群山、运河和宁静的寺庙)可知，去中国的神山之行总共有27天，而且Thorp对中国的名山非常了解。由此推测Thorp在这四个国家里最了解中国。C. China(中国)符合以上说法，故选C项。
+【23题详解】
+细节理解题。根据第四部分的Tour highlights include the Roman city of Dougga, the underground Mumidian capital at Bulla Regia, Roman Sbeitla and the remote areas around Taraounine and Matmata, unique for underground cities.(突尼斯的旅游亮点包括罗马城市Dougga，地下城市Mumidian,它是Bulla Regia的首府，Roman Sbeitla以及在Taraounine和Matmata附近的区域，它们是独特的地下城市)可知，突尼斯的旅游亮点是地下城市。B. Underground cities(地下城市)符合以上说法，故选B项。

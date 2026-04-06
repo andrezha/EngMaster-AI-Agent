@@ -27,17 +27,36 @@ of being  film “Stars ”!
 ==================================================
 [QUESTIONS]
 
---- Q_64 (ANSWER: C) ---
-Who  is the author?  
-A. A cameraman.                B. A film director.  
-  C. A crowd-scene  actor.          D. A workman  for scene  setting.
+[Q_64] (ANS: C)
+Who  is the author?
+A. A cameraman.
+B. A film director.
+C. A crowd-scene  actor.
+D. A workman  for scene  setting.
 
---- Q_65 (ANSWER: B) ---
-What  made  the author  feel cold?  
-A. The heavy  snowfall.          B. The man-made  scene.  
-C. The low temperature.         D. The film being  shown.
+[Q_65] (ANS: B)
+What  made  the author  feel cold?
+A. The heavy  snowfall.
+B. The man-made  scene.
+C. The low temperature.
+D. The film being  shown.
 
---- Q_66 (ANSWER: A) ---
-What  would  happen  in the “three  minutes ” mentioned,  in the last paragraph?  
-A. A new scene  would  be filmed.       B. More  stars would  act in the film.  
-C. The author  would  leave  the studio.   D. The next scene  would  be prepared.
+[Q_66] (ANS: A)
+What  would  happen  in the “three  minutes ” mentioned,  in the last paragraph?
+A. A new scene  would  be filmed.
+B. More  stars would  act in the film.
+C. The author  would  leave  the studio.
+D. The next scene  would  be prepared.
+
+==================================================
+[ANALYSIS]
+64．C    细节理解题．  根据第一段第一句 About  twenty  of us had been  fortunate  
+enough  to receive  invitations  to a film-studio（影棚） to take part in a crowd -scene．
+说明作者是群众演员， 故C正确．
+65．B   细节理解题 ．根据第二段 5，6行A big fan began  blowing  tiny white  feathers  
+down  on him, and soon  the trees  were  covered  in “snow ”. Two more  fans were  turned  
+on, and a “strong  wind ” blew  through  the trees．说明人造的雪景让我们感觉寒冷 ，
+故B正确．
+66．A   细节理解． 根据最后一句 For a full three  minutes  in our lives  we would  be 
+experiencing  the excitement  of being  film “stars”!说明这里的 three  minutes指拍摄
+的电影中的这一新的场景， 故A正确．

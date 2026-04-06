@@ -1,0 +1,35 @@
+YEAR: 2018
+CAT: （新课标ⅲ）
+==================================================
+[PASSAGE]
+根据短文内容，从短文后的选项中选出能填入空白处的最佳选项。选项中有两项为多余选项。
+Before there was the written word, there was the language of dance. Dance expresses love and hate, joy and sorrow, life and death, and everything else in between.
+	    36    We dance from Florida to Alaska, from north to south and sea to sea. We dance at weddings, birthdays, office parties and just to fill the time.
+	“I adore dancing,” says Lester Bridges, the owner of a dance studio in Iowa. “I can’t imagine doing anything else with my life.” Bridges runs dance classes for all ages. “Teaching dance is wonderful.    37    It’s great to watch them. For many of them, it’s a way of meeting people and having a social life.”
+	   38    “I can tell you about one young couple,” says Bridges. “They’re learning to do traditional dances. They arrive at the class in low spirits and they leave with a smile.      39    ”
+	So, do we dance in order to make ourselves feel better, calmer, healthier? Andrea Hillier says, “Dance, like the pattern of a beating heart, is life. Even after all these years, I want to get better and better.   40     I find it hard to stop! Dancing reminds me I’m alive.”
+
+[QUESTIONS]
+
+==================================================
+[OPTIONS (A-G)]
+A. So why do we dance?
+B. Dance in the U.S. is everywhere.
+C. If you like dancing outdoors, come to America.
+D. My older students say it makes them feel young.
+E. I keep practicing even When I’m extremely tired.
+F. Dancing seems to change their feeling completely.
+G. They stayed up all night long singing and dancing.
+
+==================================================
+[ANSWERS]
+空(1): B  空(2): D  空(3): A  空(4): F  空(5): E  
+
+==================================================
+[ANALYSIS]
+【解答】BDAFE
+36. B．细节理解题，根据后文We dance from Florida to Alaska, from north to south and sea to sea我们跳舞从佛罗里达州到阿拉斯加，从北到南，从海到海，可知跳舞在美国到处都是，故选 B．
+37．D．细节理解题，根据前文Teaching dancing is wonderful．教授舞蹈是完美的，因此后文应该与我的学生有关，即我的年纪大的学生说这使他们感到年轻，故选D．
+38．A．细节理解题，根据后文“I can tell you about one young couple,” says Bridges. “They’re learning to traditional dances. They arrive at the class in low spirits and they leave with a smile. 一对夫妇正在学习传统舞蹈，他们情绪低落地来到教室，微笑着离开，这是解释一些人学习舞蹈的原因，因此为那我们为什么跳舞呢？故选A．
+39．F．细节理解题，根据前文They’re learning to traditional dances. They arrive at the class in low spirits and they leave with a smile. 他们正在学习传统舞蹈，他们情绪低落地来到教室，微笑着离开，跳舞似乎完全改变了他们的感情，故选F．
+40．E．细节理解题，根据后文I find it hard to stop! 我发现很难停下来，由此可知前文应为舞蹈使我非常疲倦，我也坚持练习．故选E．

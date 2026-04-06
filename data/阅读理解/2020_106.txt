@@ -15,19 +15,43 @@ Stories like that are more common in parts of the world where multigenerational 
 ==================================================
 [QUESTIONS]
 
---- Q_28 (ANSWER: B) ---
+[Q_28] (ANS: B)
 Who mainly uses the ground floor in the Victorian house in Bristol?
-A. Nick.	B. Rita.	C. Kathryn	D. The daughters.
+A. Nick.
+B. Rita.
+C. Kathryn
+D. The daughters.
 
---- Q_29 (ANSWER: A) ---
+[Q_29] (ANS: A)
 What is Nick’s attitude towards sharing the house with his mother-in -law?
-A. Positive.	B. Carefree.	C. Tolerant.	D. Unwilling.
+A. Positive.
+B. Carefree.
+C. Tolerant.
+D. Unwilling.
 
---- Q_30 (ANSWER: C) ---
+[Q_30] (ANS: C)
 What is the author’s statement about multigenerational family based on?
-A. Family traditions.	B. Financial reports.	C. Published statistics.	D. Public opinions.
+A. Family traditions.
+B. Financial reports.
+C. Published statistics.
+D. Public opinions.
 
---- Q_31 (ANSWER: D) ---
+[Q_31] (ANS: D)
 What is the text mainly about?
-A. Lifestyles in different countries.	B. Conflicts between generations.
-C. A housing problem in Britain.	D. A rising trend of living in the UK.
+A. Lifestyles in different countries.
+B. Conflicts between generations.
+C. A housing problem in Britain.
+D. A rising trend of living in the UK.
+
+==================================================
+[ANALYSIS]
+【解析】
+这是一篇新闻报道。短文报道了在英国，由于年轻人负担不起离家的费用，而老年人又面临着被孤立的风险，越来越多的家庭选择住在一起，出现了多世同堂的现象。
+【28题详解】
+细节理解题。根据第三段“ but Rita Whitehead has her own kitchen, bathroom, bedroom and living room on the ground floor.”可知，但Rita在一楼有自己厨房、浴室、卧室和客厅。由此可知，Rita 在布里斯托尔的维多利亚式住宅中使用一楼。故选B项。
+【29题详解】
+推理判断题。根据第五段“And what does Nick think? “From my standpoint, it all seems to work very well. Would I recommend it? Yes, I think I would.”可知，尼克是怎么想的?“从我的角度来看，一切都很顺利。我推荐它吗?是的，我想我会推荐在一起居住的。”由此判断出，尼克对和和岳母合住房子的态度是积极的。故选A项。
+30题详解】
+细节理解题。根据第六段“ Official reports suggest that the number of households with three generations living together had risen from 325,000 in 2002 to 419,000 in 2013.”官方报告显示，三代同堂的家庭数量从2002年的32.5万户增加到2013年的41.9万户。根据第七段“It is said that about 20% of 25-34-year-olds live with their parents, compared with 16% in 1991.The total number of all multigenerational households in Britain is thought to be about 1.8 million.”可知，据说，25-34岁的年轻人中有20%和父母住在一起，而1991年这一比例为16%。据估计，英国多代同堂的家庭总数约为180万。由此可知，作者关于多世同堂家庭的论述基于发布的统计数据。故选C项。
+【31题详解】
+主旨大意题。通读全文，尤其根据第一段“With the young unable to afford to leave home and the old at risk of isolation(孤独), more families are choosing to live together.”可知，由于年轻人负担不起离家的费用，而老年人又面临着被孤立的风险，越来越多的家庭选择住在一起。所以短文主要是关于英国生活方式的一种上升趋势。故选D项。

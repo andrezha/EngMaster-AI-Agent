@@ -14,24 +14,43 @@ Then there’s Righteous Fur and its unusual fashion. Model Paige Morgan says，
 ==================================================
 [QUESTIONS]
 
---- Q_28 (ANSWER: A) ---
+[Q_28] (ANS: A)
 What is the purpose of the fashion shows in New Orleans and Brooklyn?
 A. To promote guilt-free fur.
 B. To expand the fashion market.
 C. To introduce a new brand.
 D. To celebrate a winter holiday.
 
---- Q_29 (ANSWER: A) ---
+[Q_29] (ANS: A)
 Why are scientists concerned about nutria?
 A. Nutria damage the ecosystem seriously.
 B. Nutria are an endangered species.
 C. Nutria hurt local cat-sized animals.
 D. Nutria are illegally hunted.
 
---- Q_30 (ANSWER: D) ---
+[Q_30] (ANS: D)
 What does the underlined word “collapsed” in paragraph 5 probably mean?
-A. Boomed.	B. Became mature.	C. Remained stable.	D. Crashed.
+A. Boomed.
+B. Became mature.
+C. Remained stable.
+D. Crashed.
 
---- Q_31 (ANSWER: B) ---
+[Q_31] (ANS: B)
 What can we infer abouf wearing fur in New York according to Morgan?
-A. It’s formal.	B. It’s risky.	C. It’s harmful.	D. It’s traditional.
+A. It’s formal.
+B. It’s risky.
+C. It’s harmful.
+D. It’s traditional.
+
+==================================================
+[ANALYSIS]
+【解析】
+本文是说明文。介绍了美国新奥良和布鲁克林举办了不同寻常的时装秀。展出海狸鼠制成的皮衣。海狸鼠们每年都在破坏大片的湿地，因此设计师称这是一种环保的举措，科学家们也对海狸鼠损坏生态平衡表示了担忧。
+【28题详解】
+推理判断题。根据第二段Unusual fashion shows in New Orleans and Brooklyn have showcased nutria fur made into clothes in different styles. “It sounds crazy to talk about guilt-free fur-unless you understand that the nutria are destroying vast wetlands every year,”says Cree McCree, project director of Righteous Fur.得知，美国新奥尔良和布鲁克林举办了不同寻常的时装秀，时装秀上展出海狸鼠皮制成的不同风格的衣服，项目总监Cree McCree说：“除非了解海狸鼠正每年破坏大片湿地，否则谈论无罪感皮衣是很疯狂的事情”，可以判断出由于海狸鼠对生态造成了巨大的破坏，这场海狸鼠皮衣时装秀销售的是无罪恶感皮衣。故选A。
+【29题详解】
+推理判断题。根据第三段Scientists in Louisiana were so concerned that they decided to pay hunters $5 a tail.得知，科学家们如此担心以至于他们决定按照一条海狸鼠尾巴付给猎人们5美元，可以推断出科学家们担忧海狸鼠们严重破坏生态平衡，。故选A。
+【30题详解】
+词义猜测题。根据第五段The fur trade kept nutria in check for decades, but when the market for nutria collapsed in the late 1980s,the cat-sized animals multiplied like crazy. 得知，毛皮贸易使海狸鼠受到了几十年的控制，但是当海狸鼠市场在20世纪80年代末崩溃时，这种猫大小的动物数量疯长，根据but判断，这是转折关系，以前由于皮毛交易，海狸鼠处于控制，现在这种海狸鼠之所以能够数量激增，是由于市场不再销售海狸鼠皮毛导致的，可以推断出划线词collapsed 是和D.crashed倒闭的意思最相近。故选D。
+【31题详解】
+推理判断题。根据第二段Model Paige Morgan says, “To give people a guilt –free option that they can wear without someone throwing paint on them-I think that’s going to be a massive thing, at least in New York. ” 得知，为了给人们一种无罪的选择，人们可以穿皮衣而不被人们泼油漆，我认为在纽约将是一件巨大的事情，根据模特摩根所说得知，在纽约穿皮质衣服是有风险的。故选B。

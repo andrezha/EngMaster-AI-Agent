@@ -35,17 +35,34 @@ Tel: 020 7713  0836
 ==================================================
 [QUESTIONS]
 
---- Q_21 (ANSWER: A) ---
-When  is the talk on James  Brindley?  
-A. February  6th.       B. March  6th.   
-C. November  7th.      D. December  5th.
+[Q_21] (ANS: A)
+When  is the talk on James  Brindley?
+A. February  6th.
+B. March  6th.
+C. November  7th.
+D. December  5th.
 
---- Q_22 (ANSWER: D) ---
-What  is the topic  of the talk in February?  
-A. The Canal  Pioneers.          B. Ice for the Metropolis.  
-C. Eyots  and Aits — Thames  Islands.     D. An Update  on the Cotswold  Canals.
+[Q_22] (ANS: D)
+What  is the topic  of the talk in February?
+A. The Canal  Pioneers.
+B. Ice for the Metropolis.
+C. Eyots  and Aits — Thames  Islands.
+D. An Update  on the Cotswold  Canals.
 
---- Q_23 (ANSWER: C) ---
-Who  will give the talk on the islands  in the Thames?  
-A. Miranda  Vickers.             B. Malcolm  Tucker.    
-C. Chris  Lewis.                 D. Liz Payne.
+[Q_23] (ANS: C)
+Who  will give the talk on the islands  in the Thames?
+A. Miranda  Vickers.
+B. Malcolm  Tucker.
+C. Chris  Lewis.
+D. Liz Payne.
+
+==================================================
+[ANALYSIS]
+21．A 细节理解题 ．根据文章第二段第二句 "James  Brindley  is recognized  as one of 
+the leading  early  canal  engineers ."所对应的日期是 November  7th．可知，詹姆斯 •
+布林德利的讲座在 11月7日．故选 A．
+22．D 细节理解题． 根据文章第四段 February  6th中的第一句 "An Update  on the 
+Cotsword  Canals , by Liz Payne . The Stroudwater  Canal  is moving  towards  
+reopening ."可知， 2月份讲座的主题是关于科茨伍德运河的更新问题， 故选 D．
+23．C 细节理解题．根据文章第五段第一句 "Eyots  and Aits-Thames  Islands , by 
+Miranda  Vickers ."可以知道做报告的人是 Mirands  Vickets．故选 C．

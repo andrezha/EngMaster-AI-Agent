@@ -35,24 +35,47 @@ civil-rights  movement.  “The  only tired I was, was tired of giving  in,” s
 ==================================================
 [QUESTIONS]
 
---- Q_21 (ANSWER: A) ---
-What  is Jane Addams  noted  for in history?  
-A. Her social  work.            B. Her teaching  skills.  
-C. Her efforts  to win a prize.     D. Her community  background.
+[Q_21] (ANS: A)
+What  is Jane Addams  noted  for in history?
+A. Her social  work.
+B. Her teaching  skills.
+C. Her efforts  to win a prize.
+D. Her community  background.
 
---- Q_22 (ANSWER: C) ---
-What  was the reason  for O’Connor’s  being  rejected  by the law firm?  
-A. Her lack of proper  training  in law. 
-B. Her little work  experience  in court.  
-C. The discrimination  against  women.  
+[Q_22] (ANS: C)
+What  was the reason  for O’Connor’s  being  rejected  by the law firm?
+A. Her lack of proper  training  in law.
+B. Her little work  experience  in court.
+C. The discrimination  against  women.
 D. The poor financial  conditions.
 
---- Q_23 (ANSWER: D) ---
-Who  made  a great  contribution  to the civil-rights  movement  in the U.S.?  
-A. Jane Addams.      B. Rachel  Carson.  
-C. Sandra  Day O’Connor.      D. Ross  Parks.
+[Q_23] (ANS: D)
+Who  made  a great  contribution  to the civil-rights  movement  in the U.S.?
+A. Jane Addams.
+B. Rachel  Carson.
+C. Sandra  Day O’Connor.
+D. Ross  Parks.
 
---- Q_24 (ANSWER: C) ---
-What  can we infer  about  the women  mentioned  in the text?  
-A. They  are highly  educated.      B. They  are truly  creative.  
-C. They  are pioneers.         D. They  are peace-lovers.
+[Q_24] (ANS: C)
+What  can we infer  about  the women  mentioned  in the text?
+A. They  are highly  educated.
+B. They  are truly  creative.
+C. They  are pioneers.
+D. They  are peace-lovers.
+
+==================================================
+[ANALYSIS]
+21．A．细节理解题 ．根据 Jane Addams部分的 "Anyone  who has ever been  helped  
+by a social  worker  has Jane Addams  to thank ."可知，珍妮 •亚当斯在历史上以她的社
+会工作而闻名， 故选 A．
+22．C．细节理解题 ．根据 Sandra  Day O’Connor部分的 "she could  not find work  at 
+a law firm because  she was a woman ."可知，桑德拉 •戴•奥康纳被律师公司拒绝是
+因为对妇女的歧视， 故选 C．
+23．D细节理解题． 根据 Rosa  Parks部分的 "…and  kicked  off the civil-rights  
+movement ."可知，罗莎 •帕克斯因为在公共汽车上拒绝为白人让座而拉开了民权
+运动的序幕，所以是罗莎 •帕克斯对美国民权运动做出了巨大的贡献， 故选 D．
+24．C推理判断题．根据文章内容：珍妮 •亚当斯是第一个获得诺贝尔和平奖的
+美国女性；雷切尔 •卡森的作品《寂静的春天》提高了人们对污染的危险性和化
+学物质对人类和世界湖泊和海洋的危害性的认识 ；桑德拉 •戴•奥康纳是美国首位
+联邦最高法院女法官；罗莎 •帕克斯在公共汽车上拒绝为白人让座，拉开了民权
+运动的序幕．可知文中提到的几位女性都是先锋人物， 故选 C．

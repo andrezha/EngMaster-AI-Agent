@@ -33,26 +33,46 @@ to continue  those  dialogues.  Those  are the things  I want  to foster.”
 ==================================================
 [QUESTIONS]
 
---- Q_28 (ANSWER: D) ---
-Why  did UNESCO  set April  30 as International  Jazz Day?  
-A. To remember  the birth  of jazz. 
-B. To protect  cultural  diversity.  
-C. To encourage  people  to study  music.  
+[Q_28] (ANS: D)
+Why  did UNESCO  set April  30 as International  Jazz Day?
+A. To remember  the birth  of jazz.
+B. To protect  cultural  diversity.
+C. To encourage  people  to study  music.
 D. To recognize  the value  of jazz.
 
---- Q_29 (ANSWER: C) ---
-What  does the underlined  word  “that”  in paragraph  3 refer  to? 
-A. Jazz becoming  more  accessible.  
-B. The production  of jazz growing  faster.  
-C. Jazz being  less popular  with the young.  
+[Q_29] (ANS: C)
+What  does the underlined  word  “that”  in paragraph  3 refer  to?
+A. Jazz becoming  more  accessible.
+B. The production  of jazz growing  faster.
+C. Jazz being  less popular  with the young.
 D. The jazz audience  becoming  larger.
 
---- Q_30 (ANSWER: C) ---
-What  can we infer  about  Moran’s  opinion  on jazz?  
-A. It will disappear  gradually.          B. It remains  black  and white.  
-C. It should  keep  up with the times.     D. It changes  every  50 years.
+[Q_30] (ANS: C)
+What  can we infer  about  Moran’s  opinion  on jazz?
+A. It will disappear  gradually.
+B. It remains  black  and white.
+C. It should  keep  up with the times.
+D. It changes  every  50 years.
 
---- Q_31 (ANSWER: A) ---
-Which  of the following  can be the best title for the text?  
-A. Exploring  the Future  of Jazz.     B. The Rise and Fall of Jazz.  
-C. The Story  of a Jazz Musician.     D. Celebrating  the Jazz Day.
+[Q_31] (ANS: A)
+Which  of the following  can be the best title for the text?
+A. Exploring  the Future  of Jazz.
+B. The Rise and Fall of Jazz.
+C. The Story  of a Jazz Musician.
+D. Celebrating  the Jazz Day.
+
+==================================================
+[ANALYSIS]
+28．D 细节理解题 ．根据第一段最后一句  …set  April  30 as a day to raise  awareness  
+of jazz music , its significance , and its potential  as a unifying（联合） voice  across  
+cultures  可知，教科文组织将 4月30日定为国际爵士乐节，是为了让人们意识
+到爵士乐的意义与价值．  故正确答案为 D．
+29．C 推理判断题．根据第二段 …music  has failed  to connect  with younger  
+generations 此处  that 指代上一句  爵士乐在年轻一代不受欢迎， 所以此处 C项"
+爵士乐不太受年轻人欢迎 "，符合题意． 故正确答案为 C．
+30．C 推理判断题．根据第五段  It has to continue  to move , because  the way the 
+world  works  is not the same  可知  Moran  认为爵士乐要与时俱进， C项意为 "跟上
+  时代的步伐 "符合题意． 故正确答案为 C．
+31．A 标题判断题．本文主要讲， 教科文组织将 4月30日定为国际爵士乐节，
+让人们意识到爵士乐的意义与价值，以及改善爵士乐不受年轻人的欢迎的处境 ，
+探索爵士乐的未来． A项， "探索爵士乐的未来 "符合题意． 故正确答案为 A．

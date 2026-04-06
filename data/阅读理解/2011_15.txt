@@ -30,23 +30,51 @@ milkman  who brought  us friendship  along  with his milk.
 ==================================================
 [QUESTIONS]
 
---- Q_56 (ANSWER: C) ---
-Mr. Basille  gave  the boy a quarter  out of his coin changer  _______.  
-A. to show  his magical  power       B. to pay for the delivery     
-  C. to satisfy  his curiosity           D. to please  his mother
+[Q_56] (ANS: C)
+Mr. Basille  gave  the boy a quarter  out of his coin changer  _______.
+A. to show  his magical  power
+B. to pay for the delivery
+C. to satisfy  his curiosity
+D. to please  his mother
 
---- Q_57 (ANSWER: D) ---
+[Q_57] (ANS: D)
 What  can be inferred  from  the fact that the milkman  had the key to the boy’s  
-house?  
-A. He wanted  to have  tea there.            B. He was a respectable  person.  
-C. He was treated  as a family  member.      D. He was fully  trusted  by the family.
+house?
+A. He wanted  to have  tea there.
+B. He was a respectable  person.
+C. He was treated  as a family  member.
+D. He was fully  trusted  by the family.
 
---- Q_58 (ANSWER: B) ---
-Why  does home  milk delivery  no longer  exist?  
-A. Nobody  wants  to be a milkman  now.     B. It has been  driven  out of the market.  
-C. Its service  is getting  poor.              D. It is forbidden  by law.
+[Q_58] (ANS: B)
+Why  does home  milk delivery  no longer  exist?
+A. Nobody  wants  to be a milkman  now.
+B. It has been  driven  out of the market.
+C. Its service  is getting  poor.
+D. It is forbidden  by law.
 
---- Q_59 (ANSWER: A) ---
-Why  did the author  bring  back  home  an old milk box?  
-A. He missed  the good  old days.            B. He wanted  to tell interesting  stories.  
-C. He missed  it for his milk bottles.         D. He planted  flowers  in it.
+[Q_59] (ANS: A)
+Why  did the author  bring  back  home  an old milk box?
+A. He missed  the good  old days.
+B. He wanted  to tell interesting  stories.
+C. He missed  it for his milk bottles.
+D. He planted  flowers  in it.
+
+==================================================
+[ANALYSIS]
+56．C 细节推理题  根据第一段中 "I couldn't  take my eyes off…during  a delivery ."
+由于一天在送货的时候他注意到 ：我目不转睛地看着固定在他皮带上的找零的硬
+币夹．可知，是因为他看到了我的好奇，所以， 就拿出了一枚 25分的硬币送给
+我．故选 C．
+57．D 细节推理题  本题容易错选 C 他被当做家庭成员来对待，单从将家里钥
+匙留给送奶工，并不能体现这一点．根据第三段的中心句 "There  existed  a close  
+relationship  between  families  and their milkmen ."（每一家与他们的送奶工都保持
+着良好的关系 ）以及将家里钥匙留给送奶工可推知 ，他们之间有着良好的信任关
+系，故选 D．
+58．B 细节推理题  根据第四段提到的两点：一、 "Big companies  allowed  the 
+production  of cheaper  milk."大公司允许生产更便宜的牛奶．二、 "milk  is for sale 
+everywhere" 牛奶到处都可以买到．所以送奶业就不再景气，失去了存在的意义 ．
+故选 B．
+59．A 细节推理题  本题考查了作者将牛奶箱带回家的原因 ．根据最后一段 "an old 
+milk box in the countryside  I saw brought  back  my childhood  memories" 我在乡下看
+见的一个旧牛奶箱勾起了我童年的回忆 ．并且在下文中提到经常给儿子的朋友讲
+过去送奶工的故事，可见他对过去的怀念， 故选 A．

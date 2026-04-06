@@ -12,12 +12,14 @@ Here's the good news. In a wired world with constant global communication, we're
 ==================================================
 [QUESTIONS]
 
---- Q_12 (ANSWER: A) ---
+[Q_12] (ANS: A)
 What does the author think of victors' standards for joining the genius club?
-A. They're unfair.	B. They're conservative.
-C. They're objective.	D. They're strict.
+A. They're unfair.
+B. They're conservative.
+C. They're objective.
+D. They're strict.
 
---- Q_13 (ANSWER: D) ---
+[Q_13] (ANS: D)
 What can we infer about girls from the study in Science?
 A. They think themselves smart.
 B. They look up to great thinkers.
@@ -29,7 +31,39 @@ B. Less discrimination against women.
 C. Acceptance of victors' concepts.
 D. Changes in people's social positions.
 
---- Q_15 (ANSWER: A) ---
+[Q_15] (ANS: A)
 What is the best title for the text?
-A. Geniuses Think Alike	B. Genius Takes Many Forms
-C. Genius and Intelligence	D. Genius and Luck
+A. Geniuses Think Alike
+B. Genius Takes Many Forms
+C. Genius and Intelligence
+D. Genius and Luck
+
+==================================================
+[ANALYSIS]
+[解析]
+[分析]这是- -篇议论文。文章由问题“谁是天才?”引入，论述了世人对天才的狭隘定义，提出事实上
+“天才”有很多种形式，不要让思维限制了我们的“天才”能力。
+[12题详解]
+推理判断题。根据第三段的“It is said that history is witen by victors, and those victors set the standards for
+admision to the genius club. When contributions were made by geniuscs outside the club-women, or people of a
+different color or belief-they were unackanowledged and rejcted by others.(据说历史是由胜利者书写的，而那
+些胜利者为进入天才俱乐部设定了标准。当俱乐部以外的天才一-女 性或不同肤色或信仰的人--做出贡
+献时，他们不会被承认并且被其他人拒绝)”可推知，作者认为那些“胜利者”对进入“天才俱乐部”设置
+的标准是不公平的，因为女性或者不同肤色或信仰的人做出的成就是得不到承认的。故选A. .
+[13题详解]
+推理判断题。根据第四段的“Even worse, the study found that girls act on that belief. Around age six they start to
+avoid ativities said to be for children who are“rall rally smart." (更糟糕的是,研完发现女孩们是按照这个信
+念行事的。六岁左右，她们开始避免那些据说是“非常非常聪明”的孩子参加的活动)”可推知，女孩容易
+受到社会信仰的影响，认为自己在六岁左右就不适合做“聪明孩子”做的事情。故选D.
+[14题详解]
+细节理解题。根据最后一段的 “In a wired world with constant global communication, we're all positioned to see
+flashes of genius wherever they appear:(在-一个全球通讯不断的有线世界里，我们随时随地都能看到天才的闪
+现)”可知，进步的全球通讯让更多的天才被公众所知道。故选A.
+[15题详解]
+主旨大意题。根据文章的主要内容，结合文章第- -段提出问题“Who is a genius? (谁是天才)”和最后-段
+的“As a witer says, future geniuses come from those with "inteligence, creativity, perseverance, and simple
+geniuses, who are able to change the world"(正如一-位作家所说，未来的天才来自那些具有“智慧、创造力、
+毅力和那些能够改变世界的简单天才。”)”可知，天才不一-定是那些有巨大贡献的人，他们也可以是某一
+方面比较突出的普通人。由此可知B项“天才有多种形式”可以作为本文最佳标题。故选B. .
+
+第二节

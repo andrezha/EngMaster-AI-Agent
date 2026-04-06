@@ -28,23 +28,52 @@ periods,”  he said.
 ==================================================
 [QUESTIONS]
 
---- Q_29 (ANSWER: C) ---
-What  do we learn  about  the gap year from  the text?  
-A. It is flexible  in length.        B. It is a time for relaxation.  
-C. It is increasingly  popular.     D. It is required  by universities.
+[Q_29] (ANS: C)
+What  do we learn  about  the gap year from  the text?
+A. It is flexible  in length.
+B. It is a time for relaxation.
+C. It is increasingly  popular.
+D. It is required  by universities.
 
---- Q_30 (ANSWER: A) ---
-According  to Tony  Higgins,  students  taking  a gap year______.  
-A. are better  prepared  for college  studies  
-B. know  a lot more  about  their future  jobs 
-C. are more  likely  to leave  university  in debt 
+[Q_30] (ANS: A)
+According  to Tony  Higgins,  students  taking  a gap year______.
+A. are better  prepared  for college  studies
+B. know  a lot more  about  their future  jobs
+C. are more  likely  to leave  university  in debt
 D. have  a better  chance  to enter  top universities
 
---- Q_31 (ANSWER: B) ---
-How  does Owain  James  feel about  the gap-year  phenomenon?  
-A. He’s puzzled.   B. He’s worried.   C. He’s surprised.   D. He’s annoyed.
+[Q_31] (ANS: B)
+How  does Owain  James  feel about  the gap-year  phenomenon?
+A. He’s puzzled.
+B. He’s worried.
+C. He’s surprised.
+D. He’s annoyed.
 
---- Q_32 (ANSWER: C) ---
-What  would  most  students  do on their vacation  according  to NUS  statistics?  
-A. Attend  additional  courses.         B. Make  plans  for the new term.  
-C. Earn  money  for their education.    D. Prepare  for their graduate  studies.
+[Q_32] (ANS: C)
+What  would  most  students  do on their vacation  according  to NUS  statistics?
+A. Attend  additional  courses.
+B. Make  plans  for the new term.
+C. Earn  money  for their education.
+D. Prepare  for their graduate  studies.
+
+==================================================
+[ANALYSIS]
+29. C细节理解题 . 由第一段中的 "More  student  than ever before  are taking  a 
+gap-year（间隔年 ）before  going  to university" 和第三段中的 "That  is a record  14.7%  
+  increase  in the number  of students  taking  a gap year"可知， "gap-year"受到越来越多
+的学生的欢迎 . 故选 C.
+30. A 细节理解题 . 由第三段中的 "Students  who take a well-planned  year out are 
+more  likely  to be satisfied  with, and complete , their chosen  course . Students  who take 
+a gap year are often  more  mature  and responsible" 可知，经过 "间隔年 "（打工赚钱 ）
+后，再去上大学，这样的学生更加成熟，更加有责任感 . 他们更容易满足他们所
+选择的课程，更有可能完成课程 . 即可以使大学生更好地为大学学习做好准备 . 
+故选 A.
+31. B 推理判断题 . 由最后一段中的 "But not everyone  is happy"以及 Owain  James  
+"the increase  is evidence  of student  had ship---young  people  are being  forced  into 
+earning  money  before  finishing  their education" 可知，Owain  James认为很多学生被
+迫先挣钱再上学，同时也反映出这些学生的辛苦 . 因此可知，他对于间隔年表示
+担忧 . 故选 B.
+32. C 细节理解题 . 由最后一段中的 "NUS  statistics  show  that over 40% of students  
+are forced  to work  during  term time and the figure  increases  to 90% during  vacation  
+periods"可知，NUS的调查数据显示 ，40%的学生被迫在上学期间边打工边学习 ，
+90%的学生被迫在假期打工挣钱 . 故选 C.

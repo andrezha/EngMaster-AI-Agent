@@ -29,15 +29,37 @@ helped  the chosen  charity.
 ==================================================
 [QUESTIONS]
 
---- Q_68 (ANSWER: B) ---
-What  are you advised  to do for your mother  at doctor ’s visits?  
-A. Take  notes.    B. Be with her.   C. Buy medicine.    D. Give  her gifts.
+[Q_68] (ANS: B)
+What  are you advised  to do for your mother  at doctor ’s visits?
+A. Take  notes.
+B. Be with her.
+C. Buy medicine.
+D. Give  her gifts.
 
---- Q_69 (ANSWER: C) ---
-Where  can you find a gift idea to improve  your mother’s  sleep?  
-A. In Gift No. 1.   B. In Gift No. 2.    C. In Gift No. 3.   D. In Gift No. 4.
+[Q_69] (ANS: C)
+Where  can you find a gift idea to improve  your mother’s  sleep?
+A. In Gift No. 1.
+B. In Gift No. 2.
+C. In Gift No. 3.
+D. In Gift No. 4.
 
---- Q_70 (ANSWER: D) ---
-Buying  gifts from  Presents  for Purpose  allows  mothers  to_______.  
-A. enjoy  good  sleep           B. be well-organized  
-C. bet extra  support           D. give others  help
+[Q_70] (ANS: D)
+Buying  gifts from  Presents  for Purpose  allows  mothers  to_______.
+A. enjoy  good  sleep
+B. be well-organized
+C. bet extra  support
+D. give others  help
+
+==================================================
+[ANALYSIS]
+68．B   细节理解题．根据第一则广告中 "Promise  to be there  for any and all 
+doctor ’s visits  whether  a disease  or a regular  medical  check -up"可知，不管是疾病检
+查还是定期的体格检查，都一定要陪母亲看医生，文章中的 "Promise  to be there"
+和"be with her"意义相同． 故选 B．
+69．C   细节理解题．根据题干关键词 "improve  your mother ’s sleep"可以定位到
+第 三 则 广 告 中 的 "Buy  your mother  cotton  sheets  and comfortable  pillows  to 
+encourage  better  sleep"可知，给母亲买棉床单和舒适的枕头，让母亲有更好的睡
+眠，故选 C．
+70．D   推理判断题 ．文章最后一段提到 "Present  for Purpose"及该段中的 "she will 
+be told that she has helped  the chosen  charity ."可知，在一些公司买礼物给母亲实际
+上相当于让母亲给别人提供帮助． 故选 D．

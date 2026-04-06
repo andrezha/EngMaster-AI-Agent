@@ -12,21 +12,38 @@ Apple Days are being held at all sorts of places with an interest in fruit, incl
 ==================================================
 [QUESTIONS]
 
---- Q_28 (ANSWER: D) ---
+[Q_28] (ANS: D)
 What can people do at the apple events?
-A. Attend experts’ lectures.             	B. Visit fruit-loving families.
-C. Plant fruit trees in an orchard.     		D. Taste many kinds of apples.
+A. Attend experts’ lectures.
+B. Visit fruit-loving families.
+C. Plant fruit trees in an orchard.
+D. Taste many kinds of apples.
 
---- Q_29 (ANSWER: C) ---
+[Q_29] (ANS: C)
 What can we learn about Decio?
-A. It is a new variety.                	B. It has a strange look.
-C. It is rarely seen now.               	D. It has a special taste.
+A. It is a new variety.
+B. It has a strange look.
+C. It is rarely seen now.
+D. It has a special taste.
 
---- Q_30 (ANSWER: B) ---
+[Q_30] (ANS: B)
 What does the underlined phrase “a pipe dream” in Paragraph 3 mean?
-A. A practical idea.  	B. A vain hope.  C. A brilliant plan.  D. A selfish desire.
+A. A practical idea.
+B. A vain hope.
+C. A brilliant plan.
+D. A selfish desire.
 
---- Q_31 (ANSWER: B) ---
+[Q_31] (ANS: B)
 What is the author’s purpose in writing the text?
-A. To show how to grow apples.      B. To introduce an apple festival.
-C. To help people select apples.       D. To promote apple research.
+A. To show how to grow apples.
+B. To introduce an apple festival.
+C. To help people select apples.
+D. To promote apple research.
+
+==================================================
+[ANALYSIS]
+【解答】DCBB
+28．D细节理解题．根据第二段"Visiting an apple event is a good chance to see, and often taste, a wide variety of apples."可知，参加相关的庆祝活动的人们可以品尝各种各样的苹果，故选D．
+29．C推理判断题．根据第二段中一句"it can be quite an eye opener to see the range of classical apples still in existence, such as Decio which was grown by the Romans."可知，an eye opener为"令人开眼界的事物"，说明这一物种是不常见的；故选C．
+30．B 猜测词义题，根据第二段"to see the range of classical apples still in existence such as Decio"可知，Decio是许多仍然存在的经典苹果各类之一，根据"which is more of a curiosity than anything else"可知，人们品尝它是出于好奇心，故选B．
+31．B写作意图题．根据第一段"if you are a fruit grower---or would like to become one---take advantage of Apple Day to see what’s around."和最后一段"If you want to have a real orchard experience, try visiting the National Fruit Collection at Brogdale, near Faversham in Kent."可知，作者向读者介绍了一个节日---Apple Day，并推荐人们参加这个节日，故选B．

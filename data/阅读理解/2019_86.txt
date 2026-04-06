@@ -11,23 +11,43 @@ In a study describing the technology, the researchers had 100 volunteers type th
 ==================================================
 [QUESTIONS]
 
---- Q_28 (ANSWER: D) ---
+[Q_28] (ANS: D)
 Why do the researchers develop the smart keyboard?
-A. To reduce pressure on keys.	B. To improve accuracy in typing
-C. To replace the password system.	D. To cut the cost of e-space protection.
+A. To reduce pressure on keys.
+B. To improve accuracy in typing
+C. To replace the password system.
+D. To cut the cost of e-space protection.
 
---- Q_29 (ANSWER: C) ---
+[Q_29] (ANS: C)
 What makes the invention of the smart keyboard possible？
 A. Computers are much easier to operate.
 B. Fingerprint scanning techniques develop fast.
 C. Typing patterns vary from person to person.
 D. Data security measures are guaranteed.
 
---- Q_30 (ANSWER: B) ---
+[Q_30] (ANS: B)
 What do the researchers expect of the smart keyboard？all 1o soisgitieoco oll.
-A. It'll be environment-friendly.	B. It'll reach consumers soon.
-C. It'll be made of plastics	D. It'll help speed up typing.
+A. It'll be environment-friendly.
+B. It'll reach consumers soon.
+C. It'll be made of plastics
+D. It'll help speed up typing.
 
---- Q_31 (ANSWER: D) ---
+[Q_31] (ANS: D)
 Where is this text most likely from?
-A. A diary.	B. A guidebook	C. A novel.	D. A magazine.
+A. A diary.
+B. A guidebook
+C. A novel.
+D. A magazine.
+
+==================================================
+[ANALYSIS]
+【解析】
+这是一篇说明文。数据和身份盗窃变得越来越普遍，目前，向指纹扫描等这些技术仍然是昂贵的。本文介绍了一种新的科技——智能键盘，它能给e-space用户带来安全，而且这项技术也不贵。
+【28题详解】
+细节理解题。根据第一段的At present, these technologies are still expensive, though.和第二段的Researchers from Georgia Tech say that they have come up with a low-cost device that gets around this problem: a smart key board.可知，研究者们开发智能键盘是为了降低e-space保护的成本。故选D。
+【29题详解】
+细节理解题。根据第二段的The key board could offer a strong layer of security by analyzing things like the force of a user’s typing and the time between key presses. These patterns are unique to each person. Thus，the keyboard can determine people’s identities可知，因为每个人的打字方式不同，使智能键盘能够识别人的身份。故选C。
+【30题详解】
+细节理解题。根据最后一段的The team hopes to make it to market in the near future.可知，研究者们希望智能键盘能早日面世。故选B。
+【31题详解】
+推理判断题。本文介绍了一种新的科技——智能键盘，它能给e-space用户带来安全，由此可知，本文是关于科技，结合所给选项可知，本文可能来自于一本杂志。故选D。

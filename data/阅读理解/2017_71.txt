@@ -15,22 +15,38 @@ Dr Amy Guo, the leading researcher on the older driver study, explains, “The D
 ==================================================
 [QUESTIONS]
 
---- Q_32 (ANSWER: C) ---
+[Q_32] (ANS: C)
 What is the purpose of the Drive LAB?
-A. To explore newmeans of transport.       B. To design new types of cars.
-C. To find out older driver’s problems.      D. To teach people traffic rules.
+A. To explore newmeans of transport.
+B. To design new types of cars.
+C. To find out older driver’s problems.
+D. To teach people traffic rules.
 
---- Q_33 (ANSWER: A) ---
+[Q_33] (ANS: A)
 Why is driving important for older people according to Phil Blythe?
-A. It keeps them independent.      B. It helps them save time.
-C. It builds up their strength.       D. It cures their mental illnesses.
+A. It keeps them independent.
+B. It helps them save time.
+C. It builds up their strength.
+D. It cures their mental illnesses.
 
---- Q_34 (ANSWER: B) ---
+[Q_34] (ANS: B)
 What do researchers hope to do for older drivers?
-A. Improve their driving skills.         B. Develop driver-assist technologles.
-C. Provide tips on repairing their cars.   D. Organize regular physical checkups.
+A. Improve their driving skills.
+B. Develop driver-assist technologles.
+C. Provide tips on repairing their cars.
+D. Organize regular physical checkups.
 
---- Q_35 (ANSWER: D) ---
+[Q_35] (ANS: D)
 What is the best title for the text?
-A. A new Model Electric Car      B. A Solution to Traffic Problem
-C. Driving Service for elders      D. Keeping Older Drivers on the Road
+A. A new Model Electric Car
+B. A Solution to Traffic Problem
+C. Driving Service for elders
+D. Keeping Older Drivers on the Road
+
+==================================================
+[ANALYSIS]
+【解答】CABD
+32．C 细节理解题．根据第一段句子in order to understand the challenges faced by older drivers and to discover where the key stress points are. 为了了解老年司机面临的挑战，并找出关键的重点在哪里．所以答案选C．
+33．A 细节理解题．根据句子driving is important for preserving their independence, giving them the freedom to get out and about without having to rely on others.驾驶对于保持他们的独立性是很重要的，让他们有自由进出的自由，而不必依赖他人．可见让他们保持独立很重要，所以答案选A．
+34．B We hope that our work will help with technological solutions（解决方案）to ensure that older drivers stay safer behind the wheel.我们希望，我们的工作将借助于技术解决方案，以确保老司机在车轮后面更安全．可见辅助技术的发展是他们的希望，所以答案选B．
+35．D 标题考查题．本文主要写了研究人员了解老司机的在驾驶过程中的挑战，发展新的车辆技术，希望能让年老的司机继续开车到晚一点的年龄．所以答案D符合标题．

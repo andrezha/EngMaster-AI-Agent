@@ -23,24 +23,48 @@ Venezuela  , and Ghana,  among  others.
 ==================================================
 [QUESTIONS]
 
---- Q_64 (ANSWER: C) ---
-What  is good  about  chocolate?  
-A. It serves  as a suitable  gift.          B. It works  as an effective  medicine.  
-C. It helps  improve  the state of mind.    D. It strengthens  business  relations.
+[Q_64] (ANS: C)
+What  is good  about  chocolate?
+A. It serves  as a suitable  gift.
+B. It works  as an effective  medicine.
+C. It helps  improve  the state of mind.
+D. It strengthens  business  relations.
 
---- Q_65 (ANSWER: D) ---
-Why  is Chris  Lee able to develop  his idea of the CRF?  
-A. He knows  the importance  of research.  
-B. He learns  form  shops  of similar  types.  
-C. He has the support  of many  big names  
+[Q_65] (ANS: D)
+Why  is Chris  Lee able to develop  his idea of the CRF?
+A. He knows  the importance  of research.
+B. He learns  form  shops  of similar  types.
+C. He has the support  of many  big names
 D. He has a lot of marketing  experience.
 
---- Q_66 (ANSWER: C) ---
-Which  line of the CRF  produce  sells best?  
-A. The Connoisseur  Series.       B. The Exotic  Series.  
-C. The Alcohol  Series.           D. The Sichuan  Series.
+[Q_66] (ANS: C)
+Which  line of the CRF  produce  sells best?
+A. The Connoisseur  Series.
+B. The Exotic  Series.
+C. The Alcohol  Series.
+D. The Sichuan  Series.
 
---- Q_67 (ANSWER: A) ---
-The words  “chocolate  snobs ” in Paragraph  3 probably  refer  to people  who      .     
-A. are particular  about  chocolate       B. know  little about  cocoa  beans  
-C. look down  upon  others            D. like to try new flavors
+[Q_67] (ANS: A)
+The words  “chocolate  snobs ” in Paragraph  3 probably  refer  to people  who      .
+A. are particular  about  chocolate
+B. know  little about  cocoa  beans
+C. look down  upon  others
+D. like to try new flavors
+
+==================================================
+[ANALYSIS]
+64．C   逻辑推理题 ．文章一开始就讲述了巧克力的功能 ，根据第一段句子 many  
+people ’s moods（情绪） are regulated  by the chemical  action  of chocolate , it was 
+probably  only a matter  of time before  somebody  made  the chocolate  shop  similar  to a 
+drugstore  of Chinese  medicine．可知巧克力能够改善人的情绪， 故答案为 C．
+65．D  逻辑推理题． 根据第二段 that’s because  Lee is not merely  a seasoned  
+salesperson  but also head  of a marketing  department  that has business  relations  with 
+big names  such as Levi’s and Sony可知，李不仅是经验丰富的销售人员，而且还
+是和大品牌有商业往来的市场部门的领军人物 ，由此可推知 Chris  Lee经验丰富 ，
+才能生出 CRF的生产灵感． 故答案为 D．
+66．C  细节辨识题．  根据第三段的第一句内容 with the Alcohol  Series  being  the 
+most  popular可知，答案为 C．
+67．A  词义理解题． 根据第三段中 who think  that they have  a better  knowledge  of 
+chocolate  than others这句定语从句对 chocolate  snobs的解释，应该是指对巧克力
+有非常深入了解的人，为专业人士， 故答案为 A，be particular  about…对…很专
+业．

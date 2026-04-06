@@ -38,22 +38,45 @@ white  wine.
 ==================================================
 [QUESTIONS]
 
---- Q_21 (ANSWER: A) ---
-Who  can help you if you want  to have  your music  produced?  
-A. Jules  Skye.          B. Gee Whizz.  
-C. Charlotte  Stone.      D. James  Pickering.
+[Q_21] (ANS: A)
+Who  can help you if you want  to have  your music  produced?
+A. Jules  Skye.
+B. Gee Whizz.
+C. Charlotte  Stone.
+D. James  Pickering.
 
---- Q_22 (ANSWER: B) ---
-At which  place  can people  of different  ages enjoy  a good  laugh?  
-A. The Cyclops  Theatre.     B. Kaleidoscope.  
-C. Victoria  Stage.           D. Pizza  World.
+[Q_22] (ANS: B)
+At which  place  can people  of different  ages enjoy  a good  laugh?
+A. The Cyclops  Theatre.
+B. Kaleidoscope.
+C. Victoria  Stage.
+D. Pizza  World.
 
---- Q_23 (ANSWER: D) ---
-What  do we know  about  Simon’s  Workshop?  
-A. It requires  membership  status.     B. It lasts three  hours  each time.   
-C. It is run by a comedy  club.        D. It is held every  Wednesday.
+[Q_23] (ANS: D)
+What  do we know  about  Simon’s  Workshop?
+A. It requires  membership  status.
+B. It lasts three  hours  each time.
+C. It is run by a comedy  club.
+D. It is held every  Wednesday.
 
---- Q_24 (ANSWER: C) ---
-When  will Charlotte  Stone  perform  her songs?  
-A. 5:00pm－7:30pm.       B. 7:30pm－1:00am.  
-C. 8:00pm－11:00pm.      D. 8:30pm－10:30pm.
+[Q_24] (ANS: C)
+When  will Charlotte  Stone  perform  her songs?
+A. 5:00pm－7:30pm.
+B. 7:30pm－1:00am.
+C. 8:00pm－11:00pm.
+D. 8:30pm－10:30pm.
+
+==================================================
+[ANALYSIS]
+21．A细节理解题 ．根据第一则广告最后一句 ：He’s going  to talk about  how you can 
+find the right  person  to produce  you music . 可知 Jules  skye会谈论如何找到一个好
+的音乐制作人． 故选 A．
+22．B细节理解题．根据文章第二则广告第三句： This joyful  show  will please  
+everyone , from  the youngest  to the oldest . Gee Whizz  really  knows  how to make  you 
+laugh!  Our bar is open  from  7:00pm  for drinks  and snacks（快餐） . 可知这场表演
+能够让所有年轻的人都很开心． 表演的场所在 Kaleidoscope ．故选 B．
+23．D 细节理解题．根据第三则广告第二行中 "5:00pm -7:30pm  Wednesday  sat 
+Victoria  Stage"可知 Simon ’s Workshop 的表演是在每周三下午 5点至 7点30之
+间进行． 故选 D．
+24．C细节理解题．根据第四则广告第二行 "8:00pm -11:00pm  Pizza  World"可知
+Charlotte  Stone将在晚上 8点至11点之间表演她最受欢迎的歌曲． 故选 C．

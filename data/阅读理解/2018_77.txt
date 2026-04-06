@@ -26,21 +26,47 @@ bananas  into the top of the machine  and watching  the ice cream  come  out bel
 ==================================================
 [QUESTIONS]
 
---- Q_24 (ANSWER: C) ---
-What  does the author  seem  to like about  cherries?  
-A. They  contain  protein.     B. They  are high in vitamin  A. 
-C. They  have  a pleasant  taste.    D. They  are rich in antioxidants.
+[Q_24] (ANS: C)
+What  does the author  seem  to like about  cherries?
+A. They  contain  protein.
+B. They  are high in vitamin
+A.
+C. They  have  a pleasant  taste.
+D. They  are rich in antioxidants.
 
---- Q_25 (ANSWER: B) ---
-Why  is fresh  lemon  juice  used in freezing  bananas?  
-A. To make  them  smell  better.   B. To keep  their colour.  
-C. To speed  up their ripening.   D. To improve  their nutrition.
+[Q_25] (ANS: B)
+Why  is fresh  lemon  juice  used in freezing  bananas?
+A. To make  them  smell  better.
+B. To keep  their colour.
+C. To speed  up their ripening.
+D. To improve  their nutrition.
 
---- Q_26 (ANSWER: D) ---
-What  is “a juicer”  in the last paragraph?  
-A. A dessert.      B. A drink.   C. A container.      D. A machine.
+[Q_26] (ANS: D)
+What  is “a juicer”  in the last paragraph?
+A. A dessert.
+B. A drink.
+C. A container.
+D. A machine.
 
---- Q_27 (ANSWER: B) ---
-From  which  is the text probably  taken?  
-A. A biology  textbook.           B. A health  magazine.  
-C. A research  paper.             D. A travel  brochure.
+[Q_27] (ANS: B)
+From  which  is the text probably  taken?
+A. A biology  textbook.
+B. A health  magazine.
+C. A research  paper.
+D. A travel  brochure.
+
+==================================================
+[ANALYSIS]
+24. C．细节理解题． 根据第二段 As for cherries  （樱桃），  they are so delicious  
+who cares？可知至于樱桃 ，它们好吃极了 ，谁在乎呢？由此判断 ，作者喜欢樱桃
+是因为它非常美味，口感极好， 故答案为 C．
+25．B．细节理解题 ．根据第三段 If you like， a squeeze  of fresh  lemon  juice  on the 
+bananas  will prevent  them  turning  brown如果你喜欢 ，香蕉上放上新鲜柠檬汁会防
+止他们变成棕色，可知新鲜的柠檬汁可以保持香蕉原有的颜色， 故答案为 B．
+26．D．词义猜测题． 根据下文 you can simply  feed in frozen  bananas  and some  
+berries  or sliced  fruit及the top of the machine  可知， a juicer在此处的意思是一种
+机器，用来制作水果冰淇淋， 故答案为 D．
+27．B．推理判断题 ．本文介绍了很多人喜欢七月是因为这个时间是大量水果上
+市的季节 ，接着具体介绍了各种水果所富含的营养成分 ，及如何制作水果冰淇淋
+，由此可以判断这篇文章是关于健康饮食 ，可以从有关健康的杂志看到 ，故答案
+  为B．

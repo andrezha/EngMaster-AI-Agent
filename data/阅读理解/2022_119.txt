@@ -13,21 +13,44 @@ Today's figures, according to one government official, show the positive influen
 ==================================================
 [QUESTIONS]
 
---- Q_12 (ANSWER: C) ---
+[Q_12] (ANS: C)
 Why was the sugar tax introduced?
-A. To collect money for schools.	B. To improve the quality of drinks.
-C. To protect children’s health.	D. To encourage research in education.
+A. To collect money for schools.
+B. To improve the quality of drinks.
+C. To protect children’s health.
+D. To encourage research in education.
 
---- Q_13 (ANSWER: D) ---
+[Q_13] (ANS: D)
 How did some drinks companies respond to the sugar tax?
-A. They turned to overseas markets.	B. They raised the prices of their products.
-C. They cut down on their production.	D. They reduced their products’ sugar content.
+A. They turned to overseas markets.
+B. They raised the prices of their products.
+C. They cut down on their production.
+D. They reduced their products’ sugar content.
 
---- Q_14 (ANSWER: D) ---
+[Q_14] (ANS: D)
 From which of the following is the sugar tax collected?
-A. Most alcoholic drinks.	B. Milk-based drinks.	C. Fruit juices.	D. Classic Coke.
+A. Most alcoholic drinks.
+B. Milk-based drinks.
+C. Fruit juices.
+D. Classic Coke.
 
---- Q_15 (ANSWER: B) ---
+[Q_15] (ANS: B)
 What can be inferred about the adoption of the sugar tax policy?
-A. It is a short-sighted decision.	B. It is a success story.
-C. It benefits manufacturers.	D. It upsets customers.
+A. It is a short-sighted decision.
+B. It is a success story.
+C. It benefits manufacturers.
+D. It upsets customers.
+
+==================================================
+[ANALYSIS]
+【解析】
+【导语】本文是一篇说明文。文章主要介绍了英国政府对软饮料征收的糖税来解决儿童以及青少年的健康问题，同时该收入用于学校体育。
+【12题详解】
+细节理解题。根据文章第二段中的“First announced in April, 2016, the tax which applies to soft drinks containing more than 5g of sugar per 100ml, was introduced to help reduce childhood obesity .（该税于2016年4月首次宣布，适用于每100毫升含糖超过5g的软饮料，旨在帮助减少儿童肥胖。）”可知，征收糖税的目的是帮助儿童减少肥胖。故选C项。
+【13题详解】
+细节理解题。根据第四段中的“It comes after more than half of soft drinks sold in shops have had their sugar levels cut by manufacturers so they can avoid paying the tax.（此前，制造商已经降低了商店中销售的超过一半的软饮料的含糖量，以避免纳税。）”可知，一些饮料公司通过降低了产品的含糖量来避税。故选D项。
+【14题详解】
+细节理解题。根据第五段中的“However, some high sugar brands, like Classic Coca Cola, have accepted the sugar tax and are refusing to change for fear of upsetting consumers. Fruit juices, milk-based drinks and most alcoholic drinks are free of the tax, as are small companies manufacturing fewer than 1m litres per year.（然而，一些高糖品牌，如经典可口可乐，已经接受了糖税，并拒绝改变，因为担心会惹恼消费者。果汁、以牛奶为原料的饮料和大多数酒精饮料是免税的，每年生产不到100万升的小公司也是免税的。）”可知，糖税主要来自经典可口可乐这些高糖品牌。故选D项。
+【15题详解】
+推理判断题。根据文章最后一段中“Today’s figures, according to one government official, show the positive influence the sugar tax is having by raising millions of pounds for sports facilities and healthier eating in schools.（根据一位政府官员的说法，今天的数据显示了糖税的积极影响，它为学校的体育设施和健康饮食筹集了数百万英镑）”可推断，糖税政策的实施是一个成功的政策。故选B项。
+第二节

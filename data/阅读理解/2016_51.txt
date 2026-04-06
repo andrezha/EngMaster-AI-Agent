@@ -32,21 +32,45 @@ this understanding  to assist  in the care of patients  from  their own and from
 ==================================================
 [QUESTIONS]
 
---- Q_32 (ANSWER: C) ---
-What  does the author  say about  silence  in conversations?  
-A. It implies  anger.              B. It promotes  friendship.  
-C. It is culture-specific.           D. It is content-based.
+[Q_32] (ANS: C)
+What  does the author  say about  silence  in conversations?
+A. It implies  anger.
+B. It promotes  friendship.
+C. It is culture-specific.
+D. It is content-based.
 
---- Q_33 (ANSWER: A) ---
-Which  of the following  people  might  regard  silence  as a call for careful  thought?  
-A. The Chinese.     B. The French.     C. The Mexicans.    D. The Russians.
+[Q_33] (ANS: A)
+Which  of the following  people  might  regard  silence  as a call for careful  thought?
+A. The Chinese.
+B. The French.
+C. The Mexicans.
+D. The Russians.
 
---- Q_34 (ANSWER: D) ---
-What  does the author  advise  nurses  to do about  silence?  
-A. Let it continue  as the patient  pleases.     B. Break  it while  treating  patients.  
-C. Evaluate  its harm  to patients.         D. Make  use of its healing  effects.
+[Q_34] (ANS: D)
+What  does the author  advise  nurses  to do about  silence?
+A. Let it continue  as the patient  pleases.
+B. Break  it while  treating  patients.
+C. Evaluate  its harm  to patients.
+D. Make  use of its healing  effects.
 
---- Q_35 (ANSWER: B) ---
-What  may be the best title for the text?  
-A. Sound  and Silence               B. What  It Means  to Be Silent  
-C. Silence  to Native  Americans       D. Speech  Is Silver;  Silence  Is Gold
+[Q_35] (ANS: B)
+What  may be the best title for the text?
+A. Sound  and Silence
+B. What  It Means  to Be Silent
+C. Silence  to Native  Americans
+D. Speech  Is Silver;  Silence  Is Gold
+
+==================================================
+[ANALYSIS]
+32．C．细节理解题．根据文章首段首句 "The  meaning  of silence  varies  among  
+cultural  groups"可知，作者认为沉默是有文化特性的 ．根据后面的第四句 "Silence  
+may be viewed  by some  cultural  groups  as extremely  uncomfortable" 以及第五句
+"Persons  in other  cultural  groups  value  silence"也是很好的佐证； 故选 C．
+33．A．细节理解题 ．根据第二段中 "what  may be implied  is that the person  wants  the 
+  listener  to consider  what  has been  said before  continuing" 以及 "In these  cultures , 
+silence  is a call for reflection ."可知中国人认为谈话时人们沉默是在思考 ．故选 A．
+34．D．细书理解题．根据末段末句 "A nurse  who understands  the healing  value  of 
+silence  can use this understanding  to assist  in the care of patients"可知，作者建议护
+士要用沉默来冶疗病人． 故选 D．
+35．B．标题归纳题 ．文章主要介绍了在不同文化背景下谈话期间沉默的不同含
+义，由此判断 B选项可以概括文章内容． 故选 B．

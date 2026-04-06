@@ -32,24 +32,49 @@ belonging  starts  with small  talk. “Small  talk is the basis  of good  manne
 ==================================================
 [QUESTIONS]
 
---- Q_32 (ANSWER: C) ---
-What  phenomenon  is described  in the first paragraph?  
-A. Addiction  to smartphones.  
-B. Inappropriate  behaviours  in public  places.  
-C. Absence  of communication  between  strangers.  
+[Q_32] (ANS: C)
+What  phenomenon  is described  in the first paragraph?
+A. Addiction  to smartphones.
+B. Inappropriate  behaviours  in public  places.
+C. Absence  of communication  between  strangers.
 D. Impatience  with slow  service.
 
---- Q_33 (ANSWER: B) ---
-What  is important  for successful  small  talk according  to Carducci?  
-A. Showing  good  manners.     B. Relating  to other  people.  
-C. Focusing  on a topic.      D. Making  business  deals.
+[Q_33] (ANS: B)
+What  is important  for successful  small  talk according  to Carducci?
+A. Showing  good  manners.
+B. Relating  to other  people.
+C. Focusing  on a topic.
+D. Making  business  deals.
 
---- Q_34 (ANSWER: D) ---
-What  does the coffee-shop  study  suggest  about  small  talk?  
-A. It improves  family  relationships.   B. It raises  people’s  confidence.  
-C. It matters  as much  as formal  talk.  D. It makes  people  feel good.
+[Q_34] (ANS: D)
+What  does the coffee-shop  study  suggest  about  small  talk?
+A. It improves  family  relationships.
+B. It raises  people’s  confidence.
+C. It matters  as much  as formal  talk.
+D. It makes  people  feel good.
 
---- Q_35 (ANSWER: C) ---
-What  is the best title for the text?  
-A. Conversation  Counts      B. Ways  of Making  Small  Talk 
-C. Benefits  of Small  Talk     D. Uncomfortable  Silence
+[Q_35] (ANS: C)
+What  is the best title for the text?
+A. Conversation  Counts
+B. Ways  of Making  Small  Talk
+C. Benefits  of Small  Talk
+D. Uncomfortable  Silence
+
+==================================================
+[ANALYSIS]
+32．C．细节理解题 ．根据文章第一段可知 ，该段描述的情景是人们在公共场所
+不是玩手机就是尴尬地沉默，没有和其他人交流． C项意为 "不与陌生人交流 "．
+符合原文描述 ．故C项正确．A项意为 "沉迷智能手机 "．这只是作者描绘的场景
+  之一，故A项错误．B项意为 "公众场合不良行为 "．文中未提及 ．故B项错误．
+D项意为 "对低效的服务不耐烦 "．文中未提及． 故D项错误． 故正确答案为 C．
+33．B．细节理解题 ．根据文章第三段最后一句话  The key to successful  small  talk 
+is learning  how to connect  with others , not just communicate  with them  可知，成功
+的关键是与他人产生联结． 故正确答案为 B．
+34．D．细节理解题．根据文章第四段第三句  The results  showed  that those  who 
+chatted  with their server  reported  significantly  higher  positive  feelings  and a better  
+coffee  shop  experience  可知，与店员交谈后的顾客会对服务更满意，且对在咖啡
+店的服务体验更满意． 故正确答案为 D．
+35．C．标题判断题 ．根据文章可知 ，作者从公共场合人与人极少交谈的场景开
+始，逐步论述闲聊的益处．故本题答案应围绕 "闲聊的益处 "展开． A项，意为 "
+对话很重要 "．B项，意为 "闲聊的方法 "．C项，意为 "闲聊的益处 "．D项，意为
+"令人不适的寂静 "．故正确答案为 C．

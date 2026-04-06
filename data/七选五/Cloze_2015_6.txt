@@ -1,0 +1,55 @@
+YEAR: 2015
+CAT: （新课标ⅱ）
+==================================================
+[PASSAGE]
+根据短文内容，从短文后的选项中选出能填入空白处的最佳选项。选项中有
+两项为多余选项。  
+Training  for a marathon  requires  careful  preparation  and steady,  gradual  
+increases  in the length  of the runs.  ___36___,  buy the best-fitting,  best-built  running  
+shoes  you can find. No one can say which  brand  will work  best for you or feel best on 
+your feet, so you have  to rely on your experience  and on the feel of each pair as you 
+shop.  When  you have  found  shoes  that seem  right,  walk  in them  for a few days to 
+double-check  the fit. ___37___.  As always,  you should  stretch  (伸展 ) at least ten 
+minutes  before  each run to prevent  injuries.  
+During  the first week,  do not think  about  distance,  but run five minutes  longer  
+each day. ___38___,  it is wise to take a day off to rest. But during  the next week,  set a 
+goal of at least a mile and a half per run. ___39___.  After  two weeks,  start timing  
+yourself.  ___40___.  Depending  on the kind of race you plan to enter,you  can set up a 
+timetable  for the remaining  weeks  before  the race.
+
+[QUESTIONS]
+
+==================================================
+[OPTIONS (A-G)]
+A. After  six days 
+B. For a good  marathon  runner  
+C. Before  you begin  your training  
+D. With  each day, increase  the distance  by a half mile 
+E. If they still feel good,you  can begin  running  in them  
+F. Time  spent  for preparation  raises  the quality  of training  
+G. Now  you are ready  to figure  out a goal of improving  distance  and time
+
+==================================================
+[ANSWERS]
+空(1): C  空(2): E  空(3): A  空(4): D  空(5): G  
+
+==================================================
+[ANALYSIS]
+36. C 本题考查前后句子的联系， 根据后文 buy the best-fitting , best-built running  
+shoes  you can find. 可知需要买最好的配件，最好的运行鞋，这些都是开始训练
+之前要做的事情， 故选 C.
+37. E 本题考查前后句子的联系， 根据前文 When  you have  found  shoes  that seem  
+right , walk  in them  for a few days to double -check  the fit. 可知在鞋子看起来不错的
+时候要先穿几天感觉一下是否合适 ，如果他们仍然合适 ，那么就可以穿着它们开
+始跑步， 故选 E.
+38. A 本题考查前后句子的联系 ，根据前文 During  the first week , do not think  about  
+distance , but run five minutes  longer  each day. 告诉我们在第一周不要考虑举例，
+每天多跑五分钟， 而后文 it is wise to take a day off to rest让我们有一天的休息，
+因此在六天之后我们要休息一天， 故选 A.
+39. D 本题考查前后句子的联系， 根据前文 But during  the next week , set a goal of 
+at least a mile and a half per run. 可知在下一个星期要设定一个目标，每天增加一
+点距离， 故选 D.
+40. G 本题考查前后句子的联系， 根据后文 Depending  on the kind of race you plan 
+to enter , you can set up a timetable  for the remaining  weeks  before  the race. 可知你可
+以自己制定自己的训练计划 ，说明已经准备好了一个改进距离和时间的目标 ，故
+选G.

@@ -28,22 +28,47 @@ also spend  on a classic  piece  of furniture.  Quality  lasts.
 ==================================================
 [QUESTIONS]
 
---- Q_56 (ANSWER: A) ---
-Why  did Delta  give the author ’s family  credits?  
-A. They  took a later flight.         B. They  had early  bookings.  
-C. Their  flight  had been  delayed.    D. Their  flight  had been  cancelled.
+[Q_56] (ANS: A)
+Why  did Delta  give the author ’s family  credits?
+A. They  took a later flight.
+B. They  had early  bookings.
+C. Their  flight  had been  delayed.
+D. Their  flight  had been  cancelled.
 
---- Q_57 (ANSWER: A) ---
-What  can we learn  about  the author?  
-A. She rarely  misses  a good  deal.       B. She seldom  makes  a compromise.  
-C. She is very strict  with her children .  D. She is interested  in cheap  products.
+[Q_57] (ANS: A)
+What  can we learn  about  the author?
+A. She rarely  misses  a good  deal.
+B. She seldom  makes  a compromise.
+C. She is very strict  with her children .
+D. She is interested  in cheap  products.
 
---- Q_58 (ANSWER: C) ---
-What  does the author  do? 
-A. She’s a teacher.        B. She’s a housewife.  
-C. She’s a media  person.   D. She’s a businesswoman.
+[Q_58] (ANS: C)
+What  does the author  do?
+A. She’s a teacher.
+B. She’s a housewife.
+C. She’s a media  person.
+D. She’s a businesswoman.
 
---- Q_59 (ANSWER: C) ---
-What  does the author  want  to tell us? 
-A. How  to expose  bad tricks.      B. How  to reserve  airline  seats.  
-C. How  to spend  money  wisely .   D. How  to make  a business  deal.
+[Q_59] (ANS: C)
+What  does the author  want  to tell us?
+A. How  to expose  bad tricks.
+B. How  to reserve  airline  seats.
+C. How  to spend  money  wisely .
+D. How  to make  a business  deal.
+
+==================================================
+[ANALYSIS]
+56．A  细节理解题 ，根据  第一段 The flight  was overbooked ，and Delta，the airline
+，offered  us $400  per person  in credits  to give up our seats  and leave  the next day．可
+知三角洲航空公司给作者一家 400美元是为了让他们放弃自己的座位晚一天离
+开，故选 A．
+57．A  推理判断题 ．根据文章第三段中 "But as a bigtime  bargain  hunter，I know  the 
+value  of a dollar . And these  days, a good  deal is something  few of us can afford  to 
+pass up."可知作者自称是一个一流的杀价者 ，并且说一笔好的交易是很少有人能
+够拒绝的，因此作者不会错过一笔好买卖的， 故选 A．
+58．C  细节理解题．根据文章第四段 "I have  been  the consumer  reporter  of NBC ’s 
+Today  show  for over a decade ."可知作者是一位媒体工作者， 故选 C．
+59．C  写作意图题． 根据文章最后一段 But I wouldn ’t hesitate  to spend  on a good  
+haircut . It keeps  its shape  longer , and it’s the first thing  people  notice . And I will also 
+spend  on a classic  piece  of furniture . Quality  lasts. 可知本文讲述了应该明智地花钱
+，即如何让钱花得更值得， 故选 C．

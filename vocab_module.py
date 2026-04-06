@@ -33,6 +33,56 @@ class VocabManager:
         if self.v_disp:
             self.show_next()
             self.timer.start(1000)
+        
+        # 7. 🎯 统一底部按钮样式（56px 高度，大圆角，全宽布局）
+        self._style_action_buttons()
+
+    def _style_action_buttons(self):
+        """
+        统一按钮样式规范：
+        - 所有按钮高度固定为 56px
+        - 大圆角（16px）和实色背景
+        - 全宽布局，方便单手操作
+        - 输入框与按钮高度对齐
+        """
+        # 闯关模式输入框 - 56px 高度，大圆角，与按钮对齐
+        if self.v_input:
+            self.v_input.setFixedHeight(56)
+            self.v_input.setStyleSheet("""
+                QLineEdit {
+                    background-color: #f8f9fa;
+                    border: 2px solid #dee2e6;
+                    border-radius: 16px;
+                    font-size: 24px;
+                    padding: 0px 20px;
+                    color: #2c3e50;
+                }
+                QLineEdit:focus {
+                    border: 2px solid #27ae60;
+                    background-color: #ffffff;
+                }
+            """)
+        
+        # 闯关模式确认按钮 - 醒目绿色，全宽大按钮
+        if self.btn_confirm:
+            self.btn_confirm.setFixedHeight(56)
+            self.btn_confirm.setStyleSheet("""
+                QPushButton {
+                    background-color: #27ae60;
+                    color: white;
+                    border: none;
+                    border-radius: 16px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding: 12px 24px;
+                }
+                QPushButton:hover {
+                    background-color: #229954;
+                }
+                QPushButton:pressed {
+                    background-color: #1e8449;
+                }
+            """)
 
     def load_vocabulary(self):
         try:
@@ -52,22 +102,46 @@ class VocabManager:
         
         hint_html = ""
         if error_msg:
-            hint_html = f"<div style='font-size:26px; color:#e74c3c; margin-top:25px; font-weight:bold;'>正确答案: {error_msg.capitalize()}</div>"
+            hint_html = f"""
+                <div style='text-align:center; margin-top:20px;'>
+                    <div style='font-size:22px; color:#e74c3c; font-weight:bold; 
+                        background:#fadbd8; padding:12px 24px; border-radius:12px; display:inline-block;'>
+                        ✅ 正确答案: {error_msg.capitalize()}
+                    </div>
+                </div>
+            """
         
+        # 🎯 题目垂直居中显示（使用 flexbox 实现垂直居中）
         html = f"""
-            <div style='text-align:center; padding-top:80px;'>
-                <div style='font-size:45px; color:#2c3e50; font-weight:bold;'>{curr['content']}</div>
-                {hint_html}
+            <div style='display:flex; flex-direction:column; justify-content:center; 
+                align-items:center; height:100%; min-height:400px; padding:20px;'>
+                <div style='text-align:center;'>
+                    <div style='font-size:18px; color:#7f8c8d; font-weight:bold; 
+                        margin-bottom:15px;'>⚡ 第 {self.current_idx + 1} 关 ⚡</div>
+                    <div style='font-size:48px; color:#2c3e50; font-weight:bold; 
+                        line-height:1.4; margin:20px 0;'>{curr['content']}</div>
+                    {hint_html}
+                </div>
             </div>
         """
         self.v_disp.setHtml(html)
 
         if not error_msg:
             self.v_input.clear()
-            self.v_input.setStyleSheet("font-size:24px; border:2px solid #bdc3c7;")
             self.v_input.setFocus()
             self.time_left = 15
-            if self.t_label: self.t_label.setText(str(self.time_left))
+            if self.t_label:
+                # 🎯 倒计时样式：透明背景 + 深红色 + 加粗
+                self.t_label.setText(str(self.time_left))
+                self.t_label.setStyleSheet("""
+                    QLabel {
+                        color: #D32F2F;
+                        font-size: 32px;
+                        font-weight: bold;
+                        padding: 5px 10px;
+                        background: transparent;
+                    }
+                """)
             
             # 只有在单词页才启动
             if self.win.findChild(QtWidgets.QStackedWidget, "stackedWidget").currentIndex() == 0:

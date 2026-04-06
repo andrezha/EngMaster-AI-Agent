@@ -31,18 +31,34 @@ gardens  of the 18th century.
 ==================================================
 [QUESTIONS]
 
---- Q_33 (ANSWER: B) ---
-Which  tour will you choose  if you want  to see England’s  oldest  university  city?  
-A. Tour  A       B. Tour  B       C. Tour  C       D. Tour  D
+[Q_33] (ANS: B)
+Which  tour will you choose  if you want  to see England’s  oldest  university  city?
+A. Tour  A
+B. Tour  B
+C. Tour  C
+D. Tour  D
 
---- Q_34 (ANSWER: D) ---
-Which  of the following  tours  charges  the lowest  fee on 17 March?  
-A. Windsor  Castle  & Hampton  Court.     B. Oxford  & Stratford . 
-C. Bath  &Stonehenge.                 D. Cambridge.
+[Q_34] (ANS: D)
+Which  of the following  tours  charges  the lowest  fee on 17 March?
+A. Windsor  Castle  & Hampton  Court.
+B. Oxford  & Stratford .
+C. Bath  &Stonehenge.
+D. Cambridge.
 
---- Q_35 (ANSWER: A) ---
-Why  is Hampton  Court  a major  tourist  attraction?  
-A. It used to be the home  of royal  families.  
-B. It used to be a well-known  maze . 
-C. It is the oldest  palace  in Britain . 
+[Q_35] (ANS: A)
+Why  is Hampton  Court  a major  tourist  attraction?
+A. It used to be the home  of royal  families.
+B. It used to be a well-known  maze .
+C. It is the oldest  palace  in Britain .
 D. It is a world-famous  castle.
+
+==================================================
+[ANALYSIS]
+33. B细节理解题 . 根据 Tour  B中的 "Oxford : Included  a guided  tour of England ’s 
+oldest  university  and colleges"可知，如果你想看到英国最古老的大学城，需要选
+择Tour  B，故选 B.
+34. D 细节理解题 . 根据每一部分的价格介绍可知： 在3月17日， Tour  A为37
+英镑，Tour  B为36英镑，Tour  C为37英镑，Tour  D为33英镑，所以收费最低
+的是 Tour  D剑桥大学， 故选 D.
+35. A 细节理解题 . 根据 "Hampton  was once  the home  of four Kings  and one Queen"
+可知，它曾经是王室的家， 故选 A.

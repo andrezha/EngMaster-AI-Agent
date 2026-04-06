@@ -21,17 +21,34 @@ This is an excellent fantasy novel from one of the best storytellers around. Aft
 ==================================================
 [QUESTIONS]
 
---- Q_21 (ANSWER: C) ---
+[Q_21] (ANS: C)
 Who does "I" refer to in the text?
-A. Stephen King.	B. Gillian Flynn.
-C. Jo Usmar.	D. Roald Dahl
+A. Stephen King.
+B. Gillian Flynn.
+C. Jo Usmar.
+D. Roald Dahl
 
---- Q_22 (ANSWER: C) ---
+[Q_22] (ANS: C)
 Which of the following tells about Mari and Eri?
-A. Cosmopolitan.	B. Matilda.
-C. After Dark	D. The Stand.
+A. Cosmopolitan.
+B. Matilda.
+C. After Dark
+D. The Stand.
 
---- Q_23 (ANSWER: D) ---
+[Q_23] (ANS: D)
 What kind of book is Gone Girl?)
-A. A folk tale.	B. A biography.
-C. A love story.	D. A horror story.
+A. A folk tale.
+B. A biography.
+C. A love story.
+D. A horror story.
+
+==================================================
+[ANALYSIS]
+【解析】
+这是一篇说明文。短文介绍了作家Jo Usmar最喜欢的书籍。
+【21题详解】
+细节理解题。由Matilda中的“I once wrote a paper on the influence of fairy tales on Roald Dahl’s writing and it gave me a new appreciation for his strange and delightful words”可知，我曾经写过一篇关于童话故事对罗尔德·达尔写作有影响的论文，这篇论文让我对他奇怪而有趣的文字有了新的认识。所以Jo Usmar在介绍Matilda这本书，用第一人称“I”口吻来说明自己曾经写过一篇关于童话故事对罗尔德·达尔写作有影响的论文。所以“I”指的是Jo Usmar。故C选项正确。
+【22题详解】
+细节理解题。由After Dark中的“It’s about two sister-Eri,a model who either won’t or can’t stop sleeping, and Mari,a young student”可知，故事讲的是两个姐妹---Eri是一个突然一觉不醒的模特。玛丽，是一个充满青春活力的学生。所以After Dark中讲述了Eri和Mari的故事。故C选项正确。
+【23题详解】
+细节理解题。由Gone Girl中的“......but the horror story is brilliant”可知，但是这个恐怖的故事很精彩。所以Gone Girl讲述的是一个恐怖故事。故D选项正确。

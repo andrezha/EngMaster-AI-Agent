@@ -29,20 +29,46 @@ you need  a drink.
 ==================================================
 [QUESTIONS]
 
---- Q_32 (ANSWER: D) ---
-What  do we know  about  the solar  still equipment  from  the first paragraph?  
-A. It’s delicate.    B. It’s expensive.    C. It’s complex.    D. It’s portable.
+[Q_32] (ANS: D)
+What  do we know  about  the solar  still equipment  from  the first paragraph?
+A. It’s delicate.
+B. It’s expensive.
+C. It’s complex.
+D. It’s portable.
 
---- Q_33 (ANSWER: B) ---
-What  does the underlined  phrase  “the water  catcher”  in paragraph  2 refer  to? 
-A. The tube.       B. The still.       C. The hole.       D. The cup.
+[Q_33] (ANS: B)
+What  does the underlined  phrase  “the water  catcher”  in paragraph  2 refer  to?
+A. The tube.
+B. The still.
+C. The hole.
+D. The cup.
 
---- Q_34 (ANSWER: C) ---
-What’s  the last step of constructing  a working  solar  still?  
-A. Dig a hole of a certain  size.       B. Put the cup in place.  
-C. Weight  the sheet’s  center  down.     D. Cover  the hole with the plastic  sheet.
+[Q_34] (ANS: C)
+What’s  the last step of constructing  a working  solar  still?
+A. Dig a hole of a certain  size.
+B. Put the cup in place.
+C. Weight  the sheet’s  center  down.
+D. Cover  the hole with the plastic  sheet.
 
---- Q_35 (ANSWER: D) ---
-When  a solar  still works,  drops  of water  come  into the cup form           . 
-  A. the plastic  tube            B. outside  the hole 
-C. the open  air               D. beneath  the sheet
+[Q_35] (ANS: D)
+When  a solar  still works,  drops  of water  come  into the cup form           .
+A. the plastic  tube
+B. outside  the hole
+C. the open  air
+D. beneath  the sheet
+
+==================================================
+[ANALYSIS]
+32．D  细节理解题．根据第一段第三句前半句  Unfortunately , you must  carry  the 
+necessary  equipment  with you …可知，太阳能蒸馏器设备必须被携带，因此其是
+可以携带的，其余选项文章均未提及， 故正确答案为 D．
+33．B  推理判断题．根据第二段划线词组前面的句子可知，其为蒸馏器的制作
+过程以及放置地点．后面的  increase  productivity  为增加产量，因此可以推断该
+词组为蒸馏器， 故正确答案为 B．
+34．C  细节理解题．根据文章第三段第一句后半句  …weighting  the sheet ’s center  
+down  with a rock 可知，用石头让塑料布中心下降是制造太阳能蒸馏器的最后一
+步，后文没有再介绍制造过程， 故正确答案为 C．
+35．D 细节理解题 ．根据文章随后一段第二句  Ground  water  evaporates  and collects  
+on the sheet  until small  drops  of water  form , run down  the material  and fall off into 
+the cup 可知，地面上的水蒸发并且在塑料布上，形成小水滴后落在杯子里，因
+此可以得知水滴来自塑料布下方， 故正确答案为 D．

@@ -25,28 +25,48 @@ groups  from  50 different  countries.  More  than 1,25 million  tickets  were  
 ==================================================
 [QUESTIONS]
 
---- Q_60 (ANSWER: A) ---
-Point  was the purpose  of Edinburgh  Festival  at he beginning?  
-A. To bring  Europe  together  again.  
-B. To honor  heroes  of World  War
-
---- Q_11 (ANSWER: D) ---
-C. To introduce  young  theatre  groups.  
+[Q_60] (ANS: A)
+Point  was the purpose  of Edinburgh  Festival  at he beginning?
+A. To bring  Europe  together  again.
+B. To honor  heroes  of World  War 11.
+C. To introduce  young  theatre  groups.
 D. To attract  great  artists  from  Europe.
 
---- Q_61 (ANSWER: B) ---
-Why  did some  uninvited  theatre  groups  come  to Edinburgh  in 1947?  
-A. They  owned  a public  house  there.  
-B. They  came  to take up a challenge.  
-C. They  thought  they were  also famous.  
+[Q_61] (ANS: D)
+Why  did some  uninvited  theatre  groups  come  to Edinburgh  in 1947?
+A. They  owned  a public  house  there.
+B. They  came  to take up a challenge.
+C. They  thought  they were  also famous.
 D. They  wanted  to take part in the festival.
 
---- Q_62 (ANSWER: D) ---
-Who  joined  the “Fringe ” after it appeared?  
-A. Popular  writers.      B. University  students.  
-C. Artists  from  around  the world.   D. Performers  of music  and dance.
+[Q_62] (ANS: B)
+Who  joined  the “Fringe ” after it appeared?
+A. Popular  writers.
+B. University  students.
+C. Artists  from  around  the world.
+D. Performers  of music  and dance.
 
---- Q_63 (ANSWER: MISSING) ---
-We may learn  from  the text that Edinburgh  Festival________.  
-A. has become  a non-official  event   B. has gone  beyond  an art festival  
-C. gives  shows  all year round    D. keeps  growing  rapidly
+[Q_63] (ANS: D)
+We may learn  from  the text that Edinburgh  Festival________.
+A. has become  a non-official  event
+B. has gone  beyond  an art festival
+C. gives  shows  all year round
+D. keeps  growing  rapidly
+
+==================================================
+[ANALYSIS]
+60．A  细节理解题．由第一段 "The  idea was to reunite  Europe  after the Second  
+World  War."可知这个主意是为了在二战后重新团结欧洲． 故选 A．
+61．D  细节理解题．由第二段 "Eight  theatre  groups  turned  up uninvited  in 1947 , in 
+the belief  that everyone  should  have  the right  to perform ,"可知这些队伍认为每个人
+都有表演的权力，所以他们想要参加这个节日． 故选 D．
+62．B  细节理解题．由第三段 "Soon , groups  of students  firstly  from  Edinburgh  
+University , and later from  the universities  of Oxford  and Cambridge , Durham  and 
+Birmingham  were  making  the journey  to the Scottish  capital  each summer  to perform  
+theatre  by little-known  writers  of plays  in small  church  halls  to the people  of 
+  Edinburgh ."可知爱丁堡大学 ，后来的牛津大学 、剑桥大学等都加入了 ，所以参与
+者是大学生． 故选 B．
+63．D  推理判断题 ．由最后一段 "today  there  are eight  administrators  working  all year 
+round  and the number  rises to 150 during  August  itself . In 2004  there  were  200 places  
+housing  1,695 shows  by over 600 different  groups  from  50 different  countries ."可知
+爱丁堡音乐节发展的非常快， 故选 D．

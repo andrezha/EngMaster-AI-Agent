@@ -29,18 +29,30 @@ This is an event for all the family. Wander among a variety of shops selling gif
 ==================================================
 [QUESTIONS]
 
---- Q_21 (ANSWER: D) ---
+[Q_21] (ANS: D)
 How long does it probably take a tourist to drive to Holker from Manchester?
-A. 20minutes.		B. 25 minutes.		C. 45 minutes.		 D. 90 minutes.
+A. 20minutes.
+B. 25 minutes.
+C. 45 minutes.
+D. 90 minutes.
 
---- Q_22 (ANSWER: B) ---
+[Q_22] (ANS: B)
 How much should a member of a tour group pay to visit to Hall & Cardens?
-A. £12.00.      B. £9.00.		  C. £8.00.		D. £5.
+A. £12.00.
+B. £9.00.
+C. £8.00.
+D. £5.50.
 
---- Q_50 (ANSWER: D) ---
+[Q_23] (ANS: D)
+Which event will you go to if you want to see a live music show?
+A. Producers’ Market.
+B. Holker Garden Festival.
+C. National Garden Day.
+D. Winter Market.
 
-
---- Q_23 (ANSWER: MISSING) ---
-Which event will you go to if you want to see a live music show? 
-A. Producers’ Market.					B. Holker Garden Festival.
-C. National Garden Day.					D. Winter Market.
+==================================================
+[ANALYSIS]
+【解答】DBD
+21. D．细节理解题，根据第一段 Follow brown signs on A590 from J36, M6. Approximale travel times: Windermere—20 minutes, Kendal—25 minutes, Lancaster—45 minutes, Manchester—1 hour 30 minutes. 可知从曼彻斯特开车去霍尔克大概需要多90分钟，故选D．
+22．B．细节理解题，根据Grope: Hall & Gardens :￡9.00；Gardens:￡5.50可知一个团队的成员到大厅和花园参观需要9英镑，故选B．
+23．D．细节理解题，根据最后一段Wander among a variety of shops selling gifts while enjoying a live music show and nice street entertainment．可知在冬季市场你可以在各种各样的商店里游逛，一边享受礼物，一边欣赏现场音乐表演和漂亮的街头娱乐，故选D．

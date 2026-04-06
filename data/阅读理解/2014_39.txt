@@ -19,16 +19,8 @@ Close : midnight  Sun.---Thur .         3a.m.  Fri.---Sat. nights
 Last train times  vary.  To avoid  missing  the last train,  please  check  the last train 
 time posted  in the station.  
 Metrobus    
-When  paying  with exact  charge,  the fare is $1.
-
-==================================================
-[QUESTIONS]
-
---- Q_35 (ANSWER: D) ---
-When  paying  with a 
-SmarTripⓇ card,  the fare is $1.
-
---- Q_25 (ANSWER: B) ---
+When  paying  with exact  charge,  the fare is $1.35.  When  paying  with a 
+SmarTripⓇ card,  the fare is $1.25.  
 Fares  for the senior/  disabled  customers   
 Senior  citizens  65 and older  and disabled  customers  may ride for half the regular  
 fare. On Metrorail  and Metrobus,  use a senior/disabled  farecard  or SmarTripⓇ card.  
@@ -43,22 +35,51 @@ and 6 p.m.
 •If you lose something  on a bus or train or in a station,  please  call Lost & Found  
 at 202-962-1195.
 
---- Q_32 (ANSWER: B) ---
-What  should  you know  about  farecard  machines ? 　   　 
-A. They  start selling  tickets  at 9:30 a.m. 
-B. They  are connected  to change  machines . 
-C. They  offer  special  service  to the elderly . 
+==================================================
+[QUESTIONS]
+
+[Q_32] (ANS: D)
+What  should  you know  about  farecard  machines ?
+A. They  start selling  tickets  at 9:30 a.m.
+B. They  are connected  to change  machines .
+C. They  offer  special  service  to the elderly .
 D. They  make  change  for no more  than $5.
 
---- Q_33 (ANSWER: A) ---
-At what  time does Metrorail  stop service  on Saturday ? 　   　 
-A. At midnight       B. at 3 a.m.        C. at 5 a.m.       D.at 7 p.m.
+[Q_33] (ANS: B)
+At what  time does Metrorail  stop service  on Saturday ?
+A. At midnight
+B. at 3 a.m.
+C. at 5 a.m.
+D.at 7 p.m.
 
---- Q_34 (ANSWER: MISSING) ---
-What  is good  about  a SmarTrip® card? 　   　 
-A. It is convenient  for old people .        B. It saves  money  for its users . 
-C. it can be bought  at any time.          D. it is sold on the Internet .
+[Q_34] (ANS: B)
+What  is good  about  a SmarTrip® card?
+A. It is convenient  for old people .
+B. It saves  money  for its users .
+C. it can be bought  at any time.
+D. it is sold on the Internet .
 
---- Q_35 (ANSWER: MISSING) ---
-Which  number  should  you call if you lose something  on the Metro ? 　   　 
-A. 202-962-1195    B. 202-962-1100     C. 202-673-7000      D. 202-673-8000
+[Q_35] (ANS: A)
+Which  number  should  you call if you lose something  on the Metro ?
+A. 202-962-1195
+B. 202-962-1100
+C. 202-673-7000
+D. 202-673-8000
+
+==================================================
+[ANALYSIS]
+68．D 细节理解题． 根据 Metrorall  （地铁）部分第二段内容 "there  are no change  
+machines  in the stations  and farecard  machines  only provide  up to 5 in change ."可知，
+自动售卡机只能最多找 5美元的零钱 ，故答案选 D．易错选项为 A，文中的 Use 
+it after 9:30 a.m. until closing  on weekdays 是使用 fare card的时间， 而不是 fare 
+card machines 售票的时间．
+69．B 细节理解题． 根据 Hours  of service的介绍部分 "Close : midnight  
+Sun.---Thur .   3a.m.  Fri.---Sat. nights "可知，在周末停运时间是凌晨 3点，故答案
+选B．
+70．B 推理判断题． 根据第三部分对 Metrobus 的介绍  "When  paying  with exact  
+charge,  the fare is $1.35.  When  paying  with a SmarTripⓇ card,  the fare is $1.25."可知
+，如果使用 SmarTripⓇ card支付的话 ，会比直接付钱省 $0.1，所以它对于用户来
+说是省钱的． 故答案选 B．
+71．A 细节理解题 ．根据文章最后一段的 "If you lose something  on a bus or train or 
+in a station , please  call Lost & Found  at 202-962-1195 ,"可知，如果乘客丢失物品的
+话可以拨打失物招领处的电话 202-962-1195，故答案选 A．

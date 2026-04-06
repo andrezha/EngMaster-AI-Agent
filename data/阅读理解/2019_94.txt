@@ -11,21 +11,43 @@ This new trend of newspapers for "the man on the street" did not begin well. Som
 ==================================================
 [QUESTIONS]
 
---- Q_28 (ANSWER: B) ---
+[Q_28] (ANS: B)
 Which of the following best describes newspapers in America before the 1830s?
-A. Academic.	B. Unattractive.	C. Inexpensive.	D. Confidential.
+A. Academic.
+B. Unattractive.
+C. Inexpensive.
+D. Confidential.
 
---- Q_29 (ANSWER: C) ---
+[Q_29] (ANS: C)
 What did street sales mean to newspapers?
-A. They would be priced higher.	B. They would disappear from cities.
-C. They could have more readers.	D. They could regain public trust.
+A. They would be priced higher.
+B. They would disappear from cities.
+C. They could have more readers.
+D. They could regain public trust.
 
---- Q_30 (ANSWER: B) ---
+[Q_30] (ANS: B)
 Who were the newspapers of the new trend targeted at?
-A. Local politicians.	B. Common people.
-C. Young publishers.	D. Rich businessmen.
+A. Local politicians.
+B. Common people.
+C. Young publishers.
+D. Rich businessmen.
 
---- Q_31 (ANSWER: A) ---
+[Q_31] (ANS: A)
 What can we say about the birth of the penny paper?
-A. It was a difficult process.	B. It was a temporary success.
-C. It was a robbery of the poor.	D. It was a disaster for printers.
+A. It was a difficult process.
+B. It was a temporary success.
+C. It was a robbery of the poor.
+D. It was a disaster for printers.
+
+==================================================
+[ANALYSIS]
+【解析】
+本文为记叙文。文章叙述了“便士报纸”的诞生历史。
+【28题详解】
+细节理解题。根据第一段中的“Before1830s，... Accordingly newspapers were read almost only by rich people. In addition ,most newspapers had little in them that would appeal to mass audience. They were dull and visually forbidding.”可知，在19世纪30年代之前,只有富人才能读报纸，而且大多数报纸中几乎没有能吸引大众的内容，让人感觉无聊，，视觉上令人望而却步。由此可得出那时的报纸没有什么吸引力。分析选项，A . Academic学术的；B. Unattractive没有吸引力， 无魅力的； C. Inexpensive廉价的，不贵的； D. Confidential机密的，保密的。可知 A、C和D是错误的，只有B符合题意，故选B。
+【29题详解】
+推理判断题。根据第二段提到“便士报纸”针对大众，很便宜的。更重要的是，在街上可以买的到报纸。 结合第三段中间的“streets sales of newspapers would be commonplaced in eastern cities”可知，报纸的街头销售随处可见。由此可推断出，街头销售意味读报纸的多了。分析选项可知C符合题，故选C。
+【30题详解】
+细节理解题。根据第二段中的“The trend, then, was ‘penny paper’—a term referring to papers made widely available to the public. perhaps more importantly it meant newspapers that could be bought in single copies on the street.”可知，这种“便士报纸”针对大众的，在街上可以买的到报纸。分析选项可知，选项B符合题意，故选B。
+【31题详解】
+推理判断题。第二段“The trend, then, was ‘penny paper’”及最后一段“The new trend of newspapers for ‘the man on the street’ did not begin well. Some of the early ventures were immediately failures. Publishers already in business, people who owners of successful papers, had little desires to change the tradition. It took a few youthful and daring businessmen to get the ball rolling.”可知，“便士报纸”新趋势一开始并不好，一些早期的尝试立即失败了。已经进入商业领域的成功的出版商，并不想改变这一传统。后来一些年轻而大胆的商人才推动了这件事。由此可推断出“便士报纸”的诞生是一个困难而曲折的过程。分析选项可知，A项符合题意，故选A。

@@ -31,22 +31,45 @@ their own country .
 ==================================================
 [QUESTIONS]
 
---- Q_52 (ANSWER: A) ---
-The author  was unhappy  as mentioned  in Paragraph  1 because  he thought  　   . 
-A. the American  bank  didn’t think  much  of him 
-B. the American  bank  might  hire another  person  
-C. it’s difficult  to get used to American  culture  
+[Q_52] (ANS: A)
+The author  was unhappy  as mentioned  in Paragraph  1 because  he thought  　   .
+A. the American  bank  didn’t think  much  of him
+B. the American  bank  might  hire another  person
+C. it’s difficult  to get used to American  culture
 D. it’s easy to misunderstand  Americans
 
---- Q_53 (ANSWER: D) ---
-The word  “highlights ” in Paragraph  2 probably  means　   　. 
-A. encourages     B. helps  to narrow     C. increases      D. draws  attention  to
+[Q_53] (ANS: D)
+The word  “highlights ” in Paragraph  2 probably  means　   　.
+A. encourages
+B. helps  to narrow
+C. increases
+D. draws  attention  to
 
---- Q_54 (ANSWER: B) ---
-According  to the author , what  should  we do with most  cultural  differences ? 　   　 
-A. Ask the native  people  for help.      B. Understand  and accept  them . 
-C. Do things  in our own way.          D. Do in-depth  research .
+[Q_54] (ANS: B)
+According  to the author , what  should  we do with most  cultural  differences ?
+A. Ask the native  people  for help.
+B. Understand  and accept  them .
+C. Do things  in our own way.
+D. Do in-depth  research .
 
---- Q_55 (ANSWER: B) ---
-When  invited  to a party  the people  who are usually  punctual  are　   　. 
-A. Italians       B. Germans       C. Greeks       D. the British
+[Q_55] (ANS: B)
+When  invited  to a party  the people  who are usually  punctual  are　   　.
+A. Italians
+B. Germans
+C. Greeks
+D. the British
+
+==================================================
+[ANALYSIS]
+52．A  细节理解题．从文章第一段分析，作者对于 "quite"一词的理解偏差导致
+了作者心情不愉快．因为作者认为这家美国银行并没有器重他．故选  A．
+53．D 猜测词义题．由文章第二段可知，无论我们说话还是做事，必须要注意
+我们文化之间的差异性 ．many  of the differences  we see between  cultures  就是我们
+要注意的内容． highlight  本意 "强调 "，此处表示 "注意 "．故选  D．
+54．B 推理判断题 ．由文章第三段信息句  Mostly，is just a question  of getting  used 
+to the differences  and it accepting  them，like the climate，while  getting  on with 
+business．可知，适应文化差异就像在外出差适应当地的气候一样，学会适应和
+接受．故本题选  B．
+55．B 细节理解题 ．由第四段信息句  If you invite  people  to a party  at 7 o’clock  your 
+guests  will consider  it polite  to turn up exactly  on time in Germany  可知，德国人是
+最准时的人．故选  B．

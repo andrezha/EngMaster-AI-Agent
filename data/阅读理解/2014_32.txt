@@ -26,15 +26,39 @@ http://cambridgesciencefestival.org .
 ==================================================
 [QUESTIONS]
 
---- Q_21 (ANSWER: A) ---
-Who  can take part in the Curiosity  Challenge ? 　   　 
-A. School  students     B. Cambridge  locals    C. CSF winners    D. MIT artists
+[Q_21] (ANS: A)
+Who  can take part in the Curiosity  Challenge ?
+A. School  students
+B. Cambridge  locals
+C. CSF winners
+D. MIT artists
 
---- Q_22 (ANSWER: C) ---
-When  will the prize -giving  ceremony  be held? 　   　 
-A. On February  8th   B. On March  10th   C. On April  21st   D. On March  15th
+[Q_22] (ANS: C)
+When  will the prize -giving  ceremony  be held?
+A. On February  8th
+B. On March  10th
+C. On April  21st
+D. On March  15th
 
---- Q_23 (ANSWER: C) ---
-What  type of writing  is this text? 　   　 
-A. An exhibition  guide .       B. An art show  review . 
-C. An announcement .        D. An official  report .
+[Q_23] (ANS: C)
+What  type of writing  is this text?
+A. An exhibition  guide .
+B. An art show  review .
+C. An announcement .
+D. An official  report .
+
+==================================================
+[ANALYSIS]
+21．A．细节理解题． 根据文章第一段 2，3行The challenge  invites , even  dares  
+school  students  between  the ages of 5 and 14 to create  artwork  or a piece  of writing  
+that shows  their curiosity  how it inspires  them  to explore  their world .可知，这个活动
+主要的参加对象是学校里的学生． 故A正确．
+22．C．细节理解题 ．根据文章第三段 Students  who enter  the Curiosity  Challenge  and 
+are selected  as winners  will be honor  at a special  ceremony  during  the CSF on Sunday , 
+April  21st. 可知，进入挑战赛并获奖的同学将在 4月21日的颁奖典礼上接受颁
+奖．故C正确．
+23．C．推理判断题． 本文主要介绍了 The Cambridge  Science  Festival  Curiosity  
+Challenge 剑桥科技节的很多信息 ，根据短文的内容及 The program  guidelines  and 
+other  related  information  are available  at: http://cambridgesciencefestival .org.如果想
+了解更多的信息可以登陆这个网址 ．可推知这是一个通知 ，属于应用文中的通知
+．也就是让别人知道这件重大活动的情况． 故C正确．
