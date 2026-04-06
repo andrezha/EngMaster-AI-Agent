@@ -1,0 +1,83 @@
+YEAR: 2014
+CAT: （新课标Ⅰ）
+==================================================
+[PASSAGE]
+D 
+As more  and more  people  speak  the global  languages  of English,  Chinese,  
+Spanish,  and Arabic,  other  languages  are rapidly  disappearing.  In fact, half of the 
+6,000-7,000  languages  spoken  around  the world  today  will likely  die out by the next 
+century,  according  to the United  Nations  Educational,  Scientific,  and Cultural  
+Organization  (UNESCO).   
+In an effort  to prevent  language  loss, scholars  from  a number  of organizations- -- 
+UNESCO  and National  Geographic  among  them ---have  for many  years  been  
+documenting  dying  languages  and the cultures  they reflect.  
+Mark  Turin,  a scientist  at the Macmillan  Center,  Yale  University,  who 
+specializes  in the languages  and oral traditions  of the Himalayas,  is following  in that 
+  tradition . His recently  published  book,  A Grammar  of Thangmi  with an 
+Ethnolinguistic  Introduction  to the Speakers  and Their  Culture , grows  out of his 
+experience  living,  looking  and raising  a family  in a village  in Nepal.  
+Documenting  the Tangmi  language  and culture  is just a starting  point  for Turin,  
+who seeks  to include  other  languages  and oral traditions  across  the Himalayans  
+reaches  of India,  Nepal,  Bhutan,  and China.  But he is not content  to simply  record  
+these  voices  before  they disappear  without  record.  
+At the University  of Cambridge  Turin  discovered  a wealth  of important  
+materials ---including  photographs,  films,  tap recordings,  and field notes- --which  had 
+remained  unstudied  and were  badly  in need  of care and protection.  
+Now,  through  the two organizations  that he has founded- --the Digital  Himalaya  
+Project  and the World  Oral Literature  Project- --Turin  has started  a campaign  to make  
+such documents,  found  in libraries  and stores  around  the world,  available  not just to 
+scholars  but to the youngers.  
+Generations  of communities  from  whom  the materials  were  originally  collected.  
+Thanks  to digital  technology  and the widely  available  Internet.  Turin  notes,  the 
+endangered  languages  can be saved  and reconnected  with speech  communities.
+
+==================================================
+[QUESTIONS]
+
+[Q_32] (ANS: B)
+Many  scholars  are making  efforts  to　   　.
+A. promote  global  language
+B. rescue  disappearing  languages
+C. search  for language  communities
+D. set up language  research  organizations
+
+[Q_33] (ANS: A)
+What  does “that tradition ” in Paragraph  3 refer  to?
+A. Having  full records  of the languages .
+B. Writing  books  on language  teaching .
+C. Telling  stories  about  language  users .
+D. Living  with the native  speakers .
+
+[Q_34] (ANS: D)
+What  is Turin ’s book  based  on?
+A. The cultural  studies  in India .
+B. The documents  available  at Yale .
+C. His language  research  in Bhutan .
+D. His personal  experience  in Nepal .
+
+[Q_35] (ANS: D)
+Which  of the following  best describes  Turin ’s work ?
+A. Write , sell and donate .
+B. Record , repair  and reward .
+C. Design , experiment  and report .
+D. Collect , protect  and reconnect .
+
+==================================================
+[ANALYSIS]
+32．B 细节理解题． 根据第二段 In an effort  to prevent  language  loss, scholars  from  
+a number  of organizations ---UNESCO  and National  Geographic  among  them ---have  
+for many  years  been  documenting  dying  languages  and the cultures  they reflect .可知
+许多学者正在努力记录濒临消失的语言和文化，来挽救这些语言． 故选 B．
+33．A 词义猜测题． 根据第三段 But he is not content  to simply  record  these  voices  
+before  they disappear  without  record .可知这些语言在没有被记录前就要消失了 ，所
+  以这些学者对这些语言做的是最早的记录． 故选 A．
+34．D 推理判断题 ．根据 His recently  published  book , A Grammar  of Thangmi  with 
+an Ethnolinguistic  Introduction  to the Speakers  and Their  Culture , grows  out of his 
+experience  living , looking  and raising  a family  in a village  in Nepal .可知他的书是根
+据他在尼泊尔一个村庄中的生活经历写的， 故选 D．
+35．D 推理判断题． 根据最后一段 available  not just to scholars  but to the younger  
+generations  of communities  from  whom  the materials  were  originally  collected . 以及
+Turin  notes , the endangered  languages  can be saved  and reconnected  with speech  
+communities . 可知 Turin的作品是从最初的材料上进行的收集，他的作品使濒临
+危险的语言得到了保护 ，并且与言语重新连接 ．因此对他的作品做好的描述是具
+有收集，保护和重新连接的作用． 故选 D．

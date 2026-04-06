@@ -1,0 +1,32 @@
+Question:
+根据短文内容, 从短文后的选项 选出能填入空白处的最佳选项。选项中有两项为多余选项。
+Swap, Don’t shop!
+You keep hearing about recycling, right? But it doesn't end with bottles, cans, and paper. Clothing takes a huge amount of natural resources（资源）to make, and buying loads of new clothing（or throwing out old clothing）is not healthy for the environment. So what to do with all those perfectly-good-but-you're-maybe-a-little-sick-of-them clothes piled on your bedroom floor? ____16____. It's the best way to get rid of your used clothes, score clothes from your friends, and have a party all at the same time.
+A successful swap depends on the selection of clothes, the organization of the event, and, obviously, how much fun is had. It's really easy to do! Here are a few pointers. 
+●Invite 5—10 people so you have a nice selection. ____17____ , and there may not be enough things to choose from; more than that, and it becomes uncontrollable. 
+●____18____. They should also prepare plenty of reusable bags to carry their "new" clothes home. 
+●Put different types of clothing on different surfaces in the room.____19____. Place a few mirrors around your room so people can see how things look when they try them on. One of the ground rules of the swap should be that everyone must try on the clothes before they take them—things always look different when you put them on.
+●Set a starting time. Maybe you say “go,” or turn on a certain song, or whatever. ____20____. And don't forget to put out some cookies and fruits. Remember, it's a party!
+A. Less people than that
+B. Hold a clothing swap
+C. If two people are competing
+D. Just keep music playing throughout
+E. Donate whatever clothes are left over
+F. Have everyone put their clothes in the right spots
+G. Tell everyone to bring clean clothes in good condition
+
+
+Answers:
+['B', 'A', 'G', 'F', 'D']
+
+Analysis:
+【解析】【16题详解】
+根据上文“So what to do with all those perfectly- good-but-you 're- maybe-little-sick-of-them clothes piled on your bedroom floor?（那么，该如何处理那些堆在卧室地板上的（看起来）完好但你可能有点厌倦的衣服呢？）”提出关于如何解决旧衣物的问题。下文“It's the best way to get rid of your used clothes, score clothes from your friends, and have a party all at the same time.（这是扔掉旧衣服、从朋友那里买衣服、同时开派对的最好方法。）”提到了具体处理旧衣物的方法。所以空白处应起承上启下的作用，承接上文讲到的问题，启下提出的方法。因而空白处是提出了一种处理旧衣物的好方法。B项“Hold a clothing swap.（进行衣物交换。）”给出了一种处理旧衣物的方法，承上启下，符合语境。故选B项。
+【17题详解】
+根据上文“Invite 5-10 people so you have a nice selection.”（邀请5到10个人，这样你就有一个很好的选择。）说明了应该邀请的人数。下文“and there may not be enough things to choose from; more than that, and it becomes uncontrollable.”（可能没有足够的东西可供选择；多于这个数量，它就变得无法控制。）说明多于或少于一定数量的人数将会导致一些麻烦。所以空白处应是针对下文中的“more than that”提出的相反的假设，即少于一定数量的人。A项“Less people than that”（少于这些人）提出一种假设，和下文中“more than that”相对，说明人数不宜太多，也不能太少，符合语境。故选A项。
+【18题详解】
+根据下文“They should also prepare plenty of reusable bags to carry their “new” clothes home.”（他们还应该准备大量的可重复使用的袋子，把他们的“新”衣服带回家。）说明去的时候应该为交换所得的“新衣服”准备袋子。G项“Tell everyone to bring clean clothes in good condition.”（告诉每个人带来品相完好的衣服。）说明去参加衣物交换的时候应该带完好的衣服，其中的bring和下文中carry相对，都是为交换衣物所做的准备。下文中的also也是提示词，并且其中They指代G项的everyone。所以G项符合语境。故选G项。
+【19题详解】
+根据上文“Put different types of clothing on different surfaces in the room.”（把不同类型的衣服放在房间的不同地方。）指出衣服应该归类放置。下文“Place a few mirrors around your room so people can see how things look when they try them on.”（在房间周围放几面镜子，这样人们试穿时就能看到衣服的样子。）提到了放置镜子的意义。由此可见，本段讲述的是房间里的一些具体的做法，所以空白处一样要提出人们在房间里要做什么。F项“Have everyone put their clothes in the right spots.（让每个人的衣服都放在相应的位置上。）”说明每个人应该按照不同类型把衣服摆放在相应的位置，符合语境。故选F项。
+【20题详解】
+上文“Set a starting time. Maybe you say “go,” or turn on a certain song, or whatever.”（设置开始时间。也许你说“开始”，或者打开一首歌，或者无论什么。）打开音乐或者无论什么，意味聚会开始。下文“And don't forget to put out some cookies and fruits. Remember, it's a party!”（别忘了拿出一些饼干和水果。记住，这是个派对！）讲到了聚会上应该提供一些派对该有的服务。因而，空白处应是承接上文，讲述聚会期间要保持应有的内容。D项“Just keep music playing throughout.”（要始终播放音乐。）承上启下，说明在派对上要有音乐，与前文形成意义上的一致，符合题意，故选D项。

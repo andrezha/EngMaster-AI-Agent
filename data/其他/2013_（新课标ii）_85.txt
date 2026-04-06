@@ -1,0 +1,13 @@
+Question:
+31. A serious  study  of physics  is impossible       some  knowledge  of mathematics.  
+A. against        B. before         C. beyond        D. without
+
+
+Answers:
+['D']
+
+Analysis:
+【解答】 答案 D． against反对，衬托； before在…之前； beyond超过； without
+没有．根据句意 ："没有 "一定的数学知识是没有办法对物理学进行系统地研究的
+．故选 D． 
+【点评】

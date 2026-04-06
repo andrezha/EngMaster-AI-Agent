@@ -1,0 +1,15 @@
+Question:
+30. At the last moment , Tom  decided  to          a new character  to make  the story  
+seem  more  likely.  
+A. put up   B. put in    C. put on   D. put off
+
+
+Answers:
+['B']
+
+Analysis:
+【解答】 答案： B  本题考查动词短语辨析． put …up举起 …；张贴 …；put …in 
+使…加入；使 …进入； put …on  穿上 …；上演 …；put …off  推迟 …．句意：在
+最后一刻， Tom决定添加一个新角色来使故事显得更加真实． 题干中的 more  
+likely提示， Tom决定 "添加 "一个角色， 故B正确．  
+【点评】

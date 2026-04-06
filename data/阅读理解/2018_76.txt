@@ -1,0 +1,93 @@
+YEAR: 2018
+CAT: （新课标ⅱ）
+==================================================
+[PASSAGE]
+A 
+Summer  Activities  
+Students  should  read the list with their parents  / carers,  and select  two activities  
+they would  like to do. Forms  will be available  in school  and online  for them  to 
+indicate  their choices  and return  to school.  Before  choices  are finalized,  parents  / 
+carers  will be asked  to sign to confirm  their child’s  choices.  
+Activity  Description  Member  
+of staff Cost 
+Outdoor  
+Adventure  
+(OUT)  Take  yourself  out of your comfort  zone  for a 
+week,  discover  new personal  qualities,  and 
+learn  new skills.  You will be able to take part 
+in a number  of activities  from  canoeing  to 
+wild camping  on Dartmoor.  Learn  rock 
+climbing  and work  as a team,  and enjoy  the 
+great  outdoor  environment.  Mr. 
+Clemens  ￡140 
+WWI  
+Battlefields  
+and Paris  
+(WBP)  On Monday  we travel  to London.  After  
+staying  overnight  in London,  we travel  on 
+Day 2 to northern  France  to visit the World  
+War I battlefields.  On Day 3 we cross  into 
+Belgium.  Thursday  sees us make  the short  
+journey  to Paris  where  we will visit 
+Disneyland  Paris  park,  staying  until late to 
+see the parade  and the fireworks.  Our final 
+day, Friday,  sees us visit central  Paris  and 
+tour the main  sights.  Mrs. 
+Wilson  ￡425 
+Crafty  
+Foxes  
+(CRF)  Four  days of product  design  centred  around  
+textiles.  Making  lovely  objects  using  recycled  
+and made  materials.  Bags,  cushions  and 
+decorations  … Learn  skills  and leave  with 
+modern  and unusual  textiles.  Mrs. 
+Goode  ￡30 
+ 
+Potty  about  
+Potter  
+(POT)  Visit  Warner  Bros  Studio,  shop  stop to buy 
+picnic,  stay overnight  in an approved  Youth  
+Hostel  in Streatley-on-Thames,  guided  tour of 
+Oxford  to see the film locations,  picnic  lunch  
+outside  Oxford’s  Christchurch,  boating  on the 
+River  Cherwell  through  the University  Parks,  
+before  heading  back  to Exeter.  Miss  
+Drake  ￡150
+
+==================================================
+[QUESTIONS]
+
+[Q_21] (ANS: A)
+Which  activity  will you choose  if you want  to go camping?
+A. OUT.
+B. WBP.
+C. CRF.
+D. POT.
+
+[Q_22] (ANS: D)
+What  will the students  do on Tuesday  with Mrs. Wilson?
+A. Travel  to London.
+B. See a parade  and fireworks.
+C. Tour  central  Paris.
+D. Visit  the WWI  battlefields.
+
+[Q_23] (ANS: A)
+How  long does Potty  about  Potter  last?
+A. Two days.
+B. Four  days.
+C. Five days.
+D. One week.
+
+==================================================
+[ANALYSIS]
+21．A．细节理解题 ．根据 Your  will be able to take part in a number  of activities  from  
+canoeing  to wild camping  on Dartmoot 可知学生可以参加许多的活动 ，可以乘坐皮
+划艇到达营地， 有此可知如果要野营需要参加 Outdoor  Advcature  （OUT），故
+答案为 A．
+22．D．细节理解题． 根据 WWI  Battlefields  and Paris（WBP）中After  staying  
+overnight  in London，we travel  on Day 2 to northern  France  to visit the World  War I 
+battlefields 可知，第二天也就是周二去法国北部参观一战战场， 故答案为 D．
+23．A．细节理解题． 根据 Potty  about  Potter（POT）中Visit  Warn  Bros  Studio，
+shop  to buy pienic，stay overnight  in an approved  Youth  Hostel  in Streatlry -on 
+-Thames可知需要待上一晚， 最后回到 Exeter，可以判断活动要持续两天，故答
+案为 A．

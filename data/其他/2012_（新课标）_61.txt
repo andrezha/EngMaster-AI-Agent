@@ -1,0 +1,13 @@
+Question:
+22. Sarah  looked  at         finished  painting  with         satisfaction.  
+A. 不填 ; a          B. a; the          C. the; 不填         D. the; a
+
+
+Answers:
+['C']
+
+Analysis:
+【解答】 答案 C．第一空特指 "已经画完的画 "；第二空考查介词短语 with 
+  satisfaction 意为：满意地，作状语． 此处 satisfaction 为抽象名词，在此短语中不
+用冠词． 选C． 
+【点评】

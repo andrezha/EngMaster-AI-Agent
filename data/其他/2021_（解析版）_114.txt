@@ -1,0 +1,48 @@
+Question:
+C
+When I was 9, we packed up our home in Los Angeles and arrived at Heathrow, London on a gray January morning. Everyone in the family settled quickly into the city except me. Without my beloved beaches and endless blue—sky days, I felt at a loss and out of place. Until I made a discovery.
+Southbank, at an eastern bend in the Thames, is the center of British skateboarding, where the continuous crashing of skateboards left your head ringing .I loved it. I soon made friends with the local skaters. We spoke our own language. And my favorite: Safe. Safe meant cool. It meant hello. It meant don't worry about it. Once, when trying a certain trick on the beam（横杆）, I fell onto the stones, damaging a nerve in my hand, and Toby came over, helping me up: Safe, man. Safe. A few minutes later, when I landed the trick, my friends beat their boards loud, shouting: “ Safe! Safe! Safe!” And that's what mattered—landing tricks, being a good skater.
+When I was 15, my family moved to Washington. I tried skateboarding there, but the locals were far less welcoming. Within a couple of years, I'd given it up.
+When I returned to London in 2004, I found myself wandering down to Southbank, spending hours there. I've traveled back several times since, most recently this past spring. The day was cold but clear: tourists and Londoners stopped to watch the skaters. Weaving（穿梭）among the kids who rushed by on their boards, I found my way to the beam. Then a rail—thin teenager, in a baggy white T—shirt, skidded（滑）up to the beam. He sat next to me. He seemed not to notice the man next to him. But soon I caught a few of his glances. “I was a local here 20 years ago,” I told him. Then, slowly, he began to nod his head. “Safe, man. Safe.”
+“Yeah,” I said. “Safe.”
+8. What can we learn about the author soon after he moved to London?
+A. He felt disappointed.	B. He gave up his hobby.
+C. He liked the weather there.	D. He had disagreements with his family.
+9. What do the underlined words “Safe! Safe! Safe!” probably mean?
+A. Be careful!	B. Well done!	C. No way!	D. Don't worry!
+10. Why did the author like to spend time in Southbank when he returned to London?
+A. To join the skateboarding.	B. To make new friends.
+C. To learn more tricks.	D. To relive his childhood days
+11. What message does the author seem to convey in the text?
+A. Children should learn a second language.
+B. Sport is necessary for children's health.
+C. Children need a sense of belonging
+D. Seeing the world is a must for children.
+
+
+Answers:
+['A', 'B', 'D', 'C']
+
+Analysis:
+[解析]
+[分析]本文属于记叙文。本文讲述作者自己的经历，起初搬到伦敦很不适应，但是由于找到了玩滑板的
+地方，结识了玩滑板的朋友，因此很好的适应了。作者回到伦敦之后，经常去之前玩滑板的地方寻找自己
+的回忆，在与-个玩滑板的孩子打招呼的时候，终于找到了自己久违的熟悉感。
+[8题详解]
+推理判断题。根据第一段 "Everyone in the family sttled quickdy into the ceity except me. Without my beloved
+beaches and endless blue -sky days, I felt at a loss and out of place.(除了我之外的家里人都很快适应这个城市，
+没有了我喜爱的沙滩和蓝天，我感到迷茫和无措)”可知，作者刚到伦敦的时候因为没有喜爱的沙滩，不能很
+好的融入到新的城市，感到很沮丧，故选A.
+[9题详解]
+词义猜测题。根据画线词后文"And that's what mattered- -landing tricks, being a good skatax. (那才是真正重要
+的一滑 板的落地技巧掌握了才是- - 名好的滑板玩家)"可知，作者掌握了滑板落地技巧，因此他的朋友大声
+欢呼，因此可以推出本句的Safe是赞关的含义，结合选项，故选B.
+[10题详解]
+推理判断题。根据第四段*I was a local here 20 years ago," I told him. Then, slowly, he began to nod his head.
+“Safe, man. sae"(我告诉他:“我20年前经常在这里玩滑板，”他缓慢地开始向我点头:“嗨，你好!”)”呵
+推知，作者去Southbank这个地方是为了寻找自己玩滑板的回忆，故选D.
+[11题详解]
+推理判断题。根据全文可知，作者起初搬到伦敦很不适应，但是由于找到了玩滑板的地方，结识了玩滑板
+的朋友，因此很好的适应了。但是搬去华盛顿，因为没有遇到很好的玩滑板的朋友，几年之后就不再玩滑
+板，作者回到伦敦之后，经常之前玩滑板的地方寻找自己的回忆，在于-一个孩子打招呼的时候，终于找
+到了自己久违的回忆。通过作者的经历，作者要表达的是，归属感对于孩子是很重要的，故选C.

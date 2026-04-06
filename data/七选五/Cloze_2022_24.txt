@@ -1,0 +1,47 @@
+YEAR: 2022
+CAT: （全国乙卷）
+==================================================
+[PASSAGE]
+根据短文内容，从短文后的选项中选出能填入空白处的最佳选项。选项中有两项为多余选项。
+Friendship needs care and attention to keep it in good health. Here are five ways to sustain (保持) long-distance friendships. 
+·Set a regular date
+Long-lasting friendships share the characteristic that both sides equally contact (联系) and share with one another. With busy schedules, squeezing in phone calls can be a challenge. ___16___. 
+·More isn’t always merrier
+Make sure you have communicated with your friend about how frequently each of you wants to be contacted and what method works best for you both. ___17___. There are alternatives to constant written communication, such as leaving voice messages or having a group chat. 
+·Practise empathy (共情)
+___18___. The friend who is remaining needs to be sensitive to all the additional time demands placed on the friend who has moved. The one in the new environment should be sympathetic to the fact that your friend may feel abandoned. 
+·___19___
+Anniversaries and birthdays carry even more weight in long-distance friendships. Although technology might make day-to-day communication possible, extra effort goes a long way on special days. Simply keeping a diary that keeps track of friends’ birthdays and other important dates will make sure nothing slips by you. 
+·Don’t rely on technology alone
+___20___, but long-distance friendships — even close ones — may require more conscious effort to sustain. Try to seek out chances to renew friendships. How to do it? Just spend face-to-face time together whenever possible.
+
+[QUESTIONS]
+
+==================================================
+[OPTIONS (A-G)]
+A. Remember important dates
+B. Compensate by writing letters
+C. It is also helpful for you to be a friendship keeper
+D. Try to find a time that works for both of you and stick to it
+E. Friends need to talk about their preferred methods of communication
+F. It is easy to have a sense of connectedness through social media
+G. You may be the friend who left or the one who was left behind
+
+==================================================
+[ANSWERS]
+空(1): D  空(2): B  空(3): G  空(4): A  空(5): F  
+
+==================================================
+[ANALYSIS]
+【解析】
+【导语】本文是一篇应用文，介绍了五种维系异地友谊的方法。
+【16题详解】
+上文“With busy schedules, squeezing in phone calls can be a challenge.”（平日繁忙，很难抽出时间打电话。）讲的是双方都很忙碌，很难有时间给对方打电话，D项“尽量找个双方都有空的时间去打电话，并坚持下去”给出了解决没时间打电话这个问题的方法，符合题意。故选D项。
+【17题详解】
+上文“Make sure you have communicated with your friend about how frequently each of you wants to be contacted and what method works best for you both.”（确保你已经与你的朋友沟通过，了解你们彼此希望联系的次数，以及哪种沟通方式最适合你们两人。）提到异地朋友之间要商量沟通方式，B项“可以通过写信补偿”提出了其中一种沟通方式：写信，下文“There are alternatives to constant written communication, such as leaving voice messages or having a group chat.”（除了不断的文字交流，还有其他方式，比如发语音或者组建群聊。）补充了发语音等其他沟通方式，其中“constant written communication”呼应了B项的“writing letters”。故选B项。
+【18题详解】
+下文“The friend who is remaining”（留下来的朋友）和“The one in the new environment”（在新环境中的那个）提到朋友的两个不同处境，G项“你可能是朋友中离开的那一方，也可能是被留下的那一方”指出了异地友谊中分为离开的一方和留下的一方，其中“the friend who left”和“the one who was left behind”分别对应下文“The one in the new environment”和“The friend who is remaining”，所以G项符合题意。故选G项。
+【19题详解】
+分析文章结构可知，设空处的内容是维系异地友谊的第四个方法，是第五段的小标题。下文“Anniversaries and birthdays carry even more weight in long-distance friendships.”（周年纪念日和生日对于异地友谊而言是非常重要的。）讲的是诸如周年纪念日和生日等重要的日子对于维系异地友谊是非常重要的，由此推知，这段对应的维系异地友谊的方法是A项“记得重要的日子”，所以A项符合题意。故选A项。
+【20题详解】
+设空处所在句子的后半句“but long-distance friendships — even close ones — may require more conscious effort to sustain.”（但是异地友谊——甚至是关系亲密的友谊——可能需要更加自觉地去维系。）讲的是我们要更加自觉地维系异地友谊，其中“but”说明后半句与设空处形成转折，而F项“朋友之间很容易通过社交媒体产生一种联结感”讲的是可以通过社交媒体这种方式很容易与朋友产生联结，与后半句“require more conscious effort to sustain”形成转折，而且其中的“social media”呼应了该段的小标题“Don’t rely on technology alone”（不要仅仅依赖技术）中的“technology”。故选F项。

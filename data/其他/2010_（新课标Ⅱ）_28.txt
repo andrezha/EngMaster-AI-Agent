@@ -1,0 +1,13 @@
+Question:
+19. Excuse  me, I      I was blocking  your way. 
+A. didn’t realize     B. don’t realize     C. haven ’t realized     D. wasn ’t realizing
+
+
+Answers:
+['A']
+
+Analysis:
+【解答】答案： A. "Excuse  me"说明我现在已经意识到了（ realize）我正挡着你的
+路，所以没有意识到 "not realize"这个动作应该发生在过去 ，明显是刚刚发生的动
+作，故didn't realize符合语境， 所以选 A.  
+【点评】

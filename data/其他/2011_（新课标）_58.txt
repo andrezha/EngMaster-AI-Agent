@@ -1,0 +1,14 @@
+Question:
+34. William  found  it increasingly  difficult  to read,  for his eyesight  was beginning  to 
+_______.  
+A. disappear        B. fall        C. fail        D. damage
+
+
+Answers:
+['C']
+
+Analysis:
+【解答】答案 C．A选项 "消失 "；B选项 "落下；跌倒；陷入 "；D选项 "破坏 "；C
+选项 "失败，不及格，（指健康）衰退；变弱；消失 "；根据句意 "他的视力开始
+衰退 "可知 C项符合语境， 故选 C． 
+【点评】

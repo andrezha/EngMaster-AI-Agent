@@ -1,0 +1,55 @@
+YEAR: 2021
+CAT: （新课标Ⅰ）
+==================================================
+[PASSAGE]
+B
+When almost everyone has a mobile phone, why are more than half of Australian homes still paying for a landline（座机）?
+These days you’d be hard pressed to find anyone in Australia over the age of 15 who doesn’t own a mobile phone. In fact plenty of younger kids have one in their pocket. Practically everyone can make and receive calls anywhere, anytime. 
+Still, 55 percent of Australians have a landline phone at home and only just over a quarter （29%） rely only on their smartphones according to a survey （调查）. Of those Australians who still have a landline, a third concede that it’s not really necessary and they’re keeping it as a security blanket — 19 percent say they never use it while a further 13 percent keep it in case of emergencies. I think my home falls into that category. 
+More than half of Australian homes are still choosing to stick with their home phone. Age is naturally a factor（因素）— only 58 percent of Generation Ys still use landlines now and then, compared to 84 percent of Baby Boomers who’ve perhaps had the same home number for 50 years. Age isn’t the only factor; I’d say it’s also to do with the makeup of your household. 
+Generation Xers with young families, like my wife and I, can still find it convenient to have a home phone rather than providing a mobile phone for every family member. That said, to be honest the only people who ever ring our home phone are our Baby Boomers parents, to the point where we play a game and guess who is calling before we pick up the phone（using Caller ID would take the fun out of it）. 
+How attached are you to your landline? How long until they go the way of gas street lamps and morning milk deliveries?
+
+==================================================
+[QUESTIONS]
+
+[Q_24] (ANS: B)
+What does paragraph 2 mainly tell us about mobile phones?
+A. Their target users.
+B. Their wide popularity.
+C. Their major functions.
+D. Their complex design.
+
+[Q_25] (ANS: A)
+What does the underlined word “concede” in paragraph 3 mean?
+A. Admit.
+B. Argue.
+C. Remember.
+D. Remark.
+
+[Q_26] (ANS: C)
+What can we say about Baby Boomers?
+A. They like smartphone games.
+B. They enjoy guessing callers’ identity.
+C. They keep using landline phones.
+D. They are attached to their family.
+
+[Q_27] (ANS: B)
+What can be inferred about the landline from the last paragraph?
+A. It remains a family necessity.
+B. It will fall out of use some day.
+C. It may increase daily expenses.
+D. It is as important as the gas light.
+
+==================================================
+[ANALYSIS]
+【解析】
+【分析】本文是一篇说明文。文章主要介绍了澳大利亚使用固定电话的情况，并且表达了固定电话是非必需品的观点。
+【24题详解】
+主旨大意题。根据文章第二段“These days you'd be hard pressed to find anyone in Australia over the age of 15 who doesn't own a mobile phone. In fact plenty of younger kids have one in their pocket. Practically everyone can make and receive calls anywhere, anytime. (现在你很难在澳大利亚找到15岁以上的没有手机的人。事实上，很多年幼的孩子口袋里都有手机。几乎每个人都可以随时随地拨打和接听电话)”可推知，本段主要说明手机在澳大利亚广受欢迎。故选B项。
+【25题详解】
+词句猜测题。根据划线单词的上文“Of those Australians who still have a landline (在那些仍然有固定电话的澳大利亚人中)”可知，这个调查的目标人群是仍然有固定电话的澳大利亚人；根据下文“it's not really necessary and they're keeping it as a security blanket — 19 percent say they never use it while a further 13 percent keep it in case of emergencies (固定电话并不是必须的，他们将其作为一种安全保障——19%的人表示他们从未使用过固定电话，另有13%的人保留固定电话以防紧急情况)”可知，很多人认为固定电话并不是必须拥有的，有些人保留固定电话只是为了防止紧急情况。从而推知，在调查中，他们应该是承认了固定电话的非必要性。由此推知，划线单词“concede”意为“承认”。故选A项。
+【26题详解】
+推理判断题。根据文章第四段“84 percent of Baby Boomers who've perhaps had the same home number for 50 years.(婴儿潮时代中有84%的人可能已经有50年相同的家庭号码了)”以及文章第五段“That said, to be honest the only people who ever ring our home phone are our Baby Boomers parents (也就是说，老实说，唯一打过我们家电话的人是婴儿潮一代的父母)”可推知，婴儿潮时代的人一直用固定电话。故选C项。
+【27题详解】
+推理判断题。根据文章最后一段“How attached are you to your landline? How long until they go the way of gas street lamps and morning milk deliveries? (你有多喜欢你的座机？它们还要多久才能走上煤气路灯和早晨送牛奶的道路？)”可推知，本段使用类比的方式，使用煤气路灯以及早晨送牛奶已经被淘汰的例子，侧面说明了固定电话总有一天会废弃的。故选B项。

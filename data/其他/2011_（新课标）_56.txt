@@ -1,0 +1,15 @@
+Question:
+32. They  _______have  arrived  at lunchtime  but their flight  was delayed.  
+A. will          B. can        C. must         D. should
+
+
+Answers:
+['D']
+
+Analysis:
+【解答】答案： D．根据 but后"their  flight  was delayed"可知是过去时态， 故排除
+A；can have  done表示对过去或已经发生的事情的推测，通常用于否定和疑问句
+中，故排除 B；must  have  done表示过去一定做过某事，对过去情况的推测，不
+符合题意；should  have  done表示本应该做某事而没有做 ．根据 "but their flight  was 
+delayed"这样的结果可以推断出他们本应该到达却没有到达， 故选 D． 
+【点评】

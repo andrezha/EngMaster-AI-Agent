@@ -1,0 +1,15 @@
+Question:
+23. Try not to cough  more  than you can         since  it may cause  problems  to 
+your lungs.  
+A. check        B. allow    C. stop     D. help
+
+
+Answers:
+['C']
+
+Analysis:
+【解答】 答案 C． check"核实，抑制 "；allow"允许，许可 "；stop"停止 "；help"
+帮助，促进，治疗，补救 "．句意：尽量不要咳嗽，因为这会给你的肺带来问题 ．
+考生需掌握短语 more  than one can help的意思 "尽量不，绝对不 "，故正确答案是
+C． 
+【点评】

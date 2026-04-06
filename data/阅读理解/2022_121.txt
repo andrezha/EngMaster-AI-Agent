@@ -1,0 +1,52 @@
+YEAR: 2022
+CAT: （全国甲卷）
+==================================================
+[PASSAGE]
+B
+Goffin’s cockatoos, a kind of small parrot native to Australasia, have been shown to have similar shape-recognition abilities to a human two-year-old. Though not known to use tools in the wild, the birds have proved skilful at tool use while kept in the cage. In a recent experiment, cockatoos were presented with a box with a nut inside it. The clear front of the box had a “keyhole” in a geometric shape, and the birds were given five differently shaped “keys” to choose from. Inserting the correct “key” would let out the nut.
+In humans, babies can put a round shape in a round hole from around one year of age, but it will be another year before they are able to do the same with less symmetrical (对称的) shapes. This ability to recognize that a shape will need to be turned in a specific direction before it will fit is called an “allocentric frame of reference”. In the experiment, Goffin’s cockatoos were able to select the right tool for the job, in most cases, by visual recognition alone. Where trial-and-error was used, the cockatoos did better than monkeys in similar tests. This indicates that Goffin’s cockatoos do indeed possess an allocentric frame of reference when moving objects in space, similar to two-year-old babies.
+The next step, according to the researchers, is to try and work out whether the cockatoos rely entirely on visual clues (线索), or also use a sense of touch in making their shape selections.
+
+==================================================
+[QUESTIONS]
+
+[Q_4] (ANS: B)
+How did the cockatoos get the nut from the box in the experiment?
+A. By following instructions.
+B. By using a tool.
+C. By turning the box around.
+D. By removing the lid.
+
+[Q_5] (ANS: C)
+Which task can human one-year-olds most likely complete according to the text?
+A. Using a key to unlock a door.
+B. Telling parrots from other birds.
+C. Putting a ball into a round hole.
+D. Grouping toys of different shapes.
+
+[Q_6] (ANS: D)
+What does the follow-up test aim to find out about the cockatoos?
+A. How far they are able to see.
+B. How they track moving objects.
+C. Whether they are smarter than monkeys.
+D. Whether they use a sense of touch in the test.
+
+[Q_7] (ANS: D)
+Which can be a suitable title for the text?
+A. Cockatoos: Quick Error Checkers
+B. Cockatoos: Independent Learners
+C. Cockatoos: Clever Signal-Readers
+D. Cockatoos: Skilful Shape-Sorters
+
+==================================================
+[ANALYSIS]
+【解析】
+【导语】本文是一篇说明文。文章主要介绍了一种会识别形状的凤头鹦鹉。
+【4题详解】
+细节理解题。根据文章第一段“Though not known to use tools in the wild, the birds have proved skilful at tool use while kept in the cage. (虽然人们不知道这些鸟在野外会使用工具，但事实证明，它们在关在笼子里时就能熟练地使用工具)”以及“the birds were given five differently shaped “keys” to choose from. Inserting, the correct “keys” would let out the nut. (研究人员给了这些鸟5把形状各异的“钥匙”供它们选择。插入，正确的“钥匙”会让坚果出来)”可知，在实验中，凤头鹦鹉是通过使用工具从盒子里取出坚果的。故选B。
+【5题详解】
+细节理解题。根据文章第二段“In humans, babies can put a round shape in a round hole from around one year of age (在人类身上，婴儿从一岁左右就可以把一个圆形的物品放进一个圆形的洞里)”结合选项，可知，一岁儿童最有可能完成“将一个球放进一个圆形的洞里”的任务。故选C。
+【6题详解】
+推理判断题。通过文章最后一段“The next step, according to the researchers, is to try and work out whether the cockatoos rely entirely on visual clues, or also use a sense of touch in making their shape selections. (根据研究人员的说法，下一步是尝试弄清楚凤头鹦鹉是完全依靠视觉线索，还是也使用触觉来选择它们的形状)”可推知，后续测试的目的是了解凤头鹦鹉在测试中是否使用触觉。故选D。
+【7题详解】
+主旨大意题。通读全文，再结合文章第一段“Coffin’s cockatoos, a kind of small parrot native to Australasia, have been shown to have similar shape-recognition abilities to a human two-year-old. (科芬的凤头鹦鹉是一种原产于大洋洲的小鹦鹉，它的形状识别能力与两岁的人类相似)”可推知，本文主要介绍了会识别形状的凤头鹦鹉。D项“Cockatoos: Skilful Shape-Sorters (凤头鹦鹉：识别形状的熟练工)”符合文意，最适合作为本文标题。故选D。

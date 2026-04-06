@@ -1,0 +1,49 @@
+YEAR: 2017
+CAT: （新课标ⅲ）
+==================================================
+[PASSAGE]
+C
+After years of heated debate, gray wolves were reintroduced to Yellowstone National Park. Fourteen wolves were caught in Canada and transported to the park. By last year, the Yellowstone wolf population had grown to more than 170 wolves.
+Gray wolves once were seen here and there in the Yellowstone area and much of the continental United States, but they were gradually displaced by human development. By the 1920s, wolves had practically disappeared from the Yellowstone area. They went farther north into the deep forests of Canada, where there were fewer humans around.
+The disappearance of the wolves had many unexpected results. Deer and elk populations — major food sources (来源) for the wolf — grew rapidly. These animals consumed large amounts of vegetation (植被), which reduced plant diversity in the park. In the absence of wolves, coyote populations also grew quickly. The coyotes killed a large percentage of the park’s red foxes, and completely drove away the park’s beavers.
+As early as 1966, biologists asked the government to consider reintroducing wolves to Yellowstone Park. They hoped that wolves would be able to control the elk and coyote problems. Many farmers opposed the plan because they feared that wolves would kill their farm animals or pets.
+    The government spent nearly 30 years coming up with a plan to reintroduce the wolvers. The U.S. Fish and Wildlife Service carefully monitors and manages the wolf packs in Yellowstone. Today, the debate continues over how well the gray wolf is fitting in at Yellowstone. Elk, deer, and coyote populations are down, while beavers and red fores have made a comeback. The Yellowstone wolf project has been a valuable experiment to help biologists decide whether to reintroduce wolves to other parts of the country as well.
+
+==================================================
+[QUESTIONS]
+
+[Q_28] (ANS: D)
+What is the text mainly about?
+A. Wildlife research in the United States.
+B. Plant diversity in the Yellowstone area.
+C. The conflict between farmers and gray wolves.
+D. The reintroduction of wolves to Yellowstone Park.
+
+[Q_29] (ANS: C)
+What does the underlined word “displaced” in paragraph 2 mean?
+A. Tested.
+B. Separated.
+C. Forced out.
+D. Tracked down.
+
+[Q_30] (ANS: A)
+What did the disappearance of gray wolves bring about？
+A. Damage to local ecology.
+B. A decline in the park’s income.
+C. Preservation of vegetation.
+D. An increase in the variety of animals.
+
+[Q_31] (ANS: B)
+What is the author’s attitude towards the Yellowstone wolf project？
+A. Doubtful.
+B. Positive.
+C. Disapproving.
+D. Uncaring.
+
+==================================================
+[ANALYSIS]
+【解答】DCAB
+28．D  主旨大意题．A项，"美国的野生动物研究"．B项，"黄石地区的植物多样性"．C项，"农民与苍狼之间的冲突"．D项，"黄石公园重新引入苍狼"．根据文章首句After years of heated debate, gray wolves were reintroduced to Yellowstone National Park 以及全文大意可知，本篇文章都是围绕苍狼被重新引入黄石公园所展开叙述的，D项符合题意．A、B、C项都是围绕着这个主题提及的某个方面，并没有大篇幅描写，故排除．故正确答案为D．
+29．C  词义猜测题．根据文章第二段第一句 Gray wolves once were seen here and there in the Yellowstone area and much of the continental United States, but they were gradually displaced by human development 可知，在黄石地区本来苍狼随处可见，但是由于人类文明的发展它们逐渐被迫离开这个区域．displace 意为"取代，移走"，C项的 force out 意为"把…赶走，迫使离开"，与题意相符．test 意为"测试，测验"，track down 意为"追寻，查获"，均不符合题意．separate 意为"分开，分离"，但是这里强调的是"被迫离开"，不是"主动分离"，故排除．故正确答案为C．
+30．A 推理判断题．根据第三段段意，可知苍狼的消失会使鹿群增加，它们破坏植被，从而减少植物多样性，破坏生态平衡．A项意为"破坏当地生态"，符合题意．B项文中未提及，排除．C项意为"保留植被"，与文意相反，排除．D项意为"动物多样性增多"，文中只是提到某些动物数量增加，并未提及种类增加，故排除．故正确答案为A．
+31．B 态度判断题．根据最后一段段意及最后一句 The Yellowstone wolf project has been a valuable experiment to help biologists decide whether to reintroducing wolves to other parts of the country as well 可知，苍狼的引进对黄石地区的生态平衡有很大帮助，而且这对于是否让其他地区也引进苍狼具有参考价值．所以作者对于引进苍狼的态度是积极的（positive），B项符合题意．doubtful 意为"怀疑的"，disapproving 意为"不满的，反对的"，uncaring 意为"冷漠的，不关心的"，均不符合文意．故正确答案为B．

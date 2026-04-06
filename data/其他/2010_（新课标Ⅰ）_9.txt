@@ -1,0 +1,14 @@
+Question:
+30. The little boy won’t go to sleep      his mother  tells him a story . 
+  A. or B. unless  C. but D. whether
+
+
+Answers:
+['B']
+
+Analysis:
+【解答】 答案 B．本题主要考查连词， unless  引导条件状语从句，意思是除非 ，
+如果不 ="if not"； A or 或，或者；还是；不然，否则；  C but但是，表转折； D 
+whether  是否、不管 …（还是 …）习惯用语 whether  or not．根据句意， 应该选 B
+． 
+【点评】

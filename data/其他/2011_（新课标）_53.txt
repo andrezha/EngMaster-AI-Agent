@@ -1,0 +1,15 @@
+Question:
+29. When  Alice  came  to, she did not know  how long she _______there.  
+A. had been  lying     B. has been  lying     C. was lying     D. has lain
+
+
+Answers:
+['A']
+
+Analysis:
+【解答】 答案： A．A项是过去完成进行时； B项是现在完成进行时； C项是过
+去进行时； D项是现在完成时． Alice醒过来是过去的动作，她躺在那儿应该是
+在醒过来之前，并且醒过来时还在那躺着．过去完成进行时表示 "发生在过去之
+前的动作一直持续到当时，并且再继续下去 "．由句子的时间状语可知，应该用
+过去完成进行时． 故选 A． 
+【点评】

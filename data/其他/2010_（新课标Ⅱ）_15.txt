@@ -1,0 +1,14 @@
+Question:
+6. --- Is it all right  if I keep  this photo？   --- _______ .  
+A. No, you don’t    B. No, it shouldn ’t    C. I’m afraid  not    D. Don’t keep  it
+
+
+Answers:
+['C']
+
+Analysis:
+【解答】 答案 C. A项"不，你不要（保存照片） "；B项"不，这不应该 "；D项"
+不要保存 "；根据上句句意 "我可以保存这张照片吗？ "可知，下句是作出回答，
+四个选项都是否定回答， 但A、B和D三项拒绝地都太生硬，语气不委婉，不
+  符合英语表达的习惯， 因此 C项符合语境， 故选 C.  
+【点评】

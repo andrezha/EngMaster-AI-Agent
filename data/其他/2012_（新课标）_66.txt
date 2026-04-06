@@ -1,0 +1,14 @@
+Question:
+27. Mary  is really  good  at taking  notes  in class.  She can         almost  every  word  
+her teacher  says.  
+A. put out           B. put down          C. put away         D. put together
+
+
+Answers:
+['B']
+
+Analysis:
+【解答】答案 B．A项表示 "扑灭，生产，出版 "；C项表示 "把…收起，放好，储
+  存"；D项表示 "把…放在一起，组合 "；B项表示 "写下，记下，放下，镇压 "；根
+据句意， B项与题意相符． 故答案选 B． 
+【点评】

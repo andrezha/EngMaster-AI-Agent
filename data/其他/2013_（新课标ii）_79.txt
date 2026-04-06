@@ -1,0 +1,18 @@
+Question:
+25. I got to the office  earlier  that day,        the 7:30 train from  Paddington . 
+A. caughl      B. to have  caught      C. to catch       D. having  caught
+
+
+Answers:
+['D']
+
+Analysis:
+【解答】 答案： D 本题采用排除法．注意句中的时态， I got to明显是过去式，
+说明已经发生了， 那么也一定已经乘上了 7:30的那班车．所以能更早地到达办
+公室，用现在分词的完成式表示原因 ．非谓语动词在此处做原因状语 ，主语 I和
+catch之间为主动的关系，且非谓语动词的动作发生在谓动词的动作之前，符合
+这两点用法的为 having  done，caught  表示被动关系； to have  done  表示将来的完
+成，通常不用作状语， 此结构常用于 sb/sth+be  said/reported/thought+to  do/to  be 
+doing/to  have  done  这种结构． to catch动词不定式表将来，不符合题意．所以本
+题选择 D． 
+【点评】

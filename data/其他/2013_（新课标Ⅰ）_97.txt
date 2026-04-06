@@ -1,0 +1,14 @@
+Question:
+28. The driver  wanted  to park his car near the roadside  but was asked  by the police  
+       . 
+A. not to do     B. not to     C. not do     D. do not
+
+
+Answers:
+['B']
+
+Analysis:
+【解答】答案 B． ask sb not to do sth 让某人不要做某事 ，根据句意 but was asked  
+by the police  not to "park  his car near the roadside" ，不定式中重复的部分可以省略 ，
+但是要保留到 to．故选 B． 
+【点评】

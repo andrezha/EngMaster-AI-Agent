@@ -1,0 +1,13 @@
+Question:
+33. We haven ’t discussed  yet      we are going  to place  our new furniture . 
+A. that B. which  C. what  D. where
+
+
+Answers:
+['D']
+
+Analysis:
+【解答】答案 D． discuss后面是宾语从句 ，在宾语从句中 we are going  to place  our 
+new furniture是完整的句子 ，根据句意 ，我们还没有商量好把新家具放在 "where"
+．故选 D． 
+【点评】

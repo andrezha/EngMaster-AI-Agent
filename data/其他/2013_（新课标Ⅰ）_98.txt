@@ -1,0 +1,14 @@
+Question:
+29. The door        open,  no matter  how hard she pushed.  
+A. shouldn’t    B. couldn ’t   C. wouldn ’t  D. mightn ’t
+
+
+Answers:
+['C']
+
+Analysis:
+【解答】答案 C． shouldn ’t "不应该 "；couldn ’t "不能，不可能 "；wouldn ’t "不愿
+意"，would  还可以表示一种倾向性或者习惯．； mightn ’t "可能不 "．根据句意 ：
+描述主语 the door的特点 "偏是打不开 "，其固有的特性 ，用情态动词 would（will
+）．故选 C． 
+【点评】

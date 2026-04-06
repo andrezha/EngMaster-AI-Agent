@@ -1,0 +1,56 @@
+Question:
+A 
+Doctor  are known  to be terrible  pilots.  They  don’t listen  because  they already  
+know  it all. I was lucky:  I became  a pilot in 1970,  almost  ten years  before  I graduated  
+from  medical  school.  I didn’t realize  then,  but becoming  a pilot makes  me a better  
+surgeon.  I loved  flying.  As I flew bigger,  faster  planes,  and in worse  weather.  I 
+learned  about  crew  resource  management  (机组资源管理 ), or CRM,  a new idea to 
+make  flying  safer.  It means  that crew  members  should  listen  and speak  up for a good  
+result,  regardless  of positions.  
+I first read about  CRM  in 1980.  Not long after that, an attending  doctor  and I 
+were  flying  in bad weather.  The controller  had us turn too late to get our landing  
+ready.  The attending  doctor  was flying;  I was safety  pilot He was so busy  because  of 
+the bad turn, he had forgotten  to put the landing  gear (起落架 ) down.  He was a better  
+pilot --- and my boss --- so it felt unusual  to speak  up. But I had to: Our lives  were  in 
+danger.  I put aside  my uneasiness  and said, “We need  to put the landing  gear down  
+now! ” That was my first real lesson  in the power  of CRM,  and I’ve used it in the 
+operating  room  ever since.  
+CRM  requires  that the pilot/surgeon  encourage  others  to speak  up. It further  
+requires  that when  opinions  are from  the opposite,  the doctor  doesn ’t overreact,  which  
+might  prevent  fellow  doctors  from  voicing  opinions  again.  So when  I’m in the 
+operating  room,  I ask for ideas  and help from  others.  Sometimes  they’re not willing  to 
+speak  up. But I hope  that if I continue  to encourage  them,  someday  someone  will keep  
+me from  “landing  gear up”. 
+56. What  dose the author  say about  doctors  in general?  
+A. They  like flying  by themselves.     B. They  are unwilling  to take advice.  
+C. They  pretend  to be good  pilots.     D. They  are quick  learners  of CRM.  
+57. The author  deepened  his understanding  of the power  of CRM  when_______.  
+  A. he saved  the plane  by speaking  up    B. he was in charge  of a flying  task 
+C. his boss landed  the plane  too late     D. his boss operated  on a patient  
+58. In the last paragraph  “landing  gear up” probably  means  ______.  
+A. following  flying  requirements         B. overreacting  to different  opinions  
+C. listening  to what  fellow  doctors  say    D. making  a mistake  that may cost lives  
+59. Which  of the following  can be the best title for the text?  
+A. CRM:  A New  Way  to Make  Flying  Safe 
+B. Flying  Makes  Me a Better  Doctor  
+C. The Making  of a Good  Pilot  
+D. A Pilot-Tumed  Doctor
+
+
+Answers:
+['B', 'A', 'D', 'B']
+
+Analysis:
+56．B 细节理解题．根据第一段第一行的 "Doctosr  are known  to be terrible  pilots . 
+They  don’t listen  because  they already  know  it all."可知，作者总体上认为医生不喜
+欢接受意见，因为他们认为自己什么都懂， 故选 B．
+57．A 细节理解题 ．根据第二段最后一句 "That  was my first real lesson  in the power  
+of CRM , …"可知，作者在经历了一次飞行，因为勇于给上级提出意见而挽救了
+飞机之后，对机组资源管理有了更深的理解， 故选 A．
+58．D 细节理解题．根据第二段的 "We need  to put the landing  gear down  now!"可
+知，作者提出的降下起落架的建议 ，使飞机安全着陆 ；这里用的是 "landing  gear up"
+  ，是相反的情况 ，可知作者希望有人能够勇敢提出意见 ，以避免犯可能以生命为
+代价错误， 故选 D．
+59．B 主旨大意题．作者通过当飞行员的经历，学到了机组资源管理，并运用
+到了自己的工作中，文章主要讲的是机组资源管理带给作者的好处， B项， "飞
+行使我成为一个更好的医生 "最符合题意， 故选 B．

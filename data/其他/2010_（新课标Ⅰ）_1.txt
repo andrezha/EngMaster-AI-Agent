@@ -1,0 +1,64 @@
+Question:
+B 
+EDGEWOOD  --- Every  morning  at Dixie  Heights  High  School , customers  pour 
+into a special  experiment : the district ’s first coffee  shop  run mostly  by students  with 
+special  learning  needs . 
+    Well  before  classes  start, students  and teachers  order  Lattes , Cappuccinos  and 
+Hot Chocolates . Then , during  the first period , teachers  call in orders  on their room  
+phones , and students  make  deliveries . 
+    By closing  time at 9:20 a.m., the shop  usually  sells 90 drinks . “Whoever  made  
+the chi tea, Ms. Schatzman  says it was good ,” Christy  McKinley , a second  year 
+student , announced  recently , after hanging  up with the teacher . 
+    The shop  is called  the Dixie  PIT, which  stands  for Power  in Transition . Although  
+some  of the students  are not disabled , many  are, and the PIT helps  them  prepare  for 
+life after high school . 
+    They  learn  not only how to run a coffee  shop  but also how to deal with their 
+affairs . They  keep  a timecard  and receive  paychecks , which  they keep  in check  
+registers . 
+    Special -education  teachers  Kim Chevalier  and Sue Casey  introduced  the Dixie  
+PIT from  a similar  program  at Kennesaw  Mountain  High  School  in Georgia . ADMISSION ：
+Adult ￡4.90
+Child ￡2.20
+Family ￡12.00
+(2 adults + up to 3 children)
+      Not that it was easy. Chevalier ’s first problem  to overcome  was product -related . 
+Should  schools  be selling  coffee ? What  about  sugar  content ? 
+    Kenton  County  Food  Service  Director  Ginger  Gray  helped . She made  sure all the 
+drinks , which  use non-fat milk, fell within  nutrition（营养） guidelines . 
+    The whole  school  has joined  in to help. 
+    Teachers  agreed  to give up their lounge（休息室） in the mornings . Art students  
+painted  the name  of the shop  on the wall. Business  students  designed  the paychecks . 
+The basketball  team  helped  pay for cups. 
+59. What  is the text mainly  about？　   　 
+A. A best-selling  coffee .             B. A special  educational  program . 
+C. Government  support  for schools .   D. A new type of teacher -student  relationship . 
+60. The Dixie  PIT program  was introduced  in order  to　   　. 
+A. raise  money  for school  affairs        B. do some  research  on nutrition  
+C. develop  students ’ practical  skills      D. supply  teachers  with drinks  
+61. How  did Christy  McKinley  know  Ms. Schatzman ’s opinion  of the chi tea?　   　 
+A. She met her in the shop .          B. She heard  her telling  others . 
+C. She talked  to her on the phone .     D. She went  to her office  to deliver  the tea. 
+62. We know  from  the text that Ginger  Gray　   　. 
+A. manages  the Dixie  PIT program  in Kenton  County  
+B. sees that the drinks  meet  health  standards  
+C. teaches  at Dixie  Heights  High  School  
+D. owns  the school ’s coffee  shop
+
+
+Answers:
+['B', 'C', 'C', 'B']
+
+Analysis:
+59．B  主旨大意题． 本篇文章讲的是在 Dixie  Heights  High  School，里面开了一
+家咖啡店是由那些有特殊学习需要的学生来经营的一个实验试点 ．根据文章所讲
+的，故选 B项．
+60．C  推理判断题 ．根据文章的第五段和第六段 "Although  some  of the students  are 
+not disabled , many  are, and the PIT helps  them  prepare  for life after high school ."和
+"They  learn  not only how to run a coffee  shop  but also how to deal with their affairs . 
+  They  keep  a timecard  and receive  paychecks , which  they keep  in check  registers ."可
+知，这家咖啡店的开展主要是为了培养学生的实践能力， 故选 C项．
+61．C  细节判断题．根据第四段中 "after  hanging  up with the teacher ."，"hang  up 
+是挂断电话的意思 "，故选 C项．
+62．B  推理判断题 ．根据文章倒数第二段中 "Kenton  County  Food  Service  Director  
+Ginger  Gray  helped . She made  sure all the drinks , which  use non-fat milk, fell within  
+nutrition  guidelines ."可知，饮品符合健康标准， 故选 B项．

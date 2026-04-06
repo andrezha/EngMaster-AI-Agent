@@ -1,0 +1,14 @@
+Question:
+22. Would  you like to      with us to the film tonight?  
+A. come  along   B. come  off  C. come  across   D. come  through
+
+
+Answers:
+['A']
+
+Analysis:
+【解答】 答案： A．考查动词短语辨析． A项意为 "一起来，进展，前进 "；B项
+  意为 "离开，成功，（从某物上 ）脱落，掉落 "；C项意为 "偶遇 "；D项意为 "到达，
+穿过，传来，恢复（健康 ）"．根据题干中 "with  us to the film tonight"可知，此处指
+"一起去看电影 "，故选 A． 
+【点评】

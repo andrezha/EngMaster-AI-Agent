@@ -1,0 +1,58 @@
+Question:
+B 
+Passenger  pigeons（ 旅 鸽 ） once  flew over much  of the United  States  in 
+unbelievable  numbers.  Written  accounts  from  the 18th and 19th centuries  described  
+flocks（群） so large  that they darkened  the sky for hours.  
+It was calculated  that when  its population  reach  its highest  point,  there  were  
+more  than 3 billion  passenger  pigeons  – a number  equal  to 24 to 40 percent  of the 
+total bird population  in the United  States,  making  it perhaps  the most  abundant  birds  
+in the world.  Even  as late as 1870  when  their numbers  had already  become  smaller,  a 
+flock  believed  to be 1 mile wide  and 320 miles  (about  515 kilometers)  long was seen 
+near Cincinnati.  
+Sadly,  the abundance  of passenger  pigeons  may have  been  their undoing . Where  
+the birds  were  abundant,  people  believed  there  was an ever-lasting  supply  and killed  
+them  by the thousands.  Commercial  hunters  attracted  them  to small  clearings  with 
+grain,  waited  until pigeons  had settled  to feed,  then threw  large  nets over them,  taking  
+hundreds  at a time.  The birds  were  shipped  to large  cities  and sold in restaurants.  
+By the closing  decades  of the 19th century,  the hardwood  forests  where  
+passenger  pigeons  nested  had been  damaged  by Americans’  need  for wood,  which  
+scattered（驱散） the flocks  and forced  the birds  to go farther  north,  where  cold 
+temperatures  and spring  storms  contributed  to their decline.  Soon  the great  flocks  
+were  gone,  never  to be seen again.  
+In 1897,  the state of Michigan  passed  a law prohibiting  the killing  of passenger  
+pigeons,  but by then,  no sizable  flocks  had been  seen in the state for 10 years.  The last 
+confirmed  wild pigeon  in the United  States  was shot by a boy in Pike County,  Ohio,  
+in 1900.  For a time,  a few birds  survived  under  human  care.  The last of them,  known  
+affectionately  as Martha,  died at the Cincinnati  Zoological  Garden  in September  1, 
+1914.  
+  24. In the 18th and early  19th centuries , passenger  pigeons　   　. 
+A. were  the biggest  bird in the world  
+B. lived  mainly  in the south  of America  
+C. did great  harm  to the natural  environment  
+D. were  the largest  bird population  in the US 
+25. The underlined  word  “undoing ” probably  refers  to the pigeons ’ 　   　. 
+A. escape      B. ruin      C. liberation       D. evolution  
+26. What  was the main  reason  for people  to kill passenger  pigeons ? 　   　 
+A. To seek pleasure            B. To save other  birds  
+C. To make  money             D. To protect  crops  
+27. What  can we infer  about  the law passed  in Michigan ? 　   　 
+A. It was ignored  by the public          B. It was declared  too late 
+C. It was unfair                      D. It was strict
+
+
+Answers:
+['D', 'B', 'C', 'B']
+
+Analysis:
+24．D．推理判断题 ．根据第二段的内容可知 ，据计算，旅鸽数量最多时 ，有30
+多亿只， 相当于美国鸟类总数的 24%﹣40%．到1870年，旅鸽的数量已经减少
+了，但是， 有人在 Cincinnati 附近看到鸽群的规模为 1英里宽， 320英里长．由
+此可见，在18至19世纪，旅鸽的数量最多 ．第一段的第二句也是关键信息 ．故
+选D．
+25．B．词义猜测题 ．根据第三段的内容可知 ，旅鸽的数量巨大最终导致它们灭
+绝． undoing意为 "毁灭 "，与ruin同义．故选 B．
+26．C．细节理解题 ．根据第三段可知 ，商业猎人用大网来围捕旅鸽 ，然后运到
+大城市卖给餐馆，由此可见，人们捕杀旅鸽主要是为了赚钱． 故选 C．
+27．B．推理判断题．根据最后一段的内容可知， 1897年密歇根州出台了法律 ，
+禁止捕杀旅鸽．那时，人们已经十年没有看到大规模的旅鸽群出没．由此可知 ，
+保护旅鸽的法律出台太晚了． 故选 B．

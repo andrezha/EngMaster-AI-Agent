@@ -1,0 +1,76 @@
+YEAR: 2010
+CAT: （新课标Ⅰ）
+==================================================
+[PASSAGE]
+D 
+Science  can’t explain  the power  of pets, but many  studies  have  shown  that the 
+  company  of pets can help lower  blood  pressure （血压） and raise  chances  of 
+recovering  from  a heart  attack , reduce  loneliness  and spread  all-round  good  cheer . 
+Any owner  will tall you how much  joy a pet brings . For some , an animal  
+provides  more  comfort  than a husband/wife . A 2002  study  by Karen  Allen  of the State  
+University  of New  York  measured  stress（紧张） levels  and blood  pressure  in people  
+--- half of them  pet owners  --- while  they performed  5 minutes  of mental  arithmetic （
+算术） or held a hand  in ice water . Subjects  completed  the tasks  alone , with a 
+husband/wife , a close  friend  or with a pet. People  with pets did it best. Those  tested  
+with their animal  friends  had smaller  change  in blood  pressure  and returned  most  
+quickly  to baseline  heart  rates . With  pets in the room , people  also made  fewer  math  
+mistakes  than when  doing  in front  of other  companions . It seems  people  feel more  
+relaxed（放松） around  pets, says Allen , who thinks  it may be because  pets don’t 
+judge . 
+A study  reported  last fall suggests  that having  a pet dog not only raises  your 
+spirits  but may also have  an effect  on your eating  habits . Researchers  at Northwestern  
+Memorial  Hospital  spent  a year studying  36 fat people  and their equally  fat dogs  on 
+diet-and-exercise  programs ; a separate  group  of 56 people  without  pets were  put on a 
+diet program . On average , people  lost about  I1 pounds , or 5% of their body  weight . 
+Their  dogs  did even  better , losing  an average  of 12 pounds , more  than 15% of their 
+body  weight . Dog owners  didn’t lose any more  weight  than those  without  dogs  but, 
+say researchers , got more  exercise  overall  --- mostly  with their dogs  --- and found  it 
+worth  doing .
+
+==================================================
+[QUESTIONS]
+
+[Q_67] (ANS: A)
+What  does the text mainly  discuss？
+A. What  pets bring  to their owners .
+B. How  pets help people  calm  down .
+C. People ’s opinions  of keeping  pets.
+D. Pet’s value  in medical  research .
+
+[Q_68] (ANS: A)
+We learn  from  the text that a person  with heart  disease  has a better  chance  of 
+getting  well if　   　.
+A. he has a pet companion
+B. he has less stress  of work
+C. he often  does mental  arithmetic
+D. he is taken  care of by his family
+
+[Q_69] (ANS: C)
+According  to Allen , why did the people  do better  with pets around  when  facing  
+  stressful  tasks ?
+A. They  have  lower  blood  pressure .
+B. They  become  more  patient .
+C. They  are less nervous .
+D. They  are in higher  spirits .
+
+[Q_70] (ANS: A)
+The research  mentioned  in the last paragraph  reports  that　   　.
+A. people  with dogs  did more  exercise
+B. dogs  lost the same  weight  as people  did
+C. dogs  liked  exercise  much  more  than people  did
+D. people  without  dogs  found  the program  unhelpful .
+
+==================================================
+[ANALYSIS]
+67．A  主旨大意题，通读全文可知本文主要讲述了宠物给它们的主人带来的好
+处，故选 A．
+68．A  细节理解题， 根据第一段 but many  studies  have  shown  that the company  of 
+pets can help lower  blood  pressure  （血压）  and raise  chances  of recovering  from  a 
+heart  attack , reduce  loneliness  and spread  all-round  good  cheer．可知许多研究表明
+宠物的陪伴能帮助降低血压，提高心脏病恢复的机会， 故选 A．
+69．C  细节理解题 ，根据第二段 It seems  people  feel more  relaxed  （放松）around  
+pets, says Allen , who thinks  it may be because  pets don’t judge．可知艾伦认为人们
+与宠物在一起时会更放松，不紧张，因此面对压力时做的更好， 故选 C．
+70．A  推理判断题， 根据最后一段 Dog owners  didn’t lose any more  weight  than 
+those  without  dogs  but, say researchers , got more  exercise  overall ---mostly  with their 
+dogs ---and found  it worth  doing．可知养狗的人们会更多的锻炼， 故选 A．

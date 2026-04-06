@@ -1,0 +1,48 @@
+YEAR: 2016
+CAT: （新课标ⅲ）
+==================================================
+[PASSAGE]
+D
+Bad news sells. If it bleeds, it leads. No news is good news, and good news is no news. Those are the classic rules for the evening broadcasts and the morning papers. But now that information is being spread and monitored (监控) in different ways, researchers are discovering new rules. By tracking people’s e-mails and online posts, scientists have found that good news can spread faster and farther than disasters and sob stories.
+   “The ‘if it bleeds’ rule works for mass media,” says Jonah Berger, a scholar at the University of Pennsylvania. “They want your eyeballs and don’t care how you’re feeling. But when you share a story with your friends, you care a lot more how they react. You don’t want them to think of you as a Debbie Downer.”
+   Researchers analyzing word-of-mouth communication — e-mails, Web posts and reviews, face-to-face conversations — found that it tended to be more positive than negative (消极的), but that didn’t necessarily mean people preferred positive news. Was positive news shared more often simply because people experienced more good things than bad things? To test for that possibility, Dr. Berger looked at how people spread a particular set of news stories: thousands of articles on The New York Times’ website. He and a Penn colleague analyzed the “most e-mailed” list for six months. One of his first findings was that articles in the science section were much more likely to make the list than non-science articles. He found that science amazed Times’ readers and made them want to share this positive feeling with others.
+Readers also tended to share articles that were exciting or funny, or that inspired negative feelings like anger or anxiety, but not articles that left them merely sad. They needed to be aroused (激发) one way or the other, and they preferred good news to bad. The more positive an article, the more likely it was to be shared, as Dr. Berger explains in his new book, “Contagious: Why Things Catch On.”
+
+==================================================
+[QUESTIONS]
+
+[Q_32] (ANS: A)
+What do the classic rules mentioned in the text apply to?
+A. News reports.
+B. Research papers.
+C. Private e-mails.
+D. Daily conversations.
+
+[Q_33] (ANS: C)
+What can we infer about people like Debbie Downer?
+A. They’re socially inactive.
+B. They’re good at telling stories.
+C. They’re inconsiderate of others.
+D. They’re careful with their words.
+
+[Q_34] (ANS: B)
+Which tended to be the most e-mailed according to Dr. Berger’s research?
+A. Sports news.
+B. Science articles.
+C. Personal accounts.
+D. Financial reviews.
+
+[Q_35] (ANS: D)
+What can be a suitable title for the text?
+A. Sad Stories Travel Far and Wide
+B .Online News Attracts More People
+C. Reading Habits Change with the Times
+D. Good News Beats Bad on Social Networks
+
+==================================================
+[ANALYSIS]
+【解答】ACBD
+32．A 细节理解题，根据第二段The ‘if it bleeds’ rule works for mass media可知，像it bleeds这各传统说法适用于大众媒体，故选A．
+33．C 推理判断题．根据"you care a lot more how they react"可知，你非常在乎朋友听完你讲的故事后的反应，根据"You don’t want them to think of you as a Debbie Downer."可知，你不想被当作一个"Debbie Downer"，说明指的是"一个不为他人考虑的人"，故选C．
+34．B 细节理解题．根据第三段"articles in the science section were much more likely to make the list than non-science articles"可知，科技类的文章比非科技类的更有可能被人们讨论，故选B．
+35．D 标题判断．根据第一段"By tracking people’s e-mails and online posts, scientists have found that good news can spread faster and farther than disasters and sob stories."可知，好消息在网络上传播得更快，影响更深远；说明文章主要讲的是好消息通过网络的传播，故选D．

@@ -1,0 +1,13 @@
+Question:
+8. If you_______smoke , please  go outside . 
+A. can B. should  C. must  D. may
+
+
+Answers:
+['C']
+
+Analysis:
+【解答】 答案： C．本题考查情态动词的用法． can 能，会； may 可以，可能；
+must  必须，非要； might  可以，可能， 是may的过去式形式．根据句意可知，
+这里表示的是如果你非得要吸烟这个意思， 故选 C． 
+【点评】

@@ -1,0 +1,15 @@
+Question:
+16. I refuse  to accept  the blame  for something  _____  was someone  else’s fault.  
+A. who  B. that C. as D. what
+
+
+Answers:
+['B']
+
+Analysis:
+【解答】 答案： B 本句中含有定语从句， what不可以引导定语从句， 所以排除
+D. 从句中缺少主语，所以应该用关系代词，当先行词是事物时，定语从句的关
+系代词可用 that 或which，可以排除 who. 但本句中先行词是不定代词 something
+，所以只能用关系代词 that. as作为关系代词时 ，先行词前面应有 such或so、the 
+same修饰，或代替一句话，不符本题题干 . 故选择 B.  
+【点评】

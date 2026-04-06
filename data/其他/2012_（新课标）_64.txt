@@ -1,0 +1,13 @@
+Question:
+25. I don’t believe  we’ve met before,          I must  say you do look familiar.  
+A. therefore          B. although           C. since            D. unless
+
+
+Answers:
+['B']
+
+Analysis:
+【解答】 答案 B．A项"因此 "；B项"尽管，虽然 "；C项"既然，自从 "；D项"除
+非"．因为主句的 "don ’t believe"与从句的 "do look familiar"意思相反 ，前后意思转
+折，所以用表转折的连词， 故选 B项．  
+【点评】

@@ -1,0 +1,13 @@
+Question:
+23. “Life is like walking  in the snow ”, Granny  used to say, “because  every  step  
+       . 
+A. has shown         B. is showing         C. shows           D. showed
+
+
+Answers:
+['C']
+
+Analysis:
+【解答】答案 C．这题是直接引用了过去奶奶常常说的一句话 ，句子的内容是生
+活哲理．所以用一般现在时． 故答案选 C． 
+【点评】

@@ -1,0 +1,57 @@
+Question:
+B 
+The freezing  Northeast  hasn’t  been  a terribly  fun place  to spend  time this winter,  
+so when  the chance  came  for a weekend  to Sarasota,  Florida,  my bags were  packed  
+before  you could  say “sunshine ”. I left for the land of warmth  and vitamin  C (维生素
+C), thinking  of beaches  and orange  trees.  When  we touched  down  to blue skies  and 
+warm  air, I sent up a small  prayer  of gratefulness.  Swimming  pools,  wine  tasting,  and 
+pink sunsets  (at normal  evening  hours,  not 4 in the afternoon)  filled  the weekend,  but 
+the best part — particularly  to my taste,  dulled  by months  of cold — weather  root 
+vegetables  — was a 7 a.m. adventure  to the Sarasota  farmers’  market  that proved  to 
+be more  than worth  the early  wake-up  call. 
+The market,  which  was founded  in 1979,  sets up its tents  every  Saturday  from  7 
+a.m. to 1 p.m.,  rain or shine,  along  North  Lemon  and State  streets.  Baskets  of perfect  
+  red strawberries,  the red-painted  sides  of the Java Dawg  coffee  truck;  and most  of all, 
+the tomatoes:  amazing,  large,  soft and round  red tomatoes.  
+Disappointed  by many  a broken,  vine-ripened  (蔓上成熟的 ) promise,  I’ve 
+refused  to buy winter  tomatoes  for years.  No matter  how attractive  they look in the 
+store,  once  I get them  home  they’re  unfailingly  dry, hard,  and tasteless.  But I homed  
+in, with uncertainty,  on one particular  table  at the Brown’s  Grove  Farm’s  stand,  full of 
+fresh  and soft tomatoes  the size of my fist. These  were  the real deal — and at that 
+moment,  I realized  that the best part of Sarasota  in winter  was going  to be eating  
+things  that back  home  in New  York  I wouldn’t  be experiencing  again  for months.  
+Delighted  as I was by the tomatoes  in sight,  my happiness  deepened  when  I 
+learned  that Brown’s  Grove  Farm  is one of the suppliers  for Jack Dusty,  a newly  
+opened  restaurant  at the Sarasota  Ritz Carlton,  where  — luckily  for me — I was 
+planning  to have  dinner  that very night.  Without  even  seeing  the menu,  I knew  I’d be 
+ordering  every  tomato  on it. 
+24. What  did the author  think  of her winter  life in New  York?  
+A. Exciting.     B. Boring.       C. Relaxing.       D. Annoying.  
+25. What  made  the author’s  getting  up early  worthwhile?  
+A. Having  a swim.   B. Breathing  in fresh  air.  
+C. Walking  in the morning  sun. D. Visiting  a local  farmer’s  market.  
+26. What  can we learn  about  tomatoes  sold in New  York  in winter?  
+A. They  are soft.  B. They  look nice.   
+C. They  taste great.  D. They  are juicy.  
+27. What  was the author  going  to do that evening?  
+A. Go to a farm.    B. Check  into a hotel.   
+C. Eat in a restaurant.   D. Buy fresh  vegetables.
+
+
+Answers:
+['B', 'D', 'B', 'A']
+
+Analysis:
+24．B．推理判断题 ．根据文章第一段第一句 "The  freezing  Northeast  hasn’t been  a 
+terribly  fun place  to spend  time this winter ,"可以推测出作者在纽约冬天的生活是
+令人厌烦的． 故选 B．
+25．D．细节理解题 ．根据文章第一段最后一句 "dulled  by months  of cold --- weather  
+root vegetables  --- was a 7 a.m. adventure  to the Sarasota  farmers ’ market  that proved  
+to be more  than worth  the early  wake -up call."可知作者早上 7点到农产品市场是有
+意义的． 可知选 D．
+26．B．推理判断题 ．根据文章第三段第二句 "No matter  how attractive  they look in 
+the store , once  I get them  home  they’re unfailingly  dry, hard, and tasteless ."可知，纽
+  约的西红柿在商店里看起来是很吸引人的． 可知选 B．
+27．A．推理判断题 ．根据文章最后一段尤其倒数第一句 "Without  even  seeing  the 
+menu , I knew  I’d be ordering  every  tomato  on it."可知，作者晚上计划在餐馆吃饭 ，
+并且点西红柿． 故选 A．

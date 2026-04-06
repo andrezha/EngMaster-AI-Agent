@@ -1,0 +1,58 @@
+Question:
+C 
+A typical  lion tamer（驯兽师 ）in people ’s mind  is an entertainer  holding  a whip  
+（鞭） and a chair . The whip  gets all of the attention , but it’s mostly  for show . In 
+reality , it’s the chair  that does the important  work . When  a lion tamer  holds  a chair  in 
+front  of the lion’s face, the lion tries to focus  on all four legs of the chair  at the same  
+time. With  its focus  divided , the lion becomes  confused  and is unsure  about  what  to 
+do next. When  faced  with so many  options , the lion chooses  to freeze  and wait instead  
+of attacking  the man holding  the chair . 
+    How  often  do you find yourself  in the same  position  as the lion? How  often  do 
+you have  something  you want  to achieve（e.g. lose weight , start a business , travel  
+more）--- only to end up confused  by all of the options  in front  of you and never  make  
+progress ? 
+    This upsets  me to no end because  while  all the experts  are busy  debating  about  
+which  option  is best, the people  who want  to improve  their lives  are left confused  by 
+all of the conflicting  information . The end result  is that we feel like we can’t focus  or 
+that we’re focused  on the wrong  things , and so we take less action , make  less progress , 
+  and stay the same  when  we could  be improving . 
+    It doesn ’t have  to be that way. Anytime  you find the world  waving  a chair  in 
+your face, remember  this: All you need  to do is focus  on one thing . You just need  to 
+get started . Starting  before  you feel ready  is one of the habits  of successful  people . If 
+you have  somewhere  you want  to go, something  you want  to accomplish , someone  
+you want  to become  … take immediate  action . If you’re clear  about  where  you want  
+to go, the rest of the world  will either  help you get there  or get out of the way. 
+28. Why  does the lion tamer  use a chair ? 　   　 
+A. To show  off his skills .       B. To trick the lion. 
+C. To get ready  for a fight .      D. To entertain  the audience . 
+29. In what  sense  are people  similar  to a lion facing  a chair ? 　   　 
+A. They  feel puzzled  over choices .     B. They  hold on to the wrong  things . 
+C. They  find it hard to make  changed .   D. They  have  to do something  for show . 
+30. What  is the author ’s attitude  towards  the experts  mentioned  in Paragraph  3? 　   　 
+A. Tolerant        B. Doubtful       C. Respectful       D. Supportive  
+31. When  the world  is “waving  a chair  in your face”, you’re advised  to　   　. 
+A. wait for a better  chance      B. break  your old habits  
+C. make  a quick  decision       D. ask for clear  guidance
+
+
+Answers:
+['A', 'A', 'B', 'C']
+
+Analysis:
+28．A考查细节理解 ．根据第一段中 "When  a lion tamer  holds  a chair  in front  of the 
+lion’s face, the lion tries to focus  on all four legs of the chair  at the same  time"可知，
+当驯兽师拿着椅子在狮子面前时 ，狮子关注椅子的四条腿 ，因此椅子用是用来戏
+耍狮子的． 故选 A．
+29．A 考查推理判断．根据第一段中的 "With  its focus  divided , the lion becomes  
+confused  and is unsure  about  what  to do next"可知，当注意力分散时，狮子开始变
+得困惑，人们跟狮子相似，也会困惑，不知道该怎么做． 故选 A．
+30．B 考查推理判断 ．根据第三段中 "This  upsets  me to no end because  while  all the 
+experts  are busy  debating  about  which  option  is best"可知，专家们正忙于讨论哪一
+种选择是最好的 ，这令作者苦恼 ，因此可以推断出作者对专家的态度是怀疑 ．故
+选B．
+31．C 考查推理判断 ．根据第四段中 "Anytime  you find the world  waving  a chair  in 
+your face, remember  this: All you need  to do is focus  on one thing . You just need  to 
+get started ."及"Starting  before  you feel ready  is one of the habits  of successful  
+people"可知，当你面前挥舞着一把椅子时 ，你要集中精力做一件事 ，那就是开始
+下决心去做．成功的人的习惯之一就是在感觉准备好之前就开始行动，文中的
+"take  immediate  action"与"make  a quick  decision"同义．故选 C．

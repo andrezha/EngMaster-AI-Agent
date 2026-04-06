@@ -1,0 +1,15 @@
+Question:
+15. The island ,          to the mainland  by a bridge , is easy to go to. 
+A. joining     B. to join    C. joined     D. having  joined
+
+
+Answers:
+['C']
+
+Analysis:
+【解答】答案：C．此处在句中作后置定语， 修饰名词 The island；由于动词 join
+与该名词构成被动关系，表示已经完成的动作， 故用过去分词形式 ；A．现在分
+词作定语时， 与其修饰词构成主谓关系 ；B．动词不定式作后置定语，表示将要
+完成的动作， 并且与其修饰词之间不能用逗号隔开 ；D．现在分词的完成式通常
+  表示伴随的状况，不能做后置定语； 故选 C． 
+【点评】

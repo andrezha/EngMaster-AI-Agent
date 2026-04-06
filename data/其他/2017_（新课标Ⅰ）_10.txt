@@ -1,0 +1,57 @@
+Question:
+根据短文内容 ，从短文后的选项中选出能填入空白处的最佳选项 。选项中有
+两项为多余选项。  
+If anyone  had told me three  years  ago that I would  be spending  most  of my 
+weekends  camping.  I would  have  laughed  heartily.  Campers,  in my eyes,  were  people  
+who enjoyed  insect  bites,  ill-cooked  meals,  and uncomfortable  sleeping  bags.  They  
+had nothing  in common  with me.     36    . 
+The friends  who introduced  me to camping  thought  that it meant  to be a pioneer.     
+37    We sleep  in a tent, cooked  over an open  fire, and walked  a long distance  to 
+take the shower  and use the bathroom.  This brief  visit with Mother  Nature  cost me 
+two days off from  work,  recovering  from  a bad case of sunburn  and the doctor’s  bill 
+for my son’s  food poisoning.  
+I was, nevertheless,  talked  into going  on another  fun-filled  holiday  in the 
+wilderness.    38    Instead,  we had a pop-up  camper  with comfortable  beds and an 
+air conditioner.  My nature-loving  friends  had remembered  to bring  all the necessities  
+of life.  
+  39    We have  done  a lot of it since.  Recently,  we bought  a twenty-eight-foot  
+travel  trailer  complete  with a bathroom  and a built-in  TV set. There  is a separate  
+bedroom,  a modern  kitchen  with a refrigerator.  The trailer  even  has matching  carpet  
+and curtains.   
+  40     It must  be true that sooner  or later,  everyone  finds  his or her way back  
+to nature.  I recommend  that you find your way in style.  
+A. This time there  was no tent. 
+B. Things  are going  to be improved.  
+C. The trip they took me on was a rough  one. 
+D. I was to learn  a lot about  camping  since  then,  however.  
+E. I must  say that I have  certainly  come  to enjoy  camping.   
+  F. After  the trip, my family  became  quite  interested  in camping.  
+G. There  was no shade  as the trees  were  no more  than 3 feet tall.
+
+
+Answers:
+['D', 'C', 'A', 'F', 'E']
+
+Analysis:
+36．D  上文  They  had nothing  in common  with me 说明作者原来认为他不会成为
+野营者．而下文主要描述的是 "我"从最开始进行 "rough  travel"到有了 "pop -up 
+camper"再到有了  trailer  的过程，在这过程中作者对野营的爱好逐步增加，对野
+营的相关知识也在逐步增长，上下文呈转折关系． D项意为 "然而在那之后我将
+会学到关于野营的很多知识 "，起到转折作用，引出下文，符合语境．故正确答
+案为 D．
+37．C  由下文  We sleep  in a tent, cooked  over an open  fire, and walked  a long 
+distance  to take the shower  and use the bathroom  可知， "我"的野营条件非常艰苦 ．
+C项意为 "他们带我去的旅途非常艰苦 "，引出下文 ，符合语境 ．故正确答案为 C
+．
+38．A  由下文  Instead , we had a pop-up camper  with comfortable  beds and an air 
+conditioner  可知，空格处是与下文形成转折的内容 ，而"我"此次旅行用了展开式
+营房．A项意为 "这一次没有帐篷 "，与下文形成转折 ，符合语境 ．故正确答案为
+A．
+39．F  由第三段第一句  going  on another  fun-filled  holiday  可知， "我"对这次旅
+行非常满意，而由下文  We have  done  a lot of it since  可知， "我们 "都爱上了野营
+．F项意为 "从这里旅行后 ，我全家都对野营产生了巨大的兴趣 "，承上启下 ，符
+合语境． 故正确答案为 F．
+40．E  由下文  sooner  or later, everyone  finds  his or her way back  to nature  可知，
+"我"希望每个人都能找到回归自然 ，也就是野营的个性化选择 ．形成这一观点的
+前提是 "我"自己已经爱上了野营 ．E项意为 "我必须承认我已经开始享受野营了 "，
+引出下文，符合语境． 故正确答案为 E．

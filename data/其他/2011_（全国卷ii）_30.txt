@@ -1,0 +1,15 @@
+Question:
+6. --- Did you forget  about  my birthday ? 
+---         I’ve booked  a table  at Michel ’s restaurant  for this evening . 
+A. What  then?    B. I’m afraid  so.    C. How could  I?    D. For sure.
+
+
+Answers:
+['C']
+
+Analysis:
+【解答】答案：C．本题考查交际用语 ．How  could  I？表示 "我怎么会呢？ "．What  
+then？"那便会怎么样呢？ "，I'm afraid  so．"恐怕是这样． "，For sure．"肯定；确
+定．"根据 "I've booked  a table  at Michel's  restaurant  for this evening．"可知，答话人
+并没有忘记对方的生日， 因此选择 C． 
+【点评】

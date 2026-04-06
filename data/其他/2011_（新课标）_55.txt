@@ -1,0 +1,12 @@
+Question:
+31. The prize  will go to the writer  _______story  shows  the most  imagination.  
+A. that         B. which         C. whose        D. what
+
+
+Answers:
+['C']
+
+Analysis:
+【解答】答案 C．通过分析句子成分可知 ，这是一个定语从句 ，先行词是 the writer
+，关系词在从句中充当 story的定语， 所以本题应该选择 C． 
+【点评】

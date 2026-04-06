@@ -1,0 +1,42 @@
+YEAR: 2020
+CAT: （新课标Ⅱ）
+==================================================
+[PASSAGE]
+根据短文内容，从短文后的选项中选出能填入空白处的最佳选项。选项中有两项为多余选项。
+Emoji(表情符号) and Workplace Communication
+In Asia, messaging platforms are growing rapidly, with users in the hundreds of millions, both at work and play. ___36___. It’s been reported that 76 percent of employees in some western countries are using emojis at work.
+Written communications can often read as cold and dull. Using emojis can add humor and feeling, keeping intention clear. ___37___, encouraging better and more frequent communication.
+In any given office, employees can range from age 22 to 70 and beyond, and finding common ground in communication style can be a challenge. ___38___. While the younger generations prefer to communicate visually, for those used to working with traditional tools like email, it may feel like a learning curve(曲线). The good news is that it’s simple to learn and can be worth the effort.
+There is also the matter of tone(语气). Who hasn’t received an email so annoying that it ruined an entire day? ___39___. Emoji can help communication feel friendlier, and even a serious note can be softened with an encouraging smile.
+___40___, and emoji can contribute directly to that positive outcome. And when your employees begin adding smiling emojis to their business communication, you’ll know you have succeeded in improving your work culture.
+
+[QUESTIONS]
+
+==================================================
+[OPTIONS (A-G)]
+A. Message with emojis feel more conversational
+B. Even a formal email can seem cold and unfriendly
+C. Sending smiling faces to colleagues may seem strange
+D. The popularity of these platforms is spreading globally
+E. Giving employees the tools enables them to communicate honestly
+F. Studies show that friendlier communication leads to a happier workplace
+G. An easy way to bring all work generations together is with a chat platform
+
+==================================================
+[ANSWERS]
+空(1): D  空(2): A  空(3): G  空(4): B  空(5): F  
+
+==================================================
+[ANALYSIS]
+【解析】
+本文是一篇说明文。文章介绍了表情符号以及在工作交流所带来的优势。
+【36题详解】
+根据前句“In Asia, messaging platforms are growing rapidly, with users in the hundreds of millions, both at work and play.(在亚洲，即时通讯平台正在迅速发展，无论是工作还是娱乐，都有数亿用户)”和后句“It's been reported that 76 percent of employees in some western countries are using emojis at work.(据报道，在一些西方国家，76%的员工在工作中使用表情符号)”可知，前后句都说明了即时通讯平台受欢迎程度。所以选择项D. The popularity of these platforms is spreading globally. (这些平台的受欢迎程度正在全球蔓延)符合题意。故选D。
+【37题详解】
+根据前句“Using emojis can add humor and feeling, keeping intention clear.(使用表情符号可以增加幽默和感情，保持明确的意图)”和后半句“encouraging better and more frequent communication.(鼓励更好更频繁的交流)”可知，这里陈述使用表情符号的优点。所以选择项A. Messages with Emojis feel more conversational. (使用表情符号的信息让人感觉更健谈)符合题意。故选A。
+【38题详解】
+根据前句“In any given office, employees can range from age 22 to 70 and beyond, and finding common ground in communication can be a challenge. (在任何一间办公室，员工的年龄从22岁到70岁甚至更大，在交流中找到共同点可能是一项挑战)” 中关键词句“employees can range from age 22 to 70 and beyond,”与选择项中“all work generations”是一致的。故选G。
+【39题详解】
+根据前句“ Who hasn’t received an email so annoying that it ruined an entire day? (谁没有收到过毁掉了一整天的邮件呢？)”和后文介绍表情的优点，可知，这里陈述电子邮件的缺点。所以选择项B. Even a formal email can seem cold and unfriendly. (即使是一封正式的电子邮件也会显得冷淡和不友好)故选B。
+【40题详解】
+根据后句“and Emoji can contribute directly to that positive outcome. (并且表情符号可以直接促成这种积极的结果)”可知，这里陈述表情符号能给工作场所带来的好处。所以选择项F. Studies show that friendlier communication leads to a happier workplace. (研究表明，更友好的沟通会带来更快乐的工作场所)故选F。

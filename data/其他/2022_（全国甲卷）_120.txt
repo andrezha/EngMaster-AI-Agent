@@ -1,0 +1,42 @@
+Question:
+A
+Theatres and Entertainment
+St David’s Hall
+St David’s Hall is the award winning National Concert Hall of Wales standing at the very heart of Cardiff’s entertainment centre. With an impressive 2,000-seat concert hall, St David’s Hall is home to the annual Welsh Proms Cardiff. It presents live entertainment, including pop, rock, folk, jazz, musicals, dance, world music, films and classical music.
+The Hayes, Cardiff CF 10 1 AH
+www.stdavidshallcardiff.co.uk
+The Glee Club 
+Every weekend this is “Wales” premier comedy club where having a great time is the order for both audiences and comedy stars alike. It is hard to name a comedy star who hasn’t been on the stage here. If you are looking for the best comedies on tour and brilliant live music, you should start here.
+Mermaid Quay, Cardiff Bay, Cardiff CF 10 5 BZ
+www.glee.co.uk/cardiff
+Sherman Cymru
+Sherman Cymru’s theatre in the Cathays area of Cardiff reopened in February 2012. This special building is a place in which theatre is made and where children, artists, writers and anyone else have the opportunity (机会) to do creative things. Sherman Cymru is excited to present a packed programme of the very best theatre, dance, family shows and music from Wales and the rest of the world.
+Senghennydd Road, Cardiff CF 24 4 YE
+www.shermancymru.co.uk
+New Theatre
+The New Theatre has been the home of quality drama, musicals, dance and children’s shows for more than 100 years. Presenting the best of the West End along with the pick of the UK’s touring shows, the New Theatre is Cardiff’s oldest surviving traditional theatre. Be sure to pay a visit as part of your stay in the city.
+Park Place, Cardiff CF 10 3 LN
+www.newtheatrecardiff.co.uk
+1. Where is the Welsh Proms Cardiff hosted?
+A. At the New Theatre.	B. At the Glee Club.
+C. At Sherman Cymru.	D. At St David’s Hall.
+2. What can people do at the Glee Club?
+A. Watch musicals.	B. Enjoy comedies.
+C. See family shows.	D. Do creative things.
+3. Which website can you visit to learn about Cardiff’s oldest surviving theatre?
+A. www.newtheatrecardiff.co.uk	B. www.shermancymru.co.uk
+C. www.glee.co.uk/cardiff	D. www.stdavidshalleardiff.co.uk
+
+
+Answers:
+['D', 'B', 'A']
+
+Analysis:
+【解析】
+【分析】本文是一篇应用文。文章主要介绍了Cardiff当地的一些剧院和娱乐场所。
+1题详解】
+细节理解题。根据文章“St David’s Hall”部分中的“St David’s Hall is home to the annual Welsh Proms Cardiff (St David’s Hall是Cardiff一年一度的Welsh Proms的举办地)”可知，Cardiff的Welsh Proms活动在St David’s Hall举办。故选D。
+【2题详解】
+细节理解题。根据文章“The Glee Club”部分中的“If you are looking for the best comedies on tour and brilliant live music, you should start here (如果你正在寻找巡演中最好的喜剧和精彩的现场音乐，你应该从这里开始)”可知，人们可以在The Glee Club享受喜剧。故选B。
+【3题详解】
+细节理解题。根据文章“New Theatre”部分中的“The New Theatre has been the home of quality drama, musicians, dance and children’s shows for more than 100 years (100多年来，New Theatre一直是优质戏剧、音乐家、舞蹈和儿童节目的发源地)”以及其下面的网站“www.newtheatrecardiff.co.uk”可知，可以在www.newtheatrecardiff.co.uk网站找到Cardiff存在最久的剧院。故选A。

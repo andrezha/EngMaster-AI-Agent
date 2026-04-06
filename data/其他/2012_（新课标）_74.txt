@@ -1,0 +1,12 @@
+Question:
+35. If she doesn ’t want  to go, nothing  you can say will         her. 
+A. persuade         B. promise          C. invite            D. support
+
+
+Answers:
+['A']
+
+Analysis:
+【解答】答案： A．A项"说服 "；B"许诺 "；C"邀请 "；D"支持 "．因为 "she doesn't  
+want  to go"，所以 "persuade" 是没有用的． 故选 A项．  
+【点评】

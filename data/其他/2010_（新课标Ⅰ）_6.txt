@@ -1,0 +1,12 @@
+Question:
+27. Mrs. White  showed  her students  some  old maps     from  the library . 
+A. to borrow     B. to be borrowed      C. borrowed      D. borrowing
+
+
+Answers:
+['C']
+
+Analysis:
+【解答】答案 C． from  the library做后置定语， 修饰 old maps  根据句意， borrow
+与old maps  之间是被动关系，所以用过去分词表示被动或完成， 故选 C． 
+【点评】

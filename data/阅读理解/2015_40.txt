@@ -1,0 +1,68 @@
+YEAR: 2015
+CAT: （新课标Ⅰ）
+==================================================
+[PASSAGE]
+A 
+Monthly  Talks  at London  Canal  Museum  
+Our monthly  talks  start at 19:30  on the first Thursday  of each month  except  
+August.  Admission  is at normal  charges  and you don’t  need  to book.  They  end around  
+21:00.  
+November  7th 
+The Canal  Pioneers , by Chris  Lewis.  James  Brindley  is recognized  as one of the 
+leading  early  canal  engineers.  He was also a major  player  in training  others  in the art 
+of canal  planning  and building.  Chris  Lewis  will explain  how Brindley  made  such a 
+positive  contribution  to the education  of that group  of early  “civil engineers ”. 
+December  5th 
+Ice for the Metropolis , by Malcolm  Tucker.  Well  before  the arrival  of freezers,  
+there  was a demand  for ice for food preservation  and catering.  Malcolm  will explain  
+the history  of importing  natural  ice and the technology  of building  ice wells,  and how 
+London’s  ice trade  grew.  
+February  6th 
+An Update  on the Cotswold  Canals , by Liz Payne.  The Stroudwater  Canal  is 
+moving  towards  reopening.  The Thames  and Severn  Canal  will take a little longer.  
+We will have  a report  on the present  state of play.  
+March  6th 
+Eyots  and Aits — Thames  Islands , by Miranda  Vickers.  The Thames  has many  
+islands.  Miranda  has undertaken  a review  of all of them.  She will tell us about  those  
+of greatest  interest.  
+  Online  bookings:  www.canalmuseum.org.uk/book  
+More  info:  www.canalmuseum.org.uk/whatson  
+London  Canal  Museum  
+12-13  New  Wharf  Road,  London  NI 9RT 
+www.canalmuseum.org.uk 　www.canalmuseum.mobi  
+Tel: 020 7713  0836
+
+==================================================
+[QUESTIONS]
+
+[Q_21] (ANS: A)
+When  is the talk on James  Brindley?
+A. February  6th.
+B. March  6th.
+C. November  7th.
+D. December  5th.
+
+[Q_22] (ANS: D)
+What  is the topic  of the talk in February?
+A. The Canal  Pioneers.
+B. Ice for the Metropolis.
+C. Eyots  and Aits — Thames  Islands.
+D. An Update  on the Cotswold  Canals.
+
+[Q_23] (ANS: C)
+Who  will give the talk on the islands  in the Thames?
+A. Miranda  Vickers.
+B. Malcolm  Tucker.
+C. Chris  Lewis.
+D. Liz Payne.
+
+==================================================
+[ANALYSIS]
+21．A 细节理解题 ．根据文章第二段第二句 "James  Brindley  is recognized  as one of 
+the leading  early  canal  engineers ."所对应的日期是 November  7th．可知，詹姆斯 •
+布林德利的讲座在 11月7日．故选 A．
+22．D 细节理解题． 根据文章第四段 February  6th中的第一句 "An Update  on the 
+Cotsword  Canals , by Liz Payne . The Stroudwater  Canal  is moving  towards  
+reopening ."可知， 2月份讲座的主题是关于科茨伍德运河的更新问题， 故选 D．
+23．C 细节理解题．根据文章第五段第一句 "Eyots  and Aits-Thames  Islands , by 
+Miranda  Vickers ."可以知道做报告的人是 Mirands  Vickets．故选 C．

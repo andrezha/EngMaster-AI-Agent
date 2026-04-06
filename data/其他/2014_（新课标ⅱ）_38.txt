@@ -1,0 +1,55 @@
+Question:
+C 
+One of the latest  trend（趋势） in American  Childcare  is Chinese  au pairs.  Au 
+Pair in Stamford,  for example,  has got increasing  numbers  of request  for Chinese  au 
+pairs  from  aero to around  4,000  since  2004.  And that’s  true all across  the country.  
+“I thought  it would  be useful  for him to learn  Chinese  at an early  age” Joseph  
+Stocke,  the managing  director  of s company,  says of his 2-year -old son. “I would  at 
+least like to give him the chance  to use the language  in the future .” After  only six 
+months  of being  cared  by 25-year-old  woman  from  China,  the boy can already  
+understand  basic  Chinese  daily  expressions,  his dad says.  
+Li Drake,  a Chinese  native  raising  two children  in Minnesota  with an American  
+husband,  had another  reason  for looking  for an au pair from  China.  She didn’t  want  
+her children  to miss out on their roots.  “Because  I am Chinese,  my husband  and I 
+  wanted  the children  to keep  exposed  to (接触 ) the language  and culture.”  she says.  
+“Staying  with a native  speaker  is better  for children  than simply  sitting  in a 
+classroom,”  says Suzanne  Flynn,  a professor  in language  education  of Children.  “But 
+parents  must  understand  that just one year with au pair is unlikely  to produce  
+wonders.   Complete  mastery  demands  continued  learning  until the age of 10 or 12.” 
+The popularity  if au pairs  from  China  has been  strengthened  by the increasing  
+numbers  of American  parents  who want  their children  who want  their children  to 
+learn  Chinese.  It is expected  that American  demand  for au pairs  will continue  to rise 
+in the next few years.  
+29. What  does that term “au pair” in the text mean ? 　   　 
+A. A mother  raising  her children  on her own. 
+B. A child  learning  a foreign  language  at home . 
+C. A professor  in language  education  of children . 
+D. A young  foreign  woman  taking  care of children . 
+30. Li Drake  has her children  study  Chinese  because  she wants  them　   　. 
+A. to live in China  some  day        B. to speak  the language  at home  
+C. to catch  up wit other  children      D. to learn  about  the Chinese  culture  
+31. What  can we infer  from  the text? 　   　 
+A. Learning  Chinese  is becoming  popular  in America . 
+B. Educated  woman  do better  in looking  after children . 
+C. Chinese  au pairs  need  to improve  their English  Skills . 
+D. Children  can learn  a foreign  language  well in six months .
+
+
+Answers:
+['D', 'D', 'A']
+
+Analysis:
+29．D 猜测词义题．根据第一、三、四段中 "Au Pair in Stamford , for example , has 
+got increasing  numbers  of request  for Chinese  au pairs  from  aero to around  4,000和
+had another  reason  for looking  for an au pair from  China . 以及 "Staying  with a native  
+speaker  is better  for children  than simply  sitting  in a classroom ,"可知 "au pair"是指来
+自中国的既能照顾孩子又能承担教育孩子中文的年轻女性．
+30．D 细节理解题．根据文章第三段内容 "Li Drake所说的 "Because  I am 
+  Chinese , my husband  and I wanted  the children  to keep  exposed  to（接触） the 
+language  and culture ."可知，她让孩子学汉语的原因是想让孩子了解中国的文化 ，
+故选 D．
+31．A 细节理解题．作者在文章首段提到美国的趋势就是小孩子在家学习汉语 ，
+而且给出了具体的数字证明 "got increasing  numbers  of request  for Chinese  au pairs  
+from  aero to around  4,000 since  2004"，再通过文章末段 "It is expected  that 
+American  demand  for au pairs  will continue  to rise in the next few years"可知，美国
+对"au pairs"的需求将会继续增长， 故选 A．

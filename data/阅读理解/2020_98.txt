@@ -1,0 +1,54 @@
+YEAR: 2020
+CAT: （新课标Ⅰ）
+==================================================
+[PASSAGE]
+C
+Race walking shares many fitness benefits with running, research shows, while most likely contributing to fewer injuries. It does, however, have its own problem.
+Race walkers are conditioned athletes. The longest track and field event at the Summer Olympics is the 50-kilometer race walk, which is about five miles longer than the marathon. But the sport’s rules require that a race walker’s knees stay straight through most of the leg swing and one foot remain in contact (接触) with the ground at all times. It’s this strange form that makes race walking such an attractive activity, however, says Jaclyn Norberg, an assistant professor of exercise science at Salem State University in Salem, Mass.
+Like running, race walking is physically demanding, she says, According to most calculations, race walkers moving at a pace of six miles per hour would burn about 800 calories(卡路里) per hour, which is approximately twice as many as they would burn walking, although fewer than running, which would probably burn about 1,000 or more calories per hour.
+However, race walking does not pound the body as much as running does, Dr. Norberg says. According to her research, runners hit the ground with as much as four times their body weight per step, while race walkers, who do not leave the ground, create only about 1.4 times their body weight with each step.
+As a result, she says, some of the injuries associated with running, such as runner’s knee, are uncommon among race walkers. But the sport’s strange form does place considerable stress on the ankles and hips, so people with a history of such injuries might want to be cautious in adopting the sport. In fact, anyone wishing to try race walking should probably first consult a coach or experienced racer to learn proper technique, she says. It takes some practice.
+
+==================================================
+[QUESTIONS]
+
+[Q_28] (ANS: C)
+Why are race walkers conditioned athletes?
+A. They must run long distances.
+B. They are qualified for the marathon.
+C. They have to follow special rules.
+D. They are good at swinging their legs.
+
+[Q_29] (ANS: D)
+What advantage does race walking have over running?
+A. It’s more popular at the Olympics.
+B. It’s less challenging physically.
+C. It’s more effective in body building.
+D. It’s less likely to cause knee injuries.
+
+[Q_30] (ANS: A)
+What is Dr. Norberg’s suggestion for someone trying race walking?
+A. Getting experts’ opinions.
+B. Having a medical checkup.
+C. Hiring an experienced coach.
+D. Doing regular exercises.
+
+[Q_31] (ANS: B)
+Which word best describes the author’s attitude to race walking?
+A. Skeptical.
+B. Objective.
+C. Tolerant.
+D. Conservative.
+
+==================================================
+[ANALYSIS]
+【解析】
+这是一篇说明文。短文介绍了竞走相比跑步有诸多的优势，但是之前受过伤的人，要想从事这样运动要谨慎，最好咨询专家的建议。
+【28题详解】
+细节理解题。根据第二段“But the sport’s rules require that a race walker’s knees stay straight through most of the leg swing and one foot remain in contact with the ground at all times.”可知，但这项运动的规则要求竞走者的膝盖在摆动腿的大部分时间保持伸直，一只脚始终与地面接触。由此可知，竞走运动员是需要具备某些条件的运动员是因为运动员需要遵守特殊的规则。故选C项。
+【29题详解】
+细节理解题。根据最后一段“As a result, she says, some of the injuries associated with running, such as runner’s knee, are uncommon among race walkers.”可知，一些与跑步有关的损伤，比如跑步者的膝盖，在竞走者中并不常见。由此可知，竞走与跑步相比的优势是不太可能导致膝盖受伤。故选D项。
+【30题详解】
+细节理解题。根据最后一段Dr. Norberg说的话“In fact, anyone wishing to try race walking should probably first consult a coach or experienced racer to learn proper technique(事实上，任何想尝试竞走的人都应该首先咨询教练或有经验的竞走运动员，学习适当的技巧。)”可知，Dr. Norberg建议想尝试竞走的人征询专家的建议。故选A项。
+【31题详解】
+推理判断题。根据第一段“Race walking shares many fitness benefits with running, research shows, while most likely contributing to fewer injuries. It does, however, have its own problem.”可知，研究表明，竞走和跑步一样有很多健身益处，而且它还很少导致受伤。不过，它也有自己的问题。由此判断出作者对于竞走的态度是客观的。故选B项。

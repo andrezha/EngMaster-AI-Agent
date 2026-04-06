@@ -1,0 +1,70 @@
+YEAR: 2013
+CAT: （新课标Ⅰ）
+==================================================
+[PASSAGE]
+D 
+The National  Gallery  
+Description:  
+The National  Gallery  is the British  national  art museum  built on the north  side of 
+  European  art ranging  from  13th-century  religious  paintings  to more  modern  ones by 
+Renoir  and Van Gogh.  The older  collections  of the gallery  are reached  through  the 
+main  entrance  while  the more  modern  works  in the East Wing  are most  easily  reached  
+from  Trafalgar  Square  by a ground  floor  entrance . 
+Layout:  
+The modern  Sainsbury  Wing  on the western  side of the buileing  houses  13th-to  
+15th-century  paintings,  and artists  include  Duccio,  Uccello,  Van Eyck,  Lippi,  
+Mantegna,  Botticelli  and Memling.  
+The main  West  Wing  houses  16th-century  paintings,  and artists  include  
+Leonardo  da Vinci,  Cranach,  Michelangelo,  Raphael,  Bruegel,  Bronzino,  Titan  and 
+Veronest.  
+The North  Wing  houses  17th-century  paintings,  and artists  include  Caravaggio,  
+Rubens,  Poussin,  Van Dyck,  Velazquez,  Claude  and Vermeer.  
+The East Wing  houses  18th-to  early  20th-century  paintings,  and artists  include  
+Canaletto,  Goya,  Turner,  Constable,  Renoir  and Van Gogh . 
+Opening  Hours:  
+The Gallery  is open  every  day from  10am  to 6pm（Fridays  10am  to 9pm）and is 
+free, but charges  apply  to some  special  exhibitions.  
+Getting  There:  
+Nearest  underground  stations:  Charing  Cross（2-minute  walk）. Leicester  
+Square（3-minute  walk）, Embankment （7-minute  walk）, and Piccadilly  Circus（
+8-minute  walk）.
+
+==================================================
+[QUESTIONS]
+
+[Q_68] (ANS: A)
+In which  century’s  collection  can you see religious  paintings?
+A. The 13th.
+B. The 17th.
+C. The 18th.
+D. The 20th.
+
+[Q_69] (ANS: B)
+Where  are Leonardo  da Vinci’s  works  shown?
+A. In the East Wing .
+B. In the main  West  Wing.
+C. In the Sainsbury  Wing.
+D. In the North  Wing.
+
+[Q_70] (ANS: D)
+Which  underground  station  is closest  to the National  Gallery?
+A. Piccadilly  Circus.
+B. Leicester  Square.
+C. Embankment.
+D. Charing  Cross.
+
+==================================================
+[ANALYSIS]
+68．A 细节理解题 ．根据 Description 部分中的第二句 "It houses  a diverse  collection  
+of more  than 2,300 examples  of European  art ranging  from  13th-century  religious  
+paintings  to more  modern  ones by Renoir  and Van Gogh ."可知，它藏有从 13世纪宗
+教绘画作品到雷诺瓦和梵高的现代作品 2300多份的各种各样的藏品 ，所以在 13
+世纪的藏品中含有宗教绘画作品． 故选 A．
+69．B 细节理解题． 根据 Layout部分中的第二段的 "The  main  West  Wing  houses  
+16th-century  paintings , and artists  include  Leonardo  da Vinci ,"可知，达芬奇的作品
+在"The  main  West  Wing"展出．故选 B．
+70．D 细节理解题． 根据 Getting  There部分的 "Nearest  underground  stations：
+Charing  Cross（2-minutes  walk）, Leiseter  Square（3-minutes  walk）, Embankmen
+（7-minutes  walk）, and Piccadilly  Circus（8-minutes  walk）"可知，从Charing  
+Cross至英国国家美术馆步行只需两分钟，因此这个地铁站距离英国国家美术馆
+最近．故选 D．

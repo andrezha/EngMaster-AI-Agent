@@ -1,0 +1,53 @@
+YEAR: 2022
+CAT: （全国乙卷）
+==================================================
+[PASSAGE]
+A
+Henry Raeburn (1756-1823)
+The Exhibition
+This exhibition of some sixty masterpieces celebrating the life and work of Scotland’s best loved painter, Sir Henry Raeburn, comes to London. Selected from collections throughout the world, it is the first major exhibition of his work to be held in over forty years. 
+Lecture Series
+Scottish National Portrait (肖像画) Gallery presents a series of lectures for the general public. They are held in the Lecture Room. Admission to lectures is free. 
+Exhibition Times
+Monday-Saturday 10.00-17.45        Sunday 12.00-17.45
+Last admission to the exhibition: 17.15. There is no re-admission. 
+Closed: 24-26 December and 1 January. 
+Admission
+£4. Children under 12 years accompanied by an adult are admitted free. 
+Schools and Colleges
+A special low entrance charge of £2 per person is available to all in full-time education, up to and including those at first degree level, in organised groups with teachers.
+
+==================================================
+[QUESTIONS]
+
+[Q_1] (ANS: B)
+What is the right time for attending Raeburn’s English Contemporaries?
+A. Sun. 26 Oct.
+B. Thurs. 30 Oct.
+C. Thurs. 6 Nov.
+D. Thurs.13 Nov.
+
+[Q_2] (ANS: B)
+How much would a couple with two children under 12 pay for admission?
+A. £4.
+B. £8.
+C. £12.
+D. £16.
+
+[Q_3] (ANS: C)
+How can full-time students get group discounts?
+A. They should go on Sunday mornings.
+B. They should come from art schools.
+C. They must be led by teachers.
+D. They must have ID cards with them.
+
+==================================================
+[ANALYSIS]
+【解析】
+【导语】这是一篇应用文。主要介绍了为纪念苏格兰最受欢迎的画家亨利·雷伯恩爵士进行的展览的相关情况。
+【1题详解】
+细节理解题。根据表格右上角Raeburn’s English Contemporaries部分“Thursday 30 Oct. (10月30日星期四)”可知，在10月30日星期四可以去参加Raeburn’s English Contemporaries。故选B项。
+【2题详解】
+细节理解题。根据Admission部分“£4. Children under 12 years accompanied by an adult are admitted free.(4英镑。12岁以下儿童在一位成人陪同下免费入场。)”可知，一对夫妇应付4+4=8英镑，两个12岁以下的儿童在成人陪同下免费，即入场费为8英镑。故选B项。
+【3题详解】
+细节理解题。根据最后一段“A special low entrance charge of £2 per person is available to all in full-time education, up to and including those at first degree level, in organised groups with teachers.(所有全日制教育的学生，高至并包括那些学士学位水平的学生，在有教师的组织团体中，均可享受每人2英镑的特别低入场费。)”可知，全日制学生在有教师的组织团体中，可以获得折扣，即他们必须由教师带领。故选C项。

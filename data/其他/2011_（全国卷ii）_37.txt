@@ -1,0 +1,14 @@
+Question:
+13. Jane won’t join us for dinner  tonight  and        . 
+A. neither  won’t Tom    B. Tom  won’t either    C. Tom  will too   D. so will Tom
+
+
+Answers:
+['B']
+
+Analysis:
+【解答】 答案是 B．本题考查否定结构；根据语境 "Jane今晚不和我们一起吃晚
+饭，Tom也不会．"，排除 C和D；因为 too 和so用在肯定句中表示 "也"；neither
+表示 "也不 "，不需要再与否定词连用， 故排除 A；either表示 "也"，常常出现在
+否定句中， 故选 B． 
+【点评】

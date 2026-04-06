@@ -1,0 +1,43 @@
+Question:
+B
+“You can use me as a last resort(选择), and if nobody else volunteers，then I will do it.” This was an actual reply from a parent after I put out a request for volunteers for my kids lacrosse(长曲棍球)club.
+I guess that there's probably some demanding work schedule, or social anxiety around stepping up to help for an unknown sport. She may just need a little persuading. So I try again and tug at the heartstrings. I mention the single parent with four kids running the show and I talk about the dad coaching a team that his kids aren’t even on … At this point the unwilling parent speaks up,“Alright. Yes, I’ll do it.”
+I’m secretly relieved because I know there’s real power in sharing volunteer responsibilities among many. The unwilling parent organizes the meal schedule, sends out emails, and collects money for end-of-season gifts. Somewhere along the way, the same parent ends up becoming an invaluable member of the team. The coach is able to focus on the kids while the other parents are relieved to be off the hook for another season. Handing out sliced oranges to bloodthirsty kids can be as exciting as watching your own kid score a goal.
+Still, most of us volunteers breathe a sigh of relief when the season comes to a close. That relief is coupled with a deep understanding of why the same people keep coming back for more: Connecting to the community(社区)as you freely give your time, money, skills, or services provides a real joy. Volunteering just feels so good.
+In that sense, I’m pretty sure volunteering is more of a selfish act than I’d freely like to admit. However, if others benefit in the process, and I get some reward too, does it really matter where my motivation lies?
+24. What can we infer about the parent from her reply in paragraph l？
+A. She knows little about the club.
+B. She isn't good at sports.
+C. She just doesn't want to volunteer.
+D. She's unable to meet her schedule.
+25. What does the underlined phrase“tug at the heartstrings”in paragraph 2 mean ?
+A. Encourage team work.
+B. Appeal to feeling.
+C. Promote good deeds
+D. Provide advice.
+26. What can we learn about the parent from paragraph 3?
+A. She gets interested in lacrosse.
+B. She is proud of her kids.
+C. She’ll work for another season.
+D. She becomes a good helper.
+27. Why does the author like doing volunteer work?
+A. It gives her a sense of duty.
+B. It makes her very happy.
+C. It enables her to work hard.
+D. It brings her material rewards.
+
+
+Answers:
+['C', 'B', 'D', 'B']
+
+Analysis:
+【解析】
+本文是一篇夹叙夹议文。文中讲述了作者成功说服了一个家长参加志愿者团队，作为一名志愿者作者发挥了自己的作用，并获得了快乐。
+【24题详解】
+推理判断题。根据文章第一段中的 You can use me as a last resort（选择）, and if  nobody else volunteers，then I will do it.可知，你可以当我是最后的候选人，如果没有其他的志愿者，那么我就做。由此可推断出，她不想做自愿者。故选C。
+【25题详解】
+词义猜测题。根据划线前句she may just need a little persuading.和下面的一句话I mention the single parent with four kids running the show and I talk about the dad coaching a team that his kids aren't even on ...可知，作者为了劝服这位家长，举了两个例子。故可知，划线句此处应是“煽情”之意。故选B。
+【26题详解】
+细节理解题。根据第三段中这位家长作出的贡献及the same parent ends up becoming an invaluable member of the team可知，她最终成为了志愿者队伍中的重要的一员，也即是说，她成了一个好帮手。故选D。
+【27题详解】
+细节理解题。题干问作者为什么喜欢做志愿者工作。根据第四最两句Connecting to the community（社区）as you freely give your time, money, skills, or services provides a real joy. Volunteering just feels so good.可知，为社区做贡献可以带来真正的快乐， 参加志愿者活动活动能让人感觉快乐。故选B。

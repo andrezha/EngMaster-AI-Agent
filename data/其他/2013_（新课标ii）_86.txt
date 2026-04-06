@@ -1,0 +1,17 @@
+Question:
+32. Only  by increasing  the number  of doctors  by 50 percent         properly  in this 
+hospital.  
+A. can be the patients                B. can the patients  be treated  
+C. the patients  can be treated          D. treated  can be the patients
+
+
+Answers:
+['B']
+
+Analysis:
+【解答】 答案： B．"only+状语 "置于句首时，句子要部分倒装．本句中 "only+by  
+increaing  the number  of doctors  by 50 percent（介词短语在句中作状语） "位于句
+首，故须部分倒装 ，排除 C；部分倒装就是将谓语的一部分如助动词 、情态动词
+或be动词放在主语之前 ，故排除 A、D，只有 can the patients  be treated符合，故
+选B． 
+【点评】

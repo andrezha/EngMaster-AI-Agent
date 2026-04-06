@@ -1,0 +1,49 @@
+YEAR: 2019
+CAT: （新课标Ⅲ）
+==================================================
+[PASSAGE]
+A
+OPENINGS AND PREVIEWS
+Animals Out of Paper
+Yolo！Productions and the Great Griffon present the play by Rajiv Joseph，in which an origami(折纸术)artist invites a teenage talent and his teacher into her studio. Merri Milwe directs. In previews. Opens Feb.12.(West Park Presbyterian Church，165 W.86th St.212-868-4444.)
+The Audience
+Helen Mirren stars in the play by Peter Morgan，about Queen Elizabeth II of the UK and her private meetings with twelve Prime Ministers in the course of sixty years. Stephen Daldry directs. Also starring Dylan Baker and Judith Ivey. Previews begin Feb.14.(Schoenfeld，236 W.45th St.212-239-6200.)
+Hamilton
+Lin-Manuel Miranda wrote this musical about Alexander Hamilton，in which the birth of America is presented as an immigrant story. Thomas Kail directs. In previews. Opens Feb.17.(Public，425 Lafayette St.212-967-7555.)
+On the Twentieth Century
+Kristin Chenoweth and Peter Gallagher star in the musical comedy by Betty Comden and Adolph Green，about a Broadway producer who tries to win a movie star's love during a cross-country train journey. Scott Ellis directs，for Roundabout Theatre Company. Previews begin Feb.12.(American Airlines Theatre，227 W.42nd St.212-719-1300.)
+
+==================================================
+[QUESTIONS]
+
+[Q_21] (ANS: A)
+What is the play by Rajiv Joseph probably about?.
+A. A type of art.
+B. A teenager's studio.
+C. A great teacher.
+D. A group of animals.
+
+[Q_22] (ANS: D)
+Who is the director of The Audience?
+A. Helen Mirren.
+B. Peter Morgan.
+C. Dylan Baker.
+D. Stephen Daldry.
+
+[Q_23] (ANS: C)
+Which play will you go to if you are interested in American history?
+A. Animals Out of Paper.
+B. The Audience.
+C. Hamilton.
+D. On the Twentieth Century.
+
+==================================================
+[ANALYSIS]
+【解析】
+这是一篇应用文。这篇文章对一些话剧的开幕和新剧首映进行了介绍。
+【21题详解】
+细节理解题。根据话剧Animals Out of Paper的Productions and the Great Griffon present the play by Rajiv Joseph, in which an origami artist invites a teenage talent and his teacher into her studio.可知，Rajiv Joseph创作的的话剧是关于折纸的一种艺术。故选A。
+【22题详解】
+细节理解题。根据话剧The Audience的Stephen Daldry directs.可知，本剧是Stephen Daldry导演的。故选D。
+【23题详解】
+细节理解题。根据话剧Hamilton 的Li-Manuel Miranda wrote this musical about Alexander Hamilton in which the birth of America is presented as an immigrant story.可知，话剧Hamilton的主题是美国的诞生，由此可知，如果你对美国历史感兴趣，你可以看这部话剧。故选C。

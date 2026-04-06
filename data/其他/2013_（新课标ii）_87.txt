@@ -1,0 +1,14 @@
+Question:
+33. Four  and    half hours  of discussion  took us up to midnight,  and    break  for 
+cheese,  chocolate  and tea with sugar.  
+A. a; a       B. the; the       C. 不填 ; the       D. a; 不填
+
+
+Answers:
+['A']
+
+Analysis:
+【解答】答案 A． 第一空 four and a half hours是习惯表达，表示 "四个半小时 "； 
+第二空 a break泛指 "一段休息时间 "． 
+故选： A． 
+【点评】

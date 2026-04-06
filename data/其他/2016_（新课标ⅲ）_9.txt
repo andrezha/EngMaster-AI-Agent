@@ -1,0 +1,24 @@
+Question:
+根据短文内容，从短文后的选项中选出能填入空白处的最佳选项。选项中有两项为多余选项。
+Everyone knows that fish is good for health.    36    But it seems that many people don’t cook fish at home. Americans eat only about fifteen pounds of fish per person per year, but we eat twice as much fish in restaurants as at home. Buying, storing, and cooking fish isn’t difficult.    37    This text is about how to buy and cook fish in an easy way.
+   38    Fresh fish should smell sweet: you should feel that you’re standing at the ocean’s edge. Any fishy or strong smell means the fish isn’t fresh.    39    When you have bought a fish and arrive home, you’d better store the fish in the refrigerator if you don’t cook it immediately, but fresh fish should be stored in your fridge for only a day or two. Frozen fish isn’t as tasty as the fresh one.
+There are many common methods used to cook fish.    40    First, clean it and season it with your choice of spices (调料). Put the whole fish on a plate and steam it in a steam pot for 8 to 10 minutes if it weighs about one pound. (A larger one will take more time.) Then, it’s ready to serve.
+A. Do not buy it.
+B. The easiest is to steam it.
+C. This is how you can do it.
+D. It just requires a little knowledge.
+E. The fish will go bad within hours.
+F. When buying fish, you should first smell it.
+G. The fats in fish are thought to help prevent heart disease.
+
+
+Answers:
+['G', 'D', 'F', 'A', 'B']
+
+Analysis:
+【解答】GDFAB
+36．G．考查上下文串联．第一句Everyone knows that fish is good for health．是总写，but表示转折，说明but前面一句是对第一句的解释，G项"鱼中的脂肪有助于心脏病符合语境．
+37．D考查上下文串联．题目前一句"Buying, storing, and cooking fish isn’t difficult."可知，购买，存放和烧鱼并非难事，再根据后面一句可知，文章主要介绍了买鱼和烧鱼的简单知识，D项"这仅仅需要一点知识"符合语境，此题容易与C项混淆，C项后面应该直接跟烧鱼的方法，即C项与后一句重复，故选D．
+38．F考查上下文串联．根据"Freshfish should smell sweet"可知，本段讲的是买鱼的时候要闻一下鱼的气味，故选F．
+39．A考查上下文串联．根据前一句"Any fishy or strong smell means thefish isn't fresh．"可知，带有强烈的味道的鱼都不是新鲜的，不应该买这样的鱼，A项与后句联系紧密，故选A．
+40．B考查上下文串联．根据"Put the whole fish on a plate and steam it in a steam pot"可知，本段介绍的是蒸鱼的方法，故选B．

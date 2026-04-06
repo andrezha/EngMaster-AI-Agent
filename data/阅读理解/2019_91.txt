@@ -1,0 +1,55 @@
+YEAR: 2019
+CAT: （新课标Ⅱ）
+==================================================
+[PASSAGE]
+D
+Bacteria are an annoying problem for astronauts. The microorganisms(微生物) from our bodies grow uncontrollably on surfaces of the International Space Station, so astronauts spend hours cleaning them up each week. How is NASA overcoming this very tiny big problem? It’s turning to a bunch of high school kids. But not just any kids. It depending on NASA HUNCH high school class, like the one science teachers Gene Gordon and Donna Himmelberg lead at Fairport High School in Fairport, New York.
+HUNCH is designed to connect high school classrooms with NASA engineers. For the past two years, Gordon’s students have been studying ways to kill bacteria in zero gravity, and they think they’re close to a solution(解决方案). “We don’t give the students any breaks. They have to do it just like NASA engineers,” says Florence Gold, a project manager.
+“There are no tests,” Gordon says. “There is no graded homework. There almost are no grades, other than‘Are you working towards your goal?’ Basically, it’s ‘I’ve got to produce this product and then, at the end of year, present it to NASA.’ Engineers come and really do an in-person review, and…it’s not a very nice thing at time. It’s a hard business review of your product.”
+Gordon says the HUNCH program has an impact(影响) on college admissions and practical life skills. “These kids are so absorbed in their studies that I just sit back. I don’t teach.” And that annoying bacteria? Gordon says his students are emailing daily with NASA engineers about the problem, readying a workable solution to test in space.
+
+==================================================
+[QUESTIONS]
+
+[Q_32] (ANS: A)
+What do we know about the bacteria in the International Space Station?
+A. They are hard to get rid of.
+B. They lead to air pollution.
+C. They appear different forms.
+D. They damage the instruments.
+
+[Q_33] (ANS: D)
+What is the purpose of the HUNCH program?
+A. To strengthen teacher-student relationships
+B. To sharpen students’ communication skills.
+C. To allow students to experience zero gravity.
+D. To link space technology with school education
+
+[Q_34] (ANS: A)
+What do the NASA engineers do for the students in the program?
+A. Check their product.
+B. Guide project designs
+C. Adjust work schedules.
+D. Grade their homework.
+
+[Q_35] (ANS: B)
+What is the best title for the text?
+A. NASA: The Home of Astronauts.
+B. Space: The Final Homework Frontier.
+C. Nature: An Outdoor Classroom.
+D. HUNCH:A College Admission Reform.
+
+==================================================
+[ANALYSIS]
+【解析】
+本文为说明文。本文介绍了HUNCH项目就是通过Gordon的学生找到如何杀死空间站的细菌这一技术，把空间技术与带进课堂，与学校教育相结合，从而最终影响到大学入学。
+【32题详解】
+细节理解题。根据第一段中的“Bacteria are annoying problem for astronauts. The microorganisms form our bodies grow uncontrollably on surfaces of the International Space Station, so astronauts spend hours cleaning them up each week.”可知，细菌对宇航员来说是个令人讨厌的问题。这种来自我们身体的微生物在国际空间站的表面不受控制地生长，宇航员每周要花几个小时来清理它们。也就是说它们很难去掉。其中的“the microorganisms”包括“bacteria”。由此可知， A项符合题意。
+【33题详解】
+推理判断题。根据第二段的 “HUNCH  is designed to connect high school classrooms with NASA engineers. Gordon’s students have been studying ways to kill bacteria in zero gravity,...”可知，Hunch旨在把高中教室和NASA的工程师联系起来。Gordon的学生一直在研究如何在零重力下杀死细菌, ...”。结合最后一段中的“Gordon students are emailing daily with NASA engineers about the problem,...”可知，学生每天都给NASA的工程师发邮件一起探讨（如何杀死空间站的细菌这一空间技术）这个问题。由此可推断出HUNCH program的目的把空间技术与学校教育相结合。分析选项可知D项符合题意。
+【34题详解】
+细节理解题。根据第三段中的“I’ve got to produce this product and then, at the end of the year ,present it to NASA, ”“Engineers come and really do an in-person review，and ...It’s not a very nice thing at times. It’s a hard business review of your product.”可知，NASA的工程师要检查学生所做的产品。分析选项可知A项符合题意，故选A。
+【35题详解】
+主旨大意题。本文介绍了HUNCH项目把如何杀死空间站的细菌这一空间技术引入Gordon学校的课堂，从而最终影响了大学入学。尤其是最后一段“HUNCH program has an impact on college admissions and practical life skills.”可知，本题的最佳答案为D。
+
+第二节

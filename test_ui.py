@@ -1,0 +1,26 @@
+import sys
+import json
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QHBoxLayout, QLabel
+app = QApplication(sys.argv)
+win = QWidget()
+win.resize(800, 600)
+lay = QVBoxLayout(win)
+lay.addWidget(QLabel("Horizontal Buttons with long text:"))
+row = QWidget()
+hlay = QHBoxLayout(row)
+hlay.addWidget(QPushButton("A. They are hard to get rid of. They are hard to get rid of."))
+hlay.addWidget(QPushButton("B. They lead to air pollution. They lead to air pollution."))
+hlay.addWidget(QPushButton("C. They appear different forms. They appear different forms."))
+hlay.addWidget(QPushButton("D. They damage the instruments. They damage the instruments."))
+lay.addWidget(row)
+
+lay.addWidget(QLabel("Vertical Buttons with long text:"))
+col = QWidget()
+vlay = QVBoxLayout(col)
+vlay.addWidget(QPushButton("A. They are hard to get rid of. They are hard to get rid of."))
+vlay.addWidget(QPushButton("B. They lead to air pollution. They lead to air pollution."))
+vlay.addWidget(QPushButton("C. They appear different forms. They appear different forms."))
+vlay.addWidget(QPushButton("D. They damage the instruments. They damage the instruments."))
+lay.addWidget(col)
+# win.show()
+print("UI code compiles")

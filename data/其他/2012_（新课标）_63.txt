@@ -1,0 +1,18 @@
+Question:
+24. It is by no means  clear          the president  can do to end the strike.  
+A. how             B. which             C. that            D. what
+
+
+Answers:
+['D']
+
+Analysis:
+【解答】 答案 D．题干中 by no means表示 "绝不 "相当于一个否定词．所以题干
+就可以简化为句型 "it+be（not）+adj.+引导词 +从句 "，即it 为形式主语的主语从
+句．简化从句 ，去掉目的状语 to end the strike后，可以很清楚地看出从句中谓语
+动词 do后缺少宾语 ，即所要填的引导词充当宾语成分 ．在主语从句中 how充当
+方式状语 ，that不充当成分 ，A和C都可直接排除 ．which和what虽然都可以充
+当宾语，但它们的区别就在于 ，which表示有范围的选择 "哪一个 "，而what没有
+范围表示 "什么 "．根据句意 ，该题没有可供选择的范围 ，故排除 B，所以选择 D
+． 
+【点评】

@@ -1,0 +1,14 @@
+Question:
+35. The sunlight  is white  and blinding,  _______  hard-edged  shadows  on the ground.   
+A. throwing      B. being  thrown       C. to throw      D. to be thrown
+
+
+Answers:
+['A']
+
+Analysis:
+【解答】 答案： A 本题考查非谓语动词形式． 句子中已经有谓语动词 is了，中
+间没有其他连词，所以肯定是选非谓语，选项全部是非谓语， throw的逻辑主语
+是the sunlight，是主动表伴随的意思； 没有被动的意思排除 A，CD不定式表将
+  来或者表目的，都不符合． 所以本题选择 A． 
+【点评】
