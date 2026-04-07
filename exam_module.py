@@ -2,7 +2,7 @@ import json
 import os
 import random
 import re
-from PyQt5.QtWidgets import QPushButton, QHBoxLayout, QVBoxLayout, QWidget, QLabel, QRadioButton, QButtonGroup, QSizePolicy
+from PyQt5.QtWidgets import QPushButton, QHBoxLayout, QVBoxLayout, QWidget, QLabel, QRadioButton, QButtonGroup, QSizePolicy, QLineEdit
 from PyQt5.QtCore import Qt
 from parsers.reading_parser import parse_reading_txt
 
@@ -33,6 +33,8 @@ class ExamManager:
         # 🎯 懒加载核心：独立存储每种题型的数据
         self.currentReadingData = None  # 阅读理解数据
         self.currentClozeData = None    # 七选五数据
+        self.currentGrammarData = None  # 语法填空数据
+        self.currentClozeFillData = None  # 完形填空数据
 
         # 🎯 双变量存储：记录每种题型最后显示的标题
         self.lastReadingTitle = None
@@ -254,9 +256,21 @@ class ExamManager:
                 self.currentView = 'cloze'
                 self.lastClozeTitle = self.currentClozeData.get('filename', '')
                 return True
+            elif topic_name == "语法填空" and self.currentGrammarData is not None:
+                print("📝 [懒加载] 语法填空数据已存在，直接返回缓存数据")
+                self.current_q = self.currentGrammarData
+                self.current_type = topic_name
+                self.currentView = 'grammar'
+                return True
+            elif topic_name == "完形填空" and self.currentClozeFillData is not None:
+                print("📝 [懒加载] 完形填空数据已存在，直接返回缓存数据")
+                self.current_q = self.currentClozeFillData
+                self.current_type = topic_name
+                self.currentView = 'cloze_fill'
+                return True
         
         # 2. 需要加载新数据（数据为 null 或点击了"下一题"）
-        print(f"📥 [懒加载] 需要加载新数据: 数据为空={topic_name == '阅读理解' and self.currentReadingData is None}, 下一题={is_next_button}")
+        print(f"📥 [懒加载] 需要加载新数据: 下一题={is_next_button}")
         return self.fetchNewRandomFile(topic_name)
     
     def fetchNewRandomFile(self, topic_name):
@@ -328,6 +342,12 @@ class ExamManager:
                 self.currentClozeData = question_data
                 self.currentView = 'cloze'
                 self.lastClozeTitle = target
+            elif topic_name == "语法填空":
+                self.currentGrammarData = question_data
+                self.currentView = 'grammar'
+            elif topic_name == "完形填空":
+                self.currentClozeFillData = question_data
+                self.currentView = 'cloze_fill'
             
             # 设置当前题目
             self.current_q = question_data
@@ -413,6 +433,27 @@ class ExamManager:
             print("=" * 30 + "\n")
         else:
             print("❌ [load_and_render] 数据加载失败")
+            # 如果加载失败，尝试使用已有的缓存数据
+            if self.current_type == "语法填空" and self.currentGrammarData is not None:
+                print("🔄 [load_and_render] 尝试使用缓存的语法填空数据...")
+                self.current_q = self.currentGrammarData
+                self.render_passage()
+                self.render_question_ui()
+            elif self.current_type == "完形填空" and self.currentClozeFillData is not None:
+                print("🔄 [load_and_render] 尝试使用缓存的完形填空数据...")
+                self.current_q = self.currentClozeFillData
+                self.render_passage()
+                self.render_question_ui()
+            elif self.current_type == "阅读理解" and self.currentReadingData is not None:
+                print("🔄 [load_and_render] 尝试使用缓存的阅读理解数据...")
+                self.current_q = self.currentReadingData
+                self.render_passage()
+                self.render_question_ui()
+            elif self.current_type == "七选五" and self.currentClozeData is not None:
+                print("🔄 [load_and_render] 尝试使用缓存的七选五数据...")
+                self.current_q = self.currentClozeData
+                self.render_passage()
+                self.render_question_ui()
 
     def render_passage(self):
         """渲染文章区域"""
@@ -480,7 +521,26 @@ class ExamManager:
             main_title_html = ""
 
         p_text = '\n'.join(p_text_lines).strip()
-        p_text_html = p_text.replace('\n', '<br>')
+        
+        # 🎯 清理HTML标签残留，保持原始格式
+        import re
+        p_text_clean = re.sub(r'<[^>]+>', '', p_text)
+        
+        # 🎯 完形填空、七选五、语法填空：将题号转换为 ___XX___ 格式，方便识别
+        question_type = self.current_q.get('question_type', 'reading')
+        if question_type in ['cloze', 'seven_five', 'grammar']:
+            items = self.current_q.get('items', [])
+            q_ids = [item.get('q_id', '') for item in items]
+            
+            # 将空格+题号+空格的格式转换为 ___XX___
+            for q_id in q_ids:
+                # 匹配空格+题号+空格的模式
+                pattern = rf'(\s+){q_id}(\s+)'
+                replacement = r'\1___' + q_id + r'___\2'
+                p_text_clean = re.sub(pattern, replacement, p_text_clean)
+        
+        # 将换行转换为HTML的<br>
+        p_text_html = p_text_clean.replace('\n', '<br>')
 
         # 最终标题拼接
         html_output = (
@@ -558,6 +618,14 @@ class ExamManager:
             # 只显示七选五 UI，不创建阅读理解的组件
             print("  → 渲染七选五 UI (ClozeOptionList)")
             self._render_seven_five_ui(layout, items)
+        elif question_type == "grammar":
+            # 显示语法填空 UI - 输入框形式
+            print("  → 渲染语法填空 UI (GrammarFillWidget)")
+            self._render_grammar_fill_ui(layout, items)
+        elif question_type == "cloze":
+            # 显示完形填空 UI - 选择题形式（与阅读理解类似但题号不同）
+            print("  → 渲染完形填空 UI (ClozeQuestionWidget)")
+            self._render_cloze_ui(layout, items)
         else:
             # 只显示阅读理解 UI，不创建七选五的组件
             print("  → 渲染阅读理解 UI (ReadingQuestionWidget)")
@@ -610,7 +678,12 @@ class ExamManager:
 
             # 显示选项按钮行
             if options:
-                for i, opt_content in enumerate(options):
+                # 处理 options 为字典的情况（如完形填空解析器返回的格式）
+                if isinstance(options, dict):
+                    options_list = [f"{k}. {v}" for k, v in sorted(options.items())]
+                else:
+                    options_list = options
+                for i, opt_content in enumerate(options_list):
                     btn = QPushButton(opt_content)
                     btn.setCheckable(True)
                     btn.setObjectName(f"btn_q{qid}_opt{chr(65+i)}")
@@ -661,22 +734,44 @@ class ExamManager:
         """从题目内容中提取题干和选项"""
         # 容错处理：将全角 ． 替换为半角 .
         clean_content = content.replace('．', '.')
+        
+        # 🎯 关键修复：处理选项前缀格式不标准的情况
+        # 如 "CThey" 应该是 "C. They"
+        clean_content = re.sub(r'(?<=[A-D])(?=[A-Z])', '. ', clean_content)
+        # 将 "A. " 统一为 "A. "
+        clean_content = re.sub(r'([A-D])\.\s*', r'\1. ', clean_content)
 
         # 查找选项位置
-        posA = clean_content.find("A.")
-        posB = clean_content.find("B.")
-        posC = clean_content.find("C.")
-        posD = clean_content.find("D.")
+        posA = clean_content.find("A. ")
+        posB = clean_content.find("B. ")
+        posC = clean_content.find("C. ")
+        posD = clean_content.find("D. ")
+        
+        # 如果找不到，尝试不带空格的格式
+        if posA == -1:
+            posA = clean_content.find("A.")
+        if posB == -1:
+            posB = clean_content.find("B.")
+        if posC == -1:
+            posC = clean_content.find("C.")
+        if posD == -1:
+            posD = clean_content.find("D.")
 
         if posA != -1 and posB != -1 and posC != -1 and posD != -1 and posA < posB < posC < posD:
             # 切分题干：位置 A 之前的所有内容
             q_text = clean_content[:posA].strip()
 
             # 选项切分（去除选项前缀 "A.", "B." 等）
-            optA = clean_content[posA+2:posB].strip()  # +2 跳过 "A."
-            optB = clean_content[posB+2:posC].strip()  # +2 跳过 "B."
-            optC = clean_content[posC+2:posD].strip()  # +2 跳过 "C."
-            optD = clean_content[posD+2:].strip()      # +2 跳过 "D."
+            # 找到每个选项前缀的实际长度
+            lenA = 2 if clean_content[posA+1:posA+3] == ". " else 1
+            lenB = 2 if clean_content[posB+1:posB+3] == ". " else 1
+            lenC = 2 if clean_content[posC+1:posC+3] == ". " else 1
+            lenD = 2 if clean_content[posD+1:posD+3] == ". " else 1
+            
+            optA = clean_content[posA+lenA:posB].strip()
+            optB = clean_content[posB+lenB:posC].strip()
+            optC = clean_content[posC+lenC:posD].strip()
+            optD = clean_content[posD+lenD:].strip()
 
             options = [optA, optB, optC, optD]
             return q_text, options
@@ -685,7 +780,7 @@ class ExamManager:
             return content, []
 
     def _render_seven_five_ui(self, layout, items):
-        """渲染七选五题目UI（A-G选项列表）"""
+        """渲染七选五题目UI（A-G选项列表）- 样式与阅读理解一致"""
         if not items:
             return
 
@@ -698,7 +793,7 @@ class ExamManager:
             layout.addWidget(no_opt_label)
             return
 
-        # 🚨 修复1：选项区域标题 - 纯文本展示，无按钮样式
+        # 🎯 选项区域标题
         options_title = QLabel("📋 选项列表 (A-G)")
         options_title.setStyleSheet("""
             QLabel {
@@ -713,130 +808,112 @@ class ExamManager:
         options_title.setWordWrap(True)
         layout.addWidget(options_title)
 
-        # 🚨 修复2：选项显示区域 - 纯文本标签，自适应高度，无交互
+        # 🎯 选项显示区域
         options_widget = QWidget()
         options_layout = QVBoxLayout(options_widget)
         options_layout.setSpacing(6)
         options_layout.setContentsMargins(5, 5, 5, 5)
         
-        # 关键修复：让内容自动撑开，不设置任何高度限制
         options_widget.setSizePolicy(
             QSizePolicy.Preferred,
-            QSizePolicy.MinimumExpanding  # 垂直方向根据内容自动扩展
+            QSizePolicy.MinimumExpanding
         )
-        # 移除所有高度限制
         options_widget.setMinimumHeight(0)
-        options_widget.setMaximumHeight(16777215)  # Qt 的最大值
+        options_widget.setMaximumHeight(16777215)
 
         for opt in options_list:
             label = opt.get('label', '')
             content = opt.get('content', '')
             opt_text = f"{label}. {content}"
 
-            # 🚨 修复3：纯文本展示，去掉背景框，只留文字，自适应高度
             opt_label = QLabel(opt_text)
             opt_label.setStyleSheet("""
                 QLabel {
                     color: #374151;
-                    font-size: 15px;
-                    padding: 4px 0;
-                    background: transparent;
-                    border: none;
+                    font-size: 14px;
+                    padding: 8px 12px;
+                    border: 1px solid #d1d5db;
+                    border-radius: 6px;
+                    background-color: #f9fafb;
+                }
+                QLabel:hover {
+                    background-color: #e5e7eb;
                 }
             """)
             opt_label.setWordWrap(True)
-            # 关键：不设置固定高度，让文字自动撑开
-            opt_label.setSizePolicy(
-                QSizePolicy.Preferred,
-                QSizePolicy.MinimumExpanding  # 根据内容自动调整高度
-            )
-            opt_label.setMinimumHeight(0)  # 移除最小高度限制
+            opt_label.setSizePolicy(QSizePolicy.Preferred, QSizePolicy.MinimumExpanding)
+            opt_label.setMinimumHeight(0)
             options_layout.addWidget(opt_label)
 
         layout.addWidget(options_widget)
 
-        # 🚨 修复4：分隔线
-        separator = QLabel("<hr style='border: none; border-top: 2px solid #e5e7eb; margin: 10px 0;'>")
+        # 分隔线
+        separator = QLabel("<hr style='border: none; border-top: 1px solid #e5e7eb; margin: 8px 0;'>")
         layout.addWidget(separator)
 
-        # 显示题目编号和答题区域标题
-        questions_title = QLabel("✏️ 请选择每个空白处的答案")
-        questions_title.setStyleSheet("""
-            QLabel {
-                color: #2c3e50;
-                font-size: 15px;
-                font-weight: bold;
-                padding: 8px 0;
-                border: none;
-                background: transparent;
-            }
-        """)
-        layout.addWidget(questions_title)
-
-        # 🚨 修复5：为每个空白处创建选择器（单选锁定）
+        # 为每个空白处创建选择器
         for item in items:
             qid = item.get('q_id', '')
             
-            # 创建水平布局容器
-            h_layout = QHBoxLayout()
-            h_layout.setSpacing(8)
-            
-            # 空白编号标签
-            q_label = QLabel(f"空白 {qid}:")
-            q_label.setStyleSheet("""
-                QLabel {
-                    color: #2c3e50;
-                    font-size: 14px;
-                    font-weight: bold;
-                    min-width: 70px;
-                }
-            """)
-            h_layout.addWidget(q_label)
+            # 显示题干
+            q_label = QLabel(f"<b>{qid}.</b> 请选择答案")
+            q_label.setWordWrap(True)
+            q_label.setObjectName(f"label_q{qid}")
+            q_label.setStyleSheet("QLabel { color: #2c3e50; font-size: 14px; padding: 4px 0; background: transparent; }")
+            layout.addWidget(q_label)
 
-            # 🚨 修复6：为每个空白处创建独立的单选组（关键：单选锁定）
+            # 为每道题目创建独立的 QButtonGroup（单选组）
             blank_group = QButtonGroup(self.mw)
-            blank_group.setExclusive(True)  # 确保每行只能选一个
+            blank_group.setExclusive(True)
             
             # 保存按钮组引用
+            if not hasattr(self, 'seven_five_button_groups'):
+                self.seven_five_button_groups = {}
             self.seven_five_button_groups[f"blank_{qid}"] = blank_group
 
-            # 为每个选项创建单选按钮
-            for opt in options_list:
+            # 显示选项按钮
+            for i, opt in enumerate(options_list):
                 opt_label_text = opt.get('label', '')
+                opt_content = opt.get('content', '')
                 
-                radio = QRadioButton(opt_label_text)
-                radio.setStyleSheet("""
-                    QRadioButton {
-                        padding: 6px 12px;
+                btn = QPushButton(f"{opt_label_text}. {opt_content}")
+                btn.setCheckable(True)
+                btn.setObjectName(f"btn_seven_q{qid}_opt{opt_label_text}")
+                btn.setStyleSheet("""
+                    QPushButton {
+                        text-align: left;
+                        padding: 8px 12px;
+                        border: 1px solid #d1d5db;
+                        border-radius: 6px;
+                        background-color: #f9fafb;
                         font-size: 14px;
-                        spacing: 6px;
                         color: #374151;
+                        margin: 2px 0;
                     }
-                    QRadioButton::indicator {
-                        width: 18px;
-                        height: 18px;
+                    QPushButton:hover {
+                        background-color: #e5e7eb;
+                        border-color: #9ca3af;
                     }
-                    QRadioButton:checked {
+                    QPushButton:checked {
+                        background-color: #3b82f6;
+                        color: white;
+                        border: 1px solid #2563eb;
                         font-weight: bold;
-                        color: #2563eb;
-                    }
-                    QRadioButton:hover {
-                        background-color: #f3f4f6;
-                        border-radius: 4px;
                     }
                 """)
                 
-                # 🚨 修复7：绑定点击事件，确保正确对应到 [ANSWERS] 块
-                radio.toggled.connect(
+                # 绑定点击事件
+                btn.clicked.connect(
                     lambda checked, blank_id=qid, opt_label=opt_label_text:
                     self.on_seven_five_blank_choice(blank_id, opt_label, checked)
                 )
                 
-                h_layout.addWidget(radio)
-                blank_group.addButton(radio)
+                blank_group.addButton(btn)
+                layout.addWidget(btn)
 
-            h_layout.addStretch()
-            layout.addLayout(h_layout)
+            # 添加分隔线
+            sep = QLabel("<hr style='border: none; border-top: 1px solid #e5e7eb; margin: 8px 0;'>")
+            layout.addWidget(sep)
 
         layout.addStretch()
 
@@ -873,6 +950,275 @@ class ExamManager:
         elif blank_id in self.user_selections:
             del self.user_selections[blank_id]
 
+    def _render_grammar_fill_ui(self, layout, items):
+        """
+        渲染语法填空题目UI（输入框形式）
+
+        
+        🎯 语法填空特点：
+        - 每题需要输入答案（而不是选择）
+        - 题号通常是61-70
+        - 答案可能是单词的不同形式
+        """
+        print(f"📝 [Grammar Fill UI] 开始渲染 {len(items)} 道语法填空题目...")
+        
+        # 创建输入框字典，方便后续获取用户答案
+        self.grammar_input_fields = {}
+        
+        for item in items:
+            qid = item.get('q_id', '')
+            
+            # 创建水平布局容器
+            h_layout = QHBoxLayout()
+            h_layout.setSpacing(12)
+            h_layout.setContentsMargins(5, 8, 5, 8)
+            
+            # 题号标签（固定宽度，右对齐，普通颜色）
+            q_label = QLabel(f"{qid}.")
+            q_label.setFixedWidth(45)
+            q_label.setStyleSheet("""
+                QLabel {
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: #555555;
+                    padding: 5px 8px;
+                }
+            """)
+            q_label.setAlignment(Qt.AlignRight | Qt.AlignVCenter)
+            h_layout.addWidget(q_label)
+            
+            # 答案输入框
+            answer_input = QLineEdit()
+            answer_input.setObjectName(f"grammar_input_{qid}")
+            answer_input.setPlaceholderText("请输入答案...")
+            answer_input.setFixedHeight(40)
+            answer_input.setStyleSheet("""
+                QLineEdit {
+                    font-size: 15px;
+                    padding: 8px 12px;
+                    border: 2px solid #dce4ec;
+                    border-radius: 8px;
+                    background-color: #fafafa;
+                }
+                QLineEdit:focus {
+                    border-color: #3498db;
+                    background-color: #ffffff;
+                }
+            """)
+            h_layout.addWidget(answer_input, stretch=1)
+            
+            # 保存输入框引用
+            self.grammar_input_fields[qid] = answer_input
+            
+            # 答案显示标签（初始隐藏，查看答案时显示）
+            answer_label = QLabel("")
+            answer_label.setObjectName(f"grammar_answer_{qid}")
+            answer_label.setWordWrap(True)
+            answer_label.setStyleSheet("""
+                QLabel {
+                    font-size: 15px;
+                    color: #27ae60;
+                    font-weight: bold;
+                    padding: 8px;
+                    background-color: #f0f9ff;
+                    border-radius: 6px;
+                    border-left: 4px solid #27ae60;
+                }
+            """)
+            answer_label.hide()
+            h_layout.addWidget(answer_label, stretch=1)
+            
+            layout.addLayout(h_layout)
+        
+        print(f"✅ [Grammar Fill UI] {len(items)} 道题目渲染完成")
+
+    def _render_cloze_ui(self, layout, items):
+        """
+        渲染完形填空题目UI（选择题形式，双列布局）
+        
+        🎯 完形填空特点：
+        - 与阅读理解类似的选择题形式
+        - 题号通常是36-55（两篇文章）
+        - 每题4个选项
+        - 🎯 双列布局：左右相邻数字（46左, 47右），方便选题，减少滚动
+        - 🎯 无背景框：简洁显示，题号无背景框
+        """
+        print(f"📝 [Cloze UI] 开始渲染 {len(items)} 道完形填空题目...")
+        
+        # 🎯 双列布局：将题目分成两列
+        cols_layout = QHBoxLayout()
+        col1_layout = QVBoxLayout()
+        col2_layout = QVBoxLayout()
+        
+        col1_layout.setSpacing(8)
+        col2_layout.setSpacing(8)
+        col1_layout.setContentsMargins(0, 0, 10, 0)
+        col2_layout.setContentsMargins(10, 0, 0, 0)
+        
+        # 🎯 左右交替排序：奇数索引在左列，偶数索引在右列
+        for idx, item in enumerate(items):
+            qid = item.get('q_id', '')
+            content = item.get('content', '')
+            
+            # 获取选项（完形填空的options是字典格式）
+            options = item.get('options', [])
+            
+            # 🎯 无背景框容器
+            q_widget = QWidget()
+            q_layout = QVBoxLayout(q_widget)
+            q_layout.setSpacing(4)
+            q_layout.setContentsMargins(0, 4, 0, 4)
+            # 移除背景框样式
+            
+            # 🎯 显示题干：如果有 content 就显示，否则只显示题号（无背景框）
+            if content and content.strip():
+                q_label = QLabel(f"<b>{qid}.</b> {content}")
+            else:
+                q_label = QLabel(f"<b>{qid}.</b>")
+            q_label.setWordWrap(True)
+            q_label.setObjectName(f"label_cloze_q{qid}")
+            q_label.setStyleSheet("""
+                QLabel {
+                    color: #2c3e50;
+                    font-size: 14px;
+                    padding: 0;
+                    background: transparent;
+                    border: none;
+                }
+                QLabel b {
+                    color: #e67e22;
+                    font-weight: bold;
+                }
+            """)
+            q_layout.addWidget(q_label)
+            
+            # 为每道题目创建独立的 QButtonGroup（单选组）
+            question_button_group = QButtonGroup(self.mw)
+            question_button_group.setExclusive(True)
+            
+            # 保存按钮组引用
+            if not hasattr(self, 'cloze_button_groups'):
+                self.cloze_button_groups = {}
+            self.cloze_button_groups[qid] = question_button_group
+            
+            # 显示选项按钮（双列显示选项）
+            if options:
+                # 处理 options 为字典的情况
+                if isinstance(options, dict):
+                    options_list = [f"{k}. {v}" for k, v in sorted(options.items())]
+                else:
+                    options_list = options
+                
+                # 🎯 选项双列布局：A B 一行，C D 一行
+                opts_grid = QHBoxLayout()
+                opts_col1 = QVBoxLayout()
+                opts_col2 = QVBoxLayout()
+                
+                for i, opt_content in enumerate(options_list):
+                    btn = QPushButton(opt_content)
+                    btn.setCheckable(True)
+                    btn.setObjectName(f"btn_cloze_q{qid}_opt{chr(65+i)}")
+                    btn.setStyleSheet("""
+                        QPushButton {
+                            text-align: left;
+                            padding: 4px 8px;
+                            border: 1px solid #d1d5db;
+                            border-radius: 4px;
+                            background-color: #ffffff;
+                            font-size: 13px;
+                            color: #374151;
+                            min-height: 28px;
+                        }
+                        QPushButton:hover {
+                            background-color: #f3f4f6;
+                            border-color: #9ca3af;
+                        }
+                        QPushButton:checked {
+                            background-color: #3b82f6;
+                            color: white;
+                            border: 1px solid #2563eb;
+                            font-weight: bold;
+                        }
+                    """)
+                    choice = chr(65 + i)  # A, B, C, D
+                    
+                    # 将按钮添加到该题目的专属按钮组
+                    question_button_group.addButton(btn)
+                    
+                    # 绑定点击事件
+                    btn.clicked.connect(
+                        lambda checked, q=qid, c=choice, b=btn: self.on_cloze_choice_click(q, c, b)
+                    )
+                    
+                    # 🎯 双列分配：A C 在左列，B D 在右列
+                    if i % 2 == 0:
+                        opts_col1.addWidget(btn)
+                    else:
+                        opts_col2.addWidget(btn)
+                
+                opts_col1.setSpacing(2)
+                opts_col2.setSpacing(2)
+                opts_grid.addLayout(opts_col1)
+                opts_grid.addLayout(opts_col2)
+                q_layout.addLayout(opts_grid)
+            
+            # 🎯 左右交替排序：索引0,2,4...在左列，索引1,3,5...在右列
+            if idx % 2 == 0:
+                col1_layout.addWidget(q_widget)
+            else:
+                col2_layout.addWidget(q_widget)
+        
+        cols_layout.addLayout(col1_layout)
+        cols_layout.addLayout(col2_layout)
+        layout.addLayout(cols_layout)
+        
+        print(f"✅ [Cloze UI] {len(items)} 道题目渲染完成（双列布局，无背景框）")
+
+    def on_cloze_choice_click(self, qid, choice, btn):
+        """记录完形填空用户选择"""
+        self.user_selections[qid] = choice
+        print(f"📝 [完形填空] 题目 {qid}: 选择 {choice}")
+
+    def _check_grammar_answer(self, user_ans, correct_answer):
+        """
+        检查语法填空答案是否正确
+        
+        🎯 支持多种答案格式：
+        - 单一答案: "being"
+        - 多个可选答案: "a/the" 或 "which/that"
+        - 带斜杠的格式: "have made/have gotten"
+        """
+        if not user_ans or not correct_answer:
+            return False
+        
+        # 去除空格
+        user_ans = user_ans.strip().lower()
+        correct_answer = correct_answer.strip().lower()
+        
+        # 如果答案完全匹配
+        if user_ans == correct_answer:
+            return True
+        
+        # 处理 "a/the" 或 "which/that" 格式（支持多种正确答案）
+        if '/' in correct_answer or '／' in correct_answer:
+            # 替换全角斜杠
+            correct_answer = correct_answer.replace('／', '/')
+            # 分割多个可选答案
+            valid_answers = [ans.strip() for ans in correct_answer.split('/')]
+            if user_ans in valid_answers:
+                return True
+        
+        # 处理 "【答案】61. being" 这种格式（提取实际答案）
+        if '【答案】' in correct_answer:
+            # 提取 "【答案】" 后面的内容
+            actual_answer = correct_answer.split('【答案】')[-1].strip()
+            # 去除题号前缀如 "61. "
+            actual_answer = re.sub(r'^\d+\.\s*', '', actual_answer)
+            if user_ans == actual_answer.lower().strip():
+                return True
+        
+        return False
+
     def check_score(self):
         """判分与展示解析"""
         if not self.current_q:
@@ -889,25 +1235,56 @@ class ExamManager:
             return
 
         res_details = ""
+        question_type = self.current_q.get('question_type', 'reading')
 
-        for item in items:
-            qid = item.get('q_id', '')
-            ans = item.get('answer', '').strip().upper()
-            user_ans = self.user_selections.get(qid, "未做")
+        # 🎯 语法填空特殊处理：从输入框获取答案
+        if question_type == "grammar":
+            for item in items:
+                qid = item.get('q_id', '')
+                correct_answer = item.get('answer', '').strip().lower()
+                
+                # 从输入框获取用户答案
+                user_ans = "未做"
+                if hasattr(self, 'grammar_input_fields') and qid in self.grammar_input_fields:
+                    input_widget = self.grammar_input_fields[qid]
+                    if input_widget:
+                        user_ans = input_widget.text().strip().lower()
+                
+                if not correct_answer:
+                    res_details += (
+                        f"<p>第{qid}题：你的答案 <b>{user_ans}</b> | "
+                        f"正确答案 <b style='color:#e67e22;'>未知 (题库未录入)</b></p>"
+                    )
+                else:
+                    # 语法填空支持多种答案格式（如 "a/the" 表示 a 或 the 都可以）
+                    is_correct = self._check_grammar_answer(user_ans, correct_answer)
+                    color = "#27ae60" if is_correct else "#e74c3c"
+                    if is_correct:
+                        correct_count += 1
+                    res_details += (
+                        f"<p>第{qid}题：你的答案 <b>{user_ans}</b> | "
+                        f"正确答案 <b style='color:{color};'>{correct_answer}</b></p>"
+                    )
+        else:
+            # 其他题型（阅读理解、七选五、完形填空）使用选择题判分
+            for item in items:
+                qid = item.get('q_id', '')
+                ans = item.get('answer', '').strip().upper()
+                user_ans = self.user_selections.get(qid, "未做")
 
-            if not ans:
-                res_details += (
-                    f"<p>第{qid}题：你的选择 <b>{user_ans}</b> | "
-                    f"正确答案 <b style='color:#e67e22;'>未知 (题库未录入)</b></p>"
-                )
-            else:
-                color = "#27ae60" if user_ans == ans else "#e74c3c"
-                if user_ans == ans:
-                    correct_count += 1
-                res_details += (
-                    f"<p>第{qid}题：你的选择 <b>{user_ans}</b> | "
-                    f"正确答案 <b style='color:{color};'>{ans}</b></p>"
-                )
+                if not ans:
+                    res_details += (
+                        f"<p>第{qid}题：你的选择 <b>{user_ans}</b> | "
+                        f"正确答案 <b style='color:#e67e22;'>未知 (题库未录入)</b></p>"
+                    )
+                else:
+                    color = "#27ae60" if user_ans == ans else "#e74c3c"
+                    if user_ans == ans:
+                        correct_count += 1
+                    res_details += (
+                        f"<p>第{qid}题：你的选择 <b>{user_ans}</b> | "
+                        f"正确答案 <b style='color:{color};'>{ans}</b></p>"
+                    )
 
         # 1. 渲染左侧结果
         score_html = (
@@ -923,22 +1300,86 @@ class ExamManager:
         # 2. 渲染右侧 AI 解析（只有提交后才显示）
         analysis = self.current_q.get('original_analysis', '').strip()
         if not analysis:
-            analysis = (
+            analysis_html = (
                 "<span style='color:#7f8c8d;'>"
                 "暂无本地解析。您可以到【解析】页面呼叫 AI 老师为您详细讲解！"
                 "</span>"
             )
+        else:
+            # 🎯 按题号分割解析，每道题单独显示
+            analysis_html = self._format_analysis_by_question(analysis)
 
         self.ui.gk_ai_display.setHtml(
             f"""
             <div style='background:#fdf6ec; padding:15px; border-radius:8px; border-left: 4px solid #e67e22;'>
                 <h4 style='color:#e67e22; margin-top:0;'>📖 题目深度解析</h4>
-                <div style='line-height:1.6; font-size:14px;'>{analysis}</div>
+                <div style='line-height:1.6; font-size:14px;'>{analysis_html}</div>
             </div>
             """
         )
 
         print(f"✅ 判分完成：{correct_count}/{total}")
+
+    def _format_analysis_by_question(self, analysis):
+        """
+        按题号分割解析，每道题单独显示
+        
+        🎯 支持的格式：
+        - 【4题详解】...
+        - 4．...
+        - 4. ...
+        """
+        if not analysis:
+            return ""
+        
+        # 🎯 按题号分割解析
+        # 匹配格式：【数字题详解】或 数字．或 数字.
+        # 使用正则分割
+        parts = re.split(r'(?:^|\n)\s*(【\d+题详解】|\d+[．.])', analysis)
+        
+        # 清理分割后的结果
+        cleaned_parts = []
+        current_q_num = ""
+        
+        for i, part in enumerate(parts):
+            part = part.strip()
+            if not part:
+                continue
+            
+            # 检查是否是题号标记
+            if re.match(r'【\d+题详解】', part) or re.match(r'\d+[．.]', part):
+                # 提取题号
+                q_match = re.search(r'(\d+)', part)
+                if q_match:
+                    current_q_num = q_match.group(1)
+            elif current_q_num and part:
+                # 这是解析内容
+                cleaned_parts.append((current_q_num, part))
+        
+        # 如果没有找到分割的题号，尝试另一种格式
+        if not cleaned_parts:
+            # 尝试匹配 "数字．内容" 格式
+            pattern = re.findall(r'(\d+)[．.]\s*(.*?)(?=\d+[．.]|$)', analysis, re.DOTALL)
+            for q_num, content in pattern:
+                if content.strip():
+                    cleaned_parts.append((q_num, content.strip()))
+        
+        # 生成HTML
+        if not cleaned_parts:
+            return f"<p>{analysis}</p>"
+        
+        html_parts = []
+        for q_num, content in cleaned_parts:
+            # 清理内容中的HTML标签
+            clean_content = re.sub(r'<[^>]+>', '', content)
+            html_parts.append(
+                f"<div style='margin-bottom: 12px; padding: 8px; background: #fff; border-radius: 6px; border-left: 3px solid #3498db;'>"
+                f"<strong style='color: #3498db;'>第{q_num}题</strong> "
+                f"<span style='color: #555;'>{clean_content}</span>"
+                f"</div>"
+            )
+        
+        return "\n".join(html_parts)
 
     def update_nav_highlight(self):
         """顶部菜单按钮高亮控制"""

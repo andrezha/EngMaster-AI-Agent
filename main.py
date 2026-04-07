@@ -2,9 +2,16 @@ import sys
 import os
 from PyQt5 import QtWidgets, uic, QtCore
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QFrame
-from vocab_module import VocabManager     
-from analyzer_module import AnalyzerManager 
-from exam_module import ExamManager       
+
+# ============ 路径配置 ============
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.join(ROOT_DIR, 'lib'))
+# ===================================
+
+from vocab_module import VocabManager
+from analyzer_module import AnalyzerManager
+from exam_module import ExamManager
+from word_list_view import WordListView  # 导入词汇表视图
 
 class HighSchoolEnglishAI(QMainWindow):
     def __init__(self):
@@ -55,6 +62,9 @@ class HighSchoolEnglishAI(QMainWindow):
         self.btn_nav_scan = self.findChild(QtWidgets.QPushButton, "btn_nav_scan")
         self.btn_nav_gaokao = self.findChild(QtWidgets.QPushButton, "btn_nav_gaokao")
         self.btn_nav_full_exam = self.findChild(QtWidgets.QPushButton, "btn_nav_full_exam")
+        
+        # 核心词汇表按钮加入导航列表
+        self.nav_buttons = [self.btn_nav_vocab, self.btn_nav_core_vocab, self.btn_nav_gaokao, self.btn_nav_full_exam]
 
         self.nav_v_layout = self.findChild(QtWidgets.QVBoxLayout, "nav_v_layout")
         if self.nav_v_layout:
@@ -86,8 +96,6 @@ class HighSchoolEnglishAI(QMainWindow):
             self.nav_divider.setMaximumHeight(1)
             self.nav_divider.setStyleSheet("QFrame { background-color: #e4e7ed; border: none; margin-top: 15px; margin-bottom: 10px; }")
 
-        # 将所有导航按钮放入一个列表方便管理互斥高亮
-        self.nav_buttons = [self.btn_nav_vocab, self.btn_nav_core_vocab, self.btn_nav_gaokao, self.btn_nav_full_exam]
 
         # 2. 实现按钮互斥（单选效果）
         self.sidebar_group = QtWidgets.QButtonGroup(self)
@@ -160,14 +168,21 @@ class HighSchoolEnglishAI(QMainWindow):
         self.analyzer_ctrl = AnalyzerManager(self)
         self.exam_ctrl = ExamManager(self) 
 
-        # 6. 绑定导航按钮点击事件
+        # 6. 创建词汇表视图页面
+        self.word_list_widget = WordListView(self)
+        self.stackedWidget.addWidget(self.word_list_widget)
+        self.word_list_index = self.stackedWidget.indexOf(self.word_list_widget)
+        
+        # 7. 绑定导航按钮点击事件
         if self.btn_nav_vocab:
             self.btn_nav_vocab.clicked.connect(self.switch_to_vocab)
+        if self.btn_nav_core_vocab:
+            self.btn_nav_core_vocab.clicked.connect(self.switch_to_word_list)
         if self.btn_nav_gaokao:
             self.btn_nav_gaokao.clicked.connect(self.switch_to_gaokao)
         if self.btn_nav_full_exam:
             self.btn_nav_full_exam.clicked.connect(self.switch_to_full_exam)
-            
+        
         # 默认选中第一个（单词闯关）
         if self.btn_nav_vocab:
             self.btn_nav_vocab.setChecked(True)
@@ -209,6 +224,16 @@ class HighSchoolEnglishAI(QMainWindow):
         self.stack.setCurrentIndex(1)
         if hasattr(self, 'vocab_ctrl') and hasattr(self.vocab_ctrl, 'timer'):
             self.vocab_ctrl.timer.stop()
+
+    def switch_to_word_list(self):
+        """切到词汇表页面"""
+        # 停止其他页面的干扰（比如计时器）
+        if hasattr(self, 'vocab_ctrl'):
+            self.vocab_ctrl.timer.stop()
+        
+        # 切换到词汇表页面
+        self.stackedWidget.setCurrentIndex(self.word_list_index)
+        self.stackedWidget.currentWidget().setFocus()  # 设置焦点以支持键盘事件
 
     def switch_to_gaokao(self):
         """切到高考真题页"""
