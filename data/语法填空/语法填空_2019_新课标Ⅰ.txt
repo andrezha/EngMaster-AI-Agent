@@ -1,0 +1,38 @@
+============================================================
+语法填空_2019_（新课标Ⅰ）
+============================================================
+
+【文章正文】
+----------------------------------------
+阅读下面短文，在空白处填入1个适当的单词或括号内单词的正确形式。
+The polar bear is found in the Arctic Circle and some big land masses as far south as Newfoundland. While they are rare north of 88°,there is evidence ___61___ they range all the way across the Arctic, and as far south as James Bay in Canada. It is difficult to figure out a global population of polar bears as much of the range has been  ___62___ (poor) studied; however, biologists calculate that there are about 20,000-25,000 polar bears worldwide.
+Modem methods ___63___ tracking polar bear populations have been employed only since the mid-1980s, and are expensive ___64___ (perform) consistently over a large area. In recent years some Inuit people in Nunayut ___65___ (report) increases in bear sightings around human settlements, leading to a ___66___ (believe) that populations are increasing. Scientists have responded by  ___67___ (note) that hungry bears may be congregating(聚集) around human settlements, leading to the illusion(错觉) that populations are ___68___ (high) than they actually are. Of ___69___  nineteen recognized polar bear subpopulations, three are declining, six ___70___ (be) stable, one is increasing, and nine lack enough data.
+
+【参考答案】
+----------------------------------------
+61: 【答案】61. that, 62: 62. poorly    63. of/for, 63: 64. to perform, 64: 65. have reported, 65: 66. belief    67. noting, 66: 68. higher    69. the, 67: 70. are
+
+【答案解析】
+----------------------------------------
+【解析】
+本文为科普文类说明文，介绍了北极熊的生存现状。
+【61题详解】
+考查同位语从句。根据句子结构分析可知，主句为there be句型，且结构完整，空格后为同位语从句，解释说明中心词evidence的内容，故填that。
+【62题详解】
+考查副词用法。根据句意和结构分析可知，此处用副词poorly修饰谓语动词has been studied，意为“研究很少”。故填poorly。
+【63题详解】
+考查介词用法。此处tracking polar bear populations作Modern methods的定语，用of 连接，“methods of doing sth.”,意为“…的方法”，构成固定结构。或者意为“对于跟踪北极熊的方法”用for。故填of/for。
+【64题详解】
+考查非谓语动词。主系表结构之后，常用不定式作原因或目的状语，句意：跟踪北极熊的现代方法只是在二十世纪八十年代以来开始采用，并且在如此大区域内持续采用是昂贵的，故此处用to perform。
+【65题详解】
+考查时态。根据上下文语境，尤其是时间状语in recent years可知，主句用现在完成时态，故填have reported。
+【66题详解】
+考查名词。根据其前不定冠词和其后的同位语从句可知，空格处为名词形式，故填belief。
+【67题详解】
+考查非谓语动词。根据其前介词by可知，此处用动名词主动形式，故填noting。
+【68题详解】
+考查形容词比较级。根据其后than they actually are可知，此处为形容词的比较级，故填higher。
+【69题详解】
+考查定冠词。此处为特指，意为“在已知的19个北极熊亚种群中”，故填the。
+【70题详解】
+考查主谓一致。根据three are declining，此处数词six作主语，代指前文中的“polar bear subpopulations”，故用复数谓语，一般现在时，故填are。

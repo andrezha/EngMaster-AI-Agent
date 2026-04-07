@@ -1,128 +1,212 @@
 import json
 import random
 import os
-from PyQt5 import QtCore, QtWidgets
+from PyQt5 import QtCore, QtWidgets, QtGui
 
 class VocabManager:
     def __init__(self, main_win):
-        # 1. 先存下主窗口引用
         self.win = main_win
         self.current_idx = 0
         self.time_left = 15
         
-        # 2. 【核心修复】必须先找控件！一个都不能少
+        # 查找控件
         self.v_input = self.win.findChild(QtWidgets.QLineEdit, "vocab_input")
         self.v_disp = self.win.findChild(QtWidgets.QTextEdit, "vocab_display")
         self.t_label = self.win.findChild(QtWidgets.QLabel, "timer_label")
         self.btn_confirm = self.win.findChild(QtWidgets.QPushButton, "btn_confirm")
+        
+        # 获取 page_vocab 的布局
+        page_vocab = self.win.findChild(QtWidgets.QWidget, "page_vocab")
+        self.main_layout = page_vocab.layout() if page_vocab else None
 
-        # 3. 初始化计时器
+        # 初始化计时器
         self.timer = QtCore.QTimer()
         self.timer.timeout.connect(self.tick)
 
-        # 4. 绑定逻辑 (加个判断防止 UI 还没加载好)
+        # 绑定逻辑
         if self.btn_confirm:
             self.btn_confirm.clicked.connect(self.check_answer)
         if self.v_input:
             self.v_input.returnPressed.connect(self.check_answer)
 
-        # 5. 加载词库
+        # 加载词库
         self.load_vocabulary()
         
-        # 6. 【最后】只有控件都找完了，才准执行显示逻辑
+        # 执行显示逻辑
         if self.v_disp:
             self.show_next()
             self.timer.start(1000)
         
-        # 7. 🎯 统一底部按钮样式（56px 高度，大圆角，全宽布局）
-        self._style_action_buttons()
+        # 重构布局
+        self._rebuild_layout()
+        
+        # 统一样式
+        self._style_components()
 
-    def _style_action_buttons(self):
-        """
-        统一按钮样式规范：
-        - 所有按钮高度固定为 56px
-        - 大圆角（16px）和实色背景
-        - 全宽布局，方便单手操作
-        - 输入框与按钮高度对齐
-        """
-        # 闯关模式输入框 - 56px 高度，大圆角，与按钮对齐
-        if self.v_input:
-            self.v_input.setFixedHeight(56)
-            self.v_input.setStyleSheet("""
-                QLineEdit {
-                    background-color: #f8f9fa;
-                    border: 2px solid #dee2e6;
-                    border-radius: 16px;
-                    font-size: 24px;
-                    padding: 0px 20px;
-                    color: #2c3e50;
-                }
-                QLineEdit:focus {
-                    border: 2px solid #27ae60;
-                    background-color: #ffffff;
+    def _rebuild_layout(self):
+        """重构布局：倒计时红色置顶，黄金重心上移，大间距"""
+        if not self.main_layout or not self.v_disp or not self.v_input or not self.btn_confirm:
+            return
+        
+        # 清空现有布局（但不删除我们要用的控件）
+        widgets_to_keep = {self.v_disp, self.v_input, self.btn_confirm, self.t_label}
+        while self.main_layout.count():
+            item = self.main_layout.takeAt(0)
+            widget = item.widget()
+            if widget and widget not in widgets_to_keep:
+                widget.deleteLater()
+        
+        # 1. 倒计时 - 红色置顶，右上角
+        timer_row = QtWidgets.QHBoxLayout()
+        timer_row.addStretch(1)
+        timer_row.addWidget(self.t_label)
+        self.main_layout.addLayout(timer_row)
+        self.main_layout.addSpacing(15)  # 与窗口顶部保持约15px边距
+        
+        # 2. 顶部弹簧 - 黄金重心（上移）
+        self.main_layout.addStretch(1)
+        
+        # 3. 单词显示区 - 居中
+        self.main_layout.addWidget(self.v_disp, alignment=QtCore.Qt.AlignCenter)
+        
+        # 4. 巨大间距 - 拒绝拥挤
+        self.main_layout.addSpacing(80)  # 单词和输入框之间
+        
+        # 5. 输入框 - 限宽 300px，居中
+        self.v_input.setFixedWidth(300)
+        self.main_layout.addWidget(self.v_input, alignment=QtCore.Qt.AlignCenter)
+        
+        # 6. 间距
+        self.main_layout.addSpacing(40)  # 输入框和按钮之间
+        
+        # 7. 确认按钮 - 限宽 300px，居中
+        self.btn_confirm.setFixedWidth(300)
+        self.main_layout.addWidget(self.btn_confirm, alignment=QtCore.Qt.AlignCenter)
+        
+        # 8. 底部弹簧 - 黄金重心（2倍，使内容上移）
+        self.main_layout.addStretch(2)
+
+    def _style_components(self):
+        """统一样式规范：现代、简洁、专业"""
+        
+        # 倒计时标签 - 红色置顶，醒目
+        if self.t_label:
+            self.t_label.setStyleSheet("""
+                QLabel {
+                    color: #E74C3C;
+                    font-size: 18px;
+                    font-weight: bold;
+                    background: transparent;
+                    padding: 4px 12px;
                 }
             """)
         
-        # 闯关模式确认按钮 - 醒目绿色，全宽大按钮
+        # 输入框 - 38px 高度，现代边框
+        if self.v_input:
+            self.v_input.setFixedHeight(38)
+            self.v_input.setStyleSheet("""
+                QLineEdit {
+                    background-color: #fafafa;
+                    border: 1px solid #ddd;
+                    border-radius: 6px;
+                    font-size: 18px;
+                    padding: 0px 16px;
+                    color: #333333;
+                }
+                QLineEdit:focus {
+                    border: 1px solid #2196F3;
+                    background-color: #ffffff;
+                    outline: none;
+                }
+            """)
+        
+        # 确认按钮 - 42px 高度
         if self.btn_confirm:
-            self.btn_confirm.setFixedHeight(56)
+            self.btn_confirm.setFixedHeight(42)
             self.btn_confirm.setStyleSheet("""
                 QPushButton {
-                    background-color: #27ae60;
+                    background-color: #2196F3;
                     color: white;
                     border: none;
-                    border-radius: 16px;
-                    font-size: 18px;
+                    border-radius: 6px;
+                    font-size: 16px;
                     font-weight: bold;
-                    padding: 12px 24px;
                 }
                 QPushButton:hover {
-                    background-color: #229954;
+                    background-color: #1976D2;
                 }
                 QPushButton:pressed {
-                    background-color: #1e8449;
+                    background-color: #1565C0;
+                }
+            """)
+        
+        # 显示区域 - 透明背景，无边框，固定宽度防止滚动条
+        if self.v_disp:
+            self.v_disp.setAlignment(QtCore.Qt.AlignCenter)
+            self.v_disp.setFixedWidth(600)  # 固定宽度，防止出现滚动条
+            self.v_disp.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)  # 禁用水平滚动条
+            self.v_disp.setStyleSheet("""
+                QTextEdit {
+                    background-color: transparent;
+                    border: none;
                 }
             """)
 
     def load_vocabulary(self):
         try:
-            path = os.path.join(os.path.dirname(__file__), "vocabulary.json")
-            with open(path, "r", encoding="utf-8") as f:
+            if hasattr(self.win, 'base_path') and self.win.base_path:
+                vocab_path = os.path.join(self.win.base_path, "assets", "vocabulary.json")
+            else:
+                vocab_path = os.path.join(os.path.dirname(__file__), "..", "assets", "vocabulary.json")
+                vocab_path = os.path.normpath(vocab_path)
+            
+            with open(vocab_path, "r", encoding="utf-8") as f:
                 self.vocabulary = json.load(f)
                 random.shuffle(self.vocabulary)
-        except:
+        except Exception as e:
+            print(f"加载词汇表失败: {e}")
             self.vocabulary = [{"word": "apple", "content": "苹果"}]
 
     def show_next(self, error_msg=""):
-        # 安全检查：如果控件还没抓到，直接跳过不执行
         if not self.v_disp or not self.v_input:
             return
 
         curr = self.vocabulary[self.current_idx]
         
-        hint_html = ""
+        # 构建 HTML 内容
+        hint_line = ""
         if error_msg:
-            hint_html = f"""
-                <div style='text-align:center; margin-top:20px;'>
-                    <div style='font-size:22px; color:#e74c3c; font-weight:bold; 
-                        background:#fadbd8; padding:12px 24px; border-radius:12px; display:inline-block;'>
+            hint_line = f"""
+                <div style='margin-top: 16px;'>
+                    <span style='font-size: 16px; color: #d32f2f; font-weight: bold;'>
                         ✅ 正确答案: {error_msg.capitalize()}
-                    </div>
+                    </span>
                 </div>
             """
         
-        # 🎯 题目垂直居中显示（使用 flexbox 实现垂直居中）
         html = f"""
-            <div style='display:flex; flex-direction:column; justify-content:center; 
-                align-items:center; height:100%; min-height:400px; padding:20px;'>
-                <div style='text-align:center;'>
-                    <div style='font-size:18px; color:#7f8c8d; font-weight:bold; 
-                        margin-bottom:15px;'>⚡ 第 {self.current_idx + 1} 关 ⚡</div>
-                    <div style='font-size:48px; color:#2c3e50; font-weight:bold; 
-                        line-height:1.4; margin:20px 0;'>{curr['content']}</div>
-                    {hint_html}
+            <html>
+            <head>
+                <style>
+                    body {{
+                        margin: 0;
+                        padding: 0;
+                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+                    }}
+                </style>
+            </head>
+            <body>
+                <div style='text-align: center; padding: 20px;'>
+                    <div style='font-size: 14px; color: #999999; font-weight: 600; margin-bottom: 16px;'>
+                        第 {self.current_idx + 1} 关
+                    </div>
+                    <div style='font-size: 32px; color: #333333; font-weight: 500; line-height: 1.4;'>
+                        {curr['content']}
+                    </div>
+                    {hint_line}
                 </div>
-            </div>
+            </body>
+            </html>
         """
         self.v_disp.setHtml(html)
 
@@ -131,25 +215,15 @@ class VocabManager:
             self.v_input.setFocus()
             self.time_left = 15
             if self.t_label:
-                # 🎯 倒计时样式：透明背景 + 深红色 + 加粗
                 self.t_label.setText(str(self.time_left))
-                self.t_label.setStyleSheet("""
-                    QLabel {
-                        color: #D32F2F;
-                        font-size: 32px;
-                        font-weight: bold;
-                        padding: 5px 10px;
-                        background: transparent;
-                    }
-                """)
             
-            # 只有在单词页才启动
             if self.win.findChild(QtWidgets.QStackedWidget, "stackedWidget").currentIndex() == 0:
                 self.timer.start(1000)
 
     def tick(self):
         self.time_left -= 1
-        if self.t_label: self.t_label.setText(str(self.time_left))
+        if self.t_label:
+            self.t_label.setText(str(self.time_left))
         if self.time_left <= 0:
             self.timer.stop()
             target = self.vocabulary[self.current_idx]['word'].strip()
@@ -159,16 +233,35 @@ class VocabManager:
     def check_answer(self):
         self.timer.stop()
         user_in = self.v_input.text().strip().lower()
-        # 🚀 核心修改：如果用户啥也没填，点确定直接无视，不准看答案
         if not user_in:
             return
         target = self.vocabulary[self.current_idx]['word'].strip().lower()
 
         if user_in == target:
-            self.v_input.setStyleSheet("font-size:24px; border:3px solid #27ae60; background-color:#d5f5e3;")
+            self.v_input.setStyleSheet("""
+                QLineEdit {
+                    font-size: 18px;
+                    border: 1px solid #4CAF50;
+                    background-color: #f1f8f4;
+                    border-radius: 6px;
+                    padding: 0px 16px;
+                    color: #333333;
+                    outline: none;
+                }
+            """)
             QtCore.QTimer.singleShot(600, self.go_next)
         else:
-            self.v_input.setStyleSheet("font-size:24px; border:3px solid #e74c3c; background-color:#fadbd8;")
+            self.v_input.setStyleSheet("""
+                QLineEdit {
+                    font-size: 18px;
+                    border: 1px solid #f44336;
+                    background-color: #fef1f1;
+                    border-radius: 6px;
+                    padding: 0px 16px;
+                    color: #333333;
+                    outline: none;
+                }
+            """)
             self.show_next(error_msg=target)
             QtCore.QTimer.singleShot(2000, self.go_next)
 
