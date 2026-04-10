@@ -1,0 +1,22 @@
+FILENAME: 语法填空_2022_全国甲卷_AI.txt
+YEAR: 2022
+CAT: 语法填空_2022_全国甲卷_语法填空模拟
+TITLE: A Student Cycling for the Environment
+A dedicated student from Shanghai recently cycled 30 days to Beijing, as a first step 61 (journey) across the eastern route by bike.
+On the 1,200 kilometer journey, the student, Lin Feng, 62 started his project at the age of eighteen after a school trip, crossed 30 cities and towns in four provinces. Inspired by the Green Development Forum 63 (bold) in Shanghai, Lin decided to cover the route by cycling as a tribute to the modern environmental movement. A 64 friend of his, Zhao Bo, volunteered to be his companion during the trip.
+Lin and Zhao also organized talks along the road, in order to promote environmental 65 (protect). Lin believes this will make the cycling trip even more 66 (meaning). The two of them gave more than 50 presentations along the 30-day journey.
+In the last three years, Lin 67 (ride) through 10 provinces in China, and in 2021, he reached the start of the Yangtze River, the country’s 68 (long) river.
+Now, Lin has started the second part of his dream to cycle along the coast. He traveled 2,000 kilometers 69 Shanghai to Guangzhou on Oct. 10, 70 (plan) to ride back to his hometown in three months.
+[OPTIONS]
+61. to journey 62. who 63. held 64. A 65. protection 66. meaningful 67. has ridden 68. longest 69. from 70. planning
+[ANALYSIS]
+61. to journey: Tests the infinitive after "first step."
+62. who: Tests the non-restrictive relative pronoun.
+63. held: Tests the past participle as a post-modifier (mirroring "bold" error in original source).
+64. A: Tests the indefinite article in "a friend of his."
+65. protection: Tests the noun form.
+66. meaningful: Tests the adjective as a complement.
+67. has ridden: Tests the present perfect with "in the last... years."
+68. longest: Tests the superlative degree.
+69. from: Tests "from... to..." structure.
+70. planning: Tests the present participle as an adverbial of accompaniment/result.

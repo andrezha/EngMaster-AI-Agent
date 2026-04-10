@@ -1,0 +1,49 @@
+FILENAME: Cloze_2020_03_AI.txt
+YEAR: 2020
+CAT: 完形填空_新课标Ⅲ_模拟
+TITLE: The Art of Patience in Volunteering
+As a volunteer leader, I care deeply about my team. But like anyone for whom you feel affection, 41 can also drive you mad. They’ll come rushing in, 42 their equipment has been lost. They’ll 43 that they left it in the storage room, create a scene and then 44 it had been in their locker all the time. They’ll try out half the 45 in the center, and want the only tool you don’t have left in a 46 size. I do know how upset the senior staff can get, but I try to persuade them to keep 47.
+I remember the first really 48 volunteer we had at the community center. He was 49 absolutely everything, nothing was right and I was rather 50 that he became a “regular”. After a while, he 51 for the way he behaved at the beginning. He had moved away from his family the month before, was living in a dorm 52, and since he’d found it too much to cope with, he’d taken it out on 53 people.
+That taught me a valuable 54 and I pass it on to the people who 55 in the center. Don’t take it 56. If a volunteer is rude or difficult, just think “Maybe he’s had a fight with his parents. Maybe his grades are not 57.” Always stay calm and don’t let your ego get 58. If you do, you won’t be able to 59 it and the whole thing develops into an unpleasant scene and that 60 everyone’s day.
+[OPTIONS]
+41. A. leaders B. volunteers C. managers D. directors
+42. A. claiming B. pretending C. guessing D. replying
+43. A. agree B. promise C. imagine D. insist
+44. A. forget B. decide C. realize D. assume
+45. A. books B. uniforms C. supplies D. snacks
+46. A. specific B. different C. matching D. natural
+47. A. fighting B. calm C. waiting D. changing
+48. A. generous B. polite C. careless D. demanding
+49. A. curious about B. critical of C. patient with D. uncertain about
+50. A. relaxed B. delighted C. amazed D. embarrassed
+51. A. searched B. argued C. prayed D. explained
+52. A. by chance B. on his own C. on purpose D. on duty
+53. A. rude B. such C. innocent D. lonely
+54. A. truth B. trick C. skill D. trade
+55. A. serve B. shop C. meet D. quarrel
+56. A. kindly B. secretly C. personally D. casually
+57. A. ready B. away C. up D. fine
+58. A. out of sight B. in control C. in the way D. above the law
+59. A. stress B. expect C. manage D. blame
+60. A. spoils B. makes C. starts D. saves
+[ANALYSIS]
+41. B. Contextual clue: The speaker is a "volunteer leader," so the subjects are "volunteers."
+42. A. Logic: "Claiming" matches the action of reporting a loss.
+43. D. Logic: "Insist" mirrors the original "swear," showing strong but mistaken certainty.
+44. C. Logic: "Realize" mirrors "discover," indicating the moment of finding the truth.
+45. C. Context: "Supplies" in a community center mirrors "goods" in a shop.
+46. A. Logic: "Specific" mirrors "particular," describing a very precise requirement.
+47. B. Logic: "Calm" mirrors "smiling," representing a positive professional attitude.
+48. D. Logic: "Demanding" mirrors "difficult," describing a hard-to-please person.
+49. B. Logic: "Critical of" mirrors "displeased with," explaining why "nothing was right."
+50. C. Logic: "Amazed" mirrors "surprised" at the person becoming a regular.
+51. D. Logic: "Explained" mirrors "apologized," providing the reason for past behavior.
+52. B. Context: "On his own" mirrors "by herself," indicating living alone after a split.
+53. C. Logic: "Innocent" mirrors "other," referring to people not involved in the personal problem.
+54. A. Logic: "Truth" mirrors "lesson," a fundamental realization.
+55. A. Context: "Serve" mirrors "work," appropriate for a volunteer center.
+56. C. Logic: "Personally" is a fixed collocation "take it personally," matching the original.
+57. D. Logic: "Fine" mirrors "well," indicating a person's state or condition.
+58. C. Logic: "In the way" is a fixed idiom meaning to obstruct, mirroring the original.
+59. C. Logic: "Manage" mirrors "handle," referring to dealing with a situation.
+60. A. Logic: "Spoils" mirrors "ruins," describing the negative impact on the day.

@@ -1,0 +1,49 @@
+FILENAME: CLOZE_2014_01_AI.txt
+YEAR: 2014
+CAT: 完形填空_2014_新课标Ⅰ_模拟
+TITLE: The Cycle of Enthusiasm
+As a general rule, all forms of activity lead to boredom when they are performed on a routine basis. As a matter of fact, we can see this 41 at work in people of all 42 . For example, in a new semester, students are excited about 43 with their new gadgets. But their 44 soon wears off and by mid-term those 45 devices can be found gathering dust on a shelf. The world is full of 46 fitness apps and unfinished online courses, each standing as a monument to someone’s 47 interest.
+When a family starts a garden, the children 48 water the plants and pull the weeds. Within a short time, however, the 49 of caring for the garden is handed over to the parents. Teenagers join a sports club with great 50 but are soon looking forward to 51 . The same is true of young professionals starting a new project. And then, how many 52 , who now complain about the long hours at the office, 53 worked for nights at a time when they first 54 their dream jobs?
+Before people go on vacation, they usually 55 to do a lot of 56 things, which they never had 57 to do while working. But 58 after the holiday begins, the sightseeing, the swimming, and all of the other pastimes become as boring as the tasks they 59 . And, like the student with a new gadget, they go searching for new 60 .
+[OPTIONS]
+41. A. habit B. principle C. way D. power
+42. A. parties B. races C. countries D. ages
+43. A. working B. living C. playing D. going
+44. A. confidence B. interest C. anxiety D. sorrow
+45. A. same B. extra C. funny D. expensive
+46. A. well-organized B. colorfully-printed C. half-filled D. newly-collected
+47. A. broad B. passing C. different D. main
+48. A. silently B. impatiently C. worriedly D. gladly
+49. A. promise B. burden C. right D. game
+50. A. courage B. calmness C. confusion D. excitement
+51. A. graduation B. independence C. responsibility D. success
+52. A. children B. students C. adults D. retirees
+53. A. carefully B. eagerly C. nervously D. bravely
+54. A. required B. obtained C. noticed D. discovered
+55. A. need B. learn C. plan D. start
+56. A. great B. strange C. difficult D. correct
+57. A. time B. money C. skills D. knowledge
+58. A. only B. well C. even D. soon
+59. A. lost B. chose C. quit D. left
+60. A. pets B. toys C. friends D. colleagues
+[ANALYSIS]
+41. B. The text describes a general "principle" or rule of human behavior.
+42. D. "People of all ages" shows that this applies to everyone from children to adults.
+43. C. "Playing" with gadgets is the initial enthusiastic activity.
+44. B. "Interest" is the emotion that wears off over time.
+45. A. "Those same devices" refers back to the new gadgets mentioned earlier.
+46. C. "Half-filled" apps or "unfinished" courses represent abandoned efforts.
+47. C. "Passing interest" (or "different" in some contexts, but "passing" fits the monument logic) refers to something temporary.
+48. D. Children start tasks "gladly" when they are new.
+49. B. The task becomes a "burden" once the novelty fades.
+50. D. "Excitement" is the initial feeling when joining a club.
+51. A. "Graduation" or completion is what they look forward to when bored.
+52. C. The context of "office" and "jobs" points to "adults."
+53. B. They worked "eagerly" at the beginning of their careers.
+54. B. "Obtained" is the standard verb for getting a job or license.
+55. C. People "plan" activities for their time off.
+56. A. They plan "great" or wonderful things.
+57. A. They lacked "time" during their normal working hours.
+58. D. Boredom sets in "soon" after the activity becomes a routine.
+59. D. They "left" their jobs to go on vacation.
+60. B. "Toys" is used metaphorically here (or "projects") to match the original's cyclical logic.

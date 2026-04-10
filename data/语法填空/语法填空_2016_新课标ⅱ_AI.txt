@@ -1,0 +1,21 @@
+FILENAME: 语法填空_2016_新课标ⅱ_AI.txt
+YEAR: 2016
+CAT: 语法填空_2016_新课标ⅱ_语法填空模拟
+TITLE: Balancing Studies and Internships
+If you feel overwhelmed by duties during your internship, you should take a moment to look back and identify those of 61 (great) and less importance. Then, handle the most urgent tasks first so you’ll feel a real sense of 62 (achieve). Leaving the less important emails until tomorrow 63 (be) often acceptable.
+Most of us are more focused 64 our work in the morning than we are later in the afternoon. So, get an early start and try to be as efficient 65 possible before lunch. This will give you the confidence you need to get you through the rest of the day and go home feeling satisfied.
+Recent 66 (study) show that we are far more productive if we take short breaks 67 (regular). Give your body and mind a rest by stepping outside for 68 while, stretching, or doing something you enjoy.
+If you find a hobby you love doing outside of the office, you’ll be less likely 69 (bring) your stress home. It could be anything — sketching, cooking, music, sports — but whatever it is, 70 (make) sure it’s a relief from daily pressure rather than another thing to worry about.
+[OPTIONS]
+61. greater 62. achievement 63. is 64. on 65. as 66. studies 67. regularly 68. a 69. to bring 70. make
+[ANALYSIS]
+61. greater: Tests the comparative degree. The parallel structure "and less importance" (little-less) requires "great-greater."
+62. achievement: Tests the noun form. Following the preposition "of," a noun is needed.
+63. is: Tests the verb form for a gerund subject. "Leaving... tomorrow" is the subject, requiring a singular verb.
+64. on: Tests the fixed prepositional phrase "be focused on."
+65. as: Tests the comparative structure "as... as possible."
+66. studies: Tests noun number. The plural verb "show" indicates the subject should be plural.
+67. regularly: Tests the adverb form used to modify the verb phrase "take short breaks."
+68. a: Tests the fixed idiom "for a while."
+69. to bring: Tests the structure "be likely to do something."
+70. make: Tests the imperative mood in a sentence giving advice.

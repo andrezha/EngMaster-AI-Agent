@@ -1,0 +1,27 @@
+FILENAME: Reading_2016_55_AI.txt
+YEAR: 2016
+CAT: （新课标ⅱ）阅读理解 D 模拟
+TITLE: Images from a Forgotten Peak
+A new book of black-and-white photos brings a failed mountain expedition back to public attention. Thomas Arlow’s images would be remarkable—truly world-class documentary photography—even if they had been taken yesterday. In reality, they were captured between 1922 and 1924, mostly after a tragic equipment failure, by a photographer who had little hope of returning home. Many of the plates were kept in a heavy metal box, buried under deep snow, in a collapsed base camp.
+The mission was the "Ascent," a small, organized team of experienced climbers and researchers, 20 men in total, aiming to reach the highest peak of a remote mountain range. From that camp, the leader, Arthur Thorne, planned to find a new route to the top using basic tools. The expedition was intended to go further than what George Mallory had attempted. Mallory had reached high altitudes in the early 1920s but had disappeared on his final climb.
+As researcher Linda Bennett explains in her detailed and well-written book The Ascent, mountain exploration was already a commercial business back then. Mallory’s final journey, which ended in mystery and tragedy, captured the public’s heart, and a book about his life became a bestseller. Thorne, a former mountain guide who had nearly reached the peak in 1918, started a partnership before his 1922 trip to earn money from films and high-quality photography. Thomas Arlow, a brave and talented photographer who loved the mountains, was hired to capture the journey, most of which has never been seen until now.
+[QUESTIONS]
+What do we know about the photos taken by Arlow?
+A. They were taken very recently.
+B. They showed underwater scenes.
+C. They were found by a local guide.
+D. They recorded a tragic expedition.
+Who reached high altitudes first according to the text?
+A. Thomas Arlow.
+B. Arthur Thorne.
+C. George Mallory.
+D. Linda Bennett.
+What does Bennett think was a purpose of the 1922 expedition?
+A. Creative art.
+B. Scientific study.
+C. Earning money.
+D. Finding treasure.
+[ANALYSIS]
+33. D. Detail. The text states the photos recorded a "failed mountain expedition" and were taken "after a tragic equipment failure."
+34. C. Detail. The text says the mission intended to go further than Mallory, who "had reached high altitudes in the early 1920s."
+35. C. Detail/Inference. Bennett notes exploration was "a thoroughly commercial effort" and Thorne "started a partnership... to make money from movie and still photography."

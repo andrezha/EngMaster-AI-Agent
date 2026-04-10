@@ -1,0 +1,50 @@
+FILENAME: CLOZE_2015_02_AI.txt
+YEAR: 2015
+CAT: 完形填空_2015_（新课标ⅱ）_模拟
+TITLE: Learning Beyond the Classroom
+Where do you go when you want to acquire a new skill? A library? A classroom? These are all 41 methods of learning. But it may well be that the knowledge you really 42 resides somewhere else instead. I had the 43 of witnessing this first hand during a summer 44.
+My younger brother joined a community coding team. They performed exceptionally well this term and so 45 a high-level hackathon, which normally was only for more experienced professional groups. This led to some 46 experiences on the first day as they competed against teams that were 47 prepared. Through the first few rounds, his 48 did not complete a single functional module. As his brother, I 49 seeing him trying his hardest, 50 still failing.
+It seemed that something changed with the 51 between Saturday and Sunday. When they 52 for the final session, they were 53 different. They had begun to combine the techniques and logic they had 54 the day before into their own 55. They worked with great focus and 56 finished a complex feature.
+It 57 me that competing against the advanced team was a great 58 moment for everyone involved. I think it is a general principle. 59 is the best teacher. The lessons they learned might not be 60 what they would have gathered in a lecture, but they are certainly more personal and meaningful because they had to solve the problems on their own.
+[OPTIONS]
+41. A. public B. traditional C. official D. special
+42. A. passes B. works C. lies D. ends
+43. A. dream B. idea C. habit D. chance
+44. A. trip B. holiday C. workshop D. square
+45. A. won B. entered C. organized D. watched
+46. A. painful B. strange C. common D. practical
+47. A. less B. poorly C. newly D. better
+48. A. fans B. tutors C. class D. team
+49. A. imagined B. hated C. avoided D. missed
+50. A. if B. or C. but D. as
+51. A. members B. parents C. coaches D. viewers
+52. A. dressed B. showed up C. made up D. planned
+53. A. slightly B. hardly C. basically D. completely
+54. A. seen B. known C. heard D. read
+55. A. styles B. training C. project D. rules
+56. A. even B. still C. seldom D. again
+57. A. confused B. struck C. reminded D. warned
+58. A. touching B. thinking C. encouraging D. learning
+59. A. Experience B. Theory C. Reading D. Listening
+60. A. harmful to B. mixed with C. different from D. applied to
+[ANALYSIS]
+41. B. Contextual clue: "A library? A classroom?" are standard, conventional ways of learning. "Traditional" fits the logic of comparing old ways with new experiences.
+42. C. The verb "lies" (or resides) matches the preposition "somewhere else," indicating where the learning exists.
+43. D. "Had the chance of doing sth" is a fixed expression meaning having the opportunity.
+44. C. The context describes a specific event (hackathon). "Workshop" or "weekend" fits the timeline of the story.
+45. B. To "enter" a competition or tournament is the standard colocation for joining.
+46. A. Since they were playing against much better teams and failing, the experience was "painful" or difficult.
+47. D. The opposing teams were "better" prepared/trained, explaining why the brother's team struggled.
+48. D. The subject is the "team" the brother joined.
+49. B. As a relative, the narrator "hated" seeing the brother struggle despite his best efforts.
+50. C. A contrastive relationship: "played best" vs "defeated/failing." "But" is required.
+51. A. The "members" (the participants) are the ones who had the realization.
+52. B. "Showed up" means to arrive at the venue for the next day's work.
+53. D. The text emphasizes a major change; "completely" different matches the transformation described.
+54. A. They integrated what they had "seen" (observed) from the stronger teams.
+55. C. They put the new skills into their "project" or "game."
+56. A. "Even" emphasizes the breakthrough of finally finishing a module.
+57. B. "It struck me that..." is a fixed idiom meaning "I suddenly realized."
+58. D. The whole passage is about a "learning" moment outside of school.
+59. A. The core message is that "Experience" (doing things) is the best teacher.
+60. C. The lessons from real life are "different from" those in a classroom.

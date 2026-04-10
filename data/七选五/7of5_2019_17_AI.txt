@@ -1,0 +1,23 @@
+FILENAME: 7of5_2019_17_AI.txt
+YEAR: 2019
+CAT: （新课标Ⅱ）七选五模拟
+TITLE: Motivation for Internship Tasks
+Imagine an intern standing before a difficult task and asking, "Should I try this?" This is what motivation, or the lack of it, can do. Motivation and goal setting are two parts of the same process. 36 Like the intern facing the task, you will remain stuck.
+37 More than that, how should you stay motivated to reach your goal? First, you need to evaluate yourself—your skills, your strengths, and your weaknesses. Only then should you set your targets.
+You also need to judge the strength of your motivation. This is very important because it is directly related to your effort. There are times when you do not feel like working. 38 So, slow down and think about what you really want to achieve. Clear thinking can help you move forward.
+Another way of setting realistic goals is to analyze your short-term and long-term plans. Remember that goals are flexible. 39 They also need to be something you can measure. Keep these points in mind while planning.
+Your personal situation is also important. For example, you may want to lead a project but cannot because you lack specific experience. 40 You should look at your goals again and motivate yourself to set a new one.
+[OPTIONS]
+A. This can slow down your progress.
+B. So how should you motivate yourself?
+C. However, this should not make you give up.
+D. So why should we set specific goals?
+E. They can change as your situation changes.
+F. Motivation is what you need most to succeed.
+G. Without motivation, you can neither set a goal nor reach it.
+[ANALYSIS]
+36. G The previous sentence says motivation and goals are two sides of a coin. G explains that without one, you can't have the other, leading to the "undecided/stuck" state.
+37. B The following sentence asks "how should you stay motivated". B provides the introductory question: "How should you motivate yourself?"
+38. A The previous sentence says "your heart is not in your work" (replaced with "do not feel like working"). A explains the consequence: it affects/slows down your work.
+39. E The text says "goals are flexible". E explains what flexibility means: they can change according to circumstances.
+40. C The example describes a setback (lacking experience). C provides the encouraging transition: "this should not discourage you" (make you give up).

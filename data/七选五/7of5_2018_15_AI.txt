@@ -1,0 +1,23 @@
+FILENAME: 7of5_2018_15_AI.txt
+YEAR: 2018
+CAT: （新课标ⅲ）七选五模拟
+TITLE: The Culture of Campus Clubs
+Before there were formal classes, there was the tradition of gathering in groups. Joining a club expresses shared interests, creativity, teamwork, and everything in between.
+36 Campus clubs are everywhere. We see them from the sports fields to the science labs, from arts to technology. We meet at weekly sessions, competitions, and social events just to share our passions.
+"I love being part of the debate club," says Mark Evans, a student leader. "I cannot imagine my college life without it." Evans organizes activities for students of all backgrounds. "Leading a club is wonderful. 37 It is great to see them grow. For many, it is a way of meeting new people and building a social life."
+38 "I can tell you about two new members," says Evans. "They are learning how to present their ideas. They arrive at the meeting feeling nervous and they leave with confidence. 39"
+So, do we join clubs to make ourselves feel more connected and skilled? Sarah Jenkins says, "Being in a club is like being part of a team. Even after years of participating, I want to get better and better. 40 I find it hard to stop! It reminds me that I am part of a community."
+[OPTIONS]
+A. So why do we join clubs?
+B. Club culture on campus is very active.
+C. If you like outdoor clubs, come to our university.
+D. My members say it makes them feel more capable.
+E. I keep working on my skills even when I am very busy.
+F. The experience seems to change their attitude completely.
+G. They stayed up all night talking and planning.
+[ANALYSIS]
+36. B The following sentences describe clubs being "everywhere" and in "science labs... arts... technology". B summarizes this by saying club culture is "very active" (everywhere).
+37. D The speaker is a club leader talking about members. D provides a quote from members about how the club makes them feel.
+38. A The paragraph gives an example of why people join (to learn skills/gain confidence). A asks the question "Why do we join?" which the example answers.
+39. F The example describes members arriving "nervous" and leaving "with confidence". F summarizes this change in feeling/attitude.
+40. E The speaker says they want to get "better and better" and find it "hard to stop". E reinforces this dedication by saying they practice even when busy.

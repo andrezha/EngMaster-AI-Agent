@@ -1,0 +1,39 @@
+FILENAME: Reading_2020_106_AI.txt
+YEAR: 2020
+CAT: （新课标Ⅲ）阅读理解C模拟
+TITLE: The Growth of Multi-generational Living in the UK
+Because young people find it hard to pay for their own apartments and the elderly worry about living alone, more families are choosing to share a home.
+The path to a shared life, for David Green at least, involves living with his wife's parents. They live on the first floor, while he and his family occupy the upper floors of a large house.
+Five years ago, they moved into a traditional house in London—one of the many families in Britain now living together. They share the main entrance and the garden, but the parents, Mr. and Mrs. Hall, have their own private rooms and a small kitchen on the lower level.
+“We suggested the idea of sharing a large place to my parents,” says David’s wife, Sarah. Mrs. Hall adds: “We talked a lot with David because we knew it would be a big change for him to live with us.”
+What is David’s view? “Personally, I think it works quite well for everyone. I would definitely suggest it to others.”
+It is not clear exactly how many people feel the same way, but data shows the trend is growing. Official figures show that the number of homes with three generations has increased from 330,000 in the early 2000s to over 420,000 recently.
+Other forms of shared living are also popular. Some adults move back to their parents' homes after university. It is reported that about 25% of young adults live with their parents today, a significant increase from 20 years ago. The total number of such households in the country is estimated at around 1.9 million.
+This lifestyle is more common in cultures where family ties are very strong. In some Asian countries, for example, it is expected that children will look after their parents in the same house.
+[OPTIONS]
+28. Who lives on the first floor of the house in London?
+A. David.
+B. The Halls.
+C. Sarah.
+D. The kids.
+What is David’s attitude towards living with his wife's parents?
+A. Positive.
+B. Concerned.
+C. Careful.
+D. Negative.
+What is the author’s information about shared families based on?
+A. Personal stories.
+B. Government data.
+C. School reports.
+D. News rumors.
+What is the text mainly about?
+A. Living costs in London.
+B. A rising lifestyle trend in the UK.
+C. Conflict between family members.
+D. How to build traditional houses.
+[ANALYSIS]
+The text discusses the increasing trend of multi-generational living in the UK due to economic and social reasons.
+28. B. Detail understanding. Paragraph 3 says the parents (Mr. and Mrs. Hall) have their rooms on the "lower level" (first floor).
+29. A. Inference. David says, "I think it works quite well... I would definitely suggest it."
+30. B. Detail understanding. The author cites "Official figures" and "It is reported that...", mirroring "Published statistics."
+31. B. Main idea. The text focuses on the "growing trend" of multi-generational households in the UK.

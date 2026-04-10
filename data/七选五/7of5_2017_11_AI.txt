@@ -1,0 +1,23 @@
+FILENAME: 7of5_2017_11_AI.txt
+YEAR: 2017
+CAT: （新课标ⅱ）七选五模拟
+TITLE: Managing Distractions During an Internship
+Interruptions are one of the biggest challenges when you are trying to complete your tasks. 36, there are several ways to handle the situation. Let us look at them now.
+Tell the person you are sorry and explain that you have many things to finish, and then ask if you can talk at a different time.
+When people try to interrupt you, have specific hours planned for meetings and let them know to come back then. 38. It can help to reduce future interruptions.
+When you need to talk to someone, do not always do it at your own desk. 39, it is much easier to excuse yourself to get back to your work than if you try to get someone to leave your space after you have already explained how busy you are.
+If you have a private office or a specific workspace, make good use of it. 40. If someone approaches you when you are busy, excuse yourself and let them know you are working so they understand that when you are focused, you should not be disturbed.
+[OPTIONS]
+A. If you are busy, do not feel bad about saying no
+B. When you want to avoid interruptions at work
+C. Set boundaries for yourself as your day goes on
+D. If you are at the other person’s desk or in a common area
+E. It is important that you let them know when you will be free
+F. It might seem impolite to stop people when they interrupt you
+G. Keep your space open when you can talk and close it when you cannot
+[ANALYSIS]
+36. B The passage is about handling interruptions. B provides the introductory condition: "When you want to avoid interruptions...".
+37. A The text suggests telling someone you are sorry but busy. A summarizes this as "not feeling bad about saying no".
+38. E The previous sentence suggests telling people to "come back during that time". E reinforces this by saying it's important to let them know "when you'll be available".
+39. D The text advises not talking in your own office. D provides the alternative location ("other person's office or public area") and explains why it's easier to leave.
+40. G The paragraph is about using your door/space. G gives the specific advice on how to use it (open when free, closed when busy).

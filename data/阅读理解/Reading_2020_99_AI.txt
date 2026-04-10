@@ -1,0 +1,35 @@
+FILENAME: Reading_2020_99_AI.txt
+YEAR: 2020
+CAT: （新课标Ⅰ）阅读理解模拟
+TITLE: Smart Fabrics and the Future
+The link between humans and technology has long been a topic of research. Recent studies have found helpful effects. For example, a study in a major city found that smart offices with better lighting and airflow saw an increase in worker health. In another, employees were found to be 20% more creative when their desks were equipped with smart organizers.
+Engineers at a top institute have gone further, changing the materials in fabrics so they can perform unusual functions. These include clothes with sensors that show when the wearer is tired, and a fabric that can detect harmful pollutants in the air. “We are thinking about how we can design fabrics to replace the gadgets we use every day,” explained a professor of engineering.
+One of his recent projects involves making fabrics glow using safe chemical reactions. The team found they could create a soft light for several hours. This light, though faint, is just the beginning. The technology could one day be used to light up rooms or even turn curtains into self-powered lamps.
+In the future, the team hopes to create a version of the technology that lasts for the entire life of the fabric. They are also working on a "switch" that stops the glow when it is not needed.
+Traditional lighting uses a lot of energy. Since power is often lost when it travels from a power station to distant street lights, much energy is wasted. Glowing fabrics could bring light directly to where it is needed and help save energy.
+[QUESTIONS]
+What is the first paragraph mainly about?
+A. A new study on various tools.
+B. A fall in office costs.
+C. Workers in different cities.
+D. Benefits from smart environments.
+What is the function of the sensors in the smart clothes?
+A. To detect the wearer's tiredness.
+B. To change the color of the fabric.
+C. To make the clothes last longer.
+D. To test the air quality in rooms.
+What can we expect from glowing fabrics in the future?
+A. They will produce more electricity.
+B. They may send power to other homes.
+C. They might help reduce energy use.
+D. They could replace all regular gadgets.
+Which of the following is the best title for the text?
+A. Can we make more smart fabrics?
+B. How do we use glowing clothes?
+C. Could glowing fabrics replace lamps?
+D. Are smart fabrics safe for us?
+[ANALYSIS]
+32. D. Main Idea. The paragraph lists benefits like "increase in worker health" and "more creative" from smart setups.
+33. A. Detail. The text says "sensors that show when the wearer is tired."
+34. C. Inference. The last paragraph states they "could... help save energy."
+35. C. Main Idea. The passage focuses on the potential for glowing materials to act as a new light source and replace traditional lamps.

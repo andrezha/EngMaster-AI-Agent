@@ -1,0 +1,27 @@
+FILENAME: Reading_2010_09_AI.txt
+YEAR: 2010
+CAT: （新课标Ⅱ）阅读理解模拟
+TITLE: The Evolution of Digital Symbols
+How digital symbols came into use is quite recent. We know that tech designers created certain icons, in one way or another, to represent actions and feelings, so that users could navigate devices easily. Later, global groups agreed upon certain signs, called "standard icons," which could be recognized across different platforms. These signs, whether used in apps or messages, are called digital symbols.
+The power of these symbols lies in their context—the ideas they bring up in our minds. Symbols become filled with meaning through shared experience; the more we use them, the more certain icons bring back the emotions of our past conversations. As we interact more online, the number of symbols that carry deep meaning for us increases.
+Great designers are those who not only have creative ideas but also express them in symbols which have powerful effects on our habits and feelings. This clever use of visual language is what we call "interface style." Above all, a master designer is an expert in visual communication. They can express meaning in icons that flow like a story, and which by their color and shape can move users to action. We should therefore learn to choose our symbols carefully and use them correctly, or they will make our messages confusing and unclear.
+[QUESTIONS]
+58. We learn from the text that digital language began with ______.
+A. long texts
+B. voice calls
+C. visual signs
+D. printed books
+What is mainly discussed in Paragraph 2?
+A. The creation of new icons.
+B. The history of the Internet.
+C. The relation of user experience with symbols.
+D. The technical development of mobile phones.
+In the last paragraph, what does the author suggest that we should do?
+A. Use symbols skillfully.
+B. Create more colorful icons.
+C. Learn to code programs.
+D. Ignore digital messages.
+[ANALYSIS]
+58. C. Detail Understanding. The text says "tech designers created certain icons... to represent actions and feelings," identifying icons/signs as the start.
+59. C. Main Idea. Paragraph 2 explains how symbols "become filled with meaning through shared experience."
+60. A. Logical Reasoning. The author concludes that "We should therefore learn to choose our symbols carefully and use them correctly."

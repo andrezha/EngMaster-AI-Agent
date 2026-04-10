@@ -1,0 +1,51 @@
+FILENAME: Cloze_2018_02_AI.txt
+YEAR: 2018
+CAT: 完形填空02模拟
+TITLE: An Unexpected Reunion
+A few weeks ago, my former mentee, Sam, had got in touch. He’d moved to Canada for a research project when he was young and it had been 10 years since I’d 41 seen him. So imagine my 42 when he messaged me saying he wanted to meet at a tech expo.
+I was 43 ! I arrived early at the convention center where we were supposed to 44 . The hall was 45 in bright lights, and there was a crowd of developers near the main stage. Getting a little 46 , I realized one young man was in 47 .
+“Something’s not 48 !” I put down my bag and 49 into the crowd. I saw there were two security guards nearby and a man looking panicked over a broken prototype. He was 50 nervously. Helping the guards, I helped 51 the young man and his equipment to a quiet area. He was overwhelmed, and as I looked at his face, something 52 to me. Those bright eyes were very 53 . “What’s your name?” I asked. “Sam,” he replied, and immediately I 54 . That stranger was my mentee!
+The staff called for a technician. 55 , after a quick fix, Sam was calm enough to be allowed to 56 his presentation and later we met up for coffee. We chatted about everything and then Sam 57 to me. “I just want to say thank you,” he said. “You 58 my project!”
+I still can’t believe what a 59 it was. I’m just so glad I was there 60 to help him.
+[OPTIONS]
+41. A. also B. often C. even D. last
+42. A. delight B. relief C. anger D. worry
+43. A. scared B. shocked C. thrilled D. ashamed
+44. A. talk B. stay C. meet D. settle
+45. A. bathed B. clean C. deep D. formed
+46. A. faster B. closer C. heavier D. wiser
+47. A. trouble B. advance C. question D. battle
+48. A. real B. right C. fair D. fit
+49. A. stared B. sank C. rushed D. fell
+50. A. arguing B. fighting C. shouting D. shaking
+51. A. lead B. persuade C. carry D. keep
+52. A. happened B. occurred C. applied D. appealed
+53. A. sharp B. pleasant C. attractive D. familiar
+54. A. agreed B. hesitated C. doubted D. knew
+55. A. Fortunately B. Frankly C. Sadly D. Suddenly
+56. A. return B. relax C. start D. leave
+57. A. joked B. turned C. listened D. pointed
+58. A. created B. honored C. saved D. guided
+59. A. coincidence B. change C. pity D. pain
+60. A. on board B. in time C. for sure D. on purpose
+[ANALYSIS]
+41. D. Time: It had been 10 years since they "last" saw each other.
+42. A. Emotion: Hearing from a long-lost friend brings "delight."
+43. C. Emotion: The author is "thrilled" (excited) to meet him.
+44. C. Action: They planned to "meet" at the expo.
+45. A. Atmosphere: The hall was "bathed" in light (common metaphor).
+46. B. Distance: Moving "closer" allows one to see a problem clearly.
+47. A. Situation: The man was in "trouble" because his prototype broke.
+48. B. Observation: "Something's not right" is a common phrase for noticing a problem.
+49. C. Action: The author "rushed" into the crowd to help.
+50. D. Physical state: Panicked people often "shake" or tremble.
+51. C. Action: They "carry" or move the person and equipment.
+52. B. Thought: "Something occurred to me" means a thought came to mind.
+53. D. Recognition: The eyes looked "familiar," leading to recognition.
+54. D. Realization: After hearing the name, the author "knew" who it was.
+55. A. Outcome: "Fortunately" introduces the positive resolution.
+56. C. Action: After the fix, he could "start" his presentation.
+57. B. Direction: He "turned" to the author to speak directly.
+58. C. Impact: By helping him calm down and fix the issue, the author "saved" the project.
+59. A. Theme: Meeting him by accident right when he needed help is a "coincidence."
+60. B. Timing: Being there "in time" means arriving when help was needed.

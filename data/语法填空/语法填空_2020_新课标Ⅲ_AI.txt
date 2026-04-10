@@ -1,0 +1,19 @@
+FILENAME: 语法填空_2020_新课标Ⅲ_AI.txt
+YEAR: 2020
+CAT: 语法填空_2020_新课标Ⅲ_语法填空模拟
+TITLE: A Musician's Journey to the Mountains
+In our city lived a musician 61 songs were almost perfect. The musician’s success had made him proud. One day the director wanted to have a new piece performed, so he called all talented musicians to come and present their 62 (fine) work, so that he could choose the best. The musician was sure he would 63 (choose), but when he presented his composition to the senior teacher, the old man laughed. The wise man told him to travel to the high mountains — perhaps he could learn a little from the greatest musician in the world.
+Filled with 64 (curious), the man packed his instruments and left. 65 he asked the locals on the paths where he could find the legendary musician, they smiled and 66 (point) toward the forest. The next morning he started his walk and set out 67 (find) the famous artist. As he moved 68 (gentle) along the path, he was left speechless by the wind whistling through the trees. He heard the sound of water and birds in many different tones. And when he saw the birds singing in the trees and the soft breeze 69 (surround) the peaks, he was moved to tears. The musician was finally humbled by the greatest musician 70 earth, Mother Nature.
+[OPTIONS]
+61. whose 62. finest 63. be chosen 64. curiosity 65. When/As 66. pointed 67. to find 68. gently 69. surrounding 70. on
+[ANALYSIS]
+61. whose: Tests the relative pronoun showing possession.
+62. finest: Tests the superlative degree.
+63. be chosen: Tests the passive voice after "would."
+64. curiosity: Tests the noun form.
+65. When/As: Tests the conjunction for time.
+66. pointed: Tests the simple past tense.
+67. to find: Tests the "set out to do" structure.
+68. gently: Tests the adverb modifying "moved."
+69. surrounding: Tests the present participle in a "see sb/sth doing" structure or as a modifier.
+70. on: Tests the fixed phrase "on earth."

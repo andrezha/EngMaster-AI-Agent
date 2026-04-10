@@ -1,0 +1,32 @@
+FILENAME: Reading_2011_11_AI.txt
+YEAR: 2011
+CAT: （全国卷ii）阅读理解模拟
+TITLE: Tool Use in Octopuses
+For those who study the development of intelligence in the marine world, problem-solving is an important measurement. An animal that can use tools to solve a problem has a high level of intelligence.
+Intelligence can be tested by studying whether the animal uses an object to achieve a goal, such as opening a container. Many marine animals fail this test, showing no interest in the objects around them. Only a few intelligent creatures like dolphins and octopuses have shown the ability to use tools in their environment.
+Now another example has joined the list. In a recent scientific report, researchers found that a Veined Octopus has passed a complex tool-use test.
+“We thought octopuses were the next key group to study,” said Dr. Miller of the Marine Institute, an author of the study. With their complex nervous systems, Dr. Miller said, octopuses “seem like ocean versions of primates.”
+The researchers tested three octopuses—Inky, Blue, and Otto—at the City Aquarium. They placed a closed glass jar with food inside into the animals’ tank and recorded what happened with cameras.
+The octopuses used their tentacles to feel the jar and to examine the lid.
+Of the three, Inky then passed the test, in which a specific turning motion was required to open the jar. He could tell how to move the lid by trial and error, and he used his strength to unscrew the lid with his tentacles.
+Dr. Miller said, “We knew octopuses were smart, but now we can describe their intelligence in a much better way.”
+[QUESTIONS]
+45. What can tool-use tests tell us about animals?
+A. Whether they have many tentacles.
+B. Whether they have high intelligence.
+C. Whether they enjoy swimming.
+D. Whether they like glass jars.
+Why does the author mention primates (like apes) in the text?
+A. They live in the same area.
+B. They are also being tested in the water.
+C. They are already known to be intelligent.
+D. They are the favorite animals of Dr. Miller.
+What made Inky different from Blue and Otto?
+A. He searched behind the glass jar.
+B. He successfully used a tool/motion to open the jar.
+C. He painted a mark on the jar.
+D. He broke the camera.
+[ANALYSIS]
+45. B. Detail Understanding. The text states "An animal that can use tools... has a high level of intelligence."
+46. C. Logical Reasoning. Primates are mentioned as a comparison for octopuses' intelligence, implying primates are already the standard for high intelligence.
+47. B. Detail Understanding. Inky was the one who "passed the test" by unscrewing the lid.

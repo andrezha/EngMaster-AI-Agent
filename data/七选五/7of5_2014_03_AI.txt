@@ -1,0 +1,27 @@
+FILENAME: 7of5_2014_03_AI.txt
+YEAR: 2014
+CAT: （新课标Ⅰ）七选五模拟
+TITLE: Preparing for the Modern Workplace
+The specific tasks of future internships have not been defined yet. 36 By helping them develop core skills that will be useful no matter how the workplace changes.
+Curiosity
+Interns need to be very curious. 37 Ask them, "What steps can we take to make this project even more successful next time?" and then let them try those ideas. Did those changes help? What else could be improved?
+Creativity
+True creativity is the skill of taking something that already exists and making something new from it. 38 There are many different ways to use basic office tools or software. Trying new ways to use materials can help interns develop their creative thinking.
+Social Skills
+Understanding how coworkers feel can be difficult for new interns. We know our own thoughts, but what about others? Being able to understand people helps an intern avoid misjudging a situation. 39 "Why do you think the client reacted that way?" "Can you tell if your teammate is stressed by looking at their face?" "If you were in their position, how would you feel?"
+Self-Expression
+40 There are many ways to share thoughts and ideas—writing, speaking, designing, or using data. You may find that an intern is better at one method than another.
+[OPTIONS]
+A. Encourage interns to brainstorm with you.
+B. And we must not ignore technical education.
+C. We can give them chances to look at common tools in new ways.
+D. We can practice this in the office or discuss characters in business cases.
+E. Research is another great activity for developing this skill.
+F. So how can we help interns prepare for roles that do not yet exist?
+G. Being able to share ideas in a clear way is a highly valued skill.
+[ANALYSIS]
+36. F The opening sentence states that future jobs aren't invented yet. F asks the logical question: "How can we prepare?" which the rest of the passage answers.
+37. A The paragraph is about curiosity and gives an example of asking questions about a project. A fits as it encourages the active participation (brainstorming) mentioned in the example.
+38. C The paragraph defines creativity as making something new from existing things. C suggests giving chances to look at materials/tools in new ways, which directly supports the definition.
+39. D The paragraph is about social skills and reading people. It lists three questions. D explains where these questions can be asked (real life or cases).
+40. G The paragraph lists various ways to express ideas (writing, speaking, etc.). G serves as the topic sentence, stating that communicating ideas is a valuable skill.

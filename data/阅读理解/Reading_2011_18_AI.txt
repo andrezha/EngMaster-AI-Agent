@@ -1,0 +1,34 @@
+FILENAME: Reading_2011_18_AI.txt
+YEAR: 2011
+CAT: （新课标）阅读理解模拟
+TITLE: Rolling through the Fuel Crisis
+Cassandra Lee finds it hard to manage on her current budget. So this year she did something more than just for fun: She started cycling to work. For her first month, Lee has logged 200 miles on her bike. The family’s old garage has become a repair shop, with more tools arriving next month. Last year, Rita Green used her bike occasionally. This year she has made it her main transport because, she said, “The price of gas is going up and I was looking to get fit too; so it’s a win-win situation all around.”
+They are among the growing number of people who, driven by higher fuel costs and a changing economy, have taken up cycling for the first time. Others have increased their daily riding distances. Bike shops and outdoor stores say not since the 1970s has there been such an increase in interest in commuting by bike. Now many bike models across the city have been sold out for several weeks. In some areas, specialized road bikes have a two-month waiting list.
+George Smith, owner of a cycling company, said sales of commuter bikes and gear are up by 50% over last year, double the average growth of the last three years. Mr. Smith argues that some of the reasons have been building for a while. The big one is the sharp rise in the cost of fuel, together with the increases in the price of public transport. Travel costs have increased because of global market changes. People are driving less and taking fewer long trips, so there is more time and reason to cycle.
+[QUESTIONS]
+68. What does the word “residents” in the original text (referring to the garage/shop contents) probably refer to? (Adjusted for "tools" in this version)
+In the new context, what does the author imply about the "repair shop"?
+A. It is for fixing bicycles.
+B. It is for selling cars.
+C. It is a place for children.
+D. It is used for storage only.
+By saying “a win-win situation all around,” Ms. Green means that ______.
+A. she is happier and her bike is faster
+B. she may save money and improve health
+C. she is selling bikes and buying cars
+D. she has joined many cycling clubs
+Why is cycling becoming increasingly popular?
+A. More people are doing it for professional racing.
+B. The price of bicycles is lower than before.
+C. There is a growing need for faster cars.
+D. The cost of fuel and transport is on the rise.
+Which of the following might be the best title for the text?
+A. Public Transport Planning
+B. Rolling through the Crisis
+C. A High-speed Future
+D. Cycling as a Sport
+[ANALYSIS]
+68. A. Logical Reasoning. Since the topic is cycling and the "old garage has become a repair shop," it is for fixing bikes.
+69. B. Detail Understanding. She mentions "The price of gas is going up" (saving money) and "looking to get fit" (health).
+70. D. Detail Understanding. The text says people are "driven by higher fuel costs" and mentions "sharp rise in the cost of fuel."
+71. B. Main Idea. The text discusses how people are turning to cycling to cope with the economic/fuel crisis.

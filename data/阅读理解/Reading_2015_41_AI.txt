@@ -1,0 +1,34 @@
+FILENAME: Reading_2015_41_AI.txt
+YEAR: 2015
+CAT: （新课标Ⅰ）阅读理解 B 模拟
+TITLE: A Weekend at the Innovation Fair
+The gray, rainy winter in London had not been an ideal environment for my internship, so when the opportunity arrived for a short trip to Austin, Texas, I was ready to go in an instant. I headed for the city of energy and bright skies, dreaming of outdoor events and green parks. When our plane arrived to see clear sunshine and warm air, I felt a deep sense of relief. Weekend activities like kayaking, local music, and late-night talks (at reasonable hours, not in the middle of a workday) were great, but the highlight — especially for my mind, tired from months of repetitive office tasks — was a 7 a.m. trip to the Austin Makers’ Fair that turned out to be worth every bit of lost sleep.
+The fair, established in 1985, happens every Saturday from 7 a.m. to 2 p.m. in the downtown square. There were tables of clever wooden crafts, the bright blue signs of the local tech start-up trucks, and most of all, the hand-built robots: small, flexible, and beautifully designed machines.
+Disappointed by many low-quality gadgets I’d bought online, I had stopped purchasing new tech tools for a long time. No matter how sleek they looked in advertisements, once I tested them at home, they were always slow, fragile, and useless. But I walked, with some doubt, toward one particular stand at the "Green Circuit" corner, which was filled with miniature drones the size of my palm. These were high-quality products — and right then, I understood that the best part of being in Austin was finding things that back in my London office I wouldn’t see for another year.
+Though I was impressed by the drones, my mood improved further when I found out that the Green Circuit team also provides parts for "The Hub", a newly launched tech space at the local university where — fortunately — I was invited to visit that evening. Even before looking at their project list, I knew I would be interested in everything they had.
+[QUESTIONS]
+What did the author think of her internship life in London?
+A. Exciting.
+B. Boring.
+C. Relaxing.
+D. Annoying.
+What made the author’s getting up early worthwhile?
+A. Going kayaking.
+B. Listening to music.
+C. Walking in the park.
+D. Visiting a local makers’ fair.
+What can we learn about the tech gadgets the author bought before?
+A. They are flexible.
+B. They look nice.
+C. They work perfectly.
+D. They are very large.
+What was the author going to do that evening?
+A. Visit a tech space.
+B. Stay in a hotel.
+C. Go to a factory.
+D. Buy wooden crafts.
+[ANALYSIS]
+24. B. Inference. According to the first paragraph, the author describes the London winter as "not an ideal environment" and her mind as "tired from months of repetitive office tasks," implying the life there was dull or boring.
+25. D. Detail. The text states the trip to the "Austin Makers’ Fair... proved to be worth every bit of lost sleep," directly linking the early wake-up to the fair visit.
+26. B. Inference. Paragraph 3 mentions "No matter how sleek they looked in advertisements... they were always slow, fragile, and useless," indicating that while they appeared attractive, their quality was poor.
+27. A. Detail. The final paragraph notes that the author was "invited to visit... a newly launched tech space at the local university" that very evening.

@@ -1,0 +1,50 @@
+FILENAME: CLOZE_2020_02_AI.txt
+YEAR: 2020
+CAT: 完形填空_2020_新课标Ⅱ_模拟
+TITLE: The Flea Market Camera
+It was just after dawn on a Sunday morning. "David," whose real name cannot be 41 to the public due to privacy rules, 42 working a late shift at a hospital in London. As he often did, he stopped by the "charity sale" 43 by a local group where items 44 in old storerooms were sold to raise money. There, among many other things, David spotted an old camera he thought would look 45 on his bookshelf. David and another buyer 46 until David finally won the camera for $25.
+When David retired and moved to the countryside, he 47 the camera with him. He placed it on the same shelf he had 48 from London. His nephew, age 18, who had 49 a history of technology class, thought there was something 50 about the lens. It was marked "Zeiss" or so he thought, but when he 51 it, he found a rare serial number from a famous 52 he had read about. He bought a reference book and was 53 to find a photo of the inventor holding the exact same model in the same 54 as shown in an old manual.
+"That is the rare model from the book," the nephew told David. They 55 learned that the camera they 56 was a prototype from the 1920s. They 57 the history further and learned it was 58 a personal gift to a famous explorer. The 59 contacted the National Museum; the experts confirmed that the camera was an 60 and worth over $1 million.
+[OPTIONS]
+41. A. attached B. allocated C. exposed D. submitted
+42. A. finished B. delayed C. considered D. tried
+43. A. attended B. reserved C. cancelled D. run
+44. A. shown B. found C. kept D. hidden
+45. A. nice B. familiar C. useful D. real
+46. A. battled B. debated C. discussed D. bargain
+47. A. held B. left C. registered D. brought
+48. A. chosen B. received C. ordered D. moved
+49. A. missed B. failed C. taken D. led
+50. A. concrete B. unusual C. unappealing D. natural
+51. A. appreciated B. touched C. researched D. witnessed
+52. A. maker B. designer C. author D. actor
+53. A. expected B. surprised C. anxious D. ready
+54. A. room B. kitchen C. hall D. workshop
+55. A. apparently B. confidently C. eventually D. temporarily
+56. A. owned B. borrowed C. sold D. stole
+57. A. collected B. cleaned C. framed D. studied
+58. A. suitably B. actually C. rightly D. specifically
+59. A. nephew B. artist C. family D. police
+60. A. copies B. originals C. models D. presents
+[ANALYSIS]
+The story describes finding a valuable antique at a cheap sale.
+41. C. Name not "exposed".
+42. A. "Finished" work.
+43. D. Sale "run" by a group.
+44. B. Items "found" in storage.
+45. A. Look "nice".
+46. A. "Battled" (competed) for the item.
+47. D. "Brought" it with him.
+48. D. "Moved" the shelf.
+49. C. "Taken" a class.
+50. B. Something "unusual".
+51. C. "Researched" it.
+52. A. Famous "maker" (replacing painter).
+53. B. "Surprised" to find.
+54. D. Same "workshop" (replacing garden).
+55. C. "Eventually" learned.
+56. A. They "owned" it.
+57. D. "Studied" the history.
+58. B. "Actually" a gift.
+59. C. The "family" (David and nephew).
+60. B. Confirmed as "originals" (authentic items).

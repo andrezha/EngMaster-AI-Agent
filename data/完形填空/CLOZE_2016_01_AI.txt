@@ -1,0 +1,49 @@
+FILENAME: CLOZE_2016_01_AI.txt
+YEAR: 2016
+CAT: 完形填空_2016_（新课标Ⅰ）_模拟
+TITLE: The Campus Hero
+David works as a campus safety volunteer. One evening in 2023, David was 41 along the science wing after checking on one of the 42. Suddenly, he noticed a lab with its internal lights flashing. 43 he got closer, he found 44 door wide open and smoke in the hallway. One more look and he noticed 45 coming out from under the 46 equipment. David rushed over, grabbed the wall handle and 47 the fire extinguisher. Two quick sprays from the extinguisher and the small fire was put out.
+A student who was nearby 48 and told David he had already 49 an emergency call. They 50 heard a faint sound coming from the back of the room. 51 the area, they saw a researcher trying to move away from a fallen shelf. They told her to stay 52 until the medical staff arrived, 53 she thought the chemicals might 54. David told her that he had already put out the fire and she should not move 55 she hurt her back further.
+Once the fire department and medical people arrived, David and the other student 56 and let them go to work. Then, David asked the 57 if he was needed or 58 to return to his post. They let him and the other student go.
+One thing is 59—David went above and beyond his basic role by getting so close to the danger! His 60 most likely prevented a major disaster.
+[OPTIONS]
+41. A. walking B. touring C. traveling D. rushing
+42. A. passengers B. colleagues C. employers D. labs
+44. A. each B. another C. that D. his
+45. A. flames B. smoke C. water D. steam
+46. A. used B. damaged C. removed D. abandoned
+47. A. got hold of B. prepared C. took charge of D. controlled
+48. A. came down B. came through C. came in D. came over
+49. A. returned B. received C. made D. confirmed
+50. A. then B. again C. finally D. even
+51. A. Starting B. Parking C. Passing D. Approaching
+52. A. quiet B. still C. away D. calm
+53. A. for B. so C. and D. but
+54. A. explode B. slip away C. fall apart D. crash
+55. A. as if B. unless C. in case D. after
+56. A. stepped forward B. backed off C. moved on D. set out
+57. A. woman B. police C. man D. driver
+58. A. forbidden B. ready C. asked D. free
+59. A. for certain B. for consideration C. reported D. checked
+60. A. patience B. skills C. efforts D. promise
+[ANALYSIS]
+41. A. David is a campus volunteer; "walking" fits the patrol context.
+42. D. He was checking "labs" in the science wing.
+43. C. "As" indicates the simultaneous action of getting closer and discovering the door.
+44. C. "That" refers back to the specific door of the lab he noticed.
+45. B. "Smoke" or "flames" are indicators of fire; "flames" (A) matches the use of an extinguisher.
+46. B. The equipment was "damaged" or "disabled" by the fire.
+47. A. "Got hold of" means to grab or pick up the extinguisher.
+48. D. "Came over" means the other student approached David.
+49. C. "Made a call" is the standard phrase for telephoning.
+50. A. "Then" marks the sequence of events after the fire was out.
+51. D. "Approaching" means moving toward the source of the sound.
+52. B. "Stay still" is medical advice to prevent further injury.
+53. D. "But" shows the contrast between the advice and her fear.
+54. A. In a lab fire, the fear of chemicals "exploding" is logical.
+55. C. "In case" introduces the reason for the precaution (preventing injury).
+56. B. "Backed off" means to move away to give professionals space.
+57. B. "Police" or "officials" (authorities) are the ones who give permission to leave.
+58. D. "Free to go" is a common expression for being allowed to leave.
+59. A. "For certain" emphasizes the narrator's conclusion.
+60. C. "Efforts" refers to David's brave actions.

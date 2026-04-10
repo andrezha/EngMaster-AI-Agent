@@ -1,0 +1,49 @@
+FILENAME: CLOZE_2011_01_AI.txt
+YEAR: 2011
+CAT: 完形填空_01_模拟
+TITLE: A Lesson Beyond the Data
+In our discussion with professionals on how training can help them succeed, a woman remembered the first meeting of an introductory 36 course about 20 years ago.
+The professor 37 the lecture hall, placed upon his desk a large jar filled with electronic parts, and invited the students to 38 how many items the jar contained. After 39 shouts of wildly wrong guesses the professor smiled a thin, dry smile, announced the 40 answer, and went on saying, “You have just 41 an important lesson about analysis. That is: Never 42 your own senses.”
+Twenty years later, the 43 could guess what the professor had in mind. He 44 himself, perhaps, as inviting his students to start an exciting 45 into an unknown world invisible to the 46, which can be discovered only through technical 47. But the seventeen-year-old girl could not accept or even 48 the invitation. She was just 49 to understand the world. And she 50 that her firsthand experience could be the 51. The professor, however, said that it was 52. He was taking away her only 53 for knowing and was providing her with no substitute. “I remember feeling small and 54,” the woman says, “and I did the only thing I could do. I 55 the course that afternoon, and I haven’t gone near that field since.”
+[OPTIONS]
+36. A. art B. history C. tech D. math
+37. A. searched for B. looked at C. got through D. entered
+38. A. count B. guess C. report D. watch
+39. A. warning B. giving C. turning away D. listening to
+40. A. ready B. possible C. correct D. difficult
+41. A. learned B. prepared C. taught D. taken
+42. A. lose B. trust C. sharpen D. show
+43. A. lecturer B. scientist C. speaker D. woman
+44. A. described B. respected C. saw D. served
+45. A. journey B. movement C. change D. rush
+46. A. professor B. eye C. knowledge D. light
+47. A. model B. senses C. spirit D. analysis
+48. A. hear B. make C. present D. refuse
+49. A. suggesting B. beginning C. pretending D. waiting
+50. A. believed B. doubted C. proved D. explained
+51. A. growth B. strength C. faith D. truth
+52. A. firm B. interesting C. wrong D. acceptable
+53. A. task B. tool C. success D. connection
+54. A. cruel B. proud C. frightened D. brave
+55. A. dropped B. started C. passed D. missed
+[ANALYSIS]
+36. C. The context involves a professor and a lesson on analysis/science, so "tech" or "science" fits.
+37. D. "Entered" (or "marched into") describes the professor arriving at the hall.
+38. B. The students are asked to "guess" because they cannot count the items inside the jar quickly.
+39. D. The professor "listens to" the students' guesses before speaking.
+40. C. After the guesses, the professor reveals the "correct" number.
+41. A. Idiom: "learn a lesson".
+42. B. The professor's point is that human senses are unreliable, so one should not "trust" them.
+43. D. "The woman" refers back to the person telling the story in the first paragraph.
+44. C. "Saw himself as" means he perceived his own role in a certain way.
+45. A. "Journey" (or "voyage") is a metaphor for the process of discovery.
+46. B. "Invisible to the eye" is a standard phrase for things that cannot be seen without tools.
+47. D. Scientific or technical "analysis" (or "methods") is how the invisible world is discovered.
+48. A. The girl was so put off that she couldn't even "hear" (process/accept) the message.
+49. B. At seventeen, she was just "beginning" to form her understanding of life.
+50. A. She "believed" in the validity of her own experiences.
+51. D. She thought her experience represented the "truth" or reality.
+52. C. The professor's lesson was that such subjective experience is "wrong" in science.
+53. B. Her senses were her only "tool" for understanding, and he dismissed them.
+54. C. Being told her way of knowing was worthless made her feel "frightened" or small.
+55. A. "Dropped the course" means she officially quit the class.

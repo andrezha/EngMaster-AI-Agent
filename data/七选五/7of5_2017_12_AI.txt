@@ -1,0 +1,23 @@
+FILENAME: 7of5_2017_12_AI.txt
+YEAR: 2017
+CAT: （新课标ⅲ）七选五模拟
+TITLE: Establishing a Morning Routine for Interns
+Many people find it hard to wake up early and often blame their alarm clocks. In fact, the key to an easy morning lies in training your body clock. 36 Here is how to create one.
+● 37. In order to make a change, you need to decide why it is important. Do you want to get up in time to review your tasks, get some exercise, or just be better prepared for your day? Once you are clear about your reason, tell your roommates about the change you want to make.
+Rethink mornings. Now that you know why you want to wake up, consider rearranging your morning activities. If you want time to have a calm breakfast, save time the night before by setting out your clothes and bag. 38. That is fifteen minutes more you could be sleeping if you prepared your coffee or breakfast in advance.
+Keep your schedule on weekends. If you are tired by Friday night, sleeping in on Saturday might sound great. But changing your routine on the weekends actually makes you more tired the following week. 39
+Keep a record and check it weekly. Track your efforts and write down how you feel. After you have tried a new method for a week, look at your notes. 40. If not, try a different method.
+[OPTIONS]
+A. Consult a time manager.
+B. Find the right motivation.
+C. A better plan for your routine can help.
+D. And consider using a louder alarm.
+E. If the steps you take are working, keep doing them.
+F. Stick to your set wake-up time, no matter what day it is.
+G. Reconsider the time you spend waiting in line for a morning snack.
+[ANALYSIS]
+36. C The intro says the key is resting/training the body clock. C suggests that a "better plan" is the way to do this.
+37. B The paragraph asks "decide why it's important" and "clear about your reason". B ("Find the right motivation") summarizes this.
+38. G The text mentions saving 15 minutes. G gives a specific example of where that time is wasted (waiting in line).
+39. F The paragraph is about keeping the schedule on weekends. F provides the specific advice: "Stick to your... time, no matter the day."
+40. E The text says "look at your record" and "If not...". E provides the positive alternative: "If the steps... are working, keep it up."

@@ -1,0 +1,34 @@
+FILENAME: Reading_2016_59_AI.txt
+YEAR: 2016
+CAT: （新课标ⅲ）阅读理解 D 模拟
+TITLE: The New Rules of Information Sharing
+Positive news travels. If it inspires, it stays. Negative news might grab attention, but positive news builds connection. Those are the new rules emerging for digital communication. Now that information is being shared and tracked in real-time, researchers are discovering that the old ideas are changing. By studying people’s social media posts and shares, scientists have found that helpful and happy news can spread faster than sad or scary stories.
+“The ‘shocking’ rule works for traditional media,” says Professor Alan Smith, a researcher at the University of Michigan. “They want your clicks and don’t care how you feel afterward. But when you share a post with your community, you care a lot about their response. You don’t want to be seen as a source of constant negativity.”
+Researchers studying word-of-mouth — instant messages, online reviews, and workplace talks — found that these interactions were more likely to be positive than negative. But this didn’t necessarily mean people only liked happy news. Was positive news shared more often just because life is generally good? To test this, Dr. Smith looked at how people shared a specific group of articles from a major news site. He analyzed the “most-shared” list for several months. One of his key findings was that articles about personal growth and new technology were much more likely to be shared than general news. He found that these topics amazed readers and made them want to share that feeling of progress with others.
+Users also tended to share articles that were exciting or helpful, or that caused strong reactions like anger, but rarely articles that were just depressing. They wanted to feel some level of energy, and they preferred positive energy to negative. The more inspiring an article, the more likely it was to be shared.
+[QUESTIONS]
+What do the classic media rules apply to according to the text?
+A. News reports.
+B. Research papers.
+C. Private e-mails.
+D. Office meetings.
+What can we infer about people who share constant negativity?
+A. They are very active.
+B. They are good at writing.
+C. They are inconsiderate of others.
+D. They are very careful.
+Which tended to be shared most according to Dr. Smith’s research?
+A. Crime stories.
+B. Tech and growth articles.
+C. Personal diaries.
+D. Financial data.
+What can be a suitable title for the text?
+A. Sad Stories are Most Popular
+B. Online News is Often Fake
+C. Reading Habits Stay the Same
+D. Positive News Wins on Social Media
+[ANALYSIS]
+32. A. Detail. The text says traditional media rules aim for "clicks," which applies to news reports.
+33. C. Inference. The text says people don't want to be seen this way because they "care a lot about their response," implying those who do it don't care about the social impact.
+34. B. Detail. The text says articles about "personal growth and new technology were much more likely to be shared."
+35. D. Main idea. The text explains why positive/inspiring news is more successful on social networks compared to traditional "shocking" negative news.

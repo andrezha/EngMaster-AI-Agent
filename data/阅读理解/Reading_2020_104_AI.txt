@@ -1,0 +1,33 @@
+FILENAME: Reading_2020_104_AI.txt
+YEAR: 2020
+CAT: （新课标Ⅲ）阅读理解A模拟
+TITLE: Explore Global Heritage with Experts
+Ancient Greece (12 days)
+Travel across the historic lands of Greece with Dr. Helena R. Vance. We will explore some of the most famous ruins in the Mediterranean. Our journey also provides a chance to visit the birthplaces of great philosophers. Blue seas, white-stone villages and local food make this a memorable trip.
+Northern Italy (14 days)
+Italy offers beautiful lakes and the smell of fresh grapes, but it is also a center of historic treasures including sites left by the Romans and Renaissance artists. As we move from Milan with Prof. James Miller to historic Venice and into Florence, we study ancient buildings and art.
+Japan’s Cultural Heart (20 days)
+Discover the Japan of “old times,” its wooden castles, gardens and forest paths with Prof. Kenji Sato. Highlights include Japan’s most famous shrines at Kyoto and Nara’s peaceful temples and traditional crafts. We will walk through quiet mountain villages and finish our trip at a modern gallery in Tokyo.
+Egypt (16 days)
+Join Prof. David Grant on our detailed Egyptian tour. Tour highlights include the Great Pyramid of Giza, the valley of the Kings at Luxor, and the remote temples near Aswan, famous for their giant statues. Our journey takes us to traditional markets and the banks of the Nile.
+[OPTIONS]
+21. What can visitors see in both Ancient Greece and Northern Italy?
+A. Ancient ruins.
+B. Grape fields.
+C. Modern art.
+D. Giant statues.
+Which country is Prof. Sato most knowledgeable about?
+A. Greece.
+B. Italy.
+C. Japan.
+D. Egypt.
+Which of the following highlight the Egyptian tour?
+A. White villages.
+B. Giant statues.
+C. Wooden castles.
+D. Modern galleries.
+[ANALYSIS]
+This is an advertisement for educational travel tours led by scholars.
+21. A. Detail comparison. The first tour mentions "famous ruins" and the second mentions "historic treasures... sites left by the Romans," mirroring the "monuments" logic in the original.
+22. C. Inference. Prof. Sato leads the "Japan's Cultural Heart" tour and explains the shrines and temples there.
+23. B. Detail understanding. The Egypt section highlights "giant statues" near Aswan, mirroring the "underground cities" in the original Tunisia text.

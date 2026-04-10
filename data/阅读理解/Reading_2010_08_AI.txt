@@ -1,0 +1,43 @@
+FILENAME: Reading_2010_08_AI.txt
+YEAR: 2010
+CAT: （新课标Ⅱ）阅读理解模拟
+TITLE: Unique Eco-Camps Around the World
+Sky Canopy Camp
+The Sky Canopy Camp lets you live in a luxury treehouse. Six towers make up this camp that offers over 50 units. If you really want the full experience, book the Eagle Nest which is large enough for a big group. You will be 40 feet up in the air and can travel between the units through their hanging bridges.
+Prices: starting at $250 a night for each person for a standard unit and up to $2000 for the Eagle Nest.
+For more info, visit: http://www.skycanopy.com
+The Arctic Pod
+Every winter in Northern Norway, a special kind of camp called the Arctic Pod is built. Each year, famous artists are invited to design and create ice sculptures, many of which are placed in the pods. You can choose between heated or unheated pods, but staying at least one night in an unheated one is advised for a real adventure.
+Prices: starting at $350 a night for each person for either a heated or unheated pod.
+For more info, visit: http://www.arcticpod.com
+Art-Pod Village
+Art-Pod Village is a very special camp designed by a group of local artists. Every room provides you with the chance to live inside a piece of art. Every piece of furniture in the twenty rooms of the camp has been handmade and each room is unique. You can choose a room based on your own style.
+Prices: starting at just $100 a night, and an additional person for only 20 extra dollars.
+For more info, visit: http://www.artpodvillage.com
+For information about other cool camps in the world, visit: http://www.naturestay.com
+[QUESTIONS]
+54. What is special about the Sky Canopy Camp?
+A. You can live in treehouses.
+B. You can build your own tower.
+C. It is designed only for artists.
+D. Every room has a glass floor.
+For two persons spending a night in one of these camps, they have to pay at least ______.
+A. $120
+B. $200
+C. $500
+D. $700
+Which website should you visit if you want to find out whether there exists a camp under the sea?
+A. http://www.arcticpod.com
+B. http://www.skycanopy.com
+C. http://www.artpodvillage.com
+D. http://www.naturestay.com
+Which camp would invite artists to come to work every year?
+A. Art-Pod Village.
+B. Sky Canopy Camp.
+C. The Arctic Pod.
+D. Nature Stay.
+[ANALYSIS]
+54. A. Detail Understanding. "The Sky Canopy Camp lets you live in a luxury treehouse."
+55. A. Calculation. Art-Pod Village is "$100 a night, and an additional person for only 20 extra dollars." Total for two is $120, which is the lowest among the three.
+56. D. Logical Reasoning. The last link is for "information about other cool camps in the world," which would include unusual ones not listed.
+57. C. Detail Understanding. The Arctic Pod section states: "Each year, famous artists are invited to design and create ice sculptures..."

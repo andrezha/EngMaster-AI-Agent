@@ -1,0 +1,50 @@
+FILENAME: CLOZE_2012_01_AI.txt
+YEAR: 2012
+CAT: 完形填空_01_模拟
+TITLE: The Silent Language of Professional Space
+Professional etiquette is the quiet, hidden and most influential skill of all! It speaks 36 than technical abilities. According to experts, our habits send out more 37 than we realize. In fact, office behavior accounts for about 50% of what we really 38. And spatial awareness is particularly 39 when we work in international teams.
+Indeed, what is called personal space is so 40 a part of our habits that it is actually often unnoticed. And conflicts occur as a result of it. 41, different departments treat the 42 between colleagues differently. Research interns usually do not like having 43 contact even with teammates, and certainly not with 44. Marketing staff, 45, work with each other quite closely.
+Therefore, it is possible that in 46, it may look like a marketer is 47 an engineer all over the office. The marketer, trying to show teamwork, will keep moving 48. The engineer, very probably seeing this as an intrusion, will keep 49 — which the marketer will in return regard as 50.
+Clearly, a great deal is going on when people 51. And only a part of it is in the tasks themselves. And when members are from 52 backgrounds, there is a strong possibility of 53. But whatever the situation, the best 54 is to follow the basic rule: respect others as you would like to be 55.
+[OPTIONS]
+36. A. straighter B. louder C. harder D. further
+37. A. sounds B. invitations C. feelings D. messages
+38. A. hope B. receive C. discover D. mean
+39. A. immediate B. misleading C. important D. difficult
+40. A. well B. far C. much D. long
+41. A. For example B. Thus C. However D. In short
+42. A. trade B. distance C. connection D. greetings
+43. A. eye B. verbal C. physical D. telephone
+44. A. strangers B. relatives C. neighbors D. enemies
+45. A. in other words B. on the other hand C. in a similar way D. by all means
+46. A. trouble B. collaboration C. silence D. experiment
+47. A. disturbing B. helping C. guiding D. following
+48. A. closer B. faster C. in D. away
+49. A. stepping forward B. going on C. backing away D. coming out
+50. A. weakness B. carelessness C. friendliness D. coldness
+51. A. interact B. travel C. laugh D. think
+52. A. different B. European C. Latino D. rich
+53. A. curiosity B. excitement C. misunderstanding D. nervousness
+54. A. chance B. time C. result D. advice
+55. A. noticed B. respected C. helped D. invited
+[ANALYSIS]
+36. B. Idiom: "speaks louder than words".
+37. D. "Messages" refers to non-verbal signals.
+38. D. "Mean" refers to the true intention behind behavior.
+39. C. Spatial awareness is "important" in cross-cultural/departmental settings.
+40. C. "So much a part of us" is a common structure.
+41. A. "For example" introduces the specific case of departments.
+42. B. The context of personal space relates to "distance".
+43. C. "Physical contact" is what the interns avoid.
+44. A. If they avoid teammates, they certainly avoid "strangers".
+45. B. "On the other hand" marks the contrast with interns.
+46. B. "Collaboration" (or conversation) is the context of office interaction.
+47. D. One moving closer and one moving away looks like "following".
+48. A. Moving "closer" is a sign of friendliness in some cultures.
+49. C. "Backing away" is the reaction to an intrusion of space.
+50. D. Moving away is often interpreted as "coldness".
+51. A. "Interact" covers all forms of professional communication.
+52. A. "Different" backgrounds lead to these spatial conflicts.
+53. C. Differences in norms lead to "misunderstanding".
+54. D. The author is giving "advice" via the Golden Rule.
+55. B. "Respected" fits the professional context of the Golden Rule.

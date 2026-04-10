@@ -1,0 +1,51 @@
+FILENAME: CLOZE_2016_02_AI.txt
+YEAR: 2016
+CAT: 完形填空_2016_（新课标ⅱ）_模拟
+TITLE: The Human Connection
+Hundreds of people have formed impressions of you through that small screen on your desk. And they’ve never actually 41 you. Everything they know about you 42 through this device, sometimes from hundreds of miles away. 43 they feel they can know you 44 from the tone of your emails or voice. That’s how powerful the 45 is.
+Powerful, yes, but not always 46. For years I dealt with my IT support technician only by chat. Sam, my faceless helper whom I’d never met 47, solved my complex software issues perfectly. But his short messages really 48 me. I sometimes wished to 49 another technician.
+One morning, I had to 50 an immediate repair for a system crash during a deadline. I ran into the IT office 51. The man sitting at the desk, 52 my stress, quickly stood up. He gave me a 53 smile, listened patiently, and then fixed the 54 immediately. “What a kind person!” I thought.
+Rushing out 55 I called out over my shoulder, “By the way, what’s your name?” “I’m Sam,” he said. I turned around and saw a 56 man with a big smile on his face waving to wish me a good day. I was 57! Why had I thought he was cold? Sam was, well, so 58.
+Sitting back in my office later, I figured it all out. Sam’s 59—his warm smile, his nods, his helpful 60—were all silent signals that didn’t travel through wires.
+[OPTIONS]
+41. A. accepted B. noticed C. heard D. met
+42. A. came B. moved C. ran D. developed
+43. A. Thus B. Yet C. Then D. Indeed
+44. A. rather B. also C. just D. already
+45. A. technology B. voice C. connection D. impression
+46. A. direct B. useful C. easy D. accurate
+47. A. in person B. by myself C. in public D. on purpose
+48. A. annoyed B. interested C. discouraged D. confused
+49. A. promote B. train C. find D. know
+50. A. arrange B. postpone C. confirm D. book
+51. A. for the first time B. at any time C. from time to time D. in good time
+52. A. expecting B. seeing C. testing D. avoiding
+53. A. shy B. comforting C. familiar D. forced
+54. A. bill B. form C. error D. list
+55. A. hopefully B. disappointedly C. gratefully D. regretfully
+56. A. careful B. serious C. nervous D. pleasant
+57. A. amused B. worried C. helpless D. speechless
+58. A. calm B. nice C. proud D. clever
+59. A. forgiveness B. eagerness C. friendliness D. skillfulness
+60. A. explanation B. attitude C. concept D. behavior
+[ANALYSIS]
+41. D. The text discusses people who interact remotely but have never "met" physically.
+42. A. Information "comes" through the device.
+43. B. "Yet" provides the transition: despite the distance, they feel they know you.
+44. C. "Just" emphasizes that a small clue (voice/text) is enough for them to judge.
+45. A. The "technology" or "device" mentioned earlier is the subject.
+46. D. Impressions from technology are not always "accurate" (the main theme).
+47. A. "In person" is the antonym of "faceless" or remote interaction.
+48. A. The narrator was "annoyed" by the perceived coldness of the messages.
+49. C. Because of the annoyance, the narrator wanted to "find" someone else.
+50. A. "Arrange" or "request" a repair.
+51. A. "For the first time" emphasizes the shift from remote to physical meeting.
+52. B. "Seeing" the narrator's madness/stress triggered the technician's response.
+53. B. A "comforting" smile helps calm a stressed person.
+54. C. He fixed the "error" or "issue" (replacing "ticket" in the original).
+55. C. The narrator is "gratefully" leaving after the help.
+56. D. "Pleasant" describes the positive personality revealed in person.
+57. D. "Speechless" reflects the narrator's shock at being so wrong.
+58. B. "Nice" is a simple, direct contrast to "cold."
+59. C. "Friendliness" summarizes the warm traits listed (smile, nods).
+60. B. "Attitude" refers to the overall manner of the person.

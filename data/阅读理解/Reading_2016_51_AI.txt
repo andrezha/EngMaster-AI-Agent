@@ -1,0 +1,34 @@
+FILENAME: Reading_2016_51_AI.txt
+YEAR: 2016
+CAT: （新课标Ⅰ）阅读理解 D 模拟
+TITLE: The Language of Quietness
+The function of silence varies significantly across different social groups. A pause may represent deep thought, or it may simply mean a person has nothing to add. Silence in a meeting might also indicate a lack of confidence, discomfort, or stress. Some groups find silence extremely awkward; as a result, they try to fill every quiet moment with talk. Members of other cultures, however, value silence and see it as a vital tool for understanding another person’s perspective.
+Many Nordic people value silence and consider it a natural part of social interaction, much like certain communities in East Asia do. Therefore, when an individual from one of these backgrounds stops speaking, they may be suggesting that they want the listener to process the information before they continue. In these environments, silence is an invitation to think deeply.
+Other groups may use silence differently, especially when managing disagreements or when there is an imbalance of power. For instance, in some Mediterranean cultures, silence might be used to show that everyone is in agreement with the current plan. Conversely, in some Southeast Asian contexts, silence is often used when a junior member receives instructions from a leader, serving as a way to show respect rather than risking a rude argument. In another context, silence can be a sign of deep respect toward an elder.
+Managers and team leaders need to recognize the various meanings of silence when they observe the behavior of their team members. They should be aware of their own cultural habits regarding quietness so that a colleague's silence is not broken too quickly or allowed to continue for no reason. A leader who understands the productive value of silence can use this knowledge to improve teamwork among people from diverse backgrounds.
+[QUESTIONS]
+What does the author say about silence in conversations?
+A. It implies hidden anger.
+B. It builds fast friendships.
+C. It is culture-specific.
+D. It is based on the topic.
+Which of the following people might regard silence as an invitation to think deeply?
+A. East Asians.
+B. Mediterraneans.
+C. Southeast Asians.
+D. Team leaders.
+What does the author advise managers to do about silence?
+A. Let it continue as long as possible.
+B. Break it immediately during meetings.
+C. Measure the stress levels of staff.
+D. Make use of its productive effects.
+What may be the best title for the text?
+A. Sound and Its Effects
+B. What It Means to Be Silent
+C. Silence in Modern Business
+D. Words Are Silver; Silence Is Gold
+[ANALYSIS]
+32. C. Main Idea. The text opens with "The function of silence varies significantly across different social groups," which means it depends on the specific culture.
+33. A. Detail. The second paragraph groups "East Asia" with those who see silence as an "invitation to think deeply" (process information).
+34. D. Detail/Inference. The final sentence suggests a leader who understands the "productive value of silence" can "improve teamwork."
+35. B. Main Idea. The passage explores the various cultural and social meanings of silence, making B the best fit.

@@ -1,0 +1,51 @@
+FILENAME: CLOZE_2017_01_AI.txt
+YEAR: 2017
+CAT: 完形填空_2017_（新课标Ⅰ）_模拟
+TITLE: A New Way to Connect
+While high school does not generally encourage students to explore new aspects of life, college sets the stage for that exploration. I myself went through this 41 process and found something that has changed my 42 at college for the better: I discovered Braille design.
+I never felt an urge to 43 any tactile language before. My entire family can see perfectly, and so are all my friends. The 44 visual materials were enough in all my interactions. Little did I know that I would discover my 45 for Braille.
+The 46 began during my first week at college. I watched as the Design Club 47 their project of a tactile map. Both the finger movements and the very 48 of communicating without sight 49 me. What I saw was completely unlike anything I had experienced in the 50. This newness just left me 51 more.
+After that, feeling the need to 52 further, I decided to drop in on one of the club’s meetings. I only learned how to 53 the basic patterns that day. Yet instead of being discouraged by my 54 progress, I was excited. I then made it a point to 55 those meetings and learn all I could.
+The following term, I 56 a specialized design class. The instructor focused on non-visual cues and any talking was 57. I soon realized that the silence was not unpleasant. 58, if there had been any talking, it would have 59 us to learn less. Now, I appreciate the silence and the 60 way of communication it opens.
+[OPTIONS]
+41. A. searching B. planning C. natural D. formal
+42. A. progress B. experience C. major D. opinion
+43. A. choose B. read C. learn D. create
+44. A. official B. foreign C. body D. standard
+45. A. love B. concern C. goal D. request
+46. A. meeting B. trip C. story D. task
+47. A. recorded B. performed C. recited D. demonstrated
+48. A. idea B. amount C. dream D. reason
+49. A. disturbed B. supported C. embarrassed D. attracted
+50. A. end B. past C. course D. distance
+51. A. showing B. acting C. saying D. wanting
+52. A. exercise B. explore C. express D. explain
+53. A. print B. write C. decode D. count
+54. A. slow B. steady C. normal D. obvious
+55. A. chair B. sponsor C. attend D. organize
+56. A. missed B. passed C. gave up D. registered for
+57. A. prohibited B. welcomed C. ignored D. repeated
+58. A. Lastly B. Thus C. Instead D. However
+59. A. required B. caused C. allowed D. expected
+60. A. easy B. popular C. quick D. new
+[ANALYSIS]
+41. A. "Searching" or "discovery" process aligns with "explore" and "exploration."
+42. B. The discovery improved the narrator's college "experience."
+43. C. "Learn" is the most natural verb for acquiring a language or skill.
+44. D. "Standard" or "spoken/visual" materials were sufficient before.
+45. A. "Love" or "passion" for the subject.
+46. C. "Story" refers to the narrative of how this interest began.
+47. D. "Demonstrated" or "performed" a project/translation.
+48. A. The "idea" or "concept" of the communication method.
+49. D. The narrator was "attracted" or "fascinated" by the new method.
+50. B. "In the past" is a standard temporal contrast.
+51. D. "Wanting more" indicates a desire to continue learning.
+52. B. "Explore further" matches the introductory theme.
+53. C. "Decode" or "sign" (read/identify) the patterns.
+54. A. Learning only the basics in one day is "slow" progress.
+55. C. "Attend" meetings is the standard colocation.
+56. D. "Registered for" or "enrolled in" a class.
+57. A. In a tactile/silent class, talking is often "prohibited" to force focus.
+58. C. "Instead" (or "Rather") shows that silence was actually beneficial.
+59. B. Talking would have "caused" them to be distracted and learn less.
+60. D. Braille is a "new" or "unique" way of communication for the narrator.

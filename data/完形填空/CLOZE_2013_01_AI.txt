@@ -1,0 +1,50 @@
+FILENAME: CLOZE_2013_01_AI.txt
+YEAR: 2013
+CAT: 完形填空_2013_新课标Ⅰ_模拟
+TITLE: The Resource Awareness Challenge
+I joined a campus event called "Resource Awareness Day," which aimed to make us more 36 the difficulties faced by people living in water-scarce regions. We were required to " 37 a restricted lifestyle" for several hours one Saturday. Some participants 38 chose to carry heavy water buckets. Others wore thick gloves to simulate limited touch or used manual tools instead of machines.
+Just carrying the heavy bucket was a 39 experience. I had never considered before how 40 it would be to move with one. As soon as I picked it up, my 41 made the water splash out. The lid was not 42 . Then I wondered where to put my 43 . It took me quite a while to get the wooden handle into 44 . I took my first uneasy look at what was to be my only means of 45 for several hours. For people in dry areas, "carrying water" is not a temporary 46 .
+I tried to find a 47 position and thought it might be restful, 48 kind of nice to be 49 around by a partner for a while. Looking around, I 50 would have to handle the task myself! My shoulders started to ache as I 51 the heavy handle. I came to know that controlling the 52 of the water was not going to be an 53 task.
+My resource experiment was soon 54 . It made a deep impression on me. A few hours of "scarcity" gave me only a taste of the 55 , both physical and mental, that many people must overcome every day.
+[OPTIONS]
+36. A. curious about B. interested in C. aware of D. careful with
+37. A. cure B. prevent C. adopt D. analyze
+38. A. instead B. strangely C. as usual D. like me
+39. A. learning B. working C. satisfying D. relaxing
+40. A. convenient B. awkward C. boring D. exciting
+41. A. height B. force C. skill D. weight
+42. A. locked B. repaired C. powered D. grasped
+43. A. hands B. feet C. keys D. handles
+44. A. place B. action C. play D. effect
+45. A. operation B. communication C. transportation D. production
+46. A. exploration B. education C. experiment D. entertainment
+47. A. flexible B. safe C. starting D. comfortable
+48. A. yet B. just C. still D. even
+49. A. shown B. pushed C. driven D. guided
+50. A. realized B. suggested C. agreed D. admitted
+51. A. lifted B. turned C. pressed D. seized
+52. A. path B. position C. direction D. way
+53. A. easy B. heavy C. major D. extra
+54. A. forgotten B. repeated C. conducted D. finished
+55. A. weaknesses B. challenges C. anxieties D. illnesses
+[ANALYSIS]
+36. C. The context "make us more... the difficulties" indicates the goal is to gain awareness. "Aware of" matches the logic of the original "Sensitivity Sunday."
+37. C. Participants are asked to "adopt" or take on a specific condition for the simulation.
+38. D. The author chose a specific task (carrying water), similar to the original author choosing a wheelchair. "Like me" links the author to the group.
+39. A. The experience provides new insight, making it a "learning" experience.
+40. B. The physical difficulty of the task is described as "awkward," mirroring the original's description of using a wheelchair.
+41. D. The physical interaction of sitting down (or picking up) is triggered by "weight."
+42. A. The movement or splashing is explained by something not being "locked" or secured.
+43. B. In the original, it was feet on a footrest. Here, the author struggles with where to place their "feet" or "hands" while balancing. "Feet" maintains the 1:1 logic of physical adjustment.
+44. A. "Into place" is a fixed collocation meaning to put something in its correct position.
+45. C. The bucket/wheelchair is the "means of transportation" for the resource/person.
+46. C. For the author, it is a short "experiment," but for others, it is daily life.
+47. D. The author seeks a "comfortable" position to make the task "restful."
+48. D. "Even" provides the necessary logical progression from "restful" to "nice."
+49. B. The author initially hopes to be "pushed" or helped, reflecting a passive expectation.
+50. A. "Realized" marks the sudden shift in understanding that the task must be done alone.
+51. B. "Turned" or "lifted" describes the manual operation of the equipment. "Turned" matches the original's "turned the wheels."
+52. C. Controlling the "direction" or "flow" of a moving object is a key difficulty.
+53. A. The physical pain and weight lead to the conclusion that it is not an "easy" task.
+54. D. The conclusion of the activity is marked by it being "finished."
+55. B. The final takeaway is about the "challenges" (physical and mental) that others face.

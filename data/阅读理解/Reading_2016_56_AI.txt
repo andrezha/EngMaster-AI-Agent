@@ -1,0 +1,35 @@
+FILENAME: Reading_2016_56_AI.txt
+YEAR: 2016
+CAT: （新课标ⅲ）阅读理解 A 模拟
+TITLE: Campus Arts & Performances
+Theater at Arts Hall: 500 College Road. The main season is from October to April, with extra shows in June. The theater offers discounts for "Art Pass" student members. Phone: 555-0123. Web: http://www.campus-theater.edu.
+String Quartet: They perform at the Heritage Room at 1200 West Street. Several concerts are available from February to May. Call 555-0199 for more details. Web: http://www.stringquartet.com.
+University Symphony: At the Grand Hall and the Lakeside Pavilion. For tickets, call 555-0345. The winter season runs November through March at the Grand Hall, and the summer season is at the Lakeside Pavilion. Web: http://www.uni-symphony.org.
+School of Design & Media (SDM): Events are held on the North Campus, usually at the Glass Gallery. SDM hosts various activities, including shows by the famous Miller Design Team, the SDM Digital Orchestra, and groups performing works from the early industrial era to the modern day. Students with campus I.D. cards can attend for free. A monthly schedule is available by calling 555-0888. Web: http://www.sdm.edu/calendar.
+Open Air Concerts: 400 River Road. A large outdoor space with front-row seats under a roof (prices vary). Big name acts perform every summer! Phone: 555-0660. Web: http://www.open-air-music.com.
+[QUESTIONS]
+Which number should you call if you want to see a theater play?
+A. 555-0123.
+B. 555-0199.
+C. 555-0345.
+D. 555-0660.
+When can you go to a concert by the String Quartet?
+A. January.
+B. April.
+C. July.
+D. September.
+Where can students go for free performances with their I.D. cards?
+A. Arts Hall.
+B. Heritage Room.
+C. Glass Gallery.
+D. Lakeside Pavilion.
+How are the Open Air Concerts different from the other places?
+A. They have seats in the open air.
+B. They give shows all year round.
+C. They offer free snacks.
+D. They focus only on classical music.
+[ANALYSIS]
+21. A. Detail. The "Theater at Arts Hall" section gives the phone number 555-0123.
+22. B. Detail. The String Quartet offers concerts from "February to May," so April is the only valid option.
+23. C. Detail. The SDM section states events are "usually at the Glass Gallery" and "Students with campus I.D. cards can attend for free."
+24. A. Inference. The title "Open Air Concerts" and the description "large outdoor space" set it apart from the indoor venues.

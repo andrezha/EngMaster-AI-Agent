@@ -1,0 +1,52 @@
+FILENAME: CLOZE_2019_03_AI.txt
+YEAR: 2019
+CAT: 完形填空_2019_新课标Ⅲ_模拟
+TITLE: Lighting the Underground Study
+The central library of the university is built deep into the ground and does not get natural light in the lower study halls — 41 most of the academic year.
+"Of course, we 42 it when the sun is out," says Leo, who manages the library facilities. "We see the sky is 43 outside, but down in the basement it is much darker — it is like on a 44 day."
+But that 45 when a system of high-tech 46 was installed to reflect sunlight from the roof into the halls below. On Monday, students 47 their very first beam of natural light: A set of reflective panels on the top floor were put to 48. The panels are controlled by a computer that 49 them to move with the sun throughout the 50 and to adjust during cloudy weather. They reflect a bright beam of light into the library's central 51, creating a warm area of about 100 square meters. When the light 52, many students gathered there.
+"People have been 53 there and reading and taking 54 of the new setup," Leo says. "The study area was totally 55. I think nearly everyone in the library wanted a spot." The hundreds of students cannot all 56 the light at once. 57, the new system feels like a great gift for the 58 students.
+"It is not very 59," he says, "but it is enough when we are 60 the space."
+[OPTIONS]
+41. A. only B. obviously C. nearly D. precisely
+42. A. fear B. believe C. hear D. notice
+43. A. empty B. blue C. high D. wide
+44. A. cloudy B. normal C. different D. warm
+45. A. helped B. changed C. happened D. mattered
+46. A. computers B. telescopes C. mirrors D. cameras
+47. A. remembered B. forecasted C. received D. imagined
+48. A. repair B. risk C. rest D. use
+49. A. forbids B. directs C. predicts D. follows
+50. A. day B. night C. month D. year
+51. A. library B. hall C. square D. street
+52. A. appeared B. returned C. faded D. stopped
+53. A. driving B. hiding C. camping D. sitting
+54. A. pictures B. notes C. care D. hold
+55. A. new B. full C. flat D. silent
+56. A. block B. avoid C. enjoy D. store
+57. A. Instead B. However C. Gradually D. Similarly
+58. A. nature-loving B. energy-saving C. weather-beaten D. sun-starved
+59. A. big B. clear C. cold D. easy
+60. A. trying B. waiting C. watching D. sharing
+[ANALYSIS]
+The text describes a library using mirrors to bring sunlight to a basement.
+41. C. "Nearly" the whole year.
+42. D. They "notice" the difference when the sun is out.
+43. B. The sky is "blue".
+44. A. Dark like a "cloudy" day.
+45. B. The situation "changed".
+46. C. "Mirrors" (reflective panels) are used.
+47. C. Students "received" the light.
+48. D. "Put to use" means starting to operate.
+49. B. The computer "directs" the movement.
+50. A. Throughout the "day".
+51. C. The central "hall" (replacing square).
+52. A. When the light "appeared".
+53. D. Students were "sitting" there.
+54. A. Taking "pictures".
+55. B. The area was "full" of people.
+56. C. They "enjoy" the light.
+57. B. "However" provides contrast.
+58. D. "Sun-starved" (or light-starved) students.
+59. A. The area is not very "big".
+60. D. "Sharing" the space.

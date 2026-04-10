@@ -1,0 +1,19 @@
+FILENAME: 语法填空_2014_新课标ⅱ_AI.txt
+YEAR: 2014
+CAT: 语法填空_2014_新课标ⅱ_语法填空模拟
+TITLE: A Kind Act in the Coffee Shop
+One afternoon, I was sitting in a coffee shop, worried about 61 (be) late for my meeting. There were many customers waiting in line, and some of them looked very stressed and 62 (disappoint). When my coffee finally arrived, I found a seat near 63 the door, so I had a clear view of the entrance.
+A girl on a scooter 64 (catch) my attention. She was moving fast past the window and waving a phone. I heard a man behind me shouting to the staff, but the manager was too busy 65 (listen) until the girl ran inside. Still, the girl kept 66 (shout). She was holding the phone high and calling out a name. Finally, when she reached the counter, I heard an emotional conversation. Then the manager turned around and asked, “ 67 anyone leave a phone at the table just now?” A woman in the corner cried, “Oh! It’s 68 (I).” She ran to the girl and took the phone happily. Everyone in the shop began talking about the girl’s honesty, and the group of strangers 69 (sudden) became 70 (friend) to one another.
+[OPTIONS]
+61. being 62. disappointed 63. to 64. caught 65. to listen 66. shouting 67. Did 68. me/mine 69. suddenly 70. friendly
+[ANALYSIS]
+61. being: Tests the gerund form after a preposition ("about").
+62. disappointed: Tests the past participle as an adjective describing a person's state or feeling.
+63. to: Tests the prepositional phrase "near to" or "next to" (mirroring "next to" from the original).
+64. caught: Tests the past tense for a completed action in a narrative.
+65. to listen: Tests the infinitive (mirroring "refused to stop" / "busy to listen"). Note: "too... to..." structure logic.
+66. shouting: Tests the "keep doing" structure indicating continuous action.
+67. Did: Tests the auxiliary verb for an interrogative sentence in the past tense.
+68. me/mine: Tests the personal pronoun (object case) or possessive pronoun in a predicative position.
+69. suddenly: Tests the adverb modifying the verb "became."
+70. friendly: Tests the adjective form. "Become" is a linking verb followed by an adjective.

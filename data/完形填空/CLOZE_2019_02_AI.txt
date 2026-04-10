@@ -1,0 +1,53 @@
+FILENAME: CLOZE_2019_02_AI.txt
+YEAR: 2019
+CAT: 完形填空_2019_新课标Ⅱ_模拟
+TITLE: The Lost Prototype
+It was about 300 miles from the tech hub in San Jose to Mark’s office in Seattle. During the long drive, after a weekend of testing, Mark 41 about the small device he had seen 42 on a bench in a park. He had 43 to reach the item but, worried about its safety, it had 44 from his sight as he was called away.
+Back at work, Mark was troubled by that 45 device. So, three days later, he called his colleague Sarah, and the two drove 46. After a long and careful 47, Sarah saw, near a fountain, the device sitting 48 under a tree. Mark eventually succeeded in reaching the object. His worry was replaced with 49. He checked the screen and saw it was still working.
+A local worker told them the device looked like one 50 as missing in the company newsletter. The notice had a 51 number for a lab in North Oregon. Mark 52 the number of the lead engineers to tell them he had 53 their prototype.
+The engineers had 54 in the park before the product launch with the device, named "Alpha," but a sudden rain had caused them to leave it behind in the rush. They had searched 55 for Alpha in the following days.
+Mark returned to Seattle and then drove to the airport to send Alpha back to the lab. "It is good to know there is still someone who 56 enough to go to that kind of 57," says the lab manager of Mark’s recovery 58.
+"I figured whoever lost the device was probably just as 59 to it as I am to my own projects," says Mark. "If it had been my work, I would hope that somebody would be 60 to go that extra mile."
+[OPTIONS]
+41. A. read B. forgot C. thought D. heard
+42. A. flashing B. trembling C. eating D. sleeping
+43. A. tried B. agreed C. promised D. regretted
+44. A. calmed down B. stood up C. rolled over D. run off
+45. A. injured B. stolen C. lost D. rescued
+46. A. home B. past C. back D. on
+47. A. preparation B. explanation C. test D. search
+48. A. cautiously B. casually C. skillfully D. angrily
+49. A. surprise B. joy C. hesitation D. anxiety
+50. A. predicted B. advertised C. believed D. recorded
+51. A. house B. phone C. street D. car
+52. A. called B. copied C. counted D. remembered
+53. A. fed B. adopted C. found D. cured
+54. A. hunted B. skied C. lived D. worked
+55. A. on purpose B. on time C. in turn D. in vain
+56. A. cares B. sees C. suffers D. learns
+57. A. place B. trouble C. waste D. extreme
+58. A. service B. plan C. effort D. team
+59. A. equal B. allergic C. grateful D. close
+60. A. suitable B. proud C. wise D. willing
+[ANALYSIS]
+The story follows Mark's effort to return a lost prototype.
+41. C. Mark "thought" about the device during his drive.
+42. A. "Flashing" (light) replaces "trembling" (dog) as a characteristic of a tech device.
+43. A. He "tried" to get it.
+44. D. "Run off" (or disappeared) from sight.
+45. C. The device was "lost".
+46. C. They drove "back" to the original location.
+47. D. They conducted a "search".
+48. A. "Cautiously" (or quietly) sitting there.
+49. B. "Joy" replaced his previous worry.
+50. B. The device was "advertised" (listed) as missing.
+51. B. A "phone" number was provided.
+52. A. Mark "called" the number.
+53. C. He "found" the prototype.
+54. D. The engineers had "worked" (or tested) in the park.
+55. D. "In vain" means their initial search was unsuccessful.
+56. A. Someone who "cares" enough.
+57. B. "Go to the trouble" is a common idiom.
+58. C. "Effort" refers to the work Mark put in.
+59. D. "Close to" means being emotionally or professionally attached.
+60. D. "Willing" to help others.

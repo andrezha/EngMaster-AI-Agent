@@ -1,0 +1,20 @@
+FILENAME: 语法填空_2018_新课标ⅲ_AI.txt
+YEAR: 2018
+CAT: 语法填空_2018_新课标ⅲ_语法填空模拟
+TITLE: An Unexpected Encounter on the Trail
+I’m not sure 61 is more surprised, me or the large deer that suddenly appears out of the bushes. I’m walking on a path in the local park. Unexpectedly, I’m face-to-face with the deer, who begins staring at 62 top of her head. That makes her fawn (小鹿) jump, and then a large male appears. He makes the 63 (loud) noise of all. The sound echoes through the trees as the male shakes his head and moves toward me. I quickly lower myself, hiding my gaze to avoid 64 (look) directly into his eyes so he doesn’t feel 65 (challenge).
+My name is David Miller. I’m a 66 (science) who studies local wildlife such as deer and foxes. I was searching 67 these three animals I’d been tracking. No one had seen them for hours, and my team was worried.
+When the deer and I surprised each other, I was just glad to find 68 (they) safe. True to a deer’s peaceful nature, the large animal 69 (mean) me no real harm. He was just saying: “I am the leader here, and this is my space!” Once his point was made, he allowed me 70 (stay) and take notes.
+[OPTIONS]
+61. who 62. the 63. loudest 64. looking 65. challenged 66. scientist 67. for 68. them 69. meant 70. to stay
+[ANALYSIS]
+61. who: Tests the pronoun used in a noun clause acting as the subject.
+62. the: Tests the fixed phrase "at the top of."
+63. loudest: Tests the superlative degree prompted by "of all."
+64. looking: Tests the gerund following the verb "avoid."
+65. challenged: Tests the past participle as a predicative adjective (feeling challenged).
+66. scientist: Tests the noun form for a profession.
+67. for: Tests the fixed collocation "search for."
+68. them: Tests the object pronoun referring to the animals.
+69. meant: Tests the simple past tense in a narrative.
+70. to stay: Tests the "allow sb to do sth" structure.

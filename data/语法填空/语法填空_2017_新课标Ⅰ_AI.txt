@@ -1,0 +1,20 @@
+FILENAME: 语法填空_2017_新课标Ⅰ_AI.txt
+YEAR: 2017
+CAT: 语法填空_2017_新课标Ⅰ_语法填空模拟
+TITLE: The Impact of Digital Screen Time
+There has been a recent trend in the office workplace toward shorter meetings and less screen time. This trend, which was started by health experts 61 a method of reducing eye strain, has had some unintended side 62 (effect) such as lower productivity—the very thing the managers were trying to improve.
+Efficiency and communication are very important parts of a project. They are required 63 (process) the information that we receive, to solve problems and for several other professional 64 functions. When meetings 64 (remove) from the schedule, the team feels as if it is missing something. As 65 result, people will send more emails to try to make up for that something missing. Even 66 (bad), the amount of instant messaging that people use goes up. Instant messaging 67 (be) full of distractions; by 68 (watch) screens more often, people will get more information than they can actually handle.
+Having enough face-to-face time in your workday will reduce the urge to message constantly between tasks and will improve the quality of your work. However, be 69 (care) not to go to extremes. Like anything, it is possible to have too much of both, 70 is not good for the project.
+[OPTIONS]
+61. as 62. effects 63. to process 64. are removed 65. a 66. worse 67. is 68. watching 69. careful 70. which
+[ANALYSIS]
+61. as: Tests the preposition "as" meaning "in the capacity of."
+62. effects: Tests the plural noun after "some."
+63. to process: Tests the infinitive of purpose.
+64. are removed: Tests the passive voice in a conditional/time clause ("When meetings are removed").
+65. a: Tests the fixed expression "as a result."
+66. worse: Tests the comparative degree in the fixed expression "even worse."
+67. is: Tests subject-verb agreement for an uncountable noun ("Instant messaging").
+68. watching: Tests the gerund following the preposition "by."
+69. careful: Tests the adjective following the linking verb "be" in an imperative.
+70. which: Tests the relative pronoun "which" referring back to the whole preceding clause.

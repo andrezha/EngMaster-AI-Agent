@@ -1,0 +1,37 @@
+FILENAME: Reading_2020_101_AI.txt
+YEAR: 2020
+CAT: （新课标Ⅱ）阅读理解B模拟
+TITLE: Soft Skills Development in Campus Volunteering
+While some parents believe expensive coding classes are the only way to prepare children for the future, researchers suggest that simple campus volunteering helps students develop vital interpersonal skills.
+Professor Susan Miller, an expert on social development at State University, found that students who participate in community service between the ages of 12 and 15 later show much better emotional intelligence. Participation in such programs was found to be a key indicator of leadership potential after accounting for differences in family income, school quality and previous academic records, Miller said.
+The research team observed 53 student groups during various extracurricular tasks and found that those involved in volunteering for 20 to 40 hours during early middle school performed significantly better in team cooperation when tested two years later.
+“The students who engaged in volunteering activities showed a higher ability to manage conflicts and understand others’ perspectives compared to those who did not,” Miller stated.
+The study asked teachers to let students interact naturally. About half of the students chose to volunteer at some point. It was noted that students from higher-income families tended to participate in service more often. While both boys and girls benefited from the experience, boys often took on more complex logistical tasks, and their mentors provided more technical feedback and were more involved in the process than they were with female students.
+The study was recently shared in the Journal of Educational Psychology.
+[OPTIONS]
+24. In which aspect do students benefit from volunteering?
+A. Academic ranking.
+B. Developing interpersonal skills.
+C. Financial management.
+D. High-tech coding ability.
+What did Miller take into consideration when designing her study?
+A. Students’ age.
+B. School environment.
+C. Family income.
+D. Teacher-student relationship.
+How do boys differ from girls in volunteering?
+A. They spend more time on it.
+B. They are less communicative in teams.
+C. They prefer to work independently.
+D. They are likely to handle tougher tasks.
+What is the text mainly about?
+A. A school policy.
+B. A scientific study.
+C. A famous educator.
+D. A social experiment.
+[ANALYSIS]
+The text discusses a scientific study regarding the benefits of campus volunteering for teenagers.
+24. B. Detail understanding. According to paragraph 2, volunteering helps students develop better "emotional intelligence" and "interpersonal skills" (mirroring "spatial skills" in the original).
+25. C. Detail understanding. Paragraph 2 mentions "accounting for differences in family income..." which matches the original's control variables.
+26. D. Detail understanding. Paragraph 5 states "boys often took on more complex logistical tasks," mirroring the original's "more complex puzzles."
+27. B. Main idea. The passage introduces the background, methodology, and findings of a research project conducted by Susan Miller.

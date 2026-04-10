@@ -1,0 +1,34 @@
+FILENAME: Reading_2011_16_AI.txt
+YEAR: 2011
+CAT: （新课标）阅读理解模拟
+TITLE: The History of Public Notices
+The term "public notice" refers to any official announcement that brings information to the attention of the community. Throughout history, notices have been an effective way to share news and rules. In the Middle Ages, leaders used "heralds" to announce messages orally in town squares to inform the public. When printing was developed in the fifteenth century, notice sheets could be produced easily and were either posted on church doors or placed in town halls.
+By the end of the seventeenth century, when journals were beginning to be read by more people, printed notices became an important way to share community updates. The City Journal was the first to set aside a section just for public announcements. This was so successful that by the end of the century, several offices started dedicated systems for making official notices for the public.
+Notices spread quickly throughout the eighteenth century. Writers were starting to pay more attention to the decorative style of the text. Everything, from health rules to event dates, was shared with clear methods such as bold lettering, organized patterns, and the use of simple drawings and phrases easy to understand.
+Near the end of the nineteenth century, organizations that were focused on the distribution of information came to be known as "information bureaus." The bureaus developed new ways to make people feel like informed citizens. Throughout the twentieth century, these bureaus promoted public awareness as a way of life, spreading the belief that a society could be healthy only if people were well-informed.
+[QUESTIONS]
+60. What were public notices like in the Middle Ages?
+A. Leaders were hired to print news.
+B. Messages were spoken aloud in public.
+C. Information was hidden in secret books.
+D. Signs were only found in private houses.
+What does the word “This” in Paragraph 2 refer to?
+A. Sharing notices in journals.
+B. Including photos in reports.
+C. Selling goods in markets.
+D. Working with secret bureaus.
+The 18th century public notice was special in its ______.
+A. high cost of production
+B. use of digital screens
+C. international organizations
+D. clear and decorative styles
+Which of the following might be the best title for the text?
+A. The Journey of Public Information
+B. The Value of Modern Printing
+C. The Role of Newspaper Sales
+D. The Development of Secret Societies
+[ANALYSIS]
+60. B. Detail Understanding. "In the Middle Ages, leaders used 'heralds' to announce messages orally in town squares."
+61. A. Vocabulary. "This" refers to the success of setting aside a journal section for advertising/notices mentioned in the previous sentence.
+62. D. Detail Understanding. The text mentions writers paid attention to "decorative style" and "organized patterns."
+63. A. Main Idea. The text traces the evolution of public notices/information from oral heralds to modern bureaus.

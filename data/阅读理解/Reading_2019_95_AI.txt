@@ -1,0 +1,36 @@
+FILENAME: Reading_2019_95_AI.txt
+YEAR: 2019
+CAT: （新课标Ⅲ）阅读理解模拟
+TITLE: Problem-Solving in Crows
+Crows seem to have a talent for logic.
+A team of scientists trained four crows to link 20 different shapes with various amounts of food as a reward. The researchers then tested how the birds combined these shapes to get the best reward.
+A scientist named Dr. Helen Miller described the experiment: The crows were placed in a space with a touch-sensitive panel. On one side, a shape would appear, and on the other, two shapes were shown together. For example, a square might appear on the left, while a triangle and a star were on the right. If the crows picked the left side, they would get five pieces of food; if they chose the right side, they would get the total amount of both shapes—ten in this case.
+After many tests, the scientists noticed that the crows chose the higher value more than half the time. This showed they were doing a basic calculation, not just remembering each shape.
+When the team looked at the data more closely, they saw that the crows sometimes underestimated a total when the two choices were close. For instance, they might pick a single shape representing 12 instead of two shapes that added up to 13. This happened regularly: when adding two values, the crows always focused on the larger one and only added a bit of the smaller one to it.
+“This shows that quantity is handled in a specific way in their minds,” Dr. Miller says. “But in this test, they are clearly focusing more on the bigger value than the smaller one.”
+[QUESTIONS]
+What did the researchers do to the crows before testing them?
+A. They fed them more.
+B. They gave them names.
+C. They trained them.
+D. They measured them.
+How did the crows get their reward?
+A. By flying in a circle.
+B. By touching a panel.
+C. By making a sound.
+D. By moving a shape.
+What did the team find about the crows?
+A. They could perform basic addition.
+B. They could understand human words.
+C. They could remember shapes easily.
+D. They could focus for a long time.
+In which section of a newspaper would this text appear?
+A. Entertainment.
+B. Health.
+C. Education.
+D. Science.
+[ANALYSIS]
+32. C. Detail. The text states "A team of scientists trained four crows..."
+33. B. Detail. The birds picked sides using a "touch-sensitive panel."
+34. A. Inference. Choosing the higher value by adding symbols shows they could perform "a basic calculation."
+35. D. Inference. The text reports on a biological and cognitive study by scientists.

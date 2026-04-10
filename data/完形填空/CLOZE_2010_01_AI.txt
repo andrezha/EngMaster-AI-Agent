@@ -1,0 +1,49 @@
+FILENAME: CLOZE_2010_01_AI.txt
+YEAR: 2010
+CAT: 完形填空_01_模拟
+TITLE: The Unseen Bond of Mentorship
+It was a busy morning, about 8:30, when an elderly man in his 80s arrived at the community center. I heard him telling the staff that he was in a hurry for an appointment at 9:30.
+The assistant had him take a 36 in the waiting area, 37 him it would be at least 40 minutes 38 someone would be able to assist him. I saw him 39 his watch and decided, since I was 40 busy — my mentee didn’t 41 at the scheduled hour, I would help him with his paperwork. While assisting him, I asked if he had another important meeting.
+The gentleman said no and told me that he 42 to go to the care home to have breakfast with his 43. He told me that she had been 44 for a while and that she had a serious memory illness. I asked if she would be 45 if he was a bit late. He replied that she 46 knew who he was, that she had not been able to 47 him for five years now. I was 48, and asked him, “And you 49 go every morning, even though she doesn’t know who you are?”
+He smiled and said, “She doesn’t know me, but I know who she is.” I had to hold back 50 as he left.
+Now I 51 that in long relationships, true devotion is 52 of all that is. The happiest people don’t 53 have the best of everything; they just 54 the best of everything they have. Life isn’t about how to survive the storm, but how to dance in the rain.
+[OPTIONS]
+36. A. breath B. test C. seat D. break
+37. A. persuading B. promising C. understanding D. telling
+38. A. if B. before C. since D. after
+39. A. taking off B. fixing C. looking at D. winding
+40. A. very B. also C. seldom D. not
+41. A. show up B. show off C. come on D. go away
+42. A. needed B. forgot C. agreed D. happened
+43. A. daughter B. wife C. mother D. sister
+44. A. late B. well C. around D. there
+45. A. lonely B. worried C. doubtful D. hungry
+46. A. so far B. neither C. no longer D. already
+47. A. recognize B. answer C. believe D. expect
+48. A. moved B. disappointed C. surprised D. satisfied
+49. A. only B. then C. thus D. still
+50. A. curiosity B. tears C. words D. judgment
+51. A. realize B. suggest C. hope D. prove
+52. A. agreement B. expression C. acceptance D. exhibition
+53. A. necessarily B. completely C. naturally D. frequently
+54. A. learn B. make C. favor D. try
+[ANALYSIS]
+36. C. Contextual clue: "waiting area". One takes a seat while waiting.
+37. D. The assistant is providing information about the wait time, so "telling" is the most direct fit.
+38. B. Time conjunction: "it would be [time] before [event]". It marks the duration until the action occurs.
+39. C. The man is in a hurry, so he naturally checks or "looks at" his watch.
+40. D. Logic: The narrator decides to help because they are "not" busy, as explained by the mentee's absence.
+41. A. Phrasal verb: "show up" means to arrive as expected.
+42. A. The man feels a sense of duty or requirement to be with his wife, hence "needed".
+43. B. The later mention of "marriages" and "true love" confirms the person is his wife.
+44. D. "There" refers to the care home mentioned previously.
+45. B. If someone is waiting for a person who is late, they usually become "worried".
+46. C. The context of memory illness implies she "no longer" knows his identity.
+47. A. "Recognize" is the specific verb used for identifying someone known from the past.
+48. C. The narrator is shocked that the man visits daily despite not being recognized, hence "surprised".
+49. D. "Still" emphasizes the continuation of the action despite the difficult circumstances.
+50. B. The emotional impact of the man's devotion makes the narrator want to cry ("hold back tears").
+51. A. The narrator reaches a new understanding or "realizes" a truth about life.
+52. C. "Acceptance" refers to embracing the situation as it is, which is the core of the man's actions.
+53. A. "Not necessarily" is a common adverbial phrase meaning it is not always the case.
+54. B. Idiom: "make the best of" means to use what you have in the most positive way.

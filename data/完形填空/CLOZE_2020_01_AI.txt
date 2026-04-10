@@ -1,0 +1,50 @@
+FILENAME: CLOZE_2020_01_AI.txt
+YEAR: 2020
+CAT: 完形填空_2020_新课标Ⅰ_模拟
+TITLE: The "Practice" Project
+Since our interns began their training, my manager and I have kept telling them that this complex project is just a practice task. The 41 is obvious. If we 42 it is a real client project, they will want to ask for help 43. It will make the office chaotic. The interns apparently know the 44. But our insisting it is 45 a training exercise has kept them from 46 constant requests for guidance.
+I hate lying to the team. One day they will 47 and discover that everything they have known about this task is a 48. I wonder if 49 should always tell the truth no matter the 50. I have a very strong 51 that the lie we are telling is doing 52 damage to their confidence. Tasks and projects have 53 metaphorical meanings. I am telling them they cannot treat seriously what they know is a real challenge. What if later in their 54 they come to a metaphorical project, like a major career opportunity, and 55 taking the lead, they just 56 it and wonder, "What if it is not a real chance?" That is, "What if it is not a 57 opportunity?"
+Maybe it is an unreasonable fear. But the 58 is that I should not lie to my team. I should just 59 repeatedly having to say, "No, you must solve this yourselves." Then when they come to other challenges in work, be they real or metaphorical, they will not 60 to take them on.
+[OPTIONS]
+41. A. relief B. target C. reason D. case
+42. A. admit B. believe C. mean D. realize
+43. A. gradually B. constantly C. temporarily D. casually
+44. A. result B. danger C. method D. truth
+45. A. merely B. slightly C. hardly D. partly
+46. A. reviewing B. approving C. receiving D. attempting
+47. A. win out B. give up C. wake up D. stand out
+48. A. dream B. lie C. fantasy D. fact
+49. A. parents B. leaders C. colleagues D. teachers
+50. A. restrictions B. explanations C. differences D. consequences
+51. A. demand B. fear C. desire D. doubt
+52. A. physical B. biological C. spiritual D. behavioral
+53. A. traditional B. important C. double D. original
+54. A. life B. time C. reply D. history
+55. A. by comparison with B. in addition to C. regardless of D. instead of
+56. A. get hold of B. stare at C. knock on D. make use of
+57. A. real B. typical C. similar D. limited
+58. A. safety rule B. comfort zone C. bottom line D. top secret
+59. A. delay B. regret C. enjoy D. accept
+60. A. hurry B. decide C. hesitate D. intend
+[ANALYSIS]
+The passage explores the ethics of a manager lying to interns to reduce their pressure.
+41. C. The "reason" for the lie.
+42. A. "Admit" it's a real project.
+43. B. They would "constantly" ask for help.
+44. D. They know the "truth".
+45. A. "Merely" a training exercise.
+46. D. "Attempting" requests.
+47. C. "Wake up" to the reality.
+48. B. It was a "lie".
+49. B. "Leaders" (replacing parents).
+50. D. Regardless of the "consequences".
+51. B. A strong "fear".
+52. C. "Spiritual" (mental/professional) damage.
+53. B. "Important" meanings.
+54. A. In their "life" (or career).
+55. D. "Instead of" taking the lead.
+56. B. "Stare at" it (hesitate).
+57. A. A "real" opportunity.
+58. C. The "bottom line" (moral limit).
+59. D. "Accept" the difficulty of saying no.
+60. C. They won't "hesitate" to act.

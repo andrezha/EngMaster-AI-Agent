@@ -1,0 +1,26 @@
+FILENAME: 语法填空_2015_新课标ⅱ_AI.txt
+YEAR: 2015
+CAT: 语法填空_2015_新课标ⅱ_语法填空模拟
+TITLE: Smart Sustainable Architecture
+The glass towers 61 (design) by the modern architects of the city are admired by even 62 most traditional of builders. In addition to their visual beauty, what makes these structures admirable is their 63 (able) to save energy without 64 (use) expensive fuel.
+Walls made of special glass take in the sunlight on cold days and give out that warmth 65 (slow) during the night, thus heating the room. When a new day begins, the surfaces have released their heat and are now cool enough 66 (lower) the temperature during the hot afternoon; 67 the same time, they store energy again for the evening. This process 68 (go) on year after year. The walls adjust to the light. During the day, they protect the interior and at night they provide warmth, acting as a perfect balance for the outdoor climate. As 69 (nature) thinkers, these architects figured out exactly 70 how thick the glass layers needed to be to make the system work.
+[OPTIONS]
+61. designed 62. the 63. ability 64. using 65. slowly 66. to lower 67. at 68. goes 69. natural 70. how
+[ANALYSIS]
+61. designed: Tests the past participle as a post-modifier (passive relationship with "towers").
+62. the: Tests the definite article before a superlative adjective.
+63. ability: Tests the noun form derived from the adjective "able."
+64. using: Tests the gerund form after the preposition "without."
+65. slowly: Tests the adverbial form modifying the verb "give out."
+66. to lower: Tests the "adj. + enough + to do" structure.
+67. at: Tests the fixed prepositional phrase "at the same time."
+68. goes: Tests the simple present tense and subject-verb agreement (third-person singular).
+69. natural: Tests the adjective form modifying the noun "thinkers."
+70. how: Tests the interrogative adverb used to introduce a noun clause (how thick...).
+
+
+Model 12:35 PM
+ThinkingThoughts
+Expand to view model thoughts
+
+chevron_right

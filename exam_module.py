@@ -386,6 +386,7 @@ class ExamManager:
         
         if success:
             # 更新导航高亮
+            print(f"DEBUG: Data for UI rendering: {json.dumps(self.current_q, ensure_ascii=False, indent=2)}")
             self.update_nav_highlight()
             # 渲染界面
             self.render_passage()
@@ -427,6 +428,7 @@ class ExamManager:
         
         if success:
             # 渲染界面
+            print(f"DEBUG: Data for UI rendering: {json.dumps(self.current_q, ensure_ascii=False, indent=2)}")
             self.render_passage()
             self.render_question_ui()
             print("🏁 [load_and_render] 渲染流程全部执行完毕")
@@ -475,6 +477,13 @@ class ExamManager:
         if "新课标" in normalized_cat:
             normalized_cat = "全国新课标Ⅰ卷"
 
+        # 🎯 根据CAT字段判断显示"真题"或"模拟"
+        category_raw = self.current_q.get('category', '').strip()
+        if "模拟" in category_raw:
+            exam_type = "模拟"
+        else:
+            exam_type = "真题"
+
         # 处理正文
         raw_passage = self.current_q.get('passage', '文章加载失败')
         raw_passage = raw_passage.replace('[PASSAGE]', '').replace('[QUESTIONS]', '')
@@ -508,7 +517,7 @@ class ExamManager:
 
                 p_text_lines.append(line)
 
-            top_tag = f"[{year}] {normalized_cat} 真题"
+            top_tag = f"[{year}] {normalized_cat} {exam_type}"
             letter_str = f"【阅读理解 {passage_letter} 篇】" if passage_letter else "【阅读理解】"
             main_title_html = f"<h3 style='text-align: center; color: #34495e;'>{main_title}</h3>" if main_title else ""
         else:
@@ -516,11 +525,21 @@ class ExamManager:
             for line in p_lines:
                 if line.strip():
                     p_text_lines.append(line)
-            top_tag = f"[{year}] {normalized_cat} 真题"
+            top_tag = f"[{year}] {normalized_cat} {exam_type}"
             letter_str = f"【{self.current_type}】"
             main_title_html = ""
 
         p_text = '\n'.join(p_text_lines).strip()
+        
+        # 🎯 如果是七选五且文章内容为空，显示提示
+        if self.current_type == "七选五" and not p_text:
+            # 对于七选五题型，'passage' 字段应包含带有空白的主体文章。
+            # 如果此处为空，则表明解析器或输入文件格式存在问题。
+            p_text = "<div style='color:#e74c3c; text-align:center; padding:20px; border:1px dashed #e74c3c; border-radius:8px; margin:20px 0;'>" \
+                     "⚠️ **七选五文章主体内容缺失**<br>" \
+                     "请检查 `parsers/reading_parser.py` 是否正确提取了 `[PASSAGE]` 部分，<br>" \
+                     "或确保 `七选五` 题型的 TXT 文件中包含文章主体内容。" \
+                     "</div>"
         
         # 🎯 清理HTML标签残留，保持原始格式
         import re
@@ -612,6 +631,9 @@ class ExamManager:
         question_type = self.current_q.get('question_type', 'reading') if self.current_q else 'reading'
         
         print(f"🎨 [Render] 当前题型: {question_type}")
+        print(f"📊 [Render] 题目数量: {len(items)}")
+        if items:
+            print(f"📋 [Render] 第一题数据: q_id={items[0].get('q_id')}, options_count={len(items[0].get('options', []))}")
         
         # 条件渲染：根据题型只创建对应的 UI 组件
         if question_type == "seven_five":
@@ -781,13 +803,18 @@ class ExamManager:
 
     def _render_seven_five_ui(self, layout, items):
         """渲染七选五题目UI（A-G选项列表）- 样式与阅读理解一致"""
+        print(f"🔍 [七选五UI] 开始渲染，items数量: {len(items)}")
+        
         if not items:
+            print("⚠️ [七选五UI] items为空，直接返回")
             return
 
         # 获取选项列表（所有题目共享同一组选项）
         options_list = items[0].get('options', [])
+        print(f"🔍 [七选五UI] options_list数量: {len(options_list)}")
 
         if not options_list:
+            print("⚠️ [七选五UI] options_list为空，显示错误提示")
             no_opt_label = QLabel("<i style='color:#e74c3c;'>⚠️ 选项数据缺失，请检查TXT文件格式</i>")
             no_opt_label.setWordWrap(True)
             layout.addWidget(no_opt_label)
@@ -807,6 +834,7 @@ class ExamManager:
         """)
         options_title.setWordWrap(True)
         layout.addWidget(options_title)
+        print("✅ [七选五UI] 已添加选项标题")
 
         # 🎯 选项显示区域
         options_widget = QWidget()
@@ -846,14 +874,17 @@ class ExamManager:
             options_layout.addWidget(opt_label)
 
         layout.addWidget(options_widget)
+        print("✅ [七选五UI] 已添加选项列表")
 
         # 分隔线
         separator = QLabel("<hr style='border: none; border-top: 1px solid #e5e7eb; margin: 8px 0;'>")
         layout.addWidget(separator)
+        print("✅ [七选五UI] 已添加分隔线")
 
         # 为每个空白处创建选择器
-        for item in items:
+        for idx, item in enumerate(items):
             qid = item.get('q_id', '')
+            print(f"🔍 [七选五UI] 渲染第{idx+1}题，qid={qid}")
             
             # 显示题干
             q_label = QLabel(f"<b>{qid}.</b> 请选择答案")
@@ -916,6 +947,7 @@ class ExamManager:
             layout.addWidget(sep)
 
         layout.addStretch()
+        print("✅ [七选五UI] 渲染完成")
 
     def on_choice_click(self, qid, choice, btn):
         """记录用户选择（阅读理解）并取消同题其他按钮 - 旧版兼容"""
@@ -1220,7 +1252,7 @@ class ExamManager:
         return False
 
     def check_score(self):
-        """判分与展示解析"""
+        """判分与展示解析 - 使用 PyQt5 原生方式实现分析按钮"""
         if not self.current_q:
             return
 
@@ -1234,91 +1266,363 @@ class ExamManager:
             )
             return
 
-        res_details = ""
-        question_type = self.current_q.get('question_type', 'reading')
+        # 🎯 解析分割（提前准备）
+        analysis = self.current_q.get('original_analysis', '').strip()
+        analysis_by_q = {}
+        if analysis:
+            parts = re.split(r'(?:^|\n)\s*(【\d+题详解】|\d+[．.])', analysis)
+            current_q_num = ""
+            for i, part in enumerate(parts):
+                part = part.strip()
+                if not part:
+                    continue
+                if re.match(r'【\d+题详解】', part) or re.match(r'\d+[．.]', part):
+                    q_match = re.search(r'(\d+)', part)
+                    if q_match:
+                        current_q_num = q_match.group(1)
+                elif current_q_num and part:
+                    clean_content = re.sub(r'<[^>]+>', '', part)
+                    analysis_by_q[current_q_num] = clean_content
+            
+            # 如果没有找到分割的题号，尝试另一种格式
+            if not analysis_by_q:
+                pattern = re.findall(r'(\d+)[．.]\s*(.*?)(?=\d+[．.]|$)', analysis, re.DOTALL)
+                for q_num, content in pattern:
+                    if content.strip():
+                        clean_content = re.sub(r'<[^>]+>', '', content.strip())
+                        analysis_by_q[q_num] = clean_content
 
-        # 🎯 语法填空特殊处理：从输入框获取答案
+        # 🎯 保存解析数据，供按钮点击时使用
+        self._analysis_by_q = analysis_by_q
+        self._shown_analysis_qids = set()
+
+        # 🎯 使用 QWidget 布局代替 HTML，实现可点击的分析按钮
+        result_widget = QWidget()
+        result_main_layout = QVBoxLayout(result_widget)
+        result_main_layout.setSpacing(0)
+        result_main_layout.setContentsMargins(0, 0, 0, 0)
+        
+        # 得分标题区域（固定高度，不会被压缩）
+        score_widget = QWidget()
+        score_layout = QVBoxLayout(score_widget)
+        score_layout.setContentsMargins(10, 10, 10, 10)
+        score_layout.setSpacing(5)
+        
+        score_label = QLabel(f"<h3 style='color:#2c3e50; margin:0;'>得分：{correct_count}/{total} ({correct_count/total*100:.1f}%)</h3>")
+        score_layout.addWidget(score_label)
+        
+        # 分隔线
+        line = QLabel("<hr style='border: none; border-top: 2px solid #e5e7eb; margin: 0;'>")
+        score_layout.addWidget(line)
+        
+        result_main_layout.addWidget(score_widget)
+        
+        # 题目结果区域（可滚动，使用独立容器）
+        result_scroll = QWidget()
+        result_layout = QVBoxLayout(result_scroll)
+        result_layout.setSpacing(8)
+        result_layout.setContentsMargins(10, 5, 10, 10)
+
+        question_type = self.current_q.get('question_type', 'reading')
+        
+        # 🎯 语法填空特殊处理
         if question_type == "grammar":
             for item in items:
                 qid = item.get('q_id', '')
                 correct_answer = item.get('answer', '').strip().lower()
                 
-                # 从输入框获取用户答案
                 user_ans = "未做"
                 if hasattr(self, 'grammar_input_fields') and qid in self.grammar_input_fields:
                     input_widget = self.grammar_input_fields[qid]
                     if input_widget:
                         user_ans = input_widget.text().strip().lower()
                 
+                # 创建题目结果容器
+                item_widget = QWidget()
+                item_layout = QHBoxLayout(item_widget)
+                item_layout.setContentsMargins(8, 8, 8, 8)
+                item_layout.setAlignment(Qt.AlignLeft | Qt.AlignTop)
+                
+                # 题目信息标签
                 if not correct_answer:
-                    res_details += (
-                        f"<p>第{qid}题：你的答案 <b>{user_ans}</b> | "
-                        f"正确答案 <b style='color:#e67e22;'>未知 (题库未录入)</b></p>"
-                    )
+                    info_text = f"第{qid}题：你的答案 <b>{user_ans}</b> | 正确答案 <b style='color:#e67e22;'>未知 (题库未录入)</b>"
                 else:
-                    # 语法填空支持多种答案格式（如 "a/the" 表示 a 或 the 都可以）
                     is_correct = self._check_grammar_answer(user_ans, correct_answer)
                     color = "#27ae60" if is_correct else "#e74c3c"
                     if is_correct:
                         correct_count += 1
-                    res_details += (
-                        f"<p>第{qid}题：你的答案 <b>{user_ans}</b> | "
-                        f"正确答案 <b style='color:{color};'>{correct_answer}</b></p>"
-                    )
+                    info_text = f"第{qid}题：你的答案 <b>{user_ans}</b> | 正确答案 <b style='color:{color};'>{correct_answer}</b>"
+                
+                info_label = QLabel(info_text)
+                info_label.setWordWrap(True)
+                info_label.setTextFormat(Qt.RichText)
+                item_layout.addWidget(info_label, 1)
+                
+                # 🎯 添加分析按钮（PyQt5 原生按钮）
+                has_analysis = qid in analysis_by_q
+                if has_analysis:
+                    analysis_btn = QPushButton("📖 查看解析")
+                    analysis_btn.setFixedHeight(32)
+                    analysis_btn.setStyleSheet("""
+                        QPushButton {
+                            background: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+                                stop:0 #3498db, stop:1 #2980b9);
+                            color: white;
+                            border: none;
+                            border-radius: 6px;
+                            padding: 4px 14px;
+                            font-size: 13px;
+                            font-weight: bold;
+                        }
+                        QPushButton:hover {
+                            background: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+                                stop:0 #2980b9, stop:1 #2471a3);
+                        }
+                        QPushButton:pressed {
+                            background: #2471a3;
+                        }
+                    """)
+                    # 🎯 绑定点击事件
+                    analysis_btn.clicked.connect(lambda checked, q=qid: self._on_analysis_button_click(q))
+                    item_layout.addWidget(analysis_btn)
+                
+                result_layout.addWidget(item_widget)
         else:
-            # 其他题型（阅读理解、七选五、完形填空）使用选择题判分
-            for item in items:
-                qid = item.get('q_id', '')
-                ans = item.get('answer', '').strip().upper()
-                user_ans = self.user_selections.get(qid, "未做")
+            # 其他题型
+            if question_type == "cloze":
+                # 🎯 完形填空：两列布局
+                cols_layout = QHBoxLayout()
+                col1_layout = QVBoxLayout()
+                col2_layout = QVBoxLayout()
+                
+                col1_layout.setSpacing(8)
+                col2_layout.setSpacing(8)
+                col1_layout.setContentsMargins(0, 0, 10, 0)
+                col2_layout.setContentsMargins(10, 0, 0, 0)
+                
+                for idx, item in enumerate(items):
+                    qid = item.get('q_id', '')
+                    ans = item.get('answer', '').strip().upper()
+                    user_ans = self.user_selections.get(qid, "未做")
 
-                if not ans:
-                    res_details += (
-                        f"<p>第{qid}题：你的选择 <b>{user_ans}</b> | "
-                        f"正确答案 <b style='color:#e67e22;'>未知 (题库未录入)</b></p>"
-                    )
-                else:
-                    color = "#27ae60" if user_ans == ans else "#e74c3c"
-                    if user_ans == ans:
-                        correct_count += 1
-                    res_details += (
-                        f"<p>第{qid}题：你的选择 <b>{user_ans}</b> | "
-                        f"正确答案 <b style='color:{color};'>{ans}</b></p>"
-                    )
+                    # 创建题目结果容器
+                    item_widget = QWidget()
+                    item_layout = QHBoxLayout(item_widget)
+                    item_layout.setContentsMargins(8, 8, 8, 8)
+                    item_layout.setAlignment(Qt.AlignLeft | Qt.AlignTop)
+                    
+                    if not ans:
+                        info_text = f"第{qid}题：你的选择 <b>{user_ans}</b> | 正确答案 <b style='color:#e67e22;'>未知 (题库未录入)</b>"
+                    else:
+                        color = "#27ae60" if user_ans == ans else "#e74c3c"
+                        if user_ans == ans:
+                            correct_count += 1
+                        info_text = f"第{qid}题：你的选择 <b>{user_ans}</b> | 正确答案 <b style='color:{color};'>{ans}</b>"
+                    
+                    info_label = QLabel(info_text)
+                    info_label.setWordWrap(True)
+                    info_label.setTextFormat(Qt.RichText)
+                    item_layout.addWidget(info_label, 1)
+                    
+                    # 🎯 添加分析按钮（PyQt5 原生按钮）
+                    has_analysis = qid in analysis_by_q
+                    if has_analysis:
+                        analysis_btn = QPushButton("📖 查看解析")
+                        analysis_btn.setFixedHeight(32)
+                        analysis_btn.setStyleSheet("""
+                            QPushButton {
+                                background: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+                                    stop:0 #3498db, stop:1 #2980b9);
+                                color: white;
+                                border: none;
+                                border-radius: 6px;
+                                padding: 4px 14px;
+                                font-size: 13px;
+                                font-weight: bold;
+                            }
+                            QPushButton:hover {
+                                background: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+                                    stop:0 #2980b9, stop:1 #2471a3);
+                            }
+                            QPushButton:pressed {
+                                background: #2471a3;
+                            }
+                        """)
+                        # 🎯 绑定点击事件
+                        analysis_btn.clicked.connect(lambda checked, q=qid: self._on_analysis_button_click(q))
+                        item_layout.addWidget(analysis_btn)
+                    
+                    # 🎯 左右交替排序：索引0,2,4...在左列，索引1,3,5...在右列
+                    if idx % 2 == 0:
+                        col1_layout.addWidget(item_widget)
+                    else:
+                        col2_layout.addWidget(item_widget)
+                
+                cols_layout.addLayout(col1_layout)
+                cols_layout.addLayout(col2_layout)
+                result_layout.addLayout(cols_layout)
+            else:
+                # 其他题型保持原有一列布局
+                for item in items:
+                    qid = item.get('q_id', '')
+                    ans = item.get('answer', '').strip().upper()
+                    user_ans = self.user_selections.get(qid, "未做")
 
-        # 1. 渲染左侧结果
-        score_html = (
-            f"<h3 style='color:#2c3e50;'>得分：{correct_count}/{total} "
-            f"({correct_count/total*100:.1f}%)</h3>"
-            f"<hr>"
-            f"{res_details}"
-        )
-        self.ui.gk_result_panel.setHtml(
-            f"<div style='padding:10px; font-size:14px; line-height:1.6;'>{score_html}</div>"
-        )
+                    # 创建题目结果容器
+                    item_widget = QWidget()
+                    item_layout = QHBoxLayout(item_widget)
+                    item_layout.setContentsMargins(8, 8, 8, 8)
+                    item_layout.setAlignment(Qt.AlignLeft | Qt.AlignTop)
+                    
+                    if not ans:
+                        info_text = f"第{qid}题：你的选择 <b>{user_ans}</b> | 正确答案 <b style='color:#e67e22;'>未知 (题库未录入)</b>"
+                    else:
+                        color = "#27ae60" if user_ans == ans else "#e74c3c"
+                        if user_ans == ans:
+                            correct_count += 1
+                        info_text = f"第{qid}题：你的选择 <b>{user_ans}</b> | 正确答案 <b style='color:{color};'>{ans}</b>"
+                    
+                    info_label = QLabel(info_text)
+                    info_label.setWordWrap(True)
+                    info_label.setTextFormat(Qt.RichText)
+                    item_layout.addWidget(info_label, 1)
+                    
+                    # 🎯 添加分析按钮（PyQt5 原生按钮）
+                    has_analysis = qid in analysis_by_q
+                    if has_analysis:
+                        analysis_btn = QPushButton("📖 查看解析")
+                        analysis_btn.setFixedHeight(32)
+                        analysis_btn.setStyleSheet("""
+                            QPushButton {
+                                background: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+                                    stop:0 #3498db, stop:1 #2980b9);
+                                color: white;
+                                border: none;
+                                border-radius: 6px;
+                                padding: 4px 14px;
+                                font-size: 13px;
+                                font-weight: bold;
+                            }
+                            QPushButton:hover {
+                                background: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+                                    stop:0 #2980b9, stop:1 #2471a3);
+                            }
+                            QPushButton:pressed {
+                                background: #2471a3;
+                            }
+                        """)
+                        # 🎯 绑定点击事件
+                        analysis_btn.clicked.connect(lambda checked, q=qid: self._on_analysis_button_click(q))
+                        item_layout.addWidget(analysis_btn)
+                    
+                    result_layout.addWidget(item_widget)
 
-        # 2. 渲染右侧 AI 解析（只有提交后才显示）
-        analysis = self.current_q.get('original_analysis', '').strip()
-        if not analysis:
-            analysis_html = (
-                "<span style='color:#7f8c8d;'>"
-                "暂无本地解析。您可以到【解析】页面呼叫 AI 老师为您详细讲解！"
-                "</span>"
-            )
-        else:
-            # 🎯 按题号分割解析，每道题单独显示
-            analysis_html = self._format_analysis_by_question(analysis)
-
+        result_layout.addStretch()
+        
+        # 🎯 将 result_widget 的内容复制到 gk_result_panel
+        # 确保 gk_result_panel 有布局
+        panel_layout = self.ui.gk_result_panel.layout()
+        if not panel_layout:
+            # 创建新布局
+            panel_layout = QVBoxLayout(self.ui.gk_result_panel)
+            self.ui.gk_result_panel.setLayout(panel_layout)
+        
+        panel_layout.setSpacing(8)
+        panel_layout.setContentsMargins(10, 10, 10, 10)
+        
+        # 🚨 强制清空现有内容（包括 widget 和 layout）
+        while panel_layout.count():
+            child = panel_layout.takeAt(0)
+            if child.widget():
+                child.widget().deleteLater()
+            elif child.layout():
+                # 递归清空嵌套布局
+                self._clear_layout(child.layout())
+        
+        # 将 result_widget 的子控件移动到 panel_layout
+        while result_layout.count():
+            item = result_layout.takeAt(0)
+            if item.widget():
+                panel_layout.addWidget(item.widget())
+            elif item.layout():
+                panel_layout.addLayout(item.layout())
+        
+        # 2. 渲染右侧 AI 解析（初始显示提示文字）
         self.ui.gk_ai_display.setHtml(
-            f"""
-            <div style='background:#fdf6ec; padding:15px; border-radius:8px; border-left: 4px solid #e67e22;'>
-                <h4 style='color:#e67e22; margin-top:0;'>📖 题目深度解析</h4>
-                <div style='line-height:1.6; font-size:14px;'>{analysis_html}</div>
+            """
+            <div id="aiAnalysisPanel" style='background:#fdf6ec; padding:15px; border-radius:8px; border-left: 4px solid #e67e22; min-height:100px;'>
+                <div style="color:#7f8c8d; text-align:center; padding:20px;">点击左侧题目后的"📖 查看解析"按钮，解析将在此处显示</div>
             </div>
             """
         )
 
         print(f"✅ 判分完成：{correct_count}/{total}")
+
+    def _on_analysis_link_clicked(self, url):
+        """分析链接点击事件处理"""
+        # 从 URL 中提取题号
+        url_str = url.toString()
+        if url_str.startswith("analysis_"):
+            qid = url_str.replace("analysis_", "")
+            self._on_analysis_button_click(qid)
+
+    def _on_analysis_button_click(self, qid):
+        """分析按钮点击事件处理"""
+        if not hasattr(self, '_analysis_by_q'):
+            return
+        
+        analysis_text = self._analysis_by_q.get(qid, "")
+        if not analysis_text:
+            return
+        
+        # 🎯 切换显示状态
+        if not hasattr(self, '_shown_analysis_qids'):
+            self._shown_analysis_qids = set()
+        
+        if qid in self._shown_analysis_qids:
+            self._shown_analysis_qids.remove(qid)
+        else:
+            self._shown_analysis_qids.add(qid)
+        
+        # 🎯 更新右侧解析框
+        self._update_analysis_panel()
+
+    def _update_analysis_panel(self):
+        """更新右侧解析框显示"""
+        if not hasattr(self, '_shown_analysis_qids') or not hasattr(self, '_analysis_by_q'):
+            return
+        
+        if not self._shown_analysis_qids:
+            # 没有显示任何解析，显示提示文字
+            self.ui.gk_ai_display.setHtml(
+                """
+                <div id="aiAnalysisPanel" style='background:#fdf6ec; padding:15px; border-radius:8px; border-left: 4px solid #e67e22; min-height:100px;'>
+                    <div style="color:#7f8c8d; text-align:center; padding:20px;">👆 点击左侧题目后的"📖 查看解析"按钮，解析将在此处显示</div>
+                </div>
+                """
+            )
+            return
+        
+        # 生成解析HTML
+        html_parts = ['<h4 style="color:#e67e22; margin-top:0;">📖 题目深度解析</h4>']
+        for qid in sorted(self._shown_analysis_qids):
+            text = self._analysis_by_q.get(qid, "")
+            if text:
+                html_parts.append(
+                    f"<div style='margin-bottom:12px; padding:8px; background:#fff; border-radius:6px; border-left:3px solid #3498db;'>"
+                    f"<strong style='color:#3498db;'>第{qid}题</strong> "
+                    f"<span style='color:#555;'>{text}</span>"
+                    f"</div>"
+                )
+        
+        analysis_html = "\n".join(html_parts)
+        self.ui.gk_ai_display.setHtml(
+            f"""
+            <div style='background:#fdf6ec; padding:15px; border-radius:8px; border-left: 4px solid #e67e22; min-height:100px;'>
+                {analysis_html}
+            </div>
+            """
+        )
 
     def _format_analysis_by_question(self, analysis):
         """

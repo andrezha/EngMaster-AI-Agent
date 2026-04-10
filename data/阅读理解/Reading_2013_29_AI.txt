@@ -1,0 +1,33 @@
+FILENAME: Reading_2013_29_AI.txt
+YEAR: 2013
+CAT: （新课标Ⅰ）Reading 模拟
+TITLE: Do Young Animals Have a Sense of Number?
+A puppy is only two days old and hasn't yet left the breeder’s home. It is calm but observant. About fifteen centimeters from its nose, researchers have placed a simple card with two red dots on it. The puppy looks at it steadily. A researcher then swaps the card for another, this time with the red dots spaced further apart. As the cards change, the puppy’s interest begins to fade --- until a third card, featuring three red dots, is shown. Suddenly, the puppy focuses again; it stares at this new card for twice as long as the previous one. Can it tell that "two" is different from "three" only 48 hours after birth?
+Or do young animals simply prefer "more" to "less"? The same test, but showing three dots before two, shows the same renewed interest when the quantity changes. Perhaps it’s just the novelty of a new image? When slightly older puppies were shown cards with pictures of different items (a ball, a bone, a bowl), changing the number of items had a clear effect, separate from changing the items themselves. Could it be the shape that two objects make compared to three? Apparently not. Puppies paid more attention to lights moving randomly on a digital screen when their number changed from two to three, or three to two.
+This sensitivity even works across different senses. Puppies that were shown two dots repeatedly became more excited when they later heard three short barks than when they heard just two. The same happened when researchers started with the sounds and then moved to the visual dots.
+[QUESTIONS]
+The experiment in the first paragraph is mainly about the puppy’s sense of _______.
+A. hearing
+B. vision
+C. touch
+D. smell
+Puppies show a reaction to changes in ______.
+A. the size of cards
+B. the color of the red dots
+C. the position of patterns
+D. the number of items
+Why did researchers use barking sounds in the experiment?
+A. To make the experiment easier for the animals.
+B. To test if puppies can identify different animals.
+C. To further explore the puppies' cognitive abilities.
+D. To keep the puppies from falling asleep.
+This text is most likely taken from ______.
+A. a fictional story
+B. a book for children
+C. a sales advertisement
+D. a scientific report
+[ANALYSIS]
+B. Detail understanding. The puppy "stares," "looks," and focuses its "gaze," all of which relate to the sense of sight.
+D. Detail understanding. The text repeatedly shows that the puppy's interest returns "when the number of dots changes" or "when the number of objects changed."
+C. Inference. By using sounds, researchers were testing if the "number sense" was limited to vision or was a deeper cognitive effect that "crosses between senses."
+D. Source identification. The use of terms like "researchers," "experiment," and the description of controlled tests suggest a science-based report.

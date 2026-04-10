@@ -1,0 +1,24 @@
+FILENAME: 7of5_2012_00_AI.txt
+YEAR: 2012
+CAT: （新课标）七选五模拟
+TITLE: Workplace Wellness: Four Steps for Managing Internship Stress
+Everyone feels pressure from time to time, especially when starting a new internship. 71 Some ways of dealing with stress—like complaining loudly or avoiding tasks—don’t solve much. But other ways, like talking to a mentor you trust, can lead you to solving your problem or at least feeling more relaxed.
+Try taking these four steps the next time you are stressed at work:
+(1) Get support. When you need help, reach out to the people who guide you. Talk to a trusted professional, such as a supervisor or a senior colleague. 72 They might have faced similar challenges, such as dealing with a difficult project or a tight deadline.
+(2) Don’t be too hard on yourself. Sometimes when interns are stressed and upset, they blame themselves for every small mistake. That is not a good idea. Remember that there are always people around to help you. 73
+(3) Try to solve the problem. After you are calm and you have support from colleagues and friends, it is time to get down to business. 74 Even if you cannot solve the whole issue at once, you can handle a small part of it.
+(4) Be positive. Most workplace stress is temporary. Remember that pressure does go away, especially when you find the cause and start working on a solution. These steps are not magic, but they do work. And if you can stay positive as you work your way through a tough time, you will help yourself feel better even faster. 75
+[OPTIONS]
+A. Seek assistance to help you manage the difficult period.
+B. Observe your coworkers’ moods and find a way to support them.
+C. People experience pressure in various ways.
+D. Oh, the relief is wonderful once the pressure disappears.
+E. It is necessary to identify the root of the issue.
+F. Also, keep in touch with your teammates.
+G. Then, find a way to relax your mind.
+[ANALYSIS]
+71. C Based on the following sentences "Some ways of dealing with stress... But other ways...", the context implies that different individuals have different experiences and reactions to stress. Option C matches this logic.
+72. F The paragraph discusses getting support from adults and relatives (replaced here with supervisors and colleagues). The subsequent mention of "similar problems" and "support from... friends" in the next section suggests that peers/teammates should also be included as a source of support.
+73. A The text emphasizes not taking it out on yourself and reminds the reader that people are there to help. Option A provides a logical concluding action for this step: seeking help to get through the situation.
+74. E The phrase "get down to business" indicates taking action. Before solving a problem, one must first understand what it is. Option E fits the transition from seeking support to taking action.
+75. D This is the concluding sentence of the passage. Following the encouraging tone about staying positive and feeling better, D provides a natural emotional conclusion to the process of overcoming stress.

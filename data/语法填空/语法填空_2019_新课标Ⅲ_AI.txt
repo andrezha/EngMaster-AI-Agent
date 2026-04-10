@@ -1,0 +1,20 @@
+FILENAME: 语法填空_2019_新课标Ⅲ_AI.txt
+YEAR: 2019
+CAT: 语法填空_2019_新课标Ⅲ_语法填空模拟
+TITLE: A Stay in the Countryside
+On our way to the farmhouse, it was snowing 61 hard that we couldn't help wondering how long it would take 62 (get) there. It was in the center of the valley.
+We were first greeted with the barking by a group 63 dogs, five to be exact. They were well trained by their owners 64 had great experience with living in the mountains. Our hosts shared many of their stories and 65 (recommend) beautiful trails to walk, explore, and enjoy. For breakfast, we were able to have local honey and other products from their farm in the back.
+When they were free from chores, they invited us to village festivals and let us know of an interesting 66 (compete) to watch, together with the history behind it. They also shared with us many 67 (tradition) legends about the valley that were 68 (huge) popular with visitors. On the last day of our stay, we 69 (invite) to attend a local dance on a large field under the moon, 70 (listen) to musicians and meeting friendly neighbors.
+[OPTIONS]
+61. so 62. to get 63. of 64. who 65. recommended 66. competition 67. traditional 68. hugely 69. were invited 70. listening
+[ANALYSIS]
+61. so: Tests the "so... that..." result clause.
+62. to get: Tests the "it takes time to do sth" structure.
+63. of: Tests the preposition in "a group of."
+64. who: Tests the relative pronoun for persons.
+65. recommended: Tests the simple past tense parallel with "shared."
+66. competition: Tests the noun form.
+67. traditional: Tests the adjective form modifying "legends."
+68. hugely: Tests the adverb modifying the adjective "popular."
+69. were invited: Tests the passive voice in the past tense.
+70. listening: Tests the present participle as a simultaneous action.

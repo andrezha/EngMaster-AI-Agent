@@ -1,0 +1,22 @@
+FILENAME: 语法填空_2016_新课标ⅲ_AI.txt
+YEAR: 2016
+CAT: 语法填空_2016_新课标ⅲ_语法填空模拟
+TITLE: The Evolution of Digital Pens
+In much of the world, especially the tech-driven cultures of Japan, Korea, 61 Singapore, digital tablets are often used with styluses (digital pens).
+Styluses are usually two long, thin pieces of plastic or metal. They can also be made of specialized glass or composite materials. Sometimes these pens are quite artistic. Truly high-end styluses might 62 (make) of high-grade aluminum with custom carvings. Skilled designers also combine various materials 63 (create) unique designs.
+Designers have used digital tools for decades. Early users probably navigated their screens in large labs, 64 (use) basic sticks to select icons. Over time, 65 the technology improved, users began wanting more precision so they could draw more quickly. Tools in smaller sizes could be handled easily with digital pens which 66 (gradual) turned into modern styluses.
+Some experts think that a famous engineer, 67 lived during the early computer age, influenced the 68 (develop) of these tools. He believed early mouse designs would remind people of office machines and 69 (be) too heavy for creative work.
+Digital pens are not used everywhere in the tech world. In some creative studios, for example, many artists traditionally paint 70 their hands on touchscreens.
+[OPTIONS]
+61. and 62. be made 63. to create 64. using 65. as 66. gradually 67. who 68. development 69. were 70. with
+[ANALYSIS]
+61. and: Tests the conjunction for a list of parallel items.
+62. be made: Tests the passive voice after a modal verb ("might be made").
+63. to create: Tests the infinitive of purpose ("combine... to create").
+64. using: Tests the present participle used as an adverbial of manner.
+65. as: Tests the conjunction "as" indicating a simultaneous development ("As technology improved...").
+66. gradually: Tests the adverbial form modifying the verb "turned."
+67. who: Tests the relative pronoun for a person in a non-restrictive relative clause.
+68. development: Tests the noun form following the definite article "the."
+69. were: Tests tense and agreement. The past context "He believed..." requires the past tense for the parallel verb.
+70. with: Tests the preposition "with" used for instruments or tools.
