@@ -1,0 +1,35 @@
+FILENAME: Reading_2022_116_AI.txt
+YEAR: 2022
+CAT: （全国乙卷）阅读理解A模拟
+TITLE: Art of the Renaissance Exhibition
+The Exhibition
+This exhibition features fifty major works by the famous Italian artist, Leonardo da Vinci. Coming to New York from galleries worldwide, it is the first time these pieces have been shown together in thirty years.
+Lectures
+The Metropolitan Museum offers free lectures for the public. They take place in the Main Hall. No ticket is required for the lectures.
+Opening Hours
+Tuesday-Saturday 09.00-18.00 Sunday 11.00-18.00
+Last entry is at 17.30. No re-entry allowed.
+Closed: Thanksgiving, Christmas Day, and New Year’s Day.
+Tickets
+Standard: $15. Children under 10 with an adult enter for free.
+Student Groups: A special price of $5 per person is available for full-time students in groups of ten or more with a teacher.
+[OPTIONS]
+When can you attend a lecture?
+A. On a closed day.
+B. During opening hours.
+C. On Monday.
+D. After 18.00.
+How much would two adults and two children under 10 pay?
+A. $15.
+B. $30.
+C. $45.
+D. $60.
+How can students get a discount?
+A. By showing an ID card.
+B. By coming on Sundays.
+C. By being in a group with a teacher.
+D. By paying in cash.
+[ANALYSIS]
+B. Lectures are during the days the museum is open.
+B. Two adults = $30. Two kids under 10 = free.
+C. The text specifies "in groups... with a teacher" for the discount.

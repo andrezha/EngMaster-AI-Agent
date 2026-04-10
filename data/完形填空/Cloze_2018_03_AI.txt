@@ -1,0 +1,51 @@
+FILENAME: Cloze_2018_03_AI.txt
+YEAR: 2018
+CAT: 完形填空03模拟
+TITLE: The Wrong Group Chat
+When most of us get an email on our phone from an unknown person, we usually say “sorry, 41 address!” and move on. But when Dennis Williams 42 a message that clearly wasn’t intended for him, he did something 43 .
+On March 19, Dennis was added to a group chat 44 him that a team he didn’t know were at the studio, waiting for the 45 of a new product.
+“Congratulations! But I think someone was mistaken,” Dennis 46 . The product was launched and update photos were 47 quickly from the overjoyed manager, Teresa. In her 48 , she didn’t seem to realize that she was 49 the launch photos with a complete stranger. “Well, I don’t 50 you all but I will get there to celebrate with the team,” replied Dennis before asking which studio the new 51 were in.
+Much to the team’s surprise, Dennis stuck to his 52 ! He turned up at the studio 53 snacks for the manager Lindsey and her team. Lindsey’s partner was totally 54 by the unexpected visit. “I don’t think we would have randomly invited him over but we 55 it and the treats.”
+Teresa 56 a photo of the chance meeting on a social networking website 57 by the touching words: “What a 58 this young man was to our team! He was so 59 and kind to do this.” The post has since gained the 60 of social media users all over the world, receiving thousands of shares in just three days.
+[OPTIONS]
+41. A. unlucky B. secret C. new D. wrong
+42. A. received B. translated C. copied D. printed
+43. A. reasonable B. special C. necessary D. practical
+44. A. convincing B. reminding C. informing D. warning
+45. A. wake-up B. recovery C. growth D. arrival
+46. A. responded B. interrupted C. predicted D. repeated
+47. A. coming in B. setting out C. passing down D. moving around
+48. A. opinion B. anxiety C. excitement D. effort
+49. A. comparing B. exchanging C. discussing D. sharing
+50. A. accept B. know C. believe D. bother
+51. A. owners B. doctors C. patients D. visitors
+52. A. dream B. promise C. agenda D. principle
+53. A. bearing B. collecting C. opening D. making
+54. A. discouraged B. relaxed C. astonished D. defeated
+55. A. admit B. need C. appreciate D. expect
+56. A. found B. selected C. developed D. posted
+57. A. confirmed B. simplified C. clarified D. accompanied
+58. A. pity B. blessing C. relief D. problem
+59. A. smart B. calm C. sweet D. fair
+60. A. sympathy B. attention C. control D. trust
+[ANALYSIS]
+41. D. Logic: An unknown sender usually means a "wrong" address or number.
+42. A. Action: He "received" a message.
+43. B. Contrast: Most people ignore it, but he did something "special" (unusual).
+44. C. Communication: The message was "informing" him about an event.
+45. D. Event: They were waiting for the "arrival" (launch/completion) of a product.
+46. A. Action: He "responded" to the group chat.
+47. A. Direction: Messages were "coming in" (arriving) to his phone.
+48. C. Emotion: The manager was in a state of "excitement" over the launch.
+49. D. Action: She was "sharing" photos with the group.
+50. B. Fact: He doesn't "know" the people in the chat.
+51. A. Identity: The people who created the product are the "owners" or creators.
+52. B. Commitment: He said he would come, and he kept his "promise."
+53. A. Action: He arrived "bearing" (carrying/bringing) snacks.
+54. C. Reaction: They were "astonished" (surprised) by a stranger showing up.
+55. C. Feeling: They "appreciate" the kindness and the gifts.
+56. D. Social Media: She "posted" the photo online.
+57. D. Connection: The photo was "accompanied" by a caption.
+58. B. Sentiment: His kindness was a "blessing" (a wonderful thing) to them.
+59. C. Character: Doing something kind for strangers is "sweet."
+60. B. Result: The story caught the "attention" of many people.

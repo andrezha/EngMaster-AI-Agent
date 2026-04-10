@@ -1,0 +1,49 @@
+FILENAME: CLOZE_2014_02_AI.txt
+YEAR: 2014
+CAT: 完形填空_2014_新课标ⅱ_模拟
+TITLE: Survival in the Deep Woods
+Dr. Miller and Sarah Evans were the first researchers to explore the hidden valley of the Amazon. They reached the center 41 , but on their way back conditions were very 42 . Sarah tripped and injured her ankle. They both knew that if Dr. Miller 43 alone, he would probably get back 44 . But Dr. Miller decided to risk his 45 and try to support Sarah through the dense forest.
+As they 46 down the trail, the weather got worse. Then another 47 occurred. They couldn’t see through the thick fog and, 48 , Dr. Miller led his partner toward the edge of a steep slope. It was 49 for Sarah to climb back or for Dr. Miller to pull her up. Sarah’s 50 was pulling Dr. Miller slowly towards the edge. 51 , after more than an hour in the dark and the rain, Dr. Miller had to 52 . In tears, he let go of the support rope. Sarah 53 into a deep bushes-covered gap below. She had no supplies and she was in terrible pain. She couldn’t walk, but she 54 to crawl out of the gap and started to 55 towards their base camp, nearly ten kilometers 56 .
+Dr. Miller had 57 the camp at the edge of the forest. He thought that Sarah must be 58 , but he didn’t want to leave 59 . Three days later, in the middle of the night, he heard Sarah’s voice. He couldn’t 60 it. Sarah was there, a few meters from their tent, still alive.
+[OPTIONS]
+41. A. hurriedly B. carefully C. successfully D. early
+42. A. difficult B. similar C. special D. normal
+43. A. climbed B. worked C. rested D. continued
+44. A. unwillingly B. safely C. slowly D. regretfully
+45. A. fortune B. time C. health D. life
+46. A. lay B. settled C. went D. looked
+47. A. damage B. storm C. change D. trouble
+48. A. by mistake B. by chance C. by luck D. by surprise
+49. A. unnecessary B. practical C. important D. impossible
+50. A. height B. weight C. strength D. equipment
+51. A. Finally B. Patiently C. Surely D. Quickly
+52. A. stand back B. take a rest C. make a decision D. hold on
+53. A. jumped B. fell C. escaped D. backed
+54. A. managed B. planned C. waited D. hoped
+55. A. run B. skate C. move D. march
+56. A. around B. away C. above D. along
+57. A. headed for B. travelled C. left for D. returned to
+58. A. dead B. hurt C. weak D. late
+59. A. secretly B. tiredly C. immediately D. anxiously
+60. A. explain B. believe C. forget D. describe
+[ANALYSIS]
+41. C. They reached their goal "successfully."
+42. A. The return journey was "difficult" due to the injury and weather.
+43. D. If he "continued" his journey without her, he would be faster.
+44. B. He would reach the camp "safely" if he were alone.
+45. D. Helping her meant risking his own "life."
+46. C. "Went" describes their movement along the trail.
+47. D. The fog was another "trouble" or problem.
+48. A. He led her to the edge "by mistake" because of the fog.
+49. D. Given her injury, climbing back was "impossible."
+50. B. Her "weight" was pulling him down.
+51. A. "Finally" introduces the climax of the struggle.
+52. C. He had to "make a decision" to save himself.
+53. B. She "fell" into the gap when the rope was released.
+54. A. She "managed" to crawl out, indicating success despite difficulty.
+55. C. She had to "move" slowly because of her injury.
+56. B. "Away" indicates the distance to the camp.
+57. D. He "returned to" the base camp.
+58. A. He assumed she was "dead" after the fall.
+59. C. He didn't want to leave the area "immediately," hoping for a miracle.
+60. B. He couldn't "believe" she was still alive when he heard her voice.

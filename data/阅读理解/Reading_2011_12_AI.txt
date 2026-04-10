@@ -1,0 +1,40 @@
+FILENAME: Reading_2011_12_AI.txt
+YEAR: 2011
+CAT: （全国卷ii）阅读理解模拟
+TITLE: Student Membership --- Innovation Hub
+Innovation Hub is one of the leading tech centers in the country and home of the famous National Robotics Summit. Since 2010, many students have discovered the world of high technology here. Now you too can join and save money.
+WHAT YOU GET AS A MEMBER:
+•Discounted entry to all workshops and seminars.
+•Invitations to exclusive "meet the designer" events.
+•Free monthly digital newsletters sent to your email.
+•Early access to new lab equipment on weekends.
+HOW TO JOIN:
+It’s easy! Just bring your student ID and $40 to the reception desk.
+•You will get a membership card immediately.
+•Your card can be used from 1st September 2024 to 31st May 2025.
+[QUESTIONS]
+48. Which of the following is the most famous event held at Innovation Hub?
+A. The National Robotics Summit.
+B. Meeting with local teachers.
+C. The hardware exhibition.
+D. Monthly software launches.
+If you are a member of Innovation Hub, you will enjoy free ______.
+A. robotics kits
+B. digital newsletters
+C. private lab rooms
+D. tech books
+How long will the membership for Innovation Hub last?
+A. Four months.
+B. Six months.
+C. Nine months.
+D. One year.
+For what purpose is the text written?
+A. Offering students cheaper robot parts.
+B. Announcing a new robotics summit.
+C. Telling the public the lab's address.
+D. Increasing the hub's membership.
+[ANALYSIS]
+48. A. Detail Understanding. The text describes the Hub as "home of the famous National Robotics Summit."
+49. B. Detail Understanding. Under "What you get," it lists "Free monthly digital newsletters."
+50. C. Calculation. From September 1st to May 31st is 9 months.
+51. D. Main Idea. The advertisement aims to encourage students to join the Hub as members.

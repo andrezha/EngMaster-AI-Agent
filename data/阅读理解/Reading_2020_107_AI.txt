@@ -1,0 +1,35 @@
+FILENAME: Reading_2020_107_AI.txt
+YEAR: 2020
+CAT: （新课标Ⅲ）阅读理解D模拟
+TITLE: Humans Adapting to a Changing World
+Humans are constantly changing due to evolution. As researchers study our DNA, they find that we have adapted to new environments in just a few thousand years. For instance, some people in high mountain areas can breathe easily in thin air. In parts of Europe, groups that keep cows have developed the ability to drink milk as adults.
+Recently, a report in a scientific journal described a new kind of adaptation—this time to the sea. A group of people in Southeast Asia, known as the Sama-Bajau, have become expert divers. They live in coastal areas of the Philippines and Malaysia. Traditionally, they stayed on boats, but now many build houses on wooden supports over the water. “They are very different from people who live on land,” said a researcher who has studied them for years.
+The researcher first met them when he was a child. They made their living by diving for fish or pearls. “We were very surprised that they could stay under the water much longer than anyone else,” he said. “They seemed very comfortable moving deep below the surface.”
+In 2015, a genetics student heard about these people. She wondered if many years of diving had changed their bodies to make the work easier. “It looked like a perfect example of how people change to fit their environment,” she said. She also mentioned that there are likely specific genes that help them stay underwater.
+[OPTIONS]
+32. What do the examples in paragraph 1 show?
+A. How to keep cows.
+B. Recent human evolution.
+C. Ancient human history.
+D. The importance of diet.
+Where do many Sama-Bajau people build their houses?
+A. In deep forests.
+B. Over coastal waters.
+C. On high mountains.
+D. In small city centers.
+Why was the researcher surprised by the Sama-Bajau?
+A. They built very high houses.
+B. They could stay underwater for a long time.
+C. They were very good at building boats.
+D. They didn't like to talk to strangers.
+Which can be a suitable title for the text?
+A. Human Bodies Changing for Sea Life
+B. How to Become a Great Diver
+C. The History of Modern DNA
+D. Life on the High Mountains
+[ANALYSIS]
+The text discusses how humans continue to evolve, specifically focusing on a group of people who have adapted to a life of diving.
+32. B. Inference. The paragraph mentions scientists are finding "examples of human evolution in just the past few thousand years."
+33. B. Detail understanding. Paragraph 2 mentions they build houses "over the water" in "coastal areas."
+34. B. Detail understanding. Paragraph 3 states "We were very surprised that they could stay under the water much longer than anyone else."
+35. A. Main idea. The text explains the concept of recent evolution and uses the sea-dwelling people as the primary example.

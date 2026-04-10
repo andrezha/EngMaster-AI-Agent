@@ -1,0 +1,52 @@
+FILENAME: Cloze_2021_02_AI.txt
+YEAR: 2021
+CAT: 完形填空_全国卷_模拟
+TITLE: The Science Fair Incident
+It's the local wildlife that deserves at least part of the blame for getting Leo Miller banned from the Science Center in Seattle.
+Miller was 21 at the center for a competition and planning to 22 his project to some judges in the area. They had asked him to 23 a delicate robot model from his school. So he 24 a case full of parts. As he was 25 that it would be too humid, he 26 it out on a bench near an open vent. He thought his model was 27 and well protected and he 28.
+That's when things went 29. “I remember walking down the long 30 and opening the door to the lab to find a group of squirrels,” Miller said in a recent letter of 31 to the center. “The squirrels immediately went 32. They rushed to the vent, 5 or 6 animals all trying to 33 at the same time, and wires—everywhere. The posters were falling down, the screens were falling down. It was a real 34.”
+Older and wiser now, Miller chalked up the incident to youthful lack of care.
+“I have 35 and I admit responsibility for my 36,” he said in the letter. “I come to you, 37, to apologize for the damage I had 38 caused and to ask you to 39 my lifetime ban from the center.”
+His letter 40. Banned from the center since 2015, Miller is now welcome to return, the director said.
+[OPTIONS]
+21. A. studying B. working C. looking D. packing
+22. A. show B. help C. follow D. make
+23. A. sell B. have C. carry D. taste
+24. A. packed B. locked C. abandoned D. lost
+25. A. surprised B. pleased C. excited D. afraid
+26. A. dug B. cleared C. cut D. placed
+27. A. delicious B. secure C. soft D. ready
+28. A. exited B. nodded C. waited D. regretted
+29. A. far B. funny C. wrong D. blind
+30. A. beach B. driveway C. corridor D. table
+31. A. application B. regret C. request D. invitation
+32. A. hungry B. dead C. missing D. crazy
+33. A. wake up B. escape C. take off D. break in
+34. A. disaster B. puzzle C. fight D. challenge
+35. A. recovered B. retired C. escaped D. grown
+36. A. suffering B. plans C. madness D. mistakes
+37. A. hands in pocket B. nose in the air C. with humility D. feet on the ground
+38. A. indirectly B. deliberately C. cautiously D. secretly
+39. A. replace B. remember C. lift D. renew
+40. A. arrived B. succeeded C. ended D. disappeared
+[ANALYSIS]
+21. B. Context: Leo is at the center for a competition, so "working" or being there for a task fits.
+22. A. Logic: You "show" a project to judges.
+23. C. Logic: "Carry" mirrors "bring," moving an object from one place to another.
+24. A. Logic: "Packed" mirrors "filled," preparing a container.
+25. D. Logic: "Afraid" mirrors "worried," expressing concern about a condition (humidity/heat).
+26. D. Logic: "Placed" mirrors "laid," putting something down.
+27. B. Logic: "Secure" mirrors "safe," believing the item is out of danger.
+28. A. Logic: "Exited" mirrors "left," departing from the room.
+29. C. Logic: "Wrong" is the standard phrase for things failing.
+30. C. Logic: "Corridor" mirrors "hall," a passage in a building.
+31. B. Logic: "Regret" mirrors "apology," the purpose of the letter.
+32. D. Logic: "Crazy" mirrors "wild," describing the animals' panicked state.
+33. B. Logic: "Escape" mirrors "get out," the animals trying to leave.
+34. A. Logic: "Disaster" mirrors "mess," describing the chaotic scene.
+35. D. Logic: "Grown" mirrors "matured," showing personal development.
+36. D. Logic: "Mistakes" mirrors "actions," taking responsibility for what happened.
+37. C. Logic: "With humility" mirrors "hat in hand," showing a respectful attitude.
+38. A. Logic: "Indirectly" mirrors "unintentionally," as he didn't mean for the squirrels to do it.
+39. C. Logic: "Lift" mirrors "reconsider," the act of removing a ban.
+40. B. Logic: "Succeeded" mirrors "worked," meaning the letter achieved its goal.

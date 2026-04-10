@@ -1,0 +1,51 @@
+FILENAME: Cloze_2022_02_AI.txt
+YEAR: 2022
+CAT: 完形填空_全国乙卷_模拟
+TITLE: The Logic of Virtual Presence
+New employees across the tech world enjoy using virtual backgrounds. For them, there’s something highly exciting about 21 a colleague’s direct gaze and making their real environment unable to be seen.
+However, we all witness that new hires are remarkably 22 at hiding their surroundings. They often blur only the center of the screen, leaving the edges of their rooms 23.
+For a long time, this ineffective blurring method was 24 as evidence that new workers are hopelessly “unprofessional” creatures. But our 25 research results in workplace psychology 26 that idea.
+We brought young interns into our Digital Interaction Lab. Each 27 sat down with a manager who turned off her own audio or 28. We then asked the intern if she could 29 or hear the manager. Surprisingly, interns replied that they couldn’t. The same 30 happened when the manager covered her own microphone: 31 interns said that they couldn’t 32 to her.
+A number of 33 ruled out that the interns misunderstood what they were being asked. The results were clear: Our young subjects 34 the questions and knew 35 what was asked of them. Their 36 to the questions reflected their true 37 that “I can see you only if you can see me, too.” They simply 38 mutual recognition and regard. Our 39 suggest when a worker “hides” by blurring a screen, it is not a result of lack of skill. In fact, interns consider this method 40 when others use it.
+[OPTIONS]
+21. A. following B. taking C. avoiding D. directing
+22. A. clever B. poor C. scared D. quick
+23. A. visible B. examined C. untouched D. imbalanced
+24. A. supported B. guaranteed C. imagined D. viewed
+25. A. disappointing B. mixed C. unexpected D. desired
+26. A. explained B. confirmed C. challenged D. tested
+27. A. parent B. intern C. researcher D. doctor
+28. A. feet B. nose C. hands D. camera
+29. A. notice B. help C. reach D. fool
+30. A. event B. result C. action D. accident
+31. A. Yet B. Then C. Soon D. Once
+32. A. respond B. listen C. turn D. wave
+33. A. instructions B. descriptions C. tests D. assumptions
+34. A. understood B. predicted C. explored D. ignored
+35. A. partly B. honestly C. vaguely D. precisely
+36. A. answers B. approaches C. contribution D. sensitivity
+37. A. ability B. logic C. identity D. purpose
+38. A. hold back B. relate to C. value D. make up
+39. A. limitations B. requirements C. theories D. data
+40. A. tentative B. impressive C. creative D. useful
+[ANALYSIS]
+21. C. Logic: "Avoiding" mirrors "escaping," the act of dodging a gaze.
+22. B. Logic: "Poor" mirrors "bad," indicating a lack of skill.
+23. A. Logic: "Visible" mirrors "exposed," describing the unhidden parts.
+24. D. Logic: "Viewed" mirrors "interpreted," how the behavior was understood.
+25. C. Logic: "Unexpected" mirrors "surprising," describing the new findings.
+26. C. Logic: "Challenged" mirrors "contradicted," opposing the old idea.
+27. B. Context: The "intern" is the subject of the study, mirroring "child."
+28. D. Context: "Camera" mirrors "ears," a sensory input in a digital meeting.
+29. A. Logic: "Notice" mirrors "see," the act of perceiving someone.
+30. B. Logic: "Result" mirrors "thing," referring to the outcome of the action.
+31. B. Logic: "Then" mirrors "Now," marking the sequence of the experiment.
+32. A. Logic: "Respond" mirrors "speak," the act of verbal interaction.
+33. C. Logic: "Tests" mirrors "experiments," the scientific method used.
+34. A. Logic: "Understood" mirrors "comprehended," grasping the meaning.
+35. D. Logic: "Precisely" mirrors "exactly," showing full understanding.
+36. A. Logic: "Answers" mirrors "responses," the feedback given.
+37. B. Logic: "Logic" mirrors "belief," the underlying thought process.
+38. C. Logic: "Value" mirrors "insist on," emphasizing the importance of something.
+39. D. Logic: "Data" mirrors "findings," the evidence from the study.
+40. D. Logic: "Useful" mirrors "effective," describing the perceived success of the method.

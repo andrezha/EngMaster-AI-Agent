@@ -1,0 +1,21 @@
+FILENAME: 7of5_2016_09_AI.txt
+YEAR: 2016
+CAT: （新课标ⅲ）七选五模拟
+TITLE: Choosing and Preparing Healthy Study Snacks
+Everyone knows that eating well is good for your brain. 36 But it seems that many students do not prepare healthy snacks at home. Many of us rely on fast food or vending machines, even though we know fresh options are better. Buying and preparing simple snacks is not difficult. 37 This text is about how to choose and prepare healthy snacks in an easy way.
+38 Fresh fruit or nuts should look and smell natural. Any strange or chemical smell means the food might not be fresh. 39 When you have bought fresh items, you should store them properly in the fridge if you do not eat them right away. However, fresh snacks should only stay in the fridge for a short time. Frozen options are usually not as good as fresh ones.
+There are many simple ways to prepare these snacks. 40 First, wash the fruit and add a little yogurt or honey if you like. Put the pieces in a bowl and keep them cool. Then, it is ready to enjoy while you study.
+[OPTIONS]
+A. Do not buy it.
+B. The easiest way is to mix them.
+C. This is how you can do it.
+D. It just requires a little knowledge.
+E. The food will lose its taste quickly.
+F. When picking snacks, you should first check the quality.
+G. Certain nutrients are thought to help improve memory and focus.
+[ANALYSIS]
+36. G The first sentence says "fish is good for health" (replaced with "eating well is good for your brain"). G explains why it's good (nutrients help memory/focus).
+37. D The previous sentence says "isn't difficult". D follows up by saying it only requires "a little knowledge".
+38. F The paragraph discusses smelling and checking the food. F is the topic sentence for this process.
+39. A The previous sentence warns about "fishy or strong smell" (replaced with "strange or chemical smell"). A gives the logical advice: "Do not buy it."
+40. B The paragraph describes a simple preparation method (washing, adding yogurt). B introduces this as the "easiest" method.

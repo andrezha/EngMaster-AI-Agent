@@ -1,0 +1,19 @@
+FILENAME: 语法填空_2015_新课标Ⅰ_AI.txt
+YEAR: 2015
+CAT: 语法填空_2015_新课标Ⅰ_语法填空模拟
+TITLE: Exploring the Tech Hub of Shenzhen
+It was raining heavily when I 61 (arrive) in the tech district of Shenzhen just before noon. But I didn’t mind. A few hours 62 , I’d been at my office in London, with 63 (it) grey skies. Here, the energy was high and vibrant, even with the rain. I’d chosen this city, a top spot for engineers seeking the modern skyscrapers and neon lights 64 are celebrated by photographers in so many 65 (photo). Instead of going to the suburbs, I’d headed straight for the innovation center. For those who visit China, it’s only a short trip 66 metro and offers all the excitement of a world-class city.
+Shenzhen 67 (be) truly impressive. A report on urban growth 68 (conduct) by the Global Tech Association names the city as a leading center for hardware. And the district is fast becoming a popular destination for creators in Asia. A local startup says it 69 (regular) organizes events here for experts 70 (work) in the digital industry.
+[OPTIONS]
+61. arrived 62. earlier/before 63. its 64. that/which 65. photos 66. by 67. is 68. conducted 69. regularly 70. working
+[ANALYSIS]
+61. arrived: Tests the past tense used in a narrative context.
+62. earlier/before: Tests the adverbial use indicating a time prior to the current narrative point.
+63. its: Tests the possessive pronoun used as a determiner for a noun.
+64. that/which: Tests the relative pronoun in a restrictive adjective clause.
+65. photos: Tests the noun plural form following "so many."
+66. by: Tests the preposition "by" used for modes of transport (by metro).
+67. is: Tests the present tense for stating a general fact or descriptive status.
+68. conducted: Tests the past participle used as a reduced relative clause (passive relationship).
+69. regularly: Tests the adverb modifying the verb "organizes."
+70. working: Tests the present participle as an adjective phrase (active relationship with "experts").

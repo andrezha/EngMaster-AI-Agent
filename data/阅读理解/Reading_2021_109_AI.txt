@@ -1,0 +1,37 @@
+FILENAME: Reading_2021_109_AI.txt
+YEAR: 2021
+CAT: （新课标Ⅰ）阅读理解B模拟
+TITLE: Why People Still Use Desktop Computers
+When almost everyone has a laptop, why do more than half of office workers still prefer a desktop computer?
+These days, it is hard to find anyone in a professional setting who doesn't use a portable device. Most people can work from a cafe, a train, or their own home.
+Still, 60 percent of employees use a desktop at the office and only about 30 percent rely solely on laptops, according to a recent report. Of those who still use a desktop, many admit it isn't strictly necessary but they keep it for specialized tasks—20 percent say they prefer the larger screen, while 15 percent keep it for its high processing power. I think my own office fits this pattern.
+Age is certainly a factor. Younger employees (Generation Z) are more likely to use laptops for everything, while older staff who have used the same desk setup for 20 years prefer the desktop. But age isn't the only reason; it's also about the type of work you do.
+Graphic designers and video editors, like my colleagues and I, find it much more efficient to have a powerful desktop rather than using a small laptop for every task. To be honest, the only time we really need the desktop's full power is for complex projects, yet we still use it every day out of habit.
+How long until these big machines go the way of old typewriters and fax machines?
+[OPTIONS]
+24. What does paragraph 2 mainly tell us about portable devices?
+A. Their main functions.
+B. Their wide popularity.
+C. Their high prices.
+D. Their beautiful design.
+What does the word “admit” in paragraph 3 mean?
+A. Concede.
+B. Deny.
+C. Forget.
+D. Notice.
+What can we say about older staff?
+A. They prefer digital games.
+B. They enjoy changing their desks.
+C. They continue to use desktops.
+D. They dislike working with others.
+What can be inferred about desktop computers from the last paragraph?
+A. They are essential for every home.
+B. They will eventually be replaced.
+C. They are more expensive than laptops.
+D. They are as fast as old typewriters.
+[ANALYSIS]
+The text discusses why desktop computers remain in use despite the popularity of laptops.
+24. B. Main idea. Paragraph 2 mentions it's "hard to find anyone... who doesn't use a portable device," showing how common they are.
+25. A. Vocabulary. "Concede" is a direct synonym for "admit" in this context (mirroring the original's logic).
+26. C. Detail understanding. Paragraph 4 states older staff "prefer the desktop."
+27. B. Inference. The last sentence compares them to "old typewriters and fax machines," which are now obsolete.

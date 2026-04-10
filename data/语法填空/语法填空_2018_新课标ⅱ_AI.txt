@@ -1,0 +1,21 @@
+FILENAME: 语法填空_2018_新课标ⅱ_AI.txt
+YEAR: 2018
+CAT: 语法填空_2018_新课标ⅱ_语法填空模拟
+TITLE: The Shift in Campus Technology
+Study habits have changed in our university — and so too has its primary device. Since 2015, the students 61 (use) more tablets than laptops. Tablet sales have jumped nearly 150 percent over 62 past 10 years, while laptops have increased only 10 percent.
+A preference for mobility is 63 (actual) behind the change: An important part of these tablets is used to handle daily notes, emails, and projects. Another reason for the tablet’s rise: The university encourages students to use tablets instead of paper 64 (improve) resource efficiency. Tablets use less power 65 laptops and create less physical 66 (waste) in the campus library. This switch has decreased the use of paper in the major departments and made study materials 67 (easy) for students to carry.
+According to the IT Center, our school accounts for about 20 percent of total 68 (region) digital consumption. The Office of Academic Affairs finds that between 2010 — when the university 69 (start) a digital-testing program 70 gives specific device recommendations to students — and 2018, paper use dropped by 5 million sheets. That prevented the cutting of thousands of trees. This approach to protecting the campus environment while 71 (provide) its students with modern tools offers useful lessons for other schools.
+[OPTIONS]
+61. have used 62. the 63. actually 64. to improve 65. than 66. waste 67. easier 68. regional 69. started 70. which/that 71. providing
+[ANALYSIS]
+61. have used: Tests the present perfect tense used with "since 2015."
+62. the: Tests the definite article used in time expressions like "over the past... years."
+63. actually: Tests the adverb modifying the whole sentence or the prepositional phrase.
+64. to improve: Tests the infinitive of purpose.
+65. than: Tests the comparative marker used after "less."
+66. waste: Tests the noun form acting as the object.
+67. easier: Tests the adjective as a predicative (complement) in the "make sth + adj" structure.
+68. regional: Tests the adjective form modifying the noun "consumption."
+69. started: Tests the simple past tense for an event at a specific past time.
+70. which/that: Tests the relative pronoun in a restrictive relative clause.
+71. providing: Tests the present participle used after "while" to indicate simultaneous action.

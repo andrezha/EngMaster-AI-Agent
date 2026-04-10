@@ -1,0 +1,35 @@
+FILENAME: Reading_2018_79_AI.txt
+YEAR: 2018
+CAT: （新课标ⅱ）阅读模拟
+TITLE: The Power of Community Volunteering
+We have all seen it: in a local park, at a community center, or on a bus, surrounded by people who are focused on their own tasks or, worse, feeling completely alone despite being in a crowd.
+What is the issue? It is possible that we have lost some of our social connection skills. It is more likely that few of us start a conversation with a stranger because it feels awkward, or we think it is not our business. But the next time you have a chance, consider that volunteering in your community is worth the effort. Experts say it is a great social activity that brings big benefits.
+Thinking that small acts of helping are unimportant is a mistake. We must remember that strong communities wouldn't exist without these simple interactions. Volunteering is the "heart" of social life, says Dr. Mark Foster, a social researcher. "Almost every strong neighborhood bond begins with a small act of help," he explains. "The secret to successful volunteering is learning how to relate to others, not just finishing a task for them."
+In a recent study, a professor invited people visiting a local library. One group was asked to have a short chat with the librarian; the other was asked to just return their books and leave. The results showed that those who talked with the staff reported much higher positive feelings and a better library experience. "It's not that talking to a librarian is better than talking to a friend," say the professor. "But these small interactions with people in our community matter for our happiness."
+People who reach out to others feel a much stronger sense of belonging. Dr. Foster believes that building this sense of belonging starts with these simple, helpful actions. "Helping others is the basis of a healthy society," he says.
+[OPTIONS]
+32. What phenomenon is described in the first paragraph?
+A. Addiction to modern life.
+B. Inappropriate behaviours in public.
+C. Absence of communication between strangers.
+D. Impatience with community service.
+What is important for successful volunteering according to Dr. Foster?
+A. Showing good manners.
+B. Relating to other people.
+C. Focusing on a task.
+D. Making business deals.
+What does the library study suggest about social interaction?
+A. It improves family relationships.
+B. It raises people’s confidence.
+C. It matters as much as formal work.
+D. It makes people feel good.
+What is the best title for the text?
+A. Community Counts.
+B. Ways of Volunteering.
+C. Benefits of Social Connection.
+D. Uncomfortable Silence.
+[ANALYSIS]
+32. C. Inference. The first paragraph describes people being "focused" on themselves or "feeling completely alone," highlighting the lack of social interaction.
+33. B. Detail. Dr. Foster says the key is "learning how to connect/relate to others" (mirrored as "relate to other people").
+34. D. Detail. The study showed those who interacted with the librarian had "higher positive feelings."
+35. C. Title. The article argues that small social interactions and volunteering lead to a "sense of belonging" and "positive feelings."

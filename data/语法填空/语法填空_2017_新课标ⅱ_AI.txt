@@ -1,0 +1,27 @@
+FILENAME: 语法填空_2017_新课标ⅱ_AI.txt
+YEAR: 2017
+CAT: 语法填空_2017_新课标ⅱ_语法填空模拟
+TITLE: The First Smart Office in the City
+In 2010, the first fully smart office building in the world opened in our city. It occupied just under five floors and allowed employees to avoid terrible 61 (crowd) in the elevators as they moved to and 62 work. It took two years to finish and was built using an innovative system. This included installing sensors, 63 (lay) the high-speed cables and then building a central control room over 64 top. When all those had been done, the interior design was finalized.
+Electric sensors 65 (use) to adjust the lighting and it must have been 66 (fair) pleasant for the workers, with all the natural light and fresh air. However, the system quickly proved to be a great success and within six months, more than 500 people were using 67 every day.
+Later, engineers 68 (manage) to integrate the system into a network of smart homes, which became known as the City Grid. This development was only possible with the 69 (introduce) of advanced AI and 5G. The central office was one of the most 70 (success) of these new projects, and was expanded in 2015. It featured eco-friendly materials and proved extremely popular with the staff.
+[OPTIONS]
+61. crowds 62. from 63. laying 64. the 65. were used 66. fairly 67. it 68. managed 69. introduction 70. successful
+[ANALYSIS]
+61. crowds: Tests noun number (roads/elevators are crowded with people/crowds).
+62. from: Tests the fixed phrase "to and from."
+63. laying: Tests parallel structure (installing, laying, building).
+64. the: Tests the definite article in "over the top."
+65. were used: Tests the passive voice in the past tense.
+66. fairly: Tests the adverb modifying the adjective "pleasant."
+67. it: Tests the pronoun referring back to "the system."
+68. managed: Tests the simple past tense in a narrative.
+69. introduction: Tests the noun form following "the."
+70. successful: Tests the adjective form in the superlative "the most successful."
+
+
+Model 12:37 PM
+ThinkingThoughts
+Expand to view model thoughts
+
+chevron_right

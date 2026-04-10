@@ -1,0 +1,33 @@
+FILENAME: Reading_2015_43_AI.txt
+YEAR: 2015
+CAT: （新课标Ⅰ）阅读理解 D 模拟
+TITLE: The Dialogue Lab: Solving Urban Loneliness
+Deep conversation is the main focus tonight at the Dialogue Lab. This evening, as they do every Friday, social worker Sarah Miller is leading one of the city’s favorite new activities: drinking tea and engaging in "open sharing." Here, participants are learning to express their inner thoughts. It is not always easy. The guests — around twenty professionals who pay a small fee of $5 per session — are often quick to talk about work projects but slow to share personal feelings. "You are not allowed to say 'some people feel' or 'it is believed'," Miller tells them. "Say 'I feel,' or 'To me'."
+A community center where work talk is banned? It seems unusual for a busy business district. But Miller’s project is about more than personal growth; it is an attempt to help the city's struggling traditional teahouses. Over the years, urban teahouses have suffered from changes in modern lifestyles — longer commute times, the rise of home delivery apps, and the tendency of the younger generation to stay online. Dozens of new "theme labs" have appeared to change this. Places focused on philosophy, storytelling, and coding are becoming popular, keeping tables busy until late at night.
+The city’s "sharing labs," which provide emotional support, are among the most visited spots. Young professionals, recent graduates, and those looking for work come to these places to talk about stress, hope, and career paths with a guide. They join Miller’s group simply to learn how to say what they truly mean. "There is a massive need for real connection in this city," says David Green, a regular at the Dialogue Lab who works as a software engineer nearby. "People have many online contacts but few real friends. They need to be heard." Miller says she hopes to see these labs across the country. "If people had balanced lives, these places wouldn't be needed," she says. "But as long as life is a race, people need a special space to be themselves."
+[QUESTIONS]
+What are people encouraged to do at the Dialogue Lab?
+A. Discuss new technology.
+B. Connect with work partners.
+C. Show off their skills.
+D. Express their inner thoughts.
+How are teahouses affected by modern lifestyle changes?
+A. They are visited less often.
+B. They open for more hours.
+C. They attract more young people.
+D. They provide home delivery.
+What are theme labs expected to do?
+A. Provide more job openings.
+B. Offer better tea selections.
+C. Save the teahouse industry.
+D. Help the neighborhood safety.
+Why are sharing labs becoming popular in the city?
+A. They provide career training.
+B. They give people emotional support.
+C. They help people find jobs.
+D. They offer a place for business deals.
+[ANALYSIS]
+32. D. Detail. The first paragraph states participants are "learning to express their inner thoughts" and are told to say "I feel."
+33. A. Detail/Inference. The text says teahouses have "suffered from changes... the tendency... to stay online," and theme labs are appearing to "change the situation," implying traditional ones were less visited.
+34. C. Inference. The text states the project is an "attempt to help the city's struggling traditional teahouses," and theme labs are "changing the situation," mapping to the idea of saving the business.
+35. B. Inference. The text describes sharing labs as providing "emotional support" and a "special space to be themselves," which corresponds to spiritual or emotional support.

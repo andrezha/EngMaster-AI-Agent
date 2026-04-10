@@ -1,0 +1,49 @@
+FILENAME: CLOZE_2010_02_AI.txt
+YEAR: 2010
+CAT: 完形填空_02_模拟
+TITLE: The Power of the Written Word
+A professional who knows how to write a personal message has a very powerful tool. A note can be enjoyed, read and 21. It can set up a warm conversation between two people far apart; it can keep a 22 with very little effort.
+I will give 23. A few years ago my senior colleague and I were not getting 24. We had been close as 25 but had grown apart. Our meetings were not 26; our conversation was filled with arguments and quarrels: and every effort to clear the air seemed to only 27 our misunderstanding. Then he 28 a small branch office abroad and we 29 touch. One day he wrote me an email. He described his new city and its people, told me what he was doing, said how he felt, and encouraged me to 30. Rereading the message, I was 31 by its humor and clever expressions. These were all qualities for which I had 32 respected my colleague but 33 he no longer had them. I had never known he could write so 34. And with that one message we became friends 35.
+It might never have occurred to 36 to write me if he had not been in a place where there were no 37. For him, writing was a necessity. It also turned out to be the best way for us to get back in touch. Because we live in an age of 38 communication, people often 39 that they don’t always have to phone or text. They have a 40. And that is to write.
+[OPTIONS]
+21. A. received B. rewritten C. returned D. reread
+22. A. record B. promise C. connection D. secret
+23. A. an example B. a lesson C. an experience D. a talk
+24. A. through B. together C. along D. away
+25. A. partners B. interns C. fellows D. classmates
+26. A. normal B. necessary C. pleasant D. possible
+27. A. deepen B. start C. express D. settle
+28. A. toured B. stopped C. reached D. moved to
+29. A. lost B. kept in C. needed D. got in
+30. A. think B. write C. enjoy D. read
+31. A. driven B. beaten C. surprised D. honored
+32. A. never B. seldom C. sometimes D. once
+33. A. realized B. judged C. thought D. expected
+34. A. well B. often C. much D. soon
+35. A. later B. anyhow C. too D. again
+36. A. us B. anyone C. someone D. my colleague
+37. A. mail services B. transport services C. phones D. relatives
+38. A. poor B. fast C. popular D. busy
+39. A. believe B. decide C. argue D. forget
+40. A. habit B. choice C. method D. plan
+[ANALYSIS]
+21. D. Parallelism: "enjoyed, read and reread". A good letter is often read multiple times.
+22. C. The text discusses maintaining a relationship or "connection" between people.
+23. A. The author introduces a personal story to illustrate the point, which is "giving an example".
+24. C. Idiom: "get along" means to have a friendly relationship.
+25. B. "Interns" fits the professional background shift while mirroring the "young/close" logic.
+26. C. Since they were arguing, their meetings were not "pleasant".
+27. A. Contrast: They tried to "clear the air" (fix things), but it only made the misunderstanding "deeper".
+28. D. "Moved to" indicates changing locations, which explains why they lost touch.
+29. A. Idiom: "lost touch" means to stop communicating.
+30. B. He wrote a letter and encouraged the author to "write" back.
+31. C. The author was "surprised" because the colleague's humor was unexpected.
+32. D. "Once" refers to a time in the past when the respect was strong.
+33. C. The author "thought" (mistakenly believed) the colleague had lost those good qualities.
+34. A. Adverb of manner: "write so well" refers to the high quality of the writing.
+35. D. They were friends before, and now they are friends "again".
+36. D. The subject of the story is "my colleague".
+37. C. The lack of "phones" or modern tools forced him to use the "necessity" of writing.
+38. B. Modern communication is characterized as being "fast" or "easy".
+39. D. Because it is so easy to call, people "forget" that writing is an option.
+40. B. Writing is presented as an alternative "choice" for communication.

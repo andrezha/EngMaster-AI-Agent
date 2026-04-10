@@ -1,0 +1,22 @@
+FILENAME: 语法填空_2022_全国乙卷_AI.txt
+YEAR: 2022
+CAT: 语法填空_2022_全国乙卷_语法填空模拟
+TITLE: Celebrating International Coffee Day
+October 1st this year marks the International Coffee Day, which was named officially 61 the Coffee Organization on October 1st, 2015. To celebrate 62 festival, a number of events took place at the City Center in London on Monday.
+The director of the Global Coffee Association 63 (address) the opening ceremony. “As a main promoter of the International Coffee Day, a major consumer and the 64 (large) trading hub, our city has a 65 (responsible) to work with other regions to promote the healthy growth of the coffee market. It can help to build a network with a 66 (share) goal for all producers,” he said.
+The “First Coffee Road Initiative” issued at the ceremony calls for people working in the coffee industry to come together to promote international cooperation 67 cultural exchanges. A five-year promotion — Coffee Bridge Plan — was also issued in accordance with the initiative.
+68 (strengthen) the connection with young consumers, the event included a number of public activities on social media, 69 (invite) thirty baristas from around the world to have forty hours of live demonstrations.
+The City Coffee Museum was officially opened at the ceremony, showing 70 (it) first exhibition: The Story of the Bean.
+[OPTIONS]
+61. by 62. the 63. addressed 64. largest 65. responsibility 66. shared 67. and 68. To strengthen 69. inviting 70. its
+[ANALYSIS]
+61. by: Tests the preposition for the agent in a passive context.
+62. the: Tests the definite article for a mentioned festival.
+63. addressed: Tests the simple past tense.
+64. largest: Tests the superlative degree.
+65. responsibility: Tests the noun form after "a."
+66. shared: Tests the past participle as a modifier.
+67. and: Tests the conjunction connecting parallel nouns.
+68. To strengthen: Tests the infinitive of purpose at the start of a sentence.
+69. inviting: Tests the present participle as a result/accompanying adverbial.
+70. its: Tests the possessive pronoun.

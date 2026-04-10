@@ -1,0 +1,32 @@
+FILENAME: Reading_2021_114_AI.txt
+YEAR: 2021
+CAT: （解析版）阅读理解C模拟
+TITLE: Finding My Place in the Skate Park
+When I was ten, we moved from New York to a quiet town in England. I didn't like the cold rain and felt very lonely. But then I found the local skate park. The sound of boards on the ground made me feel better. I soon made friends with other skaters. We had our own words, like “Solid,” which meant good or hello. Once, when I crashed, a friend came over and said, “Solid, man. You’ll get it next time.”
+Years later, I moved back to the US. I tried skating there, but the people weren't as friendly. I stopped skating for a long time. Recently, I visited that same park in England. I saw a teenager doing tricks. I told him, “I used to skate here 20 years ago.” He nodded and said, “Solid, man.” I felt at home again.
+[OPTIONS]
+8. How did the author feel after moving to England?
+A. Happy.
+B. Disappointed.
+C. Excited.
+D. Busy.
+What does the word “Solid” probably mean?
+A. Be careful.
+B. Well done.
+C. Go away.
+D. Very hard.
+Why did the author go back to the skate park?
+A. To buy a new board.
+B. To teach a class.
+C. To relive old memories.
+D. To find his lost keys.
+What is the main message of the text?
+A. Skating is good for health.
+B. Everyone needs a sense of belonging.
+C. Moving is always fun.
+D. Teens should work harder.
+[ANALYSIS]
+8. B. The author "felt very lonely" and "didn't like the cold rain."
+9. B. It is used as a greeting or a word of encouragement after a trick.
+10. C. The author visited to see the place and talk to the new generation, reflecting on the past.
+11. B. The story is about finding a community where one feels accepted.

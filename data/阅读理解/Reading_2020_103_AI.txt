@@ -1,0 +1,37 @@
+FILENAME: Reading_2020_103_AI.txt
+YEAR: 2020
+CAT: （新课标Ⅱ）阅读理解D模拟
+TITLE: My Lifelong Connection with Community Tech Centers
+I have always loved community tech centers. For as long as I can remember, technology was my passion. I was a focused learner, sometimes spending whole afternoons at the local center as a teenager. Coding was like a new world to me, and while other kids were playing sports, I was building small apps through the tools I used at the center.
+My first part-time job was at the City Tech Lab when I was 17. It was a perfect start, and I did everything from organizing equipment to helping seniors learn how to use email.
+As I grew older and started my own career, the tech center took on an added meaning in my life. I had two children, and these centers became our favorite place for learning. It was a highlight of our week to go to the neighborhood lab, where my kids could experiment with robots or work on digital art projects.
+I always guided them, using different methods to make it fun, as if we were solving puzzles together. It was a special way to connect with my children and it gave them a sense of curiosity about the world.
+Now, I see my children taking their own kids to such centers, and I love that this tradition of learning tech skills continues through the years.
+As a software engineer, I have found a new way to relate to these centers. I encourage young developers to visit them when they need professional tools. I see these centers as a safe place for learners and creators, a bridge that connects a person with a dream. Tech centers help reduce the digital divide, and I believe all professionals should support them. Talk about them on social media and volunteer your time there when you can.
+[OPTIONS]
+32. Which word best describes the author’s relationship with tech as a child?
+A. Distant.
+B. Difficult.
+C. Inseparable.
+D. Formal.
+What does the phrase “an added meaning” in paragraph 3 refer to?
+A. Professional success in the tech field.
+B. Joy of learning shared with the family.
+C. Financial benefits from the community.
+D. A new way of organizing digital tools.
+What does the author call on other professionals to do?
+A. Sell their products.
+B. Write online blogs.
+C. Support tech centers.
+D. Teach at local schools.
+Which can be a suitable title for the text?
+A. Technology: A Source of Wealth
+B. My Views on Engineering
+C. Tech Centers: A Home for Experts
+D. My Love for the Tech Center
+[ANALYSIS]
+The text is a narrative about the author's lifelong passion for community tech centers and their impact on different stages of life.
+32. C. Inference. Paragraph 1 states "Coding was like a new world to me" and "I was building small apps," showing a very close relationship.
+33. B. Contextual meaning. The paragraph describes taking children to the center and spending time together, shifting from personal use to family bonding.
+34. C. Detail understanding. The last paragraph explicitly states "I think all professionals should support..." and lists ways to do so.
+35. D. Main idea. The passage covers the author's childhood, motherhood, and professional life, all revolving around their love for these centers.

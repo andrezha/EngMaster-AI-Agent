@@ -1,0 +1,34 @@
+FILENAME: Reading_2019_94_AI.txt
+YEAR: 2019
+CAT: （新课标Ⅲ）阅读理解模拟
+TITLE: The Evolution of Free Information
+Before the 2000s, most specialized news was accessed through expensive subscriptions, often costing hundreds of dollars a year. Today, that might seem normal, but at that time, such costs were too high for most people. Therefore, these reports were read mainly by wealthy experts or business leaders. Additionally, most of these reports were very technical and did not appeal to the general public. They were dry and difficult to read. However, a change in the late 2000s would alter everything.
+The new trend was toward "open-access" content—a term meaning information made freely available to everyone. It meant any low-cost digital report; more importantly, it meant news that could be read on any mobile device.
+This change did not happen quickly. It had been possible to find free news before 2000, but usually, a person had to search through complex university databases. Finding news on the go was almost impossible. However, within a few years, mobile access to information would be common everywhere. At first, the quality of free reports was not always high, and some older, famous companies still charged high fees. But the idea of "free info" captured the public's attention, and soon there were platforms that provided high-quality news for free.
+This new trend of info for "the person on the street" did not start easily. Some early websites failed immediately. Established publishers, who were already successful with the old system, did not want to change. It took a few young and brave entrepreneurs to get things moving.
+[QUESTIONS]
+Which of the following best describes news reports before the 2000s?
+A. Scientific.
+B. Unattractive.
+C. Inexpensive.
+D. Secret.
+What did mobile access mean for news?
+A. It would cost more to produce.
+B. it would be harder to find.
+C. It could reach more readers.
+D. It would be more technical.
+Who was the new trend of information targeted at?
+A. Famous experts.
+B. Common people.
+C. Tech companies.
+D. Wealthy leaders.
+What can we say about the birth of "open-access" news?
+A. It was a difficult process.
+B. It was a short-term success.
+C. It was bad for the poor.
+D. It was a mistake for readers.
+[ANALYSIS]
+28. B. Detail. The text says they were "dry and difficult to read" and had little to "appeal to the general public."
+29. C. Inference. The text mentions that "mobile access... would be common everywhere," implying a larger audience.
+30. B. Detail. The text states the trend was for "the person on the street" and "made widely available to the public."
+31. A. Inference. The text describes how it "did not start easily," early ventures failed, and established publishers resisted it.

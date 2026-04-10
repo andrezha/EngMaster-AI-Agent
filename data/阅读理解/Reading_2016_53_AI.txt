@@ -1,0 +1,41 @@
+FILENAME: Reading_2016_53_AI.txt
+YEAR: 2016
+CAT: （新课标ⅱ）阅读理解 B 模拟
+TITLE: The Blocks Test
+Four years ago, while teaching design at a college in Chicago, I used a set of wooden blocks as an initial test to understand my students' personalities. I placed a box of blocks in front of each person and said: “Create something unique. You have one hour today—and one hour each day for the rest of the week.”
+A few students were slow to begin. They watched their neighbors to see what the popular choice would be. Several others carefully read the provided booklet and built a structure exactly like the picture on the cover. Another group began building something entirely from their own thoughts.
+Once, I had a student who spent all his spare time experimenting with these blocks. His complex structures filled the shelves in the lab and a large part of his apartment. I was thrilled to have such a student. He possessed a remarkably inventive mind. His presence meant I had a natural leader in the room whose imagination would inspire others.
+Promoting this type of open-ended thinking has a drawback. I risked discouraging those students who preferred clear instructions and structure. Frequently, one would say, “But I just don’t have an inventive mind.”
+“Do you ever imagine stories when you are daydreaming?”
+“Well, yes.”
+“Then tell me one of your most vivid daydreams.” The student would describe something incredibly detailed—exploring a distant planet or living in a city under the sea. “That is very imaginative. Who created that for you?”
+“No one. I did.”
+“So you did it while you were sitting here?”
+“Yes.”
+“Then try doing the same thing with these blocks, okay?”
+[QUESTIONS]
+The teacher used wooden blocks in class in order to ________?
+A. know more about the students
+B. make the lessons more exciting
+C. raise the students’ interest in design
+D. teach the students about architecture
+What do we know about the student mentioned in Paragraph 3?
+A. He liked to assist the teacher.
+B. He preferred to work in groups.
+C. He was very shy in class.
+D. He was imaginative.
+What does the word “drawback” in Paragraph 4 probably mean?
+A. Mistake.
+B. Downside.
+C. Difficulty.
+D. Burden.
+Why did the teacher ask the students to talk about their daydreams?
+A. To help them realize their creativity.
+B. To understand their daily schedules.
+C. To help them improve their speaking.
+D. To find out about their favorite movies.
+[ANALYSIS]
+25. A. Detail. The first paragraph states the goal was "to understand my students' personalities."
+26. D. Detail/Inference. The teacher describes him as having an "exceptionally inventive mind" and a "remarkable" imagination.
+27. B. Vocabulary. In the context of "encouraging this kind of thinking has a...", it refers to a negative aspect or downside.
+28. A. Inference. By showing the student that they can create vivid daydreams themselves, the teacher proves they are inherently creative.

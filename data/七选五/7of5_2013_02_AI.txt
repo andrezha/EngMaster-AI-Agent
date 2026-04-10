@@ -1,0 +1,20 @@
+FILENAME: 7of5_2013_02_AI.txt
+YEAR: 2013
+CAT: （新课标Ⅰ）七选五模拟
+TITLE: Managing a Campus Volunteer Organization
+A volunteer group is an organized way to provide a community with the help and services they need. The term also refers to the organization itself that offers these services. Most professional groups seek to grow their influence, but they must also manage their finances—that is, they aim to have enough funds to cover the costs of their activities. 71 Commonly called nonprofits, these groups are mainly independent service providers. 72
+Organization management is a term used to describe the methods of planning, direction, and control of a group’s work. 73 One is the creation of basic plans regarding service projects, member recruitment, the purchase of necessary tools, and record-keeping. 74 The third relates to the setting of work standards for all team members. Direction is mainly about the guidance provided by the leaders in charge. 75
+[OPTIONS]
+A. Control involves using reports to compare actual progress with the original goals.
+B. In this case, there is a gap between senior leaders and general members.
+C. Examples of nonprofit groups include local food banks and student tutoring clubs.
+D. However, some groups only aim to collect enough to pay for their basic needs.
+E. The second part involves the way these plans are carried out by different teams.
+F. In the theory of management, a group has two main parts.
+G. Planning in group management consists of three main parts.
+[ANALYSIS]
+71. D The text discusses the financial goals of organizations. After mentioning "making a profit" (or managing finances), it introduces "nonprofits". D provides the transition by explaining that some groups only seek to cover costs.
+72. C The previous sentence introduces "nonprofits". C provides concrete examples of such organizations, which is a logical follow-up.
+73. G The sentences following the blank describe "One...", "The second...", and "The third...". G introduces the idea that there are three main parts to planning.
+74. E The text lists "One..." and then "The third...". E fills the gap by describing the "second part", which corresponds to the "direction" mentioned in the management definition.
+75. A The definition of management included "planning, direction, and control". The text has covered planning and direction. A completes the set by explaining "control".

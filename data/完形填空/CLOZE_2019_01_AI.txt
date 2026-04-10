@@ -1,0 +1,52 @@
+FILENAME: CLOZE_2019_01_AI.txt
+YEAR: 2019
+CAT: 完形填空_2019_新课标Ⅰ_模拟
+TITLE: The Digital Bridge in the Mountains
+Every year thousands of volunteers travel to remote mountain villages to help build digital networks. They 41 with them heavy technical equipment. The 42 might disturb the quiet life of the local people. The traditional ways are fading, changing the 43 of these ancient communities.
+Hearing these reports, I am 44 about the project — some experts describe it as a "risky" social experiment.
+However, I soon 45 that much has changed since the days of negative news about 46 among piles of broken wires. I find a 47 village, with stable signals in houses and along the roads. The technical challenges are 48 but the efforts made by the local government seem to be 49.
+The best of a volunteer 50, in my opinion, isn't finishing the task. Mountains are 51 as vital resources by many cultures. This 52 is especially evident here as 53 go through different landforms in the space of a few miles. At the foot is a thick forest. It ends suddenly at 2,000 meters, 54 open fields of dry grass. Further up, the signal 55 — thick clouds cover the peaks, which are hidden in mist. I 56 five different types of soil from where I stand. Above 3,000 meters is the rocky 57: bare stones and cold wind. 58 you reach the core station with 59 data servers and the technology that may soon transform the area.
+Does this project 60 its reputation as a noisy intrusion ruining the local peace? I found the opposite to be true.
+[OPTIONS]
+41. A. keep B. mix C. connect D. bring
+42. A. stories B. buildings C. crowds D. reporters
+43. A. position B. age C. face D. name
+44. A. silent B. skeptical C. serious D. crazy
+45. A. discover B. argue C. decide D. advocate
+46. A. equipment B. grass C. camps D. stones
+47. A. remote B. quiet C. all D. clean
+48. A. new B. special C. significant D. necessary
+49. A. paying off B. spreading out C. blowing up D. fading away
+50. A. atmosphere B. experience C. experiment D. sight
+51. A. studied B. observed C. explored D. regarded
+52. A. view B. quality C. reason D. purpose
+53. A. scientists B. volunteers C. locals D. officials
+54. A. holding on to B. going back to C. living up to D. giving way to
+55. A. changes B. clears C. improves D. permits
+56. A. match B. imagine C. count D. add
+57. A. village B. desert C. road D. lake
+58. A. Obviously B. Easily C. Consequently D. Finally
+59. A. permanent B. little C. fresh D. artificial
+60. A. enjoy B. deserve C. save D. acquire
+[ANALYSIS]
+The passage discusses the impact of a digital network project in mountain villages.
+41. D. Volunteers "bring" equipment to the site.
+42. C. "Crowds" of volunteers or people involved might disturb the peace.
+43. C. "Face" refers to the appearance or character of the communities.
+44. B. "Skeptical" matches the doubt raised by experts in the context.
+45. A. The author "discovers" the reality after visiting.
+46. C. "Camps" provides the setting for where the work/rubbish was reported.
+47. D. "Clean" contrasts with the previous reports of mess/rubbish.
+48. C. "Significant" describes the scale of the challenges.
+49. A. "Paying off" means the efforts are yielding successful results.
+50. B. "Experience" refers to the process of volunteering.
+51. D. "Regarded as" is a standard collocation for how things are viewed.
+52. A. "View" refers to the observable changes or scenes.
+53. B. "Volunteers" are the subjects mentioned at the start.
+54. D. "Giving way to" describes the transition from forest to fields.
+55. A. "Changes" describes the fluctuation of the signal due to weather.
+56. C. "Count" refers to identifying the specific number of soil types.
+57. B. "Desert" (highland desert) fits the description of stones and rocks.
+58. D. "Finally" marks the last stage of the climb/journey.
+59. A. "Permanent" describes the fixed nature of the servers.
+60. B. "Deserve" questions whether the negative reputation is justified.

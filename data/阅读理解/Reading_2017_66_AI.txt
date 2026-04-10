@@ -1,0 +1,34 @@
+FILENAME: Reading_2017_66_AI.txt
+YEAR: 2017
+CAT: （新课标ⅱ）阅读模拟
+TITLE: The Future of Urban Flying
+SkyDrive Inc. announced on Monday that its latest flying vehicle has finished its first test, moving the company closer to its goal of selling the vehicle by next year. The machine—named the Aero—has two seats, four wheels, and wings that can be tucked away so it can be driven on normal roads. The Aero, which stayed at 1,500 feet for ten minutes during the test, can reach speeds of 65 miles per hour on the ground and 110 in the sky. It uses a 20-gallon fuel tank and uses about 4 gallons per hour while flying. On the road, it covers 32 miles per gallon.
+About 120 people have already paid a $12,000 deposit to reserve an Aero when it becomes available. Those numbers will likely grow after SkyDrive shows the Aero to the public later this month at the International Tech Fair. However, do not expect to see many in your neighborhood soon. The expected price is $285,000. Also, it won't help you escape a traffic jam on a city street because the vehicle requires a long runway to take off.
+Inventors have tried to create flying cars since the early 20th century, according to industry experts. But many believe SkyDrive is closer than ever to making this a reality. The government has already allowed the company to use lightweight materials to help the vehicle fly better. The Aero is currently undergoing safety tests to ensure it meets national standards.
+Experts said SkyDrive was helped by the aviation authority’s decision a few years ago to create a new category of standards for small aircraft, which are simpler than those for large planes. SkyDrive says an owner would need to pass a written test and complete 25 hours of flight training to fly the Aero, a requirement that most pilots consider quite simple to achieve.
+[OPTIONS]
+28. What is the first paragraph mainly about?
+A. The basic data of the Aero.
+B. The advantages of flying vehicles.
+C. The potential market for new cars.
+D. The designers of the Aero.
+Why is the Aero unlikely to show up in too many driveways?
+A. It causes traffic problems.
+B. It is difficult to fly.
+C. It is very expensive.
+D. It uses too much fuel.
+What is the government’s attitude to the development of the flying vehicle?
+A. Cautious.
+B. Favorable.
+C. Ambiguous.
+D. Disapproving.
+What is the best title for the text?
+A. Flying Cars at Tech Fairs.
+B. The Aero’s First Test.
+C. Pilots’ Dreams Coming True.
+D. Flying Vehicles Closer to Reality.
+[ANALYSIS]
+28. A. Main Idea (Para 1). The first paragraph lists the Aero's technical specifications: seats, wings, speed, fuel capacity, etc.
+29. C. Detail. The second paragraph notes the $285,000 price tag as a reason why it won't be seen everywhere.
+30. B. Inference. The text states the government "already permitted" special materials and "helped" by creating simpler standards, indicating a supportive or favorable attitude.
+31. D. Title. The text discusses how recent tests and government support are making the long-held dream of flying cars a "reality."

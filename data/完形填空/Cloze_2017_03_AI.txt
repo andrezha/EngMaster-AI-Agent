@@ -1,0 +1,52 @@
+FILENAME: Cloze_2017_03_AI.txt
+YEAR: 2017
+CAT: 完形填空01模拟
+TITLE: The Innovation Hub
+In 2015, I was managing a small tech startup. Each morning, ten interns 41 “The Innovation Hub.” That was the 42 the team voted for after deciding that “Office B” was too 43 .
+Leo was an average 44 , but not an average person. He had the rare balance of humor and kindness. He would 45 the loudest over a joke and be the saddest over anyone’s 46 .
+Before the internship 47 , I gave the team a special 48 , hoodies with the words “Ideas Are Your 49 ” on them. I had told the interns that while ideas may seem simple, most of the 50 things they achieve in their careers will be ideas.
+Through the years, I’d meet former interns who would provide 51 on old colleagues. I learned that Leo did several projects after his 52 from the program and remained the same 53 person I met years before. Once, while working late at a lab, he let a tired coworker 54 in his car. Another time, he 55 a friend money to start a business.
+Just last year, I was 56 a seminar when someone knocked at the door. A man 57 the interruption and handed me a package. I stopped speaking and 58 it up. Inside were the “Ideas” hoodie and a 59 from Leo’s sister. “Leo passed away last month. He wanted you to have this.”
+I told the story to the group. As sad as it was, I couldn’t help smiling. Although Leo was taken from us, we all 60 something from Leo.
+[OPTIONS]
+41. A. designed B. joined C. painted D. managed
+42. A. title B. rule C. brand D. plan
+43. A. small B. dark C. strange D. boring
+44. A. expert B. intern C. citizen D. worker
+45. A. speak B. sing C. question D. cheer
+46. A. failure B. disbelief C. dishonesty D. mistake
+47. A. changed B. approached C. returned D. finished
+48. A. lesson B. souvenir C. report D. message
+49. A. tools B. awards C. masters D. tasks
+50. A. great B. unique C. fun D. clever
+51. A. assessments B. comments C. instructions D. news
+52. A. departure B. retirement C. separation D. resignation
+53. A. daring B. modest C. helpful D. smart
+54. A. wait B. rest C. study D. live
+55. A. paid B. charged C. gave D. owed
+56. A. observing B. preparing C. designing D. leading
+57. A. regretted B. avoided C. apologized for D. ignored
+58. A. picked B. packed C. gave D. held
+59. A. picture B. bill C. letter D. diary
+60. A. chose B. gained C. expected D. borrowed
+[ANALYSIS]
+41. B. Contextual clue: The interns enter or become part of the workspace daily. "Joined" fits the action of entering the "Hub."
+42. A. Logic: "The Innovation Hub" is a name or title chosen by vote.
+43. D. Contrast: The new name is exciting, implying the old one ("Office B") was "boring."
+44. B. Identity: The text establishes Leo as one of the "ten interns."
+45. D. Parallelism: "Cheer" matches the positive reaction to a joke, balancing with "saddest" in the next clause.
+46. A. Logic: Compassion is shown when others face "failure" or misfortune.
+47. D. Timing: Souvenirs are typically given when a period (internship) is "finished."
+48. B. Object: A hoodie with a slogan serves as a "souvenir" or gift.
+49. A. Metaphor: The slogan suggests ideas are useful "tools" for one's life/career.
+50. A. Contrast: While ideas seem simple, they lead to "great" (significant) achievements.
+51. D. Information: Meeting old students leads to getting "news" or updates about others.
+52. A. Event: Leaving a program is a "departure."
+53. C. Character: Helping a coworker and lending money proves he is "helpful."
+54. B. Action: A tired person needs to "rest."
+55. C. Action: Providing money to a friend is "giving" or lending.
+56. D. Activity: The narrator is "leading" (conducting) a seminar.
+57. C. Social Norm: Interrupting a class usually requires "apologizing for" the act.
+58. A. Action: "Picked it up" describes taking the package.
+59. C. Object: A written message in a package is a "letter" or note.
+60. B. Theme: We "gained" (took/learned) something from his spirit or example.

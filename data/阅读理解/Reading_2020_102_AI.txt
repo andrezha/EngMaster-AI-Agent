@@ -1,0 +1,38 @@
+FILENAME: Reading_2020_102_AI.txt
+YEAR: 2020
+CAT: （新课标Ⅱ）阅读理解C模拟
+TITLE: Eco-Friendly Fashion from Invasive Plants
+When looking for an eco-gift for a friend, paper made from wild weeds probably isn't the first thing you'd think of. However, some environmentalists and paper designers are trying to create a market for stationery made from an invasive plant called water hyacinth.
+Special art shows in Seattle and Portland have displayed paper products made from these plants in various forms. “It may sound strange to talk about 'green paper' from weeds—unless you realize that water hyacinths are choking local rivers every year,” says Mark Evans, a director at GreenWay.
+Local environmentalists were so worried that they started a program to pay residents for clearing the plants. Some of these fibers are eventually used in the art shows like the one in Portland last month.
+Water hyacinths were originally brought from South America for garden ponds but escaped into the wild. “The local ecosystem cannot survive this foreign species. It’s killing native fish. It’s a choice between the weeds and our water,” says Michael Reed, a local biologist.
+The paper trade kept the weed population under control for years, but when the demand for handmade paper collapsed in the late 1990s, the plants spread rapidly.
+Biologist Elena Costa runs a control program in the area. She says it’s hard to convince people that weed-based paper is high-quality, but she is certain of its value. Teams collect tons of plants a year, and part of Costa’s work is to encourage the use of this fiber.
+Designer Sarah Jenkins admits it took her some time to believe that using invasive weeds for her art was a good idea. She is now working on a special mark to show that her paper products are truly helpful to the environment.
+[OPTIONS]
+28. What is the purpose of the art shows in Seattle and Portland?
+A. To promote eco-friendly paper.
+B. To find new artistic talent.
+C. To sell expensive office tools.
+D. To celebrate a local festival.
+Why are environmentalists worried about water hyacinth?
+A. It causes serious damage to the ecosystem.
+B. It is becoming very rare.
+C. It competes with local farm crops.
+D. It is being harvested illegally.
+What does the word “collapsed” in paragraph 5 probably mean?
+A. Increased.
+B. Grew.
+C. Balanced.
+D. Crashed.
+What can we infer about the weed-based paper market?
+A. It is very mature.
+B. It faces some challenges.
+C. It is harmful to rivers.
+D. It is supported by everyone.
+[ANALYSIS]
+The text introduces a sustainable fashion/art movement using invasive plants to protect the environment.
+28. A. Inference. The shows highlight "guilt-free" or "eco-friendly" options by using plants that destroy wetlands, mirroring the fur fashion show logic.
+29. A. Inference. Paragraph 4 mentions it "cannot survive this foreign species" and is "killing native fish," showing ecological damage.
+30. D. Vocabulary. The context describes a market failing or falling apart, leading to a loss of control over the species.
+31. B. Inference. Paragraph 6 mentions it is "hard to convince people" and paragraph 7 mentions the designer needed time to "come around," suggesting it is not yet widely accepted or easy to sell.

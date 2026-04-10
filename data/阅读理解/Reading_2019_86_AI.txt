@@ -1,0 +1,34 @@
+FILENAME: Reading_2019_86_AI.txt
+YEAR: 2019
+CAT: （新课标Ⅰ）阅读理解模拟
+TITLE: Behavioral Security
+As digital fraud becomes more frequent, the demand for biometric security—like facial recognition—is rising to protect private data. However, these systems are often quite expensive to implement.
+Researchers at a tech institute say they have created an affordable alternative: a smart mouse. This device monitors the exact speed at which a user moves the cursor and the pressure applied during clicks. The mouse provides an extra layer of protection by studying the user's movement patterns and the timing of their clicks. These behaviors are unique to each individual. Therefore, the system can verify a person's identity and decide whether to grant access to the computer, even if someone else knows the correct password.
+The invention does not require users to learn any new skills. Almost everyone knows how to use a mouse, but everyone handles it differently.
+In a test of this technology, researchers asked 100 participants to click a specific icon four times. The data gathered was used to identify different users based on their movement habits, with a very high success rate. The researchers believe the device is easy to produce on a large scale because it is made of low-cost, durable materials. The team plans to bring it to the market soon.
+[QUESTIONS]
+Why did the researchers develop the smart mouse?
+A. To make cursor movement faster.
+B. To improve clicking accuracy.
+C. To eliminate the need for passwords.
+D. To lower the cost of data protection.
+What makes the invention of the smart mouse possible?
+A. Computers are becoming cheaper.
+B. Movement patterns vary among users.
+C. Facial recognition is becoming common.
+D. Click speed is easy to measure.
+What do the researchers expect for the smart mouse?
+A. It will be sold to users soon.
+B. It will be used in schools only.
+C. It will be made of metal parts.
+D. It will help users work faster.
+Where is this text most likely from?
+A. A personal blog.
+B. A user manual.
+C. A science magazine.
+D. A business report.
+[ANALYSIS]
+28. D. Detail. The first paragraph mentions current tech is "expensive" and the researchers came up with a "low-cost device" to solve this.
+29. B. Detail. The second paragraph states "These patterns are unique to each person," which is the basis for the invention.
+30. A. Detail. The final sentence states the team "plans to bring it to the market soon."
+31. C. Inference. The text describes a technological research study and its practical application, typical for a science magazine.

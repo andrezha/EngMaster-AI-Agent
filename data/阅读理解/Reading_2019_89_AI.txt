@@ -1,0 +1,35 @@
+FILENAME: Reading_2019_89_AI.txt
+YEAR: 2019
+CAT: （新课标Ⅱ）阅读理解模拟
+TITLE: The Reluctant Mentor
+“You can contact me as a last option, and if no one else is available, then I will help.” This was the response from a senior developer after I asked for mentors for our new training program.
+I assumed he had a busy project schedule or perhaps some hesitation about teaching others. He might just need a little encouragement. So I tried again and shared some stories. I mentioned the junior developer who was struggling alone and talked about the manager who was leading a team in an area he didn't even specialize in... At this point, the senior developer said, “Fine. I’ll do it.”
+I was relieved because I knew the benefit of spreading mentorship among many people. The reluctant mentor began reviewing code, sending helpful links, and giving career advice. Eventually, he became a key member of the program. The other leads could focus on their specific tasks while the juniors felt supported. Helping a new coder solve a difficult problem can be as satisfying as finishing your own project.
+Still, most of us mentors feel a sense of relief when the training period ends. But that feeling is mixed with a realization of why the same people keep helping: Connecting with the professional community as you give your time and skills provides real satisfaction. Helping others just feels good.
+In that way, I think mentoring is more of a personal reward than I’d like to admit. But if others grow in the process and I feel good too, does the original reason really matter?
+[QUESTIONS]
+What can we infer about the senior developer from his first reply?
+A. He knows nothing about the program.
+B. He is not good at teaching.
+C. He is not willing to be a mentor.
+D. He is too busy to help anyone.
+What does the phrase “tug at the heartstrings” (in the original, here "shared some stories") likely mean?
+A. Encourage teamwork.
+B. Appeal to emotions.
+C. Provide technical help.
+D. Give career advice.
+What can we learn about the senior developer from paragraph 3?
+A. He finds coding more interesting now.
+B. He is proud of his own work.
+C. He will mentor again next year.
+D. He becomes a helpful member.
+Why does the author enjoy being a mentor?
+A. It provides a sense of duty.
+B. It brings personal happiness.
+C. It helps her work harder.
+D. It offers financial rewards.
+[ANALYSIS]
+24. C. Inference. His reply "as a last option... if no one else is available" shows a clear lack of desire to participate initially.
+25. B. Contextual. The author uses stories of struggling people to persuade him, which is an emotional appeal.
+26. D. Detail. The text says he "ends up becoming an invaluable member of the team."
+27. B. Detail. The text states "Connecting to the community... provides a real joy. Volunteering just feels so good."

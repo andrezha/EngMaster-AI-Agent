@@ -1,0 +1,39 @@
+FILENAME: Reading_2016_48_AI.txt
+YEAR: 2016
+CAT: （新课标Ⅰ）阅读理解 A 模拟
+TITLE: Four Remarkable Women in Modern Tech
+You probably know who Steve Jobs was, but you might not have heard of Grace Hopper. Of the visionary women listed below, who do you think had the greatest impact on the tech world in the last century?
+Grace Hopper (1906–1992)
+Anyone who has ever written a line of computer code has Grace Hopper to thank. Hopper was a pioneer in programming. She promoted the idea of machine-independent languages and led the development of COBOL, one of the first high-level programming languages. In 1991, she was the first female individual recipient of the National Medal of Technology.
+Hedy Lamarr (1914–2000)
+If it weren’t for Hedy Lamarr, modern wireless communication might not exist today. Her 1942 patent for "frequency hopping" raised awareness of how to protect radio signals from interference, providing the foundation for today’s Wi-Fi, Bluetooth, and GPS technologies.
+Katherine Johnson (1918–2020)
+When Katherine Johnson finished her studies as one of the top students at West Virginia State, she faced limited opportunities because of her background and gender. She became a "human computer" for NASA and, in 1962, provided the critical manual calculations that ensured the success of the first U.S. orbital spaceflight. Johnson’s work was vital to many missions during her 33 years at the space agency.
+Radia Perlman (1951–present)
+In the 1980s, Radia Perlman developed the Spanning Tree Protocol (STP), which is fundamental to the operation of network bridges. Her invention effectively "kicked off" the modern expansion of the Ethernet. "The internet wouldn't work the same way without this logic," say experts. Often called the "Mother of the Internet," she remains a humble leader in software design.
+[QUESTIONS]
+What is Grace Hopper noted for in history?
+A. Her programming work.
+B. Her teaching skills.
+C. Her efforts to win medals.
+D. Her background in physics.
+What was the reason for Katherine Johnson’s early career difficulties?
+A. Her lack of training in math.
+B. Her little experience in flight.
+C. Discrimination against her background.
+D. Poor economic conditions.
+Who made a great contribution to the foundation of Wi-Fi technology?
+A. Grace Hopper.
+B. Hedy Lamarr.
+C. Katherine Johnson.
+D. Radia Perlman.
+What can we infer about the women mentioned in the text?
+A. They are highly educated.
+B. They are truly creative.
+C. They are pioneers.
+D. They are peace-lovers.
+[ANALYSIS]
+21. A. Detail. The text states anyone who writes code has her to thank and she was a "pioneer in programming."
+22. C. Inference/Detail. The text says she "faced limited opportunities because of her background and gender," mirroring the discrimination point.
+23. B. Detail. Hedy Lamarr's work on "frequency hopping" provided the "foundation for today’s Wi-Fi."
+24. C. Inference. Like the original, each woman is described as a "pioneer," "visionary," or creator of fundamental technologies that didn't exist before.

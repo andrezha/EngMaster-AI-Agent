@@ -1,0 +1,49 @@
+FILENAME: Cloze_2018_01_AI.txt
+YEAR: 2018
+CAT: 完形填空01模拟
+TITLE: The Coding Workshop
+During my junior year at the university, I heard that the tech department was offering a “free” workshop, called Digital Logic, for three credits. I 41 the idea of joining because, after all, who doesn’t want to 42 some tuition? More than that, I’d always wanted to learn coding. And, even if I weren’t 43 enough about free credits, news about our 44 was attractive enough to me. He was a lead developer at a top firm, which 45 I would be learning from one of the industry’s 46 . I could hardly wait to 47 him.
+David Miller was patient and brilliant, a former student returning to teach, and this 48 was no hobby for him: he meant business. In his introduction, he made it 49 that our credits would be hard-earned. In order to 50 the workshop, among other criteria, we had to build a project on how we plan to 51 what we would learn in class to our future careers and, 52 , to our daily lives. I managed to get an A in that 53 and learned logic lessons that have served me well beyond the 54 .
+Ten years after my class with Miller, I’m still using what he 55 me: “The absolute most important 56 that you learn when you code is how to make good 57 . On every single line of code, you have to 58 a problem, process what the system is doing and 59 the best solution from among all your options.” These words still ring true today in my 60 as a marketing manager.
+[OPTIONS]
+41. A. put forward B. jumped at C. tried out D. turned down
+42. A. waste B. earn C. save D. pay
+43. A. excited B. worried C. moved D. tired
+44. A. title B. competitor C. textbook D. instructor
+45. A. urged B. demanded C. held D. meant
+46. A. fastest B. easiest C. best D. rarest
+47. A. interview B. meet C. challenge D. beat
+48. A. chance B. qualification C. honor D. job
+49. A. real B. perfect C. clear D. possible
+50. A. attend B. pass C. skip D. observe
+51. A. add B. expose C. apply D. compare
+52. A. eventually B. naturally C. directly D. normally
+53. A. game B. presentation C. workshop D. experiment
+54. A. criterion B. classroom C. department D. situation
+55. A. taught B. wrote C. questioned D. promised
+56. A. fact B. step C. manner D. skill
+57. A. grades B. decisions C. impressions D. comments
+58. A. analyze B. describe C. rebuild D. control
+59. A. announce B. signal C. block D. evaluate
+60. A. role B. desire C. concern D. behavior
+[ANALYSIS]
+41. B. Logic: The author "jumped at" (eagerly accepted) the idea because they wanted to learn and save money.
+42. C. Context: A "free" course allows one to "save" money.
+43. A. Emotion: "Excited" fits the context of being motivated by credits.
+44. D. Person: The person teaching the course is the "instructor."
+45. D. Logic: Having a top developer as a teacher "meant" high-quality learning.
+46. C. Quality: A lead developer is one of the "best" in the industry.
+47. B. Action: The author wants to "meet" the famous teacher.
+48. D. Context: Teaching the class was the instructor's "job" or professional duty.
+49. C. Clarity: He made it "clear" (obvious) that the work would be difficult.
+50. B. Goal: Students want to "pass" the course to get credits.
+51. C. Application: The project is about how to "apply" knowledge to a career.
+52. A. Progression: From career "eventually" to life in general.
+53. C. Subject: The author got an A in the "workshop" (the course).
+54. B. Scope: Lessons are useful outside the "classroom."
+55. A. Action: The instructor "taught" these lessons.
+56. D. Category: Coding involves learning a "skill."
+57. B. Logic: Coding, like chess, is about making "decisions."
+58. A. Process: One must "analyze" a problem before solving it.
+59. D. Action: One must "evaluate" options to find the best move/solution.
+60. A. Identity: The author's current "role" is a marketing manager.

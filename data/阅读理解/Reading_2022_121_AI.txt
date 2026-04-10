@@ -1,0 +1,33 @@
+FILENAME: Reading_2022_121_AI.txt
+YEAR: 2022
+CAT: （全国甲卷）阅读理解B模拟
+TITLE: Clever Crows and Their Problem-Solving Skills
+New Caledonian crows, a kind of bird known for their intelligence, have been shown to have problem-solving abilities similar to a young child. Although they use tools in the wild, they have proved even more skillful in controlled experiments. In a recent test, crows were shown a tube with a small piece of food at the bottom. The birds were given several wires of different lengths and shapes. By choosing the right wire and bending it into a hook, they could get the food.
+In humans, children can use simple tools from a young age, but it takes more time for them to understand how to change a tool to solve a specific problem. This ability is a sign of high intelligence. In the experiment, most of the crows were able to pick the best wire and change its shape just by looking at the tube. When they made a mistake, they quickly tried a different way and succeeded. This shows that these crows have a strong understanding of how objects work in space.
+The next step for researchers is to find out if the crows are born with this ability or if they learn it by watching other crows.
+[OPTIONS]
+4. How did the crows get the food in the experiment?
+A. By asking for help.
+B. By using a wire.
+C. By breaking the tube.
+D. By waiting for it to fall.
+Which task can young children most likely complete first?
+A. Building a complex robot.
+B. Using a simple spoon to eat.
+C. Bending metal to make a hook.
+D. Writing a long story.
+What is the goal of the next test?
+A. To see how fast they can fly.
+B. To find out if the skill is learned or natural.
+C. To see if they are smarter than dogs.
+D. To count how many crows live in the wild.
+What is a suitable title for the text?
+A. Crows: Fast Runners.
+B. Crows: Shy Forest Birds.
+C. Crows: Skilful Tool-Makers.
+D. Crows: Loud Callers.
+[ANALYSIS]
+4. B. The text says they "choosing the right wire" to get the food.
+5. B. Mirroring the "round hole" logic, children learn simple tool use (like a spoon) before complex problem-solving.
+6. B. The last paragraph mentions finding out if they are "born with this ability or if they learn it."
+7. C. The text focuses on the crows' intelligence and their ability to make and use tools.

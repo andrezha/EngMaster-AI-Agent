@@ -1,0 +1,22 @@
+FILENAME: 7of5_2016_07_AI.txt
+YEAR: 2016
+CAT: （新课标Ⅰ）七选五模拟
+TITLE: Digital Privacy and Information Security
+Secret codes keep our digital messages private. Banks, tech companies, and government offices use these codes to protect data, especially when information is shared online.
+People have used hidden messages for thousands of years. 36 Finding ways to read secret messages is always a challenge for those who create them. The study of making and reading these codes is known as cryptography.
+There are three main types of this science. 37 For example, the first letters of "Send every new data" spell out the hidden word "Send." 38 You might replace each letter with a specific symbol or number. For instance, if we give each letter a number from 1 to 26, the word "Act" would become "1 3 20."
+A real code uses symbols to represent whole words or phrases. To understand such a message, you must have a special code book. 39 For example, "blue" might mean "start" and "red" might mean "stop." The message "Blue red" would actually mean "Start stop." 40 However, it is also difficult to keep a code book safe for a long time. Therefore, codes must be updated often.
+[OPTIONS]
+A. It is very difficult to understand a code without the code book.
+B. In any system, some symbols are used more often than others.
+C. Only users who have the digital key can read the data.
+D. As long as codes have existed, people have tried to crack them.
+E. You can hide a word by using the first letters of several words to spell it.
+F. With a code book, you can use certain words to stand for different meanings.
+G. Another way to hide information is to use symbols for specific letters.
+[ANALYSIS]
+36. D The following sentence says "Code breaking never lags far behind code making" (replaced with "Finding ways to read... is always a challenge"). D introduces the historical struggle between making and breaking codes.
+37. E The example shows "Send every new data" spelling "Send". E describes this specific method (using first letters).
+38. G The paragraph introduces a new method (replacing letters with numbers). G uses the transition "Another way" and mentions "symbols for specific letters".
+39. F The text mentions needing a "code book". F explains what you do with that book (using words to stand for other words).
+40. A The sentence after the blank says "it is also difficult to keep a code book safe". The "also" implies the previous sentence (A) mentioned another difficulty related to the code book—that it's hard to break the code without it.

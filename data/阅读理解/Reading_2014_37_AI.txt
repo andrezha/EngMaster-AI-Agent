@@ -1,0 +1,34 @@
+FILENAME: Reading_2014_37_AI.txt
+YEAR: 2014
+CAT: （新课标ⅱ）Reading 模拟
+TITLE: The Rise of Digital Awareness
+Since the first Digital Literacy Day in 2005, people have become much more "security-conscious" regarding their online presence. "At that time, many didn't even realize there were risks to sharing personal data, let alone that it could be a global issue," says Kevin Marsh, director of a leading tech safety group.
+What began as a minor concern among IT experts has grown into a major social movement. Educators, business leaders, lawmakers, and millions of regular internet users are now taking part. "The level of understanding has improved significantly," says Diane West, a former tech advisor who helped organize the first event. According to recent reports, incidents of identity theft from simple scams have dropped in several monitored regions. The number of major websites failing to meet basic security standards has also been reduced. Although serious challenges like cyber-attacks still exist, the digital world is becoming a safer and more transparent place. A kind of "secure thinking" has become part of everyday online habits.
+There has been huge progress. In 2010, there were only 500 public programs teaching online safety; today, there are over 5,000. New encryption tools, secure login methods, and better software designs have helped protect data and prevent information leaks.
+Fifteen years ago, there were almost no educational courses on digital ethics. Today, it’s hard to find a high school or college that doesn't offer such a program. "Until we educate every user, the job isn't done," says Marsh.
+[QUESTIONS]
+According to Marsh, before 2005, most people _______.
+A. were experts in IT
+B. didn't know much about online risks
+C. avoided using the internet
+D. disliked the idea of Digital Literacy Day
+Where does the most significant support for the movement come from?
+A. Ordinary internet users.
+B. International law firms.
+C. Government politicians.
+D. Software developers.
+What have people achieved in terms of digital safety?
+A. They have eliminated all cyber-attacks.
+B. They have made the internet perfectly safe.
+C. They have increased the standard of all websites.
+D. They have improved security through various methods.
+According to the last paragraph, what is vital for future safety?
+A. Education.
+B. Software speed.
+C. Lower costs.
+D. Faster hardware.
+[ANALYSIS]
+B. Detail understanding. The text states: "We didn't know at that time there even was an environment [online risks]... let alone that there was a problem with it."
+A. Detail understanding. The text mentions business people, leaders, etc., but emphasizes "especially millions of grass-roots [regular] users."
+D. Inference. The text lists reductions in scams, better standards, and new tools as evidence of progress in reducing "pollution" (digital risks).
+A. Detail understanding. The final paragraph focuses on the growth of "education programs" and says "Until we do that [educate], nothing else will change."

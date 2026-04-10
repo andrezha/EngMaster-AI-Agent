@@ -1,0 +1,22 @@
+FILENAME: 语法填空_2020_新课标Ⅱ_AI.txt
+YEAR: 2020
+CAT: 语法填空_2020_新课标Ⅱ_语法填空模拟
+TITLE: Preparing for the Graduation Ceremony
+A graduation ceremony is a 61 (celebrate) marking the end of the school year and the beginning of a new journey. This is why decorating with banners, photos and flowers 62 (carry) special meaning. They represent the students 63 (come) of age and best wishes for future success.
+These are some of the most popular items used in many schools:
+Banners: Large banners are more 64 decoration; they are a symbol of achievement and pride. They make great backgrounds and you see them many times 65 (decorate) with students' names and signatures.
+Memory Books: Students love their yearbooks and you will see them often in their hands. 66 (certain) during the final week, this book is a must. Yearbooks are associated 67 friendships, memories and a happy school life. They are easy 68 (look) through and make great keepsakes.
+Bouquets of Roses: The 69 (beauty) long stems covered with bright petals make fantastic gifts. The rose bushes are 70 the first to bloom in the campus garden as summer arrives. They represent the promise of a bright future and a new start.
+[OPTIONS]
+61. celebration 62. carries 63. coming 64. than 65. decorated 66. Certainly 67. with 68. to look 69. beautiful 70. the
+[ANALYSIS]
+61. celebration: Tests the noun form after "a."
+62. carries: Tests subject-verb agreement (gerund subject "decorating...").
+63. coming: Tests the present participle as a post-modifier.
+64. than: Tests the phrase "more than."
+65. decorated: Tests the past participle as a complement.
+66. Certainly: Tests the adverb used as a sentence modifier.
+67. with: Tests the fixed phrase "be associated with."
+68. to look: Tests "adj + to do" structure.
+69. beautiful: Tests the adjective form.
+70. the: Tests the definite article before "first."

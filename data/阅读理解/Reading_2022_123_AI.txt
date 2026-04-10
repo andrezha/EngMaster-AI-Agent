@@ -1,0 +1,38 @@
+FILENAME: Reading_2022_123_AI.txt
+YEAR: 2022
+CAT: （全国甲卷）阅读理解D模拟
+TITLE: The Changing Face of San Francisco
+Sometime in the 1960s, something important happened in San Francisco. The city rediscovered its hills and the bay. One by one, it found things that were always there—the steep streets, the beautiful views, and the mix of people from everywhere. But it is the bay that gives the city its spirit.
+James, a man in his 30s, drives the famous cable cars for a living. I spent the morning riding up and down the hills with him. After his shift, we talked before he went for his break.
+“I’ll miss these old cars,” he said.
+“Why?” I asked.
+“Well, they are talking about making them more modern. The new ones might be faster, but they won't have the same feeling. But I guess that's what people call progress.”
+Everywhere in the city now, "modern" and "new" are the most common words, and old traditions are becoming harder to find. A local historian told me that in the rush to change in the 1980s, the city lost many of its old buildings. “The city is struggling,” she said. “We can't decide if we want to be a modern tech center or keep our historical charm. It's a difficult choice.”
+On the other hand, being both old and new is also interesting. I talked to a young businessman who said, “People say we have no history, but they forget that the people who came here brought their own cultures from all over the world. We have a foundation of old traditions mixed with the energy of a young city. It's a great combination.”
+He is right, but I still hope they keep those old cable cars.
+[OPTIONS]
+12. What is the first paragraph mainly about?
+A. San Francisco's modern tech.
+B. The city's famous hills.
+C. The importance of the bay to the city.
+D. The history of the 1960s.
+What can we learn about James?
+A. He wants a faster car.
+B. He loves the old cable cars.
+C. He is tired of his job.
+D. He wants to move to a new city.
+What does the historian think about the city?
+A. It is growing too slowly.
+B. It is losing its history.
+C. It needs more people.
+D. It should build more tech centers.
+What would the author probably agree with?
+A. A city can have both tradition and energy.
+B. Modern cities are always better.
+C. It is impossible to keep old buildings.
+D. Culture is not important for a city.
+[ANALYSIS]
+12. C. The paragraph ends with "But it is the bay that gives the city its spirit," highlighting its key role.
+13. B. James says "I’ll miss these old cars," showing his attachment.
+14. B. The historian says the city "lost many of its old buildings" and is "struggling" to keep its charm.
+15. A. The author agrees with the businessman that the "combination" of old and new is "great" and "right."

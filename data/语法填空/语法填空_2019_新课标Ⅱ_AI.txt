@@ -1,0 +1,20 @@
+FILENAME: 语法填空_2019_新课标Ⅱ_AI.txt
+YEAR: 2019
+CAT: 语法填空_2019_新课标Ⅱ_语法填空模拟
+TITLE: The Youngest Volunteer of the Year
+A 16-year-old has been awarded “Volunteer of the Year” for 61 (be) the city’s youngest full-time helper — still working 35 hours a week during the summer. Now Leo Smith works from 10am to 4pm daily at the community garden, 62 he started with his late grandfather. His months of hard work have 63 (final) been recognized after a neighbor nominated him for the award.
+Picking up his “Community Spirit” award, proud Leo 64 (declare) he had no plans 65 (leave) his project. Leo said, “I don’t see any reason to stop. I love coming here and seeing the plants and all the friends I 66 (make) over the season. I volunteer not because I have to, 67 because I want to.”
+His sister Amy, 19 — who works alongside him in the garden — said it remained unknown as to who nominated Leo. She said, “We don’t have any idea who suggested Leo. When we got a call 68 (say) he was on the list, we thought it was 69 joke. But then we got an official letter and we were very happy. We are so proud of him. It’s 70 (wonder).”
+[OPTIONS]
+61. being 62. which 63. finally 64. declared 65. to leave 66. have made 67. but 68. saying 69. a 70. wonderful
+[ANALYSIS]
+61. being: Tests the gerund after the preposition "for."
+62. which: Tests the non-restrictive relative clause referring to the garden.
+63. finally: Tests the adverb modifying the passive verb "been recognized."
+64. declared: Tests the simple past tense in a narrative.
+65. to leave: Tests the infinitive as a post-modifier for "plans."
+66. have made: Tests the present perfect with "over the season."
+67. but: Tests the "not... but..." structure.
+68. saying: Tests the present participle as a post-modifier for "call."
+69. a: Tests the indefinite article for the countable noun "joke."
+70. wonderful: Tests the adjective as a predicative.

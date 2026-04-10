@@ -1,0 +1,47 @@
+FILENAME: CLOZE_2011_02_AI.txt
+YEAR: 2011
+CAT: 完形填空_02_模拟
+TITLE: The Risks of Exhaustion
+There are times when people are so tired that they lose focus almost anywhere. We can see there is a lot of resting on the bus or train on the 21 home from work in the evenings. A person will be 22 the news, and seconds later it 23 as if he is trying to 24 it. Or he will fall asleep on the shoulder of the stranger 25 next to him. 26 place where unplanned short sleep 27 is in the lecture hall where a student will start snoring so 28 that the professor has to ask another student to 29 the sleeper awake. A more embarrassing situation occurs when a student starts falling into sleep and the 30 of the head pushes the arm off the 31, and the movement carries the 32 of the body along. The student wakes up on the floor with no 33 of getting there. The worst time to lose consciousness is when 34. Police reports are full of 35 that occur when people fall into sleep and go 36 the road. If the drivers are 37, they are not seriously hurt. One woman’s car, 38, went into the river. She woke up in four feet of 39 and thought it was raining. When people are really 40, nothing will stop them from falling asleep — no matter where they are.
+[OPTIONS]
+21. A. way B. track C. path D. road
+22. A. buying B. folding C. delivering D. reading
+23. A. acts B. shows C. appears D. sounds
+24. A. open B. eat C. find D. finish
+25. A. lying B. waiting C. talking D. sitting
+26. A. Other B. The C. Another D. One
+27. A. goes on B. ends up C. occurs D. returns
+28. A. bravely B. happily C. loudly D. carelessly
+29. A. leave B. shake C. keep D. watch
+30. A. size B. shape C. weight D. strength
+31. A. cushion B. table C. shoulder D. book
+32. A. action B. position C. rest D. side
+33. A. memory B. reason C. question D. purpose
+34. A. thinking B. working C. walking D. driving
+35. A. changes B. events C. ideas D. accidents
+36. A. up B. off C. along D. down
+37. A. lucky B. awake C. calm D. strong
+38. A. in time B. at first C. as usual D. for example
+39. A. dust B. water C. grass D. bush
+40. A. tired B. drunk C. lonely D. lazy
+[ANALYSIS]
+21. A. Idiom: "on the way home" means during the journey back.
+22. D. Collocation: "reading the news" (or newspaper).
+23. C. Linking verb: "it appears as if" describes an outward impression.
+24. B. Humor/Logic: When a head drops while reading, it looks like the person is trying to "eat" the paper.
+25. D. Context: People on a bus or train are usually "sitting" next to each other.
+26. C. Transition: "Another place" introduces a second example in a list.
+27. C. Verb: "Occurs" means happens or takes place.
+28. C. Logic: Snoring must be "loud" to disturb a professor and require intervention.
+29. B. Action: To wake someone who is snoring deeply, you usually have to "shake" them.
+30. C. Physics: The "weight" of the head provides the force that moves the arm.
+31. B. Context: In a lecture hall, students rest their arms on a "table" or desk.
+32. C. Phrase: "The rest of the body" refers to the remaining parts.
+33. A. Logic: If you fall asleep and wake up on the floor, you have no "memory" of the fall.
+34. D. Context: The mention of "police reports" and "road" points to "driving".
+35. D. Noun: "Accidents" are the result of falling asleep while driving.
+36. B. Phrasal verb: "Go off the road" means to leave the pavement unintentionally.
+37. A. Logic: Surviving a crash without serious injury is a matter of being "lucky".
+38. D. Transition: "For example" introduces a specific case of a car going into a river.
+39. B. Logic: If a car goes into a "river", the person wakes up in "water".
+40. A. Theme: The entire passage is about being "tired" or exhausted.

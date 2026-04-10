@@ -1,0 +1,37 @@
+FILENAME: Reading_2018_76_AI.txt
+YEAR: 2018
+CAT: （新课标ⅱ）阅读模拟
+TITLE: Winter Break Workshops
+Students should review this list with their parents and choose two workshops they wish to attend. Registration forms are available at the office. Parents must sign to confirm the choices.
+Wilderness Survival (WS)
+Leave your house for a week to learn how to survive in the wild. You will learn new skills such as building a shelter and starting a fire. Activities include hiking and camping in the snowy hills. Work in a team and enjoy the winter environment.
+Instructor: Mr. Brown | Cost: £130
+European History (EH)
+On Monday we travel to Berlin. After staying overnight, we spend Day 2 visiting historic sites from the Cold War. On Day 3 we travel to Prague. Thursday takes us to a famous castle for a tour and a traditional dinner. Our final day, Friday, is spent exploring the city center of Prague.
+Instructor: Ms. Taylor | Cost: £410
+Digital Arts (DA)
+Four days of learning how to create digital art and animations. Using modern software to design your own characters and short films. Learn technical skills and finish the week with your own digital portfolio.
+Instructor: Mrs. Green | Cost: £40
+Movie Magic (MM)
+Visit a famous film studio, stop to buy snacks for a picnic, and stay overnight in a hostel in the countryside. Enjoy a guided tour of famous filming locations from popular movies. Go on a short boat trip before returning home the next day.
+Instructor: Miss Clark | Cost: £145
+[OPTIONS]
+21. Which workshop will you choose if you want to go camping?
+A. WS.
+B. EH.
+C. DA.
+D. MM.
+What will the students do on Tuesday with Ms. Taylor?
+A. Travel to Berlin.
+B. Have a traditional dinner.
+C. Tour a famous castle.
+D. Visit historic Cold War sites.
+How long does Movie Magic last?
+A. Two days.
+B. Four days.
+C. Five days.
+D. One week.
+[ANALYSIS]
+21. A. Detail. The "Wilderness Survival (WS)" description explicitly mentions "camping in the snowy hills."
+22. D. Detail. For "European History (EH)," Monday is travel to Berlin, and "Day 2" (Tuesday) is visiting Cold War sites.
+23. A. Detail. "Movie Magic (MM)" involves staying "overnight" and "returning home the next day," which equals two days.

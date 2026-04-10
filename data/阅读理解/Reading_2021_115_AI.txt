@@ -1,0 +1,27 @@
+FILENAME: Reading_2021_115_AI.txt
+YEAR: 2021
+CAT: （解析版）阅读理解D模拟
+TITLE: Rethinking Genius in a Modern World
+Who is a genius? For a long time, we thought of geniuses only as famous men from the past, like Einstein. But the nature of genius is actually much broader.
+In the past, the standards for being a “genius” were often set by a small group of people. Because of this, many women and people from different backgrounds were ignored, even when they made great discoveries. A recent study showed that even young children are affected by these old ideas. By age seven, some girls begin to avoid activities that are described as being for “very smart” people.
+The good news is that in today’s connected world, we can see genius everywhere. Social factors like race or gender do not decide who is smart. Future geniuses will come from anyone with hard work, creativity, and a bit of luck.
+[OPTIONS]
+12. What does the author think of the old standards for genius?
+A. They are fair.
+B. They are unfair.
+C. They are strict.
+D. They are helpful.
+What can we infer about young girls from the study?
+A. They are very smart.
+B. They are influenced by social ideas.
+C. They hate science.
+D. They want to be famous.
+What is the best title for the text?
+A. Famous Scientists.
+B. Genius in Many Forms.
+C. How to Get High Scores.
+D. The History of Books.
+[ANALYSIS]
+12. B. The text says women and others were "ignored," which implies unfairness.
+13. B. The study shows they avoid activities because of social beliefs about gender and intelligence.
+14. B. The text argues that genius isn't limited to a specific group and can be found in many forms.

@@ -1,0 +1,24 @@
+FILENAME: 7of5_2018_14_AI.txt
+YEAR: 2018
+CAT: （新课标ⅱ）七选五模拟
+TITLE: Benefits of Early Morning Volunteering
+If you are already finding time to volunteer, that is excellent! With such busy student lives, it can be hard to find time for extra activities. 36 Starting your volunteer work in the morning provides benefits beyond just helping the community.
+● Your focus is improved. Volunteering makes you more alert and ready to handle your studies for the rest of the day. 37
+● Your energy gets a head start. 38 If you volunteer in the mornings, you will feel the active benefits throughout the whole day, not just while you are working.
+● 39 Studies show that people who start their day with meaningful activity sleep better than those who work late into the evening. Helping others energizes you in a positive way, making it easier to relax when it is time for bed.
+● 40 If you start your day with a positive activity, you are more likely to make healthy choices throughout the day. Who would want to ruin a productive morning by wasting time later? You will want to continue focusing on positive actions.
+There are many benefits to volunteering, especially in the mornings. Set your alarm a bit earlier and give it a try! You will feel great all day long.
+[OPTIONS]
+A. You will stick to your schedule.
+B. Your quality of sleep improves.
+C. You prefer healthy food to fast food.
+D. There is no reason to work in the morning.
+E. You can keep your mind clear for many hours after the activity.
+F. After you finish your work, you continue to feel energized all day.
+G. If you are planning to volunteer regularly, then listen up!
+[ANALYSIS]
+36. G The intro mentions the difficulty of finding time. G provides the transition ("then listen up!") to the specific benefits of morning volunteering.
+37. E The paragraph is about focus and being alert. E provides a specific detail about how long that mental clarity lasts.
+38. F The paragraph is about energy and "head starts". F explains that the feeling of being energized continues after the work is done.
+39. B This is a heading. The paragraph discusses sleeping better and relaxing at night. B ("quality of sleep improves") is the perfect summary.
+40. A This is a heading. The paragraph discusses making "healthy choices" and not "ruining a productive morning". A ("stick to your diet/schedule") fits the logic of maintaining positive habits.

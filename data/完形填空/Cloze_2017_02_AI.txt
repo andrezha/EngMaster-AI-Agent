@@ -1,0 +1,51 @@
+FILENAME: Cloze_2017_02_AI.txt
+YEAR: 2017
+CAT: 完形填空02模拟
+TITLE: The Free Conference Pass
+A London developer is offering a free tech conference pass to the right person. But 41 apply. You must be named Alex Chen and have a valid student 42 .
+Mark Wood, 26, said he and his then partner, Alex Chen, booked early-bird tickets in March, but their 43 ended and he did not want the extra pass to 44 . The pass had a strict no-refund 45 , but since ID details were not checked during 46 , any student named Alex Chen can 47 it.
+“I just want to see the pass used well and for someone to 48 the event,” said Wood. He posted his 49 on a professional forum and received hundreds of replies, including ten from real Alex Chens with the 50 IDs. “More 51 , there are dozens of people who are interested in 52 their legal name to Alex Chen,” Wood said. “It was totally out of 53 , hundreds of messages, people from everywhere 54 their career goals.”
+Wood wrote that he is not 55 anything in return and that the person who uses the 56 pass can choose to either attend with him or 57 the pass and go alone.
+The 58 is scheduled to start on October 10 in Berlin and move to several tech hubs before 59 in London on October 20. He said the 60 winner will be announced on the forum.
+[OPTIONS]
+41. A. benefits B. deposits C. limits D. tests
+42. A. origin B. ID C. accent D. friend
+43. A. project B. marriage C. dream D. relationship
+44. A. go to waste B. come to mind C. go on sale D. take effect
+45. A. policy B. order C. payment D. schedule
+46. A. applying B. booking C. checking D. bargaining
+47. A. use B. borrow C. choose D. buy
+48. A. sacrifice B. express C. enjoy D. provide
+49. A. answer B. advice C. offer D. comment
+50. A. same B. right C. new D. real
+51. A. interesting B. annoying C. satisfying D. convincing
+52. A. writing B. giving C. lending D. changing
+53. A. touch B. question C. date D. control
+54. A. admiring B. advertising C. sharing D. doubting
+55. A. leaving B. seeking C. losing D. dealing with
+56. A. single B. strange C. regular D. spare
+57. A. return B. take C. reserve D. hide
+58. A. interview B. program C. event D. meeting
+59. A. ending B. calling C. repeating D. staying
+60. A. honored B. lovely C. intelligent D. lucky
+[ANALYSIS]
+41. C. Logic: The specific name and ID requirements are "limits" or restrictions on who can apply.
+42. B. Requirement: A "student ID" is a standard document for verification, matching the original "passport."
+43. D. Context: They were partners, but the "relationship" ended, leaving an extra ticket.
+44. A. Motivation: He doesn't want the ticket to be unused or "go to waste."
+45. A. Rule: A "no-refund policy" explains why he can't get money back.
+46. B. Timing: Information is usually entered during the "booking" process.
+47. A. Action: Someone with the same name can "use" the pass.
+48. C. Goal: He wants someone to "enjoy" the experience.
+49. C. Action: Posting the opportunity is making an "offer."
+50. B. Logic: He found people with the "right" (correct/matching) IDs.
+51. A. Tone: People wanting to change their names is an "interesting" or surprising detail.
+52. D. Action: To match the ticket, they would need to "change" their names.
+53. D. Scale: The massive response made the situation "out of control."
+54. C. Interaction: People are "sharing" their personal stories and goals.
+55. B. Condition: He is not "seeking" (looking for) any payment or favor.
+56. D. Description: The ticket is "spare" or extra because the partner isn't going.
+57. B. Choice: The winner can "take" the pass and go independently.
+58. C. Subject: The text is about a tech "event" or conference.
+59. A. Timeline: The schedule starts on one date and "ends" on another.
+60. D. Outcome: The person chosen from many applicants is the "lucky" winner.

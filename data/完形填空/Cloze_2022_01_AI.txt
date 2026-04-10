@@ -1,0 +1,51 @@
+FILENAME: Cloze_2022_01_AI.txt
+YEAR: 2022
+CAT: 完形填空_全国甲卷_模拟
+TITLE: The Partnership in the Garden
+You can tell a lot about a person by how they treat their environment.
+For many years, I enjoyed working in my garden, Green Space. Its 21 was nearly enough to keep my stress at bay. Nearly. Last year, I started a community project, but with 22. When I first met Mark, I 23 he had a small plot, Plot A, and a greenhouse. While I was 24 that he was a nature lover, I 25 that three plots were perhaps too many, and my plants might crowd out 26, the rare flowers.
+The next week we 27 our plots together. It was a hot day. When we paused to catch our 28, Mark got down on one knee. Was he giving up? I liked his work too, but so 29? He poured water from a flask into a small tray and offered it to my seedlings. 30, I began to trust him.
+We 31 to work, though neither of us brought up the future. And then in late November, the main fence had a break in its 32. I checked the garden four times a day, and I worried that the wind 33 hitting the plants could destroy the roots. Then Mark 34 his help. All worked 35. The three plots formed a zone that, with care, 36 each other's space; Mark and I formed a good team 37 for the garden. We made good partners.
+A year later, much to my 38, this man produced a small gift and asked me to lead the project with him. He did not kneel down, nor did I 39 him to. That’s only for giving 40 to the plants that brought us together.
+[OPTIONS]
+21. A. ownership B. membership C. partnership D. leadership
+22. A. doubts B. expectations C. confidence D. prejudice
+23. A. feared B. doubted C. hoped D. found
+24. A. unsatisfied B. pleased C. terrified D. thrilled
+25. A. predicted B. feared C. regretted D. insisted
+26. A. Plot A B. Green Space C. The greenhouse D. The flowers
+27. A. tied B. worked C. bathed D. fed
+28. A. breath B. rest C. attention D. imagination
+29. A. calm B. sure C. early D. real
+30. A. By the way B. In that case C. By all means D. In that moment
+31. A. kept B. decided C. intended D. pretended
+32. A. eye B. tail C. ear D. base
+33. A. secretly B. repeatedly C. eventually D. unwillingly
+34. A. left B. sold C. offered D. searched
+35. A. late B. hard C. well D. free
+36. A. emptied B. shared C. occupied D. discovered
+37. A. looking B. caring C. waiting D. calling
+38. A. joy B. credit C. interest D. disadvantage
+39. A. beg B. trust C. expect D. aid
+40. A. toys B. awards C. food D. help
+[ANALYSIS]
+21. C. Context: The garden provides "partnership" or companionship to the owner.
+22. A. Logic: "Doubts" mirrors "reservations," showing initial hesitation.
+23. D. Logic: "Found" mirrors "learned," discovering facts about the other person.
+24. B. Logic: "Pleased" mirrors "amused," a positive reaction to a shared interest.
+25. B. Logic: "Feared" mirrors "worried," expressing concern about the future.
+26. D. Context: Refers to the specific plants mentioned earlier.
+27. B. Logic: "Worked" mirrors "walked," the shared activity.
+28. A. Logic: "Catch our breath" is the standard idiom for resting.
+29. C. Logic: "Early" mirrors "soon," reacting to the speed of the action.
+30. D. Logic: "In that moment" mirrors the original, marking the turning point.
+31. A. Logic: "Kept" mirrors "continued," maintaining the status quo.
+32. D. Logic: "Base" mirrors "leg," a structural part of the object.
+33. B. Logic: "Repeatedly" mirrors "constantly," describing the frequency of the wind/climbing.
+34. C. Logic: "Offered" mirrors "suggested/left," providing a solution.
+35. C. Logic: "Well" mirrors "fine," indicating a successful outcome.
+36. B. Logic: "Shared" mirrors "respected," describing how the spaces interacted.
+37. B. Logic: "Caring" mirrors the original, describing the team's purpose.
+38. A. Logic: "Joy" mirrors "delight," the positive reaction to the proposal.
+39. C. Logic: "Expect" mirrors "need," showing the speaker's lack of requirement for the gesture.
+40. D. Logic: "Help" mirrors "water," the specific act that started the bond.

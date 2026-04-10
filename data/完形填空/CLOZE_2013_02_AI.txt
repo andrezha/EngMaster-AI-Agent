@@ -1,0 +1,52 @@
+FILENAME: CLOZE_2013_02_AI.txt
+YEAR: 2013
+CAT: 完形填空_2013_新课标ii_模拟
+TITLE: The Umbrella Man of Seattle
+Arthur Reed is a very popular resident in Seattle. He is not famous in sports or the arts. But people in the streets 36 him, especially those who are 37 . For those people, he is "Umbrella" Reed. How did he get that 38 ?
+He looks like any other office worker, wearing a suit and carrying a large bag. But he’s 39 . His bag always has several umbrellas.
+On rainy days, Mr. Reed does not 40 like other commuters, who look at the ground and 41 the street. He looks around at 42 . He stops when he 43 someone with no protection from the rain. He gives them an umbrella and then he 44 , looking for more people with wet 45 .
+During the wet season, Mr. Reed 46 umbrellas. During the rest of the year, he 47 umbrellas. People who have heard about him 48 him umbrellas, and he has many in his garage.
+Mr. Reed 49 doing this 15 years ago. Now, many local citizens know him and 50 his behavior. But people who don’t know him are sometimes 51 him. They don’t realize that he just wants to make them 52 .
+It runs in the 53 . Arthur’s mother always helped the neighbors as she believed it made everyone feel better. Arthur Reed feels the 54 . An umbrella may be a 55 thing, but it can make a big difference on a stormy day.
+[OPTIONS]
+36. A. know about B. learn from C. cheer for D. look after
+37. A. old B. busy C. kind D. poor
+38. A. job B. name C. chance D. message
+39. A. calm B. different C. crazy D. curious
+40. A. act B. sound C. feel D. dress
+41. A. cross over B. drive along C. hurry down D. keep off
+42. A. cars B. people C. street numbers D. traffic lights
+43. A. helps B. chooses C. greets D. sees
+44. A. holds up B. hangs out C. moves on D. turns around
+45. A. hands B. ears C. faces D. heads
+46. A. searches for B. stores up C. gives away D. puts on
+47. A. borrows B. sells C. returns D. buys
+48. A. call B. send C. lend D. show
+49. A. delayed B. remembered C. began D. enjoyed
+50. A. understand B. dislike C. study D. excuse
+51. A. sorry for B. satisfied with C. proud of D. surprised by
+52. A. smart B. rich C. special D. happy
+53. A. city B. family C. neighborhood D. company
+54. A. honor B. pain C. same D. cold
+55. A. small B. useful C. delightful D. comforting
+[ANALYSIS]
+36. A. "Know about" indicates his popularity among the locals.
+37. D. The context implies he helps those in need, specifically the "poor" or unprepared.
+38. B. "Umbrella Reed" is a nickname or "name."
+39. B. He is "different" because his bag contains umbrellas instead of typical office items.
+40. A. "Act" refers to his behavior compared to others.
+41. C. "Hurry down" describes the typical fast-paced movement of city people in the rain.
+42. B. He is looking for "people" to help.
+43. D. He stops when he "sees" someone in need.
+44. C. "Moves on" indicates he continues his journey after helping.
+45. D. In the original, it was "cold hands" (gloves). Here, it is "wet heads" (umbrellas).
+46. C. He "gives away" the umbrellas for free.
+47. D. He "buys" umbrellas during the off-season to prepare.
+48. B. Others "send" him umbrellas to support his cause.
+49. C. "Began" marks the start of his 15-year tradition.
+50. A. Locals "understand" and accept his unique charity.
+51. D. Strangers are "surprised by" his unexpected kindness.
+52. D. His goal is to make people "happy," matching the "happier" clue later in the text.
+53. B. "Runs in the family" is a common idiom for inherited traits or traditions.
+54. C. He feels the "same" way his mother did about helping.
+55. A. An umbrella is a "small" object that has a "big" impact.

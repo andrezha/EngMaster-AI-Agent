@@ -1,0 +1,35 @@
+FILENAME: Reading_2013_31_AI.txt
+YEAR: 2013
+CAT: （新课标Ⅰ）Reading 模拟
+TITLE: The City Innovation Center
+Description:
+The City Innovation Center is the leading national science museum, located on the north side of Central Square. It houses a vast collection of over 2,500 exhibits of industrial design, ranging from 19th-century steam engines to modern digital inventions by famous tech pioneers. The historical collections are located near the main entrance, while the digital works in the New Wing are most easily reached from the Square via a ground-floor side entrance.
+Layout:
+The modern Smith Wing on the west side of the building contains 19th-century industrial tools, including works by inventors like Watt, Bell, and Edison.
+The main Central Hall houses early 20th-century aviation displays, featuring pioneers like the Wright brothers, Lindbergh, and Earhart.
+The North Wing houses mid-20th-century space exploration artifacts, including items from the Apollo missions and Soviet-era satellites.
+The New Wing on the east side houses late 20th to early 21st-century digital tech, featuring innovators like Jobs, Gates, and various robotics engineers.
+Opening Hours:
+The Center is open every day from 9 am to 5 pm (Thursdays 9 am to 8 pm) and admission is free, though fees apply to some temporary high-tech simulations.
+Getting There:
+Nearest metro stations: Central Park (2-minute walk), South Bridge (4-minute walk), West Gate (6-minute walk), and University Square (10-minute walk).
+[QUESTIONS]
+In which century’s collection can you find steam engines?
+A. The 19th.
+B. The 20th.
+C. The 21st.
+D. The 18th.
+Where are the Wright brothers' displays shown?
+A. In the New Wing.
+B. In the main Central Hall.
+C. In the Smith Wing.
+D. In the North Wing.
+Which metro station is closest to the Innovation Center?
+A. University Square.
+B. South Bridge.
+C. West Gate.
+D. Central Park.
+[ANALYSIS]
+A. Detail understanding. The "Description" mentions "19th-century steam engines."
+B. Detail understanding. The "Layout" states "The main Central Hall houses early 20th-century aviation displays... including the Wright brothers."
+D. Detail understanding. "Getting There" lists Central Park as a "2-minute walk," making it the nearest station.

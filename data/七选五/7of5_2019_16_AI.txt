@@ -1,0 +1,22 @@
+FILENAME: 7of5_2019_16_AI.txt
+YEAR: 2019
+CAT: （新课标Ⅰ）七选五模拟
+TITLE: Benefits of Outdoor Study Breaks
+We all grew up hearing people tell us to "take a break and go outside." 36 According to recent studies, the answer is a definite YES, if the environment around your campus or home is pleasant.
+37 If the air you are breathing is fresh—which it would be if you are away from heavy traffic—then it is filled with life-giving oxygen. If you take a walk outdoors, your body will breathe more deeply, allowing more oxygen to reach your muscles and your brain.
+Recently, researchers have begun studying the link between nature and mental health. 38 In these areas, students can go to be near nature during their breaks. It turns out that just looking at green plants can reduce stress and put people into a better mood. Greenery is good for us. Students who see trees out their window are likely to focus better than those who see only buildings. 39 It gives us a great feeling of calm.
+40 While the sun can be strong, it also gives us beneficial Vitamin D. To make sure you get enough Vitamin D—but still protect yourself—use sunscreen if you plan to stay out long. It takes a short time for your skin to absorb what it needs for the day.
+[OPTIONS]
+A. Fresh air helps our brains work better.
+B. So what are you waiting for?
+C. Being in nature helps us recover.
+D. Another benefit of going outside is sunlight.
+E. But is going outdoors really as helpful as people say?
+F. Just as importantly, we associate nature with relaxation.
+G. Many universities have begun creating "Green Study Zones."
+[ANALYSIS]
+36. E The following sentence says "the answer is a big YES". E provides the question: "Is it really as good as people say?"
+37. A The paragraph discusses oxygen reaching the brain and muscles. A provides the topic sentence about fresh air helping the brain.
+38. G The next sentence mentions "these places" (replaced with "these areas"). G introduces the "Green Study Zones" which are the places being discussed.
+39. C The paragraph discusses how greenery reduces stress and helps focus. C summarizes this by saying nature "refreshes us" (helps us recover).
+40. D The paragraph is about the sun and Vitamin D. D introduces "sunlight" as another benefit.

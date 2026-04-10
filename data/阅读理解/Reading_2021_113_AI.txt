@@ -1,0 +1,27 @@
+FILENAME: Reading_2021_113_AI.txt
+YEAR: 2021
+CAT: （解析版）阅读理解B模拟
+TITLE: New Arrivals at the Panda Center
+The Mountain Panda Center, which runs a special breeding program, has welcomed a new baby panda. When the small panda was born on February 15, it became the 30th baby born at the center. Officials were very happy, as pandas are often difficult to breed in a controlled environment.
+A staff member said, “We are all very excited. The baby is healthy and strong. Its mother is a first-time parent and is doing a great job.”
+According to wildlife experts, the wild panda population is still very small, which makes these breeding programs very important for the future of the species.
+[OPTIONS]
+4. Which word best describes the breeding program?
+A. Difficult.
+B. Successful.
+C. Boring.
+D. Expensive.
+What is said about the baby panda?
+A. It is weak.
+B. It is in good health.
+C. It dislikes its mother.
+D. It is already eating bamboo.
+Why is the program important?
+A. To save an endangered species.
+B. To sell pandas to other countries.
+C. To entertain visitors.
+D. To study plant growth.
+[ANALYSIS]
+4. B. The fact that they have 30 babies and are happy with the progress shows success.
+5. B. The text says "The baby is healthy and strong."
+6. A. The mention of the small wild population and the "critically endangered" status of similar animals in the source implies a conservation goal.

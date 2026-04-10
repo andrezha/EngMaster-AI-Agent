@@ -1,0 +1,43 @@
+FILENAME: Reading_2020_100_AI.txt
+YEAR: 2020
+CAT: （新课标Ⅱ）阅读理解模拟
+TITLE: Innovation Hub Tour Guide
+Tech Valley Mansion & Labs
+History, Innovation & Design. Discover 50 years of tech history and 10 acres of modern labs and green spaces. Owned by the Pioneer Group since 1980, home to the Global Coding Festival. Tech gifts, vintage gadgets, and a mediaeval-style cafe.
+Open: April to October, Tuesday to Sunday.
+Cafe & Shop: 10:00 - 18:00.
+Main Lab: 11:00 - 17:00.
+Town: Silicon Ridge.
+Modern Art Center
+Those visiting the high-quality exhibitions at the Art Center might feel they are in a world-class city gallery. The permanent collection includes works from famous digital artists and the temporary exhibits feature new talent from across the country.
+Open: Tuesday to Saturday. 10:30 - 17:30 (Summer), 10:30 - 16:30 (Winter).
+Town: North Port.
+Digital Museum & Gallery
+Explore and enjoy the award-winning Digital Museum, where history and modern tech are brought together. There are four interactive galleries to visit, with something for every age group!
+Open: High Season (Apr-Oct): Mon to Sat 10:00 - 17:00, Sun 11:00 - 17:00.
+Low Season (Nov-Mar): Mon to Sat 10:00 - 16:00, Sun 12:00 - 16:00.
+Town: East River.
+The Innovator’s Home
+Discover the home of the famous inventor, Thomas Reed. Take a tour of his original workshop and explore the collection of his early inventions in the museum. Visit the gift shop and cafe.
+Open: Daily, 09:00 - 17:00.
+Town: Reedville.
+[QUESTIONS]
+When is the Main Lab at Tech Valley Mansion open on a Wednesday in July?
+A. 09:00 - 17:00.
+B. 10:00 - 18:00.
+C. 11:00 - 17:00.
+D. 12:00 - 16:00.
+What can visitors do at the Modern Art Center?
+/A. Enjoy digital art.
+B. Use interactive gadgets.
+C. Attend a coding festival.
+D. Learn about a baker’s life.
+Where should visitors go if they want to learn about Thomas Reed’s life?
+A. Silicon Ridge.
+B. North Port.
+C. East River.
+D. Reedville.
+[ANALYSIS]
+21. C. Detail. Wednesday in July falls under the April-October schedule. The "Main Lab" is open from 11:00 - 17:00.
+22. A. Detail. The center includes "works from famous digital artists."
+23. D. Detail. The "Innovator's Home" (Thomas Reed) is located in the town of Reedville.

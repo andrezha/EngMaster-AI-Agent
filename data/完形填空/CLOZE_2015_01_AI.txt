@@ -1,0 +1,51 @@
+FILENAME: CLOZE_2015_01_AI.txt
+YEAR: 2015
+CAT: 完形填空_2015_新课标Ⅰ_真题
+TITLE: A Lesson in Giving
+My colleagues and I were walking to a local cafe during the break. On the way, we spotted a young man holding a sign that said, " 41 my internship. Need a chance."
+At this business district, a 42 like this is not normal. My junior partner noticed him and made a 43 on how tough it must be to stand 44 in the pouring rain.
+In the cafe, I asked each of my colleagues to 45 something they thought our "friend" out there would 46 . They got a hot coffee, a sandwich, and a warm scarf. Then my senior manager suggested giving him a 47 . I thought about it. We were 48 on our department budget ourselves, but... well, sometimes 49 from our need instead of our abundance is 50 what we need to do! Everyone 51 something they could contribute for the month.
+When we handed him the bag of 52 , he lit up and thanked us with 53 eyes. When I handed him the gift card, saying he could use it for 54 his career search might need, he burst into tears.
+This has been a wonderful 55 for our team. For days the staff have been looking for others we can 56 ! Things would have played out so 57 if I had simply said, "No, we really don’t have 58 to give more." Stepping out not only helped a professional in 59 , it also gave my team the 60 taste of helping others. It’ll go a long way with them.
+[OPTIONS]
+41. A. Lost B. Found C. Quit D. Finished
+42. A. sound B. smell C. sight D. spirit
+43. A. suggestion B. comment C. decision D. call
+44. A. outside B. proudly C. by D. angrily
+45. A. draw B. say C. arrange D. pick
+46. A. order B. supply C. appreciate D. discover
+47. A. dollar B. job C. hot meal D. gift card
+48. A. easy B. low C. soft D. loose
+49. A. giving B. saving C. spending D. begging
+50. A. yet B. even C. still D. just
+51. A. declared B. shared C. ignored D. expected
+52. A. toys B. medicine C. food D. clothes
+53. A. sleepy B. watery C. curious D. sharp
+54. A. whoever B. whatever C. whichever D. whenever
+55. A. experience B. example C. message D. adventure
+56. A. rely on B. respect C. learn from D. help
+57. A. suddenly B. vividly C. differently D. perfectly
+58. A. time B. power C. patience D. money
+59. A. fear B. love C. need D. memory
+60. A. strong B. sweet C. strange D. simple
+[ANALYSIS]
+41. A. "Lost my internship" sets the scene for someone needing help.
+42. C. A "sight" refers to the visual scene of the man with the sign.
+43. B. The partner makes a "comment" or remark about the situation.
+44. A. The man is standing "outside" in the rain.
+45. D. "Pick" means to choose an item to give.
+46. C. They choose items the man would "appreciate" or value.
+47. D. A "gift card" is a specific form of financial help mentioned later.
+48. B. "Low on budget" means having little money available.
+49. A. The act of "giving" is the central theme.
+50. D. "Just" emphasizes that this is exactly what should be done.
+51. A. They "declared" or stated what they would give up or contribute.
+52. C. The bag contains coffee and a sandwich, which are "food" items.
+53. B. "Watery eyes" indicate he is moved to tears.
+54. B. "Whatever" covers any needs he might have.
+55. A. The whole event is a "wonderful experience."
+56. D. The team now looks for more people to "help."
+57. C. The outcome would be "different" if the author had refused.
+58. D. "Money" is the resource they were low on.
+59. C. "In need" is a standard phrase for someone in a difficult situation.
+60. B. The "sweet" taste of helping others refers to the emotional reward.

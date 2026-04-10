@@ -1,0 +1,20 @@
+FILENAME: 7of5_2015_06_AI.txt
+YEAR: 2015
+CAT: （新课标ⅱ）七选五模拟
+TITLE: Preparing for a Charity Bike Ride
+Training for a long bike ride requires careful preparation and a steady increase in the distance you travel. 36, buy the best-fitting and most reliable helmet and gear you can find. No one can say which brand will feel best for you, so you must rely on your own experience as you shop. When you have found gear that seems right, use it for a few short trips to check the fit. 37. As always, you should check your bike for at least ten minutes before each ride to ensure safety.
+During the first week, do not worry about speed, but ride ten minutes longer each day. 38, it is wise to take a day off to let your muscles recover. But during the next week, set a goal of at least five miles per ride. 39. After two weeks, start timing your progress. 40. Depending on the type of event you plan to join, you can set up a schedule for the remaining weeks before the ride.
+[OPTIONS]
+A. After six days of riding
+B. For a successful cyclist
+C. Before you start your training
+D. With each day, increase the distance slightly
+E. If everything feels comfortable, you can begin longer rides
+F. Time spent on preparation improves the quality of the ride
+G. Now you are ready to set a goal for improving both distance and speed
+[ANALYSIS]
+36. C The paragraph discusses buying gear and shopping, which are activities done before the actual training begins.
+37. E The previous sentence suggests checking the fit on short trips. E follows up by saying if it feels good, you can start the real training/longer rides.
+38. A The text says "ride... each day" during the "first week". A ("After six days") provides the logical point to take a rest day before the next week.
+39. D The paragraph is about setting goals for distance. D fits the pattern of gradual increase mentioned in the introduction.
+40. G The text mentions "timing your progress" and "setting up a schedule". G summarizes this stage of being ready to focus on specific distance and time goals.

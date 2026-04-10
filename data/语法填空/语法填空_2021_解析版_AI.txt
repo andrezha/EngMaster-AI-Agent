@@ -1,0 +1,21 @@
+FILENAME: 语法填空_2021_解析版_AI.txt
+YEAR: 2021
+CAT: 语法填空_2021_解析版_语法填空模拟
+TITLE: Visiting the Industrial Heritage Park
+The old factory site is the most complete industrial park that has survived the city's growth. It 61 (build) originally to produce steel 62 the early 20th century and has now been completely turned into an art zone. It is possible 63 (walk) or skate the entire 5 kilometers.
+We entered the park through the main gate. The chimneys are 30 meters high and from here you can see groups of artists working inside and outside the galleries.
+After 64 (spend) some time looking at all the old machines at the park, we decided it was time for some fun and what 65 (good) than to ride a bike through a piece of history!
+We 66 (hire) our bikes from the shop at the entrance. My bike was old and noisy 67 did the job. It took us about 2 hours to go all 68 way around the heritage park. We were told you can do it in one hour, but we stopped at the different halls and 69 (workshop) to take photos or just to watch the local creators going about their 70 (day) routines.
+[OPTIONS]
+61. was built 62. in 63. to walk 64. spending 65. better 66. hired 67. but 68. the 69. workshops 70. daily
+[ANALYSIS]
+61. was built: Tests the passive voice in the past tense.
+62. in: Tests the preposition used with centuries or time periods.
+63. to walk: Tests the "it is adj to do" structure.
+64. spending: Tests the gerund after the preposition "after."
+65. better: Tests the comparative degree in an interrogative structure.
+66. hired: Tests the simple past tense.
+67. but: Tests the contrastive conjunction.
+68. the: Tests the fixed phrase "all the way."
+69. workshops: Tests noun plural after "different."
+70. daily: Tests the adjective form of "day."

@@ -1,0 +1,32 @@
+FILENAME: Reading_2015_47_AI.txt
+YEAR: 2015
+CAT: （新课标ⅱ）阅读理解 D 模拟
+TITLE: Selection of One-Day Campus Tours
+Tour A — Science & Tech Hub: Includes entry to the Robotics Lab and the Aerospace Museum — £40 until April 15 and £45 thereafter.
+Explore the campus with 150 years of history, visit the Founders' Hall, and the Digital Innovation Center. The Robotics Lab is a world-leading research site with projects dating back 30 years.
+Tour B — Arts & Heritage: Includes entry to the University Art Gallery and the Historical Archive Library — £30 until April 10 and £35 thereafter.
+Includes a guided walk through the oldest part of the university. View the "cloisters of wisdom" from the Great Library Tower. Explore the Shakespeare Collection and local art exhibits.
+Tour C — Botany & Garden Life: Includes entry to the Victorian Greenhouse — £28 until April and £32 thereafter.
+Includes a guided tour of the campus gardens and the Arboretum, the favorite spot of Professor Henry Miller. Free time to visit the central fountain (entry not required). With its 80 years of history, the Greenhouse was once home to rare tropical plants. Now it is a major attraction for nature lovers.
+Tour D — Sports & Spirit: Includes entry to the Olympic Training Center — £31 until April 20 and £36 thereafter.
+Includes a guided tour of the university stadium, the famous sports medical wing, and the 19th-century rowing club gardens.
+[QUESTIONS]
+Which tour will you choose if you want to see the oldest part of the university?
+A. Tour A.
+B. Tour B.
+C. Tour C.
+D. Tour D.
+Which of the following tours charges the lowest fee on April 12?
+A. Science & Tech Hub.
+B. Arts & Heritage.
+C. Botany & Garden Life.
+D. Sports & Spirit.
+Why is the Victorian Greenhouse a major tourist attraction?
+A. It houses rare plant collections.
+B. It used to be a famous maze.
+C. It is the oldest building on campus.
+D. It is a world-famous stadium.
+[ANALYSIS]
+33. B. Detail. Tour B explicitly includes "a guided walk through the oldest part of the university."
+34. D. Detail/Calculation. On April 12: Tour A is £40; Tour B is £35 (after April 10); Tour C is £32 (after "until April"); Tour D is £31 (before April 20). Thus, D is the cheapest.
+35. A. Detail. The text states the Greenhouse was "once home to rare tropical plants" and is now a "major attraction for nature lovers."

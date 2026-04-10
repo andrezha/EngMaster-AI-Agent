@@ -1,0 +1,34 @@
+FILENAME: Reading_2022_118_AI.txt
+YEAR: 2022
+CAT: （全国乙卷）阅读理解C模拟
+TITLE: Drones: The Future of Bridge Safety
+Can a few small drones help keep our bridges safe and save cities millions of dollars? This is likely the future of bridge inspection. Today’s technology can monitor thousands of bridges 24/7 to make sure they are safe for cars and trucks.
+Drones are already used to check power lines. They can do the same for bridges, looking for cracks or other problems in places that are hard for humans to reach. The more often bridges are checked, the safer they become. This would also make the work much faster and cheaper.
+Maintenance costs for bridges are very high. For example, some cities spend millions every year to send workers high up on cables to check for rust. This can be very dangerous work. Drones can do this work instead, keeping workers safe on the ground.
+In the future, drones will be even smarter. They will have sensors to find problems before they become dangerous. Some engineers are even designing drones that can "live" on the bridge and fly out automatically every day to check for any changes. This early warning system will help prevent accidents and keep traffic moving smoothly.
+[OPTIONS]
+8. What makes using drones for bridges possible?
+A. Their success in checking power lines.
+B. Their ability to fly in the rain.
+C. Their low price in stores.
+D. Their beautiful colors.
+What does “maintenance” in paragraph 3 refer to?
+A. Building new roads.
+B. Checking and repairing.
+C. Training new pilots.
+D. Selling old drones.
+What is a benefit of future drones?
+A. They can carry heavy cars.
+B. They can find problems early.
+C. They will be very large.
+D. They can fly to other cities.
+What is the best title for the text?
+A. How to Fly a Drone.
+B. The History of Bridge Building.
+C. Drones and the Future of Bridge Safety.
+D. Why Bridges are Expensive.
+[ANALYSIS]
+8. A. Paragraph 2 mentions they are "already used to check power lines" and can do the "same for bridges."
+9. B. Contextual meaning. It involves sending workers to "check for rust," which is part of inspection and repair.
+10. B. Detail understanding. The last paragraph mentions they can "find problems before they become dangerous."
+11. C. Main idea. The text focuses on the role of drones in improving bridge safety and efficiency.

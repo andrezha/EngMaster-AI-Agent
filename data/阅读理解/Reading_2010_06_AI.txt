@@ -1,0 +1,35 @@
+FILENAME: Reading_2010_06_AI.txt
+YEAR: 2010
+CAT: （新课标Ⅱ）阅读理解模拟
+TITLE: Testing Tech for a Living
+When you are testing a new app on the rainy streets of Seattle, the noise of the city seems far away. Wait! This is not just fun—you have a report to finish!
+Here lies the challenge for tech reviewer and software critic Leo Vance. “I always loved gadgets and always liked to find bugs, but it never occurred to me that I could make a living doing both,” Vance said. Now you can find his reviews everywhere—on major tech blogs, in magazines, or in his latest book, The Simple Guide to Modern Apps.
+His career began about six years ago. After finishing a degree in Computer Science in Canada, he took a technical test for a major software firm, passed it, and got the job. After working there, Vance worked for a while at a startup in London, then a global firm in New York, where he fell so in love with the tech scene in the Northwest that he moved to Seattle.
+Now as a professional reviewer, he spends a third of his year traveling to tech shows. The rest of the time is spent testing software and writing reviews of new devices at his home in Seattle.
+As exciting as the job sounds, the hard part is testing—checking every single function. Sure, it is great to write about a new feature, but you had better get the technical details right or you could really frustrate a user who relies on your advice.
+[QUESTIONS]
+46. Which country does Vance live in now?
+A. Canada.
+B. The U.S.
+C. The U.K.
+D. Mexico.
+What is most difficult for Vance?
+A. Traveling to different tech shows.
+B. Checking every function of the software.
+C. Finishing his reviews on time.
+D. Passing the initial technical test.
+What do we know about Vance from the text?
+A. He is successful in his job.
+B. He finds his life too stressful.
+C. He spends half of his time traveling.
+D. He is especially interested in hardware.
+What would be the best title for the text?
+A. Challenges in Tech Writing
+B. Working as a Software Critic
+C. New Apps on the Market
+D. Playing for a Career
+[ANALYSIS]
+46. B. Detail Understanding. He moved to Seattle, which is in the U.S.
+47. B. Detail Understanding. The last paragraph states: "the hard part is testing—checking every single function."
+48. A. Logical Reasoning. His reviews are "everywhere" and he has published books, indicating success.
+49. D. Main Idea. The text is about someone who turned their hobby (gadgets and bugs) into a profitable career.

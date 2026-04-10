@@ -1,0 +1,34 @@
+FILENAME: Reading_2015_46_AI.txt
+YEAR: 2015
+CAT: （新课标ⅱ）阅读理解 C 模拟
+TITLE: The Growth of Skill-Year Volunteering
+More young people than ever before are participating in a "skill-year" program before entering the workforce. It was once known as a simple "break" between graduation and a first job. This trend started with university graduates who used the months between their final exams in June and the start of corporate training in the following spring to gain practical experience.
+This year, 18,450 graduates who have received job offers have decided to delay their start dates until next year, according to data provided by the National Career Service (NCS).
+That is a significant 12.5% increase in the number of individuals taking a skill-year. Mark Thompson from the NCS said that this data is a positive sign for the business world. "Individuals who take a well-organized year to volunteer or intern are more likely to be satisfied with, and stay longer at, their future companies. Those who participate are often more professional and resilient," he said.
+However, not everyone agrees. Sarah Jenkins, head of the National Student Association (NSA), argued that the increase is a sign of financial pressure—young people are being forced to find unpaid or low-paid roles to improve their resumes before they can secure a stable income. "New graduates are aware that without specific experience, they might face months of unemployment. It is not surprising that more of them are taking a skill-year to build a portfolio to support their job search. NSA data shows that over 35% of graduates are forced to take part-time work during their studies, and the figure rises to 85% after graduation," she said.
+[QUESTIONS]
+What do we learn about the "skill-year" from the text?
+A. It is flexible in its duration.
+B. It is a time for total rest.
+C. It is becoming more common.
+D. It is mandatory for all graduates.
+According to Mark Thompson, graduates taking a skill-year ______.
+A. are better prepared for their careers
+B. prefer to work for international firms
+C. are more likely to change jobs often
+D. have a better chance to go back to school
+How does Sarah Jenkins feel about the skill-year trend?
+A. She is confused.
+B. She is concerned.
+C. She is surprised.
+D. She is annoyed.
+What would most graduates do after graduation according to NSA data?
+A. Pursue a higher degree.
+B. Apply for government roles.
+C. Take part-time jobs to survive.
+D. Travel to foreign countries.
+[ANALYSIS]
+29. C. Detail/Inference. The text mentions a "significant 12.5% increase" and that "More young people than ever before" are participating.
+30. A. Detail. Thompson states these individuals are "more professional and resilient" and "more likely to be satisfied with, and stay longer at, their future companies."
+31. B. Tone/Inference. Jenkins uses words like "financial pressure" and "forced," and argues it's a sign of hardship, indicating worry or concern.
+32. C. Detail. The text says "the figure rises to 85% during... after graduation" regarding graduates being forced to work (part-time/unstable jobs).

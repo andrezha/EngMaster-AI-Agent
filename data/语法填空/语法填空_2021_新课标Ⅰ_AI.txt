@@ -1,0 +1,25 @@
+FILENAME: 语法填空_2021_新课标Ⅰ_AI.txt
+YEAR: 2021
+CAT: 语法填空_2021_新课标Ⅰ_语法填空模拟
+TITLE: The Concept of Digital Learning
+Online education is commonly regarded as low impact learning for remote places. It is different from traditional schools because it allows the student to become 61 (educate) about various subjects — both in terms of technical skills and theoretical knowledge, and often saves money for families and benefits the 62 (develop) of the local community.
+Digital learning has 63 (it) origin with the early internet tools of the 1990s. It was not widely accepted as a study concept 64 the late 2010s. During that time, increasing digital skills made it popular.
+Due to 65 growing popularity of online courses and flexible study, various types 66 learning are now being classified as digital education. Actually, a true online course must meet the following principles:
+Minimize the difficulty of 67 (access) the materials.
+Build respect for and awareness of digital safety and academic honesty.
+Provide 68 (finance) help and other tools for students in need.
+Make sure that the platform provides benefits for both the students and the teachers.
+The National Open University, officially opened years ago, is popular for digital learning because of its quality courses. 69 (activity) there range from video watching to live discussions and platforms aim 70 (have) a low barrier to entry.
+[OPTIONS]
+61. educated 62. development 63. its 64. until 65. the 66. of 67. accessing 68. financial 69. Activities 70. to have
+[ANALYSIS]
+61. educated: Tests the adjective/past participle "become educated."
+62. development: Tests the noun form.
+63. its: Tests the possessive pronoun.
+64. until: Tests "not... until" structure.
+65. the: Tests the definite article for a specific phenomenon.
+66. of: Tests the preposition "types of."
+67. accessing: Tests the gerund after a preposition.
+68. financial: Tests the adjective form.
+69. Activities: Tests the plural noun as a subject.
+70. to have: Tests the "aim to do" structure.

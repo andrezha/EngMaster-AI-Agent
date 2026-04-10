@@ -1,0 +1,52 @@
+FILENAME: CLOZE_2016_03_AI.txt
+YEAR: 2016
+CAT: 完形填空_2016_（新课标ⅲ）_模拟
+TITLE: The True Leader
+When I was 15, my only goal was to become the top coder on our school team. That meant 41 Leo, who was the best 42 in our club.
+The competition season started in winter, and all autumn I worked hard. I took my laptop everywhere for 43.
+Just before the finals, Leo was injured in a fall and lost the use of his right hand. I went to see him after he came back from the 44. He looked very 45, but he didn't complain.
+That season, I 46 all of Leo’s scores while he 47 the sessions from the sidelines. I was named the most valuable member, 48 I often had bad dreams in which I felt responsible for Leo’s 49.
+One afternoon, I was leaving the lab and saw Leo 50 trying to open a heavy security gate—which wasn't 51 to do if you had both hands. I’m sure I was the last person he wanted to accept 52 from. But even that offer he accepted. I 53 him push the gate slowly. When we were finally 54 through, he said to me, “You know, I didn’t tell you this, but you did 55. Thank you for taking over for 56.”
+His words freed me from my bad 57. I thought to myself how even with an injury he was more of a leader. Hurt but not defeated, he was 58 ahead of me. I was right to have 59 him. From that day on, I grew 60 and more mature.
+[OPTIONS]
+41. A. cheering for B. surpassing C. relying on D. staying with
+42. A. coach B. student C. teacher D. coder
+43. A. practice B. show C. comfort D. pleasure
+44. A. school B. vacation C. hospital D. training
+45. A. pale B. calm C. relaxed D. ashamed
+46. A. held B. broke C. set D. tried
+47. A. reported B. judged C. organized D. watched
+48. A. and B. then C. but D. thus
+49. A. decision B. mistake C. accident D. sacrifice
+50. A. stuck B. hurt C. tired D. lost
+51. A. steady B. hard C. fun D. fit
+52. A. praise B. advice C. assistance D. apology
+53. A. let B. helped C. had D. noticed
+54. A. dropped B. ready C. trapped D. safe
+55. A. fine B. wrong C. quickly D. normally
+56. A. us B. yourself C. me D. them
+57. A. memories B. ideas C. attitudes D. dreams
+58. A. still B. also C. yet D. just
+59. A. challenged B. cured C. invited D. admired
+60. A. healthier B. bigger C. cleverer D. cooler
+[ANALYSIS]
+41. B. To be the "star," one must "surpass" or "beat out" the current best.
+42. D. The context is a coding team, so Leo is the best "coder."
+43. A. Taking a laptop everywhere is for "practice."
+44. C. After an injury, one returns from the "hospital."
+45. A. "Pale" or "weak" describes someone recovering from a physical trauma.
+46. B. "Broke" the records/scores is the standard achievement.
+47. D. He "watched" the games/sessions because he couldn't participate.
+48. C. "But" introduces the conflict between success and guilt.
+49. C. The injury was an "accident."
+50. A. "Stuck" or struggling with a physical task.
+51. B. Opening a heavy gate is not "hard" with two hands, but difficult with one.
+52. C. "Assistance" or "help" is what he needed.
+53. B. The narrator "helped" him with the gate.
+54. D. "Safe" or "through" indicates the successful completion of the task.
+55. A. "Did fine" is a common way to praise performance.
+56. C. Leo is thanking the narrator for replacing "me" (Leo).
+57. D. The "dreams" mentioned in line 48 were the source of the narrator's guilt.
+58. A. "Still" emphasizes that despite the injury, Leo's character remained superior.
+59. D. The narrator "admired" Leo's strength.
+60. B. "Grew bigger" is a metaphor for becoming more mature/spiritually larger.

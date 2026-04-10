@@ -1,0 +1,36 @@
+FILENAME: Reading_2022_119_AI.txt
+YEAR: 2022
+CAT: （全国乙卷）阅读理解D模拟
+TITLE: The Impact of the Plastic Bag Fee
+The government's fee on plastic bags has collected much less money than expected, according to the first official report.
+Introduced in 2015, the fee requires shoppers to pay for each plastic bag. The goal was to reduce waste and protect the environment. It is known that plastic waste is harmful to sea life and takes a very long time to disappear.
+Initially, the government expected to collect £100m a year. However, the first report shows it collected less than half of that. This money goes to local charities and environmental projects.
+The reason for the lower amount is that many shoppers have started bringing their own reusable bags. More than 80% of shoppers now use their own bags to avoid the fee. This has resulted in billions of fewer plastic bags being used.
+However, some people still choose to pay the fee for convenience. Some large stores have also introduced their own thicker bags, which cost more but can be used many times. Small shops are often free from the fee rules to help their business.
+According to one official, these figures show the positive influence of the policy. The main goal wasn't to collect money, but to change people's habits. Helping the planet is the most important part, and the public is doing its job.
+[OPTIONS]
+12. Why was the plastic bag fee introduced?
+A. To make money for the government.
+B. To protect the environment.
+C. To help people go shopping.
+D. To support plastic factories.
+How did shoppers respond to the fee?
+A. They stopped shopping in large stores.
+B. They started bringing their own bags.
+C. They complained to the government.
+D. They bought more plastic bags.
+What is the main benefit of the policy according to the text?
+A. It collected a lot of money.
+B. it helped small shops grow.
+C. It changed people's habits.
+D. It made plastic bags thicker.
+What can be inferred about the policy?
+A. It was a failure.
+B. It was a success.
+C. It was too expensive.
+D. It was very confusing.
+[ANALYSIS]
+12. B. Paragraph 2 states the goal was to "reduce waste and protect the environment."
+13. B. Paragraph 4 says many shoppers "started bringing their own reusable bags."
+14. C. Paragraph 6 states the "main goal" was to "change people's habits."
+15. B. Even though less money was collected, the goal of reducing bag use was achieved, making it a "success story" (mirroring the sugar tax logic).

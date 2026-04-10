@@ -1,0 +1,36 @@
+FILENAME: Reading_2018_72_AI.txt
+YEAR: 2018
+CAT: （新课标Ⅰ）阅读模拟
+TITLE: London City Walking Tours
+Bluebell Wood Walking Tour
+Duration: 2 hours
+This small group tour is a wonderful way to see the world-famous bluebells in the ancient woods of North London. Your guide will share local history about the area and the specific parks where they bloom. Reserve your spot before availability — and the flowers — disappear!
+Historic West End Walking Tour
+Duration: 3 hours (3 miles)
+Join a guided walk and see some of the most famous landmarks in London. Explore the statues and hidden squares as your guide shares unique facts and history at each stop. Guided tour includes a map, a light snack, and a bottle of water.
+Green City Exploration Tour
+Duration: 3 hours
+Morning or Afternoon, this tour is perfect for newcomers and locals looking to experience the city in a healthy way. Knowledgeable guides will entertain you with the most interesting stories about famous writers, royal history, and secret gardens. Comfortable paths and a slow pace make walking between the sites fun and relaxing.
+London Riverside at Night Tour
+Duration: 3 hours (5 miles)
+Join a small group for an evening of exploration along the River Thames. Get up close to the illuminated bridges and old buildings. Frequent stops are made for photo taking as your guide offers unique facts. Tour includes a high-visibility vest and safety lights for every walker.
+[OPTIONS]
+21. Which tour do you need to book in advance?
+A. Bluebell Wood Walking Tour.
+B. Historic West End Walking Tour.
+C. Green City Exploration Tour.
+D. London Riverside at Night Tour.
+What will you do on the Green City Exploration Tour?
+A. Meet famous people.
+B. Go to a national park.
+C. Visit well-known museums.
+D. Enjoy interesting stories.
+Which of the following does the walking tour at night provide?
+A. City maps.
+B. Cameras.
+C. Meals.
+D. Safety lights.
+[ANALYSIS]
+21. A. Detail. The text for the Bluebell Wood tour says "Reserve your spot before availability... disappear," indicating a need for advance booking.
+22. D. Detail. The Green City tour description states "guides will entertain you with the most interesting stories."
+23. D. Detail. The night tour description explicitly mentions "Tour includes... safety lights for every walker."

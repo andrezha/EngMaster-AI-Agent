@@ -1,0 +1,50 @@
+FILENAME: Cloze_2021_01_AI.txt
+YEAR: 2021
+CAT: 完形填空_新课标Ⅰ_模拟
+TITLE: Beyond the Technical Support
+Simply saying thank you doesn't seem enough in certain situations. I was considering this while working as a tech 41 just a few weeks ago. And it came to me then how much easier it would be if we had a range of words that express different 42 of gratitude.
+My thoughts were soon 43. We had an elderly user who was 44 from a major software crash. One afternoon, while 45 to log into her account, her system crashed from what was 46 discovered to be a hardware failure. The crash was disastrous, 47 the emergency repair team and good teamwork. But the system recovered, though 48, and was ready for use after four days.
+She was 49 for everything that the technical team had done for her. On her final day of support, we shared in her 50 at the recovery. As she was 51, she was eager to say 52 to each of us in the support team. When she 53 one intern, she tried to press a small gift card into his hand. My colleague 54 to accept it, saying that we were all just 55 our job. The user looked puzzled, and then 56: “Oh this isn't for the 57 I had. I take that as a 58. No, this is for fixing my profile picture yesterday.”
+And there you have it. To many people, 59 systems is part of the job but personal help is a 60 and should be rewarded.
+[OPTIONS]
+41. A. cleaner B. chemist C. intern D. doctor
+42. A. levels B. meanings C. needs D. expectations
+43. A. brushed aside B. put to the test C. brought under discussion D. taken into account
+44. A. departing B. escaping C. retiring D. improving
+45. A. attempting B. choosing C. pausing D. promising
+46. A. later B. fortunately C. casually D. secretly
+47. A. assessing B. needing C. forming D. proving
+48. A. slightly B. accidentally C. gradually D. happily
+49. A. thankful B. thoughtful C. sorrowful D. fearful
+50. A. surprise B. joy C. curiosity D. disappointment
+51. A. operating B. thinking C. hesitating D. finishing
+52. A. sorry B. hello C. thanks D. yes
+53. A. approached B. consulted C. introduced D. persuaded
+54. A. wished B. pretended C. failed D. declined
+55. A. enjoying B. performing C. securing D. starting
+56. A. repeated B. recited C. explained D. reported
+57. A. courage B. patience C. duty D. support
+58. A. goal B. standard C. push D. greeting
+59. A. risking B. changing C. fixing D. building
+60. A. honour B. ability C. opening D. bonus
+[ANALYSIS]
+41. C. Context: The speaker works in tech support, and "intern" fits the professional setting.
+42. A. Logic: "Levels" mirrors "grades," referring to the intensity of gratitude.
+43. B. Logic: "Put to the test" mirrors the original, indicating the idea was tested by reality.
+44. D. Logic: "Improving" mirrors "recovering," describing the state of the system/user.
+45. A. Logic: "Attempting" mirrors the original, showing the user's effort.
+46. A. Logic: "Later" mirrors "eventually," showing the sequence of discovery.
+47. B. Logic: "Needing" mirrors "requiring," showing what was necessary for the fix.
+48. C. Logic: "Gradually" mirrors "slowly," describing the pace of recovery.
+49. A. Logic: "Thankful" mirrors "grateful," the core emotion of the text.
+50. B. Logic: "Joy" mirrors "delight," the positive emotion at the end.
+51. D. Logic: "Finishing" mirrors "leaving," as the support period ends.
+52. C. Logic: "Thanks" mirrors "goodbye," the specific word of gratitude.
+53. A. Logic: "Approached" mirrors "reached," indicating physical movement toward someone.
+54. D. Logic: "Declined" mirrors "refused," the professional response to a tip.
+55. B. Logic: "Performing" mirrors "doing," referring to job duties.
+56. C. Logic: "Explained" mirrors "replied," clarifying the reason for the gift.
+57. D. Logic: "Support" mirrors "care," the professional service provided.
+58. B. Logic: "Standard" mirrors "given," something expected as part of the job.
+59. C. Logic: "Fixing" mirrors "saving," the core technical task.
+60. D. Logic: "Bonus" mirrors "extra," something outside the official job description.
