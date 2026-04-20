@@ -16,13 +16,15 @@ jobs:
       with:
         python-version: '3.9'
 
-    - name: Install
+    - name: Install dependencies
       run: |
-        pip install pyinstaller
+        python -m pip install --upgrade pip
+        pip install PySide6 pyinstaller
+        # 如果你的代码还引用了其他库，请在这里继续添加，例如 pip install requests
 
     - name: Run-Build
       run: |
-        python -m PyInstaller --onefile --windowed main.py
+        python -m PyInstaller --onefile --windowed --clean main.py
 
     - name: Upload
       uses: actions/upload-artifact@v4
