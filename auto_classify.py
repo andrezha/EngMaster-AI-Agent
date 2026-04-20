@@ -2,6 +2,9 @@ import os
 import shutil
 
 def classify_by_content():
+    """
+    自动分类桌面 'Gaokao_Library' 文件夹下的 TXT 文件，根据内容关键词移动到项目 'data' 目录下的对应题型子文件夹。
+    """
     # 1. 定义源和目标
     src_dir = os.path.expanduser("~/Desktop/Gaokao_Library")
     dst_dir = os.path.join(os.path.dirname(__file__), "data")

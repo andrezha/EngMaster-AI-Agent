@@ -2,6 +2,9 @@ import os
 import shutil
 
 def organize_gaokao_library():
+    """
+    组织高考题库文件：将桌面 'Gaokao_Library' 文件夹下的 TXT 文件，根据文件名中的关键词分类移动到项目 'data' 目录下的对应题型子文件夹。
+    """
     # 1. 定义源路径（你的桌面文件夹）和 目标路径（当前项目下的 data）
     desktop_path = os.path.expanduser("~/Desktop/Gaokao_Library")
     project_data_path = os.path.join(os.path.dirname(__file__), "data")

@@ -11,6 +11,9 @@ import re
 from pathlib import Path
 
 def rename_7of5_files():
+    """
+    批量重命名 'data/七选五' 文件夹下的文件，将 'Cloze_' 前缀替换为 '7of5_'，并统一格式。
+    """
     """批量重命名七选五文件"""
     
     # 定义文件夹路径

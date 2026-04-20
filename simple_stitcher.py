@@ -2,6 +2,9 @@ import os
 import random
 
 def build_raw_stitched_file():
+    """
+    随机从 'data' 文件夹下的各个题型子文件夹中选择文件，并将它们拼接成一个模拟高考真题试卷文件。
+    """
     print("🚀 simple_stitcher.py 脚本开始执行...")
 
     # --- 1. 强力路径定位逻辑 ---

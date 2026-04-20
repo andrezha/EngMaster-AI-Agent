@@ -2,6 +2,9 @@ from PySide6 import QtCore, QtWidgets
 
 class AnalyzerManager:
     def __init__(self, main_win):
+        """
+        初始化 AnalyzerManager，绑定UI组件和事件。
+        """
         self.win = main_win
         self.current_type = "完形填空" 
         
@@ -40,6 +43,9 @@ class AnalyzerManager:
             self.btn_start_ai.clicked.connect(self.action_ai_explain)
 
     def set_type(self, q_type):
+        """
+        设置当前的题目类型，并更新题型选择按钮的样式。
+        """
         self.current_type = q_type
         
         # 统一的按钮皮肤（防止焦点蓝框，统一圆角和边框）
@@ -81,6 +87,9 @@ class AnalyzerManager:
     # ... 前面的 __init__ 和 set_type 保持不变 ...
 
     def action_ai_explain(self):
+        """
+        AI 解析的主入口，获取用户输入，启动 AIWorker 线程进行解析。
+        """
         """🚀 AI 解析的主入口"""
         # 1. 检查输入
         content = self.raw_area.toPlainText().strip()
@@ -103,6 +112,9 @@ class AnalyzerManager:
         self.worker.start()
 
     def on_ai_finished(self, msg):
+        """
+        AI 解析成功完成时的回调函数，显示解析结果。
+        """
         """✅ 成功时的处理"""
         self.btn_start_ai.setEnabled(True)
         self.btn_start_ai.setText("🚀 开始解析")
@@ -111,6 +123,9 @@ class AnalyzerManager:
         self.ai_area.setMarkdown(f"### 【{self.current_type}解析结果】\n\n{msg}")
 
     def on_ai_error(self, err):
+        """
+        AI 解析出错时的回调函数，显示错误信息。
+        """
         """❌ 出错时的处理（不要在这里重新启动 Worker！）"""
         self.btn_start_ai.setEnabled(True)
         self.btn_start_ai.setText("🚀 开始解析")

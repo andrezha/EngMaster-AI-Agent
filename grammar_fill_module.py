@@ -14,6 +14,9 @@ from parsers.reading_parser import parse_reading_txt
 class GrammarFillModule(QtWidgets.QWidget):
     """语法填空模块 - 独立页面"""
     
+    """
+    语法填空模块，用于专项练习中的语法填空题型。
+    """
     def __init__(self, parent=None):
         super().__init__(parent)
         self.main_win = parent
@@ -30,6 +33,9 @@ class GrammarFillModule(QtWidgets.QWidget):
         self._start_timer()
         
     def _init_ui(self):
+        """
+        初始化界面布局，包括左右分栏、文章显示区、倒计时和答题区。
+        """
         """初始化界面布局"""
         # 主布局 - 水平布局，左右分栏
         main_layout = QtWidgets.QHBoxLayout(self)
@@ -169,6 +175,9 @@ class GrammarFillModule(QtWidgets.QWidget):
         main_layout.addLayout(right_panel, stretch=2)
         
     def _btn_stylesheet(self, color):
+        """
+        生成统一的按钮样式表。
+        """
         """统一的按钮样式"""
         return f"""
             QPushButton {{
@@ -189,6 +198,9 @@ class GrammarFillModule(QtWidgets.QWidget):
         """
     
     def _darken_color(self, hex_color, amount=20):
+        """
+        将十六进制颜色值变暗。
+        """
         """将颜色变暗"""
         hex_color = hex_color.lstrip('#')
         r = min(255, max(0, int(hex_color[0:2], 16) - amount))
@@ -197,6 +209,9 @@ class GrammarFillModule(QtWidgets.QWidget):
         return f"#{r:02x}{g:02x}{b:02x}"
     
     def _load_files(self):
+        """
+        加载 data/语法填空/ 目录下的所有 TXT 文件。
+        """
         """加载 data/语法填空/ 目录下的所有 TXT 文件"""
         data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "语法填空")
         if not os.path.exists(data_dir):
@@ -214,6 +229,9 @@ class GrammarFillModule(QtWidgets.QWidget):
             self.files = []
     
     def _load_passage(self, idx):
+        """
+        加载指定索引的文章，并更新UI显示。
+        """
         """加载指定索引的文章"""
         if not self.files or idx < 0 or idx >= len(self.files):
             return
@@ -277,6 +295,9 @@ class GrammarFillModule(QtWidgets.QWidget):
             print(f"加载语法填空文件失败: {file_path}, 错误: {e}")
     
     def _highlight_blanks(self, passage):
+        """
+        高亮文章中的空白题号，将其转换为 HTML 样式。
+        """
         """高亮文章中的空白题号"""
         # 获取所有题号
         items = self.current_data.get('items', []) if self.current_data else []
@@ -297,6 +318,9 @@ class GrammarFillModule(QtWidgets.QWidget):
         return text
     
     def _build_questions_area(self):
+        """
+        构建题号和答案输入/显示区域。
+        """
         """构建题号和答案显示区域"""
         # 清空现有内容
         while self.questions_layout.count():
@@ -414,6 +438,9 @@ class GrammarFillModule(QtWidgets.QWidget):
         self.questions_layout.addStretch()
     
     def _toggle_answers(self):
+        """
+        切换答案和解析的显示/隐藏状态。
+        """
         """切换答案显示/隐藏"""
         self.answers_revealed = not self.answers_revealed
         
@@ -457,6 +484,9 @@ class GrammarFillModule(QtWidgets.QWidget):
                 analysis_label.setVisible(self.answers_revealed)
     
     def _extract_analysis_for_question(self, full_analysis, q_id):
+        """
+        从完整的解析文本中提取指定题号的解析内容。
+        """
         """从完整解析中提取指定题号的解析"""
         if not full_analysis:
             return "暂无解析"
@@ -473,16 +503,25 @@ class GrammarFillModule(QtWidgets.QWidget):
         return full_analysis[:200] + "..." if len(full_analysis) > 200 else full_analysis
     
     def _prev_passage(self):
+        """
+        切换到上一篇文章。
+        """
         """切换到上一篇文章"""
         if self.current_file_idx > 0:
             self._load_passage(self.current_file_idx - 1)
     
     def _next_passage(self):
+        """
+        切换到下一篇文章。
+        """
         """切换到下一篇文章"""
         if self.current_file_idx < len(self.files) - 1:
             self._load_passage(self.current_file_idx + 1)
     
     def _go_back(self):
+        """
+        返回专项练习主菜单。
+        """
         """返回专项练习主菜单"""
         if self.main_win:
             # 停止计时器
@@ -492,12 +531,18 @@ class GrammarFillModule(QtWidgets.QWidget):
             self.main_win.switch_to_gaokao()
     
     def _start_timer(self):
+        """
+        启动倒计时计时器。
+        """
         """启动倒计时"""
         self.timer = QtCore.QTimer()
         self.timer.timeout.connect(self._tick)
         self.timer.start(1000)
     
     def _tick(self):
+        """
+        计时器滴答事件处理函数，更新倒计时显示，并在时间到时自动显示答案。
+        """
         """计时器滴答"""
         if self.time_left > 0:
             self.time_left -= 1

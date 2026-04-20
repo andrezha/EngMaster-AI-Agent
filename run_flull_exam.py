@@ -12,6 +12,9 @@ from PySide6.QtGui import QFont
 # 1. 题目卡片：强行在UI上画出红色分值标签
 # ==========================================================
 class QuestionCard(QWidget):
+    """
+    用于显示单个题目及其选项或输入框的 UI 组件。
+    """
     def __init__(self, data, q_type, current_ans="", sync_func=None):
         super().__init__()
         self.data = data # Store data for options
@@ -112,6 +115,9 @@ class QuestionCard(QWidget):
                         break
 
     def _add_option_button(self, label, content, layout):
+        """
+        为选择题添加一个选项按钮。
+        """
         btn = QPushButton(f"{label}. {content}")
         btn.setCheckable(True)
         btn.setStyleSheet("""
@@ -141,22 +147,60 @@ class QuestionCard(QWidget):
         layout.addWidget(btn)
 
     def _notify_choice(self, choice, checked):
+        """
+        当选择题选项被点击时，通知外部同步函数。
+        """
         if checked:
             self.sync_func(self.qid, choice)
 
     def _notify_grammar(self, text):
+        """
+        当语法填空输入框内容改变时，通知外部同步函数。
+        """
         self.sync_func(self.qid, text)
 
 # ==========================================================
 # 2. 结果结算页
 # ==========================================================
 class ResultPage(QWidget):
+    """
+    显示考试成绩结算单的页面，包括总分、耗时、错题列表和解析。
+    """
     def __init__(self, exit_cb):
         super().__init__()
-        self.l = QVBoxLayout(self)
+        self._full_res = None # Store the full result for analysis lookup
+        self.current_displayed_analysis_qid = None # Track currently displayed analysis
+        self.l = QVBoxLayout(self) # Main layout for ResultPage
+        
+        # Ensure the main layout can expand vertically
+        self.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        self.l.setContentsMargins(20, 20, 20, 20) # Add some padding around the content
+        self.l.setSpacing(15) # Add spacing between elements
+
         self.exit_cb = exit_cb
 
-    def update_res(self, res, elapsed_time_seconds): # 修正了参数传递
+        # 用于显示题目解析的 QTextBrowser
+        self.analysis_detail_box = QTextBrowser()
+        self.analysis_detail_box.setReadOnly(True)
+        self.analysis_detail_box.setStyleSheet("""
+            QTextBrowser {
+                background-color: #f8f9fa;
+                border: 1px solid #e0e0e0;
+                border-radius: 8px;
+                padding: 15px;
+                font-size: 14px;
+                line-height: 1.6;
+                color: #34495e;
+                min-height: 100px; /* Ensure a minimum height even when empty */
+            }
+        """.replace("min-height: 100px;", "min-height: 250px;")) # 增大解析框的最小高度
+        self.analysis_detail_box.hide() # 初始隐藏
+        # 初始不将 analysis_detail_box 添加到布局中，而是在 update_res 中动态添加
+
+    def update_res(self, res, elapsed_time_seconds, all_questions_data): # 修正了参数传递，添加 all_questions_data
+        """
+        更新并显示考试结果。
+        """
         while self.l.count(): self.l.takeAt(0).widget().deleteLater()
         
         t = QLabel("🎉 考试成绩结算单"); t.setAlignment(Qt.AlignCenter); t.setStyleSheet("font-size: 26px; font-weight: bold; color: #2ecc71;")
@@ -174,9 +218,10 @@ class ResultPage(QWidget):
             </div>
         """
 
-        score_val = QLabel(f"总得分：{res['total']:.1f} / 80.0 {time_info_html}") # 修正总分为 80.0
+        score_val = QLabel(f"总得分：{res['total']:.1f} / 80.0 {time_info_html}")
         score_val.setAlignment(Qt.AlignCenter)
         score_val.setStyleSheet("background: #f1f2f6; border: 2px solid #2f3542; padding: 25px; font-size: 24px; border-radius: 15px; font-weight: bold; color: #2E5B88;")
+        score_val.setTextFormat(Qt.RichText) # 确保 QLabel 能够正确渲染 HTML
         self.l.addWidget(score_val)
 
         # 将结果分成左右两列
@@ -196,25 +241,42 @@ class ResultPage(QWidget):
             
             # 错题分析
             if v['wrongs']:
-                wrongs_label = QLabel(f"<b style='color:#e74c3c;'>错题 ({len(v['wrongs'])}):</b>")
+                wrongs_label = QLabel(f"<b style='color:#e74c3c;'>错题 ({len(v['wrongs'])}):</b>") # 错题只数
+                wrongs_label.setStyleSheet("padding-top: 10px; padding-bottom: 5px;") # 增加上下边距，避免过高
                 fl.addWidget(wrongs_label)
                 
-                wrongs_scroll_area = QScrollArea()
-                wrongs_scroll_area.setWidgetResizable(True)
-                wrongs_scroll_area.setFixedHeight(min(150, len(v['wrongs']) * 30 + 20)) # 动态高度，最多150px
-                wrongs_scroll_area.setStyleSheet("border: 1px solid #f0f0f0; border-radius: 5px; background-color: #fcfcfc;")
-                
-                wrongs_container = QWidget()
-                wrongs_layout = QVBoxLayout(wrongs_container)
-                wrongs_layout.setContentsMargins(5, 5, 5, 5)
-                wrongs_layout.setSpacing(3)
+                # 直接显示所有错题，不使用内部滚动区域
+                for wrong_item in v['wrongs_details']:
+                    # 为每个错题创建一个 QWidget 容器，包含文本和按钮
+                    wrong_item_widget = QWidget()
+                    wrong_item_h_layout = QHBoxLayout(wrong_item_widget)
+                    wrong_item_h_layout.setContentsMargins(0,0,0,0) # 调整边距
 
-                for wrong_item in v['wrongs_details']: # 使用新的 wrongs_details
                     wrong_text = f"❌ Q{wrong_item['id']} | 你的答案: <b style='color:#e74c3c;'>{wrong_item['user']}</b> | 正确答案: <b style='color:#27ae60;'>{wrong_item['correct']}</b>"
-                    wrongs_layout.addWidget(QLabel(wrong_text))
-                
-                wrongs_scroll_area.setWidget(wrongs_container)
-                fl.addWidget(wrongs_scroll_area)
+                    wrong_text_label = QLabel(wrong_text) # 错题文本标签
+                    wrong_item_h_layout.setAlignment(Qt.AlignTop) # 确保按钮和文本从顶部对齐
+                    wrong_text_label.setWordWrap(True) # 确保文本自动换行
+                    wrong_item_h_layout.addWidget(wrong_text_label, 1) # 伸展因子 1
+
+                    # 添加分析按钮
+                    analysis_btn = QPushButton("查看解析")
+                    analysis_btn.setSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.MinimumExpanding) # 允许按钮根据文本高度拉伸
+                    analysis_btn.setStyleSheet("""
+                        QPushButton {
+                            background-color: #3498db;
+                            color: white;
+                            border: none;
+                            border-radius: 5px;
+                            font-size: 12px;
+                            padding: 3px 6px;
+                        }
+                        QPushButton:hover { background-color: #2980b9; }
+                    """)
+                    # 绑定点击事件，传递 q_id 和 all_questions_data
+                    analysis_btn.clicked.connect(lambda checked, q_id=wrong_item['id']: self._display_question_analysis(q_id, all_questions_data))
+                    wrong_item_h_layout.addWidget(analysis_btn)
+
+                    fl.addWidget(wrong_item_widget) # 将新的 widget 添加到部分布局中
             else:
                 fl.addWidget(QLabel("<p style='color:#27ae60;'>✅ 本部分全对！</p>"))
             
@@ -223,6 +285,10 @@ class ResultPage(QWidget):
                 left_column_layout.addWidget(f)
             elif k in ["cloze", "grammar"]:
                 right_column_layout.addWidget(f)
+        
+        # 每次刷新结果时，隐藏解析框并重置当前显示的题号
+        self.analysis_detail_box.hide()
+        self.current_displayed_analysis_qid = None
         
         main_results_layout.addLayout(left_column_layout)
         main_results_layout.addLayout(right_column_layout)
@@ -234,11 +300,108 @@ class ResultPage(QWidget):
         b = QPushButton("退出系统"); b.setFixedHeight(50); b.setStyleSheet("background: #2f3542; color: white; font-weight: bold;"); b.clicked.connect(self.exit_cb)
         self.l.addWidget(b)
 
+    def _display_question_analysis(self, q_id, all_questions_data):
+        """
+        显示或隐藏指定题目的解析。
+        """
+        """
+        显示或隐藏指定题目的解析。
+        如果点击的按钮是当前正在显示的解析，则隐藏它；否则显示新的解析。
+        """
+        if self.current_displayed_analysis_qid == q_id and self.analysis_detail_box.isVisible():
+            print(f"DEBUG: Hiding analysis for Q{q_id}")
+            self.analysis_detail_box.hide()
+            self.current_displayed_analysis_qid = None
+            return
+
+        q_data = all_questions_data.get(q_id)
+        if not q_data:
+            self.analysis_detail_box.setHtml(f"<p style='color:red;'>未找到题号 {q_id} 的详细信息。</p>")
+            print(f"DEBUG: Showing 'not found' analysis for Q{q_id}")
+            self.analysis_detail_box.show()
+            self.current_displayed_analysis_qid = q_id
+            return
+
+        user_ans = ""
+        # 从 _full_res 中查找用户的答案
+        if self._full_res and 'details' in self._full_res:
+            for detail_type, details in self._full_res['details'].items():
+                for wrong_detail in details['wrongs_details']:
+                    if wrong_detail['id'] == q_id:
+                        user_ans = wrong_detail['user']
+                        break
+                if user_ans: break
+
+        question_html = f"<h4 style='color:#2c3e50;'>Q{q_id}. {q_data['content']}</h4>"
+
+        # 添加选项（如果存在）
+        if q_data['options']:
+            question_html += "<p><b>选项:</b></p><ul>"
+            if isinstance(q_data['options'], list): # 七选五
+                for opt in q_data['options']:
+                    question_html += f"<li>{opt['label']}. {opt['content']}</li>"
+            else: # 阅读/完形
+                for label, content in sorted(q_data['options'].items()):
+                    question_html += f"<li>{label}. {content}</li>"
+            question_html += "</ul>"
+
+        question_html += f"<p><b>你的答案:</b> <span style='color:#e74c3c;'>{user_ans}</span></p>"
+        question_html += f"<p><b>正确答案:</b> <span style='color:#27ae60;'>{q_data['answer']}</span></p>"
+        question_html += f"<p><b>解析:</b></p><div style='background:#f0f9ff; padding:10px; border-radius:5px; border-left:3px solid #3498db;'>{q_data['analysis']}</div>"
+
+        self.analysis_detail_box.setHtml(question_html)
+        print(f"DEBUG: Showing analysis for Q{q_id}")
+        self.analysis_detail_box.show()
+        self.analysis_detail_box.verticalScrollBar().setValue(0) # 滚动到顶部
+        self.current_displayed_analysis_qid = q_id
+
 # ==========================================================
-# 3. 考试系统主逻辑
+# 3. 考试系统主逻辑 (HSEExamSystem)
 # ==========================================================
 class HSEExamSystem(QWidget): # 修改基类为 QWidget
+    """
+    全真战场模块的主逻辑，负责管理考试流程、UI切换和最终成绩计算。
+    """
+    # 静态方法：解析原始解析文本，按题号分割
+    @staticmethod
+    def _parse_analysis_text(analysis_text):
+        analysis_by_q = {}
+        if not analysis_text:
+            return analysis_by_q
+
+        # Split by common patterns like 【N题详解】 or N.
+        # This regex splits, keeping the delimiters.
+        parts = re.split(r'(【\d+题详解】|\d+[．.])', analysis_text)
+        
+        current_q_num = ""
+        
+        # Find the first actual delimiter
+        first_delimiter_idx = -1
+        for i, part in enumerate(parts):
+            if re.match(r'【\d+题详解】|\d+[．.]', part.strip()):
+                first_delimiter_idx = i
+                break
+                
+        if first_delimiter_idx == -1: # No delimiters found, return empty
+            return analysis_by_q
+            
+        # Process from the first delimiter onwards
+        for i in range(first_delimiter_idx, len(parts)):
+            part = parts[i].strip()
+            if not part:
+                continue
+            
+            q_match = re.search(r'(\d+)', part)
+            if q_match and (re.match(r'【\d+题详解】', part) or re.match(r'\d+[．.]', part)):
+                current_q_num = q_match.group(1)
+                analysis_by_q[current_q_num] = "" # Initialize analysis for this q_id
+            elif current_q_num:
+                analysis_by_q[current_q_num] += part + "\n"
+        return {q: text.strip() for q, text in analysis_by_q.items()}
     def __init__(self, data_list):
+        """
+        初始化 HSEExamSystem。
+        """
         super().__init__()
         self.all_data = data_list
         self.ans_cache = {}
@@ -261,26 +424,33 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
         self.screen_manager_stack.addWidget(self.exam_view) # 确保使用正确的堆栈
         
         self.res_view = ResultPage(self.close)
-        self.screen_manager_stack.addWidget(self.res_view)
+        # Wrap ResultPage in a QScrollArea to enable scrolling for the entire result page
+        self.res_scroll_area = QScrollArea()
+        self.res_scroll_area.setWidgetResizable(True) # Allow the ResultPage to take its natural size
+        self.res_scroll_area.setWidget(self.res_view)
+        self.screen_manager_stack.addWidget(self.res_scroll_area)
         
         # 初始显示 exam_view (其中包含 start_screen_widget)
         self.screen_manager_stack.setCurrentWidget(self.exam_view)
 
     def build_exam_ui(self):
+        """
+        构建考试界面的主UI布局（已废弃，功能已移至 _build_exam_content_ui）。
+        """
         main_l = QVBoxLayout(self.exam_view)
         self.header_l = QLabel(""); self.header_l.setAlignment(Qt.AlignCenter); self.header_l.setStyleSheet("font-size: 20px; font-weight: bold; color: #2980b9; background: #f8f9fa; padding: 10px;")
         main_l.addWidget(self.header_l)
         
-        body = QHBoxLayout()
+        body = QHBoxLayout() # This layout holds the passage and the questions panel
         self.passage_box = QTextBrowser(); self.passage_box.setStyleSheet("font-size: 17px; line-height: 1.6; padding: 20px; background: white;")
         body.addWidget(self.passage_box, 1)
-        
+
         # 右侧答题区
         right_panel = QVBoxLayout()
-        self.q_scroll = QScrollArea(); self.q_scroll.setWidgetResizable(True)
+        self.q_scroll = QScrollArea() # Removed setWidgetResizable(True) to allow content to overflow and trigger scrollbar
         self.q_widget = QWidget(); self.q_layout = QVBoxLayout(self.q_widget); self.q_layout.setAlignment(Qt.AlignTop)
         self.q_scroll.setWidget(self.q_widget)
-        right_panel.addWidget(self.q_scroll)
+        right_panel.addWidget(self.q_scroll, 1) # Make the scroll area expand vertically
         
         # 【提交按钮】强行出现在右侧下方，最后一页才显示
         self.submit_btn = QPushButton("🏁 确认交卷并计算总分")
@@ -289,7 +459,7 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
         self.submit_btn.clicked.connect(self.final_calc)
         self.submit_btn.hide()
         right_panel.addWidget(self.submit_btn)
-        
+
         body.addLayout(right_panel, 1)
         main_l.addLayout(body)
         
@@ -300,6 +470,9 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
         main_l.addLayout(nav)
 
     def _setup_exam_screens(self):
+        """
+        设置考试界面的堆叠布局，包括开始界面和实际考试内容界面。
+        """
         """设置考试界面的堆叠布局，包括开始界面和实际考试内容界面"""
         self.exam_view_layout = QVBoxLayout(self.exam_view)
         self.exam_screens_stack = QStackedWidget()
@@ -357,13 +530,16 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
         self.exam_screens_stack.setCurrentWidget(self.start_screen_widget)
 
     def _build_exam_content_ui(self, parent_widget):
+        """
+        构建实际的考试内容UI，包括文章、题目和导航。
+        """
         """构建实际的考试内容UI，包括文章、题目和导航"""
         # 将 build_exam_ui 的内容移动到这里，并修改父布局
         main_l = QVBoxLayout(parent_widget)
         # ... (以下内容与原 build_exam_ui 相同，只是父布局变为 parent_widget)
 
         self.header_l = QLabel(""); self.header_l.setAlignment(Qt.AlignCenter); self.header_l.setStyleSheet("font-size: 20px; font-weight: bold; color: #2980b9; background: #f8f9fa; padding: 10px;")
-        main_l.addWidget(self.header_l)
+        main_l.addWidget(self.header_l) # Header takes its natural height
         
         body = QHBoxLayout()
         self.passage_box = QTextBrowser(); self.passage_box.setStyleSheet("font-size: 17px; line-height: 1.6; padding: 20px; background: white;")
@@ -371,10 +547,10 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
         
         # 右侧答题区
         right_panel = QVBoxLayout()
-        self.q_scroll = QScrollArea(); self.q_scroll.setWidgetResizable(True)
+        self.q_scroll = QScrollArea() # Removed setWidgetResizable(True) to allow content to overflow and trigger scrollbar
         self.q_widget = QWidget(); self.q_layout = QVBoxLayout(self.q_widget); self.q_layout.setAlignment(Qt.AlignTop)
         self.q_scroll.setWidget(self.q_widget)
-        right_panel.addWidget(self.q_scroll)
+        right_panel.addWidget(self.q_scroll, 1) # Make the scroll area expand vertically
         
         # 【提交按钮】强行出现在右侧下方，最后一页才显示
         self.submit_btn = QPushButton("🏁 确认交卷并计算总分")
@@ -383,9 +559,9 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
         self.submit_btn.clicked.connect(self.final_calc)
         self.submit_btn.hide()
         right_panel.addWidget(self.submit_btn)
-        
+
         body.addLayout(right_panel, 1)
-        main_l.addLayout(body)
+        main_l.addLayout(body, 1) # Body takes most of the vertical space
         
         nav = QHBoxLayout()
         self.p_btn = QPushButton("⬅️ 上一部分"); self.n_btn = QPushButton("下一部分 ➡️")
@@ -394,16 +570,25 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
         main_l.addLayout(nav)
 
     def _start_exam(self):
+        """
+        点击开始按钮后，切换到考试内容界面并加载第一页。
+        """
         """点击开始按钮后，切换到考试内容界面并加载第一页"""
         self.exam_screens_stack.setCurrentWidget(self.exam_content_widget) # 切换到考试内容界面
         self.exam_start_time = time.time() # 记录考试开始时间
         self.refresh() # 加载第一页试卷内容
 
     def step(self, s):
+        """
+        根据步长 s 切换到上一页或下一页试卷。
+        """
         self.cur_idx += s
         self.refresh()
 
     def refresh(self):
+        """
+        刷新当前页面的试卷内容和答题区。
+        """
         d = self.all_data[self.cur_idx]
         print(f"DEBUG: Refreshing section {self.cur_idx}. Data: {d.get('category')}, Items count: {len(d.get('items', []))}")
         self.header_l.setText(f"{d['category']} ({self.cur_idx+1}/{len(self.all_data)})")
@@ -439,6 +624,10 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
         self.q_scroll.verticalScrollBar().setValue(0)
 
     def final_calc(self):
+        """
+        计算最终得分，生成结算报告，并切换到结果页面。
+        """
+        all_questions_data = {} # 用于存储所有题目的详细信息和解析
         res = {'total': 0, 'details': {}} # total_possible_score 字段用于存储每个部分的满分
         for sec in self.all_data:
             tp = sec.get('question_type', 'reading')
@@ -446,6 +635,19 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
             for it in sec.get('items', []):
                 qid = re.sub(r'\D', '', str(it['q_id']))
                 n = int(qid) if qid.isdigit() else 0
+
+                # 解析当前部分的原始解析文本
+                analysis_by_q_id = self._parse_analysis_text(sec.get('original_analysis', ''))
+
+                # 存储当前题目的详细信息
+                all_questions_data[qid] = {
+                    'content': it.get('content', ''),
+                    'options': it.get('options', {}),
+                    'answer': it.get('answer', ''),
+                    'analysis': analysis_by_q_id.get(qid, '暂无解析')
+                }
+
+                # 计算分数权重
                 w = 1.0 if 41<=n<=55 else (1.5 if 56<=n<=65 else 2.5)
                 
                 res['details'][tp]['total'] += 1
@@ -467,5 +669,5 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
             d['acc'] = (d['correct']/d['total']*100) if d['total']>0 else 0
             
         elapsed = int(time.time() - self.exam_start_time) if self.exam_start_time else 0
-        self.res_view.update_res(res, elapsed) # 传递 elapsed_time_seconds
-        self.screen_manager_stack.setCurrentWidget(self.res_view) # 切换到结果页
+        self.res_view.update_res(res, elapsed, all_questions_data) # 传递 elapsed_time_seconds 和所有题目数据
+        self.screen_manager_stack.setCurrentWidget(self.res_scroll_area) # 切换到结果页所在的 QScrollArea

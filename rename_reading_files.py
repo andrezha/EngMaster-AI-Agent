@@ -11,6 +11,9 @@ import re
 from pathlib import Path
 
 def rename_reading_files():
+    """
+    批量重命名 'data/阅读理解' 文件夹下的文件，添加 'Reading_' 前缀，并统一格式。
+    """
     """批量重命名阅读理解文件"""
     
     # 定义文件夹路径

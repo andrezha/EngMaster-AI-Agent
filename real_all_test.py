@@ -20,6 +20,9 @@ from PySide6.QtGui import QFont
 # 2. 动态题目卡片 (支持选择题与填空题)
 # ==========================================
 class QuestionCard(QFrame):
+    """
+    用于显示单个题目及其选项或输入框的 UI 组件。
+    """
     def __init__(self, item, weight, q_type):
         super().__init__()
         self.item = item
@@ -54,6 +57,9 @@ class QuestionCard(QFrame):
             layout.addLayout(btn_layout)
 
     def _add_opt_btn(self, label, content, layout):
+        """
+        为选择题添加一个选项按钮。
+        """
         btn = QPushButton(f"{label}. {content}")
         btn.setCheckable(True)
         btn.setStyleSheet("QPushButton { text-align: left; padding: 5px; } QPushButton:checked { background: #e3f2fd; border: 1.5px solid #2196F3; }")
@@ -61,13 +67,22 @@ class QuestionCard(QFrame):
         self.group.addButton(btn)
         layout.addWidget(btn)
 
-    def save_choice(self, label): self.user_choice = label
-    def save_input(self, text): self.user_choice = text.strip()
+    def save_choice(self, label):
+        """记录用户选择的选择题答案。"""
+        self.user_choice = label
+
+    def save_input(self, text):
+        """记录用户输入的填空题答案。"""
+        self.user_choice = text.strip()
+
 
 # ==========================================
 # 3. 成绩报告页 (ResultPage)
 # ==========================================
 class ResultPage(QWidget):
+    """
+    显示考试成绩报告的页面，包括得分、耗时和错题列表。
+    """
     def __init__(self, parent_ui):
         super().__init__()
         self.parent_ui = parent_ui
@@ -103,6 +118,9 @@ class ResultPage(QWidget):
 # 4. 主系统 (ExamSystem)
 # ==========================================
 class HSEExamSystem(QMainWindow):
+    """
+    主考试系统窗口，负责管理试卷的加载、页面的切换和最终成绩的计算。
+    """
     def __init__(self, data_list):
         super().__init__()
         self.setWindowTitle("HSE-AI 英语全项模拟系统")
@@ -138,6 +156,9 @@ class HSEExamSystem(QMainWindow):
         self.main_layout.addLayout(self.ctrl)
 
     def _create_page(self, data):
+        """
+        根据给定的数据创建一个试卷页面（包含文章和题目卡片）。
+        """
         page_widget = QWidget()
         l = QHBoxLayout(page_widget)
         # 左原文
@@ -157,6 +178,9 @@ class HSEExamSystem(QMainWindow):
         return page_widget
 
     def go_next(self):
+        """
+        切换到下一页试卷，并在最后一页时显示结果。
+        """
         curr_idx = self.stack.currentIndex()
         curr_page = self.pages[curr_idx]
         
@@ -173,6 +197,9 @@ class HSEExamSystem(QMainWindow):
             if self.stack.currentIndex() == len(self.pages) - 1: self.next_btn.setText("提交试卷")
 
     def show_result(self):
+        """
+        计算最终得分，生成错题报告，并切换到结果页面。
+        """
         score = 0; wrongs = []
         for p in self.pages:
             for c in p.cards:
@@ -207,4 +234,3 @@ if __name__ == "__main__":
         gui = HSEExamSystem(parsed_all)
         gui.show()
         sys.exit(app.exec())
-

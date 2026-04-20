@@ -4,6 +4,9 @@ import os
 from PySide6 import QtCore, QtWidgets, QtGui
 
 class VocabManager:
+    """
+    词汇学习模块管理器，负责加载词汇、显示单词、检查用户输入和计时。
+    """
     def __init__(self, main_win):
         self.win = main_win
         self.current_idx = 0
@@ -44,6 +47,9 @@ class VocabManager:
         self._style_components()
 
     def _rebuild_layout(self):
+        """
+        重构词汇学习页面的布局，实现倒计时置顶、单词居中等效果。
+        """
         """重构布局：倒计时红色置顶，黄金重心上移，大间距"""
         if not self.main_layout or not self.v_disp or not self.v_input or not self.btn_confirm:
             return
@@ -87,6 +93,9 @@ class VocabManager:
         self.main_layout.addStretch(2)
 
     def _style_components(self):
+        """
+        为词汇学习模块的UI组件应用统一的样式。
+        """
         """统一样式规范：现代、简洁、专业"""
         
         # 倒计时标签 - 红色置顶，醒目
@@ -153,6 +162,9 @@ class VocabManager:
             """)
 
     def load_vocabulary(self):
+        """
+        从 assets/vocabulary.json 文件加载词汇表并随机打乱。
+        """
         try:
             if hasattr(self.win, 'base_path') and self.win.base_path:
                 vocab_path = os.path.join(self.win.base_path, "assets", "vocabulary.json")
@@ -168,6 +180,9 @@ class VocabManager:
             self.vocabulary = [{"word": "apple", "content": "苹果"}]
 
     def show_next(self, error_msg=""):
+        """
+        显示下一个词汇的中文释义，并根据需要显示错误提示。
+        """
         if not self.v_disp or not self.v_input:
             return
 
@@ -221,6 +236,9 @@ class VocabManager:
                 self.timer.start(1000)
 
     def tick(self):
+        """
+        计时器滴答事件处理函数，更新倒计时显示，并在时间到时自动显示答案。
+        """
         self.time_left -= 1
         if self.t_label:
             self.t_label.setText(str(self.time_left))
@@ -231,6 +249,9 @@ class VocabManager:
             QtCore.QTimer.singleShot(2000, self.go_next)
 
     def check_answer(self):
+        """
+        检查用户输入的答案是否正确，并根据结果更新UI样式。
+        """
         self.timer.stop()
         user_in = self.v_input.text().strip().lower()
         if not user_in:
@@ -266,5 +287,8 @@ class VocabManager:
             QtCore.QTimer.singleShot(2000, self.go_next)
 
     def go_next(self):
+        """
+        切换到下一个词汇。
+        """
         self.current_idx = (self.current_idx + 1) % len(self.vocabulary)
         self.show_next()

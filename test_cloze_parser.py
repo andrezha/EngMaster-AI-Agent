@@ -11,6 +11,9 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from parsers.reading_parser import parse_reading_txt
 
 def test_cloze_parser():
+    """
+    测试完形填空解析器，读取测试文件，解析内容并打印结果和调试信息。
+    """
     """测试完形填空解析器"""
     
     # 读取测试文件

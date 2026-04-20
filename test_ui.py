@@ -17,6 +17,9 @@ MOCK_EXAM_DATA = [
 
 # ================= 题目组件 =================
 class QuestionCard(QFrame):
+    """
+    用于显示单个题目及其选项的 UI 组件。
+    """
     def __init__(self, item, weight):
         super().__init__()
         self.item = item
@@ -51,6 +54,9 @@ class QuestionCard(QFrame):
 
 # ================= 成绩报告页 (ResultPage) =================
 class ResultPage(QWidget):
+    """
+    显示考试成绩报告的页面，包括得分、耗时和错题列表。
+    """
     def __init__(self, parent_ui):
         super().__init__()
         self.parent_ui = parent_ui
@@ -58,6 +64,9 @@ class ResultPage(QWidget):
         self.setStyleSheet("background-color: white;")
 
     def generate_report(self, score, used_time, total_possible, wrong_items):
+        """
+        生成并显示考试报告。
+        """
         # 清空旧布局
         for i in reversed(range(self.layout.count())): 
             self.layout.itemAt(i).widget().setParent(None)
@@ -108,6 +117,9 @@ class ResultPage(QWidget):
 
 # ================= 主界面 =================
 class ExamSystem(QMainWindow):
+    """
+    主考试系统窗口，负责管理试卷的加载、页面的切换和最终成绩的计算。
+    """
     def __init__(self):
         super().__init__()
         self.setWindowTitle("HSE-AI 英语机考系统")
@@ -142,6 +154,9 @@ class ExamSystem(QMainWindow):
         self.main_layout.addLayout(self.ctrl_bar)
 
     def handle_next(self):
+        """
+        处理“下一页”按钮点击事件，切换到下一页试卷或提交试卷。
+        """
         curr = self.stack.currentIndex()
         if not self.pages[curr].is_all_answered():
             QMessageBox.warning(self, "漏题", "请完成本页所有题目！")
@@ -155,6 +170,9 @@ class ExamSystem(QMainWindow):
                 self.next_btn.setText("提交试卷")
 
     def submit_and_show_report(self):
+        """
+        提交试卷，计算得分，生成报告，并切换到结果页面。
+        """
         # 1. 计算
         score = 0
         wrong_items = []
@@ -176,6 +194,9 @@ class ExamSystem(QMainWindow):
         self.ctrl_bar.hide() # 报告页不需要底部的“下一页”按钮
 
     def go_to_review(self):
+        """
+        切换到试卷回看模式，从第一页开始回顾。
+        """
         """返回第一页开始回看"""
         self.stack.setCurrentIndex(0)
         self.ctrl_bar.show()
@@ -183,9 +204,14 @@ class ExamSystem(QMainWindow):
         # 修改逻辑：回看模式下不再校验是否答题（因为已经答完了）
         self.is_review_mode = True 
 
-# 这里需要补全 PassagePage 类（同上个回答）
 class PassagePage(QWidget):
+    """
+    显示单个试卷板块（文章和题目）的页面。
+    """
     def __init__(self, data):
+        """
+        初始化 PassagePage。
+        """
         super().__init__()
         layout = QHBoxLayout(self)
         self.p_view = QTextBrowser(); self.p_view.setHtml(data['passage'])
@@ -197,7 +223,9 @@ class PassagePage(QWidget):
             card = QuestionCard(itm, data['weight'])
             self.q_layout.addWidget(card); self.cards.append(card)
         scroll.setWidget(q_container); layout.addWidget(scroll, 2)
-    def is_all_answered(self): return all(c.user_choice is not None for c in self.cards)
+    def is_all_answered(self):
+        """检查当前页面所有题目是否都已作答。"""
+        return all(c.user_choice is not None for c in self.cards)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

@@ -8,6 +8,9 @@ from parsers.reading_parser import parse_reading_txt
 
 
 class ExamManager:
+    """
+    专项练习模块的核心管理器，负责加载、渲染和管理各类题型的练习。
+    """
     # 严格的路径映射配置
     PATH_MAPPING = {
         "阅读理解": "data/阅读理解",
@@ -19,6 +22,9 @@ class ExamManager:
     }
 
     def __init__(self, main_window):
+        """
+        初始化 ExamManager。
+        """
         self.mw = main_window
         self.ui = main_window.page_gaokao_widget
 
@@ -144,6 +150,9 @@ class ExamManager:
 
     def clear_all_state(self):
         """
+        彻底清理所有状态，确保新页面是干净的。
+        """
+        """
         彻底清理所有状态，确保新页面是干净的
         包括：用户选择、按钮状态、解析显示、滚动位置
         
@@ -201,12 +210,17 @@ class ExamManager:
         print("🧹 [State Reset] 所有状态已强制重置完成！")
 
     def _clear_layout(self, layout):
+        """
+        递归清理布局中的所有子组件（widget 和 layout）。
+        """
         """递归清理布局中的所有项"""
         if not layout:
             return
         while layout.count():
             child = layout.takeAt(0)
             if child.widget():
+                # 物理销毁 widget
+                child.widget().setParent(None)
                 child.widget().deleteLater()
             elif child.layout():
                 self._clear_layout(child.layout())
@@ -220,6 +234,9 @@ class ExamManager:
                 self._clear_layout(layout)
 
     def getOrFetchData(self, topic_name, is_next_button=False):
+        """
+        懒加载核心函数：获取或加载题型数据。
+        """
         """
         懒加载核心函数：获取或加载题型数据
         
@@ -277,6 +294,9 @@ class ExamManager:
     
     def fetchNewRandomFile(self, topic_name):
         """
+        从指定题型文件夹中随机加载一个新的 TXT 文件。
+        """
+        """
         从指定题型文件夹中随机加载一个新的 TXT 文件
         
         Args:
@@ -318,6 +338,7 @@ class ExamManager:
         print(f"📖 [fetchNewRandomFile] 选中文件: {target}")
         
         try:
+            parsed_data = {} # Initialize parsed_data to an empty dict to prevent NameError if parse_reading_txt fails
             with open(target_path, 'r', encoding='utf-8') as f:
                 content = f.read()
             
@@ -364,6 +385,9 @@ class ExamManager:
 
     def switch_topic(self, topic_name):
         """
+        切换题型 - 懒加载逻辑。
+        """
+        """
         切换题型 - 懒加载逻辑
         
         🎯 关键逻辑：
@@ -398,15 +422,24 @@ class ExamManager:
             print("❌ [Switch] 数据加载失败")
 
     def get_data_path(self):
+        """
+        根据当前题型获取严格的数据路径。
+        """
         """根据当前题型获取严格的数据路径"""
         if self.current_type not in self.PATH_MAPPING:
             return None
 
         base_path = os.path.dirname(os.path.abspath(__file__))
         data_path = os.path.join(base_path, self.PATH_MAPPING[self.current_type])
+        # 确保路径存在，否则返回 None
+        if not os.path.exists(data_path):
+            return None
         return data_path
 
     def load_and_render(self):
+        """
+        加载数据并渲染界面 - 支持懒加载。
+        """
         """
         加载数据并渲染界面 - 支持懒加载
         
@@ -460,6 +493,9 @@ class ExamManager:
                 self.render_question_ui()
 
     def render_passage(self):
+        """
+        渲染文章区域，包括标题、文章内容和格式化。
+        """
         """渲染文章区域"""
         if not self.current_q:
             return
@@ -574,6 +610,9 @@ class ExamManager:
 
     def render_question_ui(self):
         """
+        动态生成答题按钮 - 使用条件渲染确保不同题型组件不会同时存在。
+        """
+        """
         动态生成答题按钮 - 使用条件渲染确保不同题型组件不会同时存在
         
         🚨 关键逻辑：
@@ -631,6 +670,7 @@ class ExamManager:
         # 确保只渲染当前题型需要的组件，其他题型的组件不会被创建
         question_type = self.current_q.get('question_type', 'reading') if self.current_q else 'reading'
         
+        print(f"DEBUG: render_question_ui - self.current_q: {self.current_q}")
         print(f"🎨 [Render] 当前题型: {question_type}")
         print(f"📊 [Render] 题目数量: {len(items)}")
         if items:
@@ -661,6 +701,9 @@ class ExamManager:
 
     def _render_reading_ui(self, layout, items):
         """
+        渲染阅读理解题目UI（单选题）。
+        """
+        """
         渲染阅读理解题目UI（单选题）
         
         🚨 关键修复：
@@ -671,6 +714,7 @@ class ExamManager:
         print(f"📝 [Reading UI] 开始渲染 {len(items)} 道阅读理解题目...")
         
         for idx, item in enumerate(items):
+            print(f"DEBUG: _render_reading_ui processing item {idx}: {item}")
             qid = item.get('q_id', '')
             content = item.get('content', '')
 
@@ -680,6 +724,7 @@ class ExamManager:
                 # 使用已有的 options 字段
                 qtext = content
             else:
+                print(f"DEBUG: _render_reading_ui options empty for Q{qid}, extracting from content: {content[:100]}...")
                 # 从 content 中提取题干和选项
                 qtext, options = self._extract_options_from_content(content)
 
@@ -701,6 +746,7 @@ class ExamManager:
 
             # 显示选项按钮行
             if options:
+                print(f"DEBUG: _render_reading_ui rendering options for Q{qid}: {options}")
                 # 处理 options 为字典的情况（如完形填空解析器返回的格式）
                 if isinstance(options, dict):
                     options_list = [f"{k}. {v}" for k, v in sorted(options.items())]
@@ -754,55 +800,56 @@ class ExamManager:
         print(f"✅ [Reading UI] {len(items)} 道题目渲染完成，每题已设置独立单选组")
 
     def _extract_options_from_content(self, content):
+        """
+        从题目内容中提取题干和选项。
+        """
         """从题目内容中提取题干和选项"""
+        print(f"DEBUG: _extract_options_from_content received content (len {len(content)}): {content[:200]}...")
         # 容错处理：将全角 ． 替换为半角 .
         clean_content = content.replace('．', '.')
         
         # 🎯 关键修复：处理选项前缀格式不标准的情况
-        # 如 "CThey" 应该是 "C. They"
-        clean_content = re.sub(r'(?<=[A-D])(?=[A-Z])', '. ', clean_content)
-        # 将 "A. " 统一为 "A. "
-        clean_content = re.sub(r'([A-D])\.\s*', r'\1. ', clean_content)
+        # 统一将 "A", "A.", "A)" 等格式标准化为 "A. "
+        # This regex looks for A, B, C, or D, optionally followed by a dot or parenthesis,
+        # then optionally followed by spaces, and replaces it with "X. "
+        clean_content = re.sub(r'([A-D])\s*[\.\)]?\s*', r'\1. ', clean_content)
 
-        # 查找选项位置
-        posA = clean_content.find("A. ")
-        posB = clean_content.find("B. ")
-        posC = clean_content.find("C. ")
-        posD = clean_content.find("D. ")
+        # Find positions using regex for more flexibility
+        # Use a non-greedy match for the content of the option
+        option_matches = list(re.finditer(r'([A-D])\.\s*(.*?)(?=\s*[A-D]\.|\Z)', clean_content, re.DOTALL))
         
-        # 如果找不到，尝试不带空格的格式
-        if posA == -1:
-            posA = clean_content.find("A.")
-        if posB == -1:
-            posB = clean_content.find("B.")
-        if posC == -1:
-            posC = clean_content.find("C.")
-        if posD == -1:
-            posD = clean_content.find("D.")
+        options_dict = {}
+        q_text = clean_content
 
-        if posA != -1 and posB != -1 and posC != -1 and posD != -1 and posA < posB < posC < posD:
-            # 切分题干：位置 A 之前的所有内容
-            q_text = clean_content[:posA].strip()
+        if option_matches:
+            # The question stem is everything before the first option
+            first_option_start_pos = option_matches[0].start()
+            q_text = clean_content[:first_option_start_pos].strip()
 
-            # 选项切分（去除选项前缀 "A.", "B." 等）
-            # 找到每个选项前缀的实际长度
-            lenA = 2 if clean_content[posA+1:posA+3] == ". " else 1
-            lenB = 2 if clean_content[posB+1:posB+3] == ". " else 1
-            lenC = 2 if clean_content[posC+1:posC+3] == ". " else 1
-            lenD = 2 if clean_content[posD+1:posD+3] == ". " else 1
+            # Extract options
+            for i, match in enumerate(option_matches):
+                label = match.group(1).upper()
+                content = match.group(2).strip()
+                options_dict[label] = content
             
-            optA = clean_content[posA+lenA:posB].strip()
-            optB = clean_content[posB+lenB:posC].strip()
-            optC = clean_content[posC+lenC:posD].strip()
-            optD = clean_content[posD+lenD:].strip()
-
-            options = [optA, optB, optC, optD]
-            return q_text, options
+            # Ensure all A, B, C, D are present and in order
+            if all(label in options_dict for label in ['A', 'B', 'C', 'D']) and \
+               list(options_dict.keys()) == ['A', 'B', 'C', 'D']:
+                options = [options_dict['A'], options_dict['B'], options_dict['C'], options_dict['D']]
+                print(f"DEBUG: _extract_options_from_content returning q_text (len {len(q_text)}): {q_text[:100]}..., options: {options}")
+                return q_text, options
+            else:
+                print(f"DEBUG: _extract_options_from_content found options but not A,B,C,D in order: {options_dict}")
+                return content, [] # Fallback if not all options or not in order
         else:
             # 兜底：没找齐四个选项或顺序错乱
+            print(f"DEBUG: _extract_options_from_content failed to extract options, returning content and empty list.")
             return content, []
 
     def _render_seven_five_ui(self, layout, items):
+        """
+        渲染七选五题目UI（A-G选项列表）。
+        """
         """渲染七选五题目UI（A-G选项列表）- 样式与阅读理解一致"""
         print(f"🔍 [七选五UI] 开始渲染，items数量: {len(items)}")
         
@@ -951,15 +998,24 @@ class ExamManager:
         print("✅ [七选五UI] 渲染完成")
 
     def on_choice_click(self, qid, choice, btn):
+        """
+        记录用户选择（阅读理解）并取消同题其他按钮 - 旧版兼容。
+        """
         """记录用户选择（阅读理解）并取消同题其他按钮 - 旧版兼容"""
         parent = btn.parentWidget()
         for child in parent.findChildren(QPushButton):
             if child != btn and child.isCheckable():
                 child.setChecked(False)
         self.user_selections[qid] = choice
+        # 确保 QButtonGroup 也能感知到这个选择，尽管这里是手动处理
+        if hasattr(self, 'reading_button_groups') and qid in self.reading_button_groups:
+            self.reading_button_groups[qid].buttonClicked.emit(btn)
         print(f"📝 题目 {qid}: 选择 {choice}")
 
     def on_reading_choice_click(self, qid, choice, btn):
+        """
+        记录用户选择（阅读理解）- 新版单选逻辑。
+        """
         """
         记录用户选择（阅读理解）- 新版单选逻辑
         
@@ -971,11 +1027,17 @@ class ExamManager:
         # QButtonGroup 会自动处理互斥，无需手动取消
 
     def on_seven_five_choice(self, opt_label, btn):
+        """
+        七选五选项点击（显示已选状态）。
+        """
         """七选五选项点击（显示已选状态）"""
         # 这里只是视觉反馈，实际选择在 blank_choice 中处理
         pass
 
     def on_seven_five_blank_choice(self, blank_id, opt_label, checked):
+        """
+        记录七选五每个空白处的选择。
+        """
         """记录七选五每个空白处的选择"""
         if checked:
             self.user_selections[blank_id] = opt_label
@@ -984,6 +1046,9 @@ class ExamManager:
             del self.user_selections[blank_id]
 
     def _render_grammar_fill_ui(self, layout, items):
+        """
+        渲染语法填空题目UI（输入框形式）。
+        """
         """
         渲染语法填空题目UI（输入框形式）
 
@@ -1066,6 +1131,9 @@ class ExamManager:
         print(f"✅ [Grammar Fill UI] {len(items)} 道题目渲染完成")
 
     def _render_cloze_ui(self, layout, items):
+        """
+        渲染完形填空题目UI（选择题形式，双列布局）。
+        """
         """
         渲染完形填空题目UI（选择题形式，双列布局）
         
@@ -1208,11 +1276,17 @@ class ExamManager:
         print(f"✅ [Cloze UI] {len(items)} 道题目渲染完成（双列布局，无背景框）")
 
     def on_cloze_choice_click(self, qid, choice, btn):
+        """
+        记录完形填空用户选择。
+        """
         """记录完形填空用户选择"""
         self.user_selections[qid] = choice
         print(f"📝 [完形填空] 题目 {qid}: 选择 {choice}")
 
     def _check_grammar_answer(self, user_ans, correct_answer):
+        """
+        检查语法填空答案是否正确，支持多种答案格式。
+        """
         """
         检查语法填空答案是否正确
         
@@ -1253,6 +1327,9 @@ class ExamManager:
         return False
 
     def check_score(self):
+        """
+        判分与展示解析，使用 PyQt5 原生方式实现分析按钮。
+        """
         """判分与展示解析 - 使用 PyQt5 原生方式实现分析按钮"""
         if not self.current_q:
             return
@@ -1560,6 +1637,9 @@ class ExamManager:
         print(f"✅ 判分完成：{correct_count}/{total}")
 
     def _on_analysis_link_clicked(self, url):
+        """
+        处理分析链接点击事件。
+        """
         """分析链接点击事件处理"""
         # 从 URL 中提取题号
         url_str = url.toString()
@@ -1567,6 +1647,10 @@ class ExamManager:
             qid = url_str.replace("analysis_", "")
             self._on_analysis_button_click(qid)
 
+    def _on_analysis_button_click(self, qid):
+        """
+        处理分析按钮点击事件，切换解析的显示/隐藏状态。
+        """
     def _on_analysis_button_click(self, qid):
         """分析按钮点击事件处理"""
         if not hasattr(self, '_analysis_by_q'):
@@ -1589,6 +1673,9 @@ class ExamManager:
         self._update_analysis_panel()
 
     def _update_analysis_panel(self):
+        """
+        更新右侧解析框显示，根据已显示的题目ID生成HTML。
+        """
         """更新右侧解析框显示"""
         if not hasattr(self, '_shown_analysis_qids') or not hasattr(self, '_analysis_by_q'):
             return
@@ -1606,15 +1693,10 @@ class ExamManager:
         
         # 生成解析HTML
         html_parts = ['<h4 style="color:#e67e22; margin-top:0;">📖 题目深度解析</h4>']
-        for qid in sorted(self._shown_analysis_qids):
-            text = self._analysis_by_q.get(qid, "")
-            if text:
-                html_parts.append(
-                    f"<div style='margin-bottom:12px; padding:8px; background:#fff; border-radius:6px; border-left:3px solid #3498db;'>"
-                    f"<strong style='color:#3498db;'>第{qid}题</strong> "
-                    f"<span style='color:#555;'>{text}</span>"
-                    f"</div>"
-                )
+        for qid in sorted(self._shown_analysis_qids, key=int): # 确保按数字顺序显示
+            formatted_analysis = self._format_analysis_by_question(qid)
+            if formatted_analysis:
+                html_parts.append(formatted_analysis)
         
         analysis_html = "\n".join(html_parts)
         self.ui.gk_ai_display.setHtml(
@@ -1627,66 +1709,30 @@ class ExamManager:
 
     def _format_analysis_by_question(self, analysis):
         """
-        按题号分割解析，每道题单独显示
-        
-        🎯 支持的格式：
-        - 【4题详解】...
-        - 4．...
-        - 4. ...
+        根据已解析的 `self._analysis_by_q`，为指定题号生成格式化的 HTML 解析内容。
         """
-        if not analysis:
+        qid = analysis # In this context, 'analysis' is actually the qid
+        if not hasattr(self, '_analysis_by_q') or qid not in self._analysis_by_q:
             return ""
         
-        # 🎯 按题号分割解析
-        # 匹配格式：【数字题详解】或 数字．或 数字.
-        # 使用正则分割
-        parts = re.split(r'(?:^|\n)\s*(【\d+题详解】|\d+[．.])', analysis)
-        
-        # 清理分割后的结果
-        cleaned_parts = []
-        current_q_num = ""
-        
-        for i, part in enumerate(parts):
-            part = part.strip()
-            if not part:
-                continue
-            
-            # 检查是否是题号标记
-            if re.match(r'【\d+题详解】', part) or re.match(r'\d+[．.]', part):
-                # 提取题号
-                q_match = re.search(r'(\d+)', part)
-                if q_match:
-                    current_q_num = q_match.group(1)
-            elif current_q_num and part:
-                # 这是解析内容
-                cleaned_parts.append((current_q_num, part))
-        
-        # 如果没有找到分割的题号，尝试另一种格式
-        if not cleaned_parts:
-            # 尝试匹配 "数字．内容" 格式
-            pattern = re.findall(r'(\d+)[．.]\s*(.*?)(?=\d+[．.]|$)', analysis, re.DOTALL)
-            for q_num, content in pattern:
-                if content.strip():
-                    cleaned_parts.append((q_num, content.strip()))
-        
-        # 生成HTML
-        if not cleaned_parts:
-            return f"<p>{analysis}</p>"
-        
-        html_parts = []
-        for q_num, content in cleaned_parts:
-            # 清理内容中的HTML标签
-            clean_content = re.sub(r'<[^>]+>', '', content)
-            html_parts.append(
-                f"<div style='margin-bottom: 12px; padding: 8px; background: #fff; border-radius: 6px; border-left: 3px solid #3498db;'>"
-                f"<strong style='color: #3498db;'>第{q_num}题</strong> "
-                f"<span style='color: #555;'>{clean_content}</span>"
-                f"</div>"
-            )
-        
-        return "\n".join(html_parts)
+        content = self._analysis_by_q.get(qid, "")
+        if not content:
+            return ""
+
+        # 清理内容中的HTML标签（如果_parse_analysis_for_display没有完全清理）
+        clean_content = re.sub(r'<[^>]+>', '', content)
+
+        return (
+            f"<div style='margin-bottom: 12px; padding: 8px; background: #fff; border-radius: 6px; border-left: 3px solid #3498db;'>"
+            f"<strong style='color: #3498db;'>第{qid}题</strong> "
+            f"<span style='color: #555;'>{clean_content}</span>"
+            f"</div>"
+        )
 
     def update_nav_highlight(self):
+        """
+        更新顶部菜单按钮的高亮状态。
+        """
         """顶部菜单按钮高亮控制"""
         btn_map = {
             "阅读理解": "gk_btn_reading",

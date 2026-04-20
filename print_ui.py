@@ -6,6 +6,9 @@ app = QApplication(sys.argv)
 ui = uic.loadUi("resources/page_gaokao.ui")
 
 def print_tree(widget, indent=0):
+    """
+    递归打印 PySide6 UI 控件的层级结构，包括类名和对象名。
+    """
     print(" " * indent + f"{widget.metaObject().className()} - {widget.objectName()}")
     layout = widget.layout()
     if layout:
