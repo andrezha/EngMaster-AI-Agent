@@ -19,7 +19,7 @@ class WordListView(QtWidgets.QWidget):
     """词汇表视图 - 扁平化表格展示高考3800词"""
     
     # 布局常量
-    ROW_HEIGHT = 48           # 每行高度
+    ROW_HEIGHT = 64           # 每行高度
     WORDS_PER_PAGE = 60       # 每页60个词
     ROWS_PER_PAGE = 20        # 20行
     COLS = 3                  # 3列
@@ -27,6 +27,7 @@ class WordListView(QtWidgets.QWidget):
     # 列宽常量
     INDEX_COL_WIDTH = 50      # 序号列宽
     WORD_COL_WIDTH = 160      # 英文列宽
+    WORD_COL_WIDTH = 200      # 英文列宽
     
     # 字体常量
     WORD_FONT_SIZE = 20       # 英文单词字体
@@ -437,6 +438,7 @@ class WordListView(QtWidgets.QWidget):
             }}
         """)
         index_label.setAlignment(QtCore.Qt.AlignVCenter | QtCore.Qt.AlignLeft)
+        index_label.setTextInteractionFlags(QtCore.Qt.TextSelectableByMouse)
         row_layout.addWidget(index_label)
         
         # 英文 Label
@@ -452,6 +454,7 @@ class WordListView(QtWidgets.QWidget):
             }}
         """)
         word_label.setAlignment(QtCore.Qt.AlignVCenter | QtCore.Qt.AlignLeft)
+        word_label.setTextInteractionFlags(QtCore.Qt.TextSelectableByMouse)
         row_layout.addWidget(word_label)
         
         # 中文 Label
@@ -466,6 +469,7 @@ class WordListView(QtWidgets.QWidget):
         """)
         content_label.setWordWrap(True)
         content_label.setAlignment(QtCore.Qt.AlignVCenter | QtCore.Qt.AlignLeft)
+        content_label.setTextInteractionFlags(QtCore.Qt.TextSelectableByMouse)
         row_layout.addWidget(content_label, 1)
         
         return row_frame
