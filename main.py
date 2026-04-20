@@ -18,6 +18,7 @@ else:
 res_dir = os.path.join(base_path, "resources")
 lib_path = os.path.join(base_path, "lib")
 data_dir = os.path.join(base_path, "data")
+assets_dir = os.path.join(base_path, "assets") # 新增这一行
 
 # 统一注入 lib 路径，确保业务模块加载
 if lib_path not in sys.path:

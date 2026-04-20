@@ -23,8 +23,7 @@ jobs:
 
     - name: Run-Build
       run: |
-        python -m PyInstaller --onefile --windowed --clean --add-data "resources;resources" --add-data "lib;lib" --add-data "data;data" main.py
-
+       python -m PyInstaller --onefile --windowed --clean --add-data "resources;resources" --add-data "lib;lib" --add-data "data;data" --add-data "assets;assets" main.py
     - name: Upload
       uses: actions/upload-artifact@v4
       with:
