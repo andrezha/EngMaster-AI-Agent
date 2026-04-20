@@ -2,18 +2,32 @@ import sys
 import os
 import re
 import time
+import PySide6
+
+# ============ [1. 环境初始化：必须最先执行] ============
+# 修复 PySide6 打包后找不到插件的问题
+pyside6_dir = os.path.dirname(PySide6.__file__)
+os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = os.path.join(pyside6_dir, 'plugins', 'platforms')
+
+# ============ [2. 路径适配：支持开发环境与 PyInstaller 打包环境] ============
+if hasattr(sys, '_MEIPASS'):
+    # 打包后的运行路径
+    base_path = sys._MEIPASS
+else:
+    # 开发调试路径
+    base_path = os.path.dirname(os.path.abspath(__file__))
+
+# 统一注入 lib 路径和根路径，确保模块导入不报错
+lib_path = os.path.join(base_path, "lib")
+for p in [lib_path, base_path]:
+    if p not in sys.path:
+        sys.path.insert(0, p)
+
+# ============ [3. 模块导入] ============
 from PySide6 import QtWidgets, QtCore, QtGui
 from PySide6.QtWidgets import (QApplication, QMainWindow, QMessageBox, QPushButton, 
                              QStackedWidget, QVBoxLayout, QWidget, QLineEdit)
 from PySide6.QtUiTools import QUiLoader
-
-# ============ 路径配置与自检 ============
-base_path = os.path.dirname(os.path.abspath(__file__))
-lib_path = os.path.join(base_path, "lib")
-if lib_path not in sys.path:
-    sys.path.append(lib_path)
-if base_path not in sys.path:
-    sys.path.append(base_path)
 
 try:
     from vocab_module import VocabManager
@@ -21,7 +35,7 @@ try:
     from run_flull_exam import HSEExamSystem
     from exam_module import ExamManager 
 except ImportError as e:
-    print(f"❌ 导入模块失败: {e}")
+    print(f"❌ 业务模块加载偏差: {e}")
 
 # ==========================================
 # 1. 独立解析器 (专门负责整卷 TXT 格式转换)
