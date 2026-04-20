@@ -12,7 +12,7 @@
 import json
 import os
 import random
-from PyQt5 import QtCore, QtWidgets, QtGui
+from PySide6 import QtCore, QtWidgets, QtGui
 
 
 class WordListView(QtWidgets.QWidget):

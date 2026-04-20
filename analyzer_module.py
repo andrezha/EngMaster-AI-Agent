@@ -1,4 +1,4 @@
-from PyQt5 import QtCore, QtWidgets
+from PySide6 import QtCore, QtWidgets
 
 class AnalyzerManager:
     def __init__(self, main_win):
@@ -139,7 +139,7 @@ class AnalyzerManager:
 
         # 3. 🚀 启动 AI 工人 (导入 AIWorker)
         try:
-            from ai_service import AIWorker 
+            from ai_service import AIWorker # This module also needs to be converted to PySide6
             
             # 这里的 self.current_type 就是你刚才点大按钮切好的题型
             self.worker = AIWorker(self.current_type, content)

@@ -1,383 +1,306 @@
 import sys
 import os
-from PyQt5 import QtWidgets, uic, QtCore
-from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QFrame
+import re
+import time
+from PySide6 import QtWidgets, QtCore, QtGui
+from PySide6.QtWidgets import (QApplication, QMainWindow, QMessageBox, QPushButton, 
+                             QStackedWidget, QVBoxLayout, QWidget, QLineEdit)
+from PySide6.QtUiTools import QUiLoader
 
-# ============ 路径配置 ============
-ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(os.path.join(ROOT_DIR, 'lib'))
-# ===================================
+# ============ 路径配置与自检 ============
+base_path = os.path.dirname(os.path.abspath(__file__))
+lib_path = os.path.join(base_path, "lib")
+if lib_path not in sys.path:
+    sys.path.append(lib_path)
+if base_path not in sys.path:
+    sys.path.append(base_path)
 
-from vocab_module import VocabManager
-from analyzer_module import AnalyzerManager
-from exam_module import ExamManager
-from word_list_view import WordListView  # 导入词汇表视图
+try:
+    from vocab_module import VocabManager
+    from word_list_view import WordListView 
+    from run_flull_exam import HSEExamSystem
+    from exam_module import ExamManager 
+except ImportError as e:
+    print(f"❌ 导入模块失败: {e}")
 
+# ==========================================
+# 1. 独立解析器 (专门负责整卷 TXT 格式转换)
+# ==========================================
+def _internal_full_exam_parser(text):
+    import re
+    print("\n" + "="*50)
+    print("🚀 [DEBUG] 解析器已启动...")
+    
+    sections = re.split(r'\[\[SECTION:\s*(.*?)\]\]', text)
+    data_list = []
+    
+    NAME_MAP = {
+        "READING_PASSAGE_A": "阅读理解 A", "READING_PASSAGE_B": "阅读理解 B",
+        "READING_PASSAGE_C": "阅读理解 C", "READING_PASSAGE_D": "阅读理解 D",
+        "7_OUT_OF_5": "七选五", "CLOZE": "完形填空", "GRAMMAR": "语法填空"
+    }
+    TYPE_MAP = {
+        "READING_PASSAGE_A": "reading", "READING_PASSAGE_B": "reading", 
+        "READING_PASSAGE_C": "reading", "READING_PASSAGE_D": "reading",
+        "7_OUT_OF_5": "seven_five", "CLOZE": "cloze", "GRAMMAR": "grammar"
+    }
+
+    for i in range(1, len(sections), 2):
+        sec_name = sections[i].strip()
+        sec_body = sections[i+1].strip()
+        print(f"\n📂 正在解析板块: {sec_name}")
+
+        # --- 第一步：切割原文 ---
+        p_split = re.split(r'[\[【]\s*QUESTIONS\s*[\]】]', sec_body, flags=re.I)
+        passage = p_split[0].strip()
+        print(f"   📝 原文长度: {len(passage)} 字")
+        
+        q_text = ""
+        original_analysis = ""
+        
+        # --- Step 1: Split by [QUESTIONS] to get passage and raw_questions_and_analysis ---
+        questions_tag_match = re.search(r'[\[【]\s*QUESTIONS\s*[\]】]', sec_body, flags=re.I)
+        if not questions_tag_match:
+            print(f"   ❌ [错误] 未能发现 [QUESTIONS] 标签在板块 {sec_name}。跳过此板块。")
+            continue # Skip this section if no questions tag
+
+        passage = sec_body[:questions_tag_match.start()].strip()
+        raw_questions_and_analysis = sec_body[questions_tag_match.end():].strip()
+
+        # --- Step 2: Split raw_questions_and_analysis by [ANALYSIS] to get q_text and original_analysis ---
+        analysis_tag_match = re.search(r'[\[【]\s*ANALYSIS\s*[\]】]', raw_questions_and_analysis, flags=re.I | re.S)
+        if analysis_tag_match:
+            q_text = raw_questions_and_analysis[:analysis_tag_match.start()].strip()
+            original_analysis = raw_questions_and_analysis[analysis_tag_match.end():].strip()
+            print(f"   ✅ 发现 [ANALYSIS] 标签，已提取解析内容。")
+        else:
+            q_text = raw_questions_and_analysis.strip()
+            print(f"   ⚠️ 未能发现 [ANALYSIS] 标签，题目内容可能包含解析。")
+
+        print(f"   📝 原文长度: {len(passage)} 字")
+        print(f"   DEBUG: 提取的 q_text (前200字):\n{q_text[:200]}...")
+
+        items = []
+        seven_five_global_options = [] # This will store the A-G options for seven_five, initialized once
+
+        # --- Special handling for Seven-Five ---
+        if TYPE_MAP.get(sec_name, "reading") == "seven_five":
+            # For seven_five, q_text contains blank numbers (e.g., 36-40) followed by A-G options.
+            # We need to extract these A-G options from q_text.
+            
+            # Find the last question number in the sequence (e.g., 40)
+            # This regex looks for a number followed by a dot or parenthesis, at the start of a line
+            last_qid_in_qtext_match = re.findall(r'^\s*(\d+)\s*[\.\)]', q_text, re.MULTILINE)
+            last_qid_num = 0
+            if last_qid_in_qtext_match:
+                last_qid_num = int(last_qid_in_qtext_match[-1]) # Get the last number found
+
+            options_content_for_seven_five = ""
+            # Find the start of the A-G options after the last question number
+            # This regex looks for 'A.' at the beginning of a line, after the last qid
+            options_start_pattern = r'(?:\n|^)\s*A\.\s*'
+            options_start_match = re.search(options_start_pattern, q_text)
+
+            if options_start_match:
+                options_content_for_seven_five = q_text[options_start_match.start():].strip()
+            else:
+                # Fallback: if 'A.' not found, assume all content after last qid is options
+                if last_qid_num > 0:
+                    # Find the position after the last qid in q_text
+                    pos_after_last_qid = q_text.rfind(str(last_qid_num)) + len(str(last_qid_num))
+                    options_content_for_seven_five = q_text[pos_after_last_qid:].strip()
+                else:
+                    options_content_for_seven_five = q_text.strip() # If no qids found, assume whole q_text is options
+
+            # Parse A-G options from the extracted content
+            option_matches = re.findall(r'([A-G])\.\s*(.*?)(?=\s*[A-G]\.|$|\n)', options_content_for_seven_five, re.S)
+            for label, content in option_matches:
+                seven_five_global_options.append({"label": label, "content": content.strip()})
+            
+            print(f"   ✅ 提取七选五全局选项: {len(seven_five_global_options)} 个. 示例: {seven_five_global_options[:2]}")
+            if not seven_five_global_options:
+                print("   ❌ 警告: 七选五全局选项列表为空，请检查 [QUESTIONS] 标签后的格式。")
+
+            # Generate items for blanks 36-40 (or whatever range is implied)
+            # For seven_five, the q_ids are usually explicitly marked in the passage or q_text.
+            # Let's try to extract them from the q_text if they are present as numbers.
+            # If not, we fall back to the assumed 36-40 range.
+            
+            # First, try to find explicit question numbers in q_text for seven_five
+            seven_five_qids_in_text = re.findall(r'(\d+)\s*[\.\)]', q_text)
+            unique_qids = sorted(list(set(seven_five_qids_in_text)), key=int)
+            
+            if not unique_qids:
+                # Fallback to assumed range if no explicit q_ids found in q_text
+                print("   ⚠️ 未在七选五题目文本中找到明确题号，假定题号为 36-40。")
+                unique_qids = [str(i) for i in range(36, 41)]
+
+            for q_id_str in unique_qids:
+                items.append({
+                    "q_id": q_id_str,
+                    "content": f"请选择第 {q_id_str} 题的答案", # Content for the blank
+                    "options": seven_five_global_options # Assign the parsed global options
+                })
+        else: # 对于阅读理解、完形填空、语法填空，从 q_text 中解析题目
+            # Find all question blocks. A question block starts with a number (e.g., 21.)
+            # and captures everything until the next question number or the end of the text.
+            question_blocks_matches = re.finditer(r'(\d+)\s*[\.\)]\s*(.*?)(?=\n*\d+\s*[\.\)]\s*|\Z)', q_text, re.DOTALL)
+            
+            for match in question_blocks_matches:
+                q_id = match.group(1).strip()
+                block_content = match.group(2).strip()
+                
+                question_stem = ""
+                question_options = {}
+                
+                options_pattern = r'([A-G])\s*[\.\)]\s*(.*?)(?=\n*[A-G]\s*[\.\)]\s*|\Z)' # Changed [A-D] to [A-G] for more flexibility
+                options_found = list(re.finditer(options_pattern, block_content, re.DOTALL))
+                
+                if options_found:
+                    first_option_start_pos = options_found[0].start()
+                    question_stem = block_content[:first_option_start_pos].strip()
+                    
+                    for opt_match in options_found:
+                        label = opt_match.group(1).upper()
+                        content = opt_match.group(2).strip()
+                        question_options[label] = content
+                else:
+                    question_stem = block_content
+                
+                items.append({
+                    "q_id": q_id,
+                    "content": question_stem,
+                    "options": question_options
+                })
+
+
+        print(f"   📊 成功提取题目数量: {len(items)}")
+
+        data_list.append({
+            "category": NAME_MAP.get(sec_name, sec_name),
+            "question_type": TYPE_MAP.get(sec_name, "reading"),
+            "passage": passage, 
+            "items": items,
+            "original_analysis": original_analysis # 存储解析内容
+        })
+        
+    print(f"✅ [DEBUG] 解析器完成，共解析出 {len(data_list)} 个板块。")
+    print("="*50)
+    return data_list
+
+# ==========================================
+# 2. 主程序类
+# ==========================================
 class HighSchoolEnglishAI(QMainWindow):
     def __init__(self):
-        # 🚀 必须有这一行！地基
         super().__init__() 
-        
-        # 0. 初始尺寸与居中
-        self.resize(1280, 800)
-        self.setMinimumSize(1280, 800)
-        self.center_window()
-    
-        # 1. 定位路径
+        self.setWindowTitle("HSE-AI 英语智胜工作站")
+        self.showMaximized() 
         self.base_path = os.path.dirname(os.path.abspath(__file__))
         res_dir = os.path.join(self.base_path, "resources")
         
-        # 2. 加载主框架 UI (这里面包含那个空的 stackedWidget)
-        main_ui_path = os.path.join(res_dir, "main_window.ui")
-        uic.loadUi(main_ui_path, self)
+        loader = QUiLoader()
+        self.ui_root = loader.load(os.path.join(res_dir, "main_window.ui")) 
+        if not self.ui_root: return
+        self.setCentralWidget(self.ui_root) 
 
-        # 🎯 立即设置显示单词闯关页面（防止其他页面被自动激活）
-        self.stackedWidget.setCurrentIndex(0)
+        self.stack = self.ui_root.findChild(QStackedWidget, "stackedWidget")
+        self.btn_nav_vocab = self.ui_root.findChild(QPushButton, "btn_nav_vocab")
+        self.btn_nav_core_vocab = self.ui_root.findChild(QPushButton, "btn_nav_core_vocab")
+        self.btn_nav_gaokao = self.ui_root.findChild(QPushButton, "btn_nav_gaokao")
+        self.btn_nav_full_exam = self.ui_root.findChild(QPushButton, "btn_nav_full_exam")
 
-        # 3. 【重点】加载并强行嵌入"高考真题"
+        self._setup_gaokao_page(res_dir, loader)
+        
+        try:
+            self.vocab_ctrl = VocabManager(self)
+            self.word_list_widget = WordListView(self)
+            self.stack.addWidget(self.word_list_widget)
+            self.word_list_index = self.stack.indexOf(self.word_list_widget)
+            self.exam_ctrl = ExamManager(self) 
+        except Exception as e:
+            print(f"⚠️ 业务模块异常: {e}")
+
+        self._apply_sidebar_style()
+        self._bind_nav_events()
+        self.stack.setCurrentIndex(0)
+
+    def _setup_gaokao_page(self, res_dir, loader):
         gk_ui_path = os.path.join(res_dir, "page_gaokao.ui")
+        self.page_gaokao_widget = loader.load(gk_ui_path)
+        if self.page_gaokao_widget:
+            self.btn_reading = self.page_gaokao_widget.findChild(QPushButton, "gk_btn_reading")
+            self.btn_cloze = self.page_gaokao_widget.findChild(QPushButton, "gk_btn_cloze")
+            self.btn_7to5 = self.page_gaokao_widget.findChild(QPushButton, "gk_btn_seven_five")
+            self.btn_grammar = self.page_gaokao_widget.findChild(QPushButton, "gk_btn_grammar")
+            
+            if self.btn_reading: self.btn_reading.clicked.connect(lambda: self.load_special_practice("阅读理解"))
+            if self.btn_cloze: self.btn_cloze.clicked.connect(lambda: self.load_special_practice("完形填空"))
+            if self.btn_7to5: self.btn_7to5.clicked.connect(lambda: self.load_special_practice("七选五"))
+            if self.btn_grammar: self.btn_grammar.clicked.connect(lambda: self.load_special_practice("语法填空"))
+            
+            self.stack.addWidget(self.page_gaokao_widget)
+            self.gk_idx = self.stack.indexOf(self.page_gaokao_widget)
+
+    def _bind_nav_events(self):
+        self.btn_nav_vocab.clicked.connect(lambda: self.stack.setCurrentIndex(0))
+        self.btn_nav_core_vocab.clicked.connect(lambda: self.stack.setCurrentIndex(self.word_list_index))
+        self.btn_nav_gaokao.clicked.connect(self.show_gaokao_page)
+        self.btn_nav_full_exam.clicked.connect(self.switch_to_full_exam)
         
-        # 🌟 关键改动：加载时就明确告诉它：你的"亲爹"是 stackedWidget
-        self.page_gaokao_widget = uic.loadUi(gk_ui_path) 
-        
-        # 🌟 关键改动：先塞进去，再处理显示
-        self.stackedWidget.addWidget(self.page_gaokao_widget)
-        
-        # 🌟 关键改动：确保父级容器(StackedWidget)有布局来撑开它
-        if not self.stackedWidget.layout():
-            v_layout = QtWidgets.QVBoxLayout(self.stackedWidget)
-            v_layout.setContentsMargins(0, 0, 0, 0)
-            self.stackedWidget.setLayout(v_layout)
-
-        # 🌟 关键：不要在这里直接调 show()，那是让它变成独立窗口
-        # 而是在切换函数里去唤醒它
-        self.gk_index = self.stackedWidget.indexOf(self.page_gaokao_widget)
-        
-
-        # 4. 抓取 UI 控件引用 (确保这些名字和 XML 里的 ObjectName 一致)
-        # 注意：这里我们直接用 self.stackedWidget 也可以，因为 uic.loadUi 已经把名字赋给 self 了
-        self.stack = self.stackedWidget 
-        self.btn_nav_vocab = self.findChild(QtWidgets.QPushButton, "btn_nav_vocab")
-        self.btn_nav_core_vocab = self.findChild(QtWidgets.QPushButton, "btn_nav_core_vocab")
-        self.btn_nav_scan = self.findChild(QtWidgets.QPushButton, "btn_nav_scan")
-        self.btn_nav_gaokao = self.findChild(QtWidgets.QPushButton, "btn_nav_gaokao")
-        self.btn_nav_full_exam = self.findChild(QtWidgets.QPushButton, "btn_nav_full_exam")
-        
-        # 核心词汇表按钮加入导航列表
-        self.nav_buttons = [self.btn_nav_vocab, self.btn_nav_core_vocab, self.btn_nav_gaokao, self.btn_nav_full_exam]
-
-        self.nav_v_layout = self.findChild(QtWidgets.QVBoxLayout, "nav_v_layout")
-        if self.nav_v_layout:
-            self.nav_v_layout.setSpacing(18)
-            self.nav_v_layout.setContentsMargins(10, 10, 10, 10)
-
-        # --- 1. 侧边栏品牌区域 ---
-        self.brand_label = QLabel("高考英语·智胜工作站")
-        self.brand_label.setStyleSheet("""
-            QLabel {
-                font-size: 20px;
-                font-weight: bold;
-                color: #2c3e50;
-                margin-bottom: 30px;
-                padding: 10px;
-            }
-        """)
-        self.brand_label.setAlignment(QtCore.Qt.AlignCenter)
-        self.brand_label.setFixedHeight(50)
-        
-        # 将品牌标签插入到布局最上方
-        if self.nav_v_layout:
-            self.nav_v_layout.insertWidget(0, self.brand_label)
-
-        # 调整分割线
-        self.nav_divider = self.findChild(QtWidgets.QFrame, "nav_divider")
-        if self.nav_divider:
-            self.nav_divider.setMinimumHeight(1)
-            self.nav_divider.setMaximumHeight(1)
-            self.nav_divider.setStyleSheet("QFrame { background-color: #e4e7ed; border: none; margin-top: 15px; margin-bottom: 10px; }")
-
-
-        # 2. 实现按钮互斥（单选效果）
-        self.sidebar_group = QtWidgets.QButtonGroup(self)
-        self.sidebar_group.setExclusive(True)
-
-        sidebar_qss = """
-            QPushButton {
-                height: 55px;
-                border-radius: 12px;
-                border: 1px solid #e4e7ed;
-                background: transparent;
-                color: #606266;
-                font-size: 15px;
-                text-align: left;
-                padding-left: 15px;
-                outline: none;
-                font-weight: bold;
-            }
-            QPushButton:hover {
-                background-color: #f5f7fa;
-                border: 1px solid #c0c4cc;
-            }
-            QPushButton:checked {
-                background-color: #2c3e50;
-                color: white;
-                border: 1px solid #2c3e50;
-            }
-        """
-
-        for btn in self.nav_buttons:
-            if btn:
-                btn.setCheckable(True)
-                btn.setMinimumHeight(55)
-                self.sidebar_group.addButton(btn)
-                btn.setStyleSheet(sidebar_qss)
-
-        # --- 3. 增值服务: AI 老师视觉锁定 ---
-        self.is_pro = False
-        
-        # 为 btn_nav_scan 设置灰色虚线边框样式（非 Pro 用户）
-        if self.btn_nav_scan and not self.is_pro:
-            self.btn_nav_scan.setCheckable(False)  # 非 Pro 用户不可选中
-            self.btn_nav_scan.setMinimumHeight(55)
-            self.btn_nav_scan.setStyleSheet("""
-                QPushButton {
-                    height: 55px;
-                    border-radius: 12px;
-                    border: 1px dashed #dcdfe6;
-                    background-color: #f5f5f5;
-                    color: #a8abb2;
-                    font-size: 15px;
-                    text-align: left;
-                    padding-left: 15px;
-                    outline: none;
-                    font-weight: bold;
-                }
-                QPushButton:hover { 
-                    background-color: #f5f5f5; 
-                    border: 1px dashed #c0c4cc;
-                }
-            """)
-            # 点击时显示购买引导页
-            self.btn_nav_scan.clicked.connect(self.show_ai_pro_guide)
-
-        # 🎯 启动时默认显示单词闯关页面（必须在初始化子模块之前设置！）
-        self.stack.setCurrentIndex(0)
-        
-        # 5. 启动子模块 (传入 self 以便子模块能操作 UI)
-        self.vocab_ctrl = VocabManager(self)
-        self.analyzer_ctrl = AnalyzerManager(self)
-        self.exam_ctrl = ExamManager(self) 
-
-        # 6. 创建词汇表视图页面
-        self.word_list_widget = WordListView(self)
-        self.stackedWidget.addWidget(self.word_list_widget)
-        self.word_list_index = self.stackedWidget.indexOf(self.word_list_widget)
-        
-        # 7. 绑定导航按钮点击事件
-        if self.btn_nav_vocab:
-            self.btn_nav_vocab.clicked.connect(self.switch_to_vocab)
-        if self.btn_nav_core_vocab:
-            self.btn_nav_core_vocab.clicked.connect(self.switch_to_word_list)
-        if self.btn_nav_gaokao:
-            self.btn_nav_gaokao.clicked.connect(self.switch_to_gaokao)
-        if self.btn_nav_full_exam:
-            self.btn_nav_full_exam.clicked.connect(self.switch_to_full_exam)
-        
-        # 默认选中第一个（单词闯关）
-        if self.btn_nav_vocab:
-            self.btn_nav_vocab.setChecked(True)
-        
-        # 7. 绑定高考页面 AI 聊天功能
-        self.bind_gaokao_ai_chat()
-        
-    def center_window(self):
-        """让主窗口在屏幕居中显示"""
-        qr = self.frameGeometry()
-        # 获取屏幕中心点
-        cp = QtWidgets.QDesktopWidget().availableGeometry().center()
-        # 将矩形的中心移动到屏幕中心
-        qr.moveCenter(cp)
-        # 将窗口移动到矩形的左上角
-        self.move(qr.topLeft())
-
-    def show_pro_tip(self):
-        """显示未解锁提示"""
-        # 如果是未解锁状态被点击，它会被选中。我们需要恢复它之前的状态，或者如果单选限制了，我们只能重置
-        QtWidgets.QMessageBox.information(self, "解锁增值服务", "此功能为 PRO 专属增值服务，请升级后使用。")
-        # 将焦点切回上一个合法页面，或简单处理
-        if self.stackedWidget.currentIndex() == 0 and self.btn_nav_vocab:
-            self.btn_nav_vocab.setChecked(True)
-        elif self.stackedWidget.currentIndex() == 1 and self.btn_nav_gaokao:
-            # 高考真题页面其实原本是index 2,但在现在代码里不知道怎么映射的，这里只做粗略恢复
-            self.btn_nav_gaokao.setChecked(True)
-
-    # --- 导航切换函数 ---
-    def switch_to_vocab(self):
-        """切回词汇页"""
-        self.stack.setCurrentIndex(0)
-        # 逻辑：如果单词模块有计时器，切回来就开启
-        if hasattr(self, 'vocab_ctrl') and hasattr(self.vocab_ctrl, 'timer'):
-            self.vocab_ctrl.timer.start(1000)
-
-    def switch_to_scan(self):
-        """切到解析页"""
-        self.stack.setCurrentIndex(1)
-        if hasattr(self, 'vocab_ctrl') and hasattr(self.vocab_ctrl, 'timer'):
-            self.vocab_ctrl.timer.stop()
-
-    def switch_to_word_list(self):
-        """切到词汇表页面"""
-        # 停止其他页面的干扰（比如计时器）
-        if hasattr(self, 'vocab_ctrl'):
-            self.vocab_ctrl.timer.stop()
-        
-        # 切换到词汇表页面
-        self.stackedWidget.setCurrentIndex(self.word_list_index)
-        self.stackedWidget.currentWidget().setFocus()  # 设置焦点以支持键盘事件
-
-    def switch_to_gaokao(self):
-        """切到高考真题页"""
-        # 1. 停止其他页面的干扰（比如计时器）
-        if hasattr(self, 'vocab_ctrl'):
-            self.vocab_ctrl.timer.stop()
-
-        # 2. 强行把 Stack 切到这一页
-        self.stackedWidget.setCurrentWidget(self.page_gaokao_widget)
-        
-        # 3. 终极唤醒：确保这一页是可见的
-        self.page_gaokao_widget.setVisible(True)
-        self.page_gaokao_widget.raise_() # 把它提到最顶层，防止被旧页面盖住
-        
-        # 4. 打印调试：如果还是看不见，看这里的输出
-        print(f"当前 Stack 页数: {self.stackedWidget.count()}")
-        print(f"当前显示的 Widget: {self.stackedWidget.currentWidget().objectName()}")
+    def load_special_practice(self, folder_name):
+        self.stack.setCurrentIndex(self.gk_idx)
+        if self.exam_ctrl:
+            self.exam_ctrl.switch_topic(folder_name)
 
     def switch_to_full_exam(self):
-        """切到高考整卷页"""
-        if hasattr(self, 'vocab_ctrl'):
-            self.vocab_ctrl.timer.stop()
-        # 暂时切换到高考真题页（整卷功能待扩展）
-        self.switch_to_gaokao()
-
-    def show_ai_pro_guide(self):
-        """显示 AI 老师 Pro 购买引导页"""
-        # 切换到高考页面并在 gk_ai_display 渲染购买引导
-        self.switch_to_gaokao()
+        """高考整卷：适配 QWidget 版本，解决 centralWidget 报错"""
+        target_file = os.path.join(self.base_path, "data", "真题试卷", "高考模拟卷_2026.txt")
         
-        gk_ai_display = self.page_gaokao_widget.findChild(QtWidgets.QTextEdit, "gk_ai_display")
-        if gk_ai_display:
-            gk_ai_display.setHtml("""
-                <div style="text-align: center; padding: 40px 20px;">
-                    <h2 style="color: #e67e22; font-size: 24px; margin-bottom: 20px;">🔒 AI 老师·题目精讲</h2>
-                    <p style="font-size: 16px; color: #7f8c8d; line-height: 1.8; margin-bottom: 30px;">
-                        该功能仅限 <b style="color: #2c3e50;">Pro 版本</b> 用户使用
-                    </p>
-                    <div style="background: #fdf6ec; border-radius: 12px; padding: 25px; margin: 20px 0;">
-                        <p style="font-size: 15px; color: #2c3e50; line-height: 1.8;">
-                            ✅ AI 实时解析每一道题目<br>
-                            ✅ 深度讲解考点与解题思路<br>
-                            ✅ 24/7 智能答疑辅导<br>
-                            ✅ 个性化错题本与弱项分析
-                        </p>
-                    </div>
-                    <p style="font-size: 14px; color: #95a5a6; margin-top: 20px;">
-                        ⚠️ 升级解锁 AI 实时解析，让每一道题都物超所值
-                    </p>
-                </div>
-            """)
-
-    def bind_gaokao_ai_chat(self):
-        """绑定高考页面 AI 聊天功能"""
-        # 获取高考页面的聊天输入框和发送按钮
-        gk_chat_input = self.page_gaokao_widget.findChild(QtWidgets.QLineEdit, "gk_chat_input")
-        btn_gk_chat_send = self.page_gaokao_widget.findChild(QtWidgets.QPushButton, "btn_gk_chat_send")
-        
-        # 🎯 统一输入框样式（56px 高度，大圆角，与按钮对齐）
-        if gk_chat_input:
-            gk_chat_input.setFixedHeight(56)
-            gk_chat_input.setStyleSheet("""
-                QLineEdit {
-                    background-color: #f8f9fa;
-                    border: 2px solid #dee2e6;
-                    border-radius: 16px;
-                    font-size: 16px;
-                    padding: 0px 20px;
-                    color: #2c3e50;
-                }
-                QLineEdit:focus {
-                    border: 2px solid #3498db;
-                    background-color: #ffffff;
-                }
-                QLineEdit::placeholder {
-                    color: #95a5a6;
-                }
-            """)
-            gk_chat_input.returnPressed.connect(lambda: self.ask_ai(gk_chat_input))
-        
-        if btn_gk_chat_send:
-            btn_gk_chat_send.clicked.connect(lambda: self.ask_ai(gk_chat_input))
-            # 🎯 统一发送按钮样式（56px 高度，大圆角，醒目颜色）
-            btn_gk_chat_send.setFixedHeight(56)
-            btn_gk_chat_send.setStyleSheet("""
-                QPushButton {
-                    background-color: #2ecc71;
-                    color: white;
-                    border: none;
-                    border-radius: 16px;
-                    font-size: 16px;
-                    font-weight: bold;
-                    padding: 12px 24px;
-                    min-width: 80px;
-                }
-                QPushButton:hover {
-                    background-color: #27ae60;
-                }
-                QPushButton:pressed {
-                    background-color: #229954;
-                }
-            """)
-
-    def ask_ai(self, chat_input):
-        """AI 老师聊天功能（含 Pro 权限校验）"""
-        # 获取 AI 显示区域
-        gk_ai_display = self.page_gaokao_widget.findChild(QtWidgets.QTextEdit, "gk_ai_display")
-        
-        if not gk_ai_display:
+        if not os.path.exists(target_file):
+            QMessageBox.warning(self, "提示", f"找不到文件: {target_file}")
             return
-        
-        # 🔒 Pro 权限校验
-        if not self.is_pro:
-            # 清空输入框
-            if chat_input:
-                chat_input.clear()
+
+        try:
+            with open(target_file, 'r', encoding='utf-8') as f:
+                content = f.read()
             
-            # 追加红色警告
-            current_html = gk_ai_display.toHtml()
-            warning_html = """
-                <div style="background: #fef0f0; border-left: 4px solid #e74c3c; padding: 15px; margin: 10px 0; border-radius: 4px;">
-                    <p style="color: #e74c3c; font-size: 15px; font-weight: bold; margin: 0;">
-                        ⚠️ 该功能仅限 Pro 版本。升级解锁 AI 实时解析。
-                    </p>
-                </div>
-            """
-            gk_ai_display.setHtml(current_html + warning_html)
-            return
-        
-        # Pro 用户的正常逻辑（待实现 AI 调用）
-        question = chat_input.text().strip() if chat_input else ""
-        if not question:
-            return
-        
-        if chat_input:
-            chat_input.clear()
-        
-        # TODO: 这里将来接入真实的 AI 问答逻辑
-        gk_ai_display.append(f"<p><b>🤖 AI老师：</b> 收到问题：{question}</p>")
-        gk_ai_display.append("<p><i>（AI 实时解析功能即将上线...）</i></p>")
+            # 1. 解析数据
+            data_list = _internal_full_exam_parser(content)
+            
+            # 2. 实例化 UI，直接传入解析好的 data_list
+            # from old.exam_system import HSEExamSystem # 移除局部导入，使用文件顶部的导入
+            self.full_exam_view = HSEExamSystem(data_list)
+            
+            # 3. 渲染数据 (HSEExamSystem 的 __init__ 会调用 update_data)
+            # self.full_exam_view.update_data(data_list) # HSEExamSystem's __init__ already calls update_data
+            
+            # 4. 挂载 (直接 addWidget，不加 centralWidget)
+            new_idx = self.stack.addWidget(self.full_exam_view)
+            self.stack.setCurrentIndex(new_idx)
+            
+        except Exception as e:
+            QMessageBox.critical(self, "错误", f"试卷加载失败: {e}")
+
+    def show_gaokao_page(self):
+        self.stack.setCurrentIndex(self.gk_idx)
+        if self.exam_ctrl: 
+            self.exam_ctrl.update_nav_highlight()
+
+    def _apply_sidebar_style(self):
+        qss = "QPushButton { min-height: 55px; border-radius: 12px; text-align: left; padding-left: 20px; font-weight: bold; }"
+        btns = [self.btn_nav_vocab, self.btn_nav_core_vocab, self.btn_nav_gaokao, self.btn_nav_full_exam]
+        self.sidebar_group = QtWidgets.QButtonGroup(self)
+        for btn in btns:
+            if btn:
+                btn.setCheckable(True)
+                btn.setStyleSheet(qss)
+                self.sidebar_group.addButton(btn)
+        if self.btn_nav_vocab: self.btn_nav_vocab.setChecked(True)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    app.setStyle("Fusion")
     window = HighSchoolEnglishAI()
-    window.showMaximized()
-    sys.exit(app.exec_())
-
+    window.show()
+    sys.exit(app.exec())

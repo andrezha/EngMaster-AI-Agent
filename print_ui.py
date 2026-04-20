@@ -1,6 +1,6 @@
 import sys
-from PyQt5 import QtWidgets, uic
-from PyQt5.QtWidgets import QApplication
+from PySide6 import QtWidgets, uic
+from PySide6.QtWidgets import QApplication
 
 app = QApplication(sys.argv)
 ui = uic.loadUi("resources/page_gaokao.ui")

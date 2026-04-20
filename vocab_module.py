@@ -1,7 +1,7 @@
 import json
 import random
 import os
-from PyQt5 import QtCore, QtWidgets, QtGui
+from PySide6 import QtCore, QtWidgets, QtGui
 
 class VocabManager:
     def __init__(self, main_win):
