@@ -1,5 +1,5 @@
 import sys
-from PyQt5 import QtWidgets, uic
+from PySide6 import QtWidgets, uic
 app = QtWidgets.QApplication(sys.argv)
 class MockMain(QtWidgets.QMainWindow):
     def __init__(self):

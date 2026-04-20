@@ -1,11 +1,11 @@
 import requests
 import json
-import os # 👈 记得加这个
-from PyQt5.QtCore import QThread, pyqtSignal
+import os
+from PySide6.QtCore import QThread, Signal as pyqtSignal # PySide6 uses Signal instead of pyqtSignal
 
 class AIWorker(QThread):
-    result_ready = pyqtSignal(str)
-    error_occurred = pyqtSignal(str)
+    result_ready = pyqtSignal(str) # PySide6 Signal
+    error_occurred = pyqtSignal(str) # PySide6 Signal
 
     def __init__(self, question_type, question_text):
         super().__init__()

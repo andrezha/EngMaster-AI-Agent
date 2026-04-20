@@ -5,9 +5,9 @@
 实现"专项练习"中的"语法填空"功能
 """
 
-import os
+import os # Already imported
 import re
-from PyQt5 import QtCore, QtWidgets, QtGui
+from PySide6 import QtCore, QtWidgets, QtGui
 from parsers.reading_parser import parse_reading_txt
 
 
@@ -522,7 +522,7 @@ class GrammarFillModule(QtWidgets.QWidget):
             self.timer.stop()
             # 时间到，自动显示答案
             if not self.answers_revealed:
-                QtWidgets.QMessageBox.information(
+                QtWidgets.QMessageBox.information( # Needs to be imported from PySide6.QtWidgets
                     self, "时间到", "⏰ 答题时间已到！系统将自动显示答案与解析。"
                 )
                 self._toggle_answers()

@@ -2,8 +2,8 @@ import json
 import os
 import random
 import re
-from PyQt5.QtWidgets import QPushButton, QHBoxLayout, QVBoxLayout, QWidget, QLabel, QRadioButton, QButtonGroup, QSizePolicy, QLineEdit
-from PyQt5.QtCore import Qt
+from PySide6.QtWidgets import QPushButton, QHBoxLayout, QVBoxLayout, QWidget, QLabel, QRadioButton, QButtonGroup, QSizePolicy, QLineEdit, QMessageBox
+from PySide6.QtCore import Qt
 from parsers.reading_parser import parse_reading_txt
 
 
@@ -69,6 +69,8 @@ class ExamManager:
 
         # 4. 初始导航高亮
         self.update_nav_highlight()
+        # 🎯 初始不默认加载任何题型，只确保按钮样式正确
+        print("💡 [ExamManager] 初始不默认加载任何题型。")
 
         # 5. 绑定题型选择按钮
         # 🚫 禁用自动默认按钮，防止进入页面时自动触发点击
@@ -565,8 +567,7 @@ class ExamManager:
         html_output = (
             f"<div style='text-align: center; color: #7f8c8d; font-size:14px; margin-bottom: 5px;'>{top_tag}</div>"
             f"<h2 style='text-align: center; color: #2c3e50; margin-top: 0;'>{letter_str}</h2>"
-            f"{main_title_html}"
-            f"<hr>"
+            f"{main_title_html}" # 移除 <hr> 标签
             f"<div style='font-size:16px; line-height:1.7; color:#2c3e50;'>{p_text_html}</div>"
         )
         self.ui.gk_question_body.setHtml(html_output)
@@ -1261,7 +1262,7 @@ class ExamManager:
         total = len(items)
 
         if total == 0:
-            self.ui.gk_result_panel.setHtml(
+            self.ui.gk_result_panel.setHtml( # This is a QTextBrowser, so it's fine.
                 "<div style='padding:10px; color:#e74c3c;'>❌ 没有可判分的题目</div>"
             )
             return
@@ -1706,5 +1707,5 @@ class ExamManager:
                     )
                 else:
                     btn.setStyleSheet(
-                        "background-color: transparent; color: #333; padding: 5px 10px;"
+                        "background-color: #f0f0f0; color: #333; border-radius: 5px; padding: 5px 10px;"
                     )
