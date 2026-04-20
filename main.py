@@ -5,23 +5,25 @@ import time
 import PySide6
 
 # ============ [1. 环境初始化：必须最先执行] ============
-# 修复 PySide6 打包后找不到插件的问题
 pyside6_dir = os.path.dirname(PySide6.__file__)
 os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = os.path.join(pyside6_dir, 'plugins', 'platforms')
 
 # ============ [2. 路径适配：支持开发环境与 PyInstaller 打包环境] ============
-if hasattr(sys, '_MEIPASS'):
-    # 打包后的运行路径
+if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
     base_path = sys._MEIPASS
 else:
-    # 开发调试路径
     base_path = os.path.dirname(os.path.abspath(__file__))
 
-# 统一注入 lib 路径和根路径，确保模块导入不报错
+# 统一资源目录定义
+res_dir = os.path.join(base_path, "resources")
 lib_path = os.path.join(base_path, "lib")
-for p in [lib_path, base_path]:
-    if p not in sys.path:
-        sys.path.insert(0, p)
+data_dir = os.path.join(base_path, "data")
+
+# 统一注入 lib 路径，确保业务模块加载
+if lib_path not in sys.path:
+    sys.path.insert(0, lib_path)
+if base_path not in sys.path:
+    sys.path.insert(0, base_path)
 
 # ============ [3. 模块导入] ============
 from PySide6 import QtWidgets, QtCore, QtGui
@@ -38,10 +40,9 @@ except ImportError as e:
     print(f"❌ 业务模块加载偏差: {e}")
 
 # ==========================================
-# 1. 独立解析器 (专门负责整卷 TXT 格式转换)
+# 1. 独立解析器 (保留你最核心的解析逻辑)
 # ==========================================
 def _internal_full_exam_parser(text):
-    import re
     print("\n" + "="*50)
     print("🚀 [DEBUG] 解析器已启动...")
     
@@ -62,144 +63,60 @@ def _internal_full_exam_parser(text):
     for i in range(1, len(sections), 2):
         sec_name = sections[i].strip()
         sec_body = sections[i+1].strip()
-        print(f"\n📂 正在解析板块: {sec_name}")
-
-        # --- 第一步：切割原文 ---
-        p_split = re.split(r'[\[【]\s*QUESTIONS\s*[\]】]', sec_body, flags=re.I)
-        passage = p_split[0].strip()
-        print(f"   📝 原文长度: {len(passage)} 字")
         
-        q_text = ""
-        original_analysis = ""
-        
-        # --- Step 1: Split by [QUESTIONS] to get passage and raw_questions_and_analysis ---
         questions_tag_match = re.search(r'[\[【]\s*QUESTIONS\s*[\]】]', sec_body, flags=re.I)
-        if not questions_tag_match:
-            print(f"   ❌ [错误] 未能发现 [QUESTIONS] 标签在板块 {sec_name}。跳过此板块。")
-            continue # Skip this section if no questions tag
+        if not questions_tag_match: continue
 
         passage = sec_body[:questions_tag_match.start()].strip()
         raw_questions_and_analysis = sec_body[questions_tag_match.end():].strip()
 
-        # --- Step 2: Split raw_questions_and_analysis by [ANALYSIS] to get q_text and original_analysis ---
         analysis_tag_match = re.search(r'[\[【]\s*ANALYSIS\s*[\]】]', raw_questions_and_analysis, flags=re.I | re.S)
         if analysis_tag_match:
             q_text = raw_questions_and_analysis[:analysis_tag_match.start()].strip()
             original_analysis = raw_questions_and_analysis[analysis_tag_match.end():].strip()
-            print(f"   ✅ 发现 [ANALYSIS] 标签，已提取解析内容。")
         else:
             q_text = raw_questions_and_analysis.strip()
-            print(f"   ⚠️ 未能发现 [ANALYSIS] 标签，题目内容可能包含解析。")
-
-        print(f"   📝 原文长度: {len(passage)} 字")
-        print(f"   DEBUG: 提取的 q_text (前200字):\n{q_text[:200]}...")
+            original_analysis = ""
 
         items = []
-        seven_five_global_options = [] # This will store the A-G options for seven_five, initialized once
+        seven_five_global_options = []
 
-        # --- Special handling for Seven-Five ---
         if TYPE_MAP.get(sec_name, "reading") == "seven_five":
-            # For seven_five, q_text contains blank numbers (e.g., 36-40) followed by A-G options.
-            # We need to extract these A-G options from q_text.
-            
-            # Find the last question number in the sequence (e.g., 40)
-            # This regex looks for a number followed by a dot or parenthesis, at the start of a line
-            last_qid_in_qtext_match = re.findall(r'^\s*(\d+)\s*[\.\)]', q_text, re.MULTILINE)
-            last_qid_num = 0
-            if last_qid_in_qtext_match:
-                last_qid_num = int(last_qid_in_qtext_match[-1]) # Get the last number found
-
-            options_content_for_seven_five = ""
-            # Find the start of the A-G options after the last question number
-            # This regex looks for 'A.' at the beginning of a line, after the last qid
-            options_start_pattern = r'(?:\n|^)\s*A\.\s*'
-            options_start_match = re.search(options_start_pattern, q_text)
-
-            if options_start_match:
-                options_content_for_seven_five = q_text[options_start_match.start():].strip()
-            else:
-                # Fallback: if 'A.' not found, assume all content after last qid is options
-                if last_qid_num > 0:
-                    # Find the position after the last qid in q_text
-                    pos_after_last_qid = q_text.rfind(str(last_qid_num)) + len(str(last_qid_num))
-                    options_content_for_seven_five = q_text[pos_after_last_qid:].strip()
-                else:
-                    options_content_for_seven_five = q_text.strip() # If no qids found, assume whole q_text is options
-
-            # Parse A-G options from the extracted content
-            option_matches = re.findall(r'([A-G])\.\s*(.*?)(?=\s*[A-G]\.|$|\n)', options_content_for_seven_five, re.S)
+            option_matches = re.findall(r'([A-G])\.\s*(.*?)(?=\s*[A-G]\.|$|\n)', q_text, re.S)
             for label, content in option_matches:
                 seven_five_global_options.append({"label": label, "content": content.strip()})
             
-            print(f"   ✅ 提取七选五全局选项: {len(seven_five_global_options)} 个. 示例: {seven_five_global_options[:2]}")
-            if not seven_five_global_options:
-                print("   ❌ 警告: 七选五全局选项列表为空，请检查 [QUESTIONS] 标签后的格式。")
-
-            # Generate items for blanks 36-40 (or whatever range is implied)
-            # For seven_five, the q_ids are usually explicitly marked in the passage or q_text.
-            # Let's try to extract them from the q_text if they are present as numbers.
-            # If not, we fall back to the assumed 36-40 range.
-            
-            # First, try to find explicit question numbers in q_text for seven_five
             seven_five_qids_in_text = re.findall(r'(\d+)\s*[\.\)]', q_text)
             unique_qids = sorted(list(set(seven_five_qids_in_text)), key=int)
-            
-            if not unique_qids:
-                # Fallback to assumed range if no explicit q_ids found in q_text
-                print("   ⚠️ 未在七选五题目文本中找到明确题号，假定题号为 36-40。")
-                unique_qids = [str(i) for i in range(36, 41)]
+            if not unique_qids: unique_qids = [str(i) for i in range(36, 41)]
 
             for q_id_str in unique_qids:
-                items.append({
-                    "q_id": q_id_str,
-                    "content": f"请选择第 {q_id_str} 题的答案", # Content for the blank
-                    "options": seven_five_global_options # Assign the parsed global options
-                })
-        else: # 对于阅读理解、完形填空、语法填空，从 q_text 中解析题目
-            # Find all question blocks. A question block starts with a number (e.g., 21.)
-            # and captures everything until the next question number or the end of the text.
+                items.append({"q_id": q_id_str, "content": f"请选择第 {q_id_str} 题的答案", "options": seven_five_global_options})
+        else:
             question_blocks_matches = re.finditer(r'(\d+)\s*[\.\)]\s*(.*?)(?=\n*\d+\s*[\.\)]\s*|\Z)', q_text, re.DOTALL)
-            
             for match in question_blocks_matches:
                 q_id = match.group(1).strip()
                 block_content = match.group(2).strip()
+                options_found = list(re.finditer(r'([A-G])\s*[\.\)]\s*(.*?)(?=\n*[A-G]\s*[\.\)]\s*|\Z)', block_content, re.DOTALL))
                 
-                question_stem = ""
                 question_options = {}
-                
-                options_pattern = r'([A-G])\s*[\.\)]\s*(.*?)(?=\n*[A-G]\s*[\.\)]\s*|\Z)' # Changed [A-D] to [A-G] for more flexibility
-                options_found = list(re.finditer(options_pattern, block_content, re.DOTALL))
-                
                 if options_found:
-                    first_option_start_pos = options_found[0].start()
-                    question_stem = block_content[:first_option_start_pos].strip()
-                    
+                    question_stem = block_content[:options_found[0].start()].strip()
                     for opt_match in options_found:
-                        label = opt_match.group(1).upper()
-                        content = opt_match.group(2).strip()
-                        question_options[label] = content
+                        question_options[opt_match.group(1).upper()] = opt_match.group(2).strip()
                 else:
                     question_stem = block_content
                 
-                items.append({
-                    "q_id": q_id,
-                    "content": question_stem,
-                    "options": question_options
-                })
-
-
-        print(f"   📊 成功提取题目数量: {len(items)}")
+                items.append({"q_id": q_id, "content": question_stem, "options": question_options})
 
         data_list.append({
             "category": NAME_MAP.get(sec_name, sec_name),
             "question_type": TYPE_MAP.get(sec_name, "reading"),
             "passage": passage, 
             "items": items,
-            "original_analysis": original_analysis # 存储解析内容
+            "original_analysis": original_analysis
         })
         
-    print(f"✅ [DEBUG] 解析器完成，共解析出 {len(data_list)} 个板块。")
-    print("="*50)
     return data_list
 
 # ==========================================
@@ -210,8 +127,7 @@ class HighSchoolEnglishAI(QMainWindow):
         super().__init__() 
         self.setWindowTitle("HSE-AI 英语智胜工作站")
         self.showMaximized() 
-        self.base_path = os.path.dirname(os.path.abspath(__file__))
-        res_dir = os.path.join(self.base_path, "resources")
+        self.base_path = base_path 
         
         loader = QUiLoader()
         self.ui_root = loader.load(os.path.join(res_dir, "main_window.ui")) 
@@ -268,31 +184,17 @@ class HighSchoolEnglishAI(QMainWindow):
             self.exam_ctrl.switch_topic(folder_name)
 
     def switch_to_full_exam(self):
-        """高考整卷：适配 QWidget 版本，解决 centralWidget 报错"""
-        target_file = os.path.join(self.base_path, "data", "真题试卷", "高考模拟卷_2026.txt")
-        
+        target_file = os.path.join(data_dir, "真题试卷", "高考模拟卷_2026.txt")
         if not os.path.exists(target_file):
             QMessageBox.warning(self, "提示", f"找不到文件: {target_file}")
             return
-
         try:
             with open(target_file, 'r', encoding='utf-8') as f:
                 content = f.read()
-            
-            # 1. 解析数据
             data_list = _internal_full_exam_parser(content)
-            
-            # 2. 实例化 UI，直接传入解析好的 data_list
-            # from old.exam_system import HSEExamSystem # 移除局部导入，使用文件顶部的导入
             self.full_exam_view = HSEExamSystem(data_list)
-            
-            # 3. 渲染数据 (HSEExamSystem 的 __init__ 会调用 update_data)
-            # self.full_exam_view.update_data(data_list) # HSEExamSystem's __init__ already calls update_data
-            
-            # 4. 挂载 (直接 addWidget，不加 centralWidget)
             new_idx = self.stack.addWidget(self.full_exam_view)
             self.stack.setCurrentIndex(new_idx)
-            
         except Exception as e:
             QMessageBox.critical(self, "错误", f"试卷加载失败: {e}")
 
