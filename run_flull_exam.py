@@ -1,6 +1,6 @@
 import sys
 import re
-from PySide6 import QtWidgets # 导入 QtWidgets 模块
+from PySide6 import QtWidgets, QtCore # 导入 QtWidgets 模块, QtCore for QDialog
 import time
 from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                              QHBoxLayout, QTextBrowser, QScrollArea, QStackedWidget,
@@ -160,6 +160,56 @@ class QuestionCard(QWidget):
         self.sync_func(self.qid, text)
 
 # ==========================================================
+# 2.1. 解析显示对话框
+# ==========================================================
+class AnalysisDialog(QtWidgets.QDialog):
+    """
+    用于显示题目解析的独立对话框。
+    """
+    def __init__(self, q_id, analysis_html, parent=None):
+        super().__init__(parent)
+        self.setWindowTitle(f"题目 {q_id} 解析")
+        self.setMinimumSize(600, 400) # 设置一个合理的最小尺寸
+        self.resize(800, 600) # 设置默认大小
+
+        layout = QtWidgets.QVBoxLayout(self)
+        self.text_browser = QtWidgets.QTextBrowser()
+        self.text_browser.setReadOnly(True)
+        self.text_browser.setHtml(analysis_html)
+        self.text_browser.setStyleSheet("""
+            QTextBrowser {
+                font-size: 15px;
+                line-height: 1.6;
+                color: #34495e;
+                background-color: #f8f9fa;
+                border: 1px solid #e0e0e0;
+                border-radius: 8px;
+                padding: 15px;
+            }
+        """)
+        layout.addWidget(self.text_browser)
+
+        close_button = QtWidgets.QPushButton("关闭")
+        close_button.clicked.connect(self.accept) # 使用 accept 来关闭对话框
+        close_button.setStyleSheet("""
+            QPushButton {
+                background-color: #3498db;
+                color: white;
+                border: none;
+                border-radius: 8px;
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+            QPushButton:hover {
+                background-color: #2980b9;
+            }
+            QPushButton:pressed {
+                background-color: #2471a3;
+            }
+        """)
+        layout.addWidget(close_button, alignment=QtCore.Qt.AlignCenter)
+
+# ==========================================================
 # 2. 结果结算页
 # ==========================================================
 class ResultPage(QWidget):
@@ -169,38 +219,19 @@ class ResultPage(QWidget):
     def __init__(self, exit_cb):
         super().__init__()
         self._full_res = None # Store the full result for analysis lookup
-        self.current_displayed_analysis_qid = None # Track currently displayed analysis
-        self.l = QVBoxLayout(self) # Main layout for ResultPage
+        self.l = QVBoxLayout(self)  # Main layout for ResultPage
         
         # Ensure the main layout can expand vertically
         self.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
         self.l.setContentsMargins(20, 20, 20, 20) # Add some padding around the content
         self.l.setSpacing(15) # Add spacing between elements
-
         self.exit_cb = exit_cb
-
-        # 用于显示题目解析的 QTextBrowser
-        self.analysis_detail_box = QTextBrowser()
-        self.analysis_detail_box.setReadOnly(True)
-        self.analysis_detail_box.setStyleSheet("""
-            QTextBrowser {
-                background-color: #f8f9fa;
-                border: 1px solid #e0e0e0;
-                border-radius: 8px;
-                padding: 15px;
-                font-size: 14px;
-                line-height: 1.6;
-                color: #34495e;
-                min-height: 100px; /* Ensure a minimum height even when empty */
-            }
-        """.replace("min-height: 100px;", "min-height: 250px;")) # 增大解析框的最小高度
-        self.analysis_detail_box.hide() # 初始隐藏
-        # 初始不将 analysis_detail_box 添加到布局中，而是在 update_res 中动态添加
 
     def update_res(self, res, elapsed_time_seconds, all_questions_data): # 修正了参数传递，添加 all_questions_data
         """
         更新并显示考试结果。
         """
+        self._full_res = res # Store the full result for analysis lookup
         while self.l.count(): self.l.takeAt(0).widget().deleteLater()
         
         t = QLabel("🎉 考试成绩结算单"); t.setAlignment(Qt.AlignCenter); t.setStyleSheet("font-size: 26px; font-weight: bold; color: #2ecc71;")
@@ -286,10 +317,6 @@ class ResultPage(QWidget):
             elif k in ["cloze", "grammar"]:
                 right_column_layout.addWidget(f)
         
-        # 每次刷新结果时，隐藏解析框并重置当前显示的题号
-        self.analysis_detail_box.hide()
-        self.current_displayed_analysis_qid = None
-        
         main_results_layout.addLayout(left_column_layout)
         main_results_layout.addLayout(right_column_layout)
         
@@ -304,35 +331,27 @@ class ResultPage(QWidget):
         """
         显示或隐藏指定题目的解析。
         """
-        """
-        显示或隐藏指定题目的解析。
-        如果点击的按钮是当前正在显示的解析，则隐藏它；否则显示新的解析。
-        """
-        if self.current_displayed_analysis_qid == q_id and self.analysis_detail_box.isVisible():
-            print(f"DEBUG: Hiding analysis for Q{q_id}")
-            self.analysis_detail_box.hide()
-            self.current_displayed_analysis_qid = None
-            return
-
+        # 移除旧的切换显示逻辑，直接创建并显示 AnalysisDialog
         q_data = all_questions_data.get(q_id)
         if not q_data:
-            self.analysis_detail_box.setHtml(f"<p style='color:red;'>未找到题号 {q_id} 的详细信息。</p>")
-            print(f"DEBUG: Showing 'not found' analysis for Q{q_id}")
-            self.analysis_detail_box.show()
-            self.current_displayed_analysis_qid = q_id
+            QtWidgets.QMessageBox.warning(self, "错误", f"未找到题号 {q_id} 的详细信息。")
             return
 
-        user_ans = ""
-        # 从 _full_res 中查找用户的答案
-        if self._full_res and 'details' in self._full_res:
-            for detail_type, details in self._full_res['details'].items():
-                for wrong_detail in details['wrongs_details']:
-                    if wrong_detail['id'] == q_id:
-                        user_ans = wrong_detail['user']
-                        break
-                if user_ans: break
+        # 直接从 q_data 中获取用户答案和原文内容
+        user_ans = q_data.get('user_answer', '未作答')
+        section_passage = q_data.get('section_passage', '文章内容缺失')
+        
+        # 格式化原文内容为 HTML
+        formatted_passage = section_passage.replace('\n', '<br>') # This line is correct
+        passage_html_parts = [
+            "<div style='background:#f0f9ff; padding:10px; border-radius:5px; border-left:3px solid #3498db; margin-bottom: 15px;'>",
+            "<h5 style='color:#3498db; margin-top:0;'>原文内容</h5>",
+            f"<p style='font-size:14px; line-height:1.6;'>{formatted_passage}</p>",
+            "</div>"
+        ]
+        passage_html = "".join(passage_html_parts)
 
-        question_html = f"<h4 style='color:#2c3e50;'>Q{q_id}. {q_data['content']}</h4>"
+        question_html = passage_html + f"<h4 style='color:#2c3e50;'>Q{q_id}. {q_data['content']}</h4>"
 
         # 添加选项（如果存在）
         if q_data['options']:
@@ -349,11 +368,8 @@ class ResultPage(QWidget):
         question_html += f"<p><b>正确答案:</b> <span style='color:#27ae60;'>{q_data['answer']}</span></p>"
         question_html += f"<p><b>解析:</b></p><div style='background:#f0f9ff; padding:10px; border-radius:5px; border-left:3px solid #3498db;'>{q_data['analysis']}</div>"
 
-        self.analysis_detail_box.setHtml(question_html)
-        print(f"DEBUG: Showing analysis for Q{q_id}")
-        self.analysis_detail_box.show()
-        self.analysis_detail_box.verticalScrollBar().setValue(0) # 滚动到顶部
-        self.current_displayed_analysis_qid = q_id
+        dialog = AnalysisDialog(q_id, question_html, self)  # 创建并显示解析对话框
+        dialog.exec()  # Use exec() to show it as a modal dialog
 
 # ==========================================================
 # 3. 考试系统主逻辑 (HSEExamSystem)
@@ -542,7 +558,8 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
         main_l.addWidget(self.header_l) # Header takes its natural height
         
         body = QHBoxLayout()
-        self.passage_box = QTextBrowser(); self.passage_box.setStyleSheet("font-size: 17px; line-height: 1.6; padding: 20px; background: white;")
+        self.passage_box = QTextBrowser()
+        self.passage_box.setStyleSheet("font-size: 17px; line-height: 1.6; padding: 20px; background: white;")
         body.addWidget(self.passage_box, 1)
         
         # 右侧答题区
@@ -550,6 +567,7 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
         self.q_scroll = QScrollArea() # Removed setWidgetResizable(True) to allow content to overflow and trigger scrollbar
         self.q_widget = QWidget(); self.q_layout = QVBoxLayout(self.q_widget); self.q_layout.setAlignment(Qt.AlignTop)
         self.q_scroll.setWidget(self.q_widget)
+        self.q_scroll.setWidgetResizable(True) # 确保滚动区域内的widget可以自动调整大小
         right_panel.addWidget(self.q_scroll, 1) # Make the scroll area expand vertically
         
         # 【提交按钮】强行出现在右侧下方，最后一页才显示
@@ -644,7 +662,9 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
                     'content': it.get('content', ''),
                     'options': it.get('options', {}),
                     'answer': it.get('answer', ''),
-                    'analysis': analysis_by_q_id.get(qid, '暂无解析')
+                    'analysis': analysis_by_q_id.get(qid, '暂无解析'),
+                    'section_passage': sec.get('passage', ''), # 添加所属部分的原文内容
+                    'user_answer': self.ans_cache.get(qid, "未作答") # 添加用户答案
                 }
 
                 # 计算分数权重
