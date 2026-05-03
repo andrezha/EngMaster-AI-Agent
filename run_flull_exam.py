@@ -9,6 +9,32 @@ from PySide6.QtCore import Qt
 from PySide6.QtGui import QFont
 
 # ==========================================================
+# Helper function for character normalization (copied from main.py for self-containment)
+# ==========================================================
+def _normalize_full_width_to_half_width(text):
+    """
+    Converts full-width digits and periods in a string to half-width.
+    Ensures a string is always returned, even if input is None.
+    """
+    if text is None:
+        return ""
+    text = str(text) # Ensure it's a string before processing
+    
+    # Mapping for full-width digits to half-width
+    full_to_half_digits = {
+        '０': '0', '１': '1', '２': '2', '３': '3', '４': '4',
+        '５': '5', '６': '6', '７': '7', '８': '8', '９': '9'
+    }
+    
+    # Replace full-width digits
+    for full, half in full_to_half_digits.items():
+        text = text.replace(full, half)
+    
+    # Replace full-width period
+    text = text.replace('．', '.')
+    
+    return text
+# ==========================================================
 # 1. 题目卡片：强行在UI上画出红色分值标签
 # ==========================================================
 class QuestionCard(QWidget):
@@ -23,7 +49,8 @@ class QuestionCard(QWidget):
         self.main_layout = QVBoxLayout(self)
         
         # 提取题号数字
-        raw_qid = str(data.get('q_id', ''))
+        raw_qid = str(data.get('q_id', '')) # e.g., "２１"
+        raw_qid = _normalize_full_width_to_half_width(raw_qid) # Normalize to "21"
         self.qid = re.sub(r'\D', '', raw_qid)
         self.sync_func = sync_func
         
@@ -385,19 +412,20 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
         if not analysis_text:
             return analysis_by_q
 
+        analysis_text = _normalize_full_width_to_half_width(analysis_text) # Normalize analysis text
+
         # Split by common patterns like 【N题详解】 or N.
         # This regex splits, keeping the delimiters.
-        parts = re.split(r'(【\d+题详解】|\d+[．.])', analysis_text)
+        parts = re.split(r'(?:^|\n)\s*(【\d+题详解】|\d+\.)', analysis_text) # Updated regex for half-width period
         
         current_q_num = ""
         
         # Find the first actual delimiter
         first_delimiter_idx = -1
         for i, part in enumerate(parts):
-            if re.match(r'【\d+题详解】|\d+[．.]', part.strip()):
+            if re.match(r'【\d+题详解】|\d+\.', part.strip()): # Updated regex for half-width period
                 first_delimiter_idx = i
                 break
-                
         if first_delimiter_idx == -1: # No delimiters found, return empty
             return analysis_by_q
             
@@ -407,13 +435,13 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
             if not part:
                 continue
             
-            q_match = re.search(r'(\d+)', part)
-            if q_match and (re.match(r'【\d+题详解】', part) or re.match(r'\d+[．.]', part)):
+            q_match = re.search(r'(\d+)', part) # \d+ will match half-width digits after normalization
+            if q_match and (re.match(r'【\d+题详解】', part) or re.match(r'\d+\.', part)): # Updated regex for half-width period
                 current_q_num = q_match.group(1)
                 analysis_by_q[current_q_num] = "" # Initialize analysis for this q_id
             elif current_q_num:
                 analysis_by_q[current_q_num] += part + "\n"
-        return {q: text.strip() for q, text in analysis_by_q.items()}
+        return {q: text.strip() for q, text in analysis_by_q.items()} # q is already half-width
     def __init__(self, data_list):
         """
         初始化 HSEExamSystem。
@@ -564,7 +592,7 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
         
         # 右侧答题区
         right_panel = QVBoxLayout()
-        self.q_scroll = QScrollArea() # Removed setWidgetResizable(True) to allow content to overflow and trigger scrollbar
+        self.q_scroll = QScrollArea()
         self.q_widget = QWidget(); self.q_layout = QVBoxLayout(self.q_widget); self.q_layout.setAlignment(Qt.AlignTop)
         self.q_scroll.setWidget(self.q_widget)
         self.q_scroll.setWidgetResizable(True) # 确保滚动区域内的widget可以自动调整大小
@@ -616,7 +644,8 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
         question_type = d.get('question_type', 'reading')
         if question_type in ['seven_five', 'cloze', 'grammar']:
             # 匹配36-65之间的两位数字，并用<u><b></b></u>标签包裹
-            passage_content = re.sub(r'\b(3[6-9]|4[0-9]|5[0-9]|6[0-5])\b', r'<u><b>\1</b></u>', passage_content)
+            # Updated regex to match both half-width and full-width digits (after normalization, only half-width will be present)
+            passage_content = re.sub(r'\b([3-6][0-9])\b', r'<u><b>\1</b></u>', passage_content)
         self.passage_box.setHtml(passage_content)
         
         
@@ -630,7 +659,8 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
             self.q_layout.addWidget(no_questions_label)
         
         for it in d.get('items', []):
-            qid = re.sub(r'\D', '', str(it['q_id']))
+            normalized_qid = _normalize_full_width_to_half_width(str(it['q_id']))
+            qid = re.sub(r'\D', '', normalized_qid) # Ensure qid is pure half-width digits
             card = QuestionCard(it, d.get('question_type', 'reading'), self.ans_cache.get(qid, ""), lambda q, v: self.ans_cache.update({q: v}))
             self.q_layout.addWidget(card)
 
@@ -650,7 +680,8 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
         for sec in self.all_data:
             tp = sec.get('question_type', 'reading')
             if tp not in res['details']: res['details'][tp] = {'score':0, 'total':0, 'correct':0, 'wrongs':[], 'wrongs_details':[], 'total_possible_score':0}
-            for it in sec.get('items', []):
+            for it in sec.get('items', []): # it['q_id'] here is already normalized from _internal_full_exam_parser
+                normalized_qid = _normalize_full_width_to_half_width(str(it['q_id'])) # Ensure qid is normalized
                 qid = re.sub(r'\D', '', str(it['q_id']))
                 n = int(qid) if qid.isdigit() else 0
 

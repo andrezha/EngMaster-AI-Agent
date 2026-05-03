@@ -6,6 +6,31 @@ from PySide6.QtWidgets import QPushButton, QHBoxLayout, QVBoxLayout, QWidget, QL
 from PySide6.QtCore import Qt
 from parsers.reading_parser import parse_reading_txt
 
+# ==========================================================
+# Helper function for character normalization
+# ==========================================================
+def _normalize_full_width_to_half_width(text):
+    """
+    Converts full-width digits and periods in a string to half-width.
+    """
+    if text is None:
+        return ""
+    text = str(text) # Ensure it's a string before processing
+    
+    # Mapping for full-width digits to half-width
+    full_to_half_digits = {
+        '０': '0', '１': '1', '２': '2', '３': '3', '４': '4',
+        '５': '5', '６': '6', '７': '7', '８': '8', '９': '9'
+    }
+    
+    # Replace full-width digits
+    for full, half in full_to_half_digits.items():
+        text = text.replace(full, half)
+    
+    # Replace full-width period
+    text = text.replace('．', '.')
+    
+    return text
 
 class ExamManager:
     """
@@ -342,6 +367,9 @@ class ExamManager:
             with open(target_path, 'r', encoding='utf-8') as f:
                 content = f.read()
             
+            # Normalize content before parsing
+            content = _normalize_full_width_to_half_width(content)
+
             parsed_data = parse_reading_txt(content)
             print(f"✅ [fetchNewRandomFile] 解析成功: {parsed_data.get('question_type', 'unknown')}")
             
@@ -806,10 +834,10 @@ class ExamManager:
         """从题目内容中提取题干和选项"""
         print(f"DEBUG: _extract_options_from_content received content (len {len(content)}): {content[:200]}...")
         # 容错处理：将全角 ． 替换为半角 .
-        clean_content = content.replace('．', '.')
+        clean_content = _normalize_full_width_to_half_width(content)
         
         # 🎯 关键修复：处理选项前缀格式不标准的情况
-        # 统一将 "A", "A.", "A)" 等格式标准化为 "A. "
+        # 统一将 "A", "A.", "A)" 等格式标准化为 "A. " (after normalization, only half-width period)
         # This regex looks for A, B, C, or D, optionally followed by a dot or parenthesis,
         # then optionally followed by spaces, and replaces it with "X. "
         clean_content = re.sub(r'([A-D])\s*[\.\)]?\s*', r'\1. ', clean_content)
@@ -1307,7 +1335,7 @@ class ExamManager:
             return True
         
         # 处理 "a/the" 或 "which/that" 格式（支持多种正确答案）
-        if '/' in correct_answer or '／' in correct_answer:
+        if '/' in correct_answer: # After normalization, only half-width slash
             # 替换全角斜杠
             correct_answer = correct_answer.replace('／', '/')
             # 分割多个可选答案
@@ -1318,7 +1346,7 @@ class ExamManager:
         # 处理 "【答案】61. being" 这种格式（提取实际答案）
         if '【答案】' in correct_answer:
             # 提取 "【答案】" 后面的内容
-            actual_answer = correct_answer.split('【答案】')[-1].strip()
+            actual_answer = _normalize_full_width_to_half_width(correct_answer.split('【答案】')[-1]).strip()
             # 去除题号前缀如 "61. "
             actual_answer = re.sub(r'^\d+\.\s*', '', actual_answer)
             if user_ans == actual_answer.lower().strip():
@@ -1348,13 +1376,14 @@ class ExamManager:
         analysis = self.current_q.get('original_analysis', '').strip()
         analysis_by_q = {}
         if analysis:
-            parts = re.split(r'(?:^|\n)\s*(【\d+题详解】|\d+[．.])', analysis)
+            analysis = _normalize_full_width_to_half_width(analysis) # Normalize analysis text
+            parts = re.split(r'(?:^|\n)\s*(【\d+题详解】|\d+\.)', analysis) # Updated regex for half-width period
             current_q_num = ""
             for i, part in enumerate(parts):
                 part = part.strip()
                 if not part:
                     continue
-                if re.match(r'【\d+题详解】', part) or re.match(r'\d+[．.]', part):
+                if re.match(r'【\d+题详解】', part) or re.match(r'\d+\.', part): # Updated regex for half-width period
                     q_match = re.search(r'(\d+)', part)
                     if q_match:
                         current_q_num = q_match.group(1)
@@ -1363,8 +1392,8 @@ class ExamManager:
                     analysis_by_q[current_q_num] = clean_content
             
             # 如果没有找到分割的题号，尝试另一种格式
-            if not analysis_by_q:
-                pattern = re.findall(r'(\d+)[．.]\s*(.*?)(?=\d+[．.]|$)', analysis, re.DOTALL)
+            if not analysis_by_q: # If splitting by N. didn't work, try finding all N. patterns
+                pattern = re.findall(r'(\d+)\.\s*(.*?)(?=\d+\.|$)', analysis, re.DOTALL) # Updated regex for half-width period
                 for q_num, content in pattern:
                     if content.strip():
                         clean_content = re.sub(r'<[^>]+>', '', content.strip())
