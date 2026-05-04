@@ -689,7 +689,11 @@ class ExamManager:
         items = self.current_q.get('items', []) if self.current_q else []
 
         if not items:
-            no_question_label = QLabel("<i style='color:#7f8c8d;'>暂无题目数据</i>")
+            no_question_label = QLabel(
+                "<div style='font-size:16px; color:#e74c3c; text-align:center; padding:20px; border:1px dashed #e74c3c; border-radius:8px; margin:20px 0;'>"
+                "⚠️ <b>暂无题目数据</b><br>"
+                "请检查当前题型的 TXT 文件内容或 `parsers/reading_parser.py` 是否正确解析了题目。"
+                "</div>")
             layout.addWidget(no_question_label)
             layout.addStretch()
             return
@@ -1094,6 +1098,9 @@ class ExamManager:
         for item in items:
             qid = item.get('q_id', '')
             
+            # 从用户选择中获取现有答案，如果不存在则为空字符串
+            existing_answer = self.user_selections.get(qid, "")
+            
             # 创建水平布局容器
             h_layout = QHBoxLayout()
             h_layout.setSpacing(12)
@@ -1131,6 +1138,10 @@ class ExamManager:
                     background-color: #ffffff;
                 }
             """)
+            # 设置输入框的初始文本为用户之前选择的答案
+            answer_input.setText(existing_answer)
+            # 绑定 textChanged 信号，实时更新用户选择
+            answer_input.textChanged.connect(lambda text, q=qid: self.user_selections.update({q: text}))
             h_layout.addWidget(answer_input, stretch=1)
             
             # 保存输入框引用

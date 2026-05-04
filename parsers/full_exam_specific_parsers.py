@@ -30,13 +30,6 @@ def _parse_reading_items_full_exam(q_text, analysis_text):
         q_id_from_text = (block_match.group(1) or "").strip()
         block_content = (block_match.group(2) or "").strip()
 
-        # Try to extract q_id from question_stem_raw if not found in group 1
-        if not q_id_from_text:
-            q_id_match_in_stem = re.match(r'(\d+)\s*[\.\)]', question_stem_raw)
-            if q_id_match_in_stem:
-                q_id_from_text = q_id_match_in_stem.group(1).strip()
-                question_stem_raw = question_stem_raw[q_id_match_in_stem.end():].strip()
-        
         question_stem = ""
         options = {}
 

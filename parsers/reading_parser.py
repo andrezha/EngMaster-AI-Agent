@@ -177,16 +177,26 @@ def _parse_grammar_items(q_text, analysis_text):
     for q_id, ans in ans_pattern: answers_map[q_id] = ans.strip()
     
     # Parse questions from q_text (e.g., "56. (origin)")
-    question_pattern = re.compile(r'(\d+)\s*[\.\)]\s*\((.*?)\)', re.DOTALL)
+    # This regex will capture the QID and then whatever follows until the next QID or end of string.
+    # Then we'll try to extract the "content" (the word to be modified) from that captured text.
+    question_blocks = re.finditer(r'(\d+)\s*[\.\)]\s*(.*?)(?=\n*\d+\s*[\.\)]\s*|\Z)', q_text, re.DOTALL)
     
-    for match in question_pattern.finditer(q_text):
+    for match in question_blocks:
         q_id = match.group(1).strip()
-        content_in_parentheses = match.group(2).strip() # e.g., "origin"
+        block_content = match.group(2).strip() # This is the part after QID.
+        
+        content_to_use = ""
+        # Try to find a word in parentheses first
+        paren_match = re.search(r'\((.*?)\)', block_content)
+        if paren_match:
+            content_to_use = paren_match.group(1).strip()
+        else:
+            # If no parentheses, assume the content is the first word or the whole block if it's short
+            words = block_content.split()
+            content_to_use = words[0] if words else block_content # Take the first word as the content
         
         items.append({
             "q_id": q_id,
-            "answer": answers_map.get(q_id, ""), # Get answer from the map
-            "content": content_in_parentheses, # The word in parentheses is the content
             "options": [] # Grammar fill-in-the-blanks have no options
         })
     print(f"DEBUG: _parse_grammar_items returning {len(items)} items.")
