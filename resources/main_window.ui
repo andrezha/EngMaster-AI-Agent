@@ -97,20 +97,181 @@
       <widget class="QWidget" name="page_vocab">
         <layout class="QVBoxLayout" name="v1">
           <property name="margin"><number>20</number></property>
+          <!-- 新增：闯关模式选择区域 -->
+          <item>
+            <layout class="QHBoxLayout" name="challenge_mode_layout">
+              <item>
+                <spacer name="mode_left_spacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                </spacer>
+              </item>
+              <item>
+                <widget class="QPushButton" name="btn_challenge_regular">
+                 <property name="text">
+                  <string>常规闯关</string>
+                 </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QPushButton" name="btn_challenge_mistake">
+                 <property name="text">
+                  <string>错词表闯关</string>
+                 </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QLabel" name="lbl_mistake_count">
+                 <property name="text">
+                  <string>错词表 (0 词)</string>
+                 </property>
+                </widget>
+              </item>
+              <item>
+                <spacer name="mode_right_spacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                </spacer>
+              </item>
+            </layout>
+          </item>
+          <item>
+            <spacer name="mode_to_timer_spacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint">
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+          </item>
           <!-- 顶部弹簧 - 将内容推到中心 -->
-          <item><spacer name="vocab_top_spacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint"><size><width>0</width><height>0</height></size></property></spacer></item>
+          <item>
+           <spacer name="vocab_top_spacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
           <!-- 计时器 -->
-          <item><widget class="QLabel" name="timer_label"><property name="text"><string>15</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget></item>
+          <item>
+           <widget class="QLabel" name="timer_label">
+            <property name="text">
+             <string>15</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
           <!-- 单词显示区 -->
-          <item><widget class="QTextEdit" name="vocab_display"></widget></item>
+          <item>
+           <widget class="QTextEdit" name="vocab_display"/>
+          </item>
           <!-- 输入框 -->
-          <item><widget class="QLineEdit" name="vocab_input"></widget></item>
+          <item>
+           <widget class="QLineEdit" name="vocab_input"/>
+          </item>
           <!-- 确认按钮 -->
-          <item><widget class="QPushButton" name="btn_confirm"><property name="text"><string>确定</string></property></widget></item>
-          <!-- 底部弹簧 - 将内容推到中心 -->
-          <item><spacer name="vocab_bottom_spacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint"><size><width>0</width><height>0</height></size></property></spacer></item>
-        </layout>
-      </widget>
+          <item>
+           <widget class="QPushButton" name="btn_confirm">
+            <property name="text">
+             <string>确定</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="challenge_to_print_spacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <!-- 新增：打印功能区 -->
+          <item>
+           <layout class="QHBoxLayout" name="print_layout">
+            <item>
+             <spacer name="print_left_spacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QComboBox" name="print_options_dropdown"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_print_vocab">
+              <property name="text">
+               <string>打印</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="print_right_spacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="vocab_bottom_spacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
       <widget class="QWidget" name="page_scan">
        <layout class="QVBoxLayout" name="scan_v_layout">
         <property name="margin"><number>20</number></property>

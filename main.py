@@ -7,7 +7,6 @@ from PySide6 import QtWidgets, QtCore, QtGui
 from PySide6.QtWidgets import (QApplication, QMainWindow, QMessageBox, QPushButton, 
                              QStackedWidget, QVBoxLayout, QWidget, QLineEdit)
 from PySide6.QtUiTools import QUiLoader
-
 # ============ 路径配置与自检 ============
 base_path = os.path.dirname(os.path.abspath(__file__))
 lib_path = os.path.join(base_path, "lib")
@@ -22,35 +21,13 @@ try:
     from run_flull_exam import HSEExamSystem
     from parsers.full_exam_specific_parsers import _parse_grammar_items_full_exam, _parse_seven_five_items_full_exam, _parse_cloze_items_full_exam, _parse_reading_items_full_exam # Import specific parsers for full exam
     from exam_module import ExamManager 
+    from utils import _normalize_full_width_to_half_width # Import from utils
 except ImportError as e:
-    print(f"❌ 导入模块失败: {e}")
+    # This block catches errors during the initial module imports
+    # If WordListView is not defined, it means its module failed to load.
+    print(f"❌ 模块导入失败: {e}. 请检查相关模块文件是否存在或有语法错误。")
+    raise # Re-raise the exception to stop execution if a critical module cannot be loaded
 
-# ==========================================
-# Helper function for character normalization
-# ==========================================
-def _normalize_full_width_to_half_width(text):
-    """
-    Converts full-width digits and periods in a string to half-width.
-    Ensures a string is always returned, even if input is None.
-    """
-    if text is None:
-        return ""
-    text = str(text) # Ensure it's a string before processing
-    
-    # Mapping for full-width digits to half-width
-    full_to_half_digits = {
-        '０': '0', '１': '1', '２': '2', '３': '3', '４': '4',
-        '５': '5', '６': '6', '７': '7', '８': '8', '９': '9'
-    }
-    
-    # Replace full-width digits
-    for full, half in full_to_half_digits.items():
-        text = text.replace(full, half)
-    
-    # Replace full-width period
-    text = text.replace('．', '.')
-    
-    return text
 # ==========================================
 # 1. 独立解析器 (专门负责整卷 TXT 格式转换)
 # ==========================================
@@ -204,20 +181,33 @@ class HighSchoolEnglishAI(QMainWindow):
         self.btn_nav_gaokao = self.ui_root.findChild(QPushButton, "btn_nav_gaokao")
         self.btn_nav_full_exam = self.ui_root.findChild(QPushButton, "btn_nav_full_exam")
 
+        # Initialize attributes to None to prevent AttributeError if initialization fails
+        self.vocab_ctrl = None
+        self.word_list_widget = None
+        self.word_list_index = -1 # Use -1 as an invalid index
+        self.exam_ctrl = None
         self._setup_gaokao_page(res_dir, loader)
         
         try:
+            # Ensure vocab_ctrl is initialized first as it uses self.stack.widget(0)
             self.vocab_ctrl = VocabManager(self)
-            self.word_list_widget = WordListView(self)
-            self.stack.addWidget(self.word_list_widget)
-            self.word_list_index = self.stack.indexOf(self.word_list_widget)
-            self.exam_ctrl = ExamManager(self) 
+            # WordListView should be added to the stack *after* VocabManager has identified its page
+            self.word_list_widget = WordListView(self) # Attempt to create WordListView instance
+            if self.word_list_widget: # Only add if successfully created
+                self.stack.addWidget(self.word_list_widget)
+                self.word_list_index = self.stack.indexOf(self.word_list_widget)
+                # Connect the signal from VocabManager to WordListView's refresh method
+                self.vocab_ctrl.mistake_vocabulary_changed.connect(self.word_list_widget.refresh_mistake_list)
+            self.exam_ctrl = ExamManager(self)
         except Exception as e:
-            print(f"⚠️ 业务模块异常: {e}")
+            print(f"⚠️ 业务模块初始化异常: {e}")
 
         self._apply_sidebar_style()
         self._bind_nav_events()
         self.stack.setCurrentIndex(0)
+        
+        # Connect to the QStackedWidget's currentChanged signal to manage vocab timer
+        self.stack.currentChanged.connect(self._handle_stack_page_changed)
         
         # Initialize attributes for full exam management
         self.full_exam_files = []
@@ -248,10 +238,43 @@ class HighSchoolEnglishAI(QMainWindow):
         绑定侧边栏导航按钮的点击事件。
         """
         self.btn_nav_vocab.clicked.connect(lambda: self.stack.setCurrentIndex(0))
-        self.btn_nav_core_vocab.clicked.connect(lambda: self.stack.setCurrentIndex(self.word_list_index))
+        self.btn_nav_core_vocab.clicked.connect(self._show_word_list_page) # Connect to a new method for debugging
         self.btn_nav_gaokao.clicked.connect(self.show_gaokao_page)
         self.btn_nav_full_exam.clicked.connect(self.switch_to_full_exam)
-        
+
+    def _handle_stack_page_changed(self, index):
+        """
+        Handles changes in the QStackedWidget's current page.
+        Manages the VocabManager's timer based on page visibility.
+        """
+        vocab_page_index = 0 # Assuming vocabulary challenge page is always at index 0
+
+        if self.vocab_ctrl:
+            if index == vocab_page_index:
+                # Vocabulary page is now active
+                print("DEBUG: Vocab page activated.")
+                if self.vocab_ctrl.current_challenge_mode is None:
+                    self.vocab_ctrl._display_mode_selection_prompt() # Show prompt if no mode selected yet
+                else:
+                    self.vocab_ctrl.show_next() # Refresh the word (timer is removed)
+            else:
+                # Another page is active, stop the vocabulary timer
+                # if self.vocab_ctrl.timer.isActive(): # 注释掉：不再需要倒计时
+                #     print("DEBUG: Vocab page deactivated. Stopping timer.") # 注释掉：不再需要倒计时
+                #     self.vocab_ctrl.timer.stop() # 注释掉：不再需要倒计时    
+                pass # Add pass to complete the else block
+
+    def _show_word_list_page(self):
+        """
+        Helper to show the word list page and debug its index.
+        """
+        if self.word_list_index != -1:
+            print(f"DEBUG: Attempting to set stack index to word_list_index: {self.word_list_index}")
+            self.stack.setCurrentIndex(self.word_list_index)
+        else:
+            print("ERROR: word_list_index is -1. WordListView might not have been initialized or added correctly.")
+            QMessageBox.warning(self, "错误", "核心词汇表页面未加载成功，请检查控制台输出。")
+
     def load_special_practice(self, folder_name):
         """
         加载指定题型的专项练习。

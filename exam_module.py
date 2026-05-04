@@ -5,32 +5,7 @@ import re
 from PySide6.QtWidgets import QPushButton, QHBoxLayout, QVBoxLayout, QWidget, QLabel, QRadioButton, QButtonGroup, QSizePolicy, QLineEdit, QMessageBox
 from PySide6.QtCore import Qt
 from parsers.reading_parser import parse_reading_txt
-
-# ==========================================================
-# Helper function for character normalization
-# ==========================================================
-def _normalize_full_width_to_half_width(text):
-    """
-    Converts full-width digits and periods in a string to half-width.
-    """
-    if text is None:
-        return ""
-    text = str(text) # Ensure it's a string before processing
-    
-    # Mapping for full-width digits to half-width
-    full_to_half_digits = {
-        '０': '0', '１': '1', '２': '2', '３': '3', '４': '4',
-        '５': '5', '６': '6', '７': '7', '８': '8', '９': '9'
-    }
-    
-    # Replace full-width digits
-    for full, half in full_to_half_digits.items():
-        text = text.replace(full, half)
-    
-    # Replace full-width period
-    text = text.replace('．', '.')
-    
-    return text
+from utils import _normalize_full_width_to_half_width # Import from utils
 
 class ExamManager:
     """
@@ -52,6 +27,10 @@ class ExamManager:
         """
         self.mw = main_window
         self.ui = main_window.page_gaokao_widget
+        if not self.ui:
+            print("ERROR: ExamManager failed to get page_gaokao_widget from main_window.")
+            raise AttributeError("page_gaokao_widget is None in ExamManager.")
+        print(f"DEBUG: ExamManager initialized with self.ui: {self.ui.objectName()}")
 
         # 1. 初始化变量
         self.current_type = None  # 初始无题型
@@ -371,6 +350,7 @@ class ExamManager:
             content = _normalize_full_width_to_half_width(content)
 
             parsed_data = parse_reading_txt(content)
+            print(f"DEBUG: parse_reading_txt returned: {json.dumps(parsed_data, ensure_ascii=False, indent=2)[:500]}...") # Print first 500 chars
             print(f"✅ [fetchNewRandomFile] 解析成功: {parsed_data.get('question_type', 'unknown')}")
             
             # 构建题目数据结构
@@ -1687,7 +1667,7 @@ class ExamManager:
             qid = url_str.replace("analysis_", "")
             self._on_analysis_button_click(qid)
 
-    def _on_analysis_button_click(self, qid):
+    def _on_analysis_button_click(self, qid): # This is the actual button click handler
         """
         处理分析按钮点击事件，切换解析的显示/隐藏状态。
         """
