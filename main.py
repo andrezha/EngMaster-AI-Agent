@@ -1,6 +1,6 @@
 import sys
 import os
-import re
+import re # Import the 're' module for regular expressions
 import time
 import random # Import random for shuffling files
 from PySide6 import QtWidgets, QtCore, QtGui
@@ -19,7 +19,8 @@ try:
     from vocab_module import VocabManager
     from word_list_view import WordListView 
     from run_flull_exam import HSEExamSystem
-    from parsers.full_exam_specific_parsers import _parse_grammar_items_full_exam, _parse_seven_five_items_full_exam, _parse_cloze_items_full_exam, _parse_reading_items_full_exam # Import specific parsers for full exam
+    # Import specific parsers for full exam, including the robust reading comprehension parser
+    from parsers.full_exam_specific_parsers import _parse_grammar_items_full_exam, _parse_seven_five_items_full_exam, _parse_cloze_items_full_exam, _parse_reading_items_full_exam_robust
     from exam_module import ExamManager 
     from utils import _normalize_full_width_to_half_width # Import from utils
 except ImportError as e:
@@ -31,11 +32,11 @@ except ImportError as e:
 # ==========================================
 # 1. 独立解析器 (专门负责整卷 TXT 格式转换)
 # ==========================================
+
 def _internal_full_exam_parser(text):
     """
     解析整个高考模拟卷 TXT 文件，将其分割成多个板块，并为每个板块提取题目和解析。
     """
-    import re
     print("\n" + "="*50)
     print("🚀 [DEBUG] 解析器已启动...")
     
@@ -83,12 +84,13 @@ def _internal_full_exam_parser(text):
         q_text = sec_body[questions_tag_start + len('[questions]'):].strip()
         
         # Normalize q_text immediately
+        print(f"   DEBUG: q_text BEFORE normalization (first 200 chars): {q_text[:200]}...")
         q_text = _normalize_full_width_to_half_width(q_text)
-
+        print(f"   DEBUG: q_text AFTER normalization (first 200 chars): {q_text[:200]}...")
         # Print debug info for passage and q_text
         print(f"   📝 原文长度: {len(passage)} 字")
         print(f"   ❓ 题目文本长度: {len(q_text)} 字")
-        print(f"   DEBUG: Raw q_text (first 200 chars): {q_text[:200]}...")
+        print(f"   DEBUG: Raw q_text (repr, full): {repr(q_text)}") # Print full q_text with repr
 
         # The original_analysis for each section is now the global_analysis_text
         print(f"   DEBUG: global_analysis_text (first 200 chars): {global_analysis_text[:200]}...")
@@ -106,9 +108,9 @@ def _internal_full_exam_parser(text):
         elif current_question_type == "cloze":
             # For cloze, q_text contains the options for each blank
             parsed_items = _parse_cloze_items_full_exam(q_text, global_analysis_text)
-        elif current_question_type == "reading":
-            # For reading, q_text contains the questions and options
-            parsed_items = _parse_reading_items_full_exam(q_text, global_analysis_text)
+        elif current_question_type == "reading": # Use the robust parser for reading comprehension
+            # For reading, q_text contains the questions and options, use the robust parser
+            parsed_items = _parse_reading_items_full_exam_robust(q_text, global_analysis_text)
         else:
             print(f"   ⚠️ 未知题型: {current_question_type}。跳过题目解析。")
             parsed_items = [] # Ensure parsed_items is a list even if type is unknown

@@ -4,6 +4,8 @@ import os
 from PySide6 import QtCore, QtWidgets
 from PySide6.QtCore import Signal, QObject # Import Signal and QObject
 from PySide6.QtWidgets import QMessageBox # Explicitly import QMessageBox
+from PySide6.QtGui import QDesktopServices # For opening file
+from PySide6.QtCore import QUrl # Import QUrl
 
 class VocabManager(QObject): # 继承自 QObject
     """
@@ -43,6 +45,13 @@ class VocabManager(QObject): # 继承自 QObject
             self.btn_challenge_mistake.setObjectName("btn_challenge_mistake")
             self.btn_challenge_mistake.setCheckable(True) # 使按钮可选中
 
+        # 确保 btn_print_vocab 被正确初始化
+        self.btn_print_vocab = self.vocab_page_widget.findChild(QtWidgets.QPushButton, "btn_print_vocab")
+        if not self.btn_print_vocab:
+            self.btn_print_vocab = QtWidgets.QPushButton("输出Word打印单词表") # User requested this name
+            self.btn_print_vocab.setObjectName("btn_print_vocab")
+        self.btn_print_vocab.setText("输出Word打印单词表") # Ensure text is set regardless of whether it was found or created
+
         self.lbl_mistake_count = self.vocab_page_widget.findChild(QtWidgets.QLabel, "lbl_mistake_count") # 查找现有标签
         if not self.lbl_mistake_count: # 如果没找到，则创建
             self.lbl_mistake_count = QtWidgets.QLabel("错词表 (0 词)")
@@ -68,6 +77,8 @@ class VocabManager(QObject): # 继承自 QObject
         # 绑定闯关模式选择按钮
         if self.btn_challenge_regular:
             self.btn_challenge_regular.clicked.connect(lambda: self.switch_challenge_mode("regular"))
+        if self.btn_print_vocab: # Connect the print button
+            self.btn_print_vocab.clicked.connect(self._show_export_dialog)
         if self.btn_challenge_mistake:
             self.btn_challenge_mistake.clicked.connect(lambda: self.switch_challenge_mode("mistake_list"))
 
@@ -97,7 +108,7 @@ class VocabManager(QObject): # 继承自 QObject
         
         # Clear existing layout completely, but DO NOT delete the widgets we want to reuse.
         # Instead, just remove them from the layout.
-        widgets_to_keep = {self.t_label, self.v_disp, self.v_input, self.btn_confirm,
+        widgets_to_keep = {self.t_label, self.v_disp, self.v_input, self.btn_confirm, self.btn_print_vocab,
                            self.btn_challenge_regular, self.btn_challenge_mistake, self.lbl_mistake_count}
         while self.main_layout.count():
             item = self.main_layout.takeAt(0)
@@ -124,6 +135,7 @@ class VocabManager(QObject): # 继承自 QObject
         challenge_mode_layout.addSpacing(20) # 按钮与标签之间间距
         challenge_mode_layout.addWidget(self.lbl_mistake_count)
         challenge_mode_layout.addStretch(1) # 将按钮推到中间
+        challenge_mode_layout.addWidget(self.btn_print_vocab) # Add print button here
         self.main_layout.addLayout(challenge_mode_layout)
         self.main_layout.addSpacing(20) # 模式选择与单词显示区之间间距
 
@@ -255,6 +267,23 @@ class VocabManager(QObject): # 继承自 QObject
                     background-color: #f5f5f5;
                 }
             """)
+        # Print button style
+        if self.btn_print_vocab:
+            self.btn_print_vocab.setFixedHeight(42)
+            self.btn_print_vocab.setStyleSheet("""
+                QPushButton {
+                    background-color: #28a745; /* Green color */
+                    color: white;
+                    border: none;
+                    border-radius: 6px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    padding: 8px 16px;
+                }
+                QPushButton:hover {
+                    background-color: #218838;
+                }
+            """)
     def _load_regular_vocabulary(self):
         """
         从 assets/vocabulary.json 文件加载词汇表并随机打乱。
@@ -380,7 +409,8 @@ class VocabManager(QObject): # 继承自 QObject
                     print(f"🗑️ 错词 '{word_obj['word']}' 已从错词表移除 (正确3次)。")
                 self._save_mistake_vocabulary()
                 self._update_mistake_count_label()
-                break
+                return True # Indicate that the word was removed
+        return False # Indicate that the word was not removed (or not found)
 
     def switch_challenge_mode(self, mode):
         """
@@ -466,6 +496,7 @@ class VocabManager(QObject): # 继承自 QObject
                     background-color: #d0d0d0;
                 }
             """
+
 
     def _update_mistake_count_label(self):
         """
@@ -664,3 +695,36 @@ class VocabManager(QObject): # 继承自 QObject
         message_for_next_display = self._notification_message_for_next_display
         self._notification_message_for_next_display = "" # 清空，防止重复显示
         self.show_next(additional_message_html=message_for_next_display)
+
+    def _show_export_dialog(self):
+        """
+        显示导出单词表的对话框。
+        """
+        # Import ExportDialog and generate_word_table locally to avoid circular dependencies
+        # and ensure these are only loaded when needed.
+        from export_dialog import ExportDialog
+        from word_document_generator import generate_word_table
+        
+        # Ensure vocabularies are loaded before passing to dialog
+        self._load_regular_vocabulary()
+        self._load_mistake_vocabulary()
+
+        dialog = ExportDialog(self.main_window, self.vocabulary, self.mistake_vocabulary)
+        if dialog.exec() == QtWidgets.QDialog.Accepted:
+            save_path = dialog.get_save_path()
+            output_format = dialog.get_output_format() # This will always be docx now
+            selected_vocab_data = dialog.get_selected_vocabulary_data()
+            selected_mode = dialog.get_selected_mode()
+
+            if not selected_vocab_data:
+                QMessageBox.warning(self.main_window, "导出失败", "没有选择任何词汇数据进行导出。")
+                return
+
+            try:
+                generate_word_table(selected_vocab_data, save_path, mode=selected_mode)
+                QMessageBox.information(self.main_window, "导出成功", f"单词表已成功导出到：{save_path}")
+                QDesktopServices.openUrl(QUrl.fromLocalFile(os.path.dirname(save_path))) # Open the folder where the file was saved
+            except Exception as e:
+                QMessageBox.critical(self.main_window, "导出错误", f"导出单词表时发生错误: {e}")
+        else:
+            print("导出操作已取消。")

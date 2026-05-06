@@ -63,6 +63,7 @@ def _parse_reading_items(q_text, analysis_text):
     解析阅读理解题目的具体逻辑。
     从 q_text 中提取题干和选项，从 analysis_text 中匹配答案。
     """
+    print(f"DEBUG: _parse_reading_items received q_text (after normalization, first 500 chars): {q_text[:500]}")
     print(f"DEBUG: _parse_reading_items received q_text (len {len(q_text)}): {q_text[:200]}...")
     print(f"DEBUG: _parse_reading_items received analysis_text (len {len(analysis_text)}): {analysis_text[:200]}...")
     items = [] # Initialize items list
@@ -72,36 +73,69 @@ def _parse_reading_items(q_text, analysis_text):
 
     # 2. 物理分割题目：使用 finditer 查找所有题目块
     # 题目块以数字+点开头，捕获到下一个题目块或文本结束
-    question_blocks_matches = re.finditer(r'(\d+)\s*[\.\)]\s*(.*?)(?=\n*\d+\s*[\.\)]\s*|\Z)', q_text, re.DOTALL)
+    regex_pattern_for_blocks = r'(\d+)\s*[\.\)]\s*(.*?)(?=\s*\d+\s*[\.\)]\s*|\Z)' # Define the regex pattern
     
     seq_ans_idx = 0
     q_count = 0
-    regex_pattern_for_blocks = r'(\d+)\s*[\.\)]\s*(.*?)(?=\n*\d+\s*[\.\)]\s*|\Z)' # Define the regex pattern
+    print(f"DEBUG: _parse_reading_items - q_text starts with: {q_text[0]!r}, isdigit: {q_text[0].isdigit()}")
+    print(f"DEBUG: _parse_reading_items - q_text (repr, full, before loop): {repr(q_text)}")
+    print(f"DEBUG: _parse_reading_items - question_block_pattern (pattern): {regex_pattern_for_blocks!r}") # Use the variable
+    question_blocks_matches = re.finditer(regex_pattern_for_blocks, q_text, re.DOTALL) # Use the variable here
+    
+    temp_matches = list(question_blocks_matches) # Convert iterator to list for debugging
+    print(f"DEBUG: _parse_reading_items - question_block_pattern found {len(temp_matches)} matches.")
+    if temp_matches:
+        print(f"DEBUG: _parse_reading_items - First match groups: {repr(temp_matches[0].groups())}")
+
     print(f"DEBUG: _parse_reading_items q_text (len {len(q_text)}): {q_text[:500]}...") # More q_text debug
-    print(f"DEBUG: _parse_reading_items question_blocks_matches (pattern: {regex_pattern_for_blocks!r}): {list(re.finditer(regex_pattern_for_blocks, q_text, re.DOTALL))}")
-    for match in question_blocks_matches:
+    for match in temp_matches: # Iterate over the list
         q_id = match.group(1).strip()
-        block_content = match.group(2).strip()
+        block_content = (match.group(2) or "").strip() # Ensure block_content is not None
+        print(f"DEBUG: Q{q_id} - Extracted block_content (repr, first 200 chars): {repr(block_content[:200])}")
         
         question_stem = ""
         options = {}
         print(f"DEBUG: _parse_reading_items processing Q{q_id}, block_content (len {len(block_content)}): {block_content[:500]}...") # Debug block_content
         
         # 提取选项 A-D
-        options_pattern = r'([A-D])\s*[\.\)]\s*(.*?)(?=\n*[A-D]\s*[\.\)]\s*|\Z)'
-        options_found = list(re.finditer(options_pattern, block_content, re.DOTALL))
+        # Standardize option prefixes in block_content before parsing options
+        # This ensures "A", "A.", "A)" all become "A. " for consistent parsing
+        # For specialized practice reading comprehension, match A-D or a-d
+        standardized_block_content = re.sub(r'([A-Da-d])\s*[\.\)]?\s*', r'\1. ', block_content)
+        print(f"DEBUG: Q{q_id} - Standardized block_content (repr, full): {repr(standardized_block_content)}")
+        
+        # --- More granular debugging for options parsing ---
+        print(f"DEBUG: Q{q_id} - Standardized block_content (repr, full): {repr(standardized_block_content)}")
+        
+        # Test for presence of any option label
+        any_label_found = re.search(r'[A-Da-d]\.', standardized_block_content) # Match A-D or a-d
+        print(f"DEBUG: Q{q_id} - Any option label (A., B., C., D.) found: {bool(any_label_found)}")
+        
+        # Adjusted pattern: ensure content starts with a non-whitespace character
+        # For specialized practice reading comprehension, match A-D or a-d
+        options_pattern = r'([A-Da-d])\.\s*(\S[\s\S]*?)(?=\s*[A-Da-d]\.|\s*\Z)' # Simplified pattern expecting "A. ", changed lookahead to \s*\Z
+        print(f"DEBUG: Q{q_id} - Options pattern used: {options_pattern!r}")
+        options_found = list(re.finditer(options_pattern, standardized_block_content, re.DOTALL))
+        print(f"DEBUG: Q{q_id} - options_found count: {len(options_found)}")
         
         if options_found:
+            print(f"DEBUG: Q{q_id} - Options found by regex (count {len(options_found)}). First match: {repr(options_found[0].groups()) if options_found else 'N/A'}")
+            for i, opt_match in enumerate(options_found):
+                label = opt_match.group(1)
+                content = opt_match.group(2)
+                print(f"DEBUG: Q{q_id} - Option {label}: Content (repr): {repr(content)}")
             first_option_start_pos = options_found[0].start()
-            question_stem = block_content[:first_option_start_pos].strip()
+            question_stem = standardized_block_content[:first_option_start_pos].strip()
             
             for opt_match in options_found:
-                label = opt_match.group(1).upper()
-                content = opt_match.group(2).strip()
+                label = opt_match.group(1).upper() # Convert to uppercase for consistency
+                content = (opt_match.group(2) or "").strip() # Ensure content is not None
                 options[label] = content
-            print(f"DEBUG: _parse_reading_items for Q{q_id} found options: {options}")
+            print(f"DEBUG: Q{q_id} - Populated options: {options}")
         else:
-            question_stem = block_content
+            question_stem = standardized_block_content # If no options found, the whole block is the stem
+            print(f"DEBUG: Q{q_id} - No options_found by regex.")
+
 
         # 只有在抓到选项的情况下才认为是一道题
         if options:
@@ -115,6 +149,8 @@ def _parse_reading_items(q_text, analysis_text):
             q_count += 1
             if not explicit_ans_map.get(q_id) and seq_ans_idx < len(sequential_answers):
                 seq_ans_idx += 1
+        else:
+            print(f"DEBUG: Q{q_id} - Options dictionary is empty, item not added.")
 
     print(f"DEBUG: _parse_reading_items returning {len(items)} items.")
     return items
@@ -160,7 +196,7 @@ def _parse_seven_five_items(options_text, analysis_text, passage):
             answer = sequential_answers[seq_ans_idx]
             seq_ans_idx += 1
         items.append({"q_id": q_id, "answer": answer, "options": options_list})
-    print(f"DEBUG: _parse_seven_five_items returning {len(items)} items.")
+    print(f"DEBUG: _parse_seven_five_items_full_exam returning {len(items)} items.")
     return items
 
 def _parse_grammar_items(q_text, analysis_text):
@@ -183,7 +219,7 @@ def _parse_grammar_items(q_text, analysis_text):
     
     for match in question_blocks:
         q_id = match.group(1).strip()
-        block_content = match.group(2).strip() # This is the part after QID.
+        block_content = (match.group(2) or "").strip() # Ensure block_content is not None
         
         content_to_use = ""
         # Try to find a word in parentheses first

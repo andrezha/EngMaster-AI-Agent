@@ -141,15 +141,14 @@ class WordListView(QtWidgets.QWidget):
         self.sort_btn.clicked.connect(self._sort_words)
         header_layout.addWidget(self.sort_btn)
 
-        # 打印按钮
-         # 打印工具按钮 (带下拉菜单)
+        # 打印工具按钮 (带下拉菜单)
         self.print_tool_button = QtWidgets.QToolButton()
         self.print_tool_button.setText("🖨️ 打印")
         self.print_tool_button.setFixedHeight(40)
         self.print_tool_button.setPopupMode(QtWidgets.QToolButton.InstantPopup) # 点击立即显示菜单
         self.print_tool_button.setStyleSheet("""
             QToolButton {
-                background-color: #555555;
+                background-color: #28a745; /* Green color, matching vocab_module's print button */
                 color: white;
                 border: none;
                 border-radius: 2px;
@@ -157,8 +156,8 @@ class WordListView(QtWidgets.QWidget):
                 font-weight: bold;
                 padding: 0 12px;
             }
-            QToolButton:hover { background-color: #444444; }
-            QToolButton:pressed { background-color: #333333; }
+            QToolButton:hover { background-color: #218838; } /* Darker green on hover */
+            QToolButton:pressed { background-color: #1e7e34; } /* Even darker green on press */
             QToolButton::menu-indicator { image: none; } /* 隐藏菜单指示器 */
         """)
         header_layout.addWidget(self.print_tool_button)

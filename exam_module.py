@@ -3,8 +3,9 @@ import os
 import random
 import re
 from PySide6.QtWidgets import QPushButton, QHBoxLayout, QVBoxLayout, QWidget, QLabel, QRadioButton, QButtonGroup, QSizePolicy, QLineEdit, QMessageBox
-from PySide6.QtCore import Qt
-from parsers.reading_parser import parse_reading_txt
+from PySide6.QtCore import Qt # Keep Qt import
+from parsers.reading_parser import parse_reading_txt # Keep existing parser
+from parsers.special_practice_parser import SpecializedPracticeTextParser, SpecializedPracticeQuestion # Import the new parser from parsers
 from utils import _normalize_full_width_to_half_width # Import from utils
 
 class ExamManager:
@@ -346,10 +347,41 @@ class ExamManager:
             with open(target_path, 'r', encoding='utf-8') as f:
                 content = f.read()
             
-            # Normalize content before parsing
+            # Normalize content before parsing for all types to ensure consistent half-width characters
+            print(f"DEBUG: Normalizing content for {topic_name}...")
             content = _normalize_full_width_to_half_width(content)
 
-            parsed_data = parse_reading_txt(content)
+            if topic_name == "阅读理解":
+                # Use the specialized parser for reading comprehension
+                special_parser = SpecializedPracticeTextParser()
+                # The parse_file expects a file path, not content string.
+                # We need to pass the actual file_path here.
+                metadata, passage, questions_list = special_parser.parse_file(target_path)
+                
+                # Convert SpecializedPracticeQuestion objects to the dictionary format expected by ExamManager
+                items_for_exam_manager = []
+                original_analysis_str_parts = []
+                for q_obj in questions_list: # Iterate over the list of SpecializedPracticeQuestion objects
+                    items_for_exam_manager.append({
+                        'q_id': str(q_obj.question_number),
+                        'content': q_obj.question_text,
+                        'options': q_obj.options, # This is already a dict
+                        'answer': q_obj.correct_answer
+                    })
+                    if q_obj.correct_answer and q_obj.analysis_text:
+                        original_analysis_str_parts.append(f"{q_obj.question_number}. {q_obj.correct_answer}. {q_obj.analysis_text}")
+                
+                parsed_data = {
+                    'year': metadata.get('YEAR', ''),
+                    'category': metadata.get('CAT', ''),
+                    'passage': passage,
+                    'items': items_for_exam_manager,
+                    'original_analysis': "\n".join(original_analysis_str_parts), # Now this is populated
+                    'question_type': 'reading',
+                }
+            else:
+                # For other types, continue using the existing parse_reading_txt
+                parsed_data = parse_reading_txt(content)
             print(f"DEBUG: parse_reading_txt returned: {json.dumps(parsed_data, ensure_ascii=False, indent=2)[:500]}...") # Print first 500 chars
             print(f"✅ [fetchNewRandomFile] 解析成功: {parsed_data.get('question_type', 'unknown')}")
             
@@ -588,7 +620,7 @@ class ExamManager:
                      "</div>"
         
         # 🎯 清理HTML标签残留，保持原始格式
-        import re
+        # import re # re is already imported at the top
         p_text_clean = re.sub(r'<[^>]+>', '', p_text)
         
         # 🎯 完形填空、七选五、语法填空：将题号转换为 ___XX___ 格式，方便识别
@@ -682,11 +714,15 @@ class ExamManager:
         # 确保只渲染当前题型需要的组件，其他题型的组件不会被创建
         question_type = self.current_q.get('question_type', 'reading') if self.current_q else 'reading'
         
+        print(f"DEBUG: render_question_ui - current_q: {self.current_q}")
+        print(f"DEBUG: render_question_ui - question_type: {question_type}")
+        print(f"DEBUG: render_question_ui - items count: {len(items)}")
+
         print(f"DEBUG: render_question_ui - self.current_q: {self.current_q}")
         print(f"🎨 [Render] 当前题型: {question_type}")
         print(f"📊 [Render] 题目数量: {len(items)}")
         if items:
-            print(f"📋 [Render] 第一题数据: q_id={items[0].get('q_id')}, options_count={len(items[0].get('options', []))}")
+            print(f"📋 [Render] 第一题数据: q_id={items[0].get('q_id')}, options_count={len(items[0].get('options', {}))}") # Changed to {}
         
         # 条件渲染：根据题型只创建对应的 UI 组件
         if question_type == "seven_five":
@@ -730,8 +766,8 @@ class ExamManager:
             qid = item.get('q_id', '')
             content = item.get('content', '')
 
-            # 显示选项按钮行（优先使用 options 字段，否则从 content 提取）
-            options = item.get('options', [])
+            # 显示选项按钮行（优先使用 options 字段，否则从 content 提取）。options 预期为字典。
+            options = item.get('options', {})
             if options:
                 # 使用已有的 options 字段
                 qtext = content
@@ -758,16 +794,12 @@ class ExamManager:
 
             # 显示选项按钮行
             if options:
-                print(f"DEBUG: _render_reading_ui rendering options for Q{qid}: {options}")
-                # 处理 options 为字典的情况（如完形填空解析器返回的格式）
-                if isinstance(options, dict):
-                    options_list = [f"{k}. {v}" for k, v in sorted(options.items())]
-                else:
-                    options_list = options
-                for i, opt_content in enumerate(options_list):
-                    btn = QPushButton(opt_content)
+                print(f"DEBUG: _render_reading_ui rendering options for Q{qid}: {options}") # options is now always a dict
+                
+                for label, content in sorted(options.items()): # Iterate directly over sorted dictionary items
+                    btn = QPushButton(f"{label}. {content}")
                     btn.setCheckable(True)
-                    btn.setObjectName(f"btn_q{qid}_opt{chr(65+i)}")
+                    btn.setObjectName(f"btn_q{qid}_opt{label}") # Use the actual label
                     btn.setStyleSheet("""
                         QPushButton {
                             text-align: left;
@@ -790,14 +822,12 @@ class ExamManager:
                             font-weight: bold;
                         }
                     """)
-                    choice = chr(65 + i)  # A, B, C, D
-                    
                     # 将按钮添加到该题目的专属按钮组
                     question_button_group.addButton(btn)
                     
                     # 绑定点击事件 - 使用新的单选逻辑
-                    btn.clicked.connect(
-                        lambda checked, q=qid, c=choice, b=btn: self.on_reading_choice_click(q, c, b)
+                    btn.clicked.connect( # Pass the actual label as choice
+                        lambda checked, q=qid, c=label, b=btn: self.on_reading_choice_click(q, c, b)
                     )
                     layout.addWidget(btn)
             else:
@@ -817,19 +847,20 @@ class ExamManager:
         """
         """从题目内容中提取题干和选项"""
         print(f"DEBUG: _extract_options_from_content received content (len {len(content)}): {content[:200]}...")
-        # 容错处理：将全角 ． 替换为半角 .
+        # Normalize content before parsing for all types to ensure consistent half-width characters
         clean_content = _normalize_full_width_to_half_width(content)
         
         # 🎯 关键修复：处理选项前缀格式不标准的情况
         # 统一将 "A", "A.", "A)" 等格式标准化为 "A. " (after normalization, only half-width period)
         # This regex looks for A, B, C, or D, optionally followed by a dot or parenthesis,
-        # then optionally followed by spaces, and replaces it with "X. "
-        clean_content = re.sub(r'([A-D])\s*[\.\)]?\s*', r'\1. ', clean_content)
+        # then optionally followed by spaces, and replaces it with "X. ". Modified to match A-D or a-d.
+        clean_content = re.sub(r'([A-Da-d])\s*[\.\)]?\s*', r'\1. ', clean_content)
 
         # Find positions using regex for more flexibility
         # Use a non-greedy match for the content of the option
-        option_matches = list(re.finditer(r'([A-D])\.\s*(.*?)(?=\s*[A-D]\.|\Z)', clean_content, re.DOTALL))
-        
+        # Modified to match A-D or a-d.
+        option_matches = list(re.finditer(r'([A-Da-d])\.\s*(\S[\s\S]*?)(?=\s*[A-Da-d]\.|\s*\Z)', clean_content, re.DOTALL))
+
         options_dict = {}
         q_text = clean_content
 
@@ -840,23 +871,17 @@ class ExamManager:
 
             # Extract options
             for i, match in enumerate(option_matches):
-                label = match.group(1).upper()
+                label = match.group(1).upper() # Convert to uppercase for consistency
                 content = match.group(2).strip()
                 options_dict[label] = content
             
-            # Ensure all A, B, C, D are present and in order
-            if all(label in options_dict for label in ['A', 'B', 'C', 'D']) and \
-               list(options_dict.keys()) == ['A', 'B', 'C', 'D']:
-                options = [options_dict['A'], options_dict['B'], options_dict['C'], options_dict['D']]
-                print(f"DEBUG: _extract_options_from_content returning q_text (len {len(q_text)}): {q_text[:100]}..., options: {options}")
-                return q_text, options
-            else:
-                print(f"DEBUG: _extract_options_from_content found options but not A,B,C,D in order: {options_dict}")
-                return content, [] # Fallback if not all options or not in order
+            # Return the extracted options dictionary directly, sorted by key for consistent display
+            print(f"DEBUG: _extract_options_from_content returning q_text (len {len(q_text)}): {q_text[:100]}..., options: {options_dict}")
+            return q_text, options_dict
         else:
             # 兜底：没找齐四个选项或顺序错乱
             print(f"DEBUG: _extract_options_from_content failed to extract options, returning content and empty list.")
-            return content, []
+            return content, {} # Return empty dict for options
 
     def _render_seven_five_ui(self, layout, items):
         """
@@ -1374,11 +1399,11 @@ class ExamManager:
                 part = part.strip()
                 if not part:
                     continue
-                if re.match(r'【\d+题详解】', part) or re.match(r'\d+\.', part): # Updated regex for half-width period
+                if re.match(r'【\d+题详解】|\d+\.', part): # Updated regex for half-width period
                     q_match = re.search(r'(\d+)', part)
                     if q_match:
                         current_q_num = q_match.group(1)
-                elif current_q_num and part:
+                elif current_q_num:
                     clean_content = re.sub(r'<[^>]+>', '', part)
                     analysis_by_q[current_q_num] = clean_content
             
