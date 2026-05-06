@@ -1,9 +1,9 @@
 name: Build Windows EXE
 
 on:
+  workflow_dispatch:
   push:
-    branches: [ dev ]  # 当你推送到 main 分支时触发
-  workflow_dispatch:    # 允许你手动点击运行
+    branches: [ dev, main ]
 
 jobs:
   build:
@@ -21,16 +21,14 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pyinstaller
-        # 如果你有其他依赖（如 requests, pandas），请在这里添加，例如：
-        # pip install -r requirements.txt
+        pip install PySide6 pyinstaller
 
     - name: Build EXE
       run: |
-        python -m PyInstaller --onefile --windowed main.py
+        python -m PyInstaller --onefile --windowed --clean --add-data "resources;resources" --add-data "lib;lib" --add-data "data;data" --add-data "assets;assets" main.py
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: Windows-Executable
-        path: dist/main.exe
+        name: My-Windows-Program
+        path: dist/
