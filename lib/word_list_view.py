@@ -1,3 +1,4 @@
+# /Users/andrezhao/AI_PJ/HighSchoolEnglishAI/lib/word_list_view.py
 """
 词汇表视图模块 - Word List View (扁平化终极版)
 =============================================
@@ -12,7 +13,10 @@
 import json
 import os
 import random
+import re # Import re for filename cleaning
 from PySide6 import QtCore, QtWidgets, QtGui
+from datetime import datetime # Import datetime for filename generation
+from PySide6.QtPrintSupport import QPrintDialog, QPrinter # Corrected: QPrinter is in QtPrintSupport
 
 
 class WordListView(QtWidgets.QWidget):
@@ -46,8 +50,10 @@ class WordListView(QtWidgets.QWidget):
         self.main_window = main_window
         
         # 核心数据
-        self.all_words = []          # 全部词汇数据
-        self.display_words = []      # 当前显示顺序
+        self.all_regular_words = []  # 常规词汇数据
+        self.all_mistake_words = []  # 错词表数据
+        self.display_words = []      # 当前显示顺序 (指向 all_regular_words 或 all_mistake_words)
+        self.current_list_type = "regular" # 当前显示的列表类型: "regular" 或 "mistake"
         self.current_page = 0        # 当前页码
         self.total_pages = 0         # 总页数
         
@@ -63,7 +69,17 @@ class WordListView(QtWidgets.QWidget):
         
         # 异步加载数据
         self._load_vocabulary_async()
+        print("DEBUG: WordListView initialized. _trigger_print method should be available.")
     
+    def refresh_mistake_list(self):
+        """
+        刷新错词表数据并重新渲染显示。
+        """
+        print("DEBUG: WordListView received signal to refresh mistake list.")
+        self.all_mistake_words = self._load_mistake_vocabulary_from_file()
+        if self.current_list_type == "mistake":
+            self._switch_list_type("mistake") # This will re-render the page
+
     def _init_ui(self):
         """初始化界面"""
         self.setObjectName("word_list_view")
@@ -102,6 +118,80 @@ class WordListView(QtWidgets.QWidget):
         header_layout.setContentsMargins(15, 8, 15, 8)
         header_layout.setSpacing(12)
         
+        # 常规词汇按钮
+        self.btn_regular_words = QtWidgets.QPushButton("📚 常规词汇")
+        self.btn_regular_words.setFixedHeight(40)
+        self.btn_regular_words.setCheckable(True)
+        self.btn_regular_words.clicked.connect(lambda: self._switch_list_type("regular"))
+        header_layout.addWidget(self.btn_regular_words)
+
+        # 错词表按钮
+        self.btn_mistake_words = QtWidgets.QPushButton("❌ 错词表")
+        self.btn_mistake_words.setFixedHeight(40)
+        self.btn_mistake_words.setCheckable(True)
+        self.btn_mistake_words.clicked.connect(lambda: self._switch_list_type("mistake"))
+        header_layout.addWidget(self.btn_mistake_words)
+
+        # 随机乱序按钮
+        self.shuffle_btn = QtWidgets.QPushButton("🔀 随机乱序")
+        self.shuffle_btn.setFixedHeight(40)
+        self.shuffle_btn.clicked.connect(self._shuffle_words)
+        header_layout.addWidget(self.shuffle_btn)
+        
+        # 字母排序按钮
+        self.sort_btn = QtWidgets.QPushButton("🔠 字母排序")
+        self.sort_btn.setFixedHeight(40)
+        self.sort_btn.clicked.connect(self._sort_words)
+        header_layout.addWidget(self.sort_btn)
+
+        # 打印工具按钮 (带下拉菜单)
+        self.print_tool_button = QtWidgets.QToolButton() # Corrected: Instantiate QToolButton without text argument
+        self.print_tool_button.setFixedHeight(40)
+        self.print_tool_button.setPopupMode(QtWidgets.QToolButton.InstantPopup) # 点击立即显示菜单
+        self.print_tool_button.setStyleSheet("""
+            QToolButton {
+                background-color: #28a745 !important; /* Green color, matching vocab_module's print button */
+                color: white !important;
+                border: none;
+                border-radius: 2px;
+                font-size: 12px;
+                font-weight: bold;
+                padding: 0 12px;
+            }
+            QToolButton:hover { background-color: #218838 !important; } /* Darker green on hover */
+            QToolButton:pressed { background-color: #1e7e34 !important; } /* Even darker green on press */
+            QToolButton::menu-indicator { image: none; } /* 隐藏菜单指示器 */
+        """)
+        # Set the actual text for the button after instantiation
+        self.print_tool_button.setText("输出Word打印单词表")
+        header_layout.addWidget(self.print_tool_button)
+
+        # 创建打印菜单
+        print_menu = QtWidgets.QMenu(self)
+        
+        # 常规英语词汇选项
+        action_regular_normal = print_menu.addAction("常规英语词汇中文+ 英语表")
+        action_regular_normal.triggered.connect(lambda: self._generate_word_doc(self.all_regular_words, "normal", "常规英语词汇中文+英语表"))
+        
+        action_regular_en_dictate_cn = print_menu.addAction("常规英语词汇看英语填写中文默写表")
+        action_regular_en_dictate_cn.triggered.connect(lambda: self._generate_word_doc(self.all_regular_words, "en_dictate_cn", "常规英语词汇看英语填写中文默写表"))
+        
+        action_regular_cn_dictate_en = print_menu.addAction("常规英语词汇英语默写表")
+        action_regular_cn_dictate_en.triggered.connect(lambda: self._generate_word_doc(self.all_regular_words, "cn_dictate_en", "常规英语词汇英语默写表"))
+        
+        print_menu.addSeparator() # 分隔线
+
+        # 错词英语词汇选项
+        action_mistake_normal = print_menu.addAction("错词英语词汇中文+ 英语表")
+        action_mistake_normal.triggered.connect(lambda: self._generate_word_doc(self.all_mistake_words, "normal", "错词英语词汇中文+英语表"))
+        
+        action_mistake_en_dictate_cn = print_menu.addAction("错词英语词汇看英语填写中文默写表")
+        action_mistake_en_dictate_cn.triggered.connect(lambda: self._generate_word_doc(self.all_mistake_words, "en_dictate_cn", "错词英语词汇看英语填写中文默写表"))
+        
+        action_mistake_cn_dictate_en = print_menu.addAction("错词英语词汇英语默写表")
+        action_mistake_cn_dictate_en.triggered.connect(lambda: self._generate_word_doc(self.all_mistake_words, "cn_dictate_en", "错词英语词汇英语默写表"))
+        self.print_tool_button.setMenu(print_menu)
+
         # 搜索框
         self.search_input = QtWidgets.QLineEdit()
         self.search_input.setPlaceholderText("输入 A-Z 跳转 或 输入单词搜索...")
@@ -121,7 +211,7 @@ class WordListView(QtWidgets.QWidget):
                 border: 1px solid #888888;
             }
         """)
-        header_layout.addWidget(self.search_input, 1)
+        header_layout.addWidget(self.search_input)
         
         # 隐藏英语按钮
         self.toggle_english_btn = QtWidgets.QPushButton("📖 隐藏英语")
@@ -129,7 +219,7 @@ class WordListView(QtWidgets.QWidget):
         self.toggle_english_btn.setCheckable(True)
         self.toggle_english_btn.setChecked(False)
         self.toggle_english_btn.clicked.connect(self._toggle_english)
-        self._style_toggle_btn(self.toggle_english_btn, False)
+        self._style_toggle_btn(self.toggle_english_btn, False) # Initial style
         header_layout.addWidget(self.toggle_english_btn)
         
         # 隐藏中文按钮
@@ -138,46 +228,10 @@ class WordListView(QtWidgets.QWidget):
         self.toggle_chinese_btn.setCheckable(True)
         self.toggle_chinese_btn.setChecked(False)
         self.toggle_chinese_btn.clicked.connect(self._toggle_chinese)
-        self._style_toggle_btn(self.toggle_chinese_btn, False)
+        self._style_toggle_btn(self.toggle_chinese_btn, False) # Initial style
         header_layout.addWidget(self.toggle_chinese_btn)
         
-        # 随机乱序按钮
-        self.shuffle_btn = QtWidgets.QPushButton("🔀 随机乱序")
-        self.shuffle_btn.setFixedHeight(40)
-        self.shuffle_btn.clicked.connect(self._shuffle_words)
-        self.shuffle_btn.setStyleSheet("""
-            QPushButton {
-                background-color: #555555;
-                color: white;
-                border: none;
-                border-radius: 2px;
-                font-size: 12px;
-                font-weight: bold;
-                padding: 0 12px;
-            }
-            QPushButton:hover { background-color: #444444; }
-            QPushButton:pressed { background-color: #333333; }
-        """)
-        header_layout.addWidget(self.shuffle_btn)
-        
-        # 字母排序按钮
-        self.sort_btn = QtWidgets.QPushButton("🔠 字母排序")
-        self.sort_btn.setFixedHeight(40)
-        self.sort_btn.clicked.connect(self._sort_words)
-        self.sort_btn.setStyleSheet("""
-            QPushButton {
-                background-color: #777777;
-                color: white;
-                border: none;
-                border-radius: 2px;
-                font-size: 12px;
-                font-weight: bold;
-                padding: 0 12px;
-            }
-            QPushButton:hover { background-color: #666666; }
-            QPushButton:pressed { background-color: #555555; }
-        """)
-        header_layout.addWidget(self.sort_btn)
+        header_layout.addStretch(1) # Push everything to the left
         
         parent_layout.addWidget(header_frame)
     
@@ -310,35 +364,113 @@ class WordListView(QtWidgets.QWidget):
         self._show_loading()
         QtCore.QTimer.singleShot(100, self._do_load_vocabulary)
     
-    def _do_load_vocabulary(self):
-        """执行词汇加载"""
+    def _load_regular_vocabulary_from_file(self):
+        """从文件加载常规词汇表"""
         try:
             if hasattr(self.main_window, 'base_path'):
                 vocab_path = os.path.join(self.main_window.base_path, "assets", "vocabulary.json")
             else:
                 vocab_path = os.path.join(os.path.dirname(__file__), "..", "..", "assets", "vocabulary.json")
                 vocab_path = os.path.normpath(vocab_path)
-            
+
             if not os.path.exists(vocab_path):
-                self._show_error("词汇文件加载失败")
-                return
-            
+                print(f"ERROR: Regular vocabulary file not found: {vocab_path}")
+                return []
+
             with open(vocab_path, "r", encoding="utf-8") as f:
-                self.all_words = json.load(f)
-            
-            self.all_words.sort(key=lambda x: x.get("word", "").lower())
-            self.display_words = self.all_words.copy()
-            self.total_pages = (len(self.display_words) + self.WORDS_PER_PAGE - 1) // self.WORDS_PER_PAGE
-            self.current_page = 0
-            
-            self._render_page()
-            
+                words = json.load(f)
+            words.sort(key=lambda x: x.get("word", "").lower())
+            print(f"✅ 常规词汇表加载成功，共 {len(words)} 词。")
+            return words
         except Exception as e:
-            self._show_error(f"加载失败: {str(e)}")
+            print(f"❌ 加载常规词汇表失败: {e}")
+            QtWidgets.QMessageBox.warning(self.main_window, "错误", f"加载常规词汇表失败: {e}\n请检查 assets/vocabulary.json 文件。")
+            return []
+
+    def _load_mistake_vocabulary_from_file(self):
+        """从文件加载错词表"""
+        try:
+            if hasattr(self.main_window, 'base_path'):
+                mistake_vocab_path = os.path.join(self.main_window.base_path, "assets", "mistake_words.json")
+            else:
+                mistake_vocab_path = os.path.join(os.path.dirname(__file__), "..", "..", "assets", "mistake_words.json")
+                mistake_vocab_path = os.path.normpath(mistake_vocab_path)
+
+            if os.path.exists(mistake_vocab_path):
+                with open(mistake_vocab_path, "r", encoding="utf-8") as f:
+                    mistake_words = json.load(f)
+                print(f"✅ 错词表加载成功，共 {len(mistake_words)} 词。")
+                if not mistake_words:
+                    print("💡 WordListView: 错词表文件存在但为空，已添加测试词汇。")
+                    self._add_test_mistake_words_if_empty(mistake_vocab_path)
+                    # 重新加载文件以获取新添加的测试词汇
+                    with open(mistake_vocab_path, "r", encoding="utf-8") as f:
+                        mistake_words = json.load(f)
+                return mistake_words
+            else:
+                print("💡 错词表文件不存在，返回空列表。")
+                print("💡 WordListView: 错词表文件不存在，已创建并添加测试词汇。")
+                self._add_test_mistake_words_if_empty(mistake_vocab_path)
+                # 重新加载文件以获取新添加的测试词汇
+                with open(mistake_vocab_path, "r", encoding="utf-8") as f: # Re-open to read the newly added test words
+                    mistake_words = json.load(f)
+                return mistake_words
+        except json.JSONDecodeError:
+            print(f"❌ WordListView: 错词表文件 {mistake_vocab_path} 格式错误，已重置并添加测试词汇。")
+            QtWidgets.QMessageBox.warning(self.main_window, "错误", f"错词表文件 {mistake_vocab_path} 格式错误，已重置。")
+            self._add_test_mistake_words_if_empty(mistake_vocab_path)
+            # 重新加载文件以获取新添加的测试词汇
+            with open(mistake_vocab_path, "r", encoding="utf-8") as f:
+                mistake_words = json.load(f)
+            return mistake_words
+        except Exception as e:
+            print(f"❌ 加载错词表失败: {e}")
+            QtWidgets.QMessageBox.warning(self.main_window, "错误", f"加载错词表失败: {e}\n请检查 assets/mistake_words.json 文件。")
+            print("💡 WordListView: 加载错词表失败，已尝试添加测试词汇。")
+            self._add_test_mistake_words_if_empty(mistake_vocab_path)
+            # 重新加载文件以获取新添加的测试词汇
+            with open(mistake_vocab_path, "r", encoding="utf-8") as f:
+                mistake_words = json.load(f)
+            return mistake_words
+
+    def _add_test_mistake_words_if_empty(self, file_path):
+        """
+        如果错词表为空，添加几个测试用的错词到错词表文件。
+        """
+        test_words = [
+            {"word": "test1", "content": "测试词汇1", "correct_count": 0},
+            {"word": "example", "content": "例子", "correct_count": 0},
+            {"word": "debug", "content": "调试", "correct_count": 0}
+        ]
+        with open(file_path, "w", encoding="utf-8") as f:
+            json.dump(test_words, f, ensure_ascii=False, indent=4)
+        print(f"✅ WordListView: 测试错词已保存到 {file_path}。")
+
+    def _do_load_vocabulary(self):
+        """执行词汇加载，同时加载常规词汇和错词表"""
+        self.all_regular_words = self._load_regular_vocabulary_from_file()
+        self.all_mistake_words = self._load_mistake_vocabulary_from_file()
+        
+        # 初始显示常规词汇
+        self._switch_list_type(self.current_list_type)
+
+    def _switch_list_type(self, list_type):
+        """切换显示的词汇列表类型"""
+        self.current_list_type = list_type
+        if list_type == "regular":
+            self.display_words = self.all_regular_words.copy()
+        elif list_type == "mistake":
+            self.display_words = self.all_mistake_words.copy()
+        
+        self.current_page = 0
+        self.total_pages = (len(self.display_words) + self.WORDS_PER_PAGE - 1) // self.WORDS_PER_PAGE if self.display_words else 1
+        
+        self._render_page()
+        self._update_list_type_buttons_style()
     
     def _show_loading(self):
         self._clear_list()
-        label = QtWidgets.QLabel("正在加载词汇表...")
+        label = QtWidgets.QLabel("正在加载词汇列表...")
         label.setAlignment(QtCore.Qt.AlignCenter)
         label.setFont(QtGui.QFont("Microsoft YaHei", 16))
         label.setStyleSheet("color: #999999; padding: 60px;")
@@ -351,6 +483,7 @@ class WordListView(QtWidgets.QWidget):
         label.setFont(QtGui.QFont("Microsoft YaHei", 14))
         label.setStyleSheet("color: #D32F2F; padding: 60px;")
         self.list_layout.addWidget(label)
+        self.list_layout.addStretch(1) # 添加弹性空间，将错误信息推到顶部
     
     def _clear_list(self):
         while self.list_layout.count():
@@ -372,7 +505,7 @@ class WordListView(QtWidgets.QWidget):
         self.page_label.setText(f"第 {self.current_page + 1} / {self.total_pages} 页")
         self.prev_btn.setEnabled(self.current_page > 0)
         self.next_btn.setEnabled(self.current_page < self.total_pages - 1)
-        
+
         # 表格容器
         table_widget = QtWidgets.QWidget()
         table_layout = QtWidgets.QHBoxLayout(table_widget)
@@ -380,9 +513,9 @@ class WordListView(QtWidgets.QWidget):
         table_layout.setSpacing(0)
         
         col_size = self.ROWS_PER_PAGE
-        col1 = self._create_column(page_words[0:col_size], start_idx)
-        col2 = self._create_column(page_words[col_size:col_size*2], start_idx + col_size)
-        col3 = self._create_column(page_words[col_size*2:col_size*3], start_idx + col_size * 2)
+        col1 = self._create_column(page_words[0:col_size], start_idx) # First column
+        col2 = self._create_column(page_words[col_size:col_size*2], start_idx + col_size) # Second column
+        col3 = self._create_column(page_words[col_size*2:col_size*3], start_idx + col_size * 2) # Third column
         
         table_layout.addWidget(col1, 1)
         table_layout.addWidget(col2, 1)
@@ -509,33 +642,45 @@ class WordListView(QtWidgets.QWidget):
         return row_frame
     
     def _handle_search(self):
+        """处理搜索功能"""
         query = self.search_input.text().strip().upper()
         
         if not query:
-            self.display_words = self.all_words.copy()
+            # 如果搜索框为空，则恢复当前列表类型的完整词汇
+            if self.current_list_type == "regular":
+                self.display_words = self.all_regular_words.copy()
+            else: # mistake
+                self.display_words = self.all_mistake_words.copy()
+
             self.current_page = 0
             self.total_pages = (len(self.display_words) + self.WORDS_PER_PAGE - 1) // self.WORDS_PER_PAGE
             self._render_page()
             return
         
+        # 搜索始终在当前活动的完整词汇列表（all_regular_words 或 all_mistake_words）中进行
+        source_list = self.all_regular_words if self.current_list_type == "regular" else self.all_mistake_words
+        
         if len(query) == 1 and query.isalpha():
-            self._jump_to_letter(query)
+            self._jump_to_letter(query, source_list)
         else:
-            self._search_words(query.lower())
-    
-    def _jump_to_letter(self, letter):
-        for i, word in enumerate(self.all_words):
+            self._search_words(query.lower(), source_list)
+
+    def _jump_to_letter(self, letter, source_list):
+        """跳转到以指定字母开头的单词"""
+        for i, word in enumerate(source_list):
             if word.get("word", "").upper().startswith(letter):
-                self.display_words = self.all_words.copy()
+                self.display_words = source_list.copy() # 确保显示的是完整列表，只是跳转页码
                 self.current_page = i // self.WORDS_PER_PAGE
                 self.total_pages = (len(self.display_words) + self.WORDS_PER_PAGE - 1) // self.WORDS_PER_PAGE
                 self._render_page()
                 return
-        QtWidgets.QMessageBox.information(self, "提示", f"没有找到以 '{letter}' 开头的单词")
+        # 如果没有找到以指定字母开头的单词，则清空显示列表，并重新渲染页面以显示错误信息
+        self.display_words = []
+        self._render_page()
     
-    def _search_words(self, query):
+    def _search_words(self, query, source_list):
         filtered = [
-            word for word in self.all_words
+            word for word in source_list
             if query in word.get("word", "").lower() or query in word.get("content", "").lower()
         ]
         self.display_words = filtered
@@ -572,6 +717,7 @@ class WordListView(QtWidgets.QWidget):
         self.is_shuffled = True
         self.current_page = 0
         self._render_page()
+        self._update_list_type_buttons_style() # 乱序后更新按钮样式
     
     def _sort_words(self):
         if not self.display_words:
@@ -579,7 +725,20 @@ class WordListView(QtWidgets.QWidget):
         self.display_words.sort(key=lambda x: x.get("word", "").lower())
         self.is_shuffled = False
         self.current_page = 0
-        self._render_page()
+        self._render_page() # 排序后更新按钮样式
+        self._update_list_type_buttons_style()
+
+    def _update_list_type_buttons_style(self):
+        """更新常规词汇和错词表按钮的样式"""
+        active_style = "background-color: #007bff; color: white; border: none; border-radius: 2px; font-size: 12px; font-weight: bold; padding: 0 12px;"
+        inactive_style = "background-color: #e0e0e0; color: #555555; border: 1px solid #BDBDBD; border-radius: 2px; font-size: 12px; font-weight: bold; padding: 0 12px;"
+
+        if self.btn_regular_words:
+            self.btn_regular_words.setStyleSheet(active_style if self.current_list_type == "regular" else inactive_style) # Apply style
+            self.btn_regular_words.setChecked(self.current_list_type == "regular") # Set checked state
+        if self.btn_mistake_words:
+            self.btn_mistake_words.setStyleSheet(active_style if self.current_list_type == "mistake" else inactive_style) # Apply style
+            self.btn_mistake_words.setChecked(self.current_list_type == "mistake") # Set checked state
     
     def _prev_page(self):
         if self.current_page > 0:
@@ -604,3 +763,127 @@ class WordListView(QtWidgets.QWidget):
             self._render_page()
         else:
             super().keyPressEvent(event)
+
+    def _print_current_page(self):
+        """打印当前页的词汇。"""
+        if not self.display_words: # If no words to display at all
+            QtWidgets.QMessageBox.information(self, "提示", "没有词汇可供打印。")
+            return
+        
+        start_idx = self.current_page * self.WORDS_PER_PAGE
+        end_idx = min(start_idx + self.WORDS_PER_PAGE, len(self.display_words))
+        page_words = self.display_words[start_idx:end_idx]
+        
+        if not page_words: # If current page is empty
+            QtWidgets.QMessageBox.information(self, "提示", "当前页没有词汇可供打印。")
+            return
+        
+        self._perform_print(page_words, "当前页词汇列表")
+
+    def _print_all_words(self):
+        """打印所有词汇。"""
+        if not self.display_words:
+            QtWidgets.QMessageBox.information(self, "提示", "没有词汇可供打印。")
+            return
+        self._perform_print(self.display_words, "所有词汇列表")
+
+    def _perform_print(self, words_to_print, title="词汇列表"):
+        """执行实际的打印操作。"""
+        if not words_to_print:
+            QtWidgets.QMessageBox.information(self, "提示", "没有词汇可供打印。")
+            return
+
+        printer = QPrinter(QPrinter.HighResolution) # Corrected: QPrinter is from QtPrintSupport
+        print_dialog = QPrintDialog(printer, self)
+        if print_dialog.exec() == QtWidgets.QDialog.Accepted:
+            print("DEBUG: _trigger_print executed - print dialog accepted.")
+            document = QtGui.QTextDocument() # Create a new document for each print job
+            html_content = self._generate_print_html(words_to_print, title)
+            document.setHtml(html_content) # Set the HTML content
+            document.print(printer)
+            QtWidgets.QMessageBox.information(self, "打印", "词汇列表已发送到打印机。")
+
+    def _generate_word_doc(self, data, mode, description):
+        """
+        根据选择的模式生成Word文档，并弹出保存对话框让用户选择保存路径。
+        """
+        # 局部导入，避免循环依赖
+        from word_document_generator import generate_word_table
+        
+        if not data:
+            QtWidgets.QMessageBox.warning(self.main_window, "导出失败", f"没有 {description} 的数据可供导出。")
+            return
+        
+        # 构造默认文件名
+        current_date = datetime.now().strftime("%Y%m%d")
+        # 清理描述，使其适合作为文件名（移除特殊字符，替换空格为下划线）
+        cleaned_description = re.sub(r'[^\w\s]', '', description).replace(' ', '_')
+        file_name = f"HSE_Vocabulary_{cleaned_description}_{current_date}.docx"
+        desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
+        default_save_path = os.path.join(desktop_path, file_name)
+
+        # 弹出文件保存对话框
+        file_filter = "Word Documents (*.docx)"
+        save_path, _ = QtWidgets.QFileDialog.getSaveFileName(self, "保存单词表", default_save_path, file_filter)
+
+        if save_path: # 如果用户选择了路径并点击了保存
+            try:
+                generate_word_table(data, save_path, mode=mode)
+                QtWidgets.QMessageBox.information(self.main_window, "导出成功", f"'{description}' 已成功导出到：{save_path}")
+            except Exception as e:
+                QtWidgets.QMessageBox.critical(self.main_window, "导出错误", f"导出 '{description}' 时发生错误: {e}")
+        else:
+            print("导出操作已取消。")
+
+
+    def _generate_print_html(self, words_to_print, title):
+        """
+        生成用于打印的HTML内容。
+        """
+        html = """
+        <html>
+        <head>
+            <style>
+                body { font-family: "Microsoft YaHei", "Arial", sans-serif; margin: 20mm; font-size: 10pt; }
+                h1 { text-align: center; color: #333; font-size: 16pt; }
+                table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                .word { font-weight: bold; color: #1a1a1a; }
+                .content { color: #444444; }
+                .index { color: #666666; font-size: 0.9em; }
+            </style>
+        </head>
+        <body>
+            <h1>核心词汇列表</h1>
+            <h2 style="text-align: center; color: #555; font-size: 12pt;">%s</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 10%;">序号</th>
+                        <th style="width: 35%;">英文</th>
+                        <th style="width: 55%;">中文释义</th>
+                    </tr>
+                </thead>
+                <tbody>
+        """ % title
+        
+        for i, word_data in enumerate(words_to_print):
+            word_text = word_data.get("word", "")
+            content_text = word_data.get("content", "")
+            
+            html += f"""
+                    <tr>
+                        <td class="index">{i + 1}</td>
+                        <td class="word">{word_text}</td>
+                        <td class="content">{content_text}</td>
+                    </tr>
+            """
+        
+        html += """
+                </tbody>
+            </table>
+        </body>
+        </html>
+        """
+        return html

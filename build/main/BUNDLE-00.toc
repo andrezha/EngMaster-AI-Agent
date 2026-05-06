@@ -1,0 +1,3 @@
+([('main',
+   '/Users/andrezhao/AI_PJ/HighSchoolEnglishAI/dist/main',
+   'EXECUTABLE')],)

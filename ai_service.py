@@ -4,15 +4,24 @@ import os
 from PySide6.QtCore import QThread, Signal as pyqtSignal # PySide6 uses Signal instead of pyqtSignal
 
 class AIWorker(QThread):
+    """
+    AIWorker 是一个 QThread 子类，用于在后台线程中调用 Ollama API 进行AI解析。
+    """
     result_ready = pyqtSignal(str) # PySide6 Signal
     error_occurred = pyqtSignal(str) # PySide6 Signal
 
     def __init__(self, question_type, question_text):
+        """
+        初始化 AIWorker。
+        """
         super().__init__()
         self.question_type = question_type
         self.question_text = question_text
 
     def load_prompt(self):
+        """
+        从 prompts.json 文件中加载对应题型的 AI 提示词。
+        """
         config_path = "prompts.json"
         # 获取当前文件所在的绝对路径，防止找不到文件
         base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -33,6 +42,9 @@ class AIWorker(QThread):
             return "请分析以下题目："
 
     def run(self):
+        """
+        线程运行函数，执行 Ollama API 调用并发出结果或错误信号。
+        """
         try:
             instruction = self.load_prompt()
             

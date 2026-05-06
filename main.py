@@ -1,10 +1,9 @@
 import sys
 import os
-import re
+import re # Import the 're' module for regular expressions
 import time
 import PySide6
-
-# ============ [1. 环境初始化：必须最先执行] ============
+import random # Import random for shuffling files
 # 修复 PySide6 打包后找不到插件的问题
 pyside6_dir = os.path.dirname(PySide6.__file__)
 os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = os.path.join(pyside6_dir, 'plugins', 'platforms')
@@ -23,7 +22,6 @@ for p in [lib_path, base_path]:
     if p not in sys.path:
         sys.path.insert(0, p)
 
-# ============ [3. 模块导入] ============
 from PySide6 import QtWidgets, QtCore, QtGui
 from PySide6.QtWidgets import (QApplication, QMainWindow, QMessageBox, QPushButton, 
                              QStackedWidget, QVBoxLayout, QWidget, QLineEdit)
@@ -33,21 +31,44 @@ try:
     from vocab_module import VocabManager
     from word_list_view import WordListView 
     from run_flull_exam import HSEExamSystem
+    # Import specific parsers for full exam, including the robust reading comprehension parser
+    from parsers.full_exam_specific_parsers import _parse_grammar_items_full_exam, _parse_seven_five_items_full_exam, _parse_cloze_items_full_exam, _parse_reading_items_full_exam_robust
     from exam_module import ExamManager 
+    from utils import _normalize_full_width_to_half_width # Import from utils
 except ImportError as e:
-    print(f"❌ 业务模块加载偏差: {e}")
+    # This block catches errors during the initial module imports
+    # If WordListView is not defined, it means its module failed to load.
+    print(f"❌ 模块导入失败: {e}. 请检查相关模块文件是否存在或有语法错误。")
+    raise # Re-raise the exception to stop execution if a critical module cannot be loaded
 
 # ==========================================
 # 1. 独立解析器 (专门负责整卷 TXT 格式转换)
 # ==========================================
+
 def _internal_full_exam_parser(text):
-    import re
+    """
+    解析整个高考模拟卷 TXT 文件，将其分割成多个板块，并为每个板块提取题目和解析。
+    """
     print("\n" + "="*50)
     print("🚀 [DEBUG] 解析器已启动...")
     
     sections = re.split(r'\[\[SECTION:\s*(.*?)\]\]', text)
     data_list = []
     
+    # Extract the global ANALYSIS section first, from the entire text
+    # Use find instead of re.search for potentially more robust tag detection
+    analysis_tag_start = text.lower().find('[analysis]')
+    global_analysis_text = ""
+    if analysis_tag_start != -1:
+        global_analysis_text = text[analysis_tag_start + len('[analysis]'):].strip()
+        if global_analysis_text:
+            global_analysis_text = _normalize_full_width_to_half_width(global_analysis_text)
+            print(f"   DEBUG: Global analysis text (first 200 chars): {global_analysis_text[:200]}...")
+            print(f"   ✅ 全局 [ANALYSIS] 标签已发现，长度: {len(global_analysis_text)} 字")
+        else:
+            print(f"   ⚠️ 全局 [ANALYSIS] 标签找到，但内容为空。")
+    else:
+        print(f"   ⚠️ 未能发现全局 [ANALYSIS] 标签。")
     NAME_MAP = {
         "READING_PASSAGE_A": "阅读理解 A", "READING_PASSAGE_B": "阅读理解 B",
         "READING_PASSAGE_C": "阅读理解 C", "READING_PASSAGE_D": "阅读理解 D",
@@ -65,137 +86,84 @@ def _internal_full_exam_parser(text):
         print(f"\n📂 正在解析板块: {sec_name}")
 
         # --- 第一步：切割原文 ---
-        p_split = re.split(r'[\[【]\s*QUESTIONS\s*[\]】]', sec_body, flags=re.I)
-        passage = p_split[0].strip()
-        print(f"   📝 原文长度: {len(passage)} 字")
-        
-        q_text = ""
-        original_analysis = ""
-        
-        # --- Step 1: Split by [QUESTIONS] to get passage and raw_questions_and_analysis ---
-        questions_tag_match = re.search(r'[\[【]\s*QUESTIONS\s*[\]】]', sec_body, flags=re.I)
-        if not questions_tag_match:
+        # Use find instead of re.search for [QUESTIONS] for robustness
+        questions_tag_start = sec_body.lower().find('[questions]')
+        if questions_tag_start == -1:
             print(f"   ❌ [错误] 未能发现 [QUESTIONS] 标签在板块 {sec_name}。跳过此板块。")
             continue # Skip this section if no questions tag
 
-        passage = sec_body[:questions_tag_match.start()].strip()
-        raw_questions_and_analysis = sec_body[questions_tag_match.end():].strip()
-
-        # --- Step 2: Split raw_questions_and_analysis by [ANALYSIS] to get q_text and original_analysis ---
-        analysis_tag_match = re.search(r'[\[【]\s*ANALYSIS\s*[\]】]', raw_questions_and_analysis, flags=re.I | re.S)
-        if analysis_tag_match:
-            q_text = raw_questions_and_analysis[:analysis_tag_match.start()].strip()
-            original_analysis = raw_questions_and_analysis[analysis_tag_match.end():].strip()
-            print(f"   ✅ 发现 [ANALYSIS] 标签，已提取解析内容。")
-        else:
-            q_text = raw_questions_and_analysis.strip()
-            print(f"   ⚠️ 未能发现 [ANALYSIS] 标签，题目内容可能包含解析。")
-
+        passage = sec_body[:questions_tag_start].strip()
+        q_text = sec_body[questions_tag_start + len('[questions]'):].strip()
+        
+        # Normalize q_text immediately
+        print(f"   DEBUG: q_text BEFORE normalization (first 200 chars): {q_text[:200]}...")
+        q_text = _normalize_full_width_to_half_width(q_text)
+        print(f"   DEBUG: q_text AFTER normalization (first 200 chars): {q_text[:200]}...")
+        # Print debug info for passage and q_text
         print(f"   📝 原文长度: {len(passage)} 字")
-        print(f"   DEBUG: 提取的 q_text (前200字):\n{q_text[:200]}...")
+        print(f"   ❓ 题目文本长度: {len(q_text)} 字")
+        print(f"   DEBUG: Raw q_text (repr, full): {repr(q_text)}") # Print full q_text with repr
 
-        items = []
-        seven_five_global_options = [] # This will store the A-G options for seven_five, initialized once
+        # The original_analysis for each section is now the global_analysis_text
+        print(f"   DEBUG: global_analysis_text (first 200 chars): {global_analysis_text[:200]}...")
+        
+        parsed_items = [] # Temporary list to hold items returned by specific parsers
+        current_question_type = TYPE_MAP.get(sec_name, "reading")
 
-        # --- Special handling for Seven-Five ---
-        if TYPE_MAP.get(sec_name, "reading") == "seven_five":
-            # For seven_five, q_text contains blank numbers (e.g., 36-40) followed by A-G options.
-            # We need to extract these A-G options from q_text.
-            
-            # Find the last question number in the sequence (e.g., 40)
-            # This regex looks for a number followed by a dot or parenthesis, at the start of a line
-            last_qid_in_qtext_match = re.findall(r'^\s*(\d+)\s*[\.\)]', q_text, re.MULTILINE)
-            last_qid_num = 0
-            if last_qid_in_qtext_match:
-                last_qid_num = int(last_qid_in_qtext_match[-1]) # Get the last number found
+        # Directly call the specific item parser for each question type
+        if current_question_type == "grammar":
+            # For grammar, q_text contains the questions like "56. (origin)"
+            parsed_items = _parse_grammar_items_full_exam(q_text, global_analysis_text)
+        elif current_question_type == "seven_five":
+            # For seven_five, q_text contains the blanks and options, passage is the main text
+            parsed_items = _parse_seven_five_items_full_exam(q_text, global_analysis_text, passage)
+        elif current_question_type == "cloze":
+            # For cloze, q_text contains the options for each blank
+            parsed_items = _parse_cloze_items_full_exam(q_text, global_analysis_text)
+        elif current_question_type == "reading": # Use the robust parser for reading comprehension
+            # For reading, q_text contains the questions and options, use the robust parser
+            parsed_items = _parse_reading_items_full_exam_robust(q_text, global_analysis_text)
+        else:
+            print(f"   ⚠️ 未知题型: {current_question_type}。跳过题目解析。")
+            parsed_items = [] # Ensure parsed_items is a list even if type is unknown
+        print(f"   DEBUG: Parsed items returned by {current_question_type} parser (first 3 items): {parsed_items[:3]}")
 
-            options_content_for_seven_five = ""
-            # Find the start of the A-G options after the last question number
-            # This regex looks for 'A.' at the beginning of a line, after the last qid
-            options_start_pattern = r'(?:\n|^)\s*A\.\s*'
-            options_start_match = re.search(options_start_pattern, q_text)
+        # --- 第二步：对解析器返回的 items 进行健壮性检查和清理 ---
+        items = [] # Final cleaned list of items
+        if not isinstance(parsed_items, list):
+            print(f"   ⚠️ 解析器 {current_question_type} 返回了非列表类型数据。将其视为空列表。")
+        else:
+            for item_dict in parsed_items:
+                if not isinstance(item_dict, dict):
+                    print(f"   ⚠️ 解析器 {current_question_type} 返回的列表中包含非字典类型元素。跳过。")
+                    continue
+                # Convert any None values to empty strings, but preserve complex types like 'options'
+                cleaned_item_dict = {}
+                for k, v in item_dict.items():
+                    if v is None:
+                        cleaned_item_dict[k] = ""
+                    elif k == 'options': # Preserve the original type for 'options' (dict or list)
+                        cleaned_item_dict[k] = v
+                    else:
+                        cleaned_item_dict[k] = str(v) # Explicitly convert to string
+                items.append(cleaned_item_dict)
 
-            if options_start_match:
-                options_content_for_seven_five = q_text[options_start_match.start():].strip()
-            else:
-                # Fallback: if 'A.' not found, assume all content after last qid is options
-                if last_qid_num > 0:
-                    # Find the position after the last qid in q_text
-                    pos_after_last_qid = q_text.rfind(str(last_qid_num)) + len(str(last_qid_num))
-                    options_content_for_seven_five = q_text[pos_after_last_qid:].strip()
-                else:
-                    options_content_for_seven_five = q_text.strip() # If no qids found, assume whole q_text is options
+        # 确保所有题目的 q_id 都被规范化为纯半角数字字符串
+        normalized_items = []
+        for item in items:
+            normalized_q_id_str = _normalize_full_width_to_half_width(item.get('q_id', '')) # Ensure it's a string before passing
+            item['q_id'] = re.sub(r'\D', '', normalized_q_id_str) # Remove all non-digit characters
+            normalized_items.append(item)
+        items = normalized_items
 
-            # Parse A-G options from the extracted content
-            option_matches = re.findall(r'([A-G])\.\s*(.*?)(?=\s*[A-G]\.|$|\n)', options_content_for_seven_five, re.S)
-            for label, content in option_matches:
-                seven_five_global_options.append({"label": label, "content": content.strip()})
-            
-            print(f"   ✅ 提取七选五全局选项: {len(seven_five_global_options)} 个. 示例: {seven_five_global_options[:2]}")
-            if not seven_five_global_options:
-                print("   ❌ 警告: 七选五全局选项列表为空，请检查 [QUESTIONS] 标签后的格式。")
-
-            # Generate items for blanks 36-40 (or whatever range is implied)
-            # For seven_five, the q_ids are usually explicitly marked in the passage or q_text.
-            # Let's try to extract them from the q_text if they are present as numbers.
-            # If not, we fall back to the assumed 36-40 range.
-            
-            # First, try to find explicit question numbers in q_text for seven_five
-            seven_five_qids_in_text = re.findall(r'(\d+)\s*[\.\)]', q_text)
-            unique_qids = sorted(list(set(seven_five_qids_in_text)), key=int)
-            
-            if not unique_qids:
-                # Fallback to assumed range if no explicit q_ids found in q_text
-                print("   ⚠️ 未在七选五题目文本中找到明确题号，假定题号为 36-40。")
-                unique_qids = [str(i) for i in range(36, 41)]
-
-            for q_id_str in unique_qids:
-                items.append({
-                    "q_id": q_id_str,
-                    "content": f"请选择第 {q_id_str} 题的答案", # Content for the blank
-                    "options": seven_five_global_options # Assign the parsed global options
-                })
-        else: # 对于阅读理解、完形填空、语法填空，从 q_text 中解析题目
-            # Find all question blocks. A question block starts with a number (e.g., 21.)
-            # and captures everything until the next question number or the end of the text.
-            question_blocks_matches = re.finditer(r'(\d+)\s*[\.\)]\s*(.*?)(?=\n*\d+\s*[\.\)]\s*|\Z)', q_text, re.DOTALL)
-            
-            for match in question_blocks_matches:
-                q_id = match.group(1).strip()
-                block_content = match.group(2).strip()
-                
-                question_stem = ""
-                question_options = {}
-                
-                options_pattern = r'([A-G])\s*[\.\)]\s*(.*?)(?=\n*[A-G]\s*[\.\)]\s*|\Z)' # Changed [A-D] to [A-G] for more flexibility
-                options_found = list(re.finditer(options_pattern, block_content, re.DOTALL))
-                
-                if options_found:
-                    first_option_start_pos = options_found[0].start()
-                    question_stem = block_content[:first_option_start_pos].strip()
-                    
-                    for opt_match in options_found:
-                        label = opt_match.group(1).upper()
-                        content = opt_match.group(2).strip()
-                        question_options[label] = content
-                else:
-                    question_stem = block_content
-                
-                items.append({
-                    "q_id": q_id,
-                    "content": question_stem,
-                    "options": question_options
-                })
-
-
-        print(f"   📊 成功提取题目数量: {len(items)}")
+        print(f"   📊 成功提取题目数量: {len(items)} (由 {current_question_type} 解析器处理)")
 
         data_list.append({
             "category": NAME_MAP.get(sec_name, sec_name),
-            "question_type": TYPE_MAP.get(sec_name, "reading"),
+            "question_type": current_question_type,
             "passage": passage, 
             "items": items,
-            "original_analysis": original_analysis # 存储解析内容
+            "original_analysis": global_analysis_text # Store the global analysis for ResultPage
         })
         
     print(f"✅ [DEBUG] 解析器完成，共解析出 {len(data_list)} 个板块。")
@@ -206,6 +174,9 @@ def _internal_full_exam_parser(text):
 # 2. 主程序类
 # ==========================================
 class HighSchoolEnglishAI(QMainWindow):
+    """
+    主应用程序窗口，负责管理各个功能模块的切换和整体UI布局。
+    """
     def __init__(self):
         super().__init__() 
         self.setWindowTitle("HSE-AI 英语智胜工作站")
@@ -224,22 +195,42 @@ class HighSchoolEnglishAI(QMainWindow):
         self.btn_nav_gaokao = self.ui_root.findChild(QPushButton, "btn_nav_gaokao")
         self.btn_nav_full_exam = self.ui_root.findChild(QPushButton, "btn_nav_full_exam")
 
+        # Initialize attributes to None to prevent AttributeError if initialization fails
+        self.vocab_ctrl = None
+        self.word_list_widget = None
+        self.word_list_index = -1 # Use -1 as an invalid index
+        self.exam_ctrl = None
         self._setup_gaokao_page(res_dir, loader)
         
         try:
+            # Ensure vocab_ctrl is initialized first as it uses self.stack.widget(0)
             self.vocab_ctrl = VocabManager(self)
-            self.word_list_widget = WordListView(self)
-            self.stack.addWidget(self.word_list_widget)
-            self.word_list_index = self.stack.indexOf(self.word_list_widget)
-            self.exam_ctrl = ExamManager(self) 
+            # WordListView should be added to the stack *after* VocabManager has identified its page
+            self.word_list_widget = WordListView(self) # Attempt to create WordListView instance
+            if self.word_list_widget: # Only add if successfully created
+                self.stack.addWidget(self.word_list_widget)
+                self.word_list_index = self.stack.indexOf(self.word_list_widget)
+                # Connect the signal from VocabManager to WordListView's refresh method
+                self.vocab_ctrl.mistake_vocabulary_changed.connect(self.word_list_widget.refresh_mistake_list)
+            self.exam_ctrl = ExamManager(self)
         except Exception as e:
-            print(f"⚠️ 业务模块异常: {e}")
+            print(f"⚠️ 业务模块初始化异常: {e}")
 
         self._apply_sidebar_style()
         self._bind_nav_events()
         self.stack.setCurrentIndex(0)
+        
+        # Connect to the QStackedWidget's currentChanged signal to manage vocab timer
+        self.stack.currentChanged.connect(self._handle_stack_page_changed)
+        
+        # Initialize attributes for full exam management
+        self.full_exam_files = []
+        self.full_exam_file_index = 0
 
     def _setup_gaokao_page(self, res_dir, loader):
+        """
+        设置高考专项练习页面，包括加载UI和绑定题型选择按钮。
+        """
         gk_ui_path = os.path.join(res_dir, "page_gaokao.ui")
         self.page_gaokao_widget = loader.load(gk_ui_path)
         if self.page_gaokao_widget:
@@ -257,30 +248,99 @@ class HighSchoolEnglishAI(QMainWindow):
             self.gk_idx = self.stack.indexOf(self.page_gaokao_widget)
 
     def _bind_nav_events(self):
+        """
+        绑定侧边栏导航按钮的点击事件。
+        """
         self.btn_nav_vocab.clicked.connect(lambda: self.stack.setCurrentIndex(0))
-        self.btn_nav_core_vocab.clicked.connect(lambda: self.stack.setCurrentIndex(self.word_list_index))
+        self.btn_nav_core_vocab.clicked.connect(self._show_word_list_page) # Connect to a new method for debugging
         self.btn_nav_gaokao.clicked.connect(self.show_gaokao_page)
         self.btn_nav_full_exam.clicked.connect(self.switch_to_full_exam)
-        
+
+    def _handle_stack_page_changed(self, index):
+        """
+        Handles changes in the QStackedWidget's current page.
+        Manages the VocabManager's timer based on page visibility.
+        """
+        vocab_page_index = 0 # Assuming vocabulary challenge page is always at index 0
+
+        if self.vocab_ctrl:
+            if index == vocab_page_index:
+                # Vocabulary page is now active
+                print("DEBUG: Vocab page activated.")
+                if self.vocab_ctrl.current_challenge_mode is None:
+                    self.vocab_ctrl._display_mode_selection_prompt() # Show prompt if no mode selected yet
+                else:
+                    self.vocab_ctrl.show_next() # Refresh the word (timer is removed)
+            else:
+                # Another page is active, stop the vocabulary timer
+                # if self.vocab_ctrl.timer.isActive(): # 注释掉：不再需要倒计时
+                #     print("DEBUG: Vocab page deactivated. Stopping timer.") # 注释掉：不再需要倒计时
+                #     self.vocab_ctrl.timer.stop() # 注释掉：不再需要倒计时    
+                pass # Add pass to complete the else block
+
+    def _show_word_list_page(self):
+        """
+        Helper to show the word list page and debug its index.
+        """
+        if self.word_list_index != -1:
+            print(f"DEBUG: Attempting to set stack index to word_list_index: {self.word_list_index}")
+            self.stack.setCurrentIndex(self.word_list_index)
+        else:
+            print("ERROR: word_list_index is -1. WordListView might not have been initialized or added correctly.")
+            QMessageBox.warning(self, "错误", "核心词汇表页面未加载成功，请检查控制台输出。")
+
     def load_special_practice(self, folder_name):
+        """
+        加载指定题型的专项练习。
+        """
         self.stack.setCurrentIndex(self.gk_idx)
         if self.exam_ctrl:
             self.exam_ctrl.switch_topic(folder_name)
 
     def switch_to_full_exam(self):
         """高考整卷：适配 QWidget 版本，解决 centralWidget 报错"""
-        target_file = os.path.join(self.base_path, "data", "真题试卷", "高考模拟卷_2026.txt")
+        full_exam_dir = os.path.join(self.base_path, "data", "真题试卷")
         
-        if not os.path.exists(target_file):
-            QMessageBox.warning(self, "提示", f"找不到文件: {target_file}")
+        if not os.path.exists(full_exam_dir):
+            QMessageBox.warning(self, "提示", f"找不到真题试卷目录: {full_exam_dir}")
             return
 
         try:
-            with open(target_file, 'r', encoding='utf-8') as f:
+            # Get all .txt files in the directory
+            available_files = [f for f in os.listdir(full_exam_dir) if f.endswith(".txt")]
+
+            if not available_files:
+                QMessageBox.warning(self, "提示", f"真题试卷目录中没有找到任何 .txt 文件: {full_exam_dir}")
+                return
+
+            # If all files have been used, or it's the first time, re-shuffle the list
+            if not self.full_exam_files or self.full_exam_file_index >= len(self.full_exam_files) or self.full_exam_file_index == -1:
+                random.shuffle(available_files)
+                self.full_exam_files = available_files
+                self.full_exam_file_index = 0
+                print(f"DEBUG: Full exam files re-shuffled. New order: {self.full_exam_files}")
+
+            target_file_name = self.full_exam_files[self.full_exam_file_index]
+            target_file_path = os.path.join(full_exam_dir, target_file_name)
+            self.full_exam_file_index += 1 # Increment index for the next call
+            
+            print(f"DEBUG: Loading full exam file: {target_file_path}")
+
+            with open(target_file_path, 'r', encoding='utf-8') as f:
                 content = f.read()
+            
+            if not content.strip(): # Add check for empty content
+                QMessageBox.warning(self, "提示", f"文件 {target_file_name} 内容为空，请检查。")
+                self.full_exam_file_index = -1 # Reset index to re-shuffle
+                return
             
             # 1. 解析数据
             data_list = _internal_full_exam_parser(content)
+            
+            if not data_list: # Add check for empty data_list
+                QMessageBox.warning(self, "提示", f"文件 {target_file_name} 未能解析出任何题目板块，请检查文件格式。")
+                self.full_exam_file_index = -1 # Reset index to re-shuffle
+                return
             
             # 2. 实例化 UI，直接传入解析好的 data_list
             # from old.exam_system import HSEExamSystem # 移除局部导入，使用文件顶部的导入
@@ -292,16 +352,25 @@ class HighSchoolEnglishAI(QMainWindow):
             # 4. 挂载 (直接 addWidget，不加 centralWidget)
             new_idx = self.stack.addWidget(self.full_exam_view)
             self.stack.setCurrentIndex(new_idx)
+            # self.full_exam_view._start_exam() # 移除此行，以便显示“开始考试”按钮
             
         except Exception as e:
+            # If loading fails, reset the index to retry or re-shuffle next time
+            self.full_exam_file_index = -1
             QMessageBox.critical(self, "错误", f"试卷加载失败: {e}")
 
     def show_gaokao_page(self):
+        """
+        显示高考专项练习页面，并更新导航高亮。
+        """
         self.stack.setCurrentIndex(self.gk_idx)
         if self.exam_ctrl: 
             self.exam_ctrl.update_nav_highlight()
 
     def _apply_sidebar_style(self):
+        """
+        应用侧边栏导航按钮的统一样式。
+        """
         qss = "QPushButton { min-height: 55px; border-radius: 12px; text-align: left; padding-left: 20px; font-weight: bold; }"
         btns = [self.btn_nav_vocab, self.btn_nav_core_vocab, self.btn_nav_gaokao, self.btn_nav_full_exam]
         self.sidebar_group = QtWidgets.QButtonGroup(self)
