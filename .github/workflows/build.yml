@@ -1,4 +1,5 @@
-name: Build-EXE
+name: Build Windows EXE
+
 on:
   workflow_dispatch:
   push:
@@ -7,11 +8,12 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+
     steps:
-    - name: Checkout
+    - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Python
+    - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.9'
@@ -21,10 +23,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install PySide6 pyinstaller
 
-    - name: Run-Build
+    - name: Build EXE
       run: |
-       python -m PyInstaller --onefile --windowed --clean --add-data "resources;resources" --add-data "lib;lib" --add-data "data;data" --add-data "assets;assets" main.py
-    - name: Upload
+        python -m PyInstaller --onefile --windowed --clean --add-data "resources;resources" --add-data "lib;lib" --add-data "data;data" --add-data "assets;assets" main.py
+
+    - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
         name: My-Windows-Program
