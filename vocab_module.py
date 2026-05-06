@@ -1,7 +1,8 @@
 import json
 import random
 import os
-from PySide6 import QtCore, QtWidgets
+from PySide6 import QtCore, QtWidgets, QtGui # Import QtGui for QMenu
+from datetime import datetime # Import datetime for filename generation
 from PySide6.QtCore import Signal, QObject # Import Signal and QObject
 from PySide6.QtWidgets import QMessageBox # Explicitly import QMessageBox
 from PySide6.QtGui import QDesktopServices # For opening file
@@ -38,24 +39,29 @@ class VocabManager(QObject): # 继承自 QObject
             self.btn_challenge_regular = QtWidgets.QPushButton("常规闯关")
             self.btn_challenge_regular.setObjectName("btn_challenge_regular")
             self.btn_challenge_regular.setCheckable(True) # 使按钮可选中
+            print("DEBUG: btn_challenge_regular created dynamically.")
         
         self.btn_challenge_mistake = self.vocab_page_widget.findChild(QtWidgets.QPushButton, "btn_challenge_mistake") # 查找现有按钮
         if not self.btn_challenge_mistake: # 如果没找到，则创建
             self.btn_challenge_mistake = QtWidgets.QPushButton("错词闯关")
             self.btn_challenge_mistake.setObjectName("btn_challenge_mistake")
             self.btn_challenge_mistake.setCheckable(True) # 使按钮可选中
+            print("DEBUG: btn_challenge_mistake created dynamically.")
 
-        # 确保 btn_print_vocab 被正确初始化
+        # 确保 btn_print_vocab 被正确初始化 (恢复为 QPushButton)
         self.btn_print_vocab = self.vocab_page_widget.findChild(QtWidgets.QPushButton, "btn_print_vocab")
         if not self.btn_print_vocab:
             self.btn_print_vocab = QtWidgets.QPushButton("输出Word打印单词表") # User requested this name
             self.btn_print_vocab.setObjectName("btn_print_vocab")
+            print("DEBUG: btn_print_vocab created dynamically.")
         self.btn_print_vocab.setText("输出Word打印单词表") # Ensure text is set regardless of whether it was found or created
+        print(f"DEBUG: btn_print_vocab text set to: '{self.btn_print_vocab.text()}'")
 
         self.lbl_mistake_count = self.vocab_page_widget.findChild(QtWidgets.QLabel, "lbl_mistake_count") # 查找现有标签
         if not self.lbl_mistake_count: # 如果没找到，则创建
             self.lbl_mistake_count = QtWidgets.QLabel("错词表 (0 词)")
             self.lbl_mistake_count.setObjectName("lbl_mistake_count")
+            print("DEBUG: lbl_mistake_count created dynamically.")
 
         # 初始化词汇表相关属性
         self.vocabulary = [] # 常规词汇
@@ -77,7 +83,7 @@ class VocabManager(QObject): # 继承自 QObject
         # 绑定闯关模式选择按钮
         if self.btn_challenge_regular:
             self.btn_challenge_regular.clicked.connect(lambda: self.switch_challenge_mode("regular"))
-        if self.btn_print_vocab: # Connect the print button
+        if self.btn_print_vocab: # Connect the print button to the export dialog
             self.btn_print_vocab.clicked.connect(self._show_export_dialog)
         if self.btn_challenge_mistake:
             self.btn_challenge_mistake.clicked.connect(lambda: self.switch_challenge_mode("mistake_list"))
@@ -271,19 +277,53 @@ class VocabManager(QObject): # 继承自 QObject
         if self.btn_print_vocab:
             self.btn_print_vocab.setFixedHeight(42)
             self.btn_print_vocab.setStyleSheet("""
-                QPushButton {
-                    background-color: #28a745; /* Green color */
-                    color: white;
+                QPushButton#btn_print_vocab {
+                    background-color: #28a745 !important; /* Green color */
+                    color: white !important;
                     border: none;
                     border-radius: 6px;
                     font-size: 14px;
                     font-weight: bold;
                     padding: 8px 16px;
                 }
-                QPushButton:hover {
-                    background-color: #218838;
+                QPushButton#btn_print_vocab:hover {
+                    background-color: #218838 !important; /* Darker green on hover */
                 }
             """)
+            print(f"DEBUG: btn_print_vocab stylesheet applied. Current stylesheet: '{self.btn_print_vocab.styleSheet()}'")
+
+    def _show_export_dialog(self):
+        """
+        显示导出单词表的对话框。
+        """
+        # Import ExportDialog and generate_word_table locally to avoid circular dependencies
+        # and ensure these are only loaded when needed.
+        from export_dialog import ExportDialog
+        from word_document_generator import generate_word_table
+        
+        # Ensure vocabularies are loaded before passing to dialog
+        self._load_regular_vocabulary()
+        self._load_mistake_vocabulary()
+
+        dialog = ExportDialog(self.main_window, self.vocabulary, self.mistake_vocabulary)
+        if dialog.exec() == QtWidgets.QDialog.Accepted:
+            save_path = dialog.get_save_path()
+            output_format = dialog.get_output_format() # This will always be docx now
+            selected_vocab_data = dialog.get_selected_vocabulary_data()
+            selected_mode = dialog.get_selected_mode()
+
+            if not selected_vocab_data:
+                QMessageBox.warning(self.main_window, "导出失败", "没有选择任何词汇数据进行导出。")
+                return
+
+            try:
+                generate_word_table(selected_vocab_data, save_path, mode=selected_mode)
+                QMessageBox.information(self.main_window, "导出成功", f"单词表已成功导出到：{save_path}")
+            except Exception as e:
+                QMessageBox.critical(self.main_window, "导出错误", f"导出单词表时发生错误: {e}")
+        else:
+            print("导出操作已取消。")
+
     def _load_regular_vocabulary(self):
         """
         从 assets/vocabulary.json 文件加载词汇表并随机打乱。
@@ -695,36 +735,3 @@ class VocabManager(QObject): # 继承自 QObject
         message_for_next_display = self._notification_message_for_next_display
         self._notification_message_for_next_display = "" # 清空，防止重复显示
         self.show_next(additional_message_html=message_for_next_display)
-
-    def _show_export_dialog(self):
-        """
-        显示导出单词表的对话框。
-        """
-        # Import ExportDialog and generate_word_table locally to avoid circular dependencies
-        # and ensure these are only loaded when needed.
-        from export_dialog import ExportDialog
-        from word_document_generator import generate_word_table
-        
-        # Ensure vocabularies are loaded before passing to dialog
-        self._load_regular_vocabulary()
-        self._load_mistake_vocabulary()
-
-        dialog = ExportDialog(self.main_window, self.vocabulary, self.mistake_vocabulary)
-        if dialog.exec() == QtWidgets.QDialog.Accepted:
-            save_path = dialog.get_save_path()
-            output_format = dialog.get_output_format() # This will always be docx now
-            selected_vocab_data = dialog.get_selected_vocabulary_data()
-            selected_mode = dialog.get_selected_mode()
-
-            if not selected_vocab_data:
-                QMessageBox.warning(self.main_window, "导出失败", "没有选择任何词汇数据进行导出。")
-                return
-
-            try:
-                generate_word_table(selected_vocab_data, save_path, mode=selected_mode)
-                QMessageBox.information(self.main_window, "导出成功", f"单词表已成功导出到：{save_path}")
-                QDesktopServices.openUrl(QUrl.fromLocalFile(os.path.dirname(save_path))) # Open the folder where the file was saved
-            except Exception as e:
-                QMessageBox.critical(self.main_window, "导出错误", f"导出单词表时发生错误: {e}")
-        else:
-            print("导出操作已取消。")

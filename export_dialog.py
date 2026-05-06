@@ -1,8 +1,9 @@
 # /Users/andrezhao/AI_PJ/HighSchoolEnglishAI/export_dialog.py
 import os
 from datetime import datetime
-from PySide6.QtWidgets import (QDialog, QVBoxLayout, QHBoxLayout, QLabel, QComboBox, QRadioButton, QButtonGroup,
-                               QLineEdit, QPushButton, QFileDialog, QMessageBox, QGroupBox)
+from PySide6.QtWidgets import (QDialog, QVBoxLayout, QHBoxLayout, QLabel, QComboBox,
+                               QLineEdit, QPushButton, QFileDialog, QMessageBox)
+import sys # Import sys for debugging
 from PySide6.QtCore import Qt
 
 class ExportDialog(QDialog):
@@ -11,40 +12,33 @@ class ExportDialog(QDialog):
         self.setWindowTitle("保存单词表")
         self.setMinimumWidth(400)
         
+        print(f"DEBUG: ExportDialog __init__ called from: {__file__}") # Add this debug print
         self.regular_vocab_data = regular_vocab_data if regular_vocab_data is not None else []
         self.mistake_vocab_data = mistake_vocab_data if mistake_vocab_data is not None else []
 
         self.main_layout = QVBoxLayout(self)
         self.main_layout.setSpacing(15)
         self.main_layout.setContentsMargins(20, 20, 20, 20)
-
-        # Vocabulary Type Selection (Radio Buttons)
-        vocab_type_group_box = QGroupBox("词汇类型")
-        vocab_type_layout = QVBoxLayout(vocab_type_group_box)
         
-        self.radio_regular_vocab = QRadioButton(f"常规词汇 ({len(self.regular_vocab_data)} 词)")
-        self.radio_mistake_vocab = QRadioButton(f"错词词汇 ({len(self.mistake_vocab_data)} 词)")
+        # 合并后的导出模式选择 (QComboBox)
+        export_mode_layout = QHBoxLayout()
+        self.export_mode_label = QLabel("选择导出模式:")
+        self.export_mode_combo = QComboBox()
         
-        self.vocab_type_button_group = QButtonGroup(self)
-        self.vocab_type_button_group.addButton(self.radio_regular_vocab)
-        self.vocab_type_button_group.addButton(self.radio_mistake_vocab)
-        
-        self.radio_regular_vocab.setChecked(True) # Default selection
-        self.vocab_type_button_group.buttonClicked.connect(self._set_default_path)
-        vocab_type_layout.addWidget(self.radio_regular_vocab)
-        vocab_type_layout.addWidget(self.radio_mistake_vocab)
-        
-        self.main_layout.addWidget(vocab_type_group_box)
-
-        # Content Type Selection
-        content_type_layout = QHBoxLayout()
-        self.content_type_label = QLabel("内容类型:")
-        self.content_type_combo = QComboBox()
-        self.content_type_combo.addItems(["英文+中文", "英语默写中文", "中文默写英文"])
-        self.content_type_combo.currentIndexChanged.connect(self._set_default_path)
-        content_type_layout.addWidget(self.content_type_label)
-        content_type_layout.addWidget(self.content_type_combo)
-        self.main_layout.addLayout(content_type_layout)
+        # 根据用户需求填充所有组合选项
+        new_items = [
+            f"常规英语词汇中文+ 英语表 ({len(self.regular_vocab_data)} 词)",
+            f"常规英语词汇英语默写表 ({len(self.regular_vocab_data)} 词)",
+            f"常规英语词汇看英语填写中文默写表 ({len(self.regular_vocab_data)} 词)",
+            f"错词英语词汇中文+ 英语表 ({len(self.mistake_vocab_data)} 词)",
+            f"错词英语词汇英语默写表 ({len(self.mistake_vocab_data)} 词)",
+            f"错词英语词汇看英语填写中文默写表 ({len(self.mistake_vocab_data)} 词)"
+        ]
+        self.export_mode_combo.addItems(new_items)
+        self.export_mode_combo.currentIndexChanged.connect(self._set_default_path)
+        export_mode_layout.addWidget(self.export_mode_label)
+        export_mode_layout.addWidget(self.export_mode_combo)
+        self.main_layout.addLayout(export_mode_layout)
 
         # Output Format Selection (Fixed to docx as per requirement)
         self.output_format = "docx" 
@@ -81,27 +75,29 @@ class ExportDialog(QDialog):
         """
         设置默认保存路径为桌面，并生成默认文件名。
         """
+        selected_text = self.export_mode_combo.currentText()
         desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
         current_date = datetime.now().strftime("%Y%m%d")
 
-        # Determine vocabulary type for filename
-        if self.radio_regular_vocab.isChecked():
+        # 从选中的文本中解析词汇类型和内容类型
+        vocab_type_name = ""
+        content_type_desc = ""
+
+        if "常规英语词汇" in selected_text:
             vocab_type_name = "常规词汇"
-        else:
+        elif "错词英语词汇" in selected_text:
             vocab_type_name = "错词词汇"
 
-        # Generate default filename based on type and content
         file_name_parts = ["HSE_Vocabulary"]
-        
         file_name_parts.append(vocab_type_name)
 
-        # Map content_type to a more descriptive string for the filename
-        content_type_text = self.content_type_combo.currentText()
-        if content_type_text == "英文+中文":
-            file_name_parts.append("英文+中文")
-        elif content_type_text == "英语默写中文":
+        if "中文+ 英语表" in selected_text:
+            file_name_parts.append("中英对照")
+        elif "英语默写表" in selected_text:
+            file_name_parts.append("英文默写")
+        elif "看英语填写中文默写表" in selected_text:
             file_name_parts.append("英文默写中文")
-        elif content_type_text == "中文默写英文":
+        elif "看中文填写英语默写表" in selected_text:
             file_name_parts.append("中文默写英文")
         
         file_name_parts.append(current_date)
@@ -110,41 +106,28 @@ class ExportDialog(QDialog):
         self.default_file_path = os.path.join(desktop_path, default_file_name)
         self.path_input.setText(self.default_file_path)
 
-    def _browse_file(self):
-        """
-        打开文件保存对话框，让用户选择保存位置和文件名。
-        """
-        file_filter = "Word Documents (*.docx)"
-        file_path, _ = QFileDialog.getSaveFileName(self, "保存单词表", self.default_file_path, file_filter)
-        if file_path:
-            self.path_input.setText(file_path)
-            # Update default_file_path to reflect user's last choice for next time
-            self.default_file_path = file_path
-            
-    def get_save_path(self):
-        return self.path_input.text()
-    
     def get_selected_vocabulary_data(self):
-        if self.radio_regular_vocab.isChecked():
+        selected_text = self.export_mode_combo.currentText()
+        if "常规英语词汇" in selected_text:
             return self.regular_vocab_data
-        else:
-            return self.mistake_vocab_data
+        return self.mistake_vocab_data # 默认为错词词汇
 
     def get_selected_mode(self):
-        content_type_text = self.content_type_combo.currentText()
-        if content_type_text == "英文+中文":
+        selected_text = self.export_mode_combo.currentText()
+        if "中文+ 英语表" in selected_text:
             return "normal"
-        elif content_type_text == "英语默写中文":
+        elif "看英语填写中文默写表" in selected_text:
             return "en_dictate_cn"
-        elif content_type_text == "中文默写英文":
+        elif "看中文填写英语默写表" in selected_text:
             return "cn_dictate_en"
-        return "normal" # Default
+        return "normal" # 默认模式
 
     def get_output_format(self):
-        return self.output_format # Always docx
+        return self.output_format # 始终为 docx
 
     def get_content_type(self):
-        return self.content_type_combo.currentText()
+        # 此方法可能不再需要，因为我们直接使用 get_selected_mode
+        return self.export_mode_combo.currentText()
 
     def _apply_styles(self):
         self.setStyleSheet("""
@@ -155,15 +138,7 @@ class ExportDialog(QDialog):
                 font-size: 14px;
                 color: #333;
             }
-            QGroupBox {
-                font-weight: bold;
-                margin-top: 10px;
-            }
-            QRadioButton {
-                font-size: 14px;
-                color: #555;
-                padding: 4px 0;
-            }
+            /* QGroupBox 和 QRadioButton 样式已不再需要，因为它们已被 QComboBox 替换 */
             QLineEdit, QComboBox {
                 border: 1px solid #ccc;
                 border-radius: 4px;
@@ -182,3 +157,17 @@ class ExportDialog(QDialog):
                 background-color: #2980b9;
             }
         """)
+
+    def _browse_file(self):
+        """
+        打开文件保存对话框，让用户选择保存位置和文件名。
+        """
+        file_filter = "Word Documents (*.docx)"
+        file_path, _ = QFileDialog.getSaveFileName(self, "保存单词表", self.default_file_path, file_filter)
+        if file_path:
+            self.path_input.setText(file_path)
+            # Update default_file_path to reflect user's last choice for next time
+            self.default_file_path = file_path
+            
+    def get_save_path(self):
+        return self.path_input.text()

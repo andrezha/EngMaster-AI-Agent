@@ -1,3 +1,4 @@
+# /Users/andrezhao/AI_PJ/HighSchoolEnglishAI/lib/word_list_view.py
 """
 词汇表视图模块 - Word List View (扁平化终极版)
 =============================================
@@ -12,8 +13,10 @@
 import json
 import os
 import random
-from PySide6 import QtCore, QtWidgets, QtGui # Added QtGui for QPrinter, QTextDocument
-from PySide6.QtPrintSupport import QPrintDialog # Added QPrintDialog
+import re # Import re for filename cleaning
+from PySide6 import QtCore, QtWidgets, QtGui
+from datetime import datetime # Import datetime for filename generation
+from PySide6.QtPrintSupport import QPrintDialog, QPrinter # Corrected: QPrinter is in QtPrintSupport
 
 
 class WordListView(QtWidgets.QWidget):
@@ -142,32 +145,51 @@ class WordListView(QtWidgets.QWidget):
         header_layout.addWidget(self.sort_btn)
 
         # 打印工具按钮 (带下拉菜单)
-        self.print_tool_button = QtWidgets.QToolButton()
-        self.print_tool_button.setText("🖨️ 打印")
+        self.print_tool_button = QtWidgets.QToolButton() # Corrected: Instantiate QToolButton without text argument
         self.print_tool_button.setFixedHeight(40)
         self.print_tool_button.setPopupMode(QtWidgets.QToolButton.InstantPopup) # 点击立即显示菜单
         self.print_tool_button.setStyleSheet("""
             QToolButton {
-                background-color: #28a745; /* Green color, matching vocab_module's print button */
-                color: white;
+                background-color: #28a745 !important; /* Green color, matching vocab_module's print button */
+                color: white !important;
                 border: none;
                 border-radius: 2px;
                 font-size: 12px;
                 font-weight: bold;
                 padding: 0 12px;
             }
-            QToolButton:hover { background-color: #218838; } /* Darker green on hover */
-            QToolButton:pressed { background-color: #1e7e34; } /* Even darker green on press */
+            QToolButton:hover { background-color: #218838 !important; } /* Darker green on hover */
+            QToolButton:pressed { background-color: #1e7e34 !important; } /* Even darker green on press */
             QToolButton::menu-indicator { image: none; } /* 隐藏菜单指示器 */
         """)
+        # Set the actual text for the button after instantiation
+        self.print_tool_button.setText("输出Word打印单词表")
         header_layout.addWidget(self.print_tool_button)
 
         # 创建打印菜单
         print_menu = QtWidgets.QMenu(self)
-        action_print_current_page = print_menu.addAction("打印当前页")
-        action_print_current_page.triggered.connect(self._print_current_page)
-        action_print_all_words = print_menu.addAction("打印所有词汇")
-        action_print_all_words.triggered.connect(self._print_all_words)
+        
+        # 常规英语词汇选项
+        action_regular_normal = print_menu.addAction("常规英语词汇中文+ 英语表")
+        action_regular_normal.triggered.connect(lambda: self._generate_word_doc(self.all_regular_words, "normal", "常规英语词汇中文+英语表"))
+        
+        action_regular_en_dictate_cn = print_menu.addAction("常规英语词汇看英语填写中文默写表")
+        action_regular_en_dictate_cn.triggered.connect(lambda: self._generate_word_doc(self.all_regular_words, "en_dictate_cn", "常规英语词汇看英语填写中文默写表"))
+        
+        action_regular_cn_dictate_en = print_menu.addAction("常规英语词汇英语默写表")
+        action_regular_cn_dictate_en.triggered.connect(lambda: self._generate_word_doc(self.all_regular_words, "cn_dictate_en", "常规英语词汇英语默写表"))
+        
+        print_menu.addSeparator() # 分隔线
+
+        # 错词英语词汇选项
+        action_mistake_normal = print_menu.addAction("错词英语词汇中文+ 英语表")
+        action_mistake_normal.triggered.connect(lambda: self._generate_word_doc(self.all_mistake_words, "normal", "错词英语词汇中文+英语表"))
+        
+        action_mistake_en_dictate_cn = print_menu.addAction("错词英语词汇看英语填写中文默写表")
+        action_mistake_en_dictate_cn.triggered.connect(lambda: self._generate_word_doc(self.all_mistake_words, "en_dictate_cn", "错词英语词汇看英语填写中文默写表"))
+        
+        action_mistake_cn_dictate_en = print_menu.addAction("错词英语词汇英语默写表")
+        action_mistake_cn_dictate_en.triggered.connect(lambda: self._generate_word_doc(self.all_mistake_words, "cn_dictate_en", "错词英语词汇英语默写表"))
         self.print_tool_button.setMenu(print_menu)
 
         # 搜索框
@@ -771,7 +793,7 @@ class WordListView(QtWidgets.QWidget):
             QtWidgets.QMessageBox.information(self, "提示", "没有词汇可供打印。")
             return
 
-        printer = QtGui.QPrinter(QtGui.QPrinter.HighResolution)
+        printer = QPrinter(QPrinter.HighResolution) # Corrected: QPrinter is from QtPrintSupport
         print_dialog = QPrintDialog(printer, self)
         if print_dialog.exec() == QtWidgets.QDialog.Accepted:
             print("DEBUG: _trigger_print executed - print dialog accepted.")
@@ -780,6 +802,39 @@ class WordListView(QtWidgets.QWidget):
             document.setHtml(html_content) # Set the HTML content
             document.print(printer)
             QtWidgets.QMessageBox.information(self, "打印", "词汇列表已发送到打印机。")
+
+    def _generate_word_doc(self, data, mode, description):
+        """
+        根据选择的模式生成Word文档，并弹出保存对话框让用户选择保存路径。
+        """
+        # 局部导入，避免循环依赖
+        from word_document_generator import generate_word_table
+        
+        if not data:
+            QtWidgets.QMessageBox.warning(self.main_window, "导出失败", f"没有 {description} 的数据可供导出。")
+            return
+        
+        # 构造默认文件名
+        current_date = datetime.now().strftime("%Y%m%d")
+        # 清理描述，使其适合作为文件名（移除特殊字符，替换空格为下划线）
+        cleaned_description = re.sub(r'[^\w\s]', '', description).replace(' ', '_')
+        file_name = f"HSE_Vocabulary_{cleaned_description}_{current_date}.docx"
+        desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
+        default_save_path = os.path.join(desktop_path, file_name)
+
+        # 弹出文件保存对话框
+        file_filter = "Word Documents (*.docx)"
+        save_path, _ = QtWidgets.QFileDialog.getSaveFileName(self, "保存单词表", default_save_path, file_filter)
+
+        if save_path: # 如果用户选择了路径并点击了保存
+            try:
+                generate_word_table(data, save_path, mode=mode)
+                QtWidgets.QMessageBox.information(self.main_window, "导出成功", f"'{description}' 已成功导出到：{save_path}")
+            except Exception as e:
+                QtWidgets.QMessageBox.critical(self.main_window, "导出错误", f"导出 '{description}' 时发生错误: {e}")
+        else:
+            print("导出操作已取消。")
+
 
     def _generate_print_html(self, words_to_print, title):
         """
@@ -811,7 +866,7 @@ class WordListView(QtWidgets.QWidget):
                     </tr>
                 </thead>
                 <tbody>
-        """
+        """ % title
         
         for i, word_data in enumerate(words_to_print):
             word_text = word_data.get("word", "")
