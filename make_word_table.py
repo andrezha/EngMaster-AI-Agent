@@ -16,7 +16,7 @@ MAX_CONTENT_LENGTH = 35
 # 默写区域额外增加的下划线字符数，提供更多书写空间
 BLANK_BUFFER_CHARS = 5 
 # 默写区域使用的下划线字符
-BLANK_CHAR = "_"
+BLANK_CHAR = " " # 将下划线字符改为一个空格
 
 # Word 文档字体设置
 FONT_NAME = "Microsoft YaHei" # 推荐使用支持中文的字体，如微软雅黑
