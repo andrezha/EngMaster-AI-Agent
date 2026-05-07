@@ -46,16 +46,7 @@ class VocabManager(QObject): # 继承自 QObject
             self.btn_challenge_mistake = QtWidgets.QPushButton("错词闯关")
             self.btn_challenge_mistake.setObjectName("btn_challenge_mistake")
             self.btn_challenge_mistake.setCheckable(True) # 使按钮可选中
-            print("DEBUG: btn_challenge_mistake created dynamically.")
-
-        # 确保 btn_print_vocab 被正确初始化 (恢复为 QPushButton)
-        self.btn_print_vocab = self.vocab_page_widget.findChild(QtWidgets.QPushButton, "btn_print_vocab")
-        if not self.btn_print_vocab:
-            self.btn_print_vocab = QtWidgets.QPushButton("输出Word打印单词表") # User requested this name
-            self.btn_print_vocab.setObjectName("btn_print_vocab")
-            print("DEBUG: btn_print_vocab created dynamically.")
-        self.btn_print_vocab.setText("输出Word打印单词表") # Ensure text is set regardless of whether it was found or created
-        print(f"DEBUG: btn_print_vocab text set to: '{self.btn_print_vocab.text()}'")
+            print("DEBUG: btn_challenge_mistake created dynamically.") # This line was moved up.
 
         self.lbl_mistake_count = self.vocab_page_widget.findChild(QtWidgets.QLabel, "lbl_mistake_count") # 查找现有标签
         if not self.lbl_mistake_count: # 如果没找到，则创建
@@ -83,8 +74,6 @@ class VocabManager(QObject): # 继承自 QObject
         # 绑定闯关模式选择按钮
         if self.btn_challenge_regular:
             self.btn_challenge_regular.clicked.connect(lambda: self.switch_challenge_mode("regular"))
-        if self.btn_print_vocab: # Connect the print button to the export dialog
-            self.btn_print_vocab.clicked.connect(self._show_export_dialog)
         if self.btn_challenge_mistake:
             self.btn_challenge_mistake.clicked.connect(lambda: self.switch_challenge_mode("mistake_list"))
 
@@ -112,10 +101,9 @@ class VocabManager(QObject): # 继承自 QObject
         if not self.v_disp or not self.v_input or not self.btn_confirm:
             return
         
-        # Clear existing layout completely, but DO NOT delete the widgets we want to reuse.
-        # Instead, just remove them from the layout.
-        widgets_to_keep = {self.t_label, self.v_disp, self.v_input, self.btn_confirm, self.btn_print_vocab,
-                           self.btn_challenge_regular, self.btn_challenge_mistake, self.lbl_mistake_count}
+        # Clear existing layout completely, but DO NOT delete the widgets we want to reuse. Instead, just remove them from the layout.
+        widgets_to_keep = {self.t_label, self.v_disp, self.v_input, self.btn_confirm,
+                           self.btn_challenge_regular, self.btn_challenge_mistake, self.lbl_mistake_count} # Removed self.btn_print_vocab
         while self.main_layout.count():
             item = self.main_layout.takeAt(0)
             if item.widget():
@@ -139,9 +127,7 @@ class VocabManager(QObject): # 继承自 QObject
         challenge_mode_layout.addSpacing(10) # 按钮之间间距
         challenge_mode_layout.addWidget(self.btn_challenge_mistake)
         challenge_mode_layout.addSpacing(20) # 按钮与标签之间间距
-        challenge_mode_layout.addWidget(self.lbl_mistake_count)
         challenge_mode_layout.addStretch(1) # 将按钮推到中间
-        challenge_mode_layout.addWidget(self.btn_print_vocab) # Add print button here
         self.main_layout.addLayout(challenge_mode_layout)
         self.main_layout.addSpacing(20) # 模式选择与单词显示区之间间距
 
@@ -151,6 +137,9 @@ class VocabManager(QObject): # 继承自 QObject
         # 3. 单词显示区 - 居中
         self.main_layout.addWidget(self.v_disp, alignment=QtCore.Qt.AlignmentFlag.AlignCenter)
         
+        # 错词数量标签 - 放在单词显示区下方
+        self.main_layout.addWidget(self.lbl_mistake_count, alignment=QtCore.Qt.AlignmentFlag.AlignCenter)
+
         # 4. 巨大间距 - 拒绝拥挤
         self.main_layout.addSpacing(80)  # 单词和输入框之间
         
@@ -272,25 +261,7 @@ class VocabManager(QObject): # 继承自 QObject
                     border-radius: 4px;
                     background-color: #f5f5f5;
                 }
-            """)
-        # Print button style
-        if self.btn_print_vocab:
-            self.btn_print_vocab.setFixedHeight(42)
-            self.btn_print_vocab.setStyleSheet("""
-                QPushButton#btn_print_vocab {
-                    background-color: #28a745 !important; /* Green color */
-                    color: white !important;
-                    border: none;
-                    border-radius: 6px;
-                    font-size: 14px;
-                    font-weight: bold;
-                    padding: 8px 16px;
-                }
-                QPushButton#btn_print_vocab:hover {
-                    background-color: #218838 !important; /* Darker green on hover */
-                }
-            """)
-            print(f"DEBUG: btn_print_vocab stylesheet applied. Current stylesheet: '{self.btn_print_vocab.styleSheet()}'")
+            """) # Removed btn_print_vocab styling
 
     def _show_export_dialog(self):
         """
@@ -322,6 +293,7 @@ class VocabManager(QObject): # 继承自 QObject
             except Exception as e:
                 QMessageBox.critical(self.main_window, "导出错误", f"导出单词表时发生错误: {e}")
         else:
+            # print("DEBUG: 导出操作已取消。")
             print("导出操作已取消。")
 
     def _load_regular_vocabulary(self):

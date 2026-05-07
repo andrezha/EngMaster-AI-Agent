@@ -1,3 +1,4 @@
+# /Users/andrezhao/AI_PJ/HighSchoolEnglishAI/main.py
 import sys
 import os
 import re # Import the 're' module for regular expressions
@@ -35,6 +36,8 @@ try:
     from parsers.full_exam_specific_parsers import _parse_grammar_items_full_exam, _parse_seven_five_items_full_exam, _parse_cloze_items_full_exam, _parse_reading_items_full_exam_robust
     from exam_module import ExamManager 
     from utils import _normalize_full_width_to_half_width # Import from utils
+    from self_register_vocab_module import SelfRegisterVocabManager # Import the new module
+    from analyzer_module import AnalyzerManager # Import AI 解析模块
 except ImportError as e:
     # This block catches errors during the initial module imports
     # If WordListView is not defined, it means its module failed to load.
@@ -194,11 +197,18 @@ class HighSchoolEnglishAI(QMainWindow):
         self.btn_nav_core_vocab = self.ui_root.findChild(QPushButton, "btn_nav_core_vocab")
         self.btn_nav_gaokao = self.ui_root.findChild(QPushButton, "btn_nav_gaokao")
         self.btn_nav_full_exam = self.ui_root.findChild(QPushButton, "btn_nav_full_exam")
+        self.btn_nav_self_register = self.ui_root.findChild(QPushButton, "btn_nav_self_register") # New button
+        self.btn_nav_ai_analyzer = self.ui_root.findChild(QPushButton, "btn_nav_ai_analyzer") # AI解析按钮
 
         # Initialize attributes to None to prevent AttributeError if initialization fails
         self.vocab_ctrl = None
         self.word_list_widget = None
         self.word_list_index = -1 # Use -1 as an invalid index
+        self.self_register_vocab_widget = None # Initialize the widget for the new page
+        self.self_register_vocab_index = -1 # Initialize its index
+        self.ai_analyzer_widget = None # Initialize AI Analyzer widget
+        self.ai_analyzer_index = -1 # Initialize its index
+
         self.exam_ctrl = None
         self._setup_gaokao_page(res_dir, loader)
         
@@ -213,6 +223,28 @@ class HighSchoolEnglishAI(QMainWindow):
                 # Connect the signal from VocabManager to WordListView's refresh method
                 self.vocab_ctrl.mistake_vocabulary_changed.connect(self.word_list_widget.refresh_mistake_list)
             self.exam_ctrl = ExamManager(self)
+
+            # Setup SelfRegisterVocabManager
+            # Instantiate SelfRegisterVocabManager directly, as it now builds its own UI
+            self.self_register_vocab_ctrl = SelfRegisterVocabManager(self)
+            # The widget to be added to the stack is the SelfRegisterVocabManager instance itself
+            self.self_register_vocab_page_widget = self.self_register_vocab_ctrl
+            self.stack.addWidget(self.self_register_vocab_page_widget)
+            self.self_register_vocab_index = self.stack.indexOf(self.self_register_vocab_page_widget)
+            print(f"DEBUG: SelfRegisterVocabManager initialized and added to stack at index: {self.self_register_vocab_index}")
+            if self.self_register_vocab_index == -1:
+                print("ERROR: SelfRegisterVocabManager widget could not be added to the QStackedWidget correctly. Self-register vocab functionality will be disabled.")
+                QMessageBox.critical(self, "错误", "自主登记单词页面初始化失败，无法添加到界面堆栈。")
+
+            # Setup AnalyzerManager
+            self.ai_analyzer_widget = AnalyzerManager(self) # Instantiate AnalyzerManager
+            self.stack.addWidget(self.ai_analyzer_widget)
+            self.ai_analyzer_index = self.stack.indexOf(self.ai_analyzer_widget)
+            print(f"DEBUG: AnalyzerManager initialized and added to stack at index: {self.ai_analyzer_index}")
+            if self.ai_analyzer_index == -1:
+                print("ERROR: AnalyzerManager widget could not be added to the QStackedWidget correctly. AI Analyzer functionality will be disabled.")
+                QMessageBox.critical(self, "错误", "AI解析页面初始化失败，无法添加到界面堆栈。")
+
         except Exception as e:
             print(f"⚠️ 业务模块初始化异常: {e}")
 
@@ -251,10 +283,22 @@ class HighSchoolEnglishAI(QMainWindow):
         """
         绑定侧边栏导航按钮的点击事件。
         """
-        self.btn_nav_vocab.clicked.connect(lambda: self.stack.setCurrentIndex(0))
-        self.btn_nav_core_vocab.clicked.connect(self._show_word_list_page) # Connect to a new method for debugging
-        self.btn_nav_gaokao.clicked.connect(self.show_gaokao_page)
-        self.btn_nav_full_exam.clicked.connect(self.switch_to_full_exam)
+        self.btn_nav_vocab.clicked.connect(lambda: self.stack.setCurrentIndex(0)) # 单词闯关 (VocabManager)
+        self.btn_nav_core_vocab.clicked.connect(self._show_word_list_page) # 核心词汇表 (WordListView)
+        self.btn_nav_gaokao.clicked.connect(self.show_gaokao_page) # 高考专项 (ExamManager)
+        self.btn_nav_full_exam.clicked.connect(self.switch_to_full_exam) # 全真战场 (HSEExamSystem)
+        # Check if btn_nav_self_register is not None before connecting
+        if self.btn_nav_self_register:
+            self.btn_nav_self_register.clicked.connect(self._show_self_register_vocab_page) # 自主登记单词 (SelfRegisterVocabManager)
+        else:
+            print("ERROR: btn_nav_self_register is None. Check main_window.ui and objectName.")
+        
+        # Connect AI Analyzer button
+        if self.btn_nav_ai_analyzer:
+            self.btn_nav_ai_analyzer.clicked.connect(self._show_ai_analyzer_page)
+        else:
+            print("ERROR: btn_nav_ai_analyzer is None. Check main_window.ui and objectName.")
+
 
     def _handle_stack_page_changed(self, index):
         """
@@ -288,6 +332,28 @@ class HighSchoolEnglishAI(QMainWindow):
         else:
             print("ERROR: word_list_index is -1. WordListView might not have been initialized or added correctly.")
             QMessageBox.warning(self, "错误", "核心词汇表页面未加载成功，请检查控制台输出。")
+
+    def _show_self_register_vocab_page(self):
+        """
+        Helper to show the self-register vocabulary page.
+        """
+        if self.self_register_vocab_index != -1:
+            print(f"DEBUG: Attempting to set stack index to self_register_vocab_index: {self.self_register_vocab_index}")
+            self.stack.setCurrentIndex(self.self_register_vocab_index)
+        else:
+            print("ERROR: self_register_vocab_index is -1. SelfRegisterVocabManager might not have been initialized or added correctly.")
+            QMessageBox.warning(self, "错误", "自主登记单词页面未加载成功，请检查控制台输出。")
+
+    def _show_ai_analyzer_page(self):
+        """
+        Helper to show the AI Analyzer page.
+        """
+        if self.ai_analyzer_index != -1:
+            print(f"DEBUG: Attempting to set stack index to ai_analyzer_index: {self.ai_analyzer_index}")
+            self.stack.setCurrentIndex(self.ai_analyzer_index)
+        else:
+            print("ERROR: ai_analyzer_index is -1. AnalyzerManager might not have been initialized or added correctly.")
+            QMessageBox.warning(self, "错误", "AI解析页面未加载成功，请检查控制台输出。")
 
     def load_special_practice(self, folder_name):
         """
@@ -338,7 +404,7 @@ class HighSchoolEnglishAI(QMainWindow):
             data_list = _internal_full_exam_parser(content)
             
             if not data_list: # Add check for empty data_list
-                QMessageBox.warning(self, "提示", f"文件 {target_file_name} 未能解析出任何题目板块，请检查文件格式。")
+                QMessageBox.warning(self.main_window, "提示", f"文件 {target_file_name} 未能解析出任何题目板块，请检查文件格式。")
                 self.full_exam_file_index = -1 # Reset index to re-shuffle
                 return
             
@@ -372,7 +438,7 @@ class HighSchoolEnglishAI(QMainWindow):
         应用侧边栏导航按钮的统一样式。
         """
         qss = "QPushButton { min-height: 55px; border-radius: 12px; text-align: left; padding-left: 20px; font-weight: bold; }"
-        btns = [self.btn_nav_vocab, self.btn_nav_core_vocab, self.btn_nav_gaokao, self.btn_nav_full_exam]
+        btns = [self.btn_nav_vocab, self.btn_nav_core_vocab, self.btn_nav_gaokao, self.btn_nav_full_exam, self.btn_nav_self_register, self.btn_nav_ai_analyzer] # Add new button
         self.sidebar_group = QtWidgets.QButtonGroup(self)
         for btn in btns:
             if btn:
