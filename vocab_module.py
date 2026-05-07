@@ -48,15 +48,32 @@ class VocabManager(QObject): # 继承自 QObject
             self.btn_challenge_mistake.setCheckable(True) # 使按钮可选中
             print("DEBUG: btn_challenge_mistake created dynamically.") # This line was moved up.
 
+        # NEW: 自主录入闯关按钮
+        self.btn_challenge_self_register = self.vocab_page_widget.findChild(QtWidgets.QPushButton, "btn_challenge_self_register")
+        if not self.btn_challenge_self_register:
+            self.btn_challenge_self_register = QtWidgets.QPushButton("自主录入闯关")
+            self.btn_challenge_self_register.setObjectName("btn_challenge_self_register")
+            self.btn_challenge_self_register.setCheckable(True)
+            print("DEBUG: btn_challenge_self_register created dynamically.")
+
         self.lbl_mistake_count = self.vocab_page_widget.findChild(QtWidgets.QLabel, "lbl_mistake_count") # 查找现有标签
         if not self.lbl_mistake_count: # 如果没找到，则创建
             self.lbl_mistake_count = QtWidgets.QLabel("错词表 (0 词)")
             self.lbl_mistake_count.setObjectName("lbl_mistake_count")
             print("DEBUG: lbl_mistake_count created dynamically.")
 
+        # NEW: 自主录入单词数标签
+        self.lbl_self_register_count = self.vocab_page_widget.findChild(QtWidgets.QLabel, "lbl_self_register_count")
+        if not self.lbl_self_register_count:
+            self.lbl_self_register_count = QtWidgets.QLabel("自主录入 (0 词)")
+            self.lbl_self_register_count.setObjectName("lbl_self_register_count")
+            print("DEBUG: lbl_self_register_count created dynamically.")
+
+
         # 初始化词汇表相关属性
         self.vocabulary = [] # 常规词汇
         self.mistake_vocabulary = [] # 错词表 (包含 correct_count)
+        self.self_registered_vocabulary = [] # NEW: 自主录入词汇表
         self.current_challenge_mode = "regular" # 默认常规闯关模式
         self._notification_message_for_next_display = "" # 用于在显示下一个单词时传递通知消息
         self.mistake_word_file_path = os.path.join(self.main_window.base_path, "assets", "mistake_words.json")
@@ -76,11 +93,14 @@ class VocabManager(QObject): # 继承自 QObject
             self.btn_challenge_regular.clicked.connect(lambda: self.switch_challenge_mode("regular"))
         if self.btn_challenge_mistake:
             self.btn_challenge_mistake.clicked.connect(lambda: self.switch_challenge_mode("mistake_list"))
+        # NEW: 绑定自主录入闯关按钮
+        if self.btn_challenge_self_register:
+            self.btn_challenge_self_register.clicked.connect(lambda: self.switch_challenge_mode("self_register"))
 
         # 重构布局
         self._rebuild_layout()
         
-        # 统一样式
+        # 统一样式 (在 _rebuild_layout 之后调用，确保所有组件都已就位)
         self._style_components()
         
         # 初始加载常规闯关模式
@@ -103,7 +123,8 @@ class VocabManager(QObject): # 继承自 QObject
         
         # Clear existing layout completely, but DO NOT delete the widgets we want to reuse. Instead, just remove them from the layout.
         widgets_to_keep = {self.t_label, self.v_disp, self.v_input, self.btn_confirm,
-                           self.btn_challenge_regular, self.btn_challenge_mistake, self.lbl_mistake_count} # Removed self.btn_print_vocab
+                           self.btn_challenge_regular, self.btn_challenge_mistake, self.btn_challenge_self_register, # NEW
+                           self.lbl_mistake_count, self.lbl_self_register_count} # NEW
         while self.main_layout.count():
             item = self.main_layout.takeAt(0)
             if item.widget():
@@ -126,7 +147,12 @@ class VocabManager(QObject): # 继承自 QObject
         challenge_mode_layout.addWidget(self.btn_challenge_regular)
         challenge_mode_layout.addSpacing(10) # 按钮之间间距
         challenge_mode_layout.addWidget(self.btn_challenge_mistake)
+        challenge_mode_layout.addSpacing(10) # NEW: 按钮之间间距
+        challenge_mode_layout.addWidget(self.btn_challenge_self_register) # NEW: 自主录入闯关按钮
         challenge_mode_layout.addSpacing(20) # 按钮与标签之间间距
+        challenge_mode_layout.addWidget(self.lbl_mistake_count) # Add mistake count label
+        challenge_mode_layout.addSpacing(10) # NEW: 标签之间间距
+        challenge_mode_layout.addWidget(self.lbl_self_register_count) # NEW: 自主录入单词数标签
         challenge_mode_layout.addStretch(1) # 将按钮推到中间
         self.main_layout.addLayout(challenge_mode_layout)
         self.main_layout.addSpacing(20) # 模式选择与单词显示区之间间距
@@ -138,7 +164,7 @@ class VocabManager(QObject): # 继承自 QObject
         self.main_layout.addWidget(self.v_disp, alignment=QtCore.Qt.AlignmentFlag.AlignCenter)
         
         # 错词数量标签 - 放在单词显示区下方
-        self.main_layout.addWidget(self.lbl_mistake_count, alignment=QtCore.Qt.AlignmentFlag.AlignCenter)
+        # self.main_layout.addWidget(self.lbl_mistake_count, alignment=QtCore.Qt.AlignmentFlag.AlignCenter) # Moved to challenge_mode_layout
 
         # 4. 巨大间距 - 拒绝拥挤
         self.main_layout.addSpacing(80)  # 单词和输入框之间
@@ -261,40 +287,20 @@ class VocabManager(QObject): # 继承自 QObject
                     border-radius: 4px;
                     background-color: #f5f5f5;
                 }
-            """) # Removed btn_print_vocab styling
-
-    def _show_export_dialog(self):
-        """
-        显示导出单词表的对话框。
-        """
-        # Import ExportDialog and generate_word_table locally to avoid circular dependencies
-        # and ensure these are only loaded when needed.
-        from export_dialog import ExportDialog
-        from word_document_generator import generate_word_table
+            """)
         
-        # Ensure vocabularies are loaded before passing to dialog
-        self._load_regular_vocabulary()
-        self._load_mistake_vocabulary()
-
-        dialog = ExportDialog(self.main_window, self.vocabulary, self.mistake_vocabulary)
-        if dialog.exec() == QtWidgets.QDialog.Accepted:
-            save_path = dialog.get_save_path()
-            output_format = dialog.get_output_format() # This will always be docx now
-            selected_vocab_data = dialog.get_selected_vocabulary_data()
-            selected_mode = dialog.get_selected_mode()
-
-            if not selected_vocab_data:
-                QMessageBox.warning(self.main_window, "导出失败", "没有选择任何词汇数据进行导出。")
-                return
-
-            try:
-                generate_word_table(selected_vocab_data, save_path, mode=selected_mode)
-                QMessageBox.information(self.main_window, "导出成功", f"单词表已成功导出到：{save_path}")
-            except Exception as e:
-                QMessageBox.critical(self.main_window, "导出错误", f"导出单词表时发生错误: {e}")
-        else:
-            # print("DEBUG: 导出操作已取消。")
-            print("导出操作已取消。")
+        # NEW: 自主录入单词数标签样式
+        if self.lbl_self_register_count:
+            self.lbl_self_register_count.setStyleSheet("""
+                QLabel {
+                    color: #777777;
+                    font-size: 13px;
+                    padding: 4px 8px;
+                    border: 1px solid #cccccc;
+                    border-radius: 4px;
+                    background-color: #f5f5f5;
+                }
+            """)
 
     def _load_regular_vocabulary(self):
         """
@@ -351,6 +357,20 @@ class VocabManager(QObject): # 继承自 QObject
             self.mistake_vocabulary = [] # Use self.main_window for QMessageBox
             QMessageBox.warning(self.main_window, "错误", f"加载错词表失败: {e}\n请检查 assets/mistake_words.json 文件。")
 
+    def _load_self_registered_vocabulary(self): # NEW: 加载自主录入词汇
+        """
+        从 main_window 的 self_register_vocab_ctrl 获取自主录入的单词数据。
+        """
+        if hasattr(self.main_window, 'self_register_vocab_ctrl') and self.main_window.self_register_vocab_ctrl:
+            self.self_registered_vocabulary = self.main_window.self_register_vocab_ctrl.user_vocab_data
+            random.shuffle(self.self_registered_vocabulary)
+            print(f"✅ 自主录入词汇表加载成功，共 {len(self.self_registered_vocabulary)} 词。")
+        else:
+            self.self_registered_vocabulary = []
+            print("⚠️ 无法获取自主录入词汇表，SelfRegisterVocabManager 未初始化或无数据。")
+        self._update_self_register_count_label()
+
+
     def _save_mistake_vocabulary(self):
         """
         将当前错词表保存到 mistake_words.json 文件。
@@ -369,7 +389,7 @@ class VocabManager(QObject): # 继承自 QObject
         在用户选择闯关模式前，显示提示信息并禁用输入和确认按钮。
         """
         if self.v_disp:
-            self.v_disp.setHtml("<div style='text-align: center; padding: 40px; font-size: 20px; color: #555555;'>请选择闯关模式：<br><br>📚 常规闯关 或 ❌ 错词闯关</div>")
+            self.v_disp.setHtml("<div style='text-align: center; padding: 40px; font-size: 20px; color: #555555;'>请选择闯关模式：<br><br>📚 常规闯关 或 ❌ 错词闯关 或 📝 自主录入闯关</div>") # NEW: 更新提示
         if self.v_input:
             self.v_input.clear()
             self.v_input.setEnabled(False)
@@ -388,7 +408,7 @@ class VocabManager(QObject): # 继承自 QObject
         ]
         self.mistake_vocabulary.extend(test_words)
         self._save_mistake_vocabulary()
-        self._update_mistake_count_label() # Update label after adding test words
+        self._update_mistake_count_label()
 
     def _add_or_reset_mistake_word(self, word_obj):
         """
@@ -426,9 +446,9 @@ class VocabManager(QObject): # 继承自 QObject
 
     def switch_challenge_mode(self, mode):
         """
-        切换单词闯关模式（常规或错词表）。
+        切换单词闯关模式（常规、错词表或自主录入）。
         """
-        if mode not in ["regular", "mistake_list"]:
+        if mode not in ["regular", "mistake_list", "self_register"]: # NEW: 添加自主录入模式
             print(f"无效的闯关模式: {mode}")
             return
         
@@ -443,6 +463,7 @@ class VocabManager(QObject): # 继承自 QObject
         print(f"已切换到 {mode} 模式。")
         self._update_challenge_mode_buttons() # Update button styles
         self._update_mistake_count_label() # Update mistake count label after switching mode
+        self._update_self_register_count_label() # NEW: Update self-register count label
 
     def load_active_vocabulary(self):
         """
@@ -461,7 +482,18 @@ class VocabManager(QObject): # 继承自 QObject
                 self.active_vocabulary = self.vocabulary
                 # 再次更新按钮样式以反映自动切换
                 self._update_challenge_mode_buttons()
+        elif self.current_challenge_mode == "self_register": # NEW: 自主录入模式
+            self._load_self_registered_vocabulary()
+            self.active_vocabulary = self.self_registered_vocabulary
+            if not self.active_vocabulary: # 如果自主录入词汇表为空，自动切换回常规模式
+                QMessageBox.information(self.main_window, "提示", "自主录入词汇表为空，已自动切换到常规闯关模式。", parent=self.main_window)
+                self.current_challenge_mode = "regular"
+                self._load_regular_vocabulary()
+                self.active_vocabulary = self.vocabulary
+                self._update_challenge_mode_buttons()
+
         self._update_mistake_count_label() # 确保在加载完词汇后更新标签
+        self._update_self_register_count_label() # NEW: 确保在加载完词汇后更新标签
         print(f"DEBUG: Active vocabulary after loading: {len(self.active_vocabulary)} words.")
         if not self.active_vocabulary: # 如果两种模式都加载失败，提供一个默认词汇
             self.active_vocabulary = [{"word": "hello", "content": "你好", "pronunciation": "/həˈloʊ/", "example": "Hello, how are you?"}] # Fallback with more details
@@ -477,6 +509,8 @@ class VocabManager(QObject): # 继承自 QObject
             self.btn_challenge_regular.setStyleSheet(self._get_button_style(self.current_challenge_mode == "regular"))
         if self.btn_challenge_mistake:
             self.btn_challenge_mistake.setStyleSheet(self._get_button_style(self.current_challenge_mode == "mistake_list"))
+        if self.btn_challenge_self_register: # NEW: 更新自主录入闯关按钮样式
+            self.btn_challenge_self_register.setStyleSheet(self._get_button_style(self.current_challenge_mode == "self_register"))
 
     def _get_button_style(self, is_active):
         """
@@ -516,6 +550,14 @@ class VocabManager(QObject): # 继承自 QObject
         """
         if self.lbl_mistake_count:
             self.lbl_mistake_count.setText(f"错词表 ({len(self.mistake_vocabulary)} 词)")
+
+    def _update_self_register_count_label(self): # NEW: 更新自主录入单词数显示
+        """
+        更新自主录入单词数显示。
+        """
+        if self.lbl_self_register_count:
+            self.lbl_self_register_count.setText(f"自主录入 ({len(self.self_registered_vocabulary)} 词)")
+
 
     def show_next(self, error_msg="", additional_message_html=""):
         """
@@ -689,8 +731,10 @@ class VocabManager(QObject): # 继承自 QObject
             self.show_next(error_msg=target, additional_message_html=additional_message_html)
             
             # 如果回答错误，添加到错词表或重置计数
-            self._add_or_reset_mistake_word(current_word_obj)
-            print(f"DEBUG: Word '{current_word_obj['word']}' added/reset in mistake list.")
+            # NEW: 只有在常规闯关或错词闯关模式下才更新错词表
+            if self.current_challenge_mode in ["regular", "mistake_list"]:
+                self._add_or_reset_mistake_word(current_word_obj)
+                print(f"DEBUG: Word '{current_word_obj['word']}' added/reset in mistake list.")
             QtCore.QTimer.singleShot(2000, self.go_next) # 2秒后自动跳转
 
     def go_next(self):

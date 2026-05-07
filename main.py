@@ -25,7 +25,7 @@ for p in [lib_path, base_path]:
 
 from PySide6 import QtWidgets, QtCore, QtGui
 from PySide6.QtWidgets import (QApplication, QMainWindow, QMessageBox, QPushButton, 
-                             QStackedWidget, QVBoxLayout, QWidget, QLineEdit)
+                             QStackedWidget, QVBoxLayout, QWidget, QLineEdit, QFrame, QButtonGroup)
 from PySide6.QtUiTools import QUiLoader
 
 try:
@@ -198,13 +198,14 @@ class HighSchoolEnglishAI(QMainWindow):
         self.btn_nav_gaokao = self.ui_root.findChild(QPushButton, "btn_nav_gaokao")
         self.btn_nav_full_exam = self.ui_root.findChild(QPushButton, "btn_nav_full_exam")
         self.btn_nav_self_register = self.ui_root.findChild(QPushButton, "btn_nav_self_register") # New button
-        self.btn_nav_ai_analyzer = self.ui_root.findChild(QPushButton, "btn_nav_ai_analyzer") # AI解析按钮
+        self.btn_nav_ai_analyzer = self.ui_root.findChild(QPushButton, "btn_nav_scan") # AI解析按钮 (根据UI文件中的objectName)
 
         # Initialize attributes to None to prevent AttributeError if initialization fails
         self.vocab_ctrl = None
         self.word_list_widget = None
         self.word_list_index = -1 # Use -1 as an invalid index
-        self.self_register_vocab_widget = None # Initialize the widget for the new page
+        self.self_register_vocab_ctrl = None # Initialize the controller for the new page
+        self.self_register_vocab_page_widget = None # Initialize the widget for the new page
         self.self_register_vocab_index = -1 # Initialize its index
         self.ai_analyzer_widget = None # Initialize AI Analyzer widget
         self.ai_analyzer_index = -1 # Initialize its index
@@ -404,7 +405,7 @@ class HighSchoolEnglishAI(QMainWindow):
             data_list = _internal_full_exam_parser(content)
             
             if not data_list: # Add check for empty data_list
-                QMessageBox.warning(self.main_window, "提示", f"文件 {target_file_name} 未能解析出任何题目板块，请检查文件格式。")
+                QMessageBox.warning(self, "提示", f"文件 {target_file_name} 未能解析出任何题目板块，请检查文件格式。")
                 self.full_exam_file_index = -1 # Reset index to re-shuffle
                 return
             

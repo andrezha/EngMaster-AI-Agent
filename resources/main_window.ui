@@ -143,9 +143,23 @@
                 </widget>
               </item>
               <item>
+                <widget class="QPushButton" name="btn_challenge_self_register">
+                 <property name="text">
+                  <string>自主录入闯关</string>
+                 </property>
+                </widget>
+              </item>
+              <item>
                 <widget class="QLabel" name="lbl_mistake_count">
                  <property name="text">
                   <string>错词表 (0 词)</string>
+                 </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QLabel" name="lbl_self_register_count">
+                 <property name="text">
+                  <string>自主录入 (0 词)</string>
                  </property>
                 </widget>
               </item>

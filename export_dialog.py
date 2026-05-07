@@ -7,7 +7,7 @@ import sys # Import sys for debugging
 from PySide6.QtCore import Qt
 
 class ExportDialog(QDialog):
-    def __init__(self, parent=None, regular_vocab_data=None, mistake_vocab_data=None):
+    def __init__(self, parent=None, regular_vocab_data=None, mistake_vocab_data=None, self_registered_vocab_data=None):
         super().__init__(parent)
         self.setWindowTitle("保存单词表")
         self.setMinimumWidth(400)
@@ -15,6 +15,7 @@ class ExportDialog(QDialog):
         print(f"DEBUG: ExportDialog __init__ called from: {__file__}") # Add this debug print
         self.regular_vocab_data = regular_vocab_data if regular_vocab_data is not None else []
         self.mistake_vocab_data = mistake_vocab_data if mistake_vocab_data is not None else []
+        self.self_registered_vocab_data = self_registered_vocab_data if self_registered_vocab_data is not None else []
 
         self.main_layout = QVBoxLayout(self)
         self.main_layout.setSpacing(15)
@@ -32,7 +33,11 @@ class ExportDialog(QDialog):
             f"常规英语词汇看英语填写中文默写表 ({len(self.regular_vocab_data)} 词)",
             f"错词英语词汇中文+ 英语表 ({len(self.mistake_vocab_data)} 词)",
             f"错词英语词汇英语默写表 ({len(self.mistake_vocab_data)} 词)",
-            f"错词英语词汇看英语填写中文默写表 ({len(self.mistake_vocab_data)} 词)"
+            f"错词英语词汇看英语填写中文默写表 ({len(self.mistake_vocab_data)} 词)",
+            # New self-registered options
+            f"自主录入单词表 ({len(self.self_registered_vocab_data)} 词)",
+            f"自主录入-看英默中 ({len(self.self_registered_vocab_data)} 词)",
+            f"自主录入-看中默英 ({len(self.self_registered_vocab_data)} 词)"
         ]
         self.export_mode_combo.addItems(new_items)
         self.export_mode_combo.currentIndexChanged.connect(self._set_default_path)
@@ -80,24 +85,23 @@ class ExportDialog(QDialog):
         current_date = datetime.now().strftime("%Y%m%d")
 
         # 从选中的文本中解析词汇类型和内容类型
-        vocab_type_name = ""
-        content_type_desc = ""
-
+        vocab_source_name = "" # Changed from vocab_type_name to vocab_source_name
+        
         if "常规英语词汇" in selected_text:
-            vocab_type_name = "常规词汇"
+            vocab_source_name = "常规词汇"
         elif "错词英语词汇" in selected_text:
-            vocab_type_name = "错词词汇"
+            vocab_source_name = "错词词汇"
+        elif "自主录入" in selected_text: # New condition
+            vocab_source_name = "自主录入"
 
         file_name_parts = ["HSE_Vocabulary"]
-        file_name_parts.append(vocab_type_name)
+        file_name_parts.append(vocab_source_name)
 
-        if "中文+ 英语表" in selected_text:
+        if "中文+ 英语表" in selected_text or "自主录入单词表" in selected_text: # Added new condition
             file_name_parts.append("中英对照")
-        elif "英语默写表" in selected_text:
+        elif "英语默写表" in selected_text or "看英默中" in selected_text: # Added new condition
             file_name_parts.append("英文默写")
-        elif "看英语填写中文默写表" in selected_text:
-            file_name_parts.append("英文默写中文")
-        elif "看中文填写英语默写表" in selected_text:
+        elif "看中默英" in selected_text: # Added new condition
             file_name_parts.append("中文默写英文")
         
         file_name_parts.append(current_date)
@@ -110,15 +114,19 @@ class ExportDialog(QDialog):
         selected_text = self.export_mode_combo.currentText()
         if "常规英语词汇" in selected_text:
             return self.regular_vocab_data
-        return self.mistake_vocab_data # 默认为错词词汇
+        elif "错词英语词汇" in selected_text:
+            return self.mistake_vocab_data
+        elif "自主录入" in selected_text:
+            return self.self_registered_vocab_data
+        return [] # Default to empty list if no match
 
     def get_selected_mode(self):
         selected_text = self.export_mode_combo.currentText()
-        if "中文+ 英语表" in selected_text:
+        if "中文+ 英语表" in selected_text or "自主录入单词表" in selected_text: # Added new condition
             return "normal"
-        elif "看英语填写中文默写表" in selected_text:
+        elif "英语默写表" in selected_text or "看英默中" in selected_text: # Added new condition
             return "en_dictate_cn"
-        elif "看中文填写英语默写表" in selected_text:
+        elif "看中默英" in selected_text: # Added new condition
             return "cn_dictate_en"
         return "normal" # 默认模式
 
