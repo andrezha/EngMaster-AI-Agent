@@ -190,7 +190,19 @@ class WordListView(QtWidgets.QWidget):
         action_mistake_en_dictate_cn.triggered.connect(lambda: self._generate_word_doc(self.all_mistake_words, "en_dictate_cn", "错词英语词汇看英语填写中文默写表"))
         
         action_mistake_cn_dictate_en = print_menu.addAction("错词英语词汇英语默写表")
-        action_mistake_cn_dictate_en.triggered.connect(lambda: self._generate_word_doc(self.all_mistake_words, "cn_dictate_en", "错词英语词汇英语默写表"))
+        action_mistake_cn_dictate_en.triggered.connect(lambda: self._generate_word_doc(self.all_mistake_words, "cn_dictate_en", "错词英语词汇英语默写表"))        
+        
+        print_menu.addSeparator() # 分隔线
+
+        # 自主录入单词表选项
+        action_self_register_normal = print_menu.addAction("自主录入单词表")
+        action_self_register_normal.triggered.connect(lambda: self._generate_word_doc(self._get_self_registered_vocab(), "normal", "自主录入单词表"))
+        
+        action_self_register_en_dictate_cn = print_menu.addAction("自主录入-看英默中")
+        action_self_register_en_dictate_cn.triggered.connect(lambda: self._generate_word_doc(self._get_self_registered_vocab(), "en_dictate_cn", "自主录入-看英默中"))
+        
+        action_self_register_cn_dictate_en = print_menu.addAction("自主录入-看中默英")
+        action_self_register_cn_dictate_en.triggered.connect(lambda: self._generate_word_doc(self._get_self_registered_vocab(), "cn_dictate_en", "自主录入-看中默英"))
         self.print_tool_button.setMenu(print_menu)
 
         # 搜索框
@@ -790,6 +802,15 @@ class WordListView(QtWidgets.QWidget):
             QtWidgets.QMessageBox.information(self, "提示", "没有词汇可供打印。")
             return
         self._perform_print(self.display_words, "所有词汇列表")
+
+    def _get_self_registered_vocab(self):
+        """
+        从 main_window 获取自主录入的单词数据。
+        """
+        if hasattr(self.main_window, 'self_register_vocab_ctrl') and self.main_window.self_register_vocab_ctrl:
+            return self.main_window.self_register_vocab_ctrl.user_vocab_data
+        return []
+
 
     def _perform_print(self, words_to_print, title="词汇列表"):
         """执行实际的打印操作。"""
