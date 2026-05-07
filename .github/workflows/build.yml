@@ -1,9 +1,9 @@
-name: Build Windows EXE
+name: Build Windows EXE (Final Production)
 
 on:
   workflow_dispatch:
   push:
-    branches: [ dev, main ]
+    branches: [ main, dev ]
 
 jobs:
   build:
@@ -13,22 +13,40 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Set up Python
+    - name: Set up Python 3.9
       uses: actions/setup-python@v5
       with:
         python-version: '3.9'
+        cache: 'pip'
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install PySide6 pyinstaller
+        # 确保安装 PyQt5 及项目可能用到的额外库
+        pip install PyQt5 pyinstaller
+        # 如果你有 requirements.txt，建议取消下行注释
+        # pip install -r requirements.txt
 
     - name: Build EXE
+      shell: pwsh
       run: |
-        python -m PyInstaller --onefile --windowed --clean --add-data "resources;resources" --add-data "lib;lib" --add-data "data;data" --add-data "assets;assets" main.py
+        # 首席架构师提示：
+        # 1. 使用 --onedir 保证 158+ 题库文件的读取效率
+        # 2. 补全了新增的 self_register_vocab_module, export_dialog 等模块
+        # 3. 严格映射 core, lib, parsers, data, resources, assets 六大核心目录
+        pyinstaller --noconfirm --onedir --windowed --clean `
+          --name "高考英语智胜工作站" `
+          --add-data "resources;resources" `
+          --add-data "data;data" `
+          --add-data "assets;assets" `
+          --add-data "core;core" `
+          --add-data "lib;lib" `
+          --add-data "parsers;parsers" `
+          --add-data "prompts.json;." `
+          main.py
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: My-Windows-Program
+        name: GaoKao-AI-Full-Release
         path: dist/
