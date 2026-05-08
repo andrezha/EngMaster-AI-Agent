@@ -1,0 +1,45 @@
+gitignore
+# --- Python 虚拟环境 ---
+venv/
+.venv/
+env/
+ENV/
+# 针对 Windows 创建的虚拟环境文件夹名
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
+
+# --- Python 编译缓存 ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- 编译器/IDE 配置文件 (Android Studio / VS Code) ---
+.idea/
+.vscode/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# --- 操作系统临时文件 ---
+Thumbs.db
+.DS_Store
+
+# --- 构建和分发文件 (PyInstaller 等) ---
+build/
+dist/
+*.spec
+
+# --- 你指定的 "new" 文件或文件夹 ---
+new/
+*new*
+new.*
+
+# --- 导出的文档或测试数据 (可选) ---
+*.docx
+*.log
