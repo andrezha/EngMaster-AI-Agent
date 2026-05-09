@@ -3,7 +3,7 @@ import os
 from PySide6 import QtWidgets, QtCore, QtGui
 from PySide6.QtWidgets import QTableWidgetItem, QPushButton, QMessageBox, QDialog, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QFrame, QHeaderView
 from PySide6.QtCore import Qt
-from utils import _normalize_full_width_to_half_width
+from utils import _normalize_legacy as _normalize_full_width_to_half_width
 
 class EditWordDialog(QDialog):
     """

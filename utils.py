@@ -36,3 +36,78 @@ def _normalize_full_width_to_half_width(text):
         text = text.replace(chr(i + 65248), chr(i))
     
     return text.strip()
+
+def _normalize_legacy(text):
+    """
+    Legacy normalization function for special practice and self-register vocabulary.
+    """
+    if text is None:
+        return ""
+    text = str(text)
+    
+    full_to_half_digits = {
+        '０': '0', '１': '1', '２': '2', '３': '3', '４': '4',
+        '５': '5', '６': '6', '７': '7', '８': '8', '９': '9'
+    }
+    for full, half in full_to_half_digits.items():
+        text = text.replace(full, half)
+    
+    text = text.replace('．', '.')
+    text = text.replace('【', '[')
+    text = text.replace('】', ']')
+    text = text.replace('（', '(')
+    text = text.replace('）', ')')
+    
+    full_to_half_letters = {
+        'Ａ': 'A', 'Ｂ': 'B', 'Ｃ': 'C', 'Ｄ': 'D', 'Ｅ': 'E',
+        'Ｆ': 'F', 'Ｇ': 'G', 'Ｈ': 'H', 'Ｉ': 'I', 'Ｊ': 'J',
+        'Ｋ': 'K', 'Ｌ': 'L', 'Ｍ': 'M', 'Ｎ': 'N', 'Ｏ': 'O',
+        'Ｐ': 'P', 'Ｑ': 'Q', 'Ｒ': 'R', 'Ｓ': 'S', 'Ｔ': 'T',
+        'Ｕ': 'U', 'Ｖ': 'V', 'Ｗ': 'W', 'Ｘ': 'X', 'Ｙ': 'Y',
+        'Ｚ': 'Z',
+        'ａ': 'a', 'ｂ': 'b', 'ｃ': 'c', 'ｄ': 'd', 'ｅ': 'e',
+        'ｆ': 'f', 'ｇ': 'g', 'ｈ': 'h', 'ｉ': 'i', 'ｊ': 'j',
+        'ｋ': 'k', 'ｌ': 'l', 'ｍ': 'm', 'ｎ': 'n', 'ｏ': 'o',
+        'ｐ': 'p', 'ｑ': 'q', 'ｒ': 'r', 'ｓ': 's', 'ｔ': 't',
+        'ｕ': 'u', 'ｖ': 'v', 'ｗ': 'w', 'ｘ': 'x', 'ｙ': 'y',
+        'ｚ': 'z'
+    }
+    for full, half in full_to_half_letters.items():
+        text = text.replace(full, half)
+
+    text = text.replace('　', ' ')
+    
+    return text
+
+def normalize_exam_text(text):
+    """
+    【专项练习/单词录入专用 - 纯净解析版】
+    此函数对应专项练习，不带黑框处理！
+    功能：仅做基础全角转半角映射，不执行 re.sub 剔除，不执行 strip()。
+    确保真题 JSON 的物理位置不发生 1 字节的偏移。
+    """
+    if text is None:
+        return ""
+
+    text = str(text)
+    
+    # 映射表：数字
+    m = {
+        '０': '0', '１': '1', '２': '2', '３': '3', '４': '4',
+        '５': '5', '６': '6', '７': '7', '８': '8', '９': '9'
+    }
+    for f, h in m.items():
+        text = text.replace(f, h)
+    
+    # 映射表：标点
+    text = text.replace('．', '.').replace('【', '[').replace('】', ']').replace('（', '(').replace('）', ')')
+    
+    # 映射表：英文字母
+    for i in range(65, 91): text = text.replace(chr(i + 65248), chr(i))
+    for i in range(97, 123): text = text.replace(chr(i + 65248), chr(i))
+    
+    # 映射表：空格
+    text = text.replace('　', ' ')
+    
+    return text
+
