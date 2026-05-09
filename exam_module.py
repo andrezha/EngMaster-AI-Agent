@@ -12,7 +12,7 @@ from utils import _normalize_full_width_to_half_width, normalize_exam_text
 class ExamManager:
     """
     专项练习模块核心管理器。
-    已恢复：QPushButton 行选择式样，支持整行点击高亮。
+    已修复：点击“查看解析”显示暂无解析的问题、逻辑分发、行选择式样。
     """
     PATH_MAPPING = {
         "阅读理解": "data/阅读理解",
@@ -94,7 +94,40 @@ class ExamManager:
                 content = f.read()
 
             clean_content = normalize_exam_text(content)
-            self.current_q = parse_reading_txt(clean_content)
+
+            if topic_name == "阅读理解":
+                # 关键：从专用解析器获取解析内容
+                metadata, passage, qs = SpecializedPracticeTextParser().parse_file(target_file)
+                items = [{
+                    'q_id': str(q.question_number),
+                    'content': q.question_text,
+                    'options': q.options,
+                    'answer': str(q.correct_answer).strip().upper(),
+                    'analysis': q.analysis_text
+                } for q in qs]
+                self.current_q = {'passage': passage, 'items': items, 'question_type': 'reading'}
+            else:
+                # 通用解析逻辑
+                parsed_data = parse_reading_txt(clean_content)
+
+                # 【核心修复逻辑】：手动将全局解析分发到每个小题 item 中
+                items = parsed_data.get('items', [])
+                global_analysis = str(parsed_data.get('original_analysis', ''))
+
+                if global_analysis and items:
+                    # 尝试按题号拆分解析文本，例如 "56. [解析]xxx 57. [解析]yyy"
+                    for item in items:
+                        qid = item.get('q_id')
+                        # 查找当前题号对应的解析段落
+                        pattern = rf"(?:^|\n)\s*{qid}\.?\s*(.*?)(?=\n\s*\d+\.?\s*|\Z)"
+                        match = re.search(pattern, global_analysis, re.S)
+                        if match:
+                            item['analysis'] = match.group(1).strip()
+                        else:
+                            # 兜底：如果没拆分出来，就把全文给它
+                            item['analysis'] = global_analysis
+
+                self.current_q = parsed_data
 
             self.current_type = topic_name
             if topic_name == "阅读理解": self.currentReadingData = self.current_q
@@ -144,65 +177,38 @@ class ExamManager:
         layout.addStretch()
 
     def _render_reading_ui(self, layout, items):
-        """渲染阅读理解 - 使用 QPushButton 整行选择模式"""
+        """渲染阅读理解 - 使用 QPushButton 整行点击模式"""
         for item in items:
-            qid = item.get('q_id')
-            qtext = item.get('content')
-
+            qid, qtext = item.get('q_id'), item.get('content')
             frame = QFrame()
             frame.setStyleSheet("QFrame { border: none; margin-bottom: 20px; }")
             vbox = QVBoxLayout(frame)
-
             lbl = QLabel(f"<b>{qid}. {qtext}</b>")
             lbl.setWordWrap(True)
             vbox.addWidget(lbl)
 
             group = QButtonGroup(self.mw)
-            group.setExclusive(True) # 核心：设置按钮组互斥
-
+            group.setExclusive(True)
             opts = item.get('options', {})
             if isinstance(opts, dict):
                 for k, v in sorted(opts.items()):
-                    # 改回 QPushButton 以实现“选行”式样
                     btn = QPushButton(f"{k}. {v}")
                     btn.setCheckable(True)
-                    btn.setStyleSheet("""
-                        QPushButton {
-                            text-align: left;
-                            padding: 10px 15px;
-                            border: 1px solid #dcdde1;
-                            border-radius: 8px;
-                            background-color: white;
-                            color: #2f3640;
-                        }
-                        QPushButton:hover {
-                            background-color: #f5f6fa;
-                        }
-                        QPushButton:checked {
-                            background-color: #3498db;
-                            color: white;
-                            border-color: #2980b9;
-                            font-weight: bold;
-                        }
-                    """)
+                    btn.setStyleSheet("QPushButton { text-align: left; padding: 10px; border: 1px solid #dcdde1; border-radius: 8px; background: white; } "
+                                    "QPushButton:checked { background-color: #3498db; color: white; font-weight: bold; }")
                     group.addButton(btn)
-                    # 记录选择逻辑
                     btn.clicked.connect(lambda ch, q=qid, a=k: self.user_selections.update({q: a}))
                     vbox.addWidget(btn)
             layout.addWidget(frame)
 
     def _render_seven_five_ui(self, layout, items):
-        """渲染七选五 - 使用 QPushButton 整行选择模式"""
+        """渲染七选五 - 使用整行点击模式"""
         global_options = {}
         for it in items:
             opts = it.get('options', {})
             if isinstance(opts, dict) and len(opts) >= 7:
                 global_options = opts
                 break
-        if not global_options:
-            for it in items:
-                opts = it.get('options', {})
-                if isinstance(opts, dict): global_options.update(opts)
 
         for item in items:
             qid = item.get('q_id')
@@ -210,22 +216,13 @@ class ExamManager:
             frame.setStyleSheet("QFrame { border: 1px solid #eee; border-radius: 8px; margin-bottom: 15px; padding: 5px; background: #fafafa; }")
             vbox = QVBoxLayout(frame)
             vbox.addWidget(QLabel(f"<b>空格 {qid}：请选择最合适的句子</b>"))
-
             group = QButtonGroup(self.mw)
             group.setExclusive(True)
-
             for k, v in sorted(global_options.items()):
                 btn = QPushButton(f"{k}. {v}")
                 btn.setCheckable(True)
-                btn.setStyleSheet("""
-                    QPushButton {
-                        text-align: left; padding: 8px 12px; border: 1px solid #dcdde1;
-                        border-radius: 6px; background-color: white; font-size: 13px;
-                    }
-                    QPushButton:checked {
-                        background-color: #3498db; color: white; font-weight: bold;
-                    }
-                """)
+                btn.setStyleSheet("QPushButton { text-align: left; padding: 8px; border: 1px solid #d1d5db; background: white; } "
+                                "QPushButton:checked { background: #3498db; color: white; }")
                 group.addButton(btn)
                 btn.clicked.connect(lambda ch, q=qid, a=k: self.user_selections.update({q: a}))
                 vbox.addWidget(btn)
@@ -245,37 +242,41 @@ class ExamManager:
             layout.addLayout(h_layout)
 
     def _render_cloze_ui(self, layout, items):
-        """渲染完形填空 - 使用 QPushButton 整行选择模式"""
         grid = QHBoxLayout()
         col1, col2 = QVBoxLayout(), QVBoxLayout()
         for idx, item in enumerate(items):
             qid = item.get('q_id')
-            label = QLabel(f"<b>{qid}.</b>")
-            target_col = col1 if idx % 2 == 0 else col2
-            target_col.addWidget(label)
-
+            col = col1 if idx % 2 == 0 else col2
+            col.addWidget(QLabel(f"<b>{qid}.</b>"))
             group = QButtonGroup(self.mw)
             group.setExclusive(True)
-
             opts = item.get('options', {})
             if isinstance(opts, dict):
                 for k, v in sorted(opts.items()):
                     btn = QPushButton(f"{k}. {v}")
                     btn.setCheckable(True)
-                    btn.setStyleSheet("""
-                        QPushButton { text-align: left; padding: 5px 10px; border: 1px solid #eee; border-radius: 4px; background: white; }
-                        QPushButton:checked { background: #3498db; color: white; }
-                    """)
+                    btn.setStyleSheet("QPushButton { text-align: left; padding: 5px; background: white; border: 1px solid #eee; } "
+                                    "QPushButton:checked { background: #3498db; color: white; }")
                     group.addButton(btn)
                     btn.clicked.connect(lambda ch, q=qid, c=k: self.user_selections.update({q: c}))
-                    target_col.addWidget(btn)
+                    col.addWidget(btn)
         grid.addLayout(col1); grid.addLayout(col2)
         layout.addLayout(grid)
 
     def check_score(self):
+        """核心修复：判分面板带“查看解析”按钮"""
         if not self.current_q: return
         items = self.current_q.get('items', [])
-        results = []
+        panel = self.ui.gk_result_panel
+
+        # 准备布局容器
+        if not panel.layout():
+            layout = QVBoxLayout(panel)
+            panel.setLayout(layout)
+        else:
+            layout = panel.layout()
+            self._clear_layout(layout)
+
         correct_num = 0
         for it in items:
             qid = it.get('q_id')
@@ -283,29 +284,52 @@ class ExamManager:
             user = str(self.user_selections.get(qid, "未做")).strip().upper()
             is_ok = (user == ans)
             if is_ok: correct_num += 1
+
+            row = QWidget()
+            row_lay = QHBoxLayout(row)
+            row_lay.setContentsMargins(0, 2, 0, 2)
+            color = "#27ae60" if is_ok else "#e74c3c"
             status = "✅" if is_ok else "❌"
-            results.append(f"Q{qid}: 你的答案[{user}] 正确答案[{ans}] {status}")
 
-        self.ui.gk_result_panel.setHtml(f"<b>判分结果: {correct_num}/{len(items)}</b><br><br>" + "<br>".join(results))
-        self._show_analysis()
+            info = QLabel(f"第{qid}题：你的[{user}] 正确[{ans}] {status}")
+            info.setStyleSheet(f"color: {color}; font-weight: bold; font-size: 13px;")
+            row_lay.addWidget(info, 1)
 
-    def _show_analysis(self):
-        if not self.current_q: return
-        html = "<h3>💡 试题详解</h3>"
-        for it in self.current_q.get('items', []):
-            qid = it.get('q_id')
-            raw_a = it.get('analysis', '暂无解析')
-            clean_a = str(raw_a).replace('\n', '<br>')
-            html += f"<div style='margin-bottom:12px; padding:8px; background:#f9f9f9; border-left:4px solid #3498db;'>" \
-                    f"<b>第{qid}题：</b><br>{clean_a}</div>"
+            # 查看解析按钮
+            analysis_btn = QPushButton("📖 查看解析")
+            analysis_btn.setFixedWidth(90)
+            analysis_btn.setStyleSheet("QPushButton { background: #f3f4f6; border: 1px solid #ddd; border-radius: 4px; padding: 3px; font-size: 11px; }")
+
+            # 获取当前题目的解析文本
+            atext = it.get('analysis', '暂无详细解析内容')
+            # 闭包绑定：确保点击时传递的是当前题目的内容
+            analysis_btn.clicked.connect(lambda checked=False, q=qid, t=atext: self._show_single_analysis(q, t))
+
+            row_lay.addWidget(analysis_btn)
+            layout.addWidget(row)
+
+        # 显示总分
+        layout.addWidget(QLabel(f"<b style='font-size:15px; color:#2c3e50;'>最终得分: {correct_num} / {len(items)}</b>"))
+        layout.addStretch()
+
+    def _show_single_analysis(self, qid, text):
+        """在右侧解析区显示选定题目的解析"""
+        clean_text = str(text).replace('\n', '<br>')
+        html = f"""
+            <div style='background:#fdf6ec; border-left:5px solid #e67e22; padding:15px; border-radius:8px;'>
+                <h4 style='color:#e67e22; margin-top:0;'>第 {qid} 题 详解</h4>
+                <p style='color:#5d6d7e; line-height:1.6; font-size:14px;'>{clean_text}</p>
+            </div>
+        """
         self.ui.gk_ai_display.setHtml(html)
 
     def update_nav_highlight(self):
+        """顶部菜单按钮高亮控制"""
         btn_map = {"阅读理解": "gk_btn_reading", "完形填空": "gk_btn_cloze", "语法填空": "gk_btn_grammar", "七选五": "gk_btn_seven_five"}
         for type_name, obj_name in btn_map.items():
             btn = getattr(self.ui, obj_name, None)
             if btn:
                 if type_name == self.current_type:
-                    btn.setStyleSheet("background-color: #3498db; color: white; border-radius: 5px; font-weight: bold;")
+                    btn.setStyleSheet("background-color: #3498db; color: white; border-radius: 5px; font-weight: bold; padding: 5px;")
                 else:
-                    btn.setStyleSheet("background-color: #f0f0f0; color: #333; border-radius: 5px;")
+                    btn.setStyleSheet("background-color: #f0f0f0; color: #333; border-radius: 5px; padding: 5px;")
