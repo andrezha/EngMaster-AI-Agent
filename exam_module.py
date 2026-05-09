@@ -12,7 +12,7 @@ from utils import _normalize_full_width_to_half_width, normalize_exam_text
 class ExamManager:
     """
     专项练习模块核心管理器。
-    已修复：点击“查看解析”显示暂无解析的问题、逻辑分发、行选择式样。
+    已修复：解决得分重叠、内容下移、完形填空结果双列排布、补全截断逻辑。
     """
     PATH_MAPPING = {
         "阅读理解": "data/阅读理解",
@@ -96,7 +96,6 @@ class ExamManager:
             clean_content = normalize_exam_text(content)
 
             if topic_name == "阅读理解":
-                # 关键：从专用解析器获取解析内容
                 metadata, passage, qs = SpecializedPracticeTextParser().parse_file(target_file)
                 items = [{
                     'q_id': str(q.question_number),
@@ -107,26 +106,15 @@ class ExamManager:
                 } for q in qs]
                 self.current_q = {'passage': passage, 'items': items, 'question_type': 'reading'}
             else:
-                # 通用解析逻辑
                 parsed_data = parse_reading_txt(clean_content)
-
-                # 【核心修复逻辑】：手动将全局解析分发到每个小题 item 中
                 items = parsed_data.get('items', [])
                 global_analysis = str(parsed_data.get('original_analysis', ''))
-
                 if global_analysis and items:
-                    # 尝试按题号拆分解析文本，例如 "56. [解析]xxx 57. [解析]yyy"
                     for item in items:
                         qid = item.get('q_id')
-                        # 查找当前题号对应的解析段落
                         pattern = rf"(?:^|\n)\s*{qid}\.?\s*(.*?)(?=\n\s*\d+\.?\s*|\Z)"
                         match = re.search(pattern, global_analysis, re.S)
-                        if match:
-                            item['analysis'] = match.group(1).strip()
-                        else:
-                            # 兜底：如果没拆分出来，就把全文给它
-                            item['analysis'] = global_analysis
-
+                        item['analysis'] = match.group(1).strip() if match else global_analysis
                 self.current_q = parsed_data
 
             self.current_type = topic_name
@@ -177,7 +165,6 @@ class ExamManager:
         layout.addStretch()
 
     def _render_reading_ui(self, layout, items):
-        """渲染阅读理解 - 使用 QPushButton 整行点击模式"""
         for item in items:
             qid, qtext = item.get('q_id'), item.get('content')
             frame = QFrame()
@@ -186,7 +173,6 @@ class ExamManager:
             lbl = QLabel(f"<b>{qid}. {qtext}</b>")
             lbl.setWordWrap(True)
             vbox.addWidget(lbl)
-
             group = QButtonGroup(self.mw)
             group.setExclusive(True)
             opts = item.get('options', {})
@@ -202,14 +188,12 @@ class ExamManager:
             layout.addWidget(frame)
 
     def _render_seven_five_ui(self, layout, items):
-        """渲染七选五 - 使用整行点击模式"""
         global_options = {}
         for it in items:
             opts = it.get('options', {})
             if isinstance(opts, dict) and len(opts) >= 7:
                 global_options = opts
                 break
-
         for item in items:
             qid = item.get('q_id')
             frame = QFrame()
@@ -264,12 +248,16 @@ class ExamManager:
         layout.addLayout(grid)
 
     def check_score(self):
-        """核心修复：判分面板带“查看解析”按钮"""
+        """判分与展示解析 - 彻底解决重叠与位置下移问题。"""
         if not self.current_q: return
         items = self.current_q.get('items', [])
         panel = self.ui.gk_result_panel
 
-        # 准备布局容器
+        # 🚨 1. 彻底清除原有文本内容，解决重叠遮挡
+        panel.clear()
+        panel.setHtml("")
+
+        # 2. 准备或清理布局
         if not panel.layout():
             layout = QVBoxLayout(panel)
             panel.setLayout(layout)
@@ -277,13 +265,45 @@ class ExamManager:
             layout = panel.layout()
             self._clear_layout(layout)
 
+        # 🎯 3. 【核心修正】在顶部添加一个较大的间距，将得分和列表向下移动
+        layout.addSpacing(40)
+
+        layout.setContentsMargins(15, 5, 15, 15)
+        layout.setSpacing(6)
+
+        # 4. 计算得分
         correct_num = 0
         for it in items:
+            ans = str(it.get('answer', '')).strip().upper()
+            user = str(self.user_selections.get(it.get('q_id'), "未做")).strip().upper()
+            if user == ans: correct_num += 1
+
+        # 5. 得分置顶（左对齐，加一点底部间距）
+        score_label = QLabel(f"最终得分: {correct_num} / {len(items)}")
+        score_label.setStyleSheet("font-size: 15px; font-weight: bold; color: #2c3e50; margin-bottom: 10px;")
+        layout.addWidget(score_label)
+
+        # 6. 判分明细容器（完形填空双列，其他单列）
+        is_cloze = (self.current_type == "完形填空")
+        if is_cloze:
+            container = QWidget()
+            cont_lay = QHBoxLayout(container)
+            cont_lay.setContentsMargins(0, 0, 0, 0)
+            col1 = QVBoxLayout()
+            col2 = QVBoxLayout()
+            cont_lay.addLayout(col1)
+            cont_lay.addLayout(col2)
+            layout.addWidget(container)
+        else:
+            col1 = layout
+            col2 = None
+
+        # 7. 填充题目明细对比结果
+        for idx, it in enumerate(items):
             qid = it.get('q_id')
             ans = str(it.get('answer', '')).strip().upper()
             user = str(self.user_selections.get(qid, "未做")).strip().upper()
             is_ok = (user == ans)
-            if is_ok: correct_num += 1
 
             row = QWidget()
             row_lay = QHBoxLayout(row)
@@ -291,26 +311,29 @@ class ExamManager:
             color = "#27ae60" if is_ok else "#e74c3c"
             status = "✅" if is_ok else "❌"
 
-            info = QLabel(f"第{qid}题：你的[{user}] 正确[{ans}] {status}")
+            info = QLabel(f"Q{qid}: {user} | {ans} {status}")
             info.setStyleSheet(f"color: {color}; font-weight: bold; font-size: 13px;")
             row_lay.addWidget(info, 1)
 
-            # 查看解析按钮
-            analysis_btn = QPushButton("📖 查看解析")
-            analysis_btn.setFixedWidth(90)
-            analysis_btn.setStyleSheet("QPushButton { background: #f3f4f6; border: 1px solid #ddd; border-radius: 4px; padding: 3px; font-size: 11px; }")
+            btn = QPushButton("📖 解析")
+            btn.setFixedWidth(65)
+            btn.setStyleSheet("QPushButton { background: #f8f9fa; border: 1px solid #ccc; border-radius: 4px; font-size: 11px; padding: 2px; }")
 
-            # 获取当前题目的解析文本
+            # 闭包绑定解析
             atext = it.get('analysis', '暂无详细解析内容')
-            # 闭包绑定：确保点击时传递的是当前题目的内容
-            analysis_btn.clicked.connect(lambda checked=False, q=qid, t=atext: self._show_single_analysis(q, t))
+            btn.clicked.connect(lambda checked=False, q=qid, t=atext: self._show_single_analysis(q, t))
+            row_lay.addWidget(btn)
 
-            row_lay.addWidget(analysis_btn)
-            layout.addWidget(row)
+            if is_cloze and col2:
+                if idx % 2 == 0: col1.addWidget(row)
+                else: col2.addWidget(row)
+            else:
+                col1.addWidget(row)
 
-        # 显示总分
-        layout.addWidget(QLabel(f"<b style='font-size:15px; color:#2c3e50;'>最终得分: {correct_num} / {len(items)}</b>"))
         layout.addStretch()
+
+        # 自动滚回顶部
+        panel.verticalScrollBar().setValue(0)
 
     def _show_single_analysis(self, qid, text):
         """在右侧解析区显示选定题目的解析"""
@@ -325,7 +348,8 @@ class ExamManager:
 
     def update_nav_highlight(self):
         """顶部菜单按钮高亮控制"""
-        btn_map = {"阅读理解": "gk_btn_reading", "完形填空": "gk_btn_cloze", "语法填空": "gk_btn_grammar", "七选五": "gk_btn_seven_five"}
+        btn_map = {"阅读理解": "gk_btn_reading", "完形填空": "gk_btn_cloze",
+                 "语法填空": "gk_btn_grammar", "七选五": "gk_btn_seven_five"}
         for type_name, obj_name in btn_map.items():
             btn = getattr(self.ui, obj_name, None)
             if btn:
