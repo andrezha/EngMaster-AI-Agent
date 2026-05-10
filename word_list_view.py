@@ -115,14 +115,14 @@ class WordListView(QtWidgets.QWidget):
         menu.addAction("错词英语词汇看英语填写中文默写表").triggered.connect(lambda: self._do_export(self.all_mistake_words, "en_dictate_cn", "错词英语词汇_英默中"))
         menu.addAction("错词英语词汇英语默写表").triggered.connect(lambda: self._do_export(self.all_mistake_words, "cn_dictate_en", "错词英语词汇_中默英"))
         menu.addSeparator()
-        self_reg_data = self._get_self_reg()
-        menu.addAction("自主录入单词全表").triggered.connect(lambda: self._do_export(self_reg_data, "normal", "自主全表"))
-        menu.addAction("自主录入-看英默中").triggered.connect(lambda: self._do_export(self_reg_data, "en_dictate_cn", "自主英默中"))
-        menu.addAction("自主录入-看中默英").triggered.connect(lambda: self._do_export(self_reg_data, "cn_dictate_en", "自主中默英"))
+        menu.addAction("自主录入单词全表").triggered.connect(lambda: self._do_export(self._get_self_reg(), "normal", "自主全表"))
+        menu.addAction("自主录入-看英默中").triggered.connect(lambda: self._do_export(self._get_self_reg(), "en_dictate_cn", "自主英默中"))
+        menu.addAction("自主录入-看中默英").triggered.connect(lambda: self._do_export(self._get_self_reg(), "cn_dictate_en", "自主中默英"))
         self.btn_export.setMenu(menu)
 
     def _load_json_data(self):
         # 🟢 挪到根目录后，直接用 utils 提供的 resource_path 找 assets
+        # 加载常规词汇
         json_path = get_resource_path("assets/vocabulary.json")
         if os.path.exists(json_path):
             try:
@@ -131,7 +131,20 @@ class WordListView(QtWidgets.QWidget):
                     self.all_regular_words.sort(key=lambda x: (str(x.get('word',''))).lower())
                 self._switch_list("regular")
             except Exception as e:
-                print(f"DEBUG: JSON加载失败 {e}")
+                print(f"DEBUG: 加载常规词汇失败 {e}")
+        
+        # 加载错词表
+        mistake_words_path = get_writable_data_path("mistake_words.json")
+        if os.path.exists(mistake_words_path):
+            try:
+                with open(mistake_words_path, 'r', encoding='utf-8') as f:
+                    self.all_mistake_words = json.load(f)
+                    if self.all_mistake_words:
+                        self.all_mistake_words.sort(key=lambda x: (str(x.get('word',''))).lower())
+                        print(f"✅ 错词表加载成功，共 {len(self.all_mistake_words)} 词")
+            except Exception as e:
+                print(f"DEBUG: 加载错词表失败 {e}")
+                self.all_mistake_words = []
 
     def refresh_mistake_list(self, data):
         self.all_mistake_words = data if isinstance(data, list) else [data] if data else []
@@ -221,7 +234,13 @@ class WordListView(QtWidgets.QWidget):
 
     def _get_self_reg(self):
         ctrl = getattr(self.main_window, 'self_register_vocab_ctrl', None)
-        return getattr(ctrl, 'user_vocab_data', []) if ctrl else []
+        if ctrl:
+            data = getattr(ctrl, 'user_vocab_data', [])
+            print(f"DEBUG: 获取自主录入数据，共 {len(data)} 词")
+            return data
+        else:
+            print("DEBUG: 自主录入模块未初始化")
+            return []
 
     def _change_page(self, delta):
         new_p = self.current_page + delta

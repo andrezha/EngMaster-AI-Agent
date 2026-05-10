@@ -3,7 +3,7 @@ import os
 from PySide6 import QtWidgets, QtCore, QtGui
 from PySide6.QtWidgets import QTableWidgetItem, QPushButton, QMessageBox, QDialog, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QFrame, QHeaderView
 from PySide6.QtCore import Qt
-from utils import _normalize_legacy as _normalize_full_width_to_half_width
+from utils import _normalize_legacy as _normalize_full_width_to_half_width, get_writable_data_path
 
 class EditWordDialog(QDialog):
     """
@@ -89,7 +89,7 @@ class SelfRegisterVocabManager(QtWidgets.QWidget): # Inherit from QWidget direct
         super().__init__() # Call QWidget's init
         self.main_window = main_window_instance
         self.user_vocab_data = []
-        self.data_file_path = os.path.join(self.main_window.base_path, "assets", "user_registered_vocab.json") # 数据文件路径，确保在 assets 文件夹下
+        self.data_file_path = get_writable_data_path("user_registered_vocab.json") # 使用AppData目录
 
         self.current_page = 0  # 0-indexed
         self.words_per_physical_row = 3  # 每物理行显示多少组单词 (例如：3组)
@@ -220,11 +220,6 @@ class SelfRegisterVocabManager(QtWidgets.QWidget): # Inherit from QWidget direct
         """
         从本地 JSON 文件加载用户登记的单词数据。
         """
-        # 确保 assets 目录存在
-        assets_dir = os.path.dirname(self.data_file_path)
-        if not os.path.exists(assets_dir):
-            os.makedirs(assets_dir)
-
         try:
             if os.path.exists(self.data_file_path):
                 with open(self.data_file_path, "r", encoding="utf-8") as f:

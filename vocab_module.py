@@ -96,8 +96,6 @@ class VocabManager(QObject):  # 继承自 QObject
         self.self_registered_vocabulary = []  # NEW: 自主录入词汇表
         self.current_challenge_mode = "regular"  # 默认常规闯关模式
         self._notification_message_for_next_display = ""  # 用于在显示下一个单词时传递通知消息
-        self.mistake_word_file_path = os.path.join(
-            self.main_window.base_path, "assets", "mistake_words.json")
 
         # 初始化计时器
         # Keep timer initialized to prevent AttributeError on .stop()
@@ -386,19 +384,13 @@ class VocabManager(QObject):  # 继承自 QObject
                     word_obj.setdefault('pronunciation', '')
                     word_obj.setdefault('example', '')
 
-                if not self.mistake_vocabulary:
-                    print("💡 错词表文件存在但为空，已添加测试词汇。")
-                    self._add_test_mistake_words()
-                else:
-                    print(f"✅ 错词表加载成功，共 {len(self.mistake_vocabulary)} 词。")
+                print(f"✅ 错词表加载成功，共 {len(self.mistake_vocabulary)} 词。")
             else:
                 self.mistake_vocabulary = []
-                print("💡 错词表文件不存在，已创建并添加测试词汇。")
-                self._add_test_mistake_words()
+                print("💡 错词表文件不存在，初始化为空列表。")
         except json.JSONDecodeError:
-            print(f"❌ 错词表文件 {self.mistake_word_file_path} 格式错误，已重置并添加测试词汇。")
+            print(f"❌ 错词表文件 {self.mistake_word_file_path} 格式错误，重置为空列表。")
             self.mistake_vocabulary = []
-            self._add_test_mistake_words()
             QMessageBox.warning(self.main_window, "错误",
                                 f"错词表文件 {self.mistake_word_file_path} 格式错误，已重置。")
             self._update_mistake_count_label()  # Update label after reset
@@ -467,26 +459,16 @@ class VocabManager(QObject):  # 继承自 QObject
             self.btn_confirm.setEnabled(False)
         self.timer.stop()  # Ensure timer is stopped if it was ever started (prevents AttributeError)
 
-    def _add_test_mistake_words(self):
-        """
-        添加几个测试用的错词到错词表。
-        """
-        test_words = [
-            {"word": "test1", "content": "测试词汇1", "correct_count": 0,
-                "pronunciation": "", "example": ""},
-            {"word": "example", "content": "例子", "correct_count": 0,
-             "pronunciation": "", "example": ""},
-            {"word": "debug", "content": "调试", "correct_count": 0,
-             "pronunciation": "", "example": ""}
-        ]
-        self.mistake_vocabulary.extend(test_words)
-        self._save_mistake_vocabulary()
-        self._update_mistake_count_label()
+
 
     def _add_or_reset_mistake_word(self, word_obj):
         """
         将单词添加到错词表，如果已存在则重置正确计数。
         """
+        # 🆕 修复：添加词之前先确保错词表已从文件加载
+        if not self.mistake_vocabulary:  # 如果内存中为空，尝试从文件加载
+            self._load_mistake_vocabulary()
+        
         found = False
         for i, item in enumerate(self.mistake_vocabulary):
             if item["word"].lower() == word_obj["word"].lower():
@@ -506,6 +488,10 @@ class VocabManager(QObject):  # 继承自 QObject
         """
         增加错词的正确计数，如果达到3次则移除。
         """
+        # 🆕 修复：操作之前先确保错词表已从文件加载
+        if not self.mistake_vocabulary:  # 如果内存中为空，尝试从文件加载
+            self._load_mistake_vocabulary()
+        
         for i, item in enumerate(self.mistake_vocabulary):
             if item["word"].lower() == word_obj["word"].lower():
                 self.mistake_vocabulary[i]["correct_count"] += 1
