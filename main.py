@@ -7,6 +7,9 @@ import PySide6
 import random
 import traceback
 
+# 导入单实例运行所需的锁类
+from PySide6.QtCore import QLockFile, QDir
+
 # ============ [0. 解决高分屏/缩放导致的 UI 乱版] ============
 os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
 os.environ["QT_ENABLE_HIGHDPI_SCALING"] = "1"
@@ -28,7 +31,7 @@ pyside6_dir = os.path.dirname(PySide6.__file__)
 os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = os.path.join(pyside6_dir, 'plugins', 'platforms')
 
 # ============ [3. 模块搜索路径] ============
-# 🟢 挪动后：现在 word_list_view 在根目录，我们只需要注入 BASE_DIR 即可
+# 🟢 物理挪动后：现在 word_list_view 在根目录，我们只需要注入 BASE_DIR 即可
 for p in [BASE_DIR]:
     if p not in sys.path:
         sys.path.insert(0, p)
@@ -219,6 +222,27 @@ class HighSchoolEnglishAI(QMainWindow):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     app.setStyle("Fusion")
+
+    # 🎯 核心修改：单实例运行锁
+    # 在临时目录创建一个锁文件
+    lock_path = os.path.join(QDir.tempPath(), "HSE_AI_Workstation_Unique.lock")
+    lock_file = QLockFile(lock_path)
+
+    # 尝试锁定，如果失败说明已有程序在运行
+    if not lock_file.tryLock(100):
+        msg_box = QMessageBox()
+        msg_box.setWindowTitle("运行提示")
+        msg_box.setText("程序已经在运行中！")
+        msg_box.setInformativeText("请在任务栏查找已打开的窗口，请勿重复启动。")
+        msg_box.setIcon(QMessageBox.Information)
+        # 统一样式防止乱版
+        msg_box.setStyle(QtWidgets.QStyleFactory.create("Fusion"))
+        msg_box.exec()
+        sys.exit(0)
+
+    # 锁定成功，启动窗口
     window = HighSchoolEnglishAI()
     window.show()
+
+    # 结束后系统会自动释放锁文件
     sys.exit(app.exec())
