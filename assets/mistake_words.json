@@ -1,7 +1,16 @@
 [
     {
-        "word": "he",
-        "content": "[heɪ] pron. 他",
-        "correct_count": 0
+        "word": "kindergarten",
+        "content": "[kɪndəˈɡɑːt(ə)n] n. 幼儿园",
+        "correct_count": 0,
+        "pronunciation": "",
+        "example": ""
+    },
+    {
+        "word": "Mexican",
+        "content": "[ˈmeksɪkən] a. 墨西哥的",
+        "correct_count": 0,
+        "pronunciation": "",
+        "example": ""
     }
 ]

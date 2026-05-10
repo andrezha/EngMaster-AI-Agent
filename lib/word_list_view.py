@@ -10,7 +10,11 @@ from PySide6.QtPrintSupport import QPrintDialog, QPrinter
 
 # 严格匹配根目录 utils.py 导入 (下划线函数名)
 try:
-    root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    if hasattr(sys, '_MEIPASS'):
+        root_path = sys._MEIPASS
+    else:
+        root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+
     if root_path not in sys.path:
         sys.path.insert(0, root_path)
     from utils import _normalize_full_width_to_half_width
@@ -20,7 +24,7 @@ except ImportError:
         return re.sub(r'[\uE000-\uF8FF]', '', str(t)).strip()
 
 class WordListView(QtWidgets.QWidget):
-    # --- 布局常量：PO 定义的紧凑标准 ---
+    # --- 布局常量 (坚决不动) ---
     ROW_HEIGHT = 54
     WORDS_PER_PAGE = 60
     ROWS_PER_PAGE = 20
@@ -28,7 +32,7 @@ class WordListView(QtWidgets.QWidget):
     INDEX_COL_WIDTH = 35
     WORD_COL_WIDTH = 125
 
-    # --- 字体规范：极致信息密度 ---
+    # --- 字体规范 (坚决不动) ---
     WORD_FONT_SIZE = 14
     CONTENT_FONT_SIZE = 12
     INDEX_COLOR = "#000000"
@@ -64,7 +68,6 @@ class WordListView(QtWidgets.QWidget):
         self.btn_reg = QtWidgets.QPushButton("📚 常规词汇")
         self.btn_mis = QtWidgets.QPushButton("❌ 错词表")
 
-        # 绿色打印按钮
         self.print_tool_btn = QtWidgets.QToolButton()
         self.print_tool_btn.setFixedHeight(34)
         self.print_tool_btn.setText("输出Word打印单词表")
@@ -73,7 +76,7 @@ class WordListView(QtWidgets.QWidget):
             QToolButton { background: #28a745; color: white; border-radius: 2px; font-weight: bold; font-size: 11px; padding: 0 12px; }
             QToolButton:hover { background: #218838; }
         """)
-        self._setup_print_menu() # 核心复位：一级扁平化 9 选项
+        self._setup_print_menu()
 
         self.search_input = QtWidgets.QLineEdit()
         self.search_input.setPlaceholderText("检索...")
@@ -89,6 +92,7 @@ class WordListView(QtWidgets.QWidget):
                 w.setFixedHeight(34)
                 w.setCheckable(True)
 
+        # 信号连接
         self.btn_reg.clicked.connect(lambda: self._switch_list_type("regular"))
         self.btn_mis.clicked.connect(lambda: self._switch_list_type("mistake"))
         self.toggle_en.clicked.connect(self._toggle_en_logic)
@@ -123,10 +127,6 @@ class WordListView(QtWidgets.QWidget):
         main_layout.addWidget(footer)
 
     def _setup_print_menu(self):
-        """
-        全量复位方案：严格保持一级扁平化菜单，绝对禁止二级嵌套。
-        通过 QSS 强制高度，确保 9 个选项在屏幕内全显。
-        """
         menu = QtWidgets.QMenu(self)
         menu.setStyleSheet("""
             QMenu { background: white; border: 1px solid #DCDFE6; }
@@ -135,25 +135,17 @@ class WordListView(QtWidgets.QWidget):
             QMenu::separator { height: 1px; background: #E4E7ED; margin: 2px 0; }
         """)
 
-        # 第一组：常规
         menu.addAction("常规英语词汇中文+ 英语表").triggered.connect(lambda: self._generate_word_doc(self.all_regular_words, "normal", "常规_全表"))
         menu.addAction("常规英语词汇看英语填写中文默写表").triggered.connect(lambda: self._generate_word_doc(self.all_regular_words, "en_dictate_cn", "常规_英默中"))
         menu.addAction("常规英语词汇英语默写表").triggered.connect(lambda: self._generate_word_doc(self.all_regular_words, "cn_dictate_en", "常规_中默英"))
-
         menu.addSeparator()
-
-        # 第二组：错词
         menu.addAction("错词英语词汇中文+ 英语表").triggered.connect(lambda: self._generate_word_doc(self.all_mistake_words, "normal", "错词_全表"))
         menu.addAction("错词英语词汇看英语填写中文默写表").triggered.connect(lambda: self._generate_word_doc(self.all_mistake_words, "en_dictate_cn", "错词_英默中"))
         menu.addAction("错词英语词汇英语默写表").triggered.connect(lambda: self._generate_word_doc(self.all_mistake_words, "cn_dictate_en", "错词_中默英"))
-
         menu.addSeparator()
-
-        # 第三组：自主
         menu.addAction("自主录入单词表").triggered.connect(lambda: self._generate_word_doc(self._get_self_reg(), "normal", "自主_全表"))
         menu.addAction("自主录入-看英默中").triggered.connect(lambda: self._generate_word_doc(self._get_self_reg(), "en_dictate_cn", "自主_英默中"))
         menu.addAction("自主录入-看中默英").triggered.connect(lambda: self._generate_word_doc(self._get_self_reg(), "cn_dictate_en", "自主_中默英"))
-
         self.print_tool_btn.setMenu(menu)
 
     def _create_row(self, data, num):
@@ -167,12 +159,15 @@ class WordListView(QtWidgets.QWidget):
         idx.setFixedWidth(self.INDEX_COL_WIDTH); idx.setAlignment(QtCore.Qt.AlignCenter)
         idx.setStyleSheet(f"background: #E9ECEF; color: {self.INDEX_COLOR}; font-weight: bold; font-size: 11px; border-right: 1px solid #E0E0E0;")
 
-        w_txt = _normalize_full_width_to_half_width(data.get("word", ""))
+        # 兼容性修复：处理多种可能的 Key 名
+        eng = data.get("word") or data.get("english", "")
+        w_txt = _normalize_full_width_to_half_width(eng)
         w_lbl = QtWidgets.QLabel("" if self.hide_english else w_txt)
         w_lbl.setFixedWidth(self.WORD_COL_WIDTH); w_lbl.setFont(QtGui.QFont("Arial", self.WORD_FONT_SIZE, QtGui.QFont.Medium))
         w_lbl.setStyleSheet("color: #1A1A1A; border-right: 1px solid #E0E0E0; padding-left: 8px;")
 
-        c_txt = _normalize_full_width_to_half_width(data.get("content", ""))
+        chn = data.get("content") or data.get("translation", "")
+        c_txt = _normalize_full_width_to_half_width(chn)
         c_lbl = QtWidgets.QLabel("" if self.hide_chinese else c_txt)
         c_lbl.setFont(QtGui.QFont("Microsoft YaHei", self.CONTENT_FONT_SIZE)); c_lbl.setWordWrap(True)
         c_lbl.setStyleSheet("color: #444; padding-left: 8px;")
@@ -181,9 +176,13 @@ class WordListView(QtWidgets.QWidget):
         return row
 
     def _render_page(self):
+        # 强制更新总页数逻辑
+        self.total_pages = max(1, (len(self.display_words) + 59) // 60)
+
         while self.list_layout.count():
             item = self.list_layout.takeAt(0)
             if item.widget(): item.widget().deleteLater()
+
         start = self.current_page * 60
         page_words = self.display_words[start:start+60]
         self.page_lbl.setText(f"第 {self.current_page + 1} / {self.total_pages} 页")
@@ -197,45 +196,120 @@ class WordListView(QtWidgets.QWidget):
             col = QtWidgets.QVBoxLayout()
             col.setContentsMargins(0,0,0,0); col.setSpacing(0)
             words = page_words[c*20 : (c+1)*20]
-            for i, w in enumerate(words):
-                col.addWidget(self._create_row(w, start + c*20 + i))
-            for _ in range(20 - len(words)):
-                s = QtWidgets.QFrame(); s.setFixedHeight(self.ROW_HEIGHT); col.addWidget(s)
+            for i in range(20): # 始终迭代 20 次，确保每列都有 20 行
+                # 如果有单词数据，则使用单词数据；否则传入空字典，_create_row 会处理为显示空白但带样式的行
+                word_data = words[i] if i < len(words) else {} 
+                col.addWidget(self._create_row(word_data, start + c*20 + i))
             grid.addLayout(col)
         self.list_layout.addWidget(inner)
 
     def _load_vocabulary_async(self): QtCore.QTimer.singleShot(50, self._do_load)
+
     def _do_load(self):
+        """[ARCHITECT AUDIT] 增加深度路径审计日志"""
+        print("\n" + "="*50)
+        print("DEBUG: 开始加载词汇表数据...")
         try:
-            base = getattr(self.main_window, 'base_path', os.path.dirname(__file__))
+            if hasattr(sys, '_MEIPASS'):
+                base = sys._MEIPASS
+                real_dir = os.path.dirname(sys.executable)
+            else:
+                base = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+                real_dir = base
+
+            print(f"DEBUG: 根目录检测 -> {real_dir}")
+
+            # 1. 加载内置词库
             path = os.path.normpath(os.path.join(base, "assets", "vocabulary.json"))
-            with open(path, 'r', encoding='utf-8') as f:
-                self.all_regular_words = json.load(f)
-                self.all_regular_words.sort(key=lambda x: x.get("word", "").lower())
+            if os.path.exists(path):
+                with open(path, 'r', encoding='utf-8') as f:
+                    self.all_regular_words = json.load(f)
+                    self.all_regular_words.sort(key=lambda x: (x.get("word") or "").lower())
+                print(f"DEBUG: 常规词库加载成功，共 {len(self.all_regular_words)} 个单词")
+            else:
+                print(f"ERROR: 常规词库不存在 -> {path}")
+
+            # 2. 加载错词库 (文件名与写入点对齐：mistake_words.json)
+            m_path = os.path.normpath(os.path.join(real_dir, "data", "mistake_words.json"))
+            print(f"DEBUG: 尝试访问错词路径 -> {m_path}")
+            if os.path.exists(m_path):
+                with open(m_path, 'r', encoding='utf-8') as f:
+                    self.all_mistake_words = json.load(f)
+                print(f"DEBUG: 错词库加载成功，共 {len(self.all_mistake_words)} 条记录")
+                if self.all_mistake_words:
+                    print(f"DEBUG: 错词数据样例 -> {self.all_mistake_words[0]}")
+            else:
+                print(f"WARNING: 错词文件未找到 -> {m_path}")
+
             self.display_words = self.all_regular_words.copy()
-            self.total_pages = max(1, (len(self.display_words) + 59) // 60)
-            self._render_page(); self.btn_reg.setChecked(True)
-        except: pass
+            self._render_page()
+            self.btn_reg.setChecked(True)
+            print("="*50 + "\n")
+        except Exception as e:
+            print(f"CRITICAL: 加载过程中发生崩溃: {str(e)}")
+
+    def refresh_mistake_list(self, data=None):
+        """[ARCHITECT AUDIT] 接收外部信号监控，支持 data=None 自动重载"""
+        print(f"DEBUG: 外部触发 refresh_mistake_list，携带数据: {data is not None}")
+
+        if data is not None:
+            self.all_mistake_words = data
+        else:
+            # 如果没传 data，主动从磁盘重载一次
+            if hasattr(sys, '_MEIPASS'):
+                real_dir = os.path.dirname(sys.executable)
+            else:
+                real_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+            m_path = os.path.normpath(os.path.join(real_dir, "data", "mistake_words.json"))
+            if os.path.exists(m_path):
+                with open(m_path, 'r', encoding='utf-8') as f:
+                    self.all_mistake_words = json.load(f)
+
+        if self.current_list_type == "mistake":
+            self.display_words = self.all_mistake_words.copy()
+            self.current_page = 0
+            self._render_page()
 
     def _switch_list_type(self, ltype):
+        """[ARCHITECT AUDIT] 切换逻辑监控"""
+        print(f"DEBUG: 用户点击切换 -> {ltype}")
         self.current_list_type = ltype
-        self.display_words = self.all_regular_words.copy() if ltype == "regular" else self.all_mistake_words.copy()
-        self.current_page = 0; self.total_pages = max(1, (len(self.display_words) + 59) // 60); self._render_page()
+
+        if ltype == "regular":
+            self.display_words = self.all_regular_words.copy()
+        else:
+            # 切换到错词表时，主动触发一次刷新逻辑（会重载文件）
+            self.refresh_mistake_list()
+            self.display_words = self.all_mistake_words.copy()
+
+        print(f"DEBUG: 切换后待显示单词数: {len(self.display_words)}")
+
+        self.current_page = 0
+        self._render_page()
 
     def _toggle_en_logic(self): self.hide_english = self.toggle_en.isChecked(); self._render_page()
     def _toggle_cn_logic(self): self.hide_chinese = self.toggle_cn.isChecked(); self._render_page()
+
     def _handle_search(self):
         q = self.search_input.text().strip().lower()
         src = self.all_regular_words if self.current_list_type == "regular" else self.all_mistake_words
-        self.display_words = [w for w in src if q in w.get("word", "").lower() or q in w.get("content", "")] if q else src.copy()
-        self.current_page = 0; self.total_pages = max(1, (len(self.display_words) + 59) // 60); self._render_page()
+        self.display_words = [w for w in src if q in (w.get("word") or "").lower() or q in (w.get("content") or "")] if q else src.copy()
+        self.current_page = 0; self._render_page()
 
     def _generate_word_doc(self, data, mode, desc):
+        if not data:
+            QtWidgets.QMessageBox.warning(self, "提示", "当前列表没有数据，无法导出。")
+            return
         from word_document_generator import generate_word_table
-        if not data: return
         path, _ = QtWidgets.QFileDialog.getSaveFileName(self, "保存单词表", f"{desc}_{datetime.now().strftime('%Y%m%d')}.docx", "Word Files (*.docx)")
         if path: generate_word_table(data, path, mode=mode)
 
-    def _prev_page(self): self.current_page -= 1; self._render_page()
-    def _next_page(self): self.current_page += 1; self._render_page()
-    def _get_self_reg(self): return self.main_window.self_register_vocab_ctrl.user_vocab_data if hasattr(self.main_window, 'self_register_vocab_ctrl') else []
+    def _prev_page(self):
+        if self.current_page > 0:
+            self.current_page -= 1; self._render_page()
+    def _next_page(self):
+        if self.current_page < self.total_pages - 1:
+            self.current_page += 1; self._render_page()
+
+    def _get_self_reg(self):
+        return getattr(self.main_window.self_register_vocab_ctrl, 'user_vocab_data', [])
