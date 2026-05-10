@@ -1,22 +1,35 @@
-gitignore
-# --- Python 虚拟环境 ---
-venv/
+# =================================================================
+# 项目名称: Python / Flutter / Web 通用忽略配置
+# 严谨性要求：仅过滤构建噪声，严禁污染源码库
+# =================================================================
+
+# --- 虚拟环境 (Virtual Environments) ---
 .venv/
+venv/
 env/
 ENV/
-# 针对 Windows 创建的虚拟环境文件夹名
 Include/
 Lib/
 Scripts/
 pyvenv.cfg
 
-# --- Python 编译缓存 ---
-__pycache__/
+# --- 构建产物 (Build Outputs) ---
+# 递归忽略所有层级的 build 目录
+**/build/
+dist/
+bin/
+obj/
+out/
+*.spec
+
+# --- Python 编译缓存 (Python Cache) ---
+# 严格禁止字节码文件进入版本库
+**/__pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# --- 编译器/IDE 配置文件 (Android Studio / VS Code) ---
+# --- IDE & 编辑器 (IDE Settings) ---
 .idea/
 .vscode/
 *.iml
@@ -25,21 +38,25 @@ __pycache__/
 *.njsproj
 *.sln
 *.swp
+.classpath
+.project
+.settings/
 
-# --- 操作系统临时文件 ---
-Thumbs.db
+# --- 操作系统临时文件 (OS Metadata) ---
 .DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# --- 构建和分发文件 (PyInstaller 等) ---
-build/
-dist/
-*.spec
-
-# --- 你指定的 "new" 文件或文件夹 ---
-new/
-*new*
-new.*
-
-# --- 导出的文档或测试数据 (可选) ---
-*.docx
+# --- 日志与测试数据 (Logs & Data) ---
 *.log
+*.tmp
+temp/
+
+# --- 针对 Flutter 的特定忽略 (如适用) ---
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/

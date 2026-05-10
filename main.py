@@ -1,4 +1,4 @@
-# /Users/andrezhao/AI_PJ/HighSchoolEnglishAI/main.py
+# -*- coding: utf-8 -*-
 import sys
 import os
 import re
@@ -8,7 +8,6 @@ import random
 import traceback
 
 # ============ [0. 解决高分屏/缩放导致的 UI 乱版] ============
-# 必须在创建 QApplication 之前设置环境，防止 4K 屏显示错位
 os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
 os.environ["QT_ENABLE_HIGHDPI_SCALING"] = "1"
 
@@ -28,12 +27,9 @@ def resource_path(relative_path):
 pyside6_dir = os.path.dirname(PySide6.__file__)
 os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = os.path.join(pyside6_dir, 'plugins', 'platforms')
 
-# ============ [3. 注入模块搜索路径] ============
-# 关键：由于 word_list_view 等在 lib 下，必须注入 lib 路径
-lib_path = os.path.join(BASE_DIR, "lib")
-parsers_dir = os.path.join(BASE_DIR, "parsers")
-
-for p in [BASE_DIR, lib_path, parsers_dir]:
+# ============ [3. 模块搜索路径] ============
+# 🟢 挪动后：现在 word_list_view 在根目录，我们只需要注入 BASE_DIR 即可
+for p in [BASE_DIR]:
     if p not in sys.path:
         sys.path.insert(0, p)
 
@@ -44,7 +40,7 @@ from PySide6.QtWidgets import (QApplication, QMainWindow, QMessageBox, QPushButt
 from PySide6.QtUiTools import QUiLoader
 
 try:
-    # 此时 sys.path 已经配置好，可以从 lib 正常导入 WordListView
+    # 🟢 物理挪动后，这里直接从当前目录导入，最稳健
     from vocab_module import VocabManager
     from word_list_view import WordListView
     from run_flull_exam import HSEExamSystem
@@ -64,7 +60,6 @@ except ImportError as e:
 
 # ============ [5. 内部工具函数] ============
 def _internal_full_exam_parser(text):
-    """整卷真题解析逻辑"""
     text = normalize_exam_text(text)
     sections = re.split(r'\[\[SECTION:\s*(.*?)\]\]', text)
     data_list = []
@@ -105,7 +100,7 @@ class HighSchoolEnglishAI(QMainWindow):
         self.setWindowTitle("HSE-AI 英语智胜工作站")
         self.showMaximized()
 
-        # 🎯 属性预定义，防止初始化中途报错导致界面按钮点击崩溃
+        # 🎯 属性预定义，这是子模块生存的“灯塔”
         self.base_path = BASE_DIR
         self.word_list_index = -1
         self.self_register_vocab_index = -1
@@ -129,32 +124,32 @@ class HighSchoolEnglishAI(QMainWindow):
         self.setCentralWidget(self.ui_root)
         self.stack = self.ui_root.findChild(QStackedWidget, "stackedWidget")
 
-        # 先加载高考页面 UI (ExamManager 依赖它)
+        # 先加载高考页面 UI
         self._setup_gaokao_page(res_dir, loader)
 
         try:
-            # 1. 启动单词闯关模块
+            # 1. 词汇管理
             self.vocab_ctrl = VocabManager(self)
 
-            # 2. 启动核心词汇表模块 (在 lib/word_list_view.py)
+            # 2. 🟢 核心词汇表 (现在直接从当前目录加载)
             self.word_list_widget = WordListView(self)
             self.stack.addWidget(self.word_list_widget)
             self.word_list_index = self.stack.indexOf(self.word_list_widget)
 
-            # 安全连接错词更新信号
-            if self.vocab_ctrl and hasattr(self.word_list_widget, 'refresh_mistake_list'):
+            # 连接错词更新信号
+            if hasattr(self.word_list_widget, 'refresh_mistake_list'):
                 self.vocab_ctrl.mistake_vocabulary_changed.connect(self.word_list_widget.refresh_mistake_list)
 
-            # 3. 启动专项练习控制器
+            # 3. 专项练习
             if self.page_gaokao_widget:
                 self.exam_ctrl = ExamManager(self, self.page_gaokao_widget)
 
-            # 4. 启动自主登记模块
+            # 4. 自主登记
             self.self_register_vocab_ctrl = SelfRegisterVocabManager(self)
             self.stack.addWidget(self.self_register_vocab_ctrl)
             self.self_register_vocab_index = self.stack.indexOf(self.self_register_vocab_ctrl)
 
-            # 5. 启动 AI 解析模块
+            # 5. AI 解析
             self.ai_analyzer_widget = AnalyzerManager(self)
             self.stack.addWidget(self.ai_analyzer_widget)
             self.ai_analyzer_index = self.stack.indexOf(self.ai_analyzer_widget)
@@ -198,7 +193,6 @@ class HighSchoolEnglishAI(QMainWindow):
             if self.exam_ctrl: self.exam_ctrl.update_nav_highlight()
 
     def switch_to_full_exam(self):
-        # 路径适配：确保能找到 data/真题试卷
         path = resource_path("data/真题试卷")
         if not os.path.exists(path):
             QMessageBox.warning(self, "提示", "找不到试卷数据目录")
@@ -224,7 +218,6 @@ class HighSchoolEnglishAI(QMainWindow):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    # 🎯 启用 Fusion 样式，确保不同电脑显示效果一致，不乱版
     app.setStyle("Fusion")
     window = HighSchoolEnglishAI()
     window.show()
