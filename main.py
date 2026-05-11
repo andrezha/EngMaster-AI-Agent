@@ -2,10 +2,9 @@
 import sys
 import os
 import re
-import time
-import PySide6
 import random
 import traceback
+import PySide6
 
 # 导入单实例运行所需的锁类
 from PySide6.QtCore import QLockFile, QDir
@@ -37,7 +36,7 @@ for p in [BASE_DIR]:
         sys.path.insert(0, p)
 
 # ============ [4. 模块导入] ============
-from PySide6 import QtWidgets, QtCore, QtGui
+from PySide6 import QtWidgets, QtCore
 from PySide6.QtWidgets import (QApplication, QMainWindow, QMessageBox, QPushButton,
                                QStackedWidget, QVBoxLayout, QWidget, QLineEdit, QFrame, QButtonGroup)
 from PySide6.QtUiTools import QUiLoader
@@ -46,23 +45,23 @@ try:
     # 🟢 物理挪动后，这里直接从当前目录导入，最稳健
     from vocab_module import VocabManager
     from word_list_view import WordListView
-    from run_flull_exam import HSEExamSystem
-    from parsers.full_exam_specific_parsers import (
-        _parse_grammar_items_full_exam,
-        _parse_seven_five_items_full_exam,
-        _parse_cloze_items_full_exam,
-        _parse_reading_items_full_exam_robust
-    )
     from exam_module import ExamManager
     from utils import normalize_exam_text
     from self_register_vocab_module import SelfRegisterVocabManager
-    from analyzer_module import AnalyzerManager
+    # from analyzer_module import AnalyzerManager  # AI 模块目前不启用
 except ImportError as e:
     print(f"❌ 模块导入失败: {e}")
     raise
 
 # ============ [5. 内部工具函数] ============
 def _internal_full_exam_parser(text):
+    from parsers.full_exam_specific_parsers import (
+        _parse_grammar_items_full_exam,
+        _parse_seven_five_items_full_exam,
+        _parse_cloze_items_full_exam,
+        _parse_reading_items_full_exam_robust
+    )
+
     text = normalize_exam_text(text)
     sections = re.split(r'\[\[SECTION:\s*(.*?)\]\]', text)
     data_list = []
@@ -131,31 +130,23 @@ class HighSchoolEnglishAI(QMainWindow):
         self._setup_gaokao_page(res_dir, loader)
 
         try:
-            # 1. 词汇管理
-            self.vocab_ctrl = VocabManager(self)
+            # 1. 词汇管理延迟初始化，避免阻塞首屏显示
+            self.vocab_ctrl = None
+            QtCore.QTimer.singleShot(0, self._init_vocab_module)
 
-            # 2. 🟢 核心词汇表 (现在直接从当前目录加载)
-            self.word_list_widget = WordListView(self)
-            self.stack.addWidget(self.word_list_widget)
-            self.word_list_index = self.stack.indexOf(self.word_list_widget)
+            # 核心词汇表、专项练习、自主登记、AI 解析都延迟创建，减少启动时开销
+            # 只有默认页面和高考页面 UI 会在启动时加载
+            self.word_list_widget = None
+            self.self_register_vocab_ctrl = None
+            self.ai_analyzer_widget = None
+            self.word_list_index = -1
+            self.self_register_vocab_index = -1
+            self.ai_analyzer_index = -1
 
-            # 连接错词更新信号
-            if hasattr(self.word_list_widget, 'refresh_mistake_list'):
-                self.vocab_ctrl.mistake_vocabulary_changed.connect(self.word_list_widget.refresh_mistake_list)
+            # 3. 专项练习只在用户打开高考页面时初始化
+            self.exam_ctrl = None
 
-            # 3. 专项练习
-            if self.page_gaokao_widget:
-                self.exam_ctrl = ExamManager(self, self.page_gaokao_widget)
-
-            # 4. 自主登记
-            self.self_register_vocab_ctrl = SelfRegisterVocabManager(self)
-            self.stack.addWidget(self.self_register_vocab_ctrl)
-            self.self_register_vocab_index = self.stack.indexOf(self.self_register_vocab_ctrl)
-
-            # 5. AI 解析
-            self.ai_analyzer_widget = AnalyzerManager(self)
-            self.stack.addWidget(self.ai_analyzer_widget)
-            self.ai_analyzer_index = self.stack.indexOf(self.ai_analyzer_widget)
+            # 4. 默认先不创建额外模块，点击时再加载
 
         except Exception as e:
             print("⚠️ 初始化业务模块异常:")
@@ -179,21 +170,50 @@ class HighSchoolEnglishAI(QMainWindow):
         root.findChild(QPushButton, "btn_nav_gaokao").clicked.connect(self.show_gaokao_page)
         root.findChild(QPushButton, "btn_nav_full_exam").clicked.connect(self.switch_to_full_exam)
         root.findChild(QPushButton, "btn_nav_self_register").clicked.connect(self._safe_nav_to_self_register)
-        root.findChild(QPushButton, "btn_nav_scan").clicked.connect(self._safe_nav_to_analyzer)
+        # root.findChild(QPushButton, "btn_nav_scan").clicked.connect(self._safe_nav_to_analyzer)  # AI 模块暂不启动
+
+    def _ensure_word_list_widget(self):
+        if self.word_list_widget is None:
+            self.word_list_widget = WordListView(self)
+            self.stack.addWidget(self.word_list_widget)
+            self.word_list_index = self.stack.indexOf(self.word_list_widget)
+            if hasattr(self.word_list_widget, 'refresh_mistake_list'):
+                self.vocab_ctrl.mistake_vocabulary_changed.connect(self.word_list_widget.refresh_mistake_list)
+
+    def _ensure_self_register_widget(self):
+        if self.self_register_vocab_ctrl is None:
+            self.self_register_vocab_ctrl = SelfRegisterVocabManager(self)
+            self.stack.addWidget(self.self_register_vocab_ctrl)
+            self.self_register_vocab_index = self.stack.indexOf(self.self_register_vocab_ctrl)
+
+    # def _ensure_analyzer_widget(self):
+    #     if self.ai_analyzer_widget is None:
+    #         self.ai_analyzer_widget = AnalyzerManager(self)
+    #         self.stack.addWidget(self.ai_analyzer_widget)
+    #         self.ai_analyzer_index = self.stack.indexOf(self.ai_analyzer_widget)
 
     def _safe_nav_to_word_list(self):
-        if self.word_list_index != -1: self.stack.setCurrentIndex(self.word_list_index)
+        self._ensure_word_list_widget()
+        if self.word_list_index != -1:
+            self.stack.setCurrentIndex(self.word_list_index)
 
     def _safe_nav_to_self_register(self):
-        if self.self_register_vocab_index != -1: self.stack.setCurrentIndex(self.self_register_vocab_index)
+        self._ensure_self_register_widget()
+        if self.self_register_vocab_index != -1:
+            self.stack.setCurrentIndex(self.self_register_vocab_index)
 
-    def _safe_nav_to_analyzer(self):
-        if self.ai_analyzer_index != -1: self.stack.setCurrentIndex(self.ai_analyzer_index)
+    # def _safe_nav_to_analyzer(self):
+    #     self._ensure_analyzer_widget()
+    #     if self.ai_analyzer_index != -1:
+    #         self.stack.setCurrentIndex(self.ai_analyzer_index)
 
     def show_gaokao_page(self):
         if self.gk_idx != -1:
+            if self.exam_ctrl is None:
+                self.exam_ctrl = ExamManager(self, self.page_gaokao_widget)
             self.stack.setCurrentIndex(self.gk_idx)
-            if self.exam_ctrl: self.exam_ctrl.update_nav_highlight()
+            if self.exam_ctrl:
+                self.exam_ctrl.update_nav_highlight()
 
     def switch_to_full_exam(self):
         path = resource_path("data/真题试卷")
@@ -204,6 +224,8 @@ class HighSchoolEnglishAI(QMainWindow):
         if not files: return
 
         try:
+            from run_flull_exam import HSEExamSystem
+
             target_file = os.path.join(path, random.choice(files))
             with open(target_file, 'r', encoding='utf-8') as f:
                 data = _internal_full_exam_parser(f.read())
@@ -214,10 +236,18 @@ class HighSchoolEnglishAI(QMainWindow):
 
     def _apply_sidebar_style(self):
         qss = "QPushButton { min-height: 55px; border-radius: 12px; text-align: left; padding-left: 20px; font-weight: bold; }"
-        nav_btns = ["btn_nav_vocab", "btn_nav_core_vocab", "btn_nav_gaokao", "btn_nav_full_exam", "btn_nav_self_register", "btn_nav_scan"]
+        nav_btns = ["btn_nav_vocab", "btn_nav_core_vocab", "btn_nav_gaokao", "btn_nav_full_exam", "btn_nav_self_register"]  # btn_nav_scan 暂不启用
         for name in nav_btns:
             btn = self.ui_root.findChild(QPushButton, name)
             if btn: btn.setStyleSheet(qss)
+
+    def _init_vocab_module(self):
+        try:
+            if self.vocab_ctrl is None:
+                self.vocab_ctrl = VocabManager(self)
+        except Exception as e:
+            print("⚠️ 词汇模块延迟初始化失败:")
+            traceback.print_exc()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
