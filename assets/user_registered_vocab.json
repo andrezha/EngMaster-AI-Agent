@@ -1,14 +1,24 @@
 [
     {
         "word": "easy",
-        "content": "好的"
+        "content": "简单",
+        "pronunciation": "",
+        "example": ""
     },
     {
         "word": "easy",
-        "content": "简单"
+        "content": "好的",
+        "pronunciation": "",
+        "example": ""
     },
     {
         "word": "ok",
-        "content": "ha"
+        "content": "ha",
+        "pronunciation": "",
+        "example": ""
+    },
+    {
+        "word": "ok",
+        "content": "lo'"
     }
 ]
