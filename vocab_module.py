@@ -539,8 +539,7 @@ class VocabManager(QObject):  # 继承自 QObject
             self._load_mistake_vocabulary()
             self.active_vocabulary = self.mistake_vocabulary
             if not self.active_vocabulary:  # 如果错词表为空，自动切换回常规模式
-                QMessageBox.information(
-                    self.main_window, "提示", "错词表为空，已自动切换到常规闯关模式。", parent=self.main_window)
+                QMessageBox.information(self.main_window, "提示", "错词表为空，已自动切换到常规闯关模式。")
                 self.current_challenge_mode = "regular"  # Use self.main_window for QMessageBox
                 self._load_regular_vocabulary()
                 self.active_vocabulary = self.vocabulary
@@ -550,8 +549,7 @@ class VocabManager(QObject):  # 继承自 QObject
             self._load_self_registered_vocabulary()
             self.active_vocabulary = self.self_registered_vocabulary
             if not self.active_vocabulary:  # 如果自主录入词汇表为空，自动切换回常规模式
-                QMessageBox.information(
-                    self.main_window, "提示", "自主录入词汇表为空，已自动切换到常规闯关模式。", parent=self.main_window)
+                QMessageBox.information(self.main_window, "提示", "自主录入词汇表为空，已自动切换到常规闯关模式。")
                 self.current_challenge_mode = "regular"
                 self._load_regular_vocabulary()
                 self.active_vocabulary = self.vocabulary

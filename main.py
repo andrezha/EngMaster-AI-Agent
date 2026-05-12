@@ -127,6 +127,7 @@ class HighSchoolEnglishAI(QMainWindow):
         self.vocab_ctrl = None
         self.exam_ctrl = None
         self.word_list_widget = None
+        self.self_register_vocab_ctrl = None # 初始化自主录入词汇控制器
 
         # 资源加载
         res_dir = resource_path("resources")
@@ -155,14 +156,8 @@ class HighSchoolEnglishAI(QMainWindow):
             # 核心词汇表、专项练习、自主登记、AI 解析都延迟创建，减少启动时开销
             # 只有默认页面和高考页面 UI 会在启动时加载
             self.word_list_widget = None
-            self.self_register_vocab_ctrl = None
-            self.ai_analyzer_widget = None
-            self.phrase_irregular_challenge_index = -1
-            self.phrase_irregular_list_index = -1
-            self.word_list_index = -1
-            self.self_register_vocab_index = -1
-            self.ai_analyzer_index = -1
 
+            self._ensure_self_register_widget() # 确保自主录入模块及其数据在启动时加载
             # 3. 专项练习只在用户打开高考页面时初始化
             self.exam_ctrl = None
 
