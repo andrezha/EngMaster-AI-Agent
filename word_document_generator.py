@@ -34,7 +34,7 @@ def set_run_font(run, size, bold=False):
         rPr.remove(existing)
     rPr.append(rFonts)
 
-def generate_word_table(data, output_file, mode="normal"):
+def generate_word_table(data, output_file, mode="normal", data_type="words"): # Added data_type parameter
     document = Document()
 
     # 1. 窄边距设置
@@ -47,12 +47,38 @@ def generate_word_table(data, output_file, mode="normal"):
     # 2. 模式与键名识别
     # en_dictate_cn: 看英语写中文
     # cn_dictate_en: 看中文/发音写英语 (本次优化重点)
+    # 初始化默认值，适用于 "normal" 模式和 "words" 数据类型
+    v_key, b_key, is_dict = "word", "content", False
+    visible_header_text = "英语单词"
+    blank_header_text = "中文释义"
+
     if mode == "en_dictate_cn":
         v_key, b_key, is_dict = "word", "content", True
+        visible_header_text = "可见内容"
+        blank_header_text = "默写区域"
+        if data_type == "irregular_verbs":
+            visible_header_text = "原型"
+            blank_header_text = "过去/过分/中文" # 用户要求
+        elif data_type == "phrases":
+            visible_header_text = "短语"
+            blank_header_text = "默写区域"
     elif mode == "cn_dictate_en":
         v_key, b_key, is_dict = "content", "word", True
-    else:
-        v_key, b_key, is_dict = "word", "content", False
+        visible_header_text = "可见内容"
+        blank_header_text = "默写区域"
+        if data_type == "phrases":
+            visible_header_text = "翻译"
+            blank_header_text = "默写区域"
+        # 不规则动词表没有“看中默英”模式，所以这里不需要处理 irregular_verbs
+    elif mode == "normal": # Explicitly handle "normal" mode
+        # Defaults are already set for "words" type in "normal" mode
+        if data_type == "irregular_verbs":
+            visible_header_text = "原型"
+            blank_header_text = "过去式/过去分词/中文" # 用户要求
+        elif data_type == "phrases":
+            visible_header_text = "短语"
+            blank_header_text = "翻译"
+        # If data_type is "words", it will use the initial default values.
 
     # 3. 【布局逻辑】计算列宽
     # 序号列固定为 1.2cm (维持现状)
@@ -88,7 +114,7 @@ def generate_word_table(data, output_file, mode="normal"):
     table.style = 'Table Grid'
 
     # 设置表头
-    headers = ["序号", "英语单词", "中文释义"] if mode == "normal" else ["序号", "可见内容", "默写区域"]
+    headers = ["序号", visible_header_text, blank_header_text]
     hdr_cells = table.rows[0].cells
     for i in range(6):
         table.columns[i].width = col_widths[i]
