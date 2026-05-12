@@ -25,6 +25,8 @@ class WordListView(QtWidgets.QWidget):
         self.all_regular_words = []
         self.all_mistake_words = []
         self.display_words = []
+        self.all_phrases = []  # New: Store phrase data
+        self.all_irregulars = []  # New: Store irregular verb data
 
         self.current_list_type = "regular"
         self.current_page = 0
@@ -118,6 +120,16 @@ class WordListView(QtWidgets.QWidget):
         menu.addAction("自主录入单词全表").triggered.connect(lambda: self._do_export(self._get_self_reg(), "normal", "自主全表"))
         menu.addAction("自主录入-看英默中").triggered.connect(lambda: self._do_export(self._get_self_reg(), "en_dictate_cn", "自主英默中"))
         menu.addAction("自主录入-看中默英").triggered.connect(lambda: self._do_export(self._get_self_reg(), "cn_dictate_en", "自主中默英"))
+        menu.addSeparator()
+        # New: Phrase List export options
+        menu.addAction("短语表 - 中英对照").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self.all_phrases), "normal", "短语表_中英对照", data_type="phrases"))
+        menu.addAction("短语表 - 看英默中").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self.all_phrases), "en_dictate_cn", "短语表_看英默中", data_type="phrases"))
+        menu.addAction("短语表 - 看中默英").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self.all_phrases), "cn_dictate_en", "短语表_看中默英", data_type="phrases"))
+        menu.addSeparator()
+        # New: Irregular Verbs List export options
+        menu.addAction("不规则动词表 - 过去式过去分词表").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self.all_irregulars), "normal", "不规则动词表_过去式过去分词表", data_type="irregular_verbs"))
+        menu.addAction("不规则动词表 - 看原形默过去式/过去分词").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self.all_irregulars), "en_dictate_cn", "不规则动词表_看原形默过去式_过去分词", data_type="irregular_verbs"))
+       
         self.btn_export.setMenu(menu)
 
     def _load_json_data(self):
@@ -133,6 +145,30 @@ class WordListView(QtWidgets.QWidget):
             except Exception as e:
                 print(f"DEBUG: 加载常规词汇失败 {e}")
         
+        # New: Load phrase data
+        phrase_json_path = get_resource_path("assets/short_phrase.json")
+        if os.path.exists(phrase_json_path):
+            try:
+                with open(phrase_json_path, 'r', encoding='utf-8') as f:
+                    self.all_phrases = json.load(f)
+                    self.all_phrases.sort(key=lambda x: (str(x.get('p',''))).lower()) # Sort by phrase 'p' key
+                print(f"✅ 短语表加载成功，共 {len(self.all_phrases)} 词")
+            except Exception as e:
+                print(f"DEBUG: 加载短语表失败 {e}")
+                self.all_phrases = []
+
+        # New: Load irregular verb data
+        irregular_json_path = get_resource_path("assets/irregular_verbs.json")
+        if os.path.exists(irregular_json_path):
+            try:
+                with open(irregular_json_path, 'r', encoding='utf-8') as f:
+                    self.all_irregulars = json.load(f)
+                    self.all_irregulars.sort(key=lambda x: (str(x.get('infinitive',''))).lower()) # Sort by infinitive key
+                print(f"✅ 不规则动词表加载成功，共 {len(self.all_irregulars)} 词")
+            except Exception as e:
+                print(f"DEBUG: 加载不规则动词表失败 {e}")
+                self.all_irregulars = []
+
         # 加载错词表
         mistake_words_path = get_writable_data_path("mistake_words.json")
         if os.path.exists(mistake_words_path):
@@ -145,6 +181,29 @@ class WordListView(QtWidgets.QWidget):
             except Exception as e:
                 print(f"DEBUG: 加载错词表失败 {e}")
                 self.all_mistake_words = []
+
+    def _prepare_phrase_data(self, original_data):
+        """
+        将短语数据转换为 {"word": "...", "content": "..."} 格式，以便与通用导出函数兼容。
+        """
+        transformed = []
+        for item in original_data:
+            transformed.append({
+                "word": item.get("p", ""),  # Phrase as 'word'
+                "content": item.get("m", "") # Meaning as 'content'
+            })
+        return transformed
+
+    def _prepare_irregular_data(self, original_data):
+        """
+        将不规则动词数据转换为 {"word": "...", "content": "..."} 格式。
+        'word' 为原型，'content' 为过去式/过去分词/翻译的组合。
+        """
+        transformed = []
+        for item in original_data:
+            content_parts = [item.get("past_tense", ""), item.get("past_participle", ""), item.get("meaning", "")]
+            transformed.append({"word": item.get("infinitive", ""), "content": " / ".join(filter(None, content_parts))})
+        return transformed
 
     def refresh_mistake_list(self, data):
         self.all_mistake_words = data if isinstance(data, list) else [data] if data else []
@@ -211,22 +270,22 @@ class WordListView(QtWidgets.QWidget):
         layout.addWidget(idx); layout.addWidget(w_lbl); layout.addWidget(c_lbl, 1)
         return row
 
-    def _handle_search(self, text):
+    def _handle_search(self, text): # No change here, but including for context
         t = text.lower()
         src = self.all_regular_words if self.current_list_type == "regular" else self.all_mistake_words
         self.display_words = [w for w in src if t in (str(w.get('word',''))).lower() or t in (str(w.get('content','')))] if t else src.copy()
         self.current_page = 0; self._render_page()
 
-    def _do_export(self, data, mode, name):
+    def _do_export(self, data, mode, name, data_type="words"):
         if not data:
             QtWidgets.QMessageBox.warning(self, "提示", f"【{name}】目前没有单词数据，无法导出。")
             return
         try:
             # 🟢 现在的位置在根目录，直接导入邻居，打包绝对不会报错
             from word_document_generator import generate_word_table
-            path, _ = QtWidgets.QFileDialog.getSaveFileName(self, "导出Word", f"{name}.docx", "Word (*.docx)")
+            path, _ = QtWidgets.QFileDialog.getSaveFileName(self, "导出Word", f"{name}.docx", "Word (*.docx)") # No change here
             if path:
-                generate_word_table(data, path, mode=mode)
+                generate_word_table(data, path, mode=mode, data_type=data_type) # Pass data_type
                 QtWidgets.QMessageBox.information(self, "成功", f"文件已成功保存至：\n{path}")
         except Exception as e:
             error_detail = traceback.format_exc()
