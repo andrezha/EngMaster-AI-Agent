@@ -48,6 +48,7 @@ try:
     from exam_module import ExamManager
     from utils import normalize_exam_text
     from self_register_vocab_module import SelfRegisterVocabManager
+    from phrase_irregular_module import PhraseIrregularChallengeView, PhraseIrregularListView
     # from analyzer_module import AnalyzerManager  # AI 模块目前不启用
 except ImportError as e:
     print(f"❌ 模块导入失败: {e}")
@@ -102,6 +103,20 @@ class HighSchoolEnglishAI(QMainWindow):
         self.setWindowTitle("HSE-AI 英语智胜工作站")
         self.showMaximized()
 
+        # Navigation button management
+        self.nav_buttons = {} # Stores QPushButton objects
+        # Maps button object name to the instance variable holding its target QStackedWidget index
+        self.nav_button_target_map = {
+            "btn_nav_vocab": 0, # Fixed index for vocab page
+            "btn_nav_core_vocab": "word_list_index",
+            "btn_nav_phrase_challenge": "phrase_irregular_challenge_index",
+            "btn_nav_phrase_list": "phrase_irregular_list_index",
+            "btn_nav_gaokao": "gk_idx",
+            "btn_nav_full_exam": None, # Full exam is dynamically added, index changes
+            "btn_nav_self_register": "self_register_vocab_index",
+            # "btn_nav_scan": "ai_analyzer_index" # AI module not enabled
+        }
+
         # 🎯 属性预定义，这是子模块生存的“灯塔”
         self.base_path = BASE_DIR
         self.word_list_index = -1
@@ -126,6 +141,9 @@ class HighSchoolEnglishAI(QMainWindow):
         self.setCentralWidget(self.ui_root)
         self.stack = self.ui_root.findChild(QStackedWidget, "stackedWidget")
 
+        # Connect the currentChanged signal for button highlighting
+        self.stack.currentChanged.connect(self._update_nav_button_styles)
+
         # 先加载高考页面 UI
         self._setup_gaokao_page(res_dir, loader)
 
@@ -139,6 +157,8 @@ class HighSchoolEnglishAI(QMainWindow):
             self.word_list_widget = None
             self.self_register_vocab_ctrl = None
             self.ai_analyzer_widget = None
+            self.phrase_irregular_challenge_index = -1
+            self.phrase_irregular_list_index = -1
             self.word_list_index = -1
             self.self_register_vocab_index = -1
             self.ai_analyzer_index = -1
@@ -152,9 +172,10 @@ class HighSchoolEnglishAI(QMainWindow):
             print("⚠️ 初始化业务模块异常:")
             traceback.print_exc()
 
-        self._bind_nav_events()
-        self._apply_sidebar_style()
+        self._bind_nav_events() # Bind events and populate self.nav_buttons
+        self._apply_sidebar_style() # Apply initial styles to all buttons
         self.stack.setCurrentIndex(0)
+        self._update_nav_button_styles(self.stack.currentIndex()) # Set initial highlight
 
     def _setup_gaokao_page(self, res_dir, loader):
         gk_ui_path = os.path.join(res_dir, "page_gaokao.ui")
@@ -165,12 +186,23 @@ class HighSchoolEnglishAI(QMainWindow):
 
     def _bind_nav_events(self):
         root = self.ui_root
-        root.findChild(QPushButton, "btn_nav_vocab").clicked.connect(lambda: self.stack.setCurrentIndex(0))
-        root.findChild(QPushButton, "btn_nav_core_vocab").clicked.connect(self._safe_nav_to_word_list)
-        root.findChild(QPushButton, "btn_nav_gaokao").clicked.connect(self.show_gaokao_page)
-        root.findChild(QPushButton, "btn_nav_full_exam").clicked.connect(self.switch_to_full_exam)
-        root.findChild(QPushButton, "btn_nav_self_register").clicked.connect(self._safe_nav_to_self_register)
-        # root.findChild(QPushButton, "btn_nav_scan").clicked.connect(self._safe_nav_to_analyzer)  # AI 模块暂不启动
+        # Map button names to their corresponding navigation methods
+        nav_map = {
+            "btn_nav_vocab": lambda: self.stack.setCurrentIndex(0),
+            "btn_nav_core_vocab": self._safe_nav_to_word_list,
+            "btn_nav_phrase_challenge": self.show_phrase_irregular_challenge,
+            "btn_nav_phrase_list": self.show_phrase_irregular_list,
+            "btn_nav_gaokao": self.show_gaokao_page,
+            "btn_nav_full_exam": self.switch_to_full_exam,
+            "btn_nav_self_register": self._safe_nav_to_self_register,
+            # "btn_nav_scan": self._safe_nav_to_analyzer # AI module not enabled
+        }
+
+        for btn_name, handler in nav_map.items():
+            btn = root.findChild(QPushButton, btn_name)
+            if btn:
+                btn.clicked.connect(handler)
+                self.nav_buttons[btn_name] = btn # Store button reference
 
     def _ensure_word_list_widget(self):
         if self.word_list_widget is None:
@@ -178,6 +210,8 @@ class HighSchoolEnglishAI(QMainWindow):
             self.stack.addWidget(self.word_list_widget)
             self.word_list_index = self.stack.indexOf(self.word_list_widget)
             if hasattr(self.word_list_widget, 'refresh_mistake_list'):
+            # Update the target map for this dynamically added page
+                self.nav_button_target_map["btn_nav_core_vocab"] = "word_list_index"
                 self.vocab_ctrl.mistake_vocabulary_changed.connect(self.word_list_widget.refresh_mistake_list)
 
     def _ensure_self_register_widget(self):
@@ -185,6 +219,8 @@ class HighSchoolEnglishAI(QMainWindow):
             self.self_register_vocab_ctrl = SelfRegisterVocabManager(self)
             self.stack.addWidget(self.self_register_vocab_ctrl)
             self.self_register_vocab_index = self.stack.indexOf(self.self_register_vocab_ctrl)
+            # Update the target map for this dynamically added page
+            self.nav_button_target_map["btn_nav_self_register"] = "self_register_vocab_index"
 
     # def _ensure_analyzer_widget(self):
     #     if self.ai_analyzer_widget is None:
@@ -202,6 +238,32 @@ class HighSchoolEnglishAI(QMainWindow):
         if self.self_register_vocab_index != -1:
             self.stack.setCurrentIndex(self.self_register_vocab_index)
 
+    def _ensure_phrase_irregular_challenge_widget(self):
+        if self.phrase_irregular_challenge_index == -1:
+            widget = PhraseIrregularChallengeView(self)
+            self.stack.addWidget(widget)
+            self.phrase_irregular_challenge_index = self.stack.indexOf(widget)
+            # Update the target map for this dynamically added page
+            self.nav_button_target_map["btn_nav_phrase_challenge"] = "phrase_irregular_challenge_index"
+
+    def _ensure_phrase_irregular_list_widget(self):
+        if self.phrase_irregular_list_index == -1:
+            widget = PhraseIrregularListView(self)
+            self.stack.addWidget(widget)
+            self.phrase_irregular_list_index = self.stack.indexOf(widget)
+            # Update the target map for this dynamically added page
+            self.nav_button_target_map["btn_nav_phrase_list"] = "phrase_irregular_list_index"
+
+    def show_phrase_irregular_challenge(self):
+        self._ensure_phrase_irregular_challenge_widget()
+        if self.phrase_irregular_challenge_index != -1:
+            self.stack.setCurrentIndex(self.phrase_irregular_challenge_index)
+
+    def show_phrase_irregular_list(self):
+        self._ensure_phrase_irregular_list_widget()
+        if self.phrase_irregular_list_index != -1:
+            self.stack.setCurrentIndex(self.phrase_irregular_list_index)
+
     # def _safe_nav_to_analyzer(self):
     #     self._ensure_analyzer_widget()
     #     if self.ai_analyzer_index != -1:
@@ -211,9 +273,7 @@ class HighSchoolEnglishAI(QMainWindow):
         if self.gk_idx != -1:
             if self.exam_ctrl is None:
                 self.exam_ctrl = ExamManager(self, self.page_gaokao_widget)
-            self.stack.setCurrentIndex(self.gk_idx)
-            if self.exam_ctrl:
-                self.exam_ctrl.update_nav_highlight()
+            self.stack.setCurrentIndex(self.gk_idx) # The _update_nav_button_styles will handle main nav highlight
 
     def switch_to_full_exam(self):
         path = resource_path("data/真题试卷")
@@ -232,14 +292,74 @@ class HighSchoolEnglishAI(QMainWindow):
             self.full_view = HSEExamSystem(data)
             self.stack.setCurrentIndex(self.stack.addWidget(self.full_view))
         except Exception as e:
+            # Add the full_view to the stack and get its index
+            full_exam_index = self.stack.addWidget(self.full_view)
+            self.stack.setCurrentIndex(full_exam_index)
+            # Update the target map for full exam, as its index is dynamic
+            self.nav_button_target_map["btn_nav_full_exam"] = full_exam_index
+            self._update_nav_button_styles(full_exam_index) # Manually update styles as currentChanged might not fire if index is same
+        except Exception as e:
             QMessageBox.critical(self, "错误", f"加载试卷失败: {e}")
 
     def _apply_sidebar_style(self):
-        qss = "QPushButton { min-height: 55px; border-radius: 12px; text-align: left; padding-left: 20px; font-weight: bold; }"
-        nav_btns = ["btn_nav_vocab", "btn_nav_core_vocab", "btn_nav_gaokao", "btn_nav_full_exam", "btn_nav_self_register"]  # btn_nav_scan 暂不启用
+        # Base styles for navigation buttons
+        self.inactive_nav_style = """
+            QPushButton {
+                min-height: 55px;
+                border-radius: 12px;
+                text-align: left;
+                padding-left: 20px;
+                font-weight: bold;
+                background-color: transparent; /* Default inactive background */
+                color: #495057; /* Default inactive text color */
+                border: none;
+            }
+            QPushButton:hover {
+                background-color: #e9ecef; /* Light hover effect */
+            }
+        """
+        self.active_nav_style = """
+            QPushButton {
+                min-height: 55px;
+                border-radius: 12px;
+                text-align: left;
+                padding-left: 20px;
+                font-weight: bold;
+                background-color: #007bff; /* Active background color (Bootstrap primary blue) */
+                color: white; /* Active text color */
+                border: none;
+            }
+            QPushButton:hover {
+                background-color: #0056b3; /* Darker hover effect for active button */
+            }
+        """
+
+        nav_btns = ["btn_nav_vocab", "btn_nav_core_vocab", "btn_nav_phrase_challenge", "btn_nav_phrase_list", "btn_nav_gaokao", "btn_nav_full_exam", "btn_nav_self_register"]  # btn_nav_scan 暂不启用
         for name in nav_btns:
             btn = self.ui_root.findChild(QPushButton, name)
-            if btn: btn.setStyleSheet(qss)
+            if btn:
+                self.nav_buttons[name] = btn # Store button object
+                btn.setStyleSheet(self.inactive_nav_style) # Apply initial inactive style
+
+    def _update_nav_button_styles(self, current_stack_index):
+        """
+        Updates the style of navigation buttons based on the currently active QStackedWidget index.
+        """
+        for btn_name, btn_obj in self.nav_buttons.items():
+            target_index_identifier = self.nav_button_target_map.get(btn_name)
+
+            target_index = -1
+            if isinstance(target_index_identifier, int): # Fixed index (e.g., 0 for vocab)
+                target_index = target_index_identifier
+            elif isinstance(target_index_identifier, str): # Dynamic index stored in an instance variable
+                target_index = getattr(self, target_index_identifier, -1)
+            # For "btn_nav_full_exam", target_index_identifier might be None initially,
+            # or an int after it's added. If it's None, it means the page hasn't been added yet.
+
+            if target_index != -1 and current_stack_index == target_index:
+                btn_obj.setStyleSheet(self.active_nav_style)
+            else:
+                btn_obj.setStyleSheet(self.inactive_nav_style)
 
     def _init_vocab_module(self):
         try:

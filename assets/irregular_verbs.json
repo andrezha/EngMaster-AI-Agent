@@ -1,0 +1,758 @@
+[
+    {
+        "infinitive": "arise",
+        "past_tense": "arose",
+        "past_participle": "arisen",
+        "meaning": "出现"
+    },
+    {
+        "infinitive": "was,",
+        "past_tense": "were",
+        "past_participle": "been",
+        "meaning": "是"
+    },
+    {
+        "infinitive": "beat",
+        "past_tense": "beat",
+        "past_participle": "beaten",
+        "meaning": "击败"
+    },
+    {
+        "infinitive": "become",
+        "past_tense": "became",
+        "past_participle": "become",
+        "meaning": "成为"
+    },
+    {
+        "infinitive": "begin",
+        "past_tense": "began",
+        "past_participle": "begun",
+        "meaning": "开始"
+    },
+    {
+        "infinitive": "bend",
+        "past_tense": "bent",
+        "past_participle": "bent",
+        "meaning": "弯曲"
+    },
+    {
+        "infinitive": "bet",
+        "past_tense": "bet",
+        "past_participle": "bet",
+        "meaning": "打赌"
+    },
+    {
+        "infinitive": "bite",
+        "past_tense": "bit",
+        "past_participle": "bitten",
+        "meaning": "咬"
+    },
+    {
+        "infinitive": "bleed",
+        "past_tense": "bled",
+        "past_participle": "bled",
+        "meaning": "流血"
+    },
+    {
+        "infinitive": "blow",
+        "past_tense": "blew",
+        "past_participle": "blown",
+        "meaning": "打击"
+    },
+    {
+        "infinitive": "break",
+        "past_tense": "broke",
+        "past_participle": "broken",
+        "meaning": "打破"
+    },
+    {
+        "infinitive": "bring",
+        "past_tense": "brought",
+        "past_participle": "brought",
+        "meaning": "带来"
+    },
+    {
+        "infinitive": "broadcast",
+        "past_tense": "broadcast",
+        "past_participle": "broadcast",
+        "meaning": "广播"
+    },
+    {
+        "infinitive": "build",
+        "past_tense": "built",
+        "past_participle": "built",
+        "meaning": "建设"
+    },
+    {
+        "infinitive": "burned",
+        "past_tense": "burnt,",
+        "past_participle": "burned",
+        "meaning": "燃烧"
+    },
+    {
+        "infinitive": "burst",
+        "past_tense": "burst",
+        "past_participle": "burst",
+        "meaning": "爆裂"
+    },
+    {
+        "infinitive": "buy",
+        "past_tense": "bought",
+        "past_participle": "bought",
+        "meaning": "购买"
+    },
+    {
+        "infinitive": "can",
+        "past_tense": "could",
+        "past_participle": "-",
+        "meaning": "可以"
+    },
+    {
+        "infinitive": "catch",
+        "past_tense": "caught",
+        "past_participle": "caught",
+        "meaning": "捕捉"
+    },
+    {
+        "infinitive": "choose",
+        "past_tense": "chose",
+        "past_participle": "chosen",
+        "meaning": "选择"
+    },
+    {
+        "infinitive": "come",
+        "past_tense": "came",
+        "past_participle": "come",
+        "meaning": "来"
+    },
+    {
+        "infinitive": "cost",
+        "past_tense": "cost",
+        "past_participle": "cost",
+        "meaning": "花费"
+    },
+    {
+        "infinitive": "cut",
+        "past_tense": "cut",
+        "past_participle": "cut",
+        "meaning": "切"
+    },
+    {
+        "infinitive": "deal",
+        "past_tense": "dealt",
+        "past_participle": "dealt",
+        "meaning": "处理"
+    },
+    {
+        "infinitive": "dig",
+        "past_tense": "dug",
+        "past_participle": "dug",
+        "meaning": "挖"
+    },
+    {
+        "infinitive": "do",
+        "past_tense": "did",
+        "past_participle": "done",
+        "meaning": "做"
+    },
+    {
+        "infinitive": "draw",
+        "past_tense": "drew",
+        "past_participle": "drawn",
+        "meaning": "画"
+    },
+    {
+        "infinitive": "dreamed",
+        "past_tense": "dreamt,",
+        "past_participle": "dreamed",
+        "meaning": "梦想"
+    },
+    {
+        "infinitive": "drink",
+        "past_tense": "drank",
+        "past_participle": "drunk",
+        "meaning": "喝"
+    },
+    {
+        "infinitive": "drive",
+        "past_tense": "drove",
+        "past_participle": "driven",
+        "meaning": "开车"
+    },
+    {
+        "infinitive": "eat",
+        "past_tense": "ate",
+        "past_participle": "eaten",
+        "meaning": "吃"
+    },
+    {
+        "infinitive": "fall",
+        "past_tense": "fell",
+        "past_participle": "fallen",
+        "meaning": "下降"
+    },
+    {
+        "infinitive": "feed",
+        "past_tense": "fed",
+        "past_participle": "fed",
+        "meaning": "饲养"
+    },
+    {
+        "infinitive": "feel",
+        "past_tense": "felt",
+        "past_participle": "felt",
+        "meaning": "感觉"
+    },
+    {
+        "infinitive": "fight",
+        "past_tense": "fought",
+        "past_participle": "fought",
+        "meaning": "战斗"
+    },
+    {
+        "infinitive": "find",
+        "past_tense": "found",
+        "past_participle": "found",
+        "meaning": "发现"
+    },
+    {
+        "infinitive": "fly",
+        "past_tense": "flew",
+        "past_participle": "flown",
+        "meaning": "飞"
+    },
+    {
+        "infinitive": "foresee",
+        "past_tense": "foresaw",
+        "past_participle": "foreseen",
+        "meaning": "预见"
+    },
+    {
+        "infinitive": "forget",
+        "past_tense": "forgot",
+        "past_participle": "forgotten",
+        "meaning": "忘记"
+    },
+    {
+        "infinitive": "forgive",
+        "past_tense": "forgave",
+        "past_participle": "forgiven",
+        "meaning": "原谅"
+    },
+    {
+        "infinitive": "freeze",
+        "past_tense": "froze",
+        "past_participle": "frozen",
+        "meaning": "冻结"
+    },
+    {
+        "infinitive": "get",
+        "past_tense": "got",
+        "past_participle": "got",
+        "meaning": "获得"
+    },
+    {
+        "infinitive": "give",
+        "past_tense": "gave",
+        "past_participle": "given",
+        "meaning": "给"
+    },
+    {
+        "infinitive": "go",
+        "past_tense": "went",
+        "past_participle": "gone",
+        "meaning": "去"
+    },
+    {
+        "infinitive": "grow",
+        "past_tense": "grew",
+        "past_participle": "grown",
+        "meaning": "增长"
+    },
+    {
+        "infinitive": ",hanged",
+        "past_tense": "hung,",
+        "past_participle": "hanged",
+        "meaning": "挂"
+    },
+    {
+        "infinitive": "has",
+        "past_tense": "had",
+        "past_participle": "had",
+        "meaning": "有"
+    },
+    {
+        "infinitive": "hear",
+        "past_tense": "heard",
+        "past_participle": "heard",
+        "meaning": "听"
+    },
+    {
+        "infinitive": "hide",
+        "past_tense": "hid",
+        "past_participle": "hidden",
+        "meaning": "隐藏"
+    },
+    {
+        "infinitive": "hit",
+        "past_tense": "hit",
+        "past_participle": "hit",
+        "meaning": "击中"
+    },
+    {
+        "infinitive": "hold",
+        "past_tense": "held",
+        "past_participle": "held",
+        "meaning": "举行"
+    },
+    {
+        "infinitive": "hurt",
+        "past_tense": "hurt",
+        "past_participle": "hurt",
+        "meaning": "伤害"
+    },
+    {
+        "infinitive": "keep",
+        "past_tense": "kept",
+        "past_participle": "kept",
+        "meaning": "保持"
+    },
+    {
+        "infinitive": "know",
+        "past_tense": "knew",
+        "past_participle": "known",
+        "meaning": "知道"
+    },
+    {
+        "infinitive": "lay",
+        "past_tense": "laid",
+        "past_participle": "laid",
+        "meaning": "躺在"
+    },
+    {
+        "infinitive": "lead",
+        "past_tense": "led",
+        "past_participle": "led",
+        "meaning": "领导"
+    },
+    {
+        "infinitive": "learned",
+        "past_tense": "learnt,",
+        "past_participle": "learned",
+        "meaning": "学习"
+    },
+    {
+        "infinitive": "leave",
+        "past_tense": "left",
+        "past_participle": "left",
+        "meaning": "离开"
+    },
+    {
+        "infinitive": "lend",
+        "past_tense": "lent",
+        "past_participle": "lent",
+        "meaning": "借出"
+    },
+    {
+        "infinitive": "let",
+        "past_tense": "let",
+        "past_participle": "let",
+        "meaning": "让"
+    },
+    {
+        "infinitive": "lie",
+        "past_tense": "lay",
+        "past_participle": "lain",
+        "meaning": "撒谎"
+    },
+    {
+        "infinitive": "lighted",
+        "past_tense": "lit,",
+        "past_participle": "lighted",
+        "meaning": "照亮"
+    },
+    {
+        "infinitive": "lose",
+        "past_tense": "lost",
+        "past_participle": "lost",
+        "meaning": "失去"
+    },
+    {
+        "infinitive": "make",
+        "past_tense": "made",
+        "past_participle": "made",
+        "meaning": "使"
+    },
+    {
+        "infinitive": "may",
+        "past_tense": "might",
+        "past_participle": "-",
+        "meaning": "可能"
+    },
+    {
+        "infinitive": "mean",
+        "past_tense": "meant",
+        "past_participle": "meant",
+        "meaning": "意思"
+    },
+    {
+        "infinitive": "meet",
+        "past_tense": "met",
+        "past_participle": "met",
+        "meaning": "见面"
+    },
+    {
+        "infinitive": "misread",
+        "past_tense": "misread",
+        "past_participle": "misread",
+        "meaning": "误解"
+    },
+    {
+        "infinitive": "mistake",
+        "past_tense": "mistook",
+        "past_participle": "mistaken",
+        "meaning": "错误"
+    },
+    {
+        "infinitive": "misunderstand",
+        "past_tense": "misunderstood",
+        "past_participle": "misunderstood",
+        "meaning": "误会"
+    },
+    {
+        "infinitive": "must",
+        "past_tense": "must",
+        "past_participle": "-",
+        "meaning": "必须"
+    },
+    {
+        "infinitive": "pay",
+        "past_tense": "paid",
+        "past_participle": "paid",
+        "meaning": "付"
+    },
+    {
+        "infinitive": "put",
+        "past_tense": "put",
+        "past_participle": "put",
+        "meaning": "放"
+    },
+    {
+        "infinitive": "read",
+        "past_tense": "read",
+        "past_participle": "read",
+        "meaning": "读"
+    },
+    {
+        "infinitive": "ridded",
+        "past_tense": "rid,",
+        "past_participle": "ridded",
+        "meaning": "摆脱"
+    },
+    {
+        "infinitive": "ride",
+        "past_tense": "rode",
+        "past_participle": "ridden",
+        "meaning": "骑"
+    },
+    {
+        "infinitive": "ring",
+        "past_tense": "rang",
+        "past_participle": "rung",
+        "meaning": "响"
+    },
+    {
+        "infinitive": "rise",
+        "past_tense": "rose",
+        "past_participle": "risen",
+        "meaning": "上升"
+    },
+    {
+        "infinitive": "run",
+        "past_tense": "ran",
+        "past_participle": "run",
+        "meaning": "跑"
+    },
+    {
+        "infinitive": "say",
+        "past_tense": "said",
+        "past_participle": "said",
+        "meaning": "说"
+    },
+    {
+        "infinitive": "see",
+        "past_tense": "saw",
+        "past_participle": "seen",
+        "meaning": "看"
+    },
+    {
+        "infinitive": "seek",
+        "past_tense": "sought",
+        "past_participle": "sought",
+        "meaning": "寻求"
+    },
+    {
+        "infinitive": "sell",
+        "past_tense": "sold",
+        "past_participle": "sold",
+        "meaning": "出售"
+    },
+    {
+        "infinitive": "send",
+        "past_tense": "sent",
+        "past_participle": "sent",
+        "meaning": "发送"
+    },
+    {
+        "infinitive": "set",
+        "past_tense": "set",
+        "past_participle": "set",
+        "meaning": "放置"
+    },
+    {
+        "infinitive": "shake",
+        "past_tense": "shook",
+        "past_participle": "shaken",
+        "meaning": "摇动"
+    },
+    {
+        "infinitive": "shall",
+        "past_tense": "should",
+        "past_participle": "-",
+        "meaning": "将"
+    },
+    {
+        "infinitive": "shined",
+        "past_tense": "shone,",
+        "past_participle": "shined",
+        "meaning": "闪耀"
+    },
+    {
+        "infinitive": "showed",
+        "past_tense": "showed,",
+        "past_participle": "shown",
+        "meaning": "显示"
+    },
+    {
+        "infinitive": "shut",
+        "past_tense": "shut",
+        "past_participle": "shut",
+        "meaning": "关闭"
+    },
+    {
+        "infinitive": "sing",
+        "past_tense": "sang",
+        "past_participle": "sung",
+        "meaning": "唱"
+    },
+    {
+        "infinitive": "sunk",
+        "past_tense": "sunk,",
+        "past_participle": "sunken",
+        "meaning": "下沉"
+    },
+    {
+        "infinitive": "sit",
+        "past_tense": "sat",
+        "past_participle": "sat",
+        "meaning": "坐"
+    },
+    {
+        "infinitive": "sleep",
+        "past_tense": "slept",
+        "past_participle": "slept",
+        "meaning": "睡觉"
+    },
+    {
+        "infinitive": "smelled",
+        "past_tense": "smelt,",
+        "past_participle": "smelled",
+        "meaning": "闻"
+    },
+    {
+        "infinitive": "sowed",
+        "past_tense": "sown,",
+        "past_participle": "sowed",
+        "meaning": "播种"
+    },
+    {
+        "infinitive": "speak",
+        "past_tense": "spoke",
+        "past_participle": "spoken",
+        "meaning": "发言"
+    },
+    {
+        "infinitive": "spelled",
+        "past_tense": "spelt,",
+        "past_participle": "spelled",
+        "meaning": "拼写"
+    },
+    {
+        "infinitive": "spellbind",
+        "past_tense": "spellbound",
+        "past_participle": "spellbound",
+        "meaning": "迷惑"
+    },
+    {
+        "infinitive": "spend",
+        "past_tense": "spent",
+        "past_participle": "spent",
+        "meaning": "花"
+    },
+    {
+        "infinitive": "spill",
+        "past_tense": "spilt",
+        "past_participle": "spilt",
+        "meaning": "洒"
+    },
+    {
+        "infinitive": "spin",
+        "past_tense": "spun",
+        "past_participle": "spun",
+        "meaning": "旋转"
+    },
+    {
+        "infinitive": "spit",
+        "past_tense": "spat",
+        "past_participle": "spat",
+        "meaning": "吐"
+    },
+    {
+        "infinitive": "spoil",
+        "past_tense": "spoilt",
+        "past_participle": "spoilt",
+        "meaning": "溺爱"
+    },
+    {
+        "infinitive": "spread",
+        "past_tense": "spread",
+        "past_participle": "spread",
+        "meaning": "蔓延"
+    },
+    {
+        "infinitive": "stand",
+        "past_tense": "stood",
+        "past_participle": "stood",
+        "meaning": "站"
+    },
+    {
+        "infinitive": "steal",
+        "past_tense": "stole",
+        "past_participle": "stolen",
+        "meaning": "窃取"
+    },
+    {
+        "infinitive": "stick",
+        "past_tense": "stuck",
+        "past_participle": "stuck",
+        "meaning": "粘贴"
+    },
+    {
+        "infinitive": "struck",
+        "past_tense": "struck,",
+        "past_participle": "stricken",
+        "meaning": "打击"
+    },
+    {
+        "infinitive": "swell",
+        "past_tense": "swelled",
+        "past_participle": "swollen",
+        "meaning": "膨胀"
+    },
+    {
+        "infinitive": "sweep",
+        "past_tense": "swept",
+        "past_participle": "swept",
+        "meaning": "扫"
+    },
+    {
+        "infinitive": "swim",
+        "past_tense": "swam",
+        "past_participle": "swum",
+        "meaning": "游泳"
+    },
+    {
+        "infinitive": "swing",
+        "past_tense": "swung",
+        "past_participle": "swung",
+        "meaning": "摆动"
+    },
+    {
+        "infinitive": "take",
+        "past_tense": "took",
+        "past_participle": "taken",
+        "meaning": "带走"
+    },
+    {
+        "infinitive": "teach",
+        "past_tense": "taught",
+        "past_participle": "taught",
+        "meaning": "教"
+    },
+    {
+        "infinitive": "tell",
+        "past_tense": "told",
+        "past_participle": "told",
+        "meaning": "告诉"
+    },
+    {
+        "infinitive": "think",
+        "past_tense": "thought",
+        "past_participle": "thought",
+        "meaning": "认为"
+    },
+    {
+        "infinitive": "throw",
+        "past_tense": "threw",
+        "past_participle": "thrown",
+        "meaning": "扔"
+    },
+    {
+        "infinitive": "understand",
+        "past_tense": "understood",
+        "past_participle": "understood",
+        "meaning": "明白"
+    },
+    {
+        "infinitive": "upset",
+        "past_tense": "upset",
+        "past_participle": "upset",
+        "meaning": "打乱"
+    },
+    {
+        "infinitive": "wake",
+        "past_tense": "waked，woke",
+        "past_participle": "waked，woken，woke",
+        "meaning": "醒来"
+    },
+    {
+        "infinitive": "wear",
+        "past_tense": "wore",
+        "past_participle": "worn",
+        "meaning": "穿"
+    },
+    {
+        "infinitive": "weave",
+        "past_tense": "wove",
+        "past_participle": "woven",
+        "meaning": "编织"
+    },
+    {
+        "infinitive": "will",
+        "past_tense": "would",
+        "past_participle": "-",
+        "meaning": "将"
+    },
+    {
+        "infinitive": "win",
+        "past_tense": "won",
+        "past_participle": "won",
+        "meaning": "赢"
+    },
+    {
+        "infinitive": "write",
+        "past_tense": "wrote",
+        "past_participle": "written",
+        "meaning": "写"
+    }
+]
