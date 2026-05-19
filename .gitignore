@@ -1,0 +1,62 @@
+# =================================================================
+# 项目名称: Python / Flutter / Web 通用忽略配置
+# 严谨性要求：仅过滤构建噪声，严禁污染源码库
+# =================================================================
+
+# --- 虚拟环境 (Virtual Environments) ---
+.venv/
+venv/
+env/
+ENV/
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
+
+# --- 构建产物 (Build Outputs) ---
+# 递归忽略所有层级的 build 目录
+**/build/
+dist/
+bin/
+obj/
+out/
+*.spec
+
+# --- Python 编译缓存 (Python Cache) ---
+# 严格禁止字节码文件进入版本库
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- IDE & 编辑器 (IDE Settings) ---
+.idea/
+.vscode/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.classpath
+.project
+.settings/
+
+# --- 操作系统临时文件 (OS Metadata) ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- 日志与测试数据 (Logs & Data) ---
+*.log
+*.tmp
+temp/
+
+# --- 针对 Flutter 的特定忽略 (如适用) ---
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
