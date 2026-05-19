@@ -122,6 +122,8 @@ class HighSchoolEnglishAI(QMainWindow):
         self.word_list_index = -1
         self.self_register_vocab_index = -1
         self.ai_analyzer_index = -1
+        self.phrase_irregular_challenge_index = -1
+        self.phrase_irregular_list_index = -1
         self.gk_idx = -1
 
         self.vocab_ctrl = None
