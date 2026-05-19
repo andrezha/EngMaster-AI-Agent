@@ -45,6 +45,7 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
         self.btn_phrase.setChecked(True)
         self.btn_phrase.setStyleSheet(self._tab_button_style(True))
         layout.addLayout(tab_layout)
+        layout.addSpacing(12)
 
         # 闯关进度文本
         self.status_label = QtWidgets.QLabel("")
@@ -190,10 +191,10 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
 
     def _confirm_button_style(self) -> str:
         return (
-            "QPushButton { background-color: #2563eb; color: #ffffff; "
-            "border: none; border-radius: 10px; font-size: 16px; font-weight: bold; padding: 0 24px; }"
-            "QPushButton:hover { background-color: #1d4ed8; }"
-            "QPushButton:pressed { background-color: #1e40af; }"
+            "QPushButton { background-color: #2196F3; color: #ffffff; "
+            "border: 1px solid #2196F3; border-radius: 10px; font-size: 16px; font-weight: bold; padding: 0 24px; }"
+            "QPushButton:hover { background-color: #1976D2; }"
+            "QPushButton:pressed { background-color: #155abe; }"
         )
 
     def _load_question(self):
@@ -319,7 +320,6 @@ class PhraseIrregularListView(QtWidgets.QWidget):
         layout.addLayout(button_layout)
         
         self._calculate_column_widths() # 计算列宽
-        self._setup_table_headers() # 设置表头
 
         self.scroll = QtWidgets.QScrollArea()
         self.scroll.setWidgetResizable(True)
@@ -378,118 +378,112 @@ class PhraseIrregularListView(QtWidgets.QWidget):
             "meaning": max(150, max_meaning_len * 10 + 20) # Min width 150
         }
 
-    def _setup_table_headers(self):
-        def _create_single_irregular_header_group(layout, single_group_headers, single_group_widths, is_last_group=False):
-            for i, header_text in enumerate(single_group_headers):
-                lbl = QtWidgets.QLabel(header_text)
-                lbl.setAlignment(QtCore.Qt.AlignCenter if i == 0 else QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter)
-                
-                style = "font-size: 10px; font-weight: bold; color: #495057;"
-                if not is_last_group or (is_last_group and i < len(single_group_headers) - 1):
-                    style += " border-right: 1px solid #F1F3F5;"
-                
-                lbl.setStyleSheet(style)
-                lbl.setFixedWidth(single_group_widths[i])
-                layout.addWidget(lbl)
-
-
-        # Phrase table header
-        self.phrase_header_frame = QtWidgets.QFrame()
-        self.phrase_header_frame.setFixedHeight(30)
-        self.phrase_header_frame.setStyleSheet("background: #F8F9FA; border-bottom: 1px solid #DEE2E6;")
-        phrase_header_layout = QtWidgets.QHBoxLayout(self.phrase_header_frame)
-        phrase_header_layout.setContentsMargins(0, 0, 0, 0)
-        phrase_header_layout.setSpacing(0)
-        
-        headers = ["序号", "短语", "翻译", "英文例句", "中文翻译"] # Updated headers
-        widths = [35, self.phrase_col_widths["p"], self.phrase_col_widths["m"], self.phrase_col_widths["en"], self.phrase_col_widths["cn"]] # Updated widths
-
-        for i, header_text in enumerate(headers):
-            lbl = QtWidgets.QLabel(header_text)
-            lbl.setAlignment(QtCore.Qt.AlignCenter if i == 0 else QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter)
-            lbl.setStyleSheet("font-size: 10px; font-weight: bold; color: #495057; border-right: 1px solid #F1F3F5;")
-            if i == 0: # Index column
-                lbl.setFixedWidth(widths[i])
-            elif i < len(headers) - 1: # Fixed width for most columns
-                lbl.setFixedWidth(widths[i])
-            else: # Last column takes remaining space
-                lbl.setStyleSheet("font-size: 10px; font-weight: bold; color: #495057;") # No right border for last column
-                phrase_header_layout.addWidget(lbl, 1)
-                continue
-            phrase_header_layout.addWidget(lbl)
-
-        # Irregular verbs table header
-        self.irregular_header_frame = QtWidgets.QFrame()
-        self.irregular_header_frame.setFixedHeight(30)
-        self.irregular_header_frame.setStyleSheet("background: #F8F9FA; border-bottom: 1px solid #DEE2E6;")
-        irregular_header_layout = QtWidgets.QHBoxLayout(self.irregular_header_frame)
-        irregular_header_layout.setContentsMargins(0, 0, 0, 0)
-        irregular_header_layout.setSpacing(0)
-
-        single_group_headers = ["序号", "原型", "过去式", "过去分词", "翻译"]
-        single_group_widths = [35, self.irregular_col_widths["infinitive"], self.irregular_col_widths["past_tense"], self.irregular_col_widths["past_participle"], self.irregular_col_widths["meaning"]]
-        
-        # First group of headers
-        _create_single_irregular_header_group(irregular_header_layout, single_group_headers, single_group_widths, is_last_group=False)
-
-        # Separator between groups
-        separator_lbl = QtWidgets.QLabel("")
-        separator_lbl.setFixedWidth(10) # Small fixed width for separator
-        separator_lbl.setStyleSheet("border-right: 1px solid #DEE2E6;") # Visual separator
-        irregular_header_layout.addWidget(separator_lbl)
-
-        # Second group of headers
-        _create_single_irregular_header_group(irregular_header_layout, single_group_headers, single_group_widths, is_last_group=True)
-
-        irregular_header_layout.addStretch(1)
-
     def _setup_table_content(self):
-        # 短语表页面
+        # Phrase table page
         phrase_page = QtWidgets.QWidget()
         phrase_layout = QtWidgets.QVBoxLayout(phrase_page)
         phrase_layout.setContentsMargins(0, 0, 0, 0)
         phrase_layout.setSpacing(0)
-        phrase_layout.addWidget(self.phrase_header_frame) # Add header
-        phrase_scroll_area = QtWidgets.QScrollArea()
-        phrase_scroll_area.setWidgetResizable(True)
-        phrase_scroll_area.setStyleSheet("border: none; background: white;")
-        phrase_container = QtWidgets.QWidget()
-        phrase_container_layout = QtWidgets.QVBoxLayout(phrase_container)
-        phrase_container_layout.setContentsMargins(0, 0, 0, 0)
-        phrase_container_layout.setSpacing(0)
-        for idx, item in enumerate(self.phrases):
-            row = self._create_phrase_row(item, idx, self.phrase_col_widths)
-            phrase_container_layout.addWidget(row)
-        phrase_container_layout.addStretch()
-        phrase_scroll_area.setWidget(phrase_container)
-        phrase_layout.addWidget(phrase_scroll_area)
+
+        self.phrase_table = QtWidgets.QTableWidget(len(self.phrases), 5)
+        self.phrase_table.setHorizontalHeaderLabels(["序号", "短语", "翻译", "英文例句", "中文翻译"])
+        self.phrase_table.verticalHeader().setVisible(False)
+        self.phrase_table.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
+        self.phrase_table.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectRows)
+        self.phrase_table.setSelectionMode(QtWidgets.QAbstractItemView.NoSelection)
+        self.phrase_table.setWordWrap(True)
+        self.phrase_table.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.phrase_table.setStyleSheet(
+            "QTableWidget { background: white; border: none; }"
+            "QHeaderView::section { background: #F8F9FA; border: 1px solid #DEE2E6; padding: 4px; font-weight: bold; }"
+        )
+
+        for row_idx, item in enumerate(self.phrases):
+            self._set_phrase_table_row(row_idx, item)
+
+        self.phrase_table.setColumnWidth(0, 35)
+        self.phrase_table.setColumnWidth(1, self.phrase_col_widths["p"])
+        self.phrase_table.setColumnWidth(2, self.phrase_col_widths["m"])
+        self.phrase_table.setColumnWidth(3, self.phrase_col_widths["en"])
+        self.phrase_table.horizontalHeader().setStretchLastSection(True)
+        self.phrase_table.resizeRowsToContents()
+
+        phrase_layout.addWidget(self.phrase_table)
         self.table_stack.addWidget(phrase_page)
 
-        # 动词表页面
+        # Irregular verbs table page
         irregular_page = QtWidgets.QWidget()
         irregular_layout = QtWidgets.QVBoxLayout(irregular_page)
         irregular_layout.setContentsMargins(0, 0, 0, 0)
         irregular_layout.setSpacing(0)
-        irregular_layout.addWidget(self.irregular_header_frame) # Add header
-        irregular_scroll_area = QtWidgets.QScrollArea()
-        irregular_scroll_area.setWidgetResizable(True)
-        irregular_scroll_area.setStyleSheet("border: none; background: white;")
-        irregular_container = QtWidgets.QWidget()
-        irregular_container_layout = QtWidgets.QVBoxLayout(irregular_container)
-        irregular_container_layout.setContentsMargins(0, 0, 0, 0)
-        irregular_container_layout.setSpacing(0)
-        
-        # Iterate in steps of 2 for irregular verbs
-        for i in range(0, len(self.irregulars), 2):
-            item1 = self.irregulars[i]
-            item2 = self.irregulars[i+1] if i+1 < len(self.irregulars) else None
-            
-            row = self._create_irregular_row(item1, item2, i, i+1, self.irregular_col_widths)
-            irregular_container_layout.addWidget(row)
-        irregular_container_layout.addStretch()
-        irregular_scroll_area.setWidget(irregular_container)
-        irregular_layout.addWidget(irregular_scroll_area)
+
+        self.irregular_table = QtWidgets.QTableWidget(len(self.irregulars), 5)
+        self.irregular_table.setHorizontalHeaderLabels(["序号", "原型", "过去式", "过去分词", "翻译"])
+        self.irregular_table.verticalHeader().setVisible(False)
+        self.irregular_table.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
+        self.irregular_table.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectRows)
+        self.irregular_table.setSelectionMode(QtWidgets.QAbstractItemView.NoSelection)
+        self.irregular_table.setWordWrap(True)
+        self.irregular_table.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.irregular_table.setStyleSheet(
+            "QTableWidget { background: white; border: none; }"
+            "QHeaderView::section { background: #F8F9FA; border: 1px solid #DEE2E6; padding: 4px; font-weight: bold; }"
+        )
+
+        for row_idx, item in enumerate(self.irregulars):
+            self._set_irregular_table_row(row_idx, item)
+
+        self.irregular_table.setColumnWidth(0, 35)
+        self.irregular_table.setColumnWidth(1, self.irregular_col_widths["infinitive"])
+        self.irregular_table.setColumnWidth(2, self.irregular_col_widths["past_tense"])
+        self.irregular_table.setColumnWidth(3, self.irregular_col_widths["past_participle"])
+        self.irregular_table.horizontalHeader().setStretchLastSection(True)
+        self.irregular_table.resizeRowsToContents()
+
+        irregular_layout.addWidget(self.irregular_table)
         self.table_stack.addWidget(irregular_page)
+
+    def _set_phrase_table_row(self, row_idx: int, item: dict):
+        index_item = QtWidgets.QTableWidgetItem(str(row_idx + 1))
+        index_item.setTextAlignment(QtCore.Qt.AlignCenter)
+        self.phrase_table.setItem(row_idx, 0, index_item)
+
+        phrase_item = QtWidgets.QTableWidgetItem(item.get("p", ""))
+        phrase_item.setTextAlignment(QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter)
+        self.phrase_table.setItem(row_idx, 1, phrase_item)
+
+        meaning_item = QtWidgets.QTableWidgetItem(item.get("m", ""))
+        meaning_item.setTextAlignment(QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter)
+        self.phrase_table.setItem(row_idx, 2, meaning_item)
+
+        example_item = QtWidgets.QTableWidgetItem(item.get("en", ""))
+        example_item.setTextAlignment(QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter)
+        self.phrase_table.setItem(row_idx, 3, example_item)
+
+        translation_item = QtWidgets.QTableWidgetItem(item.get("cn", ""))
+        translation_item.setTextAlignment(QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter)
+        self.phrase_table.setItem(row_idx, 4, translation_item)
+
+    def _set_irregular_table_row(self, row_idx: int, item: dict):
+        index_item = QtWidgets.QTableWidgetItem(str(row_idx + 1))
+        index_item.setTextAlignment(QtCore.Qt.AlignCenter)
+        self.irregular_table.setItem(row_idx, 0, index_item)
+
+        infinitive_item = QtWidgets.QTableWidgetItem(_clean_verb_field(item.get("infinitive", "")))
+        infinitive_item.setTextAlignment(QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter)
+        self.irregular_table.setItem(row_idx, 1, infinitive_item)
+
+        past_item = QtWidgets.QTableWidgetItem(_clean_verb_field(item.get("past_tense", "")))
+        past_item.setTextAlignment(QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter)
+        self.irregular_table.setItem(row_idx, 2, past_item)
+
+        participle_item = QtWidgets.QTableWidgetItem(_clean_verb_field(item.get("past_participle", "")))
+        participle_item.setTextAlignment(QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter)
+        self.irregular_table.setItem(row_idx, 3, participle_item)
+
+        meaning_item = QtWidgets.QTableWidgetItem(item.get("meaning", ""))
+        meaning_item.setTextAlignment(QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter)
+        self.irregular_table.setItem(row_idx, 4, meaning_item)
 
     def _show_table(self, table_type: str):
         is_phrase = table_type == "phrase"

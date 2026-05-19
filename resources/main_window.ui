@@ -18,49 +18,49 @@
        <item>
         <widget class="QPushButton" name="btn_nav_vocab">
          <property name="minimumSize"><size><width>0</width><height>52</height></size></property>
-         <property name="text"><string>高考 3800 词·闯关</string></property>
+         <property name="text"><string>高考3800词闯关</string></property>
          <property name="checkable"><bool>true</bool></property>
-         <property name="styleSheet"><string>QPushButton { color: #34495e; background: transparent; border: none; font-size: 15px; text-align: left; padding-left: 20px; outline: none; border-radius: 10px; font-weight: bold; } QPushButton:hover { background-color: #e4e7ed; } QPushButton:checked { background-color: #2c3e50; color: white; }</string></property>
+         <property name="styleSheet"><string>QPushButton { color: #34495e; background: transparent; border: none; font-family: "Microsoft YaHei", "Segoe UI", sans-serif; font-size: 15px; text-align: left; padding-left: 20px; outline: none; border-radius: 10px; font-weight: bold; } QPushButton:hover { background-color: #e4e7ed; } QPushButton:checked { background-color: #2c3e50; color: white; }</string></property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="btn_nav_core_vocab">
          <property name="minimumSize"><size><width>0</width><height>52</height></size></property>
-         <property name="text"><string>3800 词·核心词汇表</string></property>
+         <property name="text"><string>3800词核心词汇</string></property>
          <property name="checkable"><bool>true</bool></property>
-         <property name="styleSheet"><string>QPushButton { color: #34495e; background: transparent; border: none; font-size: 15px; text-align: left; padding-left: 20px; outline: none; border-radius: 10px; font-weight: bold; } QPushButton:hover { background-color: #e4e7ed; } QPushButton:checked { background-color: #2c3e50; color: white; }</string></property>
+         <property name="styleSheet"><string>QPushButton { color: #34495e; background: transparent; border: none; font-family: "Microsoft YaHei", "Segoe UI", sans-serif; font-size: 15px; text-align: left; padding-left: 20px; outline: none; border-radius: 10px; font-weight: bold; } QPushButton:hover { background-color: #e4e7ed; } QPushButton:checked { background-color: #2c3e50; color: white; }</string></property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="btn_nav_phrase_challenge">
          <property name="minimumSize"><size><width>0</width><height>52</height></size></property>
-         <property name="text"><string>高考常用短语/不规则动词闯关</string></property>
+         <property name="text"><string>高考短语/不规则动词闯关</string></property>
          <property name="checkable"><bool>true</bool></property>
-         <property name="styleSheet"><string>QPushButton { color: #34495e; background: transparent; border: none; font-size: 15px; text-align: left; padding-left: 20px; outline: none; border-radius: 10px; font-weight: bold; } QPushButton:hover { background-color: #e4e7ed; } QPushButton:checked { background-color: #2c3e50; color: white; }</string></property>
+         <property name="styleSheet"><string>QPushButton { color: #34495e; background: transparent; border: none; font-family: "Microsoft YaHei", "Segoe UI", sans-serif; font-size: 15px; text-align: left; padding-left: 20px; outline: none; border-radius: 10px; font-weight: bold; } QPushButton:hover { background-color: #e4e7ed; } QPushButton:checked { background-color: #2c3e50; color: white; }</string></property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="btn_nav_phrase_list">
          <property name="minimumSize"><size><width>0</width><height>52</height></size></property>
-         <property name="text"><string>高考常用短语和不规则动词表</string></property>
+         <property name="text"><string>高考短语与不规则动词表</string></property>
          <property name="checkable"><bool>true</bool></property>
-         <property name="styleSheet"><string>QPushButton { color: #34495e; background: transparent; border: none; font-size: 15px; text-align: left; padding-left: 20px; outline: none; border-radius: 10px; font-weight: bold; } QPushButton:hover { background-color: #e4e7ed; } QPushButton:checked { background-color: #2c3e50; color: white; }</string></property>
+         <property name="styleSheet"><string>QPushButton { color: #34495e; background: transparent; border: none; font-family: "Microsoft YaHei", "Segoe UI", sans-serif; font-size: 15px; text-align: left; padding-left: 20px; outline: none; border-radius: 10px; font-weight: bold; } QPushButton:hover { background-color: #e4e7ed; } QPushButton:checked { background-color: #2c3e50; color: white; }</string></property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="btn_nav_gaokao">
          <property name="minimumSize"><size><width>0</width><height>52</height></size></property>
-         <property name="text"><string>高考真题·专项练习</string></property>
+         <property name="text"><string>高考真题专项练习</string></property>
          <property name="checkable"><bool>true</bool></property>
-         <property name="styleSheet"><string>QPushButton { color: #34495e; background: transparent; border: none; font-size: 15px; text-align: left; padding-left: 20px; outline: none; border-radius: 10px; font-weight: bold; } QPushButton:hover { background-color: #e4e7ed; } QPushButton:checked { background-color: #2c3e50; color: white; }</string></property>
+         <property name="styleSheet"><string>QPushButton { color: #34495e; background: transparent; border: none; font-family: "Microsoft YaHei", "Segoe UI", sans-serif; font-size: 15px; text-align: left; padding-left: 20px; outline: none; border-radius: 10px; font-weight: bold; } QPushButton:hover { background-color: #e4e7ed; } QPushButton:checked { background-color: #2c3e50; color: white; }</string></property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="btn_nav_full_exam">
          <property name="minimumSize"><size><width>0</width><height>52</height></size></property>
-         <property name="text"><string>高考整卷·全真战场</string></property>
+         <property name="text"><string>高考整卷全真战场</string></property>
          <property name="checkable"><bool>true</bool></property>
-         <property name="styleSheet"><string>QPushButton { color: #34495e; background: transparent; border: none; font-size: 15px; text-align: left; padding-left: 20px; outline: none; border-radius: 10px; font-weight: bold; } QPushButton:hover { background-color: #e4e7ed; } QPushButton:checked { background-color: #2c3e50; color: white; }</string></property>
+         <property name="styleSheet"><string>QPushButton { color: #34495e; background: transparent; border: none; font-family: "Microsoft YaHei", "Segoe UI", sans-serif; font-size: 15px; text-align: left; padding-left: 20px; outline: none; border-radius: 10px; font-weight: bold; } QPushButton:hover { background-color: #e4e7ed; } QPushButton:checked { background-color: #2c3e50; color: white; }</string></property>
         </widget>
        </item>
        <item>
@@ -87,9 +87,9 @@
        </item>
        <item>
         <widget class="QLabel" name="lbl_pro_service">
-         <property name="text"><string>[ 增值服务 ]</string></property>
+         <property name="text"><string>增值服务</string></property>
          <property name="alignment"><set>Qt::AlignCenter</set></property>
-         <property name="styleSheet"><string>QLabel { color: #909399; font-size: 12px; font-weight: bold; }</string></property>
+         <property name="styleSheet"><string>QLabel { font-family: "Microsoft YaHei", "Segoe UI", sans-serif; color: #909399; font-size: 12px; font-weight: bold; }</string></property>
         </widget>
        </item>
        <item>
@@ -105,14 +105,6 @@
          <property name="sizeType"><enum>QSizePolicy::Fixed</enum></property>
          <property name="sizeHint"><size><width>20</width><height>5</height></size></property>
         </spacer>
-       </item>
-       <item>
-        <widget class="QPushButton" name="btn_nav_scan">
-         <property name="minimumSize"><size><width>0</width><height>52</height></size></property>
-         <property name="text"><string>AI 老师·题目精讲</string></property>
-         <property name="checkable"><bool>true</bool></property>
-         <property name="styleSheet"><string>QPushButton { color: #34495e; background: transparent; border: none; font-size: 15px; text-align: left; padding-left: 20px; outline: none; border-radius: 10px; font-weight: bold; } QPushButton:hover { background-color: #e4e7ed; } QPushButton:checked { background-color: #2c3e50; color: white; }</string></property>
-        </widget>
        </item>
        <item>
         <spacer name="nav_spacer">

@@ -6,8 +6,8 @@ from datetime import datetime  # Import datetime for filename generation
 from PySide6.QtCore import Signal, QObject  # Import Signal and QObject
 from PySide6.QtWidgets import QMessageBox  # Explicitly import QMessageBox
 from PySide6.QtGui import QDesktopServices  # For opening file
-from PySide6.QtCore import QUrl  # Import QUrl
-from utils import get_writable_data_path, _normalize_full_width_to_half_width
+from PySide6.QtCore import QUrl
+from utils import get_writable_data_path, _normalize_full_width_to_half_width, get_resource_path
 
 
 class VocabManager(QObject):  # 继承自 QObject
@@ -16,9 +16,12 @@ class VocabManager(QObject):  # 继承自 QObject
     """
     mistake_vocabulary_changed = Signal(list)  # Define the signal
 
-    def __init__(self, main_window_instance):
+    def __init__(self, main_window_instance, initial_vocabulary=None, initial_mistake_vocabulary=None):
         self.main_window = main_window_instance  # Store the main window instance
         super().__init__(main_window_instance)  # 调用父类 QObject 的构造函数，并设置父对
+
+        self.initial_vocabulary = initial_vocabulary
+        self.initial_mistake_vocabulary = initial_mistake_vocabulary
 
         self.current_idx = 0
         self.time_left = 15
@@ -31,10 +34,15 @@ class VocabManager(QObject):  # 继承自 QObject
         self.mistake_word_file_path = get_writable_data_path(
             "mistake_words.json")
         print(f"🔍 [Path Audit] {self.mistake_word_file_path}")
-        self.vocab_page_widget = self.main_window.stack.widget(0)
+        self.vocab_page_widget = self.main_window.stack.findChild(
+            QtWidgets.QWidget, "page_vocab")
+        if not self.vocab_page_widget and self.main_window.stack:
+            # If the page has been shifted by the loading screen, fallback to index 1.
+            self.vocab_page_widget = self.main_window.stack.widget(1)
+
         if not self.vocab_page_widget:
             raise AttributeError(
-                "Vocabulary page widget not found in stackedWidget at index 0.")
+                "Vocabulary page widget not found in stackedWidget. Ensure page_vocab exists.")
 
         # 查找控件
         self.v_input = self.vocab_page_widget.findChild(
@@ -342,14 +350,13 @@ class VocabManager(QObject):  # 继承自 QObject
         """
         从 assets/vocabulary.json 文件加载词汇表并随机打乱。
         """
-        try:  # Access base_path from the main_window instance
-            if hasattr(self.main_window, 'base_path') and self.main_window.base_path:
-                vocab_path = os.path.join(
-                    self.main_window.base_path, "assets", "vocabulary.json")
-            else:
-                vocab_path = os.path.join(os.path.dirname(
-                    __file__), "..", "assets", "vocabulary.json")
-                vocab_path = os.path.normpath(vocab_path)
+        if self.initial_vocabulary is not None:
+            self.vocabulary = list(self.initial_vocabulary)
+            random.shuffle(self.vocabulary)
+            print(f"✅ 常规词汇表已从后台数据加载完成，共 {len(self.vocabulary)} 词。")
+            return
+        try:
+            vocab_path = get_resource_path("assets/vocabulary.json")
             print(
                 f"DEBUG: Attempting to load regular vocabulary from: {vocab_path}")
             if not os.path.exists(vocab_path):
@@ -374,6 +381,15 @@ class VocabManager(QObject):  # 继承自 QObject
         """
         从 mistake_words.json 文件加载错词表。
         """
+        if self.initial_mistake_vocabulary is not None:
+            self.mistake_vocabulary = list(self.initial_mistake_vocabulary)
+            for word_obj in self.mistake_vocabulary:
+                word_obj.setdefault('pronunciation', '')
+                word_obj.setdefault('example', '')
+            random.shuffle(self.mistake_vocabulary)
+            print(f"✅ 错词表已从后台数据加载完成，共 {len(self.mistake_vocabulary)} 词。")
+            return
+
         try:
             if os.path.exists(self.mistake_word_file_path):
                 with open(self.mistake_word_file_path, "r", encoding="utf-8") as f:

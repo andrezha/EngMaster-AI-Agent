@@ -85,10 +85,10 @@ class SelfRegisterVocabManager(QtWidgets.QWidget): # Inherit from QWidget direct
     """
     自主登记单词功能模块管理器。
     """
-    def __init__(self, main_window_instance): # Removed page_widget parameter
+    def __init__(self, main_window_instance, initial_user_vocab_data=None): # Removed page_widget parameter
         super().__init__() # Call QWidget's init
         self.main_window = main_window_instance
-        self.user_vocab_data = []
+        self.user_vocab_data = initial_user_vocab_data if initial_user_vocab_data is not None else []
         self.data_file_path = get_writable_data_path("user_registered_vocab.json") # 使用AppData目录
 
         self.current_page = 0  # 0-indexed
@@ -220,6 +220,10 @@ class SelfRegisterVocabManager(QtWidgets.QWidget): # Inherit from QWidget direct
         """
         从本地 JSON 文件加载用户登记的单词数据。
         """
+        if self.user_vocab_data:
+            print(f"✅ 自主登记单词已从后台数据加载完成，共 {len(self.user_vocab_data)} 词。")
+            return
+
         try:
             if os.path.exists(self.data_file_path):
                 with open(self.data_file_path, "r", encoding="utf-8") as f:

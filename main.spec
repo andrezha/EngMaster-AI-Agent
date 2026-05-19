@@ -3,10 +3,10 @@
 
 a = Analysis(
     ['main.py'],
-    pathex=[],
+    pathex=['.'],
     binaries=[],
-    datas=[],
-    hiddenimports=[],
+    datas=[('resources', 'resources'), ('data', 'data'), ('assets', 'assets'), ('prompts.json', '.')],
+    hiddenimports=['vocab_module', 'word_list_view', 'exam_module', 'utils', 'self_register_vocab_module', 'phrase_irregular_module', 'run_flull_exam', 'parsers.full_exam_specific_parsers', 'core.ai_logic'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],

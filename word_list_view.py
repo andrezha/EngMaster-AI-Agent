@@ -69,11 +69,34 @@ class WordListView(QtWidgets.QWidget):
         self.btn_toggle_en = QtWidgets.QPushButton("📖 隐藏英语")
         self.btn_toggle_cn = QtWidgets.QPushButton("📝 隐藏中文")
 
+        button_style = """
+            QPushButton {
+                background-color: #ffffff;
+                color: #333333;
+                border: 1px solid #d1d5db;
+                border-radius: 6px;
+                font-size: 14px;
+                padding: 0 12px;
+            }
+            QPushButton:hover {
+                background-color: #f3f4f6;
+            }
+            QPushButton:pressed {
+                background-color: #e2e6ea;
+            }
+            QPushButton:checked {
+                background-color: #2196F3;
+                color: white;
+            }
+        """
+
         for w in [self.btn_reg, self.btn_mis, self.btn_export, self.search_input, self.btn_toggle_en, self.btn_toggle_cn]:
             h_layout.addWidget(w)
             if isinstance(w, QtWidgets.QPushButton):
                 w.setCheckable(True)
                 w.setFixedHeight(34)
+                if w is not self.btn_export:
+                    w.setStyleSheet(button_style)
 
         h_layout.addStretch()
         main_layout.addWidget(header)
@@ -94,6 +117,10 @@ class WordListView(QtWidgets.QWidget):
         self.lbl_page = QtWidgets.QLabel("第 1 / 1 页")
         self.btn_prev = QtWidgets.QPushButton("← 上一页")
         self.btn_next = QtWidgets.QPushButton("下一页 →")
+        self.btn_prev.setFixedHeight(34)
+        self.btn_next.setFixedHeight(34)
+        self.btn_prev.setStyleSheet(button_style)
+        self.btn_next.setStyleSheet(button_style)
         f_layout.addWidget(self.lbl_page); f_layout.addStretch(); f_layout.addWidget(self.btn_prev); f_layout.addWidget(self.btn_next)
         main_layout.addWidget(footer)
 
@@ -215,6 +242,8 @@ class WordListView(QtWidgets.QWidget):
         self.current_list_type = t
         self.display_words = self.all_regular_words.copy() if t == "regular" else self.all_mistake_words.copy()
         self.current_page = 0
+        self.btn_reg.setChecked(t == "regular")
+        self.btn_mis.setChecked(t == "mistake")
         self._render_page()
 
     def _render_page(self):
