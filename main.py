@@ -642,8 +642,8 @@ def check_licensing_gate():
     """
     import hashlib
     
-    # 1. 卡死 Windows 绝对安全公用凭证路径
-    LICENSE_DIR = "C:\\Users\\Public\\Documents\\HighSchoolEnglishHelper"
+   # 🚀 3秒钟物理替换：一劳永逸干掉死的 C 盘公用路径，换成100%有权写入的用户家目录
+    LICENSE_DIR = os.path.join(os.path.expanduser("~"), ".HighSchoolEnglishHelper")
     LICENSE_PATH = os.path.join(LICENSE_DIR, "licensing.dat")
     
     # 【掌柜看这里】：这是你的终极发卡网通用算法暗号！
