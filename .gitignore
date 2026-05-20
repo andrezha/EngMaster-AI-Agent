@@ -60,3 +60,7 @@ temp/
 .packages
 .pub-cache/
 .pub/
+logo.ico
+test_app_automation.py
+test_pages_automation.py
+出厂质检报告_delivery_report.md

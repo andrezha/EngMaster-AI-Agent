@@ -8,69 +8,41 @@ def _parse_reading_items_full_exam_robust(q_text, analysis_text):
     """
     items = [] # Initialize items list
     sequential_answers = re.findall(r'^\s*([A-G])\s*[．\.]', analysis_text, re.MULTILINE)
-    explicit_ans_map = {} # Initialize explicit_ans_map
+    explicit_ans_map = dict(re.findall(r'(\d{1,3})\s*[\.、\)]?\s*([A-G])\b', analysis_text, re.MULTILINE))
 
     # Define the robust pattern to capture question blocks.
     # It looks for a question ID (e.g., "28.") and captures everything until the next question ID or end of text.
     # This is more robust than trying to capture options within the main block regex.
     question_block_pattern = re.compile(
-        r'(\d+)\s*[\.\)]\s*(.*?)(?=\s*\d+\s*[\.\)]\s*|\Z)', re.DOTALL # Group 1: QID, Group 2: rest of the block
-    ) # Added missing closing parenthesis
+        r'(\d+)\s*[\.\)]\s*(.*?)(?=\s*\d+\s*[\.\)]\s*|\Z)', re.DOTALL) # Group 1: QID, Group 2: rest of the block
     seq_ans_idx = 0
-    print(f"DEBUG: _parse_reading_items_full_exam_robust - q_text starts with: {q_text[0]!r}, isdigit: {q_text[0].isdigit()}")
-    print(f"DEBUG: _parse_reading_items_full_exam_robust - q_text (repr, full, before loop): {repr(q_text)}")
-    print(f"DEBUG: _parse_reading_items_full_exam_robust - question_block_pattern (pattern): {question_block_pattern.pattern!r}")
-    
     temp_matches = list(question_block_pattern.finditer(q_text))
-    print(f"DEBUG: _parse_reading_items_full_exam_robust - question_block_pattern found {len(temp_matches)} matches.")
-    if temp_matches:
-        print(f"DEBUG: _parse_reading_items_full_exam_robust - First match groups: {repr(temp_matches[0].groups())}")
     
     # Iterate through the q_text to find all question blocks
     for block_match in temp_matches:
         q_id_from_text = (block_match.group(1) or "").strip() # Extract QID
         block_content = (block_match.group(2) or "").strip()
-        print(f"DEBUG: Q{q_id_from_text} - Extracted block_content (repr, first 200 chars): {repr(block_content[:200])}")
-
         question_stem = ""
 
         options = {} # Initialize options for each question
-        # Standardize option prefixes in block_content before parsing options
-        # This ensures "A", "A.", "A)" all become "A. " for consistent parsing
-        # For full exam, strictly match A-D
-        standardized_block_content = re.sub(r'([A-D])\s*[\.\)]?\s*', r'\1. ', block_content)
-        print(f"DEBUG: Q{q_id_from_text} - Standardized block_content (repr, full): {repr(standardized_block_content)}") # Print full standardized content with repr
+        # Parse options directly from block_content using A-D labels
+        option_pattern = r'(?:^|\n)\s*([A-D])\s*[\.\)]\s*(.*?)(?=(?:\n\s*[A-D]\s*[\.\)]\s*)|\Z)'
         
-        # --- More granular debugging for options parsing ---
-        print(f"DEBUG: Q{q_id_from_text} - Standardized block_content (repr, full): {repr(standardized_block_content)}")
         
-        # Test for presence of any option label
-        any_label_found = re.search(r'[A-D]\.', standardized_block_content) # Strictly match A-D
-        print(f"DEBUG: Q{q_id_from_text} - Any option label (A., B., C., D.) found: {bool(any_label_found)}")
-
         # Parse options from the block_content
         # Adjusted pattern: ensure content starts with a non-whitespace character
         # For full exam, strictly match A-D
-        options_pattern = r'([A-D])\.\s*(\S[\s\S]*?)(?=\s*[A-D]\.|\s*\Z)' # Simplified pattern expecting "A. "
-        print(f"DEBUG: Q{q_id_from_text} - Options pattern used: {options_pattern!r}")
-        options_found = list(re.finditer(options_pattern, standardized_block_content, re.DOTALL))
+        options_found = list(re.finditer(option_pattern, block_content, re.DOTALL))
         
         if options_found:
-            print(f"DEBUG: Q{q_id_from_text} - Options found by regex (count {len(options_found)}). First match: {repr(options_found[0].groups()) if options_found else 'N/A'}")
-            for i, opt_match in enumerate(options_found):
-                label = opt_match.group(1)
-                content = opt_match.group(2)
-                print(f"DEBUG: Q{q_id_from_text} - Option {label}: Content (repr): {repr(content)}")
             first_option_start_pos = options_found[0].start()
-            
-            question_stem = standardized_block_content[:first_option_start_pos].strip() # Extract stem before first option
+            question_stem = block_content[:first_option_start_pos].strip() # Extract stem before first option
             for opt_match in options_found:
                 label = opt_match.group(1).upper() # Convert to uppercase for consistency
                 content = (opt_match.group(2) or "").strip() # Option content
                 options[label] = content
-            print(f"DEBUG: Q{q_id_from_text} - Populated options: {options}")
         else:
-            question_stem = standardized_block_content # If no options found, the whole block is the stem
+            question_stem = block_content # If no options found, the whole block is the stem
         # Only add if options are successfully parsed (for multiple choice questions)
         if options:
             # Try to get answer from explicit map first, then sequential answers
@@ -90,8 +62,7 @@ def _parse_reading_items_full_exam_robust(q_text, analysis_text):
             # For reading comprehension, we expect options. Log a warning.
             print(f"DEBUG:   No options parsed for Q{q_id_from_text}. Item not added as reading comprehension.")
 
-    print(f"DEBUG: _parse_reading_items_full_exam returning {len(items)} items.")
-    return items # Added missing return statement
+    return items
 
 def _parse_cloze_items_full_exam(options_text, analysis_text):
     """
