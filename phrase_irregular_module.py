@@ -298,6 +298,11 @@ class PhraseIrregularListView(QtWidgets.QWidget):
         self.irregular_col_widths = {}
         self._init_ui()
 
+    def resizeEvent(self, event):
+        super().resizeEvent(event)
+        if hasattr(self, "phrase_table"):
+            QtCore.QTimer.singleShot(0, self._apply_phrase_column_widths)
+
     def _init_ui(self):
         self.setObjectName("phrase_irregular_list_view")
         layout = QtWidgets.QVBoxLayout(self)
@@ -339,8 +344,15 @@ class PhraseIrregularListView(QtWidgets.QWidget):
         self.setStyleSheet("background: #f3f4f6;")
 
     def _calculate_column_widths(self):
-        # Heuristic: 1 character ~ 8 pixels for Arial 10pt, 1 character ~ 10 pixels for Microsoft YaHei 10pt
-        # Add some padding (e.g., 20 pixels)
+        def _text_width(text: str, font: QtGui.QFont) -> int:
+            metrics = QtGui.QFontMetrics(font)
+            return metrics.horizontalAdvance(str(text or ""))
+
+        def _bounded_content_width(measured_width: int, padding: int, minimum: int, maximum: int) -> int:
+            return max(minimum, min(measured_width + padding, maximum))
+
+        english_font = QtGui.QFont("Arial", 11, QtGui.QFont.Bold)
+        chinese_font = QtGui.QFont("Microsoft YaHei", 10)
         
         # Phrase table widths
         max_p_len = 0
@@ -348,16 +360,16 @@ class PhraseIrregularListView(QtWidgets.QWidget):
         max_en_len = 0
         max_cn_len = 0
         for item in self.phrases:
-            max_p_len = max(max_p_len, len(item.get("p", "")))
-            max_m_len = max(max_m_len, len(item.get("m", "")))
-            max_en_len = max(max_en_len, len(item.get("en", "")))
-            max_cn_len = max(max_cn_len, len(item.get("cn", "")))
+            max_p_len = max(max_p_len, _text_width(item.get("p", ""), english_font))
+            max_m_len = max(max_m_len, _text_width(item.get("m", ""), chinese_font))
+            max_en_len = max(max_en_len, _text_width(item.get("en", ""), english_font))
+            max_cn_len = max(max_cn_len, _text_width(item.get("cn", ""), chinese_font))
         
         self.phrase_col_widths = {
-            "p": max(130, max_p_len * 8 + 20), # Min width 130 for phrase
-            "m": max(150, max_m_len * 10 + 20), # Min width 150 for meaning
-            "en": max(180, max_en_len * 8 + 20), # Min width 180 for English example
-            "cn": max(180, max_cn_len * 10 + 20) # Min width 180 for Chinese example
+            "p": _bounded_content_width(max_p_len, 24, 130, 240),
+            "m": _bounded_content_width(max_m_len, 24, 150, 260),
+            "en": max(180, max_en_len + 28),
+            "cn": _bounded_content_width(max_cn_len, 24, 180, 340)
         }
 
         # Irregular verbs table widths
@@ -401,11 +413,11 @@ class PhraseIrregularListView(QtWidgets.QWidget):
         for row_idx, item in enumerate(self.phrases):
             self._set_phrase_table_row(row_idx, item)
 
-        self.phrase_table.setColumnWidth(0, 35)
-        self.phrase_table.setColumnWidth(1, self.phrase_col_widths["p"])
-        self.phrase_table.setColumnWidth(2, self.phrase_col_widths["m"])
-        self.phrase_table.setColumnWidth(3, self.phrase_col_widths["en"])
-        self.phrase_table.horizontalHeader().setStretchLastSection(True)
+        phrase_header = self.phrase_table.horizontalHeader()
+        for column in range(4):
+            phrase_header.setSectionResizeMode(column, QtWidgets.QHeaderView.Fixed)
+        phrase_header.setSectionResizeMode(4, QtWidgets.QHeaderView.Stretch)
+        self._apply_phrase_column_widths()
         self.phrase_table.resizeRowsToContents()
 
         phrase_layout.addWidget(self.phrase_table)
@@ -442,6 +454,31 @@ class PhraseIrregularListView(QtWidgets.QWidget):
 
         irregular_layout.addWidget(self.irregular_table)
         self.table_stack.addWidget(irregular_page)
+
+    def _apply_phrase_column_widths(self):
+        if not hasattr(self, "phrase_table"):
+            return
+
+        table_width = self.phrase_table.viewport().width()
+        fixed_width = (
+            35
+            + self.phrase_col_widths["p"]
+            + self.phrase_col_widths["m"]
+        )
+        min_translation_width = 180
+        available_for_example = max(180, table_width - fixed_width - min_translation_width)
+        readable_example_width = max(220, int(table_width * 0.24))
+        example_width = min(
+            self.phrase_col_widths["en"],
+            available_for_example,
+            readable_example_width
+        )
+
+        self.phrase_table.setColumnWidth(0, 35)
+        self.phrase_table.setColumnWidth(1, self.phrase_col_widths["p"])
+        self.phrase_table.setColumnWidth(2, self.phrase_col_widths["m"])
+        self.phrase_table.setColumnWidth(3, example_width)
+        self.phrase_table.resizeRowsToContents()
 
     def _set_phrase_table_row(self, row_idx: int, item: dict):
         index_item = QtWidgets.QTableWidgetItem(str(row_idx + 1))
