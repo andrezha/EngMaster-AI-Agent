@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import json
 from PySide6 import QtWidgets, QtCore, QtGui
-from utils import get_resource_path
+from utils import get_resource_path, get_writable_data_path
 
 # Helper function to clean irregular verb fields
 def _clean_verb_field(text):
@@ -11,12 +11,16 @@ def _clean_verb_field(text):
     return text.replace(',', '').replace('，', '').strip()
 
 
-class PhraseIrregularChallengeView(QtWidgets.QWidget):
+class _LegacyPhraseIrregularChallengeView(QtWidgets.QWidget):
     def __init__(self, main_window):
         super().__init__()
         self.main_window = main_window
         self.phrases = self._load_json("assets/short_phrase.json")
         self.irregulars = self._load_json("assets/irregular_verbs.json")
+        self.phrase_mistake_file_path = get_writable_data_path("mistake_phrases.json")
+        self.irregular_mistake_file_path = get_writable_data_path("mistake_irregular_verbs.json")
+        self.phrase_mistakes = self._load_mistake_json(self.phrase_mistake_file_path)
+        self.irregular_mistakes = self._load_mistake_json(self.irregular_mistake_file_path)
         self.current_category = "phrase"
         self.active_items = self.phrases
         self.current_index = 0
@@ -159,6 +163,75 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
         except Exception:
             return []
 
+    def _load_mistake_json(self, path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            if not isinstance(data, list):
+                return []
+            for item in data:
+                if isinstance(item, dict):
+                    item.setdefault("correct_count", 0)
+            return [item for item in data if isinstance(item, dict)]
+        except FileNotFoundError:
+            return []
+        except Exception as e:
+            print(f"DEBUG: 加载错题表失败 {path}: {e}")
+            return []
+
+    def _save_mistake_json(self, path, data):
+        try:
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=4)
+        except Exception as e:
+            QtWidgets.QMessageBox.warning(self.main_window, "错误", f"保存错题表失败:\n{e}")
+        self._update_mistake_count_labels()
+
+    def _count_label_style(self):
+        return (
+            "QLabel { color: #777777; font-size: 13px; padding: 4px 8px; "
+            "border: 1px solid #cccccc; border-radius: 4px; background-color: #f5f5f5; }"
+        )
+
+    def _update_mistake_count_labels(self):
+        if hasattr(self, "lbl_phrase_mistake_count"):
+            self.lbl_phrase_mistake_count.setText(f"短语错题 ({len(self.phrase_mistakes)} 个)")
+        if hasattr(self, "lbl_irregular_mistake_count"):
+            self.lbl_irregular_mistake_count.setText(f"不规则动词错题 ({len(self.irregular_mistakes)} 个)")
+
+    def _phrase_key(self, item):
+        return str(item.get("p", "")).strip().lower()
+
+    def _irregular_key(self, item):
+        return str(item.get("infinitive", "")).strip().lower()
+
+    def _add_or_reset_mistake_item(self, item, data, key_func, save_path):
+        key = key_func(item)
+        if not key:
+            return
+        for mistake in data:
+            if key_func(mistake) == key:
+                mistake["correct_count"] = 0
+                self._save_mistake_json(save_path, data)
+                return
+        new_item = dict(item)
+        new_item["correct_count"] = 0
+        data.append(new_item)
+        self._save_mistake_json(save_path, data)
+
+    def _increment_mistake_correct_count(self, item, data, key_func, save_path):
+        key = key_func(item)
+        for index, mistake in enumerate(data):
+            if key_func(mistake) == key:
+                mistake["correct_count"] = int(mistake.get("correct_count", 0)) + 1
+                correct_count = mistake["correct_count"]
+                removed = correct_count >= 3
+                if removed:
+                    del data[index]
+                self._save_mistake_json(save_path, data)
+                return correct_count, removed
+        return 0, False
+
     def _switch_category(self, category):
         self.current_category = category
         self.btn_phrase.setChecked(category == "phrase")
@@ -282,6 +355,419 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
             return
         self.current_index = (self.current_index + 1) % len(self.active_items)
         self._load_question()
+
+    def _return_to_word_list(self):
+        if hasattr(self.main_window, '_safe_nav_to_word_list'):
+            self.main_window._safe_nav_to_word_list()
+
+
+class PhraseIrregularChallengeView(QtWidgets.QWidget):
+    def __init__(self, main_window):
+        super().__init__()
+        self.main_window = main_window
+        self.phrases = self._load_json("assets/short_phrase.json")
+        self.irregulars = self._load_json("assets/irregular_verbs.json")
+        self.phrase_mistake_file_path = get_writable_data_path("mistake_phrases.json")
+        self.irregular_mistake_file_path = get_writable_data_path("mistake_irregular_verbs.json")
+        self.phrase_mistakes = self._load_mistake_json(self.phrase_mistake_file_path)
+        self.irregular_mistakes = self._load_mistake_json(self.irregular_mistake_file_path)
+        self.current_category = "phrase"
+        self.active_items = self.phrases
+        self.current_index = 0
+        self._init_ui()
+        self._load_question()
+
+    def _init_ui(self):
+        self.setObjectName("phrase_irregular_challenge_view")
+        layout = QtWidgets.QVBoxLayout(self)
+        layout.setContentsMargins(0, 20, 0, 0)
+        layout.setSpacing(0)
+
+        tab_layout = QtWidgets.QHBoxLayout()
+        tab_layout.setContentsMargins(40, 0, 40, 0)
+        tab_layout.setSpacing(12)
+        self.btn_phrase = QtWidgets.QPushButton("短语闯关")
+        self.btn_phrase_mistake = QtWidgets.QPushButton("短语错词闯关")
+        self.btn_irregular = QtWidgets.QPushButton("不规则动词闯关")
+        self.btn_irregular_mistake = QtWidgets.QPushButton("不规则动词错词闯关")
+        for button in [self.btn_phrase, self.btn_phrase_mistake, self.btn_irregular, self.btn_irregular_mistake]:
+            button.setCheckable(True)
+            button.setMinimumWidth(140)
+            button.setFixedHeight(36)
+            tab_layout.addWidget(button)
+
+        self.btn_phrase.clicked.connect(lambda: self._switch_category("phrase"))
+        self.btn_phrase_mistake.clicked.connect(lambda: self._switch_category("phrase_mistake"))
+        self.btn_irregular.clicked.connect(lambda: self._switch_category("irregular"))
+        self.btn_irregular_mistake.clicked.connect(lambda: self._switch_category("irregular_mistake"))
+
+        tab_layout.addSpacing(8)
+        self.lbl_phrase_mistake_count = QtWidgets.QLabel()
+        self.lbl_irregular_mistake_count = QtWidgets.QLabel()
+        for label in [self.lbl_phrase_mistake_count, self.lbl_irregular_mistake_count]:
+            label.setStyleSheet(self._count_label_style())
+            tab_layout.addWidget(label)
+        layout.addLayout(tab_layout)
+        layout.addSpacing(12)
+
+        self.status_label = QtWidgets.QLabel("")
+        self.status_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.status_label.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.status_label.setStyleSheet("font-size: 13px; color: #4b5563; background: transparent; padding: 0; margin: 0;")
+        layout.addWidget(self.status_label)
+
+        content_frame = QtWidgets.QFrame()
+        content_frame.setStyleSheet("background: transparent; border-radius: 16px;")
+        content_frame.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        content_layout = QtWidgets.QVBoxLayout(content_frame)
+        content_layout.setContentsMargins(40, 20, 40, 40)
+        content_layout.setSpacing(20)
+        content_layout.addStretch(1)
+
+        self.prompt_label = QtWidgets.QLabel("")
+        self.prompt_label.setWordWrap(True)
+        self.prompt_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.prompt_label.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        self.prompt_label.setMinimumHeight(56)
+        self.prompt_label.setStyleSheet(
+            "font-family: \"Arial\", \"Microsoft YaHei\"; font-size: 24px; font-weight: bold; color: #111827; line-height: 32px;"
+        )
+        content_layout.addWidget(self.prompt_label)
+
+        self.instruction_label = QtWidgets.QLabel("")
+        self.instruction_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.instruction_label.setStyleSheet("font-size: 14px; color: #6b7280; padding-bottom: 6px;")
+        content_layout.addWidget(self.instruction_label)
+
+        self.feedback_label = QtWidgets.QLabel("")
+        self.feedback_label.setWordWrap(True)
+        self.feedback_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.feedback_label.setStyleSheet("font-size: 14px; color: #0b6d3a; padding: 8px 0 0 0;")
+        content_layout.addWidget(self.feedback_label)
+
+        self.example_label = QtWidgets.QLabel("")
+        self.example_label.setWordWrap(True)
+        self.example_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.example_label.setStyleSheet("font-size: 13px; color: #4b5563; font-weight: bold; padding: 10px 0 0 0;")
+        content_layout.addWidget(self.example_label)
+
+        self.answer_input = QtWidgets.QLineEdit()
+        self.answer_input.setFixedHeight(38)
+        self.answer_input.setFixedWidth(300)
+        self.answer_input.setPlaceholderText("请输入答案")
+        self.answer_input.setStyleSheet(self._input_style())
+        self.answer_input.returnPressed.connect(self._check_answer)
+        self.answer_input.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        content_layout.addWidget(self.answer_input, alignment=QtCore.Qt.AlignCenter)
+
+        self.irregular_input_row = QtWidgets.QHBoxLayout()
+        self.irregular_input_row.setSpacing(12)
+        self.irregular_input_row_widget = QtWidgets.QWidget()
+        self.irregular_input_row_widget.setLayout(self.irregular_input_row)
+
+        self.irregular_original_input = QtWidgets.QLineEdit()
+        self.irregular_original_input.setFixedHeight(38)
+        self.irregular_original_input.setFixedWidth(170)
+        self.irregular_original_input.setReadOnly(True)
+        self.irregular_original_input.setStyleSheet(self._input_style())
+        self.irregular_original_input.setPlaceholderText("原形")
+        self.irregular_original_input.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+
+        self.irregular_past_input = QtWidgets.QLineEdit()
+        self.irregular_past_input.setFixedHeight(38)
+        self.irregular_past_input.setFixedWidth(170)
+        self.irregular_past_input.setPlaceholderText("过去式")
+        self.irregular_past_input.setStyleSheet(self._input_style())
+        self.irregular_past_input.returnPressed.connect(self._check_answer)
+        self.irregular_past_input.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+
+        self.irregular_participle_input = QtWidgets.QLineEdit()
+        self.irregular_participle_input.setFixedHeight(38)
+        self.irregular_participle_input.setFixedWidth(170)
+        self.irregular_participle_input.setPlaceholderText("过去分词")
+        self.irregular_participle_input.setStyleSheet(self._input_style())
+        self.irregular_participle_input.returnPressed.connect(self._check_answer)
+        self.irregular_participle_input.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+
+        self.irregular_input_row.addWidget(self.irregular_original_input)
+        self.irregular_input_row.addWidget(self.irregular_past_input)
+        self.irregular_input_row.addWidget(self.irregular_participle_input)
+        content_layout.addWidget(self.irregular_input_row_widget, alignment=QtCore.Qt.AlignmentFlag.AlignCenter)
+
+        content_layout.addSpacing(20)
+        button_row = QtWidgets.QHBoxLayout()
+        button_row.setSpacing(12)
+        self.btn_check = QtWidgets.QPushButton("确认")
+        self.btn_next = QtWidgets.QPushButton("下一题")
+        for btn in [self.btn_check, self.btn_next]:
+            btn.setFixedSize(140, 42)
+            btn.setStyleSheet(self._confirm_button_style())
+        self.btn_check.clicked.connect(self._check_answer)
+        self.btn_next.clicked.connect(self._next_question)
+        button_row.addStretch(1)
+        button_row.addWidget(self.btn_check)
+        button_row.addWidget(self.btn_next)
+        button_row.addStretch(1)
+        content_layout.addLayout(button_row)
+        content_layout.addStretch(1)
+
+        layout.addWidget(content_frame)
+        self.setStyleSheet("background: #f3f4f6;")
+        self._update_mode_buttons()
+        self._update_mistake_count_labels()
+
+    def _load_json(self, path):
+        try:
+            with open(get_resource_path(path), "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return []
+
+    def _load_mistake_json(self, path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            if not isinstance(data, list):
+                return []
+            for item in data:
+                if isinstance(item, dict):
+                    item.setdefault("correct_count", 0)
+            return [item for item in data if isinstance(item, dict)]
+        except FileNotFoundError:
+            return []
+        except Exception as e:
+            print(f"DEBUG: 加载错题表失败 {path}: {e}")
+            return []
+
+    def _save_mistake_json(self, path, data):
+        try:
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=4)
+        except Exception as e:
+            QtWidgets.QMessageBox.warning(self.main_window, "错误", f"保存错题表失败:\n{e}")
+        self._update_mistake_count_labels()
+
+    def _phrase_key(self, item):
+        return str(item.get("p", "")).strip().lower()
+
+    def _irregular_key(self, item):
+        return str(item.get("infinitive", "")).strip().lower()
+
+    def _add_or_reset_mistake_item(self, item, data, key_func, save_path):
+        key = key_func(item)
+        if not key:
+            return
+        for mistake in data:
+            if key_func(mistake) == key:
+                mistake["correct_count"] = 0
+                self._save_mistake_json(save_path, data)
+                return
+        new_item = dict(item)
+        new_item["correct_count"] = 0
+        data.append(new_item)
+        self._save_mistake_json(save_path, data)
+
+    def _increment_mistake_correct_count(self, item, data, key_func, save_path):
+        key = key_func(item)
+        for index, mistake in enumerate(data):
+            if key_func(mistake) == key:
+                mistake["correct_count"] = int(mistake.get("correct_count", 0)) + 1
+                correct_count = mistake["correct_count"]
+                removed = correct_count >= 3
+                if removed:
+                    del data[index]
+                self._save_mistake_json(save_path, data)
+                return correct_count, removed
+        return 0, False
+
+    def _switch_category(self, category):
+        if category == "phrase_mistake":
+            self.phrase_mistakes = self._load_mistake_json(self.phrase_mistake_file_path)
+            if not self.phrase_mistakes:
+                QtWidgets.QMessageBox.information(self.main_window, "提示", "短语错题表为空，已切换到短语闯关。")
+                category = "phrase"
+        elif category == "irregular_mistake":
+            self.irregular_mistakes = self._load_mistake_json(self.irregular_mistake_file_path)
+            if not self.irregular_mistakes:
+                QtWidgets.QMessageBox.information(self.main_window, "提示", "不规则动词错题表为空，已切换到不规则动词闯关。")
+                category = "irregular"
+
+        self.current_category = category
+        if category == "phrase":
+            self.active_items = self.phrases
+        elif category == "phrase_mistake":
+            self.active_items = self.phrase_mistakes
+        elif category == "irregular_mistake":
+            self.active_items = self.irregular_mistakes
+        else:
+            self.active_items = self.irregulars
+        self.current_index = 0
+        self._update_mode_buttons()
+        self._update_mistake_count_labels()
+        self._load_question()
+
+    def _update_mode_buttons(self):
+        modes = [
+            (self.btn_phrase, "phrase"),
+            (self.btn_phrase_mistake, "phrase_mistake"),
+            (self.btn_irregular, "irregular"),
+            (self.btn_irregular_mistake, "irregular_mistake"),
+        ]
+        for button, mode in modes:
+            active = self.current_category == mode
+            button.setChecked(active)
+            button.setStyleSheet(self._tab_button_style(active))
+
+    def _is_phrase_mode(self):
+        return self.current_category in ["phrase", "phrase_mistake"]
+
+    def _update_mistake_count_labels(self):
+        if hasattr(self, "lbl_phrase_mistake_count"):
+            self.lbl_phrase_mistake_count.setText(f"短语错题 ({len(self.phrase_mistakes)} 个)")
+        if hasattr(self, "lbl_irregular_mistake_count"):
+            self.lbl_irregular_mistake_count.setText(f"不规则动词错题 ({len(self.irregular_mistakes)} 个)")
+
+    def _load_question(self):
+        self.feedback_label.clear()
+        self.example_label.clear()
+        self.answer_input.clear()
+        self.irregular_past_input.clear()
+        self.irregular_participle_input.clear()
+        if not self.active_items:
+            self.prompt_label.setText("暂无可用题目")
+            self.instruction_label.setText("")
+            self.status_label.setText("")
+            return
+
+        item = self.active_items[self.current_index % len(self.active_items)]
+        total = len(self.active_items)
+        if self._is_phrase_mode():
+            self.prompt_label.setText(item.get("m", "") or item.get("cn", ""))
+            self.instruction_label.setText("请输入对应的英文短语。")
+            self.answer_input.show()
+            self.irregular_input_row_widget.hide()
+            self.example_label.show()
+        else:
+            self.prompt_label.setText(item.get("meaning", ""))
+            self.instruction_label.setText("原形固定，请填写过去式和过去分词。")
+            self.irregular_original_input.setText(item.get("infinitive", ""))
+            self.answer_input.hide()
+            self.irregular_input_row_widget.show()
+            self.example_label.hide()
+
+        mode_name = {
+            "phrase": "短语闯关",
+            "phrase_mistake": "短语错词闯关",
+            "irregular": "不规则动词闯关",
+            "irregular_mistake": "不规则动词错词闯关",
+        }.get(self.current_category, "")
+        self.status_label.setText(f"第 {self.current_index + 1} / {total} 题 · 当前模式：{mode_name}")
+
+    def _check_answer(self):
+        if not self.active_items:
+            return
+
+        item = self.active_items[self.current_index % len(self.active_items)]
+        if self._is_phrase_mode():
+            answer = self.answer_input.text().strip().lower()
+            if not answer:
+                self.feedback_label.setText("请输入答案。")
+                self.feedback_label.setStyleSheet("font-size: 13px; color: #bd3d3d;")
+                return
+            correct_answer = item.get("p", "")
+            if answer == correct_answer.lower():
+                self.feedback_label.setStyleSheet("font-size: 14px; color: #0b6d3a; font-weight: bold;")
+                if self.current_category == "phrase_mistake":
+                    count, removed = self._increment_mistake_correct_count(
+                        item, self.phrase_mistakes, self._phrase_key, self.phrase_mistake_file_path
+                    )
+                    self.feedback_label.setText(
+                        "回答正确。连续 3 次答对，已从短语错题表删除。"
+                        if removed else f"回答正确。连续答对 {count} / 3 次。"
+                    )
+                else:
+                    self.feedback_label.setText("回答正确。")
+            else:
+                self._add_or_reset_mistake_item(
+                    item, self.phrase_mistakes, self._phrase_key, self.phrase_mistake_file_path
+                )
+                self.feedback_label.setStyleSheet("font-size: 14px; color: #dc2626; font-weight: bold;")
+                self.feedback_label.setText(f"回答错误。已加入短语错题表。正确答案：{correct_answer}")
+            self.example_label.setText(f"例句：{item.get('en', '')}\n中文：{item.get('cn', '')}")
+        else:
+            past_answer = self.irregular_past_input.text().strip().lower()
+            participle_answer = self.irregular_participle_input.text().strip().lower()
+            if not past_answer or not participle_answer:
+                self.feedback_label.setText("请同时填写过去式和过去分词。")
+                self.feedback_label.setStyleSheet("font-size: 13px; color: #bd3d3d;")
+                return
+            correct_past = _clean_verb_field(item.get("past_tense", "")).lower()
+            correct_participle = _clean_verb_field(item.get("past_participle", "")).lower()
+            if past_answer == correct_past and participle_answer == correct_participle:
+                self.feedback_label.setStyleSheet("font-size: 14px; color: #0b6d3a; font-weight: bold;")
+                if self.current_category == "irregular_mistake":
+                    count, removed = self._increment_mistake_correct_count(
+                        item, self.irregular_mistakes, self._irregular_key, self.irregular_mistake_file_path
+                    )
+                    self.feedback_label.setText(
+                        "回答正确。连续 3 次答对，已从不规则动词错题表删除。"
+                        if removed else f"回答正确。连续答对 {count} / 3 次。"
+                    )
+                else:
+                    self.feedback_label.setText("回答正确。")
+            else:
+                self._add_or_reset_mistake_item(
+                    item, self.irregular_mistakes, self._irregular_key, self.irregular_mistake_file_path
+                )
+                self.feedback_label.setStyleSheet("font-size: 14px; color: #dc2626; font-weight: bold;")
+                self.feedback_label.setText(
+                    f"回答错误。已加入不规则动词错题表。原形：{item.get('infinitive', '')}  "
+                    f"过去式：{item.get('past_tense', '')}  过去分词：{item.get('past_participle', '')}"
+                )
+            self.example_label.clear()
+            self.example_label.hide()
+
+    def _next_question(self):
+        if not self.active_items:
+            return
+        self.current_index = (self.current_index + 1) % len(self.active_items)
+        if self.current_index >= len(self.active_items):
+            self.current_index = 0
+        self._load_question()
+
+    def _tab_button_style(self, active: bool) -> str:
+        if active:
+            return (
+                "QPushButton { background-color: #2196F3; color: #ffffff; "
+                "border: 1px solid #2196F3; border-radius: 8px; font-size: 14px; font-weight: 600; }"
+                "QPushButton:hover { background-color: #1976D2; }"
+            )
+        return (
+            "QPushButton { background-color: #ffffff; color: #111827; "
+            "border: 1px solid #d1d5db; border-radius: 8px; font-size: 14px; }"
+            "QPushButton:hover { background-color: #f3f4f6; }"
+        )
+
+    def _count_label_style(self):
+        return (
+            "QLabel { color: #777777; font-size: 13px; padding: 4px 8px; "
+            "border: 1px solid #cccccc; border-radius: 4px; background-color: #f5f5f5; }"
+        )
+
+    def _input_style(self) -> str:
+        return (
+            "QLineEdit { background-color: #ffffff; border: 1px solid #d1d5db; "
+            "border-radius: 10px; padding: 0 14px; font-size: 16px; color: #111827; }"
+            "QLineEdit:focus { border: 1px solid #2563eb; }"
+        )
+
+    def _confirm_button_style(self) -> str:
+        return (
+            "QPushButton { background-color: #2196F3; color: #ffffff; "
+            "border: 1px solid #2196F3; border-radius: 10px; font-size: 16px; font-weight: bold; padding: 0 24px; }"
+            "QPushButton:hover { background-color: #1976D2; }"
+            "QPushButton:pressed { background-color: #155abe; }"
+        )
 
     def _return_to_word_list(self):
         if hasattr(self.main_window, '_safe_nav_to_word_list'):

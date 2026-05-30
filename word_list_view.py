@@ -27,6 +27,8 @@ class WordListView(QtWidgets.QWidget):
         self.display_words = []
         self.all_phrases = []  # New: Store phrase data
         self.all_irregulars = []  # New: Store irregular verb data
+        self.all_mistake_phrases = []
+        self.all_mistake_irregulars = []
 
         self.current_list_type = "regular"
         self.current_page = 0
@@ -153,10 +155,17 @@ class WordListView(QtWidgets.QWidget):
         menu.addAction("短语表 - 看英默中").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self.all_phrases), "en_dictate_cn", "短语表_看英默中", data_type="phrases"))
         menu.addAction("短语表 - 看中默英").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self.all_phrases), "cn_dictate_en", "短语表_看中默英", data_type="phrases"))
         menu.addSeparator()
+        menu.addAction("短语错题表 - 中英对照").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self._get_mistake_phrases()), "normal", "短语错题表_中英对照", data_type="phrases"))
+        menu.addAction("短语错题表 - 看英默中").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self._get_mistake_phrases()), "en_dictate_cn", "短语错题表_看英默中", data_type="phrases"))
+        menu.addAction("短语错题表 - 看中默英").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self._get_mistake_phrases()), "cn_dictate_en", "短语错题表_看中默英", data_type="phrases"))
+        menu.addSeparator()
         # New: Irregular Verbs List export options
         menu.addAction("不规则动词表 - 过去式过去分词表").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self.all_irregulars), "normal", "不规则动词表_过去式过去分词表", data_type="irregular_verbs"))
         menu.addAction("不规则动词表 - 看原形默过去式/过去分词").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self.all_irregulars), "en_dictate_cn", "不规则动词表_看原形默过去式_过去分词", data_type="irregular_verbs"))
-       
+        menu.addSeparator()
+        menu.addAction("不规则动词错题表 - 过去式过去分词表").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self._get_mistake_irregulars()), "normal", "不规则动词错题表_过去式过去分词表", data_type="irregular_verbs"))
+        menu.addAction("不规则动词错题表 - 看原形默过去式/过去分词").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self._get_mistake_irregulars()), "en_dictate_cn", "不规则动词错题表_看原形默过去式_过去分词", data_type="irregular_verbs"))
+
         self.btn_export.setMenu(menu)
 
     def _load_json_data(self):
@@ -208,6 +217,35 @@ class WordListView(QtWidgets.QWidget):
             except Exception as e:
                 print(f"DEBUG: 加载错词表失败 {e}")
                 self.all_mistake_words = []
+
+    def _load_writable_json_list(self, filename, sort_key, label):
+        path = get_writable_data_path(filename)
+        if not os.path.exists(path):
+            return []
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            if not isinstance(data, list):
+                return []
+            data = [item for item in data if isinstance(item, dict)]
+            data.sort(key=lambda x: str(x.get(sort_key, "")).lower())
+            print(f"✅ {label}加载成功，共 {len(data)} 条")
+            return data
+        except Exception as e:
+            print(f"DEBUG: 加载{label}失败 {e}")
+            return []
+
+    def _get_mistake_phrases(self):
+        self.all_mistake_phrases = self._load_writable_json_list(
+            "mistake_phrases.json", "p", "短语错题表"
+        )
+        return self.all_mistake_phrases
+
+    def _get_mistake_irregulars(self):
+        self.all_mistake_irregulars = self._load_writable_json_list(
+            "mistake_irregular_verbs.json", "infinitive", "不规则动词错题表"
+        )
+        return self.all_mistake_irregulars
 
     def _prepare_phrase_data(self, original_data):
         """
