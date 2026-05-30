@@ -9,7 +9,18 @@ import re
 import json
 import random
 import traceback
+import base64
+import datetime
+import hashlib
 import PySide6
+
+try:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    if hasattr(sys.stderr, "reconfigure"):
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
 
 # 导入单实例运行所需的锁类及多线程组件
 from PySide6.QtCore import QLockFile, QDir, QThread, QObject, Signal, QTimer, QMutex, QMutexLocker, Qt
@@ -260,6 +271,7 @@ class HighSchoolEnglishAI(QMainWindow):
         QtCore.QTimer.singleShot(100, self._start_async_loaders)
 
         self._bind_nav_events() 
+        self._setup_notice_button()
         self._apply_sidebar_style() 
         self._update_nav_button_styles(self.stack.currentIndex()) 
 
@@ -393,7 +405,10 @@ class HighSchoolEnglishAI(QMainWindow):
                 self._on_loader_error(f"自主登记模块初始化失败: {e}")
                 return
 
-    def _on_loader_error(self, loader_name, message):
+    def _on_loader_error(self, loader_name, message=None):
+        if message is None:
+            message = loader_name
+            loader_name = ""
         if loader_name == "vocab":
             self.vocab_loader_done = True
         elif loader_name == "self_register":
@@ -461,6 +476,22 @@ class HighSchoolEnglishAI(QMainWindow):
             if btn:
                 btn.clicked.connect(handler)
                 self.nav_buttons[btn_name] = btn 
+
+    def _setup_notice_button(self):
+        nav_layout = self.ui_root.findChild(QtWidgets.QVBoxLayout, "nav_v_layout")
+        if nav_layout is None:
+            return
+        self.btn_user_notice = QPushButton("用户须知与免责声明")
+        self.btn_user_notice.setObjectName("btn_user_notice")
+        self.btn_user_notice.setMinimumHeight(52)
+        self.btn_user_notice.clicked.connect(lambda: show_user_notice_dialog(require_accept=False))
+        self.btn_version_info = QPushButton("版本与授权信息")
+        self.btn_version_info.setObjectName("btn_version_info")
+        self.btn_version_info.setMinimumHeight(52)
+        self.btn_version_info.clicked.connect(lambda: show_version_info_dialog(self))
+        insert_index = max(0, nav_layout.count() - 1)
+        nav_layout.insertWidget(insert_index, self.btn_user_notice)
+        nav_layout.insertWidget(insert_index + 1, self.btn_version_info)
 
     def _ensure_word_list_widget(self):
         if self.word_list_widget is None:
@@ -611,7 +642,7 @@ class HighSchoolEnglishAI(QMainWindow):
             QPushButton { min-height: 55px; border-radius: 12px; text-align: left; padding-left: 20px; font-weight: bold; background-color: #007bff; color: white; border: none; }
             QPushButton:hover { background-color: #0056b3; }
         """
-        nav_btns = ["btn_nav_vocab", "btn_nav_core_vocab", "btn_nav_phrase_challenge", "btn_nav_phrase_list", "btn_nav_gaokao", "btn_nav_full_exam", "btn_nav_self_register"]
+        nav_btns = ["btn_nav_vocab", "btn_nav_core_vocab", "btn_nav_phrase_challenge", "btn_nav_phrase_list", "btn_nav_gaokao", "btn_nav_full_exam", "btn_nav_self_register", "btn_user_notice", "btn_version_info"]
         for name in nav_btns:
             btn = self.ui_root.findChild(QPushButton, name)
             if btn:
@@ -633,8 +664,438 @@ class HighSchoolEnglishAI(QMainWindow):
 
 
 # ============ [8. 👑 注入 5大任务之：一机一码离线授权激活大闸] ============
+LICENSE_PRODUCT_ID = "engmaster-ai-agent"
+TOOL_DISPLAY_NAME = "英语学习辅助工具"
+TOOL_VERSION = "v1.0.0"
+BUILD_DATE = "2026-05-30"
+TERMS_VERSION = "2026.05.30"
+PRIVACY_VERSION = "2026.05.30"
+REFUND_VERSION = "2026.05.30"
+RECOMMENDED_OS_TEXT = "Windows 10 / Windows 11 64 位系统"
+LICENSE_PUBLIC_N = int(
+    "65dcaaf785fcc67c4918da552b6594c74a9980cd63dda8df680c392ad1076ccc"
+    "bb8d77feedf435debb3c63b9dcfe351149654d3ee9a8e2194df59a289efdb0"
+    "8160c2025c2ee01d74c4521a14bf1b1c2515820210bed4893c807a8fce602"
+    "f2b81bcd19e8b278274aa843efc68e7020f8b234d3c519b6918e9fee128"
+    "60d6f36284357e0b8d4b33348dadfb82427c6d835e85f614469d9042e222"
+    "7d92bd3eacd98366bb10c3c7cf6a2b3a63fa4eddb82a862070f94400b1"
+    "ce13b4ca725d8a7ba44c0c7d7fdba6a2ae4da898060d677c6d86289ab3"
+    "078907b3900756f3b1f5823444b78ec598bece15d31f8dfc82b1dfa05a03"
+    "180fc6981c60890892760d96291d59",
+    16,
+)
+LICENSE_PUBLIC_E = 65537
+
+
+def _license_b64encode(raw: bytes) -> str:
+    return base64.urlsafe_b64encode(raw).decode("ascii").rstrip("=")
+
+
+def _license_b64decode(text: str) -> bytes:
+    return base64.urlsafe_b64decode(text + "=" * (-len(text) % 4))
+
+
+def get_license_path() -> str:
+    return os.path.join(os.path.expanduser("~"), ".HighSchoolEnglishHelper", "licensing.dat")
+
+
+def get_machine_id() -> str:
+    parts = []
+    try:
+        import platform
+
+        parts.append(platform.node())
+        parts.append(platform.system())
+        parts.append(platform.machine())
+    except Exception:
+        pass
+
+    try:
+        import uuid
+
+        parts.append(str(uuid.getnode()))
+    except Exception:
+        pass
+
+    if sys.platform == "win32":
+        try:
+            import winreg
+
+            with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, r"SOFTWARE\Microsoft\Cryptography") as key:
+                machine_guid, _ = winreg.QueryValueEx(key, "MachineGuid")
+                parts.append(str(machine_guid))
+        except Exception:
+            pass
+
+    material = "|".join(part.strip().lower() for part in parts if str(part).strip())
+    digest = hashlib.sha256(("EngMaster-AI-Agent-machine-v1|" + material).encode("utf-8")).hexdigest().upper()
+    compact = digest[:32]
+    return "-".join(compact[i:i + 8] for i in range(0, len(compact), 8))
+
+
+def get_os_compatibility_status():
+    if sys.platform != "win32":
+        return False, "当前不是 Windows 系统。本工具推荐在 Windows 10 / Windows 11 64 位系统中使用。"
+    try:
+        import platform
+
+        release = platform.release()
+        arch = platform.machine().lower()
+        is_supported_release = release in {"10", "11"}
+        is_64_bit = "64" in arch or arch in {"amd64", "x86_64"}
+        if is_supported_release and is_64_bit:
+            return True, f"当前系统符合推荐环境：Windows {release} 64 位。"
+        return False, (
+            f"当前系统环境可能不在推荐范围内：Windows {release} / {platform.machine()}。"
+            f"本工具推荐使用 {RECOMMENDED_OS_TEXT}。"
+        )
+    except Exception:
+        return False, f"无法确认当前系统环境。本工具推荐使用 {RECOMMENDED_OS_TEXT}。"
+
+
+def show_os_compatibility_warning(parent=None):
+    ok, message = get_os_compatibility_status()
+    if not ok:
+        QtWidgets.QMessageBox.warning(parent, "系统环境提示", message + "\n\n继续使用可能出现兼容性问题。")
+
+
+def verify_activation_code(activation_code: str, machine_id: str):
+    try:
+        activation_code = activation_code.strip()
+        if activation_code.startswith("EM2-"):
+            signature_bytes = _license_b64decode(activation_code[4:])
+            signature_int = int.from_bytes(signature_bytes, "big")
+            payload_bytes = f"{LICENSE_PRODUCT_ID}|{machine_id}|v2".encode("utf-8")
+            digest_int = int.from_bytes(hashlib.sha256(payload_bytes).digest(), "big")
+            if pow(signature_int, LICENSE_PUBLIC_E, LICENSE_PUBLIC_N) != digest_int:
+                return False, "激活码与当前电脑不匹配。"
+            return True, {"product": LICENSE_PRODUCT_ID, "machine_id": machine_id, "version": 2}
+
+        payload_part, signature_part = activation_code.strip().split(".", 1)
+        payload_bytes = _license_b64decode(payload_part)
+        signature_bytes = _license_b64decode(signature_part)
+        signature_int = int.from_bytes(signature_bytes, "big")
+        digest_int = int.from_bytes(hashlib.sha256(payload_bytes).digest(), "big")
+        if pow(signature_int, LICENSE_PUBLIC_E, LICENSE_PUBLIC_N) != digest_int:
+            return False, "激活码签名无效。"
+
+        payload = json.loads(payload_bytes.decode("utf-8"))
+        if payload.get("product") != LICENSE_PRODUCT_ID:
+            return False, "激活码不适用于当前学习工具。"
+        if payload.get("machine_id") != machine_id:
+            return False, "激活码与当前电脑不匹配。"
+        return True, payload
+    except Exception:
+        return False, "激活码格式无效。"
+
+
+def load_license_file(path: str, machine_id: str) -> bool:
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        activation_code = str(data.get("activation_code", "")).strip()
+        ok, _ = verify_activation_code(activation_code, machine_id)
+        return ok
+    except Exception as e:
+        print(f"[DEBUG] license read/verify error: {e}")
+        return False
+
+
+def save_license_file(path: str, machine_id: str, activation_code: str):
+    now = datetime.datetime.now().isoformat(timespec="seconds")
+    license_data = {
+        "version": 2,
+        "product": LICENSE_PRODUCT_ID,
+        "tool_name": TOOL_DISPLAY_NAME,
+        "tool_version": TOOL_VERSION,
+        "build_date": BUILD_DATE,
+        "machine_id": machine_id,
+        "activation_code": activation_code.strip(),
+        "activated_at": now,
+        "accepted_at": now,
+        "terms_version": TERMS_VERSION,
+        "privacy_version": PRIVACY_VERSION,
+        "refund_version": REFUND_VERSION,
+    }
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(license_data, f, ensure_ascii=False, indent=2)
+
+
+def show_activation_dialog(machine_id: str):
+    dialog = QtWidgets.QDialog()
+    dialog.setWindowTitle("学习工具激活")
+    dialog.setModal(True)
+    dialog.setMinimumSize(600, 340)
+
+    layout = QtWidgets.QVBoxLayout(dialog)
+    layout.setContentsMargins(18, 18, 18, 18)
+    layout.setSpacing(12)
+
+    title = QtWidgets.QLabel("学习工具激活")
+    title.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+    title.setStyleSheet("font-size: 20px; font-weight: bold; color: #111827;")
+    layout.addWidget(title)
+
+    hint = QtWidgets.QLabel("请复制下方本机识别码，通过购买平台发送给客服，获取当前电脑专属激活码。")
+    hint.setWordWrap(True)
+    hint.setStyleSheet("font-size: 14px; color: #374151;")
+    layout.addWidget(hint)
+
+    os_hint = QtWidgets.QLabel(f"推荐系统：{RECOMMENDED_OS_TEXT}")
+    os_hint.setWordWrap(True)
+    os_hint.setStyleSheet("font-size: 13px; color: #374151;")
+    layout.addWidget(os_hint)
+
+    refund_hint = QtWidgets.QLabel("提示：专属激活码一经生成或发送，非工具自身质量问题，原则上不支持无理由退款。")
+    refund_hint.setWordWrap(True)
+    refund_hint.setStyleSheet("font-size: 13px; color: #7c2d12; background: #fff7ed; padding: 8px; border-radius: 6px;")
+    layout.addWidget(refund_hint)
+
+    machine_row = QtWidgets.QHBoxLayout()
+    machine_input = QtWidgets.QLineEdit(machine_id)
+    machine_input.setReadOnly(True)
+    machine_input.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+    copy_machine_button = QtWidgets.QPushButton("复制识别码")
+    machine_row.addWidget(machine_input, 1)
+    machine_row.addWidget(copy_machine_button)
+    layout.addLayout(machine_row)
+
+    activation_label = QtWidgets.QLabel("激活码：")
+    layout.addWidget(activation_label)
+    activation_input = QtWidgets.QPlainTextEdit()
+    activation_input.setPlaceholderText("请粘贴客服返回的激活码")
+    activation_input.setFixedHeight(100)
+    layout.addWidget(activation_input)
+
+    error_label = QtWidgets.QLabel("")
+    error_label.setStyleSheet("color: #dc2626; font-size: 13px;")
+    error_label.setWordWrap(True)
+    layout.addWidget(error_label)
+
+    button_row = QtWidgets.QHBoxLayout()
+    button_row.addStretch(1)
+    cancel_button = QtWidgets.QPushButton("退出")
+    activate_button = QtWidgets.QPushButton("激活")
+    activate_button.setDefault(True)
+    button_row.addWidget(cancel_button)
+    button_row.addWidget(activate_button)
+    layout.addLayout(button_row)
+
+    result = {"code": None}
+
+    def copy_machine_id():
+        QtWidgets.QApplication.clipboard().setText(machine_id)
+        copy_machine_button.setText("已复制")
+
+    def try_activate():
+        code = activation_input.toPlainText().strip()
+        ok, message = verify_activation_code(code, machine_id)
+        if ok:
+            result["code"] = code
+            dialog.accept()
+        else:
+            error_label.setText(str(message))
+
+    copy_machine_button.clicked.connect(copy_machine_id)
+    cancel_button.clicked.connect(dialog.reject)
+    activate_button.clicked.connect(try_activate)
+
+    if dialog.exec() == QtWidgets.QDialog.DialogCode.Accepted:
+        return result["code"]
+    return None
+
+
+def get_legal_notice_text() -> str:
+    return (
+        f"《用户须知与免责声明》\n"
+        f"版本号：{TERMS_VERSION}\n"
+        f"隐私说明版本：{PRIVACY_VERSION}\n"
+        f"退款说明版本：{REFUND_VERSION}\n"
+        f"生效日期：{BUILD_DATE}\n\n"
+        "欢迎使用本英语学习辅助工具。请您在使用前仔细阅读以下内容。\n\n"
+        "1. 工具定位\n"
+        "本工具仅作为英语学习、复习和练习辅助使用，主要用于词汇、短语、不规则动词和练习内容的整理与复习。"
+        "本工具不属于官方教学系统、考试系统或认证软件，也不代表任何学校、考试机构或官方单位。\n\n"
+        "2. 学习效果说明\n"
+        "本工具旨在帮助用户提高复习效率，但学习效果因个人基础、学习时间、使用方法等因素而异。"
+        "本工具不承诺任何考试成绩、提分幅度、录取结果或学习结果。\n\n"
+        "3. 内容说明\n"
+        "本工具中的词汇、短语、例句、解析、练习内容等仅供学习参考。由于资料整理、版本差异或输入错误等原因，"
+        "内容可能存在不完善之处。用户应结合教材、课堂内容、教师指导及官方考试要求进行学习和判断。\n\n"
+        "4. 使用说明\n"
+        "请用户在正常电脑环境下使用本工具。因系统环境、第三方安全工具拦截、误删文件、非正常修改工具文件、"
+        "非官方渠道获取等原因导致无法正常使用的，可联系客服协助排查。\n"
+        f"本工具推荐使用环境为：{RECOMMENDED_OS_TEXT}。Windows 7、Windows 8、精简版系统、受限账户环境、"
+        "网吧或学校机房受限系统、虚拟机环境、ARM 版 Windows、Mac、iPad、手机、安卓平板等环境暂不作为推荐环境，"
+        "可能出现无法启动、无法激活、界面异常或数据保存异常等情况。\n\n"
+        "5. 使用限制\n"
+        "本工具采用单机使用方式。一个激活码原则上仅限绑定一台电脑使用。未经许可，请勿转卖、共享、破解、"
+        "修改、打包传播或用于其他商业分发行为。\n\n"
+        "6. 隐私与本机识别码说明\n"
+        "本工具为完成单机激活，会在本机生成本机识别码。本机识别码主要由设备环境信息经哈希计算生成，"
+        "用于判断激活码是否适用于当前电脑。用户通过购买平台向客服提供本机识别码时，本方仅将其用于生成、"
+        "核验和处理激活授权，不用于广告推广、用户画像或其他无关用途。本方会在合理必要范围内保存订单信息、"
+        "本机识别码及激活处理记录，用于售后、换绑核验和纠纷处理。\n\n"
+        "7. 本地数据\n"
+        "本工具可能在本机保存学习记录、错词记录或使用配置。请用户自行注意备份。因重装系统、清理工具、"
+        "磁盘损坏、误删文件等原因造成的数据丢失，本方可尽力协助，但不保证完全恢复。\n\n"
+        "8. 退款说明\n"
+        "本工具属于数字化学习辅助工具，具有可复制、可下载、可激活使用的特点。一经发送下载链接、提供安装包、"
+        "生成或发送专属激活码、或完成激活后，非工具自身质量问题原则上不支持无理由退款。"
+        "如因本工具自身原因导致无法正常安装、激活或使用，请先通过购买平台联系客服处理；经客服排查确认确属"
+        "工具自身问题且无法解决的，可按平台规则协商退款或处理。因用户电脑系统环境、第三方安全工具拦截、"
+        "用户误删文件、非官方渠道获取、擅自修改文件、不会操作但拒绝配合排查、购买后主观不想使用、"
+        "使用非推荐系统环境等原因导致的问题，原则上不作为退款理由。\n\n"
+        "9. 服务支持\n"
+        "如使用过程中遇到安装、激活或功能问题，请通过购买平台联系客服，并提供订单信息、问题截图和本机识别码，"
+        "以便协助处理。\n\n"
+        "10. 责任说明\n"
+        "在法律允许范围内，本工具按现状提供学习辅助服务。本方不对因使用或无法使用本工具导致的考试结果不理想、"
+        "学习计划变化、间接损失等承担责任。但依法不能免除的责任除外。\n\n"
+        "11. 同意使用\n"
+        "用户继续安装、激活或使用本工具，即表示已阅读、理解并同意以上内容。"
+    )
+
+
+def show_version_info_dialog(parent=None):
+    machine_id = get_machine_id()
+    license_path = get_license_path()
+    license_status = "未检测到有效授权"
+    license_data = {}
+    if os.path.exists(license_path):
+        try:
+            with open(license_path, "r", encoding="utf-8") as f:
+                license_data = json.load(f)
+            activation_code = str(license_data.get("activation_code", "")).strip()
+            ok, _ = verify_activation_code(activation_code, machine_id)
+            license_status = "已激活" if ok else "授权文件无效或不属于当前电脑"
+        except Exception:
+            license_status = "授权文件读取失败"
+
+    info_text = (
+        f"工具名称：{TOOL_DISPLAY_NAME}\n"
+        f"当前版本：{TOOL_VERSION}\n"
+        f"构建日期：{BUILD_DATE}\n"
+        f"推荐系统：{RECOMMENDED_OS_TEXT}\n"
+        f"授权方式：单机绑定激活\n"
+        f"授权状态：{license_status}\n"
+        f"本机识别码：{machine_id}\n\n"
+        f"免责声明版本：{TERMS_VERSION}\n"
+        f"隐私说明版本：{PRIVACY_VERSION}\n"
+        f"退款说明版本：{REFUND_VERSION}\n"
+        f"已同意条款时间：{license_data.get('accepted_at', '未记录')}\n"
+        f"激活时间：{license_data.get('activated_at', '未记录')}\n"
+    )
+
+    QtWidgets.QMessageBox.information(parent, "版本与授权信息", info_text)
+
+
+def show_user_notice_dialog(require_accept=True):
+    dialog = QtWidgets.QDialog()
+    dialog.setWindowTitle("用户须知与免责声明")
+    dialog.setModal(True)
+    dialog.setMinimumSize(640, 520)
+
+    layout = QtWidgets.QVBoxLayout(dialog)
+    layout.setContentsMargins(18, 18, 18, 18)
+    layout.setSpacing(12)
+
+    title = QtWidgets.QLabel("用户须知与免责声明")
+    title.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+    title.setStyleSheet("font-size: 20px; font-weight: bold; color: #111827;")
+    layout.addWidget(title)
+
+    notice_text = QtWidgets.QTextEdit()
+    notice_text.setReadOnly(True)
+    notice_text.setPlainText(
+        "欢迎使用本英语学习辅助工具。请您在使用前仔细阅读以下内容。\n\n"
+        "1. 工具定位\n"
+        "本工具仅作为英语学习、复习和练习辅助使用，主要用于词汇、短语、不规则动词和练习内容的整理与复习。"
+        "本工具不属于官方教学系统、考试系统或认证软件，也不代表任何学校、考试机构或官方单位。\n\n"
+        "2. 学习效果说明\n"
+        "本工具旨在帮助用户提高复习效率，但学习效果因个人基础、学习时间、使用方法等因素而异。"
+        "本工具不承诺任何考试成绩、提分幅度、录取结果或学习结果。\n\n"
+        "3. 内容说明\n"
+        "本工具中的词汇、短语、例句、解析、练习内容等仅供学习参考。由于资料整理、版本差异或输入错误等原因，"
+        "内容可能存在不完善之处。用户应结合教材、课堂内容、教师指导及官方考试要求进行学习和判断。\n\n"
+        "4. 使用说明\n"
+        "请用户在正常电脑环境下使用本工具。因系统环境、第三方安全工具拦截、误删文件、非正常修改工具文件、"
+        "非官方渠道获取等原因导致无法正常使用的，可联系客服协助排查。\n\n"
+        "5. 使用限制\n"
+        "本工具采用单机使用方式。一个激活码原则上仅限绑定一台电脑使用。未经许可，请勿转卖、共享、破解、"
+        "修改、打包传播或用于其他商业分发行为。\n\n"
+        "6. 本地数据\n"
+        "本工具可能在本机保存学习记录、错词记录或使用配置。请用户自行注意备份。因重装系统、清理工具、"
+        "磁盘损坏、误删文件等原因造成的数据丢失，本方可尽力协助，但不保证完全恢复。\n\n"
+        "7. 服务支持\n"
+        "如使用过程中遇到安装、激活或功能问题，请通过购买平台联系客服，并提供订单信息、问题截图和本机识别码，"
+        "以便协助处理。\n\n"
+        "8. 责任说明\n"
+        "在法律允许范围内，本工具按现状提供学习辅助服务。本方不对因使用或无法使用本工具导致的考试结果不理想、"
+        "学习计划变化、间接损失等承担责任。但依法不能免除的责任除外。\n\n"
+        "9. 同意使用\n"
+        "用户继续安装、激活或使用本工具，即表示已阅读、理解并同意以上内容。"
+    )
+    notice_text.setPlainText(get_legal_notice_text())
+    notice_text.setStyleSheet("font-size: 14px;")
+    layout.addWidget(notice_text, 1)
+
+    button_row = QtWidgets.QHBoxLayout()
+    button_row.addStretch(1)
+    if require_accept:
+        agree_checkbox = QtWidgets.QCheckBox("我已阅读、理解并同意以上《用户须知与免责声明》")
+        agree_checkbox.setStyleSheet("font-size: 14px;")
+        layout.addWidget(agree_checkbox)
+
+        cancel_button = QtWidgets.QPushButton("退出")
+        continue_button = QtWidgets.QPushButton("继续激活")
+        continue_button.setEnabled(False)
+        continue_button.setDefault(True)
+        button_row.addWidget(cancel_button)
+        button_row.addWidget(continue_button)
+
+        agree_checkbox.toggled.connect(continue_button.setEnabled)
+        cancel_button.clicked.connect(dialog.reject)
+        continue_button.clicked.connect(dialog.accept)
+    else:
+        close_button = QtWidgets.QPushButton("关闭")
+        close_button.setDefault(True)
+        button_row.addWidget(close_button)
+        close_button.clicked.connect(dialog.accept)
+    layout.addLayout(button_row)
+
+    return dialog.exec() == QtWidgets.QDialog.DialogCode.Accepted
+
+
 def check_licensing_gate():
     print("[DEBUG] check_licensing_gate start")
+    license_dir = os.path.join(os.path.expanduser("~"), ".HighSchoolEnglishHelper")
+    license_path = os.path.join(license_dir, "licensing.dat")
+    machine_id = get_machine_id()
+
+    if os.path.exists(license_path):
+        if load_license_file(license_path, machine_id):
+            print("[DEBUG] machine-bound license verified from file")
+            return True
+        print("[DEBUG] existing license is missing, invalid, or not bound to this machine")
+
+    if not show_user_notice_dialog():
+        sys.exit(0)
+
+    while True:
+        activation_code = show_activation_dialog(machine_id)
+        if not activation_code:
+            sys.exit(0)
+        try:
+            if not os.path.exists(license_dir):
+                os.makedirs(license_dir)
+            save_license_file(license_path, machine_id, activation_code)
+            QMessageBox.information(None, "激活成功", "当前电脑已激活，可以开始使用学习工具。")
+            return True
+        except Exception as e:
+            QMessageBox.critical(None, "激活失败", f"保存授权文件失败:\n{e}")
+            continue
+
     """ 
     【无人值守发卡网专属大闸】
     不需要用户发指纹给老板！老板提前在发卡网批量上架卡密。
@@ -676,6 +1137,9 @@ def check_licensing_gate():
             pass
 
     # 3. 强制弹窗拦截大闸（用户半夜买完卡密，第一次打开软件直接输入）
+    if not show_user_notice_dialog():
+        sys.exit(0)
+
     while True:
         input_key, ok = QtWidgets.QInputDialog.getText(
             None, 
@@ -729,5 +1193,6 @@ if __name__ == "__main__":
     # 3. 释放完全体主程序
     window = HighSchoolEnglishAI()
     window.show()
+    QtCore.QTimer.singleShot(0, lambda: show_os_compatibility_warning(window))
 
     sys.exit(app.exec())
