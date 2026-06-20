@@ -43,7 +43,7 @@
      <item>
       <widget class="QTextEdit" name="gk_ai_display">
        <property name="readOnly"><bool>true</bool></property>
-       <property name="placeholderText"><string>🤖 AI 老师深度解析区...</string></property>
+       <property name="placeholderText"><string>答案解析区...</string></property>
       </widget>
      </item>
      
@@ -51,7 +51,7 @@
       <layout class="QHBoxLayout" name="gk_chat_input_row">
        <item>
         <widget class="QLineEdit" name="gk_chat_input">
-         <property name="placeholderText"><string>有什么不懂的问 AI 老师...</string></property>
+         <property name="placeholderText"><string>请输入需要查看的问题或说明...</string></property>
         </widget>
        </item>
        <item>

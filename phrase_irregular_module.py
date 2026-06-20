@@ -780,11 +780,17 @@ class PhraseIrregularListView(QtWidgets.QWidget):
         self.main_window = main_window
         self.phrases = self._load_json("assets/short_phrase.json")
         self.irregulars = self._load_json("assets/irregular_verbs.json")
-        self.phrase_mistakes = self._load_mistake_json(get_writable_data_path("mistake_phrases.json"))
-        self.irregular_mistakes = self._load_mistake_json(get_writable_data_path("mistake_irregular_verbs.json"))
+        self.phrase_mistake_file_path = get_writable_data_path("mistake_phrases.json")
+        self.irregular_mistake_file_path = get_writable_data_path("mistake_irregular_verbs.json")
+        self.phrase_mistakes = self._load_mistake_json(self.phrase_mistake_file_path)
+        self.irregular_mistakes = self._load_mistake_json(self.irregular_mistake_file_path)
         self.phrase_col_widths = {}
         self.irregular_col_widths = {}
         self._init_ui()
+
+    def showEvent(self, event):
+        super().showEvent(event)
+        self.refresh_mistake_tables()
 
     def resizeEvent(self, event):
         super().resizeEvent(event)
@@ -1086,7 +1092,35 @@ class PhraseIrregularListView(QtWidgets.QWidget):
         meaning_item.setTextAlignment(QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter)
         table.setItem(row_idx, 4, meaning_item)
 
+    def _populate_phrase_table(self, table, items):
+        table.setRowCount(len(items))
+        for row_idx, item in enumerate(items):
+            self._set_phrase_table_row(row_idx=row_idx, item=item, table=table)
+        self._apply_phrase_column_widths(table)
+        table.resizeRowsToContents()
+
+    def _populate_irregular_table(self, table, items):
+        table.setRowCount(len(items))
+        for row_idx, item in enumerate(items):
+            self._set_irregular_table_row(row_idx, item, table)
+        table.setColumnWidth(0, 35)
+        table.setColumnWidth(1, self.irregular_col_widths["infinitive"])
+        table.setColumnWidth(2, self.irregular_col_widths["past_tense"])
+        table.setColumnWidth(3, self.irregular_col_widths["past_participle"])
+        table.resizeRowsToContents()
+
+    def refresh_mistake_tables(self):
+        self.phrase_mistakes = self._load_mistake_json(self.phrase_mistake_file_path)
+        self.irregular_mistakes = self._load_mistake_json(self.irregular_mistake_file_path)
+        if hasattr(self, "phrase_mistake_table"):
+            self._populate_phrase_table(self.phrase_mistake_table, self.phrase_mistakes)
+        if hasattr(self, "irregular_mistake_table"):
+            self._populate_irregular_table(self.irregular_mistake_table, self.irregular_mistakes)
+
     def _show_table(self, table_type: str):
+        if table_type in {"phrase_mistake", "irregular_mistake"}:
+            self.refresh_mistake_tables()
+
         self.btn_phrases_table.setChecked(table_type == "phrase")
         self.btn_irregulars_table.setChecked(table_type == "irregular")
         self.btn_phrase_mistake_table.setChecked(table_type == "phrase_mistake")

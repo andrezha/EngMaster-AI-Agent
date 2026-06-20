@@ -87,7 +87,7 @@
        </item>
        <item>
         <widget class="QLabel" name="lbl_pro_service">
-         <property name="text"><string>增值服务</string></property>
+         <property name="text"><string></string></property>
          <property name="alignment"><set>Qt::AlignCenter</set></property>
          <property name="styleSheet"><string>QLabel { font-family: "Microsoft YaHei", "Segoe UI", sans-serif; color: #909399; font-size: 12px; font-weight: bold; }</string></property>
         </widget>
@@ -325,7 +325,7 @@
         <item>
          <layout class="QHBoxLayout" name="scan_h_btns">
           <item><widget class="QPushButton" name="btn_scan"><property name="text"><string>🧹 清空</string></property></widget></item>
-          <item><widget class="QPushButton" name="btn_start_ai"><property name="text"><string>🚀 开始解析</string></property></widget></item>
+          <item><widget class="QPushButton" name="btn_start_ai"><property name="text"><string>开始解析</string></property></widget></item>
          </layout>
         </item>
         <item>

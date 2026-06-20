@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Gemini Agent Studio 重构版 - 高中/高考英语助手 v1.0 (正版授权完全体)
-【性能改善说明】：全面引入 QThread 异步调度矩阵，彻底解决主线程阻塞，实现闪电秒开。
+高中/高考英语单词助手 v1.0
+【性能改善说明】：引入 QThread 异步调度，减少主线程阻塞。
 """
 import sys
 import os
@@ -111,7 +111,7 @@ def _internal_full_exam_parser(text):
         data_list.append({"category": NAME_MAP.get(sec_name, sec_name), "question_type": q_type, "passage": passage, "items": items, "original_analysis": global_analysis_text})
     return data_list
 
-# ============ [6. 🔥 智能体核心改善：QThread Worker 异步数据调度矩阵] ============
+# ============ [6. QThread Worker 异步数据加载] ============
 class VocabLoaderWorker(QObject):
     finished = Signal()
     result_ready = Signal(object)
@@ -211,7 +211,7 @@ class HighSchoolEnglishAI(QMainWindow):
         super().__init__()
         print("[DEBUG] HighSchoolEnglishAI.__init__ entered")
         # 🎯 👑 注入 5大任务之：软件全局品牌名称更名
-        self.setWindowTitle("高中/高考英语助手 v1.0 (正版授权完全体)")
+        self.setWindowTitle("高中/高考英语单词助手 v1.0")
         self.showMaximized()
 
         self.nav_buttons = {} 
@@ -635,11 +635,11 @@ class HighSchoolEnglishAI(QMainWindow):
 
     def _apply_sidebar_style(self):
         self.inactive_nav_style = """
-            QPushButton { min-height: 55px; border-radius: 12px; text-align: left; padding-left: 20px; font-weight: bold; background-color: transparent; color: #495057; border: none; }
+            QPushButton { min-height: 55px; border-radius: 12px; text-align: left; padding-left: 20px; font-family: "Microsoft YaHei", "Segoe UI", sans-serif; font-size: 15px; font-weight: bold; background-color: transparent; color: #495057; border: none; }
             QPushButton:hover { background-color: #e9ecef; }
         """
         self.active_nav_style = """
-            QPushButton { min-height: 55px; border-radius: 12px; text-align: left; padding-left: 20px; font-weight: bold; background-color: #007bff; color: white; border: none; }
+            QPushButton { min-height: 55px; border-radius: 12px; text-align: left; padding-left: 20px; font-family: "Microsoft YaHei", "Segoe UI", sans-serif; font-size: 15px; font-weight: bold; background-color: #007bff; color: white; border: none; }
             QPushButton:hover { background-color: #0056b3; }
         """
         nav_btns = ["btn_nav_vocab", "btn_nav_core_vocab", "btn_nav_phrase_challenge", "btn_nav_phrase_list", "btn_nav_gaokao", "btn_nav_full_exam", "btn_nav_self_register", "btn_user_notice", "btn_version_info"]
@@ -665,7 +665,7 @@ class HighSchoolEnglishAI(QMainWindow):
 
 # ============ [8. 👑 注入 5大任务之：一机一码离线授权激活大闸] ============
 LICENSE_PRODUCT_ID = "engmaster-ai-agent"
-TOOL_DISPLAY_NAME = "英语学习辅助工具"
+TOOL_DISPLAY_NAME = "高中/高考英语单词助手 v1.0"
 TOOL_VERSION = "v1.0.0"
 BUILD_DATE = "2026-05-30"
 TERMS_VERSION = "2026.05.30"
@@ -781,7 +781,7 @@ def verify_activation_code(activation_code: str, machine_id: str):
 
         payload = json.loads(payload_bytes.decode("utf-8"))
         if payload.get("product") != LICENSE_PRODUCT_ID:
-            return False, "激活码不适用于当前学习工具。"
+            return False, "激活码不适用于当前软件。"
         if payload.get("machine_id") != machine_id:
             return False, "激活码与当前电脑不匹配。"
         return True, payload
@@ -823,7 +823,7 @@ def save_license_file(path: str, machine_id: str, activation_code: str):
 
 def show_activation_dialog(machine_id: str):
     dialog = QtWidgets.QDialog()
-    dialog.setWindowTitle("学习工具激活")
+    dialog.setWindowTitle("高中/高考英语单词助手 v1.0 激活")
     dialog.setModal(True)
     dialog.setMinimumSize(600, 340)
 
@@ -831,7 +831,7 @@ def show_activation_dialog(machine_id: str):
     layout.setContentsMargins(18, 18, 18, 18)
     layout.setSpacing(12)
 
-    title = QtWidgets.QLabel("学习工具激活")
+    title = QtWidgets.QLabel("高中/高考英语单词助手 v1.0 激活")
     title.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
     title.setStyleSheet("font-size: 20px; font-weight: bold; color: #111827;")
     layout.addWidget(title)
@@ -912,7 +912,7 @@ def get_legal_notice_text() -> str:
         f"隐私说明版本：{PRIVACY_VERSION}\n"
         f"退款说明版本：{REFUND_VERSION}\n"
         f"生效日期：{BUILD_DATE}\n\n"
-        "欢迎使用本英语学习辅助工具。请您在使用前仔细阅读以下内容。\n\n"
+        "欢迎使用高中/高考英语单词助手 v1.0。请您在使用前仔细阅读以下内容。\n\n"
         "1. 工具定位\n"
         "本工具仅作为英语学习、复习和练习辅助使用，主要用于词汇、短语、不规则动词和练习内容的整理与复习。"
         "本工具不属于官方教学系统、考试系统或认证软件，也不代表任何学校、考试机构或官方单位。\n\n"
@@ -1008,7 +1008,7 @@ def show_user_notice_dialog(require_accept=True):
     notice_text = QtWidgets.QTextEdit()
     notice_text.setReadOnly(True)
     notice_text.setPlainText(
-        "欢迎使用本英语学习辅助工具。请您在使用前仔细阅读以下内容。\n\n"
+        "欢迎使用高中/高考英语单词助手 v1.0。请您在使用前仔细阅读以下内容。\n\n"
         "1. 工具定位\n"
         "本工具仅作为英语学习、复习和练习辅助使用，主要用于词汇、短语、不规则动词和练习内容的整理与复习。"
         "本工具不属于官方教学系统、考试系统或认证软件，也不代表任何学校、考试机构或官方单位。\n\n"
@@ -1090,7 +1090,7 @@ def check_licensing_gate():
             if not os.path.exists(license_dir):
                 os.makedirs(license_dir)
             save_license_file(license_path, machine_id, activation_code)
-            QMessageBox.information(None, "激活成功", "当前电脑已激活，可以开始使用学习工具。")
+            QMessageBox.information(None, "激活成功", "当前电脑已激活，可以开始使用高中/高考英语单词助手 v1.0。")
             return True
         except Exception as e:
             QMessageBox.critical(None, "激活失败", f"保存授权文件失败:\n{e}")
@@ -1144,7 +1144,7 @@ def check_licensing_gate():
         input_key, ok = QtWidgets.QInputDialog.getText(
             None, 
             "正版授权激活验证", 
-            "欢迎使用《高中/高考英语助手 v1.0》完全体\n\n请在下方输入您在自动发卡网购买的正版授权卡密:",
+            "欢迎使用《高中/高考英语单词助手 v1.0》完全体\n\n请在下方输入您在自动发卡网购买的正版授权卡密:",
             QLineEdit.EchoMode.Normal
         )
         if not ok:

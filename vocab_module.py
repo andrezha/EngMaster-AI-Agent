@@ -303,8 +303,17 @@ class VocabManager(QObject):  # 继承自 QObject
             self.v_disp.setAlignment(
                 QtCore.Qt.AlignmentFlag.AlignCenter)  # 保持文本居中
             self.v_disp.setFixedWidth(600)  # 固定宽度，防止出现滚动条
+            self.v_disp.setReadOnly(True)
+            self.v_disp.setLineWrapMode(QtWidgets.QTextEdit.LineWrapMode.WidgetWidth)
+            self.v_disp.setWordWrapMode(QtGui.QTextOption.WrapMode.WrapAtWordBoundaryOrAnywhere)
             self.v_disp.setHorizontalScrollBarPolicy(
                 QtCore.Qt.ScrollBarAlwaysOff)  # 禁用水平滚动条
+            self.v_disp.setVerticalScrollBarPolicy(
+                QtCore.Qt.ScrollBarAlwaysOff)  # 内容区域随文本增高，不在提示词内部滚动
+            self.v_disp.document().setDocumentMargin(0)
+            self.v_disp.document().setTextWidth(self.v_disp.viewport().width())
+            self.v_disp.document().documentLayout().documentSizeChanged.connect(
+                lambda *_: self._fit_vocab_display_to_content())
             self.v_disp.setStyleSheet("""
 				QTextEdit {
 					background-color: transparent;
@@ -345,6 +354,15 @@ class VocabManager(QObject):  # 继承自 QObject
 					background-color: #f5f5f5;
 				}
 			""")
+
+    def _fit_vocab_display_to_content(self):
+        if not self.v_disp:
+            return
+        self.v_disp.document().setTextWidth(self.v_disp.viewport().width())
+        doc_height = int(self.v_disp.document().size().height())
+        target_height = max(130, min(doc_height + 8, 360))
+        if self.v_disp.height() != target_height:
+            self.v_disp.setFixedHeight(target_height)
 
     def _load_regular_vocabulary(self):
         """
@@ -689,11 +707,11 @@ class VocabManager(QObject):  # 继承自 QObject
 
         # Always display the word content
         html_content_parts.append(f"""
-			<div style='text-align: center; padding: 20px;'>
+			<div style='text-align: center; padding: 20px; white-space: normal; overflow-wrap: anywhere; word-wrap: break-word;'>
 				<div style='font-size: 14px; color: #999999; font-weight: 600; margin-bottom: 16px;'>
 					第 {self.current_idx + 1} 关
 				</div>
-				<div style='font-size: 32px; color: #333333; font-weight: 500; line-height: 1.4;'> 
+				<div style='font-size: 32px; color: #333333; font-weight: 500; line-height: 1.4; white-space: normal; overflow-wrap: anywhere; word-wrap: break-word;'> 
 					{normalized_content}
 				</div>
 		""")
@@ -723,6 +741,7 @@ class VocabManager(QObject):  # 继承自 QObject
         html = "".join(html_content_parts)
 
         self.v_disp.setHtml(html)
+        self._fit_vocab_display_to_content()
 
         # Only clear input and start timer if it's a new word (not an error display)
         if not error_msg:
