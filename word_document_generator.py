@@ -188,4 +188,4 @@ def generate_word_table(data, output_file, mode="normal", data_type="words"): # 
             tcPr.append(tcBorders)
 
     document.save(output_file)
-    print(f"\n✅ Word 文档已生成 (模式: {mode}, 默写列宽: {explanation_width_cm:.2f}cm): {output_file}\n")
+    print(f"\nWord document generated (mode: {mode}, blank column width: {explanation_width_cm:.2f}cm): {output_file}\n")

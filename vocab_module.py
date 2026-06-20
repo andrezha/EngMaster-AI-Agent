@@ -58,10 +58,11 @@ class VocabManager(QObject):  # 继承自 QObject
         self.btn_challenge_regular = self.vocab_page_widget.findChild(
             QtWidgets.QPushButton, "btn_challenge_regular")  # 查找现有按钮
         if not self.btn_challenge_regular:  # 如果没找到，则创建
-            self.btn_challenge_regular = QtWidgets.QPushButton("常规闯关")
+            self.btn_challenge_regular = QtWidgets.QPushButton("高考3800词闯关")
             self.btn_challenge_regular.setObjectName("btn_challenge_regular")
             self.btn_challenge_regular.setCheckable(True)  # 使按钮可选中
             print("DEBUG: btn_challenge_regular created dynamically.")
+        self.btn_challenge_regular.setText("高考3800词闯关")
 
         self.btn_challenge_mistake = self.vocab_page_widget.findChild(
             QtWidgets.QPushButton, "btn_challenge_mistake")  # 查找现有按钮
@@ -485,7 +486,7 @@ class VocabManager(QObject):  # 继承自 QObject
         """
         if self.v_disp:
             self.v_disp.setHtml(
-                "<div style='text-align: center; padding: 40px; font-size: 20px; color: #555555;'>请选择闯关模式：<br><br>📚 常规闯关 或 ❌ 错词闯关 或 📝 自主录入闯关</div>")  # NEW: 更新提示
+                "<div style='text-align: center; padding: 40px; font-size: 20px; color: #555555;'>请选择闯关模式：<br><br>📚 高考3800词闯关 或 ❌ 错词闯关 或 📝 自主录入闯关</div>")  # NEW: 更新提示
         if self.v_input:
             self.v_input.clear()
             self.v_input.setEnabled(False)
@@ -573,7 +574,7 @@ class VocabManager(QObject):  # 继承自 QObject
             self._load_mistake_vocabulary()
             self.active_vocabulary = self.mistake_vocabulary
             if not self.active_vocabulary:  # 如果错词表为空，自动切换回常规模式
-                QMessageBox.information(self.main_window, "提示", "错词表为空，已自动切换到常规闯关模式。")
+                QMessageBox.information(self.main_window, "提示", "错词表为空，已自动切换到高考3800词闯关模式。")
                 self.current_challenge_mode = "regular"  # Use self.main_window for QMessageBox
                 self._load_regular_vocabulary()
                 self.active_vocabulary = self.vocabulary
@@ -583,7 +584,7 @@ class VocabManager(QObject):  # 继承自 QObject
             self._load_self_registered_vocabulary()
             self.active_vocabulary = self.self_registered_vocabulary
             if not self.active_vocabulary:  # 如果自主录入词汇表为空，自动切换回常规模式
-                QMessageBox.information(self.main_window, "提示", "自主录入词汇表为空，已自动切换到常规闯关模式。")
+                QMessageBox.information(self.main_window, "提示", "自主录入词汇表为空，已自动切换到高考3800词闯关模式。")
                 self.current_challenge_mode = "regular"
                 self._load_regular_vocabulary()
                 self.active_vocabulary = self.vocabulary

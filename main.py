@@ -63,6 +63,7 @@ try:
     from word_list_view import WordListView
     from exam_module import ExamManager
     from utils import normalize_exam_text, get_writable_data_path, get_resource_path
+    from watermark_modes import parse_watermark_args
     from self_register_vocab_module import SelfRegisterVocabManager
     from phrase_irregular_module import PhraseIrregularChallengeView, PhraseIrregularListView
     from run_flull_exam import HSEExamSystem 
@@ -210,6 +211,8 @@ class HighSchoolEnglishAI(QMainWindow):
     def __init__(self):
         super().__init__()
         print("[DEBUG] HighSchoolEnglishAI.__init__ entered")
+        self.watermark_settings = getattr(QtWidgets.QApplication.instance(), "watermark_settings", None)
+        self.watermark_mode = getattr(self.watermark_settings, "mode", "licensed")
         # 🎯 👑 注入 5大任务之：软件全局品牌名称更名
         self.setWindowTitle("高中/高考英语单词助手 v1.0")
         self.showMaximized()
@@ -1170,7 +1173,10 @@ def check_licensing_gate():
 
 # ============ [9. 生产环境单实例锁与程序总入口] ============
 if __name__ == "__main__":
+    watermark_settings, qt_argv = parse_watermark_args(sys.argv)
+    sys.argv = qt_argv
     app = QApplication(sys.argv)
+    app.watermark_settings = watermark_settings
     app.setStyle("Fusion")
 
     # 1. 物理单实例锁：防止用户短时间内高频狂点导致多进程死锁

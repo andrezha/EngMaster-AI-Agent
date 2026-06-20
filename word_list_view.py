@@ -52,11 +52,11 @@ class WordListView(QtWidgets.QWidget):
         h_layout = QtWidgets.QHBoxLayout(header)
         h_layout.setContentsMargins(15, 0, 15, 0)
 
-        self.btn_reg = QtWidgets.QPushButton("📚 常规词汇")
+        self.btn_reg = QtWidgets.QPushButton("📚 高考3800词汇表")
         self.btn_mis = QtWidgets.QPushButton("❌ 错词表")
 
         self.btn_export = QtWidgets.QToolButton()
-        self.btn_export.setText("输出 Word 打印单词表")
+        self.btn_export.setText("生成打印表")
         self.btn_export.setPopupMode(QtWidgets.QToolButton.InstantPopup)
         self.btn_export.setFixedHeight(34)
         self.btn_export.setStyleSheet("QToolButton{background:#28A745; color:white; border-radius:4px; font-weight:bold; padding: 0 10px;}")
@@ -138,33 +138,33 @@ class WordListView(QtWidgets.QWidget):
         menu = QtWidgets.QMenu(self)
         menu.setStyleSheet("QMenu::item { padding: 8px 25px; }")
 
-        menu.addAction("常规英语词汇中文+ 英语表").triggered.connect(lambda: self._do_export(self.all_regular_words, "normal", "常规英语词汇_全表"))
-        menu.addAction("常规英语词汇看英语填写中文默写表").triggered.connect(lambda: self._do_export(self.all_regular_words, "en_dictate_cn", "常规英语词汇_英默中"))
-        menu.addAction("常规英语词汇英语默写表").triggered.connect(lambda: self._do_export(self.all_regular_words, "cn_dictate_en", "常规英语词汇_中默英"))
+        menu.addAction("高考3800单词打印表").triggered.connect(lambda: self._do_export(self.all_regular_words, "normal", "高考3800单词打印表"))
+        menu.addAction("高考3800词默写打印表-看英默中").triggered.connect(lambda: self._do_export(self.all_regular_words, "en_dictate_cn", "高考3800词默写打印表_看英默中"))
+        menu.addAction("高考3800词默写打印表-看中默英").triggered.connect(lambda: self._do_export(self.all_regular_words, "cn_dictate_en", "高考3800词默写打印表_看中默英"))
         menu.addSeparator()
-        menu.addAction("错词英语词汇中文+ 英语表").triggered.connect(lambda: self._do_export(self.all_mistake_words, "normal", "错词英语词汇_全表"))
-        menu.addAction("错词英语词汇看英语填写中文默写表").triggered.connect(lambda: self._do_export(self.all_mistake_words, "en_dictate_cn", "错词英语词汇_英默中"))
-        menu.addAction("错词英语词汇英语默写表").triggered.connect(lambda: self._do_export(self.all_mistake_words, "cn_dictate_en", "错词英语词汇_中默英"))
+        menu.addAction("错词英语词汇打印表").triggered.connect(lambda: self._do_export(self.all_mistake_words, "normal", "错词英语词汇打印表"))
+        menu.addAction("错词英语词汇默写打印表-看英默中").triggered.connect(lambda: self._do_export(self.all_mistake_words, "en_dictate_cn", "错词英语词汇默写打印表_看英默中"))
+        menu.addAction("错词英语词汇默写打印表-看中默英").triggered.connect(lambda: self._do_export(self.all_mistake_words, "cn_dictate_en", "错词英语词汇默写打印表_看中默英"))
         menu.addSeparator()
-        menu.addAction("自主录入单词全表").triggered.connect(lambda: self._do_export(self._get_self_reg(), "normal", "自主全表"))
-        menu.addAction("自主录入-看英默中").triggered.connect(lambda: self._do_export(self._get_self_reg(), "en_dictate_cn", "自主英默中"))
-        menu.addAction("自主录入-看中默英").triggered.connect(lambda: self._do_export(self._get_self_reg(), "cn_dictate_en", "自主中默英"))
+        menu.addAction("自主录入单词打印表").triggered.connect(lambda: self._do_export(self._get_self_reg(), "normal", "自主录入单词打印表"))
+        menu.addAction("自主录入单词默写打印表-看英默中").triggered.connect(lambda: self._do_export(self._get_self_reg(), "en_dictate_cn", "自主录入单词默写打印表_看英默中"))
+        menu.addAction("自主录入单词默写打印表-看中默英").triggered.connect(lambda: self._do_export(self._get_self_reg(), "cn_dictate_en", "自主录入单词默写打印表_看中默英"))
         menu.addSeparator()
         # New: Phrase List export options
-        menu.addAction("短语表 - 中英对照").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self.all_phrases), "normal", "短语表_中英对照", data_type="phrases"))
-        menu.addAction("短语表 - 看英默中").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self.all_phrases), "en_dictate_cn", "短语表_看英默中", data_type="phrases"))
-        menu.addAction("短语表 - 看中默英").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self.all_phrases), "cn_dictate_en", "短语表_看中默英", data_type="phrases"))
+        menu.addAction("短语打印表").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self.all_phrases), "normal", "短语打印表", data_type="phrases"))
+        menu.addAction("短语默写打印表-看英默中").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self.all_phrases), "en_dictate_cn", "短语默写打印表_看英默中", data_type="phrases"))
+        menu.addAction("短语默写打印表-看中默英").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self.all_phrases), "cn_dictate_en", "短语默写打印表_看中默英", data_type="phrases"))
         menu.addSeparator()
-        menu.addAction("短语错题表 - 中英对照").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self._get_mistake_phrases()), "normal", "短语错题表_中英对照", data_type="phrases"))
-        menu.addAction("短语错题表 - 看英默中").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self._get_mistake_phrases()), "en_dictate_cn", "短语错题表_看英默中", data_type="phrases"))
-        menu.addAction("短语错题表 - 看中默英").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self._get_mistake_phrases()), "cn_dictate_en", "短语错题表_看中默英", data_type="phrases"))
+        menu.addAction("短语错题打印表").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self._get_mistake_phrases()), "normal", "短语错题打印表", data_type="phrases"))
+        menu.addAction("短语错题默写打印表-看英默中").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self._get_mistake_phrases()), "en_dictate_cn", "短语错题默写打印表_看英默中", data_type="phrases"))
+        menu.addAction("短语错题默写打印表-看中默英").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self._get_mistake_phrases()), "cn_dictate_en", "短语错题默写打印表_看中默英", data_type="phrases"))
         menu.addSeparator()
         # New: Irregular Verbs List export options
-        menu.addAction("不规则动词表 - 过去式过去分词表").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self.all_irregulars), "normal", "不规则动词表_过去式过去分词表", data_type="irregular_verbs"))
-        menu.addAction("不规则动词表 - 看原形默过去式/过去分词").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self.all_irregulars), "en_dictate_cn", "不规则动词表_看原形默过去式_过去分词", data_type="irregular_verbs"))
+        menu.addAction("不规则动词打印表").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self.all_irregulars), "normal", "不规则动词打印表", data_type="irregular_verbs"))
+        menu.addAction("不规则动词默写打印表-看原形默过去式/过去分词").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self.all_irregulars), "en_dictate_cn", "不规则动词默写打印表_看原形默过去式_过去分词", data_type="irregular_verbs"))
         menu.addSeparator()
-        menu.addAction("不规则动词错题表 - 过去式过去分词表").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self._get_mistake_irregulars()), "normal", "不规则动词错题表_过去式过去分词表", data_type="irregular_verbs"))
-        menu.addAction("不规则动词错题表 - 看原形默过去式/过去分词").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self._get_mistake_irregulars()), "en_dictate_cn", "不规则动词错题表_看原形默过去式_过去分词", data_type="irregular_verbs"))
+        menu.addAction("不规则动词错题打印表").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self._get_mistake_irregulars()), "normal", "不规则动词错题打印表", data_type="irregular_verbs"))
+        menu.addAction("不规则动词错题默写打印表-看原形默过去式/过去分词").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self._get_mistake_irregulars()), "en_dictate_cn", "不规则动词错题默写打印表_看原形默过去式_过去分词", data_type="irregular_verbs"))
 
         self.btn_export.setMenu(menu)
 
@@ -337,7 +337,7 @@ class WordListView(QtWidgets.QWidget):
         layout.addWidget(idx); layout.addWidget(w_lbl); layout.addWidget(c_lbl, 1)
         return row
 
-    def _handle_search(self, text): # No change here, but including for context
+    def _handle_search(self, text):
         t = text.lower()
         src = self.all_regular_words if self.current_list_type == "regular" else self.all_mistake_words
         self.display_words = [w for w in src if t in (str(w.get('word',''))).lower() or t in (str(w.get('content','')))] if t else src.copy()
@@ -349,10 +349,19 @@ class WordListView(QtWidgets.QWidget):
             return
         try:
             # 🟢 现在的位置在根目录，直接导入邻居，打包绝对不会报错
-            from word_document_generator import generate_word_table
-            path, _ = QtWidgets.QFileDialog.getSaveFileName(self, "导出Word", f"{name}.docx", "Word (*.docx)") # No change here
+            from pdf_document_generator import generate_pdf_table
+            path, _ = QtWidgets.QFileDialog.getSaveFileName(self, "导出PDF", f"{name}.pdf", "PDF (*.pdf)") 
             if path:
-                generate_word_table(data, path, mode=mode, data_type=data_type) # Pass data_type
+                watermark_mode = getattr(self.main_window, "watermark_mode", "licensed")
+                document_title = name.replace("_", "-")
+                generate_pdf_table(
+                    data,
+                    path,
+                    mode=mode,
+                    data_type=data_type,
+                    watermark_mode=watermark_mode,
+                    document_title=document_title,
+                )
                 QtWidgets.QMessageBox.information(self, "成功", f"文件已成功保存至：\n{path}")
         except Exception as e:
             error_detail = traceback.format_exc()
