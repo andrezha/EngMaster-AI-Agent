@@ -1,6 +1,6 @@
-FILENAME: 语法填空_2021_解析版_AI.txt
+FILENAME: 语法填空_2021_参考解析_AI.txt
 YEAR: 2021
-CAT: 语法填空_2021_解析版_语法填空模拟
+CAT: 语法填空_2021_参考解析_语法填空模拟
 TITLE: Visiting the Industrial Heritage Park
 The old factory site is the most complete industrial park that has survived the city's growth. It 61 (build) originally to produce steel 62 the early 20th century and has now been completely turned into an art zone. It is possible 63 (walk) or skate the entire 5 kilometers.
 We entered the park through the main gate. The chimneys are 30 meters high and from here you can see groups of artists working inside and outside the galleries.

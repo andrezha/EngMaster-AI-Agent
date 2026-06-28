@@ -1,6 +1,6 @@
 FILENAME: 7of5_2015_05_AI.txt
 YEAR: 2015
-CAT: （新课标Ⅰ）七选五模拟
+CAT: （高考方向）七选五模拟
 TITLE: Rebuilding Trust in a Team Project
 Trust is a behavior we learn from our past experiences. 36 Trust involves a risk. But a team cannot be successful when there is a lack of trust caused by an action where someone refuses to take responsibility for a mistake.
 Unfortunately, we have all experienced a broken promise. Whether someone has shared our private ideas, lied about progress, or failed to do their part, there are different levels of losing trust. Sometimes people simply feel they cannot trust their teammates anymore. 37 It is understandable, but if you are willing to rebuild trust in a team, there are steps you can take.

@@ -6,7 +6,7 @@ def build():
     # 1. 绝对路径定位
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     data_dir = os.path.join(base_dir, "data")
-    output_dir = os.path.join(data_dir, "真题试卷")
+    output_dir = os.path.join(data_dir, "模拟试卷")
     
     # 确定文件名后缀
     suffix = "2026"
@@ -27,7 +27,7 @@ def build():
         {"folder": "语法填空", "need": 1, "tag": "GRAMMAR", "counts": [10]}
     ]
 
-    full_text = f"[[EXAM_TITLE]]\n高考英语全真模拟卷 (编号: {suffix})\n\n"
+    full_text = f"[[EXAM_TITLE]]\n高考英语整卷模拟练习 (编号: {suffix})\n\n"
     global_id = 21
 
     print(f"开始检查文件夹...")

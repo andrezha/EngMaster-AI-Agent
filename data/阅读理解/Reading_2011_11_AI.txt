@@ -1,6 +1,6 @@
 FILENAME: Reading_2011_11_AI.txt
 YEAR: 2011
-CAT: （全国卷ii）阅读理解模拟
+CAT: （高考方向）阅读理解模拟
 TITLE: Tool Use in Octopuses
 For those who study the development of intelligence in the marine world, problem-solving is an important measurement. An animal that can use tools to solve a problem has a high level of intelligence.
 Intelligence can be tested by studying whether the animal uses an object to achieve a goal, such as opening a container. Many marine animals fail this test, showing no interest in the objects around them. Only a few intelligent creatures like dolphins and octopuses have shown the ability to use tools in their environment.

@@ -1,6 +1,6 @@
 FILENAME: CLOZE_2015_02_AI.txt
 YEAR: 2015
-CAT: 完形填空_2015_（新课标ⅱ）_模拟
+CAT: 完形填空_2015_（高考方向）_模拟
 TITLE: Learning Beyond the Classroom
 Where do you go when you want to acquire a new skill? A library? A classroom? These are all 41 methods of learning. But it may well be that the knowledge you really 42 resides somewhere else instead. I had the 43 of witnessing this first hand during a summer 44.
 My younger brother joined a community coding team. They performed exceptionally well this term and so 45 a high-level hackathon, which normally was only for more experienced professional groups. This led to some 46 experiences on the first day as they competed against teams that were 47 prepared. Through the first few rounds, his 48 did not complete a single functional module. As his brother, I 49 seeing him trying his hardest, 50 still failing.

@@ -86,7 +86,7 @@ def normalize_exam_text(text):
     【专项练习/单词录入专用 - 纯净解析版】
     此函数对应专项练习，不带黑框处理！
     功能：仅做基础全角转半角映射，不执行 re.sub 剔除，不执行 strip()。
-    确保真题 JSON 的物理位置不发生 1 字节的偏移。
+    确保练习资源 JSON 的物理位置不发生 1 字节的偏移。
     """
     if text is None:
         return ""

@@ -1,6 +1,6 @@
 FILENAME: Reading_2010_01_AI.txt
 YEAR: 2010
-CAT: （新课标Ⅰ）阅读理解模拟
+CAT: （高考方向）阅读理解模拟
 TITLE: The Campus Green Garden Project
 RIVERVIEW --- Every morning at West Hills High School, teachers and staff flock to a unique project: the school’s first organic garden run mostly by students with special learning needs.
 Well before the first bell rings, students pick fresh vegetables and fruits. Then, during the first period, staff members send their orders through a mobile app, and students prepare the delivery bags.

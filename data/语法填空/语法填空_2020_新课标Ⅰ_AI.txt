@@ -1,6 +1,6 @@
-FILENAME: 语法填空_2020_新课标Ⅰ_AI.txt
+FILENAME: 语法填空_2020_高考方向_AI.txt
 YEAR: 2020
-CAT: 语法填空_2020_新课标Ⅰ_语法填空模拟
+CAT: 语法填空_2020_高考方向_语法填空模拟
 TITLE: Deep Sea Exploration
 The world has launched its first unmanned probe to explore the deepest part of the ocean. The robot — the name was inspired by a legendary sea king — 61 (touch) the bottom last week in the Mariana Trench. Exploring the deep sea is 62 (extreme) challenging. Because the thick water blocks direct radio signals, engineers first had to place a relay station on the surface at a spot 63 it could send data to the probe and to the base. The ocean floor is of particular 64 (interesting) to experts because it contains unique life forms, more so 65 the shallow waters. Researchers hope to use the cameras 66 (find) and study new species in the trench. “This really excites us,” a lead engineer says, “because it 67 (mean) we have the chance to obtain data about how the ocean floor 68 (construct).” Information about the water’s pressure, such as how 69 much oxygen and other minerals it contains, could help teams decide whether 70 (it) plans for a future research station are possible.
 [OPTIONS]

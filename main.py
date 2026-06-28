@@ -12,6 +12,7 @@ import traceback
 import base64
 import datetime
 import hashlib
+import threading
 import PySide6
 
 try:
@@ -192,14 +193,14 @@ class FullExamLoaderWorker(QObject):
             self.finished.emit()
             return
         try:
-            self.progress_update.emit(f"正在异步准备真题资源...")
+            self.progress_update.emit(f"正在准备模拟练习资源...")
             with open(self.target_file, 'r', encoding='utf-8') as f:
                 raw_data = f.read()
-            self.progress_update.emit("跨线程解析真题语义结构...")
+            self.progress_update.emit("正在解析模拟练习结构...")
             parsed_data = _internal_full_exam_parser(raw_data)
             self.result_ready.emit(parsed_data)
         except Exception as e:
-            self.error_occurred.emit(f"高考整卷挂载失败: {e}\n{traceback.format_exc()}")
+            self.error_occurred.emit(f"整卷模拟练习挂载失败: {e}\n{traceback.format_exc()}")
         finally:
             self.finished.emit()
 
@@ -557,17 +558,17 @@ class HighSchoolEnglishAI(QMainWindow):
             self.stack.setCurrentIndex(self.gk_idx)
 
     def switch_to_full_exam(self):
-        path = get_resource_path("data/真题试卷")
+        path = get_resource_path("data/模拟试卷")
         if not os.path.exists(path):
-            print(f"[高考整卷] 未找到目录: {path}")
-            QMessageBox.warning(self, "出厂提示", "未找到本地真题试卷数据目录。")
+            print(f"[整卷模拟] 未找到目录: {path}")
+            QMessageBox.warning(self, "出厂提示", "未找到本地模拟试卷数据目录。")
             return
         files = [f for f in os.listdir(path) if f.endswith(".txt")]
-        print(f"[高考整卷] 目标目录: {path}")
-        print(f"[高考整卷] 发现试卷文件: {files}")
+        print(f"[整卷模拟] 目标目录: {path}")
+        print(f"[整卷模拟] 发现试卷文件: {files}")
         if not files:
-            print(f"[高考整卷] 目录中没有 .txt 试卷文件")
-            QMessageBox.information(self, "提示", "真题试卷目录下暂无有效真题资产。")
+            print(f"[整卷模拟] 目录中没有 .txt 试卷文件")
+            QMessageBox.information(self, "提示", "模拟试卷目录下暂无有效练习资源。")
             return
 
         if self.full_view is not None and self.full_exam_index != -1:
@@ -584,7 +585,7 @@ class HighSchoolEnglishAI(QMainWindow):
         dialog_layout.setContentsMargins(20, 20, 20, 20)
         dialog_layout.setSpacing(12)
 
-        loading_label = QtWidgets.QLabel("正在跨线程解析高考整卷数据结构...")
+        loading_label = QtWidgets.QLabel("正在解析整卷模拟练习...")
         loading_label.setAlignment(QtCore.Qt.AlignCenter)
         loading_label.setStyleSheet("font-size: 14px; color: #111827;")
         dialog_layout.addWidget(loading_label)
@@ -600,7 +601,7 @@ class HighSchoolEnglishAI(QMainWindow):
         # 点火专线异步执行整卷大文本解析
         self.full_exam_thread = QThread()
         self.full_exam_worker = FullExamLoaderWorker()
-        self.full_exam_worker.set_exam_file(os.path.join(get_resource_path("data/真题试卷"), random.choice(files)))
+        self.full_exam_worker.set_exam_file(os.path.join(get_resource_path("data/模拟试卷"), random.choice(files)))
         self.full_exam_worker.moveToThread(self.full_exam_thread)
 
         self._full_exam_loading_dialog = loading_dialog
@@ -616,7 +617,7 @@ class HighSchoolEnglishAI(QMainWindow):
         if hasattr(self, '_full_exam_loading_dialog') and self._full_exam_loading_dialog:
             self._full_exam_loading_dialog.done(0)
             self._full_exam_loading_dialog = None
-        print("[高考整卷] 已解析完毕，开始构建界面...")
+        print("[整卷模拟] 已解析完毕，开始构建界面...")
         with QMutexLocker(self._data_mutex):
             try:
                 self.full_view = HSEExamSystem(parsed_data)
@@ -624,16 +625,16 @@ class HighSchoolEnglishAI(QMainWindow):
                 self.stack.setCurrentIndex(self.full_exam_index)
                 self.nav_button_target_map["btn_nav_full_exam"] = self.full_exam_index
                 self._update_nav_button_styles(self.full_exam_index)
-                print(f"[高考整卷] 界面构建成功，索引={self.full_exam_index}")
+                print(f"[整卷模拟] 界面构建成功，索引={self.full_exam_index}")
             except Exception as e:
-                print(f"[高考整卷错误] 界面构建失败: {e}")
-                QMessageBox.critical(self, "异步加载熔断", f"高考整卷界面构建失败: {e}")
+                print(f"[整卷模拟错误] 界面构建失败: {e}")
+                QMessageBox.critical(self, "异步加载熔断", f"整卷模拟界面构建失败: {e}")
 
     def _on_full_exam_error(self, message):
         if hasattr(self, '_full_exam_loading_dialog') and self._full_exam_loading_dialog:
             self._full_exam_loading_dialog.done(0)
             self._full_exam_loading_dialog = None
-        print(f"[高考整卷错误] {message}")
+        print(f"[整卷模拟错误] {message}")
         QMessageBox.critical(self, "异步加载熔断", message)
 
     def _apply_sidebar_style(self):
@@ -671,23 +672,26 @@ LICENSE_PRODUCT_ID = "engmaster-ai-agent"
 TOOL_DISPLAY_NAME = "高中/高考英语单词助手 v1.0"
 TOOL_VERSION = "v1.0.0"
 BUILD_DATE = "2026-05-30"
-TERMS_VERSION = "2026.05.30"
-PRIVACY_VERSION = "2026.05.30"
-REFUND_VERSION = "2026.05.30"
+TERMS_VERSION = "2026.06.28"
+PRIVACY_VERSION = "2026.06.28"
+REFUND_VERSION = "2026.06.28"
 RECOMMENDED_OS_TEXT = "Windows 10 / Windows 11 64 位系统"
 LICENSE_PUBLIC_N = int(
-    "65dcaaf785fcc67c4918da552b6594c74a9980cd63dda8df680c392ad1076ccc"
-    "bb8d77feedf435debb3c63b9dcfe351149654d3ee9a8e2194df59a289efdb0"
-    "8160c2025c2ee01d74c4521a14bf1b1c2515820210bed4893c807a8fce602"
-    "f2b81bcd19e8b278274aa843efc68e7020f8b234d3c519b6918e9fee128"
-    "60d6f36284357e0b8d4b33348dadfb82427c6d835e85f614469d9042e222"
-    "7d92bd3eacd98366bb10c3c7cf6a2b3a63fa4eddb82a862070f94400b1"
-    "ce13b4ca725d8a7ba44c0c7d7fdba6a2ae4da898060d677c6d86289ab3"
-    "078907b3900756f3b1f5823444b78ec598bece15d31f8dfc82b1dfa05a03"
-    "180fc6981c60890892760d96291d59",
+    "a432074d3fc90a89d5ec32aa4f2816bcd25dea15cb6fdee7a6029de81a4340e4"
+    "fdfd6cbe16c77fe9ceac30ccd964b3912462f68ffa4c38a73ec389ead0fc4fc8"
+    "b2944414d84ed090f58d317090d80b5d185786b06757f8157d6ef80d1227d"
+    "685106fd74b1d33ffcf626687f1870ea9e554f36205241d5a9bfbf09f689a"
+    "10aacf7c17c79fd5b50214e93dd717055c37354e8e099f8cf98e8c7ec135"
+    "3edc0f43c1afe95b754001abbc3ad763e96bd2f5c74d3cd3880f151bf5f"
+    "363bf38f43fb82848fa8b211286f8d3673d8c3e6d7ec3036e8bb77555f"
+    "5d0a90ca95357665b9e1d8c3c00fcdb36a6a65137a07139de668d8c3a"
+    "58fad7cbf3867b2a3e6866dbfa75",
     16,
 )
 LICENSE_PUBLIC_E = 65537
+LICENSE_API_BASE_URL = "https://shrill-wildflower-3ea1-high-school-english-auth.andrezhao.workers.dev"
+LICENSE_CHECK_INTERVAL_DAYS = 7
+LICENSE_REVOKE_STATUSES = {"revoked", "not_found", "expired", "machine_mismatch", "disabled"}
 
 
 def _license_b64encode(raw: bytes) -> str:
@@ -700,6 +704,124 @@ def _license_b64decode(text: str) -> bytes:
 
 def get_license_path() -> str:
     return os.path.join(os.path.expanduser("~"), ".HighSchoolEnglishHelper", "licensing.dat")
+
+
+def _license_now() -> str:
+    return datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")
+
+
+def _parse_license_time(value: str):
+    if not value:
+        return None
+    try:
+        normalized = str(value).replace("Z", "+00:00")
+        parsed = datetime.datetime.fromisoformat(normalized)
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=datetime.timezone.utc)
+        return parsed
+    except Exception:
+        return None
+
+
+def _license_check_due(license_data: dict) -> bool:
+    last_check = _parse_license_time(str(license_data.get("last_check_time", "")))
+    if last_check is None:
+        return True
+    age = datetime.datetime.now(datetime.timezone.utc) - last_check
+    return age >= datetime.timedelta(days=LICENSE_CHECK_INTERVAL_DAYS)
+
+
+def _load_license_data(path: str) -> dict:
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _write_license_data(path: str, data: dict):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+
+def _extract_activation_code(data: dict) -> str:
+    if not isinstance(data, dict):
+        return ""
+    direct = data.get("activation_code") or data.get("code")
+    if direct:
+        return str(direct).strip()
+    for key in ("license", "license_data", "data", "payload"):
+        nested = data.get(key)
+        if isinstance(nested, dict):
+            found = nested.get("activation_code") or nested.get("code")
+            if found:
+                return str(found).strip()
+    return ""
+
+
+def _extract_license_id(data: dict) -> str:
+    if not isinstance(data, dict):
+        return ""
+    direct = data.get("license_id") or data.get("id")
+    if direct:
+        return str(direct).strip()
+    for key in ("license", "license_data", "data", "payload"):
+        nested = data.get(key)
+        if isinstance(nested, dict):
+            found = nested.get("license_id") or nested.get("id")
+            if found:
+                return str(found).strip()
+    return ""
+
+
+def _license_status(data: dict) -> str:
+    if not isinstance(data, dict):
+        return "invalid_response"
+    status = data.get("status")
+    if status:
+        return str(status).strip().lower()
+    if data.get("ok") is True or data.get("valid") is True or data.get("auth") is True:
+        return "active"
+    if data.get("ok") is False or data.get("valid") is False or data.get("auth") is False:
+        raw_status = str(data.get("msg") or data.get("message") or data.get("error") or "denied").strip().lower()
+        if "not" in raw_status and "found" in raw_status:
+            return "not_found"
+        if "revok" in raw_status:
+            return "revoked"
+        if "expire" in raw_status:
+            return "expired"
+        if "machine" in raw_status or "device" in raw_status or "fingerprint" in raw_status:
+            return "machine_mismatch"
+        return "denied"
+    return "active" if _extract_activation_code(data) else "invalid_response"
+
+
+def _post_license_api(action: str, payload: dict) -> dict:
+    import requests
+
+    headers = {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": f"EngMasterLicenseClient/{TOOL_VERSION}",
+    }
+    request_payload = dict(payload)
+    request_payload["action"] = action
+    urls = [
+        f"{LICENSE_API_BASE_URL.rstrip('/')}/{action}",
+        LICENSE_API_BASE_URL.rstrip("/"),
+    ]
+    last_error = None
+    for url in urls:
+        try:
+            response = requests.post(url, json=request_payload, headers=headers, timeout=15)
+            if response.status_code == 404 and url != urls[-1]:
+                continue
+            try:
+                data = response.json()
+            except Exception:
+                data = {"ok": False, "status": "invalid_response", "message": response.text[:300]}
+            data.setdefault("http_status", response.status_code)
+            return data
+        except Exception as e:
+            last_error = e
+    raise RuntimeError(str(last_error) if last_error else "license api request failed")
 
 
 def get_machine_id() -> str:
@@ -804,8 +926,9 @@ def load_license_file(path: str, machine_id: str) -> bool:
         return False
 
 
-def save_license_file(path: str, machine_id: str, activation_code: str):
-    now = datetime.datetime.now().isoformat(timespec="seconds")
+def save_license_file(path: str, machine_id: str, activation_code: str, cloud_data=None, purchase_code=""):
+    now = _license_now()
+    cloud_data = cloud_data if isinstance(cloud_data, dict) else {}
     license_data = {
         "version": 2,
         "product": LICENSE_PRODUCT_ID,
@@ -814,61 +937,158 @@ def save_license_file(path: str, machine_id: str, activation_code: str):
         "build_date": BUILD_DATE,
         "machine_id": machine_id,
         "activation_code": activation_code.strip(),
+        "license_id": _extract_license_id(cloud_data),
+        "purchase_code": str(purchase_code).strip(),
         "activated_at": now,
         "accepted_at": now,
+        "last_check_time": now,
         "terms_version": TERMS_VERSION,
         "privacy_version": PRIVACY_VERSION,
         "refund_version": REFUND_VERSION,
+        "cloud_status": _license_status(cloud_data),
     }
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(license_data, f, ensure_ascii=False, indent=2)
+    _write_license_data(path, license_data)
+
+
+def _activate_with_cloud(purchase_code: str, machine_id: str) -> dict:
+    payload = {
+        "purchase_code": purchase_code,
+        "purchaseCode": purchase_code,
+        "taobao_code": purchase_code,
+        "taobaoCode": purchase_code,
+        "code": purchase_code,
+        "license_key": purchase_code,
+        "key": purchase_code,
+        "machine_id": machine_id,
+        "machineId": machine_id,
+        "device_id": machine_id,
+        "deviceId": machine_id,
+        "fingerprint": machine_id,
+        "product": LICENSE_PRODUCT_ID,
+        "product_id": LICENSE_PRODUCT_ID,
+        "productId": LICENSE_PRODUCT_ID,
+        "tool_version": TOOL_VERSION,
+        "app_version": TOOL_VERSION,
+        "version": TOOL_VERSION,
+    }
+    data = _post_license_api("activate", payload)
+    status = _license_status(data)
+    if status != "active":
+        return {"ok": False, "status": status, "message": data.get("message") or data.get("error") or "授权码不可用。", "raw": data}
+    activation_code = _extract_activation_code(data)
+    if not activation_code:
+        return {"ok": False, "status": "missing_activation_code", "message": "云端未返回 activation_code。", "raw": data}
+    ok, message = verify_activation_code(activation_code, machine_id)
+    if not ok:
+        return {"ok": False, "status": "invalid_signature", "message": str(message), "raw": data}
+    return {"ok": True, "activation_code": activation_code, "cloud_data": data}
+
+
+def _check_with_cloud(license_data: dict, machine_id: str) -> dict:
+    payload = {
+        "purchase_code": license_data.get("purchase_code", ""),
+        "purchaseCode": license_data.get("purchase_code", ""),
+        "taobao_code": license_data.get("purchase_code", ""),
+        "taobaoCode": license_data.get("purchase_code", ""),
+        "code": license_data.get("purchase_code", ""),
+        "license_key": license_data.get("purchase_code", ""),
+        "key": license_data.get("purchase_code", ""),
+        "license_id": license_data.get("license_id", ""),
+        "licenseId": license_data.get("license_id", ""),
+        "machine_id": machine_id,
+        "machineId": machine_id,
+        "device_id": machine_id,
+        "deviceId": machine_id,
+        "fingerprint": machine_id,
+        "activation_code": license_data.get("activation_code", ""),
+        "activationCode": license_data.get("activation_code", ""),
+        "product": LICENSE_PRODUCT_ID,
+        "product_id": LICENSE_PRODUCT_ID,
+        "productId": LICENSE_PRODUCT_ID,
+        "tool_version": TOOL_VERSION,
+        "app_version": TOOL_VERSION,
+        "version": TOOL_VERSION,
+    }
+    data = _post_license_api("check", payload)
+    status = _license_status(data)
+    return {"ok": status == "active", "status": status, "raw": data, "message": data.get("message") or data.get("error") or ""}
+
+
+def _delete_license_and_exit(path: str, reason: str):
+    try:
+        if os.path.exists(path):
+            os.remove(path)
+    except Exception as e:
+        print(f"[DEBUG] failed to remove license file: {e}")
+    QMessageBox.critical(None, "授权已失效", f"当前授权状态无效：{reason}\n软件将退出。")
+    sys.exit(0)
+
+
+def _silent_cloud_check(path: str, machine_id: str, license_data: dict):
+    def worker():
+        try:
+            result = _check_with_cloud(license_data, machine_id)
+            status = result.get("status", "")
+            if result.get("ok"):
+                latest = dict(license_data)
+                latest["last_check_time"] = _license_now()
+                latest["cloud_status"] = "active"
+                cloud_data = result.get("raw") or {}
+                license_id = _extract_license_id(cloud_data)
+                if license_id:
+                    latest["license_id"] = license_id
+                _write_license_data(path, latest)
+                print("[DEBUG] cloud license check ok")
+            elif status in LICENSE_REVOKE_STATUSES:
+                print(f"[DEBUG] cloud license revoked: {status}")
+                try:
+                    if os.path.exists(path):
+                        os.remove(path)
+                finally:
+                    os._exit(0)
+            else:
+                print(f"[DEBUG] cloud license check failed softly: {status}")
+        except Exception as e:
+            print(f"[DEBUG] cloud license check network/soft failure: {e}")
+
+    threading.Thread(target=worker, daemon=True).start()
 
 
 def show_activation_dialog(machine_id: str):
     dialog = QtWidgets.QDialog()
-    dialog.setWindowTitle("高中/高考英语单词助手 v1.0 激活")
+    dialog.setWindowTitle("高中/高考英语单词助手 v1.0 联网激活")
     dialog.setModal(True)
-    dialog.setMinimumSize(600, 340)
+    dialog.setMinimumSize(600, 320)
 
     layout = QtWidgets.QVBoxLayout(dialog)
     layout.setContentsMargins(18, 18, 18, 18)
     layout.setSpacing(12)
 
-    title = QtWidgets.QLabel("高中/高考英语单词助手 v1.0 激活")
+    title = QtWidgets.QLabel("高中/高考英语单词助手 v1.0 联网激活")
     title.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
     title.setStyleSheet("font-size: 20px; font-weight: bold; color: #111827;")
     layout.addWidget(title)
 
-    hint = QtWidgets.QLabel("请复制下方本机识别码，通过购买平台发送给客服，获取当前电脑专属激活码。")
+    hint = QtWidgets.QLabel("请输入淘宝购买码。软件会联网完成授权绑定，激活成功后日常可离线使用，并按约定周期进行授权状态校验。")
     hint.setWordWrap(True)
     hint.setStyleSheet("font-size: 14px; color: #374151;")
     layout.addWidget(hint)
-
-    os_hint = QtWidgets.QLabel(f"推荐系统：{RECOMMENDED_OS_TEXT}")
-    os_hint.setWordWrap(True)
-    os_hint.setStyleSheet("font-size: 13px; color: #374151;")
-    layout.addWidget(os_hint)
-
-    refund_hint = QtWidgets.QLabel("提示：专属激活码一经生成或发送，非工具自身质量问题，原则上不支持无理由退款。")
-    refund_hint.setWordWrap(True)
-    refund_hint.setStyleSheet("font-size: 13px; color: #7c2d12; background: #fff7ed; padding: 8px; border-radius: 6px;")
-    layout.addWidget(refund_hint)
 
     machine_row = QtWidgets.QHBoxLayout()
     machine_input = QtWidgets.QLineEdit(machine_id)
     machine_input.setReadOnly(True)
     machine_input.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-    copy_machine_button = QtWidgets.QPushButton("复制识别码")
+    copy_machine_button = QtWidgets.QPushButton("复制本机识别码")
     machine_row.addWidget(machine_input, 1)
     machine_row.addWidget(copy_machine_button)
     layout.addLayout(machine_row)
 
-    activation_label = QtWidgets.QLabel("激活码：")
-    layout.addWidget(activation_label)
-    activation_input = QtWidgets.QPlainTextEdit()
-    activation_input.setPlaceholderText("请粘贴客服返回的激活码")
-    activation_input.setFixedHeight(100)
-    layout.addWidget(activation_input)
+    purchase_label = QtWidgets.QLabel("淘宝购买码：")
+    layout.addWidget(purchase_label)
+    purchase_input = QtWidgets.QLineEdit()
+    purchase_input.setPlaceholderText("例如：TEST-2026-DEBUG")
+    purchase_input.setMinimumHeight(36)
+    layout.addWidget(purchase_input)
 
     error_label = QtWidgets.QLabel("")
     error_label.setStyleSheet("color: #dc2626; font-size: 13px;")
@@ -878,35 +1098,34 @@ def show_activation_dialog(machine_id: str):
     button_row = QtWidgets.QHBoxLayout()
     button_row.addStretch(1)
     cancel_button = QtWidgets.QPushButton("退出")
-    activate_button = QtWidgets.QPushButton("激活")
+    activate_button = QtWidgets.QPushButton("联网激活")
     activate_button.setDefault(True)
     button_row.addWidget(cancel_button)
     button_row.addWidget(activate_button)
     layout.addLayout(button_row)
 
-    result = {"code": None}
+    result = {"purchase_code": None}
 
     def copy_machine_id():
         QtWidgets.QApplication.clipboard().setText(machine_id)
         copy_machine_button.setText("已复制")
 
-    def try_activate():
-        code = activation_input.toPlainText().strip()
-        ok, message = verify_activation_code(code, machine_id)
-        if ok:
-            result["code"] = code
-            dialog.accept()
-        else:
-            error_label.setText(str(message))
+    def accept_purchase_code():
+        purchase_code = purchase_input.text().strip()
+        if not purchase_code:
+            error_label.setText("请输入淘宝购买码。")
+            return
+        result["purchase_code"] = purchase_code
+        dialog.accept()
 
     copy_machine_button.clicked.connect(copy_machine_id)
     cancel_button.clicked.connect(dialog.reject)
-    activate_button.clicked.connect(try_activate)
+    activate_button.clicked.connect(accept_purchase_code)
+    purchase_input.returnPressed.connect(accept_purchase_code)
 
     if dialog.exec() == QtWidgets.QDialog.DialogCode.Accepted:
-        return result["code"]
+        return result["purchase_code"]
     return None
-
 
 def get_legal_notice_text() -> str:
     return (
@@ -925,23 +1144,26 @@ def get_legal_notice_text() -> str:
         "3. 内容说明\n"
         "本工具中的词汇、短语、例句、解析、练习内容等仅供学习参考。由于资料整理、版本差异或输入错误等原因，"
         "内容可能存在不完善之处。用户应结合教材、课堂内容、教师指导及官方考试要求进行学习和判断。\n\n"
+        "本工具内置练习题为模拟训练内容，不代表真实考试题目，不构成考试预测、押题承诺或提分保证。\n\n"
         "4. 使用说明\n"
         "请用户在正常电脑环境下使用本工具。因系统环境、第三方安全工具拦截、误删文件、非正常修改工具文件、"
         "非官方渠道获取等原因导致无法正常使用的，可联系客服协助排查。\n"
         f"本工具推荐使用环境为：{RECOMMENDED_OS_TEXT}。Windows 7、Windows 8、精简版系统、受限账户环境、"
         "网吧或学校机房受限系统、虚拟机环境、ARM 版 Windows、Mac、iPad、手机、安卓平板等环境暂不作为推荐环境，"
         "可能出现无法启动、无法激活、界面异常或数据保存异常等情况。\n\n"
-        "5. 使用限制\n"
-        "本工具采用单机使用方式。一个激活码原则上仅限绑定一台电脑使用。未经许可，请勿转卖、共享、破解、"
-        "修改、打包传播或用于其他商业分发行为。\n\n"
+        "5. 使用限制与设备绑定\n"
+        "本工具采用单机使用方式。一个购买码原则上仅限绑定一台电脑使用。购买码一经绑定设备后，如用户更换电脑、"
+        "重装系统、更换主板或因系统环境变化导致本机识别码改变，可能需要重新授权或通过购买平台联系客服处理。"
+        "未经许可，请勿转卖、共享、破解、修改、打包传播或用于其他商业分发行为。\n\n"
         "6. 隐私与本机识别码说明\n"
         "本工具为完成单机激活，会在本机生成本机识别码。本机识别码主要由设备环境信息经哈希计算生成，"
         "用于判断激活码是否适用于当前电脑。用户通过购买平台向客服提供本机识别码时，本方仅将其用于生成、"
         "核验和处理激活授权，不用于广告推广、用户画像或其他无关用途。本方会在合理必要范围内保存订单信息、"
         "本机识别码及激活处理记录，用于售后、换绑核验和纠纷处理。\n\n"
         "7. 本地数据\n"
-        "本工具可能在本机保存学习记录、错词记录或使用配置。请用户自行注意备份。因重装系统、清理工具、"
-        "磁盘损坏、误删文件等原因造成的数据丢失，本方可尽力协助，但不保证完全恢复。\n\n"
+        "本工具的错词记录、自主词库、学习记录或使用配置等数据主要保存在用户本机。删除软件、清理系统文件、"
+        "重装系统、更换设备、磁盘损坏或用户误删文件，可能导致本地学习数据丢失。请用户自行妥善备份重要学习数据。"
+        "因上述原因造成的本地学习数据丢失，不属于软件质量问题；本方可尽力协助排查，但不保证完全恢复。\n\n"
         "8. 退款说明\n"
         "本工具属于数字化学习辅助工具，具有可复制、可下载、可激活使用的特点。一经发送下载链接、提供安装包、"
         "生成或发送专属激活码、或完成激活后，非工具自身质量问题原则上不支持无理由退款。"
@@ -1010,35 +1232,6 @@ def show_user_notice_dialog(require_accept=True):
 
     notice_text = QtWidgets.QTextEdit()
     notice_text.setReadOnly(True)
-    notice_text.setPlainText(
-        "欢迎使用高中/高考英语单词助手 v1.0。请您在使用前仔细阅读以下内容。\n\n"
-        "1. 工具定位\n"
-        "本工具仅作为英语学习、复习和练习辅助使用，主要用于词汇、短语、不规则动词和练习内容的整理与复习。"
-        "本工具不属于官方教学系统、考试系统或认证软件，也不代表任何学校、考试机构或官方单位。\n\n"
-        "2. 学习效果说明\n"
-        "本工具旨在帮助用户提高复习效率，但学习效果因个人基础、学习时间、使用方法等因素而异。"
-        "本工具不承诺任何考试成绩、提分幅度、录取结果或学习结果。\n\n"
-        "3. 内容说明\n"
-        "本工具中的词汇、短语、例句、解析、练习内容等仅供学习参考。由于资料整理、版本差异或输入错误等原因，"
-        "内容可能存在不完善之处。用户应结合教材、课堂内容、教师指导及官方考试要求进行学习和判断。\n\n"
-        "4. 使用说明\n"
-        "请用户在正常电脑环境下使用本工具。因系统环境、第三方安全工具拦截、误删文件、非正常修改工具文件、"
-        "非官方渠道获取等原因导致无法正常使用的，可联系客服协助排查。\n\n"
-        "5. 使用限制\n"
-        "本工具采用单机使用方式。一个激活码原则上仅限绑定一台电脑使用。未经许可，请勿转卖、共享、破解、"
-        "修改、打包传播或用于其他商业分发行为。\n\n"
-        "6. 本地数据\n"
-        "本工具可能在本机保存学习记录、错词记录或使用配置。请用户自行注意备份。因重装系统、清理工具、"
-        "磁盘损坏、误删文件等原因造成的数据丢失，本方可尽力协助，但不保证完全恢复。\n\n"
-        "7. 服务支持\n"
-        "如使用过程中遇到安装、激活或功能问题，请通过购买平台联系客服，并提供订单信息、问题截图和本机识别码，"
-        "以便协助处理。\n\n"
-        "8. 责任说明\n"
-        "在法律允许范围内，本工具按现状提供学习辅助服务。本方不对因使用或无法使用本工具导致的考试结果不理想、"
-        "学习计划变化、间接损失等承担责任。但依法不能免除的责任除外。\n\n"
-        "9. 同意使用\n"
-        "用户继续安装、激活或使用本工具，即表示已阅读、理解并同意以上内容。"
-    )
     notice_text.setPlainText(get_legal_notice_text())
     notice_text.setStyleSheet("font-size: 14px;")
     layout.addWidget(notice_text, 1)
@@ -1077,101 +1270,54 @@ def check_licensing_gate():
     machine_id = get_machine_id()
 
     if os.path.exists(license_path):
-        if load_license_file(license_path, machine_id):
-            print("[DEBUG] machine-bound license verified from file")
-            return True
-        print("[DEBUG] existing license is missing, invalid, or not bound to this machine")
+        try:
+            license_data = _load_license_data(license_path)
+            activation_code = str(license_data.get("activation_code", "")).strip()
+            ok, message = verify_activation_code(activation_code, machine_id)
+            if ok:
+                print("[DEBUG] local machine-bound license verified")
+                if _license_check_due(license_data):
+                    print("[DEBUG] cloud license check is due; starting silent check")
+                    _silent_cloud_check(license_path, machine_id, license_data)
+                return True
+            print(f"[DEBUG] local license invalid: {message}")
+        except Exception as e:
+            print(f"[DEBUG] existing license read/verify error: {e}")
 
     if not show_user_notice_dialog():
         sys.exit(0)
 
     while True:
-        activation_code = show_activation_dialog(machine_id)
-        if not activation_code:
+        purchase_code = show_activation_dialog(machine_id)
+        if not purchase_code:
             sys.exit(0)
         try:
-            if not os.path.exists(license_dir):
-                os.makedirs(license_dir)
-            save_license_file(license_path, machine_id, activation_code)
-            QMessageBox.information(None, "激活成功", "当前电脑已激活，可以开始使用高中/高考英语单词助手 v1.0。")
+            result = _activate_with_cloud(purchase_code, machine_id)
+        except Exception as e:
+            QMessageBox.warning(None, "联网激活失败", f"无法连接授权服务器，请检查网络后重试。\n\n{e}")
+            continue
+
+        if not result.get("ok"):
+            status = result.get("status", "unknown")
+            message = result.get("message", "购买码无效或不可用。")
+            QMessageBox.warning(None, "激活失败", f"云端返回：{status}\n{message}")
+            continue
+
+        try:
+            os.makedirs(license_dir, exist_ok=True)
+            save_license_file(
+                license_path,
+                machine_id,
+                result["activation_code"],
+                cloud_data=result.get("cloud_data") or {},
+                purchase_code=purchase_code,
+            )
+            QMessageBox.information(None, "激活成功", "当前电脑已联网激活，可以开始使用高中/高考英语单词助手 v1.0。")
             return True
         except Exception as e:
             QMessageBox.critical(None, "激活失败", f"保存授权文件失败:\n{e}")
             continue
 
-    """ 
-    【无人值守发卡网专属大闸】
-    不需要用户发指纹给老板！老板提前在发卡网批量上架卡密。
-    用户输入卡密后，软件执行单机离线哈希算法校验，过了就一辈子写入C盘安全区！
-    """
-    import hashlib
-    
-   # 🚀 3秒钟物理替换：一劳永逸干掉死的 C 盘公用路径，换成100%有权写入的用户家目录
-    LICENSE_DIR = os.path.join(os.path.expanduser("~"), ".HighSchoolEnglishHelper")
-    LICENSE_PATH = os.path.join(LICENSE_DIR, "licensing.dat")
-    
-    # 【掌柜看这里】：这是你的终极发卡网通用算法暗号！
-    # 只要买家在发卡网买到的卡密，满足【前8位随机，后4位是前8位+盐的MD5前4位】，软件就物理放行！
-    VAL_SALT = "GAOKAO-PASSED-2026-SECRET-SALT"
-
-    def verify_card_format(card_str):
-        """ 离线算法校验：检查这个卡密是不是你发卡网上卖出的正版通用卡密 """
-        card_str = card_str.strip().upper()
-        if len(card_str) != 12:  # 卡密固定 12 位
-            return False
-        prefix = card_str[:8]   # 前 8 位是随机序列号
-        suffix = card_str[8:]   # 后 4 位是校验防伪码
-        
-        # 掌柜在后台批量生成的防伪校验
-        expect_suffix = hashlib.md5((prefix + VAL_SALT).encode()).hexdigest().upper()[:4]
-        return suffix == expect_suffix
-
-    # 2. 0.01秒免密全自动秒开放行链路（只要C盘有激活结婚证，直接无感秒开）
-    if os.path.exists(LICENSE_PATH):
-        try:
-            with open(LICENSE_PATH, "r", encoding="utf-8") as f:
-                saved_key = f.read().strip()
-            print(f"[DEBUG] found existing license file: {saved_key}")
-            if verify_card_format(saved_key):
-                print("[DEBUG] license verified from file")
-                return True 
-        except Exception as e:
-            print(f"[DEBUG] license read error: {e}")
-            pass
-
-    # 3. 强制弹窗拦截大闸（用户半夜买完卡密，第一次打开软件直接输入）
-    if not show_user_notice_dialog():
-        sys.exit(0)
-
-    while True:
-        input_key, ok = QtWidgets.QInputDialog.getText(
-            None, 
-            "正版授权激活验证", 
-            "欢迎使用《高中/高考英语单词助手 v1.0》完全体\n\n请在下方输入您在自动发卡网购买的正版授权卡密:",
-            QLineEdit.EchoMode.Normal
-        )
-        if not ok:
-            sys.exit(0) # 点取消直接退出
-        
-        input_key = input_key.strip().upper()
-        
-        # 核心：直接用通用算法校验用户输入的卡密，不问他是谁，不看他指纹！
-        if verify_card_format(input_key):
-            try:
-                if not os.path.exists(LICENSE_DIR):
-                    os.makedirs(LICENSE_DIR)
-                with open(LICENSE_PATH, "w", encoding="utf-8") as f:
-                    f.write(input_key)
-                QMessageBox.information(None, "激活成功", "正版卡密激活成功！已与当前设备绑定完成。\n欢迎进入完全体英语助手工作站！")
-                return True
-            except Exception as e:
-                QMessageBox.critical(None, "写入系统异常", f"激活配置写入失败: {e}")
-                sys.exit(0)
-        else:
-            QMessageBox.warning(None, "校验失败", "您输入的正版授权卡密格式有误或不存在，请检查输入！")
-
-
-# ============ [9. 生产环境单实例锁与程序总入口] ============
 if __name__ == "__main__":
     watermark_settings, qt_argv = parse_watermark_args(sys.argv)
     sys.argv = qt_argv

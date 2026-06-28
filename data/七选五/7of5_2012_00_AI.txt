@@ -1,6 +1,6 @@
 FILENAME: 7of5_2012_00_AI.txt
 YEAR: 2012
-CAT: （新课标）七选五模拟
+CAT: （高考方向）七选五模拟
 TITLE: Workplace Wellness: Four Steps for Managing Internship Stress
 Everyone feels pressure from time to time, especially when starting a new internship. 71 Some ways of dealing with stress—like complaining loudly or avoiding tasks—don’t solve much. But other ways, like talking to a mentor you trust, can lead you to solving your problem or at least feeling more relaxed.
 Try taking these four steps the next time you are stressed at work:

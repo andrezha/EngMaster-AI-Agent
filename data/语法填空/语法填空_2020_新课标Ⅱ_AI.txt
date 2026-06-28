@@ -1,6 +1,6 @@
-FILENAME: 语法填空_2020_新课标Ⅱ_AI.txt
+FILENAME: 语法填空_2020_高考方向_AI.txt
 YEAR: 2020
-CAT: 语法填空_2020_新课标Ⅱ_语法填空模拟
+CAT: 语法填空_2020_高考方向_语法填空模拟
 TITLE: Preparing for the Graduation Ceremony
 A graduation ceremony is a 61 (celebrate) marking the end of the school year and the beginning of a new journey. This is why decorating with banners, photos and flowers 62 (carry) special meaning. They represent the students 63 (come) of age and best wishes for future success.
 These are some of the most popular items used in many schools:

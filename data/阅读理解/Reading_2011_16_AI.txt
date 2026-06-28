@@ -1,6 +1,6 @@
 FILENAME: Reading_2011_16_AI.txt
 YEAR: 2011
-CAT: （新课标）阅读理解模拟
+CAT: （高考方向）阅读理解模拟
 TITLE: The History of Public Notices
 The term "public notice" refers to any official announcement that brings information to the attention of the community. Throughout history, notices have been an effective way to share news and rules. In the Middle Ages, leaders used "heralds" to announce messages orally in town squares to inform the public. When printing was developed in the fifteenth century, notice sheets could be produced easily and were either posted on church doors or placed in town halls.
 By the end of the seventeenth century, when journals were beginning to be read by more people, printed notices became an important way to share community updates. The City Journal was the first to set aside a section just for public announcements. This was so successful that by the end of the century, several offices started dedicated systems for making official notices for the public.

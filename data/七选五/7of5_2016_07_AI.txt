@@ -1,6 +1,6 @@
 FILENAME: 7of5_2016_07_AI.txt
 YEAR: 2016
-CAT: （新课标Ⅰ）七选五模拟
+CAT: （高考方向）七选五模拟
 TITLE: Digital Privacy and Information Security
 Secret codes keep our digital messages private. Banks, tech companies, and government offices use these codes to protect data, especially when information is shared online.
 People have used hidden messages for thousands of years. 36 Finding ways to read secret messages is always a challenge for those who create them. The study of making and reading these codes is known as cryptography.

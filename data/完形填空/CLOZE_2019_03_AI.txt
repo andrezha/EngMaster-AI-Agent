@@ -1,6 +1,6 @@
 FILENAME: CLOZE_2019_03_AI.txt
 YEAR: 2019
-CAT: 完形填空_2019_新课标Ⅲ_模拟
+CAT: 完形填空_2019_高考方向_模拟
 TITLE: Lighting the Underground Study
 The central library of the university is built deep into the ground and does not get natural light in the lower study halls — 41 most of the academic year.
 "Of course, we 42 it when the sun is out," says Leo, who manages the library facilities. "We see the sky is 43 outside, but down in the basement it is much darker — it is like on a 44 day."

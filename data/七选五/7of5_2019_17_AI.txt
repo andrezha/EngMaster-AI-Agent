@@ -1,6 +1,6 @@
 FILENAME: 7of5_2019_17_AI.txt
 YEAR: 2019
-CAT: （新课标Ⅱ）七选五模拟
+CAT: （高考方向）七选五模拟
 TITLE: Motivation for Internship Tasks
 Imagine an intern standing before a difficult task and asking, "Should I try this?" This is what motivation, or the lack of it, can do. Motivation and goal setting are two parts of the same process. 36 Like the intern facing the task, you will remain stuck.
 37 More than that, how should you stay motivated to reach your goal? First, you need to evaluate yourself—your skills, your strengths, and your weaknesses. Only then should you set your targets.

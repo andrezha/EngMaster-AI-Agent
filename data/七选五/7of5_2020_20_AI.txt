@@ -1,6 +1,6 @@
 FILENAME: 7of5_2020_20_AI.txt
 YEAR: 2020
-CAT: （新课标Ⅱ）七选五模拟
+CAT: （高考方向）七选五模拟
 TITLE: Digital Communication in Student Organizations
 In student groups, messaging apps are growing fast, with many users for both work and social life. 36 It has been reported that a large majority of members in student organizations now use digital tools for their daily tasks.
 Written messages can often seem cold or unclear. Using digital icons or emojis can add a bit of humor and help keep your meaning clear. 37, encouraging better and more frequent talk among members.

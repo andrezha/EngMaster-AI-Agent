@@ -1,6 +1,6 @@
-FILENAME: 语法填空_2016_新课标ⅲ_AI.txt
+FILENAME: 语法填空_2016_高考方向_AI.txt
 YEAR: 2016
-CAT: 语法填空_2016_新课标ⅲ_语法填空模拟
+CAT: 语法填空_2016_高考方向_语法填空模拟
 TITLE: The Evolution of Digital Pens
 In much of the world, especially the tech-driven cultures of Japan, Korea, 61 Singapore, digital tablets are often used with styluses (digital pens).
 Styluses are usually two long, thin pieces of plastic or metal. They can also be made of specialized glass or composite materials. Sometimes these pens are quite artistic. Truly high-end styluses might 62 (make) of high-grade aluminum with custom carvings. Skilled designers also combine various materials 63 (create) unique designs.

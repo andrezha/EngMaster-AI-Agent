@@ -1,6 +1,6 @@
 FILENAME: Cloze_2021_02_AI.txt
 YEAR: 2021
-CAT: 完形填空_全国卷_模拟
+CAT: 完形填空_高考方向_模拟
 TITLE: The Science Fair Incident
 It's the local wildlife that deserves at least part of the blame for getting Leo Miller banned from the Science Center in Seattle.
 Miller was 21 at the center for a competition and planning to 22 his project to some judges in the area. They had asked him to 23 a delicate robot model from his school. So he 24 a case full of parts. As he was 25 that it would be too humid, he 26 it out on a bench near an open vent. He thought his model was 27 and well protected and he 28.

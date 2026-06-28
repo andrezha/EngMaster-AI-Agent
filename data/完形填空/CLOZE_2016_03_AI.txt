@@ -1,6 +1,6 @@
 FILENAME: CLOZE_2016_03_AI.txt
 YEAR: 2016
-CAT: 完形填空_2016_（新课标ⅲ）_模拟
+CAT: 完形填空_2016_（高考方向）_模拟
 TITLE: The True Leader
 When I was 15, my only goal was to become the top coder on our school team. That meant 41 Leo, who was the best 42 in our club.
 The competition season started in winter, and all autumn I worked hard. I took my laptop everywhere for 43.

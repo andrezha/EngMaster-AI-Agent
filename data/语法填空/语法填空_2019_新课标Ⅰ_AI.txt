@@ -1,6 +1,6 @@
-FILENAME: 语法填空_2019_新课标Ⅰ_AI.txt
+FILENAME: 语法填空_2019_高考方向_AI.txt
 YEAR: 2019
-CAT: 语法填空_2019_新课标Ⅰ_语法填空模拟
+CAT: 语法填空_2019_高考方向_语法填空模拟
 TITLE: The Status of Rare Manuscripts
 Rare manuscripts are found in national libraries and some private collections as far east as Kyoto. While they are uncommon in local shops, there is evidence 61 they exist in specialized archives across the continent. It is difficult to figure out a total number of these books as much of the collection has been 62 (poor) catalogued; however, experts calculate that there are about 15,000-20,000 rare items worldwide.
 Modern methods 63 tracking these collections have been used only since the 1990s, and are expensive 64 (apply) consistently over many libraries. In recent years some researchers in Europe 65 (report) increases in new discoveries, leading to a 66 (believe) that more items are being found. Scholars have responded by 67 (note) that high prices may be encouraging sellers to show their hidden books, leading to the illusion that the supply is 68 (high) than it actually is. Of 69 twelve recognized categories, four are growing, three 70 (be) stable, and five lack enough data.
