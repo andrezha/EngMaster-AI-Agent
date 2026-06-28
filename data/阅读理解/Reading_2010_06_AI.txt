@@ -1,6 +1,6 @@
 FILENAME: Reading_2010_06_AI.txt
 YEAR: 2010
-CAT: （新课标Ⅱ）阅读理解模拟
+CAT: （高考方向）阅读理解模拟
 TITLE: Testing Tech for a Living
 When you are testing a new app on the rainy streets of Seattle, the noise of the city seems far away. Wait! This is not just fun—you have a report to finish!
 Here lies the challenge for tech reviewer and software critic Leo Vance. “I always loved gadgets and always liked to find bugs, but it never occurred to me that I could make a living doing both,” Vance said. Now you can find his reviews everywhere—on major tech blogs, in magazines, or in his latest book, The Simple Guide to Modern Apps.

@@ -1,6 +1,6 @@
 FILENAME: Reading_2011_17_AI.txt
 YEAR: 2011
-CAT: （新课标）阅读理解模拟
+CAT: （高考方向）阅读理解模拟
 TITLE: Design for the Left-Handed
 While standard tools may be efficient, they are just plain uncomfortable it seems for some, particularly when it comes to using office supplies and laboratory equipment.
 The Left-Handers Society (LHS), which was formed recently to campaign for the needs of left-handed people, has turned its attention to schools and workplaces. Desks that are the wrong way around, scissors that don't cut well, and computer mice that are hard to use all make life difficult for those who are not right-handed, it says.

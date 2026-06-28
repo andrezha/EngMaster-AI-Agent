@@ -1,6 +1,6 @@
 FILENAME: CLOZE_2019_01_AI.txt
 YEAR: 2019
-CAT: 完形填空_2019_新课标Ⅰ_模拟
+CAT: 完形填空_2019_高考方向_模拟
 TITLE: The Digital Bridge in the Mountains
 Every year thousands of volunteers travel to remote mountain villages to help build digital networks. They 41 with them heavy technical equipment. The 42 might disturb the quiet life of the local people. The traditional ways are fading, changing the 43 of these ancient communities.
 Hearing these reports, I am 44 about the project — some experts describe it as a "risky" social experiment.

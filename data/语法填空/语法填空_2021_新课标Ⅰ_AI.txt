@@ -1,6 +1,6 @@
-FILENAME: 语法填空_2021_新课标Ⅰ_AI.txt
+FILENAME: 语法填空_2021_高考方向_AI.txt
 YEAR: 2021
-CAT: 语法填空_2021_新课标Ⅰ_语法填空模拟
+CAT: 语法填空_2021_高考方向_语法填空模拟
 TITLE: The Concept of Digital Learning
 Online education is commonly regarded as low impact learning for remote places. It is different from traditional schools because it allows the student to become 61 (educate) about various subjects — both in terms of technical skills and theoretical knowledge, and often saves money for families and benefits the 62 (develop) of the local community.
 Digital learning has 63 (it) origin with the early internet tools of the 1990s. It was not widely accepted as a study concept 64 the late 2010s. During that time, increasing digital skills made it popular.

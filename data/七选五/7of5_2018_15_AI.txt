@@ -1,6 +1,6 @@
 FILENAME: 7of5_2018_15_AI.txt
 YEAR: 2018
-CAT: （新课标ⅲ）七选五模拟
+CAT: （高考方向）七选五模拟
 TITLE: The Culture of Campus Clubs
 Before there were formal classes, there was the tradition of gathering in groups. Joining a club expresses shared interests, creativity, teamwork, and everything in between.
 36 Campus clubs are everywhere. We see them from the sports fields to the science labs, from arts to technology. We meet at weekly sessions, competitions, and social events just to share our passions.

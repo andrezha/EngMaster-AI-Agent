@@ -1,6 +1,6 @@
 FILENAME: Cloze_2021_01_AI.txt
 YEAR: 2021
-CAT: 完形填空_新课标Ⅰ_模拟
+CAT: 完形填空_高考方向_模拟
 TITLE: Beyond the Technical Support
 Simply saying thank you doesn't seem enough in certain situations. I was considering this while working as a tech 41 just a few weeks ago. And it came to me then how much easier it would be if we had a range of words that express different 42 of gratitude.
 My thoughts were soon 43. We had an elderly user who was 44 from a major software crash. One afternoon, while 45 to log into her account, her system crashed from what was 46 discovered to be a hardware failure. The crash was disastrous, 47 the emergency repair team and good teamwork. But the system recovered, though 48, and was ready for use after four days.

@@ -1,6 +1,6 @@
-FILENAME: 语法填空_2017_新课标Ⅰ_AI.txt
+FILENAME: 语法填空_2017_高考方向_AI.txt
 YEAR: 2017
-CAT: 语法填空_2017_新课标Ⅰ_语法填空模拟
+CAT: 语法填空_2017_高考方向_语法填空模拟
 TITLE: The Impact of Digital Screen Time
 There has been a recent trend in the office workplace toward shorter meetings and less screen time. This trend, which was started by health experts 61 a method of reducing eye strain, has had some unintended side 62 (effect) such as lower productivity—the very thing the managers were trying to improve.
 Efficiency and communication are very important parts of a project. They are required 63 (process) the information that we receive, to solve problems and for several other professional 64 functions. When meetings 64 (remove) from the schedule, the team feels as if it is missing something. As 65 result, people will send more emails to try to make up for that something missing. Even 66 (bad), the amount of instant messaging that people use goes up. Instant messaging 67 (be) full of distractions; by 68 (watch) screens more often, people will get more information than they can actually handle.

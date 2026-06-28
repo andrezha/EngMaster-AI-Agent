@@ -1,6 +1,6 @@
-FILENAME: 语法填空_2016_新课标ⅱ_AI.txt
+FILENAME: 语法填空_2016_高考方向_AI.txt
 YEAR: 2016
-CAT: 语法填空_2016_新课标ⅱ_语法填空模拟
+CAT: 语法填空_2016_高考方向_语法填空模拟
 TITLE: Balancing Studies and Internships
 If you feel overwhelmed by duties during your internship, you should take a moment to look back and identify those of 61 (great) and less importance. Then, handle the most urgent tasks first so you’ll feel a real sense of 62 (achieve). Leaving the less important emails until tomorrow 63 (be) often acceptable.
 Most of us are more focused 64 our work in the morning than we are later in the afternoon. So, get an early start and try to be as efficient 65 possible before lunch. This will give you the confidence you need to get you through the rest of the day and go home feeling satisfied.

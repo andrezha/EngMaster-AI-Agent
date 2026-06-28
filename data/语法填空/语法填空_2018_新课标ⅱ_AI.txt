@@ -1,6 +1,6 @@
-FILENAME: 语法填空_2018_新课标ⅱ_AI.txt
+FILENAME: 语法填空_2018_高考方向_AI.txt
 YEAR: 2018
-CAT: 语法填空_2018_新课标ⅱ_语法填空模拟
+CAT: 语法填空_2018_高考方向_语法填空模拟
 TITLE: The Shift in Campus Technology
 Study habits have changed in our university — and so too has its primary device. Since 2015, the students 61 (use) more tablets than laptops. Tablet sales have jumped nearly 150 percent over 62 past 10 years, while laptops have increased only 10 percent.
 A preference for mobility is 63 (actual) behind the change: An important part of these tablets is used to handle daily notes, emails, and projects. Another reason for the tablet’s rise: The university encourages students to use tablets instead of paper 64 (improve) resource efficiency. Tablets use less power 65 laptops and create less physical 66 (waste) in the campus library. This switch has decreased the use of paper in the major departments and made study materials 67 (easy) for students to carry.

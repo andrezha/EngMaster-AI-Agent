@@ -1,6 +1,6 @@
 FILENAME: Reading_2010_00_AI.txt
 YEAR: 2010
-CAT: （新课标Ⅰ）阅读理解模拟
+CAT: （高考方向）阅读理解模拟
 TITLE: Future Tech Hub and Virtual Reality Exhibition
 Welcome to the world-famous lab where modern smart technology was first developed in 2015. The facility remained under the management of the original research team until 2024. The Hub has welcomed visitors from across the globe for nearly a decade.
 ◆Enter through the Innovation Centre and see the highly-praised exhibition Tech World, a lively and full introduction to the development and future of AI.

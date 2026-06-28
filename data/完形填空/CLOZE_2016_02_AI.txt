@@ -1,6 +1,6 @@
 FILENAME: CLOZE_2016_02_AI.txt
 YEAR: 2016
-CAT: 完形填空_2016_（新课标ⅱ）_模拟
+CAT: 完形填空_2016_（高考方向）_模拟
 TITLE: The Human Connection
 Hundreds of people have formed impressions of you through that small screen on your desk. And they’ve never actually 41 you. Everything they know about you 42 through this device, sometimes from hundreds of miles away. 43 they feel they can know you 44 from the tone of your emails or voice. That’s how powerful the 45 is.
 Powerful, yes, but not always 46. For years I dealt with my IT support technician only by chat. Sam, my faceless helper whom I’d never met 47, solved my complex software issues perfectly. But his short messages really 48 me. I sometimes wished to 49 another technician.

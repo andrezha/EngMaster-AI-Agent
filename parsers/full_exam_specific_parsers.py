@@ -4,7 +4,7 @@ import re
 
 def _parse_reading_items_full_exam_robust(q_text, analysis_text):
     """
-    【全真战场专用】解析阅读理解题目的具体逻辑。
+    【整卷模拟练习专用】解析阅读理解题目的具体逻辑。
     """
     items = [] # Initialize items list
     sequential_answers = re.findall(r'^\s*([A-G])\s*[．\.]', analysis_text, re.MULTILINE)
@@ -66,7 +66,7 @@ def _parse_reading_items_full_exam_robust(q_text, analysis_text):
 
 def _parse_cloze_items_full_exam(options_text, analysis_text):
     """
-    【全真战场专用】解析完形填空题目的具体逻辑。
+    【整卷模拟练习专用】解析完形填空题目的具体逻辑。
     """
     items = []
     explicit_ans_map = dict(re.findall(r'(\d+)\s*[\.\)]\s*([A-D])(?:\s*[\.\)]|\s|$)', analysis_text)) # QID. A.
@@ -83,7 +83,7 @@ def _parse_cloze_items_full_exam(options_text, analysis_text):
 
 def _parse_seven_five_items_full_exam(options_text, analysis_text, passage):
     """
-    【全真战场专用】解析七选五题目的具体逻辑。
+    【整卷模拟练习专用】解析七选五题目的具体逻辑。
     从 options_text 中提取选项列表，从 passage 中提取空白题号，从 analysis_text 中匹配答案。
     """
     print(f"DEBUG: _parse_seven_five_items_full_exam received options_text (len {len(options_text)}): {options_text[:200]}...")
@@ -114,7 +114,7 @@ def _parse_seven_five_items_full_exam(options_text, analysis_text, passage):
 
 def _parse_grammar_items_full_exam(q_text, analysis_text):
     """
-    【全真战场专用】解析语法填空题目的具体逻辑。
+    【整卷模拟练习专用】解析语法填空题目的具体逻辑。
     从 q_text 中提取题目内容（带括号的词），从 analysis_text 中匹配答案。
     """
     # In this context, q_text contains "QID. (word)" format.

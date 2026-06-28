@@ -1,6 +1,6 @@
 FILENAME: Reading_2010_09_AI.txt
 YEAR: 2010
-CAT: （新课标Ⅱ）阅读理解模拟
+CAT: （高考方向）阅读理解模拟
 TITLE: The Evolution of Digital Symbols
 How digital symbols came into use is quite recent. We know that tech designers created certain icons, in one way or another, to represent actions and feelings, so that users could navigate devices easily. Later, global groups agreed upon certain signs, called "standard icons," which could be recognized across different platforms. These signs, whether used in apps or messages, are called digital symbols.
 The power of these symbols lies in their context—the ideas they bring up in our minds. Symbols become filled with meaning through shared experience; the more we use them, the more certain icons bring back the emotions of our past conversations. As we interact more online, the number of symbols that carry deep meaning for us increases.

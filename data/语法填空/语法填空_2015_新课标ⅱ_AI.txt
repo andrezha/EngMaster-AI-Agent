@@ -1,6 +1,6 @@
-FILENAME: 语法填空_2015_新课标ⅱ_AI.txt
+FILENAME: 语法填空_2015_高考方向_AI.txt
 YEAR: 2015
-CAT: 语法填空_2015_新课标ⅱ_语法填空模拟
+CAT: 语法填空_2015_高考方向_语法填空模拟
 TITLE: Smart Sustainable Architecture
 The glass towers 61 (design) by the modern architects of the city are admired by even 62 most traditional of builders. In addition to their visual beauty, what makes these structures admirable is their 63 (able) to save energy without 64 (use) expensive fuel.
 Walls made of special glass take in the sunlight on cold days and give out that warmth 65 (slow) during the night, thus heating the room. When a new day begins, the surfaces have released their heat and are now cool enough 66 (lower) the temperature during the hot afternoon; 67 the same time, they store energy again for the evening. This process 68 (go) on year after year. The walls adjust to the light. During the day, they protect the interior and at night they provide warmth, acting as a perfect balance for the outdoor climate. As 69 (nature) thinkers, these architects figured out exactly 70 how thick the glass layers needed to be to make the system work.
