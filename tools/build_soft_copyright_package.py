@@ -17,6 +17,8 @@ DOCS = OUT / "01_正式文档"
 SOURCE = OUT / "02_源代码材料"
 CHECK = OUT / "03_待填写与截图清单"
 ARCHIVE = OUT / "99_草稿备份"
+SCREENSHOT_SRC = ROOT / "soft_copyright_materials" / "03_用户操作说明书" / "截图"
+SCREENSHOT_OUT = DOCS / "截图"
 
 TODAY = "2026-06-28"
 SOFTWARE_NAME = "高中-高考英语单词助手软件"
@@ -100,6 +102,18 @@ def _numbered(doc: Document, items: list[str]):
         run.font.size = Pt(10.5)
 
 
+def _screenshot(doc: Document, filename: str, caption: str):
+    path = SCREENSHOT_SRC / filename
+    if not path.exists():
+        _p(doc, f"【待补截图：{caption}】")
+        return
+    paragraph = doc.add_paragraph()
+    paragraph.alignment = 1
+    paragraph.add_run().add_picture(str(path), width=Cm(15.5))
+    caption_p = doc.add_paragraph(f"图：{caption}")
+    caption_p.alignment = 1
+
+
 def build_user_manual():
     doc = Document()
     _set_doc_defaults(doc)
@@ -108,7 +122,7 @@ def build_user_manual():
     doc.add_heading(f"{SOFTWARE_NAME} {VERSION}", 0)
     doc.add_heading("用户操作说明书", 1)
     _p(doc, f"文档日期：{TODAY}")
-    _p(doc, "说明：本文档为正式提交前的说明书初版，截图和申请人信息需由开发者本人最终确认。")
+    _p(doc, "说明：本文档为软件著作权登记操作说明书，界面截图取自当前 V1.0 软件实际运行版本。")
     doc.add_page_break()
 
     doc.add_heading("一、软件简介", 1)
@@ -132,7 +146,7 @@ def build_user_manual():
         ("软件简称", SHORT_NAME),
         ("版本号", VERSION),
         ("推荐运行环境", "Windows 10 / Windows 11 64 位系统"),
-        ("网络需求", "首次授权激活需要联网；激活成功后日常启动优先进行本地授权校验，达到设定周期后进行后台授权状态校验。"),
+        ("运行方式", "纯单机运行；授权激活采用单机激活码和本地授权校验。"),
     ]
     for row, (k, v) in zip(table.rows, rows):
         _set_cell_text(row.cells[0], k)
@@ -144,13 +158,15 @@ def build_user_manual():
         [
             "打开软件所在目录，双击可执行程序启动软件。",
             "首次启动或授权文件不存在时，软件会显示用户须知与激活窗口。",
-            "用户阅读并确认用户须知后，在激活窗口输入购买码。",
-            "软件将购买码和本机机器码提交至授权服务进行校验。",
+            "用户阅读并确认用户须知后，在激活窗口输入单机激活码。",
+            "软件根据单机激活码和本机机器码进行本地授权校验。",
             "授权成功后，软件保存本地授权文件，并进入主界面。",
-            "购买码原则上仅限绑定一台电脑。更换电脑、重装系统、更换主板或系统环境变化导致机器码改变时，可能需要重新授权或联系购买渠道处理。",
+            "单机激活码原则上仅限绑定一台电脑。更换电脑、重装系统、更换主板或系统环境变化导致机器码改变时，可能需要重新授权或联系购买渠道处理。",
         ],
     )
-    _p(doc, "截图位置：用户须知窗口、购买码输入窗口、激活成功提示、主界面。")
+    _screenshot(doc, "08_用户须知与免责声明.png", "用户须知与免责声明界面")
+    _screenshot(doc, "09_单机激活界面.png", "单机激活界面")
+    _screenshot(doc, "01_主界面_词汇闯关.png", "软件主界面")
 
     doc.add_heading("四、高考 3800 词闯关", 1)
     _numbered(
@@ -163,7 +179,7 @@ def build_user_manual():
             "系统显示答题结果，并根据答题情况记录错题。",
         ],
     )
-    _p(doc, "截图位置：词汇闯关页面、答题结果页面。")
+    _screenshot(doc, "01_主界面_词汇闯关.png", "高考 3800 词闯关界面")
 
     doc.add_heading("五、词汇表与资料查看", 1)
     _numbered(
@@ -176,7 +192,7 @@ def build_user_manual():
             "根据复习需要选择隐藏英文或隐藏中文。",
         ],
     )
-    _p(doc, "截图位置：词汇表页面、搜索状态、分页状态。")
+    _screenshot(doc, "02_高考3800词汇表.png", "高考 3800 词汇表界面")
 
     doc.add_heading("六、自主词库管理", 1)
     _numbered(
@@ -189,7 +205,7 @@ def build_user_manual():
             "自主词库可用于个人化词汇复习。",
         ],
     )
-    _p(doc, "截图位置：自主词库页面、新增词汇、编辑词汇。")
+    _screenshot(doc, "03_自主词库.png", "自主词库管理界面")
 
     doc.add_heading("七、短语与不规则动词练习", 1)
     _numbered(
@@ -202,6 +218,8 @@ def build_user_manual():
             "用户可进入相应列表查看和复习错题。",
         ],
     )
+    _screenshot(doc, "04_短语与不规则动词练习.png", "短语与不规则动词练习界面")
+    _screenshot(doc, "05_短语与不规则动词列表.png", "短语与不规则动词列表界面")
 
     doc.add_heading("八、专项题型模拟练习", 1)
     _numbered(
@@ -214,7 +232,7 @@ def build_user_manual():
             "系统显示得分、正确答案和参考解析。",
         ],
     )
-    _p(doc, "截图位置：题型选择页面、答题页面、判分结果页面。")
+    _screenshot(doc, "06_高考题型模拟练习.png", "专项题型模拟练习界面")
 
     doc.add_heading("九、整卷模拟练习", 1)
     _numbered(
@@ -227,7 +245,7 @@ def build_user_manual():
             "用户可根据结果进行复盘。",
         ],
     )
-    _p(doc, "截图位置：整卷模拟练习页面、整卷结果页面。")
+    _screenshot(doc, "07_整卷模拟练习.png", "整卷模拟练习界面")
 
     doc.add_heading("十、学习资料打印表生成", 1)
     _numbered(
@@ -253,15 +271,15 @@ def build_user_manual():
     doc.add_heading("十二、常见问题", 1)
     qa = [
         ("软件无法启动", "请确认运行环境是否为 Windows 10 / Windows 11 64 位系统，并确认软件文件未被删除或移动。"),
-        ("购买码无法通过", "请确认购买码是否输入完整、网络连接是否正常，并联系购买渠道确认购买码状态。"),
-        ("更换电脑后购买码无法使用", "购买码原则上仅限绑定一台电脑。如更换电脑、重装系统、更换主板或机器码变化，请联系购买渠道处理。"),
+        ("单机激活码无法通过", "请确认单机激活码是否输入完整，并联系购买渠道确认授权状态。"),
+        ("更换电脑后单机激活码无法使用", "单机激活码原则上仅限绑定一台电脑。如更换电脑、重装系统、更换主板或机器码变化，请联系购买渠道处理。"),
         ("学习数据丢失", "请检查本地用户数据目录是否被清理或覆盖。重要学习数据建议由用户自行备份。"),
     ]
     for q, a in qa:
         doc.add_heading(q, 2)
         _p(doc, a)
 
-    doc.add_heading("十三、截图待补清单", 1)
+    doc.add_heading("十三、主要界面说明", 1)
     _bullets(
         doc,
         [
@@ -273,12 +291,11 @@ def build_user_manual():
             "短语与不规则动词页面截图",
             "专项题型模拟练习页面截图",
             "整卷模拟练习页面截图",
-            "参考解析页面截图",
-            "PDF 导出结果截图",
+            "以上截图均取自当前 V1.0 软件实际运行界面，用于说明各功能模块的操作入口和页面布局。",
         ],
     )
 
-    doc.save(DOCS / f"{SOFTWARE_NAME}_{VERSION}_用户操作说明书_待补截图.docx")
+    doc.save(DOCS / f"{SOFTWARE_NAME}_{VERSION}_用户操作说明书_最终版.docx")
 
 
 def build_application_reference():
@@ -374,8 +391,10 @@ def build_source_code_doc():
     lines_per_page = 50
     page_count = 60
     required = lines_per_page * page_count
-    selected = lines[:required]
-    if len(selected) < required:
+    if len(lines) >= required:
+        half = required // 2
+        selected = lines[:half] + lines[-half:]
+    else:
         selected = lines
         page_count = (len(selected) + lines_per_page - 1) // lines_per_page
 
@@ -383,9 +402,9 @@ def build_source_code_doc():
     _set_doc_defaults(doc)
     _add_footer(doc)
     doc.add_heading(f"{SOFTWARE_NAME} {VERSION}", 0)
-    doc.add_heading("源代码提交材料（初版）", 1)
-    _p(doc, "说明：本文档按软著提交材料整理习惯生成。正式提交前请申请人确认源代码范围、页数要求和脱敏情况。")
-    _p(doc, "整理范围：应用程序自有源码。已排除 venv、build、dist、__pycache__、测试脚本、工具脚本和第三方库源码。")
+    doc.add_heading("源代码提交材料", 1)
+    _p(doc, "说明：本文档为软件著作权登记源程序鉴别材料，按源程序前、后各连续 30 页整理，每页 50 行。")
+    _p(doc, "整理范围：应用程序自有源码。已排除 venv、build、dist、__pycache__、测试脚本、工具脚本、授权私密材料和第三方库源码。")
     _p(doc, f"生成日期：{TODAY}")
     doc.add_page_break()
 
@@ -403,7 +422,7 @@ def build_source_code_doc():
         if page != page_count - 1:
             doc.add_page_break()
 
-    doc.save(SOURCE / f"{SOFTWARE_NAME}_{VERSION}_源代码提交材料_初版.docx")
+    doc.save(SOURCE / f"{SOFTWARE_NAME}_{VERSION}_源代码提交材料_正式版.docx")
 
 
 def build_checklists():
@@ -427,9 +446,9 @@ def build_checklists():
 - 版本号是否确定为：{VERSION}
 - 说明书截图是否来自最终发布版本。
 - 截图中是否没有测试码、个人隐私、后台管理信息或乱码。
-- 源代码材料是否已排除 RSA 私钥、Cloudflare 管理信息、真实用户数据和第三方库源码。
+- 源代码材料是否已排除 RSA 私钥、后台管理信息、真实用户数据和第三方库源码。
 - 题目资源在文档中是否统一表述为“模拟练习资源”和“参考解析”。
-- 用户须知是否包含购买码绑定、换机处理、本地数据备份和免责说明。
+- 用户须知是否包含单机激活码绑定、换机处理、本地数据备份和免责说明。
 
 ## 建议最终资料格式
 
@@ -440,9 +459,9 @@ def build_checklists():
 
 ## 本次已生成文件
 
-- `01_正式文档/{SOFTWARE_NAME}_{VERSION}_用户操作说明书_待补截图.docx`
+- `01_正式文档/{SOFTWARE_NAME}_{VERSION}_用户操作说明书_最终版.docx`
 - `01_正式文档/{SOFTWARE_NAME}_{VERSION}_软著申请信息确认表.docx`
-- `02_源代码材料/{SOFTWARE_NAME}_{VERSION}_源代码提交材料_初版.docx`
+- `02_源代码材料/{SOFTWARE_NAME}_{VERSION}_源代码提交材料_正式版.docx`
 - `03_待填写与截图清单/正式提交前待填写与确认清单.md`
 """
     (CHECK / "正式提交前待填写与确认清单.md").write_text(checklist, encoding="utf-8")
@@ -454,13 +473,13 @@ def build_checklists():
 ## 目录
 
 - `01_正式文档`：操作说明书、申请信息确认表。
-- `02_源代码材料`：源代码提交材料初版。
+- `02_源代码材料`：源代码提交材料正式版。
 - `03_待填写与截图清单`：需要申请人补充和确认的事项。
 - `99_草稿备份`：Markdown 草稿、质检报告等备份资料。
 
 ## 注意
 
-不要直接提交带“待填写”“待补截图”“初版”字样的文件名。正式提交前建议另存为最终版，并删除或填写所有待确认项。
+操作说明书截图已补齐。正式提交前仍需申请人填写身份、日期和发表状态，并将源代码材料确认定稿。
 """
     (OUT / "README_先看我.md").write_text(readme, encoding="utf-8")
 
@@ -479,6 +498,9 @@ def main():
         shutil.rmtree(OUT)
     for directory in (DOCS, SOURCE, CHECK, ARCHIVE):
         directory.mkdir(parents=True, exist_ok=True)
+
+    if SCREENSHOT_SRC.exists():
+        shutil.copytree(SCREENSHOT_SRC, SCREENSHOT_OUT, dirs_exist_ok=True)
 
     build_user_manual()
     build_application_reference()

@@ -12,7 +12,6 @@ import traceback
 import base64
 import datetime
 import hashlib
-import threading
 import PySide6
 
 try:
@@ -677,21 +676,10 @@ PRIVACY_VERSION = "2026.06.28"
 REFUND_VERSION = "2026.06.28"
 RECOMMENDED_OS_TEXT = "Windows 10 / Windows 11 64 位系统"
 LICENSE_PUBLIC_N = int(
-    "a432074d3fc90a89d5ec32aa4f2816bcd25dea15cb6fdee7a6029de81a4340e4"
-    "fdfd6cbe16c77fe9ceac30ccd964b3912462f68ffa4c38a73ec389ead0fc4fc8"
-    "b2944414d84ed090f58d317090d80b5d185786b06757f8157d6ef80d1227d"
-    "685106fd74b1d33ffcf626687f1870ea9e554f36205241d5a9bfbf09f689a"
-    "10aacf7c17c79fd5b50214e93dd717055c37354e8e099f8cf98e8c7ec135"
-    "3edc0f43c1afe95b754001abbc3ad763e96bd2f5c74d3cd3880f151bf5f"
-    "363bf38f43fb82848fa8b211286f8d3673d8c3e6d7ec3036e8bb77555f"
-    "5d0a90ca95357665b9e1d8c3c00fcdb36a6a65137a07139de668d8c3a"
-    "58fad7cbf3867b2a3e6866dbfa75",
-    16,
+    "28775124575322634497630194562493205248451792233793484992462518909492031796087444659631193235143344782483730732025675973619125043891315519797328207298137327962837303041858425898732956948468058347522333942909932463217082936203298836737661621873254886770711111279670238437512397114508322120513285728053743377345990522667546431345851293680492019660724038530092135323717074630242455906633496054000548263245819585891412388129191402684716710881278766068589187373114113639112557957618530888807277659122560456937774567503707757874692756981241100528898001868420979776774112765051802987112637709752566838799945407160880000001167",
+    10,
 )
 LICENSE_PUBLIC_E = 65537
-LICENSE_API_BASE_URL = "https://shrill-wildflower-3ea1-high-school-english-auth.andrezhao.workers.dev"
-LICENSE_CHECK_INTERVAL_DAYS = 7
-LICENSE_REVOKE_STATUSES = {"revoked", "not_found", "expired", "machine_mismatch", "disabled"}
 
 
 def _license_b64encode(raw: bytes) -> str:
@@ -710,27 +698,6 @@ def _license_now() -> str:
     return datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")
 
 
-def _parse_license_time(value: str):
-    if not value:
-        return None
-    try:
-        normalized = str(value).replace("Z", "+00:00")
-        parsed = datetime.datetime.fromisoformat(normalized)
-        if parsed.tzinfo is None:
-            parsed = parsed.replace(tzinfo=datetime.timezone.utc)
-        return parsed
-    except Exception:
-        return None
-
-
-def _license_check_due(license_data: dict) -> bool:
-    last_check = _parse_license_time(str(license_data.get("last_check_time", "")))
-    if last_check is None:
-        return True
-    age = datetime.datetime.now(datetime.timezone.utc) - last_check
-    return age >= datetime.timedelta(days=LICENSE_CHECK_INTERVAL_DAYS)
-
-
 def _load_license_data(path: str) -> dict:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
@@ -739,89 +706,6 @@ def _load_license_data(path: str) -> dict:
 def _write_license_data(path: str, data: dict):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-
-
-def _extract_activation_code(data: dict) -> str:
-    if not isinstance(data, dict):
-        return ""
-    direct = data.get("activation_code") or data.get("code")
-    if direct:
-        return str(direct).strip()
-    for key in ("license", "license_data", "data", "payload"):
-        nested = data.get(key)
-        if isinstance(nested, dict):
-            found = nested.get("activation_code") or nested.get("code")
-            if found:
-                return str(found).strip()
-    return ""
-
-
-def _extract_license_id(data: dict) -> str:
-    if not isinstance(data, dict):
-        return ""
-    direct = data.get("license_id") or data.get("id")
-    if direct:
-        return str(direct).strip()
-    for key in ("license", "license_data", "data", "payload"):
-        nested = data.get(key)
-        if isinstance(nested, dict):
-            found = nested.get("license_id") or nested.get("id")
-            if found:
-                return str(found).strip()
-    return ""
-
-
-def _license_status(data: dict) -> str:
-    if not isinstance(data, dict):
-        return "invalid_response"
-    status = data.get("status")
-    if status:
-        return str(status).strip().lower()
-    if data.get("ok") is True or data.get("valid") is True or data.get("auth") is True:
-        return "active"
-    if data.get("ok") is False or data.get("valid") is False or data.get("auth") is False:
-        raw_status = str(data.get("msg") or data.get("message") or data.get("error") or "denied").strip().lower()
-        if "not" in raw_status and "found" in raw_status:
-            return "not_found"
-        if "revok" in raw_status:
-            return "revoked"
-        if "expire" in raw_status:
-            return "expired"
-        if "machine" in raw_status or "device" in raw_status or "fingerprint" in raw_status:
-            return "machine_mismatch"
-        return "denied"
-    return "active" if _extract_activation_code(data) else "invalid_response"
-
-
-def _post_license_api(action: str, payload: dict) -> dict:
-    import requests
-
-    headers = {
-        "Content-Type": "application/json",
-        "Accept": "application/json",
-        "User-Agent": f"EngMasterLicenseClient/{TOOL_VERSION}",
-    }
-    request_payload = dict(payload)
-    request_payload["action"] = action
-    urls = [
-        f"{LICENSE_API_BASE_URL.rstrip('/')}/{action}",
-        LICENSE_API_BASE_URL.rstrip("/"),
-    ]
-    last_error = None
-    for url in urls:
-        try:
-            response = requests.post(url, json=request_payload, headers=headers, timeout=15)
-            if response.status_code == 404 and url != urls[-1]:
-                continue
-            try:
-                data = response.json()
-            except Exception:
-                data = {"ok": False, "status": "invalid_response", "message": response.text[:300]}
-            data.setdefault("http_status", response.status_code)
-            return data
-        except Exception as e:
-            last_error = e
-    raise RuntimeError(str(last_error) if last_error else "license api request failed")
 
 
 def get_machine_id() -> str:
@@ -926,9 +810,8 @@ def load_license_file(path: str, machine_id: str) -> bool:
         return False
 
 
-def save_license_file(path: str, machine_id: str, activation_code: str, cloud_data=None, purchase_code=""):
+def save_license_file(path: str, machine_id: str, activation_code: str, purchase_code=""):
     now = _license_now()
-    cloud_data = cloud_data if isinstance(cloud_data, dict) else {}
     license_data = {
         "version": 2,
         "product": LICENSE_PRODUCT_ID,
@@ -937,81 +820,14 @@ def save_license_file(path: str, machine_id: str, activation_code: str, cloud_da
         "build_date": BUILD_DATE,
         "machine_id": machine_id,
         "activation_code": activation_code.strip(),
-        "license_id": _extract_license_id(cloud_data),
         "purchase_code": str(purchase_code).strip(),
         "activated_at": now,
         "accepted_at": now,
-        "last_check_time": now,
         "terms_version": TERMS_VERSION,
         "privacy_version": PRIVACY_VERSION,
         "refund_version": REFUND_VERSION,
-        "cloud_status": _license_status(cloud_data),
     }
     _write_license_data(path, license_data)
-
-
-def _activate_with_cloud(purchase_code: str, machine_id: str) -> dict:
-    payload = {
-        "purchase_code": purchase_code,
-        "purchaseCode": purchase_code,
-        "taobao_code": purchase_code,
-        "taobaoCode": purchase_code,
-        "code": purchase_code,
-        "license_key": purchase_code,
-        "key": purchase_code,
-        "machine_id": machine_id,
-        "machineId": machine_id,
-        "device_id": machine_id,
-        "deviceId": machine_id,
-        "fingerprint": machine_id,
-        "product": LICENSE_PRODUCT_ID,
-        "product_id": LICENSE_PRODUCT_ID,
-        "productId": LICENSE_PRODUCT_ID,
-        "tool_version": TOOL_VERSION,
-        "app_version": TOOL_VERSION,
-        "version": TOOL_VERSION,
-    }
-    data = _post_license_api("activate", payload)
-    status = _license_status(data)
-    if status != "active":
-        return {"ok": False, "status": status, "message": data.get("message") or data.get("error") or "授权码不可用。", "raw": data}
-    activation_code = _extract_activation_code(data)
-    if not activation_code:
-        return {"ok": False, "status": "missing_activation_code", "message": "云端未返回 activation_code。", "raw": data}
-    ok, message = verify_activation_code(activation_code, machine_id)
-    if not ok:
-        return {"ok": False, "status": "invalid_signature", "message": str(message), "raw": data}
-    return {"ok": True, "activation_code": activation_code, "cloud_data": data}
-
-
-def _check_with_cloud(license_data: dict, machine_id: str) -> dict:
-    payload = {
-        "purchase_code": license_data.get("purchase_code", ""),
-        "purchaseCode": license_data.get("purchase_code", ""),
-        "taobao_code": license_data.get("purchase_code", ""),
-        "taobaoCode": license_data.get("purchase_code", ""),
-        "code": license_data.get("purchase_code", ""),
-        "license_key": license_data.get("purchase_code", ""),
-        "key": license_data.get("purchase_code", ""),
-        "license_id": license_data.get("license_id", ""),
-        "licenseId": license_data.get("license_id", ""),
-        "machine_id": machine_id,
-        "machineId": machine_id,
-        "device_id": machine_id,
-        "deviceId": machine_id,
-        "fingerprint": machine_id,
-        "activation_code": license_data.get("activation_code", ""),
-        "activationCode": license_data.get("activation_code", ""),
-        "product": LICENSE_PRODUCT_ID,
-        "product_id": LICENSE_PRODUCT_ID,
-        "productId": LICENSE_PRODUCT_ID,
-        "tool_version": TOOL_VERSION,
-        "app_version": TOOL_VERSION,
-        "version": TOOL_VERSION,
-    }
-    data = _post_license_api("check", payload)
-    status = _license_status(data)
-    return {"ok": status == "active", "status": status, "raw": data, "message": data.get("message") or data.get("error") or ""}
 
 
 def _delete_license_and_exit(path: str, reason: str):
@@ -1024,39 +840,9 @@ def _delete_license_and_exit(path: str, reason: str):
     sys.exit(0)
 
 
-def _silent_cloud_check(path: str, machine_id: str, license_data: dict):
-    def worker():
-        try:
-            result = _check_with_cloud(license_data, machine_id)
-            status = result.get("status", "")
-            if result.get("ok"):
-                latest = dict(license_data)
-                latest["last_check_time"] = _license_now()
-                latest["cloud_status"] = "active"
-                cloud_data = result.get("raw") or {}
-                license_id = _extract_license_id(cloud_data)
-                if license_id:
-                    latest["license_id"] = license_id
-                _write_license_data(path, latest)
-                print("[DEBUG] cloud license check ok")
-            elif status in LICENSE_REVOKE_STATUSES:
-                print(f"[DEBUG] cloud license revoked: {status}")
-                try:
-                    if os.path.exists(path):
-                        os.remove(path)
-                finally:
-                    os._exit(0)
-            else:
-                print(f"[DEBUG] cloud license check failed softly: {status}")
-        except Exception as e:
-            print(f"[DEBUG] cloud license check network/soft failure: {e}")
-
-    threading.Thread(target=worker, daemon=True).start()
-
-
 def show_activation_dialog(machine_id: str):
     dialog = QtWidgets.QDialog()
-    dialog.setWindowTitle("高中/高考英语单词助手 v1.0 联网激活")
+    dialog.setWindowTitle("高中/高考英语单词助手 v1.0 单机激活")
     dialog.setModal(True)
     dialog.setMinimumSize(600, 320)
 
@@ -1064,12 +850,12 @@ def show_activation_dialog(machine_id: str):
     layout.setContentsMargins(18, 18, 18, 18)
     layout.setSpacing(12)
 
-    title = QtWidgets.QLabel("高中/高考英语单词助手 v1.0 联网激活")
+    title = QtWidgets.QLabel("高中/高考英语单词助手 v1.0 单机激活")
     title.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
     title.setStyleSheet("font-size: 20px; font-weight: bold; color: #111827;")
     layout.addWidget(title)
 
-    hint = QtWidgets.QLabel("请输入淘宝购买码。软件会联网完成授权绑定，激活成功后日常可离线使用，并按约定周期进行授权状态校验。")
+    hint = QtWidgets.QLabel("请输入单机激活码。软件会根据当前机器识别码进行本地校验，激活成功后即可离线使用。")
     hint.setWordWrap(True)
     hint.setStyleSheet("font-size: 14px; color: #374151;")
     layout.addWidget(hint)
@@ -1083,10 +869,10 @@ def show_activation_dialog(machine_id: str):
     machine_row.addWidget(copy_machine_button)
     layout.addLayout(machine_row)
 
-    purchase_label = QtWidgets.QLabel("淘宝购买码：")
+    purchase_label = QtWidgets.QLabel("单机激活码：")
     layout.addWidget(purchase_label)
     purchase_input = QtWidgets.QLineEdit()
-    purchase_input.setPlaceholderText("例如：TEST-2026-DEBUG")
+    purchase_input.setPlaceholderText("例如：EM2-xxxx")
     purchase_input.setMinimumHeight(36)
     layout.addWidget(purchase_input)
 
@@ -1098,7 +884,7 @@ def show_activation_dialog(machine_id: str):
     button_row = QtWidgets.QHBoxLayout()
     button_row.addStretch(1)
     cancel_button = QtWidgets.QPushButton("退出")
-    activate_button = QtWidgets.QPushButton("联网激活")
+    activate_button = QtWidgets.QPushButton("激活")
     activate_button.setDefault(True)
     button_row.addWidget(cancel_button)
     button_row.addWidget(activate_button)
@@ -1113,7 +899,7 @@ def show_activation_dialog(machine_id: str):
     def accept_purchase_code():
         purchase_code = purchase_input.text().strip()
         if not purchase_code:
-            error_label.setText("请输入淘宝购买码。")
+            error_label.setText("请输入单机激活码。")
             return
         result["purchase_code"] = purchase_code
         dialog.accept()
@@ -1152,7 +938,7 @@ def get_legal_notice_text() -> str:
         "网吧或学校机房受限系统、虚拟机环境、ARM 版 Windows、Mac、iPad、手机、安卓平板等环境暂不作为推荐环境，"
         "可能出现无法启动、无法激活、界面异常或数据保存异常等情况。\n\n"
         "5. 使用限制与设备绑定\n"
-        "本工具采用单机使用方式。一个购买码原则上仅限绑定一台电脑使用。购买码一经绑定设备后，如用户更换电脑、"
+        "本工具采用单机使用方式。一个单机激活码原则上仅限绑定一台电脑使用。单机激活码一经绑定设备后，如用户更换电脑、"
         "重装系统、更换主板或因系统环境变化导致本机识别码改变，可能需要重新授权或通过购买平台联系客服处理。"
         "未经许可，请勿转卖、共享、破解、修改、打包传播或用于其他商业分发行为。\n\n"
         "6. 隐私与本机识别码说明\n"
@@ -1276,9 +1062,6 @@ def check_licensing_gate():
             ok, message = verify_activation_code(activation_code, machine_id)
             if ok:
                 print("[DEBUG] local machine-bound license verified")
-                if _license_check_due(license_data):
-                    print("[DEBUG] cloud license check is due; starting silent check")
-                    _silent_cloud_check(license_path, machine_id, license_data)
                 return True
             print(f"[DEBUG] local license invalid: {message}")
         except Exception as e:
@@ -1291,16 +1074,10 @@ def check_licensing_gate():
         purchase_code = show_activation_dialog(machine_id)
         if not purchase_code:
             sys.exit(0)
-        try:
-            result = _activate_with_cloud(purchase_code, machine_id)
-        except Exception as e:
-            QMessageBox.warning(None, "联网激活失败", f"无法连接授权服务器，请检查网络后重试。\n\n{e}")
-            continue
-
-        if not result.get("ok"):
-            status = result.get("status", "unknown")
-            message = result.get("message", "购买码无效或不可用。")
-            QMessageBox.warning(None, "激活失败", f"云端返回：{status}\n{message}")
+        activation_code = purchase_code.strip()
+        ok, message = verify_activation_code(activation_code, machine_id)
+        if not ok:
+            QMessageBox.warning(None, "激活失败", f"激活码无效：{message}")
             continue
 
         try:
@@ -1308,11 +1085,10 @@ def check_licensing_gate():
             save_license_file(
                 license_path,
                 machine_id,
-                result["activation_code"],
-                cloud_data=result.get("cloud_data") or {},
+                activation_code,
                 purchase_code=purchase_code,
             )
-            QMessageBox.information(None, "激活成功", "当前电脑已联网激活，可以开始使用高中/高考英语单词助手 v1.0。")
+            QMessageBox.information(None, "激活成功", "当前电脑已完成单机激活，可以开始使用高中/高考英语单词助手 v1.0。")
             return True
         except Exception as e:
             QMessageBox.critical(None, "激活失败", f"保存授权文件失败:\n{e}")
