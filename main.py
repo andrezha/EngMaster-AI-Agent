@@ -59,23 +59,42 @@ for p in [BASE_DIR]:
 
 # ============ [4. 核心模块异步导入] ============
 try:
+    from utils import normalize_exam_text, get_writable_data_path, get_resource_path
+    from watermark_modes import parse_watermark_args
+except ImportError as e:
+    print(f"❌ 核心异步模块加载失败: {e}")
+    raise
+
+
+_feature_modules_loaded = False
+
+
+def _load_feature_modules():
+    """Load feature pages after the first window frame is available."""
+    global _feature_modules_loaded
+    global VocabManager, WordListView, ExamManager
+    global SelfRegisterVocabManager
+    global PhraseIrregularChallengeView, PhraseIrregularListView
+    global HSEExamSystem
+    global _parse_grammar_items_full_exam, _parse_seven_five_items_full_exam
+    global _parse_cloze_items_full_exam, _parse_reading_items_full_exam_robust
+
+    if _feature_modules_loaded:
+        return
+
     from vocab_module import VocabManager
     from word_list_view import WordListView
     from exam_module import ExamManager
-    from utils import normalize_exam_text, get_writable_data_path, get_resource_path
-    from watermark_modes import parse_watermark_args
     from self_register_vocab_module import SelfRegisterVocabManager
     from phrase_irregular_module import PhraseIrregularChallengeView, PhraseIrregularListView
-    from run_flull_exam import HSEExamSystem 
-    from parsers.full_exam_specific_parsers import ( 
+    from run_flull_exam import HSEExamSystem
+    from parsers.full_exam_specific_parsers import (
         _parse_grammar_items_full_exam,
         _parse_seven_five_items_full_exam,
         _parse_cloze_items_full_exam,
-        _parse_reading_items_full_exam_robust
+        _parse_reading_items_full_exam_robust,
     )
-except ImportError as e:
-    print(f"❌ 核心异步模块加载失败: {e}")
-    raise 
+    _feature_modules_loaded = True
 
 # ============ [5. 内部工具函数 (移至顶部方便多线程访问)] ============
 def _internal_full_exam_parser(text):
@@ -215,8 +234,9 @@ class HighSchoolEnglishAI(QMainWindow):
         self.watermark_mode = getattr(self.watermark_settings, "mode", "licensed")
         # 🎯 👑 注入 5大任务之：软件全局品牌名称更名
         self.setWindowTitle("高中/高考英语单词助手 v1.0")
+        # Create the native window early. The loading page is attached before
+        # the event loop paints, while Windows can register the window now.
         self.showMaximized()
-
         self.nav_buttons = {} 
         self.nav_button_target_map = {
             "btn_nav_vocab": 0, 
@@ -250,33 +270,44 @@ class HighSchoolEnglishAI(QMainWindow):
         # 异步启动骨架层UI
         self._setup_loading_screen()
 
-        # 主线程UI静态读取
         res_dir = get_resource_path("resources")
-        self.loader = QUiLoader() 
-        main_ui_path = os.path.join(res_dir, "main_window.ui")
+        self.setCentralWidget(self.loading_widget)
 
-        self.ui_root = self.loader.load(main_ui_path)
-        if not self.ui_root:
-            QMessageBox.critical(None, "错误", f"核心 UI 资产加载失败:\n{main_ui_path}")
-            sys.exit(1)
+        # Return quickly so the event loop can paint a useful loading page.
+        # Main UI parsing, feature imports and page wiring happen afterwards.
+        QtCore.QTimer.singleShot(200, lambda: self._finish_startup(res_dir))
 
-        self.setCentralWidget(self.ui_root)
-        self.stack = self.ui_root.findChild(QStackedWidget, "stackedWidget")
+    def _finish_startup(self, res_dir):
+        try:
+            _load_feature_modules()
 
-        self.stack.insertWidget(0, self.loading_widget)
-        self.stack.setCurrentIndex(0)
-        print(f"[DEBUG] loading screen inserted, currentIndex={self.stack.currentIndex()}, widget0={type(self.stack.widget(0)).__name__}")
+            self.loader = QUiLoader()
+            main_ui_path = os.path.join(res_dir, "main_window.ui")
+            self.ui_root = self.loader.load(main_ui_path)
+            if not self.ui_root:
+                raise RuntimeError(f"核心 UI 资产加载失败:\n{main_ui_path}")
 
-        self.stack.currentChanged.connect(self._update_nav_button_styles)
-        self._setup_gaokao_page(res_dir)
+            loading_widget = self.takeCentralWidget()
+            self.setCentralWidget(self.ui_root)
+            self.stack = self.ui_root.findChild(QStackedWidget, "stackedWidget")
+            if not self.stack:
+                raise RuntimeError("核心 UI 缺少 stackedWidget")
 
-        # 🚀 启动改善：延迟 100ms 避开UI首帧阻塞，点火全量异步线程矩阵
-        QtCore.QTimer.singleShot(100, self._start_async_loaders)
+            self.stack.insertWidget(0, loading_widget)
+            self.stack.setCurrentIndex(0)
+            print(f"[DEBUG] loading screen inserted, currentIndex={self.stack.currentIndex()}, widget0={type(self.stack.widget(0)).__name__}")
+            self.stack.currentChanged.connect(self._update_nav_button_styles)
 
-        self._bind_nav_events() 
-        self._setup_notice_button()
-        self._apply_sidebar_style() 
-        self._update_nav_button_styles(self.stack.currentIndex()) 
+            self._setup_gaokao_page(res_dir)
+            self._bind_nav_events()
+            self._setup_notice_button()
+            self._apply_sidebar_style()
+            self._update_nav_button_styles(self.stack.currentIndex())
+            QtCore.QTimer.singleShot(0, self._start_async_loaders)
+        except Exception as e:
+            self.loading_progress_bar.setRange(0, 1)
+            self.loading_label.setText("启动失败")
+            QMessageBox.critical(self, "启动失败", f"功能模块加载失败:\n{e}")
 
     def _setup_loading_screen(self):
         self.loading_widget = QWidget()
@@ -1160,7 +1191,6 @@ if __name__ == "__main__":
 
     # 3. 释放完全体主程序
     window = HighSchoolEnglishAI()
-    window.show()
     QtCore.QTimer.singleShot(0, lambda: show_os_compatibility_warning(window))
 
     sys.exit(app.exec())

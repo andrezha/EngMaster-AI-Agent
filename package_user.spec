@@ -28,6 +28,30 @@ a = Analysis(
     noarchive=False,
     optimize=0,
 )
+
+# QtGui collects the touch-oriented Qt Virtual Keyboard plugin on Windows.
+# This desktop application uses normal keyboard input and has no QML/Qt Quick
+# UI, so keeping that plugin forces roughly 13 MB of unused runtime libraries
+# to be unpacked and scanned on every one-file launch.
+_unused_qt_virtual_keyboard_files = {
+    'pyside6/plugins/platforminputcontexts/qtvirtualkeyboardplugin.dll',
+    'pyside6/qt6virtualkeyboard.dll',
+    'pyside6/qt6quick.dll',
+    'pyside6/qt6qml.dll',
+    'pyside6/qt6qmlmeta.dll',
+    'pyside6/qt6qmlmodels.dll',
+    'pyside6/qt6qmlworkerscript.dll',
+}
+
+
+def _without_unused_qt_virtual_keyboard(entries):
+    return [
+        entry for entry in entries
+        if entry[0].replace('\\', '/').lower() not in _unused_qt_virtual_keyboard_files
+    ]
+
+
+a.binaries = _without_unused_qt_virtual_keyboard(a.binaries)
 pyz = PYZ(a.pure)
 
 exe = EXE(
