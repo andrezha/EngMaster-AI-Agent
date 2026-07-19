@@ -1,7 +1,17 @@
 # -*- coding: utf-8 -*-
 import json
+import re
+import unicodedata
 from PySide6 import QtWidgets, QtCore, QtGui
 from utils import get_resource_path, get_writable_data_path
+from challenge_rounds import (
+    ChallengeLearningStore,
+    ChallengeRoundStore,
+    atomic_write_json,
+    backup_existing_file_once,
+    round_summary_text,
+)
+from challenge_history_dialog import MODE_NAMES, show_round_history
 
 # Helper function to clean irregular verb fields
 def _clean_verb_field(text):
@@ -9,6 +19,19 @@ def _clean_verb_field(text):
         return ""
     # Remove commas, full-width commas, and trim whitespace
     return text.replace(',', '').replace('，', '').strip()
+
+
+def _normalize_phrase_answer(text):
+    """Normalize harmless input differences without changing phrase meaning."""
+    text = unicodedata.normalize("NFKC", str(text or "")).strip().lower()
+    text = text.replace("…", "...").replace("’", "'")
+    text = re.sub(r"\s*\.\.\.\s*", "...", text)
+    return re.sub(r"\s+", " ", text)
+
+
+def _accepted_phrase_answers(item):
+    answers = item.get("answers") or [item.get("p", "")]
+    return {_normalize_phrase_answer(value) for value in answers if str(value).strip()}
 
 
 class _LegacyPhraseIrregularChallengeView(QtWidgets.QWidget):
@@ -314,14 +337,13 @@ class _LegacyPhraseIrregularChallengeView(QtWidgets.QWidget):
     def _check_answer(self):
         item = self.active_items[self.current_index % len(self.active_items)]
         if self.current_category == "phrase":
-            answer = self.answer_input.text().strip().lower()
+            answer = _normalize_phrase_answer(self.answer_input.text())
             if not answer:
                 self.feedback_label.setText("请先输入你的答案。")
                 self.feedback_label.setStyleSheet("font-size: 13px; color: #bd3d3d;")
                 return
             correct_answer = item.get("p", "")
-            correct_answer_lower = correct_answer.lower()
-            if answer == correct_answer_lower:
+            if answer in _accepted_phrase_answers(item):
                 self.feedback_label.setStyleSheet("font-size: 14px; color: #0b6d3a; font-weight: bold;")
                 self.feedback_label.setText("回答正确！")
             else:
@@ -369,13 +391,43 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
         self.irregulars = self._load_json("assets/irregular_verbs.json")
         self.phrase_mistake_file_path = get_writable_data_path("mistake_phrases.json")
         self.irregular_mistake_file_path = get_writable_data_path("mistake_irregular_verbs.json")
+        backup_existing_file_once(self.phrase_mistake_file_path)
+        backup_existing_file_once(self.irregular_mistake_file_path)
+        self.round_progress_path = get_writable_data_path(
+            "challenge_round_progress.json")
+        self.round_store = ChallengeRoundStore(self.round_progress_path)
+        self.learning_store = ChallengeLearningStore(get_writable_data_path(
+            "challenge_learning_records.json"))
         self.phrase_mistakes = self._load_mistake_json(self.phrase_mistake_file_path)
         self.irregular_mistakes = self._load_mistake_json(self.irregular_mistake_file_path)
         self.current_category = "phrase"
-        self.active_items = self.phrases
+        had_round_state = self.round_store.has_mode("phrase")
+        self.active_items = self.round_store.activate("phrase", self.phrases)
+        phrase_progress = self.round_store.progress("phrase")
+        legacy_started = had_round_state and (
+            phrase_progress["round"] > 1
+            or phrase_progress["current"] > 1
+            or phrase_progress["wrong"] > 0
+        )
+        self.learning_store.ensure_round(
+            "phrase", phrase_progress, legacy_started)
+        for wrong_item in self.round_store.wrong_items("phrase"):
+            self.learning_store.record_wrong_round(
+                "phrase", wrong_item,
+                self.round_store.progress("phrase")["round"])
         self.current_index = 0
+        self._round_message_for_next = ""
+        self._question_answered_correctly = False
+        self._advance_pending = False
+        self.advance_timer = QtCore.QTimer(self)
+        self.advance_timer.setSingleShot(True)
+        self.advance_timer.timeout.connect(self._next_question)
         self._init_ui()
         self._load_question()
+        app = QtWidgets.QApplication.instance()
+        if app:
+            app.aboutToQuit.connect(
+                lambda: self.learning_store.pause(self.current_category))
 
     def _init_ui(self):
         self.setObjectName("phrase_irregular_challenge_view")
@@ -404,8 +456,13 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
         tab_layout.addSpacing(8)
         self.lbl_phrase_mistake_count = QtWidgets.QLabel()
         self.lbl_irregular_mistake_count = QtWidgets.QLabel()
+        self.lbl_phrase_mistake_count.setToolTip("点击查看短语错词表")
+        self.lbl_irregular_mistake_count.setToolTip("点击查看不规则动词错词表")
         for label in [self.lbl_phrase_mistake_count, self.lbl_irregular_mistake_count]:
             label.setStyleSheet(self._count_label_style())
+            label.setCursor(QtCore.Qt.CursorShape.PointingHandCursor)
+            label.setFocusPolicy(QtCore.Qt.FocusPolicy.StrongFocus)
+            label.installEventFilter(self)
             tab_layout.addWidget(label)
         layout.addLayout(tab_layout)
         layout.addSpacing(12)
@@ -413,7 +470,15 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
         self.status_label = QtWidgets.QLabel("")
         self.status_label.setAlignment(QtCore.Qt.AlignCenter)
         self.status_label.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.status_label.setStyleSheet("font-size: 13px; color: #4b5563; background: transparent; padding: 0; margin: 0;")
+        self.status_label.setStyleSheet(
+            "font-size: 14px; font-weight: 600; color: #374151; "
+            "background: #f8fafc; border: 1px solid #dbe3ee; "
+            "border-radius: 8px; padding: 9px 16px; margin: 0 40px;"
+        )
+        self.status_label.setCursor(QtCore.Qt.CursorShape.PointingHandCursor)
+        self.status_label.setToolTip("点击查看轮次学习记录")
+        self.status_label.setFocusPolicy(QtCore.Qt.FocusPolicy.StrongFocus)
+        self.status_label.installEventFilter(self)
         layout.addWidget(self.status_label)
 
         content_frame = QtWidgets.QFrame()
@@ -438,6 +503,14 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
         self.instruction_label.setAlignment(QtCore.Qt.AlignCenter)
         self.instruction_label.setStyleSheet("font-size: 14px; color: #6b7280; padding-bottom: 6px;")
         content_layout.addWidget(self.instruction_label)
+
+        self.wrong_round_label = QtWidgets.QLabel("")
+        self.wrong_round_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.wrong_round_label.setStyleSheet(
+            "font-size:13px; color:#b45309; font-weight:600; padding:0;"
+        )
+        self.wrong_round_label.hide()
+        content_layout.addWidget(self.wrong_round_label)
 
         self.feedback_label = QtWidgets.QLabel("")
         self.feedback_label.setWordWrap(True)
@@ -498,15 +571,11 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
         button_row = QtWidgets.QHBoxLayout()
         button_row.setSpacing(12)
         self.btn_check = QtWidgets.QPushButton("确认")
-        self.btn_next = QtWidgets.QPushButton("下一题")
-        for btn in [self.btn_check, self.btn_next]:
-            btn.setFixedSize(140, 42)
-            btn.setStyleSheet(self._confirm_button_style())
+        self.btn_check.setFixedSize(140, 42)
+        self.btn_check.setStyleSheet(self._confirm_button_style())
         self.btn_check.clicked.connect(self._check_answer)
-        self.btn_next.clicked.connect(self._next_question)
         button_row.addStretch(1)
         button_row.addWidget(self.btn_check)
-        button_row.addWidget(self.btn_next)
         button_row.addStretch(1)
         content_layout.addLayout(button_row)
         content_layout.addStretch(1)
@@ -541,8 +610,7 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
 
     def _save_mistake_json(self, path, data):
         try:
-            with open(path, "w", encoding="utf-8") as f:
-                json.dump(data, f, ensure_ascii=False, indent=4)
+            atomic_write_json(path, data, indent=4)
         except Exception as e:
             QtWidgets.QMessageBox.warning(self.main_window, "错误", f"保存错题表失败:\n{e}")
         self._update_mistake_count_labels()
@@ -581,6 +649,11 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
         return 0, False
 
     def _switch_category(self, category):
+        self.advance_timer.stop()
+        self._advance_pending = False
+        self._question_answered_correctly = False
+        previous_category = self.current_category
+        self.learning_store.pause(previous_category)
         if category == "phrase_mistake":
             self.phrase_mistakes = self._load_mistake_json(self.phrase_mistake_file_path)
             if not self.phrase_mistakes:
@@ -594,17 +667,34 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
 
         self.current_category = category
         if category == "phrase":
-            self.active_items = self.phrases
+            source_items = self.phrases
         elif category == "phrase_mistake":
-            self.active_items = self.phrase_mistakes
+            source_items = self.phrase_mistakes
         elif category == "irregular_mistake":
-            self.active_items = self.irregular_mistakes
+            source_items = self.irregular_mistakes
         else:
-            self.active_items = self.irregulars
+            source_items = self.irregulars
+        had_round_state = self.round_store.has_mode(category)
+        self.active_items = self.round_store.activate(category, source_items)
+        category_progress = self.round_store.progress(category)
+        legacy_started = had_round_state and (
+            category_progress["round"] > 1
+            or category_progress["current"] > 1
+            or category_progress["wrong"] > 0
+        )
+        self.learning_store.ensure_round(
+            category, category_progress, legacy_started)
+        if category in ["phrase", "irregular"]:
+            round_number = self.round_store.progress(category)["round"]
+            for wrong_item in self.round_store.wrong_items(category):
+                self.learning_store.record_wrong_round(
+                    category, wrong_item, round_number)
         self.current_index = 0
         self._update_mode_buttons()
         self._update_mistake_count_labels()
         self._load_question()
+        if self.isVisible():
+            self.learning_store.resume(self.current_category)
 
     def _update_mode_buttons(self):
         modes = [
@@ -621,6 +711,66 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
     def _is_phrase_mode(self):
         return self.current_category in ["phrase", "phrase_mistake"]
 
+    def _current_category_source(self):
+        if self.current_category == "phrase_mistake":
+            return self.phrase_mistakes
+        if self.current_category == "irregular_mistake":
+            return self.irregular_mistakes
+        if self.current_category == "irregular":
+            return self.irregulars
+        return self.phrases
+
+    def _round_progress_html(self):
+        progress = self.round_store.progress(self.current_category)
+        wrong_color = "#16a34a" if progress["wrong"] == 0 else "#dc2626"
+        return (
+            f"<span style='color:#2563eb;'>第 {progress['round']} 轮</span>"
+            f"　｜　本轮 {progress['current']} / {progress['total']}"
+            f"　｜　剩余 {progress['remaining_after_current']}"
+            f"　｜　<span style='color:{wrong_color};'>本轮错词 {progress['wrong']}</span>"
+        )
+
+    def _all_round_progress(self):
+        store = ChallengeRoundStore(self.round_progress_path)
+        return {mode: store.progress(mode) for mode in MODE_NAMES}
+
+    def eventFilter(self, watched, event):
+        is_click = (
+            event.type() == QtCore.QEvent.Type.MouseButtonRelease
+            and event.button() == QtCore.Qt.MouseButton.LeftButton
+        )
+        is_keyboard = (
+            event.type() == QtCore.QEvent.Type.KeyPress
+            and event.key() in [QtCore.Qt.Key.Key_Return, QtCore.Qt.Key.Key_Enter, QtCore.Qt.Key.Key_Space]
+        )
+        if is_click or is_keyboard:
+            if watched is self.lbl_phrase_mistake_count:
+                self.main_window.show_phrase_irregular_table("phrase_mistake")
+                return True
+            if watched is self.lbl_irregular_mistake_count:
+                self.main_window.show_phrase_irregular_table("irregular_mistake")
+                return True
+            if watched is self.status_label:
+                self.learning_store.pause(self.current_category)
+                show_round_history(
+                    self.main_window,
+                    self.learning_store,
+                    self.current_category,
+                    self._all_round_progress,
+                )
+                if self.isVisible():
+                    self.learning_store.resume(self.current_category)
+                return True
+        return super().eventFilter(watched, event)
+
+    def showEvent(self, event):
+        super().showEvent(event)
+        self.learning_store.resume(self.current_category)
+
+    def hideEvent(self, event):
+        self.learning_store.pause(self.current_category)
+        super().hideEvent(event)
+
     def _update_mistake_count_labels(self):
         if hasattr(self, "lbl_phrase_mistake_count"):
             self.lbl_phrase_mistake_count.setText(f"短语错题 ({len(self.phrase_mistakes)} 个)")
@@ -628,6 +778,12 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
             self.lbl_irregular_mistake_count.setText(f"不规则动词错题 ({len(self.irregular_mistakes)} 个)")
 
     def _load_question(self):
+        self._question_answered_correctly = False
+        self._advance_pending = False
+        self.btn_check.setEnabled(True)
+        self.answer_input.setEnabled(True)
+        self.irregular_past_input.setEnabled(True)
+        self.irregular_participle_input.setEnabled(True)
         self.feedback_label.clear()
         self.example_label.clear()
         self.answer_input.clear()
@@ -637,10 +793,11 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
             self.prompt_label.setText("暂无可用题目")
             self.instruction_label.setText("")
             self.status_label.setText("")
+            self.wrong_round_label.clear()
+            self.wrong_round_label.hide()
             return
 
-        item = self.active_items[self.current_index % len(self.active_items)]
-        total = len(self.active_items)
+        item = self.active_items[0]
         if self._is_phrase_mode():
             self.prompt_label.setText(item.get("m", "") or item.get("cn", ""))
             self.instruction_label.setText("请输入对应的英文短语。")
@@ -655,29 +812,49 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
             self.irregular_input_row_widget.show()
             self.example_label.hide()
 
-        mode_name = {
-            "phrase": "短语闯关",
-            "phrase_mistake": "短语错词闯关",
-            "irregular": "不规则动词闯关",
-            "irregular_mistake": "不规则动词错词闯关",
-        }.get(self.current_category, "")
-        self.status_label.setText(f"第 {self.current_index + 1} / {total} 题 · 当前模式：{mode_name}")
+        wrong_source_mode = {
+            "phrase_mistake": "phrase",
+            "irregular_mistake": "irregular",
+        }.get(self.current_category)
+        if wrong_source_mode:
+            self.wrong_round_label.setText(
+                self.learning_store.wrong_round_text(wrong_source_mode, item))
+            self.wrong_round_label.show()
+        else:
+            self.wrong_round_label.clear()
+            self.wrong_round_label.hide()
+
+        self.status_label.setText(self._round_progress_html())
+        if self._round_message_for_next:
+            self.feedback_label.setStyleSheet(
+                "font-size: 14px; color: #15803d; padding: 8px 0 0 0; font-weight: bold;"
+            )
+            self.feedback_label.setText(self._round_message_for_next)
+            self._round_message_for_next = ""
 
     def _check_answer(self):
-        if not self.active_items:
+        if not self.active_items or self._advance_pending:
             return
 
-        item = self.active_items[self.current_index % len(self.active_items)]
+        item = self.active_items[0]
         if self._is_phrase_mode():
-            answer = self.answer_input.text().strip().lower()
+            answer = _normalize_phrase_answer(self.answer_input.text())
             if not answer:
-                self.feedback_label.setText("请输入答案。")
+                if self.round_store.is_retry_required(self.current_category):
+                    self.feedback_label.setText(
+                        f"请输入正确答案后再继续。正确答案：{item.get('p', '')}")
+                else:
+                    self.feedback_label.setText("请输入答案；空答案不能进入下一题。")
                 self.feedback_label.setStyleSheet("font-size: 13px; color: #bd3d3d;")
+                self.answer_input.setFocus()
                 return
+            self.learning_store.begin_round(self.current_category)
             correct_answer = item.get("p", "")
-            if answer == correct_answer.lower():
+            was_retrying = self.round_store.is_retry_required(
+                self.current_category)
+            if answer in _accepted_phrase_answers(item):
                 self.feedback_label.setStyleSheet("font-size: 14px; color: #0b6d3a; font-weight: bold;")
-                if self.current_category == "phrase_mistake":
+                if self.current_category == "phrase_mistake" and not was_retrying:
                     count, removed = self._increment_mistake_correct_count(
                         item, self.phrase_mistakes, self._phrase_key, self.phrase_mistake_file_path
                     )
@@ -685,27 +862,55 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
                         "回答正确。连续 3 次答对，已从短语错词表删除。"
                         if removed else f"回答正确。连续答对 {count} / 3 次。"
                     )
+                elif was_retrying:
+                    self.feedback_label.setText("回答正确，已完成纠正。本题仍保留在短语错词表。")
                 else:
                     self.feedback_label.setText("回答正确。")
+                self._question_answered_correctly = True
+                self._advance_pending = True
+                self.answer_input.setEnabled(False)
+                self.btn_check.setEnabled(False)
+                self.advance_timer.start(600)
             else:
-                self._add_or_reset_mistake_item(
-                    item, self.phrase_mistakes, self._phrase_key, self.phrase_mistake_file_path
-                )
+                already_retrying = self.round_store.is_retry_required(
+                    self.current_category)
+                self.round_store.mark_wrong(self.current_category)
+                self.status_label.setText(self._round_progress_html())
+                if self.current_category == "phrase" and not already_retrying:
+                    self.learning_store.record_wrong_round(
+                        "phrase", item,
+                        self.round_store.progress("phrase")["round"])
+                if not already_retrying:
+                    self._add_or_reset_mistake_item(
+                        item, self.phrase_mistakes, self._phrase_key, self.phrase_mistake_file_path
+                    )
                 self.feedback_label.setStyleSheet("font-size: 14px; color: #dc2626; font-weight: bold;")
-                self.feedback_label.setText(f"回答错误。已加入短语错词表。正确答案：{correct_answer}")
+                self.feedback_label.setText(
+                    f"回答错误。已加入短语错词表。正确答案：{correct_answer}。请重新输入正确答案。")
+                self.answer_input.selectAll()
+                self.answer_input.setFocus()
             self.example_label.setText(f"例句：{item.get('en', '')}\n中文：{item.get('cn', '')}")
         else:
             past_answer = self.irregular_past_input.text().strip().lower()
             participle_answer = self.irregular_participle_input.text().strip().lower()
             if not past_answer or not participle_answer:
-                self.feedback_label.setText("请同时填写过去式和过去分词。")
+                if self.round_store.is_retry_required(self.current_category):
+                    self.feedback_label.setText(
+                        f"请填写正确答案后再继续。过去式：{item.get('past_tense', '')}；"
+                        f"过去分词：{item.get('past_participle', '')}")
+                else:
+                    self.feedback_label.setText("请同时填写过去式和过去分词；空答案不能进入下一题。")
                 self.feedback_label.setStyleSheet("font-size: 13px; color: #bd3d3d;")
+                (self.irregular_past_input if not past_answer else self.irregular_participle_input).setFocus()
                 return
+            self.learning_store.begin_round(self.current_category)
             correct_past = _clean_verb_field(item.get("past_tense", "")).lower()
             correct_participle = _clean_verb_field(item.get("past_participle", "")).lower()
+            was_retrying = self.round_store.is_retry_required(
+                self.current_category)
             if past_answer == correct_past and participle_answer == correct_participle:
                 self.feedback_label.setStyleSheet("font-size: 14px; color: #0b6d3a; font-weight: bold;")
-                if self.current_category == "irregular_mistake":
+                if self.current_category == "irregular_mistake" and not was_retrying:
                     count, removed = self._increment_mistake_correct_count(
                         item, self.irregular_mistakes, self._irregular_key, self.irregular_mistake_file_path
                     )
@@ -713,26 +918,80 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
                         "回答正确。连续 3 次答对，已从不规则动词错词表删除。"
                         if removed else f"回答正确。连续答对 {count} / 3 次。"
                     )
+                elif was_retrying:
+                    self.feedback_label.setText("回答正确，已完成纠正。本题仍保留在不规则动词错词表。")
                 else:
                     self.feedback_label.setText("回答正确。")
+                self._question_answered_correctly = True
+                self._advance_pending = True
+                self.irregular_past_input.setEnabled(False)
+                self.irregular_participle_input.setEnabled(False)
+                self.btn_check.setEnabled(False)
+                self.advance_timer.start(600)
             else:
-                self._add_or_reset_mistake_item(
-                    item, self.irregular_mistakes, self._irregular_key, self.irregular_mistake_file_path
-                )
+                already_retrying = self.round_store.is_retry_required(
+                    self.current_category)
+                self.round_store.mark_wrong(self.current_category)
+                self.status_label.setText(self._round_progress_html())
+                if self.current_category == "irregular" and not already_retrying:
+                    self.learning_store.record_wrong_round(
+                        "irregular", item,
+                        self.round_store.progress("irregular")["round"])
+                if not already_retrying:
+                    self._add_or_reset_mistake_item(
+                        item, self.irregular_mistakes, self._irregular_key, self.irregular_mistake_file_path
+                    )
                 self.feedback_label.setStyleSheet("font-size: 14px; color: #dc2626; font-weight: bold;")
                 self.feedback_label.setText(
                     f"回答错误。已加入不规则动词错词表。原形：{item.get('infinitive', '')}  "
                     f"过去式：{item.get('past_tense', '')}  过去分词：{item.get('past_participle', '')}"
+                    "。请重新输入正确答案。"
                 )
+                self.irregular_past_input.selectAll()
+                self.irregular_past_input.setFocus()
             self.example_label.clear()
             self.example_label.hide()
 
     def _next_question(self):
         if not self.active_items:
             return
-        self.current_index = (self.current_index + 1) % len(self.active_items)
-        if self.current_index >= len(self.active_items):
-            self.current_index = 0
+        if not self._question_answered_correctly:
+            self._advance_pending = False
+            self.feedback_label.setStyleSheet(
+                "font-size: 14px; color: #dc2626; font-weight: bold;")
+            self.feedback_label.setText("请先输入正确答案，不能跳过当前题。")
+            if self._is_phrase_mode():
+                self.answer_input.setFocus()
+            else:
+                self.irregular_past_input.setFocus()
+            return
+        self.learning_store.begin_round(self.current_category)
+        summary, self.active_items = self.round_store.advance(
+            self.current_category, self._current_category_source())
+        self.current_index = 0
+        if summary:
+            self.learning_store.finish_round(self.current_category, summary)
+            self.learning_store.ensure_round(
+                self.current_category,
+                self.round_store.progress(self.current_category),
+            )
+            if self.isVisible():
+                self.learning_store.resume(self.current_category)
+            self._round_message_for_next = "✓ " + round_summary_text(summary)
+        if not self.active_items and self.current_category in ["phrase_mistake", "irregular_mistake"]:
+            self.learning_store.pause(self.current_category)
+            self.current_category = (
+                "phrase" if self.current_category == "phrase_mistake" else "irregular")
+            self.active_items = self.round_store.activate(
+                self.current_category, self._current_category_source())
+            self.learning_store.ensure_round(
+                self.current_category,
+                self.round_store.progress(self.current_category),
+                self.round_store.has_mode(self.current_category),
+            )
+            self._update_mode_buttons()
+            if self.isVisible():
+                self.learning_store.resume(self.current_category)
         self._load_question()
 
     def _tab_button_style(self, active: bool) -> str:
@@ -752,6 +1011,7 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
         return (
             "QLabel { color: #777777; font-size: 13px; padding: 4px 8px; "
             "border: 1px solid #cccccc; border-radius: 4px; background-color: #f5f5f5; }"
+            "QLabel:hover { color:#2563eb; border-color:#60a5fa; }"
         )
 
     def _input_style(self) -> str:

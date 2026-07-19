@@ -29,7 +29,7 @@
     },
     {
         "word": "abortion",
-        "content": "[əˈbɔːʃ(ə)n] v. 人工流产，堕胎"
+        "content": "[əˈbɔːʃ(ə)n] n. 人工流产；堕胎"
     },
     {
         "word": "about",
@@ -124,8 +124,8 @@
         "content": "[əˈkʌmplɪʃ] v. 完成"
     },
     {
-        "word": "according",
-        "content": "to [əˈkɔːdɪŋ tʊ] ad. 按照，根据"
+        "word": "according to",
+        "content": "[əˈkɔːdɪŋ tʊ] ad. 按照，根据"
     },
     {
         "word": "account",
@@ -141,11 +141,11 @@
     },
     {
         "word": "accuracy",
-        "content": "[ˈækjʊrəsɪ] n. 准确，精确"
+        "content": "[ˈækjʊrəsɪ] n. 准确；精确"
     },
     {
         "word": "accuse",
-        "content": "[əˈkjuːz] v. 正确无误的,精确的"
+        "content": "[əˈkjuːz] v. 指控，控告；谴责"
     },
     {
         "word": "accustomed",
@@ -372,8 +372,8 @@
         "content": "[ˈæfrɪkən] a. 非洲的，非洲人的 n. 非洲人"
     },
     {
-        "word": "afte",
-        "content": "[ˈɑːftə(r)]r ad. 在后；后来prep. 在…之后；在 后面 conj. 在…以后"
+        "word": "after",
+        "content": "[ˈɑːftə(r)] ad. 在后；后来prep. 在…之后；在 后面 conj. 在…以后"
     },
     {
         "word": "afternoon",
@@ -405,11 +405,11 @@
     },
     {
         "word": "agent",
-        "content": "[ˈeɪdʒənt] n. 代理人，经济人"
+        "content": "[ˈeɪdʒənt] n. 代理人；经纪人"
     },
     {
         "word": "aggression",
-        "content": "[ˈəɡreʃ(ə)n] n. 侵略"
+        "content": "[əˈɡreʃ(ə)n] n. 侵略；侵犯"
     },
     {
         "word": "aggressive",
@@ -664,8 +664,8 @@
         "content": "[ˈænsəstə(r)] n. 祖宗； 祖先"
     },
     {
-        "word": "acchor",
-        "content": "v. / n. 锚，抛锚"
+        "word": "anchor",
+        "content": "[ˈæŋkə(r)] v. / n. 锚，抛锚"
     },
     {
         "word": "ancient",
@@ -736,8 +736,8 @@
         "content": "[ænˈtɑːktɪk]a. 南极的"
     },
     {
-        "word": "the",
-        "content": "Antarctic [ænˈtɑːktɪk] 南极"
+        "word": "the Antarctic",
+        "content": "[ænˈtɑːktɪk] 南极"
     },
     {
         "word": "Antarctica",
@@ -776,8 +776,8 @@
         "content": "[ˈenɪθɪŋ] pron. 什么事（物）；任何事（物）"
     },
     {
-        "word": "anywa",
-        "content": "[ˈenɪweɪ]y ad. 不管怎样"
+        "word": "anyway",
+        "content": "[ˈenɪweɪ] ad. 不管怎样"
     },
     {
         "word": "anywhere",
@@ -912,12 +912,12 @@
         "content": "[ˈɑːktɪk] a. 北极的"
     },
     {
-        "word": "the",
-        "content": "Arctic [ˈɑːktɪk] 北极"
+        "word": "the Arctic",
+        "content": "[ˈɑːktɪk] 北极"
     },
     {
-        "word": "the",
-        "content": "Arctic Ocean [ˈɑːktɪk ˈəʊʃ(ə)n] 北冰洋"
+        "word": "the Arctic Ocean",
+        "content": "[ˈɑːktɪk ˈəʊʃ(ə)n] 北冰洋"
     },
     {
         "word": "are",
@@ -1108,8 +1108,8 @@
         "content": "[ətˈlæntɪk] a. 大西洋的"
     },
     {
-        "word": "the",
-        "content": "Atlantic Ocean [ətˈlæntɪk ˈəʊʃ(ə)n] 大西洋"
+        "word": "the Atlantic Ocean",
+        "content": "[ətˈlæntɪk ˈəʊʃ(ə)n] 大西洋"
     },
     {
         "word": "atmosphere",
@@ -1209,7 +1209,7 @@
     },
     {
         "word": "available",
-        "content": "[ˈɔːtəm] a. 可获得的，有空的"
+        "content": "[əˈveɪləb(ə)l] a. 可获得的，有空的"
     },
     {
         "word": "avenue",
@@ -1252,7 +1252,7 @@
         "content": "[ˈɔːkwəd] a.令人尴尬,使人难堪的"
     },
     {
-        "word": "Baby",
+        "word": "baby",
         "content": "[ˈbeɪbɪ] n. 婴儿"
     },
     {
@@ -1364,8 +1364,8 @@
         "content": "[bæŋk] n. （河海湖的）岸，堤 n. 银行"
     },
     {
-        "word": "bank",
-        "content": "account [bæŋk əˈkaʊnt] n. 银行账户"
+        "word": "bank account",
+        "content": "[bæŋk əˈkaʊnt] n. 银行账户"
     },
     {
         "word": "bar",
@@ -1896,8 +1896,8 @@
         "content": "[buːð] n.岗；（为某种用途而设的）亭或小隔间"
     },
     {
-        "word": "telephone",
-        "content": "booth [ˈtelɪfəʊn- buːð]电话亭"
+        "word": "telephone booth",
+        "content": "[ˈtelɪfəʊn- buːð]电话亭"
     },
     {
         "word": "border",
@@ -2088,8 +2088,8 @@
         "content": "[ˈbrɪtɪʃ] a. 英国的；大不列颠的；英国人的"
     },
     {
-        "word": "the",
-        "content": "British [ˈbrɪtɪʃ] n. 英国国民；大不列颠人"
+        "word": "the British",
+        "content": "[ˈbrɪtɪʃ] n. 英国国民；大不列颠人"
     },
     {
         "word": "broad",
@@ -2208,8 +2208,8 @@
         "content": "[bʌs] n. 公共汽车"
     },
     {
-        "word": "bus",
-        "content": "stop [bʌs stɔp] n。公共汽车站"
+        "word": "bus stop",
+        "content": "[bʌs stɔp] n。公共汽车站"
     },
     {
         "word": "bush",
@@ -2348,8 +2348,8 @@
         "content": "[ˈkæns(ə)l] vt. 取消"
     },
     {
-        "word": "cance",
-        "content": "[ˈkænsə(r)]r n. 癌"
+        "word": "cancer",
+        "content": "[ˈkænsə(r)] n. 癌"
     },
     {
         "word": "candidate",
@@ -2400,8 +2400,8 @@
         "content": "[kɑːd] n.卡片；名片；纸牌"
     },
     {
-        "word": "card",
-        "content": "games [kɑːd ɡeɪm] 纸牌游戏"
+        "word": "card games",
+        "content": "[kɑːd ɡeɪm] 纸牌游戏"
     },
     {
         "word": "care",
@@ -2456,8 +2456,8 @@
         "content": "[kæʃ] n. 现金，现钞 v. 兑现"
     },
     {
-        "word": "cassettle",
-        "content": "[kæ'set] n. 磁带"
+        "word": "cassette",
+        "content": "[kəˈset] n. 磁带"
     },
     {
         "word": "cast",
@@ -2596,8 +2596,8 @@
         "content": "[tʃeɪn] n. 链； 链条"
     },
     {
-        "word": "chain",
-        "content": "store(s) [tʃeɪn stɔː(r)] 连锁店"
+        "word": "chain store(s)",
+        "content": "[tʃeɪn stɔː(r)] 连锁店"
     },
     {
         "word": "chair",
@@ -2696,8 +2696,8 @@
         "content": "[tʃɪə(r)] n. & vi.欢呼； 喝彩"
     },
     {
-        "word": "Cheer",
-        "content": "up [tʃɪə(r)-ʌp] 振作起来！提起精神！"
+        "word": "cheer up",
+        "content": "[tʃɪə(r)-ʌp] 振作起来！提起精神！"
     },
     {
         "word": "cheerful",
@@ -2816,16 +2816,16 @@
         "content": "[ˈkrɪsməs] n. 圣诞节（12月25日）"
     },
     {
-        "word": "Christmas",
-        "content": "card [ˈkrɪsməs kɑːd] 圣诞卡"
+        "word": "Christmas card",
+        "content": "[ˈkrɪsməs kɑːd] 圣诞卡"
     },
     {
-        "word": "Christmas",
-        "content": "tree [ˈkrɪsməs triː] 圣诞树"
+        "word": "Christmas tree",
+        "content": "[ˈkrɪsməs triː] 圣诞树"
     },
     {
-        "word": "Christmas",
-        "content": "Eve [ˈkrɪsməs iːv ] 圣诞（前）夜"
+        "word": "Christmas Eve",
+        "content": "[ˈkrɪsməs iːv ] 圣诞（前）夜"
     },
     {
         "word": "church",
@@ -3116,8 +3116,8 @@
         "content": "[ˈkɔment] n. 评论"
     },
     {
-        "word": "commericial",
-        "content": "a.贸易的，商业的"
+        "word": "commercial",
+        "content": "[kəˈmɜːʃ(ə)l] a.贸易的，商业的"
     },
     {
         "word": "commit",
@@ -3220,8 +3220,8 @@
         "content": "[kəmˈpjuːtə(r)] n. 电子计算机"
     },
     {
-        "word": "computer",
-        "content": "game [kəmˈpjuːtə(r) ɡeɪm] 电子游戏"
+        "word": "computer game",
+        "content": "[kəmˈpjuːtə(r) ɡeɪm] 电子游戏"
     },
     {
         "word": "comrade",
@@ -3377,7 +3377,7 @@
     },
     {
         "word": "consume",
-        "content": "[kənˈsʌltənt] v. 消耗，耗费（燃料，能量，时间等）"
+        "content": "[kənˈsjuːm] v. 消耗，耗费（燃料，能量，时间等）"
     },
     {
         "word": "contain",
@@ -4401,7 +4401,7 @@
     },
     {
         "word": "dozen",
-        "content": "[ˈdaʊnwəd] n. 十二个；几十，许多"
+        "content": "[ˈdʌz(ə)n] n. 十二个；几十，许多"
     },
     {
         "word": "Dr(缩)",
@@ -4492,12 +4492,12 @@
         "content": "[dʌk] n. 鸭子"
     },
     {
-        "word": "due[djuː;",
-        "content": "(US) duː] a. 预期的；约定的"
+        "word": "due",
+        "content": "[djuː; (US) duː] a. 预期的；约定的"
     },
     {
-        "word": "dull[dʌl]",
-        "content": "a. 阴暗的；单调无味"
+        "word": "dull",
+        "content": "[dʌl] a. 阴暗的；单调无味"
     },
     {
         "word": "dumpling",
@@ -4532,11 +4532,11 @@
         "content": "['di:'vi:'di:] 数码影碟(digital versatile disk)"
     },
     {
-        "word": "Dynamic",
+        "word": "dynamic",
         "content": "[daɪˈnæmɪk] a.充满活力,精力充沛的"
     },
     {
-        "word": "Dynasty",
+        "word": "dynasty",
         "content": "[ˈdɪnəstɪ; (US) ˈdaɪnəstɪ] n.王朝，朝代"
     },
     {
@@ -4724,8 +4724,8 @@
         "content": "[els] ad. 别的，其他的"
     },
     {
-        "word": "e-mail/e",
-        "content": "[iː- meɪl]]-n. 电子邮件"
+        "word": "e-mail",
+        "content": "[ˈiːmeɪl] n. 电子邮件"
     },
     {
         "word": "embarrass",
@@ -4784,8 +4784,8 @@
         "content": "[enəˈdʒetɪk] a. 精力旺盛的"
     },
     {
-        "word": "energ",
-        "content": "[ˈenədʒɪ] y n. 精力，能量"
+        "word": "energy",
+        "content": "[ˈenədʒɪ] n. 精力，能量"
     },
     {
         "word": "engine",
@@ -5096,8 +5096,8 @@
         "content": "[ɪkˈsplɔːrə(r)] n. 探险者"
     },
     {
-        "word": "export[ɪkˈspɔːt]",
-        "content": "n. / v.出口，输出"
+        "word": "export",
+        "content": "[ɪkˈspɔːt] n. / v.出口，输出"
     },
     {
         "word": "expose",
@@ -5116,12 +5116,12 @@
         "content": "[ɪkˈstenʃ(ə)n] n.扩大，延伸"
     },
     {
-        "word": "extra[ˈekstrə]",
-        "content": "a. 额外的，外加的"
+        "word": "extra",
+        "content": "[ˈekstrə] a. 额外的，外加的"
     },
     {
-        "word": "extraordinary[ɪkˈstrɔːdɪnərɪ;",
-        "content": "(US) -dənerɪ] a. 离奇的；使人惊奇的"
+        "word": "extraordinary",
+        "content": "[ɪkˈstrɔːdɪn(ə)rɪ] a. 离奇的；使人惊奇的"
     },
     {
         "word": "extreme",
@@ -5216,8 +5216,8 @@
         "content": "name 姓氏"
     },
     {
-        "word": "famous[ˈfeɪməs]",
-        "content": "a. 著名的"
+        "word": "famous",
+        "content": "[ˈfeɪməs] a. 著名的"
     },
     {
         "word": "fan",
@@ -5300,8 +5300,8 @@
         "content": "['februəri] n. 2月"
     },
     {
-        "word": "federa",
-        "content": "[ˈfedər(ə)l]l a.中央的（政府）联邦的"
+        "word": "federal",
+        "content": "[ˈfedərəl] a.中央的（政府）联邦的"
     },
     {
         "word": "fee",
@@ -5484,8 +5484,8 @@
         "content": "[fɪt] a. 健康的, 适合的 v. （使）适合，安装"
     },
     {
-        "word": "fitting",
-        "content": "room [ˈfɪtɪŋ-rʊm]] 试衣间"
+        "word": "fitting room",
+        "content": "[ˈfɪtɪŋ ruːm] 试衣间"
     },
     {
         "word": "five",
@@ -5513,7 +5513,7 @@
     },
     {
         "word": "flashlight",
-        "content": "[flæʃ] n. 手电"
+        "content": "[ˈflæʃlaɪt] n. 手电"
     },
     {
         "word": "flat",
@@ -5573,7 +5573,7 @@
     },
     {
         "word": "fly",
-        "content": "[ˈfluːənt] n. 飞行；苍蝇"
+        "content": "[flaɪ] n. 飞行；苍蝇"
     },
     {
         "word": "fly",
@@ -5613,7 +5613,7 @@
     },
     {
         "word": "food",
-        "content": "[fɔnd] n. 食物，食品"
+        "content": "[fuːd] n. 食物，食品"
     },
     {
         "word": "fool",
@@ -5741,7 +5741,7 @@
     },
     {
         "word": "fourth",
-        "content": "[ˈfɔːˈtiːn] num. 第四"
+        "content": "[fɔːθ] num. 第四"
     },
     {
         "word": "fox",
@@ -5864,8 +5864,8 @@
         "content": "[fruːt] n. 水果；果实"
     },
     {
-        "word": "fruit",
-        "content": "juice [fruːt dʒuːs] n. 果汁"
+        "word": "fruit juice",
+        "content": "[fruːt dʒuːs] n. 果汁"
     },
     {
         "word": "fry",
@@ -6640,8 +6640,8 @@
         "content": "(hid, hidden) [haɪd] v. 把…藏起来，隐藏"
     },
     {
-        "word": "hide",
-        "content": "and seek [haɪd-ənd-siːk] 捉迷藏"
+        "word": "hide-and-seek",
+        "content": "[haɪd-ənd-siːk] 捉迷藏"
     },
     {
         "word": "high",
@@ -6733,11 +6733,11 @@
     },
     {
         "word": "honey",
-        "content": "[ˈɔnɪst] n. 蜂蜜"
+        "content": "[ˈhʌnɪ] n. 蜂蜜"
     },
     {
-        "word": "Hong",
-        "content": "Kong [hɔŋ kɔŋ] * n. 香港"
+        "word": "Hong Kong",
+        "content": "[hɔŋ kɔŋ] * n. 香港"
     },
     {
         "word": "honour",
@@ -6788,8 +6788,8 @@
         "content": "[hɔt,hɑt] a. 热的"
     },
     {
-        "word": "hot",
-        "content": "dog [hɔt- dɔɡ] n. 热狗(红肠面包)"
+        "word": "hot dog",
+        "content": "[hɔt- dɔɡ] n. 热狗(红肠面包)"
     },
     {
         "word": "hotel",
@@ -6836,8 +6836,8 @@
         "content": "[ˈhjuːmən] a. 人的，人类的"
     },
     {
-        "word": "human",
-        "content": "being [ˈhjuːmən ˈbiːɪŋ] 人"
+        "word": "human being",
+        "content": "[ˈhjuːmən ˈbiːɪŋ] 人"
     },
     {
         "word": "humorous",
@@ -7032,7 +7032,7 @@
         "content": "[ˈɪndɪən] a. （美洲）印地安人的； 印度人的 n. 印地安人；印度人"
     },
     {
-        "word": "Indicate",
+        "word": "indicate",
         "content": "['ɪndɪkeɪt] v.表明，象征，暗示"
     },
     {
@@ -7052,8 +7052,8 @@
         "content": "[ɪnfəˈmeɪʃ(ə)n] n. 信息"
     },
     {
-        "word": "information",
-        "content": "desk [ɪnfəˈmeɪʃ(ə)n desk] 问讯处"
+        "word": "information desk",
+        "content": "[ɪnfəˈmeɪʃ(ə)n desk] 问讯处"
     },
     {
         "word": "initial",
@@ -7384,12 +7384,12 @@
         "content": "[dʒʌŋk] n. （口语）废品，破烂货"
     },
     {
-        "word": "junk",
-        "content": "mail [dʒʌŋk meɪl] 塞到邮箱的广告宣传品"
+        "word": "junk mail",
+        "content": "[dʒʌŋk meɪl] 塞到邮箱的广告宣传品"
     },
     {
-        "word": "junk",
-        "content": "food [dʒʌŋk fuːd] 没有营养的垃圾食品"
+        "word": "junk food",
+        "content": "[dʒʌŋk fuːd] 没有营养的垃圾食品"
     },
     {
         "word": "just",
@@ -7444,8 +7444,8 @@
         "content": "[ˈkɪləɡræm] n. 千克"
     },
     {
-        "word": "kilometr",
-        "content": "['kiləʊmi:tə(r)] e n. 千米（公里）"
+        "word": "kilometre",
+        "content": "[ˈkɪləmiːtə(r)] n. 千米（公里）"
     },
     {
         "word": "kind",
@@ -7505,7 +7505,7 @@
     },
     {
         "word": "lab",
-        "content": "[ˈnɔlɪdʒ] = laboratory n. 实验室"
+        "content": "[læb] = laboratory n. 实验室"
     },
     {
         "word": "labour",
@@ -8048,8 +8048,8 @@
         "content": "[ˈmænə(r)] n. 方式，态度，举止"
     },
     {
-        "word": "table",
-        "content": "manners [ˈteɪb(ə)l ˈmænə(r) z] 餐桌礼节，用餐的规矩"
+        "word": "table manners",
+        "content": "[ˈteɪb(ə)l ˈmænə(r) z] 餐桌礼节，用餐的规矩"
     },
     {
         "word": "many",
@@ -8064,8 +8064,8 @@
         "content": "[ˈmeɪp(ə)l] n. 枫树"
     },
     {
-        "word": "maple",
-        "content": "leaves [ˈmeɪp(ə)l-li:vz] 枫叶"
+        "word": "maple leaves",
+        "content": "[ˈmeɪp(ə)l-li:vz] 枫叶"
     },
     {
         "word": "marathon",
@@ -8192,8 +8192,8 @@
         "content": "[ˈmed(ə)l] n. 奖牌"
     },
     {
-        "word": "gold",
-        "content": "medal [ɡəʊld ˈmed(ə)l] 金牌"
+        "word": "gold medal",
+        "content": "[ɡəʊld ˈmed(ə)l] 金牌"
     },
     {
         "word": "media",
@@ -8257,7 +8257,7 @@
     },
     {
         "word": "menu",
-        "content": "[ˈmenʃ(ə)n] n. 菜单"
+        "content": "[ˈmenjuː] n. 菜单"
     },
     {
         "word": "merchant",
@@ -8336,8 +8336,8 @@
         "content": "[ˈmɪd(ə)l] n. 中间;当中;中级的"
     },
     {
-        "word": "Middle",
-        "content": "East [ˈmɪd(ə)l iːst] n. 中东"
+        "word": "Middle East",
+        "content": "[ˈmɪd(ə)l iːst] n. 中东"
     },
     {
         "word": "midnight",
@@ -8460,8 +8460,8 @@
         "content": "[ˈməʊbaɪl; (US) məʊbl] a. 活动的，可移动的"
     },
     {
-        "word": "mobile",
-        "content": "phone [ˈməʊbaɪl fəʊn]手提电话，手机"
+        "word": "mobile phone",
+        "content": "[ˈməʊbaɪl fəʊn]手提电话，手机"
     },
     {
         "word": "model",
@@ -8520,8 +8520,8 @@
         "content": "[muːn] n. 月球；月光；月状物"
     },
     {
-        "word": "moon",
-        "content": "cake [muːn keɪk] n. 月饼"
+        "word": "moon cake",
+        "content": "[muːn keɪk] n. 月饼"
     },
     {
         "word": "mop",
@@ -8548,7 +8548,7 @@
         "content": "[ˈmɔzləm] n. 伊斯兰教徒,回教徒"
     },
     {
-        "word": "Mosquito",
+        "word": "mosquito",
         "content": "[məˈskiːtəʊ] n.蚊子"
     },
     {
@@ -8828,16 +8828,16 @@
         "content": "[njuː; (US) nuː] a. 新的；新鲜的"
     },
     {
-        "word": "New",
-        "content": "York [njuː jɔːk] n. 纽约"
+        "word": "New York",
+        "content": "[njuː jɔːk] n. 纽约"
     },
     {
-        "word": "New",
-        "content": "Zealand [njuː 'zi:lənd] * n. 新西兰"
+        "word": "New Zealand",
+        "content": "[njuː 'zi:lənd] * n. 新西兰"
     },
     {
-        "word": "New",
-        "content": "Zealander [njuː 'zi:ləndə]n. 新西兰人"
+        "word": "New Zealander",
+        "content": "[njuː 'zi:ləndə]n. 新西兰人"
     },
     {
         "word": "news",
@@ -9084,8 +9084,8 @@
         "content": "n. 大洋洲"
     },
     {
-        "word": "o'clock[əˈklɔk]",
-        "content": "n. 点钟"
+        "word": "o'clock",
+        "content": "[əˈklɔk] n. 点钟"
     },
     {
         "word": "October",
@@ -9100,20 +9100,20 @@
         "content": "[ˈɔf; (US) ɔːf] prep. 离开,脱离,（走）开"
     },
     {
-        "word": "offence[of·fence",
-        "content": "|| ə'fens] n. 违法行为，犯罪"
+        "word": "offence",
+        "content": "[əˈfens] n. 违法行为；犯罪"
     },
     {
-        "word": "offer[ˈɔfə(r);",
-        "content": "(US) ɔːfər] n.& vt. 提供；建议"
+        "word": "offer",
+        "content": "[ˈɒfə(r)] n.& vt. 提供；建议"
     },
     {
         "word": "office",
         "content": "[ˈɔfɪs; (US) ˈɔːfɪs] n. 办公室"
     },
     {
-        "word": "officer[ˈɔfɪsə(r);",
-        "content": "(US) ˈɔːfɪsər] n. 军官;公务员,官员；警察，警官"
+        "word": "officer",
+        "content": "[ˈɒfɪsə(r)] n. 军官；公务员；官员；警察，警官"
     },
     {
         "word": "official",
@@ -9140,8 +9140,8 @@
         "content": "[ˈɔɪlfiːld] n.油田"
     },
     {
-        "word": "OK[əʊˈkeɪ]",
-        "content": "ad. （口语）好,对,不错"
+        "word": "OK",
+        "content": "[əʊˈkeɪ] ad. （口语）好,对,不错"
     },
     {
         "word": "old",
@@ -9152,8 +9152,8 @@
         "content": "[əˈlɪmpɪk] a. & n. 奥林匹克"
     },
     {
-        "word": "Olympic",
-        "content": "Games [əˈlɪmpɪk ɡeɪms] n. 奥运会"
+        "word": "Olympic Games",
+        "content": "[əˈlɪmpɪk ɡeɪms] n. 奥运会"
     },
     {
         "word": "omelette",
@@ -9176,8 +9176,8 @@
         "content": "[wʌnˈself]pron. 自己；自身"
     },
     {
-        "word": "onion[ˈʌnjən]",
-        "content": "n. 洋葱；洋葱头"
+        "word": "onion",
+        "content": "[ˈʌnjən] n. 洋葱；洋葱头"
     },
     {
         "word": "only",
@@ -9204,12 +9204,12 @@
         "content": "[ˈɔpərə]n. 歌剧"
     },
     {
-        "word": "opera",
-        "content": "house [ˈɔpərə haʊs]n.歌剧院,艺术剧院"
+        "word": "opera house",
+        "content": "[ˈɔpərə haʊs]n.歌剧院,艺术剧院"
     },
     {
-        "word": "operate[ˈɔpəreɪt]",
-        "content": "v. 做手术，运转；实施，负责, 经营，管理"
+        "word": "operate",
+        "content": "[ˈɔpəreɪt] v. 做手术，运转；实施，负责, 经营，管理"
     },
     {
         "word": "operation",
@@ -9292,16 +9292,16 @@
         "content": "[ˈʌðə(r)] pron. 别人，别的东西 a. 别的,另外的"
     },
     {
-        "word": "otherwise[ˈʌðəwaɪz]",
-        "content": "ad.要不然,否则,另样"
+        "word": "otherwise",
+        "content": "[ˈʌðəwaɪz] ad.要不然,否则,另样"
     },
     {
-        "word": "Ottawa[ˈɔtəwə]",
-        "content": "n. 渥太华"
+        "word": "Ottawa",
+        "content": "[ˈɔtəwə] n. 渥太华"
     },
     {
-        "word": "ouch[aʊtʃ]",
-        "content": "int（突然受痛时叫声）哎哟"
+        "word": "ouch",
+        "content": "[aʊtʃ] int（突然受痛时叫声）哎哟"
     },
     {
         "word": "ought",
@@ -9312,8 +9312,8 @@
         "content": "[ˈaʊə(r)]pron.我们的"
     },
     {
-        "word": "ours[ˈaʊəz]",
-        "content": "pron.我们的"
+        "word": "ours",
+        "content": "[ˈaʊəz] pron.我们的"
     },
     {
         "word": "ourselves",
@@ -9328,20 +9328,20 @@
         "content": "[ˈaʊtkʌm] n. 结果，效果"
     },
     {
-        "word": "outdoors[aʊtˈdɔːz]",
-        "content": "ad. 在户外, 在野外"
+        "word": "outdoors",
+        "content": "[aʊtˈdɔːz] ad. 在户外, 在野外"
     },
     {
-        "word": "outer[ˈaʊtə(r)]",
-        "content": "a. 外部的，外面的"
+        "word": "outer",
+        "content": "[ˈaʊtə(r)] a. 外部的，外面的"
     },
     {
-        "word": "outgoing[ˈaʊtɡəʊɪŋ]",
-        "content": "a. 爱交际的,外向的"
+        "word": "outgoing",
+        "content": "[ˈaʊtɡəʊɪŋ] a. 爱交际的,外向的"
     },
     {
-        "word": "outing[ˈaʊtɪŋ]",
-        "content": "n. 郊游，远足"
+        "word": "outing",
+        "content": "[ˈaʊtɪŋ] n. 郊游，远足"
     },
     {
         "word": "outline",
@@ -9404,12 +9404,12 @@
         "content": "[əʊn]a. 自己的 v. 拥有,所有"
     },
     {
-        "word": "owner[ˈəʊnə(r)]",
-        "content": "n. 物主，所有人"
+        "word": "owner",
+        "content": "[ˈəʊnə(r)] n. 物主，所有人"
     },
     {
-        "word": "ownership[ˈəʊnəʃɪp]",
-        "content": "n. 所有制"
+        "word": "ownership",
+        "content": "[ˈəʊnəʃɪp] n. 所有制"
     },
     {
         "word": "ox",
@@ -9428,8 +9428,8 @@
         "content": "[pəˈsɪfɪk]a. 太平洋的"
     },
     {
-        "word": "the",
-        "content": "Pacific Ocean [ðə pəˈsɪfɪkˈəʊʃ(ə)n] 太平洋"
+        "word": "the Pacific Ocean",
+        "content": "[ðə pəˈsɪfɪkˈəʊʃ(ə)n] 太平洋"
     },
     {
         "word": "pack",
@@ -9533,7 +9533,7 @@
     },
     {
         "word": "park",
-        "content": "[ˈpærɪs] n. 公园"
+        "content": "[pɑːk] n. 公园"
     },
     {
         "word": "park",
@@ -9573,7 +9573,7 @@
     },
     {
         "word": "party",
-        "content": "[ˈpɑːtɪ n. 聚会，晚会；党派"
+        "content": "[ˈpɑːtɪ] n. 聚会，晚会；党派"
     },
     {
         "word": "pass",
@@ -9713,7 +9713,7 @@
     },
     {
         "word": "perfect",
-        "content": "[kwestʃəˈneə(r)] a. 完美的，极好的"
+        "content": "[ˈpɜːfɪkt] a. 完美的，极好的"
     },
     {
         "word": "perform",
@@ -9769,7 +9769,7 @@
     },
     {
         "word": "persuade",
-        "content": "[ˈpɜːsənəlɪ] vt. 说服，劝说"
+        "content": "[pəˈsweɪd] vt. 说服，劝说"
     },
     {
         "word": "pest",
@@ -9829,11 +9829,11 @@
     },
     {
         "word": "pianist",
-        "content": "[ˈfɪzɪks] n. 钢琴家"
+        "content": "[ˈpɪənɪst] n. 钢琴家"
     },
     {
-        "word": "piano[pɪˈænəʊ]",
-        "content": "n. 钢琴"
+        "word": "piano",
+        "content": "[pɪˈænəʊ] n. 钢琴"
     },
     {
         "word": "pick",
@@ -9844,8 +9844,8 @@
         "content": "[ˈpɪknɪk] n.& v. 野餐"
     },
     {
-        "word": "picture[ˈpɪktʃə(r)]",
-        "content": "n. 图片，画片，照片"
+        "word": "picture",
+        "content": "[ˈpɪktʃə(r)] n. 图片，画片，照片"
     },
     {
         "word": "pie",
@@ -9853,15 +9853,15 @@
     },
     {
         "word": "piece",
-        "content": "[paɪ] n. 一块（片，张，件…）"
+        "content": "[piːs] n. 一块（片，张，件…）"
     },
     {
         "word": "pig",
         "content": "[paɪ] n. 猪"
     },
     {
-        "word": "pile[paɪ]",
-        "content": "n. 堆"
+        "word": "pile",
+        "content": "[paɪl] n. 堆"
     },
     {
         "word": "pill",
@@ -9888,12 +9888,12 @@
         "content": "[ˈpaɪnæp(ə)l] n. 菠萝"
     },
     {
-        "word": "ping-pong[pɪŋ-pɔɡ]",
-        "content": "n. 乒乓球"
+        "word": "ping-pong",
+        "content": "[ˈpɪŋ pɒŋ] n. 乒乓球"
     },
     {
-        "word": "pinkpɔɡ",
-        "content": "a. 粉红色的"
+        "word": "pink",
+        "content": "[pɪŋk] a. 粉红色的"
     },
     {
         "word": "pint",
@@ -9956,8 +9956,8 @@
         "content": "n. 游戏室"
     },
     {
-        "word": "player[ˈpleɪə(r)]",
-        "content": "n. 比赛者，选手"
+        "word": "player",
+        "content": "[ˈpleɪə(r)] n. 比赛者，选手"
     },
     {
         "word": "playground",
@@ -9981,11 +9981,11 @@
     },
     {
         "word": "pleasure",
-        "content": "[pliːzd] n. 高兴，愉快"
+        "content": "[ˈpleʒə(r)] n. 高兴，愉快"
     },
     {
         "word": "plenty",
-        "content": "[pliːzd] n. 充足，大量"
+        "content": "[ˈplentɪ] n. 充足，大量"
     },
     {
         "word": "plot",
@@ -10032,8 +10032,8 @@
         "content": "[pəʊl] n. 杆，电线杆；"
     },
     {
-        "word": "the",
-        "content": "North (South) Pole [ðə nɔːθpəʊ（地球的）极，极地 北（南）极"
+        "word": "the North (South) Pole",
+        "content": "[ðə nɔːθ (saʊθ) pəʊl] （地球的）北（南）极，极地"
     },
     {
         "word": "police",
@@ -10045,7 +10045,7 @@
     },
     {
         "word": "policy",
-        "content": "[ˈpɔlɪsɪ] n. 政策，方针，原则"
+        "content": "[ˈpɒləsɪ] n. 政策，方针，原则"
     },
     {
         "word": "polish",
@@ -10129,7 +10129,7 @@
     },
     {
         "word": "possess",
-        "content": "[pəˈzɪʃ(ə)n] vt. 占有；拥有"
+        "content": "[pəˈzes] vt. 占有；拥有"
     },
     {
         "word": "possession",
@@ -10144,8 +10144,8 @@
         "content": "[ˈpɔsɪb(ə)l] a. 可能的"
     },
     {
-        "word": "possiblyv",
-        "content": "ad. 可能地，也许"
+        "word": "possibly",
+        "content": "[ˈpɒsəblɪ] ad. 可能地，也许"
     },
     {
         "word": "post",
@@ -10193,7 +10193,7 @@
     },
     {
         "word": "pound",
-        "content": "[pəˈtenʃ(ə)l] n. 磅；英镑"
+        "content": "[paʊnd] n. 磅；英镑"
     },
     {
         "word": "pour",
@@ -10289,7 +10289,7 @@
     },
     {
         "word": "preserve",
-        "content": "[prezənˈteɪʃ(ə)n; (US) priːzenˈteʃn] v.保护，保留，保存"
+        "content": "[prɪˈzɜːv] v.保护，保留，保存"
     },
     {
         "word": "president",
@@ -10297,7 +10297,7 @@
     },
     {
         "word": "press",
-        "content": "[ˈprezɪdənt] vt.压,按 n.新闻界,出版社"
+        "content": "[pres] vt.压,按 n.新闻界,出版社"
     },
     {
         "word": "pressure",
@@ -10305,7 +10305,7 @@
     },
     {
         "word": "pretend",
-        "content": "[ˈpreʃə(r)] vi. 假装，装作"
+        "content": "[prɪˈtend] vi. 假装，装作"
     },
     {
         "word": "pretty",
@@ -10332,8 +10332,8 @@
         "content": "[ˈpraɪmərɪ] a. 初等的；初级的"
     },
     {
-        "word": "primary",
-        "content": "school [ˈpraɪmərɪ skuːl] 小学"
+        "word": "primary school",
+        "content": "[ˈpraɪmərɪ skuːl] 小学"
     },
     {
         "word": "primitive",
@@ -10744,8 +10744,8 @@
         "content": "[rɔː] a.生的,未煮过的,未加工的"
     },
     {
-        "word": "raw",
-        "content": "material [rɔː məˈtɪərɪəl] 原料"
+        "word": "raw material",
+        "content": "[rɔː məˈtɪərɪəl] 原料"
     },
     {
         "word": "ray",
@@ -10769,7 +10769,7 @@
     },
     {
         "word": "reading",
-        "content": "[ʃɜːt] n. 阅读；朗读"
+        "content": "[ˈriːdɪŋ] n. 阅读；朗读"
     },
     {
         "word": "ready",
@@ -10789,7 +10789,7 @@
     },
     {
         "word": "really",
-        "content": "v [ˈrɪəlɪ] ad. 真正地；到底；确实"
+        "content": "[ˈrɪəlɪ] ad. 真正地；到底；确实"
     },
     {
         "word": "reason",
@@ -10848,8 +10848,8 @@
         "content": "[ˈrekɔːd; (US) ˈrekərd] n. 记录；唱片"
     },
     {
-        "word": "record",
-        "content": "holder [ˈrekɔːd ˈhəʊldə(r)] 记录保持者"
+        "word": "record holder",
+        "content": "[ˈrekɔːd ˈhəʊldə(r)] 记录保持者"
     },
     {
         "word": "record",
@@ -11125,7 +11125,7 @@
     },
     {
         "word": "respond",
-        "content": "[rɪˈspekt] v.回答,回应,作出反应"
+        "content": "[rɪˈspɒnd] v.回答,回应,作出反应"
     },
     {
         "word": "responsibility",
@@ -11632,8 +11632,8 @@
         "content": "[ˈskɔtɪʃ] a. 苏格兰（人）的 n. 苏格兰人"
     },
     {
-        "word": "Scratch[",
-        "content": "krætʃ ] v./ n. 划破，划痕，划伤"
+        "word": "scratch",
+        "content": "[skrætʃ] v./n. 划破；划痕；划伤"
     },
     {
         "word": "scream",
@@ -11724,8 +11724,8 @@
         "content": "[siːd] n. 种子"
     },
     {
-        "word": "melon",
-        "content": "seed [ˈmelən siːd] 瓜子"
+        "word": "melon seed",
+        "content": "[ˈmelən siːd] 瓜子"
     },
     {
         "word": "seek",
@@ -11936,8 +11936,8 @@
         "content": "[ˈʃɑːpənə(r)] n. 削尖用的器具"
     },
     {
-        "word": "pencil-",
-        "content": "sharpener [ˈpens(ə)l-ˈʃɑːpənə(r)] 转笔刀"
+        "word": "pencil sharpener",
+        "content": "[ˈpens(ə)l-ˈʃɑːpənə(r)] 转笔刀"
     },
     {
         "word": "shave",
@@ -12004,8 +12004,8 @@
         "content": "[ʃɔp]vi. 买东西 n. 商店,车间"
     },
     {
-        "word": "shop",
-        "content": "assistant [ʃɔp əˈsɪst(ə)nt] (英) 售货员"
+        "word": "shop assistant",
+        "content": "[ʃɔp əˈsɪst(ə)nt] (英) 售货员"
     },
     {
         "word": "shopkeeper",
@@ -12036,16 +12036,16 @@
         "content": "[ʃɔːts]n. 短裤；运动短裤"
     },
     {
-        "word": "short",
-        "content": "wave [ʃɔːt] [weɪv]n. 短波"
+        "word": "short wave",
+        "content": "[ʃɔːt] [weɪv]n. 短波"
     },
     {
-        "word": "shot[ʃɔt]",
-        "content": "n. 射击，开枪，开炮，射击声；子弹"
+        "word": "shot",
+        "content": "[ʃɔt] n. 射击，开枪，开炮，射击声；子弹"
     },
     {
-        "word": "should[ʃɔt]",
-        "content": "v. mod. 应当，应该，会 v. aux.会,应该（shall的过去时态）"
+        "word": "should",
+        "content": "[ʃʊd] v. mod. 应当，应该，会 v. aux.会,应该（shall的过去时态）"
     },
     {
         "word": "shoulder",
@@ -12053,7 +12053,7 @@
     },
     {
         "word": "shout",
-        "content": "[ˈʃəʊldə(r)] n.& v. 喊，高声呼喊"
+        "content": "[ʃaʊt] n.& v. 喊，高声呼喊"
     },
     {
         "word": "show",
@@ -12080,7 +12080,7 @@
         "content": "[ˈʃʌt(ə)l] vn. 合拢 （往返与两个定点之间的）（火车汽车飞机）班车/机"
     },
     {
-        "word": "shyv",
+        "word": "shy",
         "content": "[ʃaɪ] a. 害羞的"
     },
     {
@@ -12093,15 +12093,15 @@
     },
     {
         "word": "side",
-        "content": "[ˈsɪknɪs]n. 边，旁边，面，侧面"
+        "content": "[saɪd] n. 边，旁边，面，侧面"
     },
     {
-        "word": "sideroad",
-        "content": "(AmE sidewalk) n.人行道"
+        "word": "sidewalk",
+        "content": "[ˈsaɪdwɔːk] (AmE sidewalk) n.人行道"
     },
     {
-        "word": "sideway",
-        "content": "[ˈsaɪdweɪz] n. 岔路，旁路"
+        "word": "side road",
+        "content": "[ˈsaɪd rəʊd] n. 岔路，旁路"
     },
     {
         "word": "sideways",
@@ -12120,8 +12120,8 @@
         "content": "[ˈsaɪtsiːɪŋ]n. 游览，观光"
     },
     {
-        "word": "sign[saɪn]",
-        "content": "n. 符号，标记"
+        "word": "sign",
+        "content": "[saɪn] n. 符号，标记"
     },
     {
         "word": "signal",
@@ -12133,19 +12133,19 @@
     },
     {
         "word": "significance",
-        "content": "[ˈsɪɡnətʃə(r)] n. 重要性，意义"
+        "content": "[sɪɡˈnɪfɪkəns] n. 重要性，意义"
     },
     {
-        "word": "silence[ˈsaɪləns]",
-        "content": "n. 安静，沉默"
+        "word": "silence",
+        "content": "[ˈsaɪləns] n. 安静，沉默"
     },
     {
-        "word": "silentˈsaɪlənt]",
-        "content": "a. 无声的，无对话的"
+        "word": "silent",
+        "content": "[ˈsaɪlənt] a. 无声的，无对话的"
     },
     {
-        "word": "silk[sɪlk]",
-        "content": "n. （蚕）丝，丝织品"
+        "word": "silk",
+        "content": "[sɪlk] n. （蚕）丝，丝织品"
     },
     {
         "word": "silly",
@@ -12156,20 +12156,20 @@
         "content": "[ˈsɪlvə(r)] n. 银"
     },
     {
-        "word": "similar[ˈsɪmɪlə(r)]",
-        "content": "a. 相似的，像"
+        "word": "similar",
+        "content": "[ˈsɪmɪlə(r)] a. 相似的，像"
     },
     {
-        "word": "simple[ˈsɪmp(ə)l]",
-        "content": "a. 简单的，简易的"
+        "word": "simple",
+        "content": "[ˈsɪmp(ə)l] a. 简单的，简易的"
     },
     {
         "word": "simple-minded",
         "content": "[ˈsɪmp(ə)l maɪndɪ]a.纯朴,头脑简单"
     },
     {
-        "word": "simplify[ˈsɪmplɪfaɪ]",
-        "content": "v. 使简化，使简易"
+        "word": "simplify",
+        "content": "[ˈsɪmplɪfaɪ] v. 使简化，使简易"
     },
     {
         "word": "simply",
@@ -12189,7 +12189,7 @@
     },
     {
         "word": "singer",
-        "content": "[sɪŋ]n. 歌唱家，歌手"
+        "content": "[ˈsɪŋə(r)] n. 歌唱家，歌手"
     },
     {
         "word": "single",
@@ -12220,8 +12220,8 @@
         "content": "(sat, sat) [sɪt] vi. 坐"
     },
     {
-        "word": "situation[sɪtjʊˈeɪʃ(ə)n]",
-        "content": "n. 形势，情况"
+        "word": "situation",
+        "content": "[sɪtjʊˈeɪʃ(ə)n] n. 形势，情况"
     },
     {
         "word": "six",
@@ -12237,7 +12237,7 @@
     },
     {
         "word": "sixteen",
-        "content": "[ˈsɪkstɪ]num. 十六"
+        "content": "[ˌsɪksˈtiːn] num. 十六"
     },
     {
         "word": "sixteenth",
@@ -12245,11 +12245,11 @@
     },
     {
         "word": "size",
-        "content": "[sɪksˈtiːnθ]n. 尺寸，大小"
+        "content": "[saɪz] n. 尺寸，大小"
     },
     {
         "word": "skate",
-        "content": "[sɪksˈtiːnθ]vi. 溜冰，滑冰"
+        "content": "[skeɪt] vi. 溜冰，滑冰"
     },
     {
         "word": "skateboard",
@@ -12261,11 +12261,11 @@
     },
     {
         "word": "skill",
-        "content": "[skiː] n. 技能，技巧"
+        "content": "[skɪl] n. 技能，技巧"
     },
     {
         "word": "skilled",
-        "content": "[skiː] a. 熟练的；有技能的"
+        "content": "[skɪld] a. 熟练的；有技能的"
     },
     {
         "word": "skillful",
@@ -12300,8 +12300,8 @@
         "content": "[ˈskaɪskreɪpə(r)]n. 摩天楼"
     },
     {
-        "word": "slave[sleɪv]",
-        "content": "n. 奴隶"
+        "word": "slave",
+        "content": "[sleɪv] n. 奴隶"
     },
     {
         "word": "slavery",
@@ -12317,7 +12317,7 @@
     },
     {
         "word": "sleepy",
-        "content": "[sliːp]a. 想睡的,困倦的,瞌睡的"
+        "content": "[ˈsliːpɪ] a. 想睡的,困倦的,瞌睡的"
     },
     {
         "word": "sleeve",
@@ -12325,7 +12325,7 @@
     },
     {
         "word": "slice",
-        "content": "[sliːv]n. 片，切面（薄）片"
+        "content": "[slaɪs] n. 片，切面（薄）片"
     },
     {
         "word": "slide",
@@ -12345,7 +12345,7 @@
     },
     {
         "word": "slow",
-        "content": "[slɪp] ad. 慢慢地，缓慢地"
+        "content": "[sləʊ] ad. 慢慢地，缓慢地"
     },
     {
         "word": "small",
@@ -12369,11 +12369,11 @@
     },
     {
         "word": "smog",
-        "content": "[smaɪl]n. 烟雾(= smoke + fog)"
+        "content": "[smɒɡ] n. 烟雾(= smoke + fog)"
     },
     {
         "word": "smoke",
-        "content": "[smaɪl] n. 烟 v. 冒烟；吸烟"
+        "content": "[sməʊk] n. 烟 v. 冒烟；吸烟"
     },
     {
         "word": "smoke-free",
@@ -12389,15 +12389,15 @@
     },
     {
         "word": "smooth",
-        "content": "[ˈsməʊkɪŋ]a. 光滑的;平坦的"
+        "content": "[smuːð] a. 光滑的;平坦的"
     },
     {
         "word": "snack",
         "content": "[snæk] n. 小吃"
     },
     {
-        "word": "snack",
-        "content": "bar [snæk bɑː] n. 快餐店"
+        "word": "snack bar",
+        "content": "[snæk bɑː] n. 快餐店"
     },
     {
         "word": "snake",
@@ -12405,15 +12405,15 @@
     },
     {
         "word": "snatch",
-        "content": "[sneɪk]v. 夺，夺得，夺走"
+        "content": "[snætʃ] v. 夺，夺得，夺走"
     },
     {
         "word": "sneaker",
-        "content": "[sneɪk] n. （复）轻便运动鞋（美）"
+        "content": "[ˈsniːkə(r)] n. （复）轻便运动鞋（美）"
     },
     {
         "word": "sneeze",
-        "content": "[sneɪk]v. 打喷嚏"
+        "content": "[sniːz] v. 打喷嚏"
     },
     {
         "word": "sniff",
@@ -12428,8 +12428,8 @@
         "content": "[ˈsnəʊbɔːl] n. 雪球"
     },
     {
-        "word": "snowman[ˈsnəʊmæn]",
-        "content": "n. 雪人"
+        "word": "snowman",
+        "content": "[ˈsnəʊmæn] n. 雪人"
     },
     {
         "word": "snowy",
@@ -12445,11 +12445,11 @@
     },
     {
         "word": "sob",
-        "content": "[səʊp]n.& v. 抽泣，啜泣"
+        "content": "[sɒb] n.& v. 抽泣，啜泣"
     },
     {
-        "word": "soccer[ˈsɔkə(r)]",
-        "content": "n.英式足球"
+        "word": "soccer",
+        "content": "[ˈsɔkə(r)] n.英式足球"
     },
     {
         "word": "social",
@@ -12477,19 +12477,19 @@
     },
     {
         "word": "sofa",
-        "content": "[ˈsɔkɪt]n. （长）沙发"
+        "content": "[ˈsəʊfə] n. （长）沙发"
     },
     {
         "word": "soft",
-        "content": "sɔft; (US) sɔːft] a. 软的，柔和的"
+        "content": "[sɒft] a. 软的，柔和的"
     },
     {
         "word": "software",
-        "content": "[sɔft; (US) sɔːft] n. 软件"
+        "content": "[ˈsɒftweə(r)] n. 软件"
     },
     {
-        "word": "soft",
-        "content": "drink [sɔft drɪŋk] n. (不含酒精)清凉饮料"
+        "word": "soft drink",
+        "content": "[sɔft drɪŋk] n. (不含酒精)清凉饮料"
     },
     {
         "word": "softball",
@@ -12528,12 +12528,12 @@
         "content": "[ˈsʌmθɪŋ] pron. 某事；某物"
     },
     {
-        "word": "sometimes[ˈsʌmtaɪmz]",
-        "content": "ad. 有时"
+        "word": "sometimes",
+        "content": "[ˈsʌmtaɪmz] ad. 有时"
     },
     {
         "word": "somewhere",
-        "content": "[ˈsʌmtaɪmz]ad. 在某处"
+        "content": "[ˈsʌmweə(r)] ad. 在某处"
     },
     {
         "word": "son",
@@ -12541,11 +12541,11 @@
     },
     {
         "word": "song",
-        "content": "[sʌn] n. 歌唱；歌曲"
+        "content": "[sɒŋ] n. 歌唱；歌曲"
     },
     {
         "word": "soon",
-        "content": "[sʌn] ad. 不久,很快,一会儿"
+        "content": "[suːn] ad. 不久,很快,一会儿"
     },
     {
         "word": "sorrow",
@@ -12557,7 +12557,7 @@
     },
     {
         "word": "sort",
-        "content": "[sɔːt]v]t. 把…分类，拣选 n. 种类，类别"
+        "content": "[sɔːt] vt. 把…分类，拣选 n. 种类，类别"
     },
     {
         "word": "so-so",
@@ -12585,7 +12585,7 @@
     },
     {
         "word": "southeast",
-        "content": "[‚saʊθ'ɪːs n. 东南"
+        "content": "[ˌsaʊθˈiːst] n. 东南"
     },
     {
         "word": "southern",
@@ -12608,28 +12608,28 @@
         "content": "[speɪs]n. 空间"
     },
     {
-        "word": "spaceship[ˈspeɪsʃɪp]",
-        "content": "n. 宇宙飞船"
+        "word": "spaceship",
+        "content": "[ˈspeɪsʃɪp] n. 宇宙飞船"
     },
     {
         "word": "spade",
         "content": "[speɪd] n. 铲子;纸牌中的黑桃"
     },
     {
-        "word": "spaghettiv",
-        "content": "n. 意大利式面条"
+        "word": "spaghetti",
+        "content": "[spəˈɡetɪ] n. 意大利式面条"
     },
     {
         "word": "Spain*",
         "content": "[speɪn]n. 西班牙"
     },
     {
-        "word": "Spanish[ˈspænɪʃ]",
-        "content": "a. 西班牙人的，西班牙的，西班牙语的 n. 西班牙语"
+        "word": "Spanish",
+        "content": "[ˈspænɪʃ] a. 西班牙人的，西班牙的，西班牙语的 n. 西班牙语"
     },
     {
-        "word": "spare[speə(r)]",
-        "content": "a. 空闲,多余的，剩余的"
+        "word": "spare",
+        "content": "[speə(r)] a. 空闲,多余的，剩余的"
     },
     {
         "word": "sparrow",
@@ -12637,7 +12637,7 @@
     },
     {
         "word": "speak",
-        "content": "(spoke, spoken) [ˈspærəʊ] v. 说，讲；谈话；发言"
+        "content": "[spiːk] (spoke, spoken) [ˈspærəʊ] v. 说，讲；谈话；发言"
     },
     {
         "word": "speaker",
@@ -12669,7 +12669,7 @@
     },
     {
         "word": "spell",
-        "content": "[spiːd]vt. 拼写"
+        "content": "[spel] vt. 拼写"
     },
     {
         "word": "spelling",
@@ -12677,7 +12677,7 @@
     },
     {
         "word": "spend",
-        "content": "(spent, spent) [ˈspelɪŋ] v. 度过；花费（钱、时间等）"
+        "content": "[spend] (spent, spent) [ˈspelɪŋ] v. 度过；花费（钱、时间等）"
     },
     {
         "word": "spin",
@@ -12696,8 +12696,8 @@
         "content": "[spɪt]v. 吐唾沫；吐痰"
     },
     {
-        "word": "splendid[ˈsplendɪd]",
-        "content": "a. 灿烂的，辉煌的；（口语）极好的"
+        "word": "splendid",
+        "content": "[ˈsplendɪd] a. 灿烂的，辉煌的；（口语）极好的"
     },
     {
         "word": "split",
@@ -12788,8 +12788,8 @@
         "content": "[ˈsteɪnlɪs] a. 无污点的"
     },
     {
-        "word": "stainless",
-        "content": "steel [ˈsteɪnlɪs stiːl] 不锈钢"
+        "word": "stainless steel",
+        "content": "[ˈsteɪnlɪs stiːl] 不锈钢"
     },
     {
         "word": "stair",
@@ -13316,8 +13316,8 @@
         "content": "[ˈswɪmɪŋ] n. 游泳"
     },
     {
-        "word": "swimming",
-        "content": "pool [ˈswɪmɪŋ puːl] n. 游泳池"
+        "word": "swimming pool",
+        "content": "[ˈswɪmɪŋ puːl] n. 游泳池"
     },
     {
         "word": "swing",
@@ -13325,7 +13325,7 @@
     },
     {
         "word": "Swiss",
-        "content": "[swɪŋ] a. 瑞士人的 n. 瑞士人"
+        "content": "[swɪs] a. 瑞士人的 n. 瑞士人"
     },
     {
         "word": "Switzerland",
@@ -13353,7 +13353,7 @@
     },
     {
         "word": "symptom",
-        "content": "[ˈsɪmfənɪ] n. 症状"
+        "content": "[ˈsɪmptəm] n. 症状"
     },
     {
         "word": "system",
@@ -13368,12 +13368,12 @@
         "content": "[ˈteɪb(ə)l] n. 桌子，表格"
     },
     {
-        "word": "table",
-        "content": "tennis [ˈteɪb(ə)l ˈtenɪs] n. 乒乓球"
+        "word": "table tennis",
+        "content": "[ˈteɪb(ə)l ˈtenɪs] n. 乒乓球"
     },
     {
-        "word": "tabletˈtenɪs",
-        "content": "n. 药片"
+        "word": "tablet",
+        "content": "[ˈtæblət] n. 药片"
     },
     {
         "word": "tail",
@@ -13420,8 +13420,8 @@
         "content": "[teɪp] n. 磁带；录音带"
     },
     {
-        "word": "tape",
-        "content": "recorder [teɪp rɪˈkɔːdə(r)] n. 磁带录音机"
+        "word": "tape recorder",
+        "content": "[teɪp rɪˈkɔːdə(r)] n. 磁带录音机"
     },
     {
         "word": "target",
@@ -13456,8 +13456,8 @@
         "content": "[ˈtæksɪ] n. 出租汽车"
     },
     {
-        "word": "taxipayer",
-        "content": "n. 纳税人"
+        "word": "taxpayer",
+        "content": "[ˈtækspeɪə(r)] n. 纳税人"
     },
     {
         "word": "tea",
@@ -13465,7 +13465,7 @@
     },
     {
         "word": "teach(taught,taught)",
-        "content": "[tiː] v. 教书,教"
+        "content": "[tiːtʃ] v. 教书,教"
     },
     {
         "word": "teacher",
@@ -13517,7 +13517,7 @@
     },
     {
         "word": "telephone",
-        "content": "[ˈtelɪɡrɑːf; (US) -ɡræf] v. 打电话 n. 电话"
+        "content": "[ˈtelɪfəʊn] v. 打电话 n. 电话"
     },
     {
         "word": "telephone-booth或telephone-box",
@@ -13525,11 +13525,11 @@
     },
     {
         "word": "telescope",
-        "content": "[ˈtelɪɡrɑːf; (US) -ɡræf] n. 望远镜"
+        "content": "[ˈtelɪskəʊp] n. 望远镜"
     },
     {
         "word": "television",
-        "content": "[ˈtelɪɡrɑːf; (US) -ɡræf] n. 电视"
+        "content": "[ˈtelɪvɪʒ(ə)n] n. 电视"
     },
     {
         "word": "tell",
@@ -13581,7 +13581,7 @@
     },
     {
         "word": "tentative",
-        "content": "[tent] a. 不确定的，踌躇的"
+        "content": "[ˈtentətɪv] a. 不确定的，踌躇的"
     },
     {
         "word": "term",
@@ -13589,7 +13589,7 @@
     },
     {
         "word": "terminal",
-        "content": "[tɜːm] a.(火车汽车飞机)终点站"
+        "content": "[ˈtɜːmɪn(ə)l] a.(火车汽车飞机)终点站"
     },
     {
         "word": "terrible",
@@ -13673,7 +13673,7 @@
     },
     {
         "word": "theory",
-        "content": "[θɪəˈretɪk(ə)l] n. 理论"
+        "content": "[ˈθɪərɪ] n. 理论"
     },
     {
         "word": "there",
@@ -13689,7 +13689,7 @@
     },
     {
         "word": "these",
-        "content": "[ˈθɜːmɔs] a. & pron. 这些"
+        "content": "[ðiːz] a. & pron. 这些"
     },
     {
         "word": "they",
@@ -13704,8 +13704,8 @@
         "content": "(复thieves)  [θiːf] n. 窃贼, 小偷"
     },
     {
-        "word": "thin[θɪn]",
-        "content": "a. 薄的；瘦的；稀的"
+        "word": "thin",
+        "content": "[θɪn] a. 薄的；瘦的；稀的"
     },
     {
         "word": "thing",
@@ -13725,7 +13725,7 @@
     },
     {
         "word": "thirst",
-        "content": "[θɜːd] n. 渴； 口渴"
+        "content": "[θɜːst] n. 渴； 口渴"
     },
     {
         "word": "thirsty",
@@ -13816,8 +13816,8 @@
         "content": "[ti'bet] n. 西藏"
     },
     {
-        "word": "Tibeta",
-        "content": "[ti'betən] n. 西藏人；西藏语"
+        "word": "Tibetan",
+        "content": "[tɪˈbet(ə)n] n. 西藏人；西藏语 a. 西藏的；西藏人的"
     },
     {
         "word": "tick",
@@ -13829,7 +13829,7 @@
     },
     {
         "word": "tidy",
-        "content": "[ˈtɪkɪt] a. 整洁的，干净的 vt. 弄整洁，弄干净"
+        "content": "[ˈtaɪdɪ] a. 整洁的，干净的 vt. 弄整洁，弄干净"
     },
     {
         "word": "tie",
@@ -13876,8 +13876,8 @@
         "content": "[ˈtaɪəd] a. 疲劳的，累的"
     },
     {
-        "word": "tiresomev",
-        "content": "a. 令人厌倦的"
+        "word": "tiresome",
+        "content": "[ˈtaɪəsəm] a. 令人厌倦的"
     },
     {
         "word": "tissue",
@@ -13885,7 +13885,7 @@
     },
     {
         "word": "title",
-        "content": "[ˈtɪʃuː, ˈtɪsjuː] n. 标题，题目"
+        "content": "[ˈtaɪt(ə)l] n. 标题，题目"
     },
     {
         "word": "to",
@@ -13897,15 +13897,15 @@
     },
     {
         "word": "tobacco",
-        "content": "[təʊst] n. 烟草，烟叶"
+        "content": "[təˈbækəʊ] n. 烟草，烟叶"
     },
     {
         "word": "today",
-        "content": "[təʊst] ad.& n.今天;现在,当前"
+        "content": "[təˈdeɪ] ad.& n.今天;现在,当前"
     },
     {
         "word": "together",
-        "content": "[təʊst] ad. 一起，共同"
+        "content": "[təˈɡeðə(r)] ad. 一起，共同"
     },
     {
         "word": "toilet",
@@ -13933,7 +13933,7 @@
     },
     {
         "word": "ton",
-        "content": "[təˈmɔrəʊ] n. （重量单位）吨"
+        "content": "[tʌn] n. （重量单位）吨"
     },
     {
         "word": "tongue",
@@ -13945,7 +13945,7 @@
     },
     {
         "word": "too",
-        "content": "[təˈnaɪt] ad.也,还,又,太,过分,很,非常"
+        "content": "[tuː] ad.也,还,又,太,过分,很,非常"
     },
     {
         "word": "tool",
@@ -13977,7 +13977,7 @@
     },
     {
         "word": "tortoise",
-        "content": "[ˈtɔpɪk] n. 乌龟"
+        "content": "[ˈtɔːtəs] n. 乌龟"
     },
     {
         "word": "total",
@@ -13993,7 +13993,7 @@
     },
     {
         "word": "tough",
-        "content": "[ˈtɔt(ə)lɪ] a. 坚硬的；结实的；棘手的，难解的"
+        "content": "[tʌf] a. 坚硬的；结实的；棘手的，难解的"
     },
     {
         "word": "tour",
@@ -14056,8 +14056,8 @@
         "content": "[ˈtræfɪk] n. 交通，来往车辆"
     },
     {
-        "word": "traffic",
-        "content": "lights [ˈtræfɪk laɪts] n.交通指挥灯红绿灯"
+        "word": "traffic lights",
+        "content": "[ˈtræfɪk laɪts] n.交通指挥灯红绿灯"
     },
     {
         "word": "train",
@@ -14156,8 +14156,8 @@
         "content": "[ˈtrɔlɪ- bʌs] n. 无轨电车"
     },
     {
-        "word": "troopv",
-        "content": "vi. 成群结队地走"
+        "word": "troop",
+        "content": "[truːp] vi. 成群结队地走"
     },
     {
         "word": "troop",
@@ -14201,7 +14201,7 @@
     },
     {
         "word": "try",
-        "content": "[truːθ] v. 试，试图，努力"
+        "content": "[traɪ] v. 试，试图，努力"
     },
     {
         "word": "T-shirt",
@@ -14257,7 +14257,7 @@
     },
     {
         "word": "twenty-first",
-        "content": "[ˈtwentɪ- [fɜːst] num. 第二十一"
+        "content": "[ˌtwentɪ ˈfɜːst] num. 第二十一"
     },
     {
         "word": "twenty-one",
@@ -14269,7 +14269,7 @@
     },
     {
         "word": "twin",
-        "content": "[twɪst] n. 双胞胎之一"
+        "content": "[twɪn] n. 双胞胎之一"
     },
     {
         "word": "twist",
@@ -14321,7 +14321,7 @@
     },
     {
         "word": "unable",
-        "content": "[juː ˈən] a.不能的，不能胜任的"
+        "content": "[ʌnˈeɪb(ə)l] a.不能的，不能胜任的"
     },
     {
         "word": "unbearable",
@@ -14333,7 +14333,7 @@
     },
     {
         "word": "uncertain",
-        "content": "[ˈsɜːt(ə)n] a.不确定的"
+        "content": "[ʌnˈsɜːt(ə)n] a.不确定的"
     },
     {
         "word": "uncle",
@@ -14405,7 +14405,7 @@
     },
     {
         "word": "unfortunate",
-        "content": "[ʌnˈfəʊld] a. 不幸的"
+        "content": "[ʌnˈfɔːtʃənət] a. 不幸的"
     },
     {
         "word": "unfortunately",
@@ -14413,7 +14413,7 @@
     },
     {
         "word": "unhappy",
-        "content": "[ʌnˈfɔːtjʊnətlɪ] a. 不高兴的,伤心的"
+        "content": "[ʌnˈhæpɪ] a. 不高兴的,伤心的"
     },
     {
         "word": "unhealthy",
@@ -14457,7 +14457,7 @@
     },
     {
         "word": "unknown",
-        "content": "[juːnɪˈvɜːsɪtɪ] a. 不知道的"
+        "content": "[ˌʌnˈnəʊn] a. 不知道的"
     },
     {
         "word": "unless",
@@ -14548,8 +14548,8 @@
         "content": "[juːz] n.& vt.利用,使用,应用"
     },
     {
-        "word": "usedv",
-        "content": "a. 用过的;旧的;二手的"
+        "word": "used",
+        "content": "[juːzd] a. 用过的;旧的;二手的"
     },
     {
         "word": "useful",
@@ -14697,7 +14697,7 @@
     },
     {
         "word": "vinegar",
-        "content": "['vilidʒə] n. 醋"
+        "content": "[ˈvɪnɪɡə(r)] n. 醋"
     },
     {
         "word": "violate",
@@ -14733,7 +14733,7 @@
     },
     {
         "word": "visit",
-        "content": "[ˈviːzə] n.& vt. 参观，访问，拜访"
+        "content": "[ˈvɪzɪt] n.& vt. 参观，访问，拜访"
     },
     {
         "word": "visitor",
@@ -14765,7 +14765,7 @@
     },
     {
         "word": "volleyball",
-        "content": "[vɔlˈkeɪnəʊ] n. 排球"
+        "content": "[ˈvɒlɪbɔːl] n. 排球"
     },
     {
         "word": "voluntary",
@@ -14785,7 +14785,7 @@
     },
     {
         "word": "wag",
-        "content": "[ˈvɔɪɪdʒ] v. 摇动；摆动"
+        "content": "[wæɡ] v. 摇动；摆动"
     },
     {
         "word": "wage",
@@ -14868,8 +14868,8 @@
         "content": "[wɔːmθ] n. 暖和，温暖"
     },
     {
-        "word": "war",
-        "content": "[wɔː(r)] n vt. 警告，预先通知"
+        "word": "warn",
+        "content": "[wɔːn] vt. 警告；预先通知"
     },
     {
         "word": "warning",
@@ -14877,7 +14877,7 @@
     },
     {
         "word": "wash",
-        "content": "[ˈwɔːnɪŋ] n.洗(涤)冲洗,洗剂,泼溅,洗的衣服 v.洗(涤),冲洗,流过,弄湿"
+        "content": "[wɒʃ] n.洗(涤)冲洗,洗剂,泼溅,洗的衣服 v.洗(涤),冲洗,流过,弄湿"
     },
     {
         "word": "washing",
@@ -14916,8 +14916,8 @@
         "content": "[weɪ] n. 路，路线；方式，手段"
     },
     {
-        "word": "wayside",
-        "content": "[weɪ] a. 路边的"
+    "word": "wayside",
+    "content": "[ˈweɪsaɪd] a. 路边的"
     },
     {
         "word": "we",
@@ -14953,11 +14953,11 @@
     },
     {
         "word": "weather",
-        "content": "[weə(r)] n. 天气"
+        "content": "[ˈweðə(r)] n. 天气"
     },
     {
         "word": "weatherman",
-        "content": "['weath·er·man || n.气象员,预报天气的人"
+        "content": "[ˈweðəmæn] n. 气象员；天气预报员"
     },
     {
         "word": "wedding",
@@ -15093,7 +15093,7 @@
     },
     {
         "word": "whistle",
-        "content": "[waɪt; (US) hwaɪt] n. 口哨，口哨声"
+        "content": "[ˈwɪs(ə)l] n. 口哨，口哨声"
     },
     {
         "word": "white",
@@ -15121,7 +15121,7 @@
     },
     {
         "word": "wide",
-        "content": "[weə(r); (US) hweər] a. 宽阔的"
+        "content": "[waɪd] a. 宽阔的"
     },
     {
         "word": "widespread",
@@ -15257,15 +15257,15 @@
     },
     {
         "word": "wood",
-        "content": "[ˈwʌndəfʊl] n.木头,木材,(复)树木,森林"
+        "content": "[wʊd] n.木头,木材,(复)树木,森林"
     },
     {
         "word": "wooden",
         "content": "[ˈwʊd(ə)n] a. 木制的"
     },
     {
-        "word": "woo",
-        "content": "[wʊl] l n. 羊毛，羊绒"
+        "word": "wool",
+        "content": "[wʊl] n. 羊毛；羊绒"
     },
     {
         "word": "woollen",
@@ -15293,7 +15293,7 @@
     },
     {
         "word": "workmate",
-        "content": "['wə:kfɔ:s] n. 同事；工友"
+        "content": "[ˈwɜːkmeɪt] n. 同事；工友"
     },
     {
         "word": "workplace",
@@ -15321,7 +15321,7 @@
     },
     {
         "word": "worn",
-        "content": "[wɜrn /wɜːm] a. 用坏,用旧的,疲惫的"
+        "content": "[wɔːn] a. 用坏,用旧的,疲惫的"
     },
     {
         "word": "worried",
@@ -15353,7 +15353,7 @@
     },
     {
         "word": "worthy",
-        "content": "[wɜːθˈwaɪl] a. 值得的"
+        "content": "[ˈwɜːðɪ] a. 值得的"
     },
     {
         "word": "would",
@@ -15441,7 +15441,7 @@
     },
     {
         "word": "your",
-        "content": "[jʌŋ] pron. 你的；你们的"
+        "content": "[jɔː(r)] pron. 你的；你们的"
     },
     {
         "word": "yours",
@@ -15489,7 +15489,7 @@
     },
     {
         "word": "zone",
-        "content": "[zuː] n. 区域；范围"
+        "content": "[zəʊn] n. 区域；范围"
     },
     {
         "word": "zoo",
@@ -15500,4 +15500,3 @@
         "content": "[zuːm] v. 快速移动，迅速前往，猛涨"
     }
 ]
-

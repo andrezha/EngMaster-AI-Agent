@@ -234,6 +234,10 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
             with open(self.data_file_path, "w", encoding="utf-8") as f:
                 json.dump(self.user_vocab_data, f, ensure_ascii=False, indent=4)
             print(f"✅ 自主登记单词已保存，当前 {len(self.user_vocab_data)} 词。")
+            sync_counts = getattr(
+                self.main_window, '_sync_challenge_user_vocab_counts', None)
+            if callable(sync_counts):
+                sync_counts()
         except Exception as e:
             QMessageBox.critical(self.main_window, "错误", f"保存自主登记单词失败: {e}")
 

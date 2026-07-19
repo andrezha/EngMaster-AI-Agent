@@ -4,11 +4,19 @@ import os
 import re
 import sys
 import traceback
+import unicodedata
 from PySide6 import QtCore, QtWidgets, QtGui
 from datetime import datetime
 
 # 🟢 挪到根目录后，直接导入邻居模块，最简单最稳健
 from utils import get_resource_path, get_writable_data_path, _normalize_full_width_to_half_width
+
+
+def _normalize_search_text(value):
+    """Normalize lookup text without changing the fixed vocabulary data."""
+    text = unicodedata.normalize("NFKC", str(value or ""))
+    text = "".join(ch for ch in text if unicodedata.category(ch) != "Cf")
+    return text.strip().casefold()
 
 class WordListView(QtWidgets.QWidget):
     # --- 样式常量 (严格保持原始尺寸) ---
@@ -59,7 +67,24 @@ class WordListView(QtWidgets.QWidget):
         self.btn_export.setText("生成打印表")
         self.btn_export.setPopupMode(QtWidgets.QToolButton.InstantPopup)
         self.btn_export.setFixedHeight(34)
-        self.btn_export.setStyleSheet("QToolButton{background:#28A745; color:white; border-radius:4px; font-weight:bold; padding: 0 10px;}")
+        self.btn_export.setMinimumWidth(112)
+        export_font = QtGui.QFont("Microsoft YaHei UI", 10)
+        export_font.setWeight(QtGui.QFont.Weight.DemiBold)
+        self.btn_export.setFont(export_font)
+        self.btn_export.setStyleSheet("""
+            QToolButton {
+                background: #28A745;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                padding: 0 12px;
+                font-family: "Microsoft YaHei UI", "Microsoft YaHei";
+                font-size: 14px;
+                font-weight: 600;
+            }
+            QToolButton:hover { background: #218838; }
+            QToolButton:pressed { background: #1e7e34; }
+        """)
 
         self._setup_export_menu()
 
@@ -68,8 +93,15 @@ class WordListView(QtWidgets.QWidget):
         self.search_input.setFixedWidth(150)
         self.search_input.setFixedHeight(34)
 
-        self.btn_toggle_en = QtWidgets.QPushButton("📖 隐藏英语")
-        self.btn_toggle_cn = QtWidgets.QPushButton("📝 隐藏中文")
+        self.btn_show_both = QtWidgets.QPushButton("📚 中英对照")
+        self.btn_only_english = QtWidgets.QPushButton("📖 只看英语")
+        self.btn_only_chinese = QtWidgets.QPushButton("📝 只看中文")
+        self.language_display_group = QtWidgets.QButtonGroup(self)
+        self.language_display_group.setExclusive(True)
+        for button in [self.btn_show_both, self.btn_only_english, self.btn_only_chinese]:
+            button.setCheckable(True)
+            self.language_display_group.addButton(button)
+        self.btn_show_both.setChecked(True)
 
         button_style = """
             QPushButton {
@@ -92,7 +124,10 @@ class WordListView(QtWidgets.QWidget):
             }
         """
 
-        for w in [self.btn_reg, self.btn_mis, self.btn_export, self.search_input, self.btn_toggle_en, self.btn_toggle_cn]:
+        for w in [
+            self.btn_reg, self.btn_mis, self.btn_export, self.search_input,
+            self.btn_show_both, self.btn_only_english, self.btn_only_chinese,
+        ]:
             h_layout.addWidget(w)
             if isinstance(w, QtWidgets.QPushButton):
                 w.setCheckable(True)
@@ -128,15 +163,21 @@ class WordListView(QtWidgets.QWidget):
 
         self.btn_reg.clicked.connect(lambda: self._switch_list("regular"))
         self.btn_mis.clicked.connect(lambda: self._switch_list("mistake"))
-        self.btn_toggle_en.clicked.connect(self._toggle_en)
-        self.btn_toggle_cn.clicked.connect(self._toggle_cn)
+        self.btn_show_both.clicked.connect(lambda: self._set_display_mode("both"))
+        self.btn_only_english.clicked.connect(lambda: self._set_display_mode("english"))
+        self.btn_only_chinese.clicked.connect(lambda: self._set_display_mode("chinese"))
         self.search_input.textChanged.connect(self._handle_search)
         self.btn_prev.clicked.connect(lambda: self._change_page(-1))
         self.btn_next.clicked.connect(lambda: self._change_page(1))
 
     def _setup_export_menu(self):
         menu = QtWidgets.QMenu(self)
-        menu.setStyleSheet("QMenu::item { padding: 8px 25px; }")
+        menu_font = QtGui.QFont("Microsoft YaHei UI", 10)
+        menu.setFont(menu_font)
+        menu.setStyleSheet(
+            'QMenu { font-family: "Microsoft YaHei UI", "Microsoft YaHei"; font-size: 14px; }'
+            'QMenu::item { padding: 8px 25px; }'
+        )
 
         menu.addAction("高考3800单词打印表").triggered.connect(lambda: self._do_export(self.all_regular_words, "normal", "高考3800单词打印表"))
         menu.addAction("高考3800词默写打印表-看英默中").triggered.connect(lambda: self._do_export(self.all_regular_words, "en_dictate_cn", "高考3800词默写打印表_看英默中"))
@@ -177,7 +218,6 @@ class WordListView(QtWidgets.QWidget):
                 with open(json_path, 'r', encoding='utf-8') as f:
                     self.all_regular_words = json.load(f)
                     self.all_regular_words.sort(key=lambda x: (str(x.get('word',''))).lower())
-                self._switch_list("regular")
             except Exception as e:
                 print(f"DEBUG: 加载常规词汇失败 {e}")
         
@@ -217,6 +257,9 @@ class WordListView(QtWidgets.QWidget):
             except Exception as e:
                 print(f"DEBUG: 加载错词表失败 {e}")
                 self.all_mistake_words = []
+
+        # 保留外部跳转已经指定的目标页，不能在延迟初始化完成后强制切回常规词表。
+        self._switch_list(self.current_list_type)
 
     def _load_writable_json_list(self, filename, sort_key, label):
         path = get_writable_data_path(filename)
@@ -273,16 +316,20 @@ class WordListView(QtWidgets.QWidget):
     def refresh_mistake_list(self, data):
         self.all_mistake_words = data if isinstance(data, list) else [data] if data else []
         if self.current_list_type == "mistake":
-            self.display_words = self.all_mistake_words.copy()
-            self._render_page()
+            self._handle_search(self.search_input.text())
+
+    def open_mistake_list(self, data=None):
+        if data is not None:
+            self.refresh_mistake_list(data)
+        self.search_input.clear()
+        self._switch_list("mistake")
 
     def _switch_list(self, t):
         self.current_list_type = t
-        self.display_words = self.all_regular_words.copy() if t == "regular" else self.all_mistake_words.copy()
         self.current_page = 0
         self.btn_reg.setChecked(t == "regular")
         self.btn_mis.setChecked(t == "mistake")
-        self._render_page()
+        self._handle_search(self.search_input.text())
 
     def _render_page(self):
         while self.list_layout.count():
@@ -338,9 +385,13 @@ class WordListView(QtWidgets.QWidget):
         return row
 
     def _handle_search(self, text):
-        t = text.lower()
+        t = _normalize_search_text(text)
         src = self.all_regular_words if self.current_list_type == "regular" else self.all_mistake_words
-        self.display_words = [w for w in src if t in (str(w.get('word',''))).lower() or t in (str(w.get('content','')))] if t else src.copy()
+        self.display_words = [
+            word for word in src
+            if t in _normalize_search_text(word.get('word', ''))
+            or t in _normalize_search_text(word.get('content', ''))
+        ] if t else src.copy()
         self.current_page = 0; self._render_page()
 
     def _do_export(self, data, mode, name, data_type="words"):
@@ -383,5 +434,10 @@ class WordListView(QtWidgets.QWidget):
             self.current_page = new_p
             self._render_page()
 
-    def _toggle_en(self): self.hide_english = not self.hide_english; self._render_page()
-    def _toggle_cn(self): self.hide_chinese = not self.hide_chinese; self._render_page()
+    def _set_display_mode(self, mode):
+        self.hide_english = mode == "chinese"
+        self.hide_chinese = mode == "english"
+        self.btn_show_both.setChecked(mode == "both")
+        self.btn_only_english.setChecked(mode == "english")
+        self.btn_only_chinese.setChecked(mode == "chinese")
+        self._render_page()

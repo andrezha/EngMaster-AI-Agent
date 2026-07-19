@@ -1,6 +1,7 @@
 import json
 import random
 import os
+import unicodedata
 from PySide6 import QtCore, QtWidgets, QtGui  # Import QtGui for QMenu
 from datetime import datetime  # Import datetime for filename generation
 from PySide6.QtCore import Signal, QObject  # Import Signal and QObject
@@ -8,6 +9,22 @@ from PySide6.QtWidgets import QMessageBox  # Explicitly import QMessageBox
 from PySide6.QtGui import QDesktopServices  # For opening file
 from PySide6.QtCore import QUrl
 from utils import get_writable_data_path, _normalize_full_width_to_half_width, get_resource_path
+from challenge_rounds import (
+    ChallengeLearningStore,
+    ChallengeRoundStore,
+    atomic_write_json,
+    backup_learning_upgrade_once,
+    backup_existing_file_once,
+    round_summary_text,
+)
+from challenge_history_dialog import MODE_NAMES, show_round_history
+
+
+def _normalize_answer_text(value):
+    """Normalize answer text without changing the fixed vocabulary data."""
+    text = unicodedata.normalize("NFKC", str(value or ""))
+    text = "".join(ch for ch in text if unicodedata.category(ch) != "Cf")
+    return text.strip().casefold()
 
 
 class VocabManager(QObject):  # 继承自 QObject
@@ -28,6 +45,21 @@ class VocabManager(QObject):  # 继承自 QObject
 
         self.mistake_word_file_path = get_writable_data_path(
             "mistake_words.json")
+        backup_existing_file_once(self.mistake_word_file_path)
+        data_dir = os.path.dirname(self.mistake_word_file_path)
+        backup_learning_upgrade_once(data_dir, [
+            "mistake_words.json",
+            "mistake_phrases.json",
+            "mistake_irregular_verbs.json",
+            "user_registered_vocab.json",
+            "challenge_round_progress.json",
+            "challenge_learning_records.json",
+        ])
+        self.round_progress_path = get_writable_data_path(
+            "challenge_round_progress.json")
+        self.round_store = ChallengeRoundStore(self.round_progress_path)
+        self.learning_store = ChallengeLearningStore(get_writable_data_path(
+            "challenge_learning_records.json"))
         # Find the vocabulary page widget from the main window's stacked widget.
         # Assuming the vocabulary page is the first widget in the stackedWidget.
         # 🟢 [架构师单点植入] 仅处理路径，不触动任何 UI 绑定
@@ -99,17 +131,25 @@ class VocabManager(QObject):  # 继承自 QObject
                 "lbl_self_register_count")
             print("DEBUG: lbl_self_register_count created dynamically.")
 
+        self.lbl_round_progress = QtWidgets.QLabel("")
+        self.lbl_round_progress.setObjectName("lbl_round_progress")
+        self.lbl_round_progress.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+
         # 初始化词汇表相关属性
         self.vocabulary = []  # 常规词汇
         self.mistake_vocabulary = []  # 错词表 (包含 correct_count)
         self.self_registered_vocabulary = []  # NEW: 自主录入词汇表
         self.current_challenge_mode = "regular"  # 默认常规闯关模式
         self._notification_message_for_next_display = ""  # 用于在显示下一个单词时传递通知消息
+        self._advance_pending = False
 
         # 初始化计时器
         # Keep timer initialized to prevent AttributeError on .stop()
         self.timer = QtCore.QTimer()
         # self.timer.timeout.connect(self.tick) # Comment out connection to tick as tick method is removed
+        self.advance_timer = QtCore.QTimer()
+        self.advance_timer.setSingleShot(True)
+        self.advance_timer.timeout.connect(self.go_next)
 
         # 绑定逻辑
         if self.btn_confirm:
@@ -134,6 +174,18 @@ class VocabManager(QObject):  # 继承自 QObject
 
         # 统一样式 (在 _rebuild_layout 之后调用，确保所有组件都已就位)
         self._style_components()
+        self._configure_clickable_labels()
+
+        self.main_window.stack.currentChanged.connect(self._on_stack_changed)
+        app = QtWidgets.QApplication.instance()
+        if app:
+            app.aboutToQuit.connect(
+                lambda: self.learning_store.pause(self.current_challenge_mode))
+
+        # 先加载两类用户词库，确保默认进入常规闯关时数量标签也是真实值。
+        # 之前只有切换到对应模式才加载，导致启动后一直显示 0。
+        self._load_mistake_vocabulary()
+        self._load_self_registered_vocabulary()
 
         # 初始加载常规闯关模式
         self.switch_challenge_mode("regular")
@@ -155,7 +207,8 @@ class VocabManager(QObject):  # 继承自 QObject
         # Clear existing layout completely, but DO NOT delete the widgets we want to reuse. Instead, just remove them from the layout.
         widgets_to_keep = {self.t_label, self.v_disp, self.v_input, self.btn_confirm,
                            self.btn_challenge_regular, self.btn_challenge_mistake, self.btn_challenge_self_register,  # NEW
-                           self.lbl_mistake_count, self.lbl_self_register_count}  # NEW
+                           self.lbl_mistake_count, self.lbl_self_register_count,
+                           self.lbl_round_progress}  # NEW
         while self.main_layout.count():
             item = self.main_layout.takeAt(0)
             if item.widget():
@@ -192,7 +245,9 @@ class VocabManager(QObject):  # 继承自 QObject
             self.lbl_self_register_count)  # NEW: 自主录入单词数标签
         challenge_mode_layout.addStretch(1)  # 将按钮推到中间
         self.main_layout.addLayout(challenge_mode_layout)
-        self.main_layout.addSpacing(20)  # 模式选择与单词显示区之间间距
+        self.main_layout.addSpacing(10)
+        self.main_layout.addWidget(self.lbl_round_progress)
+        self.main_layout.addSpacing(10)  # 模式选择与单词显示区之间间距
 
         # 2. 顶部弹簧 - 黄金重心（上移）
         self.main_layout.addStretch(1)
@@ -356,6 +411,76 @@ class VocabManager(QObject):  # 继承自 QObject
 				}
 			""")
 
+        self.lbl_round_progress.setStyleSheet("""
+            QLabel {
+                color: #374151;
+                font-size: 14px;
+                font-weight: 600;
+                padding: 9px 16px;
+                margin: 0px 40px;
+                border: 1px solid #dbe3ee;
+                border-radius: 8px;
+                background-color: #f8fafc;
+            }
+            QLabel:hover { color: #2563eb; border-color: #60a5fa; }
+        """)
+
+    def _configure_clickable_labels(self):
+        clickable = [
+            (self.lbl_mistake_count, "点击查看错词表"),
+            (self.lbl_self_register_count, "点击查看自主录入词汇"),
+            (self.lbl_round_progress, "点击查看轮次学习记录"),
+        ]
+        for widget, tooltip in clickable:
+            widget.setStyleSheet(
+                widget.styleSheet()
+                + " QLabel:hover { color:#2563eb; border-color:#60a5fa; }"
+            )
+            widget.setCursor(QtCore.Qt.CursorShape.PointingHandCursor)
+            widget.setToolTip(tooltip)
+            widget.setFocusPolicy(QtCore.Qt.FocusPolicy.StrongFocus)
+            widget.installEventFilter(self)
+
+    def eventFilter(self, watched, event):
+        is_click = (
+            event.type() == QtCore.QEvent.Type.MouseButtonRelease
+            and event.button() == QtCore.Qt.MouseButton.LeftButton
+        )
+        is_keyboard = (
+            event.type() == QtCore.QEvent.Type.KeyPress
+            and event.key() in [QtCore.Qt.Key.Key_Return, QtCore.Qt.Key.Key_Enter, QtCore.Qt.Key.Key_Space]
+        )
+        if is_click or is_keyboard:
+            if watched is self.lbl_mistake_count:
+                if hasattr(self.main_window, "show_word_mistake_list"):
+                    self.main_window.show_word_mistake_list(self.mistake_vocabulary)
+                return True
+            if watched is self.lbl_self_register_count:
+                self.main_window._safe_nav_to_self_register()
+                return True
+            if watched is self.lbl_round_progress:
+                self.learning_store.pause(self.current_challenge_mode)
+                show_round_history(
+                    self.main_window,
+                    self.learning_store,
+                    self.current_challenge_mode,
+                    self._all_round_progress,
+                )
+                if self.main_window.stack.currentWidget() is self.vocab_page_widget:
+                    self.learning_store.resume(self.current_challenge_mode)
+                return True
+        return super().eventFilter(watched, event)
+
+    def _all_round_progress(self):
+        store = ChallengeRoundStore(self.round_progress_path)
+        return {mode: store.progress(mode) for mode in MODE_NAMES}
+
+    def _on_stack_changed(self, _index):
+        if self.main_window.stack.currentWidget() is self.vocab_page_widget:
+            self.learning_store.resume(self.current_challenge_mode)
+        else:
+            self.learning_store.pause(self.current_challenge_mode)
+
     def _fit_vocab_display_to_content(self):
         if not self.v_disp:
             return
@@ -402,6 +527,10 @@ class VocabManager(QObject):  # 继承自 QObject
         """
         if self.initial_mistake_vocabulary is not None:
             self.mistake_vocabulary = list(self.initial_mistake_vocabulary)
+            # The asynchronously loaded value is only a startup snapshot.  If it
+            # remains set, every later mode switch restores that old snapshot and
+            # discards words that were added and saved during this session.
+            self.initial_mistake_vocabulary = None
             for word_obj in self.mistake_vocabulary:
                 word_obj.setdefault('pronunciation', '')
                 word_obj.setdefault('example', '')
@@ -440,7 +569,9 @@ class VocabManager(QObject):  # 继承自 QObject
         从 main_window 的 self_register_vocab_ctrl 获取自主录入的单词数据。
         """
         if hasattr(self.main_window, 'self_register_vocab_ctrl') and self.main_window.self_register_vocab_ctrl:
-            self.self_registered_vocabulary = self.main_window.self_register_vocab_ctrl.user_vocab_data
+            # 使用副本，闯关随机排序不能改变自主录入页面的原始顺序。
+            self.self_registered_vocabulary = list(
+                self.main_window.self_register_vocab_ctrl.user_vocab_data)
             random.shuffle(self.self_registered_vocabulary)
             # Ensure all self-registered words have 'pronunciation' and 'example' fields for consistent display
             for word_obj in self.self_registered_vocabulary:
@@ -461,9 +592,8 @@ class VocabManager(QObject):  # 继承自 QObject
 
         try:
          # 2. 严格执行写入动作 (确保缩进为 4 个空格的倍数)
-            with open(self.mistake_word_file_path, "w", encoding="utf-8") as f:
-                json.dump(self.mistake_vocabulary, f,
-                          ensure_ascii=False, indent=4)
+            atomic_write_json(
+                self.mistake_word_file_path, self.mistake_vocabulary, indent=4)
 
             # 3. 记录审计日志
             print(f"✅ 错词表已保存至审计路径: {self.mistake_word_file_path}")
@@ -532,12 +662,13 @@ class VocabManager(QObject):  # 继承自 QObject
                 self.mistake_vocabulary[i]["correct_count"] += 1
                 print(
                     f"⬆️ 错词 '{word_obj['word']}' 正确计数: {self.mistake_vocabulary[i]['correct_count']}")
-                if self.mistake_vocabulary[i]["correct_count"] >= 3:
+                removed = self.mistake_vocabulary[i]["correct_count"] >= 3
+                if removed:
                     del self.mistake_vocabulary[i]  # 移除单词
                     print(f"🗑️ 错词 '{word_obj['word']}' 已从错词表移除 (正确3次)。")
                 self._save_mistake_vocabulary()
                 self._update_mistake_count_label()
-                return True  # Indicate that the word was removed
+                return removed
         return False  # Indicate that the word was not removed (or not found)
 
     def switch_challenge_mode(self, mode):
@@ -552,8 +683,11 @@ class VocabManager(QObject):  # 继承自 QObject
         self.v_input.setEnabled(True)
         self.btn_confirm.setEnabled(True)
 
+        previous_mode = self.current_challenge_mode
+        self.learning_store.pause(previous_mode)
+        self.advance_timer.stop()
+        self._advance_pending = False
         self.current_challenge_mode = mode
-        self.current_idx = 0  # 切换模式后重置索引
         self.load_active_vocabulary()  # 重新加载当前模式的词汇
         self.show_next()
         print(f"已切换到 {mode} 模式。")
@@ -562,6 +696,8 @@ class VocabManager(QObject):  # 继承自 QObject
         self._update_mistake_count_label()
         # NEW: Update self-register count label
         self._update_self_register_count_label()
+        if self.main_window.stack.currentWidget() is self.vocab_page_widget:
+            self.learning_store.resume(self.current_challenge_mode)
 
     def load_active_vocabulary(self):
         """
@@ -598,8 +734,44 @@ class VocabManager(QObject):  # 继承自 QObject
             self.active_vocabulary = [{"word": "hello", "content": "你好", "pronunciation": "/həˈloʊ/",
                                        "example": "Hello, how are you?"}]  # Fallback with more details
 
-        random.shuffle(self.active_vocabulary)  # 确保当前活动的词汇表是打乱的
+        had_round_state = self.round_store.has_mode(self.current_challenge_mode)
+        self.active_vocabulary = self.round_store.activate(
+            self.current_challenge_mode, self.active_vocabulary)
+        self.current_idx = 0
+        round_progress = self.round_store.progress(self.current_challenge_mode)
+        legacy_started = had_round_state and (
+            round_progress["round"] > 1
+            or round_progress["current"] > 1
+            or round_progress["wrong"] > 0
+        )
+        self.learning_store.ensure_round(
+            self.current_challenge_mode,
+            round_progress,
+            started_before_tracking=legacy_started,
+        )
+        if self.current_challenge_mode == "regular":
+            round_number = self.round_store.progress("regular")["round"]
+            for wrong_item in self.round_store.wrong_items("regular"):
+                self.learning_store.record_wrong_round(
+                    "regular", wrong_item, round_number)
         print(f"当前活动词汇表已加载，共 {len(self.active_vocabulary)} 词。")
+
+    def _current_mode_source(self):
+        if self.current_challenge_mode == "mistake_list":
+            return self.mistake_vocabulary
+        if self.current_challenge_mode == "self_register":
+            return self.self_registered_vocabulary
+        return self.vocabulary
+
+    def _round_progress_html(self):
+        progress = self.round_store.progress(self.current_challenge_mode)
+        wrong_color = "#16a34a" if progress["wrong"] == 0 else "#dc2626"
+        return (
+            f"<span style='color:#2563eb;'>第 {progress['round']} 轮</span>"
+            f"　｜　本轮 {progress['current']} / {progress['total']}"
+            f"　｜　剩余 {progress['remaining_after_current']}"
+            f"　｜　<span style='color:{wrong_color};'>本轮错词 {progress['wrong']}</span>"
+        )
 
     def _update_challenge_mode_buttons(self):
         """
@@ -682,6 +854,8 @@ class VocabManager(QObject):  # 继承自 QObject
             self.v_input.setEnabled(True)
             self.btn_confirm.setEnabled(True)
 
+        self.lbl_round_progress.setText(self._round_progress_html())
+
         # Check current_idx bounds
         if not (0 <= self.current_idx < len(self.active_vocabulary)):
             print(
@@ -709,13 +883,17 @@ class VocabManager(QObject):  # 继承自 QObject
         # Always display the word content
         html_content_parts.append(f"""
 			<div style='text-align: center; padding: 20px; white-space: normal; overflow-wrap: anywhere; word-wrap: break-word;'>
-				<div style='font-size: 14px; color: #999999; font-weight: 600; margin-bottom: 16px;'>
-					第 {self.current_idx + 1} 关
-				</div>
 				<div style='font-size: 32px; color: #333333; font-weight: 500; line-height: 1.4; white-space: normal; overflow-wrap: anywhere; word-wrap: break-word;'> 
 					{normalized_content}
 				</div>
 		""")
+
+        if self.current_challenge_mode == "mistake_list":
+            wrong_round_text = self.learning_store.wrong_round_text("regular", curr)
+            html_content_parts.append(
+                "<div style='font-size:13px; color:#b45309; margin-top:10px; font-weight:600;'>"
+                f"{wrong_round_text}</div>"
+            )
 
         # Add pronunciation and example if available in the word object
         if curr.get('pronunciation'):
@@ -733,7 +911,7 @@ class VocabManager(QObject):  # 继承自 QObject
             html_content_parts.append(f"""
 				<div style='margin-top: 16px;'>
 					<span style='font-size: 16px; color: #d32f2f; font-weight: bold;'>
-						✅ 正确答案: {error_msg.capitalize()}
+						✅ 正确答案: {error_msg}
 					</span>
 				</div>
 			""")
@@ -764,24 +942,35 @@ class VocabManager(QObject):  # 继承自 QObject
             self.t_label.setText(str(self.time_left))
         if self.time_left <= 0:
             self.timer.stop()
+            self.learning_store.begin_round(self.current_challenge_mode)
             # Ensure current_idx is valid before accessing active_vocabulary
             if self.active_vocabulary and 0 <= self.current_idx < len(self.active_vocabulary):
                 target = self.active_vocabulary[self.current_idx]['word'].strip(
                 )
                 # When time runs out, it's considered an incorrect answer for display purposes
                 additional_message_html = ""
-                if self.current_challenge_mode == "regular":
+                if self.current_challenge_mode in ["regular", "self_register"]:
                     additional_message_html = "<div style='font-size: 14px; color: #e74c3c; margin-top: 5px;'>已登录到错词表</div>"
+
+                already_retrying = self.round_store.is_retry_required(
+                    self.current_challenge_mode)
+                self.round_store.mark_wrong(self.current_challenge_mode)
+                self.lbl_round_progress.setText(self._round_progress_html())
+                if self.current_challenge_mode == "regular" and not already_retrying:
+                    self.learning_store.record_wrong_round(
+                        "regular", self.active_vocabulary[self.current_idx],
+                        self.round_store.progress("regular")["round"])
 
                 self.show_next(
                     error_msg=target, additional_message_html=additional_message_html)  # 错误时显示正确答案
 
-                # Also add to mistake list if in regular mode
-                if self.current_challenge_mode == "regular":
+                # First timeout forms one stable mistake record; retries do not duplicate it.
+                if not already_retrying and self.current_challenge_mode in ["regular", "mistake_list", "self_register"]:
                     current_word_obj = self.active_vocabulary[self.current_idx]
                     self._add_or_reset_mistake_word(current_word_obj)
 
-                QtCore.QTimer.singleShot(2000, self.go_next)  # 2秒后自动跳转
+                self.v_input.selectAll()
+                self.v_input.setFocus()
             else:  # Fallback if active_vocabulary is empty or index is invalid
                 print(
                     "ERROR: Timer ticked but active_vocabulary is empty or current_idx is out of bounds.")
@@ -791,8 +980,10 @@ class VocabManager(QObject):  # 继承自 QObject
         """
         检查用户输入的答案是否正确，并根据结果更新UI样式。
         """
+        if self._advance_pending:
+            return
         self.timer.stop()
-        user_in = self.v_input.text().strip().lower()
+        user_in = _normalize_answer_text(self.v_input.text())
 
         if not self.active_vocabulary or not (0 <= self.current_idx < len(self.active_vocabulary)):
             print(
@@ -800,7 +991,36 @@ class VocabManager(QObject):  # 继承自 QObject
             return  # Do nothing if no active vocabulary or invalid index
 
         current_word_obj = self.active_vocabulary[self.current_idx]
-        target = current_word_obj['word'].strip().lower()
+        target_display = str(current_word_obj['word']).strip()
+        target = _normalize_answer_text(target_display)
+
+        if not user_in:
+            self.v_input.setStyleSheet("""
+				QLineEdit {
+					font-size: 18px;
+					border: 1px solid #f59e0b;
+					background-color: #fffbeb;
+					border-radius: 6px;
+					padding: 0px 16px;
+					color: #333333;
+					font-family: "Arial", "Microsoft YaHei";
+				}
+			""")
+            retrying = self.round_store.is_retry_required(
+                self.current_challenge_mode)
+            self.show_next(
+                error_msg=target_display if retrying else "",
+                additional_message_html=(
+                "<div style='font-size:14px; color:#b45309; margin-top:10px; font-weight:600;'>"
+                "请输入答案；空答案不能进入下一题。</div>"
+                ),
+            )
+            self.v_input.setFocus()
+            return
+
+        self.learning_store.begin_round(self.current_challenge_mode)
+        was_retrying = self.round_store.is_retry_required(
+            self.current_challenge_mode)
 
         # Clear any previous notification
         self._notification_message_for_next_display = ""
@@ -821,16 +1041,33 @@ class VocabManager(QObject):  # 继承自 QObject
 
             removed_from_mistake_list = False
             # 如果是错词表模式，且回答正确，增加正确计数
-            if self.current_challenge_mode == "mistake_list":
+            if self.current_challenge_mode == "mistake_list" and not was_retrying:
                 removed_from_mistake_list = self._increment_mistake_word_correct_count(
                     current_word_obj)
+
+            if was_retrying:
+                self._notification_message_for_next_display = (
+                    "<div style='font-size:14px; color:#15803d; margin-top:5px; font-weight:600;'>"
+                    "已纠正。本题的错词记录继续保留。</div>"
+                )
 
             if removed_from_mistake_list:
                 self._notification_message_for_next_display = f"<div style='font-size: 14px; color: #27ae60; margin-top: 5px;'>你三次答对了。从错词表里删除的字样</div>"
 
-            QtCore.QTimer.singleShot(600, self.go_next)
+            self._advance_pending = True
+            self.v_input.setEnabled(False)
+            self.btn_confirm.setEnabled(False)
+            self.advance_timer.start(600)
 
         else:  # Incorrect answer
+            already_retrying = self.round_store.is_retry_required(
+                self.current_challenge_mode)
+            self.round_store.mark_wrong(self.current_challenge_mode)
+            self.lbl_round_progress.setText(self._round_progress_html())
+            if self.current_challenge_mode == "regular" and not already_retrying:
+                self.learning_store.record_wrong_round(
+                    "regular", current_word_obj,
+                    self.round_store.progress("regular")["round"])
             self.v_input.setStyleSheet("""
 				QLineEdit {
 					font-size: 18px;
@@ -846,31 +1083,60 @@ class VocabManager(QObject):  # 继承自 QObject
 
             additional_message_html = ""
             # 如果是常规闯关模式，且回答错误，显示已登录到错词表
-            if self.current_challenge_mode == "regular":
+            if self.current_challenge_mode in ["regular", "self_register"]:
                 additional_message_html = "<div style='font-size: 14px; color: #e74c3c; margin-top: 5px;'>已登录到错词表</div>"
+            elif self.current_challenge_mode == "mistake_list":
+                additional_message_html = "<div style='font-size: 14px; color: #e74c3c; margin-top: 5px;'>仍保留在错词表</div>"
 
-            self.show_next(error_msg=target,
+            self.show_next(error_msg=target_display,
                            additional_message_html=additional_message_html)
 
             # 如果回答错误，添加到错词表或重置计数
             # NEW: 只有在常规闯关或错词闯关模式下才更新错词表
-            if self.current_challenge_mode in ["regular", "mistake_list"]:
+            if not already_retrying and self.current_challenge_mode in ["regular", "mistake_list", "self_register"]:
                 self._add_or_reset_mistake_word(current_word_obj)
                 print(
                     f"DEBUG: Word '{current_word_obj['word']}' added/reset in mistake list.")
-            QtCore.QTimer.singleShot(2000, self.go_next)  # 2秒后自动跳转
+            self.v_input.selectAll()
+            self.v_input.setFocus()
 
     def go_next(self):
         """
         切换到下一个词汇。
         """
+        self._advance_pending = False
         if not self.active_vocabulary:
             self.show_next()  # 显示空词汇表提示
             return
 
-        self.current_idx = (self.current_idx + 1) % len(self.active_vocabulary)
+        summary, self.active_vocabulary = self.round_store.advance(
+            self.current_challenge_mode, self._current_mode_source())
+        self.current_idx = 0
+
+        if summary:
+            self.learning_store.finish_round(self.current_challenge_mode, summary)
+            self.learning_store.ensure_round(
+                self.current_challenge_mode,
+                self.round_store.progress(self.current_challenge_mode),
+            )
+            if self.main_window.stack.currentWidget() is self.vocab_page_widget:
+                self.learning_store.resume(self.current_challenge_mode)
+
+        if not self.active_vocabulary and self.current_challenge_mode in ["mistake_list", "self_register"]:
+            self.learning_store.pause(self.current_challenge_mode)
+            self.current_challenge_mode = "regular"
+            self.load_active_vocabulary()
+            self._update_challenge_mode_buttons()
+            if self.main_window.stack.currentWidget() is self.vocab_page_widget:
+                self.learning_store.resume(self.current_challenge_mode)
 
         # 传递之前存储的通知消息给下一个 show_next 调用
         message_for_next_display = self._notification_message_for_next_display
         self._notification_message_for_next_display = ""  # 清空，防止重复显示
+        if summary:
+            summary_html = (
+                "<div style='font-size:14px; color:#15803d; font-weight:600; margin-top:12px;'>"
+                f"✓ {round_summary_text(summary)}</div>"
+            )
+            message_for_next_display = summary_html + message_for_next_display
         self.show_next(additional_message_html=message_for_next_display)

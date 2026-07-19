@@ -6,10 +6,10 @@
         "meaning": "出现"
     },
     {
-        "infinitive": "was,",
-        "past_tense": "were",
+        "infinitive": "be",
+        "past_tense": "was, were",
         "past_participle": "been",
-        "meaning": "是"
+        "meaning": "是；成为"
     },
     {
         "infinitive": "beat",
@@ -57,7 +57,7 @@
         "infinitive": "blow",
         "past_tense": "blew",
         "past_participle": "blown",
-        "meaning": "打击"
+        "meaning": "吹；刮风；打击"
     },
     {
         "infinitive": "break",
@@ -84,10 +84,10 @@
         "meaning": "建设"
     },
     {
-        "infinitive": "burned",
-        "past_tense": "burnt,",
-        "past_participle": "burned",
-        "meaning": "燃烧"
+        "infinitive": "burn",
+        "past_tense": "burned, burnt",
+        "past_participle": "burned, burnt",
+        "meaning": "燃烧；烧伤"
     },
     {
         "infinitive": "burst",
@@ -162,10 +162,10 @@
         "meaning": "画"
     },
     {
-        "infinitive": "dreamed",
-        "past_tense": "dreamt,",
-        "past_participle": "dreamed",
-        "meaning": "梦想"
+        "infinitive": "dream",
+        "past_tense": "dreamed, dreamt",
+        "past_participle": "dreamed, dreamt",
+        "meaning": "做梦；梦想"
     },
     {
         "infinitive": "drink",
@@ -270,13 +270,13 @@
         "meaning": "增长"
     },
     {
-        "infinitive": ",hanged",
-        "past_tense": "hung,",
-        "past_participle": "hanged",
-        "meaning": "挂"
+        "infinitive": "hang",
+        "past_tense": "hung, hanged",
+        "past_participle": "hung, hanged",
+        "meaning": "悬挂；绞死"
     },
     {
-        "infinitive": "has",
+        "infinitive": "have",
         "past_tense": "had",
         "past_participle": "had",
         "meaning": "有"
@@ -327,7 +327,7 @@
         "infinitive": "lay",
         "past_tense": "laid",
         "past_participle": "laid",
-        "meaning": "躺在"
+        "meaning": "放置；产卵"
     },
     {
         "infinitive": "lead",
@@ -336,9 +336,9 @@
         "meaning": "领导"
     },
     {
-        "infinitive": "learned",
-        "past_tense": "learnt,",
-        "past_participle": "learned",
+        "infinitive": "learn",
+        "past_tense": "learned, learnt",
+        "past_participle": "learned, learnt",
         "meaning": "学习"
     },
     {
@@ -363,13 +363,13 @@
         "infinitive": "lie",
         "past_tense": "lay",
         "past_participle": "lain",
-        "meaning": "撒谎"
+        "meaning": "躺；位于"
     },
     {
-        "infinitive": "lighted",
-        "past_tense": "lit,",
-        "past_participle": "lighted",
-        "meaning": "照亮"
+        "infinitive": "light",
+        "past_tense": "lit, lighted",
+        "past_participle": "lit, lighted",
+        "meaning": "点燃；照亮"
     },
     {
         "infinitive": "lose",
@@ -405,13 +405,13 @@
         "infinitive": "misread",
         "past_tense": "misread",
         "past_participle": "misread",
-        "meaning": "误解"
+        "meaning": "误读；读错"
     },
     {
         "infinitive": "mistake",
         "past_tense": "mistook",
         "past_participle": "mistaken",
-        "meaning": "错误"
+        "meaning": "弄错；误解"
     },
     {
         "infinitive": "misunderstand",
@@ -444,10 +444,10 @@
         "meaning": "读"
     },
     {
-        "infinitive": "ridded",
-        "past_tense": "rid,",
-        "past_participle": "ridded",
-        "meaning": "摆脱"
+        "infinitive": "rid",
+        "past_tense": "rid, ridded",
+        "past_participle": "rid, ridded",
+        "meaning": "使摆脱"
     },
     {
         "infinitive": "ride",
@@ -522,16 +522,16 @@
         "meaning": "将"
     },
     {
-        "infinitive": "shined",
-        "past_tense": "shone,",
-        "past_participle": "shined",
-        "meaning": "闪耀"
+        "infinitive": "shine",
+        "past_tense": "shone, shined",
+        "past_participle": "shone, shined",
+        "meaning": "发光；擦亮"
     },
     {
-        "infinitive": "showed",
-        "past_tense": "showed,",
-        "past_participle": "shown",
-        "meaning": "显示"
+        "infinitive": "show",
+        "past_tense": "showed",
+        "past_participle": "shown, showed",
+        "meaning": "显示；展示"
     },
     {
         "infinitive": "shut",
@@ -546,9 +546,9 @@
         "meaning": "唱"
     },
     {
-        "infinitive": "sunk",
-        "past_tense": "sunk,",
-        "past_participle": "sunken",
+        "infinitive": "sink",
+        "past_tense": "sank, sunk",
+        "past_participle": "sunk",
         "meaning": "下沉"
     },
     {
@@ -564,15 +564,15 @@
         "meaning": "睡觉"
     },
     {
-        "infinitive": "smelled",
-        "past_tense": "smelt,",
-        "past_participle": "smelled",
-        "meaning": "闻"
+        "infinitive": "smell",
+        "past_tense": "smelled, smelt",
+        "past_participle": "smelled, smelt",
+        "meaning": "闻；有气味"
     },
     {
-        "infinitive": "sowed",
-        "past_tense": "sown,",
-        "past_participle": "sowed",
+        "infinitive": "sow",
+        "past_tense": "sowed",
+        "past_participle": "sown, sowed",
         "meaning": "播种"
     },
     {
@@ -582,9 +582,9 @@
         "meaning": "发言"
     },
     {
-        "infinitive": "spelled",
-        "past_tense": "spelt,",
-        "past_participle": "spelled",
+        "infinitive": "spell",
+        "past_tense": "spelled, spelt",
+        "past_participle": "spelled, spelt",
         "meaning": "拼写"
     },
     {
@@ -648,10 +648,10 @@
         "meaning": "粘贴"
     },
     {
-        "infinitive": "struck",
-        "past_tense": "struck,",
-        "past_participle": "stricken",
-        "meaning": "打击"
+        "infinitive": "strike",
+        "past_tense": "struck",
+        "past_participle": "struck, stricken",
+        "meaning": "打；撞击"
     },
     {
         "infinitive": "swell",

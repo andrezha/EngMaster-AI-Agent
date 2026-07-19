@@ -380,6 +380,7 @@ class HighSchoolEnglishAI(QMainWindow):
                 )
                 if hasattr(self.vocab_ctrl, '_update_mistake_count_label'):
                     self.vocab_ctrl._update_mistake_count_label()
+                self._sync_challenge_user_vocab_counts()
                 self.loading_label.setText("✅ 核心词库与全能错词控制总线对齐完成。")
             except Exception as e:
                 self._on_loader_error(f"核心词库模块初始化失败: {e}")
@@ -403,10 +404,19 @@ class HighSchoolEnglishAI(QMainWindow):
                 self.nav_button_target_map["btn_nav_self_register"] = self.self_register_vocab_index
                 if hasattr(self.self_register_vocab_ctrl, '_update_self_register_count_label'):
                     self.self_register_vocab_ctrl._update_self_register_count_label()
+                self._sync_challenge_user_vocab_counts()
                 self.loading_label.setText("✅ 自主登记词库模块已完成加载。")
             except Exception as e:
                 self._on_loader_error(f"自主登记模块初始化失败: {e}")
                 return
+
+    def _sync_challenge_user_vocab_counts(self):
+        """异步模块加载或用户词库变化后，同步闯关页的两项数量。"""
+        if self.vocab_ctrl is None:
+            return
+        self.vocab_ctrl._load_self_registered_vocabulary()
+        self.vocab_ctrl._update_mistake_count_label()
+        self.vocab_ctrl._update_self_register_count_label()
 
     def _on_loader_error(self, loader_name, message=None):
         if message is None:
@@ -515,6 +525,12 @@ class HighSchoolEnglishAI(QMainWindow):
         if self._ensure_word_list_widget() and self.word_list_index != -1:
             self.stack.setCurrentIndex(self.word_list_index)
 
+    def show_word_mistake_list(self, data=None):
+        if not self._ensure_word_list_widget() or self.word_list_index == -1:
+            return
+        self.word_list_widget.open_mistake_list(data)
+        self.stack.setCurrentIndex(self.word_list_index)
+
     def _safe_nav_to_self_register(self):
         if self.self_register_vocab_ctrl is None:
             QMessageBox.warning(self, "提示", "自主登记模块异步总线尚未同步完毕，请稍候...")
@@ -545,6 +561,13 @@ class HighSchoolEnglishAI(QMainWindow):
     def show_phrase_irregular_list(self):
         if self._ensure_phrase_irregular_list_widget() and self.phrase_irregular_list_index != -1:
             self.stack.setCurrentIndex(self.phrase_irregular_list_index)
+
+    def show_phrase_irregular_table(self, table_type):
+        if not self._ensure_phrase_irregular_list_widget() or self.phrase_irregular_list_index == -1:
+            return
+        self.phrase_irregular_list_widget.refresh_mistake_tables()
+        self.phrase_irregular_list_widget._show_table(table_type)
+        self.stack.setCurrentIndex(self.phrase_irregular_list_index)
 
     def show_gaokao_page(self):
         if self.gk_idx != -1:
@@ -704,40 +727,36 @@ def _load_license_data(path: str) -> dict:
 
 
 def _write_license_data(path: str, data: dict):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
 def get_machine_id() -> str:
-    parts = []
-    try:
-        import platform
-
-        parts.append(platform.node())
-        parts.append(platform.system())
-        parts.append(platform.machine())
-    except Exception:
-        pass
-
-    try:
-        import uuid
-
-        parts.append(str(uuid.getnode()))
-    except Exception:
-        pass
-
+    # MachineGuid is stable across normal restarts and network adapter changes.
+    # The previous identifier also included hostname and uuid.getnode(), both of
+    # which may change and incorrectly invalidate an already activated license.
+    material = ""
     if sys.platform == "win32":
         try:
             import winreg
 
             with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, r"SOFTWARE\Microsoft\Cryptography") as key:
                 machine_guid, _ = winreg.QueryValueEx(key, "MachineGuid")
-                parts.append(str(machine_guid))
+                material = "windows-machine-guid-v2|" + str(machine_guid).strip().lower()
         except Exception:
             pass
 
-    material = "|".join(part.strip().lower() for part in parts if str(part).strip())
-    digest = hashlib.sha256(("EngMaster-AI-Agent-machine-v1|" + material).encode("utf-8")).hexdigest().upper()
+    if not material:
+        import platform
+        import uuid
+
+        fallback_parts = [platform.node(), platform.system(), platform.machine(), str(uuid.getnode())]
+        material = "fallback-machine-v2|" + "|".join(
+            str(part).strip().lower() for part in fallback_parts if str(part).strip()
+        )
+
+    digest = hashlib.sha256(("EngMaster-AI-Agent|" + material).encode("utf-8")).hexdigest().upper()
     compact = digest[:32]
     return "-".join(compact[i:i + 8] for i in range(0, len(compact), 8))
 
@@ -800,11 +819,38 @@ def verify_activation_code(activation_code: str, machine_id: str):
 
 def load_license_file(path: str, machine_id: str) -> bool:
     try:
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
+        data = _load_license_data(path)
         activation_code = str(data.get("activation_code", "")).strip()
+        licensed_machine_id = str(data.get("machine_id", "")).strip()
+        stable_fingerprint = str(data.get("machine_fingerprint", "")).strip()
+
+        # New licenses are signed for the stable ID directly.
         ok, _ = verify_activation_code(activation_code, machine_id)
-        return ok
+        if ok:
+            if stable_fingerprint and stable_fingerprint != machine_id:
+                return False
+            if not stable_fingerprint:
+                data["machine_fingerprint"] = machine_id
+                data["machine_id_scheme"] = "stable-v2"
+                _write_license_data(path, data)
+            return True
+
+        # Backward compatibility: an old code remains cryptographically checked
+        # against the ID it was originally issued for.  On the first upgraded
+        # start, bind that valid local license to this computer's stable ID.
+        if not licensed_machine_id:
+            return False
+        legacy_ok, _ = verify_activation_code(activation_code, licensed_machine_id)
+        if not legacy_ok:
+            return False
+        if stable_fingerprint and stable_fingerprint != machine_id:
+            return False
+        if not stable_fingerprint:
+            data["machine_fingerprint"] = machine_id
+            data["machine_id_scheme"] = "stable-v2-migrated"
+            data["migrated_at"] = _license_now()
+            _write_license_data(path, data)
+        return True
     except Exception as e:
         print(f"[DEBUG] license read/verify error: {e}")
         return False
@@ -819,6 +865,8 @@ def save_license_file(path: str, machine_id: str, activation_code: str, purchase
         "tool_version": TOOL_VERSION,
         "build_date": BUILD_DATE,
         "machine_id": machine_id,
+        "machine_fingerprint": machine_id,
+        "machine_id_scheme": "stable-v2",
         "activation_code": activation_code.strip(),
         "purchase_code": str(purchase_code).strip(),
         "activated_at": now,
@@ -975,10 +1023,8 @@ def show_version_info_dialog(parent=None):
     license_data = {}
     if os.path.exists(license_path):
         try:
-            with open(license_path, "r", encoding="utf-8") as f:
-                license_data = json.load(f)
-            activation_code = str(license_data.get("activation_code", "")).strip()
-            ok, _ = verify_activation_code(activation_code, machine_id)
+            ok = load_license_file(license_path, machine_id)
+            license_data = _load_license_data(license_path)
             license_status = "已激活" if ok else "授权文件无效或不属于当前电脑"
         except Exception:
             license_status = "授权文件读取失败"
@@ -1056,16 +1102,10 @@ def check_licensing_gate():
     machine_id = get_machine_id()
 
     if os.path.exists(license_path):
-        try:
-            license_data = _load_license_data(license_path)
-            activation_code = str(license_data.get("activation_code", "")).strip()
-            ok, message = verify_activation_code(activation_code, machine_id)
-            if ok:
-                print("[DEBUG] local machine-bound license verified")
-                return True
-            print(f"[DEBUG] local license invalid: {message}")
-        except Exception as e:
-            print(f"[DEBUG] existing license read/verify error: {e}")
+        if load_license_file(license_path, machine_id):
+            print("[DEBUG] local machine-bound license verified")
+            return True
+        print("[DEBUG] existing local license is invalid for this computer")
 
     if not show_user_notice_dialog():
         sys.exit(0)

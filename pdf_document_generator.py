@@ -92,6 +92,49 @@ def _draw_text(painter, rect, text, font, color, flags=None):
     painter.restore()
 
 
+def _make_font(family, point_size, bold=False):
+    font = QtGui.QFont(family)
+    font.setPointSizeF(float(point_size))
+    font.setBold(bool(bold))
+    return font
+
+
+def _fit_font(text, rect, family, preferred_size, minimum_size, flags, bold=False):
+    """Choose the largest font that keeps all text inside the cell."""
+    value = str(text or "")
+    size = float(preferred_size)
+    while size >= float(minimum_size):
+        font = _make_font(family, size, bold=bold)
+        bounds = QtGui.QFontMetricsF(font).boundingRect(rect, int(flags), value)
+        if bounds.width() <= rect.width() + 0.5 and bounds.height() <= rect.height() + 0.5:
+            return font
+        size -= 0.25
+    return _make_font(family, minimum_size, bold=bold)
+
+
+def _draw_fitted_text(
+    painter,
+    rect,
+    text,
+    family,
+    preferred_size,
+    minimum_size,
+    color,
+    flags,
+    bold=False,
+):
+    font = _fit_font(
+        text,
+        rect,
+        family,
+        preferred_size,
+        minimum_size,
+        flags,
+        bold=bold,
+    )
+    _draw_text(painter, rect, text, font, color, flags)
+
+
 def _draw_watermark(painter, width, height, texts):
     painter.save()
     painter.translate(width / 2, height / 2)
@@ -107,12 +150,14 @@ def _draw_watermark(painter, width, height, texts):
 
 
 def _draw_footer(painter, width, height, margin_x, texts):
-    footer_rect = QtCore.QRectF(margin_x, height - 105, width - margin_x * 2, 44)
-    _draw_text(
+    footer_rect = QtCore.QRectF(margin_x, height - 122, width - margin_x * 2, 42)
+    _draw_fitted_text(
         painter,
         footer_rect,
         texts["footer"],
-        QtGui.QFont("Microsoft YaHei", 8),
+        "Microsoft YaHei",
+        7.5,
+        6.5,
         QtGui.QColor(95, 95, 95),
         QtCore.Qt.AlignmentFlag.AlignCenter | QtCore.Qt.TextFlag.TextWordWrap,
     )
@@ -122,8 +167,8 @@ def _draw_page(painter, width, height, page_items, start_index, mode, data_type,
     margin_x = 95
     margin_top = 100
     table_top = 235
-    table_bottom = height - 135
-    row_count = 20
+    table_bottom = height - 150
+    row_count = 18
     header_h = 72
     row_h = (table_bottom - table_top - header_h) / row_count
     table_w = width - margin_x * 2
@@ -132,15 +177,16 @@ def _draw_page(painter, width, height, page_items, start_index, mode, data_type,
 
     _draw_watermark(painter, width, height, texts)
 
-    title_font = QtGui.QFont("Microsoft YaHei", 13)
-    title_font.setBold(True)
-    _draw_text(
+    _draw_fitted_text(
         painter,
         QtCore.QRectF(margin_x + table_w * 0.22, margin_top - 72, table_w * 0.56, 86),
         document_title or APP_NAME,
-        title_font,
+        "Microsoft YaHei",
+        15,
+        11,
         QtGui.QColor(30, 30, 30),
         QtCore.Qt.AlignmentFlag.AlignCenter | QtCore.Qt.TextFlag.TextWordWrap,
+        bold=True,
     )
 
     _draw_text(
@@ -178,7 +224,7 @@ def _draw_page(painter, width, height, page_items, start_index, mode, data_type,
             painter,
             rect.adjusted(6, 0, -6, 0),
             headers[idx],
-            QtGui.QFont("Microsoft YaHei", 8),
+            _make_font("Microsoft YaHei", 9, bold=True),
             QtGui.QColor(20, 20, 20),
             QtCore.Qt.AlignmentFlag.AlignCenter | QtCore.Qt.TextFlag.TextWordWrap,
         )
@@ -204,13 +250,31 @@ def _draw_page(painter, width, height, page_items, start_index, mode, data_type,
             for offset, value in enumerate(values):
                 col_w = col_widths[base_col + offset]
                 rect = QtCore.QRectF(x + 6, y + 5, col_w - 12, row_h - 10)
-                flags = QtCore.Qt.AlignmentFlag.AlignCenter if offset == 0 else (
-                    QtCore.Qt.AlignmentFlag.AlignVCenter | QtCore.Qt.TextFlag.TextWordWrap
+                if offset == 0:
+                    flags = QtCore.Qt.AlignmentFlag.AlignCenter
+                    family, preferred, minimum = "Microsoft YaHei", 7.5, 7
+                    color = QtGui.QColor(115, 115, 115)
+                else:
+                    flags = (
+                        QtCore.Qt.AlignmentFlag.AlignVCenter
+                        | QtCore.Qt.TextFlag.TextWordWrap
+                        | QtCore.Qt.TextFlag.TextWrapAnywhere
+                    )
+                    is_english_column = offset == 1 and mode != "cn_dictate_en"
+                    family = "Arial" if is_english_column else "Microsoft YaHei"
+                    preferred = 9.5 if is_english_column else 9
+                    minimum = 7.5
+                    color = QtGui.QColor(28, 32, 36)
+                _draw_fitted_text(
+                    painter,
+                    rect,
+                    value,
+                    family,
+                    preferred,
+                    minimum,
+                    color,
+                    flags,
                 )
-                font = QtGui.QFont("Times New Roman" if offset == 1 else "Microsoft YaHei", 8)
-                if offset == 1:
-                    font.setBold(True)
-                _draw_text(painter, rect, value, font, QtGui.QColor(30, 30, 30), flags)
                 x += col_w
 
     painter.save()
@@ -241,7 +305,7 @@ def generate_pdf_table(data, output_file, mode="normal", data_type="words", wate
     texts = _watermark_texts(watermark_mode, machine_id=machine_id, activation_code=activation_code)
     width = writer.width()
     height = writer.height()
-    items_per_page = 40
+    items_per_page = 36
 
     try:
         for page_start in range(0, len(data), items_per_page):
