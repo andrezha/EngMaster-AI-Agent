@@ -17,6 +17,7 @@ pyvenv.cfg
 # 递归忽略所有层级的 build 目录
 **/build/
 dist/
+dist_*/
 bin/
 obj/
 out/

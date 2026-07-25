@@ -58,6 +58,157 @@ class ChallengeRoundStoreTests(unittest.TestCase):
         self.assertEqual(restored.progress("regular")["current"], 2)
         self.assertEqual(restored.progress("regular")["wrong"], 1)
 
+    def test_completed_irregular_round_reopens_as_round_two(self):
+        first = ChallengeRoundStore(self.state_path, rng=random.Random(30))
+        active = first.activate("irregular", self.items)
+        while True:
+            summary, active = first.advance("irregular", self.items)
+            if summary:
+                break
+
+        self.assertEqual(summary["round"], 1)
+        self.assertEqual(first.progress("irregular")["round"], 2)
+        self.assertEqual(first.progress("irregular")["current"], 1)
+
+        reopened = ChallengeRoundStore(self.state_path, rng=random.Random(31))
+        reopened.activate("irregular", self.items)
+        self.assertEqual(reopened.progress("irregular")["round"], 2)
+        self.assertEqual(reopened.progress("irregular")["current"], 1)
+        self.assertEqual(len(reopened.current_items("irregular")), len(self.items))
+
+    def test_corrected_vocabulary_hash_alias_preserves_current_round(self):
+        old_item = {"word": "performance", "content": "[pəˈfɔːm] n. 表演"}
+        new_item = {"word": "performance", "content": "[pəˈfɔːməns] n. 表演"}
+        other_item = {"word": "other", "content": "[ˈʌðə(r)] a. 其他的"}
+        old_base = ChallengeRoundStore.item_base_key(old_item)
+        new_base = ChallengeRoundStore.item_base_key(new_item)
+        other_base = ChallengeRoundStore.item_base_key(other_item)
+        Path(self.state_path).write_text(json.dumps({
+            "version": 2,
+            "modes": {
+                "regular": {
+                    "round": 2,
+                    "completed": 5,
+                    "remaining": [f"{old_base}:0", f"{other_base}:0"],
+                    "wrong": [f"{old_base}:0"],
+                    "retry_key": f"{old_base}:0",
+                }
+            },
+        }, ensure_ascii=False), encoding="utf-8")
+
+        restored = ChallengeRoundStore(
+            self.state_path,
+            key_aliases_by_mode={"regular": {old_base: new_base}},
+        )
+        active = restored.activate("regular", [new_item, other_item])
+
+        self.assertEqual(active[0], new_item)
+        self.assertEqual(len(active), 2)
+        self.assertTrue(restored.is_retry_required("regular"))
+        self.assertEqual(restored.progress("regular")["round"], 2)
+        self.assertEqual(restored.progress("regular")["current"], 6)
+        self.assertEqual(restored.progress("regular")["total"], 7)
+        self.assertEqual(restored.progress("regular")["wrong"], 1)
+
+    def test_irregular_wording_change_does_not_reset_round(self):
+        old_items = [
+            {"infinitive": "be", "past_tense": "was, were", "meaning": "是"},
+            {"infinitive": "go", "past_tense": "went", "meaning": "去"},
+        ]
+        corrected_items = [
+            {"infinitive": "be", "past_tense": "was, were", "meaning": "是；成为"},
+            {"infinitive": "go", "past_tense": "went", "meaning": "去；前往"},
+        ]
+        first = ChallengeRoundStore(self.state_path, rng=random.Random(41))
+        active = first.activate("irregular", old_items)
+        completed_infinitive = active[0]["infinitive"]
+        first.advance("irregular", old_items)
+
+        restored = ChallengeRoundStore(self.state_path, rng=random.Random(42))
+        active = restored.activate("irregular", corrected_items)
+        self.assertEqual(restored.progress("irregular")["round"], 1)
+        self.assertEqual(restored.progress("irregular")["current"], 2)
+        self.assertEqual(len(active), 1)
+        self.assertNotEqual(active[0]["infinitive"], completed_infinitive)
+
+    def test_legacy_duplicate_words_remain_distinct_during_migration(self):
+        noun = {"word": "break", "content": "n. 休息"}
+        verb = {"word": "break", "content": "v. 打破"}
+        noun_key = ChallengeRoundStore.item_base_key(noun)
+        verb_key = ChallengeRoundStore.item_base_key(verb)
+        Path(self.state_path).write_text(json.dumps({
+            "version": 2,
+            "modes": {
+                "regular": {
+                    "round": 2,
+                    "completed": 7,
+                    "remaining": [f"{noun_key}:0", f"{verb_key}:0"],
+                    "wrong": [f"{verb_key}:0"],
+                    "retry_key": None,
+                }
+            },
+        }, ensure_ascii=False), encoding="utf-8")
+
+        restored = ChallengeRoundStore(self.state_path)
+        active = restored.activate("regular", [noun, verb])
+        self.assertEqual(active, [noun, verb])
+        self.assertEqual(restored.progress("regular")["round"], 2)
+        self.assertEqual(restored.progress("regular")["current"], 8)
+        self.assertEqual(restored.progress("regular")["total"], 9)
+        self.assertEqual(restored.progress("regular")["wrong"], 1)
+
+    def test_real_3800_word_progress_at_1000_survives_upgrade_and_reopen(self):
+        root = Path(__file__).resolve().parent
+        vocabulary = json.loads(
+            (root / "assets" / "vocabulary.json").read_text(encoding="utf-8"))
+        alias_data = json.loads(
+            (root / "assets" / "vocabulary_progress_aliases.json").read_text(
+                encoding="utf-8"))
+        aliases = alias_data["regular"]
+        reverse_aliases = {new: old for old, new in aliases.items()}
+        legacy_occurrences = {}
+        saved_keys = []
+        for item in vocabulary:
+            current_base = ChallengeRoundStore.item_base_key(item)
+            saved_base = reverse_aliases.get(current_base, current_base)
+            occurrence = legacy_occurrences.get(saved_base, 0)
+            legacy_occurrences[saved_base] = occurrence + 1
+            saved_keys.append(f"{saved_base}:{occurrence}")
+
+        completed = 1000
+        current_key = saved_keys[completed]
+        wrong_keys = [saved_keys[20], saved_keys[500], current_key]
+        Path(self.state_path).write_text(json.dumps({
+            "version": 2,
+            "modes": {
+                "regular": {
+                    "round": 1,
+                    "completed": completed,
+                    "remaining": saved_keys[completed:],
+                    "wrong": wrong_keys,
+                    "retry_key": current_key,
+                }
+            },
+        }, ensure_ascii=False), encoding="utf-8")
+
+        upgraded = ChallengeRoundStore(
+            self.state_path, key_aliases_by_mode={"regular": aliases})
+        active = upgraded.activate("regular", vocabulary)
+        progress = upgraded.progress("regular")
+        self.assertEqual(progress["round"], 1)
+        self.assertEqual(progress["current"], 1001)
+        self.assertEqual(progress["total"], len(vocabulary))
+        self.assertEqual(progress["wrong"], 3)
+        self.assertTrue(upgraded.is_retry_required("regular"))
+        self.assertEqual(active, vocabulary[completed:])
+
+        reopened = ChallengeRoundStore(
+            self.state_path, key_aliases_by_mode={"regular": aliases})
+        reopened_active = reopened.activate("regular", vocabulary)
+        self.assertEqual(reopened.progress("regular"), progress)
+        self.assertTrue(reopened.is_retry_required("regular"))
+        self.assertEqual(reopened_active, active)
+
     def test_wrong_question_requires_retry_after_restart_until_advanced(self):
         first = ChallengeRoundStore(self.state_path, rng=random.Random(21))
         first.activate("regular", self.items)
@@ -135,6 +286,31 @@ class ChallengeRoundStoreTests(unittest.TestCase):
         self.assertEqual(self.items, original_items)
         self.assertEqual(store.progress("regular")["round"], 1)
 
+    def test_corrupt_primary_recovers_last_good_round_instead_of_round_one(self):
+        first = ChallengeRoundStore(self.state_path, rng=random.Random(50))
+        active = first.activate("irregular", self.items)
+        while True:
+            summary, active = first.advance("irregular", self.items)
+            if summary:
+                break
+        self.assertEqual(first.progress("irregular")["round"], 2)
+        Path(self.state_path).write_text("{broken", encoding="utf-8")
+
+        recovered = ChallengeRoundStore(self.state_path, rng=random.Random(51))
+        recovered.activate("irregular", self.items)
+        self.assertTrue(recovered.recovered_from_backup)
+        self.assertFalse(recovered.storage_error)
+        self.assertEqual(recovered.progress("irregular")["round"], 2)
+
+    def test_corrupt_primary_without_backup_is_never_silently_overwritten(self):
+        original = b"{broken-progress"
+        Path(self.state_path).write_bytes(original)
+        store = ChallengeRoundStore(self.state_path, rng=random.Random(52))
+        store.activate("irregular", self.items)
+
+        self.assertTrue(store.storage_error)
+        self.assertEqual(Path(self.state_path).read_bytes(), original)
+
     def test_backup_is_one_time_and_does_not_change_source(self):
         source = Path(self.temp_dir.name) / "mistake_words.json"
         source.write_text('[{"word":"kept"}]', encoding="utf-8")
@@ -144,6 +320,19 @@ class ChallengeRoundStoreTests(unittest.TestCase):
 
         self.assertEqual(backup.read_text(encoding="utf-8"), '[{"word":"kept"}]')
         self.assertEqual(source.read_text(encoding="utf-8"), '[{"word":"new"}]')
+
+    def test_stable_identity_upgrade_keeps_original_progress_snapshot(self):
+        original = json.dumps({
+            "version": 2,
+            "modes": {"irregular": {"round": 2, "completed": 0}},
+        }, ensure_ascii=False).encode("utf-8")
+        Path(self.state_path).write_bytes(original)
+
+        ChallengeRoundStore(self.state_path)
+        backups = list(Path(self.temp_dir.name).glob(
+            "rounds.json.before_stable_identity_upgrade_*.bak"))
+        self.assertEqual(len(backups), 1)
+        self.assertEqual(backups[0].read_bytes(), original)
 
     def test_learning_history_preserves_legacy_start_and_records_completion(self):
         learning_path = str(Path(self.temp_dir.name) / "learning.json")
@@ -170,6 +359,19 @@ class ChallengeRoundStoreTests(unittest.TestCase):
         self.assertEqual(completed["wrong"], 4)
         self.assertEqual(completed["status"], "completed")
         self.assertTrue(completed["ended_at"])
+
+    def test_learning_history_recovers_from_last_good_backup(self):
+        learning_path = Path(self.temp_dir.name) / "learning.json"
+        store = ChallengeLearningStore(str(learning_path))
+        store.ensure_round(
+            "irregular", {"round": 2, "current": 1, "total": 126, "wrong": 0})
+        self.assertTrue(Path(f"{learning_path}.last_good.bak").is_file())
+        learning_path.write_text("{broken-history", encoding="utf-8")
+
+        recovered = ChallengeLearningStore(str(learning_path))
+        snapshot = recovered.snapshot()
+        self.assertTrue(recovered.recovered_from_backup)
+        self.assertEqual(snapshot["modes"]["irregular"]["ongoing"]["round"], 2)
 
     def test_new_round_starts_only_after_first_challenge_action(self):
         learning_path = str(Path(self.temp_dir.name) / "learning.json")

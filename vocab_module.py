@@ -27,6 +27,20 @@ def _normalize_answer_text(value):
     return text.strip().casefold()
 
 
+def _load_vocab_progress_aliases():
+    """Load old-to-new item hashes so corrected words keep round progress."""
+    try:
+        path = get_resource_path("assets/vocabulary_progress_aliases.json")
+        with open(path, "r", encoding="utf-8") as file:
+            data = json.load(file)
+        regular = data.get("regular", {}) if isinstance(data, dict) else {}
+        if isinstance(regular, dict):
+            return {"regular": regular}
+    except (FileNotFoundError, json.JSONDecodeError, OSError):
+        pass
+    return {}
+
+
 class VocabManager(QObject):  # 继承自 QObject
     """
     词汇学习模块管理器，负责加载词汇、显示单词、检查用户输入和计时。
@@ -57,7 +71,10 @@ class VocabManager(QObject):  # 继承自 QObject
         ])
         self.round_progress_path = get_writable_data_path(
             "challenge_round_progress.json")
-        self.round_store = ChallengeRoundStore(self.round_progress_path)
+        self.round_store = ChallengeRoundStore(
+            self.round_progress_path,
+            key_aliases_by_mode=_load_vocab_progress_aliases(),
+        )
         self.learning_store = ChallengeLearningStore(get_writable_data_path(
             "challenge_learning_records.json"))
         # Find the vocabulary page widget from the main window's stacked widget.

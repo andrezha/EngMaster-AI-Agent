@@ -13,12 +13,39 @@ from challenge_rounds import (
 )
 from challenge_history_dialog import MODE_NAMES, show_round_history
 
-# Helper function to clean irregular verb fields
+# Helper function to display irregular verb fields
 def _clean_verb_field(text):
     if text is None:
         return ""
-    # Remove commas, full-width commas, and trim whitespace
-    return text.replace(',', '').replace('，', '').strip()
+    # Multiple forms are displayed and entered with one ordinary space.
+    text = _VERB_VARIANT_SEPARATOR_RE.sub(" ", str(text))
+    return re.sub(r"\s+", " ", text).strip()
+
+
+_VERB_VARIANT_SEPARATOR_RE = re.compile(r"[,，、/／;；]+")
+
+
+def _normalize_verb_answer(text):
+    """Normalize harmless typing differences in one irregular-verb form."""
+    text = unicodedata.normalize("NFKC", str(text or "")).casefold().strip()
+    return re.sub(r"\s+", " ", text)
+
+
+def _verb_variants(text):
+    """Return the individually accepted forms from a multi-form data field."""
+    return {
+        normalized
+        for part in _VERB_VARIANT_SEPARATOR_RE.split(str(text or ""))
+        if (normalized := _normalize_verb_answer(part))
+    }
+
+
+def _is_accepted_verb_answer(answer, expected):
+    return _clean_verb_field(
+        _normalize_verb_answer(answer)
+    ) == _clean_verb_field(
+        _normalize_verb_answer(expected)
+    )
 
 
 def _normalize_phrase_answer(text):
@@ -359,9 +386,10 @@ class _LegacyPhraseIrregularChallengeView(QtWidgets.QWidget):
                 self.feedback_label.setText("请同时填写过去式和过去分词。")
                 self.feedback_label.setStyleSheet("font-size: 13px; color: #bd3d3d;")
                 return
-            correct_past = item.get("past_tense", "").lower()
-            correct_participle = item.get("past_participle", "").lower() # Removed .replace(",", "") as it's now handled by _clean_verb_field
-            if past_answer == correct_past and participle_answer == correct_participle:
+            correct_past = item.get("past_tense", "")
+            correct_participle = item.get("past_participle", "")
+            if (_is_accepted_verb_answer(past_answer, correct_past)
+                    and _is_accepted_verb_answer(participle_answer, correct_participle)):
                 self.feedback_label.setStyleSheet("font-size: 14px; color: #0b6d3a; font-weight: bold;")
                 self.feedback_label.setText("回答正确！")
             else:
@@ -904,11 +932,12 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
                 (self.irregular_past_input if not past_answer else self.irregular_participle_input).setFocus()
                 return
             self.learning_store.begin_round(self.current_category)
-            correct_past = _clean_verb_field(item.get("past_tense", "")).lower()
-            correct_participle = _clean_verb_field(item.get("past_participle", "")).lower()
+            correct_past = item.get("past_tense", "")
+            correct_participle = item.get("past_participle", "")
             was_retrying = self.round_store.is_retry_required(
                 self.current_category)
-            if past_answer == correct_past and participle_answer == correct_participle:
+            if (_is_accepted_verb_answer(past_answer, correct_past)
+                    and _is_accepted_verb_answer(participle_answer, correct_participle)):
                 self.feedback_label.setStyleSheet("font-size: 14px; color: #0b6d3a; font-weight: bold;")
                 if self.current_category == "irregular_mistake" and not was_retrying:
                     count, removed = self._increment_mistake_correct_count(

@@ -8,16 +8,19 @@ import time
 from datetime import datetime
 
 
-def backup_existing_file_once(path):
+def backup_existing_file_once(path, tag="round_upgrade"):
     """Create a one-time, non-destructive backup before the round upgrade is used."""
     try:
         if not path or not os.path.isfile(path):
             return ""
-        existing = sorted(glob.glob(f"{path}.before_round_upgrade_*.bak"))
+        safe_tag = "".join(
+            character for character in str(tag) if character.isalnum() or character == "_"
+        ) or "upgrade"
+        existing = sorted(glob.glob(f"{path}.before_{safe_tag}_*.bak"))
         if existing:
             return existing[0]
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        backup_path = f"{path}.before_round_upgrade_{timestamp}.bak"
+        backup_path = f"{path}.before_{safe_tag}_{timestamp}.bak"
         shutil.copy2(path, backup_path)
         return backup_path
     except OSError:
@@ -57,6 +60,27 @@ def atomic_write_json(path, data, indent=2):
         file.flush()
         os.fsync(file.fileno())
     os.replace(temp_path, path)
+    try:
+        shutil.copy2(path, f"{path}.last_good.bak")
+    except OSError:
+        pass
+
+
+def _load_json_dict_with_recovery(path, validator):
+    """Read the primary JSON, falling back to the most recent valid snapshot."""
+    found_candidate = False
+    for candidate, recovered in ((path, False), (f"{path}.last_good.bak", True)):
+        try:
+            with open(candidate, "r", encoding="utf-8") as file:
+                data = json.load(file)
+            found_candidate = True
+            if isinstance(data, dict) and validator(data):
+                return data, ("recovered" if recovered else "ok")
+        except FileNotFoundError:
+            continue
+        except (json.JSONDecodeError, OSError, UnicodeError):
+            found_candidate = True
+    return None, ("invalid" if found_candidate else "missing")
 
 
 def _safe_nonnegative_int(value, default=0):
@@ -69,23 +93,28 @@ def _safe_nonnegative_int(value, default=0):
 class ChallengeRoundStore:
     """Persist independent shuffled-round progress without touching study data."""
 
-    VERSION = 2
+    VERSION = 3
 
-    def __init__(self, path, rng=None):
+    def __init__(self, path, rng=None, key_aliases_by_mode=None):
         self.path = path
         self.rng = rng or random.Random()
+        self.key_aliases_by_mode = key_aliases_by_mode or {}
+        backup_existing_file_once(path, "stable_identity_upgrade")
+        self.storage_error = False
+        self.recovered_from_backup = False
         self.data = self._load()
         self._inventories = {}
         self._dirty_modes = set()
 
     def _load(self):
-        try:
-            with open(self.path, "r", encoding="utf-8") as file:
-                data = json.load(file)
-            if isinstance(data, dict) and isinstance(data.get("modes"), dict):
-                return data
-        except (FileNotFoundError, json.JSONDecodeError, OSError):
-            pass
+        data, status = _load_json_dict_with_recovery(
+            self.path,
+            lambda value: isinstance(value.get("modes"), dict),
+        )
+        self.storage_error = status == "invalid"
+        self.recovered_from_backup = status == "recovered"
+        if data is not None:
+            return data
         return {"version": self.VERSION, "modes": {}}
 
     def has_mode(self, mode):
@@ -98,7 +127,12 @@ class ChallengeRoundStore:
     def _save(self):
         if not self._dirty_modes:
             return
+        if self.storage_error:
+            # Never replace an unreadable progress file with a blank first round.
+            return
         disk_data = self._load()
+        if self.storage_error:
+            return
         disk_modes = disk_data.setdefault("modes", {})
         for mode in self._dirty_modes:
             disk_modes[mode] = self.data["modes"][mode]
@@ -112,6 +146,7 @@ class ChallengeRoundStore:
 
     @staticmethod
     def _base_key(item):
+        """Legacy full-row hash retained for migration alias generation."""
         stable_item = {
             key: value for key, value in item.items()
             if key not in {"correct_count"}
@@ -119,18 +154,74 @@ class ChallengeRoundStore:
         payload = json.dumps(stable_item, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
         return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
+    @classmethod
+    def _identity_key(cls, item):
+        """Hash only an item's identity so wording corrections cannot erase progress."""
+        for field, item_type in (
+            ("word", "word"),
+            ("p", "phrase"),
+            ("infinitive", "irregular"),
+        ):
+            value = str(item.get(field, "")).strip().casefold()
+            if value:
+                payload = json.dumps(
+                    {"type": item_type, "value": value},
+                    ensure_ascii=False,
+                    sort_keys=True,
+                    separators=(",", ":"),
+                )
+                return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+        return cls._base_key(item)
+
     def _build_inventory(self, items):
         inventory = {}
         occurrences = {}
         for item in items:
             if not isinstance(item, dict):
                 continue
-            base = self._base_key(item)
+            base = self._identity_key(item)
             occurrence = occurrences.get(base, 0)
             occurrences[base] = occurrence + 1
             key = f"{base}:{occurrence}"
             inventory[key] = item
         return inventory
+
+    def _legacy_key_migrations(self, mode, items):
+        """Map version-2 full-row hashes (and known aliases) to stable identities."""
+        migrations = {}
+        legacy_occurrences = {}
+        identity_occurrences = {}
+        aliases = self.key_aliases_by_mode.get(mode, {})
+        reverse_aliases = {}
+        for old_base, current_base in aliases.items():
+            reverse_aliases.setdefault(current_base, []).append(old_base)
+        for item in items:
+            if not isinstance(item, dict):
+                continue
+            legacy_base = self._base_key(item)
+            identity_base = self._identity_key(item)
+            legacy_occurrence = legacy_occurrences.get(legacy_base, 0)
+            legacy_occurrences[legacy_base] = legacy_occurrence + 1
+            identity_occurrence = identity_occurrences.get(identity_base, 0)
+            identity_occurrences[identity_base] = identity_occurrence + 1
+            stable_key = f"{identity_base}:{identity_occurrence}"
+            migrations[f"{legacy_base}:{legacy_occurrence}"] = stable_key
+            for old_base in reverse_aliases.get(legacy_base, []):
+                migrations[f"{old_base}:{legacy_occurrence}"] = stable_key
+        return migrations
+
+    def _migrate_saved_key(self, mode, key, migrations=None):
+        """Map a persisted pre-correction item hash to its corrected hash."""
+        if not isinstance(key, str):
+            return key
+        if migrations and key in migrations:
+            return migrations[key]
+        base, separator, occurrence = key.rpartition(":")
+        if not separator or not occurrence.isdigit():
+            return key
+        aliases = self.key_aliases_by_mode.get(mode, {})
+        aliased_key = f"{aliases.get(base, base)}:{occurrence}"
+        return migrations.get(aliased_key, aliased_key) if migrations else aliased_key
 
     def _start_round(self, mode, inventory, round_number):
         order = list(inventory)
@@ -146,11 +237,23 @@ class ChallengeRoundStore:
 
     def activate(self, mode, items):
         inventory = self._build_inventory(items)
+        migrations = self._legacy_key_migrations(mode, items)
         self._inventories[mode] = inventory
         state = self.data["modes"].get(mode)
         if not isinstance(state, dict):
             self._start_round(mode, inventory, 1)
         else:
+            state["remaining"] = [
+                self._migrate_saved_key(mode, key, migrations)
+                for key in state.get("remaining", [])
+            ] if isinstance(state.get("remaining"), list) else []
+            state["wrong"] = [
+                self._migrate_saved_key(mode, key, migrations)
+                for key in state.get("wrong", [])
+            ] if isinstance(state.get("wrong"), list) else []
+            state["retry_key"] = self._migrate_saved_key(
+                mode, state.get("retry_key"), migrations
+            )
             state["round"] = max(1, _safe_nonnegative_int(state.get("round"), 1))
             state["completed"] = _safe_nonnegative_int(state.get("completed"), 0)
             wrong = state.get("wrong", [])
@@ -268,29 +371,37 @@ class ChallengeLearningStore:
     def __init__(self, path):
         self.path = path
         self._active_since = {}
+        self.storage_error = False
+        self.recovered_from_backup = False
 
     def _load(self):
-        try:
-            with open(self.path, "r", encoding="utf-8") as file:
-                data = json.load(file)
-            if isinstance(data, dict):
-                data.setdefault("modes", {})
-                data.setdefault("wrong_rounds", {})
-                if _safe_nonnegative_int(data.get("version"), 0) < 2:
-                    for mode_data in data["modes"].values():
-                        ongoing = mode_data.get("ongoing") if isinstance(mode_data, dict) else None
-                        if isinstance(ongoing, dict):
-                            ongoing["started_at"] = None
-                            ongoing["tracking_started_at"] = None
-                            ongoing["active_seconds"] = 0.0
-                            ongoing["pending_start_migration"] = True
-                    data["version"] = self.VERSION
-                return data
-        except (FileNotFoundError, json.JSONDecodeError, OSError):
-            pass
+        data, status = _load_json_dict_with_recovery(
+            self.path,
+            lambda value: (
+                isinstance(value.get("modes", {}), dict)
+                and isinstance(value.get("wrong_rounds", {}), dict)
+            ),
+        )
+        self.storage_error = status == "invalid"
+        self.recovered_from_backup = status == "recovered"
+        if data is not None:
+            data.setdefault("modes", {})
+            data.setdefault("wrong_rounds", {})
+            if _safe_nonnegative_int(data.get("version"), 0) < 2:
+                for mode_data in data["modes"].values():
+                    ongoing = mode_data.get("ongoing") if isinstance(mode_data, dict) else None
+                    if isinstance(ongoing, dict):
+                        ongoing["started_at"] = None
+                        ongoing["tracking_started_at"] = None
+                        ongoing["active_seconds"] = 0.0
+                        ongoing["pending_start_migration"] = True
+                data["version"] = self.VERSION
+            return data
         return {"version": self.VERSION, "modes": {}, "wrong_rounds": {}}
 
     def _save(self, data):
+        if self.storage_error:
+            return
         data["version"] = self.VERSION
         try:
             atomic_write_json(self.path, data)
