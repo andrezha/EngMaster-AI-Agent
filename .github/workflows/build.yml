@@ -31,18 +31,12 @@ jobs:
       shell: pwsh
       run: |
         # 首席架构师提示：
-        # 1. 使用 --onedir 保证 158+ 题库文件的读取效率
-        # 2. 补全了新增的 self_register_vocab_module, export_dialog 等模块
-        # 3. 严格映射 core, lib, parsers, data, resources, assets 六大核心目录
+        # 纯单词版不打包题库、考试页面或考试解析模块。
         pyinstaller --noconfirm --onedir --windowed --clean `
           --name "高考英语智胜工作站" `
-          --add-data "resources;resources" `
-          --add-data "data;data" `
+          --add-data "resources/main_window.ui;resources" `
+          --add-data "resources/style.qss;resources" `
           --add-data "assets;assets" `
-          --add-data "core;core" `
-          --add-data "lib;lib" `
-          --add-data "parsers;parsers" `
-          --add-data "prompts.json;." `
           main.py
 
     - name: Upload Artifact

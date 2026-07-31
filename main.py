@@ -59,7 +59,7 @@ for p in [BASE_DIR]:
 
 # ============ [4. 核心模块异步导入] ============
 try:
-    from utils import normalize_exam_text, get_writable_data_path, get_resource_path
+    from utils import get_writable_data_path, get_resource_path
     from watermark_modes import parse_watermark_args
 except ImportError as e:
     print(f"❌ 核心异步模块加载失败: {e}")
@@ -72,66 +72,20 @@ _feature_modules_loaded = False
 def _load_feature_modules():
     """Load feature pages after the first window frame is available."""
     global _feature_modules_loaded
-    global VocabManager, WordListView, ExamManager
+    global VocabManager, WordListView
     global SelfRegisterVocabManager
     global PhraseIrregularChallengeView, PhraseIrregularListView
-    global HSEExamSystem
-    global _parse_grammar_items_full_exam, _parse_seven_five_items_full_exam
-    global _parse_cloze_items_full_exam, _parse_reading_items_full_exam_robust
 
     if _feature_modules_loaded:
         return
 
     from vocab_module import VocabManager
     from word_list_view import WordListView
-    from exam_module import ExamManager
     from self_register_vocab_module import SelfRegisterVocabManager
     from phrase_irregular_module import PhraseIrregularChallengeView, PhraseIrregularListView
-    from run_flull_exam import HSEExamSystem
-    from parsers.full_exam_specific_parsers import (
-        _parse_grammar_items_full_exam,
-        _parse_seven_five_items_full_exam,
-        _parse_cloze_items_full_exam,
-        _parse_reading_items_full_exam_robust,
-    )
     _feature_modules_loaded = True
 
-# ============ [5. 内部工具函数 (移至顶部方便多线程访问)] ============
-def _internal_full_exam_parser(text):
-    text = normalize_exam_text(text)
-    sections = re.split(r'\[\[SECTION:\s*(.*?)\]\]', text)
-    data_list = []
-    analysis_tag_start = text.lower().find('[analysis]')
-    global_analysis_text = ""
-    if analysis_tag_start != -1:
-        global_analysis_text = text[analysis_tag_start + len('[analysis]'):].strip()
-
-    NAME_MAP = {"READING_PASSAGE_A": "阅读理解 A", "7_OUT_OF_5": "七选五", "CLOZE": "完形填空", "GRAMMAR": "语法填空"}
-    TYPE_MAP = {"READING_PASSAGE_A": "reading", "7_OUT_OF_5": "seven_five", "CLOZE": "cloze", "GRAMMAR": "grammar"}
-
-    for i in range(1, len(sections), 2):
-        sec_name = sections[i].strip()
-        sec_body = sections[i+1].strip()
-        q_tag = sec_body.lower().find('[questions]')
-        if q_tag == -1: continue
-        passage = sec_body[:q_tag].strip()
-        q_text = normalize_exam_text(sec_body[q_tag + len('[questions]'):].strip())
-        q_type = TYPE_MAP.get(sec_name, "reading")
-
-        parsed_items = []
-        if q_type == "grammar": parsed_items = _parse_grammar_items_full_exam(q_text, global_analysis_text)
-        elif q_type == "seven_five": parsed_items = _parse_seven_five_items_full_exam(q_text, global_analysis_text, passage)
-        elif q_type == "cloze": parsed_items = _parse_cloze_items_full_exam(q_text, global_analysis_text)
-        elif q_type == "reading": parsed_items = _parse_reading_items_full_exam_robust(q_text, global_analysis_text)
-
-        items = []
-        for item_dict in (parsed_items if isinstance(parsed_items, list) else []):
-            item_dict['q_id'] = re.sub(r'\D', '', str(item_dict.get('q_id', '')))
-            items.append(item_dict)
-        data_list.append({"category": NAME_MAP.get(sec_name, sec_name), "question_type": q_type, "passage": passage, "items": items, "original_analysis": global_analysis_text})
-    return data_list
-
-# ============ [6. QThread Worker 异步数据加载] ============
+# ============ [5. QThread Worker 异步数据加载] ============
 class VocabLoaderWorker(QObject):
     finished = Signal()
     result_ready = Signal(object)
@@ -192,38 +146,7 @@ class SelfRegisterVocabLoaderWorker(QObject):
         finally:
             self.finished.emit()
 
-class FullExamLoaderWorker(QObject):
-    finished = Signal()
-    result_ready = Signal(object)
-    error_occurred = Signal(str)
-    progress_update = Signal(str)
-
-    def __init__(self, parent=None):
-        super().__init__(parent)
-        self.target_file = None
-
-    def set_exam_file(self, file_path):
-        self.target_file = file_path
-
-    def run(self):
-        if not self.target_file:
-            self.error_occurred.emit("未指定试卷文件。")
-            self.finished.emit()
-            return
-        try:
-            self.progress_update.emit(f"正在准备模拟练习资源...")
-            with open(self.target_file, 'r', encoding='utf-8') as f:
-                raw_data = f.read()
-            self.progress_update.emit("正在解析模拟练习结构...")
-            parsed_data = _internal_full_exam_parser(raw_data)
-            self.result_ready.emit(parsed_data)
-        except Exception as e:
-            self.error_occurred.emit(f"整卷模拟练习挂载失败: {e}\n{traceback.format_exc()}")
-        finally:
-            self.finished.emit()
-
-
-# ============ [7. 主窗口核心完全体] ============
+# ============ [6. 主窗口核心完全体] ============
 class HighSchoolEnglishAI(QMainWindow):
     _data_mutex = QMutex()
 
@@ -243,8 +166,6 @@ class HighSchoolEnglishAI(QMainWindow):
             "btn_nav_core_vocab": "word_list_index",
             "btn_nav_phrase_challenge": "phrase_irregular_challenge_index",
             "btn_nav_phrase_list": "phrase_irregular_list_index",
-            "btn_nav_gaokao": "gk_idx",
-            "btn_nav_full_exam": None, 
             "btn_nav_self_register": "self_register_vocab_index",
         }
 
@@ -253,16 +174,12 @@ class HighSchoolEnglishAI(QMainWindow):
         self.self_register_vocab_index = -1
         self.phrase_irregular_challenge_index = -1
         self.phrase_irregular_list_index = -1
-        self.gk_idx = -1
-        self.full_exam_index = -1 
 
         self.vocab_ctrl = None
-        self.exam_ctrl = None
         self.word_list_widget = None
         self.self_register_vocab_ctrl = None
         self.phrase_irregular_challenge_widget = None
         self.phrase_irregular_list_widget = None
-        self.full_view = None 
 
         self.vocab_loader_done = False
         self.self_register_loader_done = False
@@ -298,7 +215,6 @@ class HighSchoolEnglishAI(QMainWindow):
             print(f"[DEBUG] loading screen inserted, currentIndex={self.stack.currentIndex()}, widget0={type(self.stack.widget(0)).__name__}")
             self.stack.currentChanged.connect(self._update_nav_button_styles)
 
-            self._setup_gaokao_page(res_dir)
             self._bind_nav_events()
             self._setup_notice_button()
             self._apply_sidebar_style()
@@ -333,15 +249,6 @@ class HighSchoolEnglishAI(QMainWindow):
         loading_layout.addWidget(self.loading_progress_bar, alignment=QtCore.Qt.AlignmentFlag.AlignCenter)
         loading_layout.addStretch(1)
         self.loading_widget.setLayout(loading_layout)
-
-    def _setup_gaokao_page(self, res_dir):
-        gk_ui_path = os.path.join(res_dir, "page_gaokao.ui")
-        self.page_gaokao_widget = self.loader.load(gk_ui_path)
-        if self.page_gaokao_widget:
-            self.stack.addWidget(self.page_gaokao_widget)
-            self.gk_idx = self.stack.indexOf(self.page_gaokao_widget)
-            self.nav_button_target_map["btn_nav_gaokao"] = self.gk_idx
-            self.exam_ctrl = None
 
     def _start_async_loaders(self):
 
@@ -464,9 +371,6 @@ class HighSchoolEnglishAI(QMainWindow):
         """
         Recompute dynamic page indices after the loading screen is removed or pages are added.
         """
-        if hasattr(self, 'page_gaokao_widget') and self.page_gaokao_widget:
-            self.gk_idx = self.stack.indexOf(self.page_gaokao_widget)
-            self.nav_button_target_map["btn_nav_gaokao"] = self.gk_idx
         if self.self_register_vocab_ctrl is not None:
             self.self_register_vocab_index = self.stack.indexOf(self.self_register_vocab_ctrl)
             self.nav_button_target_map["btn_nav_self_register"] = self.self_register_vocab_index
@@ -479,10 +383,6 @@ class HighSchoolEnglishAI(QMainWindow):
         if self.phrase_irregular_list_widget is not None:
             self.phrase_irregular_list_index = self.stack.indexOf(self.phrase_irregular_list_widget)
             self.nav_button_target_map["btn_nav_phrase_list"] = self.phrase_irregular_list_index
-        if self.full_view is not None:
-            self.full_exam_index = self.stack.indexOf(self.full_view)
-            self.nav_button_target_map["btn_nav_full_exam"] = self.full_exam_index
-
     def _on_loader_done(self, loader_name):
         if loader_name == "vocab":
             self.vocab_loader_done = True
@@ -511,8 +411,6 @@ class HighSchoolEnglishAI(QMainWindow):
             "btn_nav_core_vocab": self._safe_nav_to_word_list,
             "btn_nav_phrase_challenge": self.show_phrase_irregular_challenge,
             "btn_nav_phrase_list": self.show_phrase_irregular_list,
-            "btn_nav_gaokao": self.show_gaokao_page,
-            "btn_nav_full_exam": self.switch_to_full_exam,
             "btn_nav_self_register": self._safe_nav_to_self_register,
         }
         for btn_name, handler in nav_map.items():
@@ -600,96 +498,6 @@ class HighSchoolEnglishAI(QMainWindow):
         self.phrase_irregular_list_widget._show_table(table_type)
         self.stack.setCurrentIndex(self.phrase_irregular_list_index)
 
-    def show_gaokao_page(self):
-        if self.gk_idx != -1:
-            if self.exam_ctrl is None:
-                try:
-                    self.exam_ctrl = ExamManager(self, self.page_gaokao_widget)
-                except Exception as e:
-                    QMessageBox.critical(self, "性能警告", f"专项练习异步总线初始化失败: {e}")
-                    return
-            self.stack.setCurrentIndex(self.gk_idx)
-
-    def switch_to_full_exam(self):
-        path = get_resource_path("data/模拟试卷")
-        if not os.path.exists(path):
-            print(f"[整卷模拟] 未找到目录: {path}")
-            QMessageBox.warning(self, "出厂提示", "未找到本地模拟试卷数据目录。")
-            return
-        files = [f for f in os.listdir(path) if f.endswith(".txt")]
-        print(f"[整卷模拟] 目标目录: {path}")
-        print(f"[整卷模拟] 发现试卷文件: {files}")
-        if not files:
-            print(f"[整卷模拟] 目录中没有 .txt 试卷文件")
-            QMessageBox.information(self, "提示", "模拟试卷目录下暂无有效练习资源。")
-            return
-
-        if self.full_view is not None and self.full_exam_index != -1:
-            self.stack.setCurrentIndex(self.full_exam_index)
-            return
-
-        loading_dialog = QtWidgets.QDialog(self)
-        loading_dialog.setWindowTitle("性能调度中")
-        loading_dialog.setModal(True)
-        loading_dialog.setWindowFlags(QtCore.Qt.WindowType.Dialog | QtCore.Qt.WindowType.FramelessWindowHint)
-        loading_dialog.setStyleSheet("QDialog { background-color: #fcfcfc; border-radius: 8px; }")
-
-        dialog_layout = QtWidgets.QVBoxLayout(loading_dialog)
-        dialog_layout.setContentsMargins(20, 20, 20, 20)
-        dialog_layout.setSpacing(12)
-
-        loading_label = QtWidgets.QLabel("正在解析整卷模拟练习...")
-        loading_label.setAlignment(QtCore.Qt.AlignCenter)
-        loading_label.setStyleSheet("font-size: 14px; color: #111827;")
-        dialog_layout.addWidget(loading_label)
-
-        progress_bar = QProgressBar(loading_dialog)
-        progress_bar.setRange(0, 0)
-        progress_bar.setTextVisible(False)
-        dialog_layout.addWidget(progress_bar)
-
-        loading_dialog.setFixedSize(360, 120)
-        loading_dialog.show()
-
-        # 点火专线异步执行整卷大文本解析
-        self.full_exam_thread = QThread()
-        self.full_exam_worker = FullExamLoaderWorker()
-        self.full_exam_worker.set_exam_file(os.path.join(get_resource_path("data/模拟试卷"), random.choice(files)))
-        self.full_exam_worker.moveToThread(self.full_exam_thread)
-
-        self._full_exam_loading_dialog = loading_dialog
-        self.full_exam_thread.started.connect(self.full_exam_worker.run)
-        self.full_exam_worker.result_ready.connect(self._on_full_exam_parsed)
-        self.full_exam_worker.error_occurred.connect(self._on_full_exam_error)
-        self.full_exam_worker.finished.connect(self.full_exam_thread.quit)
-        self.full_exam_worker.finished.connect(self.full_exam_thread.deleteLater)
-        self.full_exam_worker.finished.connect(self.full_exam_worker.deleteLater)
-        self.full_exam_thread.start()
-
-    def _on_full_exam_parsed(self, parsed_data):
-        if hasattr(self, '_full_exam_loading_dialog') and self._full_exam_loading_dialog:
-            self._full_exam_loading_dialog.done(0)
-            self._full_exam_loading_dialog = None
-        print("[整卷模拟] 已解析完毕，开始构建界面...")
-        with QMutexLocker(self._data_mutex):
-            try:
-                self.full_view = HSEExamSystem(parsed_data)
-                self.full_exam_index = self.stack.addWidget(self.full_view)
-                self.stack.setCurrentIndex(self.full_exam_index)
-                self.nav_button_target_map["btn_nav_full_exam"] = self.full_exam_index
-                self._update_nav_button_styles(self.full_exam_index)
-                print(f"[整卷模拟] 界面构建成功，索引={self.full_exam_index}")
-            except Exception as e:
-                print(f"[整卷模拟错误] 界面构建失败: {e}")
-                QMessageBox.critical(self, "异步加载熔断", f"整卷模拟界面构建失败: {e}")
-
-    def _on_full_exam_error(self, message):
-        if hasattr(self, '_full_exam_loading_dialog') and self._full_exam_loading_dialog:
-            self._full_exam_loading_dialog.done(0)
-            self._full_exam_loading_dialog = None
-        print(f"[整卷模拟错误] {message}")
-        QMessageBox.critical(self, "异步加载熔断", message)
-
     def _apply_sidebar_style(self):
         self.inactive_nav_style = """
             QPushButton { min-height: 55px; border-radius: 12px; text-align: left; padding-left: 20px; font-family: "Microsoft YaHei", "Segoe UI", sans-serif; font-size: 15px; font-weight: bold; background-color: transparent; color: #495057; border: none; }
@@ -699,7 +507,7 @@ class HighSchoolEnglishAI(QMainWindow):
             QPushButton { min-height: 55px; border-radius: 12px; text-align: left; padding-left: 20px; font-family: "Microsoft YaHei", "Segoe UI", sans-serif; font-size: 15px; font-weight: bold; background-color: #007bff; color: white; border: none; }
             QPushButton:hover { background-color: #0056b3; }
         """
-        nav_btns = ["btn_nav_vocab", "btn_nav_core_vocab", "btn_nav_phrase_challenge", "btn_nav_phrase_list", "btn_nav_gaokao", "btn_nav_full_exam", "btn_nav_self_register", "btn_user_notice", "btn_version_info"]
+        nav_btns = ["btn_nav_vocab", "btn_nav_core_vocab", "btn_nav_phrase_challenge", "btn_nav_phrase_list", "btn_nav_self_register", "btn_user_notice", "btn_version_info"]
         for name in nav_btns:
             btn = self.ui_root.findChild(QPushButton, name)
             if btn:
