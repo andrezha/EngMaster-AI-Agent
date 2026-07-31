@@ -12,11 +12,47 @@ def load_vocab():
 
 def test_vocabulary_schema_and_pronunciation_fields_are_complete():
     rows = load_vocab()
-    assert len(rows) == 3875
-    assert all(set(row) == {"word", "content"} for row in rows)
+    assert len(rows) == 3876
+    assert all(
+        {"word", "content"}.issubset(row)
+        and set(row).issubset({"word", "content", "accepted_answers"})
+        for row in rows
+    )
+    assert all(
+        isinstance(row.get("accepted_answers", []), list)
+        and all(
+            isinstance(answer, str) and answer.strip()
+            for answer in row.get("accepted_answers", [])
+        )
+        for row in rows
+    )
     assert all(row["word"].strip() and row["content"].strip() for row in rows)
     assert all(re.search(r"\[[^\]]+\]", row["content"]) for row in rows)
     assert all(row["content"].count("[") == row["content"].count("]") for row in rows)
+
+
+def test_known_parenthesized_answer_rows_are_canonicalized():
+    rows = load_vocab()
+    by_word = {row["word"]: row for row in rows}
+    assert not {
+        "afterward(s)",
+        "backward(s)",
+        "department(缩Dept.)",
+        "outward(s)",
+        "the North (South) Pole",
+        "toward(s)",
+    }.intersection(by_word)
+    assert by_word["afterward"]["accepted_answers"] == [
+        "afterward", "afterwards"]
+    assert by_word["backward"]["accepted_answers"] == [
+        "backward", "backwards"]
+    assert by_word["outward"]["accepted_answers"] == [
+        "outward", "outwards"]
+    assert by_word["toward"]["accepted_answers"] == [
+        "toward", "towards"]
+    assert "accepted_answers" not in by_word["department"]
+    assert "the North Pole" in by_word
+    assert "the South Pole" in by_word
 
 
 def test_headwords_do_not_contain_scraped_pronunciation_or_footnote_fragments():

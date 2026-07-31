@@ -898,7 +898,7 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
                 self._advance_pending = True
                 self.answer_input.setEnabled(False)
                 self.btn_check.setEnabled(False)
-                self.advance_timer.start(600)
+                self.advance_timer.start(1200)
             else:
                 already_retrying = self.round_store.is_retry_required(
                     self.current_category)
@@ -956,7 +956,7 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
                 self.irregular_past_input.setEnabled(False)
                 self.irregular_participle_input.setEnabled(False)
                 self.btn_check.setEnabled(False)
-                self.advance_timer.start(600)
+                self.advance_timer.start(1200)
             else:
                 already_retrying = self.round_store.is_retry_required(
                     self.current_category)

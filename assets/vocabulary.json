@@ -380,7 +380,11 @@
         "content": "[ɑːftəˈnuːn] n. 下午，午后"
     },
     {
-        "word": "afterward(s)",
+        "word": "afterward",
+        "accepted_answers": [
+            "afterward",
+            "afterwards"
+        ],
         "content": "[ˈɑːftəwəd(z)] ad. 后来"
     },
     {
@@ -1272,7 +1276,11 @@
         "content": "[ˈbækɡraʊnd] n. 背景"
     },
     {
-        "word": "backward(s)",
+        "word": "backward",
+        "accepted_answers": [
+            "backward",
+            "backwards"
+        ],
         "content": "[ˈbækwəd] ad. 向后"
     },
     {
@@ -3956,7 +3964,7 @@
         "content": "[ˈdentɪst] n. 牙科医生 "
     },
     {
-        "word": "department(缩Dept.)",
+        "word": "department",
         "content": "[dɪˈpɑːtmənt] n. 部门；（机关的）司，处；（大学的）系"
     },
     {
@@ -9364,7 +9372,11 @@
         "content": "[aʊtˈstændɪŋ]a. 优秀的，杰出的"
     },
     {
-        "word": "outward(s)",
+        "word": "outward",
+        "accepted_answers": [
+            "outward",
+            "outwards"
+        ],
         "content": "[ˈaʊtwəd] ad. 向外的，外出的"
     },
     {
@@ -10032,8 +10044,12 @@
         "content": "[pəʊl] n. 杆，电线杆；"
     },
     {
-        "word": "the North (South) Pole",
-        "content": "[ðə nɔːθ (saʊθ) pəʊl] （地球的）北（南）极，极地"
+        "word": "the North Pole",
+        "content": "[ðə nɔːθ pəʊl] （地球的）北极，极地"
+    },
+    {
+        "word": "the South Pole",
+        "content": "[ðə saʊθ pəʊl] （地球的）南极，极地"
     },
     {
         "word": "police",
@@ -14012,7 +14028,11 @@
         "content": "[ˈtʊənəmənt; (US) ˈtɜːrn-] n. 锦标赛，联赛"
     },
     {
-        "word": "toward(s)",
+        "word": "toward",
+        "accepted_answers": [
+            "toward",
+            "towards"
+        ],
         "content": "[təˈwɔːd] prep. 向，朝，对于"
     },
     {
