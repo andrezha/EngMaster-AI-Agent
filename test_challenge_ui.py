@@ -94,9 +94,29 @@ class ChallengeUiSmokeTests(unittest.TestCase):
 
         manager.v_input.setText(first_word)
         QtTest.QTest.keyClick(manager.v_input, QtCore.Qt.Key.Key_Return)
-        QtTest.QTest.qWait(700)
+        QtTest.QTest.qWait(1300)
         self.assertIn("本轮 2 / 2", manager.lbl_round_progress.text())
         self.assertEqual(len(manager.mistake_vocabulary), 1)
+        manager.timer.stop()
+        window.close()
+
+    def test_vocab_accepts_an_approved_spelling_variant(self):
+        window = self._fake_vocab_window()
+        manager = vocab_module.VocabManager(
+            window,
+            initial_vocabulary=[{
+                "word": "afterward",
+                "accepted_answers": ["afterward", "afterwards"],
+                "content": "后来",
+            }],
+            initial_mistake_vocabulary=[],
+        )
+        manager.v_input.setText("afterwards")
+        manager.check_answer()
+        self.assertEqual(manager.mistake_vocabulary, [])
+        self.assertTrue(manager._advance_pending)
+        manager.advance_timer.stop()
+        manager._advance_pending = False
         manager.timer.stop()
         window.close()
 
@@ -115,7 +135,7 @@ class ChallengeUiSmokeTests(unittest.TestCase):
         manager.check_answer()
         manager.v_input.setText("kept")
         manager.check_answer()
-        QtTest.QTest.qWait(700)
+        QtTest.QTest.qWait(1300)
         kept = next(item for item in manager.mistake_vocabulary if item["word"] == "kept")
         self.assertEqual(kept["correct_count"], 0)
         manager.timer.stop()
@@ -134,9 +154,92 @@ class ChallengeUiSmokeTests(unittest.TestCase):
         manager.switch_challenge_mode("mistake_list")
         manager.v_input.setText("mastered")
         manager.check_answer()
-        QtTest.QTest.qWait(700)
         self.assertFalse(any(
             item["word"] == "mastered" for item in manager.mistake_vocabulary))
+        self.assertIn(
+            "回答正确。连续 3 次答对，已从单词错词表删除。",
+            manager.v_disp.toPlainText(),
+        )
+        QtTest.QTest.qWait(700)
+        self.assertIn(
+            "回答正确。连续 3 次答对，已从单词错词表删除。",
+            manager.v_disp.toPlainText(),
+        )
+        QtTest.QTest.qWait(600)
+        self.assertNotIn(
+            "回答正确。连续 3 次答对，已从单词错词表删除。",
+            manager.v_disp.toPlainText(),
+        )
+        manager.timer.stop()
+        window.close()
+
+    def test_vocab_first_try_correct_displays_mistake_success_progress(self):
+        window = self._fake_vocab_window()
+        mistake = {"word": "steady", "content": "稳定的", "correct_count": 0}
+        (Path(self.temp_dir.name) / "mistake_words.json").write_text(
+            json.dumps([mistake], ensure_ascii=False, indent=2), encoding="utf-8")
+        manager = vocab_module.VocabManager(
+            window,
+            initial_vocabulary=[{"word": "alpha", "content": "甲"}],
+            initial_mistake_vocabulary=[mistake],
+        )
+        manager.switch_challenge_mode("mistake_list")
+        manager.v_input.setText("steady")
+        manager.check_answer()
+        self.assertIn(
+            "回答正确。连续答对 1 / 3 次。",
+            manager.v_disp.toPlainText(),
+        )
+        steady = next(
+            item for item in manager.mistake_vocabulary
+            if item["word"] == "steady"
+        )
+        self.assertEqual(steady["correct_count"], 1)
+        QtTest.QTest.qWait(700)
+        self.assertIn(
+            "回答正确。连续答对 1 / 3 次。",
+            manager.v_disp.toPlainText(),
+        )
+        QtTest.QTest.qWait(600)
+        self.assertNotIn(
+            "回答正确。连续答对 1 / 3 次。",
+            manager.v_disp.toPlainText(),
+        )
+        manager.timer.stop()
+        window.close()
+
+    def test_vocab_second_first_try_correct_displays_two_of_three(self):
+        window = self._fake_vocab_window()
+        mistake = {"word": "improve", "content": "改善", "correct_count": 1}
+        (Path(self.temp_dir.name) / "mistake_words.json").write_text(
+            json.dumps([mistake], ensure_ascii=False, indent=2), encoding="utf-8")
+        manager = vocab_module.VocabManager(
+            window,
+            initial_vocabulary=[{"word": "alpha", "content": "甲"}],
+            initial_mistake_vocabulary=[mistake],
+        )
+        manager.switch_challenge_mode("mistake_list")
+        manager.v_input.setText("improve")
+        manager.check_answer()
+        self.assertIn(
+            "回答正确。连续答对 2 / 3 次。",
+            manager.v_disp.toPlainText(),
+        )
+        improve = next(
+            item for item in manager.mistake_vocabulary
+            if item["word"] == "improve"
+        )
+        self.assertEqual(improve["correct_count"], 2)
+        QtTest.QTest.qWait(700)
+        self.assertIn(
+            "回答正确。连续答对 2 / 3 次。",
+            manager.v_disp.toPlainText(),
+        )
+        QtTest.QTest.qWait(600)
+        self.assertNotIn(
+            "回答正确。连续答对 2 / 3 次。",
+            manager.v_disp.toPlainText(),
+        )
         manager.timer.stop()
         window.close()
 
@@ -237,7 +340,7 @@ class ChallengeUiSmokeTests(unittest.TestCase):
 
         view.answer_input.setText(first_item["p"])
         QtTest.QTest.keyClick(view.answer_input, QtCore.Qt.Key.Key_Return)
-        QtTest.QTest.qWait(700)
+        QtTest.QTest.qWait(1300)
         self.assertIn("本轮 2 / 571", view.status_label.text())
         view._switch_category("irregular")
         self.assertIn("本轮 1 / 126", view.status_label.text())
@@ -304,7 +407,7 @@ class ChallengeUiSmokeTests(unittest.TestCase):
                 first_item.get("past_participle", "")).lower())
         QtTest.QTest.keyClick(
             view.irregular_participle_input, QtCore.Qt.Key.Key_Return)
-        QtTest.QTest.qWait(700)
+        QtTest.QTest.qWait(1300)
         self.assertIn("本轮 2 / 126", view.status_label.text())
         view.close()
         window.close()

@@ -27,6 +27,19 @@ def _normalize_answer_text(value):
     return text.strip().casefold()
 
 
+def _accepted_answer_texts(word_obj):
+    """Return the normalized canonical answer and any approved variants."""
+    values = [word_obj.get("word", "")]
+    variants = word_obj.get("accepted_answers", [])
+    if isinstance(variants, (list, tuple, set)):
+        values.extend(variants)
+    return {
+        normalized
+        for value in values
+        if (normalized := _normalize_answer_text(value))
+    }
+
+
 def _load_vocab_progress_aliases():
     """Load old-to-new item hashes so corrected words keep round progress."""
     try:
@@ -39,6 +52,283 @@ def _load_vocab_progress_aliases():
     except (FileNotFoundError, json.JSONDecodeError, OSError):
         pass
     return {}
+
+
+LEGACY_ANSWER_RECORD_MIGRATIONS = {
+    "afterward(s)": [
+        {
+            "word": "afterward",
+            "accepted_answers": ["afterward", "afterwards"],
+            "content": "[ˈɑːftəwəd(z)] ad. 后来",
+        }
+    ],
+    "backward(s)": [
+        {
+            "word": "backward",
+            "accepted_answers": ["backward", "backwards"],
+            "content": "[ˈbækwəd] ad. 向后",
+        }
+    ],
+    "department(缩Dept.)": [
+        {
+            "word": "department",
+            "content": "[dɪˈpɑːtmənt] n. 部门；（机关的）司，处；（大学的）系",
+        }
+    ],
+    "outward(s)": [
+        {
+            "word": "outward",
+            "accepted_answers": ["outward", "outwards"],
+            "content": "[ˈaʊtwəd] ad. 向外的，外出的",
+        }
+    ],
+    "the North (South) Pole": [
+        {
+            "word": "the North Pole",
+            "content": "[ðə nɔːθ pəʊl] （地球的）北极，极地",
+        },
+        {
+            "word": "the South Pole",
+            "content": "[ðə saʊθ pəʊl] （地球的）南极，极地",
+        },
+    ],
+    "toward(s)": [
+        {
+            "word": "toward",
+            "accepted_answers": ["toward", "towards"],
+            "content": "[təˈwɔːd] prep. 向，朝，对于",
+        }
+    ],
+}
+
+LEGACY_ANSWER_RECORD_CONTENTS = {
+    "afterward(s)": "[ˈɑːftəwəd(z)] ad. 后来",
+    "backward(s)": "[ˈbækwəd] ad. 向后",
+    "department(缩Dept.)": "[dɪˈpɑːtmənt] n. 部门；（机关的）司，处；（大学的）系",
+    "outward(s)": "[ˈaʊtwəd] ad. 向外的，外出的",
+    "the North (South) Pole": "[ðə nɔːθ (saʊθ) pəʊl] （地球的）北（南）极，极地",
+    "toward(s)": "[təˈwɔːd] prep. 向，朝，对于",
+}
+
+
+def _merge_migrated_mistake_records(records):
+    merged = []
+    by_word = {}
+    for record in records:
+        key = str(record.get("word", "")).strip().casefold()
+        existing = by_word.get(key)
+        if existing is None:
+            by_word[key] = record
+            merged.append(record)
+            continue
+        existing["correct_count"] = max(
+            int(existing.get("correct_count", 0)),
+            int(record.get("correct_count", 0)),
+        )
+        for field, value in record.items():
+            if field == "correct_count":
+                continue
+            if field not in existing or existing[field] in (None, "", [], {}):
+                existing[field] = value
+    return merged
+
+
+def _expand_migrated_keys(values, key_migrations):
+    expanded = []
+    for value in values if isinstance(values, list) else []:
+        expanded.extend(key_migrations.get(value, [value]))
+    return list(dict.fromkeys(expanded))
+
+
+def _merge_wrong_round_record(existing, incoming):
+    if not isinstance(existing, dict):
+        return dict(incoming) if isinstance(incoming, dict) else incoming
+    if not isinstance(incoming, dict):
+        return existing
+    merged = dict(existing)
+    merged["count"] = max(
+        int(existing.get("count", 0)),
+        int(incoming.get("count", 0)),
+    )
+    merged["last_round"] = max(
+        int(existing.get("last_round", 0)),
+        int(incoming.get("last_round", 0)),
+    )
+    return merged
+
+
+def _migrate_legacy_answer_data(data_dir):
+    """Migrate the six legacy answer rows before round stores load them."""
+    mistake_path = os.path.join(data_dir, "mistake_words.json")
+    original_mistakes = None
+    if os.path.isfile(mistake_path):
+        try:
+            with open(mistake_path, "r", encoding="utf-8") as file:
+                candidate = json.load(file)
+            if isinstance(candidate, list):
+                original_mistakes = candidate
+        except (OSError, UnicodeError, json.JSONDecodeError):
+            pass
+
+    migrated_mistakes = []
+    word_migrations = {
+        old_word: [replacement["word"] for replacement in replacements]
+        for old_word, replacements in LEGACY_ANSWER_RECORD_MIGRATIONS.items()
+    }
+    mistake_changed = False
+    legacy_mistake_keys = {}
+    for original in original_mistakes or []:
+        if not isinstance(original, dict):
+            migrated_mistakes.append(original)
+            continue
+        old_word = str(original.get("word", "")).strip()
+        replacements = LEGACY_ANSWER_RECORD_MIGRATIONS.get(old_word)
+        if not replacements:
+            migrated_mistakes.append(dict(original))
+            continue
+        mistake_changed = True
+        legacy_mistake_keys[
+            ChallengeRoundStore._base_key(original) + ":0"
+        ] = old_word
+        for replacement in replacements:
+            migrated = dict(original)
+            migrated.update(replacement)
+            if "accepted_answers" not in replacement:
+                migrated.pop("accepted_answers", None)
+            migrated_mistakes.append(migrated)
+
+    if original_mistakes is not None:
+        migrated_mistakes = _merge_migrated_mistake_records(
+            migrated_mistakes
+        )
+    key_migrations = {}
+    for old_word, new_words in word_migrations.items():
+        new_keys = [
+            ChallengeRoundStore._identity_key({"word": word}) + ":0"
+            for word in new_words
+        ]
+        old_identity_key = ChallengeRoundStore._identity_key(
+            {"word": old_word}
+        ) + ":0"
+        old_full_row_key = ChallengeRoundStore._base_key({
+            "word": old_word,
+            "content": LEGACY_ANSWER_RECORD_CONTENTS[old_word],
+        }) + ":0"
+        key_migrations[old_identity_key] = new_keys
+        key_migrations[old_full_row_key] = new_keys
+    for old_full_row_key, old_word in legacy_mistake_keys.items():
+        key_migrations[old_full_row_key] = [
+            ChallengeRoundStore._identity_key({"word": word}) + ":0"
+            for word in word_migrations[old_word]
+        ]
+
+    round_path = os.path.join(data_dir, "challenge_round_progress.json")
+    round_data = None
+    try:
+        with open(round_path, "r", encoding="utf-8") as file:
+            candidate = json.load(file)
+        if isinstance(candidate, dict):
+            round_data = candidate
+    except (FileNotFoundError, OSError, UnicodeError, json.JSONDecodeError):
+        pass
+
+    round_changed = False
+    if round_data is not None:
+        mode_inventory_counts = {
+            "regular": (3875, 3876),
+            "mistake_list": (
+                len(original_mistakes or []),
+                len(migrated_mistakes),
+            ),
+        }
+        for mode, (before_count, after_count) in mode_inventory_counts.items():
+            state = round_data.get("modes", {}).get(mode)
+            if not isinstance(state, dict):
+                continue
+            remaining_before = list(state.get("remaining", []))
+            completed_before = int(state.get("completed", 0))
+            remaining_after = _expand_migrated_keys(
+                remaining_before, key_migrations
+            )
+            wrong_before = list(state.get("wrong", []))
+            wrong_after = _expand_migrated_keys(
+                state.get("wrong", []), key_migrations
+            )
+            if remaining_after != remaining_before:
+                state["remaining"] = remaining_after
+                round_changed = True
+            if wrong_after != wrong_before:
+                state["wrong"] = wrong_after
+                round_changed = True
+            retry_key = state.get("retry_key")
+            if retry_key in key_migrations:
+                state["retry_key"] = key_migrations[retry_key][0]
+                round_changed = True
+            if completed_before + len(remaining_before) == before_count:
+                completed_after = max(0, after_count - len(remaining_after))
+                if completed_after != completed_before:
+                    state["completed"] = completed_after
+                    round_changed = True
+
+    learning_path = os.path.join(
+        data_dir, "challenge_learning_records.json"
+    )
+    learning_data = None
+    try:
+        with open(learning_path, "r", encoding="utf-8") as file:
+            candidate = json.load(file)
+        if isinstance(candidate, dict):
+            learning_data = candidate
+    except (FileNotFoundError, OSError, UnicodeError, json.JSONDecodeError):
+        pass
+
+    learning_changed = False
+    if learning_data is not None:
+        wrong_round_modes = learning_data.get("wrong_rounds", {})
+        mode_records_list = (
+            wrong_round_modes.values()
+            if isinstance(wrong_round_modes, dict)
+            else []
+        )
+        for mode_records in mode_records_list:
+            if not isinstance(mode_records, dict):
+                continue
+            for old_word, new_words in word_migrations.items():
+                old_key = f"word:{old_word.casefold()}"
+                old_record = mode_records.get(old_key)
+                if not isinstance(old_record, dict):
+                    continue
+                for new_word in new_words:
+                    new_key = f"word:{new_word.casefold()}"
+                    mode_records[new_key] = _merge_wrong_round_record(
+                        mode_records.get(new_key), old_record
+                    )
+                del mode_records[old_key]
+                learning_changed = True
+
+    if not (mistake_changed or round_changed or learning_changed):
+        return None
+
+    changed_paths = []
+    if mistake_changed:
+        changed_paths.append(mistake_path)
+    if round_changed:
+        changed_paths.append(round_path)
+    if learning_changed:
+        changed_paths.append(learning_path)
+    for path in changed_paths:
+        backup_existing_file_once(path, "answer_variants_migration")
+    if mistake_changed:
+        atomic_write_json(mistake_path, migrated_mistakes, indent=4)
+    if round_changed:
+        atomic_write_json(round_path, round_data)
+    if learning_changed:
+        atomic_write_json(learning_path, learning_data)
+    print(
+        "✅ 已迁移旧版可选答案词条："
+        f"{len(original_mistakes or [])} -> {len(migrated_mistakes)}"
+    )
+    return migrated_mistakes if mistake_changed else None
 
 
 class VocabManager(QObject):  # 继承自 QObject
@@ -69,6 +359,9 @@ class VocabManager(QObject):  # 继承自 QObject
             "challenge_round_progress.json",
             "challenge_learning_records.json",
         ])
+        migrated_mistakes = _migrate_legacy_answer_data(data_dir)
+        if migrated_mistakes is not None:
+            self.initial_mistake_vocabulary = migrated_mistakes
         self.round_progress_path = get_writable_data_path(
             "challenge_round_progress.json")
         self.round_store = ChallengeRoundStore(
@@ -655,12 +948,20 @@ class VocabManager(QObject):  # 继承自 QObject
         for i, item in enumerate(self.mistake_vocabulary):
             if item["word"].lower() == word_obj["word"].lower():
                 self.mistake_vocabulary[i]["correct_count"] = 0  # 重置计数
+                if "accepted_answers" in word_obj:
+                    self.mistake_vocabulary[i]["accepted_answers"] = list(
+                        word_obj["accepted_answers"]
+                    )
                 found = True
                 print(f"🔄 错词 '{word_obj['word']}' 已重置计数。")
                 break
         if not found:
             new_mistake = {"word": word_obj["word"], "content": word_obj["content"], "correct_count": 0,
                            "pronunciation": word_obj.get("pronunciation", ""), "example": word_obj.get("example", "")}
+            if "accepted_answers" in word_obj:
+                new_mistake["accepted_answers"] = list(
+                    word_obj["accepted_answers"]
+                )
             self.mistake_vocabulary.append(new_mistake)
             print(f"➕ 错词 '{word_obj['word']}' 已添加到错词表。")
         self._save_mistake_vocabulary()
@@ -669,6 +970,7 @@ class VocabManager(QObject):  # 继承自 QObject
     def _increment_mistake_word_correct_count(self, word_obj):
         """
         增加错词的正确计数，如果达到3次则移除。
+        返回当前连续答对次数和是否已移除，供界面显示进度。
         """
         # 🆕 修复：操作之前先确保错词表已从文件加载
         if not self.mistake_vocabulary:  # 如果内存中为空，尝试从文件加载
@@ -676,17 +978,20 @@ class VocabManager(QObject):  # 继承自 QObject
         
         for i, item in enumerate(self.mistake_vocabulary):
             if item["word"].lower() == word_obj["word"].lower():
-                self.mistake_vocabulary[i]["correct_count"] += 1
+                self.mistake_vocabulary[i]["correct_count"] = int(
+                    self.mistake_vocabulary[i].get("correct_count", 0)
+                ) + 1
+                correct_count = self.mistake_vocabulary[i]["correct_count"]
                 print(
-                    f"⬆️ 错词 '{word_obj['word']}' 正确计数: {self.mistake_vocabulary[i]['correct_count']}")
-                removed = self.mistake_vocabulary[i]["correct_count"] >= 3
+                    f"⬆️ 错词 '{word_obj['word']}' 正确计数: {correct_count}")
+                removed = correct_count >= 3
                 if removed:
                     del self.mistake_vocabulary[i]  # 移除单词
                     print(f"🗑️ 错词 '{word_obj['word']}' 已从错词表移除 (正确3次)。")
                 self._save_mistake_vocabulary()
                 self._update_mistake_count_label()
-                return removed
-        return False  # Indicate that the word was not removed (or not found)
+                return correct_count, removed
+        return 0, False
 
     def switch_challenge_mode(self, mode):
         """
@@ -950,6 +1255,19 @@ class VocabManager(QObject):  # 继承自 QObject
             if self.main_window.stack.currentIndex() == self.main_window.stack.indexOf(self.vocab_page_widget):
                 self.timer.start(1000)
 
+    def _show_current_answer_feedback(self, feedback_text):
+        """在当前题目下方显示反馈，切换到下一题后自然消失。"""
+        if not self.v_disp or not feedback_text:
+            return
+        cursor = self.v_disp.textCursor()
+        cursor.movePosition(QtGui.QTextCursor.MoveOperation.End)
+        cursor.insertHtml(
+            "<div style='font-size:14px; color:#15803d; margin-top:10px; "
+            f"font-weight:600; text-align:center;'>{feedback_text}</div>"
+        )
+        self.v_disp.setTextCursor(cursor)
+        self._fit_vocab_display_to_content()
+
     def tick(self):
         """
         计时器滴答事件处理函数，更新倒计时显示，并在时间到时自动显示答案。
@@ -1009,7 +1327,7 @@ class VocabManager(QObject):  # 继承自 QObject
 
         current_word_obj = self.active_vocabulary[self.current_idx]
         target_display = str(current_word_obj['word']).strip()
-        target = _normalize_answer_text(target_display)
+        accepted_targets = _accepted_answer_texts(current_word_obj)
 
         if not user_in:
             self.v_input.setStyleSheet("""
@@ -1042,7 +1360,7 @@ class VocabManager(QObject):  # 继承自 QObject
         # Clear any previous notification
         self._notification_message_for_next_display = ""
 
-        if user_in == target:
+        if user_in in accepted_targets:
             self.v_input.setStyleSheet("""
 				QLineEdit {
 					font-size: 18px;
@@ -1056,25 +1374,30 @@ class VocabManager(QObject):  # 继承自 QObject
 				}
 			""")
 
+            mistake_correct_count = 0
             removed_from_mistake_list = False
             # 如果是错词表模式，且回答正确，增加正确计数
             if self.current_challenge_mode == "mistake_list" and not was_retrying:
-                removed_from_mistake_list = self._increment_mistake_word_correct_count(
-                    current_word_obj)
-
-            if was_retrying:
-                self._notification_message_for_next_display = (
-                    "<div style='font-size:14px; color:#15803d; margin-top:5px; font-weight:600;'>"
-                    "已纠正。本题的错词记录继续保留。</div>"
+                mistake_correct_count, removed_from_mistake_list = (
+                    self._increment_mistake_word_correct_count(current_word_obj)
                 )
 
-            if removed_from_mistake_list:
-                self._notification_message_for_next_display = f"<div style='font-size: 14px; color: #27ae60; margin-top: 5px;'>你三次答对了。从错词表里删除的字样</div>"
+            feedback_text = ""
+            if was_retrying:
+                feedback_text = "已纠正。本题的错词记录继续保留。"
+            elif self.current_challenge_mode == "mistake_list":
+                if removed_from_mistake_list:
+                    feedback_text = "回答正确。连续 3 次答对，已从单词错词表删除。"
+                else:
+                    feedback_text = (
+                        f"回答正确。连续答对 {mistake_correct_count} / 3 次。"
+                    )
+            self._show_current_answer_feedback(feedback_text)
 
             self._advance_pending = True
             self.v_input.setEnabled(False)
             self.btn_confirm.setEnabled(False)
-            self.advance_timer.start(600)
+            self.advance_timer.start(1200)
 
         else:  # Incorrect answer
             already_retrying = self.round_store.is_retry_required(
