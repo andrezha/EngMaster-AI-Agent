@@ -1,0 +1,272 @@
+[
+  {
+    "id": "kaoyan:analysis",
+    "word": "analysis",
+    "pronunciation": "əˈnæləsɪs",
+    "content": "[əˈnæləsɪs] n. 分析；分解；验定",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:approach",
+    "word": "approach",
+    "pronunciation": "əˈprəʊtʃ",
+    "content": "[əˈprəʊtʃ] n. 方法；途径；接近vt. 接近；着手处理vi. 靠近",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:assume",
+    "word": "assume",
+    "pronunciation": "əˈsjuːm",
+    "content": "[əˈsjuːm] vt.僭取；篡夺；夺取；擅用；侵占vi.假定；设想；承担；采取",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:concept",
+    "word": "concept",
+    "pronunciation": "ˈkɒnsept",
+    "content": "[ˈkɒnsept] n.观念，概念",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:context",
+    "word": "context",
+    "pronunciation": "ˈkɒntekst",
+    "content": "[ˈkɒntekst] n. 环境；上下文；来龙去脉",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:define",
+    "word": "define",
+    "pronunciation": "dɪ'faɪn",
+    "content": "[dɪ'faɪn] vt. 定义；使明确；规定",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:derive",
+    "word": "derive",
+    "pronunciation": "dɪˈraɪv",
+    "content": "[dɪˈraɪv] vt.源于；得自；获得vi.起源",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:establish",
+    "word": "establish",
+    "pronunciation": "ɪˈstæblɪʃ",
+    "content": "[ɪˈstæblɪʃ] vi.植物定植vt.建立；创办；安置",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:evidence",
+    "word": "evidence",
+    "pronunciation": "ˈevɪdəns",
+    "content": "[ˈevɪdəns] n. 证据，证明；迹象；明显vt. 证明",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:factor",
+    "word": "factor",
+    "pronunciation": "ˈfæktə",
+    "content": "[ˈfæktə] n. 因素；要素； 因数；代理人vt. 把…作为因素计入；代理经营；把…分解成vi. 做代理商",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:indicate",
+    "word": "indicate",
+    "pronunciation": "ˈɪndɪkeɪt",
+    "content": "[ˈɪndɪkeɪt] vt. 表明；指出；预示；象征",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:interpret",
+    "word": "interpret",
+    "pronunciation": "ɪnˈtɜːprət",
+    "content": "[ɪnˈtɜːprət] vi. 解释；翻译vt. 说明；口译",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:involve",
+    "word": "involve",
+    "pronunciation": "ɪnˈvɒlv",
+    "content": "[ɪnˈvɒlv] vt. 包含；牵涉；使陷于；潜心于",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:issue",
+    "word": "issue",
+    "pronunciation": "ˈɪʃuː",
+    "content": "[ˈɪʃuː] n. 问题；流出；期号；发行物vt. 发行，发布；发给；放出，排出vi. 发行；流出；造成…结果；传下",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:method",
+    "word": "method",
+    "pronunciation": "ˈmeθəd",
+    "content": "[ˈmeθəd] n. 方法；条理；类函数adj. 使用体验派表演方法的",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:occur",
+    "word": "occur",
+    "pronunciation": "əˈkɜː",
+    "content": "[əˈkɜː] vi.发生；出现；存在",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:principle",
+    "word": "principle",
+    "pronunciation": "ˈprɪnsəpl",
+    "content": "[ˈprɪnsəpl] n. 原理，原则；主义，道义；本质，本义；根源，源泉",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:process",
+    "word": "process",
+    "pronunciation": "ˈprəʊses , prəˈses",
+    "content": "[ˈprəʊses , prəˈses] n. 过程，进行；方法，步骤；作用；程序；推移adj. 经过特殊加工（或处理）的vt. 处理；加工vi. 列队前进",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:require",
+    "word": "require",
+    "pronunciation": "rɪˈkwaɪə",
+    "content": "[rɪˈkwaɪə] vt. 需要；要求；命令",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:research",
+    "word": "research",
+    "pronunciation": "rɪˈsɜːtʃ",
+    "content": "[rɪˈsɜːtʃ] n. 研究；调查vt. 研究；调查vi. 研究；调查",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:significant",
+    "word": "significant",
+    "pronunciation": "sɪɡˈnɪfɪkənt",
+    "content": "[sɪɡˈnɪfɪkənt] n. 象征；有意义的事物adj. 重大的；有效的；有意义的；值得注意的；意味深长的",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:hypothesis",
+    "word": "hypothesis",
+    "pronunciation": "haɪˈpɒθəsɪs",
+    "content": "[haɪˈpɒθəsɪs] n.假设",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:vary",
+    "word": "vary",
+    "pronunciation": "ˈveəri",
+    "content": "[ˈveəri] vi.变化；变异；违反vt.改变；使多样化；变奏",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:available",
+    "word": "available",
+    "pronunciation": "əˈveɪləbl",
+    "content": "[əˈveɪləbl] adj.可获得的；可购得的；可找到的；有空的",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:benefit",
+    "word": "benefit",
+    "pronunciation": "ˈbenɪfɪt",
+    "content": "[ˈbenɪfɪt] n. 利益，好处；救济金vt. 有益于，对…有益vi. 受益，得益",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:challenge",
+    "word": "challenge",
+    "pronunciation": "ˈtʃælɪndʒ",
+    "content": "[ˈtʃælɪndʒ] n.挑战；怀疑vt.向…挑战；对…质疑",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:environment",
+    "word": "environment",
+    "pronunciation": "ɪnˈvaɪrənmənt",
+    "content": "[ɪnˈvaɪrənmənt] n. 环境，外界",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:individual",
+    "word": "individual",
+    "pronunciation": "ˌɪndɪˈvɪdʒuəl",
+    "content": "[ˌɪndɪˈvɪdʒuəl] n. 个人，个体adj. 个人的；个别的；独特的",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:maintain",
+    "word": "maintain",
+    "pronunciation": "meɪnˈteɪn",
+    "content": "[meɪnˈteɪn] vt.维持；继续；维修；主张；供养",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "kaoyan:respond",
+    "word": "respond",
+    "pronunciation": "rɪˈspɒnd",
+    "content": "[rɪˈspɒnd] n.应答；唱和vi.回答；作出反应；承担责任vt.以…回答",
+    "edition": "kaoyan",
+    "source": "KaoYan_2024.json",
+    "data_status": "development_sample"
+  }
+]

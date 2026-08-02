@@ -16,6 +16,7 @@ pyvenv.cfg
 # --- 构建产物 (Build Outputs) ---
 # 递归忽略所有层级的 build 目录
 **/build/
+build_*/
 dist/
 dist_*/
 bin/
@@ -65,3 +66,11 @@ logo.ico
 test_app_automation.py
 test_pages_automation.py
 出厂质检报告_delivery_report.md
+
+# --- 本地发布样本与私密客服工具 ---
+.license_generator_work/
+test_generator_platform.py
+soft_copyright_engmaster_v1_package/
+体验页样本/
+公共指南样本/
+最新验证版/

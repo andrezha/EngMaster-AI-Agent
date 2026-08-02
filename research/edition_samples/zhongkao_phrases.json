@@ -1,0 +1,1352 @@
+[
+  {
+    "id": "zhongkao-phrase-001",
+    "p": "take care of",
+    "m": "照看，照料，照顾",
+    "en": "She took care of her sick grandfather.",
+    "cn": "她照顾生病的祖父。",
+    "answers": [
+      "take care of"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-002",
+    "p": "for example",
+    "m": "例如",
+    "en": "Some animals, for example bears, sleep through much of the winter.",
+    "cn": "有些动物，例如熊，会在冬季长时间睡眠。",
+    "answers": [
+      "for example"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-003",
+    "p": "go camping",
+    "m": "去露营",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "go camping"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-004",
+    "p": "take turns",
+    "m": "一次，轮流",
+    "en": "Take turns to drive.",
+    "cn": "轮流开车。",
+    "answers": [
+      "take turns"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-005",
+    "p": "not...any longer",
+    "m": "不再",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "not...any longer"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-006",
+    "p": "hear from",
+    "m": "收到…的来信或电话等",
+    "en": "I haven't heard from my former classmate lately.",
+    "cn": "我最近没有收到前同学的消息。",
+    "answers": [
+      "hear from"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-007",
+    "p": "look forward to",
+    "m": "期待着",
+    "en": "I look forward to meeting you soon.",
+    "cn": "我期待很快见到你。",
+    "answers": [
+      "look forward to"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-008",
+    "p": "take part in",
+    "m": "参加（活动）",
+    "en": "Take part in the game.",
+    "cn": "参加比赛。",
+    "answers": [
+      "take part in"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-009",
+    "p": "get on with",
+    "m": "进展",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "get on with"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-010",
+    "p": "be famous for",
+    "m": "以……而著名",
+    "en": "Yokohama is famous for its harbor view.",
+    "cn": "横滨以其港口美景而闻名。",
+    "answers": [
+      "be famous for"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-011",
+    "p": "be known as",
+    "m": "以……而出名",
+    "en": "The scientist is known as a hero.",
+    "cn": "这位科学家被人们称为英雄。",
+    "answers": [
+      "be known as"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-012",
+    "p": "think of",
+    "m": "想出",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "think of"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-013",
+    "p": "quite a few",
+    "m": "相当多；不少",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "quite a few"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-014",
+    "p": "in charge of",
+    "m": "负责掌管",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "in charge of"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-015",
+    "p": "have a good time",
+    "m": "过得愉快",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "have a good time"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-016",
+    "p": "learn from",
+    "m": "向……学习",
+    "en": "We should learn from each other's strong points.",
+    "cn": "我们应当互相学习长处。",
+    "answers": [
+      "learn from"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-017",
+    "p": "give up",
+    "m": "放弃",
+    "en": "Never give up hope, no matter what happens.",
+    "cn": "无论发生什么，永不放弃希望。",
+    "answers": [
+      "give up"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-018",
+    "p": "all the time",
+    "m": "一直；总是",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "all the time"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-019",
+    "p": "at last",
+    "m": "终于；最终",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "at last"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-020",
+    "p": "out of",
+    "m": "从……里出来",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "out of"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-021",
+    "p": "talk about",
+    "m": "讨论；谈论；商谈",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "talk about"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-022",
+    "p": "be able to",
+    "m": "能够；有能力",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "be able to"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-023",
+    "p": "put up",
+    "m": "张贴；置……于明显处",
+    "en": "They put up a tent near the river.",
+    "cn": "他们在河边搭起了一个帐篷。",
+    "answers": [
+      "put up"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-024",
+    "p": "clean up",
+    "m": "打扫（或清除）干净",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "clean up"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-025",
+    "p": "in the end",
+    "m": "最后；终于",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "in the end"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-026",
+    "p": "show off",
+    "m": "炫耀；卖弄",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "show off"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-027",
+    "p": "take off",
+    "m": "脱下（衣服等）",
+    "en": "The plane took off on time despite the fog.",
+    "cn": "尽管有雾，飞机还是准时起飞了。",
+    "answers": [
+      "take off"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-028",
+    "p": "turn into",
+    "m": "转变成；将……变成",
+    "en": "Our dream has finally turned into reality.",
+    "cn": "我们的梦想终于变成了现实。",
+    "answers": [
+      "turn into"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-029",
+    "p": "play with",
+    "m": "玩耍",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "play with"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-030",
+    "p": "be keen on",
+    "m": "对……着迷",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "be keen on"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-031",
+    "p": "be similar to",
+    "m": "与…相类似的",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "be similar to"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-032",
+    "p": "put on",
+    "m": "穿上，戴上",
+    "en": "He put on a coat and went out.",
+    "cn": "他穿上外套走出了门。",
+    "answers": [
+      "put on"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-033",
+    "p": "be responsible for",
+    "m": "对……负责",
+    "en": "The pilot is responsible for safety.",
+    "cn": "飞行员对飞行安全负责。",
+    "answers": [
+      "be responsible for"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-034",
+    "p": "deal with",
+    "m": "解决，处理，应对",
+    "en": "This historical book deals with World War II.",
+    "cn": "这本书论述的是第二次世界大战。",
+    "answers": [
+      "deal with"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-035",
+    "p": "happen to",
+    "m": "遭到，遇到",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "happen to"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-036",
+    "p": "be afraid of",
+    "m": "害怕，畏惧",
+    "en": "Don't be afraid of making errors.",
+    "cn": "别害怕犯错误。",
+    "answers": [
+      "be afraid of"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-037",
+    "p": "well done",
+    "m": "干得好",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "well done"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-038",
+    "p": "know about",
+    "m": "知道，知悉，了解",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "know about"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-039",
+    "p": "as...as possible",
+    "m": "尽可能地",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "as...as possible"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-040",
+    "p": "die of",
+    "m": "死于……",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "die of"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-041",
+    "p": "take place",
+    "m": "发生，进行",
+    "en": "When did it take place?",
+    "cn": "啥时候发生的？",
+    "answers": [
+      "take place"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-042",
+    "p": "escape from",
+    "m": "(从监禁或管制中)逃跑，逃走，逃出",
+    "en": "The bird escaped from the open cage.",
+    "cn": "鸟儿从打开的笼子里逃跑了。",
+    "answers": [
+      "escape from"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-043",
+    "p": "be interested in",
+    "m": "对…感兴趣",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "be interested in"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-044",
+    "p": "be careful with",
+    "m": "小心对待；谨慎处理",
+    "en": "Please be careful with the tools.",
+    "cn": "请小心使用这些工具。",
+    "answers": [
+      "be careful with"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-045",
+    "p": "a bit",
+    "m": "有点，一点",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "a bit"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-046",
+    "p": "as soon as",
+    "m": "一…就",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "as soon as"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-047",
+    "p": "look out",
+    "m": "小心；当心",
+    "en": "Look out! There is a car coming.",
+    "cn": "小心！有辆车开过来了。",
+    "answers": [
+      "look out"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-048",
+    "p": "watch out",
+    "m": "留神；注意",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "watch out"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-049",
+    "p": "now that",
+    "m": "既然；由于",
+    "en": "Now that you are here, help us fix the code.",
+    "cn": "既然你来了，就帮我们改改代码吧。",
+    "answers": [
+      "now that"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-050",
+    "p": "such as",
+    "m": "例如",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "such as"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "zhongkao-phrase-051",
+    "p": "at work",
+    "m": "在工作",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "at work"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-052",
+    "p": "pay attention",
+    "m": "注意",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "pay attention"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-053",
+    "p": "thank goodness",
+    "m": "谢天谢地",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "thank goodness"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-054",
+    "p": "feel like",
+    "m": "想做某事",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "feel like"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-055",
+    "p": "go to sleep",
+    "m": "入睡，睡着",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "go to sleep"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-056",
+    "p": "except for",
+    "m": "除……之外",
+    "en": "The room was empty except for an old wooden desk.",
+    "cn": "房间里除了一张老旧的木桌外空无一物。",
+    "answers": [
+      "except for"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-057",
+    "p": "come on",
+    "m": "得了吧",
+    "en": "Come on, or we will miss the train.",
+    "cn": "快点，否则我们就要误火车了。",
+    "answers": [
+      "come on"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-058",
+    "p": "so that",
+    "m": "(表示目的)为了，以便",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "so that"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-059",
+    "p": "up and down",
+    "m": "起伏，上下波动",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "up and down"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-060",
+    "p": "from side to side",
+    "m": "从左到右",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "from side to side"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-061",
+    "p": "grow up",
+    "m": "成长，长大",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "grow up"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-062",
+    "p": "care for",
+    "m": "关爱",
+    "en": "Who will care for the pets while we are away?",
+    "cn": "我们出门时谁来照顾宠物？",
+    "answers": [
+      "care for"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-063",
+    "p": "in one's opinion",
+    "m": "依某人的看法",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "in one's opinion"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-064",
+    "p": "right now",
+    "m": "立即，马上",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "right now"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-065",
+    "p": "right away",
+    "m": "立即，马上",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "right away"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-066",
+    "p": "be wrong with",
+    "m": "有问题，有毛病",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "be wrong with"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-067",
+    "p": "not only...but also",
+    "m": "不但…而且…",
+    "en": "He speaks not only English but also French.",
+    "cn": "他不仅会说英语还会说法语。",
+    "answers": [
+      "not only...but also"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-068",
+    "p": "go wrong",
+    "m": "发生故障，出毛病",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "go wrong"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-069",
+    "p": "be angry with",
+    "m": "对…发怒，对…生气",
+    "en": "She was angry with me for being late again.",
+    "cn": "她因为我又迟到而对我生气。",
+    "answers": [
+      "be angry with"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-070",
+    "p": "had better",
+    "m": "应该，最好",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "had better"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-071",
+    "p": "break into",
+    "m": "强行闯入",
+    "en": "Someone broke into the shop and stole electronics.",
+    "cn": "有人强行闯入商店并偷走了电子产品。",
+    "answers": [
+      "break into"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-072",
+    "p": "as well",
+    "m": "也，还",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "as well"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-073",
+    "p": "global warming",
+    "m": "全球变暖",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "global warming"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-074",
+    "p": "the greenhouse effect",
+    "m": "温室效应",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "the greenhouse effect"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-075",
+    "p": "disagree with",
+    "m": "不同意；有分歧",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "disagree with"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-076",
+    "p": "for a while",
+    "m": "一会儿",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "for a while"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-077",
+    "p": "a couple of",
+    "m": "几个；一些",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "a couple of"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-078",
+    "p": "(not) at all",
+    "m": "一点（也不）；完全（不)",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "(not) at all"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-079",
+    "p": "a piece of cake",
+    "m": "轻松（或容易）的事情",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "a piece of cake"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-080",
+    "p": "make up",
+    "m": "组成；构成",
+    "en": "Women make up half of the workforce.",
+    "cn": "女性占了劳动人口的一半。",
+    "answers": [
+      "make up"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-081",
+    "p": "speak up",
+    "m": "大声点说",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "speak up"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-082",
+    "p": "stand back",
+    "m": "往后站；退后",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "stand back"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-083",
+    "p": "come along",
+    "m": "到达；出现",
+    "en": "How is your English project coming along?",
+    "cn": "你的英语项目进展得怎么样了？",
+    "answers": [
+      "come along"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-084",
+    "p": "make fun of",
+    "m": "嘲弄；拿…开玩笑",
+    "en": "It's impolite to make fun of others' mistakes.",
+    "cn": "嘲笑别人的错误是不礼貌的。",
+    "answers": [
+      "make fun of"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-085",
+    "p": "just then",
+    "m": "那时；就在那时",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "just then"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-086",
+    "p": "go on doing sth",
+    "m": "继续做某事",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "go on doing sth"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-087",
+    "p": "and so on",
+    "m": "…等等",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "and so on"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-088",
+    "p": "tell the truth",
+    "m": "讲实话",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "tell the truth"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-089",
+    "p": "no problem",
+    "m": "没问题",
+    "en": "",
+    "cn": "",
+    "answers": [
+      "no problem"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "zhongkao-phrase-090",
+    "p": "come up",
+    "m": "走到跟前；走近",
+    "en": "A new question came up at the meeting.",
+    "cn": "会上提出了一个新问题。",
+    "answers": [
+      "come up"
+    ],
+    "edition": "zhongkao",
+    "source": "OxfordVocabulary_juniorMiddleSH.json",
+    "data_status": "development_candidate",
+    "tier": "core",
+    "level": 2
+  }
+]

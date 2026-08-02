@@ -1,4 +1,4 @@
-# /Users/andrezhao/AI_PJ/HighSchoolEnglishAI/utils.py
+# EngMaster shared path helpers
 import re
 import sys
 import os
@@ -121,21 +121,44 @@ def get_resource_path(relative_path):
         # 打包环境：指向临时解压目录
         return os.path.join(sys._MEIPASS, relative_path)
 
-    # 开发环境：指向项目根目录 HighSchoolEnglishAI
+    # 开发环境：指向 EngMaster 项目根目录
     base_path = os.path.abspath(os.path.dirname(__file__))
     return os.path.join(base_path, relative_path)
+
+_ACTIVE_EDITION_ID = "gaokao"
+
+
+def set_active_edition(edition_id):
+    """Select the edition namespace used for writable learning data."""
+    global _ACTIVE_EDITION_ID
+    normalized = str(edition_id or "").strip().lower()
+    if not re.fullmatch(r"[a-z0-9_-]+", normalized):
+        raise ValueError(f"Invalid edition id: {edition_id!r}")
+    _ACTIVE_EDITION_ID = normalized
+
+
+def get_active_edition():
+    return _ACTIVE_EDITION_ID
+
 
 def get_writable_data_path(filename):
     """
     [架构师审计版] 确保路径在 Windows (APPDATA) 和 macOS 下均合法
     """
-    if sys.platform == 'darwin':  # macOS 路径
-        data_dir = os.path.expanduser("~/Library/Application Support/HighSchoolEnglishAI")
+    override_dir = os.environ.get("ENGMASTER_DATA_DIR", "").strip()
+    if override_dir:
+        data_dir = os.path.abspath(override_dir)
+    elif sys.platform == 'darwin':  # macOS 路径
+        data_dir = os.path.expanduser("~/Library/Application Support/EngMaster")
     elif sys.platform == 'win32': # Windows 路径
         # 修正：Windows 下 APPDATA 往往是必须的
-        data_dir = os.path.join(os.environ.get('APPDATA', os.path.expanduser("~")), "HighSchoolEnglishAI")
+        data_dir = os.path.join(os.environ.get('APPDATA', os.path.expanduser("~")), "EngMaster")
     else:
-        data_dir = os.path.expanduser("~/.HighSchoolEnglishAI")
+        data_dir = os.path.expanduser("~/.EngMaster")
+
+    # Preserve existing high-school paths; new editions use isolated folders.
+    if _ACTIVE_EDITION_ID != "gaokao":
+        data_dir = os.path.join(data_dir, "editions", _ACTIVE_EDITION_ID)
 
     if not os.path.exists(data_dir):
         os.makedirs(data_dir, exist_ok=True)

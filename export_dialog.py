@@ -1,4 +1,4 @@
-# /Users/andrezhao/AI_PJ/HighSchoolEnglishAI/export_dialog.py
+# EngMaster vocabulary export dialog
 import os
 from datetime import datetime
 from PySide6.QtWidgets import (QDialog, QVBoxLayout, QHBoxLayout, QLabel, QComboBox,
@@ -94,7 +94,7 @@ class ExportDialog(QDialog):
         elif "自主录入" in selected_text: # New condition
             vocab_source_name = "自主录入"
 
-        file_name_parts = ["HSE_Vocabulary"]
+        file_name_parts = ["EngMaster_Vocabulary"]
         file_name_parts.append(vocab_source_name)
 
         if "中文+ 英语表" in selected_text or "自主录入单词表" in selected_text: # Added new condition

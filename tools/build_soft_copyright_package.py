@@ -12,18 +12,23 @@ from docx.shared import Cm, Pt
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "soft_copyright_final_package"
+OUT = ROOT / "soft_copyright_engmaster_v1_package"
 DOCS = OUT / "01_正式文档"
 SOURCE = OUT / "02_源代码材料"
 CHECK = OUT / "03_待填写与截图清单"
 ARCHIVE = OUT / "99_草稿备份"
-SCREENSHOT_SRC = ROOT / "soft_copyright_materials" / "03_用户操作说明书" / "截图"
+SCREENSHOT_SRC = ROOT / "soft_copyright_engmaster_materials" / "screenshots"
 SCREENSHOT_OUT = DOCS / "截图"
 
-TODAY = "2026-06-28"
-SOFTWARE_NAME = "高中-高考英语单词助手软件"
-SHORT_NAME = "高中-高考英语单词助手"
+TODAY = "2026-08-01"
+SOFTWARE_NAME = "EngMaster英语词汇分级学习平台软件"
+SHORT_NAME = "EngMaster英语词汇分级学习平台"
 VERSION = "V1.0"
+VOCABULARY_SCOPE_NOTICE = (
+    "本软件词汇及学习内容范围主要参考国家英语课程标准、相关英语考试大纲及公开考试要求，"
+    "由开发者结合不同学习阶段的实际需求整理编排。本软件为个人开发的英语学习辅助工具，"
+    "并非教育主管部门、学校或考试机构官方指定软件。"
+)
 
 
 def _set_cell_text(cell, text: str):
@@ -114,7 +119,7 @@ def _screenshot(doc: Document, filename: str, caption: str):
     caption_p.alignment = 1
 
 
-def build_user_manual():
+def _legacy_build_user_manual():
     doc = Document()
     _set_doc_defaults(doc)
     _add_footer(doc)
@@ -130,13 +135,14 @@ def build_user_manual():
         doc,
         f"{SOFTWARE_NAME}是一款运行于 Windows 桌面环境的英语学习辅助软件。软件面向高中英语学习和高考英语备考场景，"
         "提供高考 3800 词闯关、词汇表查看、自主词库、短语与不规则动词练习、专项题型模拟练习、整卷模拟练习、"
-        "参考解析、学习资料打印表生成、用户须知展示和授权激活等功能。",
+        "参考解析、个人错词及错题打印表生成、用户须知展示和授权激活等功能。",
     )
     _p(
         doc,
         "软件中的练习内容用于模拟训练和学习复盘，不作为官方考试题目、考试预测或学习结果承诺。"
         "用户应结合教材、课堂内容、教师指导和正式考试要求进行学习。",
     )
+    _p(doc, VOCABULARY_SCOPE_NOTICE)
 
     doc.add_heading("二、运行环境", 1)
     table = doc.add_table(rows=5, cols=2)
@@ -202,6 +208,7 @@ def build_user_manual():
             "在英文单词输入框中输入单词，在中文释义输入框中输入解释。",
             "点击添加按钮保存词汇。",
             "在词汇表中查看、编辑或删除已添加内容。",
+            "可选择中英对照、只看英语或只看中文进行背诵。",
             "自主词库可用于个人化词汇复习。",
         ],
     )
@@ -213,6 +220,7 @@ def build_user_manual():
         [
             "进入短语与不规则动词挑战功能。",
             "选择短语练习或不规则动词练习。",
+            "短语列表可切换核心、扩展及中英文显示方式；不规则动词列表可隐藏变化形式辅助背诵。",
             "根据页面提示输入答案并提交。",
             "系统显示答题结果，并记录错误项目。",
             "用户可进入相应列表查看和复习错题。",
@@ -247,18 +255,19 @@ def build_user_manual():
     )
     _screenshot(doc, "07_整卷模拟练习.png", "整卷模拟练习界面")
 
-    doc.add_heading("十、学习资料打印表生成", 1)
+    doc.add_heading("十、错词打印表生成", 1)
     _numbered(
         doc,
         [
-            "进入词汇表或相关资料页面。",
-            "选择需要导出的资料类型。",
+            "进入词汇表并打开错词表。",
+            "选择个人错词、短语错题或不规则动词错题。",
             "选择打印表或默写打印表复习模式。",
-            "点击生成打印表按钮。",
+            "点击生成错词打印表按钮。",
             "系统生成对应 PDF 文档，用户可打开查看或打印。",
         ],
     )
-    _p(doc, "截图位置：导出入口、保存窗口、导出后的 PDF 页眉、水印和页脚。")
+    _p(doc, "说明：打印功能仅输出个人错词、短语错题和不规则动词错题，完整词表及完整学习资料暂不提供打印。")
+    _p(doc, "截图位置：错词导出入口、保存窗口、导出后的 PDF 页眉、水印和页脚。")
 
     doc.add_heading("十一、本地数据说明", 1)
     _p(
@@ -269,7 +278,9 @@ def build_user_manual():
     )
 
     doc.add_heading("十二、常见问题", 1)
+    _p(doc, "软件内可通过左侧菜单的“常见问题”按钮直接打开本页内容。")
     qa = [
+        ("词表只显示英语或只显示中文", "请检查是否选择了“只看英语”或“只看中文”；需要恢复时点击“中英对照”。"),
         ("软件无法启动", "请确认运行环境是否为 Windows 10 / Windows 11 64 位系统，并确认软件文件未被删除或移动。"),
         ("单机激活码无法通过", "请确认单机激活码是否输入完整，并联系购买渠道确认授权状态。"),
         ("更换电脑后单机激活码无法使用", "单机激活码原则上仅限绑定一台电脑。如更换电脑、重装系统、更换主板或机器码变化，请联系购买渠道处理。"),
@@ -295,7 +306,160 @@ def build_user_manual():
         ],
     )
 
-    doc.save(DOCS / f"{SOFTWARE_NAME}_{VERSION}_用户操作说明书_最终版.docx")
+    doc.save(DOCS / f"{SOFTWARE_NAME}_{VERSION}_用户操作说明书_待截图版.docx")
+
+
+def build_user_manual():
+    doc = Document()
+    _set_doc_defaults(doc)
+    _add_footer(doc)
+
+    doc.add_heading(f"{SOFTWARE_NAME} {VERSION}", 0)
+    doc.add_heading("用户操作说明书", 1)
+    _p(doc, f"文档日期：{TODAY}")
+    _p(doc, "说明：本文档描述当前 V1.0 实际开放功能，正式截图须来自同一最终发布程序。")
+    doc.add_page_break()
+
+    doc.add_heading("一、软件简介", 1)
+    _p(
+        doc,
+        f"{SOFTWARE_NAME}是一款 Windows 桌面端分级英语词汇学习软件。软件通过词表学习、"
+        "普通闯关、个人错词表、错词闯关和下一轮复测形成闭环学习流程，并提供自主词库、"
+        "短语与不规则动词训练、轮次学习记录以及资料导出功能。",
+    )
+    _p(
+        doc,
+        "V1.0 提供初中、高考、大学英语四级、大学英语六级和考研五个级别的30词免费体验。"
+        "当前仅高考英语正式版完成并开放购买；其他正式版处于开发阶段，不作为本版本已开放功能。",
+    )
+    _p(doc, VOCABULARY_SCOPE_NOTICE)
+
+    doc.add_heading("二、运行环境", 1)
+    table = doc.add_table(rows=5, cols=2)
+    table.style = "Table Grid"
+    rows = [
+        ("软件名称", SOFTWARE_NAME),
+        ("软件简称", SHORT_NAME),
+        ("版本号", VERSION),
+        ("推荐环境", "Windows 10 / Windows 11 64 位系统"),
+        ("运行方式", "单机免安装运行；体验无需激活，高考正式版采用本地单机激活。"),
+    ]
+    for row, (key, value) in zip(table.rows, rows):
+        _set_cell_text(row.cells[0], key)
+        _set_cell_text(row.cells[1], value)
+    _p(
+        doc,
+        "当前发布文件未附加商业代码签名。交付 ZIP 中包含独立的《运行前必读》安全指南和"
+        "SHA-256 校验值。用户应先确认官方来源并核对校验值，再按指南处理 Windows SmartScreen"
+        "或杀毒软件提醒；不应关闭全部实时保护、防火墙或添加宽泛目录排除。",
+    )
+
+    doc.add_heading("三、启动与免费体验", 1)
+    _numbered(doc, [
+        "双击可执行程序启动软件。",
+        "未检测到有效授权时，软件直接进入免费体验模式，不要求注册账号。",
+        "在体验中心选择初中、高考、四级、六级或考研级别。",
+        "每个级别提供独立的30词体验，进度、错词和轮次记录分别保存。",
+        "通过快速了解、学习方法和操作指南查看推荐学习流程。",
+    ])
+    _screenshot(doc, "01_免费体验中心.png", "免费体验中心")
+    _screenshot(doc, "02_体验级别选择.png", "五级体验选择区域")
+    _screenshot(doc, "03_学习方法指南.png", "学习闭环与操作指南")
+
+    doc.add_heading("四、高考正式版购买与激活", 1)
+    _numbered(doc, [
+        "在体验中心点击“购买与激活正式版”。",
+        "购买窗口中仅高考英语正式版可以勾选；其他正式版显示“开发中”。",
+        "确认高考英语后，阅读并接受用户须知与免责声明。",
+        "复制本机识别码，通过购买渠道取得对应的单机激活码。",
+        "输入激活码并在本机完成校验，成功后高考英语显示绿色“已解锁”。",
+        "激活码与电脑绑定；更换设备或机器识别信息变化时需联系购买渠道处理。",
+    ])
+    _screenshot(doc, "08_购买版本选择.png", "购买版本选择界面")
+    _screenshot(doc, "09_用户须知.png", "用户须知与免责声明")
+    _screenshot(doc, "10_单机激活.png", "高考正式版单机激活界面")
+    _screenshot(doc, "11_版本管理.png", "英语正式版管理与购买页面的切换、购买及开发中状态")
+
+    doc.add_heading("五、词汇表学习", 1)
+    _numbered(doc, [
+        "进入当前级别词汇表，选择内置词汇、个人错词或自主录入词汇。",
+        "使用搜索框查找指定单词。",
+        "选择中英对照、隐藏英文或隐藏中文等显示方式。",
+        "按页浏览和背诵；错词积累后可生成错词纸质学习资料。",
+    ])
+    _screenshot(doc, "04_高考词汇表.png", "高考英语词汇表")
+
+    doc.add_heading("六、词汇闯关与错词闭环", 1)
+    _numbered(doc, [
+        "进入普通词汇闯关，根据英文或中文提示输入答案。",
+        "答错或掌握不稳定的单词自动加入个人错词表。",
+        "返回错词表集中背诵，再进入错词闯关反复验证。",
+        "错词连续答对达到规定次数后从当前错词表移出。",
+        "重新进行下一轮普通闯关，直到完整一轮不再产生新错词。",
+        "在学习记录中查看轮次、用时、答题数量和错词变化。",
+    ])
+    _screenshot(doc, "05_高考词汇闯关.png", "高考英语词汇闯关")
+    _screenshot(doc, "06_错词与学习记录.png", "个人错词与轮次学习记录")
+
+    doc.add_heading("七、自主词库", 1)
+    _numbered(doc, [
+        "进入自主登记单词页面，输入英文单词和中文释义后保存。",
+        "查看、编辑或删除已经登记的个人词汇。",
+        "根据背诵需要选择中英对照、只看英语或只看中文。",
+        "自主词汇可进入独立闯关，不与内置正式词库混合。",
+    ])
+    _screenshot(doc, "07_自主登记单词.png", "自主词库管理界面")
+
+    doc.add_heading("八、短语与不规则动词", 1)
+    _numbered(doc, [
+        "进入短语与不规则动词表，短语可切换核心、扩展及中英文显示方式。",
+        "不规则动词可选择完整对照、看原形默变化或只看中文。",
+        "进入对应闯关，根据提示填写短语或动词变化形式。",
+        "错误项目进入独立错题记录，可集中复习和再次验证。",
+        "体验版提供示例内容，高考正式版提供完整学习内容。",
+    ])
+    _screenshot(doc, "12_短语与不规则动词.png", "短语与不规则动词学习界面")
+
+    doc.add_heading("九、错题资料导出", 1)
+    _numbered(doc, [
+        "在词汇表中打开个人错词、短语错题或不规则动词错题。",
+        "仅针对当前错词或错题选择普通对照、看英默中或看中默英等输出形式。",
+        "点击生成错词打印表，系统生成 PDF 并保存到用户指定位置。",
+        "打开生成文件进行查看或打印。",
+    ])
+    _p(doc, "完整词表、完整短语表、不规则动词完整资料及自主录入完整词表暂不提供打印。")
+    _screenshot(doc, "13_学习资料导出.png", "错词资料导出界面")
+
+    doc.add_heading("十、本地数据与版本隔离", 1)
+    _p(
+        doc,
+        "错词、自主词库、学习记录和设置主要保存在用户本机。五类体验数据分别保存，"
+        "体验数据与高考正式版数据相互隔离。清理系统文件、重装系统、磁盘损坏或误删"
+        "可能造成学习数据丢失，用户应自行备份重要记录。",
+    )
+
+    doc.add_heading("十一、常见问题", 1)
+    _p(doc, "软件内可通过左侧菜单的“常见问题”按钮直接打开本页内容。")
+    for question, answer in [
+        ("词表只显示英语或只显示中文", "请检查是否选择了“只看英语”或“只看中文”；需要恢复时点击“中英对照”。"),
+        ("软件无法启动", "请确认使用 Windows 10 或 Windows 11 64 位系统，并确认程序文件完整。"),
+        ("其他正式版为什么不能购买", "V1.0 仅开放高考英语正式版；其他正式版开发中，可使用对应30词体验。"),
+        ("激活码无法通过", "请确认购买高考英语正式版、完整输入激活码，并联系购买渠道核对。"),
+        ("更换电脑后无法使用", "单机激活与电脑绑定，更换设备或机器识别信息变化时请联系购买渠道。"),
+        ("学习数据丢失", "检查本机学习数据是否被清理或覆盖，并从用户自行保存的备份恢复。"),
+    ]:
+        doc.add_heading(question, 2)
+        _p(doc, answer)
+
+    doc.add_heading("十二、截图一致性要求", 1)
+    _bullets(doc, [
+        "截图必须来自同一最终 V1.0 可执行程序。",
+        "截图应覆盖免费体验、购买选择、单机激活、版本状态及主要学习功能。",
+        "截图不得包含真实机器码、激活码、订单、个人信息或内部客服工具。",
+        "界面中高考正式版应显示可购买或已解锁，其他正式版应显示开发中。",
+    ])
+
+    doc.save(DOCS / f"{SOFTWARE_NAME}_{VERSION}_用户操作说明书_待截图版.docx")
 
 
 def build_application_reference():
@@ -321,8 +485,8 @@ def build_application_reference():
         ("首次发表日期", "【待填写：如未发表则按平台要求填写】"),
         ("运行环境", "Windows 10 / Windows 11 64 位系统"),
         ("编程语言", "Python"),
-        ("主要技术", "PySide6 / Qt 图形界面、本地文件存储、文本解析、PDF/文档生成、授权校验"),
-        ("源程序量参考", "约 6900 行 Python 源代码，正式提交前建议以最终版本重新统计。"),
+        ("主要技术", "PySide6 / Qt 图形界面、分级配置、本地文件存储、PDF/文档生成、离线授权校验"),
+        ("源程序量参考", "以最终冻结源码重新统计；提交材料只包含自有业务源码。"),
     ]
     for row, (k, v) in zip(table.rows, rows):
         _set_cell_text(row.cells[0], k)
@@ -331,9 +495,10 @@ def build_application_reference():
     doc.add_heading("软件主要功能简述", 1)
     _p(
         doc,
-        "本软件面向高中英语学习和高考英语备考，提供高考 3800 词闯关、错题复习、词汇表查看、自主词库管理、"
-        "短语和不规则动词练习、专项题型模拟练习、整卷模拟练习、参考解析、学习资料打印表生成、用户须知展示和授权激活等功能。"
-        "用户可通过图形化界面完成词汇记忆、题目练习、答案校验、错题整理、复习资料生成和授权状态校验。",
+        "本软件提供初中、高考、大学英语四级、大学英语六级和考研五个级别的英语词汇体验，"
+        "通过词表学习、普通闯关、个人错词表、错词闯关和轮次复测形成学习闭环，并提供自主词库、"
+        "短语与不规则动词训练、学习记录及资料导出。V1.0 仅开放高考英语正式版，采用单机离线授权；"
+        "其他正式版仍在开发中，不列为本版本已完成的正式功能。",
     )
 
     doc.add_heading("提交前需申请人确认", 1)
@@ -353,16 +518,17 @@ def build_application_reference():
 
 def _eligible_source_files() -> list[Path]:
     preferred = [
+        "main.py",
+        "edition_config.py",
+        "experience_guide.py",
+        "guide_pages.py",
+        "trial_center.py",
+        "challenge_rounds.py",
+        "challenge_history_dialog.py",
         "vocab_module.py",
         "word_list_view.py",
         "phrase_irregular_module.py",
         "self_register_vocab_module.py",
-        "exam_module.py",
-        "run_flull_exam.py",
-        "parsers/full_exam_specific_parsers.py",
-        "parsers/reading_parser.py",
-        "parsers/special_practice_parser.py",
-        "lib/exam_parser.py",
         "pdf_document_generator.py",
         "word_document_generator.py",
         "export_dialog.py",
@@ -447,8 +613,10 @@ def build_checklists():
 - 说明书截图是否来自最终发布版本。
 - 截图中是否没有测试码、个人隐私、后台管理信息或乱码。
 - 源代码材料是否已排除 RSA 私钥、后台管理信息、真实用户数据和第三方库源码。
-- 题目资源在文档中是否统一表述为“模拟练习资源”和“参考解析”。
-- 用户须知是否包含单机激活码绑定、换机处理、本地数据备份和免责说明。
+- 截图和文档是否明确：V1.0 只开放高考英语正式版。
+- 初中、四级、六级和考研是否统一标为“正式版开发中”，没有写成可购买功能。
+- 免费体验、购买选择、激活、版本管理和学习闭环是否与最终 EXE 一致。
+- 用户须知是否包含单机激活绑定、换机处理、本地数据备份和免责说明。
 
 ## 建议最终资料格式
 
@@ -459,7 +627,7 @@ def build_checklists():
 
 ## 本次已生成文件
 
-- `01_正式文档/{SOFTWARE_NAME}_{VERSION}_用户操作说明书_最终版.docx`
+- `01_正式文档/{SOFTWARE_NAME}_{VERSION}_用户操作说明书_待截图版.docx`
 - `01_正式文档/{SOFTWARE_NAME}_{VERSION}_软著申请信息确认表.docx`
 - `02_源代码材料/{SOFTWARE_NAME}_{VERSION}_源代码提交材料_正式版.docx`
 - `03_待填写与截图清单/正式提交前待填写与确认清单.md`
@@ -479,13 +647,14 @@ def build_checklists():
 
 ## 注意
 
-操作说明书截图已补齐。正式提交前仍需申请人填写身份、日期和发表状态，并将源代码材料确认定稿。
+当前生成包先完成文档结构与源代码材料。界面截图必须在程序整体验收和最终 EXE 冻结后重新拍摄，
+不得继续使用旧“高中-高考英语单词助手”的截图。正式提交前还需填写身份、日期和发表状态。
 """
     (OUT / "README_先看我.md").write_text(readme, encoding="utf-8")
 
 
 def backup_drafts():
-    draft = ROOT / "soft_copyright_materials"
+    draft = ROOT / "soft_copyright_engmaster_materials"
     if draft.exists():
         shutil.copytree(draft, ARCHIVE / "soft_copyright_materials", dirs_exist_ok=True)
     report = ROOT / "出厂质检报告_delivery_report.md"

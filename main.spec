@@ -22,7 +22,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='高中-高考英语单词助手_v1.0',
+    name='EngMaster英语词汇分级学习平台 V1.0',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

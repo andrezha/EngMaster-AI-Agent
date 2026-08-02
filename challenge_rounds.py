@@ -528,12 +528,12 @@ class ChallengeLearningStore:
     def wrong_round_text(self, mode, item):
         record = self.wrong_round_record(mode, item)
         if not record:
-            return "错题轮次：历史错词｜之前轮次未记录"
+            return "错词轮次：历史错词｜之前轮次未记录"
         count = _safe_nonnegative_int(record.get("count"), 0)
         last_round = max(1, _safe_nonnegative_int(record.get("last_round"), 1))
         if count <= 1:
-            return f"错题轮次：首次在第{last_round}轮答错"
-        return f"错题轮次：累计{count}轮｜最近第{last_round}轮"
+            return f"错词轮次：首次在第{last_round}轮答错"
+        return f"错词轮次：累计{count}轮｜最近第{last_round}轮"
 
     def snapshot(self):
         data = self._load()

@@ -1,0 +1,272 @@
+[
+  {
+    "id": "zhongkao:classroom",
+    "word": "classroom",
+    "pronunciation": "ˈklæsˌrum",
+    "content": "[ˈklæsˌrum] n. 教室",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:family",
+    "word": "family",
+    "pronunciation": "ˈfæməli",
+    "content": "[ˈfæməli] n. 家庭；亲属；家族；子女；科；语族；族；adj. 家庭的；家族的；适合于全家的",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:parent",
+    "word": "parent",
+    "pronunciation": "ˈpɛrənt",
+    "content": "[ˈpɛrənt] n. 父亲（或母亲）；父母亲；根源",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:subject",
+    "word": "subject",
+    "pronunciation": "ˈsʌbʤɪkt",
+    "content": "[ˈsʌbʤɪkt] n. 主题；科目； 主语；国民；adj. 服从的；易患…的；受制于…的；vt. 使…隶属；使屈从于…",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:homework",
+    "word": "homework",
+    "pronunciation": "ˈhoʊmˌwɜrk",
+    "content": "[ˈhoʊmˌwɜrk] n. 家庭作业，课外作业",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:library",
+    "word": "library",
+    "pronunciation": "ˈlaɪˌbrɛri",
+    "content": "[ˈlaɪˌbrɛri] n. 图书馆，藏书室；文库",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:weather",
+    "word": "weather",
+    "pronunciation": "ˈwɛðər",
+    "content": "[ˈwɛðər] n. 天气；气象；气候；处境；vt. 经受住；使风化；侵蚀；使受风吹雨打；adj. 露天的；迎风的；vi. 风化；受侵蚀；经受风雨",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:season",
+    "word": "season",
+    "pronunciation": "ˈsizən",
+    "content": "[ˈsizən] n. 时期；季节；赛季；vt. 给…调味；使适应；vi. 变得成熟；变干燥",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:healthy",
+    "word": "healthy",
+    "pronunciation": "ˈhɛlθi",
+    "content": "[ˈhɛlθi] adj. 健康的，健全的；有益于健康的",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:exercise",
+    "word": "exercise",
+    "pronunciation": "ˈɛksərˌsaɪz",
+    "content": "[ˈɛksərˌsaɪz] n. 运动；练习；运用；操练；礼拜；典礼；vt. 锻炼；练习；使用；使忙碌；使惊恐；vi. 运动；练习",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:breakfast",
+    "word": "breakfast",
+    "pronunciation": "ˈbrɛkfəst",
+    "content": "[ˈbrɛkfəst] n. 早餐；早饭；vt. 为…供应早餐；vi. 吃早餐",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:vegetable",
+    "word": "vegetable",
+    "pronunciation": "ˈvɛʤtəbəl",
+    "content": "[ˈvɛʤtəbəl] n. 蔬菜；植物；植物人；adj. 蔬菜的；植物的",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:hospital",
+    "word": "hospital",
+    "pronunciation": "ˈhɑˌspɪtəl",
+    "content": "[ˈhɑˌspɪtəl] n. 医院",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:travel",
+    "word": "travel",
+    "pronunciation": "ˈtrævəl",
+    "content": "[ˈtrævəl] n. 旅行；游历；漫游；vt. 经过；在…旅行；vi. 旅行；行进；步行；交往",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:holiday",
+    "word": "holiday",
+    "pronunciation": "ˈhɑləˌdeɪ",
+    "content": "[ˈhɑləˌdeɪ] n. 假日；节日；休息日；vi. 外出度假",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:museum",
+    "word": "museum",
+    "pronunciation": "mjuˈziəm",
+    "content": "[mjuˈziəm] n. 博物馆",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:country",
+    "word": "country",
+    "pronunciation": "ˈkʌntri",
+    "content": "[ˈkʌntri] n. 国家，国土；国民；乡下，农村；乡村；故乡；adj. 祖国的，故乡的；地方的，乡村的；国家的；粗鲁的；乡村音乐的",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:language",
+    "word": "language",
+    "pronunciation": "ˈlæŋɡwəʤ",
+    "content": "[ˈlæŋɡwəʤ] n. 语言；语言文字；表达能力",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:future",
+    "word": "future",
+    "pronunciation": "ˈfjuʧər",
+    "content": "[ˈfjuʧər] n. 未来；前途；期货；将来时；adj. 将来的，未来的",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:dream",
+    "word": "dream",
+    "pronunciation": "drim",
+    "content": "[drim] n. 梦想，愿望；梦；adj. 梦的；理想的；不切实际的；vt. 梦想；做梦；想到；vi. 梦想；做梦，梦见；想到",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:environment",
+    "word": "environment",
+    "pronunciation": "ɪnˈvaɪrənmənt",
+    "content": "[ɪnˈvaɪrənmənt] n. 环境，外界",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:protect",
+    "word": "protect",
+    "pronunciation": "prəˈtɛkt",
+    "content": "[prəˈtɛkt] vt. 保护，防卫；警戒",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:volunteer",
+    "word": "volunteer",
+    "pronunciation": "ˌvɑlənˈtɪr",
+    "content": "[ˌvɑlənˈtɪr] n. 志愿者；志愿兵；adj. 志愿的；vt. 自愿；vi. 自愿",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:culture",
+    "word": "culture",
+    "pronunciation": "ˈkʌlʧər",
+    "content": "[ˈkʌlʧər] n. 文化，文明；修养；栽培；vt.  培养（等于cultivate）",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:festival",
+    "word": "festival",
+    "pronunciation": "ˈfɛstəvəl",
+    "content": "[ˈfɛstəvəl] n. 节日；庆祝，纪念活动；欢乐；adj. 节日的，喜庆的；快乐的",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:traffic",
+    "word": "traffic",
+    "pronunciation": "ˈtræfɪk",
+    "content": "[ˈtræfɪk] n. 交通；运输；贸易； 通信量；vt. 用…作交换；在…通行；vi. 交易，买卖",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:important",
+    "word": "important",
+    "pronunciation": "ɪmˈpɔrtənt",
+    "content": "[ɪmˈpɔrtənt] adj. 重要的，重大的；有地位的；有权力的",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:different",
+    "word": "different",
+    "pronunciation": "ˈdɪfərənt",
+    "content": "[ˈdɪfərənt] adj. 不同的；个别的，与众不同的",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:because",
+    "word": "because",
+    "pronunciation": "bɪˈkɔz",
+    "content": "[bɪˈkɔz] conj. 因为",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "zhongkao:together",
+    "word": "together",
+    "pronunciation": "təˈɡɛðər",
+    "content": "[təˈɡɛðər] adj. 新潮的；情绪稳定的，做事有效率的；adv. 一起；同时；相互；连续地；总共",
+    "edition": "zhongkao",
+    "source": "ZhongKaoHeXin.json",
+    "data_status": "development_sample"
+  }
+]

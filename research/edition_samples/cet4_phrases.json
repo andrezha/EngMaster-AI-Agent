@@ -1,0 +1,5198 @@
+[
+  {
+    "id": "cet4-phrase-001",
+    "p": "take in",
+    "m": "吸收;欺骗;领会",
+    "en": "It was difficult to take in all he said.",
+    "cn": "很难领会他说的所有话。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-002",
+    "p": "take up",
+    "m": "占据(时间/空间);开始从事",
+    "en": "The table takes up too much room.",
+    "cn": "这张桌子太占地方了。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-003",
+    "p": "take over",
+    "m": "接管;接任",
+    "en": "He will take over the business next year.",
+    "cn": "他明年将接管这项业务。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-004",
+    "p": "take on",
+    "m": "承担(工作);呈现(面貌)",
+    "en": "She decided to take on new responsibilities.",
+    "cn": "她决定承担新的职责。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-005",
+    "p": "take off",
+    "m": "起飞;脱掉;成功",
+    "en": "The plane took off on time despite the fog.",
+    "cn": "尽管有雾，飞机还是准时起飞了。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-006",
+    "p": "take after",
+    "m": "与(父母等)相像",
+    "en": "He takes after his father in character.",
+    "cn": "他的性格很像他父亲。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-007",
+    "p": "take down",
+    "m": "记下;拆卸",
+    "en": "Please take down what I am saying.",
+    "cn": "请把我正在说的话记下来。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-008",
+    "p": "take to",
+    "m": "开始喜欢;开始从事",
+    "en": "The two dogs took to each other immediately.",
+    "cn": "这两只狗立马互相喜欢上了。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-009",
+    "p": "take for granted",
+    "m": "认为...理所当然",
+    "en": "Don't take your parents' love for granted.",
+    "cn": "不要把父母的爱当作理所当然。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-010",
+    "p": "take advantage of",
+    "m": "利用",
+    "en": "We should take advantage of the sun.",
+    "cn": "我们应当利用阳光。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-011",
+    "p": "take turns",
+    "m": "轮流",
+    "en": "Take turns to drive.",
+    "cn": "轮流开车。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-012",
+    "p": "take action",
+    "m": "采取行动",
+    "en": "We must take action to protect the environment.",
+    "cn": "我们必须采取行动来保护环境。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-013",
+    "p": "take effect",
+    "m": "生效;起作用",
+    "en": "The new regulation will take effect tomorrow.",
+    "cn": "新规定将于明天生效。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-014",
+    "p": "take note of",
+    "m": "注意;留意",
+    "en": "You should take note of his advice.",
+    "cn": "你应该注意他的建议。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-015",
+    "p": "take charge of",
+    "m": "负责;接管",
+    "en": "She will take charge of the project team.",
+    "cn": "她将负责这个项目团队。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-016",
+    "p": "take part in",
+    "m": "参加",
+    "en": "Take part in the game.",
+    "cn": "参加比赛。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-017",
+    "p": "take place",
+    "m": "发生",
+    "en": "When did it take place?",
+    "cn": "啥时候发生的？",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-018",
+    "p": "take it easy",
+    "m": "别紧张;放松",
+    "en": "Take it easy.",
+    "cn": "别紧张。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-019",
+    "p": "take account of",
+    "m": "考虑到；把……计算在内",
+    "en": "We must take account of the weather.",
+    "cn": "我们必须把天气因素考虑在内。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-020",
+    "p": "take pride in",
+    "m": "为...自豪",
+    "en": "The parents take pride in their son's success.",
+    "cn": "父母为儿子的成功感到自豪。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-021",
+    "p": "put forward",
+    "m": "提出(建议等)",
+    "en": "He put forward a suggestion.",
+    "cn": "他提出了建议。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-022",
+    "p": "put off",
+    "m": "推迟;延迟",
+    "en": "Don't put off until tomorrow.",
+    "cn": "不要拖到明天。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-023",
+    "p": "put out",
+    "m": "扑灭;熄灭",
+    "en": "Put out the fire.",
+    "cn": "把火扑灭。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-024",
+    "p": "put up with",
+    "m": "忍受;容忍",
+    "en": "I can't put up with noise.",
+    "cn": "我受不了噪音。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-025",
+    "p": "put aside",
+    "m": "把...搁置一旁;攒(钱)",
+    "en": "They put aside their differences for the project.",
+    "cn": "为了这个项目，他们抛开了分歧。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-026",
+    "p": "put on",
+    "m": "穿上;上映;增加(体重)",
+    "en": "He put on a coat and went out.",
+    "cn": "他穿上外套走出了门。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-027",
+    "p": "put down",
+    "m": "放下;记下;镇压",
+    "en": "Put down your pen when the bell rings.",
+    "cn": "铃声响时请放下笔。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-028",
+    "p": "put an end to",
+    "m": "结束;终止",
+    "en": "We must put an end to this endless discussion.",
+    "cn": "我们必须结束这场无休止的讨论。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-029",
+    "p": "put in",
+    "m": "投入(时间/精力);插入",
+    "en": "He put in many hours of work every day.",
+    "cn": "他每天都投入许多小时的工作。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-030",
+    "p": "put away",
+    "m": "把...收好;储存",
+    "en": "Put away your toys before going to bed.",
+    "cn": "睡觉前把你的玩具收好。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-031",
+    "p": "put into practice",
+    "m": "付诸实施;应用",
+    "en": "It is time to put our plan into practice.",
+    "cn": "是时候把我们的计划付诸实施了。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-032",
+    "p": "put emphasis on",
+    "m": "强调;重视",
+    "en": "The school puts emphasis on moral education.",
+    "cn": "学校非常重视德育。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-033",
+    "p": "put through",
+    "m": "接通(电话);完成",
+    "en": "Could you put me through to the manager?",
+    "cn": "你能帮我接通经理的电话吗？",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-034",
+    "p": "put up",
+    "m": "建造;张贴;提供住宿",
+    "en": "They put up a tent near the river.",
+    "cn": "他们在河边搭起了一个帐篷。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-035",
+    "p": "put one's heart into",
+    "m": "全神贯注于;奉献于",
+    "en": "He put his heart into the research.",
+    "cn": "他把全部心神都投入到了研究中。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-036",
+    "p": "take control of",
+    "m": "控制;掌管",
+    "en": "The pilot took control of the plane quickly.",
+    "cn": "飞行员迅速控制住了飞机。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-037",
+    "p": "take measures",
+    "m": "采取措施",
+    "en": "Strict measures were taken to prevent pollution.",
+    "cn": "采取了严格措施来防止污染。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-038",
+    "p": "take the place of",
+    "m": "代替;取代",
+    "en": "Robots will never take the place of human teachers.",
+    "cn": "机器人永远不会取代人类教师。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-039",
+    "p": "take pity on",
+    "m": "怜悯;同情",
+    "en": "She took pity on the stray dog and fed it.",
+    "cn": "她可怜那只流浪狗并喂了它。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-040",
+    "p": "take a risk",
+    "m": "冒险",
+    "en": "You shouldn't take a risk in this weather.",
+    "cn": "这种天气里你不该冒险。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-041",
+    "p": "put value on",
+    "m": "重视;评价",
+    "en": "Society puts high value on education.",
+    "cn": "社会高度重视教育。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-042",
+    "p": "put the blame on",
+    "m": "归咎于；责怪",
+    "en": "Don't put the blame on others for your mistake.",
+    "cn": "不要因为你的错误而责怪别人。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-043",
+    "p": "take a breath",
+    "m": "喘口气；吸一口气",
+    "en": "Let's stop and take a breath before climbing.",
+    "cn": "攀登前我们先停下来歇口气。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-044",
+    "p": "take office",
+    "m": "就职;上任",
+    "en": "The new president will take office next month.",
+    "cn": "新总统将于下个月就职。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-045",
+    "p": "put in order",
+    "m": "整理;使整齐",
+    "en": "She spent a hour putting her room in order.",
+    "cn": "她花了一个小时整理房间。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-046",
+    "p": "turn down",
+    "m": "拒绝;关小(音量等)",
+    "en": "He turned down the job offer.",
+    "cn": "他拒绝了那份工作邀请。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-047",
+    "p": "turn up",
+    "m": "出现;开大(音量等)",
+    "en": "She didn't turn up at the party last night.",
+    "cn": "她昨晚没有在聚会上出现。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-048",
+    "p": "turn to",
+    "m": "求助于;翻到;转向",
+    "en": "You can always turn to me for help.",
+    "cn": "你随时可以向我求助。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-049",
+    "p": "turn into",
+    "m": "变成",
+    "en": "Our dream has finally turned into reality.",
+    "cn": "我们的梦想终于变成了现实。",
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-050",
+    "p": "turn on/off",
+    "m": "打开/关闭(电源/水源)",
+    "en": "Please turn off the lights when leaving.",
+    "cn": "离开时请随手关灯。",
+    "answers": [
+      "turn on",
+      "turn off",
+      "turn on/off",
+      "turn on / turn off"
+    ],
+    "tier": "core",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-051",
+    "p": "turn over",
+    "m": "翻转;移交;仔细考虑",
+    "en": "Turn over the page and look at the picture.",
+    "cn": "翻过这一页看这张图片。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-052",
+    "p": "turn away",
+    "m": "走开;把...拒之门外",
+    "en": "The guard turned away the journalists.",
+    "cn": "警卫将记者们拒之门外。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-053",
+    "p": "turn back",
+    "m": "折回;往回走",
+    "en": "The weather was bad, so we turned back.",
+    "cn": "天气太恶劣，所以我们折回了。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-054",
+    "p": "turn out to be",
+    "m": "结果是;证明是",
+    "en": "The rumor turned out to be completely false.",
+    "cn": "那个传闻结果证明彻头彻尾是假的。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-055",
+    "p": "turn in",
+    "m": "上交;归还;就寝",
+    "en": "You must turn in your homework tomorrow morning.",
+    "cn": "你明天早上必须上交作业。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-056",
+    "p": "turn against",
+    "m": "背叛;与...为敌",
+    "en": "He was shocked when his best friend turned against him.",
+    "cn": "当他最好的朋友背叛他时，他震惊了。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-057",
+    "p": "come true",
+    "m": "实现",
+    "en": "His dream of becoming a doctor came true.",
+    "cn": "他当医生的梦想实现了。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-058",
+    "p": "come up",
+    "m": "走近;被提出;发生;发芽",
+    "en": "A new question came up at the meeting.",
+    "cn": "会上提出了一个新问题。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-059",
+    "p": "come on",
+    "m": "快点;加油;来临;谈到",
+    "en": "Come on, or we will miss the train.",
+    "cn": "快点，否则我们就要误火车了。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-060",
+    "p": "come to",
+    "m": "总计;谈到;苏醒",
+    "en": "The bill comes to exactly forty dollars.",
+    "cn": "账单总计刚好四十美元。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-061",
+    "p": "come out",
+    "m": "出版;花开;显现;结果是",
+    "en": "His new novel will come out next month.",
+    "cn": "他的新小说下个月就要出版。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-062",
+    "p": "come along",
+    "m": "跟随;进展;出现",
+    "en": "How is your English project coming along?",
+    "cn": "你的英语项目进展得怎么样了？",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-063",
+    "p": "come from",
+    "m": "来自;源于",
+    "en": "She comes from a small village in Yunnan.",
+    "cn": "她来自云南的一个小村庄。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-064",
+    "p": "come into being",
+    "m": "形成;产生",
+    "en": "When did the universe come into being?",
+    "cn": "宇宙是什么时候形成的？",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-065",
+    "p": "come into effect",
+    "m": "生效;实施",
+    "en": "The law came into effect last month.",
+    "cn": "这部法律上个月开始生效。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-066",
+    "p": "come to light",
+    "m": "暴露;显露",
+    "en": "New evidence has come to light recently.",
+    "cn": "最近有新的证据显露出来。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-067",
+    "p": "come to an understanding",
+    "m": "达成谅解/协议",
+    "en": "Finally, the two sides came to an understanding.",
+    "cn": "最终，双方达成了谅解。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-068",
+    "p": "come across",
+    "m": "偶遇;碰见",
+    "en": "I came across an old friend on the street.",
+    "cn": "我在街上偶然遇见一位老友。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-069",
+    "p": "come up with",
+    "m": "想出(主意);提出(办法)",
+    "en": "She came up with a brilliant solution.",
+    "cn": "她想出了一个绝妙的解决方案。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-070",
+    "p": "come about",
+    "m": "发生;产生",
+    "en": "Can you tell me how the accident came about?",
+    "cn": "你能告诉我这场事故是怎么发生的吗？",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-071",
+    "p": "come to an end",
+    "m": "结束",
+    "en": "The meeting finally came to an end.",
+    "cn": "会议最终结束了。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-072",
+    "p": "come to power",
+    "m": "执政；掌权",
+    "en": "The new party came to power last year.",
+    "cn": "新政党去年开始执政。",
+    "answers": [
+      "come to power",
+      "come into power"
+    ],
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-073",
+    "p": "come by",
+    "m": "获得;取得",
+    "en": "A good job like that is hard to come by.",
+    "cn": "那样的工作可不容易得到。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-074",
+    "p": "come down with",
+    "m": "染上(疾病)",
+    "en": "I think I am coming down with a cold.",
+    "cn": "我想我快感冒了。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-075",
+    "p": "come near to",
+    "m": "差点...;几乎...",
+    "en": "The team came near to winning the championship.",
+    "cn": "该队差点夺得冠军。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-076",
+    "p": "look after",
+    "m": "照顾;照看",
+    "en": "I look after my sister when parents are out.",
+    "cn": "父母出门时我照顾妹妹。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-077",
+    "p": "look down upon",
+    "m": "轻视;瞧不起",
+    "en": "Don't look down upon others.",
+    "cn": "不要轻视他人。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-078",
+    "p": "look forward to",
+    "m": "期待;盼望",
+    "en": "I look forward to meeting you soon.",
+    "cn": "我期待很快见到你。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-079",
+    "p": "look into",
+    "m": "调查;了解",
+    "en": "We are looking into the cause of the problem.",
+    "cn": "我们正在调查这个问题的原因。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-080",
+    "p": "look through",
+    "m": "浏览;仔细检查",
+    "en": "I looked through the report before the meeting.",
+    "cn": "开会前我浏览了报告。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-081",
+    "p": "look up to",
+    "m": "尊敬;崇拜",
+    "en": "I look up to my father as a role model.",
+    "cn": "我把我父亲视作榜样来尊敬。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-082",
+    "p": "look up",
+    "m": "查阅;好转",
+    "en": "You can look up the word in the dictionary.",
+    "cn": "你可以在词典中查阅这个单词。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-083",
+    "p": "look out",
+    "m": "当心;小心",
+    "en": "Look out! There is a car coming.",
+    "cn": "小心！有辆车开过来了。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-084",
+    "p": "look back on",
+    "m": "回顾;回忆",
+    "en": "He likes to look back on his college days.",
+    "cn": "他喜欢回忆他的大学时光。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-085",
+    "p": "look on...as",
+    "m": "把...看作",
+    "en": "We look on him as a true friend.",
+    "cn": "我们把他看作真正的朋友。",
+    "answers": [
+      "look on ... as",
+      "look on...as"
+    ],
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-086",
+    "p": "look for",
+    "m": "寻找",
+    "en": "What are you looking for under the desk?",
+    "cn": "你在书桌下找什么呢？",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-087",
+    "p": "look into the distance",
+    "m": "向远处看",
+    "en": "She stood by the window and looked into the distance.",
+    "cn": "她站在窗边向远处眺望。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-088",
+    "p": "look on",
+    "m": "旁观",
+    "en": "Two men were fighting while others looked on.",
+    "cn": "两个人在打架，而其他人则在旁观。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-089",
+    "p": "get on/off",
+    "m": "上/下车(船、飞机等)",
+    "en": "He got on the bus and found a seat.",
+    "cn": "他上了公交车并找了个座位。",
+    "answers": [
+      "get on",
+      "get off",
+      "get on/off",
+      "get on / get off"
+    ],
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-090",
+    "p": "get along with",
+    "m": "与...相处;进展",
+    "en": "I get along with my neighbors very well.",
+    "cn": "我和邻居相处得非常好。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-091",
+    "p": "get away with",
+    "m": "侥幸逃脱(惩罚)",
+    "en": "You won't get away with cheating in the exam.",
+    "cn": "你考试作弊是逃不过惩罚的。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-092",
+    "p": "get over",
+    "m": "克服(困难);从(疾病)中恢复",
+    "en": "She finally got over her illness.",
+    "cn": "她最终恢复了健康。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-093",
+    "p": "get rid of",
+    "m": "摆脱;清除",
+    "en": "We must get rid of these bad habits.",
+    "cn": "我们必须彻底改掉这些坏习惯。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-094",
+    "p": "get through",
+    "m": "完成;接通(电话);度过(难关)",
+    "en": "I finally got through the tough exam.",
+    "cn": "我终于通过了这场艰难的考试。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-095",
+    "p": "get down to",
+    "m": "着手做;开始认真对待",
+    "en": "It's time we got down to our work.",
+    "cn": "我们该开始认真干活了。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-096",
+    "p": "get into the habit of",
+    "m": "养成...的习惯",
+    "en": "You should get into the habit of reading daily.",
+    "cn": "你应该养成每天阅读的习惯。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-097",
+    "p": "get lost",
+    "m": "迷路",
+    "en": "They ended up getting lost in the forest.",
+    "cn": "他们最后在森林里迷路了。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-098",
+    "p": "get close to",
+    "m": "接近;靠近",
+    "en": "Don't get close to the wild animals.",
+    "cn": "不要靠近野生动物。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-099",
+    "p": "get in touch with",
+    "m": "与...取得联系",
+    "en": "I need to get in touch with my teacher.",
+    "cn": "我需要和我的老师取得联系。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-100",
+    "p": "get used to",
+    "m": "习惯于",
+    "en": "She quickly got used to the cold weather.",
+    "cn": "她很快就习惯了寒冷的天气。",
+    "tier": "core",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-101",
+    "p": "get ready for",
+    "m": "为...做好准备",
+    "en": "The students are getting ready for the exam.",
+    "cn": "学生们正在为考试做准备。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-102",
+    "p": "get the upper hand",
+    "m": "占上风；取得优势",
+    "en": "Our team gradually got the upper hand in the match.",
+    "cn": "我们队在比赛中渐渐占了上风。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-103",
+    "p": "get across",
+    "m": "解释清楚;使人理解",
+    "en": "He struggled to get his ideas across.",
+    "cn": "他费了很大劲才把自己的想法解释清楚。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-104",
+    "p": "get away",
+    "m": "逃脱;离开",
+    "en": "The mouse managed to get away from the cat.",
+    "cn": "老鼠成功从猫那儿逃脱了。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-105",
+    "p": "get down",
+    "m": "记下;使沮丧;走下来",
+    "en": "The continuous rain is getting me down.",
+    "cn": "连绵不断的雨天让我感到沮丧。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-106",
+    "p": "get hold of",
+    "m": "一把抓起;联系上;抓住",
+    "en": "It's hard to get hold of him at the weekend.",
+    "cn": "周末很难联系上他。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-107",
+    "p": "get into trouble",
+    "m": "陷入困境;惹麻烦",
+    "en": "If you don't listen, you will get into trouble.",
+    "cn": "如果你不听劝，你会惹上麻烦的。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-108",
+    "p": "get on one's nerves",
+    "m": "让某人神经紧张/心烦",
+    "en": "That constant noise is getting on my nerves.",
+    "cn": "那持续不断的噪音真让我心烦。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-109",
+    "p": "give away",
+    "m": "赠送;泄露(秘密)",
+    "en": "He gave away his old books to the school library.",
+    "cn": "他把他的旧书捐赠给了学校图书馆。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-110",
+    "p": "give in",
+    "m": "让步;投降;屈服",
+    "en": "The enemy finally gave in to our pressure.",
+    "cn": "敌人在我们的压力下终于投降了。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-111",
+    "p": "give off",
+    "m": "发出(光、热、气味等)",
+    "en": "The boiling chemical gave off a bad smell.",
+    "cn": "沸腾的化学制品散发出一股恶臭。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-112",
+    "p": "give out",
+    "m": "分发;耗尽;精疲力竭",
+    "en": "Our food supply gave out after three days.",
+    "cn": "三天后我们的食物供应耗尽了。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-113",
+    "p": "give up",
+    "m": "放弃",
+    "en": "Never give up hope, no matter what happens.",
+    "cn": "无论发生什么，永不放弃希望。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-114",
+    "p": "give rise to",
+    "m": "引起;导致",
+    "en": "The heavy rain gave rise to severe floods.",
+    "cn": "大雨导致了严重的洪水。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-115",
+    "p": "give way to",
+    "m": "让路给...;被...替代",
+    "en": "Steam trains gave way to electric ones.",
+    "cn": "蒸汽火车被电力火车取代了。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-116",
+    "p": "give priority to",
+    "m": "优先考虑",
+    "en": "The government gives priority to job creation.",
+    "cn": "政府优先考虑创造就业机会。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-117",
+    "p": "give birth to",
+    "m": "生(孩子);产生",
+    "en": "She gave birth to a healthy baby girl.",
+    "cn": "她生下了一个健康的健康女婴。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-118",
+    "p": "give back",
+    "m": "归还",
+    "en": "Don't forget to give back the money you borrowed.",
+    "cn": "别忘了归还你借的钱。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-119",
+    "p": "give a hand",
+    "m": "帮一把;协助",
+    "en": "Could you give me a hand with this heavy box?",
+    "cn": "你能帮我抬一下这个沉重的箱子吗？",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-120",
+    "p": "break down",
+    "m": "车辆抛锚;机器故障;精神崩溃;分解",
+    "en": "Their car broke down on the highway.",
+    "cn": "他们的车在高速公路上抛锚了。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-121",
+    "p": "break in",
+    "m": "闯入;插嘴;打断",
+    "en": "Please don't break in while I am talking.",
+    "cn": "我说话时请不要插嘴。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-122",
+    "p": "break out",
+    "m": "爆发(战争/火灾等)",
+    "en": "A fire broke out in the kitchen last night.",
+    "cn": "厨房昨晚突然着火。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-123",
+    "p": "break through",
+    "m": "突破;突破难关;穿透",
+    "en": "The scientists broke through in the medical research.",
+    "cn": "科学家们在医学研究中取得了突破。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-124",
+    "p": "break into",
+    "m": "强行闯入;突然开始...",
+    "en": "Someone broke into the shop and stole electronics.",
+    "cn": "有人强行闯入商店并偷走了电子产品。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-125",
+    "p": "break off",
+    "m": "折断;中断(谈话);断绝",
+    "en": "They broke off diplomatic relations.",
+    "cn": "他们断绝了外交关系。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-126",
+    "p": "break up",
+    "m": "打碎;破裂;关系破裂;放假",
+    "en": "The school will break up for summer holiday next week.",
+    "cn": "学校下周开始放暑假。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-127",
+    "p": "break away from",
+    "m": "脱离;摆脱(束缚)",
+    "en": "He broke away from the traditional methods.",
+    "cn": "他摆脱了传统方法的束缚。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-128",
+    "p": "break the rules",
+    "m": "违反规则",
+    "en": "Anyone who breaks the rules will be punished.",
+    "cn": "任何违反规则的人都将受到惩罚。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-129",
+    "p": "break the record",
+    "m": "打破记录",
+    "en": "She broke the world record in high jump.",
+    "cn": "她打破了跳高的世界记录。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-130",
+    "p": "make sense",
+    "m": "讲得通;有意义;可行",
+    "en": "What you said doesn't make sense to me.",
+    "cn": "你说的话我听着讲不通。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-131",
+    "p": "make up",
+    "m": "构成;化妆;编造;和解",
+    "en": "Women make up half of the workforce.",
+    "cn": "女性占了劳动人口的一半。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-132",
+    "p": "make up for",
+    "m": "弥补;补偿",
+    "en": "Hard work can make up for a lack of experience.",
+    "cn": "勤奋可以弥补经验的不足。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-133",
+    "p": "make for",
+    "m": "走向;向...前进;有助于",
+    "en": "The environment makes for fast progress.",
+    "cn": "充满活力的环境有助于快速进步。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-134",
+    "p": "make out",
+    "m": "辨认出;理解",
+    "en": "I can't make out the handwriting on the wall.",
+    "cn": "我认不出墙上的字迹。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-135",
+    "p": "make use of",
+    "m": "利用;使用",
+    "en": "We should make good use of our spare time.",
+    "cn": "我们应当好好利用空闲时间。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-136",
+    "p": "make fun of",
+    "m": "嘲弄;开...玩笑",
+    "en": "It's impolite to make fun of others' mistakes.",
+    "cn": "嘲笑别人的错误是不礼貌的。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-137",
+    "p": "make a difference",
+    "m": "有影响;起作用;重要",
+    "en": "Your support will make a big difference to us.",
+    "cn": "你的支持对我们将非常重要。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-138",
+    "p": "make up one's mind",
+    "m": "下定决心",
+    "en": "He made up his mind to study overseas.",
+    "cn": "他下定决心去海外留学。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-139",
+    "p": "make clear",
+    "m": "表明;澄清",
+    "en": "She made it clear that she disagreed.",
+    "cn": "她明确表明自己持反对意见。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-140",
+    "p": "make an effort",
+    "m": "努力;尽力",
+    "en": "We must make an effort to arrive on time.",
+    "cn": "我们必须尽力准时到达。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-141",
+    "p": "make rapid progress",
+    "m": "取得快速进步",
+    "en": "With your help, I made rapid progress in English.",
+    "cn": "在你的帮助下，我的英语取得了快速进步。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-142",
+    "p": "make sure/certain",
+    "m": "确保;查明",
+    "en": "Make sure you lock the door before leaving.",
+    "cn": "离开前确保你把门锁上了。",
+    "answers": [
+      "make sure",
+      "make certain",
+      "make sure/certain"
+    ],
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-143",
+    "p": "make a contribution to",
+    "m": "为……做出贡献",
+    "en": "He made a great contribution to science.",
+    "cn": "他为科学做出了巨大贡献。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-144",
+    "p": "make space for / make room for",
+    "m": "腾出空间/让位给...",
+    "en": "Move the chair to make room for the desk.",
+    "cn": "把椅子移开，给书桌腾点地方。",
+    "answers": [
+      "make space for",
+      "make room for"
+    ],
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-145",
+    "p": "make a living",
+    "m": "谋生",
+    "en": "He makes a living by writing stories.",
+    "cn": "他靠写故事谋生。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-146",
+    "p": "make an apology to",
+    "m": "向...道歉",
+    "en": "You should make an apology to her for being late.",
+    "cn": "你应当为迟到向她道歉。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-147",
+    "p": "make complaints",
+    "m": "抱怨;投诉",
+    "en": "Customers made complaints about the bad service.",
+    "cn": "顾客对糟糕的服务提出了投诉。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-148",
+    "p": "set up",
+    "m": "建立;创立;安装",
+    "en": "A committee was set up to investigate the crash.",
+    "cn": "成立了一个委员会来调查这起坠机事故。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-149",
+    "p": "set off",
+    "m": "出发;动身;引起",
+    "en": "We set off for the mountain early in the morning.",
+    "cn": "我们清晨出发前往山区。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-150",
+    "p": "set out",
+    "m": "出发;着手(做某事)",
+    "en": "They set out to paint the whole house.",
+    "cn": "他们着手粉刷一整栋房子。",
+    "tier": "core",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-151",
+    "p": "set aside",
+    "m": "留出(金钱/时间);搁置一旁",
+    "en": "She sets aside some money every week for traveling.",
+    "cn": "她每周留出一些钱用于旅游。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-152",
+    "p": "set an example for",
+    "m": "为……树立榜样",
+    "en": "Older children should set a good example for younger ones.",
+    "cn": "大孩子应当为小孩子树立好榜样。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-153",
+    "p": "set a date",
+    "m": "确定日期",
+    "en": "They have set a date for the wedding.",
+    "cn": "他们已经定下了婚礼的日期。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-154",
+    "p": "set loose",
+    "m": "释放;放走",
+    "en": "He opened the cage and set the birds loose.",
+    "cn": "他打开笼子放走了鸟儿。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-155",
+    "p": "set fire to",
+    "m": "放火烧;点燃",
+    "en": "The criminals set fire to the abandoned warehouse.",
+    "cn": "罪犯放火烧毁了那个废弃的仓库。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-156",
+    "p": "set free",
+    "m": "释放",
+    "en": "The prisoners were finally set free.",
+    "cn": "囚犯们最终被释放了。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-157",
+    "p": "set a trap",
+    "m": "设圈套;设陷阱",
+    "en": "The hunter set a trap in the woods.",
+    "cn": "猎人在树林里设了陷阱。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-158",
+    "p": "go after",
+    "m": "追求;追赶",
+    "en": "He is bravely going after his childhood dream.",
+    "cn": "他在勇敢地追求自己儿时的梦想。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-159",
+    "p": "go against",
+    "m": "违背;反抗;对...不利",
+    "en": "Cheating in the exam goes against my principles.",
+    "cn": "考试作弊违背我的原则。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-160",
+    "p": "go over",
+    "m": "复习;检查;仔细查看",
+    "en": "You should go over your notes before the quiz.",
+    "cn": "测验前你应该复习一下笔记。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-161",
+    "p": "go through",
+    "m": "经历(苦难);仔细检查;翻阅",
+    "en": "He went through many hardships during the war.",
+    "cn": "他在战争期间经历了许多苦难。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-162",
+    "p": "go ahead",
+    "m": "前进;开始做;请吧",
+    "en": "If you are ready, just go ahead.",
+    "cn": "如果你准备好了，就请便吧。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-163",
+    "p": "go on doing",
+    "m": "继续做(同一件事)",
+    "en": "They went on talking despite the noise.",
+    "cn": "尽管吵闹，他们仍在继续交谈。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-164",
+    "p": "go on to do",
+    "m": "继而做(另一件事)",
+    "en": "After high school, she went on to study at university.",
+    "cn": "高中毕业后，她继而上了大学。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-165",
+    "p": "go by",
+    "m": "过去;(时间)流逝;遵照",
+    "en": "As time goes by, my memory gets better.",
+    "cn": "随着时间的流逝，我的记忆力变得更好了。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-166",
+    "p": "go in for",
+    "m": "参加(考试/比赛);喜欢",
+    "en": "She decided to go in for the speech contest.",
+    "cn": "她决定参加演讲比赛。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-167",
+    "p": "go out",
+    "m": "出门;熄灭",
+    "en": "The fire went out because there was no wood.",
+    "cn": "因为没有木柴，火熄灭了。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-168",
+    "p": "go bad",
+    "m": "变质;腐烂",
+    "en": "Milk will go bad quickly on hot days.",
+    "cn": "牛奶在热天会很快变质。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-169",
+    "p": "go with",
+    "m": "陪伴;与...相配",
+    "en": "The tie goes perfectly with your blue shirt.",
+    "cn": "这条领带和你的蓝色衬衫非常相配。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-170",
+    "p": "go without",
+    "m": "没有...也行;勉强度日",
+    "en": "Humans can't go without water for long.",
+    "cn": "人类没有水支撑不了多久。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-171",
+    "p": "go into detail",
+    "m": "详细说明",
+    "en": "I don't want to go into detail about it now.",
+    "cn": "我现在不想详细说明这件事。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-172",
+    "p": "run into",
+    "m": "偶然遇见;遭遇(困难);撞上",
+    "en": "I ran into my former classmate yesterday.",
+    "cn": "我昨天偶然遇到了我的前班级同学。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-173",
+    "p": "run away",
+    "m": "逃跑;跑掉",
+    "en": "The thief ran away when he saw the police.",
+    "cn": "小偷看到警察就逃跑了。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-174",
+    "p": "run after",
+    "m": "追赶;追求",
+    "en": "The police were running after the suspect.",
+    "cn": "警察正在追赶嫌疑人。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-175",
+    "p": "run over",
+    "m": "碾压;溢出;快速浏览",
+    "en": "Let's run over the main points again.",
+    "cn": "让我们再快速浏览一下要点。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-176",
+    "p": "run short of",
+    "m": "快用完;缺乏",
+    "en": "We are running short of fresh water.",
+    "cn": "我们的淡水快用完了。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-177",
+    "p": "run out of",
+    "m": "用完;耗尽",
+    "en": "The car stopped because it ran out of gas.",
+    "cn": "汽车停了，因为汽油用光了。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-178",
+    "p": "run out",
+    "m": "用光;到期",
+    "en": "My passport will run out next month.",
+    "cn": "我的护照下个月就要到期了。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-179",
+    "p": "run a risk",
+    "m": "冒风险",
+    "en": "You run a risk of failing if you don't study.",
+    "cn": "如果你不学习，就会面临不及格的风险。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-180",
+    "p": "bring about",
+    "m": "导致;引起;带来",
+    "en": "The new policy will bring about changes.",
+    "cn": "这项全新有力的政策将带来改变。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-181",
+    "p": "bring up",
+    "m": "养育;提出(议题);呕吐",
+    "en": "She was brought up in a beautiful town.",
+    "cn": "她是在一座漂亮的小镇长大的。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-182",
+    "p": "bring out",
+    "m": "出版;显现;使展现",
+    "en": "The teacher knows how to bring out the best in students.",
+    "cn": "老师知道如何让学生展现出最好的一面。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-183",
+    "p": "bring back",
+    "m": "带回;使回忆起",
+    "en": "The photos brought back many happy memories.",
+    "cn": "照片勾起了许多美好的回忆。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-184",
+    "p": "bring forward",
+    "m": "提前;提出",
+    "en": "The meeting has been brought forward to Monday.",
+    "cn": "会议已被提前到星期一。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-185",
+    "p": "bring in",
+    "m": "引人;带来(收益);引进",
+    "en": "The new store brings in lots of cash every day.",
+    "cn": "新商店每天都带来大量现金收益。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-186",
+    "p": "keep up with",
+    "m": "跟上;不落后于",
+    "en": "We must work hard to keep up with the fashion.",
+    "cn": "我们必须努力跟上时尚的潮流。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-187",
+    "p": "keep in touch with",
+    "m": "与……保持联系",
+    "en": "Please keep in touch with us after graduation.",
+    "cn": "毕业后请和我们保持联系。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-188",
+    "p": "keep an eye on",
+    "m": "照看;密切注意",
+    "en": "Could you keep an eye on my luggage for a minute?",
+    "cn": "你能帮我照看下行李吗？",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-189",
+    "p": "keep off",
+    "m": "不接近;让开;避开",
+    "en": "Signs warn people to keep off the grass.",
+    "cn": "告示牌警告人们请勿践踏草坪。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-190",
+    "p": "keep on doing",
+    "m": "继续做;坚持做",
+    "en": "The boy kept on running to the finish line.",
+    "cn": "那个充满干劲的男孩坚持跑向终点线。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-191",
+    "p": "keep track of",
+    "m": "掌握...的动态;记录",
+    "en": "It's difficult to keep track of all changes.",
+    "cn": "很难掌握所有这些变化。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-192",
+    "p": "keep back",
+    "m": "隐瞒;阻止;阻挡",
+    "en": "She was unable to keep back her tears.",
+    "cn": "她没能忍住眼泪。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-193",
+    "p": "keep pace with",
+    "m": "与...并驾齐驱;跟上",
+    "en": "Education must keep pace with technology.",
+    "cn": "教育必须跟上技术发展的步伐。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-194",
+    "p": "keep in mind",
+    "m": "记住;牢记",
+    "en": "Keep in mind that safety comes first.",
+    "cn": "请牢记安全第一。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-195",
+    "p": "hold up",
+    "m": "举起;耽搁;延迟",
+    "en": "The project was held up by the bad weather.",
+    "cn": "项目因为恶劣天气延误了。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-196",
+    "p": "hold on to",
+    "m": "紧紧抓住;坚持;保持",
+    "en": "Hold on to the rope and don't let go.",
+    "cn": "抓紧绳子，别松手。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-197",
+    "p": "hold on",
+    "m": "坚持住;等一下(别挂电话)",
+    "en": "Hold on a minute, I will check the list.",
+    "cn": "等一下，我去查一下列表。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-198",
+    "p": "hold back",
+    "m": "阻挡;抑制(情感);隐瞒",
+    "en": "He managed to hold back his anger.",
+    "cn": "他设法压制住了愤怒。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-199",
+    "p": "hold out",
+    "m": "伸出;坚持(抵抗/要求)",
+    "en": "How long can their water supply hold out?",
+    "cn": "他们的水供应能坚持多久？",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-200",
+    "p": "call for",
+    "m": "需要;号召;要求",
+    "en": "The situation calls for immediate action.",
+    "cn": "这种情况需要立即行动。",
+    "tier": "core",
+    "level": 4
+  },
+  {
+    "id": "cet4-phrase-201",
+    "p": "call off",
+    "m": "取消",
+    "en": "The outdoor sports meeting was called off due to rain.",
+    "cn": "由于下雨，室外运动会取消了。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-202",
+    "p": "call on",
+    "m": "拜访(某人);号召;呼吁",
+    "en": "We called on our former teacher yesterday.",
+    "cn": "我们昨天拜访了以前的老师。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-203",
+    "p": "call up",
+    "m": "给...打电话;使人想起;征召",
+    "en": "The music called up happy memories of his youth.",
+    "cn": "这音乐勾起了他年轻时的美好回忆。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-204",
+    "p": "call at",
+    "m": "拜访(某地/处)",
+    "en": "The train will call at Yokohama station.",
+    "cn": "列车将在横滨站停靠。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-205",
+    "p": "hand in",
+    "m": "交上;提交",
+    "en": "Please hand in your homework before Friday.",
+    "cn": "请在周五前交作业。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-206",
+    "p": "hand out",
+    "m": "分发;散发",
+    "en": "The volunteers handed out food to the refugees.",
+    "cn": "志愿者向难民分发了食物。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-207",
+    "p": "hand over",
+    "m": "移交;交出",
+    "en": "The old guard will hand over his duties tomorrow.",
+    "cn": "老警卫明天将移交他的职责。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-208",
+    "p": "hand down",
+    "m": "把...传下去;流传",
+    "en": "This tradition has been handed down for generations.",
+    "cn": "这一传统已经流传了好几代。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-209",
+    "p": "pay attention to",
+    "m": "注意",
+    "en": "Please pay attention to your spelling.",
+    "cn": "请注意你的拼写。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-210",
+    "p": "pay off",
+    "m": "还清(债务);(努力)取得成功/合算",
+    "en": "His hard work finally paid off in the end.",
+    "cn": "他的努力最终得到了回报。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-211",
+    "p": "pay back",
+    "m": "偿还;报复",
+    "en": "I will pay you back as soon as I get cash.",
+    "cn": "我一拿到现金就还你钱。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-212",
+    "p": "pay for",
+    "m": "为...付钱;为...付出代价",
+    "en": "You will have to pay for your mistakes.",
+    "cn": "你必须为你的错误付出代价。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-213",
+    "p": "carry on",
+    "m": "继续进行;继续做",
+    "en": "They decided to carry on with the experiment.",
+    "cn": "他们决定继续进行实验。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-214",
+    "p": "carry out",
+    "m": "执行;实施;贯彻",
+    "en": "The plan was successfully carried out.",
+    "cn": "那个充满活力的计划被成功执行了。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-215",
+    "p": "carry through",
+    "m": "帮...渡过难关;实现;完成",
+    "en": "His courage carried him through the crisis.",
+    "cn": "他的勇气帮他渡过了危机。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-216",
+    "p": "catch up with",
+    "m": "赶上;追上",
+    "en": "You need to work harder to catch up with them.",
+    "cn": "你得更努力才能赶上他们。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-217",
+    "p": "catch sight of",
+    "m": "瞥见;看见",
+    "en": "I caught sight of her in the crowded market.",
+    "cn": "我在拥挤热闹的市场里瞥见了她。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-218",
+    "p": "catch fire",
+    "m": "着火",
+    "en": "Dry wood catches fire easily.",
+    "cn": "干木头容易着火。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-219",
+    "p": "catch hold of",
+    "m": "抓住;握住",
+    "en": "He caught hold of the branch before falling.",
+    "cn": "他在坠落前抓住了树枝。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-220",
+    "p": "catch one's breath",
+    "m": "喘口气；恢复呼吸",
+    "en": "The run made him stop to catch his breath.",
+    "cn": "剧烈的奔跑让他停下来喘口气。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-221",
+    "p": "leave out",
+    "m": "遗漏;省去;不包括",
+    "en": "Don't leave out any important details.",
+    "cn": "不要遗漏任何重要的细节。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-222",
+    "p": "leave behind",
+    "m": "留下;忘带;把...抛在后面",
+    "en": "He left his umbrella behind on the train.",
+    "cn": "他把伞忘在火车上了。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-223",
+    "p": "leave alone",
+    "m": "别管;别碰;听任",
+    "en": "Leave the puzzle alone for a while.",
+    "cn": "先把那个复杂的谜题放一边吧。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-224",
+    "p": "die out",
+    "m": "灭绝;逐渐消失",
+    "en": "Many ancient traditions are dying out rapidly.",
+    "cn": "许多古老的传统正在迅速消失。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-225",
+    "p": "die away",
+    "m": "(声音/光线)变弱;消失",
+    "en": "The sound of the music slowly died away.",
+    "cn": "热闹的音乐声慢慢消失了。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-226",
+    "p": "die of / die from",
+    "m": "死于(疾病/饥饿等原因)",
+    "en": "The elderly man died of old age peacefully.",
+    "cn": "那位老人安详地寿终正寝了。",
+    "answers": [
+      "die of",
+      "die from"
+    ],
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-227",
+    "p": "die down",
+    "m": "(火/风/兴奋)平息;减弱",
+    "en": "The heavy storm began to die down.",
+    "cn": "猛烈的暴风雨开始减弱了。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-228",
+    "p": "clear up",
+    "m": "(天气)放晴;清理;消除(误会)",
+    "en": "The sky cleared up shortly after the rain.",
+    "cn": "雨后不久天空就放晴了。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-229",
+    "p": "clear away",
+    "m": "收拾掉;清除",
+    "en": "Please clear away the dishes after dinner.",
+    "cn": "晚饭后请把盘子收拾干净。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-230",
+    "p": "send for",
+    "m": "派人去请;邮购",
+    "en": "The doctor was immediately sent for.",
+    "cn": "立刻派人去请医生了。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-231",
+    "p": "send out",
+    "m": "发出(光/气味等);分发;派遣",
+    "en": "The signal was sent out from the tower.",
+    "cn": "信号从塔楼发射出去。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-232",
+    "p": "send up",
+    "m": "发出;发射;使上升",
+    "en": "Scientists will send up a new satellite soon.",
+    "cn": "科学家们很快将发射一颗新卫星。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-233",
+    "p": "send off",
+    "m": "寄出;派遣;为...送行",
+    "en": "A big crowd went to the airport to send him off.",
+    "cn": "大批人去机场为他送行。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-234",
+    "p": "add up to",
+    "m": "总计;合计",
+    "en": "The total costs add up to 500 dollars.",
+    "cn": "总费用总计达500美元。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-235",
+    "p": "add to",
+    "m": "增加;增添",
+    "en": "The fine weather added to our pleasure.",
+    "cn": "晴朗的天气增添了我们的乐趣。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-236",
+    "p": "agree with",
+    "m": "同意(某人观点);(食物)适合",
+    "en": "The climate here doesn't agree with me.",
+    "cn": "这里气候不适合我。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-237",
+    "p": "agree to",
+    "m": "同意(计划/建议/安排)",
+    "en": "They finally agreed to the contract terms.",
+    "cn": "他们最终同意了合同条款。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-238",
+    "p": "agree on",
+    "m": "对...达成一致意见",
+    "en": "We must agree on a target date.",
+    "cn": "我们必须就目标日期达成一致。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-239",
+    "p": "belong to",
+    "m": "属于",
+    "en": "This dictionary belongs to the school library.",
+    "cn": "这本词典属于学校图书馆。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-240",
+    "p": "depend on",
+    "m": "取决于;依靠",
+    "en": "Whether we go depends on the weather.",
+    "cn": "我们去不去取决于天气。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-241",
+    "p": "count on",
+    "m": "依靠;指望",
+    "en": "You can always count on your close friends.",
+    "cn": "你随时可以指望你的挚友。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-242",
+    "p": "insist on",
+    "m": "坚持;坚持要求",
+    "en": "She insisted on checking the report again.",
+    "cn": "她坚持要再检查一遍报告。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-243",
+    "p": "stick to",
+    "m": "坚持(原则/原计划);粘住",
+    "en": "You should stick to your original idea.",
+    "cn": "你应该坚持你最初的想法。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-244",
+    "p": "adhere to",
+    "m": "坚持;遵守(法律/规章)",
+    "en": "We must adhere to the traffic safety regulations.",
+    "cn": "我们必须遵守交通安全法规。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-245",
+    "p": "consist of",
+    "m": "由...组成",
+    "en": "The team consists of five experts.",
+    "cn": "这个团队由五位专家组成。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-246",
+    "p": "cope with",
+    "m": "应付;妥善处理",
+    "en": "He is capable enough to cope with the task.",
+    "cn": "他足够有能力应付这项任务。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-247",
+    "p": "deal with",
+    "m": "处理;涉及;论述",
+    "en": "This historical book deals with World War II.",
+    "cn": "这本书论述的是第二次世界大战。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-248",
+    "p": "object to",
+    "m": "反对;抗议",
+    "en": "I strongly object to being treated like a child.",
+    "cn": "我强烈反对被当作小孩子对待。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-249",
+    "p": "occur to",
+    "m": "(想法)被想到;发生",
+    "en": "It suddenly occurred to me that I left the key.",
+    "cn": "我突然想起我忘带钥匙了。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-250",
+    "p": "refer to",
+    "m": "查阅;参考;提到",
+    "en": "Please refer to the dictionary for terms.",
+    "cn": "专业术语请查阅词典。",
+    "tier": "core",
+    "level": 5
+  },
+  {
+    "id": "cet4-phrase-251",
+    "p": "account for",
+    "m": "说明(原因);占(比例)",
+    "en": "Filters account for 10% of the sales.",
+    "cn": "过滤器占销售额的10%。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-252",
+    "p": "apply for",
+    "m": "申请(职位/签证等)",
+    "en": "You should apply for a new passport early.",
+    "cn": "你应该尽早申请新护照。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-253",
+    "p": "apply to",
+    "m": "适用于;向...申请",
+    "en": "The same rules apply to everyone.",
+    "cn": "同样的规则适用于每个人。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-254",
+    "p": "appeal to",
+    "m": "吸引;呼吁;申诉",
+    "en": "The design of the interface appeals to youth.",
+    "cn": "这个界面的设计对年轻人很有吸引力。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-255",
+    "p": "adjust to",
+    "m": "适应",
+    "en": "It took him time to adjust to the environment.",
+    "cn": "他花了一些时间才适应环境。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-256",
+    "p": "ascribe sth to sth",
+    "m": "把……归因于……",
+    "en": "He ascribed his fast success to hard work.",
+    "cn": "他将自己的快速成功归因于勤奋。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-257",
+    "p": "contribute to",
+    "m": "有助于;促成;捐献",
+    "en": "Heavy pressure contributes to physical illness.",
+    "cn": "重压会导致身体疾病。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-258",
+    "p": "devote oneself/sth to sth",
+    "m": "致力于；把……奉献给",
+    "en": "He devoted his whole life to environmental care.",
+    "cn": "他将一生奉献给环保事业。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-259",
+    "p": "lead to",
+    "m": "导致;通向",
+    "en": "Persistent hard work leads to high success.",
+    "cn": "坚持不懈的努力导致最终的成功。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-260",
+    "p": "attend to",
+    "m": "照顾;专心于;处理",
+    "en": "I have some urgent business to attend to now.",
+    "cn": "我现在有一些紧急事务要处理。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-261",
+    "p": "attach to",
+    "m": "附属于;使依恋;重视",
+    "en": "Great importance is attached to food safety.",
+    "cn": "食品安全受到了高度重视。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-262",
+    "p": "adapt to",
+    "m": "适应;适合",
+    "en": "Animals must adapt to changing climates.",
+    "cn": "动物必须适应不断变化的气候。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-263",
+    "p": "accustom oneself to sth",
+    "m": "使自己习惯于……",
+    "en": "You will soon accustom yourself to the new routine.",
+    "cn": "你很快就会习惯新的日常安排。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-264",
+    "p": "amount to",
+    "m": "总计;等于",
+    "en": "The debts amount to thousands.",
+    "cn": "债务总计达数千元。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-265",
+    "p": "belong in",
+    "m": "应归入;在...应有其地方",
+    "en": "These records belong in the archive.",
+    "cn": "这些记录应当归入档案馆。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-266",
+    "p": "care for",
+    "m": "照顾;喜欢",
+    "en": "Who will care for the pets while we are away?",
+    "cn": "我们出门时谁来照顾宠物？",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-267",
+    "p": "charge for",
+    "m": "收费;要价",
+    "en": "How much do they charge for the repair service?",
+    "cn": "他们收多少维修费？",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-268",
+    "p": "choose between",
+    "m": "在两者之间选择",
+    "en": "It is difficult to choose between the two jobs.",
+    "cn": "在这两份工作之间做选择很困难。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-269",
+    "p": "comment on",
+    "m": "评论;发表意见",
+    "en": "The coach refused to comment on the match.",
+    "cn": "教练拒绝评论那场比赛。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-270",
+    "p": "compete with / compete against",
+    "m": "与...竞争",
+    "en": "Small shops can't compete with huge malls.",
+    "cn": "小商店无法与大型商场竞争。",
+    "answers": [
+      "compete with",
+      "compete against"
+    ],
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-271",
+    "p": "concentrate on",
+    "m": "专心于;聚焦于",
+    "en": "Please concentrate on your revision now.",
+    "cn": "现在请专注于你的复习。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-272",
+    "p": "congratulate sb on sth",
+    "m": "因某事向某人祝贺",
+    "en": "I congratulated her on passing the driving test.",
+    "cn": "我祝贺她通过了驾照考试。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-273",
+    "p": "cure sb of sth",
+    "m": "治好某人的疾病或坏习惯",
+    "en": "The new medicine cured him of his chronic cough.",
+    "cn": "这种新药治好了他的慢性咳嗽。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-274",
+    "p": "differ from",
+    "m": "不同于;与...有区别",
+    "en": "My strategy differs from yours in some details.",
+    "cn": "我的策略在某些细节上与你的不同。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-275",
+    "p": "divide into",
+    "m": "把...分成",
+    "en": "Divide the cake into four equal parts.",
+    "cn": "把蛋糕分成相等的四块。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-276",
+    "p": "dream of",
+    "m": "梦想;幻想",
+    "en": "I dream of becoming a global pilot.",
+    "cn": "我梦想成为一名飞行员。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-277",
+    "p": "escape from",
+    "m": "从...逃脱;逃离",
+    "en": "The bird escaped from the open cage.",
+    "cn": "鸟儿从打开的笼子里逃跑了。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-278",
+    "p": "focus on",
+    "m": "聚焦于;集中于",
+    "en": "Focus all your energy on the target.",
+    "cn": "把你的全部精力集中在目标上。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-279",
+    "p": "graduate from",
+    "m": "毕业于(某校)",
+    "en": "He graduated from a national university.",
+    "cn": "他毕业于一所国立大学。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-280",
+    "p": "hear from",
+    "m": "收到...的来信/消息",
+    "en": "I haven't heard from my former classmate lately.",
+    "cn": "我最近没有收到前同学的消息。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-281",
+    "p": "hear of",
+    "m": "听说过;获悉",
+    "en": "Have you ever heard of that designer?",
+    "cn": "你听说过那位设计师吗？",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-282",
+    "p": "inform sb of sth",
+    "m": "把某事通知某人",
+    "en": "Please inform us of any updates immediately.",
+    "cn": "若有任何更新请立即通知我们。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-283",
+    "p": "interfere in",
+    "m": "干涉;插手(他人的事)",
+    "en": "Don't interfere in other people's affairs.",
+    "cn": "不要干涉别人的私事。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-284",
+    "p": "interfere with",
+    "m": "妨碍;干扰;损害",
+    "en": "Don't allow anxiety to interfere with work.",
+    "cn": "别让焦虑妨碍了工作。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-285",
+    "p": "invest in",
+    "m": "投资于;投入(时间/金钱)",
+    "en": "They decided to invest in solar energy technology.",
+    "cn": "他们决定投资太阳能技术。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-286",
+    "p": "learn from",
+    "m": "向...学习;从...中吸取教训",
+    "en": "We should learn from each other's strong points.",
+    "cn": "我们应当互相学习长处。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-287",
+    "p": "prefer A to B",
+    "m": "比起B更喜欢A",
+    "en": "I prefer reading real books to e-books.",
+    "cn": "比起电子书，我更喜欢读实体书。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-288",
+    "p": "prevent sb from doing sth",
+    "m": "阻止某人做某事",
+    "en": "The rain prevented us from going out.",
+    "cn": "暴雨阻止了我们出门。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-289",
+    "p": "protect sb/sth from sth",
+    "m": "保护……免受伤害",
+    "en": "Sunscreen protects your tender skin from the sun.",
+    "cn": "防晒霜保护皮肤免受烈日伤害。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-290",
+    "p": "provide sb with sth",
+    "m": "向某人提供某物",
+    "en": "The hotel provides guests with free maps.",
+    "cn": "酒店为住客提供免费地图。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-291",
+    "p": "recover from",
+    "m": "从(疾病/打击)中恢复",
+    "en": "She is recovering from a surgery.",
+    "cn": "她正在从手术中恢复。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-292",
+    "p": "remind sb of sth",
+    "m": "提醒某人；使某人想起某事",
+    "en": "The old picture reminds me of my sweet childhood.",
+    "cn": "老照片让我想起了甜蜜的童年。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-293",
+    "p": "rely on",
+    "m": "依靠;信任",
+    "en": "We can rely on his professional judgment.",
+    "cn": "我们可以信任他的专业判断。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-294",
+    "p": "reply to",
+    "m": "回复;回答",
+    "en": "He hasn't replied to my email yet.",
+    "cn": "他还没有回复我的邮件。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-295",
+    "p": "separate A from B",
+    "m": "把A与B分开",
+    "en": "Separate the files from the rubbish.",
+    "cn": "把有用的文件和垃圾分离开。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-296",
+    "p": "spend time/money on sth",
+    "m": "在某事上花时间或金钱",
+    "en": "Don't spend too much cash on digital games.",
+    "cn": "别在电子游戏上花太多钱。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-297",
+    "p": "suffer from",
+    "m": "患(病);遭受(苦难)",
+    "en": "Many people suffer from seasonal allergy.",
+    "cn": "许多人患有季节性过敏。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-298",
+    "p": "warn sb of sth",
+    "m": "警告某人注意某事",
+    "en": "The radar warned of the storm.",
+    "cn": "雷达预警了暴风雨的来临。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-299",
+    "p": "worry about",
+    "m": "为...担心/发愁",
+    "en": "Parents always worry about their children's safety.",
+    "cn": "父母总是担心孩子的安全。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-300",
+    "p": "make a fool of",
+    "m": "愚弄;使丢脸",
+    "en": "He made a fool of himself at the party.",
+    "cn": "他在聚会上让自己丢了脸。",
+    "tier": "core",
+    "level": 6
+  },
+  {
+    "id": "cet4-phrase-301",
+    "p": "make an example of",
+    "m": "惩罚...以儆效尤",
+    "en": "The boss decided to make an example of him.",
+    "cn": "老板决定惩罚他以儆效尤。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-302",
+    "p": "make allowance for",
+    "m": "体谅;考虑到",
+    "en": "We must make allowance for his youth.",
+    "cn": "我们必须体谅他年轻缺乏经验。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-303",
+    "p": "pay a visit to",
+    "m": "访问;拜访",
+    "en": "They paid a visit to the historic castle.",
+    "cn": "他们参观了那座古城堡。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-304",
+    "p": "play a part in",
+    "m": "在...中起作用/扮演角色",
+    "en": "Diet plays a vital part in your health.",
+    "cn": "饮食对你的健康起着至关重要的作用。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-305",
+    "p": "play a role in",
+    "m": "在...中发挥作用",
+    "en": "Technology plays a role in education.",
+    "cn": "技术在教育中发挥着强有力的作用。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-306",
+    "p": "play a trick on",
+    "m": "开...的玩笑;捉弄",
+    "en": "The naughty kids played a trick on their uncle.",
+    "cn": "淘气的孩子捉弄了他们的叔叔。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-307",
+    "p": "take care of",
+    "m": "照顾;照料;处理",
+    "en": "She took care of her sick grandfather.",
+    "cn": "她照顾生病的祖父。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-308",
+    "p": "take notice of",
+    "m": "注意;理会",
+    "en": "Don't take any notice of what they murmur.",
+    "cn": "别理会他们嘟囔些什么。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-309",
+    "p": "take an interest in",
+    "m": "对……产生兴趣",
+    "en": "He took a sudden interest in physics.",
+    "cn": "他突然对物理产生了兴趣。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-310",
+    "p": "take pleasure in",
+    "m": "从...中获得乐趣",
+    "en": "She takes pleasure in planting flowers.",
+    "cn": "她从种花中获得乐趣。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-311",
+    "p": "put pressure on",
+    "m": "给...施加压力",
+    "en": "Don't put too much pressure on the child.",
+    "cn": "别给孩子太大压力。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-312",
+    "p": "put trust in",
+    "m": "信任;信赖",
+    "en": "Never put your complete trust in a stranger.",
+    "cn": "永远不要完全信任陌生人。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-313",
+    "p": "lose track of",
+    "m": "失去...的线索;忘记",
+    "en": "I lost track of time in the library.",
+    "cn": "我在图书馆看书忘了时间。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-314",
+    "p": "lose touch with",
+    "m": "与...失去联系",
+    "en": "I lost touch with him after he left the town.",
+    "cn": "他离开小镇后我们失去了联系。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-315",
+    "p": "lose sight of",
+    "m": "看不见;忽略;忘记",
+    "en": "Never lose sight of your original dream.",
+    "cn": "永远不要忘记你最初的梦想。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-316",
+    "p": "lose patience with",
+    "m": "对...失去耐心",
+    "en": "The tutor lost patience with him.",
+    "cn": "导师对他失去了耐心。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-317",
+    "p": "lose heart",
+    "m": "丧失信心;灰心",
+    "en": "Don't lose heart even if you fail twice.",
+    "cn": "即使失败两次也别灰心。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-318",
+    "p": "lose faith in",
+    "m": "不再信任;对...失去信心",
+    "en": "Consumers lost faith in the brand.",
+    "cn": "消费者对这个品牌失去了信心。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-319",
+    "p": "find fault with",
+    "m": "挑剔;吹毛求疵",
+    "en": "She always finds fault with the way I do the housework.",
+    "cn": "她总是挑剔我做家务的方式。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-320",
+    "p": "get access to",
+    "m": "获得...的渠道/权利",
+    "en": "Students have free access to the library.",
+    "cn": "学生可以免费使用图书馆。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-321",
+    "p": "have an effect on",
+    "m": "对...产生影响",
+    "en": "Smoking has a bad effect on health.",
+    "cn": "吸烟对身体健康有坏影响。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-322",
+    "p": "have an impact on",
+    "m": "对……产生影响",
+    "en": "The crisis had an impact on industry.",
+    "cn": "这场危机对工业造成了冲击。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-323",
+    "p": "have influence over",
+    "m": "对...有控制力/影响力",
+    "en": "The teacher has great influence over kids.",
+    "cn": "老师对孩子们有很大影响力。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-324",
+    "p": "have sympathy for",
+    "m": "同情;可怜",
+    "en": "We have deep sympathy for the victims.",
+    "cn": "我们对受害者深表同情。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-325",
+    "p": "be absorbed in",
+    "m": "全神贯注于;沉溺于",
+    "en": "He was so absorbed in his book that he didn't hear me.",
+    "cn": "他看书太入迷了，以至于没听到我说话。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-326",
+    "p": "be abundant in",
+    "m": "丰富;富有",
+    "en": "The coastal area is abundant in natural resources.",
+    "cn": "该沿海地区自然资源丰富。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-327",
+    "p": "be accustomed to",
+    "m": "习惯于",
+    "en": "She was not accustomed to waking up so early.",
+    "cn": "她不习惯这么早醒来。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-328",
+    "p": "be addicted to",
+    "m": "对...上瘾;沉溺于",
+    "en": "Too many teenagers are addicted to online games.",
+    "cn": "太多青少年沉溺于网络游戏。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-329",
+    "p": "be applicable to",
+    "m": "适用于",
+    "en": "The rule is not applicable to this case.",
+    "cn": "这条规则不适用于这种情况。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-330",
+    "p": "be attached to",
+    "m": "附属于;依恋",
+    "en": "He is deeply attached to his hometown.",
+    "cn": "他深恋着自己的家乡。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-331",
+    "p": "be blind to",
+    "m": "对...视而不见",
+    "en": "Parents shouldn't be blind to their kids' faults.",
+    "cn": "父母不应该对孩子的缺点视而不见。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-332",
+    "p": "be close to",
+    "m": "接近;靠近",
+    "en": "Our school is very close to the park.",
+    "cn": "我们学校离那个公园非常近。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-333",
+    "p": "be counter to",
+    "m": "与...背道而驰;违反",
+    "en": "His actions are counter to his principles.",
+    "cn": "他的行为与他的原则背道而驰。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-334",
+    "p": "be devoted to",
+    "m": "致力于;专注于",
+    "en": "She has been devoted to teaching for thirty years.",
+    "cn": "她致力于教学工作已有三十年了。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-335",
+    "p": "be equal to",
+    "m": "等于;能胜任",
+    "en": "I hope he will be equal to the task.",
+    "cn": "我希望他能胜任这项艰巨的任务。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-336",
+    "p": "be exposed to",
+    "m": "暴露于;接触",
+    "en": "Kids shouldn't be exposed to too much violence.",
+    "cn": "孩子们不应该接触太多的暴力内容。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-337",
+    "p": "be familiar to",
+    "m": "为...所熟悉",
+    "en": "The melody is familiar to most elderly people.",
+    "cn": "这首旋律为大多数老人所熟悉。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-338",
+    "p": "be grateful to",
+    "m": "感激;感谢",
+    "en": "I am extremely grateful to you for your help.",
+    "cn": "我对你的帮助表示由衷的感激。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-339",
+    "p": "be harmful to",
+    "m": "对...有害",
+    "en": "Staying up late is harmful to your health.",
+    "cn": "熬夜对你的身体健康有害。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-340",
+    "p": "be identical to",
+    "m": "与...完全相同",
+    "en": "His design is identical to mine in layout.",
+    "cn": "他的设计在布局上与我的完全相同。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-341",
+    "p": "be immune to",
+    "m": "对...免疫;不受影响",
+    "en": "No one is entirely immune to criticism.",
+    "cn": "没有人能完全不受批评的影响。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-342",
+    "p": "be indifferent to",
+    "m": "对...漠不关心",
+    "en": "We cannot remain indifferent to their suffering.",
+    "cn": "我们不能对他们的痛苦保持漠不关心。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-343",
+    "p": "be inferior to",
+    "m": "劣于;次于",
+    "en": "This plastic model is inferior to that wooden one.",
+    "cn": "这个塑料模型比那个木制的差。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-344",
+    "p": "be inverse to",
+    "m": "与...成反比",
+    "en": "The price is often inverse to the supply level.",
+    "cn": "价格通常与供应水平成反比。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-345",
+    "p": "be loyal to",
+    "m": "忠于;忠诚于",
+    "en": "A soldier must be loyal to his country.",
+    "cn": "军人必须忠于自己的国家。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-346",
+    "p": "be native to",
+    "m": "原产于;土生土长",
+    "en": "The giant panda is native to southwest China.",
+    "cn": "大熊猫原产于中国西南部。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-347",
+    "p": "be opposed to",
+    "m": "反对",
+    "en": "Most citizens are opposed to the new tax.",
+    "cn": "大多数市民反对这项新税收。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-348",
+    "p": "be parallel to",
+    "m": "与...平行;与...相似",
+    "en": "The road is parallel to the river.",
+    "cn": "这条公路与河流平行。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-349",
+    "p": "be polite to",
+    "m": "对...有礼貌",
+    "en": "We should always be polite to elderly people.",
+    "cn": "我们应该始终对老人有礼貌。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-350",
+    "p": "be relevant to",
+    "m": "与...相关",
+    "en": "Your question is not relevant to the topic.",
+    "cn": "你的问题与这个主题没有关系。",
+    "tier": "core",
+    "level": 7
+  },
+  {
+    "id": "cet4-phrase-351",
+    "p": "be resistant to",
+    "m": "对...有抵抗力;耐...",
+    "en": "The materials are highly resistant to high heat.",
+    "cn": "这些材料非常耐高温。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-352",
+    "p": "be sensitive to",
+    "m": "对...敏感",
+    "en": "Eyes are sensitive to bright lights.",
+    "cn": "眼睛对强光很敏感。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-353",
+    "p": "be superior to",
+    "m": "优于;好于",
+    "en": "The quality of silk is superior to cotton.",
+    "cn": "丝绸的质量优于棉布。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-354",
+    "p": "be true to",
+    "m": "忠实于;信守",
+    "en": "You must be true to your promise.",
+    "cn": "你必须信守你的承诺。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-355",
+    "p": "be unique to",
+    "m": "是...所独有的",
+    "en": "This custom is unique to Japan.",
+    "cn": "这种习俗是日本所独有的。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-356",
+    "p": "be vital to",
+    "m": "对...至关重要",
+    "en": "Fresh water is vital to human survival.",
+    "cn": "淡水对人类的生存至关重要。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-357",
+    "p": "be vulnerable to",
+    "m": "易受...伤害;脆弱",
+    "en": "Old wooden houses are vulnerable to fire.",
+    "cn": "老旧木屋容易受到火灾的威胁。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-358",
+    "p": "be busy with",
+    "m": "忙于",
+    "en": "The architect is busy with his new design.",
+    "cn": "那位建筑师正忙于他的新设计。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-359",
+    "p": "be careful with",
+    "m": "小心;对待...谨慎",
+    "en": "Please be careful with the tools.",
+    "cn": "请小心使用这些工具。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-360",
+    "p": "be concerned with",
+    "m": "与...有关;参与",
+    "en": "The report is concerned with crime rate.",
+    "cn": "该报告与犯罪率有关。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-361",
+    "p": "be content with",
+    "m": "对...满足",
+    "en": "He is content with his simple life.",
+    "cn": "他满足于自己简单的生活。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-362",
+    "p": "be familiar with",
+    "m": "熟悉",
+    "en": "Are you familiar with this procedure?",
+    "cn": "你熟悉这个流程吗？",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-363",
+    "p": "be patient with",
+    "m": "对……有耐心",
+    "en": "A tutor should be patient with slow pupils.",
+    "cn": "导师应对反应慢的学生有耐心。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-364",
+    "p": "be satisfied with",
+    "m": "对...满意",
+    "en": "The manager is satisfied with the outcome.",
+    "cn": "经理对这个结果表示满意。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-365",
+    "p": "be strict with",
+    "m": "对...严厉/严格",
+    "en": "Our teacher is strict with us in study.",
+    "cn": "我们的老师在学习上对我们要求严格。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-366",
+    "p": "be gentle with",
+    "m": "对...温柔/和蔼",
+    "en": "Be gentle with the baby; she is crying.",
+    "cn": "对宝宝温柔点，她正在哭呢。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-367",
+    "p": "be angry with",
+    "m": "对(某人)生气",
+    "en": "She was angry with me for being late again.",
+    "cn": "她因为我又迟到而对我生气。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-368",
+    "p": "be bored with",
+    "m": "对...感到厌烦",
+    "en": "He grew bored with the repetitive work.",
+    "cn": "他逐渐厌倦了这种重复性的工作。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-369",
+    "p": "be accurate in",
+    "m": "在...方面精确",
+    "en": "The scientist is very accurate in his calculation.",
+    "cn": "这位科学家在计算上非常精确。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-370",
+    "p": "be active in",
+    "m": "在...方面积极",
+    "en": "She is active in community services.",
+    "cn": "她积极参与社区服务。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-371",
+    "p": "be blind in",
+    "m": "在...目盲(如左眼)",
+    "en": "The old dog is completely blind in its left eye.",
+    "cn": "那只老狗的左眼完全瞎了。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-372",
+    "p": "be cautious in",
+    "m": "在...方面谨慎",
+    "en": "Be cautious in project investments.",
+    "cn": "在项目投资方面要保持谨慎。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-373",
+    "p": "be engaged in",
+    "m": "从事于;忙于",
+    "en": "They are engaged in research now.",
+    "cn": "他们现在正忙于科学研究。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-374",
+    "p": "be experienced in",
+    "m": "在...方面有经验",
+    "en": "He is highly experienced in repairing vehicles.",
+    "cn": "他在维修车辆方面经验丰富。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-375",
+    "p": "be expert in",
+    "m": "在...方面是专家",
+    "en": "She is expert in digital network security.",
+    "cn": "她是数字网络安全方面的专家。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-376",
+    "p": "be honest in",
+    "m": "在...方面诚实",
+    "en": "We must be honest in our business.",
+    "cn": "我们在商业交易中必须保持诚实。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-377",
+    "p": "be lacking in",
+    "m": "缺乏;短缺",
+    "en": "The plan is lacking in detail.",
+    "cn": "这个计划缺乏细节。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-378",
+    "p": "be rich in",
+    "m": "富含;在...方面富有",
+    "en": "Vegetables are rich in essential vitamins.",
+    "cn": "蔬菜富含必要的维生素。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-379",
+    "p": "be skilled in",
+    "m": "熟练于",
+    "en": "He is skilled in graphic layouts.",
+    "cn": "他精通图形布局设计。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-380",
+    "p": "be successful in",
+    "m": "在...获得成功",
+    "en": "She was successful in passing the contest.",
+    "cn": "她成功通过了这场选拔竞赛。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-381",
+    "p": "be weak in",
+    "m": "在...方面薄弱",
+    "en": "The student is still weak in grammar.",
+    "cn": "这个学生在语法方面依然比较薄弱。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-382",
+    "p": "be afraid of",
+    "m": "害怕",
+    "en": "Don't be afraid of making errors.",
+    "cn": "别害怕犯错误。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-383",
+    "p": "be ashamed of",
+    "m": "为...感到羞愧",
+    "en": "He felt ashamed of his rude behavior.",
+    "cn": "他为自己的粗鲁行为感到羞愧。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-384",
+    "p": "be aware of",
+    "m": "意识到;知道",
+    "en": "Are you aware of the danger ahead?",
+    "cn": "你意识到前方的危险了吗？",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-385",
+    "p": "be capable of",
+    "m": "有能力做...",
+    "en": "The vessel is capable of holding tons.",
+    "cn": "这艘船能够承载数吨货物。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-386",
+    "p": "be cautious of",
+    "m": "警惕;当心",
+    "en": "Be cautious of thin ice on the lake.",
+    "cn": "当心湖面上的薄冰。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-387",
+    "p": "be characteristic of",
+    "m": "是...的特征/特有的",
+    "en": "This layout design is characteristic of his style.",
+    "cn": "这种布局设计是其风格的特征。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-388",
+    "p": "be confident of",
+    "m": "对...有信心",
+    "en": "She is confident of winning the race.",
+    "cn": "她有信心赢得这场比赛。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-389",
+    "p": "be conscious of",
+    "m": "察觉到;有意识",
+    "en": "He became conscious of someone standing behind.",
+    "cn": "他察觉到有人站在身后。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-390",
+    "p": "be critical of",
+    "m": "对...吹毛求疵/挑剔",
+    "en": "The reviewer was critical of the plot.",
+    "cn": "那位评论家对情节挑三拣四。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-391",
+    "p": "be fond of",
+    "m": "喜欢;爱好",
+    "en": "The girl is fond of graphic arts.",
+    "cn": "这个女孩喜欢图形艺术。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-392",
+    "p": "be guilty of",
+    "m": "有...罪的;内疚的",
+    "en": "The jury found him guilty of theft.",
+    "cn": "陪审团裁定他犯有偷窃罪。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-393",
+    "p": "be innocent of",
+    "m": "无罪的;清白的",
+    "en": "She is completely innocent of the crime.",
+    "cn": "她在这起罪案中完全是清白的。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-394",
+    "p": "be proud of",
+    "m": "为...自豪",
+    "en": "We are proud of your achievement.",
+    "cn": "我们为你取得的成就感到自豪。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-395",
+    "p": "be short of",
+    "m": "缺乏;短缺",
+    "en": "We are currently short of fuel.",
+    "cn": "我们目前缺乏燃料。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-396",
+    "p": "be sick of",
+    "m": "厌恶;对...厌烦",
+    "en": "I am sick of this cold wet weather.",
+    "cn": "我讨厌这种阴冷潮湿的天气。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-397",
+    "p": "be tired of",
+    "m": "厌倦;对...失去兴趣",
+    "en": "He was tired of doing the same tasks every day.",
+    "cn": "他厌倦了每天做同样的事情。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-398",
+    "p": "be worthy of",
+    "m": "值得",
+    "en": "His brave actions are worthy of praise.",
+    "cn": "他的勇敢行为值得赞扬。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-399",
+    "p": "be typical of",
+    "m": "是...的典型特征",
+    "en": "The hot day is typical of summer here.",
+    "cn": "这里炎热的天气是夏天的典型特征。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-400",
+    "p": "be ignorant of",
+    "m": "对...无知/不了解",
+    "en": "He remained ignorant of the rules.",
+    "cn": "他依然不了解那些规则流程。",
+    "tier": "extension",
+    "level": 1
+  },
+  {
+    "id": "cet4-phrase-401",
+    "p": "be anxious about",
+    "m": "为...焦虑/担心",
+    "en": "She is anxious about her test result.",
+    "cn": "她对自己的考试结果感到焦虑。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-402",
+    "p": "be curious about",
+    "m": "对...好奇",
+    "en": "Kids are always curious about nature.",
+    "cn": "孩子们总是对大自然充满好奇。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-403",
+    "p": "be enthusiastic about",
+    "m": "对...充满热情",
+    "en": "He is enthusiastic about sports.",
+    "cn": "他对体育运动充满热情。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-404",
+    "p": "be optimistic about",
+    "m": "对...乐观",
+    "en": "We are optimistic about the economic future.",
+    "cn": "我们对未来的经济前景持乐观态度。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-405",
+    "p": "be pessimistic about",
+    "m": "对...悲观",
+    "en": "Don't be pessimistic about your life.",
+    "cn": "别对你的生活感到悲观。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-406",
+    "p": "be serious about",
+    "m": "对...认真/严肃看待",
+    "en": "Are you serious about starting a firm?",
+    "cn": "你是认真想要开一家公司吗？",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-407",
+    "p": "be particular about",
+    "m": "对...挑剔/讲究",
+    "en": "She is particular about her food setup.",
+    "cn": "她对食物的搭配非常讲究。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-408",
+    "p": "be doubtful about",
+    "m": "对...怀疑/没有把握",
+    "en": "I am doubtful about his promise.",
+    "cn": "我对他的承诺表示怀疑。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-409",
+    "p": "be certain about",
+    "m": "对...确信/肯定",
+    "en": "Make sure you are certain about the time.",
+    "cn": "确保你对时间有绝对的把握。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-410",
+    "p": "be based on",
+    "m": "基于;根据",
+    "en": "The novel is based on historical facts.",
+    "cn": "这部小说是基于历史事实创作的。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-411",
+    "p": "be bound to",
+    "m": "注定要;一定会",
+    "en": "If you work hard, you are bound to pass it.",
+    "cn": "如果你努力，你注定能通过。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-412",
+    "p": "be eager to",
+    "m": "渴望做...",
+    "en": "The pupils are eager to learn arts.",
+    "cn": "学生们渴望学习图形艺术。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-413",
+    "p": "be fit for",
+    "m": "适合于;能胜任",
+    "en": "The water is not fit for drinking.",
+    "cn": "这些水不适合饮用。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-414",
+    "p": "be famous for",
+    "m": "以...著名;因...出名",
+    "en": "Yokohama is famous for its harbor view.",
+    "cn": "横滨以其港口美景而闻名。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-415",
+    "p": "be known as",
+    "m": "作为...而出名/被称为",
+    "en": "The scientist is known as a hero.",
+    "cn": "这位科学家被人们称为英雄。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-416",
+    "p": "be bad for",
+    "m": "对...有害/不利",
+    "en": "Reading in dim lights is bad for your eyes.",
+    "cn": "在微弱的光线下看书对眼睛有害。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-417",
+    "p": "be good for",
+    "m": "对...有益/适合",
+    "en": "Regular exercise is good for your health.",
+    "cn": "经常锻炼有益健康。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-418",
+    "p": "be beneficial to",
+    "m": "对...有益",
+    "en": "Green trees are highly beneficial to our air.",
+    "cn": "绿树对我们的空气质量大有裨益。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-419",
+    "p": "be convenient for",
+    "m": "对...方便",
+    "en": "The setup is convenient for transport.",
+    "cn": "这种设置对于交通运输非常方便。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-420",
+    "p": "be eager for",
+    "m": "渴望得到...",
+    "en": "The refugees are eager for food supplies.",
+    "cn": "难民们渴望得到食物供应。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-421",
+    "p": "be eligible for",
+    "m": "有资格享有/具备条件",
+    "en": "Only members are eligible for the discount.",
+    "cn": "只有会员才有资格享受折扣。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-422",
+    "p": "be grateful for",
+    "m": "因...而感激",
+    "en": "We are grateful for your timely aid.",
+    "cn": "我们对你及时的援助表示感激。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-423",
+    "p": "be late for",
+    "m": "迟到",
+    "en": "Hurry up, or you will be late for school.",
+    "cn": "快点，否则你上学要迟到了。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-424",
+    "p": "be qualified for",
+    "m": "胜任...;有...的资格",
+    "en": "He is qualified for the post.",
+    "cn": "他有资格胜任这个职位。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-425",
+    "p": "be ready for",
+    "m": "为...做好准备",
+    "en": "Are you ready for the challenge?",
+    "cn": "你为迎接挑战做好准备了吗？",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-426",
+    "p": "be responsible for",
+    "m": "对...负责;是...的原因",
+    "en": "The pilot is responsible for safety.",
+    "cn": "飞行员对飞行安全负责。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-427",
+    "p": "be sorry for",
+    "m": "因...而抱歉/难过",
+    "en": "I am sorry for breaking your tool.",
+    "cn": "很抱歉弄坏了你的工具。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-428",
+    "p": "be suitable for",
+    "m": "适合于",
+    "en": "This room is suitable for a small office.",
+    "cn": "这个房间适合作为一间小办公室。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-429",
+    "p": "be combined with",
+    "m": "与...结合",
+    "en": "Theory must be combined with practice.",
+    "cn": "理论必须与实践相结合。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-430",
+    "p": "be blessed with",
+    "m": "幸运地享有;具有",
+    "en": "The valley is blessed with a climate.",
+    "cn": "这个山谷幸运地拥有宜人的气候。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-431",
+    "p": "be crowded with",
+    "m": "挤满;聚集了",
+    "en": "The station was crowded with commuters.",
+    "cn": "火车站里挤满了通勤的人群。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-432",
+    "p": "be fed up with",
+    "m": "厌烦;受够了",
+    "en": "I am fed up with his endless complaints.",
+    "cn": "我受够了他没完没了的抱怨。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-433",
+    "p": "be decorated with",
+    "m": "用...装饰",
+    "en": "The festive hall was decorated with lights.",
+    "cn": "节日大厅用五彩斑斓的灯火装饰着。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-434",
+    "p": "be covered with",
+    "m": "被...覆盖",
+    "en": "The mountain top is covered with pure snow.",
+    "cn": "山顶被白雪覆盖着。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-435",
+    "p": "be disappointed with",
+    "m": "对(某事)失望",
+    "en": "He was disappointed with the results.",
+    "cn": "他对结果感到失望。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-436",
+    "p": "be disappointed at",
+    "m": "因(某行动)失望",
+    "en": "She was disappointed at failing the test.",
+    "cn": "她因没能通过考试而感到失望。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-437",
+    "p": "be disappointed in",
+    "m": "对(某人)感到失望",
+    "en": "The parents were deeply disappointed in their son.",
+    "cn": "父母对他们的儿子感到非常失望。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-438",
+    "p": "be distinct from",
+    "m": "与...截然不同",
+    "en": "His style is distinct from traditional layouts.",
+    "cn": "他的风格与传统的页面布局截然不同。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-439",
+    "p": "be different from",
+    "m": "与...不同",
+    "en": "Life in a town is different from life in a city.",
+    "cn": "城镇生活与城市生活不同。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-440",
+    "p": "be separate from",
+    "m": "与...分离/隔开",
+    "en": "The garage is separate from the main house.",
+    "cn": "车库与主屋是分离开的。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-441",
+    "p": "be far from",
+    "m": "远离;远非",
+    "en": "The layout scheme is still far from perfect.",
+    "cn": "这个布局方案远非完美。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-442",
+    "p": "be free from",
+    "m": "免受...的;没有...的",
+    "en": "The pure milk is entirely free from chemical pollution.",
+    "cn": "这种纯牛奶完全没有化学污染。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-443",
+    "p": "be absent from",
+    "m": "缺席",
+    "en": "He was absent from the meeting yesterday.",
+    "cn": "他昨天缺席了重要会议。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-444",
+    "p": "be safe from",
+    "m": "免受...的危险;安全的",
+    "en": "Here the cargo is safe from rain damage.",
+    "cn": "在这里，货物很安全，不会受到雨水淋坏。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-445",
+    "p": "be tired from",
+    "m": "因...而疲惫",
+    "en": "He was totally tired from the workout.",
+    "cn": "他因为剧烈的锻炼而感到筋疲力尽。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-446",
+    "p": "be exempt from",
+    "m": "免除...的;豁免的",
+    "en": "goods are exempt from import taxes.",
+    "cn": "这些商品被豁免了进口税。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-447",
+    "p": "be independent of",
+    "m": "独立于...;不受...支配",
+    "en": "He is now financially independent of his parents.",
+    "cn": "他在经济上已经独立，不再依赖父母。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-448",
+    "p": "be dependent on",
+    "m": "依赖于...;取决于",
+    "en": "All living things are dependent on water.",
+    "cn": "所有的生物都依赖于水。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-449",
+    "p": "be true of",
+    "m": "适用于...;对...也是真的",
+    "en": "The fact is true of all systems.",
+    "cn": "这个事实适用于所有的系统。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-450",
+    "p": "be short by",
+    "m": "短缺了...",
+    "en": "The cash count was short by ten dollars.",
+    "cn": "现金结算短缺了十美元。",
+    "tier": "extension",
+    "level": 2
+  },
+  {
+    "id": "cet4-phrase-451",
+    "p": "be popular with",
+    "m": "受...欢迎",
+    "en": "The new interface is popular with young designers.",
+    "cn": "这个新界面很受年轻设计师欢迎。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-452",
+    "p": "be patient under",
+    "m": "在...下忍耐/有耐心",
+    "en": "He was patient under tough conditions.",
+    "cn": "他在艰苦的条件下保持着极大的耐心。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-453",
+    "p": "be about to do",
+    "m": "正要做...;即将",
+    "en": "I was about to leave when the bell rang.",
+    "cn": "我正要离开时，门铃突然响了。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-454",
+    "p": "be determined to do",
+    "m": "下定决心做...",
+    "en": "He is determined to study graphic layouts.",
+    "cn": "他下定决心要学习图形布局设计。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-455",
+    "p": "be determined on doing sth",
+    "m": "决意做某事",
+    "en": "She was determined on taking the risk.",
+    "cn": "她决意要冒这次风险。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-456",
+    "p": "be certain to do",
+    "m": "必然会做...;一定会",
+    "en": "Hard work is certain to bring progress.",
+    "cn": "努力工作一定会带来进步。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-457",
+    "p": "be likely to do",
+    "m": "很有可能做...",
+    "en": "It is likely to rain; look at the dark cloud.",
+    "cn": "天气很有可能会下雨，看那片乌云。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-458",
+    "p": "be unlikely to do",
+    "m": "不太可能做...",
+    "en": "The trend is unlikely to change soon.",
+    "cn": "这种趋势短期内不太可能会改变。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-459",
+    "p": "be sure to do",
+    "m": "务必做...;一定会",
+    "en": "Be sure to double-check the files.",
+    "cn": "务必再次核对一下那些文件。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-460",
+    "p": "be ready to do",
+    "m": "乐意做...;准备好做...",
+    "en": "He is always ready to help friends.",
+    "cn": "他总是非常乐意帮助朋友。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-461",
+    "p": "be quick to do",
+    "m": "迅速做...;反应敏捷",
+    "en": "The cat was quick to catch the mouse.",
+    "cn": "那只猫迅速抓住了老鼠。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-462",
+    "p": "be slow to do",
+    "m": "迟缓做...;反应慢",
+    "en": "The firm was slow to adjust to trends.",
+    "cn": "这家公司在顺应趋势做出调整方面反应迟缓。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-463",
+    "p": "be prone to doing sth",
+    "m": "易于做某事；有……倾向",
+    "en": "Tired drivers are prone to making mistakes.",
+    "cn": "疲劳驾驶者容易犯错。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-464",
+    "p": "be careful to do",
+    "m": "小心做...;注意做...",
+    "en": "Be careful to check every detail.",
+    "cn": "注意检查每一个细节。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-465",
+    "p": "be fortunate to do",
+    "m": "幸运地做...",
+    "en": "I was fortunate to meet the master in Yokohama.",
+    "cn": "我很幸运能在横滨见到这位大师。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-466",
+    "p": "be proud to do",
+    "m": "自豪地做...",
+    "en": "We are proud to serve the research team.",
+    "cn": "我们为能给这个研究团队服务而感到自豪。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-467",
+    "p": "in terms of",
+    "m": "在...方面;从...角度",
+    "en": "In terms of natural resources, the country is rich.",
+    "cn": "在自然资源方面，这个国家很富有。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-468",
+    "p": "in contrast to / in contrast with",
+    "m": "与...相比;与...相反",
+    "en": "In contrast to her sister, she is very outgoing.",
+    "cn": "与她姐姐相比，她非常外向。",
+    "answers": [
+      "in contrast to",
+      "in contrast with"
+    ],
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-469",
+    "p": "in comparison with",
+    "m": "与...相比",
+    "en": "In comparison with him, I am still a beginner.",
+    "cn": "与他相比，我依然只是个初学者。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-470",
+    "p": "in addition to",
+    "m": "除...之外(还)",
+    "en": "In addition to milk, we need to buy some bread.",
+    "cn": "除了牛奶之外，我们还需要买点面包。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-471",
+    "p": "in favor of",
+    "m": "赞成;支持;有利于",
+    "en": "Most students are in favor of the new strategy.",
+    "cn": "大多数学生都赞成这项新策略。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-472",
+    "p": "in honor of",
+    "m": "为了纪念...;向...表示敬意",
+    "en": "A monument was built in honor of the hero.",
+    "cn": "建造了一座纪念碑以纪念这位英雄。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-473",
+    "p": "in light of",
+    "m": "鉴于;根据",
+    "en": "In light of recent facts, we must adjust the plan.",
+    "cn": "鉴于最近的事实，我们必须调整计划。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-474",
+    "p": "in need of",
+    "m": "需要...",
+    "en": "The old wooden school building is in need of repair.",
+    "cn": "这栋老旧的学校木质建筑需要修缮。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-475",
+    "p": "in place of",
+    "m": "代替;取代",
+    "en": "He attended the meeting in place of his boss.",
+    "cn": "他代替他的老板参加了会议。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-476",
+    "p": "in response to",
+    "m": "回应;对...做出反应",
+    "en": "The firm adjusted prices in response to market trends.",
+    "cn": "公司调整了价格以回应市场趋势。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-477",
+    "p": "in search of",
+    "m": "寻找;搜寻",
+    "en": "They traveled west in search of gold and wealth.",
+    "cn": "他们一路向西寻找黄金和财富。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-478",
+    "p": "in spite of",
+    "m": "不管;尽管",
+    "en": "They went out in spite of the heavy rain.",
+    "cn": "尽管下着大雨，他们还是出去了。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-479",
+    "p": "in the face of",
+    "m": "面对(危险/困难);不顾",
+    "en": "He remained calm even in the face of great danger.",
+    "cn": "即使面对巨大的危险，他依然保持冷静。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-480",
+    "p": "on behalf of",
+    "m": "代表...;为了...的利益",
+    "en": "On behalf of the whole team, I accept this award.",
+    "cn": "我代表全队接受这个奖项。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-481",
+    "p": "on the basis of",
+    "m": "根据...;在...的基础上",
+    "en": "We made decisions on the basis of data.",
+    "cn": "我们根据数据做出了决策。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-482",
+    "p": "as a result of",
+    "m": "由于...的结果",
+    "en": "The match was delayed as a result of heavy snow.",
+    "cn": "由于大雪，比赛推迟了。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-483",
+    "p": "at the mercy of",
+    "m": "受...支配;任凭...摆布",
+    "en": "The small boat was at the mercy of the sea.",
+    "cn": "小船任凭波涛汹涌的大海摆布。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-484",
+    "p": "at the risk of",
+    "m": "冒着...的风险",
+    "en": "He saved the drowning boy at the risk of his life.",
+    "cn": "他冒着生命危险救了那个溺水的男孩。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-485",
+    "p": "by means of",
+    "m": "借助...;依靠...手段",
+    "en": "He lifted the box by means of a rope.",
+    "cn": "他借助绳子把箱子吊了起来。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-486",
+    "p": "for the sake of",
+    "m": "为了...的利益/缘故",
+    "en": "Please stop arguing for the sake of the kids.",
+    "cn": "为了孩子，请别吵了。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-487",
+    "p": "with regard to",
+    "m": "关于;至于",
+    "en": "I have some questions with regard to that contract.",
+    "cn": "关于那份合同，我有一些问题。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-488",
+    "p": "with a view to",
+    "m": "目的是;为了...",
+    "en": "He learned coding with a view to starting a tech firm.",
+    "cn": "他学习编程是为了开一家科技公司。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-489",
+    "p": "by virtue of",
+    "m": "凭借;由于",
+    "en": "He won the speech match by virtue of his patience.",
+    "cn": "他凭借着耐心赢得了演讲比赛。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-490",
+    "p": "at the expense of",
+    "m": "以...为代价;牺牲...",
+    "en": "He built up the firm at the expense of his health.",
+    "cn": "他以牺牲健康为代价建立起了这家公司。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-491",
+    "p": "in case of",
+    "m": "万一;如果发生",
+    "en": "In case of fire, use the stairs instead of the elevator.",
+    "cn": "万一发生火灾，走楼梯，不要坐电梯。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-492",
+    "p": "in accordance with",
+    "m": "根据;与...一致",
+    "en": "We should act in accordance with the safety rules.",
+    "cn": "我们应当根据安全规则行事。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-493",
+    "p": "in proportion to",
+    "m": "与...成比例",
+    "en": "Your salary will rise in proportion to your profit contribution.",
+    "cn": "你的薪资会与你的利润贡献成比例增长。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-494",
+    "p": "in collision with",
+    "m": "与...相撞/冲突",
+    "en": "The bus was in collision with a truck.",
+    "cn": "那辆公交车与一辆卡车相撞了。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-495",
+    "p": "in common with",
+    "m": "与...有共同之处",
+    "en": "In common with many youth, he loves digital games.",
+    "cn": "和许多年轻人一样，他喜欢电子游戏。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-496",
+    "p": "in conformity with",
+    "m": "符合;遵照",
+    "en": "The layout must be in conformity with official rules.",
+    "cn": "页面布局必须符合官方规则。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-497",
+    "p": "apart from",
+    "m": "除...之外",
+    "en": "Apart from a few typos, the essay is nearly perfect.",
+    "cn": "除几处拼写错误外，这篇文章近乎完美。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-498",
+    "p": "regardless of",
+    "m": "不管;不顾",
+    "en": "The club welcomes everyone regardless of age or gender.",
+    "cn": "俱乐部欢迎任何人，不管年龄或性别。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-499",
+    "p": "according to",
+    "m": "根据...;依照",
+    "en": "According to the map, the station is around the corner.",
+    "cn": "根据地图，车站就在拐角处。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-500",
+    "p": "due to",
+    "m": "由于;因为",
+    "en": "The delay was due to traffic jam.",
+    "cn": "这次延误是由于交通堵塞引起的。",
+    "tier": "extension",
+    "level": 3
+  },
+  {
+    "id": "cet4-phrase-501",
+    "p": "thanks to",
+    "m": "幸亏;多亏",
+    "en": "Thanks to your timely aid, we won.",
+    "cn": "多亏你及时的援助，我们赢了。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-502",
+    "p": "as for",
+    "m": "至于;关于",
+    "en": "As for me, I prefer the first option.",
+    "cn": "至于我，我更喜欢第一个方案。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-503",
+    "p": "instead of",
+    "m": "代替;而不是",
+    "en": "Let's use real tea instead of instant coffee.",
+    "cn": "让我们用真正的茶来代替速溶咖啡吧。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-504",
+    "p": "because of",
+    "m": "因为;由于",
+    "en": "We stayed at home because of the cold, rainy weather.",
+    "cn": "因为天气阴冷多雨，我们待在家里。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-505",
+    "p": "owing to",
+    "m": "由于;因为",
+    "en": "Owing to economic issues, the store closed.",
+    "cn": "由于经济问题，那家商店关闭了。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-506",
+    "p": "up to",
+    "m": "多达;直到;取决于",
+    "en": "The hall can hold up to one thousand people.",
+    "cn": "这个大厅最多可容纳一千人。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-507",
+    "p": "ahead of",
+    "m": "在...前面;提前",
+    "en": "He finished the work ahead of schedule.",
+    "cn": "他提前完成了工作。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-508",
+    "p": "except for",
+    "m": "除...之外(强调美中不足)",
+    "en": "The room was empty except for an old wooden desk.",
+    "cn": "房间里除了一张老旧的木桌外空无一物。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-509",
+    "p": "but for",
+    "m": "要不是;如果没有",
+    "en": "But for your help, I would have failed the exam.",
+    "cn": "要不是你的帮助，我这次考试就挂了。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-510",
+    "p": "along with",
+    "m": "与...一起",
+    "en": "He sent the gift along with a letter.",
+    "cn": "他把礼物连同一封热情的信一起寄了过去。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-511",
+    "p": "contrary to",
+    "m": "与...相反",
+    "en": "Contrary to expectations, the strategy was successful.",
+    "cn": "与预期相反，这个策略取得了成功。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-512",
+    "p": "all of a sudden",
+    "m": "突然;出乎意料",
+    "en": "All of a sudden, the storm started.",
+    "cn": "突然之间，暴风雨倾盆而下。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-513",
+    "p": "by accident",
+    "m": "偶然地",
+    "en": "I found the historical document by accident.",
+    "cn": "我偶然发现了这份历史文献。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-514",
+    "p": "by chance",
+    "m": "偶然;碰巧",
+    "en": "We met each other by chance in Yokohama yesterday.",
+    "cn": "我们昨天在横滨偶然相遇了。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-515",
+    "p": "on purpose",
+    "m": "故意地",
+    "en": "He broke the vase on purpose.",
+    "cn": "他故意打碎了花瓶。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-516",
+    "p": "in detail",
+    "m": "详细地",
+    "en": "Please explain the procedure in detail.",
+    "cn": "请详细说明这个流程。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-517",
+    "p": "in reality",
+    "m": "实际上;现实中",
+    "en": "In reality, the plan is hard to execute.",
+    "cn": "实际上，这个计划很难执行。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-518",
+    "p": "in general",
+    "m": "总的来说;一般而言",
+    "en": "In general, the plan is reasonable.",
+    "cn": "总的来说，这个计划是合理的。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-519",
+    "p": "in particular",
+    "m": "尤其;特别",
+    "en": "I love sports, football in particular.",
+    "cn": "我热爱体育运动，尤其是足球。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-520",
+    "p": "in brief",
+    "m": "简言之;总之",
+    "en": "In brief, the whole research project failed completely.",
+    "cn": "简言之，整个研究项目彻底失败了。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-521",
+    "p": "in a word",
+    "m": "总而言之;一句话",
+    "en": "In a word, he is a trustworthy professional partner.",
+    "cn": "总之，他是一个值得信赖的专业合作伙伴。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-522",
+    "p": "all in all",
+    "m": "总而言之",
+    "en": "All in all, it was a great success.",
+    "cn": "总而言之，非常成功。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-523",
+    "p": "on the whole",
+    "m": "总的来说",
+    "en": "On the whole, the market trend is good.",
+    "cn": "总的来说，市场趋势是好的。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-524",
+    "p": "on the contrary",
+    "m": "相反地",
+    "en": "It is not cheap; on the contrary, it costs a lot.",
+    "cn": "它一点也不便宜；相反，它成本很高。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-525",
+    "p": "in the long run",
+    "m": "从长远来看",
+    "en": "The scheme will pay off in the long run.",
+    "cn": "这个方案从长远来看是合算的。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-526",
+    "p": "in vain",
+    "m": "徒劳;白费力气",
+    "en": "All their efforts were in vain.",
+    "cn": "他们所有的努力都白费了。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-527",
+    "p": "on average",
+    "m": "平均而言",
+    "en": "On average, the team solves ten errors a day.",
+    "cn": "平均而言，团队每天解决十个错误。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-528",
+    "p": "by all means",
+    "m": "务必;想方设法;当然可以",
+    "en": "Finish the task by all means.",
+    "cn": "务必想办法完成这项任务。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-529",
+    "p": "by no means",
+    "m": "绝不;一点也不",
+    "en": "It is by no means easy to learn coding.",
+    "cn": "学习编程绝非易事。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-530",
+    "p": "by way of",
+    "m": "经由;通过...方式",
+    "en": "We returned home by way of the central park.",
+    "cn": "我们经由中央公园回了家。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-531",
+    "p": "up to now",
+    "m": "到目前为止",
+    "en": "Up to now, everything has gone well.",
+    "cn": "到目前为止，一切进展顺利。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-532",
+    "p": "in advance",
+    "m": "提前;预先",
+    "en": "You should book the room in advance.",
+    "cn": "你应该提前预订房间。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-533",
+    "p": "in a hurry",
+    "m": "匆忙地;急于",
+    "en": "He left the office room in a hurry yesterday.",
+    "cn": "他昨天匆匆忙忙地离开了办公室。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-534",
+    "p": "in case",
+    "m": "万一;以防万一",
+    "en": "Take an umbrella with you in case it rains.",
+    "cn": "带把伞吧，以防下雨。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-535",
+    "p": "on time",
+    "m": "准时",
+    "en": "Please arrive for the test on time.",
+    "cn": "请准时参加考试。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-536",
+    "p": "out of breath",
+    "m": "气喘吁吁",
+    "en": "He was out of breath after the run.",
+    "cn": "在剧烈奔跑之后，他喘不上气来。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-537",
+    "p": "without question",
+    "m": "毫无疑问",
+    "en": "Without question, his research was successful.",
+    "cn": "毫无疑问，他的研究取得了成功。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-538",
+    "p": "out of the question",
+    "m": "不可能的;办不到的",
+    "en": "Traveling to Europe now is out of the question.",
+    "cn": "现在去欧洲旅游是不可能的。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-539",
+    "p": "face to face",
+    "m": "面对面地",
+    "en": "They prefer to talk face to face rather than via chat.",
+    "cn": "比起聊天软件，他们更喜欢面对面交谈。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-540",
+    "p": "first of all",
+    "m": "首先;第一",
+    "en": "First of all, load the data files.",
+    "cn": "首先，加载数据文件。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-541",
+    "p": "had better do sth",
+    "m": "最好做某事",
+    "en": "You had better leave now.",
+    "cn": "你最好现在就离开。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-542",
+    "p": "sooner or later",
+    "m": "迟早",
+    "en": "Sooner or later, you will find the hidden system error.",
+    "cn": "你迟早会发现隐藏的系统错误。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-543",
+    "p": "as long as",
+    "m": "只要...",
+    "en": "You can go out as long as you finish the task.",
+    "cn": "只要你完成任务，你就可以出去。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-544",
+    "p": "as if / as though",
+    "m": "好像；仿佛",
+    "en": "He talks as if he were a professional.",
+    "cn": "他说起话来仿佛自己是专业人士。",
+    "answers": [
+      "as if",
+      "as though"
+    ],
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-545",
+    "p": "now that",
+    "m": "既然;由于",
+    "en": "Now that you are here, help us fix the code.",
+    "cn": "既然你来了，就帮我们改改代码吧。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-546",
+    "p": "so as to do sth",
+    "m": "以便；为了做某事",
+    "en": "He woke up early so as to catch the bus.",
+    "cn": "他早起以便赶上公共汽车。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-547",
+    "p": "can't help doing sth",
+    "m": "忍不住做某事",
+    "en": "I can't help laughing at the funny video.",
+    "cn": "看到那个搞笑视频我忍不住笑了起来。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-548",
+    "p": "no matter what",
+    "m": "无论如何;不管发生什么",
+    "en": "No matter what happens, keep the system safe.",
+    "cn": "无论发生什么，都要确保系统安全。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-549",
+    "p": "on the other hand",
+    "m": "另一方面",
+    "en": "On the other hand, the cost is extremely high.",
+    "cn": "另一方面，其成本极其高昂。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-550",
+    "p": "as well as",
+    "m": "也;又;不仅...而且",
+    "en": "He is kind as well as clever.",
+    "cn": "他既善良又聪明。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-551",
+    "p": "not only...but also",
+    "m": "不但...而且",
+    "en": "He speaks not only English but also French.",
+    "cn": "他不仅会说英语还会说法语。",
+    "answers": [
+      "not only ... but also",
+      "not only...but also"
+    ],
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-552",
+    "p": "either...or",
+    "m": "或者...或者;要么...要么",
+    "en": "Either you or your teammate must sign the file.",
+    "cn": "要么你，要么你的队友必须在文件上签字。",
+    "answers": [
+      "either ... or",
+      "either...or"
+    ],
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-553",
+    "p": "neither...nor",
+    "m": "既不...也不",
+    "en": "Neither tea nor coffee is fit for his stomach.",
+    "cn": "茶和咖啡都不适合他的胃。",
+    "answers": [
+      "neither ... nor",
+      "neither...nor"
+    ],
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-554",
+    "p": "in debt",
+    "m": "欠债;负债",
+    "en": "The trader was heavily in debt.",
+    "cn": "那个交易员背负了沉重的债务。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-555",
+    "p": "at present",
+    "m": "目前;现在",
+    "en": "At present, the new product is being tested.",
+    "cn": "目前，这款新产品正在接受测试。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-556",
+    "p": "for instance",
+    "m": "例如",
+    "en": "Many cities, for instance, Yokohama, have harbors.",
+    "cn": "许多城市，例如横滨，都有港口。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-557",
+    "p": "by the way",
+    "m": "顺便说一下",
+    "en": "By the way, have you seen Jack today?",
+    "cn": "顺便问一下，你今天见过杰克吗？",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-558",
+    "p": "for example",
+    "m": "例如",
+    "en": "Some animals, for example bears, sleep through much of the winter.",
+    "cn": "有些动物，例如熊，会在冬季长时间睡眠。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-559",
+    "p": "in a sense",
+    "m": "在某种意义上",
+    "en": "In a sense, his decision was right.",
+    "cn": "从某种意义上说，他的决定是正确的。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-560",
+    "p": "in office",
+    "m": "执政;在职",
+    "en": "The president has been in office for years.",
+    "cn": "这位总统已经执政多年了。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-561",
+    "p": "under control",
+    "m": "受控制;在控制之中",
+    "en": "Don't panic; the fire is under control.",
+    "cn": "别慌，火势已经得到控制。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-562",
+    "p": "out of control",
+    "m": "失去控制",
+    "en": "The situation was completely out of control.",
+    "cn": "局势完全失去了控制。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-563",
+    "p": "on duty",
+    "m": "值班;当班",
+    "en": "Who is the guard on duty tonight?",
+    "cn": "今晚值班的警卫是谁？",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-564",
+    "p": "off duty",
+    "m": "下班",
+    "en": "After going off duty, he went straight home.",
+    "cn": "下班后，他直接回家了。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-565",
+    "p": "in public",
+    "m": "公开地;当众",
+    "en": "It is rude to shout at others in public.",
+    "cn": "当众冲别人大喊大叫是粗鲁的。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-566",
+    "p": "in private",
+    "m": "私下地;秘密地",
+    "en": "The two managers discussed the matter in private.",
+    "cn": "两位经理私下讨论了这件事。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-567",
+    "p": "at a loss",
+    "m": "困惑;不知所措",
+    "en": "I was at a loss when the database crashed suddenly.",
+    "cn": "数据库突然崩溃时我不知所措。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-568",
+    "p": "at peace",
+    "m": "处于和平中;安详",
+    "en": "The country has been at peace for decades.",
+    "cn": "这个国家几十年来一直处于和平之中。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-569",
+    "p": "in shape",
+    "m": "健康;处于良好状态",
+    "en": "Regular exercise keeps the athlete in shape.",
+    "cn": "规律锻炼使这名运动员保持良好状态。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-570",
+    "p": "out of shape",
+    "m": "变形;身体状况不佳",
+    "en": "The wooden box was completely out of shape.",
+    "cn": "那个木箱已经完全变形了。",
+    "tier": "candidate",
+    "level": 0
+  },
+  {
+    "id": "cet4-phrase-571",
+    "p": "above all",
+    "m": "最重要的是;尤其是",
+    "en": "Above all, keep the logic accurate.",
+    "cn": "最重要的是，要保持逻辑的精确。",
+    "tier": "candidate",
+    "level": 0
+  }
+]

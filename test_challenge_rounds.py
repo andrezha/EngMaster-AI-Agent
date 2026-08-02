@@ -427,7 +427,7 @@ class ChallengeRoundStoreTests(unittest.TestCase):
         self.assertEqual(record["last_round"], 5)
         self.assertEqual(
             store.wrong_round_text("regular", item),
-            "错题轮次：累计2轮｜最近第5轮",
+            "错词轮次：累计2轮｜最近第5轮",
         )
         self.assertIn(
             "历史错词", store.wrong_round_text("regular", {"word": "old"}))

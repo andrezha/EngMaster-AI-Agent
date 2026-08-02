@@ -1,0 +1,272 @@
+[
+  {
+    "id": "cet4:academic",
+    "word": "academic",
+    "pronunciation": ",ækə'dɛmɪk",
+    "content": "[,ækə'dɛmɪk] 学院的； 学术的； 纯理论的， 不切实际的",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:campus",
+    "word": "campus",
+    "pronunciation": "'kæmpəs",
+    "content": "['kæmpəs] 校园， 学校场地",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:assignment",
+    "word": "assignment",
+    "pronunciation": "ə'saɪnmənt",
+    "content": "[ə'saɪnmənt] 任务， 指定的作业； 分配， 指派",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:deadline",
+    "word": "deadline",
+    "pronunciation": "ˈdedlaɪn",
+    "content": "[ˈdedlaɪn] 最后期限",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:graduate",
+    "word": "graduate",
+    "pronunciation": "ˈɡrædʒuˌet",
+    "content": "[ˈɡrædʒuˌet] 研究生的；毕业；毕业生；研究生",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:employment",
+    "word": "employment",
+    "pronunciation": "ɪm'plɔɪmənt",
+    "content": "[ɪm'plɔɪmənt] 工作； 雇用； 使用",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:interview",
+    "word": "interview",
+    "pronunciation": "'ɪntɚvju",
+    "content": "['ɪntɚvju] 接见， 会见； 面谈， 面试； 采访",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:technology",
+    "word": "technology",
+    "pronunciation": "tɛkˈnɑlədʒɪ",
+    "content": "[tɛkˈnɑlədʒɪ] 工艺学； 工艺， 技术",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:environment",
+    "word": "environment",
+    "pronunciation": "ɪn'vaɪrənmənt",
+    "content": "[ɪn'vaɪrənmənt] 环境， 外界； 围绕",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:consume",
+    "word": "consume",
+    "pronunciation": "kənˈsum",
+    "content": "[kənˈsum] 消费， 吃完， 喝光； 毁灭； 使着迷， 充满",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:resource",
+    "word": "resource",
+    "pronunciation": "'risɔrs",
+    "content": "['risɔrs] 资源； 财力； 应付办法， 谋略",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:efficient",
+    "word": "efficient",
+    "pronunciation": "ɪ'fɪʃnt",
+    "content": "[ɪ'fɪʃnt] 效率高的； 有能力的",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:benefit",
+    "word": "benefit",
+    "pronunciation": "'bɛnɪfɪt",
+    "content": "['bɛnɪfɪt] 有益于； 得益；利益，恩惠；救济金，保险金，津贴",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:challenge",
+    "word": "challenge",
+    "pronunciation": "'tʃælɪndʒ",
+    "content": "['tʃælɪndʒ] 挑战；邀请比赛；艰巨的任务；怀疑，质问；反对， 公然反抗； 向…挑战； 对…质疑",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:communicate",
+    "word": "communicate",
+    "pronunciation": "kə'mjunɪket",
+    "content": "[kə'mjunɪket] 通讯； 交际， 交流； 连接， 相通； 传达， 传播； 传染",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:community",
+    "word": "community",
+    "pronunciation": "kəˈmjunətɪ",
+    "content": "[kəˈmjunətɪ] 社区， 社会， 公社； 团体， 界； 群落",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:culture",
+    "word": "culture",
+    "pronunciation": "'kʌltʃɚ",
+    "content": "['kʌltʃɚ] 文化， 文明； 教养； 培养； 培养菌",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:economy",
+    "word": "economy",
+    "pronunciation": "ɪˈkɑnəmɪ",
+    "content": "[ɪˈkɑnəmɪ] 经济； 节约， 节省",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:evidence",
+    "word": "evidence",
+    "pronunciation": "'ɛvɪdəns",
+    "content": "['ɛvɪdəns] 根据， 证据； 证人",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:factor",
+    "word": "factor",
+    "pronunciation": "'fæktɚ",
+    "content": "['fæktɚ] 因素； 因子； 系数",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:individual",
+    "word": "individual",
+    "pronunciation": "ˌɪndəˈvɪdʒʊəl",
+    "content": "[ˌɪndəˈvɪdʒʊəl] 个别的；独特的；个人， 个体",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:maintain",
+    "word": "maintain",
+    "pronunciation": "men'ten",
+    "content": "[men'ten] 维持； 维修， 保养； 主张； 赡养",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:opportunity",
+    "word": "opportunity",
+    "pronunciation": "ˌɑpɚˈtunətɪ",
+    "content": "[ˌɑpɚˈtunətɪ] 机会， 良机",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:participate",
+    "word": "participate",
+    "pronunciation": "pɑr'tɪsə'pet",
+    "content": "[pɑr'tɪsə'pet] 参与， 参加； 分享",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:professional",
+    "word": "professional",
+    "pronunciation": "prə'fɛʃənl",
+    "content": "[prə'fɛʃənl] 职业的，专业的，专门的；自由职业者， 专业人员",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:respond",
+    "word": "respond",
+    "pronunciation": "rɪ'spɑnd",
+    "content": "[rɪ'spɑnd] 回答， 答复； 作出反应， 响应",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:significant",
+    "word": "significant",
+    "pronunciation": "sɪɡ'nɪfɪkənt",
+    "content": "[sɪɡ'nɪfɪkənt] 相当数量的； 重要的， 意义重大的， 意味深长的",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:strategy",
+    "word": "strategy",
+    "pronunciation": "'strætədʒi",
+    "content": "['strætədʒi] 战略， 策略",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:transport",
+    "word": "transport",
+    "pronunciation": "'trænspɔrt",
+    "content": "['trænspɔrt] 运输；运输， 运输工具",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet4:volunteer",
+    "word": "volunteer",
+    "pronunciation": ",vɑlən'tɪr",
+    "content": "[,vɑlən'tɪr] 自愿提供； 自愿， 志愿；志愿者；志愿兵",
+    "edition": "cet4",
+    "source": "CET4_T.json",
+    "data_status": "development_sample"
+  }
+]

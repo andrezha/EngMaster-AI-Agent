@@ -1,41 +1,26 @@
 import argparse
 import base64
+import datetime
 import hashlib
+import json
 import os
 from pathlib import Path
 
 from cryptography.hazmat.primitives.serialization import load_pem_private_key
 
 
-PRODUCT_ID = "engmaster-ai-agent"
+PRODUCT_ID = "engmaster-vocabulary-platform"
+FORMAL_EDITION_IDS = ("zhongkao", "gaokao", "cet4", "cet6", "kaoyan")
+RELEASED_EDITION_IDS = ("gaokao",)
 DEFAULT_PRIVATE_KEY_PATH = os.getenv("LICENSE_PRIVATE_KEY_PATH", "").strip()
 
 
 def get_machine_id():
-    import platform
-    import sys
-    import uuid
+    # Keep local test generation identical to the customer application's
+    # hardware-first EMPC3 identifier implementation.
+    from main import get_machine_id as get_application_machine_id
 
-    material = ""
-    if sys.platform == "win32":
-        try:
-            import winreg
-
-            with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, r"SOFTWARE\Microsoft\Cryptography") as key:
-                machine_guid, _ = winreg.QueryValueEx(key, "MachineGuid")
-                material = "windows-machine-guid-v2|" + str(machine_guid).strip().lower()
-        except Exception:
-            pass
-
-    if not material:
-        parts = [platform.node(), platform.system(), platform.machine(), str(uuid.getnode())]
-        material = "fallback-machine-v2|" + "|".join(
-            str(part).strip().lower() for part in parts if str(part).strip()
-        )
-
-    digest = hashlib.sha256((f"EngMaster-AI-Agent|{material}").encode("utf-8")).hexdigest().upper()
-    compact = digest[:32]
-    return "-".join(compact[i:i + 8] for i in range(0, len(compact), 8))
+    return get_application_machine_id()
 
 
 def _load_private_numbers(private_key_path: Path):
@@ -53,6 +38,48 @@ def make_em2_code(machine_id: str, private_key_path: Path) -> str:
     return "EM2-" + base64.urlsafe_b64encode(sig_bytes).decode("ascii").rstrip("=")
 
 
+def make_em3_code(machine_id: str, entitlements, private_key_path: Path) -> str:
+    machine_id = machine_id.strip().upper().replace(" ", "")
+    requested = {
+        item.strip().lower()
+        for value in entitlements
+        for item in str(value).split(",")
+        if item.strip()
+    }
+    unknown = requested - set(FORMAL_EDITION_IDS)
+    if unknown:
+        raise ValueError(f"未知版本：{', '.join(sorted(unknown))}")
+    unavailable = requested - set(RELEASED_EDITION_IDS)
+    if unavailable:
+        raise ValueError(
+            "当前 V1.0 只开放高考英语正式授权；以下版本仍在开发中："
+            + ", ".join(sorted(unavailable)))
+    ordered = [item for item in FORMAL_EDITION_IDS if item in requested]
+    if not ordered:
+        raise ValueError("至少需要一个版本权限。")
+    payload = {
+        "product": PRODUCT_ID,
+        "machine_id": machine_id,
+        "version": 3,
+        "entitlements": ordered,
+        "issued_at": datetime.datetime.now(
+            datetime.timezone.utc).isoformat(timespec="seconds"),
+    }
+    payload_bytes = json.dumps(
+        payload, ensure_ascii=False, sort_keys=True,
+        separators=(",", ":")).encode("utf-8")
+    private_numbers = _load_private_numbers(private_key_path)
+    digest_int = int.from_bytes(hashlib.sha256(payload_bytes).digest(), "big")
+    sig_int = pow(digest_int, private_numbers.d, private_numbers.public_numbers.n)
+    sig_bytes = sig_int.to_bytes(
+        (private_numbers.public_numbers.n.bit_length() + 7) // 8, "big")
+    return f"EM3-{_b64encode(payload_bytes)}.{_b64encode(sig_bytes)}"
+
+
+def _b64encode(raw: bytes) -> str:
+    return base64.urlsafe_b64encode(raw).decode("ascii").rstrip("=")
+
+
 def private_key_public_numbers(private_key_path: Path):
     private_numbers = _load_private_numbers(private_key_path)
     public_numbers = private_numbers.public_numbers
@@ -66,6 +93,17 @@ def parse_args():
         "--private-key",
         default=DEFAULT_PRIVATE_KEY_PATH,
         help="Path to private.pem. You can also set LICENSE_PRIVATE_KEY_PATH.",
+    )
+    parser.add_argument(
+        "--editions",
+        nargs="+",
+        default=["gaokao"],
+        help="Cumulative formal permissions: zhongkao gaokao cet4 cet6 kaoyan.",
+    )
+    parser.add_argument(
+        "--legacy-em2",
+        action="store_true",
+        help="Generate the old gaokao-only EM2 code (compatibility/testing only).",
     )
     parser.add_argument(
         "--local",
@@ -97,7 +135,11 @@ def main():
         raise SystemExit("请传入客户机器码；如需给本机测试，请使用 --local。")
 
     print("machine_id=", machine_id.strip().upper())
-    print("activation_code=", make_em2_code(machine_id, private_key_path))
+    if args.legacy_em2:
+        code = make_em2_code(machine_id, private_key_path)
+    else:
+        code = make_em3_code(machine_id, args.editions, private_key_path)
+    print("activation_code=", code)
 
 
 if __name__ == "__main__":

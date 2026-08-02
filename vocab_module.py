@@ -18,6 +18,7 @@ from challenge_rounds import (
     round_summary_text,
 )
 from challenge_history_dialog import MODE_NAMES, show_round_history
+from ui_styles import CLICKABLE_LABEL_STYLE, PRIMARY_BUTTON_STYLE, tab_button_style
 
 
 def _normalize_answer_text(value):
@@ -340,6 +341,11 @@ class VocabManager(QObject):  # 继承自 QObject
     def __init__(self, main_window_instance, initial_vocabulary=None, initial_mistake_vocabulary=None):
         self.main_window = main_window_instance  # Store the main window instance
         super().__init__(main_window_instance)  # 调用父类 QObject 的构造函数，并设置父对
+        self.edition = getattr(main_window_instance, "edition", None)
+        self.regular_challenge_title = (
+            self.edition.challenge_title if self.edition is not None
+            else "高考3800词闯关"
+        )
 
         self.initial_vocabulary = initial_vocabulary
         self.initial_mistake_vocabulary = initial_mistake_vocabulary
@@ -400,11 +406,11 @@ class VocabManager(QObject):  # 继承自 QObject
         self.btn_challenge_regular = self.vocab_page_widget.findChild(
             QtWidgets.QPushButton, "btn_challenge_regular")  # 查找现有按钮
         if not self.btn_challenge_regular:  # 如果没找到，则创建
-            self.btn_challenge_regular = QtWidgets.QPushButton("高考3800词闯关")
+            self.btn_challenge_regular = QtWidgets.QPushButton(self.regular_challenge_title)
             self.btn_challenge_regular.setObjectName("btn_challenge_regular")
             self.btn_challenge_regular.setCheckable(True)  # 使按钮可选中
             print("DEBUG: btn_challenge_regular created dynamically.")
-        self.btn_challenge_regular.setText("高考3800词闯关")
+        self.btn_challenge_regular.setText(self.regular_challenge_title)
 
         self.btn_challenge_mistake = self.vocab_page_widget.findChild(
             QtWidgets.QPushButton, "btn_challenge_mistake")  # 查找现有按钮
@@ -538,24 +544,30 @@ class VocabManager(QObject):  # 继承自 QObject
         # self.main_layout.addLayout(timer_row_layout) # 注释掉：不再显示倒计时
         self.main_layout.addSpacing(15)  # 与窗口顶部保持约15px边距
 
-        # 新增：闯关模式选择按钮和错词数量显示
+        # 闯关模式按钮：与短语/不规则动词闯关使用同一规格。
         challenge_mode_layout = QtWidgets.QHBoxLayout()
-        challenge_mode_layout.addStretch(1)  # 将按钮推到中间
-        challenge_mode_layout.addWidget(self.btn_challenge_regular)
-        challenge_mode_layout.addSpacing(10)  # 按钮之间间距
-        challenge_mode_layout.addWidget(self.btn_challenge_mistake)
-        challenge_mode_layout.addSpacing(10)  # NEW: 按钮之间间距
-        challenge_mode_layout.addWidget(
-            self.btn_challenge_self_register)  # NEW: 自主录入闯关按钮
-        challenge_mode_layout.addSpacing(20)  # 按钮与标签之间间距
-        challenge_mode_layout.addWidget(
-            self.lbl_mistake_count)  # Add mistake count label
-        challenge_mode_layout.addSpacing(10)  # NEW: 标签之间间距
-        challenge_mode_layout.addWidget(
-            self.lbl_self_register_count)  # NEW: 自主录入单词数标签
-        challenge_mode_layout.addStretch(1)  # 将按钮推到中间
+        challenge_mode_layout.setContentsMargins(40, 0, 40, 0)
+        challenge_mode_layout.setSpacing(12)
+        for button in (
+            self.btn_challenge_regular,
+            self.btn_challenge_mistake,
+            self.btn_challenge_self_register,
+        ):
+            button.setCheckable(True)
+            button.setMinimumWidth(140)
+            button.setFixedHeight(36)
+            challenge_mode_layout.addWidget(button)
+        challenge_mode_layout.addStretch()
         self.main_layout.addLayout(challenge_mode_layout)
-        self.main_layout.addSpacing(10)
+
+        shortcut_layout = QtWidgets.QHBoxLayout()
+        shortcut_layout.setContentsMargins(40, 10, 40, 0)
+        shortcut_layout.setSpacing(10)
+        shortcut_layout.addWidget(self.lbl_mistake_count)
+        shortcut_layout.addWidget(self.lbl_self_register_count)
+        shortcut_layout.addStretch()
+        self.main_layout.addLayout(shortcut_layout)
+        self.main_layout.addSpacing(12)
         self.main_layout.addWidget(self.lbl_round_progress)
         self.main_layout.addSpacing(10)  # 模式选择与单词显示区之间间距
 
@@ -635,7 +647,7 @@ class VocabManager(QObject):  # 继承自 QObject
 					font-size: 18px;
 					padding: 0px 16px;
 					color: #333333;
-					font-family: "Arial", "Microsoft YaHei"; /* Add font family for consistency */
+					font-family: "Microsoft YaHei UI", "Microsoft YaHei";
 				}
 				QLineEdit:focus {
 					border: 1px solid #2196F3;
@@ -647,22 +659,7 @@ class VocabManager(QObject):  # 继承自 QObject
         # 确认按钮 - 42px 高度
         if self.btn_confirm:  # 确保按钮宽度和居中由 UI 文件控制
             self.btn_confirm.setFixedHeight(42)
-            self.btn_confirm.setStyleSheet("""
-				QPushButton {
-					background-color: #2196F3;
-					color: white;
-					border: none;
-					border-radius: 6px;
-					font-size: 16px;
-					font-weight: bold;
-				}
-				QPushButton:hover {
-					background-color: #1976D2;
-				}
-				QPushButton:pressed {
-					background-color: #1565C0;
-				}
-			""")
+            self.btn_confirm.setStyleSheet(PRIMARY_BUTTON_STYLE)
 
         # 显示区域 - 透明背景，无边框，固定宽度防止滚动条
         if self.v_disp:  # 确保显示区域宽度和居中由 UI 文件控制
@@ -684,7 +681,7 @@ class VocabManager(QObject):  # 继承自 QObject
 				QTextEdit {
 					background-color: transparent;
 					border: none;
-					font-family: "Arial", "Microsoft YaHei"; /* Add font family for consistency */
+					font-family: "Microsoft YaHei UI", "Microsoft YaHei";
 				}
 			""")
 
@@ -697,43 +694,14 @@ class VocabManager(QObject):  # 继承自 QObject
 
         # 错词数量标签样式
         if self.lbl_mistake_count:
-            self.lbl_mistake_count.setStyleSheet("""
-				QLabel {
-					color: #777777;
-					font-size: 13px;
-					padding: 4px 8px;
-					border: 1px solid #cccccc;
-					border-radius: 4px;
-					background-color: #f5f5f5;
-				}
-			""")
+            self.lbl_mistake_count.setStyleSheet(CLICKABLE_LABEL_STYLE)
 
         # NEW: 自主录入单词数标签样式
         if self.lbl_self_register_count:
-            self.lbl_self_register_count.setStyleSheet("""
-				QLabel {
-					color: #777777;
-					font-size: 13px;
-					padding: 4px 8px;
-					border: 1px solid #cccccc;
-					border-radius: 4px;
-					background-color: #f5f5f5;
-				}
-			""")
+            self.lbl_self_register_count.setStyleSheet(CLICKABLE_LABEL_STYLE)
 
-        self.lbl_round_progress.setStyleSheet("""
-            QLabel {
-                color: #374151;
-                font-size: 14px;
-                font-weight: 600;
-                padding: 9px 16px;
-                margin: 0px 40px;
-                border: 1px solid #dbe3ee;
-                border-radius: 8px;
-                background-color: #f8fafc;
-            }
-            QLabel:hover { color: #2563eb; border-color: #60a5fa; }
-        """)
+        self.lbl_round_progress.setStyleSheet(
+            CLICKABLE_LABEL_STYLE + " QLabel { margin:0 40px; padding:9px 16px; }")
 
     def _configure_clickable_labels(self):
         clickable = [
@@ -742,10 +710,6 @@ class VocabManager(QObject):  # 继承自 QObject
             (self.lbl_round_progress, "点击查看轮次学习记录"),
         ]
         for widget, tooltip in clickable:
-            widget.setStyleSheet(
-                widget.styleSheet()
-                + " QLabel:hover { color:#2563eb; border-color:#60a5fa; }"
-            )
             widget.setCursor(QtCore.Qt.CursorShape.PointingHandCursor)
             widget.setToolTip(tooltip)
             widget.setFocusPolicy(QtCore.Qt.FocusPolicy.StrongFocus)
@@ -802,7 +766,7 @@ class VocabManager(QObject):  # 继承自 QObject
 
     def _load_regular_vocabulary(self):
         """
-        从 assets/vocabulary.json 文件加载词汇表并随机打乱。
+        从当前版本配置的词汇文件加载词汇表并随机打乱。
         """
         if self.initial_vocabulary is not None:
             self.vocabulary = list(self.initial_vocabulary)
@@ -810,7 +774,11 @@ class VocabManager(QObject):  # 继承自 QObject
             print(f"✅ 常规词汇表已从后台数据加载完成，共 {len(self.vocabulary)} 词。")
             return
         try:
-            vocab_path = get_resource_path("assets/vocabulary.json")
+            vocabulary_path = (
+                self.edition.vocabulary_path if self.edition is not None
+                else "assets/vocabulary.json"
+            )
+            vocab_path = get_resource_path(vocabulary_path)
             print(
                 f"DEBUG: Attempting to load regular vocabulary from: {vocab_path}")
             if not os.path.exists(vocab_path):
@@ -828,7 +796,7 @@ class VocabManager(QObject):  # 继承自 QObject
             self.vocabulary = [{"word": "apple", "content": "苹果", "pronunciation": "/ˈæpl/",
                                 "example": "An apple a day keeps the doctor away."}]  # Fallback with more details
             QMessageBox.warning(
-                self.main_window, "错误", f"加载常规词汇表失败: {e}\n请检查 assets/vocabulary.json 文件。已加载默认词汇。")
+                self.main_window, "错误", f"加载常规词汇表失败: {e}\n请检查当前版本词汇文件。已加载默认词汇。")
             print(f"DEBUG: Fallback vocabulary loaded: {self.vocabulary}")
 
     def _load_mistake_vocabulary(self):
@@ -926,7 +894,7 @@ class VocabManager(QObject):  # 继承自 QObject
         """
         if self.v_disp:
             self.v_disp.setHtml(
-                "<div style='text-align: center; padding: 40px; font-size: 20px; color: #555555;'>请选择闯关模式：<br><br>📚 高考3800词闯关 或 ❌ 错词闯关 或 📝 自主录入闯关</div>")  # NEW: 更新提示
+                f"<div style='text-align: center; padding: 40px; font-size: 20px; color: #555555;'>请选择闯关模式：<br><br>📚 {self.regular_challenge_title} 或 ❌ 错词闯关 或 📝 自主录入闯关</div>")  # NEW: 更新提示
         if self.v_input:
             self.v_input.clear()
             self.v_input.setEnabled(False)
@@ -1032,7 +1000,7 @@ class VocabManager(QObject):  # 继承自 QObject
             self._load_mistake_vocabulary()
             self.active_vocabulary = self.mistake_vocabulary
             if not self.active_vocabulary:  # 如果错词表为空，自动切换回常规模式
-                QMessageBox.information(self.main_window, "提示", "错词表为空，已自动切换到高考3800词闯关模式。")
+                QMessageBox.information(self.main_window, "提示", f"错词表为空，已自动切换到{self.regular_challenge_title}模式。")
                 self.current_challenge_mode = "regular"  # Use self.main_window for QMessageBox
                 self._load_regular_vocabulary()
                 self.active_vocabulary = self.vocabulary
@@ -1042,7 +1010,7 @@ class VocabManager(QObject):  # 继承自 QObject
             self._load_self_registered_vocabulary()
             self.active_vocabulary = self.self_registered_vocabulary
             if not self.active_vocabulary:  # 如果自主录入词汇表为空，自动切换回常规模式
-                QMessageBox.information(self.main_window, "提示", "自主录入词汇表为空，已自动切换到高考3800词闯关模式。")
+                QMessageBox.information(self.main_window, "提示", f"自主录入词汇表为空，已自动切换到{self.regular_challenge_title}模式。")
                 self.current_challenge_mode = "regular"
                 self._load_regular_vocabulary()
                 self.active_vocabulary = self.vocabulary
@@ -1093,6 +1061,7 @@ class VocabManager(QObject):  # 继承自 QObject
             f"　｜　本轮 {progress['current']} / {progress['total']}"
             f"　｜　剩余 {progress['remaining_after_current']}"
             f"　｜　<span style='color:{wrong_color};'>本轮错词 {progress['wrong']}</span>"
+            "　｜　<span style='color:#1d4ed8;'>查看轮次记录 →</span>"
         )
 
     def _update_challenge_mode_buttons(self):
@@ -1113,32 +1082,7 @@ class VocabManager(QObject):  # 继承自 QObject
         """
         根据按钮是否激活返回对应的样式。
         """
-        if is_active:
-            return """
-				QPushButton {
-					background-color: #2196F3;
-					color: white;
-					border: none;
-					border-radius: 6px;
-					font-size: 14px;
-					font-weight: bold;
-					padding: 8px 16px;
-				}
-			"""
-        else:
-            return """
-				QPushButton {
-					background-color: #e0e0e0;
-					color: #333333;
-					border: none;
-					border-radius: 6px;
-					font-size: 14px;
-					padding: 8px 16px;
-				}
-				QPushButton:hover {
-					background-color: #d0d0d0;
-				}
-			"""
+        return tab_button_style(is_active)
 
     def _update_mistake_count_label(self):
         """
@@ -1146,7 +1090,7 @@ class VocabManager(QObject):  # 继承自 QObject
         """
         if self.lbl_mistake_count:
             self.lbl_mistake_count.setText(
-                f"错词表 ({len(self.mistake_vocabulary)} 词)")
+                f"查看单词错词表（{len(self.mistake_vocabulary)}） →")
 
     def _update_self_register_count_label(self):  # NEW: 更新自主录入单词数显示
         """
@@ -1154,7 +1098,7 @@ class VocabManager(QObject):  # 继承自 QObject
         """
         if self.lbl_self_register_count:
             self.lbl_self_register_count.setText(
-                f"自主录入 ({len(self.self_registered_vocabulary)} 词)")
+                f"查看自主录入单词（{len(self.self_registered_vocabulary)}） →")
 
     def show_next(self, error_msg="", additional_message_html=""):
         """
@@ -1338,7 +1282,7 @@ class VocabManager(QObject):  # 继承自 QObject
 					border-radius: 6px;
 					padding: 0px 16px;
 					color: #333333;
-					font-family: "Arial", "Microsoft YaHei";
+					font-family: "Microsoft YaHei UI", "Microsoft YaHei";
 				}
 			""")
             retrying = self.round_store.is_retry_required(
@@ -1370,7 +1314,7 @@ class VocabManager(QObject):  # 继承自 QObject
 					padding: 0px 16px;
 					color: #333333;
 					outline: none;
-					font-family: "Arial", "Microsoft YaHei"; /* Consistent font */
+					font-family: "Microsoft YaHei UI", "Microsoft YaHei";
 				}
 			""")
 
@@ -1417,7 +1361,7 @@ class VocabManager(QObject):  # 继承自 QObject
 					padding: 0px 16px;
 					color: #333333;
 					outline: none;
-					font-family: "Arial", "Microsoft YaHei"; /* Consistent font */
+					font-family: "Microsoft YaHei UI", "Microsoft YaHei";
 				}
 			""")
 

@@ -1,4 +1,4 @@
-# /Users/andrezhao/AI_PJ/HighSchoolEnglishAI/word_document_generator.py
+# EngMaster Word document generator
 import os
 import re  # 必须导入，用于处理“或”、括号及音标符号切分
 from docx import Document

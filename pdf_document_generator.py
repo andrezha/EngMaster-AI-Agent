@@ -7,11 +7,11 @@ from PySide6 import QtCore, QtGui
 
 
 SHOP_NAME = "\u53cc\u6167\u7684\u6559\u8f85\u8d44\u6599\u5c0f\u5e9796"
-APP_NAME = "\u9ad8\u4e2d/\u9ad8\u8003\u82f1\u8bed\u5355\u8bcd\u52a9\u624b"
+APP_NAME = "EngMaster\u82f1\u8bed\u8bcd\u6c47\u5206\u7ea7\u5b66\u4e60\u5e73\u53f0"
 
 
 def _license_path():
-    return os.path.join(os.path.expanduser("~"), ".HighSchoolEnglishHelper", "licensing.dat")
+    return os.path.join(os.path.expanduser("~"), ".EngMaster", "licensing.dat")
 
 
 def _read_license_data():

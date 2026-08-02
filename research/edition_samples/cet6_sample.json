@@ -1,0 +1,272 @@
+[
+  {
+    "id": "cet6:ambiguous",
+    "word": "ambiguous",
+    "pronunciation": "æm'bɪɡjuəs",
+    "content": "[æm'bɪɡjuəs] 引起歧义的， 模棱两可的， 含糊不清的 (adj.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:coherent",
+    "word": "coherent",
+    "pronunciation": "ko'hɪrənt",
+    "content": "[ko'hɪrənt] 条理清楚的， 连贯的； 一致的， 协调的 (adj.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:comprehensive",
+    "word": "comprehensive",
+    "pronunciation": "ˌkɑːmprɪˈhensɪv",
+    "content": "[ˌkɑːmprɪˈhensɪv] 广泛的； 综合的； 理解的 (adj.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:controversial",
+    "word": "controversial",
+    "pronunciation": ",kɑntrə'vɝʃl",
+    "content": "[,kɑntrə'vɝʃl] 引起争论的， 有争议的 (adj.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:crucial",
+    "word": "crucial",
+    "pronunciation": "'krʊʃəl",
+    "content": "['krʊʃəl] 至关重要的， 决定性的 (adj.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:deteriorate",
+    "word": "deteriorate",
+    "pronunciation": "dɪ'tɪrɪəret",
+    "content": "[dɪ'tɪrɪəret] 恶化， 变坏 (vi.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:dilemma",
+    "word": "dilemma",
+    "pronunciation": "dəˈlɛmə, daɪ-",
+    "content": "[dəˈlɛmə, daɪ-] 窘境， 困境 (n.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:empirical",
+    "word": "empirical",
+    "pronunciation": "ɪm'pɪrɪkl",
+    "content": "[ɪm'pɪrɪkl] 以经验为依据的， 经验主义的， 经验的 (adj.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:enhance",
+    "word": "enhance",
+    "pronunciation": "ɪn'hæns",
+    "content": "[ɪn'hæns] 提高， 增加， 加强 (vt.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:explicit",
+    "word": "explicit",
+    "pronunciation": "ɪk'splɪsɪt",
+    "content": "[ɪk'splɪsɪt] 详述的， 明确的， 明晰的； 直言的， 露骨的 (adj.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:feasible",
+    "word": "feasible",
+    "pronunciation": "'fizəbl",
+    "content": "['fizəbl] 可行的， 可能的 (adj.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:fluctuate",
+    "word": "fluctuate",
+    "pronunciation": "'flʌktʃʊ'et",
+    "content": "['flʌktʃʊ'et] 波动， 涨落， 起伏 (vi.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:fundamental",
+    "word": "fundamental",
+    "pronunciation": ",fʌndə'mɛntl",
+    "content": "[,fʌndə'mɛntl] 基础的，基本的 (adj.)；基本原则 (n.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:hypothesis",
+    "word": "hypothesis",
+    "pronunciation": "haɪ'pɑθəsɪs",
+    "content": "[haɪ'pɑθəsɪs] 假设， 假说， 前提 (n.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:inevitable",
+    "word": "inevitable",
+    "pronunciation": "ɪn'ɛvɪtəbl",
+    "content": "[ɪn'ɛvɪtəbl] 不可避免的， 必然的 (adj.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:interpret",
+    "word": "interpret",
+    "pronunciation": "ɪn'tɝprɪt",
+    "content": "[ɪn'tɝprɪt] 解释， 说明； 口译 (v.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:intricate",
+    "word": "intricate",
+    "pronunciation": "ˈɪntrəkət",
+    "content": "[ˈɪntrəkət] 错综复杂的， 复杂精细的 (adj.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:manipulate",
+    "word": "manipulate",
+    "pronunciation": "mə'nɪpjulet",
+    "content": "[mə'nɪpjulet] 操纵， 控制； 影响； 操作， 使用 (vt.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:obscure",
+    "word": "obscure",
+    "pronunciation": "əb'skjʊr",
+    "content": "[əb'skjʊr] 不著名的，不重要的；费解的，模糊不清的 (adj.)；使变糊， 掩盖 (vt.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:paradox",
+    "word": "paradox",
+    "pronunciation": "'pærədɑks",
+    "content": "['pærədɑks] 似乎矛盾而正确的说法； 自相矛盾的人 (n.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:persistent",
+    "word": "persistent",
+    "pronunciation": "pə'zɪstənt",
+    "content": "[pə'zɪstənt] 坚持不懈的， 执意的； 持续的 (adj.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:plausible",
+    "word": "plausible",
+    "pronunciation": "'plɔzəbl",
+    "content": "['plɔzəbl] 似有道理的， 似乎正确的， 貌似可信的 (adj.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:preliminary",
+    "word": "preliminary",
+    "pronunciation": "prɪ'lɪmɪnɛri",
+    "content": "[prɪ'lɪmɪnɛri] 预备的，初步的 (adj.)；初步做法， 起始行为 (n.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:profound",
+    "word": "profound",
+    "pronunciation": "prə'faʊnd",
+    "content": "[prə'faʊnd] 深度的， 深切的， 深远的； 知识渊博的， 见解深刻的； 深奥的 (adj.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:reinforce",
+    "word": "reinforce",
+    "pronunciation": ",riɪn'fɔrs",
+    "content": "[,riɪn'fɔrs] 增强， 加强， 增援 (vt.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:sophisticated",
+    "word": "sophisticated",
+    "pronunciation": "sə'fɪstɪketɪd",
+    "content": "[sə'fɪstɪketɪd] 老于世故的； 高级的； 精密的， 复杂的； 高雅的 (adj.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:substantial",
+    "word": "substantial",
+    "pronunciation": "səbˈstænʃəl",
+    "content": "[səbˈstænʃəl] 可观的， 大量的； 物质的， 坚固的； 实质的， 真实的 (adj.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:consecutive",
+    "word": "consecutive",
+    "pronunciation": "kən'sɛkjətɪv",
+    "content": "[kən'sɛkjətɪv] 连续的， 连贯的 (adj.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:allocate",
+    "word": "allocate",
+    "pronunciation": "'æləket",
+    "content": "['æləket] 分配； 分派， 把…拨给 (vt.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  },
+  {
+    "id": "cet6:contradiction",
+    "word": "contradiction",
+    "pronunciation": ",kɑntrə'dɪkʃən",
+    "content": "[,kɑntrə'dɪkʃən] 矛盾， 不一致； 否认， 反驳 (n.)",
+    "edition": "cet6",
+    "source": "CET6_T.json",
+    "data_status": "development_sample"
+  }
+]

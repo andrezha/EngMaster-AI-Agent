@@ -4,6 +4,13 @@ from PySide6 import QtWidgets, QtCore, QtGui
 from PySide6.QtWidgets import QTableWidgetItem, QPushButton, QMessageBox, QDialog, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QFrame, QHeaderView
 from PySide6.QtCore import Qt
 from utils import _normalize_legacy as _normalize_full_width_to_half_width, get_writable_data_path
+from edition_config import is_trial_edition
+from ui_styles import (
+    CHECKABLE_BUTTON_STYLE,
+    DANGER_BUTTON_STYLE,
+    PRIMARY_BUTTON_STYLE,
+    SECONDARY_BUTTON_STYLE,
+)
 
 class EditWordDialog(QDialog):
     """
@@ -74,6 +81,8 @@ class EditWordDialog(QDialog):
                 background-color: #0369a1;
             }
         """)
+        self.cancel_button.setStyleSheet(SECONDARY_BUTTON_STYLE)
+        self.save_button.setStyleSheet(PRIMARY_BUTTON_STYLE)
 
     def get_edited_data(self):
         return self.english_input.text().strip(), self.chinese_input.text().strip()
@@ -86,9 +95,12 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
         super().__init__()
         self.main_window = main_window_instance
         self.user_vocab_data = initial_user_vocab_data if initial_user_vocab_data is not None else []
+        self.is_trial = is_trial_edition(getattr(main_window_instance, "edition", None))
+        self.word_limit = 30 if self.is_trial else None
         self.data_file_path = get_writable_data_path("user_registered_vocab.json")
 
         self.current_page = 0
+        self.display_mode = "both"
         self.words_per_physical_row = 3
         self.physical_rows_per_page = 15
         self.words_per_page = self.words_per_physical_row * self.physical_rows_per_page
@@ -107,6 +119,9 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
             self.prev_page_button.clicked.connect(self._prev_page)
         if self.next_page_button:
             self.next_page_button.clicked.connect(self._next_page)
+        self.btn_show_both.clicked.connect(lambda: self._set_display_mode("both"))
+        self.btn_only_english.clicked.connect(lambda: self._set_display_mode("english"))
+        self.btn_only_chinese.clicked.connect(lambda: self._set_display_mode("chinese"))
 
         if self.vocab_table:
             self.vocab_table.setColumnCount(self.words_per_physical_row * 5)
@@ -147,12 +162,26 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
 
         self.title_label = QLabel("自主登记单词")
         self.title_label.setAlignment(Qt.AlignLeft)
-        self.title_label.setStyleSheet("QLabel { font-size: 24px; font-weight: bold; color: #2c3e50; }")
+        self.title_label.setStyleSheet(
+            "QLabel { font-size:24px; font-weight:700; color:#2c3e50; }")
         main_v_layout.addWidget(self.title_label)
 
+        self.limit_label = QLabel("")
+        self.limit_label.setObjectName("self_register_limit_label")
+        self.limit_label.setWordWrap(True)
+        self.limit_label.setStyleSheet(
+            "color:#92400e; background:#fef3c7; border:1px solid #f59e0b; "
+            "border-radius:8px; padding:8px 12px; font-size:14px; font-weight:700;")
+        self.limit_label.setVisible(self.is_trial)
+        main_v_layout.addWidget(self.limit_label)
+
         input_frame = QFrame()
+        input_frame.setObjectName("word_entry_frame")
         input_frame.setFrameShape(QFrame.StyledPanel)
         input_frame.setFrameShadow(QFrame.Raised)
+        input_frame.setStyleSheet(
+            "QFrame#word_entry_frame { background:#ffffff; border:1px solid #dbe3ee; "
+            "border-radius:8px; }")
         input_h_layout = QHBoxLayout(input_frame)
         input_h_layout.setSpacing(10)
         input_h_layout.setContentsMargins(10, 10, 10, 10)
@@ -176,6 +205,31 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
 
         main_v_layout.addWidget(input_frame)
 
+        display_frame = QFrame()
+        display_frame.setObjectName("display_mode_frame")
+        display_layout = QHBoxLayout(display_frame)
+        display_layout.setContentsMargins(16, 10, 16, 10)
+        display_layout.setSpacing(10)
+
+        self.btn_show_both = QPushButton("📚 中英对照")
+        self.btn_only_english = QPushButton("📖 只看英语")
+        self.btn_only_chinese = QPushButton("📝 只看中文")
+        self.language_display_group = QtWidgets.QButtonGroup(self)
+        self.language_display_group.setExclusive(True)
+        for button in (
+            self.btn_show_both,
+            self.btn_only_english,
+            self.btn_only_chinese,
+        ):
+            button.setCheckable(True)
+            button.setFixedHeight(36)
+            button.setMinimumWidth(112)
+            self.language_display_group.addButton(button)
+            display_layout.addWidget(button)
+        self.btn_show_both.setChecked(True)
+        display_layout.addStretch()
+        main_v_layout.addWidget(display_frame)
+
         self.vocab_table = QtWidgets.QTableWidget()
         self.vocab_table.setMinimumHeight(self.physical_rows_per_page * 50)
         self.vocab_table.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
@@ -198,6 +252,9 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
         self.english_word_input.setObjectName("english_word_input")
         self.chinese_explanation_input.setObjectName("chinese_explanation_input")
         self.add_word_button.setObjectName("add_word_button")
+        self.btn_show_both.setObjectName("btn_show_both")
+        self.btn_only_english.setObjectName("btn_only_english")
+        self.btn_only_chinese.setObjectName("btn_only_chinese")
         self.vocab_table.setObjectName("vocab_table")
         self.prev_page_button.setObjectName("prev_page_button")
         self.next_page_button.setObjectName("next_page_button")
@@ -249,6 +306,7 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
             return
 
         total_words = len(self.user_vocab_data)
+        self._update_limit_status()
         total_pages = (total_words + self.words_per_page - 1) // self.words_per_page
         if total_pages == 0:
             total_pages = 1
@@ -279,14 +337,18 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
                     item_index.setTextAlignment(Qt.AlignLeft | Qt.AlignVCenter)
                     self.vocab_table.setItem(physical_row_idx, base_col_idx, item_index)
                     
-                    item_word = QTableWidgetItem(item_data.get("word", ""))
+                    word_text = item_data.get("word", "")
+                    visible_word = "" if self.display_mode == "chinese" else word_text
+                    item_word = QTableWidgetItem(visible_word)
                     item_word.setTextAlignment(Qt.AlignLeft | Qt.AlignTop)
-                    item_word.setToolTip(item_word.text())
+                    item_word.setToolTip(visible_word)
                     self.vocab_table.setItem(physical_row_idx, base_col_idx + 1, item_word)
                     
-                    item_content = QTableWidgetItem(item_data.get("content", ""))
+                    content_text = item_data.get("content", "")
+                    visible_content = "" if self.display_mode == "english" else content_text
+                    item_content = QTableWidgetItem(visible_content)
                     item_content.setTextAlignment(Qt.AlignLeft | Qt.AlignTop)
-                    item_content.setToolTip(item_content.text())
+                    item_content.setToolTip(visible_content)
                     self.vocab_table.setItem(physical_row_idx, base_col_idx + 2, item_content)
 
                     edit_widget = QtWidgets.QWidget()
@@ -297,17 +359,7 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
                     edit_button = QPushButton("修改")
                     edit_button.setFixedSize(60, 30)
                     edit_button.clicked.connect(lambda checked, r=data_idx: self._edit_word(r))
-                    edit_button.setStyleSheet("""
-                        QPushButton {
-                            background-color: #0284c7;
-                            color: white;
-                            border: none;
-                            border-radius: 4px;
-                            padding: 6px 10px;
-                            font-size: 12px;
-                        }
-                        QPushButton:hover { background-color: #0369a1; }
-                    """)
+                    edit_button.setStyleSheet(SECONDARY_BUTTON_STYLE)
                     edit_layout.addWidget(edit_button)
                     self.vocab_table.setCellWidget(physical_row_idx, base_col_idx + 3, edit_widget)
 
@@ -319,17 +371,7 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
                     delete_button = QPushButton("删除")
                     delete_button.setFixedSize(60, 30)
                     delete_button.clicked.connect(lambda checked, r=data_idx: self._delete_word(r))
-                    delete_button.setStyleSheet("""
-                        QPushButton {
-                            background-color: #0284c7;
-                            color: white;
-                            border: none;
-                            border-radius: 4px;
-                            padding: 6px 10px;
-                            font-size: 12px;
-                        }
-                        QPushButton:hover { background-color: #0369a1; }
-                    """)
+                    delete_button.setStyleSheet(DANGER_BUTTON_STYLE)
                     delete_layout.addWidget(delete_button)
                     self.vocab_table.setCellWidget(physical_row_idx, base_col_idx + 4, delete_widget)
 
@@ -348,12 +390,30 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
             if self.vocab_table.rowHeight(row) < 50:
                 self.vocab_table.setRowHeight(row, 50)
 
+    def _set_display_mode(self, mode):
+        if mode not in {"both", "english", "chinese"}:
+            return
+        self.display_mode = mode
+        self.btn_show_both.setChecked(mode == "both")
+        self.btn_only_english.setChecked(mode == "english")
+        self.btn_only_chinese.setChecked(mode == "chinese")
+        self._refresh_table()
+
     def _add_word(self):
         """
         将输入框中的单词和解释录入到列表中。
         """
         english_word = self.english_word_input.text().strip()
         chinese_explanation = self.chinese_explanation_input.text().strip()
+
+        if self.word_limit is not None and len(self.user_vocab_data) >= self.word_limit:
+            QMessageBox.information(
+                self.main_window,
+                "体验版录入已满",
+                "体验版自主登记最多保存30词。你可以修改或删除已有单词；购买正式版后不受此限制。",
+            )
+            self._update_limit_status()
+            return
 
         if not english_word or not chinese_explanation:
             QMessageBox.warning(self.main_window, "输入错误", "英语单词和中文解释都不能为空。")
@@ -374,6 +434,22 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
         self.english_word_input.clear()
         self.chinese_explanation_input.clear()
         self.english_word_input.setFocus()
+
+    def _update_limit_status(self):
+        if not hasattr(self, "limit_label") or self.word_limit is None:
+            return
+        used = len(self.user_vocab_data)
+        remaining = max(0, self.word_limit - used)
+        self.limit_label.setText(
+            f"免费体验版：自主登记最多30词 · 已登记 {used} 词 · 还可登记 {remaining} 词")
+        is_full = used >= self.word_limit
+        self.add_word_button.setEnabled(not is_full)
+        self.english_word_input.setEnabled(not is_full)
+        self.chinese_explanation_input.setEnabled(not is_full)
+        if is_full:
+            self.add_word_button.setToolTip("体验版自主登记已达到30词上限")
+        else:
+            self.add_word_button.setToolTip("")
 
     def _next_page(self):
         total_words = len(self.user_vocab_data)
@@ -444,7 +520,7 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
                         font-size: 16px;
                         padding: 0px 10px;
                         color: #333333;
-                        font-family: "Arial", "Microsoft YaHei";
+                        font-family: "Microsoft YaHei UI", "Microsoft YaHei";
                     }
                     QLineEdit:focus {
                         border: 1px solid #0284c7;
@@ -454,27 +530,15 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
                 """)
         
         if self.add_word_button:
-            self.add_word_button.setStyleSheet("""
-                QPushButton {
-                    background-color: #0284c7;
-                    color: white;
-                    border: none;
-                    border-radius: 6px;
-                    padding: 8px 20px;
-                    font-size: 16px;
-                    font-weight: bold;
-                    min-width: 120px;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                }
-                QPushButton:hover {
-                    background-color: #0369a1;
-                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-                }
-                QPushButton:pressed {
-                    background-color: #075985;
-                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-                }
-            """)
+            self.add_word_button.setStyleSheet(PRIMARY_BUTTON_STYLE)
+
+        display_button_style = CHECKABLE_BUTTON_STYLE
+        for button in (
+            self.btn_show_both,
+            self.btn_only_english,
+            self.btn_only_chinese,
+        ):
+            button.setStyleSheet(display_button_style)
         
         if self.vocab_table:
             self.vocab_table.setStyleSheet("""
@@ -508,43 +572,9 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
             """)
         
         if self.prev_page_button:
-            self.prev_page_button.setStyleSheet("""
-                QPushButton {
-                    background-color: #0284c7;
-                    color: white;
-                    border: none;
-                    border-radius: 5px;
-                    padding: 8px 15px;
-                    font-size: 14px;
-                }
-                QPushButton:hover {
-                    background-color: #0369a1;
-                }
-                QPushButton:disabled {
-                    background-color: #a7a7a7;
-                    color: #e0e0e0;
-                    border-color: #ccc;
-                }
-            """)
+            self.prev_page_button.setStyleSheet(SECONDARY_BUTTON_STYLE)
         if self.next_page_button:
-            self.next_page_button.setStyleSheet("""
-                QPushButton {
-                    background-color: #0284c7;
-                    color: white;
-                    border: none;
-                    border-radius: 5px;
-                    padding: 8px 15px;
-                    font-size: 14px;
-                }
-                QPushButton:hover {
-                    background-color: #0369a1;
-                }
-                QPushButton:disabled {
-                    background-color: #a7a7a7;
-                    color: #e0e0e0;
-                    border-color: #ccc;
-                }
-            """)
+            self.next_page_button.setStyleSheet(SECONDARY_BUTTON_STYLE)
         if self.page_label:
             self.page_label.setStyleSheet("""
                 QLabel {

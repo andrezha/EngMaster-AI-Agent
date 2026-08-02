@@ -9,6 +9,7 @@ from PySide6.QtCore import Qt # Keep Qt import
 from PySide6.QtGui import QFont, QTextDocument # Corrected: QTextDocument is in QtGui
 from PySide6.QtPrintSupport import QPrinter, QPrintDialog # Corrected: QPrinter and QPrintDialog are in QtPrintSupport
 from utils import _normalize_full_width_to_half_width # Import from utils
+from ui_styles import CHECKABLE_BUTTON_STYLE, PRIMARY_BUTTON_STYLE
 # ==========================================================
 # 1. 题目卡片：强行在UI上画出红色分值标签
 # ==========================================================
@@ -122,28 +123,9 @@ class QuestionCard(QWidget):
         """
         btn = QPushButton(f"{label}. {content}")
         btn.setCheckable(True)
-        btn.setStyleSheet("""
-            QPushButton {
-                text-align: left;
-                padding: 8px 12px;
-                border: 1px solid #d1d5db;
-                border-radius: 6px;
-                background-color: #f9fafb;
-                font-size: 14px;
-                color: #374151;
-                margin: 2px 0;
-            }
-            QPushButton:hover {
-                background-color: #e5e7eb;
-                border-color: #9ca3af;
-            }
-            QPushButton:checked {
-                background-color: #3b82f6;
-                color: white;
-                border: 1px solid #2563eb;
-                font-weight: bold;
-            }
-        """)
+        btn.setStyleSheet(
+            CHECKABLE_BUTTON_STYLE
+            + "QPushButton { text-align:left; padding:8px 12px; margin:2px 0; font-size:14px; }")
         btn.clicked.connect(lambda checked, l=label: self._notify_choice(l, checked))
         self.button_group.addButton(btn)
         layout.addWidget(btn)
@@ -193,22 +175,8 @@ class AnalysisDialog(QtWidgets.QDialog):
 
         close_button = QtWidgets.QPushButton("关闭")
         close_button.clicked.connect(self.accept) # 使用 accept 来关闭对话框
-        close_button.setStyleSheet("""
-            QPushButton {
-                background-color: #3498db;
-                color: white;
-                border: none;
-                border-radius: 8px;
-                font-size: 16px;
-                padding: 10px 20px;
-            }
-            QPushButton:hover {
-                background-color: #2980b9;
-            }
-            QPushButton:pressed {
-                background-color: #2471a3;
-            }
-        """)
+        close_button.setStyleSheet(
+            PRIMARY_BUTTON_STYLE + "QPushButton { font-size:16px; padding:10px 20px; }")
         layout.addWidget(close_button, alignment=QtCore.Qt.AlignCenter)
 
 # ==========================================================
@@ -274,7 +242,8 @@ class ResultPage(QWidget):
             
             # 错题分析
             if v['wrongs']:
-                wrongs_label = QLabel(f"<b style='color:#e74c3c;'>错题 ({len(v['wrongs'])}):</b>") # 错题只数
+                wrongs_label = QLabel(
+                    f"<b style='color:#e74c3c;'>答错题目（{len(v['wrongs'])}）：</b>")
                 wrongs_label.setStyleSheet("padding-top: 10px; padding-bottom: 5px;") # 增加上下边距，避免过高
                 fl.addWidget(wrongs_label)
                 
@@ -294,17 +263,9 @@ class ResultPage(QWidget):
                     # 添加分析按钮
                     analysis_btn = QPushButton("查看解析")
                     analysis_btn.setSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.MinimumExpanding) # 允许按钮根据文本高度拉伸
-                    analysis_btn.setStyleSheet("""
-                        QPushButton {
-                            background-color: #3498db;
-                            color: white;
-                            border: none;
-                            border-radius: 5px;
-                            font-size: 12px;
-                            padding: 3px 6px;
-                        }
-                        QPushButton:hover { background-color: #2980b9; }
-                    """)
+                    analysis_btn.setStyleSheet(
+                        PRIMARY_BUTTON_STYLE
+                        + "QPushButton { font-size:12px; padding:3px 8px; }")
                     # 绑定点击事件，传递 q_id 和 all_questions_data
                     analysis_btn.clicked.connect(lambda checked, q_id=wrong_item['id']: self._display_question_analysis(q_id, all_questions_data))
                     wrong_item_h_layout.addWidget(analysis_btn)
@@ -517,22 +478,9 @@ class HSEExamSystem(QWidget): # 修改基类为 QWidget
 
         start_button = QPushButton("开始考试")
         start_button.setFixedSize(250, 80)
-        start_button.setStyleSheet("""
-            QPushButton {
-                background-color: #3498db;
-                color: white;
-                border: none;
-                border-radius: 15px;
-                font-size: 28px;
-                font-weight: bold;
-            }
-            QPushButton:hover {
-                background-color: #2980b9;
-            }
-            QPushButton:pressed {
-                background-color: #2471a3;
-            }
-        """)
+        start_button.setStyleSheet(
+            PRIMARY_BUTTON_STYLE
+            + "QPushButton { border-radius:15px; font-size:28px; font-weight:600; }")
         start_button.clicked.connect(self._start_exam)
         start_layout.addWidget(start_button, alignment=Qt.AlignCenter)
         

@@ -1,0 +1,1262 @@
+[
+  {
+    "infinitive": "be",
+    "past_tense": "was, were",
+    "past_participle": "been",
+    "meaning": "是；成为",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-001",
+    "level": 1
+  },
+  {
+    "infinitive": "beat",
+    "past_tense": "beat",
+    "past_participle": "beaten",
+    "meaning": "击败",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-002",
+    "level": 1
+  },
+  {
+    "infinitive": "become",
+    "past_tense": "became",
+    "past_participle": "become",
+    "meaning": "成为",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-003",
+    "level": 1
+  },
+  {
+    "infinitive": "begin",
+    "past_tense": "began",
+    "past_participle": "begun",
+    "meaning": "开始",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-004",
+    "level": 1
+  },
+  {
+    "infinitive": "bite",
+    "past_tense": "bit",
+    "past_participle": "bitten",
+    "meaning": "咬",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-005",
+    "level": 1
+  },
+  {
+    "infinitive": "blow",
+    "past_tense": "blew",
+    "past_participle": "blown",
+    "meaning": "吹；刮风；打击",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-006",
+    "level": 1
+  },
+  {
+    "infinitive": "break",
+    "past_tense": "broke",
+    "past_participle": "broken",
+    "meaning": "打破",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-007",
+    "level": 1
+  },
+  {
+    "infinitive": "bring",
+    "past_tense": "brought",
+    "past_participle": "brought",
+    "meaning": "带来",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-008",
+    "level": 1
+  },
+  {
+    "infinitive": "build",
+    "past_tense": "built",
+    "past_participle": "built",
+    "meaning": "建设",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-009",
+    "level": 1
+  },
+  {
+    "infinitive": "burn",
+    "past_tense": "burned, burnt",
+    "past_participle": "burned, burnt",
+    "meaning": "燃烧；烧伤",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-010",
+    "level": 1
+  },
+  {
+    "infinitive": "buy",
+    "past_tense": "bought",
+    "past_participle": "bought",
+    "meaning": "购买",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-011",
+    "level": 1
+  },
+  {
+    "infinitive": "can",
+    "past_tense": "could",
+    "past_participle": "-",
+    "meaning": "可以",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-012",
+    "level": 1
+  },
+  {
+    "infinitive": "catch",
+    "past_tense": "caught",
+    "past_participle": "caught",
+    "meaning": "捕捉",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-013",
+    "level": 1
+  },
+  {
+    "infinitive": "choose",
+    "past_tense": "chose",
+    "past_participle": "chosen",
+    "meaning": "选择",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-014",
+    "level": 1
+  },
+  {
+    "infinitive": "come",
+    "past_tense": "came",
+    "past_participle": "come",
+    "meaning": "来",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-015",
+    "level": 1
+  },
+  {
+    "infinitive": "cost",
+    "past_tense": "cost",
+    "past_participle": "cost",
+    "meaning": "花费",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-016",
+    "level": 1
+  },
+  {
+    "infinitive": "cut",
+    "past_tense": "cut",
+    "past_participle": "cut",
+    "meaning": "切",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-017",
+    "level": 1
+  },
+  {
+    "infinitive": "do",
+    "past_tense": "did",
+    "past_participle": "done",
+    "meaning": "做",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-018",
+    "level": 1
+  },
+  {
+    "infinitive": "draw",
+    "past_tense": "drew",
+    "past_participle": "drawn",
+    "meaning": "画",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-019",
+    "level": 1
+  },
+  {
+    "infinitive": "drink",
+    "past_tense": "drank",
+    "past_participle": "drunk",
+    "meaning": "喝",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-020",
+    "level": 1
+  },
+  {
+    "infinitive": "drive",
+    "past_tense": "drove",
+    "past_participle": "driven",
+    "meaning": "开车",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-021",
+    "level": 1
+  },
+  {
+    "infinitive": "eat",
+    "past_tense": "ate",
+    "past_participle": "eaten",
+    "meaning": "吃",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-022",
+    "level": 1
+  },
+  {
+    "infinitive": "fall",
+    "past_tense": "fell",
+    "past_participle": "fallen",
+    "meaning": "下降",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-023",
+    "level": 1
+  },
+  {
+    "infinitive": "feed",
+    "past_tense": "fed",
+    "past_participle": "fed",
+    "meaning": "饲养",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-024",
+    "level": 1
+  },
+  {
+    "infinitive": "feel",
+    "past_tense": "felt",
+    "past_participle": "felt",
+    "meaning": "感觉",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-025",
+    "level": 1
+  },
+  {
+    "infinitive": "fight",
+    "past_tense": "fought",
+    "past_participle": "fought",
+    "meaning": "战斗",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-026",
+    "level": 1
+  },
+  {
+    "infinitive": "find",
+    "past_tense": "found",
+    "past_participle": "found",
+    "meaning": "发现",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-027",
+    "level": 1
+  },
+  {
+    "infinitive": "fly",
+    "past_tense": "flew",
+    "past_participle": "flown",
+    "meaning": "飞",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-028",
+    "level": 1
+  },
+  {
+    "infinitive": "forget",
+    "past_tense": "forgot",
+    "past_participle": "forgotten",
+    "meaning": "忘记",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-029",
+    "level": 1
+  },
+  {
+    "infinitive": "freeze",
+    "past_tense": "froze",
+    "past_participle": "frozen",
+    "meaning": "冻结",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-030",
+    "level": 1
+  },
+  {
+    "infinitive": "get",
+    "past_tense": "got",
+    "past_participle": "got",
+    "meaning": "获得",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-031",
+    "level": 1
+  },
+  {
+    "infinitive": "give",
+    "past_tense": "gave",
+    "past_participle": "given",
+    "meaning": "给",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-032",
+    "level": 1
+  },
+  {
+    "infinitive": "go",
+    "past_tense": "went",
+    "past_participle": "gone",
+    "meaning": "去",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-033",
+    "level": 1
+  },
+  {
+    "infinitive": "grow",
+    "past_tense": "grew",
+    "past_participle": "grown",
+    "meaning": "增长",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-034",
+    "level": 1
+  },
+  {
+    "infinitive": "have",
+    "past_tense": "had",
+    "past_participle": "had",
+    "meaning": "有",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-035",
+    "level": 1
+  },
+  {
+    "infinitive": "hear",
+    "past_tense": "heard",
+    "past_participle": "heard",
+    "meaning": "听",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-036",
+    "level": 1
+  },
+  {
+    "infinitive": "hide",
+    "past_tense": "hid",
+    "past_participle": "hidden",
+    "meaning": "隐藏",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-037",
+    "level": 1
+  },
+  {
+    "infinitive": "hit",
+    "past_tense": "hit",
+    "past_participle": "hit",
+    "meaning": "击中",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-038",
+    "level": 1
+  },
+  {
+    "infinitive": "hold",
+    "past_tense": "held",
+    "past_participle": "held",
+    "meaning": "举行",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-039",
+    "level": 1
+  },
+  {
+    "infinitive": "hurt",
+    "past_tense": "hurt",
+    "past_participle": "hurt",
+    "meaning": "伤害",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-040",
+    "level": 1
+  },
+  {
+    "infinitive": "keep",
+    "past_tense": "kept",
+    "past_participle": "kept",
+    "meaning": "保持",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-041",
+    "level": 1
+  },
+  {
+    "infinitive": "know",
+    "past_tense": "knew",
+    "past_participle": "known",
+    "meaning": "知道",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-042",
+    "level": 1
+  },
+  {
+    "infinitive": "lead",
+    "past_tense": "led",
+    "past_participle": "led",
+    "meaning": "领导",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-043",
+    "level": 1
+  },
+  {
+    "infinitive": "learn",
+    "past_tense": "learned, learnt",
+    "past_participle": "learned, learnt",
+    "meaning": "学习",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-044",
+    "level": 1
+  },
+  {
+    "infinitive": "leave",
+    "past_tense": "left",
+    "past_participle": "left",
+    "meaning": "离开",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-045",
+    "level": 1
+  },
+  {
+    "infinitive": "lend",
+    "past_tense": "lent",
+    "past_participle": "lent",
+    "meaning": "借出",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-046",
+    "level": 1
+  },
+  {
+    "infinitive": "let",
+    "past_tense": "let",
+    "past_participle": "let",
+    "meaning": "让",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-047",
+    "level": 1
+  },
+  {
+    "infinitive": "lie",
+    "past_tense": "lay",
+    "past_participle": "lain",
+    "meaning": "躺；位于",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-048",
+    "level": 1
+  },
+  {
+    "infinitive": "lose",
+    "past_tense": "lost",
+    "past_participle": "lost",
+    "meaning": "失去",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-049",
+    "level": 1
+  },
+  {
+    "infinitive": "make",
+    "past_tense": "made",
+    "past_participle": "made",
+    "meaning": "使",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-050",
+    "level": 1
+  },
+  {
+    "infinitive": "may",
+    "past_tense": "might",
+    "past_participle": "-",
+    "meaning": "可能",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-051",
+    "level": 2
+  },
+  {
+    "infinitive": "mean",
+    "past_tense": "meant",
+    "past_participle": "meant",
+    "meaning": "意思",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-052",
+    "level": 2
+  },
+  {
+    "infinitive": "meet",
+    "past_tense": "met",
+    "past_participle": "met",
+    "meaning": "见面",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-053",
+    "level": 2
+  },
+  {
+    "infinitive": "must",
+    "past_tense": "must",
+    "past_participle": "-",
+    "meaning": "必须",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-054",
+    "level": 2
+  },
+  {
+    "infinitive": "pay",
+    "past_tense": "paid",
+    "past_participle": "paid",
+    "meaning": "付",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-055",
+    "level": 2
+  },
+  {
+    "infinitive": "put",
+    "past_tense": "put",
+    "past_participle": "put",
+    "meaning": "放",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-056",
+    "level": 2
+  },
+  {
+    "infinitive": "read",
+    "past_tense": "read",
+    "past_participle": "read",
+    "meaning": "读",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-057",
+    "level": 2
+  },
+  {
+    "infinitive": "ride",
+    "past_tense": "rode",
+    "past_participle": "ridden",
+    "meaning": "骑",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-058",
+    "level": 2
+  },
+  {
+    "infinitive": "ring",
+    "past_tense": "rang",
+    "past_participle": "rung",
+    "meaning": "响",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-059",
+    "level": 2
+  },
+  {
+    "infinitive": "run",
+    "past_tense": "ran",
+    "past_participle": "run",
+    "meaning": "跑",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-060",
+    "level": 2
+  },
+  {
+    "infinitive": "say",
+    "past_tense": "said",
+    "past_participle": "said",
+    "meaning": "说",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-061",
+    "level": 2
+  },
+  {
+    "infinitive": "see",
+    "past_tense": "saw",
+    "past_participle": "seen",
+    "meaning": "看",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-062",
+    "level": 2
+  },
+  {
+    "infinitive": "sell",
+    "past_tense": "sold",
+    "past_participle": "sold",
+    "meaning": "出售",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-063",
+    "level": 2
+  },
+  {
+    "infinitive": "send",
+    "past_tense": "sent",
+    "past_participle": "sent",
+    "meaning": "发送",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-064",
+    "level": 2
+  },
+  {
+    "infinitive": "set",
+    "past_tense": "set",
+    "past_participle": "set",
+    "meaning": "放置",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-065",
+    "level": 2
+  },
+  {
+    "infinitive": "shake",
+    "past_tense": "shook",
+    "past_participle": "shaken",
+    "meaning": "摇动",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-066",
+    "level": 2
+  },
+  {
+    "infinitive": "shall",
+    "past_tense": "should",
+    "past_participle": "-",
+    "meaning": "将",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-067",
+    "level": 2
+  },
+  {
+    "infinitive": "show",
+    "past_tense": "showed",
+    "past_participle": "shown, showed",
+    "meaning": "显示；展示",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-068",
+    "level": 2
+  },
+  {
+    "infinitive": "shut",
+    "past_tense": "shut",
+    "past_participle": "shut",
+    "meaning": "关闭",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-069",
+    "level": 2
+  },
+  {
+    "infinitive": "sing",
+    "past_tense": "sang",
+    "past_participle": "sung",
+    "meaning": "唱",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-070",
+    "level": 2
+  },
+  {
+    "infinitive": "sit",
+    "past_tense": "sat",
+    "past_participle": "sat",
+    "meaning": "坐",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-071",
+    "level": 2
+  },
+  {
+    "infinitive": "sleep",
+    "past_tense": "slept",
+    "past_participle": "slept",
+    "meaning": "睡觉",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-072",
+    "level": 2
+  },
+  {
+    "infinitive": "speak",
+    "past_tense": "spoke",
+    "past_participle": "spoken",
+    "meaning": "发言",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-073",
+    "level": 2
+  },
+  {
+    "infinitive": "spell",
+    "past_tense": "spelled, spelt",
+    "past_participle": "spelled, spelt",
+    "meaning": "拼写",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-074",
+    "level": 2
+  },
+  {
+    "infinitive": "spend",
+    "past_tense": "spent",
+    "past_participle": "spent",
+    "meaning": "花",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-075",
+    "level": 2
+  },
+  {
+    "infinitive": "stand",
+    "past_tense": "stood",
+    "past_participle": "stood",
+    "meaning": "站",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-076",
+    "level": 2
+  },
+  {
+    "infinitive": "stick",
+    "past_tense": "stuck",
+    "past_participle": "stuck",
+    "meaning": "粘贴",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-077",
+    "level": 2
+  },
+  {
+    "infinitive": "sweep",
+    "past_tense": "swept",
+    "past_participle": "swept",
+    "meaning": "扫",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-078",
+    "level": 2
+  },
+  {
+    "infinitive": "swim",
+    "past_tense": "swam",
+    "past_participle": "swum",
+    "meaning": "游泳",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-079",
+    "level": 2
+  },
+  {
+    "infinitive": "take",
+    "past_tense": "took",
+    "past_participle": "taken",
+    "meaning": "带走",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-080",
+    "level": 2
+  },
+  {
+    "infinitive": "teach",
+    "past_tense": "taught",
+    "past_participle": "taught",
+    "meaning": "教",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-081",
+    "level": 2
+  },
+  {
+    "infinitive": "tell",
+    "past_tense": "told",
+    "past_participle": "told",
+    "meaning": "告诉",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-082",
+    "level": 2
+  },
+  {
+    "infinitive": "think",
+    "past_tense": "thought",
+    "past_participle": "thought",
+    "meaning": "认为",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-083",
+    "level": 2
+  },
+  {
+    "infinitive": "throw",
+    "past_tense": "threw",
+    "past_participle": "thrown",
+    "meaning": "扔",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-084",
+    "level": 2
+  },
+  {
+    "infinitive": "understand",
+    "past_tense": "understood",
+    "past_participle": "understood",
+    "meaning": "明白",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-085",
+    "level": 2
+  },
+  {
+    "infinitive": "wake",
+    "past_tense": "woke, waked",
+    "past_participle": "woken, waked",
+    "meaning": "醒来",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-086",
+    "level": 2
+  },
+  {
+    "infinitive": "wear",
+    "past_tense": "wore",
+    "past_participle": "worn",
+    "meaning": "穿",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-087",
+    "level": 2
+  },
+  {
+    "infinitive": "will",
+    "past_tense": "would",
+    "past_participle": "-",
+    "meaning": "将",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-088",
+    "level": 2
+  },
+  {
+    "infinitive": "win",
+    "past_tense": "won",
+    "past_participle": "won",
+    "meaning": "赢",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-089",
+    "level": 2
+  },
+  {
+    "infinitive": "write",
+    "past_tense": "wrote",
+    "past_participle": "written",
+    "meaning": "写",
+    "edition": "zhongkao",
+    "source": [
+      "ZhongKaoHeXin.json",
+      "OxfordVocabulary_juniorMiddleSH.json"
+    ],
+    "data_status": "development_candidate",
+    "id": "zhongkao-irregular-090",
+    "level": 2
+  }
+]

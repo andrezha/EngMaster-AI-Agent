@@ -10,6 +10,12 @@ from datetime import datetime
 
 # 🟢 挪到根目录后，直接导入邻居模块，最简单最稳健
 from utils import get_resource_path, get_writable_data_path, _normalize_full_width_to_half_width
+from ui_styles import CHECKABLE_BUTTON_STYLE, SECONDARY_BUTTON_STYLE, SUCCESS_TOOLBUTTON_STYLE
+from edition_config import is_trial_edition
+
+
+# 完整资料打印暂时封闭；生成代码继续保留，后续需要时可恢复。
+FULL_LIST_PRINTING_ENABLED = False
 
 
 def _normalize_search_text(value):
@@ -30,6 +36,17 @@ class WordListView(QtWidgets.QWidget):
     def __init__(self, main_window):
         super().__init__()
         self.main_window = main_window
+        self.edition = getattr(main_window, "edition", None)
+        self.is_trial = is_trial_edition(self.edition)
+        self.word_list_title = (
+            self.edition.word_list_title if self.edition is not None
+            else "高考3800词汇表"
+        )
+        self.include_phrase_resources = bool(
+            self.edition is None
+            or self.edition.page_enabled("phrase_challenge")
+            or self.edition.page_enabled("phrase_list")
+        )
         self.all_regular_words = []
         self.all_mistake_words = []
         self.display_words = []
@@ -43,6 +60,7 @@ class WordListView(QtWidgets.QWidget):
         self.total_pages = 0
         self.hide_english = False
         self.hide_chinese = False
+        self.initial_filter = ""
 
         self._init_ui()
         # 延迟加载
@@ -55,47 +73,81 @@ class WordListView(QtWidgets.QWidget):
         main_layout.setSpacing(0)
 
         header = QtWidgets.QFrame()
-        header.setFixedHeight(50)
+        header.setFixedHeight(100)
         header.setStyleSheet("background: #F8F9FA; border-bottom: 1px solid #DEE2E6;")
-        h_layout = QtWidgets.QHBoxLayout(header)
-        h_layout.setContentsMargins(15, 0, 15, 0)
+        header_layout = QtWidgets.QVBoxLayout(header)
+        header_layout.setContentsMargins(15, 8, 15, 8)
+        header_layout.setSpacing(8)
+        self.header_primary_row = QtWidgets.QHBoxLayout()
+        self.header_primary_row.setSpacing(9)
+        self.header_display_row = QtWidgets.QHBoxLayout()
+        self.header_display_row.setSpacing(10)
 
-        self.btn_reg = QtWidgets.QPushButton("📚 高考3800词汇表")
-        self.btn_mis = QtWidgets.QPushButton("❌ 错词表")
+        self.btn_reg = QtWidgets.QPushButton(self.word_list_title)
+        self.btn_mis = QtWidgets.QPushButton("查看单词错词表（0） →")
 
         self.btn_export = QtWidgets.QToolButton()
-        self.btn_export.setText("生成打印表")
+        self.btn_export.setText("生成错词打印表  ▼")
         self.btn_export.setPopupMode(QtWidgets.QToolButton.InstantPopup)
         self.btn_export.setFixedHeight(34)
-        self.btn_export.setMinimumWidth(112)
+        self.btn_export.setMinimumWidth(158)
         export_font = QtGui.QFont("Microsoft YaHei UI", 10)
         export_font.setWeight(QtGui.QFont.Weight.DemiBold)
         self.btn_export.setFont(export_font)
-        self.btn_export.setStyleSheet("""
-            QToolButton {
-                background: #28A745;
-                color: white;
-                border: none;
-                border-radius: 4px;
-                padding: 0 12px;
-                font-family: "Microsoft YaHei UI", "Microsoft YaHei";
-                font-size: 14px;
-                font-weight: 600;
-            }
-            QToolButton:hover { background: #218838; }
-            QToolButton:pressed { background: #1e7e34; }
-        """)
+        if self.is_trial:
+            self.btn_export.setText("体验版打印说明  ▼")
+            self.btn_export.setToolTip("打开查看正式版支持的错词打印类型")
+            self.btn_export.setStyleSheet("""
+                QToolButton {
+                    background: #f59e0b; color: white; border: 1px solid #d97706;
+                    border-radius: 8px; padding: 0 12px; font-size: 14px;
+                }
+                QToolButton:hover { background: #d97706; border-color: #b45309; }
+                QToolButton:pressed { background: #b45309; }
+                QToolButton::menu-indicator { image: none; width: 0; }
+            """)
+        else:
+            self.btn_export.setStyleSheet(SUCCESS_TOOLBUTTON_STYLE)
 
         self._setup_export_menu()
 
         self.search_input = QtWidgets.QLineEdit()
-        self.search_input.setPlaceholderText("检索词汇...")
-        self.search_input.setFixedWidth(150)
+        self.search_input.setPlaceholderText("检索单词或释义...")
+        self.search_input.setFixedWidth(145)
         self.search_input.setFixedHeight(34)
+
+        self.initial_filter_combo = QtWidgets.QComboBox()
+        self.initial_filter_combo.setObjectName("initial_filter_combo")
+        self.initial_filter_combo.setFixedSize(205, 36)
+        self.initial_filter_combo.setPlaceholderText("选择首字母筛选")
+        for letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+            self.initial_filter_combo.addItem(
+                f"显示 {letter} 字母开头单词", letter.lower())
+        self.initial_filter_combo.setCurrentIndex(-1)
+        self.initial_filter_combo.setCursor(QtCore.Qt.CursorShape.PointingHandCursor)
+        self.initial_filter_combo.setStyleSheet("""
+            QComboBox { background:white; color:#334155; border:1px solid #cbd5e1;
+                border-radius:8px; padding:0 28px 0 10px; font-size:13px; }
+            QComboBox:hover { border-color:#3b82f6; }
+            QComboBox::drop-down { width:26px; border:none; }
+            QComboBox::down-arrow { width:10px; height:10px; }
+            QComboBox QAbstractItemView { min-width:205px; }
+        """)
+
+        self.btn_show_all_letters = QtWidgets.QPushButton("显示全部")
+        self.btn_show_all_letters.setObjectName("btn_show_all_letters")
+        self.btn_show_all_letters.setFixedSize(88, 36)
+        self.btn_show_all_letters.setCursor(
+            QtCore.Qt.CursorShape.PointingHandCursor)
+        self.btn_show_all_letters.setToolTip("清除字母筛选和检索内容，恢复完整词表")
+        self.btn_show_all_letters.setStyleSheet(SECONDARY_BUTTON_STYLE)
 
         self.btn_show_both = QtWidgets.QPushButton("📚 中英对照")
         self.btn_only_english = QtWidgets.QPushButton("📖 只看英语")
         self.btn_only_chinese = QtWidgets.QPushButton("📝 只看中文")
+        self.lbl_filter_status = QtWidgets.QLabel("当前：全部词汇")
+        self.lbl_filter_status.setStyleSheet(
+            "color:#64748b; font-size:13px; padding-left:8px;")
         self.language_display_group = QtWidgets.QButtonGroup(self)
         self.language_display_group.setExclusive(True)
         for button in [self.btn_show_both, self.btn_only_english, self.btn_only_chinese]:
@@ -103,39 +155,28 @@ class WordListView(QtWidgets.QWidget):
             self.language_display_group.addButton(button)
         self.btn_show_both.setChecked(True)
 
-        button_style = """
-            QPushButton {
-                background-color: #ffffff;
-                color: #333333;
-                border: 1px solid #d1d5db;
-                border-radius: 6px;
-                font-size: 14px;
-                padding: 0 12px;
-            }
-            QPushButton:hover {
-                background-color: #f3f4f6;
-            }
-            QPushButton:pressed {
-                background-color: #e2e6ea;
-            }
-            QPushButton:checked {
-                background-color: #2196F3;
-                color: white;
-            }
-        """
+        button_style = CHECKABLE_BUTTON_STYLE
 
-        for w in [
-            self.btn_reg, self.btn_mis, self.btn_export, self.search_input,
-            self.btn_show_both, self.btn_only_english, self.btn_only_chinese,
-        ]:
-            h_layout.addWidget(w)
-            if isinstance(w, QtWidgets.QPushButton):
-                w.setCheckable(True)
-                w.setFixedHeight(34)
-                if w is not self.btn_export:
-                    w.setStyleSheet(button_style)
+        for button in (self.btn_reg, self.btn_mis):
+            button.setCheckable(True)
+            button.setFixedHeight(34)
+            button.setStyleSheet(button_style)
+            self.header_primary_row.addWidget(button)
+        self.header_primary_row.addWidget(self.search_input)
+        self.header_primary_row.addWidget(self.btn_export)
+        self.header_primary_row.addStretch()
 
-        h_layout.addStretch()
+        for button in (self.btn_show_both, self.btn_only_english, self.btn_only_chinese):
+            button.setFixedHeight(36)
+            button.setMinimumWidth(112)
+            button.setStyleSheet(button_style)
+            self.header_display_row.addWidget(button)
+        self.header_display_row.addWidget(self.initial_filter_combo)
+        self.header_display_row.addWidget(self.btn_show_all_letters)
+        self.header_display_row.addWidget(self.lbl_filter_status)
+        self.header_display_row.addStretch()
+        header_layout.addLayout(self.header_primary_row)
+        header_layout.addLayout(self.header_display_row)
         main_layout.addWidget(header)
 
         self.scroll = QtWidgets.QScrollArea()
@@ -156,8 +197,8 @@ class WordListView(QtWidgets.QWidget):
         self.btn_next = QtWidgets.QPushButton("下一页 →")
         self.btn_prev.setFixedHeight(34)
         self.btn_next.setFixedHeight(34)
-        self.btn_prev.setStyleSheet(button_style)
-        self.btn_next.setStyleSheet(button_style)
+        self.btn_prev.setStyleSheet(SECONDARY_BUTTON_STYLE)
+        self.btn_next.setStyleSheet(SECONDARY_BUTTON_STYLE)
         f_layout.addWidget(self.lbl_page); f_layout.addStretch(); f_layout.addWidget(self.btn_prev); f_layout.addWidget(self.btn_next)
         main_layout.addWidget(footer)
 
@@ -167,8 +208,26 @@ class WordListView(QtWidgets.QWidget):
         self.btn_only_english.clicked.connect(lambda: self._set_display_mode("english"))
         self.btn_only_chinese.clicked.connect(lambda: self._set_display_mode("chinese"))
         self.search_input.textChanged.connect(self._handle_search)
+        self.initial_filter_combo.currentIndexChanged.connect(
+            self._apply_initial_filter)
+        self.btn_show_all_letters.clicked.connect(self._show_all_letters)
         self.btn_prev.clicked.connect(lambda: self._change_page(-1))
         self.btn_next.clicked.connect(lambda: self._change_page(1))
+
+    def _update_mistake_button_text(self):
+        self.btn_mis.setText(f"查看单词错词表（{len(self.all_mistake_words)}） →")
+
+    def _apply_initial_filter(self, _index=None):
+        self.initial_filter = str(self.initial_filter_combo.currentData() or "")
+        self._handle_search(self.search_input.text())
+
+    def _show_all_letters(self):
+        """Clear every lookup condition so the complete current list is visible."""
+        self.initial_filter_combo.setCurrentIndex(-1)
+        if self.search_input.text():
+            self.search_input.clear()
+        else:
+            self._handle_search("")
 
     def _setup_export_menu(self):
         menu = QtWidgets.QMenu(self)
@@ -179,9 +238,10 @@ class WordListView(QtWidgets.QWidget):
             'QMenu::item { padding: 8px 25px; }'
         )
 
-        menu.addAction("高考3800单词打印表").triggered.connect(lambda: self._do_export(self.all_regular_words, "normal", "高考3800单词打印表"))
-        menu.addAction("高考3800词默写打印表-看英默中").triggered.connect(lambda: self._do_export(self.all_regular_words, "en_dictate_cn", "高考3800词默写打印表_看英默中"))
-        menu.addAction("高考3800词默写打印表-看中默英").triggered.connect(lambda: self._do_export(self.all_regular_words, "cn_dictate_en", "高考3800词默写打印表_看中默英"))
+        export_title = self.word_list_title
+        menu.addAction(f"{export_title}打印表").triggered.connect(lambda: self._do_export(self.all_regular_words, "normal", f"{export_title}打印表"))
+        menu.addAction(f"{export_title}默写打印表-看英默中").triggered.connect(lambda: self._do_export(self.all_regular_words, "en_dictate_cn", f"{export_title}默写打印表_看英默中"))
+        menu.addAction(f"{export_title}默写打印表-看中默英").triggered.connect(lambda: self._do_export(self.all_regular_words, "cn_dictate_en", f"{export_title}默写打印表_看中默英"))
         menu.addSeparator()
         menu.addAction("错词英语词汇打印表").triggered.connect(lambda: self._do_export(self.all_mistake_words, "normal", "错词英语词汇打印表"))
         menu.addAction("错词英语词汇默写打印表-看英默中").triggered.connect(lambda: self._do_export(self.all_mistake_words, "en_dictate_cn", "错词英语词汇默写打印表_看英默中"))
@@ -190,29 +250,80 @@ class WordListView(QtWidgets.QWidget):
         menu.addAction("自主录入单词打印表").triggered.connect(lambda: self._do_export(self._get_self_reg(), "normal", "自主录入单词打印表"))
         menu.addAction("自主录入单词默写打印表-看英默中").triggered.connect(lambda: self._do_export(self._get_self_reg(), "en_dictate_cn", "自主录入单词默写打印表_看英默中"))
         menu.addAction("自主录入单词默写打印表-看中默英").triggered.connect(lambda: self._do_export(self._get_self_reg(), "cn_dictate_en", "自主录入单词默写打印表_看中默英"))
-        menu.addSeparator()
-        # New: Phrase List export options
-        menu.addAction("短语打印表").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self.all_phrases), "normal", "短语打印表", data_type="phrases"))
-        menu.addAction("短语默写打印表-看英默中").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self.all_phrases), "en_dictate_cn", "短语默写打印表_看英默中", data_type="phrases"))
-        menu.addAction("短语默写打印表-看中默英").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self.all_phrases), "cn_dictate_en", "短语默写打印表_看中默英", data_type="phrases"))
-        menu.addSeparator()
-        menu.addAction("短语错题打印表").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self._get_mistake_phrases()), "normal", "短语错题打印表", data_type="phrases"))
-        menu.addAction("短语错题默写打印表-看英默中").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self._get_mistake_phrases()), "en_dictate_cn", "短语错题默写打印表_看英默中", data_type="phrases"))
-        menu.addAction("短语错题默写打印表-看中默英").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self._get_mistake_phrases()), "cn_dictate_en", "短语错题默写打印表_看中默英", data_type="phrases"))
-        menu.addSeparator()
-        # New: Irregular Verbs List export options
-        menu.addAction("不规则动词打印表").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self.all_irregulars), "normal", "不规则动词打印表", data_type="irregular_verbs"))
-        menu.addAction("不规则动词默写打印表-看原形默过去式/过去分词").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self.all_irregulars), "en_dictate_cn", "不规则动词默写打印表_看原形默过去式_过去分词", data_type="irregular_verbs"))
-        menu.addSeparator()
-        menu.addAction("不规则动词错题打印表").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self._get_mistake_irregulars()), "normal", "不规则动词错题打印表", data_type="irregular_verbs"))
-        menu.addAction("不规则动词错题默写打印表-看原形默过去式/过去分词").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self._get_mistake_irregulars()), "en_dictate_cn", "不规则动词错题默写打印表_看原形默过去式_过去分词", data_type="irregular_verbs"))
+        if self.include_phrase_resources:
+            menu.addSeparator()
+            menu.addAction("短语打印表").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self.all_phrases), "normal", "短语打印表", data_type="phrases"))
+            menu.addAction("短语默写打印表-看英默中").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self.all_phrases), "en_dictate_cn", "短语默写打印表_看英默中", data_type="phrases"))
+            menu.addAction("短语默写打印表-看中默英").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self.all_phrases), "cn_dictate_en", "短语默写打印表_看中默英", data_type="phrases"))
+            menu.addSeparator()
+            menu.addAction("短语错词打印表").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self._get_mistake_phrases()), "normal", "短语错词打印表", data_type="phrases"))
+            menu.addAction("短语错词默写打印表-看英默中").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self._get_mistake_phrases()), "en_dictate_cn", "短语错词默写打印表_看英默中", data_type="phrases"))
+            menu.addAction("短语错词默写打印表-看中默英").triggered.connect(lambda: self._do_export(self._prepare_phrase_data(self._get_mistake_phrases()), "cn_dictate_en", "短语错词默写打印表_看中默英", data_type="phrases"))
+            menu.addSeparator()
+            menu.addAction("不规则动词打印表").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self.all_irregulars), "normal", "不规则动词打印表", data_type="irregular_verbs"))
+            menu.addAction("不规则动词默写打印表-看原形默过去式/过去分词").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self.all_irregulars), "en_dictate_cn", "不规则动词默写打印表_看原形默过去式_过去分词", data_type="irregular_verbs"))
+            menu.addSeparator()
+            menu.addAction("不规则动词错词打印表").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self._get_mistake_irregulars()), "normal", "不规则动词错词打印表", data_type="irregular_verbs"))
+            menu.addAction("不规则动词错词默写打印表-看原形默过去式/过去分词").triggered.connect(lambda: self._do_export(self._prepare_irregular_data(self._get_mistake_irregulars()), "en_dictate_cn", "不规则动词错词默写打印表_看原形默过去式_过去分词", data_type="irregular_verbs"))
+
+        if not FULL_LIST_PRINTING_ENABLED:
+            # 仅封住完整资料入口，不删除原有生成实现。
+            for action in list(menu.actions()):
+                if action.isSeparator():
+                    continue
+                text = action.text()
+                if "错词" not in text and "错题" not in text:
+                    menu.removeAction(action)
+
+            # 清除隐藏菜单项后遗留的连续或首尾分隔线。
+            previous_was_separator = True
+            for action in list(menu.actions()):
+                if action.isSeparator():
+                    if previous_was_separator:
+                        menu.removeAction(action)
+                    else:
+                        previous_was_separator = True
+                else:
+                    previous_was_separator = False
+            remaining_actions = menu.actions()
+            if remaining_actions and remaining_actions[-1].isSeparator():
+                menu.removeAction(remaining_actions[-1])
+
+        if self.is_trial:
+            # 体验版保留入口用于说明打印范围，但不允许触发任何文件生成。
+            printable_actions = [
+                action for action in menu.actions() if not action.isSeparator()
+            ]
+            for action in printable_actions:
+                action.setText(f"正式版可打印：{action.text()}")
+                action.setEnabled(False)
+
+            self.trial_print_header_label = QtWidgets.QLabel("体验版暂不支持打印")
+            self.trial_print_header_label.setContentsMargins(12, 8, 12, 8)
+            self.trial_print_header_label.setStyleSheet(
+                "color:#b45309; background:#fffbeb; font-size:14px; "
+                "font-weight:600; border:1px solid #fde68a; border-radius:6px;"
+            )
+            self.trial_print_header_action = QtWidgets.QWidgetAction(menu)
+            self.trial_print_header_action.setDefaultWidget(
+                self.trial_print_header_label)
+            first_action = menu.actions()[0] if menu.actions() else None
+            if first_action is None:
+                menu.addAction(self.trial_print_header_action)
+            else:
+                menu.insertAction(first_action, self.trial_print_header_action)
+                menu.insertSeparator(first_action)
 
         self.btn_export.setMenu(menu)
 
     def _load_json_data(self):
         # 🟢 挪到根目录后，直接用 utils 提供的 resource_path 找 assets
         # 加载常规词汇
-        json_path = get_resource_path("assets/vocabulary.json")
+        vocabulary_path = (
+            self.edition.vocabulary_path if self.edition is not None
+            else "assets/vocabulary.json"
+        )
+        json_path = get_resource_path(vocabulary_path)
         if os.path.exists(json_path):
             try:
                 with open(json_path, 'r', encoding='utf-8') as f:
@@ -221,12 +332,20 @@ class WordListView(QtWidgets.QWidget):
             except Exception as e:
                 print(f"DEBUG: 加载常规词汇失败 {e}")
         
-        # New: Load phrase data
-        phrase_json_path = get_resource_path("assets/short_phrase.json")
-        if os.path.exists(phrase_json_path):
+        # Phrase resources are only loaded for editions that expose them.
+        phrase_path = (
+            self.edition.phrase_path if self.edition is not None
+            else "assets/short_phrase.json"
+        )
+        phrase_json_path = get_resource_path(phrase_path)
+        if self.include_phrase_resources and os.path.exists(phrase_json_path):
             try:
                 with open(phrase_json_path, 'r', encoding='utf-8') as f:
-                    self.all_phrases = json.load(f)
+                    self.all_phrases = [
+                        item for item in json.load(f)
+                        if isinstance(item, dict)
+                        and item.get("tier", "core") != "candidate"
+                    ]
                     self.all_phrases.sort(key=lambda x: (str(x.get('p',''))).lower()) # Sort by phrase 'p' key
                 print(f"✅ 短语表加载成功，共 {len(self.all_phrases)} 词")
             except Exception as e:
@@ -234,8 +353,12 @@ class WordListView(QtWidgets.QWidget):
                 self.all_phrases = []
 
         # New: Load irregular verb data
-        irregular_json_path = get_resource_path("assets/irregular_verbs.json")
-        if os.path.exists(irregular_json_path):
+        irregular_path = (
+            self.edition.irregular_verbs_path if self.edition is not None
+            else "assets/irregular_verbs.json"
+        )
+        irregular_json_path = get_resource_path(irregular_path)
+        if self.include_phrase_resources and os.path.exists(irregular_json_path):
             try:
                 with open(irregular_json_path, 'r', encoding='utf-8') as f:
                     self.all_irregulars = json.load(f)
@@ -259,6 +382,7 @@ class WordListView(QtWidgets.QWidget):
                 self.all_mistake_words = []
 
         # 保留外部跳转已经指定的目标页，不能在延迟初始化完成后强制切回常规词表。
+        self._update_mistake_button_text()
         self._switch_list(self.current_list_type)
 
     def _load_writable_json_list(self, filename, sort_key, label):
@@ -280,13 +404,13 @@ class WordListView(QtWidgets.QWidget):
 
     def _get_mistake_phrases(self):
         self.all_mistake_phrases = self._load_writable_json_list(
-            "mistake_phrases.json", "p", "短语错题表"
+            "mistake_phrases.json", "p", "短语错词表"
         )
         return self.all_mistake_phrases
 
     def _get_mistake_irregulars(self):
         self.all_mistake_irregulars = self._load_writable_json_list(
-            "mistake_irregular_verbs.json", "infinitive", "不规则动词错题表"
+            "mistake_irregular_verbs.json", "infinitive", "不规则动词错词表"
         )
         return self.all_mistake_irregulars
 
@@ -315,6 +439,7 @@ class WordListView(QtWidgets.QWidget):
 
     def refresh_mistake_list(self, data):
         self.all_mistake_words = data if isinstance(data, list) else [data] if data else []
+        self._update_mistake_button_text()
         if self.current_list_type == "mistake":
             self._handle_search(self.search_input.text())
 
@@ -368,10 +493,11 @@ class WordListView(QtWidgets.QWidget):
         idx = QtWidgets.QLabel(); idx.setFixedWidth(35); idx.setAlignment(QtCore.Qt.AlignCenter)
         idx.setStyleSheet("background: #F8F9FA; color: #ADB5BD; font-size: 10px; font-weight: bold;")
         w_lbl = QtWidgets.QLabel(); w_lbl.setFixedWidth(130);
-        w_lbl.setFont(QtGui.QFont("Arial", 11, QtGui.QFont.Bold))
+        w_lbl.setFont(QtGui.QFont(
+            "Microsoft YaHei UI", 11, QtGui.QFont.DemiBold))
         w_lbl.setStyleSheet("padding-left: 8px; color: #212529; border-right: 1px solid #F1F3F5;")
         c_lbl = QtWidgets.QLabel(); c_lbl.setWordWrap(True);
-        c_lbl.setFont(QtGui.QFont("Microsoft YaHei", 10))
+        c_lbl.setFont(QtGui.QFont("Microsoft YaHei UI", 10))
         c_lbl.setStyleSheet("padding-left: 8px; color: #495057;")
 
         if item is not None:
@@ -387,11 +513,22 @@ class WordListView(QtWidgets.QWidget):
     def _handle_search(self, text):
         t = _normalize_search_text(text)
         src = self.all_regular_words if self.current_list_type == "regular" else self.all_mistake_words
+        if self.initial_filter:
+            src = [
+                word for word in src
+                if _normalize_search_text(word.get('word', '')).startswith(
+                    self.initial_filter)
+            ]
         self.display_words = [
             word for word in src
             if t in _normalize_search_text(word.get('word', ''))
             or t in _normalize_search_text(word.get('content', ''))
         ] if t else src.copy()
+        label = (
+            f"{self.initial_filter.upper()} 字母开头单词"
+            if self.initial_filter else "全部词汇")
+        self.lbl_filter_status.setText(
+            f"当前：{label}，共 {len(self.display_words)} 词")
         self.current_page = 0; self._render_page()
 
     def _do_export(self, data, mode, name, data_type="words"):
