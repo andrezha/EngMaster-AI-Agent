@@ -1,0 +1,16 @@
+{
+  "source_id": "open-english-wordnet-2025",
+  "title": "Open English WordNet 2025",
+  "edition_date": "2025-12-31",
+  "download_url": "https://en-word.net/downloads/english-wordnet-2025-json.zip",
+  "download_page": "https://en-word.net/downloads",
+  "retrieved_on": "2026-08-08",
+  "local_file": "english-wordnet-2025-json.zip",
+  "sha256": "7d749f6e2c39e6970e4997839dcf6e42fd281f3c2fae0171d2192bae8cfa4b51",
+  "file_size_bytes": 9986555,
+  "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "license_file": "LICENSE.md",
+  "license_sha256": "672cc8b5663e8dc74c4b07a9dcf477193853575b119908fd3dc0aeeb60a9dbbb",
+  "usage": "Validate candidate lemmas, parts of speech and sense presence. Definitions are not copied by the extension screening stage.",
+  "edition_note": "The 2025 standard edition excludes the curated proper-name supplement provided separately as 2025 plus."
+}

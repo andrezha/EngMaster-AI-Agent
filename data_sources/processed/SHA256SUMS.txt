@@ -1,0 +1,2 @@
+d5b7571afea147186006b71fffb5bc27c35601fd856490f8e72a2100c06e1047  curriculum_vocabulary.csv
+368fa88f103149e545b12900d6d88904b13d2bc4a80def8b7c2834fc8eeacbef  curriculum_vocabulary.json

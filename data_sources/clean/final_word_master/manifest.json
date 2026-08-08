@@ -1,0 +1,41 @@
+{
+  "dataset_id": "engmaster-final-english-word-master",
+  "status": "english_scope_frozen",
+  "record_count": 4012,
+  "curriculum_record_count": 3004,
+  "extension_record_count": 1008,
+  "extension_route_counts": {
+    "strong_independent_frequency": 738,
+    "original_medium_frequency": 208,
+    "promoted_from_low_frequency_semantic_review": 33,
+    "lexical_edge_semantic_review": 27,
+    "normalized_legacy_surface_form": 2
+  },
+  "definitions_and_phonetics_status": "intentionally_blank",
+  "legacy_content_reused": false,
+  "extra_phrases_hyphenated_proper_names_abbreviations_included": false,
+  "official_curriculum_multiword_entries_preserved": 5,
+  "intentional_case_sensitive_pairs": [
+    [
+      "China",
+      "china"
+    ],
+    [
+      "March",
+      "march"
+    ],
+    [
+      "May",
+      "may"
+    ],
+    [
+      "Miss",
+      "miss"
+    ],
+    [
+      "US",
+      "us"
+    ]
+  ],
+  "marketing_note": "Record count is the result of documented rules; it is not an official exam word count."
+}

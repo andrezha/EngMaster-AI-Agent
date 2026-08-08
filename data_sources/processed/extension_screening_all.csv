@@ -1,0 +1,1205 @@
+﻿legacy_word,legacy_row_count,legacy_rows,structural_type,oewn_match_type,oewn_lemmas,oewn_pos,oewn_sense_count,moby_wordlist_match_type,moby_wordlist_forms,moby_pos_match_type,moby_pos_forms,moby_pos_codes,normalized_headword_candidates,normalized_headword_evidence,existing_phrase_table_match,lexical_evidence_score,recommendation,reason
+abolish,1,7,lowercase_single_word,exact,abolish,v,1,exact,abolish,exact,abolish,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+abortion,1,8,lowercase_single_word,exact,abortion,n,2,exact,abortion,exact,abortion,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+abrupt,1,12,lowercase_single_word,exact,abrupt,a,4,exact,abrupt,exact,abrupt,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+absolute,1,15,lowercase_single_word,exact,absolute,a|n,6,exact,absolute,exact,absolute,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+absurd,1,18,lowercase_single_word,exact,absurd,a|n,3,exact,absurd,exact,absurd,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+abundant,1,19,lowercase_single_word,exact,abundant,a,1,exact,abundant,exact,abundant,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+academy,1,22,lowercase_single_word,exact,academy,n,4,exact,academy,exact,academy,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+accelerate,1,23,lowercase_single_word,exact,accelerate,v,2,exact,accelerate,exact,accelerate,V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+accessible,1,27,lowercase_single_word,exact,accessible,a,4,exact,accessible,exact,accessible,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+accomplish,1,31,lowercase_single_word,exact,accomplish,v,2,exact,accomplish,exact,accomplish,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+accountant,1,34,lowercase_single_word,exact,accountant,n,1,exact,accountant,exact,accountant,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+accumulate,1,35,lowercase_single_word,exact,accumulate,v,2,exact,accumulate,exact,accumulate,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+accuracy,1,36,lowercase_single_word,exact,accuracy,n,2,exact,accuracy,exact,accuracy,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+accustomed,1,38,lowercase_single_word,exact,accustomed,a,1,exact,accustomed,exact,accustomed,A,accustom,accustom:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+acquaintance,1,44,lowercase_single_word,exact,acquaintance,n,3,exact,acquaintance,exact,acquaintance,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+acquisition,1,46,lowercase_single_word,exact,acquisition,n,4,exact,acquisition,exact,acquisition,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+acre,1,47,lowercase_single_word,exact,acre,n,1,exact,acre,exact,acre,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+actual,1,55,lowercase_single_word,exact,actual,a,5,exact,actual,exact,actual,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+acute,1,56,lowercase_single_word,exact,acute,a|n,7,exact,acute,exact,acute,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+addicted,1,62,lowercase_single_word,exact,addicted,a,1,exact,addicted,exact,addicted,A,addict,addict:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+adequate,1,65,lowercase_single_word,exact,adequate,a,3,exact,adequate,exact,adequate,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+adjustment,1,67,lowercase_single_word,exact,adjustment,n,5,exact,adjustment,exact,adjustment,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+admirable,1,69,lowercase_single_word,exact,admirable,a,2,exact,admirable,exact,admirable,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+admission,1,71,lowercase_single_word,exact,admission,n,4,exact,admission,exact,admission,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+adolescence,1,73,lowercase_single_word,exact,adolescence,n,2,exact,adolescence,exact,adolescence,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+adolescent,1,74,lowercase_single_word,exact,adolescent,a|n,5,exact,adolescent,exact,adolescent,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+adore,1,76,lowercase_single_word,exact,adore,v,1,exact,adore,exact,adore,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+aeroplane,1,86,lowercase_single_word,exact,aeroplane,n,1,exact,aeroplane,exact,aeroplane,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+affection,1,89,lowercase_single_word,exact,affection,n,1,exact,affection,exact,affection,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+agent,1,102,lowercase_single_word,exact,agent,n,6,exact,agent,exact,agent,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+aggression,1,103,lowercase_single_word,exact,aggression,n,5,exact,aggression,exact,aggression,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+aggressive,1,104,lowercase_single_word,exact,aggressive,a,3,exact,aggressive,exact,aggressive,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+agricultural,1,108,lowercase_single_word,exact,agricultural,a,2,none,,exact,agricultural,A,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+AIDS,1,112,all_uppercase,exact,AIDS,n,1,none,,none,,,aid,aid:OEWN+MobyWords+MobyPOS,none,1,special_reference_review,全大写形式可能是缩写、机构名或特殊标签，需单独核实
+aircraft,1,115,lowercase_single_word,exact,aircraft,n,1,exact,aircraft,exact,aircraft,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+airmail,1,117,lowercase_single_word,exact,airmail,n|v,3,exact,airmail,none,,,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+airplane,1,118,lowercase_single_word,exact,airplane,n,1,exact,airplane,exact,airplane,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+airspace,1,120,lowercase_single_word,exact,airspace,n,2,exact,airspace,exact,airspace,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+album,1,122,lowercase_single_word,exact,album,n,2,exact,album,exact,album,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+alcoholic,1,124,lowercase_single_word,exact,alcoholic,a|n,3,exact,alcoholic,exact,alcoholic,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+algebra,1,125,lowercase_single_word,exact,algebra,n,1,exact,algebra,exact,algebra,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+alike,1,126,lowercase_single_word,exact,alike,a|r,3,exact,alike,exact,alike,v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+allergic,1,129,lowercase_single_word,exact,allergic,a,2,exact,allergic,exact,allergic,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+alley,1,130,lowercase_single_word,exact,alley,n,2,exact,alley,exact,alley,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+allocate,1,131,lowercase_single_word,exact,allocate,v,1,exact,allocate,exact,allocate,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+allowance,1,133,lowercase_single_word,exact,allowance,n|v,7,exact,allowance,exact,allowance,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+alphabet,1,139,lowercase_single_word,exact,alphabet,n,2,exact,alphabet,exact,alphabet,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+altitude,1,144,lowercase_single_word,exact,altitude,n,3,exact,altitude,exact,altitude,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+aluminium,1,146,lowercase_single_word,exact,aluminium,n,1,exact,aluminium,exact,aluminium,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+amaze,1,151,lowercase_single_word,exact,amaze,v,2,exact,amaze,exact,amaze,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+ambassador,1,153,lowercase_single_word,exact,ambassador,n,2,exact,ambassador,exact,ambassador,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+ambiguous,1,154,lowercase_single_word,exact,ambiguous,a,3,exact,ambiguous,exact,ambiguous,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+ample,1,161,lowercase_single_word,exact,ample,a,3,exact,ample,exact,ample,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+amusement,1,163,lowercase_single_word,exact,amusement,n,2,exact,amusement,exact,amusement,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+analysis,1,165,lowercase_single_word,exact,analysis,n,6,exact,analysis,exact,analysis,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+anchor,1,167,lowercase_single_word,exact,anchor,n|v,5,exact,anchor,exact,anchor,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+anecdote,1,170,lowercase_single_word,exact,anecdote,n,1,exact,anecdote,exact,anecdote,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+anniversary,1,176,lowercase_single_word,exact,anniversary,n,1,exact,anniversary,exact,anniversary,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+announcement,1,178,lowercase_single_word,exact,announcement,n,2,exact,announcement,exact,announcement,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Antarctic,1,184,initial_uppercase,exact,Antarctic,a,1,exact,Antarctic,exact,Antarctic,A|N,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+Antarctica,1,186,initial_uppercase,none,,,0,exact,Antarctica,exact,Antarctica,N,,,none,2,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+apology,1,200,lowercase_single_word,exact,apology,n,3,exact,apology,exact,apology,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+apparent,1,201,lowercase_single_word,exact,apparent,a,2,exact,apparent,exact,apparent,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+appearance,1,204,lowercase_single_word,exact,appearance,n,6,exact,appearance,exact,appearance,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+appendix,1,205,lowercase_single_word,exact,appendix,n,2,exact,appendix,exact,appendix,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+appoint,1,212,lowercase_single_word,exact,appoint,v,3,exact,appoint,exact,appoint,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+appreciation,1,215,lowercase_single_word,exact,appreciation,n,5,exact,appreciation,exact,appreciation,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+approximately,1,219,lowercase_single_word,exact,approximately,r,1,none,,exact,approximately,v,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+apron,1,220,lowercase_single_word,exact,apron,n,4,exact,apron,exact,apron,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Arab,1,226,initial_uppercase,exact,Arab,n,2,exact,Arab,exact,Arab,N,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+Arabic,1,227,initial_uppercase,exact,Arabic,a|n,2,exact,Arabic,exact,Arabic,A|N,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+arbitrary,1,221,lowercase_single_word,exact,arbitrary,a,1,exact,arbitrary,exact,arbitrary,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+architecture,1,224,lowercase_single_word,exact,architecture,n,4,exact,architecture,exact,architecture,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Arctic,1,228,initial_uppercase,exact,Arctic,a,1,exact,Arctic,exact,Arctic,A|N,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+argument,1,234,lowercase_single_word,exact,argument,n,7,exact,argument,exact,argument,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+arithmetic,1,236,lowercase_single_word,exact,arithmetic,a|n,2,exact,arithmetic,exact,arithmetic,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+armchair,1,238,lowercase_single_word,exact,armchair,n,1,exact,armchair,exact,armchair,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+arrange,1,241,lowercase_single_word,exact,arrange,v,7,exact,arrange,exact,arrange,i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+arrival,1,244,lowercase_single_word,exact,arrival,n,3,exact,arrival,exact,arrival,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+ash,1,252,lowercase_single_word,exact,ash,n|v,4,exact,ash,exact,ash,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+assessment,1,261,lowercase_single_word,exact,assessment,n,4,exact,assessment,exact,assessment,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+assist,1,262,lowercase_single_word,exact,assist,n|v,5,exact,assist,exact,assist,N|V|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+assistance,1,263,lowercase_single_word,exact,assistance,n,3,exact,assistance,exact,assistance,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+associate,1,265,lowercase_single_word,exact,associate,a|n|v,9,exact,associate,exact,associate,A|N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+astronomy,1,272,lowercase_single_word,exact,astronomy,n,1,exact,astronomy,exact,astronomy,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+athletic,1,275,lowercase_single_word,exact,athletic,a,3,exact,athletic,exact,athletic,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+athletics,1,276,lowercase_single_word,exact,athletics,n,3,exact,athletics,exact,athletics,N,athletic,athletic:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+atom,1,280,lowercase_single_word,exact,atom,n,2,exact,atom,exact,atom,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+attentively,1,287,lowercase_single_word,exact,attentively,r,1,none,,exact,attentively,v,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+attraction,1,290,lowercase_single_word,exact,attraction,n,5,exact,attraction,exact,attraction,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+attractive,1,291,lowercase_single_word,exact,attractive,a,3,exact,attractive,exact,attractive,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+authentic,1,293,lowercase_single_word,exact,authentic,a,2,exact,authentic,exact,authentic,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+avenue,1,304,lowercase_single_word,exact,avenue,n,2,exact,avenue,exact,avenue,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bachelor,1,315,lowercase_single_word,exact,bachelor,n|v,3,exact,bachelor,exact,bachelor,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+backache,1,317,lowercase_single_word,exact,backache,n,1,exact,backache,exact,backache,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bacterium,1,321,lowercase_single_word,exact,bacterium,n,1,exact,bacterium,exact,bacterium,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+badly,1,323,lowercase_single_word,exact,badly,r,10,exact,badly,exact,badly,v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+baggage,1,326,lowercase_single_word,exact,baggage,n,3,exact,baggage,exact,baggage,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bake,1,327,lowercase_single_word,exact,bake,v,4,exact,bake,exact,bake,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+balcony,1,330,lowercase_single_word,exact,balcony,n,2,exact,balcony,exact,balcony,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+ballpoint,1,334,lowercase_single_word,exact,ballpoint,n,1,none,,exact,ballpoint,N,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bandage,1,339,lowercase_single_word,exact,bandage,n|v,3,exact,bandage,exact,bandage,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bang,1,340,lowercase_single_word,exact,bang,n|r|v,12,exact,bang,exact,bang,N|V|i|t|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bank account,1,342,multiword,exact,bank account,n,1,exact,bank account,exact,bank account,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+barber,1,345,lowercase_single_word,exact,barber,n|v,2,exact,barber,exact,barber,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+barbershop,1,346,lowercase_single_word,exact,barbershop,n,1,exact,barbershop,exact,barbershop,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bare,1,347,lowercase_single_word,exact,bare,a|v,13,exact,bare,exact,bare,A|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bargain,1,348,lowercase_single_word,exact,bargain,n|v,4,exact,bargain,exact,bargain,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+basement,1,353,lowercase_single_word,exact,basement,n,2,exact,basement,exact,basement,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bathe,1,361,lowercase_single_word,exact,bathe,n|v,4,exact,bathe,exact,bathe,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bathrobe,1,362,lowercase_single_word,exact,bathrobe,n,1,exact,bathrobe,exact,bathrobe,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bathtub,1,364,lowercase_single_word,exact,bathtub,n,1,exact,bathtub,exact,bathtub,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+battleground,1,367,lowercase_single_word,exact,battleground,n,1,none,,none,,,,,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+beam,1,372,lowercase_single_word,exact,beam,n|v,13,exact,beam,exact,beam,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+beast,1,377,lowercase_single_word,exact,beast,n,2,exact,beast,exact,beast,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bedclothes,1,384,lowercase_single_word,exact,bedclothes,n,1,exact,bedclothes,exact,bedclothes,p,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+beddings,1,385,lowercase_single_word,none,,,0,none,,none,,,bedding,bedding:OEWN+MobyWords+MobyPOS,none,0,inflected_form_review,当前形式可能是复数、第三人称或分词；开放词典支持其候选词头，需决定是否改存词头
+bee,1,387,lowercase_single_word,exact,bee,n,2,exact,bee,exact,bee,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+beehive,1,389,lowercase_single_word,exact,beehive,n,4,exact,beehive,exact,beehive,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+beg,1,392,lowercase_single_word,exact,beg,v,4,exact,beg,exact,beg,N|V|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+beginning,1,394,lowercase_single_word,exact,beginning,a|n,6,exact,beginning,exact,beginning,N,begin,begin:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Belgium,1,400,initial_uppercase,none,,,0,exact,Belgium,exact,Belgium,N,,,none,2,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+belly,1,404,lowercase_single_word,exact,belly,n|v,6,exact,belly,exact,belly,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bench,1,408,lowercase_single_word,exact,bench,n|v,11,exact,bench,exact,bench,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+beneficial,1,411,lowercase_single_word,exact,beneficial,a,1,exact,beneficial,exact,beneficial,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bent,1,413,lowercase_single_word,exact,bent,a|n,7,exact,bent,exact,bent,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+besides,1,415,lowercase_single_word,exact,besides,r,2,exact,besides,exact,besides,P|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+best-seller,1,417,hyphenated,none,,,0,none,,none,,,,,none,0,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+betray,1,419,lowercase_single_word,exact,betray,v,6,exact,betray,exact,betray,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bid,1,423,lowercase_single_word,exact,bid,n|v,10,exact,bid,exact,bid,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bingo,1,428,lowercase_single_word,exact,bingo,n,1,exact,bingo,exact,bingo,!|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+biochemistry,1,429,lowercase_single_word,exact,biochemistry,n,1,exact,biochemistry,exact,biochemistry,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+biography,1,430,lowercase_single_word,exact,biography,n,1,exact,biography,exact,biography,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+birdcage,1,433,lowercase_single_word,exact,birdcage,n,1,exact,birdcage,exact,birdcage,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+birthplace,1,436,lowercase_single_word,exact,birthplace,n,2,exact,birthplace,exact,birthplace,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bishop,1,438,lowercase_single_word,exact,bishop,n,3,exact,bishop,exact,bishop,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+boat race,1,458,multiword,exact,boat race,n,1,exact,boat race,exact,boat race,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+boating,1,459,lowercase_single_word,exact,boating,n,1,exact,boating,exact,boating,N,boat,boat:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bodybuilding,1,460,lowercase_single_word,exact,bodybuilding,n,1,none,,none,,,,,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+bookcase,1,467,lowercase_single_word,exact,bookcase,n,1,exact,bookcase,exact,bookcase,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bookmark,1,468,lowercase_single_word,exact,bookmark,n,1,exact,bookmark,exact,bookmark,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bookshelf,1,469,lowercase_single_word,exact,bookshelf,n,1,exact,bookshelf,exact,bookshelf,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bookshop,1,470,lowercase_single_word,exact,bookshop,n,1,none,,none,,,,,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+bookstore,1,471,lowercase_single_word,exact,bookstore,n,1,exact,bookstore,exact,bookstore,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+boom,1,472,lowercase_single_word,exact,boom,n|v,10,exact,boom,exact,boom,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+booth,1,474,lowercase_single_word,exact,booth,n,3,exact,booth,exact,booth,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+botany,1,483,lowercase_single_word,exact,botany,n,2,exact,botany,exact,botany,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+boycott,1,496,lowercase_single_word,exact,boycott,n|v,2,exact,boycott,exact,boycott,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+brake,1,498,lowercase_single_word,exact,brake,n|v,7,exact,brake,exact,brake,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+brand,1,500,lowercase_single_word,exact,brand,n|v,10,exact,brand,exact,brand,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bravery,1,502,lowercase_single_word,exact,bravery,n,2,exact,bravery,exact,bravery,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+breakthrough,1,507,lowercase_single_word,exact,breakthrough,n,3,exact,breakthrough,exact,breakthrough,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+breathless,1,511,lowercase_single_word,exact,breathless,a,3,exact,breathless,exact,breathless,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+brewery,1,512,lowercase_single_word,exact,brewery,n,1,exact,brewery,exact,brewery,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+broken,1,528,lowercase_single_word,exact,broken,a,13,exact,broken,exact,broken,A|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+broom,1,529,lowercase_single_word,exact,broom,n|v,5,exact,broom,exact,broom,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+brotherhood,1,531,lowercase_single_word,exact,brotherhood,n,4,exact,brotherhood,exact,brotherhood,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+brunch,1,533,lowercase_single_word,exact,brunch,n|v,2,exact,brunch,exact,brunch,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bucket,1,535,lowercase_single_word,exact,bucket,n|v,4,exact,bucket,exact,bucket,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Buddhism,1,536,initial_uppercase,exact,Buddhism,n,2,exact,Buddhism,exact,Buddhism,A|N,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+Buddhist,1,537,initial_uppercase,exact,Buddhist,a|n,2,none,,exact,Buddhist,A|N,,,none,2,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+bun,1,542,lowercase_single_word,exact,bun,n,1,exact,bun,exact,bun,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bungalow,1,544,lowercase_single_word,exact,bungalow,n,1,exact,bungalow,exact,bungalow,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+burden,1,545,lowercase_single_word,exact,burden,n|v,6,exact,burden,exact,burden,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bureaucratic,1,546,lowercase_single_word,exact,bureaucratic,a,1,exact,bureaucratic,exact,bureaucratic,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+burglar,1,547,lowercase_single_word,exact,burglar,n,1,exact,burglar,exact,burglar,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+burial,1,548,lowercase_single_word,exact,burial,n,2,exact,burial,exact,burial,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+burst,1,550,lowercase_single_word,exact,burst,n|v,12,exact,burst,exact,burst,N|V|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+bus stop,1,553,multiword,exact,bus stop,n,1,none,,exact,bus stop,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+bush,1,554,lowercase_single_word,exact,bush,a|n|v,6,exact,bush,exact,bush,A|N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+businessman,1,556,lowercase_single_word,exact,businessman,n,1,exact,businessman,exact,businessman,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+businesswoman,1,557,lowercase_single_word,exact,businesswoman,n,1,exact,businesswoman,exact,businesswoman,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+butterfly,1,562,lowercase_single_word,exact,butterfly,n|v,5,exact,butterfly,exact,butterfly,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+cab,1,568,lowercase_single_word,exact,cab,n|v,4,exact,cab,exact,cab,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+can opener,1,583,multiword,exact,can opener,n,1,exact,can opener,exact,can opener,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+caption,1,597,lowercase_single_word,exact,caption,n|v,4,exact,caption,exact,caption,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+card games,1,601,multiword,none,,,0,none,,none,,,card game,card game:OEWN,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+carpenter,1,605,lowercase_single_word,exact,carpenter,n|v,2,exact,carpenter,exact,carpenter,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+carriage,1,607,lowercase_single_word,exact,carriage,n,5,exact,carriage,exact,carriage,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+carrier,1,608,lowercase_single_word,exact,carrier,n,11,exact,carrier,exact,carrier,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+cassette,1,615,lowercase_single_word,exact,cassette,n,1,exact,cassette,exact,cassette,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+casual,1,618,lowercase_single_word,exact,casual,a,9,exact,casual,exact,casual,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+catalogue,1,620,lowercase_single_word,exact,catalogue,n|v,4,exact,catalogue,exact,catalogue,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+catastrophe,1,621,lowercase_single_word,exact,catastrophe,n,3,exact,catastrophe,exact,catastrophe,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+cater,1,624,lowercase_single_word,exact,cater,v,2,exact,cater,exact,cater,i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+cathedral,1,626,lowercase_single_word,exact,cathedral,a|n,3,exact,cathedral,exact,cathedral,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+catholic,1,625,lowercase_single_word,exact,catholic,a,1,exact,catholic,exact,catholic,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+caution,1,629,lowercase_single_word,exact,caution,n|v,5,exact,caution,exact,caution,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+cautious,1,630,lowercase_single_word,exact,cautious,a|n,3,exact,cautious,exact,cautious,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+CD,1,632,all_uppercase,exact,CD,n,2,casefold,Cd | cd,exact,CD,N,,,none,3,special_reference_review,全大写形式可能是缩写、机构名或特殊标签，需单独核实
+CD-ROM,1,633,all_uppercase,exact,CD-ROM,n,1,none,,none,,,,,none,1,special_reference_review,全大写形式可能是缩写、机构名或特殊标签，需单独核实
+celebration,1,636,lowercase_single_word,exact,celebration,n,3,exact,celebration,exact,celebration,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+cellar,1,638,lowercase_single_word,exact,cellar,n,3,exact,cellar,exact,cellar,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+centigrade,1,640,lowercase_single_word,exact,centigrade,a,1,exact,centigrade,exact,centigrade,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+ceremony,1,645,lowercase_single_word,exact,ceremony,n,3,exact,ceremony,exact,ceremony,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+chain store,1,650,multiword,exact,chain store,n,1,exact,chain store,exact,chain store,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+challenging,1,656,lowercase_single_word,exact,challenging,a,3,exact,challenging,exact,challenging,A,challenge,challenge:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+changeable,1,659,lowercase_single_word,exact,changeable,a,4,exact,changeable,exact,changeable,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+chant,1,662,lowercase_single_word,exact,chant,n|v,3,exact,chant,exact,chant,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+cheer up,1,675,multiword,exact,cheer up,v,2,none,,none,,,,,none,1,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+cheerful,1,676,lowercase_single_word,exact,cheerful,a,2,exact,cheerful,exact,cheerful,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+cheers,1,677,lowercase_single_word,none,,,0,none,,exact,cheers,!,cheer,cheer:OEWN+MobyWords+MobyPOS,none,1,inflected_form_review,当前形式可能是复数、第三人称或分词；开放词典支持其候选词头，需决定是否改存词头
+cheque,1,683,lowercase_single_word,exact,cheque,n|v,2,exact,cheque,exact,cheque,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+chick,1,687,lowercase_single_word,exact,chick,n,2,exact,chick,exact,chick,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+childhood,1,691,lowercase_single_word,exact,childhood,n,2,exact,childhood,exact,childhood,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+chimney,1,692,lowercase_single_word,exact,chimney,n,2,exact,chimney,exact,chimney,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+chips,1,695,lowercase_single_word,exact,chips,n,1,none,,none,,,chip,chip:OEWN+MobyWords+MobyPOS,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+choir,1,698,lowercase_single_word,exact,choir,n|v,4,exact,choir,exact,choir,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Christian,1,703,initial_uppercase,exact,Christian,a|n,2,exact,Christian,exact,Christian,A|N|v,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+Christmas card,1,705,multiword,exact,Christmas card,n,1,exact,Christmas card,exact,Christmas card,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+Christmas Eve,1,707,multiword,exact,Christmas Eve,n,1,exact,Christmas Eve,exact,Christmas Eve,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+Christmas tree,1,706,multiword,exact,Christmas tree,n,5,exact,Christmas tree,exact,Christmas tree,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+cigar,1,709,lowercase_single_word,exact,cigar,n,1,exact,cigar,exact,cigar,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+circulate,1,714,lowercase_single_word,exact,circulate,v,6,exact,circulate,exact,circulate,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+classical,1,726,lowercase_single_word,exact,classical,a|n,8,exact,classical,exact,classical,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+classify,1,727,lowercase_single_word,exact,classify,v,3,exact,classify,exact,classify,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+claw,1,730,lowercase_single_word,exact,claw,n|v,8,exact,claw,exact,claw,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+cleaner,1,733,lowercase_single_word,exact,cleaner,n,3,exact,cleaner,exact,cleaner,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+clearly,1,735,lowercase_single_word,exact,clearly,r,4,exact,clearly,exact,clearly,v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+clothing,1,747,lowercase_single_word,exact,clothing,n,1,exact,clothing,exact,clothing,N,cloth | clothe,cloth:OEWN+MobyWords+MobyPOS | clothe:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+clumsy,1,751,lowercase_single_word,exact,clumsy,a,4,exact,clumsy,exact,clumsy,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+co-worker,1,898,hyphenated,exact,co-worker,n,1,exact,co-worker,exact,co-worker,N,,,none,3,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+cock,1,756,lowercase_single_word,exact,cock,n|v,8,exact,cock,exact,cock,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+cocoa,1,757,lowercase_single_word,exact,cocoa,n,2,exact,cocoa,exact,cocoa,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+coincidence,1,760,lowercase_single_word,exact,coincidence,n,3,exact,coincidence,exact,coincidence,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+coke,1,761,lowercase_single_word,exact,coke,n|v,3,exact,coke,exact,coke,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+cold-blooded,1,763,hyphenated,exact,cold-blooded,a,2,exact,cold-blooded,exact,cold-blooded,A,,,none,3,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+colleague,1,765,lowercase_single_word,exact,colleague,n,2,exact,colleague,exact,colleague,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+collision,1,769,lowercase_single_word,exact,collision,n,3,exact,collision,exact,collision,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+comb,1,771,lowercase_single_word,exact,comb,n|v,8,exact,comb,exact,comb,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+comma,1,777,lowercase_single_word,exact,comma,n,2,exact,comma,exact,comma,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+command,1,778,lowercase_single_word,exact,command,n|v,12,exact,command,exact,command,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+communism,1,787,lowercase_single_word,exact,communism,n,2,exact,communism,exact,communism,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+companion,1,789,lowercase_single_word,exact,companion,n|v,4,exact,companion,exact,companion,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+compass,1,792,lowercase_single_word,exact,compass,n|v,7,exact,compass,exact,compass,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+compensate,1,793,lowercase_single_word,exact,compensate,v,6,exact,compensate,exact,compensate,V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+competitor,1,797,lowercase_single_word,exact,competitor,n,1,exact,competitor,exact,competitor,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+compromise,1,803,lowercase_single_word,exact,compromise,n|v,5,exact,compromise,exact,compromise,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+compulsory,1,804,lowercase_single_word,exact,compulsory,a,1,exact,compulsory,exact,compulsory,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+computer game,1,806,multiword,exact,computer game,n,1,none,,none,,,,,none,1,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+comrade,1,807,lowercase_single_word,exact,comrade,n,2,exact,comrade,exact,comrade,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+condemn,1,816,lowercase_single_word,exact,condemn,v,6,exact,condemn,exact,condemn,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+conductor,1,818,lowercase_single_word,exact,conductor,n,4,exact,conductor,exact,conductor,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+confident,1,819,lowercase_single_word,exact,confident,a,3,exact,confident,exact,confident,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+confidential,1,820,lowercase_single_word,exact,confidential,a,4,exact,confidential,exact,confidential,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+confuse,1,824,lowercase_single_word,exact,confuse,v,5,exact,confuse,exact,confuse,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+congratulate,1,825,lowercase_single_word,exact,congratulate,v,4,exact,congratulate,exact,congratulate,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+connection,1,828,lowercase_single_word,exact,connection,n,9,exact,connection,exact,connection,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+conscience,1,829,lowercase_single_word,exact,conscience,n,3,exact,conscience,exact,conscience,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+consensus,1,830,lowercase_single_word,exact,consensus,n,1,exact,consensus,exact,consensus,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+conservative,1,833,lowercase_single_word,exact,conservative,a|n,6,exact,conservative,exact,conservative,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+considerate,1,835,lowercase_single_word,exact,considerate,a,1,exact,considerate,exact,considerate,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+consideration,1,836,lowercase_single_word,exact,consideration,n,6,exact,consideration,exact,consideration,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+construct,1,841,lowercase_single_word,exact,construct,n|v,7,exact,construct,exact,construct,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+consult,1,843,lowercase_single_word,exact,consult,v,4,exact,consult,exact,consult,V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+container,1,847,lowercase_single_word,exact,container,n,1,exact,container,exact,container,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+contradict,1,852,lowercase_single_word,exact,contradict,v,4,exact,contradict,exact,contradict,i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+contribute,1,855,lowercase_single_word,exact,contribute,v,4,exact,contribute,exact,contribute,V|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+controversial,1,858,lowercase_single_word,exact,controversial,a,1,exact,controversial,exact,controversial,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+convenience,1,859,lowercase_single_word,exact,convenience,n,4,exact,convenience,exact,convenience,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+convey,1,863,lowercase_single_word,exact,convey,v,7,exact,convey,exact,convey,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+cooker,1,866,lowercase_single_word,exact,cooker,n,1,exact,cooker,exact,cooker,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+coral,1,870,lowercase_single_word,exact,coral,a|n,5,exact,coral,exact,coral,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+cordless,1,871,lowercase_single_word,exact,cordless,a,1,exact,cordless,exact,cordless,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+corporation,1,874,lowercase_single_word,exact,corporation,n,2,exact,corporation,exact,corporation,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+correction,1,876,lowercase_single_word,exact,correction,n,7,exact,correction,exact,correction,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+corrupt,1,878,lowercase_single_word,exact,corrupt,a|v,8,exact,corrupt,exact,corrupt,A|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+cosy,1,880,lowercase_single_word,exact,cosy,a|n|s,4,exact,cosy,exact,cosy,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+counter,1,886,lowercase_single_word,exact,counter,a|n|r|v,13,exact,counter,exact,counter,A|N|V|t|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+courtyard,1,893,lowercase_single_word,exact,courtyard,n,1,exact,courtyard,exact,courtyard,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+cowboy,1,897,lowercase_single_word,exact,cowboy,n,3,exact,cowboy,exact,cowboy,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+criminal,1,907,lowercase_single_word,exact,criminal,a|n,4,exact,criminal,exact,criminal,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+crossing,1,912,lowercase_single_word,exact,crossing,n,7,exact,crossing,exact,crossing,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+crossroads,1,913,lowercase_single_word,exact,crossroads,n,3,exact,crossroads,exact,crossroads,N,crossroad,crossroad:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+crowded,1,915,lowercase_single_word,exact,crowded,a,1,exact,crowded,exact,crowded,A,crowd,crowd:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+cube,1,918,lowercase_single_word,exact,cube,n|v,7,exact,cube,exact,cube,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+cubic,1,919,lowercase_single_word,exact,cubic,a,2,exact,cubic,exact,cubic,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+currency,1,926,lowercase_single_word,exact,currency,n,3,exact,currency,exact,currency,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+curriculum,1,927,lowercase_single_word,exact,curriculum,n,1,exact,curriculum,exact,curriculum,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+cushion,1,929,lowercase_single_word,exact,cushion,n|v,4,exact,cushion,exact,cushion,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+customs,1,932,lowercase_single_word,exact,customs,n,1,exact,customs,exact,customs,N,custom,custom:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+cyclist,1,935,lowercase_single_word,exact,cyclist,n,1,exact,cyclist,exact,cyclist,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+dam,1,938,lowercase_single_word,exact,dam,n|v,4,exact,dam,exact,dam,!|A|N|V|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+darkness,1,946,lowercase_single_word,exact,darkness,n,6,exact,darkness,exact,darkness,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+dash,1,947,lowercase_single_word,exact,dash,n|v,12,exact,dash,exact,dash,!|A|N|V|i|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+dawn,1,952,lowercase_single_word,exact,dawn,n|v,6,exact,dawn,exact,dawn,N|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+daylight,1,954,lowercase_single_word,exact,daylight,n,2,exact,daylight,exact,daylight,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+decoration,1,970,lowercase_single_word,exact,decoration,n,3,exact,decoration,exact,decoration,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+deed,1,972,lowercase_single_word,exact,deed,n,2,exact,deed,exact,deed,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+deeply,1,974,lowercase_single_word,exact,deeply,r,2,exact,deeply,exact,deeply,v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+deliberately,1,982,lowercase_single_word,exact,deliberately,r,2,none,,exact,deliberately,v,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+delight,1,985,lowercase_single_word,exact,delight,n|v,5,exact,delight,exact,delight,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+delighted,1,986,lowercase_single_word,exact,delighted,a,2,exact,delighted,exact,delighted,A,delight,delight:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+department store,1,991,multiword,exact,department store,n,1,exact,department store,exact,department store,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+deposit,1,994,lowercase_single_word,exact,deposit,n|v,12,exact,deposit,exact,deposit,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+determination,1,1008,lowercase_single_word,exact,determination,n,5,exact,determination,exact,determination,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+devotion,1,1013,lowercase_single_word,exact,devotion,n,4,exact,devotion,exact,devotion,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+dial,1,1015,lowercase_single_word,exact,dial,n|v,6,exact,dial,exact,dial,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+dictation,1,1019,lowercase_single_word,exact,dictation,n,3,exact,dictation,exact,dictation,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+dilemma,1,1032,lowercase_single_word,exact,dilemma,n,1,exact,dilemma,exact,dilemma,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+dine,1,1034,lowercase_single_word,exact,dine,v,2,exact,dine,exact,dine,i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+dining-room,1,1035,hyphenated,exact,dining-room,n,1,none,,none,,,,,none,1,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+dioxide,1,1038,lowercase_single_word,exact,dioxide,n,1,exact,dioxide,exact,dioxide,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+dip,1,1039,lowercase_single_word,exact,dip,n|v,23,exact,dip,exact,dip,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+diploma,1,1040,lowercase_single_word,exact,diploma,n,1,exact,diploma,exact,diploma,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+dirt,1,1045,lowercase_single_word,exact,dirt,a|n,5,exact,dirt,exact,dirt,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+disadvantage,1,1049,lowercase_single_word,exact,disadvantage,n|v,2,exact,disadvantage,exact,disadvantage,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+disagree,1,1050,lowercase_single_word,exact,disagree,v,2,exact,disagree,exact,disagree,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+disagreement,1,1051,lowercase_single_word,exact,disagreement,n,3,exact,disagreement,exact,disagreement,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+disappoint,1,1053,lowercase_single_word,exact,disappoint,v,1,exact,disappoint,exact,disappoint,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+disappointment,1,1054,lowercase_single_word,exact,disappointment,n,2,exact,disappointment,exact,disappointment,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+discourage,1,1057,lowercase_single_word,exact,discourage,v,3,exact,discourage,exact,discourage,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+disgusting,1,1064,lowercase_single_word,exact,disgusting,a,1,exact,disgusting,exact,disgusting,A,disgust,disgust:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+dislike,1,1067,lowercase_single_word,exact,dislike,n|v,3,exact,dislike,exact,dislike,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+disobey,1,1069,lowercase_single_word,exact,disobey,v,1,exact,disobey,exact,disobey,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+distinction,1,1072,lowercase_single_word,exact,distinction,n,4,exact,distinction,exact,distinction,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+distribute,1,1074,lowercase_single_word,exact,distribute,v,10,exact,distribute,exact,distribute,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+disturbing,1,1077,lowercase_single_word,exact,disturbing,a,1,exact,disturbing,exact,disturbing,A,disturb,disturb:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+divorce,1,1082,lowercase_single_word,exact,divorce,n|v,3,exact,divorce,exact,divorce,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+does,1,1087,lowercase_single_word,none,,,0,exact,does,exact,does,V,do,do:OEWN+MobyWords+MobyPOS,none,2,inflected_form_review,当前形式可能是复数、第三人称或分词；开放词典支持其候选词头，需决定是否改存词头
+doll,1,1089,lowercase_single_word,exact,doll,n,2,exact,doll,exact,doll,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+dot,1,1093,lowercase_single_word,exact,dot,n|v,7,exact,dot,exact,dot,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+downward,1,1100,lowercase_single_word,exact,downward,a|r,3,exact,downward,exact,downward,A|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Dr,1,1102,initial_uppercase,none,,,0,exact,Dr,exact,Dr,N,,,none,2,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+drawback,1,1106,lowercase_single_word,exact,drawback,n,1,exact,drawback,exact,drawback,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+drawing,1,1108,lowercase_single_word,exact,drawing,n,6,exact,drawing,exact,drawing,N,draw,draw:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+drier,1,1111,lowercase_single_word,exact,drier,n,2,exact,drier,exact,drier,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+drown,1,1118,lowercase_single_word,exact,drown,v,6,exact,drown,exact,drown,V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+drum,1,1120,lowercase_single_word,exact,drum,n|v,9,exact,drum,exact,drum,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+drunk,1,1121,lowercase_single_word,exact,drunk,a|n,4,exact,drunk,exact,drunk,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+due,1,1124,lowercase_single_word,exact,due,a|n|r,7,exact,due,exact,due,N|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+dull,1,1125,lowercase_single_word,exact,dull,a|v,19,exact,dull,exact,dull,A|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+dusk,1,1128,lowercase_single_word,exact,dusk,n|v,2,exact,dusk,exact,dusk,A|N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+dustbin,1,1130,lowercase_single_word,exact,dustbin,n,1,none,,exact,dustbin,N,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+dusty,1,1131,lowercase_single_word,exact,dusty,a,2,exact,dusty,exact,dusty,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+DVD,1,1133,all_uppercase,exact,DVD,n,1,none,,none,,,,,none,1,special_reference_review,全大写形式可能是缩写、机构名或特殊标签，需单独核实
+easily,1,1145,lowercase_single_word,exact,easily,r,3,exact,easily,exact,easily,v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Easter,1,1147,initial_uppercase,exact,Easter,n,1,exact,Easter,exact,Easter,N,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+eastwards,1,1149,lowercase_single_word,exact,eastwards,r,1,exact,eastwards,exact,eastwards,v,eastward,eastward:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+easy-going,1,1151,hyphenated,none,,,0,none,,exact,easy-going,A,,,none,1,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+edition,1,1155,lowercase_single_word,exact,edition,n,4,exact,edition,exact,edition,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+educate,1,1157,lowercase_single_word,exact,educate,v,3,exact,educate,exact,educate,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+eggplant,1,1163,lowercase_single_word,exact,eggplant,n,2,exact,eggplant,exact,eggplant,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Egypt,1,1164,initial_uppercase,none,,,0,exact,Egypt,exact,Egypt,N,,,none,2,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+Egyptian,1,1165,initial_uppercase,exact,Egyptian,a|n,3,exact,Egyptian,exact,Egyptian,A|N,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+elect,1,1173,lowercase_single_word,exact,elect,a|n|v,5,exact,elect,exact,elect,A|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+electric,1,1174,lowercase_single_word,exact,electric,a|n,4,exact,electric,exact,electric,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+electrical,1,1175,lowercase_single_word,exact,electrical,a,2,exact,electrical,exact,electrical,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+embarrass,1,1183,lowercase_single_word,exact,embarrass,v,2,exact,embarrass,exact,embarrass,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+embassy,1,1184,lowercase_single_word,exact,embassy,n,2,exact,embassy,exact,embassy,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+empire,1,1187,lowercase_single_word,exact,empire,n,4,exact,empire,exact,empire,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+encouragement,1,1191,lowercase_single_word,exact,encouragement,n,3,exact,encouragement,exact,encouragement,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+ending,1,1193,lowercase_single_word,exact,ending,n,5,exact,ending,exact,ending,N,end,end:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+endless,1,1194,lowercase_single_word,exact,endless,a,4,exact,endless,exact,endless,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+English-speaking,1,1202,initial_uppercase,exact,English-speaking,a,1,none,,none,,,,,none,1,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+enjoyable,1,1204,lowercase_single_word,exact,enjoyable,a,1,exact,enjoyable,exact,enjoyable,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+enlarge,1,1205,lowercase_single_word,exact,enlarge,v,4,exact,enlarge,exact,enlarge,V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+enquiry,1,1207,lowercase_single_word,exact,enquiry,n,3,none,,exact,enquiry,N,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+entire,1,1212,lowercase_single_word,exact,entire,a|n,5,exact,entire,exact,entire,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+equality,1,1219,lowercase_single_word,exact,equality,n,2,exact,equality,exact,equality,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+equip,1,1220,lowercase_single_word,exact,equip,v,2,exact,equip,exact,equip,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+evident,1,1243,lowercase_single_word,exact,evident,a,2,exact,evident,exact,evident,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+evolution,1,1244,lowercase_single_word,exact,evolution,n,2,exact,evolution,exact,evolution,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+exact,1,1245,lowercase_single_word,exact,exact,a|v,5,exact,exact,exact,exact,A|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+excite,1,1253,lowercase_single_word,exact,excite,v,8,exact,excite,exact,excite,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+existence,1,1258,lowercase_single_word,exact,existence,n,2,exact,existence,exact,existence,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+explanation,1,1269,lowercase_single_word,exact,explanation,n,3,exact,explanation,exact,explanation,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+explicit,1,1270,lowercase_single_word,exact,explicit,a,2,exact,explicit,exact,explicit,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+exploit,1,1272,lowercase_single_word,exact,exploit,n|v,4,exact,exploit,exact,exploit,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+explorer,1,1274,lowercase_single_word,exact,explorer,n,1,exact,explorer,exact,explorer,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+expression,1,1278,lowercase_single_word,exact,expression,n,9,exact,expression,exact,expression,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+extreme,1,1282,lowercase_single_word,exact,extreme,a|n,6,exact,extreme,exact,extreme,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+eyesight,1,1285,lowercase_single_word,exact,eyesight,n,1,exact,eyesight,exact,eyesight,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+eyewitness,1,1286,lowercase_single_word,exact,eyewitness,n|v,2,exact,eyewitness,exact,eyewitness,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+f,1,1287,lowercase_single_word,exact,f,n,1,exact,f,exact,f,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+facial,1,1289,lowercase_single_word,exact,facial,a|n,4,exact,facial,exact,facial,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+fade,1,1292,lowercase_single_word,exact,fade,n|v,6,exact,fade,exact,fade,N|V|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+fairly,1,1296,lowercase_single_word,exact,fairly,r,3,exact,fairly,exact,fairly,v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+fairness,1,1297,lowercase_single_word,exact,fairness,n,4,none,,exact,fairness,N,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+family name,1,1304,multiword,exact,family name,n,1,exact,family name,exact,family name,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+fare,1,1311,lowercase_single_word,exact,fare,n|v,6,exact,fare,exact,fare,N|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+fasten,1,1315,lowercase_single_word,exact,fasten,v,4,exact,fasten,exact,fasten,V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+fax,1,1321,lowercase_single_word,exact,fax,n|v,2,none,,casefold,Fax,N,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+feast,1,1323,lowercase_single_word,exact,feast,n|v,7,exact,feast,exact,feast,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+feather,1,1324,lowercase_single_word,exact,feather,n|v,7,exact,feather,exact,feather,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+federal,1,1326,lowercase_single_word,exact,federal,a,3,exact,federal,exact,federal,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+ferry,1,1334,lowercase_single_word,exact,ferry,n|v,5,exact,ferry,exact,ferry,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+fierce,1,1342,lowercase_single_word,exact,fierce,a,4,exact,fierce,exact,fierce,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+fighter,1,1348,lowercase_single_word,exact,fighter,n,3,exact,fighter,exact,fighter,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+final,1,1353,lowercase_single_word,exact,final,a|n,5,exact,final,exact,final,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+fingernail,1,1358,lowercase_single_word,exact,fingernail,n,1,exact,fingernail,exact,fingernail,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+firefighter,1,1361,lowercase_single_word,exact,firefighter,n,1,none,,none,,,,,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+fireplace,1,1362,lowercase_single_word,exact,fireplace,n,1,exact,fireplace,exact,fireplace,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+firewood,1,1363,lowercase_single_word,exact,firewood,n,1,exact,firewood,exact,firewood,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+firework,1,1364,lowercase_single_word,exact,firework,n,1,exact,firework,exact,firework,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+firmly,1,1366,lowercase_single_word,exact,firmly,r,3,none,,exact,firmly,v,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+fitting room,1,1372,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+flame,1,1376,lowercase_single_word,exact,flame,n|v,4,exact,flame,exact,flame,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+flaming,1,1377,lowercase_single_word,exact,flaming,a|n,3,exact,flaming,exact,flaming,A,flame,flame:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+flashlight,1,1379,lowercase_single_word,exact,flashlight,n,1,exact,flashlight,exact,flashlight,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+flee,1,1381,lowercase_single_word,exact,flee,v,1,exact,flee,exact,flee,V|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+flesh,1,1383,lowercase_single_word,exact,flesh,n|v,4,exact,flesh,exact,flesh,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+float,1,1385,lowercase_single_word,exact,float,n|v,16,exact,float,exact,float,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+fluency,1,1392,lowercase_single_word,exact,fluency,n,3,exact,fluency,exact,fluency,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+fog,1,1397,lowercase_single_word,exact,fog,n|v,4,exact,fog,exact,fog,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+following,1,1402,lowercase_single_word,exact,following,a|n,6,exact,following,exact,following,A|N,follow,follow:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+fool,1,1405,lowercase_single_word,exact,fool,n|v,7,exact,fool,exact,fool,A|N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+foolish,1,1406,lowercase_single_word,exact,foolish,a,2,exact,foolish,exact,foolish,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+forbid,1,1410,lowercase_single_word,exact,forbid,v,2,exact,forbid,exact,forbid,V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+foreigner,1,1415,lowercase_single_word,exact,foreigner,n,2,exact,foreigner,exact,foreigner,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+foresee,1,1416,lowercase_single_word,exact,foresee,v,3,exact,foresee,exact,foresee,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+forgetful,1,1420,lowercase_single_word,exact,forgetful,a,3,exact,forgetful,exact,forgetful,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+fortnight,1,1426,lowercase_single_word,exact,fortnight,n,1,exact,fortnight,exact,fortnight,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+fortunate,1,1427,lowercase_single_word,exact,fortunate,a,3,exact,fortunate,exact,fortunate,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+fortune,1,1428,lowercase_single_word,exact,fortune,n,4,exact,fortune,exact,fortune,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+founding,1,1432,lowercase_single_word,exact,founding,n,1,none,,none,,,found,found:OEWN+MobyWords+MobyPOS,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+fragile,1,1440,lowercase_single_word,exact,fragile,a,3,exact,fragile,exact,fragile,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+fragrant,1,1441,lowercase_single_word,exact,fragrant,a,1,exact,fragrant,exact,fragrant,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+framework,1,1442,lowercase_single_word,exact,framework,n,3,exact,framework,exact,framework,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+franc,1,1438,lowercase_single_word,exact,franc,n,1,exact,franc,exact,franc,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+freeway,1,1445,lowercase_single_word,exact,freeway,n,1,exact,freeway,exact,freeway,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+freezing,1,1447,lowercase_single_word,exact,freezing,n,1,exact,freezing,exact,freezing,A|V,freeze,freeze:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Frenchman,1,1449,initial_uppercase,exact,Frenchman,n,1,exact,Frenchman,exact,Frenchman,N,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+frequent,1,1450,lowercase_single_word,exact,frequent,a|v,4,exact,frequent,exact,frequent,A|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+fried,1,1455,lowercase_single_word,exact,fried,a,1,exact,fried,exact,fried,V,fri,fri:OEWN+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+fright,1,1459,lowercase_single_word,exact,fright,n|v,2,exact,fright,exact,fright,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+frighten,1,1460,lowercase_single_word,exact,frighten,v,1,exact,frighten,exact,frighten,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+from mouth to mouth,1,2154,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+fruit juice,1,1467,multiword,exact,fruit juice,n,1,none,,none,,,,,none,1,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+funeral,1,1474,lowercase_single_word,exact,funeral,n,1,exact,funeral,exact,funeral,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+fur,1,1476,lowercase_single_word,exact,fur,n,3,exact,fur,exact,fur,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+furnished,1,1477,lowercase_single_word,exact,furnished,a,1,none,,none,,,furnish,furnish:OEWN+MobyWords+MobyPOS,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+gale,1,1481,lowercase_single_word,exact,gale,n,1,exact,gale,exact,gale,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+gallon,1,1483,lowercase_single_word,exact,gallon,n,2,exact,gallon,exact,gallon,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+garage,1,1485,lowercase_single_word,exact,garage,n|v,3,exact,garage,exact,garage,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+garbage can,1,582,multiword,exact,garbage can,n,1,exact,garbage can,exact,garbage can,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+gardening,1,1488,lowercase_single_word,exact,gardening,n,1,exact,gardening,exact,gardening,N,garden,garden:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+garment,1,1490,lowercase_single_word,exact,garment,n|v,2,exact,garment,exact,garment,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+gay,1,1494,lowercase_single_word,exact,gay,a|n,7,exact,gay,exact,gay,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+gesture,1,1504,lowercase_single_word,exact,gesture,n|v,4,exact,gesture,exact,gesture,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+get-together,1,1506,hyphenated,none,,,0,exact,get-together,exact,get-together,N|V,,,none,2,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+glance,1,1513,lowercase_single_word,exact,glance,n|v,3,exact,glance,exact,glance,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+glare,1,1514,lowercase_single_word,exact,glare,n|v,6,exact,glare,exact,glare,A|N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+glasshouse,1,1516,lowercase_single_word,exact,glasshouse,n,1,exact,glasshouse,exact,glasshouse,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+glory,1,1518,lowercase_single_word,exact,glory,n|v,4,exact,glory,exact,glory,!|N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+god,1,1524,lowercase_single_word,exact,god,n,3,exact,god,exact,god,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+gold medal,1,2049,multiword,exact,gold medal,n,1,none,,exact,gold medal,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+golden,1,1526,lowercase_single_word,exact,golden,a,6,exact,golden,exact,golden,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+goldfish,1,1527,lowercase_single_word,exact,goldfish,n,1,exact,goldfish,exact,goldfish,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+goodness,1,1531,lowercase_single_word,exact,goodness,n,2,exact,goodness,exact,goodness,!|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+goose,1,1533,lowercase_single_word,exact,goose,n|v,6,exact,goose,exact,goose,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+govern,1,1534,lowercase_single_word,exact,govern,v,4,exact,govern,exact,govern,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+gown,1,1536,lowercase_single_word,exact,gown,n|v,6,exact,gown,exact,gown,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+graduation,1,1540,lowercase_single_word,exact,graduation,n,4,exact,graduation,exact,graduation,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+grandchild,1,1545,lowercase_single_word,exact,grandchild,n,1,exact,grandchild,exact,grandchild,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+grandparents,1,1549,lowercase_single_word,none,,,0,none,,none,,,grandparent,grandparent:OEWN+MobyWords+MobyPOS,none,0,inflected_form_review,当前形式可能是复数、第三人称或分词；开放词典支持其候选词头，需决定是否改存词头
+granny,1,1551,lowercase_single_word,exact,granny,n,3,exact,granny,exact,granny,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+graph,1,1553,lowercase_single_word,exact,graph,n|v,5,exact,graph,exact,graph,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Greece,1,1559,initial_uppercase,exact,Greece,n,1,exact,Greece,exact,Greece,N,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+Greek,1,1561,initial_uppercase,exact,Greek,a|n,4,exact,Greek,exact,Greek,A|N,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+greengrocer,1,1563,lowercase_single_word,exact,greengrocer,n,1,exact,greengrocer,exact,greengrocer,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+greeting,1,1565,lowercase_single_word,exact,greeting,n,1,exact,greeting,exact,greeting,N,greet,greet:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+grill,1,1567,lowercase_single_word,exact,grill,n|v,4,exact,grill,exact,grill,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+grocer,1,1568,lowercase_single_word,exact,grocer,n,1,exact,grocer,exact,grocer,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+growth,1,1572,lowercase_single_word,exact,growth,n,7,exact,growth,exact,growth,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+gruel,1,1573,lowercase_single_word,exact,gruel,n,1,exact,gruel,exact,gruel,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+ha,1,1585,lowercase_single_word,casefold,HA,n,1,exact,ha,exact,ha,!,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+haircut,1,1588,lowercase_single_word,exact,haircut,n,2,exact,haircut,exact,haircut,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+hammer,1,1593,lowercase_single_word,exact,hammer,n|v,10,exact,hammer,exact,hammer,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+handful,1,1596,lowercase_single_word,exact,handful,n,2,exact,handful,exact,handful,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+handtruck,1,1600,lowercase_single_word,none,,,0,none,,none,,,,,none,0,exclude_or_spelling_review,两个开放词典均无词形证据；优先检查拼写、屈折变化或排除
+handy,1,1602,lowercase_single_word,exact,handy,a,3,exact,handy,exact,handy,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+happily,1,1605,lowercase_single_word,exact,happily,r,2,exact,happily,exact,happily,v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+happiness,1,1606,lowercase_single_word,exact,happiness,n,2,exact,happiness,exact,happiness,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+harbour,1,1608,lowercase_single_word,exact,harbour,n|v,6,exact,harbour,exact,harbour,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+hardship,1,1611,lowercase_single_word,exact,hardship,n,3,exact,hardship,exact,hardship,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+hardworking,1,1612,lowercase_single_word,exact,hardworking,a,1,exact,hardworking,none,,,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+harmless,1,1615,lowercase_single_word,exact,harmless,a,1,exact,harmless,exact,harmless,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+hawk,1,1622,lowercase_single_word,exact,hawk,n|v,6,exact,hawk,exact,hawk,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+hay,1,1623,lowercase_single_word,exact,hay,n|v,2,exact,hay,exact,hay,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+headline,1,1627,lowercase_single_word,exact,headline,n|v,3,exact,headline,exact,headline,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+headmaster,1,1628,lowercase_single_word,exact,headmaster,n,1,exact,headmaster,exact,headmaster,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+headmistress,1,1629,lowercase_single_word,exact,headmistress,n,1,exact,headmistress,exact,headmistress,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+headteacher,1,1630,lowercase_single_word,none,,,0,none,,none,,,,,none,0,exclude_or_spelling_review,两个开放词典均无词形证据；优先检查拼写、屈折变化或排除
+heap,1,1633,lowercase_single_word,exact,heap,n|v,6,exact,heap,exact,heap,N|V|t|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+hearing,1,1635,lowercase_single_word,exact,hearing,a|n,7,exact,hearing,exact,hearing,N,hear,hear:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+heaven,1,1638,lowercase_single_word,exact,heaven,n,1,exact,heaven,exact,heaven,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+heavily,1,1640,lowercase_single_word,exact,heavily,r,7,exact,heavily,exact,heavily,v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+heel,1,1641,lowercase_single_word,exact,heel,n|v,11,exact,heel,exact,heel,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+helicopter,1,1643,lowercase_single_word,exact,helicopter,n,1,exact,helicopter,exact,helicopter,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+helmet,1,1645,lowercase_single_word,exact,helmet,n,2,exact,helmet,exact,helmet,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+heroine,1,1653,lowercase_single_word,exact,heroine,n,2,exact,heroine,exact,heroine,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+hey,1,1656,lowercase_single_word,none,,,0,exact,hey,exact,hey,!,,,none,2,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核
+hibernate,1,1658,lowercase_single_word,exact,hibernate,v,2,exact,hibernate,exact,hibernate,i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+hibernation,1,1659,lowercase_single_word,exact,hibernation,n,3,none,,exact,hibernation,N,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+hide-and-seek,1,1661,hyphenated,exact,hide-and-seek,n,1,exact,hide-and-seek,exact,hide-and-seek,N,,,none,3,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+highway,1,1663,lowercase_single_word,exact,highway,n,1,exact,highway,exact,highway,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+hillside,1,1665,lowercase_single_word,exact,hillside,n,1,exact,hillside,exact,hillside,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+hilly,1,1666,lowercase_single_word,exact,hilly,a,1,exact,hilly,exact,hilly,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+hive,1,1673,lowercase_single_word,exact,hive,n|v,6,exact,hive,exact,hive,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+holy,1,1678,lowercase_single_word,exact,holy,a|n,2,exact,holy,exact,holy,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+homeland,1,1680,lowercase_single_word,exact,homeland,n,1,exact,homeland,exact,homeland,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Hong Kong,1,1685,multiword,none,,,0,exact,Hong Kong,exact,Hong Kong,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+hook,1,1687,lowercase_single_word,exact,hook,n|v,20,exact,hook,exact,hook,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+hooray,1,1688,lowercase_single_word,exact,hooray,n,1,exact,hooray,exact,hooray,!|N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+hopeful,1,1690,lowercase_single_word,exact,hopeful,a|n,3,exact,hopeful,exact,hopeful,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+hopeless,1,1691,lowercase_single_word,exact,hopeless,a,4,exact,hopeless,exact,hopeless,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+hostess,1,1696,lowercase_single_word,exact,hostess,n,3,exact,hostess,exact,hostess,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+hot dog,1,1698,multiword,exact,hot dog,n,3,exact,hot dog,exact,hot dog,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+housewife,1,1702,lowercase_single_word,exact,housewife,n,1,exact,housewife,exact,housewife,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+howl,1,1706,lowercase_single_word,exact,howl,n|v,7,exact,howl,exact,howl,N|V|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+human being,1,1710,multiword,exact,human being,n,1,exact,human being,exact,human being,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+humour,1,1712,lowercase_single_word,exact,humour,n|v,7,exact,humour,exact,humour,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+hunger,1,1714,lowercase_single_word,exact,hunger,n|v,5,exact,hunger,exact,hunger,N|V|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+hunter,1,1717,lowercase_single_word,exact,hunter,n,3,exact,hunter,exact,hunter,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Iceland,1,1726,initial_uppercase,none,,,0,exact,Iceland,exact,Iceland,N,,,none,2,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+identification,1,1729,lowercase_single_word,exact,identification,n,5,exact,identification,exact,identification,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+immediate,1,1737,lowercase_single_word,exact,immediate,a,5,exact,immediate,exact,immediate,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+immigration,1,1739,lowercase_single_word,exact,immigration,n,2,exact,immigration,exact,immigration,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+importance,1,1741,lowercase_single_word,exact,importance,n,2,exact,importance,exact,importance,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+incorrect,1,1752,lowercase_single_word,exact,incorrect,a,4,exact,incorrect,exact,incorrect,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+independence,1,1755,lowercase_single_word,exact,independence,n,2,exact,independence,exact,independence,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+inform,1,1762,lowercase_single_word,exact,inform,v,3,exact,inform,exact,inform,A|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+information desk,1,1764,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+injure,1,1766,lowercase_single_word,exact,injure,v,3,exact,injure,exact,injure,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+ink,1,1768,lowercase_single_word,exact,ink,n|v,5,exact,ink,exact,ink,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+inland,1,1769,lowercase_single_word,exact,inland,a|r,2,exact,inland,exact,inland,A|N|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+inn,1,1770,lowercase_single_word,exact,inn,n,1,exact,inn,exact,inn,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+insert,1,1773,lowercase_single_word,exact,insert,n|v,8,exact,insert,exact,insert,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+inspect,1,1776,lowercase_single_word,exact,inspect,v,3,exact,inspect,exact,inspect,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+instruct,1,1782,lowercase_single_word,exact,instruct,v,3,exact,instruct,exact,instruct,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+insure,1,1786,lowercase_single_word,exact,insure,v,4,exact,insure,exact,insure,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+intelligence,1,1787,lowercase_single_word,exact,intelligence,n,5,exact,intelligence,exact,intelligence,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+interpreter,1,1794,lowercase_single_word,exact,interpreter,n,4,exact,interpreter,exact,interpreter,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+interval,1,1796,lowercase_single_word,exact,interval,n,4,exact,interval,exact,interval,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+inventor,1,1803,lowercase_single_word,exact,inventor,n,1,exact,inventor,exact,inventor,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+invitation,1,1804,lowercase_single_word,exact,invitation,n,2,exact,invitation,exact,invitation,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Ireland,1,1806,initial_uppercase,none,,,0,exact,Ireland,exact,Ireland,N,,,none,2,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+Irish,1,1807,initial_uppercase,exact,Irish,a|n,4,exact,Irish,exact,Irish,A|N,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+irrigate,1,1809,lowercase_single_word,exact,irrigate,v,2,exact,irrigate,exact,irrigate,V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+irrigation,1,1810,lowercase_single_word,exact,irrigation,n,2,exact,irrigation,exact,irrigation,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Italian,1,1813,initial_uppercase,exact,Italian,a|n,3,exact,Italian,exact,Italian,A|N,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+Italy,1,1814,initial_uppercase,none,,,0,exact,Italy,exact,Italy,N,,,none,2,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+jar,1,1822,lowercase_single_word,exact,jar,n|v,8,exact,jar,exact,jar,N|V|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+jeep,1,1826,lowercase_single_word,exact,jeep,n,1,exact,jeep,exact,jeep,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+jet,1,1827,lowercase_single_word,exact,jet,a|n|v,9,exact,jet,exact,jet,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+jewel,1,1828,lowercase_single_word,exact,jewel,n|v,3,exact,jewel,exact,jewel,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+jewelry,1,1829,lowercase_single_word,exact,jewelry,n,1,exact,jewelry,exact,jewelry,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+judgement,1,1838,lowercase_single_word,exact,judgement,n,7,none,,none,,,,,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+juicy,1,1840,lowercase_single_word,exact,juicy,a,4,exact,juicy,exact,juicy,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+junk,1,1846,lowercase_single_word,exact,junk,n|v,3,exact,junk,exact,junk,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+junk food,1,1848,multiword,exact,junk food,n,1,none,,none,,,,,none,1,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+junk mail,1,1847,multiword,exact,junk mail,n,1,none,,exact,junk mail,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+keeper,1,1853,lowercase_single_word,exact,keeper,n,2,exact,keeper,exact,keeper,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+kind-hearted,1,1865,hyphenated,exact,kind-hearted,a,1,none,,exact,kind-hearted,A,,,none,2,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+kindness,1,1866,lowercase_single_word,exact,kindness,n,3,exact,kindness,exact,kindness,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+labourer,1,1879,lowercase_single_word,exact,labourer,n,1,exact,labourer,exact,labourer,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+ladder,1,1881,lowercase_single_word,exact,ladder,n|v,4,exact,ladder,exact,ladder,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+lame,1,1885,lowercase_single_word,exact,lame,a|n|v,5,exact,lame,exact,lame,A|N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+laser,1,1892,lowercase_single_word,exact,laser,n,1,exact,laser,exact,laser,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+lately,1,1895,lowercase_single_word,exact,lately,r,1,exact,lately,exact,lately,v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+latest,1,1897,lowercase_single_word,exact,latest,a|n,3,exact,latest,exact,latest,A|N|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+latter,1,1898,lowercase_single_word,exact,latter,a|n,2,exact,latter,exact,latter,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+laughter,1,1900,lowercase_single_word,exact,laughter,n,2,exact,laughter,exact,laughter,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+laundry,1,1901,lowercase_single_word,exact,laundry,n,2,exact,laundry,exact,laundry,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+lavatory,1,1902,lowercase_single_word,exact,lavatory,n,3,exact,lavatory,exact,lavatory,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+leading,1,1909,lowercase_single_word,exact,leading,a|n-1|n-2,6,exact,leading,exact,leading,A|N,lead,lead:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+learned,1,1914,lowercase_single_word,exact,learned,a,3,exact,learned,exact,learned,A,learn,learn:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+left-handed,1,1920,hyphenated,exact,left-handed,a,6,exact,left-handed,exact,left-handed,A|v,left-hand,left-hand:OEWN+MobyWords+MobyPOS,none,3,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+left-wing,1,1922,hyphenated,exact,left-wing,a,1,none,,none,,,,,none,1,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+leftover,1,1921,lowercase_single_word,exact,leftover,a|n,2,exact,leftover,exact,leftover,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+lemonade,1,1926,lowercase_single_word,exact,lemonade,n,1,exact,lemonade,exact,lemonade,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+letter-box,1,1933,hyphenated,none,,,0,none,,none,,,,,none,0,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+liberate,1,1936,lowercase_single_word,exact,liberate,v,4,exact,liberate,exact,liberate,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+lid,1,1941,lowercase_single_word,exact,lid,n,3,exact,lid,exact,lid,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+lifetime,1,1944,lowercase_single_word,exact,lifetime,n,1,exact,lifetime,exact,lifetime,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+lightning,1,1947,lowercase_single_word,exact,lightning,n,2,exact,lightning,exact,lightning,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+lip,1,1954,lowercase_single_word,exact,lip,n,5,exact,lip,exact,lip,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+litre,1,1960,lowercase_single_word,exact,litre,n,1,exact,litre,exact,litre,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+loaf,1,1967,lowercase_single_word,exact,loaf,n|v,4,exact,loaf,exact,loaf,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+locust,1,1970,lowercase_single_word,exact,locust,n,3,exact,locust,exact,locust,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+lorry,1,1976,lowercase_single_word,exact,lorry,n,2,exact,lorry,exact,lorry,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Lost,1,1979,initial_uppercase,casefold,lost,a|n,10,casefold,lost,casefold,lost,A,,,none,3,proper_name_or_capitalization_review,开放词典仅以其他大小写形式匹配，需判断是否误大写
+loudly,1,1982,lowercase_single_word,exact,loudly,r,3,none,,exact,loudly,v,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+loudspeaker,1,1983,lowercase_single_word,exact,loudspeaker,n,1,exact,loudspeaker,exact,loudspeaker,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+lounge,1,1984,lowercase_single_word,exact,lounge,n|v,4,exact,lounge,exact,lounge,N|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+luggage,1,1990,lowercase_single_word,exact,luggage,n,1,exact,luggage,exact,luggage,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+maid,1,1998,lowercase_single_word,exact,maid,n,2,exact,maid,exact,maid,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+mailbox,1,2000,lowercase_single_word,exact,mailbox,n,2,exact,mailbox,exact,mailbox,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+mainland,1,2002,lowercase_single_word,exact,mainland,n,1,exact,mainland,exact,mainland,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+man-made,1,2011,hyphenated,exact,man-made,a,1,exact,man-made,exact,man-made,A,,,none,3,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+maple,1,2016,lowercase_single_word,exact,maple,n,2,exact,maple,exact,maple,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+maple leaves,1,2017,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+marble,1,2019,lowercase_single_word,exact,marble,n|v,4,exact,marble,exact,marble,A|N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+married,1,2025,lowercase_single_word,exact,married,a|n,3,exact,married,exact,married,A|N,marri,marri:OEWN,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+mask,1,2027,lowercase_single_word,exact,mask,n|v,9,exact,mask,exact,mask,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+mat,1,2030,lowercase_single_word,exact,mat,a|n|v,10,exact,mat,exact,mat,A|N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+meanwhile,1,2045,lowercase_single_word,exact,meanwhile,n|r,3,exact,meanwhile,exact,meanwhile,N|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+melon,1,2056,lowercase_single_word,exact,melon,n,2,exact,melon,exact,melon,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+melon seed,1,2933,multiword,none,,,0,none,,exact,melon seed,h,,,none,1,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+memorize,1,2060,lowercase_single_word,exact,memorize,v,1,exact,memorize,exact,memorize,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+mend,1,2061,lowercase_single_word,exact,mend,n|v,4,exact,mend,exact,mend,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+mentally,1,2063,lowercase_single_word,exact,mentally,r,1,exact,mentally,exact,mentally,v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+merchant,1,2066,lowercase_single_word,exact,merchant,n,1,exact,merchant,exact,merchant,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+merciful,1,2067,lowercase_single_word,exact,merciful,a,2,exact,merciful,exact,merciful,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+messy,1,2073,lowercase_single_word,exact,messy,a,1,exact,messy,exact,messy,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Mexican,1,2077,initial_uppercase,exact,Mexican,a|n,2,exact,Mexican,exact,Mexican,A|N,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+Mexico,1,2078,initial_uppercase,none,,,0,exact,Mexico,exact,Mexico,N,,,none,2,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+microcomputer,1,2079,lowercase_single_word,exact,microcomputer,n,1,none,,none,,,,,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+microwave,1,2081,lowercase_single_word,exact,microwave,n|v,3,exact,microwave,exact,microwave,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+mid-autumn,1,2082,hyphenated,none,,,0,none,,none,,,,,none,0,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+midday,1,2083,lowercase_single_word,exact,midday,n,1,exact,midday,exact,midday,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Middle East,1,2085,multiword,none,,,0,exact,Middle East,exact,Middle East,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+millionaire,1,2092,lowercase_single_word,exact,millionaire,n,1,exact,millionaire,exact,millionaire,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+minibus,1,2096,lowercase_single_word,exact,minibus,n,1,none,,exact,minibus,N,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+miniskirt,1,2098,lowercase_single_word,exact,miniskirt,n,1,exact,miniskirt,exact,miniskirt,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+ministry,1,2100,lowercase_single_word,exact,ministry,n,4,exact,ministry,exact,ministry,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+minus,1,2102,lowercase_single_word,exact,minus,a|n,3,exact,minus,exact,minus,A|N|P,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+mistaken,1,2110,lowercase_single_word,exact,mistaken,a,2,exact,mistaken,exact,mistaken,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+misunderstand,1,2111,lowercase_single_word,exact,misunderstand,v,1,exact,misunderstand,exact,misunderstand,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+mm,1,2114,lowercase_single_word,exact,mm,n,1,exact,mm,exact,mm,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+mobile,1,2115,lowercase_single_word,exact,mobile,a|n,6,exact,mobile,exact,mobile,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+modem,1,2118,lowercase_single_word,exact,modem,n,1,none,,exact,modem,N,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+modest,1,2120,lowercase_single_word,exact,modest,a,7,exact,modest,exact,modest,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Mom,1,2121,initial_uppercase,casefold,mom,n,1,casefold,mom,casefold,mom,N,,,none,3,proper_name_or_capitalization_review,开放词典仅以其他大小写形式匹配，需判断是否误大写
+mommy,1,2123,lowercase_single_word,exact,mommy,n,1,none,,exact,mommy,N,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+monument,1,2129,lowercase_single_word,exact,monument,n,3,exact,monument,exact,monument,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+moon cake,1,2131,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+mop,1,2132,lowercase_single_word,exact,mop,n|v,3,exact,mop,exact,mop,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Moscow,1,2136,initial_uppercase,none,,,0,none,,exact,Moscow,N,,,none,1,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+Moslem,1,2137,initial_uppercase,exact,Moslem,a|n,2,exact,Moslem,exact,Moslem,A|N,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+motherland,1,2141,lowercase_single_word,exact,motherland,n,1,exact,motherland,exact,motherland,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+motivation,1,2142,lowercase_single_word,exact,motivation,n,3,exact,motivation,exact,motivation,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+motorbike,1,2144,lowercase_single_word,exact,motorbike,n|v,2,exact,motorbike,exact,motorbike,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+motorcycle,1,2145,lowercase_single_word,exact,motorcycle,n|v,2,exact,motorcycle,exact,motorcycle,N|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+motto,1,2146,lowercase_single_word,exact,motto,n,1,exact,motto,exact,motto,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+mountainous,1,2148,lowercase_single_word,exact,mountainous,a,3,exact,mountainous,exact,mountainous,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+mourn,1,2149,lowercase_single_word,exact,mourn,v,2,exact,mourn,exact,mourn,V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+moustache,1,2151,lowercase_single_word,exact,moustache,n,1,exact,moustache,exact,moustache,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+mouthful,1,2153,lowercase_single_word,exact,mouthful,n,2,exact,mouthful,exact,mouthful,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+muddy,1,2163,lowercase_single_word,exact,muddy,a|v,7,exact,muddy,exact,muddy,A|N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+multiply,1,2164,lowercase_single_word,exact,multiply,r|v,6,exact,multiply,exact,multiply,V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+musical,1,2169,lowercase_single_word,exact,musical,a|n,5,exact,musical,exact,musical,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+mustard,1,2172,lowercase_single_word,exact,mustard,n,3,exact,mustard,exact,mustard,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+mutton,1,2173,lowercase_single_word,exact,mutton,n,1,exact,mutton,exact,mutton,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+nationwide,1,2182,lowercase_single_word,exact,nationwide,a|r,2,exact,nationwide,exact,nationwide,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+necklace,1,2193,lowercase_single_word,exact,necklace,n,1,exact,necklace,exact,necklace,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+necktie,1,2194,lowercase_single_word,exact,necktie,n,1,exact,necktie,exact,necktie,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+New York,1,2208,multiword,none,,,0,exact,New York,exact,New York,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+New Zealand,1,2209,multiword,none,,,0,exact,New Zealand,exact,New Zealand,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+New Zealander,1,2210,multiword,exact,New Zealander,a|n,2,none,,exact,New Zealander,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+night-club,1,2217,hyphenated,none,,,0,none,,exact,night-club,i,,,none,1,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+No.,1,2223,initial_uppercase,casefold,no.,n,1,none,,none,,,,,none,1,proper_name_or_capitalization_review,开放词典仅以其他大小写形式匹配，需判断是否误大写
+noisily,1,2228,lowercase_single_word,exact,noisily,r,1,none,,exact,noisily,v,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+non-stop,1,2231,hyphenated,none,,,0,none,,none,,,,,none,0,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+non-violent,1,2232,hyphenated,none,,,0,none,,none,,,,,none,0,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+northeast,1,2238,lowercase_single_word,exact,northeast,a|n|r,6,exact,northeast,exact,northeast,A|N|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+northwards,1,2240,lowercase_single_word,exact,northwards,r,1,exact,northwards,exact,northwards,v,northward,northward:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+northwest,1,2241,lowercase_single_word,exact,northwest,a|n|r,6,exact,northwest,exact,northwest,A|N|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+numb,1,2255,lowercase_single_word,exact,numb,a|v,4,exact,numb,exact,numb,A|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+nursery,1,2258,lowercase_single_word,exact,nursery,n,1,exact,nursery,exact,nursery,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+nursing,1,2259,lowercase_single_word,exact,nursing,n,3,none,,none,,,nurse,nurse:OEWN+MobyWords+MobyPOS,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+nylon,1,2262,lowercase_single_word,exact,nylon,n,2,exact,nylon,exact,nylon,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+obey,1,2263,lowercase_single_word,exact,obey,v,1,exact,obey,exact,obey,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+obvious,1,2267,lowercase_single_word,exact,obvious,a,1,exact,obvious,exact,obvious,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Oceania,1,2271,initial_uppercase,none,,,0,exact,Oceania,exact,Oceania,N,,,none,2,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+offence,1,2276,lowercase_single_word,exact,offence,n,5,exact,offence,exact,offence,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+offshore,1,2281,lowercase_single_word,exact,offshore,a|r,3,exact,offshore,exact,offshore,A|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+oh,1,2283,lowercase_single_word,none,,,0,exact,oh,exact,oh,!,,,none,2,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核
+oilfield,1,2285,lowercase_single_word,exact,oilfield,n,1,none,,exact,oilfield,N,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Olympic,1,2288,initial_uppercase,exact,Olympic,a,2,exact,Olympic,exact,Olympic,A,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+Olympic Games,1,2289,multiword,exact,Olympic Games,n,2,exact,Olympic Games,exact,Olympic Games,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+omelette,1,2290,lowercase_single_word,exact,omelette,n,1,none,,exact,omelette,N,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+oneself,1,2294,lowercase_single_word,none,,,0,exact,oneself,exact,oneself,r,,,none,2,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核
+opener,1,2299,lowercase_single_word,exact,opener,n,3,exact,opener,exact,opener,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+opening,1,2300,lowercase_single_word,exact,opening,a|n,14,exact,opening,exact,opening,N,open,open:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+opera house,1,2302,multiword,exact,opera house,n,1,exact,opera house,exact,opera house,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+operate,1,2303,lowercase_single_word,exact,operate,v,6,exact,operate,exact,operate,V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+optional,1,2310,lowercase_single_word,exact,optional,a,1,exact,optional,exact,optional,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+oral,1,2312,lowercase_single_word,exact,oral,a|n,5,exact,oral,exact,oral,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+organise,1,2319,lowercase_single_word,exact,organise,v,6,none,,exact,organise,i|t,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+organiser,1,2320,lowercase_single_word,exact,organiser,n,3,none,,none,,,,,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+Ottawa,1,2325,initial_uppercase,exact,Ottawa,n,1,none,,exact,Ottawa,N,,,none,2,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+ouch,1,2326,lowercase_single_word,none,,,0,exact,ouch,exact,ouch,!|N,,,none,2,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核
+ought,1,2327,lowercase_single_word,none,,,0,exact,ought,exact,ought,N|V|v,,,none,2,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核
+outdoors,1,2333,lowercase_single_word,exact,outdoors,n|r,2,exact,outdoors,exact,outdoors,N|v,outdoor,outdoor:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+outer,1,2334,lowercase_single_word,exact,outer,a,3,exact,outer,exact,outer,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+outing,1,2336,lowercase_single_word,exact,outing,n,2,exact,outing,exact,outing,N,out,out:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+outspoken,1,2340,lowercase_single_word,exact,outspoken,a,2,exact,outspoken,exact,outspoken,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+outward,1,2342,lowercase_single_word,exact,outward,a|r,3,exact,outward,exact,outward,A|N|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+oval,1,2343,lowercase_single_word,exact,oval,a|n,2,exact,oval,exact,oval,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+overcoat,1,2345,lowercase_single_word,exact,overcoat,n,2,exact,overcoat,exact,overcoat,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+overhead,1,2347,lowercase_single_word,exact,overhead,a|n|r,9,exact,overhead,exact,overhead,A|N|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+overlook,1,2348,lowercase_single_word,exact,overlook,n|v,6,exact,overlook,exact,overlook,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+overweight,1,2349,lowercase_single_word,exact,overweight,a|n,2,exact,overweight,exact,overweight,A|N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+owner,1,2352,lowercase_single_word,exact,owner,n,2,exact,owner,exact,owner,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+ownership,1,2353,lowercase_single_word,exact,ownership,n,3,exact,ownership,exact,ownership,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+ox,1,2354,lowercase_single_word,exact,ox,n,2,exact,ox,exact,ox,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+P.C.,1,2410,all_uppercase,none,,,0,exact,P.C.,none,,,,,none,1,special_reference_review,全大写形式可能是缩写、机构名或特殊标签，需单独核实
+packet,1,2361,lowercase_single_word,exact,packet,n,4,exact,packet,exact,packet,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+paddle,1,2362,lowercase_single_word,exact,paddle,n|v,10,exact,paddle,exact,paddle,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+painful,1,2365,lowercase_single_word,exact,painful,a,4,exact,painful,exact,painful,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+painter,1,2367,lowercase_single_word,exact,painter,n,4,exact,painter,exact,painter,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+painting,1,2368,lowercase_single_word,exact,painting,n,4,exact,painting,exact,painting,N,paint,paint:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+paperwork,1,2377,lowercase_single_word,exact,paperwork,n,1,none,,exact,paperwork,N,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+parallel,1,2379,lowercase_single_word,exact,parallel,a|n|v,8,exact,parallel,exact,parallel,A|N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Paris,1,2383,initial_uppercase,none,,,0,exact,Paris,exact,Paris,A|N,,,none,2,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+parrot,1,2387,lowercase_single_word,exact,parrot,n|v,3,exact,parrot,exact,parrot,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+part-time,1,2393,hyphenated,exact,part-time,a|r,2,exact,part-time,exact,part-time,A|v,,,none,3,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+partly,1,2391,lowercase_single_word,exact,partly,r,1,exact,partly,exact,partly,v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+passer-by,1,2398,hyphenated,exact,passer-by,n,1,exact,passer-by,exact,passer-by,N,,,none,3,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+pause,1,2407,lowercase_single_word,exact,pause,n|v,4,exact,pause,exact,pause,N|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+pea,1,2411,lowercase_single_word,exact,pea,n,3,exact,pea,exact,pea,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+peaceful,1,2413,lowercase_single_word,exact,peaceful,a,2,exact,peaceful,exact,peaceful,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+peach,1,2414,lowercase_single_word,exact,peach,n|v,5,exact,peach,exact,peach,N|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+peasant,1,2416,lowercase_single_word,exact,peasant,n,3,exact,peasant,exact,peasant,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+pedestrian,1,2417,lowercase_single_word,exact,pedestrian,a|n,2,exact,pedestrian,exact,pedestrian,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+pen-friend,1,2421,hyphenated,exact,pen-friend,n,1,none,,none,,,,,none,1,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+pencil sharpener,1,2986,multiword,exact,pencil sharpener,n,1,none,,exact,pencil sharpener,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+pencil-box,1,2420,hyphenated,none,,,0,none,,none,,,,,none,0,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+penny,1,2422,lowercase_single_word,exact,penny,n,2,exact,penny,exact,penny,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+pension,1,2423,lowercase_single_word,exact,pension,n|v,2,exact,pension,exact,pension,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+perform,1,2430,lowercase_single_word,exact,perform,v,4,exact,perform,exact,perform,V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+performer,1,2432,lowercase_single_word,exact,performer,n,1,none,,exact,performer,N,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+perfume,1,2433,lowercase_single_word,exact,perfume,n|v,4,exact,perfume,exact,perfume,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+permission,1,2437,lowercase_single_word,exact,permission,n,2,exact,permission,exact,permission,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+personally,1,2442,lowercase_single_word,exact,personally,r,5,exact,personally,exact,personally,v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+personnel,1,2441,lowercase_single_word,exact,personnel,n,2,exact,personnel,exact,personnel,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+pest,1,2444,lowercase_single_word,exact,pest,n,4,exact,pest,exact,pest,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+phone-booth,1,2449,hyphenated,none,,,0,none,,none,,,,,none,0,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+physical,1,2454,lowercase_single_word,exact,physical,a,7,exact,physical,exact,physical,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+physicist,1,2456,lowercase_single_word,exact,physicist,n,1,exact,physicist,exact,physicist,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+pianist,1,2458,lowercase_single_word,exact,pianist,n,1,exact,pianist,exact,pianist,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+pile,1,2466,lowercase_single_word,exact,pile,n|v,11,exact,pile,exact,pile,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+pillow,1,2468,lowercase_single_word,exact,pillow,n|v,2,exact,pillow,exact,pillow,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+pin,1,2470,lowercase_single_word,exact,pin,n|v,14,exact,pin,exact,pin,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+pine,1,2471,lowercase_single_word,exact,pine,n|v,3,exact,pine,exact,pine,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+pineapple,1,2472,lowercase_single_word,exact,pineapple,n,2,exact,pineapple,exact,pineapple,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+ping-pong,1,2473,hyphenated,casefold,Ping-Pong,n,1,casefold,Ping-Pong,casefold,Ping-Pong,N,,,none,3,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+pint,1,2475,lowercase_single_word,exact,pint,n,3,exact,pint,exact,pint,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+playmate,1,2492,lowercase_single_word,exact,playmate,n,1,exact,playmate,exact,playmate,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+playroom,1,2489,lowercase_single_word,exact,playroom,n,1,exact,playroom,exact,playroom,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+pleased,1,2495,lowercase_single_word,exact,pleased,a,2,none,,none,,,please,please:OEWN+MobyWords+MobyPOS,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+poisonous,1,2507,lowercase_single_word,exact,poisonous,a,3,exact,poisonous,exact,poisonous,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+popcorn,1,2525,lowercase_single_word,exact,popcorn,n,2,exact,popcorn,exact,popcorn,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+porridge,1,2529,lowercase_single_word,exact,porridge,n,1,exact,porridge,exact,porridge,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+portable,1,2531,lowercase_single_word,exact,portable,a|n,3,exact,portable,exact,portable,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+porter,1,2532,lowercase_single_word,exact,porter,n|v,5,exact,porter,exact,porter,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+possess,1,2534,lowercase_single_word,exact,possess,v,3,exact,possess,exact,possess,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+possibility,1,2536,lowercase_single_word,exact,possibility,n,4,exact,possibility,exact,possibility,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+possibly,1,2538,lowercase_single_word,exact,possibly,r,2,exact,possibly,exact,possibly,v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+postage,1,2540,lowercase_single_word,exact,postage,n,2,exact,postage,exact,postage,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+postbox,1,2541,lowercase_single_word,exact,postbox,n,1,exact,postbox,exact,postbox,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+postcode,1,2543,lowercase_single_word,exact,postcode,n,1,none,,exact,postcode,N,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+powder,1,2552,lowercase_single_word,exact,powder,n|v,5,exact,powder,exact,powder,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+powerful,1,2554,lowercase_single_word,exact,powerful,a|r,6,exact,powerful,exact,powerful,A|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+prairie,1,2557,lowercase_single_word,exact,prairie,n,1,exact,prairie,exact,prairie,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+prayer,1,2560,lowercase_single_word,exact,prayer,n,5,exact,prayer,exact,prayer,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+precise,1,2562,lowercase_single_word,exact,precise,a,2,exact,precise,exact,precise,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+pregnant,1,2566,lowercase_single_word,exact,pregnant,a,3,exact,pregnant,exact,pregnant,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+preparation,1,2569,lowercase_single_word,exact,preparation,n,8,exact,preparation,exact,preparation,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+prescription,1,2571,lowercase_single_word,exact,prescription,a|n,5,exact,prescription,exact,prescription,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+preview,1,2581,lowercase_single_word,exact,preview,n|v,3,exact,preview,exact,preview,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+primary school,1,2585,multiword,exact,primary school,n,1,exact,primary school,exact,primary school,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+printer,1,2589,lowercase_single_word,exact,printer,n,3,exact,printer,exact,printer,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+printing,1,2590,lowercase_single_word,exact,printing,n,4,exact,printing,exact,printing,N,print,print:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+prisoner,1,2592,lowercase_single_word,exact,prisoner,n,1,exact,prisoner,exact,prisoner,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+privilege,1,2594,lowercase_single_word,exact,privilege,n|v,4,exact,privilege,exact,privilege,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+probable,1,2596,lowercase_single_word,exact,probable,a|n,3,exact,probable,exact,probable,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+production,1,2603,lowercase_single_word,exact,production,n,8,exact,production,exact,production,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+properly,1,2616,lowercase_single_word,exact,properly,r,3,exact,properly,exact,properly,v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+protection,1,2618,lowercase_single_word,exact,protection,n,7,exact,protection,exact,protection,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+publicly,1,2626,lowercase_single_word,exact,publicly,r,2,exact,publicly,exact,publicly,v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+pulse,1,2629,lowercase_single_word,exact,pulse,n|v,7,exact,pulse,exact,pulse,N|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+pump,1,2630,lowercase_single_word,exact,pump,n|v,11,exact,pump,exact,pump,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+punctual,1,2631,lowercase_single_word,exact,punctual,a,1,exact,punctual,exact,punctual,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+punctuate,1,2632,lowercase_single_word,exact,punctuate,v,3,exact,punctuate,exact,punctuate,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+punctuation,1,2633,lowercase_single_word,exact,punctuation,n,3,exact,punctuation,exact,punctuation,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+punishment,1,2635,lowercase_single_word,exact,punishment,n,1,exact,punishment,exact,punishment,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+puzzle,1,2644,lowercase_single_word,exact,puzzle,n|v,4,exact,puzzle,exact,puzzle,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+puzzled,1,2645,lowercase_single_word,exact,puzzled,a,1,none,,exact,puzzled,V,puzzle,puzzle:OEWN+MobyWords+MobyPOS,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+pyramid,1,2646,lowercase_single_word,exact,pyramid,n|v,6,exact,pyramid,exact,pyramid,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+quake,1,2647,lowercase_single_word,exact,quake,n|v,3,exact,quake,exact,quake,N|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+quarrel,1,2651,lowercase_single_word,exact,quarrel,n|v,3,exact,quarrel,exact,quarrel,N|V|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+questionnaire,1,2655,lowercase_single_word,exact,questionnaire,n,1,exact,questionnaire,exact,questionnaire,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+queue,1,2656,lowercase_single_word,exact,queue,n|v,4,exact,queue,exact,queue,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+quilt,1,2659,lowercase_single_word,exact,quilt,n|v,3,exact,quilt,exact,quilt,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+quiz,1,2662,lowercase_single_word,exact,quiz,n|v,2,exact,quiz,exact,quiz,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+radioactive,1,2668,lowercase_single_word,exact,radioactive,a,1,exact,radioactive,exact,radioactive,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+rag,1,2670,lowercase_single_word,exact,rag,n|v,11,exact,rag,exact,rag,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+rail,1,2671,lowercase_single_word,exact,rail,n|v,15,exact,rail,exact,rail,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+raincoat,1,2675,lowercase_single_word,exact,raincoat,n,1,exact,raincoat,exact,raincoat,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+rainfall,1,2676,lowercase_single_word,exact,rainfall,n,1,exact,rainfall,exact,rainfall,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+rat,1,2684,lowercase_single_word,exact,rat,n|v,11,exact,rat,exact,rat,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+raw material,1,2688,multiword,exact,raw material,n,1,exact,raw material,exact,raw material,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+razor,1,2690,lowercase_single_word,exact,razor,n|v,2,exact,razor,exact,razor,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+reading,1,2694,lowercase_single_word,exact,reading,n,7,exact,reading,exact,reading,N,read,read:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+reasonable,1,2701,lowercase_single_word,exact,reasonable,a,3,exact,reasonable,exact,reasonable,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+rebuild,1,2702,lowercase_single_word,exact,rebuild,v,1,exact,rebuild,exact,rebuild,i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+receiver,1,2705,lowercase_single_word,exact,receiver,n,6,exact,receiver,exact,receiver,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+recent,1,2706,lowercase_single_word,exact,recent,a,2,exact,recent,exact,recent,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+reception,1,2707,lowercase_single_word,exact,reception,n,5,exact,reception,exact,reception,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+record holder,1,2714,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+recorder,1,2716,lowercase_single_word,exact,recorder,n,4,exact,recorder,exact,recorder,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+rectangle,1,2720,lowercase_single_word,exact,rectangle,n,1,exact,rectangle,exact,rectangle,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+redirect,1,2722,lowercase_single_word,exact,redirect,v,1,none,,exact,redirect,A|t,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+referee,1,2725,lowercase_single_word,exact,referee,n|v,5,exact,referee,exact,referee,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+refreshments,1,2730,lowercase_single_word,none,,,0,none,,none,,,refreshment,refreshment:OEWN+MobyWords+MobyPOS,none,0,inflected_form_review,当前形式可能是复数、第三人称或分词；开放词典支持其候选词头，需决定是否改存词头
+refusal,1,2732,lowercase_single_word,exact,refusal,n,2,exact,refusal,exact,refusal,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+regards,1,2735,lowercase_single_word,none,,,0,none,,none,,,regard,regard:OEWN+MobyWords+MobyPOS,none,0,inflected_form_review,当前形式可能是复数、第三人称或分词；开放词典支持其候选词头，需决定是否改存词头
+regulation,1,2740,lowercase_single_word,exact,regulation,a|n,7,exact,regulation,exact,regulation,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+relation,1,2743,lowercase_single_word,exact,relation,n,6,exact,relation,exact,relation,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+religion,1,2751,lowercase_single_word,exact,religion,n,2,exact,religion,exact,religion,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+religious,1,2752,lowercase_single_word,exact,religious,a|n,5,exact,religious,exact,religious,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+remark,1,2755,lowercase_single_word,exact,remark,n|v,4,exact,remark,exact,remark,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+repairs,1,2762,lowercase_single_word,none,,,0,none,,none,,,repair,repair:OEWN+MobyWords+MobyPOS,none,0,inflected_form_review,当前形式可能是复数、第三人称或分词；开放词典支持其候选词头，需决定是否改存词头
+reporter,1,2767,lowercase_single_word,exact,reporter,n,1,exact,reporter,exact,reporter,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+requirement,1,2774,lowercase_single_word,exact,requirement,n,3,exact,requirement,exact,requirement,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+resemble,1,2777,lowercase_single_word,exact,resemble,v,1,exact,resemble,exact,resemble,t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+reservation,1,2778,lowercase_single_word,exact,reservation,n,7,exact,reservation,exact,reservation,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+resist,1,2781,lowercase_single_word,exact,resist,v,6,exact,resist,exact,resist,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+restriction,1,2788,lowercase_single_word,exact,restriction,n,3,exact,restriction,exact,restriction,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+retell,1,2790,lowercase_single_word,exact,retell,v,3,none,,exact,retell,V,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+reuse,1,2793,lowercase_single_word,exact,reuse,v,1,none,,exact,reuse,V,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+reviewer,1,2795,lowercase_single_word,exact,reviewer,n,2,exact,reviewer,none,,,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+revision,1,2796,lowercase_single_word,exact,revision,n,3,exact,revision,exact,revision,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+revolution,1,2797,lowercase_single_word,exact,revolution,n,3,exact,revolution,exact,revolution,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+rewind,1,2799,lowercase_single_word,exact,rewind,v,1,none,,exact,rewind,N|V|t,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+rewrite,1,2800,lowercase_single_word,exact,rewrite,n|v,3,exact,rewrite,exact,rewrite,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+rid,1,2804,lowercase_single_word,exact,rid,v,1,exact,rid,exact,rid,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+ridiculous,1,2806,lowercase_single_word,exact,ridiculous,a,3,exact,ridiculous,exact,ridiculous,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+right-handed,1,2809,hyphenated,exact,right-handed,a,2,exact,right-handed,exact,right-handed,A,right-hand,right-hand:OEWN+MobyWords+MobyPOS,none,3,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+right-wing,1,2810,hyphenated,exact,right-wing,a,1,none,,exact,right-wing,A,,,none,2,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+ring-road,1,2812,hyphenated,none,,,0,none,,none,,,,,none,0,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+ripen,1,2815,lowercase_single_word,exact,ripen,v,2,exact,ripen,exact,ripen,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+rob,1,2821,lowercase_single_word,exact,rob,v,2,exact,rob,exact,rob,V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+roller,1,2827,lowercase_single_word,exact,roller,n,7,exact,roller,exact,roller,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+roller skating,1,2828,multiword,exact,roller skating,n,1,none,,none,,,roller skate,roller skate:OEWN+MobyWords+MobyPOS,none,1,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+rooster,1,2831,lowercase_single_word,exact,rooster,n,1,exact,rooster,exact,rooster,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+rot,1,2835,lowercase_single_word,exact,rot,n|v,5,exact,rot,exact,rot,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+rough,1,2836,lowercase_single_word,exact,rough,a|n|r|v,18,exact,rough,exact,rough,A|N|t|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+roundabout,1,2838,lowercase_single_word,exact,roundabout,a|n,4,exact,roundabout,exact,roundabout,A|N|P|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+runner,1,2850,lowercase_single_word,exact,runner,n,10,exact,runner,exact,runner,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+running,1,2851,lowercase_single_word,exact,running,a|n,11,exact,running,exact,running,A|N,run,run:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sacred,1,2855,lowercase_single_word,exact,sacred,a,5,exact,sacred,exact,sacred,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sacrifice,1,2856,lowercase_single_word,exact,sacrifice,n|v,9,exact,sacrifice,exact,sacrifice,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sadness,1,2858,lowercase_single_word,exact,sadness,n,3,exact,sadness,exact,sadness,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sailing,1,2862,lowercase_single_word,exact,sailing,n,4,exact,sailing,exact,sailing,N,sail,sail:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sailor,1,2863,lowercase_single_word,exact,sailor,n,3,exact,sailor,exact,sailor,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+salesgirl,1,2867,lowercase_single_word,exact,salesgirl,n,1,exact,salesgirl,exact,salesgirl,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+salute,1,2872,lowercase_single_word,exact,salute,n|v,9,exact,salute,exact,salute,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sauce,1,2880,lowercase_single_word,exact,sauce,n|v,4,exact,sauce,exact,sauce,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+savage,1,2883,lowercase_single_word,exact,savage,a|n|v,8,exact,savage,exact,savage,A|N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+scan,1,2887,lowercase_single_word,exact,scan,n|v,9,exact,scan,exact,scan,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+scar,1,2888,lowercase_single_word,exact,scar,n|v,3,exact,scar,exact,scar,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+scenery,1,2892,lowercase_single_word,exact,scenery,n,2,exact,scenery,exact,scenery,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sceptical,1,2893,lowercase_single_word,exact,sceptical,a,2,none,,exact,sceptical,A,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+scholar,1,2896,lowercase_single_word,exact,scholar,n,3,exact,scholar,exact,scholar,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+school-leaver,1,2899,hyphenated,none,,,0,none,,none,,,,,none,0,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+schoolmate,1,2900,lowercase_single_word,exact,schoolmate,n,1,exact,schoolmate,exact,schoolmate,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+scold,1,2905,lowercase_single_word,exact,scold,n|v,3,exact,scold,exact,scold,N|V|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+scores,1,2907,lowercase_single_word,exact,scores,n,1,none,,exact,scores,N|t,score,score:OEWN+MobyWords+MobyPOS,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Scotland,1,2908,initial_uppercase,none,,,0,exact,Scotland,exact,Scotland,N,,,none,2,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+Scottish,1,2909,initial_uppercase,exact,Scottish,a|n,2,exact,Scottish,exact,Scottish,A|N,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+scratch,1,2910,lowercase_single_word,exact,scratch,n|v,17,exact,scratch,exact,scratch,A|N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+seagull,1,2915,lowercase_single_word,exact,seagull,n,1,none,,none,,,,,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+seal,1,2916,lowercase_single_word,exact,seal,n|v,14,exact,seal,exact,seal,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+seaman,1,2917,lowercase_single_word,exact,seaman,n,1,exact,seaman,exact,seaman,N|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+seashell,1,2919,lowercase_single_word,exact,seashell,n,1,none,,exact,seashell,N,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+seaside,1,2920,lowercase_single_word,exact,seaside,n,1,exact,seaside,exact,seaside,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+seaweed,1,2923,lowercase_single_word,exact,seaweed,n,1,exact,seaweed,exact,seaweed,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+secondhand,1,2925,lowercase_single_word,exact,secondhand,a|r,3,exact,secondhand,none,,,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+see-saw,1,2936,hyphenated,none,,,0,none,,none,,,,,none,0,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+self,1,2940,lowercase_single_word,exact,self,a|n,3,exact,self,exact,self,A|N|r,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+self-service,1,2942,hyphenated,exact,self-service,a|n,2,exact,self-service,exact,self-service,A|N,,,none,3,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+selfish,1,2941,lowercase_single_word,exact,selfish,a,1,exact,selfish,exact,selfish,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+semicircle,1,2944,lowercase_single_word,exact,semicircle,n,1,exact,semicircle,exact,semicircle,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+separately,1,2951,lowercase_single_word,exact,separately,r,1,none,,exact,separately,v,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+separation,1,2952,lowercase_single_word,exact,separation,n,9,exact,separation,exact,separation,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+service-charge,1,2958,hyphenated,none,,,0,none,,none,,,,,none,0,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+settlement,1,2962,lowercase_single_word,exact,settlement,n,7,exact,settlement,exact,settlement,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+settler,1,2963,lowercase_single_word,exact,settler,n,3,exact,settler,exact,settler,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+shabby,1,2972,lowercase_single_word,exact,shabby,a,2,exact,shabby,exact,shabby,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Shanghai,1,2979,initial_uppercase,casefold,shanghai,v,1,exact,Shanghai,exact,Shanghai,N,,,none,3,proper_name_or_capitalization_review,开放词典仅以其他大小写形式匹配，需判断是否误大写
+sharpen,1,2984,lowercase_single_word,exact,sharpen,v,8,exact,sharpen,exact,sharpen,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sharpener,1,2985,lowercase_single_word,exact,sharpener,n,1,none,,none,,,,,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+shaver,1,2988,lowercase_single_word,exact,shaver,n,3,exact,shaver,exact,shaver,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+shooting,1,3001,lowercase_single_word,exact,shooting,n,2,none,,exact,shooting,V,shoot,shoot:OEWN+MobyWords+MobyPOS,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+shop assistant,1,3003,multiword,exact,shop assistant,n,1,exact,shop assistant,exact,shop assistant,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+shopkeeper,1,3004,lowercase_single_word,exact,shopkeeper,n,1,exact,shopkeeper,exact,shopkeeper,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+shopping,1,3005,lowercase_single_word,exact,shopping,n,2,exact,shopping,exact,shopping,N,shop,shop:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+short wave,1,3011,multiword,exact,short wave,n,1,none,,exact,short wave,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+shortcoming,1,3008,lowercase_single_word,exact,shortcoming,n,1,exact,shortcoming,exact,shortcoming,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+shortly,1,3009,lowercase_single_word,exact,shortly,r,5,exact,shortly,exact,shortly,v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+shot,1,3012,lowercase_single_word,exact,shot,a|n,19,exact,shot,exact,shot,A|N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+shrink,1,3019,lowercase_single_word,exact,shrink,n|v,6,exact,shrink,exact,shrink,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+shuttle,1,3021,lowercase_single_word,exact,shuttle,n|v,4,exact,shuttle,exact,shuttle,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sickness,1,3024,lowercase_single_word,exact,sickness,n,3,exact,sickness,exact,sickness,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+side road,1,3027,multiword,exact,side road,n,1,none,,none,,,,,none,1,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+sidewalk,1,3026,lowercase_single_word,exact,sidewalk,n,1,exact,sidewalk,exact,sidewalk,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sideways,1,3028,lowercase_single_word,exact,sideways,a|r,5,exact,sideways,exact,sideways,A|v,sideway,sideway:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sigh,1,3029,lowercase_single_word,exact,sigh,n|v,4,exact,sigh,exact,sigh,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sightseeing,1,3031,lowercase_single_word,exact,sightseeing,n,1,none,,none,,,,,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+signature,1,3034,lowercase_single_word,exact,signature,n,5,exact,signature,exact,signature,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+significance,1,3035,lowercase_single_word,exact,significance,n,3,exact,significance,exact,significance,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+simple-minded,1,3043,hyphenated,exact,simple-minded,a,2,exact,simple-minded,exact,simple-minded,A,,,none,3,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+simplify,1,3044,lowercase_single_word,exact,simplify,v,1,exact,simplify,exact,simplify,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+simply,1,3045,lowercase_single_word,exact,simply,r,4,exact,simply,exact,simply,v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+singer,1,3049,lowercase_single_word,exact,singer,n,1,exact,singer,exact,singer,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sister-in-law,1,3055,hyphenated,exact,sister-in-law,n,1,exact,sister-in-law,exact,sister-in-law,N,,,none,3,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+sixteenth,1,3062,lowercase_single_word,exact,sixteenth,a|n,3,exact,sixteenth,exact,sixteenth,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+skilled,1,3068,lowercase_single_word,exact,skilled,a,1,exact,skilled,exact,skilled,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+skillful,1,3069,lowercase_single_word,exact,skillful,a,2,exact,skillful,exact,skillful,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+skillfully,1,3070,lowercase_single_word,exact,skillfully,r,1,none,,exact,skillfully,v,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+skipping,1,3073,lowercase_single_word,none,,,0,none,,exact,skipping,V,skip,skip:OEWN+MobyWords+MobyPOS,none,1,inflected_form_review,当前形式可能是复数、第三人称或分词；开放词典支持其候选词头，需决定是否改存词头
+skyscraper,1,3076,lowercase_single_word,exact,skyscraper,n,1,exact,skyscraper,exact,skyscraper,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+slave,1,3077,lowercase_single_word,exact,slave,n|v,4,exact,slave,exact,slave,N|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+slavery,1,3078,lowercase_single_word,exact,slavery,n,3,exact,slavery,exact,slavery,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sleeve,1,3082,lowercase_single_word,exact,sleeve,n,2,exact,sleeve,exact,sleeve,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+slight,1,3085,lowercase_single_word,exact,slight,a|n|v,5,exact,slight,exact,slight,A|N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+smelly,1,3092,lowercase_single_word,exact,smelly,a,1,exact,smelly,exact,smelly,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+smoke-free,1,3096,hyphenated,exact,smoke-free,a,1,none,,none,,,,,none,1,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+smoker,1,3097,lowercase_single_word,exact,smoker,n,3,exact,smoker,exact,smoker,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+smoking,1,3098,lowercase_single_word,exact,smoking,a|n,3,exact,smoking,exact,smoking,N|V,smoke,smoke:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+snack bar,1,3101,multiword,exact,snack bar,n,1,exact,snack bar,exact,snack bar,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+snatch,1,3103,lowercase_single_word,exact,snatch,n|v,8,exact,snatch,exact,snatch,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sneaker,1,3104,lowercase_single_word,exact,sneaker,n,2,exact,sneaker,exact,sneaker,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sniff,1,3106,lowercase_single_word,exact,sniff,n|v,3,exact,sniff,exact,sniff,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+snowball,1,3108,lowercase_single_word,exact,snowball,n|v,6,exact,snowball,exact,snowball,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+snowman,1,3109,lowercase_single_word,exact,snowman,n,1,exact,snowman,exact,snowman,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+so-so,1,3142,hyphenated,exact,so-so,a|r,2,exact,so-so,exact,so-so,v,,,none,3,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+soap,1,3112,lowercase_single_word,exact,soap,n|v,4,exact,soap,exact,soap,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sob,1,3113,lowercase_single_word,exact,sob,n|v,2,exact,sob,exact,sob,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+socialism,1,3116,lowercase_single_word,exact,socialism,n,2,exact,socialism,exact,socialism,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+socket,1,3120,lowercase_single_word,exact,socket,n,3,exact,socket,exact,socket,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+soft drink,1,3124,multiword,exact,soft drink,n,1,exact,soft drink,exact,soft drink,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+softball,1,3125,lowercase_single_word,exact,softball,n,2,exact,softball,exact,softball,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+southeast,1,3148,lowercase_single_word,exact,southeast,a|n|r,6,exact,southeast,exact,southeast,A|N|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+southwest,1,3150,lowercase_single_word,exact,southwest,a|n|r,6,exact,southwest,exact,southwest,A|N|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+souvenirs,1,3151,lowercase_single_word,none,,,0,none,,none,,,souvenir,souvenir:OEWN+MobyWords+MobyPOS,none,0,inflected_form_review,当前形式可能是复数、第三人称或分词；开放词典支持其候选词头，需决定是否改存词头
+spaceship,1,3154,lowercase_single_word,exact,spaceship,n,1,exact,spaceship,exact,spaceship,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+spade,1,3155,lowercase_single_word,exact,spade,n|v,3,exact,spade,exact,spade,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+spaghetti,1,3156,lowercase_single_word,exact,spaghetti,n,2,exact,spaghetti,exact,spaghetti,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Spain,1,3157,initial_uppercase,none,,,0,exact,Spain,exact,Spain,N,,,none,2,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+Spanish,1,3158,initial_uppercase,exact,Spanish,a|n,3,exact,Spanish,exact,Spanish,A|N,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+sparrow,1,3160,lowercase_single_word,exact,sparrow,n,2,exact,sparrow,exact,sparrow,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+spear,1,3163,lowercase_single_word,exact,spear,n|v,4,exact,spear,exact,spear,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+spelling,1,3170,lowercase_single_word,exact,spelling,n,1,exact,spelling,exact,spelling,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+spin,1,3172,lowercase_single_word,exact,spin,n|v,13,exact,spin,exact,spin,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+spiritual,1,3174,lowercase_single_word,exact,spiritual,a|n,5,exact,spiritual,exact,spiritual,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+spit,1,3175,lowercase_single_word,exact,spit,n|v,8,exact,spit,exact,spit,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+split,1,3177,lowercase_single_word,exact,split,a|n|v,17,exact,split,exact,split,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+spoken,1,3178,lowercase_single_word,exact,spoken,a,1,exact,spoken,exact,spoken,A|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+spokesman,1,3179,lowercase_single_word,exact,spokesman,n,1,exact,spokesman,exact,spokesman,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+spoonful,1,3182,lowercase_single_word,exact,spoonful,n,1,exact,spoonful,exact,spoonful,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+spray,1,3185,lowercase_single_word,exact,spray,n|v,9,exact,spray,exact,spray,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+squeeze,1,3190,lowercase_single_word,exact,squeeze,n|v,17,exact,squeeze,exact,squeeze,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+squid,1,3191,lowercase_single_word,exact,squid,n,2,exact,squid,exact,squid,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+squirrel,1,3192,lowercase_single_word,exact,squirrel,n,2,exact,squirrel,exact,squirrel,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+stable,1,3193,lowercase_single_word,exact,stable,a|n|v,7,exact,stable,exact,stable,A|N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+stain,1,3197,lowercase_single_word,exact,stain,n|v,9,exact,stain,exact,stain,N|V|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+stainless,1,3198,lowercase_single_word,exact,stainless,a|n,2,exact,stainless,exact,stainless,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+stainless steel,1,3199,multiword,exact,stainless steel,n,1,exact,stainless steel,exact,stainless steel,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+starvation,1,3208,lowercase_single_word,exact,starvation,n,2,exact,starvation,exact,starvation,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+statement,1,3212,lowercase_single_word,exact,statement,n,7,exact,statement,exact,statement,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+statesman,1,3213,lowercase_single_word,exact,statesman,n,1,exact,statesman,exact,statesman,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+statistics,1,3214,lowercase_single_word,exact,statistics,n,1,exact,statistics,exact,statistics,N,statistic,statistic:OEWN+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+status,1,3216,lowercase_single_word,exact,status,n,2,exact,status,exact,status,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+steady,1,3218,lowercase_single_word,exact,steady,a|n|r|v,10,exact,steady,exact,steady,!|A|N|V|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+steep,1,3223,lowercase_single_word,exact,steep,a|n|v,6,exact,steep,exact,steep,A|N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+step-mother,1,3225,hyphenated,none,,,0,none,,none,,,,,none,0,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+steward,1,3226,lowercase_single_word,exact,steward,n,5,exact,steward,exact,steward,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+stewardess,1,3227,lowercase_single_word,exact,stewardess,n,1,exact,stewardess,exact,stewardess,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+stocking,1,3230,lowercase_single_word,exact,stocking,n,2,exact,stocking,exact,stocking,N,stock,stock:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+stopwatch,1,3235,lowercase_single_word,exact,stopwatch,n,1,exact,stopwatch,exact,stopwatch,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+storage,1,3236,lowercase_single_word,exact,storage,n,6,exact,storage,exact,storage,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+stout,1,3240,lowercase_single_word,exact,stout,a|n,5,exact,stout,exact,stout,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+stove,1,3241,lowercase_single_word,exact,stove,n,2,exact,stove,exact,stove,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+straw,1,3247,lowercase_single_word,exact,straw,a|n|v,7,exact,straw,exact,straw,A|N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+stubborn,1,3260,lowercase_single_word,exact,stubborn,a,2,exact,stubborn,exact,stubborn,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+substitute,1,3270,lowercase_single_word,exact,substitute,a|n|v,9,exact,substitute,exact,substitute,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+subtraction,1,3271,lowercase_single_word,exact,subtraction,n,2,exact,subtraction,exact,subtraction,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+suck,1,3276,lowercase_single_word,exact,suck,n|v,8,exact,suck,exact,suck,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+suffering,1,3279,lowercase_single_word,exact,suffering,a|n,6,exact,suffering,exact,suffering,N,suffer,suffer:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+suitcase,1,3286,lowercase_single_word,exact,suitcase,n,1,exact,suitcase,exact,suitcase,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+suite,1,3284,lowercase_single_word,exact,suite,n,4,exact,suite,exact,suite,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sunburnt,1,3290,lowercase_single_word,exact,sunburnt,a,1,none,,exact,sunburnt,V,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sunglasses,1,3292,lowercase_single_word,exact,sunglasses,n,1,exact,sunglasses,exact,sunglasses,p,sunglass,sunglass:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sunlight,1,3293,lowercase_single_word,exact,sunlight,n,1,exact,sunlight,exact,sunlight,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sunrise,1,3295,lowercase_single_word,exact,sunrise,a|n,4,exact,sunrise,exact,sunrise,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sunset,1,3296,lowercase_single_word,exact,sunset,a|n,5,exact,sunset,exact,sunset,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+sunshine,1,3297,lowercase_single_word,exact,sunshine,n,3,exact,sunshine,exact,sunshine,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+superman,1,3301,lowercase_single_word,exact,superman,n,2,exact,superman,exact,superman,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+supper,1,3303,lowercase_single_word,exact,supper,n,2,exact,supper,exact,supper,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+supreme,1,3307,lowercase_single_word,exact,supreme,a,4,exact,supreme,exact,supreme,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+surplus,1,3311,lowercase_single_word,exact,surplus,a|n,2,exact,surplus,exact,surplus,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+survival,1,3315,lowercase_single_word,exact,survival,n,3,exact,survival,exact,survival,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+suspension,1,3318,lowercase_single_word,exact,suspension,n,7,exact,suspension,exact,suspension,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+swallow,1,3319,lowercase_single_word,exact,swallow,n|v,11,exact,swallow,exact,swallow,N|V|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+swap,1,3320,lowercase_single_word,exact,swap,n|v,3,exact,swap,exact,swap,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+swear,1,3321,lowercase_single_word,exact,swear,v,5,exact,swear,exact,swear,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+swell,1,3326,lowercase_single_word,exact,swell,a|n|v,11,exact,swell,exact,swell,A|N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+swift,1,3327,lowercase_single_word,exact,swift,a|n,3,exact,swift,exact,swift,A|N|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+swimming pool,1,3331,multiword,exact,swimming pool,n,1,exact,swimming pool,exact,swimming pool,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+Swiss,1,3333,initial_uppercase,exact,Swiss,a|n,2,exact,Swiss,exact,Swiss,A|N,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+Switzerland,1,3334,initial_uppercase,none,,,0,exact,Switzerland,exact,Switzerland,N,,,none,2,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+sword,1,3336,lowercase_single_word,exact,sword,n,1,exact,sword,exact,sword,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+symptom,1,3340,lowercase_single_word,exact,symptom,n,2,exact,symptom,exact,symptom,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+systematic,1,3342,lowercase_single_word,exact,systematic,a,2,exact,systematic,exact,systematic,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+table manners,1,2013,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+table tennis,1,3344,multiword,exact,table tennis,n,1,exact,table tennis,exact,table tennis,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+tanker,1,3354,lowercase_single_word,exact,tanker,n,3,exact,tanker,exact,tanker,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+tap,1,3355,lowercase_single_word,exact,tap,n|v,20,exact,tap,exact,tap,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+tape recorder,1,3357,multiword,exact,tape recorder,n,1,exact,tape recorder,exact,tape recorder,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+tasteless,1,3361,lowercase_single_word,exact,tasteless,a,2,exact,tasteless,exact,tasteless,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+tasty,1,3362,lowercase_single_word,exact,tasty,a,1,exact,tasty,exact,tasty,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+tax-free,1,3364,hyphenated,exact,tax-free,a,1,none,,none,,,,,none,1,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+taxpayer,1,3366,lowercase_single_word,exact,taxpayer,n,1,exact,taxpayer,exact,taxpayer,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+teamwork,1,3371,lowercase_single_word,exact,teamwork,n,1,exact,teamwork,exact,teamwork,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+tease,1,3374,lowercase_single_word,exact,tease,n|v,12,exact,tease,exact,tease,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+technical,1,3375,lowercase_single_word,exact,technical,a|n,9,exact,technical,exact,technical,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+telegram,1,3379,lowercase_single_word,exact,telegram,n,1,exact,telegram,exact,telegram,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+telegraph,1,3380,lowercase_single_word,exact,telegraph,n|v,2,exact,telegraph,exact,telegraph,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+telephone booth,2,475;3382,multiword,exact,telephone booth,n,1,exact,telephone booth,exact,telephone booth,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+temptation,1,3389,lowercase_single_word,exact,temptation,n,3,exact,temptation,exact,temptation,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+tense,1,3394,lowercase_single_word,exact,tense,a|n|v,8,exact,tense,exact,tense,A|N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+tent,1,3396,lowercase_single_word,exact,tent,n|v,3,exact,tent,exact,tent,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+tentative,1,3397,lowercase_single_word,exact,tentative,a,2,exact,tentative,exact,tentative,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+terminal,1,3399,lowercase_single_word,exact,terminal,a|n,9,exact,terminal,exact,terminal,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+terrify,1,3401,lowercase_single_word,exact,terrify,v,1,exact,terrify,exact,terrify,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+terror,1,3402,lowercase_single_word,exact,terror,n,4,exact,terror,exact,terror,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+textbook,1,3405,lowercase_single_word,exact,textbook,a|n,2,exact,textbook,exact,textbook,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+thankful,1,3408,lowercase_single_word,exact,thankful,a,1,exact,thankful,exact,thankful,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+the Antarctic,1,185,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+the Arctic,1,229,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+the Arctic Ocean,1,230,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+the Atlantic Ocean,1,278,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+the British,1,523,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+the butterfly,1,563,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+the North Pole,1,2509,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+the Pacific Ocean,1,2358,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+the South Pole,1,2510,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+theirs,1,3414,lowercase_single_word,none,,,0,exact,theirs,exact,theirs,r,,,none,2,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核
+theoretical,1,3419,lowercase_single_word,exact,theoretical,a,2,exact,theoretical,exact,theoretical,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+thermos,1,3423,lowercase_single_word,exact,thermos,n,1,casefold,Thermos,casefold,Thermos,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+thief,1,3427,lowercase_single_word,exact,thief,n,1,exact,thief,exact,thief,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+thirst,1,3433,lowercase_single_word,exact,thirst,n|v,4,exact,thirst,exact,thirst,N|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+thread,1,3443,lowercase_single_word,exact,thread,n|v,9,exact,thread,exact,thread,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+thrill,1,3445,lowercase_single_word,exact,thrill,n|v,7,exact,thrill,exact,thrill,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+thriller,1,3446,lowercase_single_word,exact,thriller,n,1,exact,thriller,exact,thriller,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+throat,1,3447,lowercase_single_word,exact,throat,n,4,exact,throat,exact,throat,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+thunderstorm,1,3452,lowercase_single_word,exact,thunderstorm,n,1,exact,thunderstorm,exact,thunderstorm,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Tibet,1,3455,initial_uppercase,none,,,0,none,,exact,Tibet,N,,,none,1,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+Tibetan,1,3456,initial_uppercase,exact,Tibetan,a|n,3,exact,Tibetan,exact,Tibetan,A|N,,,none,3,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+tick,1,3457,lowercase_single_word,exact,tick,n|v,8,exact,tick,exact,tick,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+timetable,1,3465,lowercase_single_word,exact,timetable,n,2,exact,timetable,exact,timetable,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+tin,1,3466,lowercase_single_word,exact,tin,n|v,7,exact,tin,exact,tin,A|N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+tire,1,3469,lowercase_single_word,exact,tire,n|v,5,exact,tire,exact,tire,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+tiresome,1,3471,lowercase_single_word,exact,tiresome,a,1,exact,tiresome,exact,tiresome,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+Tokyo,1,3480,initial_uppercase,none,,,0,exact,Tokyo,exact,Tokyo,N,,,none,2,proper_name_or_capitalization_review,首字母大写形式可能是专名、地域名或误大写，需单独核实
+tomb,1,3483,lowercase_single_word,exact,tomb,n,1,exact,tomb,exact,tomb,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+tongue,1,3486,lowercase_single_word,exact,tongue,n|v,10,exact,tongue,exact,tongue,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+toothbrush,1,3492,lowercase_single_word,exact,toothbrush,n,2,exact,toothbrush,exact,toothbrush,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+toothpaste,1,3493,lowercase_single_word,exact,toothpaste,n,1,exact,toothpaste,exact,toothpaste,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+tortoise,1,3496,lowercase_single_word,exact,tortoise,n,1,exact,tortoise,exact,tortoise,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+totally,1,3498,lowercase_single_word,exact,totally,r,1,exact,totally,exact,totally,v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+tourism,1,3502,lowercase_single_word,exact,tourism,n,1,exact,tourism,exact,tourism,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+tractor,1,3511,lowercase_single_word,exact,tractor,n,2,exact,tractor,exact,tractor,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+traffic lights,1,3516,multiword,none,,,0,none,,none,,,traffic light,traffic light:OEWN+MobyWords+MobyPOS,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+trainer,1,3518,lowercase_single_word,exact,trainer,n,2,exact,trainer,exact,trainer,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+tram,1,3520,lowercase_single_word,exact,tram,n|v,4,exact,tram,exact,tram,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+translation,1,3523,lowercase_single_word,exact,translation,n,7,exact,translation,exact,translation,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+translator,1,3525,lowercase_single_word,exact,translator,n,3,exact,translator,exact,translator,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+transparent,1,3524,lowercase_single_word,exact,transparent,a,4,exact,transparent,exact,transparent,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+traveler,1,3529,lowercase_single_word,exact,traveler,n,1,exact,traveler,exact,traveler,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+tremble,1,3534,lowercase_single_word,exact,tremble,n|v,2,exact,tremble,exact,tremble,N|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+triangle,1,3537,lowercase_single_word,exact,triangle,n,4,exact,triangle,exact,triangle,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+trolley-bus,1,3540,hyphenated,none,,,0,none,,none,,,,,none,0,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+troop,2,3541;3542,lowercase_single_word,exact,troop,n|v,6,exact,troop,exact,troop,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+troublesome,1,3544,lowercase_single_word,exact,troublesome,a,1,exact,troublesome,exact,troublesome,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+truly,1,3548,lowercase_single_word,exact,truly,r,4,exact,truly,exact,truly,v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+turning,1,3559,lowercase_single_word,exact,turning,n,6,exact,turning,exact,turning,N,turn,turn:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+tutor,1,3560,lowercase_single_word,exact,tutor,n|v,3,exact,tutor,exact,tutor,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+twenty-first,1,3566,hyphenated,exact,twenty-first,a,1,none,,exact,twenty-first,A,,,none,2,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+twenty-one,1,3567,hyphenated,exact,twenty-one,a|n,3,exact,twenty-one,exact,twenty-one,N,,,none,3,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+twist,1,3570,lowercase_single_word,exact,twist,n|v,23,exact,twist,exact,twist,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+typewriter,1,3573,lowercase_single_word,exact,typewriter,n,1,exact,typewriter,exact,typewriter,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+typist,1,3576,lowercase_single_word,exact,typist,n,1,exact,typist,exact,typist,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+tyre,1,3577,lowercase_single_word,exact,tyre,n,1,casefold,Tyre,exact,tyre,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+UN,1,3581,all_uppercase,exact,UN,n,1,exact,UN,casefold,Un | un,N|r,,,none,3,special_reference_review,全大写形式可能是缩写、机构名或特殊标签，需单独核实
+unable,1,3582,lowercase_single_word,exact,unable,a,3,exact,unable,exact,unable,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unbearable,1,3583,lowercase_single_word,exact,unbearable,a,1,exact,unbearable,exact,unbearable,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unbelievable,1,3584,lowercase_single_word,exact,unbelievable,a,2,exact,unbelievable,exact,unbelievable,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+uncertain,1,3585,lowercase_single_word,exact,uncertain,a,7,exact,uncertain,exact,uncertain,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+uncomfortable,1,3587,lowercase_single_word,exact,uncomfortable,a,2,exact,uncomfortable,exact,uncomfortable,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unconditional,1,3588,lowercase_single_word,exact,unconditional,a,3,exact,unconditional,exact,unconditional,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unconscious,1,3589,lowercase_single_word,exact,unconscious,a|n,4,exact,unconscious,exact,unconscious,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+underline,1,3592,lowercase_single_word,exact,underline,n|v,3,exact,underline,exact,underline,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+understanding,1,3594,lowercase_single_word,exact,understanding,a|n,5,exact,understanding,exact,understanding,A|N,understand,understand:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+undertake,1,3595,lowercase_single_word,exact,undertake,v,5,exact,undertake,exact,undertake,V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+underwear,1,3596,lowercase_single_word,exact,underwear,n,1,exact,underwear,exact,underwear,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+undivided,1,3597,lowercase_single_word,exact,undivided,a,4,none,,exact,undivided,A,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+undo,1,3598,lowercase_single_word,exact,undo,v,5,exact,undo,exact,undo,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unemployment,1,3599,lowercase_single_word,exact,unemployment,n,1,exact,unemployment,exact,unemployment,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unfair,1,3600,lowercase_single_word,exact,unfair,a,1,exact,unfair,exact,unfair,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unfit,1,3601,lowercase_single_word,exact,unfit,a|v,4,exact,unfit,exact,unfit,A|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unfold,1,3602,lowercase_single_word,exact,unfold,v,4,exact,unfold,exact,unfold,V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unfortunate,1,3603,lowercase_single_word,exact,unfortunate,a|n,4,exact,unfortunate,exact,unfortunate,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unfortunately,1,3604,lowercase_single_word,exact,unfortunately,r,1,none,,exact,unfortunately,v,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unhappy,1,3605,lowercase_single_word,exact,unhappy,a,4,exact,unhappy,exact,unhappy,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unhealthy,1,3606,lowercase_single_word,exact,unhealthy,a,3,exact,unhealthy,exact,unhealthy,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unimportant,1,3608,lowercase_single_word,exact,unimportant,a,2,none,,exact,unimportant,A,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+union,1,3609,lowercase_single_word,exact,union,a|n,11,exact,union,exact,union,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unite,1,3612,lowercase_single_word,exact,unite,v,6,exact,unite,exact,unite,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+universal,1,3613,lowercase_single_word,exact,universal,a|n,7,exact,universal,exact,universal,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unknown,1,3616,lowercase_single_word,exact,unknown,a|n,8,exact,unknown,exact,unknown,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unlike,1,3618,lowercase_single_word,exact,unlike,a,2,exact,unlike,exact,unlike,A|P,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unmarried,1,3619,lowercase_single_word,exact,unmarried,a,1,none,,exact,unmarried,A,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unpleasant,1,3620,lowercase_single_word,exact,unpleasant,a,1,exact,unpleasant,exact,unpleasant,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unrest,1,3621,lowercase_single_word,exact,unrest,n,2,exact,unrest,exact,unrest,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unsafe,1,3622,lowercase_single_word,exact,unsafe,a,3,none,,exact,unsafe,A,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unsuccessful,1,3623,lowercase_single_word,exact,unsuccessful,a,2,exact,unsuccessful,exact,unsuccessful,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+untrue,1,3625,lowercase_single_word,exact,untrue,a,4,exact,untrue,exact,untrue,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+unwilling,1,3627,lowercase_single_word,exact,unwilling,a,2,exact,unwilling,exact,unwilling,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+upstairs,1,3632,lowercase_single_word,exact,upstairs,a|n|r,4,exact,upstairs,exact,upstairs,N|v,upstair,upstair:OEWN,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+upward,1,3633,lowercase_single_word,exact,upward,a|r,4,exact,upward,exact,upward,A|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+USA,1,3637,all_uppercase,exact,USA,n,1,exact,USA,exact,USA,N,,,none,3,special_reference_review,全大写形式可能是缩写、机构名或特殊标签，需单独核实
+useless,1,3641,lowercase_single_word,exact,useless,a,1,exact,useless,exact,useless,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+user,1,3642,lowercase_single_word,exact,user,n,3,exact,user,exact,user,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+vacant,1,3646,lowercase_single_word,exact,vacant,a,2,exact,vacant,exact,vacant,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+vague,1,3647,lowercase_single_word,exact,vague,a,3,exact,vague,exact,vague,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+vain,1,3648,lowercase_single_word,exact,vain,a,2,exact,vain,exact,vain,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+valid,1,3649,lowercase_single_word,exact,valid,a,2,exact,valid,exact,valid,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+vanilla,1,3653,lowercase_single_word,exact,vanilla,a|n,5,exact,vanilla,exact,vanilla,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+VCD,1,3658,all_uppercase,none,,,0,none,,none,,,,,none,0,special_reference_review,全大写形式可能是缩写、机构名或特殊标签，需单独核实
+veal,1,3659,lowercase_single_word,exact,veal,n,1,exact,veal,exact,veal,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+vertical,1,3663,lowercase_single_word,exact,vertical,a|n,6,exact,vertical,exact,vertical,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+vest,1,3665,lowercase_single_word,exact,vest,n|v,7,exact,vest,exact,vest,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+via,1,3666,lowercase_single_word,none,,,0,exact,via,exact,via,P,,,none,2,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核
+vice,1,3667,lowercase_single_word,exact,vice,n,3,exact,vice,exact,vice,A|N|P,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+videophone,1,3671,lowercase_single_word,none,,,0,none,,exact,videophone,N,,,none,1,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核
+viewer,1,3673,lowercase_single_word,exact,viewer,n,2,exact,viewer,exact,viewer,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+villager,1,3675,lowercase_single_word,exact,villager,n,1,exact,villager,exact,villager,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+vinegar,1,3676,lowercase_single_word,exact,vinegar,n,2,exact,vinegar,exact,vinegar,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+violate,1,3677,lowercase_single_word,exact,violate,v,6,exact,violate,exact,violate,A|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+violent,1,3679,lowercase_single_word,exact,violent,a,5,exact,violent,exact,violent,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+violinist,1,3681,lowercase_single_word,exact,violinist,n,1,exact,violinist,exact,violinist,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+visa,1,3684,lowercase_single_word,exact,visa,n|v,3,exact,visa,exact,visa,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+voluntary,1,3694,lowercase_single_word,exact,voluntary,a|n,4,exact,voluntary,exact,voluntary,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+voyage,1,3697,lowercase_single_word,exact,voyage,n|v,3,exact,voyage,exact,voyage,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+wag,1,3698,lowercase_single_word,exact,wag,n|v,3,exact,wag,exact,wag,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+waiter,1,3702,lowercase_single_word,exact,waiter,n,2,exact,waiter,exact,waiter,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+waiting room,1,3703,multiword,exact,waiting room,n,1,exact,waiting room,exact,waiting room,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+waitress,1,3704,lowercase_single_word,exact,waitress,n|v,2,exact,waitress,exact,waitress,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+walkman,1,3707,lowercase_single_word,casefold,Walkman,n,1,none,,none,,,,,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+walnut,1,3710,lowercase_single_word,exact,walnut,n,3,exact,walnut,exact,walnut,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+warehouse,1,3715,lowercase_single_word,exact,warehouse,n|v,2,exact,warehouse,exact,warehouse,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+warm-hearted,1,3717,hyphenated,none,,,0,exact,warm-hearted,exact,warm-hearted,A,,,none,2,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+warmth,1,3718,lowercase_single_word,exact,warmth,n,5,exact,warmth,exact,warmth,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+washing machine,1,3722,multiword,exact,washing machine,n,1,exact,washing machine,exact,washing machine,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+wax,1,3729,lowercase_single_word,exact,wax,n|v,4,exact,wax,exact,wax,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+wayside,1,3731,lowercase_single_word,exact,wayside,n,1,exact,wayside,exact,wayside,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+weakness,1,3736,lowercase_single_word,exact,weakness,n,5,exact,weakness,exact,weakness,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+wealthy,1,3738,lowercase_single_word,exact,wealthy,a,1,exact,wealthy,exact,wealthy,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+weatherman,1,3741,lowercase_single_word,exact,weatherman,n,1,exact,weatherman,exact,weatherman,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+web,1,3733,lowercase_single_word,exact,web,n|v,8,exact,web,exact,web,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+well-known,1,3755,hyphenated,exact,well-known,a,2,exact,well-known,exact,well-known,A,,,none,3,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+westerner,1,3758,lowercase_single_word,exact,westerner,n,1,none,,exact,westerner,N,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+westwards,1,3759,lowercase_single_word,exact,westwards,r,1,none,,none,,,westward,westward:OEWN+MobyWords+MobyPOS,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+wherever,1,3769,lowercase_single_word,exact,wherever,r,1,exact,wherever,exact,wherever,C|v,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+whichever,1,3772,lowercase_single_word,none,,,0,exact,whichever,exact,whichever,D,,,none,2,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核
+whistle,1,3775,lowercase_single_word,exact,whistle,n|v,11,exact,whistle,exact,whistle,N|V|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+wildlife,1,3786,lowercase_single_word,exact,wildlife,n,1,exact,wildlife,exact,wildlife,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+willing,1,3789,lowercase_single_word,exact,willing,a|n,3,exact,willing,exact,willing,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+willingly,1,3790,lowercase_single_word,exact,willingly,r,1,none,,exact,willingly,v,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+willingness,1,3791,lowercase_single_word,exact,willingness,n,1,none,,exact,willingness,N,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+windbreaker,1,3795,lowercase_single_word,exact,windbreaker,n,1,none,,casefold,Windbreaker,N,,,none,2,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+wipe,1,3802,lowercase_single_word,exact,wipe,n|v,2,exact,wipe,exact,wipe,N|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+wolf,1,3812,lowercase_single_word,exact,wolf,n|v,4,exact,wolf,exact,wolf,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+wooden,1,3817,lowercase_single_word,exact,wooden,a,2,exact,wooden,exact,wooden,A|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+woollen,1,3819,lowercase_single_word,exact,woollen,a|n,2,exact,woollen,exact,woollen,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+workday,1,3822,lowercase_single_word,exact,workday,n,2,exact,workday,exact,workday,A|N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+workforce,1,3824,lowercase_single_word,exact,workforce,n,1,none,,none,,,,,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+workmate,1,3825,lowercase_single_word,exact,workmate,n,1,none,,none,,,,,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+workplace,1,3826,lowercase_single_word,exact,workplace,n,1,none,,none,,,,,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+works,1,3827,lowercase_single_word,exact,works,n,4,exact,works,exact,works,p,work,work:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+world-famous,1,3829,hyphenated,none,,,0,none,,none,,,,,none,0,hyphenated_form_review,连字符形式可能有开放式、闭合式等变体，需确定规范词形
+worldwide,1,3830,lowercase_single_word,exact,worldwide,a,3,exact,worldwide,exact,worldwide,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+worm,1,3831,lowercase_single_word,exact,worm,n|v,5,exact,worm,exact,worm,N|V|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+worn,1,3832,lowercase_single_word,exact,worn,a,2,exact,worn,exact,worn,A|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+worried,1,3833,lowercase_single_word,exact,worried,a,2,exact,worried,exact,worried,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+worthless,1,3838,lowercase_single_word,exact,worthless,a,2,exact,worthless,exact,worthless,A,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+wounded,1,3843,lowercase_single_word,exact,wounded,a|n,2,exact,wounded,exact,wounded,A,wound,wound:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+writing,1,3848,lowercase_single_word,exact,writing,n,5,exact,writing,exact,writing,N,writ | write,writ:OEWN+MobyWords+MobyPOS | write:OEWN+MobyWords+MobyPOS,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+yawn,1,3852,lowercase_single_word,exact,yawn,n|v,3,exact,yawn,exact,yawn,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+yell,1,3854,lowercase_single_word,exact,yell,n|v,4,exact,yell,exact,yell,N|V,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+yourselves,1,3865,lowercase_single_word,none,,,0,none,,exact,yourselves,p,,,none,1,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核
+yummy,1,3867,lowercase_single_word,exact,yummy,a,1,none,,none,,,,,none,1,modern_lexical_review,OEWN 有词形证据，Moby 未匹配；复核词义、难度与学习价值
+zebra,1,3868,lowercase_single_word,exact,zebra,n,1,exact,zebra,exact,zebra,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+zebra crossing,1,3869,multiword,exact,zebra crossing,n,1,exact,zebra crossing,exact,zebra crossing,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+zip,1,3871,lowercase_single_word,exact,zip,n|v,5,exact,zip,exact,zip,N|i|t,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+zip code,1,3872,multiword,casefold,ZIP code,n,1,exact,zip code,exact,zip code,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+zipper,1,3873,lowercase_single_word,exact,zipper,n|v,2,exact,zipper,exact,zipper,N,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选
+zoom,1,3876,lowercase_single_word,exact,zoom,n|v,5,exact,zoom,exact,zoom,N|V|i,,,none,3,retain_for_relevance_scoring,OEWN 与至少一个 Moby 数据集均有词形证据；仍需另做学习相关性筛选

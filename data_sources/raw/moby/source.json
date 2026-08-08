@@ -1,0 +1,16 @@
+{
+  "source_id": "moby-words-and-pos-project-gutenberg",
+  "title": "Moby Words II and Moby Part-of-Speech II",
+  "author": "Grady Ward",
+  "retrieved_on": "2026-08-08",
+  "public_domain_notice": "Public Domain material by grant from the author, January, 2001.",
+  "common_words_url": "https://www.gutenberg.org/files/3201/files/common.txt",
+  "common_words_sha256": "c7aa03c522e9e28bba1db692372119f21c73c646671af24b53a840e2d6f84fa7",
+  "common_words_size_bytes": 730682,
+  "part_of_speech_url": "https://www.gutenberg.org/files/3203/files/mobypos.txt",
+  "part_of_speech_sha256": "cc81458b820a36253fbeb8106045166a345209d0fbf4cbfc20be2b189f24af82",
+  "part_of_speech_size_bytes": 3237558,
+  "words_documentation_url": "https://www.gutenberg.org/files/3201/3201-h/3201-h.htm",
+  "pos_documentation_url": "https://www.gutenberg.org/files/3203/3203-h/3203-h.htm",
+  "usage": "Validate candidate spelling/common dictionary presence and obtain auxiliary part-of-speech codes. No Moby definition text is used."
+}

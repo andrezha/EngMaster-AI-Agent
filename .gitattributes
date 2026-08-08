@@ -1,0 +1,8 @@
+.gitattributes text eol=lf
+
+# Preserve evidence-source bytes so archived SHA-256 values remain reproducible.
+data_sources/** -text
+
+# Keep vocabulary build scripts and their governance document stable on Windows.
+tools/*.py text eol=lf
+词库命名与开放数据来源策略.md text eol=lf

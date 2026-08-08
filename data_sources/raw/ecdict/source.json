@@ -1,0 +1,28 @@
+{
+  "source_id": "ecdict-github",
+  "title": "ECDICT Free English to Chinese Dictionary Database",
+  "repository": "https://github.com/skywind3000/ECDICT",
+  "retrieved_on": "2026-08-08",
+  "commit": "bc015ed2e24a7abef49fc6dbbb7fe32c1dadaf8b",
+  "commit_date": "2025-03-28T01:02:57Z",
+  "license": "MIT",
+  "data_url": "https://raw.githubusercontent.com/skywind3000/ECDICT/bc015ed2e24a7abef49fc6dbbb7fe32c1dadaf8b/ecdict.csv",
+  "data_sha256": "1a6947e04785db63613a92e14903cdae7954f7e84860b10e68e5c7cbb3f9c3cf",
+  "data_size_bytes": 65933428,
+  "license_sha256": "f8552dd246f61a4e064569eae6194a01c6b3d63b03bf27c6ca863593c549ed0f",
+  "readme_sha256": "0c3f95fc7e15f7eccf65feedb58ba3ebace1fe7b7cbdd1af60c9ace4cef9094b",
+  "fields_used": [
+    "word",
+    "tag",
+    "bnc",
+    "frq"
+  ],
+  "fields_explicitly_not_used": [
+    "phonetic",
+    "definition",
+    "translation",
+    "detail",
+    "audio"
+  ],
+  "usage": "Auxiliary audit evidence for exact spelling, suspected legacy-list provenance, and corpus-frequency relevance. The gk tag is recorded but deliberately excluded from the relevance score because its 98.8% overlap with the legacy extension candidates indicates circularity risk."
+}

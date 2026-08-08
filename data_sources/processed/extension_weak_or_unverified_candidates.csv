@@ -1,0 +1,13 @@
+﻿legacy_word,legacy_row_count,legacy_rows,structural_type,oewn_match_type,oewn_lemmas,oewn_pos,oewn_sense_count,moby_wordlist_match_type,moby_wordlist_forms,moby_pos_match_type,moby_pos_forms,moby_pos_codes,normalized_headword_candidates,normalized_headword_evidence,existing_phrase_table_match,lexical_evidence_score,recommendation,reason
+handtruck,1,1600,lowercase_single_word,none,,,0,none,,none,,,,,none,0,exclude_or_spelling_review,两个开放词典均无词形证据；优先检查拼写、屈折变化或排除
+headteacher,1,1630,lowercase_single_word,none,,,0,none,,none,,,,,none,0,exclude_or_spelling_review,两个开放词典均无词形证据；优先检查拼写、屈折变化或排除
+hey,1,1656,lowercase_single_word,none,,,0,exact,hey,exact,hey,!,,,none,2,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核
+oh,1,2283,lowercase_single_word,none,,,0,exact,oh,exact,oh,!,,,none,2,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核
+oneself,1,2294,lowercase_single_word,none,,,0,exact,oneself,exact,oneself,r,,,none,2,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核
+ouch,1,2326,lowercase_single_word,none,,,0,exact,ouch,exact,ouch,!|N,,,none,2,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核
+ought,1,2327,lowercase_single_word,none,,,0,exact,ought,exact,ought,N|V|v,,,none,2,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核
+theirs,1,3414,lowercase_single_word,none,,,0,exact,theirs,exact,theirs,r,,,none,2,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核
+via,1,3666,lowercase_single_word,none,,,0,exact,via,exact,via,P,,,none,2,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核
+videophone,1,3671,lowercase_single_word,none,,,0,none,,exact,videophone,N,,,none,1,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核
+whichever,1,3772,lowercase_single_word,none,,,0,exact,whichever,exact,whichever,D,,,none,2,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核
+yourselves,1,3865,lowercase_single_word,none,,,0,none,,exact,yourselves,p,,,none,1,legacy_lexicon_review,仅 Moby 有词形证据；可能生僻、旧式或专名，需谨慎复核

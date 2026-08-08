@@ -1,0 +1,121 @@
+{
+  "secondary_not_in_main_word_table": [
+    {
+      "word": "airplane",
+      "queue_route": "original_medium_frequency",
+      "relevance_score": "6",
+      "decision": "merge_as_variant",
+      "preferred_headword": "aeroplane",
+      "reason": "与 aeroplane 为正字法变体，合并避免重复计数"
+    },
+    {
+      "word": "businesswoman",
+      "queue_route": "original_medium_frequency",
+      "relevance_score": "4",
+      "decision": "exclude_gendered_occupation",
+      "preferred_headword": "",
+      "reason": "通用词表优先采用不限定性别的职业表达"
+    },
+    {
+      "word": "headmistress",
+      "queue_route": "original_medium_frequency",
+      "relevance_score": "4",
+      "decision": "exclude_gendered_occupation",
+      "preferred_headword": "",
+      "reason": "通用词表优先采用 head teacher 等中性表达"
+    },
+    {
+      "word": "hostess",
+      "queue_route": "original_medium_frequency",
+      "relevance_score": "6",
+      "decision": "exclude_gendered_occupation",
+      "preferred_headword": "",
+      "reason": "职业义带性别限定，移出通用主表"
+    },
+    {
+      "word": "seaman",
+      "queue_route": "original_medium_frequency",
+      "relevance_score": "6",
+      "decision": "exclude_gendered_occupation",
+      "preferred_headword": "",
+      "reason": "通用学习词表优先采用 sailor/seafarer 等表达"
+    },
+    {
+      "word": "statesman",
+      "queue_route": "original_medium_frequency",
+      "relevance_score": "6",
+      "decision": "exclude_gendered_occupation",
+      "preferred_headword": "",
+      "reason": "名称带性别限定，暂不进入通用主表"
+    },
+    {
+      "word": "stewardess",
+      "queue_route": "original_medium_frequency",
+      "relevance_score": "4",
+      "decision": "exclude_gendered_occupation",
+      "preferred_headword": "",
+      "reason": "现代职业表达优先使用 flight attendant"
+    },
+    {
+      "word": "waitress",
+      "queue_route": "original_medium_frequency",
+      "relevance_score": "6",
+      "decision": "exclude_gendered_occupation",
+      "preferred_headword": "",
+      "reason": "现代通用表达优先使用 server/waiter 等按语境处理"
+    },
+    {
+      "word": "weatherman",
+      "queue_route": "original_medium_frequency",
+      "relevance_score": "4",
+      "decision": "exclude_gendered_occupation",
+      "preferred_headword": "",
+      "reason": "现代通用表达优先使用 weather presenter/meteorologist"
+    }
+  ],
+  "lexical_edge_not_in_main_word_table": [
+    {
+      "word": "ought",
+      "screening_bucket": "legacy_lexicon_review",
+      "oewn_match_type": "none",
+      "oewn_pos": "",
+      "decision": "merge_into_curriculum_expression",
+      "reason": "课标母表已原文收录 ought to，不重复建立扩展词头",
+      "review_method": "ai_assisted_explicit_semantic_review"
+    },
+    {
+      "word": "videophone",
+      "screening_bucket": "legacy_lexicon_review",
+      "oewn_match_type": "none",
+      "oewn_pos": "",
+      "decision": "exclude",
+      "reason": "技术词已明显过时且独立频率较低",
+      "review_method": "ai_assisted_explicit_semantic_review"
+    },
+    {
+      "word": "walkman",
+      "screening_bucket": "modern_lexical_review",
+      "oewn_match_type": "casefold",
+      "oewn_pos": "n",
+      "decision": "exclude",
+      "reason": "来源涉及品牌化名称且设备已经过时，不进入通用主表",
+      "review_method": "ai_assisted_explicit_semantic_review"
+    },
+    {
+      "word": "yummy",
+      "screening_bucket": "modern_lexical_review",
+      "oewn_match_type": "exact",
+      "oewn_pos": "a",
+      "decision": "exclude",
+      "reason": "口语色彩强且教育覆盖价值有限",
+      "review_method": "ai_assisted_explicit_semantic_review"
+    }
+  ],
+  "structural_buckets_kept_separate": {
+    "phrases": 63,
+    "hyphenated_forms": 41,
+    "proper_names_or_capitalized_forms": 43,
+    "abbreviations": 8,
+    "unverified_spellings": 2
+  }
+}

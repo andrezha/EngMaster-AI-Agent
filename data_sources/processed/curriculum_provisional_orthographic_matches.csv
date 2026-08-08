@@ -1,0 +1,9 @@
+﻿legacy_row,legacy_word,match_status,match_stage,matched_curriculum_sequence,matched_curriculum_entry,matched_alias,alias_type,curriculum_level,requires_review,match_note
+374,beancurd,orthographic_normalized,orthographic_normalized,263,bean curd (tofu),bean curd,primary,high_school_selective_compulsory,yes,primary_preferred
+1182,e-mail,orthographic_normalized,orthographic_normalized,911,email,email,primary,compulsory_education,yes,primary_preferred
+1725,ice cream,orthographic_normalized,orthographic_normalized,1357,ice-cream,ice-cream,primary,compulsory_education,yes,primary_preferred
+2106,Miss.,orthographic_normalized,orthographic_normalized,1690,Miss,Miss,primary,compulsory_education,yes,primary_preferred
+2158,Mr.,orthographic_normalized,orthographic_normalized,1731,Mr,Mr,primary,compulsory_education,yes,primary_preferred
+2159,Mrs.,orthographic_normalized,orthographic_normalized,1732,Mrs,Mrs,primary,compulsory_education,yes,primary_preferred
+2160,Ms.,orthographic_normalized,orthographic_normalized,1733,Ms,Ms,primary,compulsory_education,yes,primary_preferred
+2409,P.E.,orthographic_normalized,orthographic_normalized,1929,PE (physical education),PE,primary,compulsory_education,yes,primary_preferred

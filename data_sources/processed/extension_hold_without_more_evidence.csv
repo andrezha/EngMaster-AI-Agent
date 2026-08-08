@@ -1,0 +1,53 @@
+﻿legacy_word,legacy_row_count,legacy_rows,oewn_pos,oewn_sense_count,lexical_evidence_score,ecdict_word,ecdict_match_type,ecdict_tags_audit_only,ecdict_gk_tag,bnc_rank,contemporary_rank,bnc_points,contemporary_points,cross_corpus_bonus,relevance_score,frequency_profile,form_review_flags,recommendation,reason
+addicted,1,62,a,1,3,addicted,exact,gk toefl,yes,41488,23549,0,1,1,2,limited_frequency,possible_participle_or_adjective,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入；另有词形复核标记
+airmail,1,117,n|v,3,2,airmail,exact,gk,yes,27385,31683,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+backache,1,317,n,1,3,backache,exact,gk,yes,22814,29373,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+ballpoint,1,334,n,1,2,ballpoint,exact,gk,yes,26210,24069,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+barbershop,1,346,n,1,3,barbershop,exact,gk,yes,,16205,0,2,0,2,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+bedclothes,1,384,n,1,3,bedclothes,exact,gk,yes,,,0,0,0,0,no_frequency_rank,possible_plural_or_third_person,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入；另有词形复核标记
+birdcage,1,433,n,1,3,birdcage,exact,gk,yes,44688,32730,0,1,1,2,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+bookmark,1,468,n,1,3,bookmark,exact,gk,yes,27606,20965,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+centigrade,1,640,a,1,3,centigrade,exact,gk cet4 cet6 ky toefl gre,yes,27004,,1,0,0,1,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+changeable,1,659,a,4,3,changeable,exact,gk,yes,20685,21649,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+customs,1,932,n,1,3,customs,exact,gk toefl,yes,,,0,0,0,0,no_frequency_rank,possible_plural_or_third_person,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入；另有词形复核标记
+dictation,1,1019,n,3,3,dictation,exact,gk cet4 cet6 ky ielts,yes,20641,21756,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+eastwards,1,1149,r,1,3,eastwards,exact,gk,yes,14945,,2,0,0,2,single_corpus_only,possible_plural_or_third_person,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入；另有词形复核标记
+eggplant,1,1163,n,2,3,eggplant,exact,gk,yes,,10618,0,2,0,2,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+firework,1,1364,n,1,3,firework,exact,gk cet6,yes,8853,,3,0,0,3,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+franc,1,1438,n,1,3,franc,exact,gk,yes,7261,,3,0,0,3,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+gallon,1,1483,n,2,3,gallon,exact,gk cet4 cet6 ky toefl gre,yes,6013,,3,0,0,3,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+glasshouse,1,1516,n,1,3,glasshouse,exact,gk,yes,22763,39029,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+greengrocer,1,1563,n,1,3,greengrocer,exact,gk,yes,20056,31343,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+gruel,1,1573,n,1,3,gruel,exact,gk,yes,36700,25887,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+hardworking,1,1612,a,1,2,hardworking,exact,gk,yes,18992,,2,0,0,2,single_corpus_only,possible_participle_or_gerund,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入；另有词形复核标记
+hibernate,1,1658,v,2,3,hibernate,exact,gk toefl gre,yes,24989,21924,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+hooray,1,1688,n,1,3,hooray,exact,gk,yes,21582,23679,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+latest,1,1897,a|n,3,3,latest,exact,gk ielts,yes,,,0,0,0,0,no_frequency_rank,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+litre,1,1960,n,1,3,litre,exact,gk ky,yes,5726,,3,0,0,3,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+miniskirt,1,2098,n,1,3,miniskirt,exact,gk,yes,45253,20289,0,1,1,2,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+motherland,1,2141,n,1,3,motherland,exact,gk,yes,26292,23389,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+necktie,1,2194,n,1,3,necktie,exact,gk,yes,42992,17026,0,2,1,3,moderate_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+northwards,1,2240,r,1,3,northwards,exact,gk cet6,yes,11689,43874,2,0,1,3,moderate_frequency,possible_plural_or_third_person,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入；另有词形复核标记
+oilfield,1,2285,n,1,2,oilfield,exact,gk,yes,26075,,1,0,0,1,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+ox,1,2354,n,2,3,ox,exact,gk cet4 cet6 ky,yes,11804,,2,0,0,2,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+playroom,1,2489,n,1,3,playroom,exact,gk,yes,23028,20588,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+postbox,1,2541,n,1,3,postbox,exact,gk,yes,40238,,0,0,0,0,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+postcode,1,2543,n,1,2,postcode,exact,gk ielts,yes,22564,,1,0,0,1,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+punctual,1,2631,a,1,3,punctual,exact,gk cet4 cet6 ky toefl ielts,yes,20448,25334,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+rewind,1,2799,v,1,2,rewind,exact,gk,yes,26999,20177,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+salesgirl,1,2867,n,1,3,salesgirl,exact,gk,yes,,29991,0,1,0,1,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+scores,1,2907,n,1,2,scores,exact,gk,yes,,,0,0,0,0,no_frequency_rank,possible_plural_or_third_person,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入；另有词形复核标记
+seashell,1,2919,n,1,2,seashell,exact,gk,yes,42970,19554,0,2,1,3,moderate_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+secondhand,1,2925,a|r,3,2,secondhand,exact,gk,yes,15042,,2,0,0,2,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+shaver,1,2988,n,3,3,shaver,exact,gk,yes,34831,25551,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+skillful,1,3069,a,2,3,skillful,exact,gk cet4 cet6 ky toefl,yes,43429,12290,0,2,1,3,moderate_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+skillfully,1,3070,r,1,2,skillfully,exact,gk,yes,,13724,0,2,0,2,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+sneaker,1,3104,n,2,3,sneaker,exact,gk,yes,33208,,1,0,0,1,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+softball,1,3125,n,2,3,softball,exact,gk,yes,,8130,0,3,0,3,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+stopwatch,1,3235,n,1,3,stopwatch,exact,gk,yes,34023,20916,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+subtraction,1,3271,n,2,3,subtraction,exact,gk toefl,yes,21520,21980,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+sunburnt,1,3290,a,1,2,sunburnt,exact,gk,yes,34021,32133,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+sunglasses,1,3292,n,1,3,sunglasses,exact,gk toefl,yes,,7032,0,3,0,3,single_corpus_only,possible_plural_or_third_person,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入；另有词形复核标记
+superman,1,3301,n,2,3,superman,exact,gk,yes,22870,20120,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+windbreaker,1,3795,n,1,2,windbreaker,exact,gk,yes,,18855,0,2,0,2,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+workday,1,3822,n,2,3,workday,exact,gk,yes,42847,13488,0,2,1,3,moderate_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入

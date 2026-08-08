@@ -1,0 +1,1008 @@
+﻿legacy_word,legacy_row_count,legacy_rows,oewn_pos,oewn_sense_count,lexical_evidence_score,ecdict_word,ecdict_match_type,ecdict_tags_audit_only,ecdict_gk_tag,bnc_rank,contemporary_rank,bnc_points,contemporary_points,cross_corpus_bonus,relevance_score,frequency_profile,form_review_flags,recommendation,reason
+abolish,1,7,v,1,3,abolish,exact,gk cet6 ky toefl ielts gre,yes,3736,7490,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+abortion,1,8,n,2,3,abortion,exact,gk ielts,yes,4341,1969,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+abrupt,1,12,a,4,3,abrupt,exact,gk cet6 ky toefl ielts gre,yes,8560,8703,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+absolute,1,15,a|n,6,3,absolute,exact,gk cet4 cet6 ky toefl gre,yes,2420,3165,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+absurd,1,18,a|n,3,3,absurd,exact,gk cet6 ky toefl ielts gre,yes,5676,5901,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+abundant,1,19,a,1,3,abundant,exact,gk cet4 ky toefl gre,yes,7823,6223,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+academy,1,22,n,4,3,academy,exact,gk cet4 cet6 ky toefl,yes,4366,4895,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+accelerate,1,23,v,2,3,accelerate,exact,gk cet4 cet6 ky toefl ielts gre,yes,5328,4925,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+accessible,1,27,a,4,3,accessible,exact,gk cet6 toefl ielts gre,yes,4162,4377,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+accomplish,1,31,v,2,3,accomplish,exact,gk cet4 ky toefl ielts gre,yes,5546,2345,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+accountant,1,34,n,1,3,accountant,exact,gk ky toefl ielts,yes,3280,5949,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+accumulate,1,35,v,2,3,accumulate,exact,gk cet4 cet6 ky toefl ielts gre,yes,4997,5083,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+accuracy,1,36,n,2,3,accuracy,exact,gk cet4 cet6 ky toefl ielts gre,yes,3958,4076,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+accustomed,1,38,a,1,3,accustomed,exact,gk cet4 cet6 ky toefl,yes,6431,8524,3,3,1,7,strong_in_both_corpora,possible_participle_or_adjective,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+acquaintance,1,44,n,3,3,acquaintance,exact,gk cet4 cet6 ky toefl gre,yes,5967,6274,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+acquisition,1,46,n,4,3,acquisition,exact,gk cet4 cet6 ky toefl ielts,yes,2567,3856,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+acre,1,47,n,1,3,acre,exact,gk cet4 ky toefl,yes,3286,,4,0,0,4,single_corpus_only,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+actual,1,55,a,5,3,actual,exact,gk cet4 ky toefl,yes,1396,1739,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+acute,1,56,a|n,7,3,acute,exact,gk cet4 cet6 ky toefl ielts gre,yes,3249,5255,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+addicted,1,62,a,1,3,addicted,exact,gk toefl,yes,41488,23549,0,1,1,2,limited_frequency,possible_participle_or_adjective,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入；另有词形复核标记
+adequate,1,65,a,3,3,adequate,exact,gk cet4 cet6 ky toefl ielts gre,yes,2398,3297,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+adjustment,1,67,n,5,3,adjustment,exact,gk toefl,yes,3424,3121,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+admirable,1,69,a,2,3,admirable,exact,gk toefl,yes,8547,10469,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+admission,1,71,n,4,3,admission,exact,gk cet4 cet6 ky toefl ielts gre,yes,2768,3031,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+adolescence,1,73,n,2,3,adolescence,exact,gk ielts,yes,8812,6897,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+adolescent,1,74,a|n,5,3,adolescent,exact,gk cet6 ky toefl gre,yes,8678,3386,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+adore,1,76,v,1,3,adore,exact,gk cet6 ky toefl ielts gre,yes,8708,7705,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+aeroplane,1,86,n,1,3,aeroplane,exact,gk cet4 cet6 ky,yes,6392,30278,3,1,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+affection,1,89,n,1,3,affection,exact,gk cet4 cet6 ky toefl ielts gre,yes,4103,5137,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+agent,1,102,n,6,3,agent,exact,gk cet4 ky toefl,yes,1214,1020,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+aggression,1,103,n,5,3,aggression,exact,gk cet6 toefl gre,yes,4772,4521,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+aggressive,1,104,a,3,3,aggressive,exact,gk cet4 cet6 ky toefl ielts gre,yes,3648,2514,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+agricultural,1,108,a,2,2,agricultural,exact,gk,yes,2188,3104,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+aircraft,1,115,n,1,3,aircraft,exact,gk cet4 ky toefl,yes,1538,2803,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+airmail,1,117,n|v,3,2,airmail,exact,gk,yes,27385,31683,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+airplane,1,118,n,1,3,airplane,exact,zk gk cet4,yes,21702,3519,1,4,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+airspace,1,120,n,2,3,airspace,exact,gk,yes,23446,16254,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+album,1,122,n,2,3,album,exact,gk cet6 ky ielts,yes,2991,2215,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+alcoholic,1,124,a|n,3,3,alcoholic,exact,gk,yes,7952,7755,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+algebra,1,125,n,1,3,algebra,exact,gk cet4 cet6 toefl,yes,16477,12790,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+alike,1,126,a|r,3,3,alike,exact,gk cet4 cet6 ky toefl,yes,4989,4389,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+allergic,1,129,a,2,3,allergic,exact,gk ielts gre,yes,14426,9143,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+alley,1,130,n,2,3,alley,exact,gk ielts,yes,6528,4340,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+allocate,1,131,v,1,3,allocate,exact,gk cet6 ky toefl ielts gre,yes,3035,6763,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+allowance,1,133,n|v,7,3,allowance,exact,gk cet6 ky ielts gre,yes,2481,7677,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+alphabet,1,139,n,2,3,alphabet,exact,gk cet4 cet6 ky,yes,11157,9190,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+altitude,1,144,n,3,3,altitude,exact,gk cet4 cet6 ky toefl ielts,yes,8085,6370,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+aluminium,1,146,n,1,3,aluminium,exact,gk cet4 cet6 toefl gre,yes,5580,32731,3,1,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+amaze,1,151,v,2,3,amaze,exact,gk cet4 cet6 ky toefl ielts,yes,11151,8607,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+ambassador,1,153,n,2,3,ambassador,exact,gk cet6 ky ielts,yes,4614,4520,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+ambiguous,1,154,a,3,3,ambiguous,exact,gk cet6 ky toefl ielts gre,yes,6442,7071,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+ample,1,161,a,3,3,ample,exact,gk cet6 ky toefl ielts gre,yes,6351,6289,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+amusement,1,163,n,2,3,amusement,exact,gk cet6,yes,5357,6732,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+analysis,1,165,n,6,3,analysis,exact,gk cet4 cet6 ky toefl ielts,yes,707,811,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+anchor,1,167,n|v,5,3,anchor,exact,cet4 cet6 ky ielts gre,no,7686,4961,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+anecdote,1,170,n,1,3,anecdote,exact,gk ky toefl ielts gre,yes,9719,8925,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+anniversary,1,176,n,1,3,anniversary,exact,gk cet6 ky ielts,yes,3440,3374,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+announcement,1,178,n,2,3,announcement,exact,gk toefl ielts,yes,2825,3604,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+apology,1,200,n,3,3,apology,exact,gk cet4 ky toefl,yes,4950,4944,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+apparent,1,201,a,2,3,apparent,exact,gk cet4 cet6 ky ielts,yes,1770,2502,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+appearance,1,204,n,6,3,appearance,exact,gk cet4 ky ielts,yes,1435,1684,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+appendix,1,205,n,2,3,appendix,exact,gk cet6 ky ielts,yes,3748,12249,4,2,1,7,strong_with_moderate_cross_corpus_support,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+appoint,1,212,v,3,3,appoint,exact,gk cet4 cet6 ky toefl gre,yes,1272,3172,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+appreciation,1,215,n,5,3,appreciation,exact,gk cet6 toefl,yes,4701,4322,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+approximately,1,219,r,1,2,approximately,exact,gk cet4 cet6 toefl,yes,2850,2365,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+apron,1,220,n,4,3,apron,exact,gk gre,yes,8011,8084,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+arbitrary,1,221,a,1,3,arbitrary,exact,gk cet4 cet6 ky toefl ielts gre,yes,5353,7545,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+architecture,1,224,n,4,3,architecture,exact,gk cet4 cet6 ky toefl ielts,yes,2712,3509,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+argument,1,234,n,7,3,argument,exact,gk cet4 ky ielts,yes,832,1185,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+arithmetic,1,236,a|n,2,3,arithmetic,exact,gk cet4 cet6 ky toefl,yes,8791,11378,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+armchair,1,238,n,1,3,armchair,exact,gk,yes,5766,9757,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+arrange,1,241,v,7,3,arrange,exact,gk cet4 ky toefl,yes,1324,2216,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+arrival,1,244,n,3,3,arrival,exact,gk cet4 ky ielts,yes,2281,3194,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+ash,1,252,n|v,4,3,ash,exact,gk cet4 ky,yes,4713,4577,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+assessment,1,261,n,4,3,assessment,exact,gk cet6 toefl ielts gre,yes,1249,1552,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+assist,1,262,n|v,5,3,assist,exact,gk cet4 cet6 ky toefl,yes,2162,2475,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+assistance,1,263,n,3,3,assistance,exact,gk ky toefl ielts,yes,2096,2081,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+associate,1,265,a|n|v,9,3,associate,exact,gk cet4 cet6 ky toefl ielts gre,yes,1216,1354,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+astronomy,1,272,n,1,3,astronomy,exact,gk cet6 ky toefl ielts,yes,10702,6469,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+athletic,1,275,a,3,3,athletic,exact,gk cet6,yes,8781,2981,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+athletics,1,276,n,3,3,athletics,exact,gk gre,yes,9290,8574,3,3,1,7,strong_in_both_corpora,possible_plural_or_third_person,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+atom,1,280,n,2,3,atom,exact,gk cet4 cet6 ky toefl,yes,4241,5184,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+attentively,1,287,r,1,2,attentively,exact,gk,yes,19677,18857,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+attraction,1,290,n,5,3,attraction,exact,gk cet4 toefl,yes,3108,3800,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+attractive,1,291,a,3,3,attractive,exact,gk cet4 ky toefl ielts,yes,1781,2811,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+authentic,1,293,a,2,3,authentic,exact,gk cet6 ky toefl ielts gre,yes,6476,5000,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+avenue,1,304,n,2,3,avenue,exact,gk cet4 ky toefl ielts,yes,3634,5320,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+bachelor,1,315,n|v,3,3,bachelor,exact,gk cet4 cet6 ky toefl,yes,8615,6130,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+backache,1,317,n,1,3,backache,exact,gk,yes,22814,29373,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+bacterium,1,321,n,1,3,bacterium,exact,gk cet6 ky ielts gre,yes,4650,,4,0,0,4,single_corpus_only,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+badly,1,323,r,10,3,badly,exact,gk cet4 ky,yes,2078,3111,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+baggage,1,326,n,3,3,baggage,exact,gk cet4 ky toefl ielts,yes,8801,7286,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+bake,1,327,v,4,3,bake,exact,gk cet4 ky ielts,yes,6122,2810,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+balcony,1,330,n,2,3,balcony,exact,gk cet4 cet6 ky toefl ielts,yes,5402,5799,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+ballpoint,1,334,n,1,2,ballpoint,exact,gk,yes,26210,24069,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+bandage,1,339,n|v,3,3,bandage,exact,gk cet6 ky ielts gre,yes,10433,9428,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+bang,1,340,n|r|v,12,3,bang,exact,gk cet4 cet6 ky toefl ielts,yes,4572,5069,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+barber,1,345,n|v,2,3,barber,exact,gk cet4 ky toefl ielts,yes,12564,9131,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+barbershop,1,346,n,1,3,barbershop,exact,gk,yes,,16205,0,2,0,2,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+bare,1,347,a|v,13,3,bare,exact,gk cet4 ky toefl ielts gre,yes,3196,3430,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+bargain,1,348,n|v,4,3,bargain,exact,gk cet4 cet6 ky ielts gre,yes,4926,4962,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+basement,1,353,n,2,3,basement,exact,gk cet6 ky toefl ielts,yes,5987,3598,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+bathe,1,361,n|v,4,3,bathe,exact,gk cet4 ky ielts,yes,8777,7550,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+bathrobe,1,362,n,1,3,bathrobe,exact,gk,yes,33266,13547,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+bathtub,1,364,n,1,3,bathtub,exact,gk,yes,34329,9766,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+beam,1,372,n|v,13,3,beam,exact,gk cet4 cet6 ky toefl ielts gre,yes,3945,3741,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+beast,1,377,n,2,3,beast,exact,gk cet4 ky toefl,yes,4515,4428,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+bedclothes,1,384,n,1,3,bedclothes,exact,gk,yes,,,0,0,0,0,no_frequency_rank,possible_plural_or_third_person,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入；另有词形复核标记
+bee,1,387,n,2,3,bee,exact,zk gk cet4 ky,yes,4770,4247,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+beehive,1,389,n,4,3,beehive,exact,gk,yes,19831,17858,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+beg,1,392,v,4,3,beg,exact,gk cet4 ky toefl,yes,3537,3452,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+beginning,1,394,a|n,6,3,beginning,exact,gk cet4 cet6 ky ielts,yes,1242,1200,4,4,1,9,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+belly,1,404,n|v,6,3,belly,exact,gk ky ielts,yes,5691,3805,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+bench,1,408,n|v,11,3,bench,exact,gk cet4 cet6 ky gre,yes,2942,2782,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+beneficial,1,411,a,1,3,beneficial,exact,gk cet4 ky toefl ielts,yes,4578,4991,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+bent,1,413,a|n,7,3,bent,exact,gk toefl ielts gre,yes,14388,12145,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+besides,1,415,r,2,3,besides,exact,zk gk cet4 ky toefl,yes,3848,3012,4,4,1,9,strong_in_both_corpora,possible_plural_or_third_person,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+betray,1,419,v,6,3,betray,exact,gk cet4 cet6 ky toefl ielts gre,yes,6030,4974,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+bid,1,423,n|v,10,3,bid,exact,gk cet6 ky ielts gre,yes,2359,4069,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+bingo,1,428,n,1,3,bingo,exact,gk,yes,12087,15245,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+biochemistry,1,429,n,1,3,biochemistry,exact,gk toefl,yes,16248,17884,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+biography,1,430,n,1,3,biography,exact,gk ky toefl ielts,yes,5647,4875,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+birdcage,1,433,n,1,3,birdcage,exact,gk,yes,44688,32730,0,1,1,2,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+birthplace,1,436,n,2,3,birthplace,exact,gk,yes,11609,11526,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+bishop,1,438,n,3,3,bishop,exact,gk cet6,yes,2221,3437,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+boating,1,459,n,1,3,boating,exact,gk,yes,21636,15104,1,2,1,4,moderate_frequency,possible_participle_or_gerund,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+bookcase,1,467,n,1,3,bookcase,exact,gk ielts,yes,15277,12527,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+bookmark,1,468,n,1,3,bookmark,exact,gk,yes,27606,20965,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+bookshelf,1,469,n,1,3,bookshelf,exact,gk ielts,yes,22136,11170,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+bookstore,1,471,n,1,3,bookstore,exact,gk,yes,33117,6186,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+boom,1,472,n|v,10,3,boom,exact,gk ky toefl ielts gre,yes,3920,3171,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+booth,1,474,n,3,3,booth,exact,gk cet4 cet6 ky ielts,yes,9834,4300,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+botany,1,483,n,2,3,botany,exact,gk toefl gre,yes,15909,20491,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+boycott,1,496,n|v,2,3,boycott,exact,gk cet6 ky toefl ielts gre,yes,9191,8514,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+brake,1,498,n|v,7,3,brake,exact,gk cet4 ky ielts gre,yes,5290,4693,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+brand,1,500,n|v,10,3,brand,exact,gk cet4 cet6 ky ielts gre,yes,3387,2570,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+bravery,1,502,n,2,3,bravery,exact,gk,yes,11705,12303,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+breakthrough,1,507,n,3,3,breakthrough,exact,gk ielts,yes,6455,5308,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+breathless,1,511,a,3,3,breathless,exact,gk toefl,yes,8961,10896,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+brewery,1,512,n,1,3,brewery,exact,gk,yes,5781,15159,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+broken,1,528,a,13,3,broken,exact,gk cet4,yes,2747,2694,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+broom,1,529,n|v,5,3,broom,exact,gk cet4 cet6 ky,yes,9809,9418,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+brotherhood,1,531,n,4,3,brotherhood,exact,gk,yes,11836,13702,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+brunch,1,533,n|v,2,3,brunch,exact,gk,yes,36288,13712,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+bucket,1,535,n|v,4,3,bucket,exact,gk cet4 cet6 ky ielts gre,yes,4494,4812,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+bun,1,542,n,1,3,bun,exact,gk,yes,8944,8967,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+bungalow,1,544,n,1,3,bungalow,exact,gk ielts,yes,6535,10710,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+burden,1,545,n|v,6,3,burden,exact,gk cet4 cet6 ky toefl,yes,2696,2665,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+bureaucratic,1,546,a,1,3,bureaucratic,exact,gk,yes,6084,6447,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+burglar,1,547,n,1,3,burglar,exact,gk cet6 ky toefl ielts,yes,7271,11050,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+burial,1,548,n,2,3,burial,exact,gk cet6 toefl ielts gre,yes,5406,6234,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+burst,1,550,n|v,12,3,burst,exact,gk cet4 cet6 ky toefl,yes,3011,3560,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+bush,1,554,a|n|v,6,3,bush,exact,gk cet4 ky toefl,yes,2801,34013,4,1,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+businessman,1,556,n,1,3,businessman,exact,gk,yes,3547,3840,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+businesswoman,1,557,n,1,3,businesswoman,exact,gk,yes,23054,19286,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+butterfly,1,562,n|v,5,3,butterfly,exact,zk gk cet4 ky toefl ielts,yes,5314,4923,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+cab,1,568,n|v,4,3,cab,exact,gk ky toefl ielts,yes,4014,4220,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+caption,1,597,n|v,4,3,caption,exact,gk ielts gre,yes,10185,9117,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+carpenter,1,605,n|v,2,3,carpenter,exact,gk cet4 cet6 ky toefl ielts gre,yes,9552,8059,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+carriage,1,607,n,5,3,carriage,exact,gk cet4 cet6 ky toefl,yes,3104,6534,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+carrier,1,608,n,11,3,carrier,exact,gk cet4 cet6 ky ielts,yes,3636,3271,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+cassette,1,615,n,1,3,cassette,exact,cet4 cet6 ky toefl ielts,no,5251,8210,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+casual,1,618,a,9,3,casual,exact,gk cet4 cet6 ky toefl ielts gre,yes,3781,3955,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+catalogue,1,620,n|v,4,3,catalogue,exact,gk cet6 ielts,yes,2710,6793,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+catastrophe,1,621,n,3,3,catastrophe,exact,gk cet6 ky toefl ielts gre,yes,8422,6648,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+cater,1,624,v,2,3,cater,exact,gk cet6 ky toefl ielts gre,yes,3809,6945,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+cathedral,1,626,a|n,3,3,cathedral,exact,gk cet4 cet6 ky toefl ielts gre,yes,2894,7382,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+catholic,1,625,a,1,3,catholic,exact,gk cet6 ky toefl ielts gre,yes,2595,1757,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+caution,1,629,n|v,5,3,caution,exact,gk cet6 ky toefl ielts,yes,4721,5286,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+cautious,1,630,a|n,3,3,cautious,exact,gk cet4 cet6 ky toefl ielts,yes,5239,5231,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+celebration,1,636,n,3,3,celebration,exact,gk,yes,3379,2996,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+cellar,1,638,n,3,3,cellar,exact,gk cet4 cet6 ky toefl ielts gre,yes,6029,7671,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+centigrade,1,640,a,1,3,centigrade,exact,gk cet4 cet6 ky toefl gre,yes,27004,,1,0,0,1,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+ceremony,1,645,n,3,3,ceremony,exact,gk cet4 cet6 ky toefl ielts gre,yes,3313,2670,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+challenging,1,656,a,3,3,challenging,exact,gk ielts,yes,7647,4981,3,4,1,8,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+changeable,1,659,a,4,3,changeable,exact,gk,yes,20685,21649,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+chant,1,662,n|v,3,3,chant,exact,zk gk ielts gre,yes,8567,6880,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+cheerful,1,676,a,2,3,cheerful,exact,gk cet4 cet6 ielts,yes,5041,7309,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+cheque,1,683,n|v,2,3,cheque,exact,gk cet4 cet6 ky,yes,2753,31750,4,1,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+chick,1,687,n,2,3,chick,exact,gk,yes,8245,7269,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+childhood,1,691,n,2,3,childhood,exact,gk cet4 ky,yes,2746,2107,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+chimney,1,692,n,2,3,chimney,exact,gk cet4 cet6 ky,yes,5724,8321,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+choir,1,698,n|v,4,3,choir,exact,gk ielts gre,yes,5092,5331,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+cigar,1,709,n,1,3,cigar,exact,gk cet6 ky,yes,7267,5696,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+circulate,1,714,v,6,3,circulate,exact,gk cet4 cet6 ky toefl ielts gre,yes,4483,5888,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+classical,1,726,a|n,8,3,classical,exact,gk cet4 cet6 ky ielts,yes,2562,3489,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+classify,1,727,v,3,3,classify,exact,gk cet4 cet6 ky toefl ielts gre,yes,4168,4515,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+claw,1,730,n|v,8,3,claw,exact,gk cet4 cet6 ky toefl,yes,8058,6934,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+cleaner,1,733,n,3,3,cleaner,exact,gk ielts,yes,5033,6567,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+clearly,1,735,r,4,3,clearly,exact,gk cet4,yes,650,846,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+clothing,1,747,n,1,3,clothing,exact,gk cet4 ky toefl ielts,yes,3372,2650,4,4,1,9,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+clumsy,1,751,a,4,3,clumsy,exact,gk cet4 cet6 ky toefl ielts gre,yes,8653,9209,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+cock,1,756,n|v,8,3,cock,exact,gk cet4 cet6 ky,yes,7962,8484,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+cocoa,1,757,n,2,3,cocoa,exact,gk,yes,8892,8963,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+coincidence,1,760,n,3,3,coincidence,exact,gk cet6 ky toefl ielts,yes,5527,5812,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+coke,1,761,n|v,3,3,coke,exact,zk gk,yes,7803,12273,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+colleague,1,765,n,2,3,colleague,exact,gk cet4 cet6 ky toefl,yes,1338,1518,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+collision,1,769,n,3,3,collision,exact,gk cet4 cet6 ky toefl ielts gre,yes,6488,5633,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+comb,1,771,n|v,8,3,comb,exact,gk cet4 cet6 ky,yes,9845,7329,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+comma,1,777,n,2,3,comma,exact,gk gre,yes,10368,18884,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+command,1,778,n|v,12,3,command,exact,gk cet4 cet6 ky,yes,2166,2378,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+communism,1,787,n,2,3,communism,exact,gk cet4 cet6 ky,yes,5758,7085,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+companion,1,789,n|v,4,3,companion,exact,gk cet4 cet6 ky toefl ielts gre,yes,3024,3547,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+compass,1,792,n|v,7,3,compass,exact,gk cet4 cet6 ky toefl ielts gre,yes,7064,7958,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+compensate,1,793,v,6,3,compensate,exact,gk cet6 ky toefl ielts gre,yes,4464,5037,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+competitor,1,797,n,1,3,competitor,exact,gk cet6,yes,3328,3259,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+compromise,1,803,n|v,5,3,compromise,exact,gk cet4 cet6 ky toefl ielts gre,yes,3685,3751,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+compulsory,1,804,a,1,3,compulsory,exact,gk cet6 ky toefl ielts gre,yes,3997,12735,4,2,1,7,strong_with_moderate_cross_corpus_support,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+comrade,1,807,n,2,3,comrade,exact,gk cet4 cet6 ky,yes,6545,7425,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+condemn,1,816,v,6,3,condemn,exact,gk cet4 cet6 ky toefl ielts gre,yes,3223,4138,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+conductor,1,818,n,4,3,conductor,exact,gk cet4 cet6 ky toefl,yes,6176,5912,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+confident,1,819,a,3,3,confident,exact,gk cet4 cet6 ky toefl ielts,yes,2580,2866,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+confidential,1,820,a,4,3,confidential,exact,gk cet6 ky toefl ielts gre,yes,5254,7010,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+confuse,1,824,v,5,3,confuse,exact,gk cet4 cet6 ky toefl ielts,yes,4666,3518,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+congratulate,1,825,v,4,3,congratulate,exact,gk cet4 cet6 ky,yes,6017,8361,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+connection,1,828,n,9,3,connection,exact,gk cet4 cet6 ky toefl,yes,1669,1421,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+conscience,1,829,n,3,3,conscience,exact,gk cet4 cet6 ky toefl ielts gre,yes,4273,4641,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+consensus,1,830,n,1,3,consensus,exact,gk cet6 ky toefl ielts gre,yes,3897,3317,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+conservative,1,833,a|n,6,3,Conservative,casefold,gk cet4 cet6 ky toefl ielts gre,yes,1497,1837,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+considerate,1,835,a,1,3,considerate,exact,gk cet4 cet6 ky toefl ielts,yes,13960,17092,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+consideration,1,836,n,6,3,consideration,exact,gk cet4 cet6 ky toefl,yes,1248,2487,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+construct,1,841,n|v,7,3,construct,exact,gk cet4 cet6 ky toefl gre,yes,2058,2477,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+consult,1,843,v,4,3,consult,exact,gk cet4 cet6 ky toefl ielts,yes,2826,3591,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+container,1,847,n,1,3,container,exact,gk cet4 cet6 ky toefl ielts,yes,4126,3361,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+contradict,1,852,v,4,3,contradict,exact,gk cet6 ky toefl ielts gre,yes,6870,6863,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+contribute,1,855,v,4,3,contribute,exact,gk cet4 cet6 ky toefl ielts,yes,1483,1312,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+controversial,1,858,a,1,3,controversial,exact,gk cet6 ky toefl ielts gre,yes,3444,3090,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+convenience,1,859,n,4,3,convenience,exact,gk cet4 cet6 ky toefl ielts gre,yes,5559,4892,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+convey,1,863,v,7,3,convey,exact,gk cet4 cet6 ky toefl ielts gre,yes,3682,3756,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+cooker,1,866,n,1,3,cooker,exact,zk gk,yes,7276,13730,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+coral,1,870,a|n,5,3,coral,exact,gk toefl,yes,5793,6040,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+cordless,1,871,a,1,3,cordless,exact,gk,yes,17375,15786,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+corporation,1,874,n,2,3,corporation,exact,gk cet4 cet6 ky ielts,yes,2025,2602,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+correction,1,876,n,7,3,correction,exact,gk cet4 cet6,yes,5971,5966,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+corrupt,1,878,a|v,8,3,corrupt,exact,gk cet6 ky ielts gre,yes,7571,5850,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+cosy,1,880,a|n|s,4,3,cosy,exact,gk ky ielts,yes,6933,36003,3,1,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+counter,1,886,a|n|r|v,13,3,counter,exact,gk cet4 cet6 ky ielts,yes,3493,2830,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+courtyard,1,893,n,1,3,courtyard,exact,gk ky,yes,5755,5825,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+cowboy,1,897,n,3,3,cowboy,exact,gk toefl,yes,8757,5048,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+criminal,1,907,a|n,4,3,criminal,exact,gk cet4 cet6 ky ielts,yes,2063,1953,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+crossing,1,912,n,7,3,crossing,exact,gk toefl,yes,4935,6302,4,3,1,8,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+crossroads,1,913,n,3,3,crossroads,exact,gk,yes,8633,9096,3,3,1,7,strong_in_both_corpora,possible_plural_or_third_person,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+crowded,1,915,a,1,3,crowded,exact,gk,yes,5946,4738,3,4,1,8,strong_in_both_corpora,possible_participle_or_adjective,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+cube,1,918,n|v,7,3,cube,exact,gk cet4 cet6 ky toefl ielts,yes,7702,5725,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+cubic,1,919,a,2,3,cubic,exact,gk cet4 cet6 toefl,yes,10327,7772,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+currency,1,926,n,3,3,currency,exact,gk cet6 ky toefl ielts,yes,2114,3738,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+curriculum,1,927,n,1,3,curriculum,exact,gk cet6 ky toefl ielts gre,yes,1694,2077,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+cushion,1,929,n|v,4,3,cushion,exact,gk cet4 cet6 ky toefl ielts gre,yes,6092,6893,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+customs,1,932,n,1,3,customs,exact,gk toefl,yes,,,0,0,0,0,no_frequency_rank,possible_plural_or_third_person,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入；另有词形复核标记
+cyclist,1,935,n,1,3,cyclist,exact,gk,yes,6689,9646,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+dam,1,938,n|v,4,3,dam,exact,gk cet4 cet6 ky toefl ielts,yes,6532,4399,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+darkness,1,946,n,6,3,darkness,exact,gk,yes,2508,2649,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+dash,1,947,n|v,12,3,dash,exact,gk cet4 cet6 ky ielts,yes,5634,6336,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+dawn,1,952,n|v,6,3,dawn,exact,gk cet4 cet6 ky toefl ielts,yes,4374,4004,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+daylight,1,954,n,2,3,daylight,exact,gk cet4 ky,yes,5270,5997,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+decoration,1,970,n,3,3,decoration,exact,gk toefl ielts,yes,4554,6136,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+deed,1,972,n,2,3,deed,exact,gk cet4 cet6 ky gre,yes,4742,5766,4,3,1,8,strong_in_both_corpora,possible_participle_or_adjective,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+deeply,1,974,r,2,3,deeply,exact,gk,yes,2327,2122,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+deliberately,1,982,r,2,2,deliberately,exact,gk cet4 cet6 toefl,yes,2806,4592,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+delight,1,985,n|v,5,3,delight,exact,gk cet4 cet6 ky,yes,3393,4890,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+delighted,1,986,a,2,3,delighted,exact,gk,yes,2938,6609,4,3,1,8,strong_in_both_corpora,possible_participle_or_adjective,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+deposit,1,994,n|v,12,3,deposit,exact,gk cet4 cet6 ky toefl ielts gre,yes,2384,4692,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+determination,1,1008,n,5,3,determination,exact,gk cet4 cet6 toefl ielts gre,yes,2788,3846,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+devotion,1,1013,n,4,3,devotion,exact,gk cet6 toefl,yes,6937,6466,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+dial,1,1015,n|v,6,3,dial,exact,gk cet4 cet6 ky ielts,yes,8621,6092,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+dictation,1,1019,n,3,3,dictation,exact,gk cet4 cet6 ky ielts,yes,20641,21756,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+dilemma,1,1032,n,1,3,dilemma,exact,gk cet6 ky toefl ielts gre,yes,4551,4118,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+dine,1,1034,v,2,3,dine,exact,gk cet6 ky ielts,yes,7900,7360,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+dioxide,1,1038,n,1,3,dioxide,exact,gk cet6 toefl ielts,yes,4653,5712,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+dip,1,1039,n|v,23,3,dip,exact,gk cet4 cet6 ky ielts,yes,4987,4532,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+diploma,1,1040,n,1,3,diploma,exact,gk cet6 ky ielts,yes,6259,8453,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+dirt,1,1045,a|n,5,3,dirt,exact,gk cet4 ky,yes,5597,2737,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+disadvantage,1,1049,n|v,2,3,disadvantage,exact,gk cet4 cet6 toefl,yes,3518,6291,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+disagree,1,1050,v,2,3,disagree,exact,gk cet4 cet6,yes,4677,2679,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+disagreement,1,1051,n,3,3,disagreement,exact,gk cet6 ielts,yes,5048,5117,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+disappoint,1,1053,v,1,3,disappoint,exact,gk cet4 cet6 ky,yes,9539,8204,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+disappointment,1,1054,n,2,3,disappointment,exact,gk toefl,yes,3927,4566,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+discourage,1,1057,v,3,3,discourage,exact,gk cet4 cet6 ky toefl,yes,5260,4211,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+disgusting,1,1064,a,1,3,disgusting,exact,gk,yes,6544,8938,3,3,1,7,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+dislike,1,1067,n|v,3,3,dislike,exact,gk cet4 cet6 ky,yes,4949,6813,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+disobey,1,1069,v,1,3,disobey,exact,gk,yes,18583,15476,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+distinction,1,1072,n,4,3,distinction,exact,gk cet4 cet6 ky toefl ielts gre,yes,1865,2921,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+distribute,1,1074,v,10,3,distribute,exact,gk cet4 cet6 ky toefl ielts gre,yes,2662,2944,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+disturbing,1,1077,a,1,3,disturbing,exact,gk,yes,5532,4827,3,4,1,8,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+divorce,1,1082,n|v,3,3,divorce,exact,gk cet4 cet6 ky toefl ielts,yes,3853,2978,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+doll,1,1089,n,2,3,doll,exact,zk gk ky toefl,yes,5101,3823,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+dot,1,1093,n|v,7,3,dot,exact,gk cet4 ky toefl ielts,yes,4132,4480,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+downward,1,1100,a|r,3,3,downward,exact,gk cet4 cet6 ky,yes,8499,8257,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+drawback,1,1106,n,1,3,drawback,exact,gk cet6 ky toefl ielts,yes,7710,8563,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+drawing,1,1108,n,6,3,drawing,exact,gk cet4 cet6 ky toefl,yes,1892,2521,4,4,1,9,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+drier,1,1111,n,2,3,drier,exact,gk,yes,19790,22822,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+drown,1,1118,v,6,3,drown,exact,gk cet4 cet6 ky ielts,yes,4492,4927,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+drum,1,1120,n|v,9,3,drum,exact,zk gk cet4 cet6 ky,yes,4171,4116,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+drunk,1,1121,a|n,4,3,drunk,exact,gk cet4 cet6 ky,yes,4187,3701,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+due,1,1124,a|n|r,7,3,due,exact,gk cet4 cet6 ky toefl ielts,yes,1280,1796,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+dull,1,1125,a|v,19,3,dull,exact,gk cet4 cet6 ky toefl ielts gre,yes,3799,5094,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+dusk,1,1128,n|v,2,3,dusk,exact,gk cet4 cet6 ky,yes,7861,7212,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+dustbin,1,1130,n,1,2,dustbin,exact,gk,yes,9594,28258,3,1,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+dusty,1,1131,a,2,3,dusty,exact,gk,yes,6602,5298,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+easily,1,1145,r,3,3,easily,exact,gk cet4,yes,1004,1211,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+eastwards,1,1149,r,1,3,eastwards,exact,gk,yes,14945,,2,0,0,2,single_corpus_only,possible_plural_or_third_person,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入；另有词形复核标记
+edition,1,1155,n,4,3,edition,exact,gk cet4 cet6 ky ielts,yes,2537,3155,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+educate,1,1157,v,3,3,educate,exact,gk cet4 ky,yes,3663,3033,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+eggplant,1,1163,n,2,3,eggplant,exact,gk,yes,,10618,0,2,0,2,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+elect,1,1173,a|n|v,5,3,elect,exact,gk cet4 ky,yes,1794,2265,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+electric,1,1174,a|n,4,3,electric,exact,zk gk cet4 cet6 ky,yes,2469,2696,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+electrical,1,1175,a,2,3,electrical,exact,gk cet4 cet6 ky ielts,yes,3190,3789,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+embarrass,1,1183,v,2,3,embarrass,exact,gk cet4 cet6 ky toefl ielts gre,yes,9521,7138,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+embassy,1,1184,n,2,3,embassy,exact,gk cet6 ky ielts,yes,4389,5731,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+empire,1,1187,n,4,3,empire,exact,gk cet4 cet6 ky,yes,2251,4218,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+encouragement,1,1191,n,3,3,encouragement,exact,gk,yes,4267,6193,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+ending,1,1193,n,5,3,ending,exact,gk cet4 cet6 ky ielts,yes,5246,5188,3,3,1,7,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+endless,1,1194,a,4,3,endless,exact,gk cet4 cet6 toefl,yes,4095,3722,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+enjoyable,1,1204,a,1,3,enjoyable,exact,gk,yes,6001,9019,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+enlarge,1,1205,v,4,3,enlarge,exact,gk cet4 cet6 ky,yes,6348,7530,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+enquiry,1,1207,n,3,2,enquiry,exact,gk ielts,yes,2472,24159,4,1,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+entire,1,1212,a|n,5,3,entire,exact,gk cet4 cet6 ky,yes,1876,868,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+equality,1,1219,n,2,3,equality,exact,gk cet4 cet6 ky toefl,yes,4197,4590,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+equip,1,1220,v,2,3,equip,exact,gk cet4 cet6 ky toefl,yes,3643,4145,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+evident,1,1243,a,2,3,evident,exact,gk cet4 cet6 ky toefl,yes,2975,3466,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+evolution,1,1244,n,2,3,evolution,exact,gk cet4 cet6 ky toefl ielts,yes,3069,2946,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+exact,1,1245,a|v,5,3,exact,exact,gk cet4 ky toefl gre,yes,3270,3341,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+excite,1,1253,v,8,3,excite,exact,zk gk cet4 cet6 ky toefl,yes,7567,5328,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+existence,1,1258,n,2,3,existence,exact,gk cet4 cet6 ky ielts,yes,1454,2213,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+explanation,1,1269,n,3,3,explanation,exact,gk cet4 cet6 ky,yes,1492,2054,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+explicit,1,1270,a,2,3,explicit,exact,gk cet6 ky toefl ielts gre,yes,3722,4826,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+exploit,1,1272,n|v,4,3,exploit,exact,gk cet4 cet6 ky toefl ielts gre,yes,3034,4374,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+explorer,1,1274,n,1,3,explorer,exact,gk toefl,yes,9840,7763,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+expression,1,1278,n,9,3,expression,exact,gk cet4 cet6 ky,yes,1139,1533,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+extreme,1,1282,a|n,6,3,extreme,exact,gk cet4 cet6 ky ielts,yes,2528,2519,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+eyesight,1,1285,n,1,3,eyesight,exact,gk cet4 cet6 ky ielts,yes,13749,14627,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+eyewitness,1,1286,n|v,2,3,eyewitness,exact,gk toefl,yes,19899,8633,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+f,1,1287,n,1,3,F,casefold,gk,yes,4238,,4,0,0,4,single_corpus_only,single_letter,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+facial,1,1289,a|n,4,3,facial,exact,gk,yes,8701,5735,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+fade,1,1292,n|v,6,3,fade,exact,gk cet4 cet6 ky toefl ielts gre,yes,3506,2882,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+fairly,1,1296,r,3,3,fairly,exact,gk cet4 cet6 ky toefl,yes,1413,2157,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+fairness,1,1297,n,4,2,fairness,exact,gk,yes,6946,5954,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+fare,1,1311,n|v,6,3,fare,exact,gk cet4 cet6 ky ielts,yes,4481,4776,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+fasten,1,1315,v,4,3,fasten,exact,gk cet4 cet6 ky toefl gre,yes,7148,7930,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+fax,1,1321,n|v,2,2,FAX,casefold,gk cet4 ky,yes,5816,5729,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+feast,1,1323,n|v,7,3,feast,exact,gk cet4 cet6 ky ielts,yes,5626,5910,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+feather,1,1324,n|v,7,3,feather,exact,gk cet4 cet6 ky,yes,4798,4531,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+federal,1,1326,a,3,3,federal,exact,cet4 cet6 ky toefl,no,2320,493,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+ferry,1,1334,n|v,5,3,ferry,exact,gk cet6 ky toefl ielts gre,yes,4590,6492,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+fierce,1,1342,a,4,3,fierce,exact,gk cet4 cet6 ky toefl ielts,yes,3932,4482,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+fighter,1,1348,n,3,3,fighter,exact,gk cet6,yes,4002,3028,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+final,1,1353,a|n,5,3,final,exact,zk gk cet4 ky toefl ielts,yes,778,887,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+fingernail,1,1358,n,1,3,fingernail,exact,gk,yes,12348,7769,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+fireplace,1,1362,n,1,3,fireplace,exact,gk cet6 ky,yes,6692,5530,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+firewood,1,1363,n,1,3,firewood,exact,gk,yes,15317,12444,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+firework,1,1364,n,1,3,firework,exact,gk cet6,yes,8853,,3,0,0,3,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+firmly,1,1366,r,3,2,firmly,exact,gk,yes,2206,3818,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+flame,1,1376,n|v,4,3,flame,exact,gk cet4 cet6 ky toefl ielts,yes,3195,3199,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+flaming,1,1377,a|n,3,3,flaming,exact,gk,yes,15457,12654,2,2,1,5,moderate_frequency,possible_participle_or_gerund,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+flashlight,1,1379,n,1,3,flashlight,exact,gk toefl,yes,25749,6373,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+flee,1,1381,v,1,3,flee,exact,gk cet4 cet6 ky toefl ielts,yes,3410,2942,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+flesh,1,1383,n|v,4,3,flesh,exact,gk cet4 ky ielts,yes,3036,3209,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+float,1,1385,n|v,16,3,float,exact,gk cet4 cet6 ky toefl ielts,yes,3498,3140,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+fluency,1,1392,n,3,3,fluency,exact,gk,yes,14342,13181,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+fog,1,1397,n|v,4,3,fog,exact,gk cet4 cet6 ky toefl,yes,5413,4913,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+following,1,1402,a|n,6,3,following,exact,gk cet4 cet6 ky,yes,748,1471,4,4,1,9,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+fool,1,1405,n|v,7,3,fool,exact,gk cet4 ky,yes,3660,4030,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+foolish,1,1406,a,2,3,foolish,exact,gk cet4 ky toefl,yes,4977,5783,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+forbid,1,1410,v,2,3,forbid,exact,gk cet4 cet6 ky toefl gre,yes,4670,4698,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+foreigner,1,1415,n,2,3,foreigner,exact,zk gk cet4 cet6 ky,yes,4934,4887,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+foresee,1,1416,v,3,3,foresee,exact,gk cet6 ky toefl ielts,yes,6364,7614,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+forgetful,1,1420,a,3,3,forgetful,exact,gk,yes,19606,23938,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+fortnight,1,1426,n,1,3,fortnight,exact,gk cet4 cet6 ky ielts,yes,4290,22633,4,1,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+fortunate,1,1427,a,3,3,fortunate,exact,gk cet4 cet6 ky toefl,yes,4680,5300,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+fortune,1,1428,n,4,3,fortune,exact,gk cet4 cet6 ky toefl,yes,2626,2703,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+fragile,1,1440,a,3,3,fragile,exact,gk cet6 ky toefl ielts gre,yes,5941,4733,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+fragrant,1,1441,a,1,3,fragrant,exact,gk cet6 ky toefl gre,yes,12331,9055,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+framework,1,1442,n,3,3,framework,exact,gk cet4 cet6 ky toefl ielts,yes,2177,2968,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+franc,1,1438,n,1,3,franc,exact,gk,yes,7261,,3,0,0,3,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+freeway,1,1445,n,1,3,freeway,exact,gk,yes,23892,6142,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+freezing,1,1447,n,1,3,freezing,exact,gk,yes,5949,6369,3,3,1,7,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+frequent,1,1450,a|v,4,3,frequent,exact,gk cet4 cet6 ky toefl ielts gre,yes,3109,3272,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+fried,1,1455,a,1,3,fried,exact,gk,yes,10093,5612,2,3,1,6,strong_with_moderate_cross_corpus_support,possible_participle_or_adjective,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+fright,1,1459,n|v,2,3,fright,exact,gk cet6 ky toefl,yes,10016,12606,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+frighten,1,1460,v,1,3,frighten,exact,gk cet4 cet6 ky,yes,5047,5537,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+funeral,1,1474,n,1,3,funeral,exact,gk cet4 cet6 ky ielts,yes,3009,2885,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+fur,1,1476,n,3,3,fur,exact,gk cet4 cet6 ky toefl ielts,yes,5029,4700,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+gale,1,1481,n,1,3,gale,exact,gk toefl ielts gre,yes,8689,12845,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+gallon,1,1483,n,2,3,gallon,exact,gk cet4 cet6 ky toefl gre,yes,6013,,3,0,0,3,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+garage,1,1485,n|v,3,3,garage,exact,gk cet4 cet6 ky ielts,yes,3113,3208,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+gardening,1,1488,n,1,3,gardening,exact,gk,yes,5625,7049,3,3,1,7,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+garment,1,1490,n|v,2,3,garment,exact,gk cet6 ky toefl ielts gre,yes,4822,6112,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+gay,1,1494,a|n,7,3,gay,exact,gk cet4 cet6 ky,yes,4231,2056,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+gesture,1,1504,n|v,4,3,gesture,exact,zk gk cet4 cet6 ky ielts gre,yes,2883,2969,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+glance,1,1513,n|v,3,3,glance,exact,gk cet4 cet6 ky gre,yes,2192,2417,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+glare,1,1514,n|v,6,3,glare,exact,gk cet4 cet6 ky toefl ielts gre,yes,5510,6371,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+glasshouse,1,1516,n,1,3,glasshouse,exact,gk,yes,22763,39029,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+glory,1,1518,n|v,4,3,glory,exact,gk cet4 cet6 ky,yes,3797,4113,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+god,1,1524,n,3,3,God,casefold,zk gk cet4 ky,yes,492,2809,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+golden,1,1526,a,6,3,golden,exact,zk gk cet4 cet6 ky,yes,2240,1821,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+goldfish,1,1527,n,1,3,goldfish,exact,gk,yes,10625,16320,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+goodness,1,1531,n,2,3,goodness,exact,gk cet4 cet6 ky,yes,4367,5155,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+goose,1,1533,n|v,6,3,goose,exact,zk gk cet4 cet6 ky,yes,6076,5529,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+govern,1,1534,v,4,3,govern,exact,gk cet4 cet6 ky toefl,yes,3050,3711,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+gown,1,1536,n|v,6,3,gown,exact,gk cet4 cet6 ky ielts,yes,5811,5262,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+graduation,1,1540,n,4,3,graduation,exact,gk,yes,15296,4759,2,4,1,7,strong_with_moderate_cross_corpus_support,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+grandchild,1,1545,n,1,3,grandchild,exact,zk gk,yes,19714,4393,2,4,1,7,strong_with_moderate_cross_corpus_support,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+granny,1,1551,n,3,3,granny,exact,zk gk,yes,7205,18824,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+graph,1,1553,n|v,5,3,graph,exact,gk cet4 cet6 ky toefl ielts,yes,4596,26137,4,1,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+greengrocer,1,1563,n,1,3,greengrocer,exact,gk,yes,20056,31343,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+greeting,1,1565,n,1,3,greeting,exact,zk gk cet4 cet6 ky,yes,6498,6324,3,3,1,7,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+grill,1,1567,n|v,4,3,grill,exact,gk ielts gre,yes,9117,5395,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+grocer,1,1568,n,1,3,grocer,exact,gk cet4 cet6 ky,yes,11854,14410,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+growth,1,1572,n,7,3,growth,exact,gk cet4 cet6 ky ielts,yes,770,787,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+gruel,1,1573,n,1,3,gruel,exact,gk,yes,36700,25887,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+ha,1,1585,n,1,3,ha,exact,gk,yes,2731,4798,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+haircut,1,1588,n,2,3,haircut,exact,gk cet4 cet6,yes,12035,8476,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+hammer,1,1593,n|v,10,3,hammer,exact,gk cet4 cet6 ky toefl gre,yes,4955,6231,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+handful,1,1596,n,2,3,handful,exact,gk cet4 cet6 ky toefl,yes,4262,3109,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+handy,1,1602,a,3,3,handy,exact,gk cet4 cet6 ky toefl ielts,yes,5980,6380,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+happily,1,1605,r,2,3,happily,exact,gk,yes,3821,4708,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+happiness,1,1606,n,2,3,happiness,exact,gk cet4,yes,3979,3870,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+harbour,1,1608,n|v,6,3,harbour,exact,gk cet4 cet6 ielts,yes,3526,36866,4,1,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+hardship,1,1611,n,3,3,hardship,exact,gk cet4 cet6 ky toefl,yes,6378,6922,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+hardworking,1,1612,a,1,2,hardworking,exact,gk,yes,18992,,2,0,0,2,single_corpus_only,possible_participle_or_gerund,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入；另有词形复核标记
+harmless,1,1615,a,1,3,harmless,exact,gk toefl,yes,6985,7615,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+hawk,1,1622,n|v,6,3,hawk,exact,gk cet4 cet6 ky ielts gre,yes,9990,7924,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+hay,1,1623,n|v,2,3,hay,exact,gk cet4 cet6 ky toefl,yes,6529,7184,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+headline,1,1627,n|v,3,3,headline,exact,gk cet4 cet6 ky,yes,4488,3293,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+headmaster,1,1628,n,1,3,headmaster,exact,gk cet4 cet6 ky ielts,yes,4787,16726,4,2,1,7,strong_with_moderate_cross_corpus_support,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+headmistress,1,1629,n,1,3,headmistress,exact,gk,yes,12713,27070,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+heap,1,1633,n|v,6,3,heap,exact,gk cet4 cet6 ky ielts,yes,5596,7087,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+hearing,1,1635,a|n,7,3,hearing,exact,gk ky ielts,yes,2480,1711,4,4,1,9,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+heaven,1,1638,n,1,3,heaven,exact,zk gk cet4 cet6 ky toefl,yes,2649,2626,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+heavily,1,1640,r,7,3,heavily,exact,gk cet4 cet6,yes,2153,2363,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+heel,1,1641,n|v,11,3,heel,exact,gk cet4 cet6 ky toefl,yes,3535,3056,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+helicopter,1,1643,n,1,3,helicopter,exact,gk cet4 cet6 ky ielts,yes,4159,3100,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+helmet,1,1645,n,2,3,helmet,exact,gk cet4 cet6 ky ielts gre,yes,5642,4303,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+heroine,1,1653,n,2,3,heroine,exact,gk cet4 cet6 ky ielts,yes,8840,8342,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+hibernate,1,1658,v,2,3,hibernate,exact,gk toefl gre,yes,24989,21924,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+hibernation,1,1659,n,3,2,hibernation,exact,gk toefl,yes,22451,19620,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+highway,1,1663,n,1,3,highway,exact,gk cet4 cet6 ky,yes,4470,2583,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+hillside,1,1665,n,1,3,hillside,exact,gk cet4 cet6,yes,6497,6756,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+hilly,1,1666,a,1,3,hilly,exact,gk toefl,yes,15079,15597,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+hive,1,1673,n|v,6,3,hive,exact,gk toefl gre,yes,11665,11401,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+holy,1,1678,a|n,2,3,holy,exact,gk cet4 cet6 ky,yes,2701,2375,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+homeland,1,1680,n,1,3,homeland,exact,gk,yes,8870,4149,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+hook,1,1687,n|v,20,3,hook,exact,gk cet4 cet6 ky toefl,yes,4337,3791,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+hooray,1,1688,n,1,3,hooray,exact,gk,yes,21582,23679,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+hopeful,1,1690,a|n,3,3,hopeful,exact,gk cet4 cet6 ky,yes,6877,5116,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+hopeless,1,1691,a,4,3,hopeless,exact,gk cet4 cet6,yes,6390,7926,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+hostess,1,1696,n,3,3,hostess,exact,gk cet4 cet6 ky,yes,9940,10323,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+housewife,1,1702,n,1,3,housewife,exact,gk cet4 cet6 ky,yes,5741,8592,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+howl,1,1706,n|v,7,3,howl,exact,gk cet6 ky toefl ielts,yes,10307,8380,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+humour,1,1712,n|v,7,3,humour,exact,gk cet4 cet6,yes,3219,,4,0,0,4,single_corpus_only,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+hunger,1,1714,n|v,5,3,hunger,exact,gk cet4 cet6 ky toefl,yes,5267,4584,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+hunter,1,1717,n,3,3,hunter,exact,gk,yes,5802,3030,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+identification,1,1729,n,5,3,identification,exact,gk cet4 cet6 ky toefl ielts,yes,3230,3289,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+immediate,1,1737,a,5,3,immediate,exact,gk cet4 cet6 ky toefl,yes,1542,2180,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+immigration,1,1739,n,2,3,immigration,exact,gk cet6 toefl,yes,5448,2431,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+importance,1,1741,n,2,3,importance,exact,gk cet4 cet6 ky,yes,1025,1573,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+incorrect,1,1752,a,4,3,incorrect,exact,gk cet4 cet6,yes,7053,7280,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+independence,1,1755,n,2,3,independence,exact,gk cet4 cet6 ky ielts,yes,2010,2291,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+inform,1,1762,v,3,3,inform,exact,gk cet4 cet6 ky,yes,1726,2177,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+injure,1,1766,v,3,3,injure,exact,gk cet4 cet6 ky toefl,yes,3032,3721,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+ink,1,1768,n|v,5,3,ink,exact,zk gk cet4 cet6 ky,yes,6004,5193,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+inland,1,1769,a|r,2,3,inland,exact,gk cet6 ky toefl ielts,yes,5084,11233,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+inn,1,1770,n,1,3,inn,exact,gk cet4 cet6 ky,yes,3852,6591,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+insert,1,1773,n|v,8,3,insert,exact,gk cet4 cet6 ky toefl ielts gre,yes,3796,4301,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+inspect,1,1776,v,3,3,inspect,exact,gk cet4 cet6 ky toefl,yes,4286,5031,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+instruct,1,1782,v,3,3,instruct,exact,gk cet4 cet6 ky toefl,yes,3820,4243,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+insure,1,1786,v,4,3,insure,exact,gk cet4 cet6 ky ielts,yes,5378,6180,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+intelligence,1,1787,n,5,3,intelligence,exact,gk cet4 cet6 ky toefl ielts,yes,2444,1417,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+interpreter,1,1794,n,4,3,interpreter,exact,gk cet4 cet6,yes,7208,5628,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+interval,1,1796,n,4,3,interval,exact,gk cet4 cet6 ky toefl ielts,yes,2689,4646,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+inventor,1,1803,n,1,3,inventor,exact,gk cet4 cet6,yes,10125,8188,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+invitation,1,1804,n,2,3,invitation,exact,gk cet4 cet6 ky,yes,3177,4072,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+irrigate,1,1809,v,2,3,irrigate,exact,gk ky toefl gre,yes,26536,16313,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+irrigation,1,1810,n,2,3,irrigation,exact,gk cet6 toefl ielts,yes,12413,6974,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+jar,1,1822,n|v,8,3,jar,exact,gk cet4 cet6 ky toefl gre,yes,5688,4262,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+jeep,1,1826,n,1,3,jeep,exact,gk,yes,8186,9569,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+jet,1,1827,a|n|v,9,3,jet,exact,gk cet4 cet6 ky,yes,3846,3144,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+jewel,1,1828,n|v,3,3,jewel,exact,gk cet4 cet6 ky toefl,yes,6409,6074,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+jewelry,1,1829,n,1,3,jewelry,exact,gk ky toefl ielts,yes,,4187,0,4,0,4,single_corpus_only,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+juicy,1,1840,a,4,3,juicy,exact,gk toefl,yes,14477,8742,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+junk,1,1846,n|v,3,3,junk,exact,gk cet6 ky ielts,yes,7753,5130,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+keeper,1,1853,n,2,3,keeper,exact,gk cet4 cet6,yes,4146,7388,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+kindness,1,1866,n,3,3,kindness,exact,gk cet4 cet6 ky,yes,7000,7682,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+labourer,1,1879,n,1,3,labourer,exact,gk,yes,5556,32892,3,1,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+ladder,1,1881,n|v,4,3,ladder,exact,gk cet4 cet6 ky,yes,4136,4505,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+lame,1,1885,a|n|v,5,3,lame,exact,gk cet4 cet6 ky ielts,yes,11787,9982,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+laser,1,1892,n,1,3,laser,exact,gk cet4 cet6 ky toefl ielts,yes,4841,3896,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+lately,1,1895,r,1,3,lately,exact,gk cet4 cet6 ky toefl,yes,6088,4028,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+latest,1,1897,a|n,3,3,latest,exact,gk ielts,yes,,,0,0,0,0,no_frequency_rank,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+latter,1,1898,a|n,2,3,latter,exact,gk cet4 cet6 ky toefl,yes,1251,2725,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+laughter,1,1900,n,2,3,laughter,exact,gk cet4 cet6 ky,yes,3321,3397,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+laundry,1,1901,n,2,3,laundry,exact,gk cet4 cet6 ky toefl ielts,yes,7707,4940,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+lavatory,1,1902,n,3,3,lavatory,exact,gk cet4 cet6 ky,yes,7030,19680,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+leading,1,1909,a|n-1|n-2,6,3,leading,exact,gk cet4 cet6 ky toefl,yes,1551,2188,4,4,1,9,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+learned,1,1914,a,3,3,learned,exact,gk cet4 cet6 ky,yes,6667,10842,3,2,1,6,strong_with_moderate_cross_corpus_support,possible_participle_or_adjective,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+leftover,1,1921,a|n,2,3,leftover,exact,gk,yes,22683,9769,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+lemonade,1,1926,n,1,3,lemonade,exact,zk gk,yes,15571,11562,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+liberate,1,1936,v,4,3,liberate,exact,gk cet4 cet6 ky toefl gre,yes,8543,7492,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+lid,1,1941,n,3,3,lid,exact,gk cet4 cet6 ky,yes,4537,4658,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+lifetime,1,1944,n,1,3,lifetime,exact,gk cet4 cet6 ky,yes,3623,2767,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+lightning,1,1947,n,2,3,lightning,exact,gk cet4 cet6 ky,yes,6393,4562,3,4,1,8,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+lip,1,1954,n,5,3,lip,exact,gk cet4 cet6 ky toefl,yes,1452,1582,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+litre,1,1960,n,1,3,litre,exact,gk ky,yes,5726,,3,0,0,3,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+loaf,1,1967,n|v,4,3,loaf,exact,gk cet4 cet6 ky ielts gre,yes,7776,6892,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+locust,1,1970,n,3,3,locust,exact,gk cet6 gre,yes,21741,15256,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+lorry,1,1976,n,2,3,lorry,exact,gk cet4 cet6 ky,yes,3524,24926,4,1,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+loudly,1,1982,r,3,2,loudly,exact,gk,yes,5440,5687,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+loudspeaker,1,1983,n,1,3,loudspeaker,exact,gk cet4 cet6 ky,yes,14516,12875,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+lounge,1,1984,n|v,4,3,lounge,exact,gk cet6 ky ielts gre,yes,4410,5990,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+luggage,1,1990,n,1,3,luggage,exact,gk cet4 cet6 ky,yes,7156,7333,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+maid,1,1998,n,2,3,maid,exact,gk cet4 cet6 ky ielts,yes,5166,6044,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+mailbox,1,2000,n,2,3,mailbox,exact,gk,yes,35234,9004,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+mainland,1,2002,n,1,3,mainland,exact,gk cet4 cet6 ky,yes,5381,6208,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+maple,1,2016,n,2,3,maple,exact,gk cet6 gre,yes,10494,5571,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+marble,1,2019,n|v,4,3,marble,exact,gk cet4 cet6 ky toefl ielts gre,yes,4199,4819,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+married,1,2025,a|n,3,3,married,exact,gk cet4 cet6 ky,yes,1742,1610,4,4,1,9,strong_in_both_corpora,possible_participle_or_adjective,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+mask,1,2027,n|v,9,3,mask,exact,gk cet4 cet6 ky toefl ielts gre,yes,4312,2893,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+mat,1,2030,a|n|v,10,3,mat,exact,gk cet4 cet6 ky,yes,6419,5639,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+meanwhile,1,2045,n|r,3,3,meanwhile,exact,gk cet4 cet6 ky,yes,1886,1847,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+melon,1,2056,n,2,3,melon,exact,gk cet4 cet6 ky gre,yes,12740,9886,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+memorize,1,2060,v,1,3,memorize,exact,gk toefl,yes,21017,8276,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+mend,1,2061,n|v,4,3,mend,exact,zk gk toefl gre,yes,7566,10849,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+mentally,1,2063,r,1,3,mentally,exact,gk,yes,3531,4365,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+merchant,1,2066,n,1,3,merchant,exact,gk cet4 cet6 ky toefl,yes,2755,4126,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+merciful,1,2067,a,2,3,merciful,exact,gk cet6 toefl,yes,19546,17622,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+messy,1,2073,a,1,3,messy,exact,gk toefl,yes,9558,6651,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+microwave,1,2081,n|v,3,3,microwave,exact,gk cet6 toefl,yes,7268,5846,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+midday,1,2083,n,1,3,midday,exact,gk cet4 cet6,yes,7619,9129,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+millionaire,1,2092,n,1,3,millionaire,exact,gk cet6 ky toefl,yes,7695,6769,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+minibus,1,2096,n,1,2,minibus,exact,gk,yes,15504,27815,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+miniskirt,1,2098,n,1,3,miniskirt,exact,gk,yes,45253,20289,0,1,1,2,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+ministry,1,2100,n,4,3,ministry,exact,gk cet4 cet6 ky toefl,yes,1717,4242,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+minus,1,2102,a|n,3,3,minus,exact,gk cet4 cet6 ky ielts,yes,4789,8628,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+mistaken,1,2110,a,2,3,mistaken,exact,gk,yes,9508,12710,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+misunderstand,1,2111,v,1,3,misunderstand,exact,gk cet4 cet6 ky,yes,8418,8287,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+mm,1,2114,n,1,3,mm,exact,gk,yes,266,15832,4,2,1,7,strong_with_moderate_cross_corpus_support,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+mobile,1,2115,a|n,6,3,mobile,exact,gk cet4 cet6 ky toefl ielts gre,yes,4468,4686,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+modem,1,2118,n,1,2,modem,exact,gk toefl,yes,9165,5518,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+modest,1,2120,a,7,3,modest,exact,gk cet4 cet6 ky toefl ielts gre,yes,3176,3101,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+mommy,1,2123,n,1,2,mommy,exact,,no,47154,9690,0,3,1,4,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+monument,1,2129,n,3,3,monument,exact,gk cet4 cet6 ky toefl,yes,4736,4066,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+mop,1,2132,n|v,3,3,mop,exact,gk cet6,yes,11184,12312,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+motherland,1,2141,n,1,3,motherland,exact,gk,yes,26292,23389,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+motivation,1,2142,n,3,3,motivation,exact,gk toefl ielts,yes,3870,3126,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+motorbike,1,2144,n|v,2,3,motorbike,exact,gk,yes,10026,22347,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+motorcycle,1,2145,n|v,2,3,motorcycle,exact,zk gk ielts,yes,9757,6059,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+motto,1,2146,n,1,3,motto,exact,gk ielts gre,yes,9695,9048,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+mountainous,1,2148,a,3,3,mountainous,exact,gk cet6 gre,yes,14181,12342,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+mourn,1,2149,v,2,3,mourn,exact,gk cet4 cet6 ky ielts gre,yes,9545,6768,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+moustache,1,2151,n,1,3,moustache,exact,gk ielts,yes,7198,16314,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+mouthful,1,2153,n,2,3,mouthful,exact,gk cet4 cet6,yes,9085,13176,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+muddy,1,2163,a|v,7,3,muddy,exact,gk cet4 cet6 gre,yes,7679,6484,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+multiply,1,2164,r|v,6,3,multiply,exact,gk cet4 cet6 ky toefl ielts gre,yes,5028,6148,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+musical,1,2169,a|n,5,3,musical,exact,gk cet4 cet6 ky ielts,yes,2771,2097,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+mustard,1,2172,n,3,3,mustard,exact,gk cet6,yes,8963,6095,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+mutton,1,2173,n,1,3,mutton,exact,gk cet4 cet6 ky gre,yes,15305,22179,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+nationwide,1,2182,a|r,2,3,nationwide,exact,gk toefl,yes,7933,4929,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+necklace,1,2193,n,1,3,necklace,exact,gk cet4 cet6 ky,yes,10178,6583,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+necktie,1,2194,n,1,3,necktie,exact,gk,yes,42992,17026,0,2,1,3,moderate_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+noisily,1,2228,r,1,2,noisily,exact,gk,yes,12642,16141,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+northeast,1,2238,a|n|r,6,3,northeast,exact,gk cet4 cet6 ky,yes,16006,4122,2,4,1,7,strong_with_moderate_cross_corpus_support,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+northwards,1,2240,r,1,3,northwards,exact,gk cet6,yes,11689,43874,2,0,1,3,moderate_frequency,possible_plural_or_third_person,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入；另有词形复核标记
+northwest,1,2241,a|n|r,6,3,northwest,exact,gk cet4 cet6 ky,yes,14975,3403,2,4,1,7,strong_with_moderate_cross_corpus_support,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+numb,1,2255,a|v,4,3,numb,exact,gk ky toefl ielts gre,yes,12639,9317,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+nursery,1,2258,n,1,3,nursery,exact,gk cet4 cet6 ky ielts,yes,3383,5632,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+nylon,1,2262,n,2,3,nylon,exact,gk cet4 cet6 ky ielts,yes,7129,8449,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+obey,1,2263,v,1,3,obey,exact,gk cet4 cet6 ky,yes,4952,5672,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+obvious,1,2267,a,1,3,obvious,exact,gk cet4 cet6 ky toefl ielts gre,yes,1173,1689,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+offence,1,2276,n,5,3,offence,exact,gk cet6 ky ielts,yes,1550,22003,4,1,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+offshore,1,2281,a|r,3,3,offshore,exact,gk toefl ielts,yes,7349,7765,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+oilfield,1,2285,n,1,2,oilfield,exact,gk,yes,26075,,1,0,0,1,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+omelette,1,2290,n,1,2,omelette,exact,gk,yes,15720,22503,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+opener,1,2299,n,3,3,opener,exact,gk,yes,10456,7761,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+opening,1,2300,a|n,14,3,opening,exact,gk cet4 cet6 ky ielts,yes,1730,1940,4,4,1,9,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+operate,1,2303,v,6,3,operate,exact,gk cet4 cet6 ky toefl,yes,970,1309,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+optional,1,2310,a,1,3,optional,exact,gk cet4 cet6 ky toefl ielts gre,yes,5815,5692,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+oral,1,2312,a|n,5,3,oral,exact,gk cet4 cet6 ky toefl ielts,yes,3468,3875,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+organise,1,2319,v,6,2,organise,exact,gk,yes,1672,,4,0,0,4,single_corpus_only,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+outdoors,1,2333,n|r,2,3,outdoors,exact,gk cet4 cet6 toefl,yes,15004,7559,2,3,1,6,strong_with_moderate_cross_corpus_support,possible_plural_or_third_person,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+outer,1,2334,a,3,3,outer,exact,gk cet4 cet6 ky,yes,3097,3698,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+outing,1,2336,n,2,3,outing,exact,gk ky toefl,yes,6382,7723,3,3,1,7,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+outspoken,1,2340,a,2,3,outspoken,exact,gk toefl ielts gre,yes,11487,8801,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+outward,1,2342,a|r,3,3,outward,exact,gk cet4 cet6 ky toefl,yes,8743,8599,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+oval,1,2343,a|n,2,3,oval,exact,gk cet4 cet6 ky toefl ielts,yes,9791,6604,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+overcoat,1,2345,n,2,3,overcoat,exact,zk gk cet4 cet6 ky,yes,10596,12679,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+overhead,1,2347,a|n|r,9,3,overhead,exact,gk cet4 cet6 ky ielts,yes,7523,5527,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+overlook,1,2348,n|v,6,3,overlook,exact,gk cet4 cet6 ky toefl ielts gre,yes,3391,3139,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+overweight,1,2349,a|n,2,3,overweight,exact,gk,yes,10207,6628,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+owner,1,2352,n,2,3,owner,exact,zk gk cet4 cet6 ky,yes,1153,1021,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+ownership,1,2353,n,3,3,ownership,exact,gk cet4 cet6 ky ielts,yes,2672,3585,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+ox,1,2354,n,2,3,ox,exact,gk cet4 cet6 ky,yes,11804,,2,0,0,2,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+packet,1,2361,n,4,3,packet,exact,gk cet4 cet6 ky,yes,3805,6240,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+paddle,1,2362,n|v,10,3,paddle,exact,gk ky toefl ielts,yes,10365,9187,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+painful,1,2365,a,4,3,painful,exact,gk cet4 cet6 ky,yes,3638,3034,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+painter,1,2367,n,4,3,painter,exact,gk cet4 ky,yes,3579,3322,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+painting,1,2368,n,4,3,painting,exact,gk cet4 cet6 ky toefl ielts,yes,1348,1056,4,4,1,9,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+paperwork,1,2377,n,1,2,paperwork,exact,gk,yes,8494,6838,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+parallel,1,2379,a|n|v,8,3,parallel,exact,gk cet4 cet6 ky toefl ielts gre,yes,3869,5840,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+parrot,1,2387,n|v,3,3,parrot,exact,gk toefl,yes,8676,9988,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+partly,1,2391,r,1,3,partly,exact,gk cet4 cet6 ky,yes,1638,2824,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+pause,1,2407,n|v,4,3,pause,exact,gk cet4 cet6 ky,yes,2566,2777,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+pea,1,2411,n,3,3,pea,exact,gk cet4 cet6 ky,yes,6504,5226,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+peaceful,1,2413,a,2,3,peaceful,exact,gk cet4 cet6 ky,yes,3937,3655,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+peach,1,2414,n|v,5,3,peach,exact,gk cet4 cet6 ky,yes,6592,5531,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+peasant,1,2416,n,3,3,peasant,exact,gk cet4 cet6 ky,yes,2564,4680,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+pedestrian,1,2417,a|n,2,3,pedestrian,exact,gk cet6 ky ielts gre,yes,5992,7573,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+penny,1,2422,n,2,3,penny,exact,zk gk cet4 cet6 ky ielts,yes,4306,,4,0,0,4,single_corpus_only,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+pension,1,2423,n|v,2,3,pension,exact,gk cet4 cet6 ky ielts gre,yes,1490,3785,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+perform,1,2430,v,4,3,perform,exact,gk cet4 cet6 ky toefl,yes,1138,953,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+performer,1,2432,n,1,2,performer,exact,gk toefl,yes,5369,3962,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+perfume,1,2433,n|v,4,3,perfume,exact,gk cet4 cet6 ky toefl ielts,yes,7033,6592,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+permission,1,2437,n,2,3,permission,exact,gk cet4 cet6 ky toefl,yes,2468,3233,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+personally,1,2442,r,5,3,personally,exact,gk,yes,2866,2633,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+personnel,1,2441,n,2,3,personnel,exact,gk cet4 cet6 ky toefl ielts gre,yes,2556,2425,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+pest,1,2444,n,4,3,pest,exact,gk cet6 ky toefl gre,yes,6622,6842,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+physical,1,2454,a,7,3,physical,exact,gk cet4 cet6 ky ielts,yes,1047,802,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+physicist,1,2456,n,1,3,physicist,exact,gk cet4 cet6 ky toefl,yes,8224,5568,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+pianist,1,2458,n,1,3,pianist,exact,gk toefl ielts,yes,10127,8252,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+pile,1,2466,n|v,11,3,pile,exact,gk cet4 cet6 ky toefl,yes,3229,3003,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+pillow,1,2468,n|v,2,3,pillow,exact,gk cet4 cet6 ky toefl ielts,yes,5447,4017,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+pin,1,2470,n|v,14,3,pin,exact,gk cet4 cet6 ky ielts,yes,4542,4347,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+pine,1,2471,n|v,3,3,pine,exact,gk cet4 cet6 ky toefl ielts gre,yes,5081,3158,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+pineapple,1,2472,n,2,3,pineapple,exact,gk cet6 toefl,yes,12015,9086,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+pint,1,2475,n,3,3,pint,exact,gk cet4 cet6 ky,yes,3977,,4,0,0,4,single_corpus_only,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+playmate,1,2492,n,1,3,playmate,exact,gk,yes,21857,14534,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+playroom,1,2489,n,1,3,playroom,exact,gk,yes,23028,20588,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+poisonous,1,2507,a,3,3,poisonous,exact,gk cet4 cet6 ky gre,yes,9555,10074,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+popcorn,1,2525,n,2,3,popcorn,exact,gk toefl,yes,25500,8839,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+porridge,1,2529,n,1,3,porridge,exact,gk cet4 cet6 gre,yes,11936,18724,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+portable,1,2531,a|n,3,3,portable,exact,gk cet4 cet6 ky toefl ielts gre,yes,6014,5441,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+porter,1,2532,n|v,5,3,porter,exact,gk cet4 cet6 ky,yes,6464,11418,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+possess,1,2534,v,3,3,possess,exact,gk cet4 cet6 ky toefl,yes,2129,2842,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+possibility,1,2536,n,4,3,possibility,exact,gk cet4 cet6 ky,yes,1030,1195,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+possibly,1,2538,r,2,3,possibly,exact,cet4 cet6 ky,no,1312,1696,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+postage,1,2540,n,2,3,postage,exact,gk cet4 cet6 ky toefl ielts,yes,9763,13293,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+postbox,1,2541,n,1,3,postbox,exact,gk,yes,40238,,0,0,0,0,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+postcode,1,2543,n,1,2,postcode,exact,gk ielts,yes,22564,,1,0,0,1,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+powder,1,2552,n|v,5,3,powder,exact,gk cet4 cet6 ky toefl,yes,4272,3260,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+powerful,1,2554,a|r,6,3,powerful,exact,gk cet4 cet6 ky,yes,1326,1159,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+prairie,1,2557,n,1,3,prairie,exact,gk cet6 toefl,yes,20980,6846,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+prayer,1,2560,n,5,3,prayer,exact,gk cet4 cet6 ky,yes,2644,2098,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+precise,1,2562,a,2,3,precise,exact,gk cet4 cet6 ky toefl ielts gre,yes,2761,3826,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+pregnant,1,2566,a,3,3,pregnant,exact,gk cet6 ky toefl ielts gre,yes,3276,2629,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+preparation,1,2569,n,8,3,preparation,exact,gk cet4 cet6 ky,yes,2091,2513,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+prescription,1,2571,a|n,5,3,prescription,exact,gk cet6 ky toefl ielts gre,yes,5595,3311,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+preview,1,2581,n|v,3,3,preview,exact,gk gre,yes,11861,7529,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+printer,1,2589,n,3,3,printer,exact,gk cet6,yes,3066,5875,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+printing,1,2590,n,4,3,printing,exact,gk ielts,yes,4804,7217,4,3,1,8,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+prisoner,1,2592,n,1,3,prisoner,exact,zk gk cet4 cet6 ky,yes,1932,2419,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+privilege,1,2594,n|v,4,3,privilege,exact,gk cet4 cet6 ky toefl ielts gre,yes,3017,3612,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+probable,1,2596,a|n,3,3,probable,exact,gk cet4 cet6 ky,yes,5016,6767,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+production,1,2603,n,8,3,production,exact,gk cet4 cet6 ky ielts,yes,610,959,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+properly,1,2616,r,3,3,properly,exact,gk cet4 cet6,yes,1634,2880,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+protection,1,2618,n,7,3,protection,exact,gk cet4 cet6 toefl,yes,1220,1315,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+publicly,1,2626,r,2,3,publicly,exact,gk,yes,4133,3027,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+pulse,1,2629,n|v,7,3,pulse,exact,gk cet4 cet6 ky toefl gre,yes,4379,4331,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+pump,1,2630,n|v,11,3,pump,exact,gk cet4 cet6 ky toefl ielts,yes,4317,3444,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+punctual,1,2631,a,1,3,punctual,exact,gk cet4 cet6 ky toefl ielts,yes,20448,25334,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+punctuate,1,2632,v,3,3,punctuate,exact,gk,yes,11199,9198,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+punctuation,1,2633,n,3,3,punctuation,exact,gk,yes,12610,15876,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+punishment,1,2635,n,1,3,punishment,exact,gk cet4 cet6,yes,3031,3110,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+puzzle,1,2644,n|v,4,3,puzzle,exact,gk cet4 cet6 ky toefl ielts,yes,6964,4255,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+puzzled,1,2645,a,1,2,puzzled,exact,gk,yes,5694,7319,3,3,1,7,strong_in_both_corpora,possible_participle_or_adjective,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+pyramid,1,2646,n|v,6,3,pyramid,exact,gk ky toefl,yes,7071,6129,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+quake,1,2647,n|v,3,3,quake,exact,gk,yes,23257,8561,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+quarrel,1,2651,n|v,3,3,quarrel,exact,gk cet4 cet6 ky,yes,7746,11177,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+questionnaire,1,2655,n,1,3,questionnaire,exact,gk cet6 ky toefl ielts,yes,4043,3606,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+queue,1,2656,n|v,4,3,queue,exact,gk cet4 cet6 ky gre,yes,4960,15489,4,2,1,7,strong_with_moderate_cross_corpus_support,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+quilt,1,2659,n|v,3,3,quilt,exact,gk cet4 cet6 ky toefl,yes,12326,6124,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+quiz,1,2662,n|v,2,3,quiz,exact,gk cet4 cet6 ky,yes,9113,8784,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+radioactive,1,2668,a,1,3,radioactive,exact,gk cet4 cet6 ky,yes,6732,7890,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+rag,1,2670,n|v,11,3,rag,exact,gk cet4 cet6 ky gre,yes,5984,6662,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+rail,1,2671,n|v,15,3,rail,exact,gk cet4 cet6 ky toefl ielts gre,yes,1961,3373,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+raincoat,1,2675,n,1,3,raincoat,exact,zk gk ielts,yes,12667,15201,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+rainfall,1,2676,n,1,3,rainfall,exact,gk toefl ielts,yes,10343,9169,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+rat,1,2684,n|v,11,3,rat,exact,zk gk cet4 cet6 ky toefl ielts,yes,3139,3558,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+razor,1,2690,n|v,2,3,razor,exact,gk cet4 cet6 ky gre,yes,8610,7444,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+reading,1,2694,n,7,3,reading,exact,gk cet4 cet6 ky ielts,yes,1701,1581,4,4,1,9,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+reasonable,1,2701,a,3,3,reasonable,exact,gk cet4 cet6 ky ielts,yes,1549,2510,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+rebuild,1,2702,v,1,3,rebuild,exact,gk toefl,yes,4709,3790,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+receiver,1,2705,n,6,3,receiver,exact,gk cet4 cet6 toefl,yes,3543,3401,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+recent,1,2706,a,2,3,recent,exact,zk gk cet4 cet6 ky toefl,yes,630,567,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+reception,1,2707,n,5,3,reception,exact,gk cet4 cet6 ky toefl ielts,yes,2928,3944,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+recorder,1,2716,n,4,3,recorder,exact,zk gk cet4 cet6 ky ielts,yes,4975,6015,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+rectangle,1,2720,n,1,3,rectangle,exact,gk cet6 ky toefl ielts gre,yes,10208,10058,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+redirect,1,2722,v,1,2,redirect,exact,gk toefl gre,yes,14745,11425,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+referee,1,2725,n|v,5,3,referee,exact,gk cet6 ky ielts gre,yes,4635,8516,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+refusal,1,2732,n,2,3,refusal,exact,gk cet4 cet6 ky ielts,yes,3562,5933,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+regulation,1,2740,a|n,7,3,regulation,exact,gk cet4 cet6 ky toefl ielts,yes,1400,1675,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+relation,1,2743,n,6,3,relation,exact,zk gk cet4 cet6 ky,yes,719,1118,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+religion,1,2751,n,2,3,religion,exact,gk cet4 cet6 ky toefl ielts gre,yes,1819,1383,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+religious,1,2752,a|n,5,3,religious,exact,gk cet4 cet6 ky toefl,yes,1444,884,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+remark,1,2755,n|v,4,3,remark,exact,gk cet4 cet6 ky toefl ielts,yes,2581,3389,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+reporter,1,2767,n,1,3,reporter,exact,gk cet4 cet6 ky,yes,3671,1286,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+requirement,1,2774,n,3,3,requirement,exact,gk cet4 cet6 ky toefl ielts,yes,1078,1885,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+resemble,1,2777,v,1,3,resemble,exact,gk cet4 cet6 ky toefl ielts,yes,3822,3058,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+reservation,1,2778,n,7,3,reservation,exact,gk cet4 cet6 ky ielts,yes,4139,3046,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+resist,1,2781,v,6,3,resist,exact,gk cet4 cet6 ky toefl,yes,2415,2470,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+restriction,1,2788,n,3,3,restriction,exact,gk cet4 cet6 toefl,yes,2226,3127,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+retell,1,2790,v,3,2,retell,exact,zk gk cet4 cet6,yes,34354,19549,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+reuse,1,2793,v,1,2,reuse,exact,gk,yes,22536,12946,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+reviewer,1,2795,n,2,2,reviewer,exact,gk,yes,10297,8282,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+revision,1,2796,n,3,3,revision,exact,gk cet6 toefl ielts,yes,4579,5994,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+revolution,1,2797,n,3,3,revolution,exact,gk cet4 cet6 ky toefl,yes,1858,2753,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+rewind,1,2799,v,1,2,rewind,exact,gk,yes,26999,20177,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+rewrite,1,2800,n|v,3,3,rewrite,exact,gk,yes,9748,7628,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+rid,1,2804,v,1,3,rid,exact,gk cet4 cet6 ky toefl,yes,2872,3041,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+ridiculous,1,2806,a,3,3,ridiculous,exact,gk cet4 cet6 ky toefl ielts,yes,3632,4043,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+ripen,1,2815,v,2,3,ripen,exact,gk cet4 cet6 toefl gre,yes,14908,14750,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+rob,1,2821,v,2,3,rob,exact,gk cet4 cet6 ky,yes,5202,5071,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+roller,1,2827,n,7,3,roller,exact,gk cet4 cet6,yes,6996,6161,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+rooster,1,2831,n,1,3,rooster,exact,gk cet6 toefl,yes,35410,11564,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+rot,1,2835,n|v,5,3,rot,exact,gk cet4 cet6 ky toefl ielts,yes,9578,9603,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+rough,1,2836,a|n|r|v,18,3,rough,exact,gk cet4 cet6 ky toefl ielts,yes,2422,2627,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+roundabout,1,2838,a|n,4,3,roundabout,exact,gk cet6 ky gre,yes,7908,21821,3,1,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+runner,1,2850,n,10,3,runner,exact,gk cet4 cet6,yes,4368,4214,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+running,1,2851,a|n,11,3,running,exact,gk,yes,3269,3252,4,4,1,9,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+sacred,1,2855,a,5,3,sacred,exact,gk cet4 cet6 ky toefl ielts gre,yes,4692,3338,4,4,1,9,strong_in_both_corpora,possible_participle_or_adjective,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+sacrifice,1,2856,n|v,9,3,sacrifice,exact,gk cet4 cet6 ky ielts gre,yes,5282,4068,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+sadness,1,2858,n,3,3,sadness,exact,gk cet4 cet6,yes,6372,5506,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+sailing,1,2862,n,4,3,sailing,exact,gk ielts,yes,5717,10027,3,2,1,6,strong_with_moderate_cross_corpus_support,possible_participle_or_gerund,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+sailor,1,2863,n,3,3,sailor,exact,gk cet4 cet6 ky,yes,5054,5030,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+salesgirl,1,2867,n,1,3,salesgirl,exact,gk,yes,,29991,0,1,0,1,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+salute,1,2872,n|v,9,3,salute,exact,gk cet4 cet6 ky ielts gre,yes,11386,8974,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+sauce,1,2880,n|v,4,3,sauce,exact,gk cet4 cet6 ky ielts,yes,4226,2289,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+savage,1,2883,a|n|v,8,3,savage,exact,gk cet6 ky ielts gre,yes,7623,10011,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+scan,1,2887,n|v,9,3,scan,exact,gk cet4 cet6 ky toefl ielts gre,yes,5003,4031,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+scar,1,2888,n|v,3,3,scar,exact,gk cet4 cet6 ky toefl ielts gre,yes,7022,5026,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+scenery,1,2892,n,2,3,scenery,exact,gk cet4 cet6 ky toefl ielts,yes,6478,8152,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+sceptical,1,2893,a,2,2,sceptical,exact,gk cet6 ky ielts gre,yes,6418,37694,3,1,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+scholar,1,2896,n,3,3,scholar,exact,gk cet4 cet6 ky toefl,yes,3858,2101,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+schoolmate,1,2900,n,1,3,schoolmate,exact,gk,yes,33562,19024,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+scold,1,2905,n|v,3,3,scold,exact,gk cet4 cet6 ky ielts,yes,15769,10246,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+scores,1,2907,n,1,2,scores,exact,gk,yes,,,0,0,0,0,no_frequency_rank,possible_plural_or_third_person,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入；另有词形复核标记
+scratch,1,2910,n|v,17,3,scratch,exact,gk cet4 cet6 ky toefl ielts,yes,5023,4644,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+seal,1,2916,n|v,14,3,seal,exact,gk cet4 cet6 ky toefl ielts,yes,4259,4021,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+seaman,1,2917,n,1,3,seaman,exact,gk cet4 cet6,yes,7264,17406,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+seashell,1,2919,n,1,2,seashell,exact,gk,yes,42970,19554,0,2,1,3,moderate_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+seaside,1,2920,n,1,3,seaside,exact,gk cet6 ky,yes,7563,12240,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+seaweed,1,2923,n,1,3,seaweed,exact,gk toefl,yes,14677,13198,2,2,1,5,moderate_frequency,possible_participle_or_adjective,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+secondhand,1,2925,a|r,3,2,secondhand,exact,gk,yes,15042,,2,0,0,2,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+self,1,2940,a|n,3,3,self,exact,gk cet4 cet6 ky,yes,2286,2162,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+selfish,1,2941,a,1,3,selfish,exact,gk cet4 cet6 ky toefl,yes,6992,7386,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+semicircle,1,2944,n,1,3,semicircle,exact,gk,yes,33785,19191,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+separately,1,2951,r,1,2,separately,exact,gk cet4 cet6 toefl,yes,3772,5463,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+separation,1,2952,n,9,3,separation,exact,gk cet4 cet6,yes,3669,3704,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+settlement,1,2962,n,7,3,settlement,exact,gk cet4 cet6 ky ielts,yes,1600,2167,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+settler,1,2963,n,3,3,settler,exact,gk,yes,8005,5489,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+shabby,1,2972,a,2,3,shabby,exact,gk cet6 ky toefl ielts gre,yes,10226,10996,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+sharpen,1,2984,v,8,3,sharpen,exact,gk cet4 cet6 toefl,yes,7542,8298,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+shaver,1,2988,n,3,3,shaver,exact,gk,yes,34831,25551,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+shooting,1,3001,n,2,2,shooting,exact,gk,yes,4728,2822,4,4,1,9,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+shopkeeper,1,3004,n,1,3,shopkeeper,exact,gk cet4 cet6 ky,yes,8491,12729,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+shopping,1,3005,n,2,3,shopping,exact,gk cet4 cet6 ielts,yes,2763,2713,4,4,1,9,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+shortcoming,1,3008,n,1,3,shortcoming,exact,gk cet4 cet6 ky,yes,8552,8140,3,3,1,7,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+shortly,1,3009,r,5,3,shortly,exact,gk cet4 cet6 ky,yes,2278,2853,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+shot,1,3012,a|n,19,3,shot,exact,gk cet4 cet6 ky toefl,yes,1836,1053,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+shrink,1,3019,n|v,6,3,shrink,exact,gk cet4 cet6 ky toefl ielts gre,yes,5528,4474,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+shuttle,1,3021,n|v,4,3,shuttle,exact,gk cet4 cet6 ky toefl ielts gre,yes,8928,3810,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+sickness,1,3024,n,3,3,sickness,exact,gk cet4 cet6 toefl ielts,yes,4951,7417,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+sidewalk,1,3026,n,1,3,sidewalk,exact,,no,22023,3770,1,4,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+sideways,1,3028,a|r,5,3,sideways,exact,gk cet4 cet6 ky toefl,yes,6581,7384,3,3,1,7,strong_in_both_corpora,possible_plural_or_third_person,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+sigh,1,3029,n|v,4,3,sigh,exact,gk cet4 cet6 ky toefl ielts,yes,3085,3349,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+signature,1,3034,n,5,3,signature,exact,gk cet4 cet6 ky toefl ielts gre,yes,4275,3773,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+significance,1,3035,n,3,3,significance,exact,gk cet4 cet6 ky toefl,yes,1922,2937,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+simplify,1,3044,v,1,3,simplify,exact,gk cet4 cet6 ky ielts,yes,7074,8483,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+simply,1,3045,r,4,3,simply,exact,gk,yes,568,583,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+singer,1,3049,n,1,3,singer,exact,gk cet4 cet6,yes,3552,2823,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+sixteenth,1,3062,a|n,3,3,sixteenth,exact,gk,yes,5786,10249,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+skilled,1,3068,a,1,3,skilled,exact,gk cet4 cet6 ky,yes,3807,4903,4,4,1,9,strong_in_both_corpora,possible_participle_or_adjective,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+skillful,1,3069,a,2,3,skillful,exact,gk cet4 cet6 ky toefl,yes,43429,12290,0,2,1,3,moderate_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+skillfully,1,3070,r,1,2,skillfully,exact,gk,yes,,13724,0,2,0,2,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+skyscraper,1,3076,n,1,3,skyscraper,exact,gk cet6 ky toefl gre,yes,20049,10626,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+slave,1,3077,n|v,4,3,slave,exact,gk cet4 cet6 ky toefl,yes,3948,2727,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+slavery,1,3078,n,3,3,slavery,exact,gk cet4 cet6,yes,8927,4574,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+sleeve,1,3082,n,2,3,sleeve,exact,gk cet4 cet6 ky,yes,4169,4567,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+slight,1,3085,a|n|v,5,3,slight,exact,gk cet4 cet6 ky toefl ielts gre,yes,2237,2982,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+smelly,1,3092,a,1,3,smelly,exact,gk ielts,yes,11848,14701,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+smoker,1,3097,n,3,3,smoker,exact,gk,yes,7138,6646,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+smoking,1,3098,a|n,3,3,smoking,exact,gk ielts,yes,5035,4956,3,4,1,8,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+snatch,1,3103,n|v,8,3,snatch,exact,gk cet6 ky ielts gre,yes,5049,6071,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+sneaker,1,3104,n,2,3,sneaker,exact,gk,yes,33208,,1,0,0,1,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+sniff,1,3106,n|v,3,3,sniff,exact,gk cet6 ky toefl,yes,5455,5870,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+snowball,1,3108,n|v,6,3,snowball,exact,gk,yes,19913,13612,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+snowman,1,3109,n,1,3,snowman,exact,gk,yes,24155,18086,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+soap,1,3112,n|v,4,3,soap,exact,zk gk cet4 cet6 ky toefl,yes,4288,4344,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+sob,1,3113,n|v,2,3,sob,exact,gk cet4 cet6 ky,yes,8177,7230,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+socialism,1,3116,n,2,3,socialism,exact,gk cet4 cet6 ky,yes,4039,7238,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+socket,1,3120,n,3,3,socket,exact,gk,yes,5776,8195,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+softball,1,3125,n,2,3,softball,exact,gk,yes,,8130,0,3,0,3,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+southeast,1,3148,a|n|r,6,3,southeast,exact,gk cet4 cet6 ky,yes,10728,3708,2,4,1,7,strong_with_moderate_cross_corpus_support,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+southwest,1,3150,a|n|r,6,3,southwest,exact,gk cet4 cet6 ky,yes,15280,3564,2,4,1,7,strong_with_moderate_cross_corpus_support,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+spaceship,1,3154,n,1,3,spaceship,exact,gk cet4 cet6 ky toefl,yes,16374,11577,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+spade,1,3155,n|v,3,3,spade,exact,gk cet4 cet6 ky,yes,8703,13365,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+spaghetti,1,3156,n,2,3,spaghetti,exact,,no,12398,9189,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+sparrow,1,3160,n,2,3,sparrow,exact,gk cet4 cet6 toefl,yes,14590,14123,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+spear,1,3163,n|v,4,3,spear,exact,gk cet4 cet6 ky gre,yes,8899,8310,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+spelling,1,3170,n,1,3,spelling,exact,gk cet4 cet6 ky,yes,5779,7907,3,3,1,7,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+spin,1,3172,n|v,13,3,spin,exact,gk cet4 cet6 ky toefl ielts gre,yes,3841,2644,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+spiritual,1,3174,a|n,5,3,spiritual,exact,gk cet4 cet6 ky toefl ielts gre,yes,3233,2096,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+spit,1,3175,n|v,8,3,spit,exact,gk cet4 cet6 ky ielts,yes,5395,4932,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+split,1,3177,a|n|v,17,3,split,exact,gk cet4 cet6 ky toefl ielts gre,yes,2573,2910,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+spoken,1,3178,a,1,3,spoken,exact,gk,yes,6629,11639,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+spokesman,1,3179,n,1,3,spokesman,exact,cet6 ky ielts,no,2144,2723,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+spoonful,1,3182,n,1,3,spoonful,exact,gk,yes,15630,14845,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+spray,1,3185,n|v,9,3,spray,exact,gk cet4 cet6 ky toefl ielts,yes,5640,4417,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+squeeze,1,3190,n|v,17,3,squeeze,exact,gk cet4 cet6 ky toefl ielts gre,yes,3390,2891,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+squid,1,3191,n,2,3,squid,exact,gk,yes,16736,11582,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+squirrel,1,3192,n,2,3,squirrel,exact,gk cet4 cet6 ky toefl gre,yes,10225,6904,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+stable,1,3193,a|n|v,7,3,stable,exact,gk cet4 cet6 ky toefl,yes,2637,2903,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+stain,1,3197,n|v,9,3,stain,exact,gk cet4 cet6 ky toefl ielts gre,yes,5778,6708,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+stainless,1,3198,a|n,2,3,stainless,exact,gk cet6,yes,11524,8262,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+starvation,1,3208,n,2,3,starvation,exact,gk cet4 toefl,yes,8598,9590,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+statement,1,3212,n,7,3,statement,exact,gk cet4 cet6 ky ielts,yes,717,921,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+statesman,1,3213,n,1,3,statesman,exact,cet4 cet6 ky ielts,no,8718,10075,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+statistics,1,3214,n,1,3,statistics,exact,gk cet4 cet6 ky toefl ielts,yes,2602,2709,4,4,1,9,strong_in_both_corpora,possible_plural_or_third_person,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+status,1,3216,n,2,3,status,exact,gk cet4 cet6 ky toefl ielts gre,yes,1137,1215,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+steady,1,3218,a|n|r|v,10,3,steady,exact,gk cet4 cet6 ky toefl ielts,yes,2922,2914,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+steep,1,3223,a|n|v,6,3,steep,exact,gk cet4 cet6 ky toefl ielts gre,yes,3793,3973,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+steward,1,3226,n,5,3,steward,exact,gk cet4 cet6 ky ielts,yes,4750,10595,4,2,1,7,strong_with_moderate_cross_corpus_support,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+stewardess,1,3227,n,1,3,stewardess,exact,gk cet4 cet6,yes,22477,17096,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+stocking,1,3230,n,2,3,stocking,exact,gk cet4 cet6 ky,yes,6503,8355,3,3,1,7,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+stopwatch,1,3235,n,1,3,stopwatch,exact,gk,yes,34023,20916,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+storage,1,3236,n,6,3,storage,exact,gk cet4 cet6 ky toefl ielts,yes,2703,2941,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+stout,1,3240,a|n,5,3,stout,exact,gk cet6 toefl gre,yes,9786,13326,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+stove,1,3241,n,2,3,stove,exact,gk cet4 cet6 ky toefl,yes,6609,4388,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+straw,1,3247,a|n|v,7,3,straw,exact,gk cet4 cet6 ky,yes,4301,4730,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+stubborn,1,3260,a,2,3,stubborn,exact,gk cet6 ky toefl ielts gre,yes,9547,7548,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+substitute,1,3270,a|n|v,9,3,substitute,exact,gk cet4 cet6 ky toefl ielts gre,yes,4548,5613,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+subtraction,1,3271,n,2,3,subtraction,exact,gk toefl,yes,21520,21980,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+suck,1,3276,n|v,8,3,suck,exact,gk cet4 cet6 ky ielts,yes,4142,3618,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+suffering,1,3279,a|n,6,3,suffering,exact,gk,yes,4466,3933,4,4,1,9,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+suitcase,1,3286,n,1,3,suitcase,exact,gk cet6 toefl ielts gre,yes,6625,5600,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+suite,1,3284,n,4,3,suite,exact,gk ky toefl ielts,yes,4292,4726,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+sunburnt,1,3290,a,1,2,sunburnt,exact,gk,yes,34021,32133,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+sunglasses,1,3292,n,1,3,sunglasses,exact,gk toefl,yes,,7032,0,3,0,3,single_corpus_only,possible_plural_or_third_person,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入；另有词形复核标记
+sunlight,1,3293,n,1,3,sunlight,exact,gk cet4 cet6 toefl ielts,yes,4796,3895,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+sunrise,1,3295,a|n,4,3,sunrise,exact,gk cet4 cet6 ky toefl,yes,11920,7313,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+sunset,1,3296,a|n,5,3,sunset,exact,gk cet4 cet6 ky toefl,yes,7738,5739,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+sunshine,1,3297,n,3,3,sunshine,exact,gk cet4 cet6 ky toefl,yes,4726,7752,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+superman,1,3301,n,2,3,superman,exact,gk,yes,22870,20120,1,1,1,3,limited_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+supper,1,3303,n,2,3,supper,exact,zk gk,yes,4153,5514,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+supreme,1,3307,a,4,3,supreme,exact,gk cet4 cet6 ky toefl ielts gre,yes,2550,1618,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+surplus,1,3311,a|n,2,3,surplus,exact,gk cet4 cet6 ky toefl ielts gre,yes,4815,6243,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+survival,1,3315,n,3,3,survival,exact,gk cet4 cet6 ky toefl ielts,yes,2584,2656,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+suspension,1,3318,n,7,3,suspension,exact,gk cet6 ielts,yes,4354,5034,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+swallow,1,3319,n|v,11,3,swallow,exact,gk cet4 cet6 ky toefl ielts gre,yes,3290,3535,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+swap,1,3320,n|v,3,3,swap,exact,gk,yes,5955,8106,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+swear,1,3321,v,5,3,swear,exact,gk cet4 cet6 ky ielts gre,yes,3224,3330,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+swell,1,3326,a|n|v,11,3,swell,exact,gk cet4 cet6 ky toefl ielts gre,yes,5534,4867,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+swift,1,3327,a|n,3,3,swift,exact,gk cet4 cet6 ky toefl ielts gre,yes,5978,6627,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+sword,1,3336,n,1,3,sword,exact,gk cet4 cet6 ky,yes,3675,4105,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+symptom,1,3340,n,2,3,symptom,exact,gk cet6 ky toefl ielts,yes,2342,2249,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+systematic,1,3342,a,2,3,systematic,exact,gk cet4 cet6 ky toefl ielts,yes,4045,5408,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+tanker,1,3354,n,3,3,tanker,exact,gk cet6 ky,yes,8021,9275,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+tap,1,3355,n|v,20,3,tap,exact,gk cet4 cet6 ky toefl ielts,yes,3299,2843,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+tasteless,1,3361,a,2,3,tasteless,exact,gk toefl,yes,18938,17733,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+tasty,1,3362,a,1,3,tasty,exact,gk toefl gre,yes,9957,8471,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+taxpayer,1,3366,n,1,3,taxpayer,exact,,no,4636,3122,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+teamwork,1,3371,n,1,3,teamwork,exact,gk,yes,15491,11799,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+tease,1,3374,n|v,12,3,tease,exact,gk cet6 ky toefl ielts gre,yes,6082,5458,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+technical,1,3375,a|n,9,3,technical,exact,gk cet4 cet6 ky toefl ielts,yes,1394,2064,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+telegram,1,3379,n,1,3,telegram,exact,gk cet4 cet6 ky,yes,9971,12224,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+telegraph,1,3380,n|v,2,3,telegraph,exact,gk cet4 cet6 ky toefl,yes,4974,26182,4,1,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+temptation,1,3389,n,3,3,temptation,exact,gk cet4 cet6 ky ielts gre,yes,4682,5906,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+tense,1,3394,a|n|v,8,3,tense,exact,gk cet4 cet6 ky toefl,yes,5962,6263,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+tent,1,3396,n|v,3,3,tent,exact,zk gk cet4 cet6 ky,yes,4158,3071,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+tentative,1,3397,a,2,3,tentative,exact,gk cet6 ky toefl ielts gre,yes,7552,7722,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+terminal,1,3399,a|n,9,3,terminal,exact,gk cet4 cet6 ky toefl ielts gre,yes,4011,5777,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+terrify,1,3401,v,1,3,terrify,exact,gk cet6 ky toefl ielts,yes,8606,5828,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+terror,1,3402,n,4,3,terror,exact,gk cet4 cet6 ky toefl ielts,yes,4120,2732,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+textbook,1,3405,a|n,2,3,textbook,exact,gk cet4 cet6 ky ielts,yes,6096,4473,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+thankful,1,3408,a,1,3,thankful,exact,gk,yes,9671,8424,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+theoretical,1,3419,a,2,3,theoretical,exact,gk cet4 cet6 ky toefl ielts gre,yes,2729,3781,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+thermos,1,3423,n,1,3,thermos,exact,gk,yes,24637,17096,1,2,1,4,moderate_frequency,possible_plural_or_third_person,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+thief,1,3427,n,1,3,thief,exact,gk cet4 cet6 ky ielts,yes,3965,5007,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+thirst,1,3433,n|v,4,3,thirst,exact,gk cet4 cet6 ky ielts,yes,11770,10813,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+thread,1,3443,n|v,9,3,thread,exact,zk gk cet4 cet6 ky toefl gre,yes,5022,4714,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+thrill,1,3445,n|v,7,3,thrill,exact,gk cet4 cet6 ky ielts,yes,7773,5858,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+thriller,1,3446,n,1,3,thriller,exact,gk ielts,yes,9961,8642,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+throat,1,3447,n,4,3,throat,exact,gk cet4 cet6 ky ielts,yes,2449,2454,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+thunderstorm,1,3452,n,1,3,thunderstorm,exact,gk toefl,yes,18737,10620,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+tick,1,3457,n|v,8,3,tick,exact,gk cet4 cet6 ky ielts,yes,5977,7358,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+timetable,1,3465,n,2,3,timetable,exact,gk cet4 cet6 ielts,yes,4536,8819,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+tin,1,3466,n|v,7,3,tin,exact,gk cet4 cet6 ky toefl,yes,2956,5424,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+tire,1,3469,n|v,5,3,tire,exact,gk cet4 cet6 ky toefl gre,yes,11152,2850,2,4,1,7,strong_with_moderate_cross_corpus_support,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+tiresome,1,3471,a,1,3,tiresome,exact,cet6 ky,no,13772,17944,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+tomb,1,3483,n,1,3,tomb,exact,gk cet4 cet6 ky,yes,6130,6183,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+tongue,1,3486,n|v,10,3,tongue,exact,zk gk cet4 cet6 ky toefl ielts,yes,2831,2871,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+toothbrush,1,3492,n,2,3,toothbrush,exact,zk gk,yes,15334,13896,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+toothpaste,1,3493,n,1,3,toothpaste,exact,zk gk,yes,15700,14165,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+tortoise,1,3496,n,1,3,tortoise,exact,gk cet4 cet6,yes,12178,13299,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+totally,1,3498,r,1,3,totally,exact,gk,yes,1608,1911,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+tourism,1,3502,n,1,3,tourism,exact,gk ielts,yes,4425,4721,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+tractor,1,3511,n,2,3,tractor,exact,gk cet4 cet6 ky toefl ielts,yes,7015,6548,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+trainer,1,3518,n,2,3,trainer,exact,gk,yes,3854,4458,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+tram,1,3520,n|v,4,3,tram,exact,gk cet4 cet6 ky,yes,6704,14885,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+translation,1,3523,n,7,3,translation,exact,gk cet4 cet6 ky toefl,yes,3982,4290,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+translator,1,3525,n,3,3,translator,exact,gk,yes,12093,6785,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+transparent,1,3524,a,4,3,transparent,exact,gk cet4 cet6 ky toefl ielts gre,yes,6902,5884,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+traveler,1,3529,n,1,3,traveler,exact,gk,yes,,3795,0,4,0,4,single_corpus_only,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+tremble,1,3534,n|v,2,3,tremble,exact,gk cet4 cet6 ky toefl ielts,yes,4432,5233,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+triangle,1,3537,n,4,3,triangle,exact,gk cet4 cet6 ky toefl ielts,yes,5296,5605,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+troop,2,3541;3542,n|v,6,3,troop,exact,gk cet4 cet6 ky toefl,yes,1740,1137,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+troublesome,1,3544,a,1,3,troublesome,exact,gk cet4 cet6 ky toefl,yes,9603,9839,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+truly,1,3548,r,4,3,truly,exact,gk cet4 cet6,yes,2576,1719,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+turning,1,3559,n,6,3,turning,exact,cet4 cet6 ielts,no,6345,6215,3,3,1,7,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+tutor,1,3560,n|v,3,3,tutor,exact,gk cet4 cet6 ky toefl ielts gre,yes,3839,9093,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+twist,1,3570,n|v,23,3,twist,exact,gk cet4 cet6 ky toefl ielts,yes,3673,3759,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+typewriter,1,3573,n,1,3,typewriter,exact,gk cet4 cet6 ky,yes,7660,9870,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+typist,1,3576,n,1,3,typist,exact,gk cet4 cet6 ky,yes,14970,22849,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+tyre,1,3577,n,1,3,tyre,exact,gk cet4 cet6 ielts,yes,4491,,4,0,0,4,single_corpus_only,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+unable,1,3582,a,3,3,unable,exact,gk cet4 cet6,yes,1474,2136,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+unbearable,1,3583,a,1,3,unbearable,exact,gk cet4 cet6 toefl,yes,9826,10284,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+unbelievable,1,3584,a,2,3,unbelievable,exact,gk,yes,8410,6070,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+uncertain,1,3585,a,7,3,uncertain,exact,gk cet4 cet6,yes,3532,4291,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+uncomfortable,1,3587,a,2,3,uncomfortable,exact,gk cet4 cet6 ielts,yes,4465,3640,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+unconditional,1,3588,a,3,3,unconditional,exact,gk ielts,yes,10278,11570,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+unconscious,1,3589,a|n,4,3,unconscious,exact,gk cet4 cet6 toefl ielts gre,yes,5026,5668,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+underline,1,3592,n|v,3,3,underline,exact,gk cet4 cet6 ky ielts,yes,4685,9691,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+understanding,1,3594,a|n,5,3,understanding,exact,gk cet4 cet6 ky ielts,yes,1260,1298,4,4,1,9,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+undertake,1,3595,v,5,3,undertake,exact,gk cet4 cet6 ky toefl ielts,yes,1604,4035,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+underwear,1,3596,n,1,3,underwear,exact,gk cet6,yes,8792,6524,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+undivided,1,3597,a,4,2,undivided,exact,gk,yes,19323,20480,2,1,1,4,moderate_frequency,possible_participle_or_adjective,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+undo,1,3598,v,5,3,undo,exact,gk cet4 cet6 ky toefl ielts,yes,6417,6632,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+unemployment,1,3599,n,1,3,unemployment,exact,gk cet6 ky ielts,yes,1495,3492,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+unfair,1,3600,a,1,3,unfair,exact,gk cet4 cet6 toefl ielts,yes,3625,4493,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+unfit,1,3601,a|v,4,3,unfit,exact,gk cet6,yes,9543,13433,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+unfold,1,3602,v,4,3,unfold,exact,gk cet6 ky toefl ielts gre,yes,7574,4541,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+unfortunate,1,3603,a|n,4,3,unfortunate,exact,gk cet4 cet6,yes,4076,4970,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+unfortunately,1,3604,r,1,2,unfortunately,exact,gk cet4 cet6 ky toefl,yes,1910,2016,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+unhappy,1,3605,a,4,3,unhappy,exact,gk cet4 cet6,yes,3622,4717,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+unhealthy,1,3606,a,3,3,unhealthy,exact,gk ielts,yes,11127,9533,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+unimportant,1,3608,a,2,2,unimportant,exact,gk,yes,9487,12727,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+union,1,3609,a|n,11,3,union,exact,gk cet4 cet6 ky toefl ielts,yes,467,1658,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+unite,1,3612,v,6,3,unite,exact,gk cet4 cet6 ky,yes,3628,4146,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+universal,1,3613,a|n,7,3,universal,exact,gk cet4 cet6 ky toefl ielts,yes,2968,2642,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+unknown,1,3616,a|n,8,3,unknown,exact,gk cet4 cet6,yes,2087,2825,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+unlike,1,3618,a,2,3,unlike,exact,gk cet4 cet6 ky,yes,2194,2468,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+unmarried,1,3619,a,1,2,unmarried,exact,gk,yes,7635,9465,3,3,1,7,strong_in_both_corpora,possible_participle_or_adjective,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+unpleasant,1,3620,a,1,3,unpleasant,exact,gk cet4 cet6,yes,4722,6472,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+unrest,1,3621,n,2,3,unrest,exact,gk ielts,yes,6135,8995,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+unsafe,1,3622,a,3,2,unsafe,exact,gk,yes,9721,9139,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+unsuccessful,1,3623,a,2,3,unsuccessful,exact,gk,yes,5651,7731,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+untrue,1,3625,a,4,3,untrue,exact,gk,yes,11112,11958,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+unwilling,1,3627,a,2,3,unwilling,exact,gk cet4 cet6,yes,5583,6237,3,3,1,7,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+upstairs,1,3632,a|n|r,4,3,upstairs,exact,zk gk cet4 cet6 ky,yes,3067,4381,4,4,1,9,strong_in_both_corpora,possible_plural_or_third_person,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+upward,1,3633,a|r,4,3,upward,exact,gk cet4 cet6 ky,yes,7607,6144,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+useless,1,3641,a,1,3,useless,exact,gk cet4 cet6 toefl ielts,yes,4667,5657,4,3,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+user,1,3642,n,3,3,user,exact,gk cet4 cet6,yes,806,1813,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+vacant,1,3646,a,2,3,vacant,exact,gk cet4 cet6 ky toefl,yes,6366,6751,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+vague,1,3647,a,3,3,vague,exact,gk cet4 cet6 ky toefl gre,yes,4265,4885,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+vain,1,3648,a,2,3,vain,exact,gk cet4 cet6 ky ielts gre,yes,9731,10144,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+valid,1,3649,a,2,3,valid,exact,gk cet4 cet6 ky toefl,yes,3211,4703,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+vanilla,1,3653,a|n,5,3,vanilla,exact,gk gre,yes,16038,5374,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+veal,1,3659,n,1,3,veal,exact,gk,yes,21553,12617,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+vertical,1,3663,a|n,6,3,vertical,exact,gk cet4 cet6 ky toefl ielts gre,yes,3857,4448,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+vest,1,3665,n|v,7,3,vest,exact,gk cet4 cet6 ky,yes,9247,6686,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+vice,1,3667,n,3,3,vice,exact,gk cet4 cet6 ky ielts,yes,7210,9910,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+viewer,1,3673,n,2,3,viewer,exact,gk,yes,4851,2478,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+villager,1,3675,n,1,3,villager,exact,gk,yes,6139,6100,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+vinegar,1,3676,n,2,3,vinegar,exact,gk cet4 cet6 ky toefl,yes,10241,5106,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+violate,1,3677,v,6,3,violate,exact,gk cet6 ky toefl ielts gre,yes,7012,2909,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+violent,1,3679,a,5,3,violent,exact,gk cet4 cet6 ky toefl ielts,yes,2807,2158,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+violinist,1,3681,n,1,3,violinist,exact,gk,yes,20187,13694,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+visa,1,3684,n|v,3,3,visa,exact,gk cet6 ky ielts,yes,8033,5525,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+voluntary,1,3694,a|n,4,3,voluntary,exact,gk cet4 cet6 ky toefl ielts,yes,2263,4701,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+voyage,1,3697,n|v,3,3,voyage,exact,gk cet4 cet6 ky toefl,yes,6502,6619,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+wag,1,3698,n|v,3,3,wag,exact,gk cet6 toefl gre,yes,14798,11879,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+waiter,1,3702,n,2,3,waiter,exact,gk cet4 cet6 ky ielts,yes,5772,5460,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+waitress,1,3704,n|v,2,3,waitress,exact,gk cet6 ky ielts,yes,10243,6390,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+walnut,1,3710,n,3,3,walnut,exact,gk cet6 toefl,yes,8979,7840,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+warehouse,1,3715,n|v,2,3,warehouse,exact,gk cet6 ky toefl ielts gre,yes,4490,4922,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+warmth,1,3718,n,5,3,warmth,exact,gk cet4 cet6 ky,yes,3527,4749,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+wax,1,3729,n|v,4,3,wax,exact,gk cet4 cet6 ky toefl ielts gre,yes,7744,7228,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+wayside,1,3731,n,1,3,wayside,exact,gk,yes,18440,17420,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+weakness,1,3736,n,5,3,weakness,exact,gk cet4 cet6,yes,2867,3487,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+wealthy,1,3738,a,1,3,wealthy,exact,gk cet4 cet6 ky,yes,4114,3015,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+weatherman,1,3741,n,1,3,weatherman,exact,gk,yes,34137,19246,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+web,1,3733,n|v,8,3,web,exact,gk cet6 ky ielts,yes,6919,3706,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+westerner,1,3758,n,1,2,westerner,exact,gk ielts,yes,15728,23903,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+wherever,1,3769,r,1,3,wherever,exact,gk cet4 cet6 ky,yes,3201,3710,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+whistle,1,3775,n|v,11,3,whistle,exact,gk cet4 cet6 ky ielts gre,yes,6960,6463,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+wildlife,1,3786,n,1,3,wildlife,exact,gk toefl ielts,yes,3597,3859,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+willing,1,3789,a|n,3,3,willing,exact,gk cet4 cet6 ky,yes,2233,1274,4,4,1,9,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+willingly,1,3790,r,1,2,willingly,exact,gk,yes,8478,9339,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+willingness,1,3791,n,1,2,willingness,exact,gk,yes,5008,4186,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+windbreaker,1,3795,n,1,2,windbreaker,exact,gk,yes,,18855,0,2,0,2,single_corpus_only,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+wipe,1,3802,n|v,2,3,wipe,exact,gk cet4 cet6 ky,yes,3112,2711,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+wolf,1,3812,n|v,4,3,wolf,exact,zk gk cet4 cet6 ky,yes,5062,4150,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+wooden,1,3817,a,2,3,wooden,exact,gk cet4 cet6 ky,yes,2452,2512,4,4,1,9,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+woollen,1,3819,a|n,2,3,woollen,exact,gk cet4 cet6,yes,8656,41582,3,0,1,4,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+workday,1,3822,n,2,3,workday,exact,gk,yes,42847,13488,0,2,1,3,moderate_frequency,,hold_without_more_evidence,独立频率证据较弱或不完整；没有其他证据前暂不纳入
+works,1,3827,n,4,3,works,exact,gk,yes,1208,1637,4,4,1,9,strong_in_both_corpora,possible_plural_or_third_person,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+worldwide,1,3830,a,3,3,worldwide,exact,gk cet4 ky toefl,yes,5136,4457,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+worm,1,3831,n|v,5,3,worm,exact,gk cet4 cet6 ky toefl,yes,5068,4993,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+worn,1,3832,a,2,3,worn,exact,gk,yes,14757,9882,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+worried,1,3833,a,2,3,worried,exact,gk,yes,2284,3261,4,4,1,9,strong_in_both_corpora,possible_participle_or_adjective,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+worthless,1,3838,a,2,3,worthless,exact,gk cet4 cet6,yes,9506,8848,3,3,1,7,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+wounded,1,3843,a|n,2,3,wounded,exact,gk,yes,6501,5376,3,3,1,7,strong_in_both_corpora,possible_participle_or_adjective,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+writing,1,3848,n,5,3,writing,exact,gk cet4 cet6 ky ielts,yes,1484,1528,4,4,1,9,strong_in_both_corpora,possible_participle_or_gerund,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查；另有词形复核标记
+yawn,1,3852,n|v,3,3,yawn,exact,gk cet4 cet6 ky toefl ielts gre,yes,10509,10649,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+yell,1,3854,n|v,4,3,yell,exact,gk cet4 cet6 ky toefl,yes,5181,2628,3,4,1,8,strong_in_both_corpora,,frequency_supported_extension,两套语料频率综合证据较强；可作为拓展词优先候选，但仍需词形和义项检查
+zebra,1,3868,n,1,3,zebra,exact,zk gk cet4 cet6 ky,yes,15998,13912,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+zip,1,3871,n|v,5,3,zip,exact,gk ky,yes,10485,8896,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+zipper,1,3873,n|v,2,3,zipper,exact,gk,yes,27054,10432,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+zoom,1,3876,n|v,5,3,zoom,exact,gk ky,yes,11707,8608,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核

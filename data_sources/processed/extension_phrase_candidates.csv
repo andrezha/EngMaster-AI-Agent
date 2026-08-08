@@ -1,0 +1,64 @@
+﻿legacy_word,legacy_row_count,legacy_rows,structural_type,oewn_match_type,oewn_lemmas,oewn_pos,oewn_sense_count,moby_wordlist_match_type,moby_wordlist_forms,moby_pos_match_type,moby_pos_forms,moby_pos_codes,normalized_headword_candidates,normalized_headword_evidence,existing_phrase_table_match,lexical_evidence_score,recommendation,reason
+bank account,1,342,multiword,exact,bank account,n,1,exact,bank account,exact,bank account,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+boat race,1,458,multiword,exact,boat race,n,1,exact,boat race,exact,boat race,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+bus stop,1,553,multiword,exact,bus stop,n,1,none,,exact,bus stop,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+can opener,1,583,multiword,exact,can opener,n,1,exact,can opener,exact,can opener,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+card games,1,601,multiword,none,,,0,none,,none,,,card game,card game:OEWN,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+chain store,1,650,multiword,exact,chain store,n,1,exact,chain store,exact,chain store,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+cheer up,1,675,multiword,exact,cheer up,v,2,none,,none,,,,,none,1,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+Christmas card,1,705,multiword,exact,Christmas card,n,1,exact,Christmas card,exact,Christmas card,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+Christmas Eve,1,707,multiword,exact,Christmas Eve,n,1,exact,Christmas Eve,exact,Christmas Eve,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+Christmas tree,1,706,multiword,exact,Christmas tree,n,5,exact,Christmas tree,exact,Christmas tree,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+computer game,1,806,multiword,exact,computer game,n,1,none,,none,,,,,none,1,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+department store,1,991,multiword,exact,department store,n,1,exact,department store,exact,department store,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+family name,1,1304,multiword,exact,family name,n,1,exact,family name,exact,family name,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+fitting room,1,1372,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+from mouth to mouth,1,2154,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+fruit juice,1,1467,multiword,exact,fruit juice,n,1,none,,none,,,,,none,1,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+garbage can,1,582,multiword,exact,garbage can,n,1,exact,garbage can,exact,garbage can,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+gold medal,1,2049,multiword,exact,gold medal,n,1,none,,exact,gold medal,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+Hong Kong,1,1685,multiword,none,,,0,exact,Hong Kong,exact,Hong Kong,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+hot dog,1,1698,multiword,exact,hot dog,n,3,exact,hot dog,exact,hot dog,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+human being,1,1710,multiword,exact,human being,n,1,exact,human being,exact,human being,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+information desk,1,1764,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+junk food,1,1848,multiword,exact,junk food,n,1,none,,none,,,,,none,1,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+junk mail,1,1847,multiword,exact,junk mail,n,1,none,,exact,junk mail,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+maple leaves,1,2017,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+melon seed,1,2933,multiword,none,,,0,none,,exact,melon seed,h,,,none,1,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+Middle East,1,2085,multiword,none,,,0,exact,Middle East,exact,Middle East,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+moon cake,1,2131,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+New York,1,2208,multiword,none,,,0,exact,New York,exact,New York,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+New Zealand,1,2209,multiword,none,,,0,exact,New Zealand,exact,New Zealand,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+New Zealander,1,2210,multiword,exact,New Zealander,a|n,2,none,,exact,New Zealander,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+Olympic Games,1,2289,multiword,exact,Olympic Games,n,2,exact,Olympic Games,exact,Olympic Games,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+opera house,1,2302,multiword,exact,opera house,n,1,exact,opera house,exact,opera house,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+pencil sharpener,1,2986,multiword,exact,pencil sharpener,n,1,none,,exact,pencil sharpener,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+primary school,1,2585,multiword,exact,primary school,n,1,exact,primary school,exact,primary school,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+raw material,1,2688,multiword,exact,raw material,n,1,exact,raw material,exact,raw material,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+record holder,1,2714,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+roller skating,1,2828,multiword,exact,roller skating,n,1,none,,none,,,roller skate,roller skate:OEWN+MobyWords+MobyPOS,none,1,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+shop assistant,1,3003,multiword,exact,shop assistant,n,1,exact,shop assistant,exact,shop assistant,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+short wave,1,3011,multiword,exact,short wave,n,1,none,,exact,short wave,h,,,none,2,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+side road,1,3027,multiword,exact,side road,n,1,none,,none,,,,,none,1,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+snack bar,1,3101,multiword,exact,snack bar,n,1,exact,snack bar,exact,snack bar,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+soft drink,1,3124,multiword,exact,soft drink,n,1,exact,soft drink,exact,soft drink,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+stainless steel,1,3199,multiword,exact,stainless steel,n,1,exact,stainless steel,exact,stainless steel,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+swimming pool,1,3331,multiword,exact,swimming pool,n,1,exact,swimming pool,exact,swimming pool,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+table manners,1,2013,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+table tennis,1,3344,multiword,exact,table tennis,n,1,exact,table tennis,exact,table tennis,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+tape recorder,1,3357,multiword,exact,tape recorder,n,1,exact,tape recorder,exact,tape recorder,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+telephone booth,2,475;3382,multiword,exact,telephone booth,n,1,exact,telephone booth,exact,telephone booth,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+the Antarctic,1,185,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+the Arctic,1,229,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+the Arctic Ocean,1,230,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+the Atlantic Ocean,1,278,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+the British,1,523,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+the butterfly,1,563,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+the North Pole,1,2509,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+the Pacific Ocean,1,2358,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+the South Pole,1,2510,multiword,none,,,0,none,,none,,,,,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+traffic lights,1,3516,multiword,none,,,0,none,,none,,,traffic light,traffic light:OEWN+MobyWords+MobyPOS,none,0,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+waiting room,1,3703,multiword,exact,waiting room,n,1,exact,waiting room,exact,waiting room,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+washing machine,1,3722,multiword,exact,washing machine,n,1,exact,washing machine,exact,washing machine,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+zebra crossing,1,3869,multiword,exact,zebra crossing,n,1,exact,zebra crossing,exact,zebra crossing,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核
+zip code,1,3872,multiword,casefold,ZIP code,n,1,exact,zip code,exact,zip code,h,,,none,3,move_to_phrase_review,多词表达不进入单词扩展表；转入短语候选复核

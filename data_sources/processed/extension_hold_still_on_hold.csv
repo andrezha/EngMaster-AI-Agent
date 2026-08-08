@@ -1,0 +1,13 @@
+﻿word,bnc_rank,contemporary_rank,relevance_score,oewn_pos,form_review_flags,review_decision,preferred_headword,educational_theme,decision_reason,review_method,review_status
+airmail,27385,31683,3,n|v,,retain_on_hold,,人与社会,邮政义项明确，但现代使用场景减少且频率支持较弱,ai_assisted_explicit_semantic_review,documented_recommendation
+birdcage,44688,32730,2,n,,retain_on_hold,,人与自然,词义明确但属于透明复合词，独立学习收益有限,ai_assisted_explicit_semantic_review,documented_recommendation
+changeable,20685,21649,3,a,,retain_on_hold,,一般阅读,词义常见但可由 change 规则派生，独立收录价值需控制,ai_assisted_explicit_semantic_review,documented_recommendation
+franc,7261,,3,n,,retain_on_hold,,人与社会,主要用于历史货币语境，现代通用学习价值有限,ai_assisted_explicit_semantic_review,documented_recommendation
+greengrocer,20056,31343,3,n,,retain_on_hold,,人与社会,英式地域色彩和透明复合结构较强，需控制扩展规模,ai_assisted_explicit_semantic_review,documented_recommendation
+gruel,36700,25887,3,n,,retain_on_hold,,人与自我,多见于历史或文学饮食语境，现代频率和适用面有限,ai_assisted_explicit_semantic_review,documented_recommendation
+hooray,21582,23679,3,n,,retain_on_hold,,人与社会,口语感叹用法明确，但不宜由名词频率直接决定收录,ai_assisted_explicit_semantic_review,documented_recommendation
+miniskirt,45253,20289,2,n,,retain_on_hold,,人与社会,服饰词义明确，但主题覆盖和阅读必要性有限,ai_assisted_explicit_semantic_review,documented_recommendation
+playroom,23028,20588,3,n,,retain_on_hold,,人与社会,透明复合词，独立收录收益有限,ai_assisted_explicit_semantic_review,documented_recommendation
+postbox,40238,,0,n,,retain_on_hold,,人与社会,英式邮政词，现代覆盖有限且可与 mailbox 对照处理,ai_assisted_explicit_semantic_review,documented_recommendation
+shaver,34831,25551,3,n,,retain_on_hold,,人与自我,日用品词义明确但属于透明派生词，独立学习收益有限,ai_assisted_explicit_semantic_review,documented_recommendation
+sunburnt,34021,32133,3,a,,retain_on_hold,,人与自我,英式分词形容词，宜先与 sunburn/sunburned 统一词族,ai_assisted_explicit_semantic_review,documented_recommendation

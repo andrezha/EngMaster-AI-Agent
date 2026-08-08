@@ -1,0 +1,13 @@
+{
+  "dataset_id": "engmaster-extension-secondary-review",
+  "record_count": 252,
+  "route_counts": {
+    "original_medium_frequency": 217,
+    "promoted_from_low_frequency_semantic_review": 33,
+    "normalized_legacy_surface_form": 2
+  },
+  "curriculum_overlap_count": 0,
+  "special_items_removed": [
+    "f"
+  ]
+}

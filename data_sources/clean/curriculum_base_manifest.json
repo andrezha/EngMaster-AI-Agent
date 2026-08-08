@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "dataset_id": "engmaster-clean-curriculum-base",
+  "generated_by": "tools/build_clean_curriculum_base.py",
+  "source_file": "data_sources/processed/curriculum_vocabulary.json",
+  "source_sha256": "368fa88f103149e545b12900d6d88904b13d2bc4a80def8b7c2834fc8eeacbef",
+  "valid": true,
+  "errors": [],
+  "source_entry_count": 3000,
+  "atomic_record_count": 3004,
+  "slash_source_entry_count": 4,
+  "split_source_sequences": [
+    364,
+    463,
+    2005,
+    2295
+  ],
+  "level_source_counts": {
+    "compulsory_education": 1500,
+    "high_school_selective_compulsory": 1001,
+    "high_school_compulsory": 499
+  },
+  "level_atomic_counts": {
+    "compulsory_education": 1501,
+    "high_school_selective_compulsory": 1004,
+    "high_school_compulsory": 499
+  },
+  "record_status_counts": {
+    "pending_definition_and_phonetics": 3004
+  },
+  "json_sha256": "9f736d874789a38f2681c7b1f396106295a8e4d067cdc61fa22e6fe4961b3ec8",
+  "csv_sha256": "d14bf7226bccbe6cfbac791cd452098065f52c1f771dffc126da5c0570278a1c",
+  "content_policy": {
+    "legacy_definitions_copied": false,
+    "legacy_phonetics_copied": false,
+    "legacy_order_used": false,
+    "enrichment_fields_initially_empty": true
+  }
+}

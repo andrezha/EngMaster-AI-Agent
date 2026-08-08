@@ -1,0 +1,2 @@
+7d749f6e2c39e6970e4997839dcf6e42fd281f3c2fae0171d2192bae8cfa4b51  english-wordnet-2025-json.zip
+672cc8b5663e8dc74c4b07a9dcf477193853575b119908fd3dc0aeeb60a9dbbb  LICENSE.md

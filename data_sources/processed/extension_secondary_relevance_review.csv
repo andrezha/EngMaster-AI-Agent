@@ -1,0 +1,219 @@
+﻿legacy_word,legacy_row_count,legacy_rows,oewn_pos,oewn_sense_count,lexical_evidence_score,ecdict_word,ecdict_match_type,ecdict_tags_audit_only,ecdict_gk_tag,bnc_rank,contemporary_rank,bnc_points,contemporary_points,cross_corpus_bonus,relevance_score,frequency_profile,form_review_flags,recommendation,reason
+acre,1,47,n,1,3,acre,exact,gk cet4 ky toefl,yes,3286,,4,0,0,4,single_corpus_only,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+admirable,1,69,a,2,3,admirable,exact,gk toefl,yes,8547,10469,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+aeroplane,1,86,n,1,3,aeroplane,exact,gk cet4 cet6 ky,yes,6392,30278,3,1,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+airplane,1,118,n,1,3,airplane,exact,zk gk cet4,yes,21702,3519,1,4,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+airspace,1,120,n,2,3,airspace,exact,gk,yes,23446,16254,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+algebra,1,125,n,1,3,algebra,exact,gk cet4 cet6 toefl,yes,16477,12790,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+allergic,1,129,a,2,3,allergic,exact,gk ielts gre,yes,14426,9143,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+alphabet,1,139,n,2,3,alphabet,exact,gk cet4 cet6 ky,yes,11157,9190,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+aluminium,1,146,n,1,3,aluminium,exact,gk cet4 cet6 toefl gre,yes,5580,32731,3,1,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+amaze,1,151,v,2,3,amaze,exact,gk cet4 cet6 ky toefl ielts,yes,11151,8607,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+arithmetic,1,236,a|n,2,3,arithmetic,exact,gk cet4 cet6 ky toefl,yes,8791,11378,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+astronomy,1,272,n,1,3,astronomy,exact,gk cet6 ky toefl ielts,yes,10702,6469,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+attentively,1,287,r,1,2,attentively,exact,gk,yes,19677,18857,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+bacterium,1,321,n,1,3,bacterium,exact,gk cet6 ky ielts gre,yes,4650,,4,0,0,4,single_corpus_only,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+bandage,1,339,n|v,3,3,bandage,exact,gk cet6 ky ielts gre,yes,10433,9428,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+barber,1,345,n|v,2,3,barber,exact,gk cet4 ky toefl ielts,yes,12564,9131,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+bathrobe,1,362,n,1,3,bathrobe,exact,gk,yes,33266,13547,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+bathtub,1,364,n,1,3,bathtub,exact,gk,yes,34329,9766,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+beehive,1,389,n,4,3,beehive,exact,gk,yes,19831,17858,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+bent,1,413,a|n,7,3,bent,exact,gk toefl ielts gre,yes,14388,12145,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+bingo,1,428,n,1,3,bingo,exact,gk,yes,12087,15245,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+biochemistry,1,429,n,1,3,biochemistry,exact,gk toefl,yes,16248,17884,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+birthplace,1,436,n,2,3,birthplace,exact,gk,yes,11609,11526,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+boating,1,459,n,1,3,boating,exact,gk,yes,21636,15104,1,2,1,4,moderate_frequency,possible_participle_or_gerund,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+bookcase,1,467,n,1,3,bookcase,exact,gk ielts,yes,15277,12527,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+bookshelf,1,469,n,1,3,bookshelf,exact,gk ielts,yes,22136,11170,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+bookstore,1,471,n,1,3,bookstore,exact,gk,yes,33117,6186,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+botany,1,483,n,2,3,botany,exact,gk toefl gre,yes,15909,20491,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+bravery,1,502,n,2,3,bravery,exact,gk,yes,11705,12303,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+breathless,1,511,a,3,3,breathless,exact,gk toefl,yes,8961,10896,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+brewery,1,512,n,1,3,brewery,exact,gk,yes,5781,15159,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+brotherhood,1,531,n,4,3,brotherhood,exact,gk,yes,11836,13702,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+brunch,1,533,n|v,2,3,brunch,exact,gk,yes,36288,13712,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+bungalow,1,544,n,1,3,bungalow,exact,gk ielts,yes,6535,10710,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+burglar,1,547,n,1,3,burglar,exact,gk cet6 ky toefl ielts,yes,7271,11050,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+bush,1,554,a|n|v,6,3,bush,exact,gk cet4 ky toefl,yes,2801,34013,4,1,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+businesswoman,1,557,n,1,3,businesswoman,exact,gk,yes,23054,19286,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+caption,1,597,n|v,4,3,caption,exact,gk ielts gre,yes,10185,9117,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+cheque,1,683,n|v,2,3,cheque,exact,gk cet4 cet6 ky,yes,2753,31750,4,1,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+coke,1,761,n|v,3,3,coke,exact,zk gk,yes,7803,12273,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+comma,1,777,n,2,3,comma,exact,gk gre,yes,10368,18884,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+considerate,1,835,a,1,3,considerate,exact,gk cet4 cet6 ky toefl ielts,yes,13960,17092,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+cooker,1,866,n,1,3,cooker,exact,zk gk,yes,7276,13730,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+cordless,1,871,a,1,3,cordless,exact,gk,yes,17375,15786,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+cosy,1,880,a|n|s,4,3,cosy,exact,gk ky ielts,yes,6933,36003,3,1,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+cubic,1,919,a,2,3,cubic,exact,gk cet4 cet6 toefl,yes,10327,7772,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+disobey,1,1069,v,1,3,disobey,exact,gk,yes,18583,15476,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+drier,1,1111,n,2,3,drier,exact,gk,yes,19790,22822,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+dustbin,1,1130,n,1,2,dustbin,exact,gk,yes,9594,28258,3,1,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+enquiry,1,1207,n,3,2,enquiry,exact,gk ielts,yes,2472,24159,4,1,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+eyesight,1,1285,n,1,3,eyesight,exact,gk cet4 cet6 ky ielts,yes,13749,14627,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+eyewitness,1,1286,n|v,2,3,eyewitness,exact,gk toefl,yes,19899,8633,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+f,1,1287,n,1,3,F,casefold,gk,yes,4238,,4,0,0,4,single_corpus_only,single_letter,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+fingernail,1,1358,n,1,3,fingernail,exact,gk,yes,12348,7769,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+firewood,1,1363,n,1,3,firewood,exact,gk,yes,15317,12444,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+flaming,1,1377,a|n,3,3,flaming,exact,gk,yes,15457,12654,2,2,1,5,moderate_frequency,possible_participle_or_gerund,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+flashlight,1,1379,n,1,3,flashlight,exact,gk toefl,yes,25749,6373,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+fluency,1,1392,n,3,3,fluency,exact,gk,yes,14342,13181,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+forgetful,1,1420,a,3,3,forgetful,exact,gk,yes,19606,23938,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+fortnight,1,1426,n,1,3,fortnight,exact,gk cet4 cet6 ky ielts,yes,4290,22633,4,1,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+fragrant,1,1441,a,1,3,fragrant,exact,gk cet6 ky toefl gre,yes,12331,9055,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+freeway,1,1445,n,1,3,freeway,exact,gk,yes,23892,6142,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+fried,1,1455,a,1,3,fried,exact,gk,yes,10093,5612,2,3,1,6,strong_with_moderate_cross_corpus_support,possible_participle_or_adjective,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+fright,1,1459,n|v,2,3,fright,exact,gk cet6 ky toefl,yes,10016,12606,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+gale,1,1481,n,1,3,gale,exact,gk toefl ielts gre,yes,8689,12845,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+goldfish,1,1527,n,1,3,goldfish,exact,gk,yes,10625,16320,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+granny,1,1551,n,3,3,granny,exact,zk gk,yes,7205,18824,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+graph,1,1553,n|v,5,3,graph,exact,gk cet4 cet6 ky toefl ielts,yes,4596,26137,4,1,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+grocer,1,1568,n,1,3,grocer,exact,gk cet4 cet6 ky,yes,11854,14410,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+haircut,1,1588,n,2,3,haircut,exact,gk cet4 cet6,yes,12035,8476,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+harbour,1,1608,n|v,6,3,harbour,exact,gk cet4 cet6 ielts,yes,3526,36866,4,1,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+headmistress,1,1629,n,1,3,headmistress,exact,gk,yes,12713,27070,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+hibernation,1,1659,n,3,2,hibernation,exact,gk toefl,yes,22451,19620,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+hilly,1,1666,a,1,3,hilly,exact,gk toefl,yes,15079,15597,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+hive,1,1673,n|v,6,3,hive,exact,gk toefl gre,yes,11665,11401,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+hostess,1,1696,n,3,3,hostess,exact,gk cet4 cet6 ky,yes,9940,10323,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+howl,1,1706,n|v,7,3,howl,exact,gk cet6 ky toefl ielts,yes,10307,8380,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+humour,1,1712,n|v,7,3,humour,exact,gk cet4 cet6,yes,3219,,4,0,0,4,single_corpus_only,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+inland,1,1769,a|r,2,3,inland,exact,gk cet6 ky toefl ielts,yes,5084,11233,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+inventor,1,1803,n,1,3,inventor,exact,gk cet4 cet6,yes,10125,8188,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+irrigate,1,1809,v,2,3,irrigate,exact,gk ky toefl gre,yes,26536,16313,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+irrigation,1,1810,n,2,3,irrigation,exact,gk cet6 toefl ielts,yes,12413,6974,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+jewelry,1,1829,n,1,3,jewelry,exact,gk ky toefl ielts,yes,,4187,0,4,0,4,single_corpus_only,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+juicy,1,1840,a,4,3,juicy,exact,gk toefl,yes,14477,8742,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+labourer,1,1879,n,1,3,labourer,exact,gk,yes,5556,32892,3,1,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+lame,1,1885,a|n|v,5,3,lame,exact,gk cet4 cet6 ky ielts,yes,11787,9982,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+lavatory,1,1902,n,3,3,lavatory,exact,gk cet4 cet6 ky,yes,7030,19680,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+learned,1,1914,a,3,3,learned,exact,gk cet4 cet6 ky,yes,6667,10842,3,2,1,6,strong_with_moderate_cross_corpus_support,possible_participle_or_adjective,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+leftover,1,1921,a|n,2,3,leftover,exact,gk,yes,22683,9769,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+lemonade,1,1926,n,1,3,lemonade,exact,zk gk,yes,15571,11562,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+locust,1,1970,n,3,3,locust,exact,gk cet6 gre,yes,21741,15256,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+lorry,1,1976,n,2,3,lorry,exact,gk cet4 cet6 ky,yes,3524,24926,4,1,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+loudspeaker,1,1983,n,1,3,loudspeaker,exact,gk cet4 cet6 ky,yes,14516,12875,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+mailbox,1,2000,n,2,3,mailbox,exact,gk,yes,35234,9004,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+maple,1,2016,n,2,3,maple,exact,gk cet6 gre,yes,10494,5571,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+melon,1,2056,n,2,3,melon,exact,gk cet4 cet6 ky gre,yes,12740,9886,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+memorize,1,2060,v,1,3,memorize,exact,gk toefl,yes,21017,8276,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+mend,1,2061,n|v,4,3,mend,exact,zk gk toefl gre,yes,7566,10849,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+merciful,1,2067,a,2,3,merciful,exact,gk cet6 toefl,yes,19546,17622,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+minibus,1,2096,n,1,2,minibus,exact,gk,yes,15504,27815,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+mistaken,1,2110,a,2,3,mistaken,exact,gk,yes,9508,12710,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+mommy,1,2123,n,1,2,mommy,exact,,no,47154,9690,0,3,1,4,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+mop,1,2132,n|v,3,3,mop,exact,gk cet6,yes,11184,12312,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+motorbike,1,2144,n|v,2,3,motorbike,exact,gk,yes,10026,22347,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+mountainous,1,2148,a,3,3,mountainous,exact,gk cet6 gre,yes,14181,12342,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+moustache,1,2151,n,1,3,moustache,exact,gk ielts,yes,7198,16314,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+mouthful,1,2153,n,2,3,mouthful,exact,gk cet4 cet6,yes,9085,13176,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+mutton,1,2173,n,1,3,mutton,exact,gk cet4 cet6 ky gre,yes,15305,22179,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+necklace,1,2193,n,1,3,necklace,exact,gk cet4 cet6 ky,yes,10178,6583,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+noisily,1,2228,r,1,2,noisily,exact,gk,yes,12642,16141,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+numb,1,2255,a|v,4,3,numb,exact,gk ky toefl ielts gre,yes,12639,9317,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+offence,1,2276,n,5,3,offence,exact,gk cet6 ky ielts,yes,1550,22003,4,1,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+omelette,1,2290,n,1,2,omelette,exact,gk,yes,15720,22503,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+opener,1,2299,n,3,3,opener,exact,gk,yes,10456,7761,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+organise,1,2319,v,6,2,organise,exact,gk,yes,1672,,4,0,0,4,single_corpus_only,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+outdoors,1,2333,n|r,2,3,outdoors,exact,gk cet4 cet6 toefl,yes,15004,7559,2,3,1,6,strong_with_moderate_cross_corpus_support,possible_plural_or_third_person,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+outspoken,1,2340,a,2,3,outspoken,exact,gk toefl ielts gre,yes,11487,8801,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+overcoat,1,2345,n,2,3,overcoat,exact,zk gk cet4 cet6 ky,yes,10596,12679,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+overweight,1,2349,a|n,2,3,overweight,exact,gk,yes,10207,6628,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+paddle,1,2362,n|v,10,3,paddle,exact,gk ky toefl ielts,yes,10365,9187,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+penny,1,2422,n,2,3,penny,exact,zk gk cet4 cet6 ky ielts,yes,4306,,4,0,0,4,single_corpus_only,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+pianist,1,2458,n,1,3,pianist,exact,gk toefl ielts,yes,10127,8252,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+pineapple,1,2472,n,2,3,pineapple,exact,gk cet6 toefl,yes,12015,9086,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+pint,1,2475,n,3,3,pint,exact,gk cet4 cet6 ky,yes,3977,,4,0,0,4,single_corpus_only,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+playmate,1,2492,n,1,3,playmate,exact,gk,yes,21857,14534,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+poisonous,1,2507,a,3,3,poisonous,exact,gk cet4 cet6 ky gre,yes,9555,10074,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+popcorn,1,2525,n,2,3,popcorn,exact,gk toefl,yes,25500,8839,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+porridge,1,2529,n,1,3,porridge,exact,gk cet4 cet6 gre,yes,11936,18724,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+porter,1,2532,n|v,5,3,porter,exact,gk cet4 cet6 ky,yes,6464,11418,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+postage,1,2540,n,2,3,postage,exact,gk cet4 cet6 ky toefl ielts,yes,9763,13293,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+prairie,1,2557,n,1,3,prairie,exact,gk cet6 toefl,yes,20980,6846,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+preview,1,2581,n|v,3,3,preview,exact,gk gre,yes,11861,7529,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+punctuate,1,2632,v,3,3,punctuate,exact,gk,yes,11199,9198,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+punctuation,1,2633,n,3,3,punctuation,exact,gk,yes,12610,15876,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+quake,1,2647,n|v,3,3,quake,exact,gk,yes,23257,8561,1,3,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+quarrel,1,2651,n|v,3,3,quarrel,exact,gk cet4 cet6 ky,yes,7746,11177,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+quilt,1,2659,n|v,3,3,quilt,exact,gk cet4 cet6 ky toefl,yes,12326,6124,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+raincoat,1,2675,n,1,3,raincoat,exact,zk gk ielts,yes,12667,15201,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+rainfall,1,2676,n,1,3,rainfall,exact,gk toefl ielts,yes,10343,9169,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+rectangle,1,2720,n,1,3,rectangle,exact,gk cet6 ky toefl ielts gre,yes,10208,10058,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+redirect,1,2722,v,1,2,redirect,exact,gk toefl gre,yes,14745,11425,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+retell,1,2790,v,3,2,retell,exact,zk gk cet4 cet6,yes,34354,19549,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+reuse,1,2793,v,1,2,reuse,exact,gk,yes,22536,12946,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+reviewer,1,2795,n,2,2,reviewer,exact,gk,yes,10297,8282,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+ripen,1,2815,v,2,3,ripen,exact,gk cet4 cet6 toefl gre,yes,14908,14750,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+rooster,1,2831,n,1,3,rooster,exact,gk cet6 toefl,yes,35410,11564,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+roundabout,1,2838,a|n,4,3,roundabout,exact,gk cet6 ky gre,yes,7908,21821,3,1,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+sailing,1,2862,n,4,3,sailing,exact,gk ielts,yes,5717,10027,3,2,1,6,strong_with_moderate_cross_corpus_support,possible_participle_or_gerund,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+salute,1,2872,n|v,9,3,salute,exact,gk cet4 cet6 ky ielts gre,yes,11386,8974,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+savage,1,2883,a|n|v,8,3,savage,exact,gk cet6 ky ielts gre,yes,7623,10011,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+sceptical,1,2893,a,2,2,sceptical,exact,gk cet6 ky ielts gre,yes,6418,37694,3,1,1,5,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+schoolmate,1,2900,n,1,3,schoolmate,exact,gk,yes,33562,19024,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+scold,1,2905,n|v,3,3,scold,exact,gk cet4 cet6 ky ielts,yes,15769,10246,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+seaman,1,2917,n,1,3,seaman,exact,gk cet4 cet6,yes,7264,17406,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+seaside,1,2920,n,1,3,seaside,exact,gk cet6 ky,yes,7563,12240,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+seaweed,1,2923,n,1,3,seaweed,exact,gk toefl,yes,14677,13198,2,2,1,5,moderate_frequency,possible_participle_or_adjective,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+semicircle,1,2944,n,1,3,semicircle,exact,gk,yes,33785,19191,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+shabby,1,2972,a,2,3,shabby,exact,gk cet6 ky toefl ielts gre,yes,10226,10996,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+shopkeeper,1,3004,n,1,3,shopkeeper,exact,gk cet4 cet6 ky,yes,8491,12729,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+sidewalk,1,3026,n,1,3,sidewalk,exact,,no,22023,3770,1,4,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+sixteenth,1,3062,a|n,3,3,sixteenth,exact,gk,yes,5786,10249,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+skyscraper,1,3076,n,1,3,skyscraper,exact,gk cet6 ky toefl gre,yes,20049,10626,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+smelly,1,3092,a,1,3,smelly,exact,gk ielts,yes,11848,14701,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+snowball,1,3108,n|v,6,3,snowball,exact,gk,yes,19913,13612,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+snowman,1,3109,n,1,3,snowman,exact,gk,yes,24155,18086,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+spaceship,1,3154,n,1,3,spaceship,exact,gk cet4 cet6 ky toefl,yes,16374,11577,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+spade,1,3155,n|v,3,3,spade,exact,gk cet4 cet6 ky,yes,8703,13365,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+spaghetti,1,3156,n,2,3,spaghetti,exact,,no,12398,9189,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+sparrow,1,3160,n,2,3,sparrow,exact,gk cet4 cet6 toefl,yes,14590,14123,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+spoken,1,3178,a,1,3,spoken,exact,gk,yes,6629,11639,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+spoonful,1,3182,n,1,3,spoonful,exact,gk,yes,15630,14845,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+squid,1,3191,n,2,3,squid,exact,gk,yes,16736,11582,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+squirrel,1,3192,n,2,3,squirrel,exact,gk cet4 cet6 ky toefl gre,yes,10225,6904,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+stainless,1,3198,a|n,2,3,stainless,exact,gk cet6,yes,11524,8262,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+statesman,1,3213,n,1,3,statesman,exact,cet4 cet6 ky ielts,no,8718,10075,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+stewardess,1,3227,n,1,3,stewardess,exact,gk cet4 cet6,yes,22477,17096,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+stout,1,3240,a|n,5,3,stout,exact,gk cet6 toefl gre,yes,9786,13326,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+sunrise,1,3295,a|n,4,3,sunrise,exact,gk cet4 cet6 ky toefl,yes,11920,7313,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+tasteless,1,3361,a,2,3,tasteless,exact,gk toefl,yes,18938,17733,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+teamwork,1,3371,n,1,3,teamwork,exact,gk,yes,15491,11799,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+telegram,1,3379,n,1,3,telegram,exact,gk cet4 cet6 ky,yes,9971,12224,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+telegraph,1,3380,n|v,2,3,telegraph,exact,gk cet4 cet6 ky toefl,yes,4974,26182,4,1,1,6,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+thermos,1,3423,n,1,3,thermos,exact,gk,yes,24637,17096,1,2,1,4,moderate_frequency,possible_plural_or_third_person,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+thirst,1,3433,n|v,4,3,thirst,exact,gk cet4 cet6 ky ielts,yes,11770,10813,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+thunderstorm,1,3452,n,1,3,thunderstorm,exact,gk toefl,yes,18737,10620,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+tiresome,1,3471,a,1,3,tiresome,exact,cet6 ky,no,13772,17944,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+toothbrush,1,3492,n,2,3,toothbrush,exact,zk gk,yes,15334,13896,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+toothpaste,1,3493,n,1,3,toothpaste,exact,zk gk,yes,15700,14165,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+tortoise,1,3496,n,1,3,tortoise,exact,gk cet4 cet6,yes,12178,13299,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+tram,1,3520,n|v,4,3,tram,exact,gk cet4 cet6 ky,yes,6704,14885,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+translator,1,3525,n,3,3,translator,exact,gk,yes,12093,6785,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+traveler,1,3529,n,1,3,traveler,exact,gk,yes,,3795,0,4,0,4,single_corpus_only,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+typist,1,3576,n,1,3,typist,exact,gk cet4 cet6 ky,yes,14970,22849,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+tyre,1,3577,n,1,3,tyre,exact,gk cet4 cet6 ielts,yes,4491,,4,0,0,4,single_corpus_only,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+unbearable,1,3583,a,1,3,unbearable,exact,gk cet4 cet6 toefl,yes,9826,10284,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+unconditional,1,3588,a,3,3,unconditional,exact,gk ielts,yes,10278,11570,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+undivided,1,3597,a,4,2,undivided,exact,gk,yes,19323,20480,2,1,1,4,moderate_frequency,possible_participle_or_adjective,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核；另有词形复核标记
+unfit,1,3601,a|v,4,3,unfit,exact,gk cet6,yes,9543,13433,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+unhealthy,1,3606,a,3,3,unhealthy,exact,gk ielts,yes,11127,9533,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+unimportant,1,3608,a,2,2,unimportant,exact,gk,yes,9487,12727,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+untrue,1,3625,a,4,3,untrue,exact,gk,yes,11112,11958,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+vain,1,3648,a,2,3,vain,exact,gk cet4 cet6 ky ielts gre,yes,9731,10144,3,2,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+vanilla,1,3653,a|n,5,3,vanilla,exact,gk gre,yes,16038,5374,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+veal,1,3659,n,1,3,veal,exact,gk,yes,21553,12617,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+vinegar,1,3676,n,2,3,vinegar,exact,gk cet4 cet6 ky toefl,yes,10241,5106,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+violinist,1,3681,n,1,3,violinist,exact,gk,yes,20187,13694,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+wag,1,3698,n|v,3,3,wag,exact,gk cet6 toefl gre,yes,14798,11879,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+waitress,1,3704,n|v,2,3,waitress,exact,gk cet6 ky ielts,yes,10243,6390,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+wayside,1,3731,n,1,3,wayside,exact,gk,yes,18440,17420,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+weatherman,1,3741,n,1,3,weatherman,exact,gk,yes,34137,19246,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+westerner,1,3758,n,1,2,westerner,exact,gk ielts,yes,15728,23903,2,1,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+woollen,1,3819,a|n,2,3,woollen,exact,gk cet4 cet6,yes,8656,41582,3,0,1,4,mixed_between_corpora,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+worn,1,3832,a,2,3,worn,exact,gk,yes,14757,9882,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+yawn,1,3852,n|v,3,3,yawn,exact,gk cet4 cet6 ky toefl ielts gre,yes,10509,10649,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+zebra,1,3868,n,1,3,zebra,exact,zk gk cet4 cet6 ky,yes,15998,13912,2,2,1,5,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+zip,1,3871,n|v,5,3,zip,exact,gk ky,yes,10485,8896,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+zipper,1,3873,n|v,2,3,zipper,exact,gk,yes,27054,10432,1,2,1,4,moderate_frequency,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核
+zoom,1,3876,n|v,5,3,zoom,exact,gk ky,yes,11707,8608,2,3,1,6,strong_with_moderate_cross_corpus_support,,secondary_relevance_review,频率证据中等或两套语料差异较大；需结合高中阅读主题复核

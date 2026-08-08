@@ -1,0 +1,23 @@
+{
+  "dataset_id": "engmaster-release-word-master-3800",
+  "status": "release_english_scope_frozen",
+  "record_count": 3800,
+  "curriculum_record_count": 3004,
+  "extension_record_count": 796,
+  "removed_extension_count": 212,
+  "legacy_rows": 3876,
+  "legacy_unique_exact_words": 3854,
+  "overlap": {
+    "record_count": 3800,
+    "exact_headword_overlap": 3412,
+    "old_unique_covered_exact_or_variant": 3443,
+    "old_unique_coverage_rate": 0.8933575505967826,
+    "old_casefold_coverage_rate": 0.8935341469748117,
+    "new_headword_exact_legacy_rate": 0.8978947368421053,
+    "new_only_headwords": 388,
+    "old_only_forms": 411
+  },
+  "definitions_and_phonetics_status": "intentionally_blank",
+  "legacy_content_reused": false,
+  "target_note": "Product-size target only; not an official examination word count."
+}

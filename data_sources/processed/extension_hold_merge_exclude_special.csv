@@ -1,0 +1,8 @@
+﻿word,bnc_rank,contemporary_rank,relevance_score,oewn_pos,form_review_flags,review_decision,preferred_headword,educational_theme,decision_reason,review_method,review_status
+bedclothes,,,0,n,possible_plural_or_third_person,merge_with_preferred_headword,bedding,人与自我,与更通用的集合词 bedding 高度重合，避免重复收词,ai_assisted_explicit_semantic_review,documented_recommendation
+glasshouse,22763,39029,3,n,,merge_with_preferred_headword,greenhouse,人与自然,与课标词 greenhouse 同义度高，优先保留课标词头,ai_assisted_explicit_semantic_review,documented_recommendation
+necktie,42992,17026,3,n,,merge_with_preferred_headword,tie,人与社会,课标词 tie 已覆盖核心物品义，避免同义重复扩张,ai_assisted_explicit_semantic_review,documented_recommendation
+salesgirl,,29991,1,n,,exclude_dated_or_gendered,salesperson,人与社会,带不必要的性别限定且现代用法趋于过时，不纳入通用学习词头,ai_assisted_explicit_semantic_review,documented_recommendation
+scores,,,0,n,possible_plural_or_third_person,merge_with_preferred_headword,score,一般阅读,课标词 score 已覆盖词头；旧复数形式不另建扩展记录,ai_assisted_explicit_semantic_review,documented_recommendation
+skillfully,,13724,2,r,,merge_with_preferred_headword,skillful,人与自我,规则副词派生，优先在 skillful 词族中呈现,ai_assisted_explicit_semantic_review,documented_recommendation
+superman,22870,20120,3,n,,move_to_special_reference_review,,人与社会,普通名词、角色专名及俚语义可能混淆，不进普通扩展表,ai_assisted_explicit_semantic_review,documented_recommendation

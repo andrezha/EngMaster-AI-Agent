@@ -1,0 +1,4 @@
+﻿word,replaces_legacy_form,oewn_pos,bnc_rank,contemporary_rank,relevance_score,recommendation,oewn_lexicographer_classes,theme_candidates,independent_inclusion_reason,reason
+bedding,beddings,n,9522,11136,6,secondary_relevance_review,noun.artifact,人与社会,规范词头的独立语料频率（BNC 9522；当代语料 11136；评分 6/9）,使用规范词头重新计算独立语料频率；旧词表释义、音标和标签均未沿用
+refreshment,refreshments,n,7812,14418,6,secondary_relevance_review,noun.act|noun.food,人与自我|人与社会,规范词头的独立语料频率（BNC 7812；当代语料 14418；评分 6/9）,使用规范词头重新计算独立语料频率；旧词表释义、音标和标签均未沿用
+souvenir,souvenirs,n,8608,8063,7,frequency_supported_extension,noun.artifact|noun.cognition,人与自我|人与社会,规范词头的独立语料频率（BNC 8608；当代语料 8063；评分 7/9）,使用规范词头重新计算独立语料频率；旧词表释义、音标和标签均未沿用

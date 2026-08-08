@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "evidence_set_id": "engmaster-vocabulary-provenance-20260808",
+  "generated_on": "2026-08-08",
+  "release_dataset": "engmaster-release-word-master-3800",
+  "repository_head_at_generation": "b98c95955bc4ad863551a3600961e496cb68d1fa",
+  "git_commit_warning": "The repository HEAD is recorded, but this manifest does not assert that every listed file is committed. Verify git status, commit the evidence set, and create a release tag before external reliance.",
+  "file_count": 54,
+  "files": [
+    {
+      "category": "audit_reports",
+      "path": "data_sources/processed/current_vocab_curriculum_match_report.md",
+      "size_bytes": 2589,
+      "sha256": "aed61b9dd1c717a031dec53ff136be87898233edbe12416576da3ec7bb304283"
+    },
+    {
+      "category": "audit_reports",
+      "path": "data_sources/processed/curriculum_vocabulary_report.md",
+      "size_bytes": 1842,
+      "sha256": "128f2ecb34d963f290f9ffdc4b19517a8ed6ec8d6aef072103dad46d09c77801"
+    },
+    {
+      "category": "audit_reports",
+      "path": "data_sources/processed/extension_form_and_reason_report.md",
+      "size_bytes": 1424,
+      "sha256": "c48d00b03c075edfd65742c558a63a71d8bcd052287cead8cf1a0258634f01eb"
+    },
+    {
+      "category": "audit_reports",
+      "path": "data_sources/processed/extension_hold_review_report.md",
+      "size_bytes": 988,
+      "sha256": "a57402003058898e46931c7b4c176130db787d1401fb6513f215c74a2483df21"
+    },
+    {
+      "category": "audit_reports",
+      "path": "data_sources/processed/extension_relevance_scoring_report.md",
+      "size_bytes": 2645,
+      "sha256": "03f68c76db56cdee5daab0ec101f61a8e8f27ae0c2414759802638921695ccc9"
+    },
+    {
+      "category": "audit_reports",
+      "path": "data_sources/processed/extension_screening_report.md",
+      "size_bytes": 2716,
+      "sha256": "ac0ce46ddee99763ce020b3b93af0c89fa6eacfe80b4dc57dc04a6aa7fa42346"
+    },
+    {
+      "category": "build_scripts",
+      "path": "tools/build_clean_curriculum_base.py",
+      "size_bytes": 9792,
+      "sha256": "72ef44e1cd013a8248bfa03730665ff2f8ebeb4f2649d3cc31b5d131541858f8"
+    },
+    {
+      "category": "build_scripts",
+      "path": "tools/build_extension_priority_draft.py",
+      "size_bytes": 6507,
+      "sha256": "3c291eee6db29645ea7d838b4ed35d9c499a9076751518215bd3fdbc92cd727f"
+    },
+    {
+      "category": "build_scripts",
+      "path": "tools/build_extension_secondary_review_queue.py",
+      "size_bytes": 7832,
+      "sha256": "ce5f3f9c06f373e22da237e9b5d77038a551a9352da63a33ce6bd24a4e9eb1a6"
+    },
+    {
+      "category": "build_scripts",
+      "path": "tools/build_release_word_master_3800.py",
+      "size_bytes": 15125,
+      "sha256": "86f87a3cb4b0d92ab5517f6607ea15c6fd1bda8b82ebd0f00df0a1b3e265f0c3"
+    },
+    {
+      "category": "build_scripts",
+      "path": "tools/build_vocabulary_provenance_evidence.py",
+      "size_bytes": 5940,
+      "sha256": "ece625650bb2fab4676605f697a014083a576f5f62caa4c6763b1e5f4242e233"
+    },
+    {
+      "category": "build_scripts",
+      "path": "tools/extract_moe_curriculum_vocab.py",
+      "size_bytes": 11343,
+      "sha256": "27bc886d7e0c40d9eebd373f3830288e17ba15c28e0571153c30a53e032946ba"
+    },
+    {
+      "category": "build_scripts",
+      "path": "tools/finalize_word_master.py",
+      "size_bytes": 16299,
+      "sha256": "a7a0498b5000dd49f8ae89a2bdcea3b07ef4217567280fd3b02d0801301889d5"
+    },
+    {
+      "category": "build_scripts",
+      "path": "tools/match_existing_vocab_to_curriculum.py",
+      "size_bytes": 18007,
+      "sha256": "925ef72543e14b969b51c92c7ec2021bc8fef5872bd161da9759c5f31dd96079"
+    },
+    {
+      "category": "build_scripts",
+      "path": "tools/resolve_extension_forms_and_reasons.py",
+      "size_bytes": 17606,
+      "sha256": "751effe90080ba61e9c2be2c22860d96fd0700d308cf01edadbb1b124605cb35"
+    },
+    {
+      "category": "build_scripts",
+      "path": "tools/review_hold_candidates.py",
+      "size_bytes": 12334,
+      "sha256": "6ffb3db08b997424392e6cda79bf5a71802d7ef745d746341f08906f98cdd1d4"
+    },
+    {
+      "category": "build_scripts",
+      "path": "tools/score_extension_relevance.py",
+      "size_bytes": 12339,
+      "sha256": "a312f248176abd1188e062484af4022d30c038a19a2c2f22df13027cfc18d246"
+    },
+    {
+      "category": "build_scripts",
+      "path": "tools/screen_extension_candidates.py",
+      "size_bytes": 18000,
+      "sha256": "49481c1c9fa61ef0a46b361e0c1b127a9f6d58aef4978783aed2a5ebb1239af9"
+    },
+    {
+      "category": "clean_curriculum",
+      "path": "data_sources/clean/README.md",
+      "size_bytes": 2034,
+      "sha256": "141c478977314e617cd25f5e93cf4d3f50eee7d6ad9c287d70754b7cce0f0778"
+    },
+    {
+      "category": "clean_curriculum",
+      "path": "data_sources/clean/SHA256SUMS.txt",
+      "size_bytes": 272,
+      "sha256": "7310a881718b2b01837a6807c15d5a3706d9100fb38c5a7106d7b0d967b2689b"
+    },
+    {
+      "category": "clean_curriculum",
+      "path": "data_sources/clean/curriculum_base.csv",
+      "size_bytes": 443337,
+      "sha256": "d14bf7226bccbe6cfbac791cd452098065f52c1f771dffc126da5c0570278a1c"
+    },
+    {
+      "category": "clean_curriculum",
+      "path": "data_sources/clean/curriculum_base.json",
+      "size_bytes": 1877382,
+      "sha256": "9f736d874789a38f2681c7b1f396106295a8e4d067cdc61fa22e6fe4961b3ec8"
+    },
+    {
+      "category": "clean_curriculum",
+      "path": "data_sources/clean/curriculum_base_manifest.json",
+      "size_bytes": 1252,
+      "sha256": "36c4e2376c59bce4e7f64db558c89edd3f39b914a87516c3d8b4c59aba56867d"
+    },
+    {
+      "category": "ecdict",
+      "path": "data_sources/raw/ecdict/LICENSE",
+      "size_bytes": 1063,
+      "sha256": "f8552dd246f61a4e064569eae6194a01c6b3d63b03bf27c6ca863593c549ed0f"
+    },
+    {
+      "category": "ecdict",
+      "path": "data_sources/raw/ecdict/README.md",
+      "size_bytes": 18414,
+      "sha256": "0c3f95fc7e15f7eccf65feedb58ba3ebace1fe7b7cbdd1af60c9ace4cef9094b"
+    },
+    {
+      "category": "ecdict",
+      "path": "data_sources/raw/ecdict/SHA256SUMS.txt",
+      "size_bytes": 227,
+      "sha256": "2278b42788ea437c8666ac1d2b8ea9b6d735d7be0c9a49fe4314e4e2d9fb9c27"
+    },
+    {
+      "category": "ecdict",
+      "path": "data_sources/raw/ecdict/ecdict.csv",
+      "size_bytes": 65933428,
+      "sha256": "1a6947e04785db63613a92e14903cdae7954f7e84860b10e68e5c7cbb3f9c3cf"
+    },
+    {
+      "category": "ecdict",
+      "path": "data_sources/raw/ecdict/source.json",
+      "size_bytes": 1195,
+      "sha256": "95b65afc31aafb9c437aa3fdf71d54133e296eba3e8599f2d041deba6e9079b3"
+    },
+    {
+      "category": "governance",
+      "path": ".gitattributes",
+      "size_bytes": 291,
+      "sha256": "318b1ca717501347f9b63f3968410427322548afd83a5e05cca489cd50e8454b"
+    },
+    {
+      "category": "governance",
+      "path": "data_sources/provenance_evidence/THIRD_PARTY_NOTICES.md",
+      "size_bytes": 2878,
+      "sha256": "560b731b602282b520534e316679a5a65afd9b2c8938b9213acecc71705139a0"
+    },
+    {
+      "category": "governance",
+      "path": "data_sources/provenance_evidence/词库来源与制作过程证明材料.md",
+      "size_bytes": 9300,
+      "sha256": "3ae1ee4a022e967d9b5c091501c6241e83bb4ed7105ad010dcf40ba16b348046"
+    },
+    {
+      "category": "governance",
+      "path": "词库命名与开放数据来源策略.md",
+      "size_bytes": 12336,
+      "sha256": "a81a02e2041a057783524fd620c4a8327c2b17de354d8c8dcd7369fbc4dc4c20"
+    },
+    {
+      "category": "moby",
+      "path": "data_sources/raw/moby/SHA256SUMS.txt",
+      "size_bytes": 345,
+      "sha256": "627b9d5395b906257e8592ca5a1d627577193f6541a8211cd6d72366473bb190"
+    },
+    {
+      "category": "moby",
+      "path": "data_sources/raw/moby/common.txt",
+      "size_bytes": 730682,
+      "sha256": "c7aa03c522e9e28bba1db692372119f21c73c646671af24b53a840e2d6f84fa7"
+    },
+    {
+      "category": "moby",
+      "path": "data_sources/raw/moby/moby_pos_documentation.html",
+      "size_bytes": 4696,
+      "sha256": "a1d074ec570a0629c94b8a2521bd0d0220f96ef6da1a5d1451f82d1beadaf15c"
+    },
+    {
+      "category": "moby",
+      "path": "data_sources/raw/moby/moby_words_documentation.html",
+      "size_bytes": 5792,
+      "sha256": "f8cc43794cbe15085622441e00fef7a5bcfb31963227307e848bcfbc458e754b"
+    },
+    {
+      "category": "moby",
+      "path": "data_sources/raw/moby/mobypos.txt",
+      "size_bytes": 3237558,
+      "sha256": "cc81458b820a36253fbeb8106045166a345209d0fbf4cbfc20be2b189f24af82"
+    },
+    {
+      "category": "moby",
+      "path": "data_sources/raw/moby/source.json",
+      "size_bytes": 1007,
+      "sha256": "834bd4c47d3bf9e7c6e5e3de38f1b7925e25b948ab95d8072347a6ab932e1ae5"
+    },
+    {
+      "category": "moe_source",
+      "path": "data_sources/raw/moe/SHA256SUMS.txt",
+      "size_bytes": 125,
+      "sha256": "74882931b090c6dd1b400299dd1460b508ce7b85b8c08a88d03e4593ccb37a30"
+    },
+    {
+      "category": "moe_source",
+      "path": "data_sources/raw/moe/download_records.md",
+      "size_bytes": 2098,
+      "sha256": "2668637f9c4fc2b6105799cc4d908a85bbbb340171548b6faf2662c255ef0cf5"
+    },
+    {
+      "category": "moe_source",
+      "path": "data_sources/raw/moe/source.json",
+      "size_bytes": 1442,
+      "sha256": "8425054ca7a83fa798e0390fdb56ad47848484e1c354e9fc2a0b249965320fc2"
+    },
+    {
+      "category": "moe_source",
+      "path": "data_sources/raw/moe/普通高中英语课程标准_2017年版2020年修订.pdf",
+      "size_bytes": 7750611,
+      "sha256": "8ebd6bb12e9eb1c58e422ee01b540a4a71d2e681a4c4a764a36ee3a34b21c1be"
+    },
+    {
+      "category": "open_english_wordnet",
+      "path": "data_sources/raw/oewn/LICENSE.md",
+      "size_bytes": 19863,
+      "sha256": "672cc8b5663e8dc74c4b07a9dcf477193853575b119908fd3dc0aeeb60a9dbbb"
+    },
+    {
+      "category": "open_english_wordnet",
+      "path": "data_sources/raw/oewn/SHA256SUMS.txt",
+      "size_bytes": 173,
+      "sha256": "23dac6611feeecd50a39cd7551c099fdd9c250066a68bfb704c6f81e6d2c5581"
+    },
+    {
+      "category": "open_english_wordnet",
+      "path": "data_sources/raw/oewn/english-wordnet-2025-json.zip",
+      "size_bytes": 9986555,
+      "sha256": "7d749f6e2c39e6970e4997839dcf6e42fd281f3c2fae0171d2192bae8cfa4b51"
+    },
+    {
+      "category": "open_english_wordnet",
+      "path": "data_sources/raw/oewn/source.json",
+      "size_bytes": 901,
+      "sha256": "1e1c1a1baaff88ec27186d607dd5c431ec8eb546fe219c2d0e85f042b0de7e83"
+    },
+    {
+      "category": "release_3800",
+      "path": "data_sources/clean/release_word_master_3800/README.md",
+      "size_bytes": 308,
+      "sha256": "816a4cb6b09e3196458bac6e2dc967421b03a4d0c21b5c7ca14867a6936bc4ca"
+    },
+    {
+      "category": "release_3800",
+      "path": "data_sources/clean/release_word_master_3800/SHA256SUMS.txt",
+      "size_bytes": 657,
+      "sha256": "b68616155fd9efa6708bdb79164d7e5cfcaf3053245c5dfa3a73def572f73a52"
+    },
+    {
+      "category": "release_3800",
+      "path": "data_sources/clean/release_word_master_3800/extensions_removed_for_3800_target.csv",
+      "size_bytes": 27023,
+      "sha256": "8e9dd196a8d0ef169347a9d13c2d37731315fd088de65dcd8d1f8ea7c17870c7"
+    },
+    {
+      "category": "release_3800",
+      "path": "data_sources/clean/release_word_master_3800/legacy_overlap_and_size_report.md",
+      "size_bytes": 1223,
+      "sha256": "d2f3b92828ef243a147ccb91fcd2418b0b87cee492dde3fd3d85dfcb09c84a86"
+    },
+    {
+      "category": "release_3800",
+      "path": "data_sources/clean/release_word_master_3800/legacy_word_overlap_mapping.csv",
+      "size_bytes": 206799,
+      "sha256": "69164d29aa10f66c52cfa4c8db09f3f48599b33a8e2fd7b7d1a4b51018ef26f3"
+    },
+    {
+      "category": "release_3800",
+      "path": "data_sources/clean/release_word_master_3800/manifest.json",
+      "size_bytes": 843,
+      "sha256": "2f449cc0a389956859df166c1ec2b1cccf184b730a0fce76b1ee53affe937406"
+    },
+    {
+      "category": "release_3800",
+      "path": "data_sources/clean/release_word_master_3800/release_word_master_3800.csv",
+      "size_bytes": 695569,
+      "sha256": "0568207ac0092e5c027c91a896cd767faca2b74d20f5caf8f8d92507659e3203"
+    },
+    {
+      "category": "release_3800",
+      "path": "data_sources/clean/release_word_master_3800/release_word_master_3800.json",
+      "size_bytes": 2375185,
+      "sha256": "72f9db3465b3f1ec7017a6136131f803b39b9784c048e64cd625efeccd296ba7"
+    }
+  ]
+}

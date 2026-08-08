@@ -1,0 +1,25 @@
+{
+  "dataset_id": "engmaster-extension-priority-draft",
+  "status": "draft_priority_needs_semantic_review",
+  "record_count": 738,
+  "legacy_surface_forms_normalized": {
+    "souvenirs": "souvenir"
+  },
+  "excluded_scoring_fields": [
+    "gk",
+    "zk",
+    "cet4",
+    "oxford",
+    "collins"
+  ],
+  "forbidden_legacy_content": [
+    "Chinese definitions",
+    "phonetics",
+    "examples",
+    "legacy order"
+  ],
+  "inputs": [
+    "C:/Users/andrezhao/Documents/EngMaster-AI-Agent-general/data_sources/processed/extension_inclusion_reason_candidates.csv",
+    "C:/Users/andrezhao/Documents/EngMaster-AI-Agent-general/data_sources/processed/extension_normalized_new_headwords.csv"
+  ]
+}
