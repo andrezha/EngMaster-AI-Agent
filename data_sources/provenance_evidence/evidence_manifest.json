@@ -3,7 +3,7 @@
   "evidence_set_id": "engmaster-vocabulary-provenance-20260808",
   "generated_on": "2026-08-08",
   "release_dataset": "engmaster-release-vocabulary-3800-zh",
-  "repository_head_at_generation": "50f208c80c77a1d370cb020af124a20c5021b175",
+  "repository_head_at_generation": "aca309f5af4d2e703b2e9358bd6fe2530d806185",
   "git_commit_warning": "The repository HEAD is recorded, but this manifest does not assert that every listed file is committed. Verify git status, commit the evidence set, and create a release tag before external reliance.",
   "file_count": 155,
   "files": [
