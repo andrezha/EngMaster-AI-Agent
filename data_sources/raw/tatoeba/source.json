@@ -1,0 +1,23 @@
+{
+  "source_id": "tatoeba-english-cc0-sentences",
+  "title": "Tatoeba English sentences available under CC0",
+  "project_url": "https://tatoeba.org/",
+  "downloads_page": "https://tatoeba.org/en/downloads",
+  "terms_url": "https://tatoeba.org/en/terms_of_use",
+  "data_url": "https://downloads.tatoeba.org/exports/per_language/eng/eng_sentences_CC0.tsv.bz2",
+  "retrieved_on": "2026-08-09",
+  "upstream_last_modified": "2026-08-08T06:29:58Z",
+  "local_file": "eng_sentences_CC0_2026-08-08.tsv.bz2",
+  "sha256": "6ab169264a28008c25bf63042bf7535fc63137c9d7e09b7b8bd7812d10117d1b",
+  "file_size_bytes": 1288524,
+  "sentence_count": 41502,
+  "license": "CC0 1.0 Universal",
+  "license_file": "CC0-1.0-legalcode.html",
+  "license_sha256": "001e3d1c905c18b1d034b34200cc952026abb38457c2294c23eaef7f6bda64df",
+  "usage": "Auxiliary exact or normalized phrase-occurrence evidence only. Do not copy source sentences into product examples and do not treat this volunteer corpus as a representative exam-frequency corpus.",
+  "limitations": [
+    "The CC0 subset is not a balanced learner or examination corpus.",
+    "Raw occurrence counts cannot determine junior, senior-high or CET-4 level.",
+    "Sentence quality varies, so occurrence evidence must be combined with lexical and stage evidence."
+  ]
+}

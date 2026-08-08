@@ -1,6 +1,6 @@
 # Third-Party Data Notices / 第三方数据声明
 
-This notice applies to the EngMaster vocabulary data build process. The current 3,800-record English headword master intentionally contains no Chinese definitions or phonetics.
+This notice applies to the EngMaster vocabulary and independently compiled phrase-data build processes.
 
 ## Ministry of Education curriculum standard
 
@@ -9,6 +9,22 @@ The curriculum classification is based on the publicly available document 《普
 Official notice: <https://www.moe.gov.cn/srcsite/A26/s8001/202006/t20200603_462199.html>
 
 The project cites this document as the authoritative curriculum-range source. It does not claim ownership of the curriculum standard or affiliation with the Ministry of Education.
+
+The junior phrase range additionally refers to 《义务教育英语课程标准（2022年版）》, issued by the Ministry of Education, 教材〔2022〕2号.
+
+- Official notice: <https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html>
+- Local source record: `data_sources/raw/moe_junior/source.json`
+
+Both curriculum standards define learning scope and ability requirements. They are not treated as ready-made official phrase lists, and the archived PDFs are not bundled in the customer-facing product.
+
+## CET-4 syllabus
+
+The CET-4 phrase range refers to 《全国大学英语四、六级考试大纲（2016年修订版）》 as listed by the official National Education Examinations Authority CET website.
+
+- Official syllabus page: <https://cet.neea.edu.cn/html1/folder/16113/1588-1.htm>
+- Local source record: `data_sources/raw/cet4/source.json`
+
+The syllabus defines the examination ability and vocabulary boundary. The project does not claim that its independently compiled phrases are an official enumerated CET-4 phrase list.
 
 ## Open English WordNet 2025
 
@@ -43,6 +59,17 @@ The archived Project Gutenberg documentation states: “Public Domain material b
 - Moby Words II: <https://www.gutenberg.org/ebooks/3201>
 - Moby Part-of-Speech II: <https://www.gutenberg.org/ebooks/3203>
 - Local source record: `data_sources/raw/moby/source.json`
+
+## Tatoeba English CC0 sentence subset
+
+Only the English sentences explicitly included in Tatoeba's CC0 export are used as auxiliary phrase-occurrence evidence. The default CC BY sentence export and all audio are excluded from this use.
+
+- Downloads page: <https://tatoeba.org/en/downloads>
+- Public-domain dedication: CC0 1.0 Universal
+- Local source record: `data_sources/raw/tatoeba/source.json`
+- Local legal text: `data_sources/raw/tatoeba/CC0-1.0-legalcode.html`
+
+Tatoeba sentences are not copied into product examples. Raw occurrence counts are not represented as examination frequencies and do not determine learning level.
 
 ## No media data
 
