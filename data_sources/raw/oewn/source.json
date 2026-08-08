@@ -12,5 +12,15 @@
   "license_file": "LICENSE.md",
   "license_sha256": "672cc8b5663e8dc74c4b07a9dcf477193853575b119908fd3dc0aeeb60a9dbbb",
   "usage": "Validate candidate lemmas, parts of speech and sense presence. Definitions are not copied by the extension screening stage.",
-  "edition_note": "The 2025 standard edition excludes the curated proper-name supplement provided separately as 2025 plus."
+  "edition_note": "The 2025 standard edition excludes the curated proper-name supplement provided separately as 2025 plus.",
+  "supplementary_downloads": [
+    {
+      "purpose": "Use the official WNDB verb.exc morphology exception list to validate irregular verb forms.",
+      "download_url": "https://en-word.net/static/english-wordnet-2025.zip",
+      "retrieved_on": "2026-08-08",
+      "local_file": "english-wordnet-2025-wndb.zip",
+      "sha256": "38b16326159f51853626b7d24a44c453fa88ab33f06fce5ec8fc5996d1c2be93",
+      "file_size_bytes": 9616299
+    }
+  ]
 }

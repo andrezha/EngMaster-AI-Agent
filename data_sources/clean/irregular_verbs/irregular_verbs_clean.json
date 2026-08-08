@@ -1,0 +1,2429 @@
+{
+  "schema_version": 1,
+  "dataset": "EngMaster independently rebuilt irregular verb table",
+  "generated_on": "2026-08-08",
+  "record_count": 126,
+  "candidate_index_only": "assets/irregular_verbs.json",
+  "human_review_claimed": false,
+  "records": [
+    {
+      "sequence": 1,
+      "infinitive": "arise",
+      "accepted_past_tense": [
+        "arose"
+      ],
+      "accepted_past_participle": [
+        "arisen"
+      ],
+      "past_tense": "arose",
+      "past_participle": "arisen",
+      "meaning_zh": "出现；产生；起身；由……引起",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0162",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 2,
+      "infinitive": "be",
+      "accepted_past_tense": [
+        "was",
+        "were"
+      ],
+      "accepted_past_participle": [
+        "been"
+      ],
+      "past_tense": "was / were",
+      "past_participle": "been",
+      "meaning_zh": "是；存在；位于；成为；用于构成进行时或被动语态",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0260",
+      "usage_note": "过去式按人称和单复数使用 was 或 were。",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 3,
+      "infinitive": "beat",
+      "accepted_past_tense": [
+        "beat"
+      ],
+      "accepted_past_participle": [
+        "beaten"
+      ],
+      "past_tense": "beat",
+      "past_participle": "beaten",
+      "meaning_zh": "击打；打败；跳动；搅拌",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0266",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 4,
+      "infinitive": "become",
+      "accepted_past_tense": [
+        "became"
+      ],
+      "accepted_past_participle": [
+        "become"
+      ],
+      "past_tense": "became",
+      "past_participle": "become",
+      "meaning_zh": "变成；成为；适合；开始形成",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0270",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 5,
+      "infinitive": "begin",
+      "accepted_past_tense": [
+        "began"
+      ],
+      "accepted_past_participle": [
+        "begun"
+      ],
+      "past_tense": "began",
+      "past_participle": "begun",
+      "meaning_zh": "开始；着手；首先出现",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0276",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 6,
+      "infinitive": "bend",
+      "accepted_past_tense": [
+        "bent"
+      ],
+      "accepted_past_participle": [
+        "bent"
+      ],
+      "past_tense": "bent",
+      "past_participle": "bent",
+      "meaning_zh": "弯曲；俯身；使屈服",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0288",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 7,
+      "infinitive": "bet",
+      "accepted_past_tense": [
+        "bet",
+        "betted"
+      ],
+      "accepted_past_participle": [
+        "bet",
+        "betted"
+      ],
+      "past_tense": "bet / betted",
+      "past_participle": "bet / betted",
+      "meaning_zh": "打赌；确信",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0293",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 8,
+      "infinitive": "bite",
+      "accepted_past_tense": [
+        "bit"
+      ],
+      "accepted_past_participle": [
+        "bitten"
+      ],
+      "past_tense": "bit",
+      "past_participle": "bitten",
+      "meaning_zh": "咬；叮；刺痛",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0307",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 9,
+      "infinitive": "bleed",
+      "accepted_past_tense": [
+        "bled"
+      ],
+      "accepted_past_participle": [
+        "bled"
+      ],
+      "past_tense": "bled",
+      "past_participle": "bled",
+      "meaning_zh": "流血；放血；渗开；排出液体",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0314",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 10,
+      "infinitive": "blow",
+      "accepted_past_tense": [
+        "blew"
+      ],
+      "accepted_past_participle": [
+        "blown"
+      ],
+      "past_tense": "blew",
+      "past_participle": "blown",
+      "meaning_zh": "吹；刮；吹响；爆炸",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0321",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 11,
+      "infinitive": "break",
+      "accepted_past_tense": [
+        "broke"
+      ],
+      "accepted_past_participle": [
+        "broken"
+      ],
+      "past_tense": "broke",
+      "past_participle": "broken",
+      "meaning_zh": "打破；弄坏；违反；中断；休息",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0358",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 12,
+      "infinitive": "bring",
+      "accepted_past_tense": [
+        "brought"
+      ],
+      "accepted_past_participle": [
+        "brought"
+      ],
+      "past_tense": "brought",
+      "past_participle": "brought",
+      "meaning_zh": "带来；拿来；使处于；引起",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0370",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 13,
+      "infinitive": "broadcast",
+      "accepted_past_tense": [
+        "broadcast"
+      ],
+      "accepted_past_participle": [
+        "broadcast"
+      ],
+      "past_tense": "broadcast",
+      "past_participle": "broadcast",
+      "meaning_zh": "广播；播送；传播",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0374",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 14,
+      "infinitive": "build",
+      "accepted_past_tense": [
+        "built"
+      ],
+      "accepted_past_participle": [
+        "built"
+      ],
+      "past_tense": "built",
+      "past_participle": "built",
+      "meaning_zh": "建造；建立；逐渐增强",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0381",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 15,
+      "infinitive": "burn",
+      "accepted_past_tense": [
+        "burned",
+        "burnt"
+      ],
+      "accepted_past_participle": [
+        "burned",
+        "burnt"
+      ],
+      "past_tense": "burned / burnt",
+      "past_participle": "burned / burnt",
+      "meaning_zh": "燃烧；烧伤；烧毁",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0384",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 16,
+      "infinitive": "burst",
+      "accepted_past_tense": [
+        "burst"
+      ],
+      "accepted_past_participle": [
+        "burst"
+      ],
+      "past_tense": "burst",
+      "past_participle": "burst",
+      "meaning_zh": "爆裂；突然发生；猛冲",
+      "in_release_3800": true,
+      "release_record_id": "release-word-3123",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 17,
+      "infinitive": "buy",
+      "accepted_past_tense": [
+        "bought"
+      ],
+      "accepted_past_participle": [
+        "bought"
+      ],
+      "past_tense": "bought",
+      "past_participle": "bought",
+      "meaning_zh": "购买；买到；换取",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0393",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 18,
+      "infinitive": "can",
+      "accepted_past_tense": [
+        "could"
+      ],
+      "accepted_past_participle": [],
+      "past_tense": "could",
+      "past_participle": "—",
+      "meaning_zh": "能；会；可以；可能；把……装罐",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0411",
+      "usage_note": "could 是历史上的过去式，也常表达较弱语气；没有过去分词。",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 19,
+      "infinitive": "catch",
+      "accepted_past_tense": [
+        "caught"
+      ],
+      "accepted_past_participle": [
+        "caught"
+      ],
+      "past_tense": "caught",
+      "past_participle": "caught",
+      "meaning_zh": "抓住；接住；赶上；感染；听懂",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0444",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 20,
+      "infinitive": "choose",
+      "accepted_past_tense": [
+        "chose"
+      ],
+      "accepted_past_participle": [
+        "chosen"
+      ],
+      "past_tense": "chose",
+      "past_participle": "chosen",
+      "meaning_zh": "选择；挑选；决定",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0502",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 21,
+      "infinitive": "come",
+      "accepted_past_tense": [
+        "came"
+      ],
+      "accepted_past_participle": [
+        "come"
+      ],
+      "past_tense": "came",
+      "past_participle": "come",
+      "meaning_zh": "来；到达；发生；进入某种状态",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0560",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 22,
+      "infinitive": "cost",
+      "accepted_past_tense": [
+        "cost"
+      ],
+      "accepted_past_participle": [
+        "cost"
+      ],
+      "past_tense": "cost",
+      "past_participle": "cost",
+      "meaning_zh": "价钱为；使付出代价",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0651",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 23,
+      "infinitive": "cut",
+      "accepted_past_tense": [
+        "cut"
+      ],
+      "accepted_past_participle": [
+        "cut"
+      ],
+      "past_tense": "cut",
+      "past_participle": "cut",
+      "meaning_zh": "切；割；削减；中断",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0700",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 24,
+      "infinitive": "deal",
+      "accepted_past_tense": [
+        "dealt"
+      ],
+      "accepted_past_participle": [
+        "dealt"
+      ],
+      "past_tense": "dealt",
+      "past_participle": "dealt",
+      "meaning_zh": "处理；交易；发牌；分配",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0719",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 25,
+      "infinitive": "dig",
+      "accepted_past_tense": [
+        "dug"
+      ],
+      "accepted_past_participle": [
+        "dug"
+      ],
+      "past_tense": "dug",
+      "past_participle": "dug",
+      "meaning_zh": "挖；掘；搜寻；喜欢",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0787",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 26,
+      "infinitive": "do",
+      "accepted_past_tense": [
+        "did"
+      ],
+      "accepted_past_participle": [
+        "done"
+      ],
+      "past_tense": "did",
+      "past_participle": "done",
+      "meaning_zh": "做；进行；完成；处理；用于疑问、否定或强调",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0829",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 27,
+      "infinitive": "draw",
+      "accepted_past_tense": [
+        "drew"
+      ],
+      "accepted_past_participle": [
+        "drawn"
+      ],
+      "past_tense": "drew",
+      "past_participle": "drawn",
+      "meaning_zh": "画；拉；吸引；抽取；得出",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0853",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 28,
+      "infinitive": "dream",
+      "accepted_past_tense": [
+        "dreamed",
+        "dreamt"
+      ],
+      "accepted_past_participle": [
+        "dreamed",
+        "dreamt"
+      ],
+      "past_tense": "dreamed / dreamt",
+      "past_participle": "dreamed / dreamt",
+      "meaning_zh": "做梦；梦想",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0855",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 29,
+      "infinitive": "drink",
+      "accepted_past_tense": [
+        "drank"
+      ],
+      "accepted_past_participle": [
+        "drunk"
+      ],
+      "past_tense": "drank",
+      "past_participle": "drunk",
+      "meaning_zh": "喝；饮",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0858",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 30,
+      "infinitive": "drive",
+      "accepted_past_tense": [
+        "drove"
+      ],
+      "accepted_past_participle": [
+        "driven"
+      ],
+      "past_tense": "drove",
+      "past_participle": "driven",
+      "meaning_zh": "驾驶；驱动；迫使；推动",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0859",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 31,
+      "infinitive": "eat",
+      "accepted_past_tense": [
+        "ate"
+      ],
+      "accepted_past_participle": [
+        "eaten"
+      ],
+      "past_tense": "ate",
+      "past_participle": "eaten",
+      "meaning_zh": "吃；用餐；消耗；侵蚀",
+      "in_release_3800": true,
+      "release_record_id": "release-word-0886",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 32,
+      "infinitive": "fall",
+      "accepted_past_tense": [
+        "fell"
+      ],
+      "accepted_past_participle": [
+        "fallen"
+      ],
+      "past_tense": "fell",
+      "past_participle": "fallen",
+      "meaning_zh": "落下；跌倒；下降；进入某状态",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1032",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 33,
+      "infinitive": "feed",
+      "accepted_past_tense": [
+        "fed"
+      ],
+      "accepted_past_participle": [
+        "fed"
+      ],
+      "past_tense": "fed",
+      "past_participle": "fed",
+      "meaning_zh": "喂养；供给；输入",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1055",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 34,
+      "infinitive": "feel",
+      "accepted_past_tense": [
+        "felt"
+      ],
+      "accepted_past_participle": [
+        "felt"
+      ],
+      "past_tense": "felt",
+      "past_participle": "felt",
+      "meaning_zh": "感觉；觉得；触摸；认为",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1056",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 35,
+      "infinitive": "fight",
+      "accepted_past_tense": [
+        "fought"
+      ],
+      "accepted_past_participle": [
+        "fought"
+      ],
+      "past_tense": "fought",
+      "past_participle": "fought",
+      "meaning_zh": "打架；战斗；争取；与……斗争",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1071",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 36,
+      "infinitive": "find",
+      "accepted_past_tense": [
+        "found"
+      ],
+      "accepted_past_participle": [
+        "found"
+      ],
+      "past_tense": "found",
+      "past_participle": "found",
+      "meaning_zh": "找到；发现；查明；认为",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1079",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 37,
+      "infinitive": "fly",
+      "accepted_past_tense": [
+        "flew"
+      ],
+      "accepted_past_participle": [
+        "flown"
+      ],
+      "past_tense": "flew",
+      "past_participle": "flown",
+      "meaning_zh": "飞；飞行；乘飞机",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1106",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 38,
+      "infinitive": "foresee",
+      "accepted_past_tense": [
+        "foresaw"
+      ],
+      "accepted_past_participle": [
+        "foreseen"
+      ],
+      "past_tense": "foresaw",
+      "past_participle": "foreseen",
+      "meaning_zh": "预见；预知；预料",
+      "in_release_3800": true,
+      "release_record_id": "release-word-3309",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 39,
+      "infinitive": "forget",
+      "accepted_past_tense": [
+        "forgot"
+      ],
+      "accepted_past_participle": [
+        "forgotten"
+      ],
+      "past_tense": "forgot",
+      "past_participle": "forgotten",
+      "meaning_zh": "忘记；忘了做；遗忘；落下",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1123",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 40,
+      "infinitive": "forgive",
+      "accepted_past_tense": [
+        "forgave"
+      ],
+      "accepted_past_participle": [
+        "forgiven"
+      ],
+      "past_tense": "forgave",
+      "past_participle": "forgiven",
+      "meaning_zh": "原谅；宽恕；免除债务",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1124",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 41,
+      "infinitive": "freeze",
+      "accepted_past_tense": [
+        "froze"
+      ],
+      "accepted_past_participle": [
+        "frozen"
+      ],
+      "past_tense": "froze",
+      "past_participle": "frozen",
+      "meaning_zh": "结冰；冷冻；冻住；僵住",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1144",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 42,
+      "infinitive": "get",
+      "accepted_past_tense": [
+        "got"
+      ],
+      "accepted_past_participle": [
+        "got",
+        "gotten"
+      ],
+      "past_tense": "got",
+      "past_participle": "got / gotten",
+      "meaning_zh": "得到；获得；到达；变得；理解；使得",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1196",
+      "usage_note": "got 为常见过去分词；gotten 主要见于美式英语及部分固定意义。",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 43,
+      "infinitive": "give",
+      "accepted_past_tense": [
+        "gave"
+      ],
+      "accepted_past_participle": [
+        "given"
+      ],
+      "past_tense": "gave",
+      "past_participle": "given",
+      "meaning_zh": "给；给予；赠送；提供；使产生",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1201",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 44,
+      "infinitive": "go",
+      "accepted_past_tense": [
+        "went"
+      ],
+      "accepted_past_participle": [
+        "gone"
+      ],
+      "past_tense": "went",
+      "past_participle": "gone",
+      "meaning_zh": "去；走；进行；变得",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1208",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 45,
+      "infinitive": "grow",
+      "accepted_past_tense": [
+        "grew"
+      ],
+      "accepted_past_participle": [
+        "grown"
+      ],
+      "past_tense": "grew",
+      "past_participle": "grown",
+      "meaning_zh": "生长；种植；增长；逐渐变得",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1244",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 46,
+      "infinitive": "hang",
+      "accepted_past_tense": [
+        "hung",
+        "hanged"
+      ],
+      "accepted_past_participle": [
+        "hung",
+        "hanged"
+      ],
+      "past_tense": "hung / hanged",
+      "past_participle": "hung / hanged",
+      "meaning_zh": "悬挂；吊；垂下；绞死",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1271",
+      "usage_note": "表示悬挂通常用 hung；表示绞死通常用 hanged。",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 47,
+      "infinitive": "have",
+      "accepted_past_tense": [
+        "had"
+      ],
+      "accepted_past_participle": [
+        "had"
+      ],
+      "past_tense": "had",
+      "past_participle": "had",
+      "meaning_zh": "有；拥有；经历；吃；使",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1284",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 48,
+      "infinitive": "hear",
+      "accepted_past_tense": [
+        "heard"
+      ],
+      "accepted_past_participle": [
+        "heard"
+      ],
+      "past_tense": "heard",
+      "past_participle": "heard",
+      "meaning_zh": "听见；听说；倾听；审理",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1290",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 49,
+      "infinitive": "hide",
+      "accepted_past_tense": [
+        "hid"
+      ],
+      "accepted_past_participle": [
+        "hidden"
+      ],
+      "past_tense": "hid",
+      "past_participle": "hidden",
+      "meaning_zh": "隐藏；躲藏；隐瞒",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1308",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 50,
+      "infinitive": "hit",
+      "accepted_past_tense": [
+        "hit"
+      ],
+      "accepted_past_participle": [
+        "hit"
+      ],
+      "past_tense": "hit",
+      "past_participle": "hit",
+      "meaning_zh": "击；打；撞击；达到",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1319",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 51,
+      "infinitive": "hold",
+      "accepted_past_tense": [
+        "held"
+      ],
+      "accepted_past_participle": [
+        "held"
+      ],
+      "past_tense": "held",
+      "past_participle": "held",
+      "meaning_zh": "拿着；保持；容纳；举行",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1321",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 52,
+      "infinitive": "hurt",
+      "accepted_past_tense": [
+        "hurt"
+      ],
+      "accepted_past_participle": [
+        "hurt"
+      ],
+      "past_tense": "hurt",
+      "past_participle": "hurt",
+      "meaning_zh": "使受伤；感到疼痛；伤害",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1354",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 53,
+      "infinitive": "keep",
+      "accepted_past_tense": [
+        "kept"
+      ],
+      "accepted_past_participle": [
+        "kept"
+      ],
+      "past_tense": "kept",
+      "past_participle": "kept",
+      "meaning_zh": "保持；保留；遵守；继续",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1484",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 54,
+      "infinitive": "know",
+      "accepted_past_tense": [
+        "knew"
+      ],
+      "accepted_past_participle": [
+        "known"
+      ],
+      "past_tense": "knew",
+      "past_participle": "known",
+      "meaning_zh": "知道；了解；认识；懂得",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1504",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 55,
+      "infinitive": "lay",
+      "accepted_past_tense": [
+        "laid"
+      ],
+      "accepted_past_participle": [
+        "laid"
+      ],
+      "past_tense": "laid",
+      "past_participle": "laid",
+      "meaning_zh": "放置；铺设；产卵",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1528",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 56,
+      "infinitive": "lead",
+      "accepted_past_tense": [
+        "led"
+      ],
+      "accepted_past_participle": [
+        "led"
+      ],
+      "past_tense": "led",
+      "past_participle": "led",
+      "meaning_zh": "领导；引导；通向",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1530",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 57,
+      "infinitive": "learn",
+      "accepted_past_tense": [
+        "learned",
+        "learnt"
+      ],
+      "accepted_past_participle": [
+        "learned",
+        "learnt"
+      ],
+      "past_tense": "learned / learnt",
+      "past_participle": "learned / learnt",
+      "meaning_zh": "学习；学会；得知；记住",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1536",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 58,
+      "infinitive": "leave",
+      "accepted_past_tense": [
+        "left"
+      ],
+      "accepted_past_participle": [
+        "left"
+      ],
+      "past_tense": "left",
+      "past_participle": "left",
+      "meaning_zh": "离开；留下；让……处于",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1539",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 59,
+      "infinitive": "lend",
+      "accepted_past_tense": [
+        "lent"
+      ],
+      "accepted_past_participle": [
+        "lent"
+      ],
+      "past_tense": "lent",
+      "past_participle": "lent",
+      "meaning_zh": "借给；提供；增添",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1546",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 60,
+      "infinitive": "let",
+      "accepted_past_tense": [
+        "let"
+      ],
+      "accepted_past_participle": [
+        "let"
+      ],
+      "past_tense": "let",
+      "past_participle": "let",
+      "meaning_zh": "让；允许；出租",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1550",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 61,
+      "infinitive": "lie",
+      "accepted_past_tense": [
+        "lay"
+      ],
+      "accepted_past_participle": [
+        "lain"
+      ],
+      "past_tense": "lay",
+      "past_participle": "lain",
+      "meaning_zh": "躺；位于；说谎",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1558",
+      "usage_note": "本行表示“躺；位于”；表示“说谎”时规则变化为 lied。",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 62,
+      "infinitive": "light",
+      "accepted_past_tense": [
+        "lit",
+        "lighted"
+      ],
+      "accepted_past_participle": [
+        "lit",
+        "lighted"
+      ],
+      "past_tense": "lit / lighted",
+      "past_participle": "lit / lighted",
+      "meaning_zh": "点燃；照亮",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1561",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 63,
+      "infinitive": "lose",
+      "accepted_past_tense": [
+        "lost"
+      ],
+      "accepted_past_participle": [
+        "lost"
+      ],
+      "past_tense": "lost",
+      "past_participle": "lost",
+      "meaning_zh": "失去；输掉；迷路；减少",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1592",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 64,
+      "infinitive": "make",
+      "accepted_past_tense": [
+        "made"
+      ],
+      "accepted_past_participle": [
+        "made"
+      ],
+      "past_tense": "made",
+      "past_participle": "made",
+      "meaning_zh": "制作；使得；成为；赚得",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1616",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 65,
+      "infinitive": "may",
+      "accepted_past_tense": [
+        "might"
+      ],
+      "accepted_past_participle": [],
+      "past_tense": "might",
+      "past_participle": "—",
+      "meaning_zh": "可以；可能；也许",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1642",
+      "usage_note": "might 是历史上的过去式，也常表达较弱可能性；没有过去分词。",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 66,
+      "infinitive": "mean",
+      "accepted_past_tense": [
+        "meant"
+      ],
+      "accepted_past_participle": [
+        "meant"
+      ],
+      "past_tense": "meant",
+      "past_participle": "meant",
+      "meaning_zh": "意思是；意味着；打算",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1646",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 67,
+      "infinitive": "meet",
+      "accepted_past_tense": [
+        "met"
+      ],
+      "accepted_past_participle": [
+        "met"
+      ],
+      "past_tense": "met",
+      "past_participle": "met",
+      "meaning_zh": "遇见；会面；满足",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1656",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 68,
+      "infinitive": "misread",
+      "accepted_past_tense": [
+        "misread"
+      ],
+      "accepted_past_participle": [
+        "misread"
+      ],
+      "past_tense": "misread",
+      "past_participle": "misread",
+      "meaning_zh": "误读；看错",
+      "in_release_3800": false,
+      "release_record_id": "",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "independent_project_supplement",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 69,
+      "infinitive": "mistake",
+      "accepted_past_tense": [
+        "mistook"
+      ],
+      "accepted_past_participle": [
+        "mistaken"
+      ],
+      "past_tense": "mistook",
+      "past_participle": "mistaken",
+      "meaning_zh": "误解；弄错",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1698",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 70,
+      "infinitive": "misunderstand",
+      "accepted_past_tense": [
+        "misunderstood"
+      ],
+      "accepted_past_participle": [
+        "misunderstood"
+      ],
+      "past_tense": "misunderstood",
+      "past_participle": "misunderstood",
+      "meaning_zh": "误解；误会",
+      "in_release_3800": true,
+      "release_record_id": "release-word-3435",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 71,
+      "infinitive": "must",
+      "accepted_past_tense": [],
+      "accepted_past_participle": [],
+      "past_tense": "—",
+      "past_participle": "—",
+      "meaning_zh": "必须；一定",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1745",
+      "usage_note": "现代英语中没有独立过去式或过去分词；过去时意义通常用 had to。",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 72,
+      "infinitive": "pay",
+      "accepted_past_tense": [
+        "paid"
+      ],
+      "accepted_past_participle": [
+        "paid"
+      ],
+      "past_tense": "paid",
+      "past_participle": "paid",
+      "meaning_zh": "支付；付出代价；有收益",
+      "in_release_3800": true,
+      "release_record_id": "release-word-1930",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 73,
+      "infinitive": "put",
+      "accepted_past_tense": [
+        "put"
+      ],
+      "accepted_past_participle": [
+        "put"
+      ],
+      "past_tense": "put",
+      "past_participle": "put",
+      "meaning_zh": "放；安置；表达；使处于",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2120",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 74,
+      "infinitive": "read",
+      "accepted_past_tense": [
+        "read"
+      ],
+      "accepted_past_participle": [
+        "read"
+      ],
+      "past_tense": "read",
+      "past_participle": "read",
+      "meaning_zh": "阅读；读懂；显示",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2157",
+      "usage_note": "过去式和过去分词拼写仍为 read，但读音与原形不同。",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 75,
+      "infinitive": "rid",
+      "accepted_past_tense": [
+        "rid",
+        "ridded"
+      ],
+      "accepted_past_participle": [
+        "rid",
+        "ridded"
+      ],
+      "past_tense": "rid / ridded",
+      "past_participle": "rid / ridded",
+      "meaning_zh": "使摆脱；清除",
+      "in_release_3800": true,
+      "release_record_id": "release-word-3571",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 76,
+      "infinitive": "ride",
+      "accepted_past_tense": [
+        "rode"
+      ],
+      "accepted_past_participle": [
+        "ridden"
+      ],
+      "past_tense": "rode",
+      "past_participle": "ridden",
+      "meaning_zh": "骑；乘坐；驾驶",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2253",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 77,
+      "infinitive": "ring",
+      "accepted_past_tense": [
+        "rang"
+      ],
+      "accepted_past_participle": [
+        "rung"
+      ],
+      "past_tense": "rang",
+      "past_participle": "rung",
+      "meaning_zh": "响铃；打电话；包围",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2256",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 78,
+      "infinitive": "rise",
+      "accepted_past_tense": [
+        "rose"
+      ],
+      "accepted_past_participle": [
+        "risen"
+      ],
+      "past_tense": "rose",
+      "past_participle": "risen",
+      "meaning_zh": "上升；起立；增加",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2258",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 79,
+      "infinitive": "run",
+      "accepted_past_tense": [
+        "ran"
+      ],
+      "accepted_past_participle": [
+        "run"
+      ],
+      "past_tense": "ran",
+      "past_participle": "run",
+      "meaning_zh": "跑；运行；经营；延伸",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2286",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 80,
+      "infinitive": "say",
+      "accepted_past_tense": [
+        "said"
+      ],
+      "accepted_past_participle": [
+        "said"
+      ],
+      "past_tense": "said",
+      "past_participle": "said",
+      "meaning_zh": "说；表明；假设",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2314",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 81,
+      "infinitive": "see",
+      "accepted_past_tense": [
+        "saw"
+      ],
+      "accepted_past_participle": [
+        "seen"
+      ],
+      "past_tense": "saw",
+      "past_participle": "seen",
+      "meaning_zh": "看见；明白；会见；参观",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2342",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 82,
+      "infinitive": "seek",
+      "accepted_past_tense": [
+        "sought"
+      ],
+      "accepted_past_participle": [
+        "sought"
+      ],
+      "past_tense": "sought",
+      "past_participle": "sought",
+      "meaning_zh": "寻找；寻求；试图",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2344",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 83,
+      "infinitive": "sell",
+      "accepted_past_tense": [
+        "sold"
+      ],
+      "accepted_past_participle": [
+        "sold"
+      ],
+      "past_tense": "sold",
+      "past_participle": "sold",
+      "meaning_zh": "出售；销售；说服",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2349",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 84,
+      "infinitive": "send",
+      "accepted_past_tense": [
+        "sent"
+      ],
+      "accepted_past_participle": [
+        "sent"
+      ],
+      "past_tense": "sent",
+      "past_participle": "sent",
+      "meaning_zh": "发送；派遣；使进入；传达",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2350",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 85,
+      "infinitive": "set",
+      "accepted_past_tense": [
+        "set"
+      ],
+      "accepted_past_participle": [
+        "set"
+      ],
+      "past_tense": "set",
+      "past_participle": "set",
+      "meaning_zh": "放置；设定；安排",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2363",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 86,
+      "infinitive": "shake",
+      "accepted_past_tense": [
+        "shook"
+      ],
+      "accepted_past_participle": [
+        "shaken"
+      ],
+      "past_tense": "shook",
+      "past_participle": "shaken",
+      "meaning_zh": "摇动；颤抖；动摇",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2376",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 87,
+      "infinitive": "shall",
+      "accepted_past_tense": [
+        "should"
+      ],
+      "accepted_past_participle": [],
+      "past_tense": "should",
+      "past_participle": "—",
+      "meaning_zh": "将；应该；必须",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2377",
+      "usage_note": "should 是历史上的过去式，也可表达建议或义务；没有过去分词。",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 88,
+      "infinitive": "shine",
+      "accepted_past_tense": [
+        "shone",
+        "shined"
+      ],
+      "accepted_past_participle": [
+        "shone",
+        "shined"
+      ],
+      "past_tense": "shone / shined",
+      "past_participle": "shone / shined",
+      "meaning_zh": "发光；照耀；表现出色",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2391",
+      "usage_note": "shone 常指发光；shined 常用于擦亮或使发亮。",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 89,
+      "infinitive": "show",
+      "accepted_past_tense": [
+        "showed"
+      ],
+      "accepted_past_participle": [
+        "shown",
+        "showed"
+      ],
+      "past_tense": "showed",
+      "past_participle": "shown / showed",
+      "meaning_zh": "展示；表明；带领",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2405",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 90,
+      "infinitive": "shut",
+      "accepted_past_tense": [
+        "shut"
+      ],
+      "accepted_past_participle": [
+        "shut"
+      ],
+      "past_tense": "shut",
+      "past_participle": "shut",
+      "meaning_zh": "关闭；合上",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2407",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 91,
+      "infinitive": "sing",
+      "accepted_past_tense": [
+        "sang"
+      ],
+      "accepted_past_participle": [
+        "sung"
+      ],
+      "past_tense": "sang",
+      "past_participle": "sung",
+      "meaning_zh": "唱歌；鸣叫；歌颂；告密",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2424",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 92,
+      "infinitive": "sink",
+      "accepted_past_tense": [
+        "sank",
+        "sunk"
+      ],
+      "accepted_past_participle": [
+        "sunk"
+      ],
+      "past_tense": "sank / sunk",
+      "past_participle": "sunk",
+      "meaning_zh": "下沉；沉没；下降",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2426",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 93,
+      "infinitive": "sit",
+      "accepted_past_tense": [
+        "sat"
+      ],
+      "accepted_past_participle": [
+        "sat"
+      ],
+      "past_tense": "sat",
+      "past_participle": "sat",
+      "meaning_zh": "坐；坐落；参加考试；担任委员",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2429",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 94,
+      "infinitive": "sleep",
+      "accepted_past_tense": [
+        "slept"
+      ],
+      "accepted_past_participle": [
+        "slept"
+      ],
+      "past_tense": "slept",
+      "past_participle": "slept",
+      "meaning_zh": "睡觉；容纳住宿",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2445",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 95,
+      "infinitive": "smell",
+      "accepted_past_tense": [
+        "smelled",
+        "smelt"
+      ],
+      "accepted_past_participle": [
+        "smelled",
+        "smelt"
+      ],
+      "past_tense": "smelled / smelt",
+      "past_participle": "smelled / smelt",
+      "meaning_zh": "闻；闻起来；嗅出",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2455",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 96,
+      "infinitive": "sow",
+      "accepted_past_tense": [
+        "sowed"
+      ],
+      "accepted_past_participle": [
+        "sown",
+        "sowed"
+      ],
+      "past_tense": "sowed",
+      "past_participle": "sown / sowed",
+      "meaning_zh": "播种；散布；引起",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2501",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 97,
+      "infinitive": "speak",
+      "accepted_past_tense": [
+        "spoke"
+      ],
+      "accepted_past_participle": [
+        "spoken"
+      ],
+      "past_tense": "spoke",
+      "past_participle": "spoken",
+      "meaning_zh": "说话；发言；讲某种语言；表明",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2504",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 98,
+      "infinitive": "spell",
+      "accepted_past_tense": [
+        "spelled",
+        "spelt"
+      ],
+      "accepted_past_participle": [
+        "spelled",
+        "spelt"
+      ],
+      "past_tense": "spelled / spelt",
+      "past_participle": "spelled / spelt",
+      "meaning_zh": "拼写；招致；轮替",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2512",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 99,
+      "infinitive": "spellbind",
+      "accepted_past_tense": [
+        "spellbound"
+      ],
+      "accepted_past_participle": [
+        "spellbound"
+      ],
+      "past_tense": "spellbound",
+      "past_participle": "spellbound",
+      "meaning_zh": "迷住；使入迷",
+      "in_release_3800": false,
+      "release_record_id": "",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "independent_project_supplement",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 100,
+      "infinitive": "spend",
+      "accepted_past_tense": [
+        "spent"
+      ],
+      "accepted_past_participle": [
+        "spent"
+      ],
+      "past_tense": "spent",
+      "past_participle": "spent",
+      "meaning_zh": "花费；度过；耗尽",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2513",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 101,
+      "infinitive": "spill",
+      "accepted_past_tense": [
+        "spilled",
+        "spilt"
+      ],
+      "accepted_past_participle": [
+        "spilled",
+        "spilt"
+      ],
+      "past_tense": "spilled / spilt",
+      "past_participle": "spilled / spilt",
+      "meaning_zh": "溢出；洒出",
+      "in_release_3800": false,
+      "release_record_id": "",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "independent_project_supplement",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 102,
+      "infinitive": "spin",
+      "accepted_past_tense": [
+        "spun"
+      ],
+      "accepted_past_participle": [
+        "spun"
+      ],
+      "past_tense": "spun",
+      "past_participle": "spun",
+      "meaning_zh": "旋转；纺线；编造；使急转",
+      "in_release_3800": true,
+      "release_record_id": "release-word-3634",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 103,
+      "infinitive": "spit",
+      "accepted_past_tense": [
+        "spat",
+        "spit"
+      ],
+      "accepted_past_participle": [
+        "spat",
+        "spit"
+      ],
+      "past_tense": "spat / spit",
+      "past_participle": "spat / spit",
+      "meaning_zh": "吐；吐痰；发出爆裂声",
+      "in_release_3800": true,
+      "release_record_id": "release-word-3636",
+      "usage_note": "spat 较常见；spit 也可作过去式和过去分词，尤其见于美式英语。",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 104,
+      "infinitive": "spoil",
+      "accepted_past_tense": [
+        "spoiled",
+        "spoilt"
+      ],
+      "accepted_past_participle": [
+        "spoiled",
+        "spoilt"
+      ],
+      "past_tense": "spoiled / spoilt",
+      "past_participle": "spoiled / spoilt",
+      "meaning_zh": "破坏；宠坏",
+      "in_release_3800": false,
+      "release_record_id": "",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "independent_project_supplement",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 105,
+      "infinitive": "spread",
+      "accepted_past_tense": [
+        "spread"
+      ],
+      "accepted_past_participle": [
+        "spread"
+      ],
+      "past_tense": "spread",
+      "past_participle": "spread",
+      "meaning_zh": "展开；传播；涂抹",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2520",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 106,
+      "infinitive": "stand",
+      "accepted_past_tense": [
+        "stood"
+      ],
+      "accepted_past_participle": [
+        "stood"
+      ],
+      "past_tense": "stood",
+      "past_participle": "stood",
+      "meaning_zh": "站立；忍受；位于",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2530",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 107,
+      "infinitive": "steal",
+      "accepted_past_tense": [
+        "stole"
+      ],
+      "accepted_past_participle": [
+        "stolen"
+      ],
+      "past_tense": "stole",
+      "past_participle": "stolen",
+      "meaning_zh": "偷；窃取；悄悄移动",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2542",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 108,
+      "infinitive": "stick",
+      "accepted_past_tense": [
+        "stuck"
+      ],
+      "accepted_past_participle": [
+        "stuck"
+      ],
+      "past_tense": "stuck",
+      "past_participle": "stuck",
+      "meaning_zh": "粘；刺；坚持",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2546",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 109,
+      "infinitive": "strike",
+      "accepted_past_tense": [
+        "struck"
+      ],
+      "accepted_past_participle": [
+        "struck",
+        "stricken"
+      ],
+      "past_tense": "struck",
+      "past_participle": "struck / stricken",
+      "meaning_zh": "打；撞击；罢工",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2570",
+      "usage_note": "struck 是一般过去分词；stricken 常用于受疾病、灾难或情感打击。",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 110,
+      "infinitive": "swell",
+      "accepted_past_tense": [
+        "swelled"
+      ],
+      "accepted_past_participle": [
+        "swollen",
+        "swelled"
+      ],
+      "past_tense": "swelled",
+      "past_participle": "swollen / swelled",
+      "meaning_zh": "膨胀；增大；涌起",
+      "in_release_3800": true,
+      "release_record_id": "release-word-3674",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 111,
+      "infinitive": "sweep",
+      "accepted_past_tense": [
+        "swept"
+      ],
+      "accepted_past_participle": [
+        "swept"
+      ],
+      "past_tense": "swept",
+      "past_participle": "swept",
+      "meaning_zh": "扫；席卷；迅速移动",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2630",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 112,
+      "infinitive": "swim",
+      "accepted_past_tense": [
+        "swam"
+      ],
+      "accepted_past_participle": [
+        "swum"
+      ],
+      "past_tense": "swam",
+      "past_participle": "swum",
+      "meaning_zh": "游泳；漂浮；眩晕",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2632",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 113,
+      "infinitive": "swing",
+      "accepted_past_tense": [
+        "swung"
+      ],
+      "accepted_past_participle": [
+        "swung"
+      ],
+      "past_tense": "swung",
+      "past_participle": "swung",
+      "meaning_zh": "摆动；摇摆；转向",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2634",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 114,
+      "infinitive": "take",
+      "accepted_past_tense": [
+        "took"
+      ],
+      "accepted_past_participle": [
+        "taken"
+      ],
+      "past_tense": "took",
+      "past_participle": "taken",
+      "meaning_zh": "拿；带走；接受；花费",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2645",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 115,
+      "infinitive": "teach",
+      "accepted_past_tense": [
+        "taught"
+      ],
+      "accepted_past_participle": [
+        "taught"
+      ],
+      "past_tense": "taught",
+      "past_participle": "taught",
+      "meaning_zh": "教；教授；使懂得",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2658",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 116,
+      "infinitive": "tell",
+      "accepted_past_tense": [
+        "told"
+      ],
+      "accepted_past_participle": [
+        "told"
+      ],
+      "past_tense": "told",
+      "past_participle": "told",
+      "meaning_zh": "告诉；讲述；辨别；命令",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2669",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 117,
+      "infinitive": "think",
+      "accepted_past_tense": [
+        "thought"
+      ],
+      "accepted_past_participle": [
+        "thought"
+      ],
+      "past_tense": "thought",
+      "past_participle": "thought",
+      "meaning_zh": "想；认为；思考；料想",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2703",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 118,
+      "infinitive": "throw",
+      "accepted_past_tense": [
+        "threw"
+      ],
+      "accepted_past_participle": [
+        "thrown"
+      ],
+      "past_tense": "threw",
+      "past_participle": "thrown",
+      "meaning_zh": "投；扔；使陷入",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2720",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 119,
+      "infinitive": "understand",
+      "accepted_past_tense": [
+        "understood"
+      ],
+      "accepted_past_participle": [
+        "understood"
+      ],
+      "past_tense": "understood",
+      "past_participle": "understood",
+      "meaning_zh": "理解；明白；得知；认为",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2815",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 120,
+      "infinitive": "upset",
+      "accepted_past_tense": [
+        "upset"
+      ],
+      "accepted_past_participle": [
+        "upset"
+      ],
+      "past_tense": "upset",
+      "past_participle": "upset",
+      "meaning_zh": "使烦恼；打翻；扰乱",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2828",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 121,
+      "infinitive": "wake",
+      "accepted_past_tense": [
+        "woke",
+        "waked"
+      ],
+      "accepted_past_participle": [
+        "woken",
+        "waked"
+      ],
+      "past_tense": "woke / waked",
+      "past_participle": "woken / waked",
+      "meaning_zh": "醒来；唤醒",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2881",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 122,
+      "infinitive": "wear",
+      "accepted_past_tense": [
+        "wore"
+      ],
+      "accepted_past_participle": [
+        "worn"
+      ],
+      "past_tense": "wore",
+      "past_participle": "worn",
+      "meaning_zh": "穿；戴；磨损",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2904",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 123,
+      "infinitive": "weave",
+      "accepted_past_tense": [
+        "wove",
+        "weaved"
+      ],
+      "accepted_past_participle": [
+        "woven",
+        "weaved"
+      ],
+      "past_tense": "wove / weaved",
+      "past_participle": "woven / weaved",
+      "meaning_zh": "编织；穿梭",
+      "in_release_3800": false,
+      "release_record_id": "",
+      "usage_note": "wove/woven 常指编织；weaved 常用于迂回穿行。",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "independent_project_supplement",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 124,
+      "infinitive": "will",
+      "accepted_past_tense": [
+        "would"
+      ],
+      "accepted_past_participle": [],
+      "past_tense": "would",
+      "past_participle": "—",
+      "meaning_zh": "将；会；愿意；决意；遗赠",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2946",
+      "usage_note": "would 是历史上的过去式，也用于条件、意愿等结构；没有过去分词。",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 125,
+      "infinitive": "win",
+      "accepted_past_tense": [
+        "won"
+      ],
+      "accepted_past_participle": [
+        "won"
+      ],
+      "past_tense": "won",
+      "past_participle": "won",
+      "meaning_zh": "获胜；赢得；争取到",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2947",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    },
+    {
+      "sequence": 126,
+      "infinitive": "write",
+      "accepted_past_tense": [
+        "wrote"
+      ],
+      "accepted_past_participle": [
+        "written"
+      ],
+      "past_tense": "wrote",
+      "past_participle": "written",
+      "meaning_zh": "写；写作；填写；写信",
+      "in_release_3800": true,
+      "release_record_id": "release-word-2985",
+      "usage_note": "",
+      "form_source": "OEWN 2025 verb.exc + documented form rules",
+      "meaning_source": "release_vocabulary_3800_zh",
+      "qa_status": "automated_checks_passed"
+    }
+  ]
+}

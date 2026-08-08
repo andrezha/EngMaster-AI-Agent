@@ -1,0 +1,127 @@
+﻿sequence,infinitive,past_tense,past_participle,meaning_zh,in_release_3800,release_record_id,usage_note,form_source,meaning_source,qa_status
+1,arise,arose,arisen,出现；产生；起身；由……引起,True,release-word-0162,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+2,be,was / were,been,是；存在；位于；成为；用于构成进行时或被动语态,True,release-word-0260,过去式按人称和单复数使用 was 或 were。,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+3,beat,beat,beaten,击打；打败；跳动；搅拌,True,release-word-0266,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+4,become,became,become,变成；成为；适合；开始形成,True,release-word-0270,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+5,begin,began,begun,开始；着手；首先出现,True,release-word-0276,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+6,bend,bent,bent,弯曲；俯身；使屈服,True,release-word-0288,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+7,bet,bet / betted,bet / betted,打赌；确信,True,release-word-0293,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+8,bite,bit,bitten,咬；叮；刺痛,True,release-word-0307,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+9,bleed,bled,bled,流血；放血；渗开；排出液体,True,release-word-0314,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+10,blow,blew,blown,吹；刮；吹响；爆炸,True,release-word-0321,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+11,break,broke,broken,打破；弄坏；违反；中断；休息,True,release-word-0358,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+12,bring,brought,brought,带来；拿来；使处于；引起,True,release-word-0370,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+13,broadcast,broadcast,broadcast,广播；播送；传播,True,release-word-0374,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+14,build,built,built,建造；建立；逐渐增强,True,release-word-0381,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+15,burn,burned / burnt,burned / burnt,燃烧；烧伤；烧毁,True,release-word-0384,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+16,burst,burst,burst,爆裂；突然发生；猛冲,True,release-word-3123,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+17,buy,bought,bought,购买；买到；换取,True,release-word-0393,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+18,can,could,—,能；会；可以；可能；把……装罐,True,release-word-0411,could 是历史上的过去式，也常表达较弱语气；没有过去分词。,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+19,catch,caught,caught,抓住；接住；赶上；感染；听懂,True,release-word-0444,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+20,choose,chose,chosen,选择；挑选；决定,True,release-word-0502,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+21,come,came,come,来；到达；发生；进入某种状态,True,release-word-0560,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+22,cost,cost,cost,价钱为；使付出代价,True,release-word-0651,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+23,cut,cut,cut,切；割；削减；中断,True,release-word-0700,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+24,deal,dealt,dealt,处理；交易；发牌；分配,True,release-word-0719,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+25,dig,dug,dug,挖；掘；搜寻；喜欢,True,release-word-0787,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+26,do,did,done,做；进行；完成；处理；用于疑问、否定或强调,True,release-word-0829,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+27,draw,drew,drawn,画；拉；吸引；抽取；得出,True,release-word-0853,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+28,dream,dreamed / dreamt,dreamed / dreamt,做梦；梦想,True,release-word-0855,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+29,drink,drank,drunk,喝；饮,True,release-word-0858,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+30,drive,drove,driven,驾驶；驱动；迫使；推动,True,release-word-0859,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+31,eat,ate,eaten,吃；用餐；消耗；侵蚀,True,release-word-0886,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+32,fall,fell,fallen,落下；跌倒；下降；进入某状态,True,release-word-1032,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+33,feed,fed,fed,喂养；供给；输入,True,release-word-1055,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+34,feel,felt,felt,感觉；觉得；触摸；认为,True,release-word-1056,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+35,fight,fought,fought,打架；战斗；争取；与……斗争,True,release-word-1071,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+36,find,found,found,找到；发现；查明；认为,True,release-word-1079,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+37,fly,flew,flown,飞；飞行；乘飞机,True,release-word-1106,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+38,foresee,foresaw,foreseen,预见；预知；预料,True,release-word-3309,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+39,forget,forgot,forgotten,忘记；忘了做；遗忘；落下,True,release-word-1123,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+40,forgive,forgave,forgiven,原谅；宽恕；免除债务,True,release-word-1124,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+41,freeze,froze,frozen,结冰；冷冻；冻住；僵住,True,release-word-1144,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+42,get,got,got / gotten,得到；获得；到达；变得；理解；使得,True,release-word-1196,got 为常见过去分词；gotten 主要见于美式英语及部分固定意义。,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+43,give,gave,given,给；给予；赠送；提供；使产生,True,release-word-1201,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+44,go,went,gone,去；走；进行；变得,True,release-word-1208,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+45,grow,grew,grown,生长；种植；增长；逐渐变得,True,release-word-1244,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+46,hang,hung / hanged,hung / hanged,悬挂；吊；垂下；绞死,True,release-word-1271,表示悬挂通常用 hung；表示绞死通常用 hanged。,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+47,have,had,had,有；拥有；经历；吃；使,True,release-word-1284,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+48,hear,heard,heard,听见；听说；倾听；审理,True,release-word-1290,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+49,hide,hid,hidden,隐藏；躲藏；隐瞒,True,release-word-1308,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+50,hit,hit,hit,击；打；撞击；达到,True,release-word-1319,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+51,hold,held,held,拿着；保持；容纳；举行,True,release-word-1321,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+52,hurt,hurt,hurt,使受伤；感到疼痛；伤害,True,release-word-1354,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+53,keep,kept,kept,保持；保留；遵守；继续,True,release-word-1484,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+54,know,knew,known,知道；了解；认识；懂得,True,release-word-1504,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+55,lay,laid,laid,放置；铺设；产卵,True,release-word-1528,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+56,lead,led,led,领导；引导；通向,True,release-word-1530,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+57,learn,learned / learnt,learned / learnt,学习；学会；得知；记住,True,release-word-1536,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+58,leave,left,left,离开；留下；让……处于,True,release-word-1539,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+59,lend,lent,lent,借给；提供；增添,True,release-word-1546,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+60,let,let,let,让；允许；出租,True,release-word-1550,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+61,lie,lay,lain,躺；位于；说谎,True,release-word-1558,本行表示“躺；位于”；表示“说谎”时规则变化为 lied。,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+62,light,lit / lighted,lit / lighted,点燃；照亮,True,release-word-1561,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+63,lose,lost,lost,失去；输掉；迷路；减少,True,release-word-1592,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+64,make,made,made,制作；使得；成为；赚得,True,release-word-1616,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+65,may,might,—,可以；可能；也许,True,release-word-1642,might 是历史上的过去式，也常表达较弱可能性；没有过去分词。,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+66,mean,meant,meant,意思是；意味着；打算,True,release-word-1646,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+67,meet,met,met,遇见；会面；满足,True,release-word-1656,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+68,misread,misread,misread,误读；看错,False,,,OEWN 2025 verb.exc + documented form rules,independent_project_supplement,automated_checks_passed
+69,mistake,mistook,mistaken,误解；弄错,True,release-word-1698,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+70,misunderstand,misunderstood,misunderstood,误解；误会,True,release-word-3435,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+71,must,—,—,必须；一定,True,release-word-1745,现代英语中没有独立过去式或过去分词；过去时意义通常用 had to。,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+72,pay,paid,paid,支付；付出代价；有收益,True,release-word-1930,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+73,put,put,put,放；安置；表达；使处于,True,release-word-2120,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+74,read,read,read,阅读；读懂；显示,True,release-word-2157,过去式和过去分词拼写仍为 read，但读音与原形不同。,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+75,rid,rid / ridded,rid / ridded,使摆脱；清除,True,release-word-3571,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+76,ride,rode,ridden,骑；乘坐；驾驶,True,release-word-2253,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+77,ring,rang,rung,响铃；打电话；包围,True,release-word-2256,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+78,rise,rose,risen,上升；起立；增加,True,release-word-2258,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+79,run,ran,run,跑；运行；经营；延伸,True,release-word-2286,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+80,say,said,said,说；表明；假设,True,release-word-2314,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+81,see,saw,seen,看见；明白；会见；参观,True,release-word-2342,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+82,seek,sought,sought,寻找；寻求；试图,True,release-word-2344,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+83,sell,sold,sold,出售；销售；说服,True,release-word-2349,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+84,send,sent,sent,发送；派遣；使进入；传达,True,release-word-2350,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+85,set,set,set,放置；设定；安排,True,release-word-2363,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+86,shake,shook,shaken,摇动；颤抖；动摇,True,release-word-2376,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+87,shall,should,—,将；应该；必须,True,release-word-2377,should 是历史上的过去式，也可表达建议或义务；没有过去分词。,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+88,shine,shone / shined,shone / shined,发光；照耀；表现出色,True,release-word-2391,shone 常指发光；shined 常用于擦亮或使发亮。,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+89,show,showed,shown / showed,展示；表明；带领,True,release-word-2405,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+90,shut,shut,shut,关闭；合上,True,release-word-2407,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+91,sing,sang,sung,唱歌；鸣叫；歌颂；告密,True,release-word-2424,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+92,sink,sank / sunk,sunk,下沉；沉没；下降,True,release-word-2426,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+93,sit,sat,sat,坐；坐落；参加考试；担任委员,True,release-word-2429,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+94,sleep,slept,slept,睡觉；容纳住宿,True,release-word-2445,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+95,smell,smelled / smelt,smelled / smelt,闻；闻起来；嗅出,True,release-word-2455,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+96,sow,sowed,sown / sowed,播种；散布；引起,True,release-word-2501,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+97,speak,spoke,spoken,说话；发言；讲某种语言；表明,True,release-word-2504,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+98,spell,spelled / spelt,spelled / spelt,拼写；招致；轮替,True,release-word-2512,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+99,spellbind,spellbound,spellbound,迷住；使入迷,False,,,OEWN 2025 verb.exc + documented form rules,independent_project_supplement,automated_checks_passed
+100,spend,spent,spent,花费；度过；耗尽,True,release-word-2513,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+101,spill,spilled / spilt,spilled / spilt,溢出；洒出,False,,,OEWN 2025 verb.exc + documented form rules,independent_project_supplement,automated_checks_passed
+102,spin,spun,spun,旋转；纺线；编造；使急转,True,release-word-3634,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+103,spit,spat / spit,spat / spit,吐；吐痰；发出爆裂声,True,release-word-3636,spat 较常见；spit 也可作过去式和过去分词，尤其见于美式英语。,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+104,spoil,spoiled / spoilt,spoiled / spoilt,破坏；宠坏,False,,,OEWN 2025 verb.exc + documented form rules,independent_project_supplement,automated_checks_passed
+105,spread,spread,spread,展开；传播；涂抹,True,release-word-2520,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+106,stand,stood,stood,站立；忍受；位于,True,release-word-2530,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+107,steal,stole,stolen,偷；窃取；悄悄移动,True,release-word-2542,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+108,stick,stuck,stuck,粘；刺；坚持,True,release-word-2546,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+109,strike,struck,struck / stricken,打；撞击；罢工,True,release-word-2570,struck 是一般过去分词；stricken 常用于受疾病、灾难或情感打击。,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+110,swell,swelled,swollen / swelled,膨胀；增大；涌起,True,release-word-3674,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+111,sweep,swept,swept,扫；席卷；迅速移动,True,release-word-2630,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+112,swim,swam,swum,游泳；漂浮；眩晕,True,release-word-2632,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+113,swing,swung,swung,摆动；摇摆；转向,True,release-word-2634,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+114,take,took,taken,拿；带走；接受；花费,True,release-word-2645,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+115,teach,taught,taught,教；教授；使懂得,True,release-word-2658,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+116,tell,told,told,告诉；讲述；辨别；命令,True,release-word-2669,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+117,think,thought,thought,想；认为；思考；料想,True,release-word-2703,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+118,throw,threw,thrown,投；扔；使陷入,True,release-word-2720,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+119,understand,understood,understood,理解；明白；得知；认为,True,release-word-2815,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+120,upset,upset,upset,使烦恼；打翻；扰乱,True,release-word-2828,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+121,wake,woke / waked,woken / waked,醒来；唤醒,True,release-word-2881,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+122,wear,wore,worn,穿；戴；磨损,True,release-word-2904,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+123,weave,wove / weaved,woven / weaved,编织；穿梭,False,,wove/woven 常指编织；weaved 常用于迂回穿行。,OEWN 2025 verb.exc + documented form rules,independent_project_supplement,automated_checks_passed
+124,will,would,—,将；会；愿意；决意；遗赠,True,release-word-2946,would 是历史上的过去式，也用于条件、意愿等结构；没有过去分词。,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+125,win,won,won,获胜；赢得；争取到,True,release-word-2947,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
+126,write,wrote,written,写；写作；填写；写信,True,release-word-2985,,OEWN 2025 verb.exc + documented form rules,release_vocabulary_3800_zh,automated_checks_passed
