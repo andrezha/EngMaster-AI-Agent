@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+knee	noun=膝；膝盖；膝状物	knee%1:08:00::|knee%1:05:01::|knee%1:06:00::	
+knife	noun=刀；小刀|verb=用刀切；用刀刺	knife%1:06:00::|knife%1:06:01::|knife%1:25:00::|knife%2:35:00::	
+knock	verb=敲；撞；击倒|noun=敲击声；碰撞；批评	knock%1:11:01::|knock%1:09:00::|knock%1:11:00::|knock%1:11:02::	动词义依据基础英语常用义补充。
+know	verb=知道；了解；认识；懂得	know%1:09:00::|know%2:31:01::|know%2:31:03::|know%2:31:00::	
+knowledge	noun=知识；了解；学问	knowledge%1:03:00::	
+lab	noun=实验室；研究室	lab%1:06:00::|laboratory%1:06:00::|laboratory%1:15:00::	
+label	noun=标签；标记；称号|verb=贴标签；把……称为	label%1:10:01::|label%1:10:02::|label%1:27:00::|label%1:10:00::	动词义依据名词核心语义补充。
+labour	noun=劳动；劳工；分娩|verb=劳动；努力	labour%1:14:00::|labour%1:26:00::|labour%1:04:00::|labour%1:04:01::	
+lack	noun=缺乏；不足|verb=缺少；没有	lack%1:26:00::|lack%2:42:00::|lack%2:42:01::	
+lady	noun=女士；夫人；淑女	lady%1:18:02::|lady%1:18:01::|lady%1:18:03::	
+lake	noun=湖；湖泊	lake%1:17:00::	排除颜料等低相关义项。
+lamb	noun=羔羊；羊羔肉；温顺的人	lamb%1:05:00::|lamb%1:18:01::|lamb%1:18:00::|lamb%1:13:00::	
+lamp	noun=灯；照明灯	lamp%1:06:00::|lamp%1:06:01::	
+land	noun=陆地；土地；国家|verb=着陆；登陆；获得	land%1:21:01::|land%1:17:01::|land%1:15:01::|land%1:17:00::	动词义依据基础英语常用义补充。
+landscape	noun=风景；景观；形势|verb=美化环境	landscape%1:15:00::|landscape%1:06:01::|landscape%1:06:00::|landscape%1:09:00::	动词义依据基础英语常用义补充。
+language	noun=语言；言语；表达方式	language%1:10:00::|language%1:10:01::|language%1:10:02::|language%1:09:01::	
+lantern	noun=灯笼；提灯	lantern%1:06:00::	
+lap	noun=大腿上部；一圈；一段|verb=轻拍；舔食	lap%1:08:00::|lap%1:26:00::|lap%1:06:01::|lap%1:06:00::	动词义依据基础英语常用义补充。
+laptop	noun=笔记本电脑	laptop%1:06:00::	
+large	adjective=大的；大量的；重要的；广泛的	large%3:00:00::|large%5:00:00:significant:00|large%5:00:00:rhetorical:00|large%5:00:00:generous:02	
+last	adjective=最后的；最近的；上一个的|verb=持续；维持|noun=最后的人或事	last%5:00:00:past:00|last%3:00:00::|last%5:00:00:closing:00	动词和名词义依据基础英语常用义补充。
+late	adjective=迟的；晚的；已故的|adverb=迟；晚	late%3:00:00::|late%5:00:00:unpunctual:00|late%5:00:00:past:00|late%5:00:00:dead:01	
+later	adjective=后来的|adverb=后来；以后	later%5:00:00:subsequent:00|later%3:00:02::|later%4:02:01::|later%4:02:02::	
+laugh	verb=笑；嘲笑|noun=笑声；笑料	laugh%1:10:00::|laugh%1:10:02::|laugh%1:10:01::|laugh%2:29:00::	
+launch	verb=发射；推出；发起|noun=发射；发布；汽艇	launch%1:06:00::|launch%1:04:00::|launch%2:41:01::|launch%2:35:00::	
+law	noun=法律；法学；规律；法则	law%1:14:00::|law%1:10:00::|law%1:09:00::|law%1:09:01::	
+lawyer	noun=律师；法律工作者	lawyer%1:18:00::	
+lay	verb=放置；铺设；产卵|adjective=非专业的；世俗的	lay%5:00:00:profane:00|lay%5:00:00:nonprofessional:00	动词核心义依据基础英语常用义补充。
+lazy	adjective=懒惰的；懒散的；缓慢的	lazy%5:00:00:slow:01|lazy%5:00:00:idle:00	
+lead	verb=领导；引导；通向|noun=领先；线索；铅	lead%1:07:02::|lead%1:09:00::|lead%1:04:01::|lead%1:25:00::	动词及金属义依据基础英语常用义补充。
+leader	noun=领导者；领袖；领先者	leader%1:18:00::|leader%1:06:00::	
+leadership	noun=领导；领导能力；领导层	leadership%1:04:00::|leadership%1:14:00::|leadership%1:26:00::|leadership%1:09:00::	
+leaf	noun=叶；叶片；一页|verb=翻阅；长叶	leaf%1:20:00::|leaf%1:10:00::|leaf%1:06:00::|leaf%2:39:10::	
+league	noun=联盟；联赛；等级|verb=结盟	league%1:14:01::|league%1:14:00::|league%1:23:00::|league%2:30:00::	
+leak	verb=漏；泄漏；透露|noun=漏洞；泄漏；走漏	leak%1:17:00::|leak%1:26:00::|leak%1:22:00::|leak%1:11:00::	动词义依据名词核心语义补充。
+learn	verb=学习；学会；得知；记住	learn%2:31:00::|learn%2:31:01::|learn%2:31:03::|learn%2:31:02::	
+least	adjective=最少的；最小的|pronoun=最少量|adverb=最少地	least%3:00:00::|least%1:09:00::|least%4:02:00::	
+leather	noun=皮革|verb=用皮革覆盖；抽打	leather%1:27:00::|leather%2:35:00::	
+leave	verb=离开；留下；让……处于|noun=许可；假期；告别	leave%1:28:00::|leave%1:10:00::|leave%1:04:00::|leave%2:38:01::	
+lecture	noun=讲座；讲课；训斥|verb=讲课；训斥	lecture%1:10:00::|lecture%1:10:01::|lecture%1:04:00::|lecture%2:32:01::	
+left	adjective=左边的；剩下的|noun=左边；左派|adverb=向左	left%3:00:00::|left%5:00:00:unexhausted:00|left%5:00:00:left-handed:00|left%3:00:02::	名词和副词义依据基础英语常用义补充。
+leg	noun=腿；动物的腿；支架；一段赛程	leg%1:08:01::|leg%1:08:02::|leg%1:06:01::|leg%1:25:00::	
+legal	adjective=法律的；合法的；有效的	legal%3:00:00::|legal%3:01:00::|legal%5:00:00:valid:00|legal%3:01:01::	
+leisure	noun=闲暇；休闲活动	leisure%1:28:00::|leisure%1:04:00::	
+lemon	noun=柠檬；柠檬树；次品	lemon%1:13:00::|lemon%1:07:00::|lemon%1:20:00::|lemon%1:09:00::	
+lend	verb=借给；提供；增添	lend%2:40:01::|lend%2:40:00::|lend%2:42:00::	
+length	noun=长度；时间长度；篇幅；一段	length%1:07:00::|length%1:07:01::|length%1:07:02::|length%1:07:03::	
+less	adjective=较少的；较小的|adverb=较少地；更少	less%3:00:00::|less%5:00:00:inferior:02|less%5:00:00:fewer:00|less%4:02:00::	
+lesson	noun=课；课程；教训；功课	lesson%1:04:01::|lesson%1:10:00::|lesson%1:10:01::|lesson%1:04:00::	
+let	verb=让；允许；出租|noun=出租；阻碍	let%1:04:00::|let%2:41:00::|let%2:32:00::|let%2:32:02::	
+letter	noun=字母；信；文字；证书	letter%1:10:00::|letter%1:10:01::|letter%1:18:00::|letter%1:10:03::	
+level	noun=水平；等级；层|adjective=平的；稳定的|verb=弄平；使相等	level%5:00:01:even:01|level%5:00:00:steady:00|level%5:00:00:horizontal:00|level%5:00:02:even:01	名词和动词义依据基础英语常用义补充。
+liberation	noun=解放；释放；摆脱	liberation%1:04:02::|liberation%1:04:00::|liberation%1:04:01::	
+liberty	noun=自由；自主；冒昧行为	liberty%1:26:01::|liberty%1:26:02::|liberty%1:26:03::|liberty%1:28:00::	
+librarian	noun=图书管理员	librarian%1:18:00::	
+library	noun=图书馆；藏书；资料库	library%1:06:01::|library%1:14:00::|library%1:06:00::|library%1:14:01::	
+license	noun=许可证；执照；许可|verb=批准；发许可证	license%1:10:00::|license%1:26:01::|license%1:26:02::|license%1:04:00::	动词义依据名词核心语义补充。
+lie	verb=躺；位于；说谎|noun=谎言；位置	lie%1:10:00::|lie%1:15:00::|lie%2:42:00::|lie%2:35:00::	
+life	noun=生命；生活；人生；生物	life%1:26:01::|life%1:09:00::|life%1:26:02::|life%1:26:00::	
+lift	verb=举起；抬高；解除|noun=电梯；搭便车；提升	lift%1:04:02::|lift%1:19:00::|lift%1:11:00::|lift%1:11:01::	动词义依据基础英语常用义补充。
+light	noun=光；灯；火|adjective=明亮的；轻的；浅色的|verb=点燃；照亮	light%3:00:01::|light%3:00:05::|light%3:00:04::|light%3:00:03::	名词和动词义依据基础英语常用义补充。
+like	verb=喜欢；想要|preposition=像；如同|adjective=相似的|noun=同类	like%3:00:00::|like%3:00:02::|like%3:00:04::|like%5:00:00:same:00	动词、介词和名词义依据基础英语常用义补充。
+likely	adjective=可能的；有希望的|adverb=很可能	likely%3:00:00::|likely%5:00:00:prospective:00|likely%5:00:00:credible:00|likely%4:02:00::	
+limit	noun=限度；限制；界限|verb=限制；限定	limit%1:07:00::|limit%1:28:00::|limit%1:15:02::|limit%1:15:00::	动词义依据名词核心语义补充。
+limited	adjective=有限的；受限制的；不全面的	limited%3:00:00::|limited%5:00:00:restricted:00|limited%5:00:00:noncomprehensive:00|limited%5:00:00:qualified:02	
+line	noun=线；排；路线；台词|verb=排成一行；加衬里	line%1:14:03::|line%1:10:01::|line%1:14:01::|line%1:25:00::	动词义依据基础英语常用义补充。
+link	noun=联系；连接；环节|verb=连接；联系	link%1:24:00::|link%1:06:00::|link%1:26:00::|link%1:25:00::	动词义依据名词核心语义补充。
+lion	noun=狮子；名人	lion%1:05:00::|lion%1:18:00::	
+liquid	noun=液体|adjective=液态的；清澈的；流畅的	liquid%3:00:00::|liquid%5:00:00:tearful:00|liquid%5:00:00:clear:02|liquid%3:00:04::	名词义依据形容词核心语义补充。
+list	noun=名单；清单；目录|verb=列出；列入	list%1:10:00::|list%1:07:00::|list%2:32:00::|list%2:41:00::	
+listen	verb=听；倾听；听从	listen%2:39:00::|listen%2:39:01::|listen%2:41:11::	
+literally	adverb=按字面地；确实地	literally%4:02:00::|literally%4:02:01::	
+literary	adjective=文学的；文学性的；书面语的	literary%3:01:00::|literary%5:00:00:literate:01|literary%5:00:00:formal:02	
+literature	noun=文学；文学作品；文献；资料	literature%1:10:00::|literature%1:09:00::|literature%1:10:01::|literature%1:04:00::	
+litter	noun=垃圾；杂物；一窝幼崽|verb=乱扔；使凌乱	litter%1:14:00::|litter%1:27:00::|litter%1:06:01::|litter%1:06:00::	动词义依据基础英语常用义补充。
+little	adjective=小的；少的；年幼的；不重要的|pronoun=少量|adverb=很少	little%3:00:01::|little%3:00:03::|little%5:00:00:young:00|little%5:00:00:unimportant:00	代词和副词义依据基础英语常用义补充。
+live	verb=生活；居住；活着|adjective=活的；现场的；通电的|adverb=现场直播地	live%3:00:02::|live%3:00:01::|live%3:00:00::|live%5:00:00:reverberant:00	动词和副词义依据基础英语常用义补充。
+lively	adjective=活泼的；生动的；热闹的	lively%3:00:00::|lively%5:00:00:spirited:00|lively%5:00:00:energetic:00|lively%5:00:00:elastic:00	
+living	adjective=活着的；现存的|noun=生活；生计；活着的人	living%3:01:00::|living%5:00:00:realistic:00|living%5:00:00:absolute:00|living%5:00:00:extant:00	名词义依据基础英语常用义补充。
+load	noun=负载；载荷；大量|verb=装载；加载	load%1:06:00::|load%1:23:00::|load%1:06:02::|load%1:23:01::	动词义依据名词核心语义补充。
+loan	noun=贷款；借出物|verb=借出	loan%1:21:00::|loan%1:10:00::|loan%2:40:00::	
+local	adjective=当地的；局部的|noun=当地人；本地线路	local%3:00:01::|local%3:01:01::|local%3:00:02::|local%1:06:00::	
+location	noun=位置；地点；定位；外景地	location%1:03:00::|location%1:04:02::|location%1:04:01::|location%1:06:00::	
+lock	noun=锁；一绺头发；船闸|verb=锁住；固定	lock%1:06:00::|lock%1:08:00::|lock%1:06:03::|lock%1:06:02::	动词义依据基础英语常用义补充。
+log	noun=原木；日志；记录|verb=记录；伐木	log%1:27:01::|log%1:10:01::|log%1:10:02::|log%1:10:00::	动词义依据名词核心语义补充。
+logical	adjective=合乎逻辑的；合理的；逻辑上的	logical%3:00:00::|logical%5:00:00:valid:00|logical%3:00:05::|logical%5:00:00:rational:00	
+London	proper_noun=伦敦		OEWN无候选释义；依据通用地名知识原创整理。
+lonely	adjective=孤独的；寂寞的；荒凉的	lonely%5:00:00:unaccompanied:00|lonely%5:00:00:dejected:00|lonely%5:00:01:unsocial:00|lonely%5:00:00:uninhabited:00	
+long	adjective=长的；长时间的|adverb=长久地|verb=渴望	long%3:00:02::|long%3:00:01::|long%5:00:00:tall:00|long%3:00:00::	副词和动词义依据基础英语常用义补充。
+look	verb=看；看起来；寻找|noun=看；外表；神情	look%1:07:01::|look%1:04:00::|look%1:07:00::|look%1:26:00::	动词义依据基础英语常用义补充。
+loose	adjective=松的；宽松的；散漫的|verb=释放；松开	loose%3:00:02::|loose%5:00:00:uncontrolled:00|loose%3:00:01::|loose%5:00:00:unofficial:00	动词义依据基础英语常用义补充。
+lose	verb=失去；输掉；迷路；减少	lose%2:40:02::|lose%2:33:00::|lose%2:37:00::|lose%2:40:01::	
+loss	noun=损失；丧失；亏损；失败	loss%1:21:01::|loss%1:22:00::|loss%1:04:00::|loss%1:07:00::	
+lot	pronoun=许多；大量|noun=一批；地块；命运	lot%1:23:00::|lot%1:15:00::|lot%1:14:00::|lot%1:26:00::	
+loud	adjective=响亮的；喧闹的；花哨的|adverb=大声地	loud%3:00:00::|loud%5:00:00:tasteless:02|loud%3:00:02::|loud%4:02:00::	
+love	noun=爱；喜爱；爱人|verb=爱；喜欢	love%1:12:00::|love%1:09:00::|love%1:18:00::|love%1:12:01::	动词义依据名词核心语义补充。
+lovely	adjective=可爱的；美丽的；令人愉快的|noun=美女	lovely%5:00:00:beautiful:00|lovely%5:00:00:lovable:00|lovely%1:18:00::	
+low	adjective=低的；少的；低落的|adverb=低低地|noun=低点	low%3:00:02::|low%3:00:01::|low%5:00:00:soft:04|low%5:00:00:unrefined:01	副词和名词义依据基础英语常用义补充。
+lower	adjective=较低的；下方的|verb=降低；放下|noun=下层部分	lower%3:00:01::|lower%1:06:00::|lower%2:38:00::|lower%2:30:01::	
+luck	noun=运气；好运；机遇	luck%1:26:00::|luck%1:19:00::|luck%1:19:01::	

@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+give	verb=给；给予；赠送；提供；使产生	give%2:40:03::|give%2:40:05::|give%2:40:00::|give%2:40:07::	
+glad	adjective=高兴的；乐意的；感激的	glad%3:00:00::|glad%5:00:00:willing:00|glad%5:00:00:grateful:00|glad%5:00:00:cheerful:00	
+glass	noun=玻璃；玻璃杯；一杯的量；眼镜	glass%1:27:00::|glass%1:06:00::|glass%1:23:00::|glass%1:06:03::|glass%1:06:01::	
+global	adjective=全球的；全世界的；整体的	global%5:00:00:international:00|global%5:00:00:round:00	“整体的”依据词形和基础英语常用义补充。
+globe	noun=球体；地球仪；地球	globe%1:25:00::|globe%1:06:00::	
+glove	noun=手套；拳击手套；棒球手套	glove%1:06:01::|glove%1:06:00::|glove%1:06:02::	
+glue	noun=胶；胶水|verb=粘合；紧盯	glue%1:27:00::|glue%2:35:00::|glue%2:30:00::	
+go	verb=去；走；进行；变得|noun=尝试；轮到的机会|adjective=正常运行的	go%3:00:00::|go%1:28:00::|go%1:04:01::|go%1:04:00::	动词核心义依据基础英语常用用法归纳。
+goal	noun=目标；目的；球门；进球	goal%1:09:00::|goal%1:15:00::|goal%1:06:00::|goal%1:04:00::	
+goat	noun=山羊；替罪羊	goat%1:05:00::|goat%1:18:00::	
+gold	noun=金；黄金；金色|adjective=金色的；金制的	gold%5:00:00:metallic:00|gold%5:00:00:chromatic:00|gold%1:21:00::|gold%1:07:00::|gold%1:27:00::	
+golf	noun=高尔夫球运动|verb=打高尔夫球	golf%1:04:00::|golf%2:33:00::	
+good	adjective=好的；优良的；有益的；合适的|noun=好处；善	good%3:00:01::|good%5:00:00:ample:00|good%3:00:02::|good%5:00:00:reputable:00|good%5:00:00:advantageous:00	名词义依据基础英语常用义补充。
+goodbye	interjection=再见|noun=告别	goodbye%1:10:00::|bye%1:10:01::|bye%1:10:00::	
+goods	noun=商品；货物；财物		OEWN无候选释义；依据基础英语常用义原创整理。
+government	noun=政府；治理；政体	government%1:14:00::|government%1:04:00::|government%1:09:00::|government%1:09:01::	
+grab	verb=抓住；夺取；吸引|noun=抓取；抢夺	grab%1:06:00::|grab%1:04:00::|grab%2:35:00::|grab%2:40:00::|grab%2:38:02::	
+grade	noun=年级；等级；成绩；坡度|verb=分级；评分	grade%1:14:00::|grade%1:26:00::|grade%1:07:01::|grade%1:23:00::|grade%1:10:00::	动词义依据名词核心语义补充。
+gradually	adverb=逐渐地；渐渐地	gradually%4:02:00::	
+graduate	noun=毕业生|verb=毕业；授予学位|adjective=研究生的	graduate%5:00:00:high:02|graduate%1:18:00::|graduate%1:06:00::|graduate%2:40:00::|graduate%2:40:01::	
+grain	noun=谷物；谷粒；颗粒；少量	grain%1:17:00::|grain%1:13:00::|grain%1:27:00::|grain%1:23:03::|grain%1:23:02::	
+grammar	noun=语法；语法学	grammar%1:09:00::	
+gramme	noun=克	gramme%1:23:00::|gram%1:23:00::	英式拼写，等同gram。
+grand	adjective=宏伟的；壮丽的；重大的；极好的	grand%5:00:00:impressive:00|grand%5:00:00:noble:02|grand%5:00:00:rich:03|grand%5:00:00:extraordinary:00|grand%5:00:00:noble:01	
+granddaughter	noun=孙女；外孙女	granddaughter%1:18:00::	
+grandfather	noun=祖父；外祖父；爷爷；外公	grandfather%1:18:00::|grandpa%1:18:00::	
+grandmother	noun=祖母；外祖母；奶奶；外婆	grandmother%1:18:00::|grandma%1:18:00::	
+grandparent	noun=祖父母；外祖父母中的一人	grandparent%1:18:00::	
+grandson	noun=孙子；外孙	grandson%1:18:00::	
+grape	noun=葡萄；葡萄树	grape%1:13:00::|grape%1:20:00::	排除武器相关旧义。
+grasp	verb=抓住；理解；掌握|noun=紧握；理解力；掌握	grasp%1:09:00::|grasp%1:09:01::|grasp%1:07:00::|grasp%1:04:00::|grasp%2:35:00::	
+grass	noun=草；草地；禾本科植物	grass%1:20:00::|grass%1:13:00::	排除俚语及低相关义项。
+grateful	adjective=感激的；表示感谢的；令人愉快的	grateful%3:00:00::|grateful%5:00:00:pleasant:00	
+gravity	noun=重力；引力；严重性；庄重	gravity%1:19:00::|gravity%1:07:00::|gravity%1:12:00::	
+great	adjective=伟大的；很大的；重要的；极好的	great%5:00:01:large:00|great%5:00:01:important:00|great%5:00:01:extraordinary:00|great%5:00:00:good:01	
+greedy	adjective=贪婪的；贪吃的；渴望的	greedy%5:00:00:acquisitive:00|greedy%5:00:00:desirous:00|greedy%5:00:00:gluttonous:00	
+green	adjective=绿色的；环保的；未成熟的；缺乏经验的|noun=绿色；绿地	green%5:00:00:chromatic:00|green%3:01:00::|green%3:00:00::|green%5:00:00:naive:00	名词常用义依据形容词核心语义补充。
+greenhouse	noun=温室；暖房|adjective=温室效应的	greenhouse%3:01:00::|greenhouse%1:06:00::	
+greet	verb=问候；迎接；对……作出反应	greet%2:32:00::|greet%2:32:01::|greet%2:31:00::|greet%2:39:00::	
+grey	adjective=灰色的；灰白的；年老的|noun=灰色	grey%5:00:00:achromatic:00|grey%5:00:00:old:02|grey%5:00:00:intermediate:00	排除地域政治等低相关义项。
+grocery	noun=食品杂货；食品杂货店	grocery%1:06:00::|grocery%1:06:01::	
+ground	noun=地面；土地；场地；理由|verb=使停飞；使搁浅；以……为基础|adjective=磨碎的	ground%1:17:00::|ground%1:16:00::|ground%1:27:00::|ground%1:24:00::|ground%1:15:00::	动词和形容词常用义依据基础英语用法补充。
+group	noun=组；群；团体|verb=分组；归类	group%1:03:00::|group%1:27:00::|group%1:09:00::|group%2:31:00::|group%2:33:00::	
+grow	verb=生长；种植；增长；逐渐变得	grow%2:30:03::|grow%2:30:00::|grow%2:30:02::|grow%2:30:01::|grow%2:30:04::	
+guarantee	noun=保证；担保；保修|verb=保证；担保	guarantee%1:10:00::|guarantee%1:10:01::|guarantee%1:21:03::|guarantee%2:32:00::|guarantee%2:32:03::	
+guard	noun=警卫；守卫；防护装置|verb=守卫；防守；警惕	guard%1:18:03::|guard%1:18:01::|guard%1:06:00::|guard%1:07:00::|guard%1:18:04::	动词义依据名词核心语义补充。
+guess	verb=猜；猜测；估计|noun=猜测；推测	guess%1:10:00::|guess%1:09:00::|guess%2:31:00::|guess%2:32:00::|guess%2:31:01::	
+guest	noun=客人；宾客；特邀嘉宾	guest%1:18:00::|guest%1:18:01::|guest%1:06:00::	
+guidance	noun=指导；引导；咨询	guidance%1:10:00::|guidance%1:04:01::|guidance%1:04:00::	
+guide	noun=向导；指南；指导者|verb=指导；引导	guide%1:18:00::|guide%1:18:02::|guide%1:10:00::|guide%1:09:00::|guide%1:18:01::	动词义依据名词核心语义补充。
+guideline	noun=指导方针；准则；参考标准	guideline%1:10:01::|guideline%1:09:01::|guideline%1:09:00::	
+guilty	adjective=有罪的；内疚的	guilty%3:00:00::|guilty%5:00:00:ashamed:00	
+guitar	noun=吉他；六弦琴	guitar%1:06:00::	
+gun	noun=枪；炮；喷射器|verb=开枪；加速运转	gun%1:06:00::|gun%1:06:01::|gun%1:06:03::	动词义依据基础英语常用义补充；排除人物俚语义项。
+guy	noun=家伙；男人；人|verb=嘲弄	guy%1:18:00::|guy%1:06:00::|guy%2:32:00::	保留现代常用口语义；绳索义为低优先义项。
+gym	noun=体育馆；健身房；体育课	gym%1:06:00::	“体育课”为基础英语常用义补充。
+gymnastics	noun=体操；体操训练	gymnastics%1:04:00::	
+habit	noun=习惯；习性；惯常行为	habit%1:09:00::|habit%1:04:02::|habit%1:22:00::	排除服装等低相关义项。
+habitat	noun=栖息地；生存环境	habitat%1:15:00::	
+hair	noun=头发；毛发；细毛	hair%1:08:00::|hair%1:23:00::|hair%1:20:00::|hair%1:08:01::	
+half	noun=一半；半场|adjective=一半的；不完全的|adverb=一半地	half%5:00:00:fractional:00|half%5:00:00:incomplete:00|half%3:00:02::|half%1:23:00::|half%1:28:00::	
+hall	noun=大厅；礼堂；门厅；走廊	hall%1:06:03::|hall%1:06:05::|hall%1:06:02::|hall%1:06:04::|hall%1:06:06::	
+ham	noun=火腿；火腿肉|verb=表演过火	ham%1:13:00::|ham%1:18:01::|ham%1:18:00::|ham%2:36:00::	
+hamburger	noun=汉堡包；碎牛肉	hamburger%1:13:01::|hamburger%1:13:00::	
+hand	noun=手；指针；帮助；人手|verb=递；交给	hand%1:08:00::|hand%1:18:00::|hand%1:10:00::|hand%1:09:00::|hand%1:15:00::	动词义依据基础英语常用义补充。
+handbag	noun=手提包；女用手提包	handbag%1:06:00::	
+handkerchief	noun=手帕	handkerchief%1:06:00::	
+handle	noun=柄；把手|verb=处理；操纵；应付；触摸	handle%1:06:00::|handle%2:41:00::|handle%2:41:03::|handle%2:32:00::|handle%2:35:00::	
+handsome	adjective=英俊的；美观的；可观的；慷慨的	handsome%5:00:00:beautiful:00|handsome%5:00:00:generous:01	
+handwriting	noun=书写；笔迹；手写体	handwriting%1:10:00::|handwriting%1:04:00::	
+hang	verb=悬挂；吊；垂下；绞死|noun=悬挂方式；要领	hang%1:09:00::|hang%1:07:00::|hang%1:04:00::|hang%2:35:03::|hang%2:35:00::	
+happen	verb=发生；碰巧；恰好；遭遇	happen%2:30:00::|happen%2:30:02::|happen%2:41:00::|happen%2:30:01::|happen%2:40:12::	
+happy	adjective=高兴的；幸福的；乐意的；幸运的	happy%3:00:00::|happy%5:00:00:fortunate:00|happy%5:00:00:willing:00|happy%5:00:00:felicitous:00	
+hard	adjective=硬的；困难的；努力的；严厉的|adverb=努力地；猛烈地	hard%3:00:06::|hard%3:00:02::|hard%3:00:01::|hard%5:00:00:strong:00|hard%5:00:01:effortful:00	副词义依据基础英语常用义补充。
+hardly	adverb=几乎不；几乎没有；刚刚	hardly%4:02:00::|hardly%4:02:02::|hardly%4:02:01::	
+harm	noun=伤害；损害|verb=伤害；损害	harm%1:26:00::|harm%1:11:01::|harm%1:04:00::|harm%2:29:00::	
+harmful	adjective=有害的；造成伤害的	harmful%3:00:00::	
+harmonious	adjective=和谐的；协调的；和睦的	harmonious%3:00:00::|harmonious%5:00:00:balanced:00|harmonious%5:00:00:congruous:00|harmonious%5:00:00:compatible:01	
+harmony	noun=和谐；协调；和睦；和声	harmony%1:07:01::|harmony%1:10:01::|harmony%1:26:00::|harmony%1:10:00::|harmony%1:07:00::	
+harvest	noun=收获；收成；收获期|verb=收割；收获	harvest%1:20:00::|harvest%1:19:00::|harvest%1:04:01::|harvest%1:04:00::|harvest%2:35:00::	
+hat	noun=帽子；职位|verb=给……戴帽子	hat%1:06:00::|hat%1:04:00::|hat%2:29:00::|hat%2:40:00::	
+hatch	verb=孵化；策划|noun=舱口；孵化	hatch%1:22:00::|hatch%1:07:00::|hatch%1:06:03::|hatch%1:06:00::|hatch%2:29:01::	
+hate	verb=憎恨；讨厌|noun=憎恨；厌恶	hate%1:12:00::|hate%2:37:00::|hate%2:32:01::	
+have	verb=有；拥有；经历；吃；使|auxiliary=已经	have%1:18:00::|have%2:40:00::|have%2:42:00::|have%2:39:06::|have%2:40:04::	助动词用法依据基础英语语法补充。
+he	pronoun=他	he%1:10:00::	
+head	noun=头；头部；负责人；顶端|verb=朝……行进；领导	head%1:08:00::|head%1:05:00::|head%1:09:00::|head%1:18:00::|head%1:14:00::	动词义依据基础英语常用义补充。
+headache	noun=头痛；令人头痛的问题	headache%1:09:00::|headache%1:26:00::	
+health	noun=健康；健康状况	health%1:26:00::|health%1:26:01::	
+healthy	adjective=健康的；有益健康的；正常的；可观的	healthy%3:00:00::|healthy%5:00:00:sound:00|healthy%5:00:00:wholesome:00|healthy%5:00:00:reasonable:00|healthy%5:00:00:considerable:00	
+hear	verb=听见；听说；倾听；审理	hear%2:39:00::|hear%2:31:00::|hear%2:41:00::|hear%2:39:01::|hear%2:39:05::	
+heart	noun=心脏；内心；中心；核心；勇气	heart%1:09:00::|heart%1:08:00::|heart%1:07:01::|heart%1:15:00::|heart%1:09:01::	
+heat	noun=热；高温；热度；激烈|verb=加热；变热	heat%1:19:00::|heat%1:07:01::|heat%1:09:00::|heat%1:07:02::|heat%1:26:00::	动词义依据名词核心语义补充。
+heavy	adjective=重的；沉重的；大量的；严重的	heavy%3:00:01::|heavy%3:00:03::|heavy%3:00:04::|heavy%3:00:02::	排除身体描述等低相关义项。
+height	noun=高度；身高；高处；顶点	height%1:07:00::|height%1:26:00::|height%1:07:01::|height%1:07:02::	
+hello	interjection=你好；喂|noun=问候	hello%1:10:00::	
+help	verb=帮助；协助；改善|noun=帮助；助手；有用之物	help%1:04:00::|help%1:18:00::|help%1:07:00::|help%1:07:01::|help%2:41:00::	
+helpful	adjective=有帮助的；有用的	helpful%3:00:00::	
+hen	noun=母鸡；雌禽	hen%1:05:01::|hen%1:05:02::|hen%1:13:00::|hen%1:05:03::	
+hence	adverb=因此；由此；从今以后	hence%4:02:00::|hence%4:02:02::|hence%4:02:01::	
+her	pronoun=她；她的		OEWN无候选释义；依据基础英语人称代词用法原创整理。

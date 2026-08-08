@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+twenty	numeral=二十|noun=二十个；二十元钞票	twenty%5:00:00:cardinal:00|twenty%1:23:00::|twenty%1:21:00::	
+twice	adverb=两次；两倍	twice%4:02:00::|twice%4:02:01::	
+twin	noun=双胞胎之一；相似物|adjective=双生的；成对的|verb=使结成姐妹城市	twin%5:00:00:matched:00|twin%1:18:00::|twin%1:06:00::|twin%2:42:00::	
+two	numeral=二|noun=两个；二点牌	two%5:00:00:cardinal:00|two%1:23:00::|two%1:06:00::	
+type	noun=类型；典型；字体|verb=打字；归类	type%1:09:00::|type%1:18:00::|type%1:14:01::|type%1:10:01::	动词义依据基础英语常用义补充。
+typhoon	noun=台风	typhoon%1:19:00::	
+typical	adjective=典型的；特有的；一贯的	typical%3:00:00::|typical%5:00:00:characteristic:00|typical%5:00:00:normal:01	
+ugly	adjective=丑陋的；恶劣的；险恶的；可怕的	ugly%3:00:00::|ugly%5:00:00:ill-natured:00|ugly%5:00:00:evil:00|ugly%5:00:02:alarming:00	
+UK	proper_noun=英国；联合王国		OEWN无该缩写候选释义；依据通用国名知识原创整理。
+ultimately	adverb=最终；归根结底	ultimately%4:02:01::	
+umbrella	noun=雨伞；保护伞|adjective=综合性的；总括的	umbrella%5:00:00:comprehensive:00|umbrella%1:06:00::|umbrella%1:04:00::|umbrella%1:04:01::	
+uncle	noun=叔父；伯父；舅父；姑父；姨父	uncle%1:18:00::|uncle%1:18:01::	
+under	preposition=在……下面；低于；受……控制|adverb=在下面；少于|adjective=下面的；从属的	under%5:00:00:low:01|under%5:00:00:subordinate:01|under%4:02:05::|under%4:02:07::	介词义依据基础英语功能词用法补充。
+underground	adjective=地下的；秘密的|noun=地铁；地下组织|adverb=在地下	underground%5:00:00:subsurface:00|underground%5:00:00:covert:00|underground%1:14:00::|underground%1:06:00::	副词义依据基础英语常用义补充。
+understand	verb=理解；明白；得知；认为	understand%2:31:00::|understand%2:31:01::|understand%2:31:03::|understand%2:31:02::	
+uniform	noun=制服；统一服装|adjective=统一的；一致的；均匀的	uniform%3:00:00::|uniform%5:00:00:homogeneous:00|uniform%3:00:04::|uniform%5:00:00:regular:00	名词义依据基础英语常用义补充。
+unique	adjective=独特的；唯一的；罕见的	unique%5:00:00:incomparable:00|unique%5:00:00:specific:00|unique%5:00:00:single:05|unique%5:00:00:unusual:00	
+unit	noun=单位；单元；部队；装置	unit%1:23:00::|unit%1:24:00::|unit%1:14:00::|unit%1:09:00::	
+universe	noun=宇宙；世界；总体	universe%1:17:00::|universe%1:09:01::|universe%1:09:00::	
+university	noun=大学；大学全体人员	university%1:14:00::|university%1:06:00::|university%1:14:01::	
+unless	conjunction=除非；若不		OEWN无候选释义；依据基础英语从属连词用法原创整理。
+until	preposition=直到；到……为止|conjunction=直到……为止		OEWN候选属于同音异义词till，未采用；释义依据基础英语功能词用法原创整理。
+unusual	adjective=不寻常的；罕见的；独特的	unusual%3:00:00::|unusual%3:00:02::|unusual%5:00:00:uncommon:00	
+up	adverb=向上；在上面；起床|preposition=沿着；向……上面|adjective=向上的；醒着的|verb=提高	up%3:00:00::|up%5:00:00:awake:00|up%5:00:00:rising:00|up%5:00:00:ascending:00	副词、介词和动词义依据基础英语常用义补充。
+update	noun=最新消息；更新|verb=更新；使现代化	update%1:10:00::|update%1:04:00::|update%2:30:00::|update%2:32:00::	
+upon	preposition=在……上；一……就；根据		OEWN无候选释义；依据基础英语功能词用法原创整理。
+upper	adjective=上部的；较高的；上级的|noun=鞋面；上铺	upper%3:00:00::|upper%5:00:00:high:01|upper%5:00:00:superior:01|upper%1:06:02::	
+upset	verb=使烦恼；打翻；扰乱|adjective=难过的；混乱的|noun=意外结果；烦恼	upset%5:00:00:troubled:00|upset%5:00:00:disorganized:00|upset%5:00:00:unexpected:00|upset%5:00:00:ill:01	动词和名词义依据基础英语常用义补充。
+urban	adjective=城市的；都市的	urban%3:01:00::|urban%3:00:00::	
+urge	verb=催促；力劝；推动|noun=强烈欲望；冲动	urge%1:16:00::|urge%1:12:00::|urge%2:32:00::|urge%2:32:03::	
+urgent	adjective=紧急的；迫切的	urgent%5:00:00:imperative:00	
+US	proper_noun=美国；美利坚合众国		OEWN无该缩写候选释义；依据通用国名知识原创整理。
+us	pronoun=我们；我们自己		OEWN无候选释义；依据基础英语人称代词用法原创整理。
+use	verb=使用；利用；消耗|noun=使用；用途；用法	use%1:04:00::|use%1:07:00::|use%1:07:02::|use%1:22:00::	动词义依据基础英语常用义补充。
+used	adjective=用过的；二手的；习惯于的	used%3:00:00::|used%5:00:02:misused:00|used%5:00:00:old:01	
+useful	adjective=有用的；实用的	useful%3:00:00::|useful%5:00:00:functional:00	
+usual	adjective=通常的；惯常的；平常的	usual%3:00:00::|usual%5:00:00:familiar:02	
+usually	adverb=通常；一般地	usually%4:02:00::	
+vacation	noun=假期；休假|verb=度假	vacation%1:28:00::|vacation%1:04:01::|vacation%2:42:00::	
+valley	noun=山谷；谷地	valley%1:17:00::	
+valuable	adjective=有价值的；贵重的|noun=贵重物品	valuable%3:00:00::|valuable%5:00:00:worthy:00|valuable%1:21:00::	
+value	noun=价值；数值；重要性|verb=重视；估价	value%1:09:00::|value%1:07:00::|value%1:21:00::|value%1:07:01::	动词义依据基础英语常用义补充。
+variation	noun=变化；变体；差异；变奏	variation%1:11:01::|variation%1:04:00::|variation%1:10:00::|variation%1:09:01::	
+variety	noun=多样性；种类；品种；综艺节目	variety%1:14:01::|variety%1:07:00::|variety%1:14:00::|variety%1:10:00::	
+various	adjective=各种各样的；不同的；若干的	various%5:00:02:different:00|various%5:00:00:individual:00|various%5:00:00:different:00|various%5:00:02:varied:00	
+vary	verb=变化；相异；改变；使多样化	vary%2:30:01::|vary%2:42:00::|vary%2:42:01::|vary%2:30:04::	
+vase	noun=花瓶；瓶	vase%1:06:00::	
+vast	adjective=巨大的；广阔的；大量的	vast%5:00:00:large:00	
+vegetable	noun=蔬菜；植物|adjective=蔬菜的；植物的	vegetable%1:13:00::|vegetable%1:20:00::	形容词义依据基础英语常用义补充。
+vehicle	noun=车辆；交通工具；载体；媒介	vehicle%1:06:00::|vehicle%1:10:00::|vehicle%1:27:00::|vehicle%1:17:00::	
+venue	noun=地点；场所；审判地	venue%1:15:01::|venue%1:15:00::	
+version	noun=版本；说法；译本；变体	version%1:10:01::|version%1:09:01::|version%1:10:02::|version%1:10:00::	
+very	adverb=非常；很；正是|adjective=正是的；真正的	very%5:00:00:precise:00|very%5:00:00:same:02|very%4:02:00::|very%4:02:01::	
+victim	noun=受害者；牺牲品；上当者	victim%1:18:00::|victim%1:18:01::	
+victory	noun=胜利；成功	victory%1:11:00::	
+video	noun=视频；录像；录像设备|adjective=视频的	video%1:10:00::|video%1:06:00::|video%1:10:02::|video%1:10:01::	
+view	noun=看法；景色；视野；观看|verb=观看；认为	view%1:09:02::|view%1:09:01::|view%1:04:00::|view%1:15:00::	动词义依据基础英语常用义补充。
+village	noun=村庄；乡村；村民	village%1:14:00::|village%1:15:00::	
+violence	noun=暴力；猛烈；狂热	violence%1:04:01::|violence%1:07:00::|violence%1:26:00::	
+violin	noun=小提琴	violin%1:06:00::	
+virtual	adjective=虚拟的；实质上的；近乎的	virtual%5:00:00:realistic:00|virtual%5:00:00:essential:00	
+virtue	noun=美德；优点；效力；贞洁	virtue%1:07:01::|virtue%1:07:03::|virtue%1:07:02::|virtue%1:07:04::	
+virus	noun=病毒；计算机病毒；有害影响	virus%1:05:00::|virus%1:26:00::|virus%1:10:00::	
+visible	adjective=可见的；明显的；能见的	visible%3:00:00::|visible%5:00:00:overt:00|visible%5:00:00:available:00	
+vision	noun=视力；视野；想象；愿景	vision%1:09:03::|vision%1:09:01::|vision%1:09:02::|vision%1:09:04::	
+visit	verb=参观；拜访；访问|noun=参观；拜访；访问	visit%1:04:02::|visit%1:14:00::|visit%1:04:01::|visit%1:04:00::	动词义依据基础英语常用义补充。
+visitor	noun=访客；游客；来访者	visitor%1:18:00::	
+visual	adjective=视觉的；可见的|noun=视觉资料；画面	visual%3:01:04::|visual%5:00:00:visible:00	名词义依据基础英语常用义补充。
+vital	adjective=至关重要的；维持生命的；充满活力的	vital%5:00:00:indispensable:00|vital%5:00:00:essential:00|vital%5:00:00:animated:00|vital%5:00:00:alive:01	
+vivid	adjective=生动的；清晰的；鲜艳的	vivid%5:00:00:realistic:00|vivid%5:00:00:clear:00|vivid%5:00:00:colorful:00|vivid%5:00:00:saturated:03	
+vocabulary	noun=词汇；词汇量；专业用语	vocabulary%1:10:00::|vocabulary%1:09:00::|vocabulary%1:09:01::	
+voice	noun=声音；嗓音；意见；语态|verb=表达；发声	voice%1:07:00::|voice%1:10:00::|voice%1:11:00::|voice%1:10:01::	动词义依据基础英语常用义补充。
+volcano	noun=火山	volcano%1:17:01::|volcano%1:17:00::	
+volleyball	noun=排球运动；排球	volleyball%1:04:00::|volleyball%1:06:00::	
+volume	noun=体积；音量；卷；总量	volume%1:23:00::|volume%1:07:03::|volume%1:06:00::|volume%1:10:00::	
+volunteer	noun=志愿者；自愿参加者|verb=自愿；主动提供|adjective=志愿的	volunteer%5:00:00:voluntary:01|volunteer%1:18:01::|volunteer%1:18:00::|volunteer%2:32:00::	
+vote	noun=投票；选票；表决结果|verb=投票；表决	vote%1:04:00::|vote%1:04:01::|vote%1:07:00::|vote%1:14:00::	动词义依据基础英语常用义补充。
+wage	noun=工资；报酬|verb=发动；进行	wage%1:21:00::|wage%2:41:00::	
+waist	noun=腰；腰部；中间狭窄部分	waist%1:08:00::|waist%1:06:00::	
+wait	verb=等待；等候|noun=等待；等候时间	wait%1:28:00::|wait%1:04:00::|wait%2:42:00::|wait%2:42:01::	
+wake	verb=醒来；唤醒|noun=尾流；守灵；后果	wake%1:19:00::|wake%1:11:00::|wake%1:04:00::|wake%2:29:00::	
+walk	verb=走；步行；遛|noun=步行；散步；步态	walk%1:04:00::|walk%1:04:01::|walk%1:07:00::|walk%1:04:03::	动词义依据基础英语常用义补充。
+wall	noun=墙；壁；障碍|verb=筑墙围住	wall%1:06:00::|wall%1:17:00::|wall%1:08:00::|wall%1:26:00::	动词义依据基础英语常用义补充。
+wallet	noun=钱包；皮夹	wallet%1:06:00::	
+wander	verb=漫游；徘徊；走神；偏离	wander%2:38:00::|wander%2:41:00::|wander%2:38:02::|wander%2:38:01::	
+want	verb=想要；需要；缺少|noun=缺乏；需要；欲望	want%1:26:00::|want%1:26:01::|want%1:17:00::|want%1:12:00::	动词义依据基础英语常用义补充。
+war	noun=战争；斗争；冲突|verb=交战；斗争	war%1:04:00::|war%1:26:00::|war%1:04:02::|war%1:04:01::	动词义依据基础英语常用义补充。
+ward	noun=病房；选区；受监护人|verb=防止；避开	ward%1:18:00::|ward%1:15:00::|ward%1:06:00::|ward%1:06:01::	动词义依据基础英语常用义补充。
+warm	adjective=温暖的；热情的；暖色的|verb=使温暖；变热|noun=温暖处	warm%3:00:01::|warm%3:00:02::|warm%3:00:03::|warm%5:00:00:fresh:01	动词和名词义依据基础英语常用义补充。
+warn	verb=警告；提醒；预先告知	warn%2:32:00::|warn%2:32:01::|warn%2:32:03::|warn%2:32:02::	
+warning	noun=警告；预兆|adjective=警告的	warning%5:00:00:dissuasive:00|warning%1:10:00::|warning%1:10:01::|warning%1:10:02::	
+wash	verb=洗；冲洗；耐洗|noun=洗涤；水流；洗液	wash%1:06:02::|wash%1:04:01::|wash%1:17:00::|wash%1:22:00::	动词义依据基础英语常用义补充。
+washroom	noun=洗手间；卫生间	washroom%1:06:00::	
+waste	verb=浪费；消耗；使衰弱|noun=废物；浪费；荒地|adjective=废弃的	waste%5:00:00:inhospitable:00|waste%1:27:00::|waste%1:04:00::|waste%1:07:00::	动词义依据基础英语常用义补充。
+watch	verb=观看；注视；留意|noun=手表；值班；观察	watch%1:06:00::|watch%1:28:00::|watch%1:04:00::|watch%1:28:01::	动词义依据基础英语常用义补充。
+water	noun=水；水域；海域|verb=浇水；流泪；加水	water%1:27:00::|water%1:17:00::|water%1:27:02::|water%1:06:00::	动词义依据基础英语常用义补充。
+watermelon	noun=西瓜；西瓜植株	watermelon%1:20:00::|watermelon%1:13:00::	
+wave	noun=波浪；挥手；波；浪潮|verb=挥手；飘动；挥舞	wave%1:11:01::|wave%1:04:02::|wave%1:11:00::|wave%1:11:02::	动词义依据基础英语常用义补充。
+way	noun=方法；道路；方向；方式|adverb=很远；大大地	way%1:07:01::|way%1:04:01::|way%1:15:00::|way%1:26:00::	副词义依据基础英语常用义补充。
+we	pronoun=我们		OEWN无候选释义；依据基础英语人称代词用法原创整理。

@@ -57,6 +57,13 @@ EVIDENCE_FILES: dict[str, list[str]] = {
         "tools/build_extension_secondary_review_queue.py",
         "tools/finalize_word_master.py",
         "tools/build_release_word_master_3800.py",
+        "tools/build_oewn_semantic_base.py",
+        "tools/supplement_non_oewn_pos.py",
+        "tools/prepare_chinese_definition_batches.py",
+        "tools/apply_chinese_definition_draft.py",
+        "tools/validate_chinese_definition_batches.py",
+        "tools/export_chinese_definition_preview.py",
+        "tools/build_release_vocabulary_3800_zh.py",
         "tools/build_vocabulary_provenance_evidence.py",
     ],
     "audit_reports": [
@@ -84,6 +91,29 @@ EVIDENCE_FILES: dict[str, list[str]] = {
         "data_sources/clean/release_word_master_3800/legacy_word_overlap_mapping.csv",
         "data_sources/clean/release_word_master_3800/extensions_removed_for_3800_target.csv",
     ],
+    "semantic_enrichment": [
+        "data_sources/enrichment/oewn_semantic_base/oewn_semantic_base.json",
+        "data_sources/enrichment/oewn_semantic_base/oewn_semantic_base_summary.csv",
+        "data_sources/enrichment/oewn_semantic_base/needs_non_oewn_review.csv",
+        "data_sources/enrichment/oewn_semantic_base/README.md",
+        "data_sources/enrichment/oewn_semantic_base/SHA256SUMS.txt",
+        "data_sources/enrichment/non_oewn_pos_supplement/release_3800_pos_evidence.csv",
+        "data_sources/enrichment/non_oewn_pos_supplement/non_oewn_pos_supplement.csv",
+        "data_sources/enrichment/non_oewn_pos_supplement/README.md",
+        "data_sources/enrichment/non_oewn_pos_supplement/SHA256SUMS.txt",
+        "data_sources/enrichment/chinese_definition_batches/batch_manifest.json",
+        "data_sources/enrichment/chinese_definition_batches/README.md",
+        "data_sources/enrichment/chinese_definition_batches/SHA256SUMS.txt",
+    ],
+    "chinese_release_3800": [
+        "data_sources/clean/release_vocabulary_3800_zh/release_vocabulary_3800_zh.csv",
+        "data_sources/clean/release_vocabulary_3800_zh/release_vocabulary_3800_zh.json",
+        "data_sources/clean/release_vocabulary_3800_zh/release_vocabulary_3800_zh.xlsx",
+        "data_sources/clean/release_vocabulary_3800_zh/automated_qa_report.md",
+        "data_sources/clean/release_vocabulary_3800_zh/manifest.json",
+        "data_sources/clean/release_vocabulary_3800_zh/README.md",
+        "data_sources/clean/release_vocabulary_3800_zh/SHA256SUMS.txt",
+    ],
 }
 
 
@@ -107,6 +137,14 @@ def git_head() -> str:
 
 
 def main() -> None:
+    EVIDENCE_FILES["chinese_definition_batches"] = [
+        str(path.relative_to(ROOT)).replace("\\", "/")
+        for path in sorted((ROOT / "data_sources/enrichment/chinese_definition_batches").glob("batch_[0-9][0-9][0-9].json"))
+    ]
+    EVIDENCE_FILES["chinese_definition_drafts"] = [
+        str(path.relative_to(ROOT)).replace("\\", "/")
+        for path in sorted((ROOT / "data_sources/enrichment/chinese_definition_drafts").glob("batch_[0-9][0-9][0-9].tsv"))
+    ]
     entries: list[dict[str, object]] = []
     for category, names in EVIDENCE_FILES.items():
         for name in names:
@@ -131,7 +169,7 @@ def main() -> None:
                 "schema_version": 1,
                 "evidence_set_id": "engmaster-vocabulary-provenance-20260808",
                 "generated_on": "2026-08-08",
-                "release_dataset": "engmaster-release-word-master-3800",
+                "release_dataset": "engmaster-release-vocabulary-3800-zh",
                 "repository_head_at_generation": git_head(),
                 "git_commit_warning": "The repository HEAD is recorded, but this manifest does not assert that every listed file is committed. Verify git status, commit the evidence set, and create a release tag before external reliance.",
                 "file_count": len(entries),
@@ -142,11 +180,13 @@ def main() -> None:
         )
         + "\n",
         encoding="utf-8",
+        newline="\n",
     )
     sums_path = OUTPUT / "EVIDENCE_SHA256SUMS.txt"
     sums_path.write_text(
         "\n".join(f"{row['sha256']}  {row['path']}" for row in entries) + "\n",
         encoding="utf-8",
+        newline="\n",
     )
     print(f"Wrote evidence manifest for {len(entries)} files")
 

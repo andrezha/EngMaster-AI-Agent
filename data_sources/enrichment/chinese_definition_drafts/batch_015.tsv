@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+information	noun=信息；资料；情报	information%1:10:00::|information%1:09:00::|information%1:10:02::|information%1:14:00::	
+initial	adjective=最初的；开始的|noun=首字母|verb=用首字母签名	initial%5:00:00:first:00|initial%1:10:00::|initial%2:32:00::	
+initiative	noun=主动性；倡议；新方案|adjective=开始的	initiative%5:00:00:opening:00|initiative%1:07:00::|initiative%1:04:00::	
+injury	noun=伤害；损伤；受伤	injury%1:26:00::|injury%1:11:00::|injury%1:11:01::|injury%1:04:02::	
+inner	adjective=内部的；内心的；内在的	inner%5:00:00:inward:00|inner%3:00:00::|inner%5:00:00:intrinsic:00|inner%5:00:02:exclusive:00	
+innocent	adjective=无罪的；无辜的；天真的；无害的|noun=无辜者	innocent%3:00:00::|innocent%5:00:00:harmless:00|innocent%5:00:00:virtuous:00|innocent%5:00:00:naive:00	名词义依据基础英语常用义补充。
+innovation	noun=创新；革新；新事物	innovation%1:06:00::|innovation%1:09:00::|innovation%1:04:00::	
+input	noun=输入；投入；意见|verb=输入	input%1:10:00::|input%1:10:01::|input%1:09:00::|input%1:06:00::	动词义依据名词核心语义补充。
+inquire	verb=询问；打听；调查	inquire%2:32:01::|inquire%2:31:00::|inquire%2:32:02::	
+insect	noun=昆虫	insect%1:05:00::	排除贬义人物义项。
+inside	noun=内部；里面|adjective=内部的|adverb=在里面|preposition=在……里面	inside%3:00:00::|inside%5:00:00:interior:00|inside%5:00:00:exclusive:00|inside%5:00:00:inner:00	名词、副词和介词义依据基础英语常用义补充。
+insight	noun=洞察力；深刻见解；领悟	insight%1:09:02::|insight%1:12:00::|insight%1:09:01::|insight%1:09:00::	
+insist	verb=坚持；坚决要求；坚称	insist%2:32:00::|insist%2:32:03::|insist%2:31:00::	
+inspection	noun=检查；视察；检验	inspection%1:04:00::	
+inspire	verb=激励；启发；赋予灵感；引起	inspire%2:37:00::|inspire%2:36:00::|inspire%2:32:00::|inspire%2:32:01::	
+instance	noun=例子；实例；情况|verb=举例说明	instance%1:11:00::|instance%1:09:00::|instance%2:32:00::	
+instant	adjective=立即的；即时的|noun=瞬间；片刻	instant%5:00:00:fast:01|instant%5:00:00:present:01|instant%5:00:00:imperative:00|instant%1:28:01::	
+instead	adverb=代替；反而；却	instead%4:02:00::|instead%4:02:01::	
+institute	noun=学院；研究所；机构|verb=建立；制定；开始	institute%1:14:00::|institute%2:36:01::|institute%2:36:00::	
+institution	noun=机构；制度；惯例；建立	institution%1:14:00::|institution%1:06:00::|institution%1:09:00::|institution%1:04:00::	
+instruction	noun=指示；说明；教学；命令	instruction%1:10:04::|instruction%1:04:01::|instruction%1:04:00::|instruction%1:10:02::	
+instrument	noun=仪器；工具；乐器；手段	instrument%1:06:00::|instrument%1:04:00::|instrument%1:18:00::|instrument%1:10:00::	
+insurance	noun=保险；保险费；保障措施	insurance%1:21:02::|insurance%1:10:00::|insurance%1:26:00::	
+integrate	verb=使结合；使融入；整合	integrate%2:30:00::|integrate%2:41:00::|integrate%2:30:01::|integrate%2:31:00::	
+integrity	noun=正直；诚实；完整性	integrity%1:26:00::|integrity%1:07:00::	
+intelligent	adjective=聪明的；有智慧的；智能的；合理的	intelligent%3:00:00::|intelligent%5:00:00:sophisticated:00|intelligent%5:00:00:reasonable:00|intelligent%5:00:00:rational:00	
+intend	verb=打算；计划；意指；想要	intend%2:31:00::|intend%2:31:01::|intend%2:32:00::|intend%2:32:02::	
+intense	adjective=强烈的；紧张的；热切的	intense%3:00:00::|intense%5:00:00:sharp:04|intense%5:00:00:saturated:03	
+intention	noun=意图；目的；打算	intention%1:09:00::|intention%1:09:01::|intention%1:04:00::	
+interaction	noun=互动；相互作用；交流	interaction%1:04:00::|interaction%1:19:00::	
+interest	noun=兴趣；关注；利益；利息|verb=使感兴趣	interest%1:09:00::|interest%1:07:01::|interest%1:07:02::|interest%1:21:00::	动词义依据名词核心语义补充。
+interesting	adjective=有趣的；引人关注的	interesting%3:00:00::	
+internal	adjective=内部的；内在的；国内的	internal%3:00:00::|internal%5:00:00:intramural:00|internal%5:00:00:domestic:00|internal%5:00:00:inward:00	
+international	adjective=国际的；国际间的|noun=国际组织；国际比赛选手	international%3:00:00::|international%5:00:00:foreign:02	名词义依据基础英语常用义补充。
+Internet	proper_noun=互联网；因特网		OEWN无该大小写形式候选释义；依据通用技术术语原创整理。
+interpret	verb=解释；理解；口译；演绎	interpret%2:31:00::|interpret%2:32:00::|interpret%2:36:00::|interpret%2:36:01::	
+interrupt	verb=打断；中断；打扰|noun=中断信号	interrupt%1:19:00::|interrupt%2:32:00::|interrupt%2:30:03::|interrupt%2:30:04::	
+intervention	noun=干预；介入；调停	intervention%1:04:00::|intervention%1:10:00::|intervention%1:04:03::|intervention%1:04:01::	
+interview	noun=面试；采访；会谈|verb=面试；采访	interview%1:10:01::|interview%1:10:00::|interview%2:32:00::|interview%2:32:01::	
+into	preposition=进入；到……里面；变成；对……感兴趣		OEWN无候选释义；依据基础英语功能词用法原创整理。
+introduce	verb=介绍；引进；提出；使初次接触	introduce%2:32:00::|introduce%2:36:00::|introduce%2:30:03::|introduce%2:38:00::	
+introduction	noun=介绍；引言；引进；入门	introduction%1:04:01::|introduction%1:10:00::|introduction%1:10:01::|introduction%1:10:02::	
+invent	verb=发明；创造；编造	invent%2:36:00::|invent%2:36:01::	
+invention	noun=发明；发明物；创造力	invention%1:09:00::|invention%1:06:00::|invention%1:04:00::	
+investigate	verb=调查；研究；审查	investigate%2:32:00::|investigate%2:32:01::	
+investment	noun=投资；投资额；投入	investment%1:04:00::|investment%1:21:00::|investment%1:07:00::	排除服装等低相关义项。
+invite	verb=邀请；招致；请求|noun=邀请	invite%1:10:00::|invite%2:37:01::|invite%2:41:00::|invite%2:37:00::	
+involve	verb=涉及；包含；使参与；需要	involve%2:42:01::|involve%2:42:04::|involve%2:42:00::|involve%2:42:07::	
+iron	noun=铁；熨斗|verb=熨烫|adjective=坚强的	iron%5:00:00:robust:00|iron%1:27:00::|iron%1:06:01::|iron%1:06:02::	动词义依据名词核心语义补充。
+island	noun=岛；岛屿；孤立区域	island%1:17:00::|island%1:06:00::	
+issue	noun=问题；议题；一期；发行|verb=发布；发行；发给	issue%1:09:01::|issue%1:10:00::|issue%1:09:00::|issue%1:04:01::	动词义依据基础英语常用义补充。
+it	pronoun=它；这；那	it%1:09:00::	
+item	noun=项目；条目；物品；一则	item%1:10:00::|item%1:24:00::|item%1:06:00::|item%1:09:00::	
+its	determiner=它的		OEWN无候选释义；依据基础英语物主限定词用法原创整理。
+itself	pronoun=它自己；它本身		OEWN无候选释义；依据基础英语反身代词用法原创整理。
+jacket	noun=夹克衫；外套；护套	jacket%1:06:00::|jacket%1:06:01::|jacket%1:06:02::	排除食物外皮等低相关义项。
+jam	noun=果酱；拥堵；困境|verb=塞进；卡住；堵塞	jam%1:13:00::|jam%1:26:00::|jam%1:14:00::|jam%1:04:00::	动词义依据基础英语常用义补充。
+January	proper_noun=一月	january%1:28:00::	
+Japan	proper_noun=日本		OEWN无候选释义；依据通用地名知识原创整理。
+Japanese	adjective=日本的；日本人的；日语的|noun=日本人；日语	japanese%3:01:00::|japanese%1:18:00::|japanese%1:10:00::	
+jaw	noun=颌；下巴；钳口|verb=喋喋不休	jaw%1:08:00::|jaw%1:08:01::|jaw%1:06:00::|jaw%2:32:00::	
+jazz	noun=爵士乐；空话|verb=以爵士乐风格演奏	jazz%1:10:02::|jazz%1:10:00::|jazz%1:10:01::|jazz%2:36:00::	
+jeans	noun=牛仔裤	jeans%1:06:00::	
+job	noun=工作；职业；任务；职责	job%1:04:00::|job%1:04:01::|job%1:06:00::|job%1:06:01::	
+jog	verb=慢跑；轻推；唤起|noun=慢跑；轻推	jog%1:25:00::|jog%1:04:00::|jog%1:04:01::|jog%2:42:00::	
+join	verb=参加；加入；连接；会合|noun=连接处	join%1:25:00::|join%1:14:00::|join%2:41:00::|join%2:35:01::	
+joint	adjective=共同的；联合的|noun=关节；接合处	joint%3:00:00::|joint%5:00:00:shared:00|joint%5:00:00:multilateral:00|joint%1:08:00::	
+joke	noun=笑话；玩笑|verb=开玩笑	joke%1:10:00::|joke%1:04:01::|joke%1:04:00::|joke%1:07:00::	
+journal	noun=期刊；日志；日记	journal%1:10:01::|journal%1:10:00::|journal%1:21:00::|journal%1:06:01::	
+journalist	noun=新闻记者；新闻工作者	journalist%1:18:00::|journalist%1:18:01::	
+journey	noun=旅行；行程|verb=旅行；行进	journey%1:04:00::|journey%2:38:00::|journey%2:38:01::	
+joy	noun=喜悦；快乐；令人高兴的人或事|verb=使高兴；欢欣	joy%1:12:00::|joy%1:09:00::|joy%2:37:00::|joy%2:37:01::	
+judge	noun=法官；裁判|verb=判断；评判；审判	judge%1:18:00::|judge%1:18:01::|judge%2:31:02::|judge%2:31:00::	
+juice	noun=果汁；汁液；活力；电力	juice%1:13:00::|juice%1:26:00::|juice%1:19:00::|juice%1:08:00::	
+July	proper_noun=七月	july%1:28:00::	
+jump	verb=跳；跃过；猛增|noun=跳跃；猛增	jump%1:11:01::|jump%1:11:00::|jump%1:10:00::|jump%1:04:01::	动词义依据基础英语常用义补充。
+June	proper_noun=六月	june%1:28:00::	
+jungle	noun=热带丛林；密林；错综复杂的环境	jungle%1:15:00::|jungle%1:14:00::|jungle%1:14:01::	
+junior	adjective=年少的；职位较低的；低年级的|noun=年少者；低年级学生	junior%3:00:00::|junior%5:00:00:intermediate:00|junior%5:00:00:young:00|junior%1:18:02::	
+just	adjective=公正的；正义的；恰当的|adverb=刚刚；只是；正好	just%3:00:00::|just%3:00:02::|just%3:00:04::|just%5:00:00:righteous:00	副词义依据基础英语常用义补充。
+justice	noun=正义；公正；司法；法官	justice%1:07:00::|justice%1:04:00::|justice%1:18:00::	
+justify	verb=证明……有道理；为……辩护；使对齐	justify%2:32:00::|justify%2:32:04::|justify%2:30:00::	
+kangaroo	noun=袋鼠	kangaroo%1:05:00::	
+keep	verb=保持；保留；遵守；继续|noun=生活费用；城堡主楼	keep%1:21:00::|keep%1:06:00::|keep%1:06:01::|keep%2:42:00::	动词义依据基础英语常用义归纳。
+kettle	noun=水壶；锅；一壶的量	kettle%1:06:00::|kettle%1:23:00::|kettle%1:17:00::|kettle%1:06:01::	
+key	noun=钥匙；按键；关键；答案|adjective=关键的	key%5:00:00:important:00|key%1:06:00::|key%1:09:00::|key%1:07:00::	
+keyboard	noun=键盘；琴键	keyboard%1:06:01::|keyboard%1:06:00::	
+kick	verb=踢；踹|noun=踢；快感；反冲	kick%1:04:00::|kick%1:12:00::|kick%1:11:00::|kick%1:10:00::	动词义依据名词核心语义补充。
+kid	noun=小孩；年轻人；小山羊|verb=开玩笑；欺骗	kid%1:18:00::|kid%1:27:00::|kid%1:18:01::|kid%1:05:00::	动词义依据基础英语常用义补充。
+kill	verb=杀死；消灭；破坏|noun=捕杀；猎获物	kill%1:04:00::|kill%1:04:01::|kill%1:05:00::|kill%2:35:00::	
+kilo	noun=千克；公斤	kilo%1:23:00::|kilogram%1:23:00::	
+kilometre	noun=千米；公里	kilometre%1:23:00::|kilometer%1:23:00::	英式拼写。
+kind	adjective=友善的；体贴的；宽容的|noun=种类；类型	kind%3:00:00::|kind%5:00:00:hospitable:00|kind%5:00:00:forgiving:00|kind%1:09:00::	
+kindergarten	noun=幼儿园	kindergarten%1:14:00::	
+king	noun=国王；君主；最重要者；王棋	king%1:18:00::|king%1:18:01::|king%1:26:00::|king%1:06:02::	
+kingdom	noun=王国；领域；界	kingdom%1:26:00::|kingdom%1:15:01::|kingdom%1:15:00::|kingdom%1:14:01::	
+kiss	verb=吻；轻触|noun=吻；轻触	kiss%1:04:00::|kiss%1:04:01::	排除糖果等低相关义项。
+kit	noun=成套工具；装备；配套用品|verb=装备	kit%1:06:01::|kit%1:06:00::|kit%1:05:00::|kit%2:40:00::	
+kitchen	noun=厨房	kitchen%1:06:00::	
+kite	noun=风筝；鸢|verb=使物价上涨	kite%1:06:00::|kite%1:05:00::	排除金融票据等低相关义项；动词义依据基础英语用法补充。

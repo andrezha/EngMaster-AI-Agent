@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+poetry	noun=诗；诗歌；诗意	poetry%1:10:02::|poetry%1:10:03::	
+point	noun=要点；观点；点；分数|verb=指；指向；指出	point%1:09:00::|point%1:15:00::|point%1:10:01::|point%1:09:01::	动词义依据基础英语常用义补充。
+poison	noun=毒物；毒药|verb=使中毒；毒害；破坏	poison%1:27:00::|poison%1:07:00::|poison%2:41:00::|poison%2:35:00::	
+polar	adjective=极地的；极性的；截然相反的	polar%5:00:00:charged:00|polar%5:00:00:different:00|polar%3:01:00::|polar%3:00:00::	
+pole	noun=杆；柱；地极；两极之一	pole%1:06:00::|pole%1:09:00::|pole%1:23:01::|pole%1:23:02::	
+police	noun=警察；警方|verb=维持治安；监督	police%1:14:00::|police%2:41:00::	
+policeman	noun=男警察；警员	policeman%1:18:01::	
+policewoman	noun=女警察；女警员	policewoman%1:18:00::	
+policy	noun=政策；方针；保险单	policy%1:09:00::|policy%1:10:00::|policy%1:10:02::	
+polish	noun=光泽；擦亮剂；文雅|verb=擦亮；润色	polish%1:07:00::|polish%1:26:00::|polish%1:27:00::|polish%2:35:00::	
+polite	adjective=有礼貌的；客气的；文雅的	polite%3:00:00::|polite%5:00:00:refined:01|polite%3:00:04::	
+political	adjective=政治的；政党的；政治性的	political%3:00:00::|political%3:01:01::|political%3:01:02::	
+politician	noun=政治家；政客；善于权术的人	politician%1:18:01::|politician%1:18:00::|politician%1:18:02::	
+politics	noun=政治；政治学；政治活动；政治观点	politics%1:24:00::|politics%1:09:00::|politics%1:04:00::|politics%1:09:01::	
+pollute	verb=污染；弄脏；玷污	pollute%2:30:00::	
+pollution	noun=污染；污染物；污染行为	pollution%1:26:00::|pollution%1:26:02::|pollution%1:04:00::	
+pond	noun=池塘；水塘	pond%1:17:00::	
+pool	noun=水池；游泳池；共同资金|verb=集中；合并	pool%1:06:00::|pool%1:17:00::|pool%1:14:01::|pool%1:14:00::	动词义依据基础英语常用义补充。
+poor	adjective=贫穷的；差的；可怜的；不足的|noun=穷人	poor%5:00:00:unfortunate:00|poor%3:00:00::|poor%3:00:03::|poor%3:00:02::	名词义依据基础英语常用义补充。
+popular	adjective=受欢迎的；大众的；流行的	popular%3:00:00::|popular%5:00:00:democratic:00|popular%5:00:01:common:01|popular%5:00:00:nonclassical:00	
+population	noun=人口；种群；全体居民；总体	population%1:14:00::|population%1:14:01::|population%1:09:00::|population%1:23:00::	
+pork	noun=猪肉；政治拨款	pork%1:13:00::|pork%1:21:00::	
+port	noun=港口；端口；波尔图酒|adjective=左舷的	port%5:00:00:left:00|port%1:15:00::|port%1:13:00::|port%1:06:00::	
+pose	verb=摆姿势；造成；提出；冒充|noun=姿势；装腔作势	pose%1:07:00::|pose%1:07:01::|pose%1:04:00::|pose%2:42:00::	
+position	noun=位置；职位；立场；姿势|verb=放置；定位	position%1:15:00::|position%1:15:02::|position%1:09:00::|position%1:07:01::	动词义依据基础英语常用义补充。
+positive	adjective=积极的；肯定的；正的；确定的|noun=正数；优点	positive%3:00:01::|positive%5:00:00:certain:02|positive%5:00:00:advantageous:00|positive%3:00:04::	名词义依据基础英语常用义补充。
+possession	noun=拥有；所有物；占有；领地	possession%1:04:00::|possession%1:03:00::|possession%1:26:00::|possession%1:16:00::	
+possible	adjective=可能的；可行的|noun=可能的人选；可能性	possible%3:00:00::|possible%3:00:04::|possible%1:09:00::|possible%1:18:00::	
+post	noun=职位；柱；邮件；帖子|verb=邮寄；发布；派驻	post%1:15:00::|post%1:06:01::|post%1:04:00::|post%1:06:00::	动词义依据基础英语常用义补充。
+postcard	noun=明信片	postcard%1:10:00::	
+poster	noun=海报；招贴画；发帖者	poster%1:10:00::|poster%1:18:00::	排除同形马类义项。
+postman	noun=邮递员；邮差	postman%1:18:00::	
+postpone	verb=推迟；延期	postpone%2:42:00::	
+pot	noun=锅；壶；罐；一锅的量	pot%1:06:00::|pot%1:06:01::|pot%1:23:00::|pot%1:06:04::	
+potato	noun=马铃薯；土豆；马铃薯植株	potato%1:13:00::|potato%1:20:00::	
+potential	adjective=潜在的；可能的|noun=潜力；可能性；电势	potential%3:00:00::|potential%5:00:00:prospective:00|potential%1:26:00::|potential%1:19:00::	
+pound	noun=磅；英镑；收容所|verb=猛击；连续重击	pound%1:23:09::|pound%1:23:01::|pound%1:23:10::|pound%1:23:08::	动词义依据基础英语常用义补充。
+pour	verb=倒；倾注；涌流；下大雨	pour%2:38:03::|pour%2:38:00::|pour%2:38:04::|pour%2:38:02::	
+power	noun=力量；权力；能力；电力|verb=驱动；供电	power%1:07:00::|power%1:19:00::|power%1:09:01::|power%1:26:00::	动词义依据基础英语常用义补充。
+practical	adjective=实际的；实用的；实践的|noun=实践课；实用考试	practical%3:00:00::|practical%5:00:01:realistic:00|practical%5:00:02:realistic:00|practical%5:00:00:applied:00	名词义依据基础英语常用义补充。
+practice	noun=练习；实践；惯例；业务|verb=练习；实践	practice%1:04:00::|practice%1:04:02::|practice%1:04:04::|practice%1:04:03::	动词义依据名词核心语义补充。
+praise	noun=赞扬；赞美|verb=表扬；赞美	praise%1:10:00::|praise%1:10:01::|praise%2:32:00::	
+pray	verb=祈祷；祈求；请求	pray%2:32:00::|pray%2:32:01::	
+precious	adjective=珍贵的；宝贵的；受珍爱的|adverb=非常	precious%5:00:00:loved:00|precious%5:00:00:valuable:00|precious%5:00:00:worthy:00|precious%5:00:00:artful:00	副词义依据基础英语常用义补充。
+precisely	adverb=精确地；恰好；正是	precisely%4:02:00::|precisely%4:02:01::|precisely%4:02:02::	
+predict	verb=预言；预测；预报	predict%2:32:00::|predict%2:32:01::	
+prefer	verb=更喜欢；宁愿；提升	prefer%2:37:00::|prefer%2:31:00::|prefer%2:41:00::|prefer%2:41:01::	
+preference	noun=偏爱；优先选择；偏爱的事物	preference%1:12:00::|preference%1:09:01::|preference%1:09:00::|preference%1:07:00::	
+prejudice	noun=偏见；成见|verb=使有偏见；损害	prejudice%1:09:01::|prejudice%2:41:00::|prejudice%2:31:00::	
+premier	adjective=首要的；最初的|noun=总理；首相	premier%5:00:02:first:00|premier%5:00:01:first:00|premier%1:18:00::|premier%1:18:01::	
+prepare	verb=准备；预备；调制；使做好准备	prepare%2:30:00::|prepare%2:36:01::|prepare%2:36:02::|prepare%2:36:00::	
+present	adjective=现在的；出席的|noun=现在；礼物|verb=呈现；赠送；提出	present%3:00:01::|present%3:00:02::|present%1:28:00::|present%1:21:00::	动词义依据基础英语常用义补充。
+presentation	noun=展示；演讲；提交；颁发	presentation%1:04:01::|presentation%1:04:00::|presentation%1:10:00::|presentation%1:10:01::	
+preserve	verb=保护；保存；维持|noun=保护区；果酱	preserve%1:26:00::|preserve%1:15:00::|preserve%1:13:00::|preserve%2:42:00::	
+president	noun=总统；主席；校长；公司总裁	president%1:18:01::|president%1:18:00::|president%1:18:03::|president%1:18:02::	
+press	verb=按；压；催促|noun=新闻界；出版社；压榨机	press%1:26:00::|press%1:10:00::|press%1:06:01::|press%1:14:01::	动词义依据基础英语常用义补充。
+pressure	noun=压力；压强；催促|verb=施压；迫使	pressure%1:19:00::|pressure%1:07:00::|pressure%1:04:00::|pressure%1:26:00::	动词义依据基础英语常用义补充。
+pretend	verb=假装；佯称|adjective=假装的；想象的|noun=假装	pretend%5:00:00:unreal:00|pretend%1:04:00::|pretend%2:32:00::|pretend%2:36:00::	
+pretty	adjective=漂亮的；可爱的|adverb=相当；颇	pretty%5:00:00:beautiful:00|pretty%5:00:00:bad:00|pretty%4:02:00::	
+prevent	verb=阻止；防止；预防	prevent%2:41:01::|prevent%2:41:00::	
+previous	adjective=先前的；以前的；上一个的	previous%5:00:00:preceding:00|previous%5:00:00:past:00|previous%5:00:00:early:00	
+price	noun=价格；代价；悬赏|verb=给……定价；比较价格	price%1:07:00::|price%1:21:00::|price%1:07:02::|price%1:07:01::	动词义依据基础英语常用义补充。
+pride	noun=自豪；骄傲；自尊|verb=以……自豪	pride%1:12:00::|pride%1:12:01::|pride%1:07:00::|pride%1:14:00::	动词义依据基础英语常用义补充。
+primary	adjective=主要的；首要的；初级的；基本的|noun=初选；原色	primary%3:00:00::|primary%5:00:00:underived:00|primary%5:00:00:important:00|primary%5:00:00:basic:00	名词义依据基础英语常用义补充。
+primitive	adjective=原始的；早期的；简陋的|noun=原始人；原始事物	primitive%5:00:02:early:02|primitive%5:00:01:early:02|primitive%5:00:00:noncivilized:00|primitive%5:00:00:untrained:00	名词义依据基础英语常用义补充。
+principle	noun=原则；原理；道德准则	principle%1:09:03::|principle%1:09:01::|principle%1:09:00::|principle%1:09:04::	
+print	verb=打印；印刷；刊登|noun=印刷品；字体；印痕	print%1:10:00::|print%1:06:00::|print%1:10:01::|print%1:10:02::	动词义依据基础英语常用义补充。
+prior	adjective=先前的；优先的|noun=修道院院长	prior%5:00:00:antecedent:00|prior%1:18:00::	
+priority	noun=优先事项；优先权；重点	priority%1:26:00::|priority%1:07:00::	
+prison	noun=监狱；牢狱；禁锢	prison%1:06:00::|prison%1:26:00::	
+private	adjective=私人的；私下的；私有的|noun=士兵	private%3:00:00::|private%5:00:02:personal:00|private%5:00:00:personal:00|private%5:00:00:inward:00	名词义依据基础英语常用义补充。
+prize	noun=奖；奖品；珍贵之物|adjective=优秀的|verb=珍视；撬开	prize%5:00:00:superior:02|prize%1:21:00::|prize%1:21:01::|prize%1:06:00::	动词义依据基础英语常用义补充。
+probably	adverb=大概；很可能	probably%4:02:00::|probably%4:02:01::	
+problem	noun=问题；难题；习题	problem%1:26:00::|problem%1:10:00::|problem%1:09:00::	
+procedure	noun=程序；步骤；手续；操作方法	procedure%1:04:00::|procedure%1:04:02::|procedure%1:10:00::|procedure%1:04:01::	
+proceed	verb=继续；进行；前往；起诉	proceed%2:32:00::|proceed%2:38:00::|proceed%2:41:00::|proceed%2:30:00::	
+process	noun=过程；程序；工序|verb=处理；加工；审核	process%1:04:00::|process%1:09:00::|process%1:10:00::|process%1:09:01::	动词义依据基础英语常用义补充。
+produce	verb=生产；产生；制作；出示|noun=农产品	produce%1:13:00::|produce%2:36:02::|produce%2:36:00::|produce%2:36:03::	
+product	noun=产品；产物；结果；乘积	product%1:06:01::|product%1:06:00::|product%1:09:00::|product%1:27:00::	
+profession	noun=职业；专业；行业；声明	profession%1:14:00::|profession%1:04:00::|profession%1:10:00::|profession%1:10:01::	
+professional	adjective=职业的；专业的；熟练的|noun=专业人士；职业选手	professional%3:00:01::|professional%3:01:01::|professional%3:00:02::|professional%3:01:00::	
+professor	noun=教授	professor%1:18:00::	
+profile	noun=简介；侧面轮廓；形象|verb=概述；描绘轮廓	profile%1:10:01::|profile%1:15:01::|profile%1:10:00::|profile%1:26:00::	动词义依据基础英语常用义补充。
+profit	noun=利润；收益；好处|verb=获利；受益	profit%1:21:00::|profit%1:07:00::|profit%2:40:02::|profit%2:40:00::	
+programme	noun=节目；计划；程序；课程|verb=规划；编程	programme%1:10:00::|programme%1:10:05::|programme%1:10:01::|programme%1:10:02::	英式拼写；动词义依据基础英语常用义补充。
+progress	noun=进步；进展；前进|verb=进步；推进	progress%1:04:01::|progress%1:04:00::|progress%1:11:00::|progress%2:30:00::	
+prohibit	verb=禁止；阻止	prohibit%2:32:00::	
+project	noun=项目；课题；工程|verb=计划；投射；预测	project%1:04:00::|project%1:09:00::|project%2:32:00::|project%2:42:00::	
+promise	noun=承诺；希望|verb=承诺；预示	promise%1:10:00::|promise%1:09:00::|promise%2:32:00::|promise%2:32:01::	
+promote	verb=促进；推广；晋升；促销	promote%2:41:01::|promote%2:41:00::|promote%2:32:00::|promote%2:33:01::	
+pronounce	verb=发音；宣布；宣判	pronounce%2:32:01::|pronounce%2:32:00::	
+pronunciation	noun=发音；读法	pronunciation%1:10:00::|pronunciation%1:10:01::	
+proof	noun=证据；证明；校样|adjective=防……的|verb=校对；使防护	proof%5:00:00:impervious:00|proof%1:09:00::|proof%1:10:00::|proof%1:23:00::	动词义依据基础英语常用义补充。
+proper	adjective=恰当的；正确的；正式的；特有的	proper%3:00:00::|proper%5:00:00:real:02|proper%5:00:00:specific:00|proper%5:00:00:appropriate:00	
+property	noun=财产；所有权；属性；房地产	property%1:21:00::|property%1:07:00::|property%1:15:00::|property%1:09:00::	
+proposal	noun=提议；方案；求婚	proposal%1:10:00::|proposal%1:10:02::|proposal%1:10:01::	
+prospect	noun=前景；可能性；潜在客户；景色|verb=勘探；寻找	prospect%1:26:00::|prospect%1:09:01::|prospect%1:18:00::|prospect%1:09:00::	动词义依据基础英语常用义补充。
+protect	verb=保护；防护；投保	protect%2:33:00::|protect%2:33:01::	
+protein	noun=蛋白质	protein%1:27:00::	
+protest	noun=抗议；反对；声明|verb=抗议；反对；坚称	protest%1:10:00::|protest%1:04:00::|protest%1:10:01::|protest%2:32:00::	

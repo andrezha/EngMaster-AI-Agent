@@ -2,6 +2,7 @@
 
 # Preserve evidence-source bytes so archived SHA-256 values remain reproducible.
 data_sources/** -text
+data_sources/** whitespace=cr-at-eol,-blank-at-eol
 
 # Keep vocabulary build scripts and their governance document stable on Windows.
 tools/*.py text eol=lf

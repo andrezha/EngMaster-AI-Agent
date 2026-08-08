@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+either	determiner=两者中的任一个|pronoun=两者中的任一个|conjunction=或者……或者……|adverb=也（用于否定句）	either%4:02:00::	OEWN 候选仅覆盖否定句副词义；按课标补充限定词、代词和连词功能。
+elder	adjective=年长的；资格老的|noun=长者；前辈；接骨木	elder%5:00:00:senior:00|elder%1:18:00::|elder%1:20:00::	主动省略宗教职务专门义。
+elderly	adjective=年老的；上了年纪的|noun=老年人群体	elderly%5:00:00:old:02|elderly%1:14:00::	
+election	noun=选举；当选；选择	election%1:04:01::|election%1:04:00::|election%1:26:00::	主动省略神学预定论专门义。
+electricity	noun=电；电能；强烈兴奋	electricity%1:19:00::|electricity%1:19:01::|electricity%1:12:00::	
+electronic	adjective=电子的；电子设备的	electronic%3:01:00::|electronic%3:01:01::	
+elegant	adjective=优雅的；雅致的；简洁巧妙的	elegant%3:00:00::|elegant%5:00:00:gracious:00|elegant%5:00:00:graceful:00	
+element	noun=要素；部件；元素；自然环境	element%1:09:00::|element%1:06:00::|element%1:27:00::|element%1:15:00::	主动省略古代四元素学说的边缘义。
+elephant	noun=象；大象	elephant%1:05:00::	主动排除美国政党符号义。
+eleven	numeral=十一|noun=十一；足球队	eleven%5:00:00:cardinal:00|eleven%1:23:00::|eleven%1:14:00::	
+else	adjective=别的；其他的|adverb=另外；否则		按课标中的常用后置修饰和副词用法补充；OEWN 无对应候选义项。
+elsewhere	adverb=在别处；到别处	elsewhere%4:02:00::	
+email	noun=电子邮件；电子邮箱地址|verb=发电子邮件	email%1:10:00::|email%1:10:01::|email%1:10:02::|email%2:32:00::	
+embarrassed	adjective=尴尬的；窘迫的；难为情的	embarrassed%5:00:00:discomposed:00|embarrassed%5:00:00:ashamed:00	
+emerge	verb=出现；显露；浮现；形成	emerge%2:30:00::|emerge%2:30:01::|emerge%2:38:00::|emerge%2:42:00::	
+emergency	noun=紧急情况；突发事件；紧急状态	emergency%1:11:00::|emergency%1:26:00::	主动省略手刹的边缘义。
+emotion	noun=情感；情绪	emotion%1:12:00::	
+emperor	noun=皇帝；帝王	emperor%1:18:00::	主动排除葡萄、蛾和蝴蝶同名义。
+emphasis	noun=强调；重点；重音	emphasis%1:26:00::|emphasis%1:07:00::|emphasis%1:10:01::|emphasis%1:10:00::	
+employ	verb=雇用；使用；使忙于|noun=受雇状态	employ%2:41:00::|employ%2:34:00::|employ%1:26:00::	
+empty	adjective=空的；空洞的；无人的|verb=倒空；变空|noun=空容器	empty%3:00:00::|empty%5:00:00:meaningless:00|empty%1:06:00::	OEWN 候选支持形容词和名词义；补充常用动词用法。
+enable	verb=使能够；使成为可能	enable%2:30:00::	
+encounter	verb=遭遇；偶然遇到|noun=相遇；遭遇；冲突	encounter%2:38:00::|encounter%1:04:01::|encounter%1:11:00::|encounter%1:04:00::|encounter%1:10:00::	
+encourage	verb=鼓励；促进；支持	encourage%2:37:00::|encourage%2:41:00::|encourage%2:32:00::	
+end	noun=末端；结束；目的；结局|verb=结束；终止	end%1:15:00::|end%1:28:00::|end%1:11:00::|end%1:09:02::|end%1:09:00::	OEWN 候选支持名词核心义；补充常用动词用法。
+enemy	noun=敌人；敌军；敌对势力|adjective=敌方的	enemy%1:18:00::|enemy%1:14:00::|enemy%1:14:01::|enemy%1:18:01::	补充常用形容词用法。
+energetic	adjective=精力充沛的；积极有力的	energetic%3:00:00::|energetic%5:00:00:enterprising:00	
+energy	noun=能量；精力；活力；干劲	energy%1:19:00::|energy%1:07:00::|energy%1:07:02::|energy%1:26:00::	
+engage	verb=从事；参加；吸引；雇用；订婚	engage%2:41:06::|engage%2:31:00::|engage%2:41:01::|engage%2:32:00::	
+engine	noun=发动机；引擎；机车；推动力	engine%1:06:00::|engine%1:06:01::|engine%1:19:00::	主动省略古代战争机械义。
+engineer	noun=工程师；火车司机|verb=设计；策划；操纵	engineer%1:18:00::|engineer%1:18:01::|engineer%2:31:01::|engineer%2:31:00::	
+England	proper_noun=英格兰		通用地理专名；OEWN 无对应候选义项，未使用旧词表释义。
+English	adjective=英格兰的；英语的|noun=英语；英语语言文学；英格兰人	english%3:01:00::|english%3:01:01::|english%1:10:00::|english%1:09:00::|english%1:18:00::	
+enhance	verb=提高；增强；改善；美化	enhance%2:30:00::|enhance%2:30:01::	
+enjoy	verb=享受；喜爱；拥有或享有	enjoy%2:37:00::|enjoy%2:34:01::|enjoy%2:39:00::	
+enormous	adjective=巨大的；庞大的	enormous%5:00:00:large:00	
+enough	determiner=足够的|pronoun=足够；足够的数量|adverb=足够地；相当	enough%5:00:00:sufficient:00|enough%1:23:00::|enough%4:02:00::	将来源形容词标签规范为限定词，并补充口语程度副词义。
+ensure	verb=确保；保证	ensure%2:32:00::|ensure%2:31:00::	
+enter	verb=进入；参加；登记；成为……的一部分	enter%2:38:00::|enter%2:33:00::|enter%2:41:06::|enter%2:32:04::|enter%2:42:00::	
+enterprise	noun=企业；事业；艰巨计划；进取心	enterprise%1:14:00::|enterprise%1:04:00::|enterprise%1:07:00::	
+entertainment	noun=娱乐；娱乐活动；招待	entertainment%1:04:00::	补充通行的“招待”义。
+enthusiastic	adjective=热情的；热心的	enthusiastic%3:00:00::	
+entirely	adverb=完全地；全部地；仅仅	entirely%4:02:00::|entirely%4:02:02::	
+entitle	verb=使有权；给……命名；授予头衔	entitle%2:41:00::|entitle%2:32:00::|entitle%2:41:01::	
+entrance	noun=入口；进入；入场|verb=使着迷；使入迷	entrance%1:06:00::|entrance%1:11:00::|entrance%1:04:00::|entrance%2:37:00::	主动省略使进入恍惚状态的边缘义。
+entry	noun=进入；入口；条目；参赛作品；记录	entry%1:06:00::|entry%1:10:01::|entry%1:10:00::|entry%1:21:00::|entry%1:04:01::	
+envelope	noun=信封；封套；包膜	envelope%1:06:01::|envelope%1:06:00::|envelope%1:17:00::	主动省略数学曲线和航空性能包线专门义。
+environment	noun=环境；周围状况	environment%1:26:00::|environment%1:15:00::	
+envy	noun=羡慕；嫉妒|verb=羡慕；嫉妒	envy%1:12:00::|envy%1:04:00::|envy%2:37:01::|envy%2:37:00::	
+episode	noun=一段经历；事件；一集；片段	episode%1:11:00::|episode%1:10:00::|episode%1:10:01::|episode%1:06:00::	
+equal	adjective=相等的；平等的；能胜任的|noun=同等的人|verb=等于；比得上	equal%3:00:00::|equal%3:00:03::|equal%1:18:00::|equal%2:42:00::|equal%2:42:01::	
+equator	noun=赤道；球体大圆	equator%1:15:00::|equator%1:25:00::	
+equipment	noun=设备；装备；器材	equipment%1:06:00::	
+era	noun=时代；年代；纪元；地质代	era%1:28:00::|era%1:28:01::	
+eraser	noun=橡皮擦；清除工具	eraser%1:06:00::	
+error	noun=错误；差错；误差；错误观念	error%1:04:02::|error%1:07:00::|error%1:09:00::|error%1:07:01::	主动省略棒球专业义。
+erupt	verb=爆发；喷发；突然发生；长出	erupt%2:30:00::|erupt%2:30:01::|erupt%2:30:02::|erupt%2:30:04::	
+escape	verb=逃跑；逃脱；避开；泄漏|noun=逃跑；逃避；出口或方法	escape%1:04:00::|escape%1:04:03::|escape%1:04:04::|escape%1:04:02::	OEWN 候选支持名词核心义；补充中学阶段高频动词用法。
+especially	adverb=尤其；特别	especially%4:02:00::|especially%4:02:01::	
+essay	noun=文章；短文；尝试|verb=尝试；试验	essay%1:10:00::|essay%1:04:00::|essay%2:41:00::|essay%2:41:01::	
+essential	adjective=必不可少的；本质的；基本的|noun=必需品；要点	essential%5:00:00:necessary:00|essential%3:00:00::|essential%5:00:00:important:00	主动省略植物精油和法律程序专门义；补充常用名词化用法。
+establish	verb=建立；创办；确立；证实	establish%2:41:00::|establish%2:36:00::|establish%2:31:00::|establish%2:31:02::|establish%2:36:01::	
+estate	noun=财产；庄园；房地产；阶层	estate%1:21:02::|estate%1:21:01::|estate%1:14:00::	补充通行的房地产义。
+estimate	noun=估计；估价；报价|verb=估计；评价	estimate%1:09:00::|estimate%1:04:01::|estimate%1:10:00::|estimate%1:10:01::	OEWN 候选支持名词核心义；补充常用动词用法。
+Europe	proper_noun=欧洲	europe%1:14:01::	主动排除把 Europe 用作特定国际组织的旧式义，仅保留洲名。
+European	adjective=欧洲的；欧洲人的|noun=欧洲人	european%3:01:00::|european%1:18:00::	
+evaluate	verb=评价；评估；估算	evaluate%2:31:00::|evaluate%2:31:01::	
+eve	noun=前夕；前一天；傍晚	eve%1:28:01::|eve%1:28:02::|eve%1:28:00::	
+even	adjective=平的；均匀的；相等的；偶数的|adverb=甚至；更加；正好|verb=使平坦；使相等	even%3:00:01::|even%5:00:01:equal:00|even%3:00:02::|even%5:00:00:steady:00	OEWN 候选支持形容词核心义；补充中学阶段高频副词和动词用法。
+evening	noun=傍晚；晚上；晚间活动	evening%1:28:00::|evening%1:28:02::|evening%1:10:03::	
+event	noun=事件；活动；比赛项目；结果	event%1:03:00::|event%1:26:00::|event%1:19:01::	补充体育中的常用“项目”义。
+eventually	adverb=最终；终于	eventually%4:02:00::	
+ever	adverb=曾经；在任何时候；总是；究竟	ever%4:02:04::|ever%4:02:00::|ever%4:02:05::	补充疑问和强调语境中的“究竟”义。
+every	determiner=每个；所有的	every%5:00:00:all:00|every%5:00:02:all:00	将来源形容词标签规范为课标限定词。
+everybody	pronoun=每个人；人人		按课标中的不定代词用法补充；OEWN 无对应候选义项。
+everyday	adjective=每天的；日常的；普通的	everyday%5:00:00:ordinary:00|everyday%5:00:00:informal:01|everyday%5:00:00:familiar:02	
+everyone	pronoun=每个人；人人		按课标中的不定代词用法补充；OEWN 无对应候选义项。
+everything	pronoun=每件事；所有事物；一切	everything%1:06:01::	来源候选只覆盖“对某人最重要的一切”，按课标补充普遍指代义。
+everywhere	adverb=到处；处处；无论哪里	everywhere%4:02:00::	
+evidence	noun=证据；根据；迹象|verb=证明；表明	evidence%1:09:00::|evidence%1:10:01::|evidence%1:10:00::|evidence%2:32:00::|evidence%2:32:01::	
+exactly	adverb=精确地；确切地；正是；完全正确	exactly%4:02:01::|exactly%4:02:04::|exactly%4:02:02::	
+exam	noun=考试；检查	exam%1:10:00::|examination%1:04:00::|examination%1:10:00::	主动省略正式讯问和宗教自省专门义。
+examine	verb=检查；审查；考试；询问	examine%2:39:00::|examine%2:31:00::|examine%2:41:00::|examine%2:32:00::	
+example	noun=例子；范例；榜样；实例	example%1:09:00::|example%1:09:02::|example%1:09:01::|example%1:11:00::	主动省略惩罚警示的边缘义。
+excellent	adjective=优秀的；极好的	excellent%5:00:00:superior:02	
+except	preposition=除……之外|conjunction=除了；只是|verb=把……排除；反对	except%2:31:00::|except%2:32:00::	OEWN 候选仅覆盖动词；按课标补充核心介词和连词用法。
+exceptional	adjective=异常的；杰出的；罕见的	exceptional%5:00:00:extraordinary:00|exceptional%5:00:00:uncommon:00	主动省略对儿童能力的过时分类措辞。
+exchange	noun=交换；交流；兑换；交易所|verb=交换；兑换	exchange%1:04:02::|exchange%1:04:03::|exchange%1:10:00::|exchange%1:06:01::	OEWN 候选支持名词核心义；补充常用动词和交易所义。
+excited	adjective=兴奋的；激动的；受激的	excited%5:00:00:agitated:00|excited%3:00:00::|excited%5:00:00:reactive:00	
+exciting	adjective=令人兴奋的；激动人心的	exciting%3:00:00::|exciting%5:00:00:stimulating:00	
+excuse	noun=借口；理由；请假条|verb=原谅；准许离开；免除	excuse%1:10:00::|excuse%1:10:01::|excuse%2:32:00::|excuse%2:32:04::	主动省略“拙劣样品”的边缘义。
+exercise	noun=锻炼；练习；运用；仪式|verb=锻炼；行使；使担忧	exercise%1:04:00::|exercise%1:04:01::|exercise%1:04:03::|exercise%1:04:02::|exercise%1:11:01::	OEWN 候选支持名词核心义；补充常用动词用法。
+exhibition	noun=展览；展览会；展示	exhibition%1:14:00::|exhibition%1:04:00::	
+exist	verb=存在；生存；维持生活	exist%2:42:00::|exist%2:42:01::	
+exit	noun=出口；离开|verb=退出；离开	exit%1:06:00::|exit%1:04:00::|exit%2:38:00::	主动省略死亡委婉语和比赛失去领先义。
+expand	verb=扩大；扩展；膨胀；详述	expand%2:38:00::|expand%2:30:07::|expand%2:30:12::|expand%2:30:02::	
+expansion	noun=扩大；扩张；扩充；展开式	expansion%1:04:00::|expansion%1:04:01::|expansion%1:10:00::|expansion%1:24:00::	
+expect	verb=预料；期待；要求；怀孕	expect%2:31:00::|expect%2:31:01::|expect%2:32:00::|expect%2:31:05::|expect%2:29:02::	
+expectation	noun=预期；期待；期望值	expectation%1:09:00::|expectation%1:26:00::|expectation%1:12:00::|expectation%1:09:01::	
+expense	noun=费用；开支；代价|verb=把……列作费用	expense%1:21:00::|expense%1:21:01::|expense%1:11:00::|expense%2:30:00::	

@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+biology	noun=生物学；生物特性；某地区的生物群	biology%1:09:00::|biology%1:19:00::|biology%1:14:00::	
+bird	noun=鸟；禽肉；羽毛球	bird%1:05:00::|bird%1:13:00::|bird%1:06:01::	主动排除冒犯性和非教学常用义。
+birth	noun=出生；分娩；诞生；出身	birth%1:11:00::|birth%1:22:00::|birth%1:28:00::|birth%1:24:00::	
+birthday	noun=生日；出生日期	birthday%1:28:00::|birthday%1:28:01::	
+biscuit	noun=饼干；小松饼	biscuit%1:13:02::|biscuit%1:13:00::	
+bit	noun=一点；少量；小片；片刻	bit%1:23:01::|bit%1:17:00::|bit%1:28:00::	
+bite	verb=咬；叮；刺痛|noun=咬伤；一口；少量食物	bite%1:26:00::|bite%1:26:01::|bite%1:13:01::	OEWN 候选支持名词核心义；补充对应的常用动词用法。
+bitter	adjective=苦的；痛苦的；怨恨的；严寒的|noun=苦味	bitter%5:00:00:resentful:00|bitter%5:00:00:intolerable:00|bitter%5:00:00:sorrowful:00	补充味觉和天气相关的中学常用义。
+black	adjective=黑色的；黑人的；阴暗的|noun=黑色；黑人|verb=使变黑	black%3:00:01::|black%3:00:02::|black%5:00:00:hopeless:00	OEWN 候选支持形容词核心义；补充常用名词和动词用法。
+blackboard	noun=黑板	blackboard%1:06:00::	
+blame	verb=责怪；归咎于|noun=责任；责备	blame%2:32:00::|blame%2:32:01::|blame%1:10:01::|blame%1:10:00::	
+blank	adjective=空白的；茫然的|noun=空白处；空格	blank%5:00:00:empty:00|blank%5:00:05:unperceptive:00|blank%1:10:00::	
+blanket	noun=毯子；覆盖层|adjective=包括所有情形的；全面的|verb=覆盖	blanket%1:06:00::|blanket%1:17:00::|blanket%5:00:00:comprehensive:00|blanket%2:35:00::	
+bleed	verb=流血；放血；渗开；排出液体	bleed%2:29:00::|bleed%2:29:01::|bleed%2:38:00::|bleed%2:30:00::	
+bless	verb=祝福；赐福；使神圣	bless%2:32:00::|bless%2:40:00::|bless%2:32:01::	
+blind	adjective=失明的；盲目的；看不见的|noun=盲人；百叶窗|verb=使失明；使看不清	blind%3:00:00::|blind%5:00:00:unperceptive:00|blind%5:00:00:irrational:00|blind%1:14:00::	OEWN 候选支持形容词和盲人集合义；补充常用名词、动词用法。
+block	noun=块；街区；大楼；一组|verb=堵塞；阻挡；妨碍	block%1:06:00::|block%1:15:00::|block%1:14:00::|block%1:06:06::	OEWN 候选支持名词核心义；补充常用动词用法。
+blog	noun=博客；网络日志|verb=写博客	blog%1:10:00::|blog%2:32:00::	
+blood	noun=血；血液；血统；血气	blood%1:08:00::|blood%1:14:00::|blood%1:07:00::	
+blouse	noun=女式衬衫；宽松上衣	blouse%1:06:00::	
+blow	verb=吹；刮；吹响；爆炸|noun=打击；撞击；挫折；一阵风	blow%1:04:01::|blow%1:11:00::|blow%1:11:02::|blow%1:19:00::	OEWN 候选支持名词核心义；补充中学阶段高频动词用法。
+blue	adjective=蓝色的；忧郁的|noun=蓝色	blue%5:00:00:chromatic:00|blue%5:00:00:dejected:00	主动排除不适合基础教学的低俗义。
+board	noun=木板；布告牌；委员会；膳食|verb=上船或飞机；寄宿	board%1:27:00::|board%1:06:00::|board%1:14:00::|board%1:13:00::|board%1:06:03::	OEWN 候选支持名词核心义；补充常用动词用法。
+boat	noun=小船；艇|verb=乘船；划船	boat%1:06:00::|boat%2:38:00::	
+body	noun=身体；躯干；团体；主体；天体	body%1:08:00::|body%1:08:01::|body%1:14:00::|body%1:17:00::	
+boil	verb=沸腾；煮；烧开|noun=沸腾；疖	boil%2:30:01::|boil%2:30:00::|boil%2:30:02::|boil%1:26:00::	
+bomb	noun=炸弹；彻底失败的事物|verb=轰炸；考试不及格	bomb%1:06:00::|bomb%1:11:00::|bomb%2:33:00::|bomb%2:41:00::	
+bond	noun=纽带；联系；债券；化学键|verb=使结合；建立关系	bond%1:24:00::|bond%1:21:02::|bond%1:19:00::	OEWN 候选支持名词核心义；补充对应的常用动词用法。
+bone	noun=骨；骨头；骨质|adjective=骨制的|verb=剔骨；专心学习	bone%1:08:00::|bone%1:27:00::|bone%5:00:01:bony:00|bone%2:31:00::	
+bonus	noun=奖金；额外好处	bonus%1:21:00::|bonus%1:09:00::	
+book	noun=书；本子；账簿|verb=预订；登记；控告	book%1:10:00::|book%1:06:00::|book%1:21:00::	OEWN 候选支持名词核心义；补充中学阶段高频动词用法。
+boost	noun=推动；帮助；增长|verb=促进；提高；增强	boost%1:04:00::|boost%1:07:00::|boost%1:04:01::|boost%2:38:00::|boost%2:30:02::	
+boot	noun=靴子；汽车后备箱|verb=踢；启动计算机	boot%1:06:00::|boot%1:06:01::	OEWN 候选支持名词核心义；补充常用动词用法。
+border	noun=边界；国界；边缘|verb=与……接壤；给……加边	border%1:15:00::|border%1:25:00::|border%1:15:01::|border%1:06:00::	OEWN 候选支持名词核心义；补充对应的常用动词用法。
+bored	adjective=感到无聊的；厌倦的	bored%5:00:00:uninterested:00|bored%5:00:00:tired:00	
+boring	adjective=无聊的；令人厌烦的|noun=钻孔	boring%5:00:00:uninteresting:00|boring%1:04:01::	
+born	adjective=出生的；天生的	born%3:00:00::|born%5:00:00:intelligent:00	
+borrow	verb=借入；借用；采用	borrow%2:40:00::|borrow%2:40:01::	
+boss	noun=老板；上司；负责人|verb=对……发号施令|adjective=极好的	boss%1:18:01::|boss%1:18:00::|boss%1:18:03::|boss%5:00:00:superior:02	补充与名词对应的常用动词用法。
+botanical	adjective=植物的；植物学的|noun=植物制剂	botanical%3:01:00::|botanical%1:06:00::	
+both	determiner=两个……都|pronoun=两者都|adverb=两者都；既……又……	both%5:00:00:some:00	将 OEWN 量词形容词标签规范为限定词，并补充代词、副词功能。
+bother	verb=打扰；使烦恼；费心|noun=麻烦；烦恼的人或事	bother%2:37:00::|bother%2:41:01::|bother%2:41:00::|bother%1:09:00::	
+bottle	noun=瓶；一瓶的量；奶瓶|verb=装瓶	bottle%1:06:00::|bottle%1:23:00::|bottle%1:06:01::|bottle%2:40:00::	
+bottom	noun=底部；底面；臀部|adjective=最下面的；最低的|verb=到达底部；查明根源	bottom%1:15:00::|bottom%1:15:01::|bottom%1:08:00::|bottom%3:00:00::|bottom%5:00:00:worst:00	OEWN 候选支持名词和形容词义；补充常用动词用法。
+bounce	verb=弹起；反弹；蹦跳|noun=弹性；跳动；反弹	bounce%2:38:00::|bounce%2:35:03::|bounce%1:07:00::|bounce%1:04:00::|bounce%1:11:00::	
+bound	adjective=一定会；受约束的；开往……的|noun=界限；跳跃|verb=跳跃；限制	bound%3:00:01::|bound%5:00:01:certain:03	OEWN 当前候选主要支持受约束和必然义；补充中学阶段常用方向、名词和动词用法。
+boundary	noun=边界；界限；范围	boundary%1:15:00::|boundary%1:25:00::|boundary%1:07:00::	
+bow	noun=弓；蝴蝶结；琴弓；船头|verb=鞠躬；弯曲	bow%1:06:01::|bow%1:06:03::|bow%1:06:00::|bow%1:25:00::	OEWN 候选支持主要名词义；补充船头名词义和常用动词用法。
+bowl	noun=碗；一碗的量；碗状物|verb=滚保龄球；投球	bowl%1:06:01::|bowl%1:06:00::|bowl%1:23:00::|bowl%1:25:00::	OEWN 候选支持名词核心义；补充常用动词用法。
+bowling	noun=保龄球运动；投球	bowling%1:04:00::|bowling%1:04:01::|bowling%1:04:02::	
+box	noun=盒；箱；包厢；一盒的量|verb=把……装箱；拳击	box%1:06:00::|box%1:06:02::|box%1:23:00::	OEWN 候选支持名词核心义；补充常用动词用法。
+boxing	noun=拳击运动；装箱	boxing%1:04:00::|boxing%1:04:01::	
+boy	noun=男孩；儿子；小伙子	boy%1:18:00::|boy%1:18:03::|boy%1:18:02::	主动排除 OEWN 标明的冒犯性种族称呼。
+brain	noun=脑；头脑；智力；聪明人	brain%1:08:00::|brain%1:09:00::|brain%1:09:01::|brain%1:18:00::	
+branch	noun=树枝；分支；分部；支流|verb=分岔；分支	branch%1:20:00::|branch%1:14:00::|branch%1:25:00::|branch%1:17:01::	OEWN 候选支持名词核心义；补充对应的常用动词用法。
+brave	adjective=勇敢的；无畏的|noun=勇敢的人|verb=勇敢面对	brave%3:00:00::|brave%5:00:00:bold:00|brave%1:14:00::	主动排除带有时代局限的族群称呼；补充常用动词用法。
+bread	noun=面包；生计|verb=裹面包屑	bread%1:13:00::|bread%2:35:00::	“生计”按 bread and butter 等通行用法补充；不采用俚语“钱”。
+break	verb=打破；弄坏；违反；中断；休息|noun=休息；间歇；破裂；好运	break%1:11:00::|break%1:11:01::|break%1:11:03::|break%1:04:05::	OEWN 候选支持名词核心义；补充中学阶段高频动词用法。
+breakfast	noun=早餐|verb=吃早餐；给……提供早餐	breakfast%1:13:00::|breakfast%2:34:00::|breakfast%2:34:01::	
+breast	noun=胸部；乳房；禽胸肉	breast%1:08:01::|breast%1:08:00::|breast%1:13:00::	
+breath	noun=呼吸；气息；一口气；短暂休息	breath%1:04:00::|breath%1:27:00::|breath%1:28:00::	
+breathe	verb=呼吸；吸入；吐出；透气	breathe%2:29:00::|breathe%2:42:00::|breathe%2:42:01::	
+brick	noun=砖；砖块|verb=使电子设备变得无法使用	brick%1:06:00::|brick%2:35:01::	
+bride	noun=新娘；新婚女子	bride%1:18:00::|bride%1:18:01::	
+bridegroom	noun=新郎；新婚男子	bridegroom%1:18:00::|bridegroom%1:18:01::	
+bridge	noun=桥；桥梁；桥牌；鼻梁|verb=架桥；弥合；跨越	bridge%1:06:00::|bridge%1:24:00::|bridge%1:08:00::|bridge%1:04:00::	OEWN 候选支持名词核心义；补充常用动词用法。
+brief	adjective=短暂的；简洁的|noun=摘要；任务说明|verb=向……介绍情况	brief%5:00:00:short:02|brief%5:00:00:concise:00|brief%1:10:00::	OEWN 候选支持形容词和摘要名词义；补充常用动词用法。
+bright	adjective=明亮的；鲜艳的；聪明的；有希望的|adverb=明亮地	bright%3:00:00::|bright%5:00:00:colorful:00|bright%5:00:00:intelligent:00|bright%5:00:00:light:06	补充常用副词用法。
+brilliant	adjective=杰出的；聪颖的；灿烂的；精彩的	brilliant%5:00:00:superior:02|brilliant%5:00:00:intelligent:00|brilliant%5:00:00:bright:00|brilliant%5:00:00:colorful:00	
+bring	verb=带来；拿来；使处于；引起	bring%2:38:00::|bring%2:35:04::|bring%2:36:00::|bring%2:30:00::	
+Britain	proper_noun=英国；不列颠		通用国家和地理专名；OEWN 无对应候选义项，未使用旧词表释义。
+British	adjective=英国的；英国人的|noun=英国人	british%3:01:00::|british%1:18:00::	
+broad	adjective=宽阔的；广泛的；概括的；明显的	broad%3:00:04::|broad%5:00:00:comprehensive:00|broad%5:00:00:general:00|broad%5:00:00:clear:00	
+broadcast	noun=广播；电视节目|verb=广播；播送；传播|adjective=广播的	broadcast%1:10:00::|broadcast%1:10:01::|broadcast%2:32:01::|broadcast%2:32:00::	补充常用形容词用法。
+brochure	noun=小册子；资料手册	brochure%1:10:00::	
+brother	noun=兄；弟；同伴；教友	brother%1:18:00::|brother%1:18:02::|brother%1:18:03::	
+brown	adjective=棕色的；褐色的|noun=棕色；褐色|verb=变成棕色；把……煎成褐色	brown%5:00:00:chromatic:00|brown%1:07:00::|brown%2:30:00::|brown%2:30:01::	
+brush	noun=刷子；画笔；轻触；灌木丛|verb=刷；擦过；轻触	brush%1:06:00::|brush%1:11:00::|brush%1:14:00::	OEWN 候选支持名词核心义；补充常用动词用法。
+budget	noun=预算；经费|verb=编制预算；安排开支|adjective=价格低廉的	budget%1:21:02::|budget%1:21:03::|budget%2:31:00::	补充现代英语常用形容词用法。
+buffet	noun=自助餐；餐具柜|verb=连续猛击；冲击	buffet%1:13:00::|buffet%1:06:00::|buffet%2:35:00::|buffet%2:35:01::	
+build	verb=建造；建立；逐渐增强|noun=体格；身材	build%2:36:00::|build%2:30:00::|build%2:36:09::|build%1:07:00::|build%1:08:00::	
+building	noun=建筑物；建造；建筑业	building%1:06:00::|building%1:04:00::|building%1:04:01::	
+bunch	noun=束；串；群；一帮人|verb=捆成一束；聚成一群	bunch%1:14:00::|bunch%1:14:01::|bunch%2:38:00::|bunch%2:35:00::	
+burn	verb=燃烧；烧伤；烧毁|noun=烧伤；灼痛；燃烧	burn%2:30:02::|burn%1:26:00::|burn%1:26:01::|burn%1:04:00::	补充与名词义对应的中学阶段高频动词用法。
+bury	verb=埋葬；埋藏；覆盖；使陷入	bury%2:41:00::|bury%2:35:00::|bury%2:39:00::|bury%2:35:02::	
+bus	noun=公共汽车；总线|verb=用公共汽车运送；乘公共汽车	bus%1:06:00::|bus%1:06:02::|bus%2:38:01::	
+business	noun=商业；生意；企业；职业；事务	business%1:14:00::|business%1:04:01::|business%1:04:00::|business%1:09:01::	
+busy	adjective=忙碌的；繁忙的；占线的|verb=使忙于	busy%3:00:00::|busy%5:00:01:active:06|busy%5:00:00:occupied:00	OEWN 候选支持形容词义；补充常用动词用法。
+but	conjunction=但是；然而；而|preposition=除……以外|adverb=仅仅；只	but%4:02:01::	补充课标中的并列连词和介词用法；OEWN 候选仅覆盖副词义。
+butcher	noun=肉贩；屠夫|verb=屠宰；残杀	butcher%1:18:02::|butcher%1:18:00::|butcher%2:35:00::	主动排除贬损性非核心义。
+butter	noun=黄油；奶油|verb=涂黄油	butter%1:13:00::|butter%2:35:00::	
+button	noun=纽扣；按钮；徽章|verb=扣上纽扣	button%1:06:00::|button%1:06:01::|button%1:10:00::	主动排除不适合基础教学的解剖义；补充常用动词用法。
+buy	verb=购买；买到；换取|noun=合算的购买	buy%2:40:00::|buy%2:42:00::|buy%2:40:03::|buy%1:21:00::	
+by	preposition=在……旁边；由；通过；不迟于；按……计算|adverb=经过；在旁边	by%4:02:00::|by%4:02:01::	补充课标中的高频介词用法；OEWN 候选主要覆盖副词义。
+cabbage	noun=卷心菜；甘蓝	cabbage%1:13:00::|cabbage%1:20:00::	主动排除俚语和盗窃动词义。
+café	noun=咖啡馆；小餐馆		通用外来词义；OEWN 无对应候选义项，未使用旧词表释义。
+cafeteria	noun=自助餐厅；食堂	cafeteria%1:06:00::	
+cage	noun=笼子；牢笼|verb=把……关进笼中	cage%1:06:00::|cage%1:26:00::|cage%2:41:00::	
+cake	noun=蛋糕；饼；块状物|verb=结成硬块；覆盖	cake%1:13:00::|cake%1:13:02::|cake%1:06:00::|cake%2:35:01::	
+calculate	verb=计算；估计；预测；打算	calculate%2:31:00::|calculate%2:31:03::|calculate%2:32:01::|calculate%2:31:02::	

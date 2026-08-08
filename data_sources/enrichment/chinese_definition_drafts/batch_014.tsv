@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+herb	noun=草本植物；香草；药草	herb%1:20:00::|herb%1:13:00::	
+here	adverb=在这里；到这里；此时|noun=这里	here%1:15:00::|here%4:02:00::|here%4:02:02::	
+hero	noun=英雄；男主角；偶像	hero%1:18:00::|hero%1:09:00::|hero%1:18:01::|hero%1:18:04::	
+hers	pronoun=她的；属于她的东西		OEWN无候选释义；依据基础英语物主代词用法原创整理。
+herself	pronoun=她自己；她亲自		OEWN无候选释义；依据基础英语反身代词用法原创整理。
+hesitate	verb=犹豫；迟疑；踌躇	hesitate%2:42:00::|hesitate%2:42:01::	
+hi	interjection=嗨；你好	hi%1:10:00::	
+hide	verb=隐藏；躲藏；隐瞒|noun=兽皮；皮革	hide%1:27:00::|hide%1:05:00::|hide%2:39:00::|hide%2:39:01::	
+high	adjective=高的；高级的；高尚的|adverb=在高处；高高地|noun=高点	high%3:00:02::|high%3:00:01::|high%5:00:00:superior:01|high%3:00:03::	副词和名词义依据基础英语常用义补充。
+highlight	noun=亮点；最精彩部分|verb=突出；强调；标亮	highlight%1:24:00::|highlight%1:07:00::|highlight%2:30:00::|highlight%2:29:00::	
+hike	noun=徒步旅行；大幅上涨|verb=徒步；提高	hike%1:04:00::|hike%1:07:01::|hike%1:07:00::|hike%2:38:01::	
+hill	noun=小山；山丘；土堆|verb=堆成小丘	hill%1:17:00::|hill%1:06:01::|hill%1:06:00::|hill%2:36:00::	
+him	pronoun=他；他本人		OEWN无候选释义；依据基础英语人称代词用法原创整理。
+himself	pronoun=他自己；他亲自		OEWN无候选释义；依据基础英语反身代词用法原创整理。
+hire	verb=雇用；租用|noun=新雇员；租金	hire%1:18:00::|hire%1:04:00::|hire%2:41:00::|hire%2:41:01::	
+his	determiner=他的|pronoun=他的东西		OEWN无候选释义；依据基础英语物主词用法原创整理。
+historic	adjective=历史上著名的；有历史意义的	historic%5:00:00:past:00|historic%5:00:00:important:00	
+history	noun=历史；历史学；经历；沿革	history%1:28:00::|history%1:10:00::|history%1:09:00::|history%1:28:02::	
+hit	verb=击；打；撞击；达到|noun=打击；成功的事物	hit%1:04:03::|hit%1:04:00::|hit%1:04:02::|hit%1:11:01::	动词义依据基础英语常用义补充。
+hobby	noun=业余爱好；嗜好	hobby%1:04:00::	排除玩具马及鸟类义项。
+hold	verb=拿着；保持；容纳；举行|noun=握住；控制；支撑点	hold%1:04:00::|hold%1:09:00::|hold%1:07:00::|hold%1:28:00::	动词义依据基础英语常用义归纳。
+hole	noun=洞；孔；坑；漏洞	hole%1:17:01::|hole%1:06:00::|hole%1:06:01::|hole%1:25:00::	
+holiday	noun=假日；假期|verb=度假	holiday%1:28:00::|holiday%1:28:01::|holiday%2:42:00::	
+home	noun=家；住所；故乡|adjective=家庭的；本国的|adverb=到家	home%3:00:00::|home%3:01:00::|home%5:00:00:domestic:00|home%1:15:04::	副词义依据基础英语常用义补充。
+hometown	noun=家乡；故乡	hometown%1:15:00::	
+homework	noun=家庭作业；准备工作	homework%1:04:01::	
+honest	adjective=诚实的；坦率的；正直的	honest%3:00:00::|honest%5:00:00:sincere:00|honest%5:00:00:trustworthy:00|honest%5:00:00:unpretentious:00	
+honey	noun=蜂蜜；亲爱的|adjective=蜂蜜色的	honey%5:00:00:chromatic:00|honey%1:13:00::|honey%1:18:00::	
+honour	noun=荣誉；尊敬；荣幸|verb=尊敬；给予荣誉	honour%1:26:00::|honour%1:10:00::|honour%1:07:00::|honour%1:07:01::	动词义依据名词核心语义补充。
+hope	verb=希望；期待|noun=希望；期望；希望的事物	hope%1:12:01::|hope%1:12:00::|hope%1:09:00::|hope%1:18:00::	动词义依据基础英语常用义补充。
+horrible	adjective=可怕的；令人震惊的；极讨厌的	horrible%5:00:00:alarming:00	
+horse	noun=马；赛马器械	horse%1:05:00::|horse%1:06:03::	排除军队等低相关义项。
+hospital	noun=医院；医疗机构	hospital%1:06:00::|hospital%1:14:00::	
+host	noun=主人；主持人；东道主；主机|verb=主办；主持	host%1:18:02::|host%1:14:00::|host%1:18:01::	动词和计算机义依据基础英语常用义补充。
+hot	adjective=热的；辣的；激烈的；热门的	hot%3:00:01::|hot%5:00:00:violent:00|hot%3:00:02::|hot%5:00:00:warm:03	
+hotel	noun=旅馆；酒店	hotel%1:06:00::	
+hour	noun=小时；时刻；工作时间	hour%1:28:00::|hour%1:28:01::|hour%1:28:02::|hour%1:07:00::	
+house	noun=房屋；住宅；机构；议院|verb=给……提供住所；收藏	house%1:06:00::|house%1:14:01::|house%1:14:04::|house%1:14:03::	动词义依据基础英语常用义补充。
+household	noun=家庭；一家人|adjective=家庭的；家喻户晓的	household%1:14:00::	形容词义依据基础英语常用义补充。
+housework	noun=家务；家务劳动	housework%1:04:00::	
+housing	noun=住房；住宅；外壳	housing%1:06:00::|housing%1:06:01::|housing%1:06:02::	
+how	adverb=怎样；如何；多么|conjunction=怎样；以……方式		OEWN无候选释义；依据基础英语功能词用法原创整理。
+however	adverb=然而；不过；无论如何；不管多么	however%4:02:00::|however%4:02:04::|however%4:02:02::|however%4:02:01::	
+hug	verb=拥抱；紧抱|noun=拥抱	hug%1:04:00::|hug%2:35:01::|hug%2:35:00::	
+huge	adjective=巨大的；庞大的	huge%5:00:01:large:00	
+human	adjective=人的；人类的；有人性的|noun=人；人类	human%3:01:00::|human%3:01:01::|human%3:00:00::|human%1:05:00::	
+humble	adjective=谦逊的；卑微的；普通的|verb=使谦卑	humble%5:00:00:inferior:01|humble%3:00:00::|humble%5:00:00:unskilled:00|humble%5:00:00:lowborn:00	动词义依据基础英语常用义补充。
+humorous	adjective=幽默的；滑稽的	humorous%3:00:00::	
+hundred	numeral=一百；许多|noun=一百个	hundred%5:00:00:cardinal:00|hundred%1:23:00::	
+hungry	adjective=饥饿的；渴望的	hungry%3:00:00::|hungry%5:00:00:desirous:00	
+hunt	verb=打猎；搜寻；追捕|noun=狩猎；搜寻	hunt%1:14:00::|hunt%1:09:00::|hunt%1:04:02::|hunt%1:04:00::	动词义依据基础英语常用义补充。
+hurricane	noun=飓风；强烈风暴	hurricane%1:19:00::	
+hurry	verb=匆忙；催促|noun=匆忙；急切	hurry%1:26:00::|hurry%1:07:00::|hurry%1:04:00::|hurry%2:38:00::	
+hurt	verb=使受伤；感到疼痛；伤害|adjective=受伤的|noun=伤害；痛苦	hurt%5:00:01:injured:00|hurt%5:00:00:damaged:00|hurt%1:26:00::|hurt%1:12:02::	动词义依据基础英语常用义补充。
+husband	noun=丈夫|verb=节约使用；妥善管理	husband%1:18:00::|husband%2:40:00::	
+hydrogen	noun=氢；氢元素	hydrogen%1:27:00::	
+I	pronoun=我	i%1:10:00::	排除字母及罗马数字义项。
+ice	noun=冰；冰块；冰冻甜品|verb=结冰；冰镇	ice%1:27:00::|ice%1:17:00::|ice%1:13:01::	动词义依据基础英语常用义补充。
+ice-cream	noun=冰淇淋		OEWN无该拼写候选释义；依据基础英语常用义原创整理。
+idea	noun=想法；主意；观念；印象	idea%1:09:00::|idea%1:09:01::|idea%1:09:03::|idea%1:09:02::	
+ideal	adjective=理想的；完美的|noun=理想；典范	ideal%5:00:00:perfect:00|ideal%5:00:00:abstract:00|ideal%3:01:00::|ideal%1:09:00::	
+identical	adjective=完全相同的；同一的	identical%5:00:00:same:00|identical%5:00:00:same:02|identical%3:00:00::	
+identify	verb=识别；确认；认同	identify%2:31:00::|identify%2:32:00::|identify%2:31:04::|identify%2:31:03::	
+identity	noun=身份；特性；同一性	identity%1:07:00::|identity%1:09:00::|identity%1:24:01::|identity%1:07:02::	
+idiom	noun=习语；惯用语；表达方式	idiom%1:10:02::|idiom%1:10:00::|idiom%1:07:00::|idiom%1:10:01::	
+if	conjunction=如果；是否；即使|noun=条件；假设		OEWN无候选释义；依据基础英语功能词用法原创整理。
+ignore	verb=忽视；不理睬；对……不予考虑	ignore%2:32:02::|ignore%2:32:00::|ignore%2:39:00::|ignore%2:31:03::	
+ill	adjective=生病的；有害的；恶劣的|adverb=坏地	ill%3:00:01::|ill%5:00:00:harmful:00|ill%5:00:00:bad:00|ill%5:00:00:hostile:01	
+illegal	adjective=违法的；非法的	illegal%3:00:00::	
+illness	noun=疾病；病	illness%1:26:00::	
+illustrate	verb=说明；阐明；加插图	illustrate%2:32:00::|illustrate%2:36:00::|illustrate%2:36:01::	
+image	noun=图像；形象；印象；映像|verb=想象；成像	image%1:09:00::|image%1:07:00::|image%1:06:00::|image%1:09:02::	动词义依据基础英语常用义补充。
+imagine	verb=想象；设想；认为	imagine%2:36:00::|imagine%2:31:01::	
+immediately	adverb=立即；马上；直接地	immediately%4:02:00::|immediately%4:02:03::|immediately%4:02:05::	
+impact	noun=影响；冲击；碰撞|verb=影响；冲击	impact%1:11:00::|impact%1:19:00::|impact%1:04:00::|impact%1:04:01::	动词义依据名词核心语义补充。
+imply	verb=暗示；意味着；含有……意思	imply%2:32:00::|imply%2:32:01::|imply%2:42:00::|imply%2:42:02::	
+import	noun=进口商品；进口；含义|verb=进口；导入	import%1:06:00::|import%1:10:00::|import%1:09:00::	动词义依据基础英语常用义补充。
+important	adjective=重要的；有重大影响的	important%3:00:00::|important%3:00:04::|important%3:00:02::|important%5:00:00:influential:00	
+impossible	adjective=不可能的；无法忍受的|noun=不可能的事	impossible%3:00:00::|impossible%5:00:00:unthinkable:00|impossible%5:00:00:intolerable:00|impossible%1:09:00::	
+impress	verb=给……留下深刻印象；使铭记；压印	impress%1:04:00::|impress%2:37:01::|impress%2:37:00::|impress%2:31:00::	
+impression	noun=印象；感觉；压痕；印次	impression%1:09:00::|impression%1:07:00::|impression%1:09:01::|impression%1:25:00::	
+improve	verb=改善；提高；改进	improve%2:30:01::|improve%2:30:00::	
+in	preposition=在……里面；在……期间；以……方式|adverb=在里面；进入|adjective=流行的；当权的	in%5:00:00:successful:00|in%5:00:00:incoming:00|in%5:00:00:fashionable:00	介词和副词义依据基础英语功能词用法原创整理。
+inch	noun=英寸；少量|verb=缓慢移动	inch%1:23:00::|inch%1:23:02::|inch%2:38:00::	
+incident	noun=事件；事故|adjective=附带的；由……引起的	incident%3:01:00::|incident%3:00:00::|incident%1:11:00::|incident%1:26:00::	
+include	verb=包括；包含；把……列入	include%2:42:00::|include%2:31:00::|include%2:30:00::|include%2:41:03::	
+income	noun=收入；收益	income%1:21:00::	
+increase	verb=增加；增长|noun=增加；增长；增量	increase%1:23:00::|increase%1:11:00::|increase%1:22:00::|increase%1:07:00::	动词义依据名词核心语义补充。
+incredible	adjective=难以置信的；极好的	incredible%3:00:00::	“极好的”为常用口语义补充。
+indeed	adverb=确实；的确；甚至	indeed%4:02:03::|indeed%4:02:02::	
+independent	adjective=独立的；自主的；不相关的|noun=独立人士	independent%3:00:00::|independent%5:00:00:free:00|independent%3:00:02::|independent%5:00:00:nonpartisan:00	名词义依据基础英语常用义补充。
+India	proper_noun=印度		OEWN无候选释义；依据通用地名知识原创整理。
+Indian	adjective=印度的；印度人的|noun=印度人；印第安人	indian%3:01:00::|indian%3:01:01::|indian%1:18:01::|indian%1:10:00::	具体指代需结合语境。
+indicate	verb=表明；指出；暗示；显示	indicate%2:32:01::|indicate%2:32:03::|indicate%2:32:00::|indicate%2:32:02::	
+individual	adjective=个人的；单独的；独特的|noun=个人；个体	individual%3:00:00::|individual%5:00:00:unshared:00|individual%5:00:00:personal:00|individual%1:03:00::	
+industry	noun=工业；行业；勤奋	industry%1:14:00::|industry%1:04:00::|industry%1:07:00::	
+infection	noun=感染；传染病；感染过程	infection%1:26:00::|infection%1:22:01::|infection%1:22:00::|infection%1:11:00::	
+infer	verb=推断；推论；暗示	infer%2:31:00::|infer%2:32:01::|infer%2:32:00::|infer%2:31:02::	
+influence	noun=影响；影响力|verb=影响；左右	influence%1:07:00::|influence%1:04:00::|influence%1:09:00::|influence%1:19:00::	动词义依据名词核心语义补充。
+influential	adjective=有影响力的；有权势的	influential%3:00:00::	

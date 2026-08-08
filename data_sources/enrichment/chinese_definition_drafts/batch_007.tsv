@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+conference	noun=会议；研讨会；商谈；体育联盟	conference%1:14:00::|conference%1:10:00::|conference%1:14:01::	
+confidence	noun=信心；信任；把握；秘密	confidence%1:09:00::|confidence%1:12:00::|confidence%1:26:02::|confidence%1:10:00::	
+confirm	verb=确认；证实；批准；使更加坚定	confirm%2:31:00::|confirm%2:32:00::|confirm%2:30:00::|confirm%2:41:01::	
+conflict	noun=冲突；矛盾；争斗|verb=冲突；抵触	conflict%1:04:00::|conflict%1:26:00::|conflict%1:07:00::|conflict%1:12:00::	OEWN 候选支持名词核心义；补充常用动词用法。
+Confucianism	proper_noun=儒家思想；儒学	confucianism%1:09:00::	思想体系专名按专有名词展示。
+Confucius	proper_noun=孔子		通用历史人物专名；OEWN 无对应候选义项，未使用旧词表释义。
+confused	adjective=困惑的；糊涂的；混乱的	confused%5:00:00:perplexed:00|confused%3:00:00::|confused%5:00:00:disorganized:00	
+congratulation	noun=祝贺；贺词	congratulation%1:10:00::|congratulation%1:10:01::	常以复数 congratulations 表示“祝贺”。
+connect	verb=连接；联系；接通；把……联系起来	connect%2:35:00::|connect%2:31:00::|connect%2:42:02::|connect%2:32:12::	
+consequence	noun=结果；后果；重要性	consequence%1:19:00::|consequence%1:11:00::|consequence%1:07:00::	
+conservation	noun=保护；保存；节约；守恒	conservation%1:04:00::|conservation%1:11:00::|conservation%1:09:00::	
+consider	verb=考虑；认为；顾及；细想	consider%2:39:00::|consider%2:31:00::|consider%2:32:00::|consider%2:32:02::	
+consist	verb=由……组成；在于；符合；一致	consist%2:42:01::|consist%2:42:04::|consist%2:42:02::|consist%2:42:00::	
+consistent	adjective=一致的；始终如一的；相符的；稳定的	consistent%3:00:00::|consistent%3:00:01::|consistent%5:00:00:homogeneous:00|consistent%3:00:04::	
+constant	adjective=持续的；不变的；忠诚的|noun=常数；恒量	constant%5:00:00:continuous:01|constant%5:00:00:invariable:00|constant%3:00:00::|constant%1:09:00::|constant%1:23:00::	
+constitution	noun=宪法；章程；构成；体质	constitution%1:10:00::|constitution%1:04:00::|constitution%1:07:00::	“体质”按通行用法补充。
+construction	noun=建造；建筑物；结构；句法结构	construction%1:04:00::|construction%1:06:00::|construction%1:10:01::|construction%1:09:00::	
+consultant	noun=顾问；咨询专家	consultant%1:18:00::	
+consultation	noun=咨询；商议；会诊	consultation%1:10:01::|consultation%1:04:00::|consultation%1:10:00::	
+consume	verb=消耗；消费；吃喝；毁灭	consume%2:34:01::|consume%2:34:00::|consume%2:34:03::|consume%2:35:00::	
+consumption	noun=消费；消耗；食用	consumption%1:22:00::|consumption%1:04:00::|consumption%1:04:01::	主动排除肺结核的旧称义。
+contact	noun=接触；联系；联系人|verb=联系；接触	contact%1:04:00::|contact%1:04:02::|contact%1:26:00::|contact%1:18:00::	OEWN 候选支持名词核心义；补充常用动词用法。
+contain	verb=包含；容纳；控制；抑制	contain%2:42:00::|contain%2:42:13::|contain%2:41:00::|contain%2:42:14::	
+contemporary	adjective=当代的；现代的；同时代的|noun=同代人；同龄人	contemporary%5:00:00:modern:00|contemporary%5:00:00:current:00|contemporary%5:00:00:synchronous:00|contemporary%1:18:00::	
+content	noun=内容；目录；含量|adjective=满意的|verb=使满意	content%1:10:00::|content%1:14:00::|content%1:24:00::|content%3:00:00::	OEWN 候选支持名词和形容词义；补充常用动词用法。
+contest	noun=比赛；竞赛；争夺|verb=争夺；质疑；反驳	contest%1:11:00::|contest%1:04:00::|contest%2:32:00::	
+context	noun=上下文；语境；背景；环境	context%1:10:00::|context%1:26:00::	
+continent	noun=大陆；洲	continent%1:17:00::	主动排除生理控制和禁欲形容词义，仅保留地理教学核心义。
+continue	verb=继续；持续；延续；接着说	continue%2:42:01::|continue%2:42:00::|continue%2:38:00::|continue%2:32:00::	
+contract	noun=合同；契约|verb=订合同；缩小；收缩；感染	contract%1:10:00::|contract%2:32:00::|contract%2:41:00::	OEWN 候选支持合同义；补充中学阶段常用的收缩和感染动词义。
+contradictory	adjective=相互矛盾的；对立的|noun=矛盾命题	contradictory%5:00:00:inconsistent:00|contradictory%5:00:00:incompatible:01|contradictory%1:24:00::	
+contrary	adjective=相反的；对立的；固执的|noun=相反；反面|adverb=相反地	contrary%5:00:00:different:00|contrary%5:00:00:disobedient:00|contrary%1:24:01::	补充固定结构中的副词用法。
+contrast	noun=对比；差异；反差|verb=对比；形成反差	contrast%1:24:00::|contrast%1:04:00::|contrast%1:09:01::|contrast%1:09:00::	OEWN 候选支持名词核心义；补充常用动词用法。
+contribution	noun=贡献；捐款；投稿；促成作用	contribution%1:04:02::|contribution%1:21:00::|contribution%1:04:01::|contribution%1:04:00::	
+control	noun=控制；管理；控制装置；对照|verb=控制；管理；抑制	control%1:07:00::|control%1:04:00::|control%1:09:02::|control%1:24:00::	OEWN 候选支持名词核心义；补充高频动词用法。
+convenient	adjective=方便的；便利的；合适的	convenient%3:00:00::	主动排除表示宽敞的古旧义。
+conventional	adjective=传统的；常规的；符合习俗的；非核的	conventional%3:00:00::|conventional%5:00:00:orthodox:00|conventional%3:00:02::	
+conversation	noun=交谈；谈话	conversation%1:10:00::	
+convince	verb=使确信；说服	convince%2:32:00::	
+cook	noun=厨师；做饭的人|verb=烹饪；煮；篡改	cook%1:18:00::|cook%2:36:01::|cook%2:36:00::|cook%2:41:00::	
+cookie	noun=曲奇饼；小甜饼；网络信息记录	cookie%1:13:00::|cookie%1:10:00::	主动排除牧场厨师的非核心义。
+cool	adjective=凉爽的；冷静的；冷淡的；很酷的|verb=使凉快；冷却|noun=凉爽；冷静	cool%3:00:01::|cool%5:00:00:composed:00|cool%3:00:02::|cool%5:00:00:satisfactory:00	OEWN 候选支持形容词核心义；补充常用动词和名词用法。
+cooperate	verb=合作；协作；配合	cooperate%2:41:00::	
+copy	noun=副本；复制品；一册|verb=复制；抄写；模仿	copy%1:10:00::|copy%1:06:00::|copy%2:36:05::	OEWN 候选支持部分名词和抄写义；补充高频动词及“一册”义。
+core	noun=核心；果核；地核；核心成员|adjective=核心的；最重要的|verb=去掉果核	core%1:15:00::|core%1:17:00::|core%1:09:00::|core%1:14:00::	补充中学常用的果核、形容词和动词用法。
+corn	noun=玉米；谷物；鸡眼	corn%1:20:00::|corn%1:13:00::|corn%1:20:01::|corn%1:26:00::	注明英式英语中也可泛指主要谷物。
+corner	noun=角；墙角；街角；偏僻处|verb=转弯；把……逼入困境；垄断	corner%1:15:00::|corner%1:06:02::|corner%1:06:00::|corner%1:15:02::	OEWN 候选支持名词核心义；补充常用动词用法。
+corporate	adjective=公司的；法人的；共同的；团体的	corporate%3:01:00::|corporate%5:00:00:joint:00|corporate%5:00:00:organized:02	主动省略肉体形式的生僻义。
+correct	adjective=正确的；恰当的|verb=改正；纠正；批改	correct%3:00:00::|correct%5:00:00:proper:00|correct%5:00:02:proper:00|correct%2:30:00::	
+correspond	verb=相符；对应；通信；相当于	correspond%2:42:00::|correspond%2:42:04::|correspond%2:32:00::|correspond%2:42:01::	
+cost	noun=费用；成本；代价|verb=价钱为；使付出代价	cost%1:21:00::|cost%1:07:00::|cost%1:07:01::|cost%2:42:00::|cost%2:42:01::	
+costume	noun=服装；戏服；民族服装|verb=给……穿戏服	costume%1:06:00::|costume%1:06:01::|costume%1:06:03::|costume%2:29:00::	
+cottage	noun=小屋；乡间别墅	cottage%1:06:00::	
+cotton	noun=棉；棉花；棉布；棉线|verb=开始喜欢；理解	cotton%1:27:01::|cotton%1:06:00::|cotton%1:20:00::|cotton%1:06:01::|cotton%2:37:00::	动词义主要用于 cotton to/on 等表达。
+cough	noun=咳嗽|verb=咳嗽	cough%1:26:00::|cough%2:29:00::	
+could	modal_verb=能；可以；可能；用于礼貌请求或建议		按课标中的情态动词用法补充；OEWN 无对应候选义项。
+council	noun=委员会；理事会；地方议会；会议	council%1:14:01::|council%1:14:00::	主动省略宗教专门义。
+count	verb=数；计算；把……算入；重要|noun=计数；总数；伯爵	count%2:32:00::|count%2:42:00::|count%1:04:00::|count%1:23:00::|count%1:18:00::	
+country	noun=国家；国民；乡村；地区	country%1:14:00::|country%1:15:00::|country%1:14:01::|country%1:15:01::|country%1:15:02::	
+countryside	noun=乡村；农村地区	countryside%1:15:00::	
+county	noun=郡；县；行政区	county%1:15:00::|county%1:15:01::	
+couple	noun=一对；夫妻或情侣；几个|verb=连接；结合；配对	couple%1:14:00::|couple%1:14:01::|couple%1:23:01::|couple%1:23:00::	OEWN 候选支持名词核心义；补充常用动词用法。
+courage	noun=勇气；胆量	courage%1:07:00::	
+course	noun=课程；过程；路线；做法；一道菜|verb=流动；奔跑	course%1:04:01::|course%1:14:00::|course%1:17:00::|course%1:04:00::	补充餐饮中的高频名词义和常用动词义。
+court	noun=法院；法庭；球场；宫廷|verb=追求；寻求；招致	court%1:14:00::|court%1:06:02::|court%1:06:01::|court%1:14:02::	OEWN 候选支持名词核心义；补充常用动词用法。
+cousin	noun=堂兄弟姐妹；表兄弟姐妹	cousin%1:18:00::	中文释义涵盖父母兄弟姐妹的子女。
+cover	verb=覆盖；遮盖；包含；报道；走完|noun=盖子；封面；遮蔽物	cover%1:06:02::|cover%1:04:00::|cover%1:06:04::|cover%1:17:00::	OEWN 候选支持名词核心义；补充中学阶段高频动词用法。
+coverage	noun=覆盖范围；新闻报道；保险范围	coverage%1:07:00::|coverage%1:10:00::|coverage%1:21:00::	
+cow	noun=母牛；雌性大型哺乳动物|verb=威吓；吓住	cow%1:05:01::|cow%1:05:02::|cow%2:37:00::	主动排除对女性的贬损人物义。
+crash	verb=碰撞；坠毁；崩溃；突然闯入|noun=撞车；坠毁；巨响；系统崩溃	crash%1:11:00::|crash%1:11:01::|crash%1:04:00::|crash%1:11:03::	OEWN 候选支持名词核心义；补充中学阶段高频动词用法。
+crayon	noun=蜡笔|verb=用蜡笔画或写	crayon%1:06:00::|crayon%2:36:00::	
+crazy	adjective=疯狂的；荒唐的；着迷的；非常热衷的|noun=疯子	crazy%5:00:00:insane:00|crazy%5:00:00:impractical:00|crazy%5:00:00:enthusiastic:00|crazy%5:00:00:excited:00	补充口语中的名词化用法，正式表达应谨慎使用。
+cream	noun=奶油；乳霜；精华|adjective=奶油色的|verb=搅打成糊；彻底击败	cream%1:13:00::|cream%1:06:00::|cream%1:14:00::|cream%2:35:00::|cream%2:35:03::	补充常用颜色形容词用法。
+create	verb=创造；创作；建立；造成	create%2:36:00::|create%2:36:02::|create%2:36:01::|create%2:36:13::	
+creative	adjective=有创造力的；创造性的|noun=创意人员	creative%3:00:00::|creative%5:00:00:constructive:00	补充现代英语常用名词化用法。
+creature	noun=生物；动物；人	creature%1:03:00::|creature%1:18:01::	主动排除表示受人操纵者的贬义。
+credit	noun=信用；赊购；赞扬；学分；存款余额|verb=把……归功于；记入贷方；相信	credit%1:10:00::|credit%1:21:02::|credit%1:04:01::|credit%1:21:00::	OEWN 候选支持主要名词义；补充高频学分和动词用法。
+crew	noun=全体船员；机组人员；工作组；一伙人|verb=当船员或机组人员	crew%1:14:01::|crew%1:14:00::|crew%1:14:03::|crew%2:33:00::	
+crime	noun=犯罪；罪行；严重过错	crime%1:04:00::|crime%1:04:01::	
+crisis	noun=危机；紧要关头；转折点	crisis%1:26:00::|crisis%1:11:00::	
+criterion	noun=标准；准则	criterion%1:10:00::|criterion%1:09:00::	复数形式为 criteria。
+critical	adjective=批评的；批判性的；关键的；危急的；极重要的	critical%3:00:01::|critical%3:00:02::|critical%5:00:00:crucial:00|critical%5:00:00:indispensable:00	
+criticise	verb=批评；指责；评论	criticise%2:32:00::|criticise%2:33:00::|criticize%2:32:00::	
+crop	noun=农作物；收成；一批|verb=剪短；收割；突然出现	crop%1:20:01::|crop%1:20:00::|crop%1:14:00::|crop%1:06:01::	OEWN 候选支持名词核心义；补充常用动词用法。
+cross	verb=穿过；横跨；交叉；使生气|noun=十字形；叉号；苦难|adjective=交叉的；生气的	cross%1:06:01::|cross%1:07:00::|cross%1:26:00::|cross%5:00:00:crosswise:00|cross%5:00:00:ill-natured:00	OEWN 候选支持名词和形容词义；补充中学阶段高频动词用法。
+crowd	noun=人群；一群人|verb=聚集；挤满；挤压	crowd%1:14:00::|crowd%1:14:01::|crowd%2:38:00::|crowd%2:42:00::|crowd%2:38:01::	
+crucial	adjective=至关重要的；关键的	crucial%3:00:00::|crucial%5:00:00:material:02|crucial%5:00:00:important:00	
+cruel	adjective=残忍的；残酷的；造成痛苦的	cruel%5:00:01:inhumane:00	
+cry	verb=哭；喊叫；叫卖|noun=哭泣；喊声；叫声	cry%1:10:04::|cry%1:10:02::|cry%1:10:00::|cry%1:11:00::	OEWN 候选支持名词核心义；补充中学阶段高频动词用法。
+cuisine	noun=烹饪；菜肴；地方风味	cuisine%1:13:00::	
+culture	noun=文化；文明；修养；培养物|verb=培养；培育	culture%1:14:00::|culture%1:09:01::|culture%1:09:00::|culture%1:04:01::	OEWN 候选支持名词核心义；补充常用动词用法。
+cup	noun=杯子；一杯的量；杯状物；奖杯|verb=使成杯状；用手捧成杯状	cup%1:06:00::|cup%1:23:01::|cup%1:25:00::	补充中学常用的奖杯名词义和动词用法。
+cupboard	noun=橱柜；壁橱	cupboard%1:06:00::	
+cure	noun=疗法；药物；解决办法|verb=治愈；解决；腌制保存	cure%1:06:00::|cure%2:29:00::|cure%2:30:00::|cure%2:30:01::	
+curious	adjective=好奇的；奇特的；稀奇的	curious%3:00:00::|curious%5:00:00:strange:00	
+current	adjective=当前的；现行的；流通的|noun=水流；气流；电流；潮流	current%3:00:00::|current%1:11:00::|current%1:19:01::|current%1:14:00::	
+curtain	noun=窗帘；幕；屏障|verb=给……装帘；遮蔽	curtain%1:06:00::|curtain%1:17:00::|curtain%2:40:00::	
+custom	noun=习俗；惯例；光顾；海关税|adjective=定制的	custom%1:04:00::|custom%1:09:00::|custom%1:04:02::|custom%1:21:00::|custom%3:00:00::	海关通常使用复数 customs，单数 custom 也可作定制形容词。
+customer	noun=顾客；客户	customer%1:18:00::	
+cut	verb=切；割；削减；中断|noun=切口；削减；伤口|adjective=切开的；删减的	cut%3:00:01::|cut%5:00:00:abridged:00|cut%3:00:03::	OEWN 当前候选以形容词义为主；补充中学阶段高频动词和名词用法。

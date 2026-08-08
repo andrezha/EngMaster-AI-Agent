@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+suitable	adjective=合适的；适宜的；符合条件的	suitable%5:00:00:fit:02|suitable%5:00:00:eligible:00	
+sum	noun=总数；金额；算术题；概要|verb=合计；总结	sum%1:21:00::|sum%1:09:01::|sum%1:14:00::|sum%1:09:00::	动词义依据基础英语常用义补充。
+summary	noun=摘要；概要|adjective=简要的；即时的	summary%5:00:00:unofficial:00|summary%5:00:00:concise:00|summary%1:10:00::	
+summer	noun=夏天；夏季|verb=避暑	summer%1:28:00::|summer%1:28:01::|summer%2:42:00::	
+sun	noun=太阳；阳光|verb=晒太阳；晒干	sun%1:19:00::|sun%1:17:01::|sun%2:29:00::	排除人物义项。
+Sunday	proper_noun=星期日；星期天	sunday%1:28:00::	
+sunny	adjective=阳光充足的；晴朗的；开朗的	sunny%5:00:00:cheerful:00|sunny%5:00:01:light:06	
+super	adjective=极好的；超级的|noun=主管；管理员|adverb=非常	super%5:00:00:superior:02|super%5:00:00:comprehensive:00|super%5:00:00:large:00|super%1:18:00::	副词义依据基础英语常用义补充。
+superb	adjective=极好的；卓越的	superb%5:00:00:superior:02|superb%5:00:00:good:01	
+superior	adjective=更好的；较高的；上级的|noun=上级；优胜者	superior%3:00:02::|superior%3:00:01::|superior%5:00:00:dominant:01|superior%3:00:00::	名词义依据基础英语常用义补充。
+supermarket	noun=超级市场；超市	supermarket%1:06:00::	
+supply	noun=供应；供给量；物资|verb=供应；提供	supply%1:23:00::|supply%1:22:00::|supply%1:04:00::|supply%2:40:00::	
+support	verb=支持；支撑；供养|noun=支持；支撑物；证据	support%1:04:04::|support%1:04:00::|support%1:09:00::|support%1:04:03::	动词义依据基础英语常用义补充。
+suppose	verb=认为；假设；料想；应当	suppose%2:32:00::|suppose%2:31:00::|suppose%2:31:01::|suppose%2:31:06::	
+sure	adjective=确信的；可靠的；一定的|adverb=当然；确实	sure%3:00:00::|sure%5:00:00:careful:00|sure%3:00:04::|sure%5:00:00:secure:02	副词义依据基础英语常用义补充。
+surf	noun=海浪；拍岸浪|verb=冲浪；浏览网络	surf%1:11:00::|surf%2:38:00::|surf%2:35:03::|surf%2:30:00::	
+surface	noun=表面；水面；外观|adjective=表面的|verb=浮出；显露	surface%3:00:00::|surface%1:06:00::|surface%1:15:00::|surface%1:17:00::	动词义依据基础英语常用义补充。
+surgeon	noun=外科医生	surgeon%1:18:00::	
+surgery	noun=外科学；外科手术；诊所	surgery%1:09:00::|surgery%1:06:01::|surgery%1:06:00::|surgery%1:04:01::	
+surprise	noun=惊讶；意外事件|verb=使惊讶；突然袭击	surprise%1:12:00::|surprise%1:11:00::|surprise%1:04:00::|surprise%2:31:00::	
+surround	verb=围绕；包围|noun=周围环境；装饰边	surround%1:15:00::|surround%2:35:00::|surround%2:35:01::|surround%2:33:00::	
+surrounding	adjective=周围的；附近的|noun=环境；周围事物	surrounding%5:00:00:close:01	名词义依据基础英语常用义补充。
+survey	noun=调查；测量；概览|verb=调查；测量；审视	survey%1:04:02::|survey%1:10:00::|survey%1:04:01::|survey%2:31:00::	
+survive	verb=生存；幸存；比……活得久；挺过	survive%2:42:01::|survive%2:42:02::|survive%2:42:00::|survive%2:42:03::	
+suspect	verb=怀疑；猜想|noun=嫌疑人；可疑对象|adjective=可疑的	suspect%5:00:00:questionable:00|suspect%1:18:00::|suspect%1:18:01::|suspect%2:32:00::	
+suspend	verb=悬挂；暂停；使停职；使悬浮	suspend%2:35:00::|suspend%2:30:01::|suspend%2:41:00::|suspend%2:30:00::	
+sustain	verb=维持；支撑；遭受；证实	sustain%2:42:01::|sustain%2:29:00::|sustain%2:34:01::|sustain%2:34:00::	
+sweat	noun=汗；出汗；焦虑|verb=出汗；辛苦工作	sweat%1:08:00::|sweat%1:26:01::|sweat%1:19:00::|sweat%1:04:00::	动词义依据基础英语常用义补充。
+sweater	noun=毛衣；出汗多的人	sweater%1:06:00::|sweater%1:18:00::	
+sweep	verb=扫；席卷；迅速移动|noun=清扫；范围；扫荡	sweep%1:07:00::|sweep%1:18:00::|sweep%1:11:00::|sweep%1:06:00::	动词义依据基础英语常用义补充。
+sweet	adjective=甜的；可爱的；悦耳的|noun=糖果；甜点|adverb=甜美地	sweet%3:00:02::|sweet%5:00:00:lovable:00|sweet%5:00:00:melodious:00|sweet%5:00:02:pleasing:00	名词和副词义依据基础英语常用义补充。
+swim	verb=游泳；漂浮；眩晕|noun=游泳	swim%1:04:00::|swim%2:38:00::|swim%2:38:01::|swim%2:42:02::	
+swimming	noun=游泳|adjective=游泳的；充满泪水的；眩晕的	swimming%5:00:00:tearful:00|swimming%5:00:00:horizontal:00|swimming%1:04:00::	
+swing	verb=摆动；摇摆；转向|noun=秋千；摆动；变化	swing%1:26:01::|swing%1:06:00::|swing%1:04:06::|swing%1:04:00::	动词义依据基础英语常用义补充。
+switch	noun=开关；转换；细枝|verb=转换；调换；开启	switch%1:06:01::|switch%1:11:00::|switch%1:06:03::|switch%1:06:02::	动词义依据基础英语常用义补充。
+symbol	noun=符号；象征	symbol%1:10:00::|symbol%1:09:00::	
+sympathy	noun=同情；赞同；一致	sympathy%1:09:00::|sympathy%1:12:00::|sympathy%1:24:00::	
+symphony	noun=交响乐；交响乐团	symphony%1:10:00::|symphony%1:14:00::	
+system	noun=系统；制度；体系；方法	system%1:06:00::|system%1:14:00::|system%1:27:00::|system%1:09:00::	
+table	noun=桌子；表格；一桌人；台地|verb=提交讨论；搁置	table%1:14:00::|table%1:06:01::|table%1:06:02::|table%1:17:00::	动词义依据基础英语常用义补充。
+tablet	noun=平板电脑；药片；碑板	tablet%1:06:02::|tablet%1:27:00::|tablet%1:06:01::|tablet%1:06:00::	
+tackle	verb=处理；应付；抢断|noun=用具；阻截；滑车	tackle%1:18:00::|tackle%1:06:00::|tackle%1:06:01::|tackle%1:04:02::	动词义依据基础英语常用义补充。
+tail	noun=尾巴；尾部；末尾|verb=跟踪；尾随	tail%1:05:00::|tail%1:28:00::|tail%1:25:00::|tail%1:08:01::	动词义依据基础英语常用义补充。
+tailor	noun=裁缝|verb=专门制作；使适合	tailor%1:18:00::|tailor%2:30:00::|tailor%2:36:01::|tailor%2:36:00::	
+take	verb=拿；带走；接受；花费|noun=收入；镜头；看法	take%1:21:00::|take%1:04:00::|take%2:41:04::|take%2:40:06::	
+tale	noun=故事；传说；谎话	tale%1:10:00::|tale%1:10:01::	
+talent	noun=才能；天赋；有才华的人	talent%1:09:00::|talent%1:18:00::	
+talk	verb=说话；交谈；商谈|noun=谈话；演讲；传闻	talk%1:10:00::|talk%1:10:03::|talk%1:04:02::|talk%1:10:02::	动词义依据基础英语常用义补充。
+tall	adjective=高的；高大的；夸张的；难以置信的	tall%3:00:00::|tall%5:00:00:rhetorical:00|tall%5:00:01:tall:00|tall%5:00:00:difficult:00	
+tank	noun=箱；罐；坦克；一箱的量|verb=彻底失败；储存在罐中	tank%1:06:01::|tank%1:06:00::|tank%1:23:00::|tank%1:06:02::	动词义依据基础英语常用义补充。
+tape	noun=胶带；磁带；录音带；终点线|verb=用胶带粘；录制	tape%1:06:00::|tape%1:06:01::|tape%1:15:00::|tape%1:06:03::	动词义依据基础英语常用义补充。
+target	noun=目标；靶子；对象|verb=把……作为目标	target%1:10:00::|target%1:18:00::|target%1:15:00::|target%1:06:00::	动词义依据基础英语常用义补充。
+task	noun=任务；工作|verb=给……分配任务；责难	task%1:04:01::|task%1:04:00::|task%2:41:00::|task%2:34:00::	
+taste	noun=味道；味觉；品味；体验|verb=品尝；尝起来；体验	taste%1:09:02::|taste%1:12:02::|taste%1:09:01::|taste%1:11:00::	动词义依据基础英语常用义补充。
+tax	noun=税；负担|verb=征税；使负重	tax%1:21:00::|tax%2:40:00::|tax%2:40:01::|tax%2:34:00::	
+taxi	noun=出租车|verb=乘出租车；滑行	taxi%1:06:00::|taxi%2:38:01::|taxi%2:38:00::	
+tea	noun=茶；茶水；茶树；茶点	tea%1:13:00::|tea%1:13:01::|tea%1:20:00::|tea%1:13:02::	
+teach	verb=教；教授；使懂得	teach%2:32:00::|teach%2:30:00::	
+teacher	noun=教师；老师；起教育作用的事物	teacher%1:18:00::|teacher%1:09:00::	
+team	noun=队；组；团队|verb=合作；使组队	team%1:14:00::|team%1:14:01::|team%2:33:00::	
+teapot	noun=茶壶	teapot%1:06:00::	
+tear	noun=眼泪；裂口；撕裂|verb=撕裂；飞奔	tear%1:08:01::|tear%1:17:00::|tear%1:04:01::|tear%1:04:00::	动词义依据基础英语常用义补充。
+technique	noun=技巧；技术；方法	technique%1:09:00::|technique%1:09:01::	
+technology	noun=技术；科技；技术设备	technology%1:04:00::|technology%1:09:00::|technology%1:06:00::	
+teenager	noun=青少年；十几岁的孩子	teenager%1:18:00::	
+telephone	noun=电话；电话机|verb=打电话	telephone%1:06:00::|telephone%1:10:00::|telephone%2:32:00::	
+telescope	noun=望远镜|verb=使套叠；缩短	telescope%1:06:00::|telescope%2:35:00::|telescope%2:30:03::	
+television	noun=电视；电视机；电视节目	television%1:10:00::|television%1:06:00::|television%1:06:01::|tv%1:10:00::	
+tell	verb=告诉；讲述；辨别；命令	tell%2:32:04::|tell%2:32:00::|tell%2:32:01::|tell%2:32:02::	
+temperature	noun=温度；体温；情绪强度	temperature%1:07:00::|temperature%1:09:00::	
+temple	noun=寺庙；神殿；太阳穴	temple%1:06:00::|temple%1:08:00::|temple%1:06:01::|temple%1:06:02::	
+temporary	adjective=暂时的；临时的|noun=临时工	temporary%3:00:00::|temporary%5:00:00:part-time:00|temporary%1:18:00::	
+ten	numeral=十|noun=十个；十点牌	ten%5:00:00:cardinal:00|ten%1:23:00::|ten%1:06:00::	
+tend	verb=往往会；照料；趋向	tend%2:42:01::|tend%2:41:00::|tend%2:41:01::	
+tendency	noun=倾向；趋势；性情	tendency%1:09:00::|tendency%1:12:00::|tendency%1:07:00::|tendency%1:15:00::	
+tennis	noun=网球运动	tennis%1:04:00::	
+tension	noun=紧张；拉力；矛盾；张力	tension%1:26:03::|tension%1:26:01::|tension%1:26:02::|tension%1:19:00::	
+tenth	ordinal=第十|noun=十分之一；第十个	tenth%5:00:00:ordinal:00|tenth%1:23:00::|tenth%1:24:00::	
+term	noun=术语；学期；期限；条件|verb=把……称为	term%1:10:00::|term%1:28:00::|term%1:10:02::|term%1:09:00::	动词义依据基础英语常用义补充。
+terrible	adjective=可怕的；糟糕的；严重的；极大的	terrible%5:00:00:alarming:00|terrible%5:00:01:bad:00|terrible%5:00:00:intense:00|terrible%5:00:00:extraordinary:00	
+territory	noun=领土；地区；领域	territory%1:15:00::|territory%1:09:00::|territory%1:15:01::	
+test	noun=测试；考试；检验|verb=测试；检验；考查	test%1:09:02::|test%1:04:02::|test%1:10:00::|test%1:04:03::	动词义依据基础英语常用义补充。
+text	noun=文本；课文；短信；原文|verb=发短信	text%1:10:00::|text%1:10:03::|text%1:10:02::|text%1:10:01::	动词义依据基础英语常用义补充。
+than	conjunction=比；与……相比|preposition=比；除……外		OEWN无候选释义；依据基础英语比较结构用法原创整理。
+thank	verb=感谢；道谢	thank%2:32:00::	
+that	determiner=那个|pronoun=那；那个|conjunction=……这一事实；以便|adverb=那么		OEWN无候选释义；依据基础英语功能词用法原创整理。
+the	article=这；那；这些；那些；特指的人或事物		OEWN无候选释义；依据基础英语定冠词用法原创整理。
+theatre	noun=剧院；戏剧；活动场所	theatre%1:06:00::|theatre%1:10:00::|theatre%1:15:00::	英式拼写。
+theft	noun=偷窃；盗窃罪	theft%1:04:00::	
+their	determiner=他们的；她们的；它们的		OEWN无候选释义；依据基础英语物主限定词用法原创整理。
+them	pronoun=他们；她们；它们		OEWN无候选释义；依据基础英语人称代词用法原创整理。
+theme	noun=主题；主旨；题目；主题曲	theme%1:10:00::|theme%1:09:01::|theme%1:10:02::|theme%1:10:01::	
+themselves	pronoun=他们自己；她们自己；它们自己		OEWN无候选释义；依据基础英语反身代词用法原创整理。
+then	adverb=然后；当时；那么|adjective=当时的|noun=那时	then%5:00:00:past:00|then%1:28:00::|then%4:02:00::|then%4:02:02::	
+theory	noun=理论；学说；推测	theory%1:09:00::|theory%1:09:01::|theory%1:09:02::	
+there	adverb=在那里；到那里；存在|noun=那里	there%1:15:00::|there%4:02:00::|there%4:02:02::|there%4:02:01::	
+therefore	adverb=因此；所以	therefore%4:02:00::|therefore%4:02:01::	
+these	determiner=这些|pronoun=这些人或事物		OEWN无候选释义；依据基础英语指示词用法原创整理。
+they	pronoun=他们；她们；它们；某人		OEWN无候选释义；依据基础英语人称代词用法原创整理。
+thick	adjective=厚的；浓的；密集的；口音重的|adverb=厚厚地|noun=最密集处	thick%3:00:01::|thick%5:00:00:concentrated:00|thick%3:00:02::|thick%5:00:00:unintelligible:00	副词和名词义依据基础英语常用义补充。

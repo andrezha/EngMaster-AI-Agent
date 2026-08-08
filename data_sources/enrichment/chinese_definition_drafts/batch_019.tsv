@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+northern	adjective=北方的；北部的；来自北方的	northern%3:00:02::|northern%5:00:02:north:00|northern%5:00:01:north:00|northern%3:00:01::	
+nose	noun=鼻子；前端；嗅觉|verb=嗅；探查	nose%1:08:00::|nose%1:06:00::|nose%1:06:02::|nose%1:23:00::	动词义依据基础英语常用义补充。
+not	adverb=不；没有；并非	not%4:02:00::	
+note	noun=笔记；便条；音符；钞票|verb=注意；记录	note%1:10:00::|note%1:10:03::|note%1:10:04::|note%1:10:05::	动词义依据基础英语常用义补充。
+notebook	noun=笔记本；笔记本电脑	notebook%1:10:00::|notebook%1:06:00::	
+nothing	pronoun=没有什么；无事|noun=无关紧要的事|adverb=毫不	nothing%1:23:00::|nothing%4:02:00::	
+notice	noun=通知；告示；注意|verb=注意到；留意	notice%1:10:01::|notice%1:09:00::|notice%1:10:02::|notice%1:10:03::	动词义依据基础英语常用义补充。
+novel	noun=小说|adjective=新颖的；新奇的	novel%5:00:00:original:00|novel%5:00:00:new:00|novel%1:10:00::|novel%1:06:00::	
+novelist	noun=小说家	novelist%1:18:00::	
+November	proper_noun=十一月	november%1:28:00::	
+now	adverb=现在；此刻；既然|noun=现在	now%1:28:00::|now%4:02:05::|now%4:02:00::|now%4:02:02::	
+nowadays	adverb=现今；如今|noun=当今	nowadays%1:28:00::|nowadays%4:02:00::	
+nowhere	adverb=无处；任何地方都不|noun=无名之地	nowhere%1:26:00::|nowhere%4:02:00::	
+nuclear	adjective=核的；核能的；核心的	nuclear%3:00:00::|nuclear%3:01:01::|nuclear%3:01:02::|nuclear%5:00:00:central:01	
+number	noun=数字；号码；数量|verb=编号；总计	number%1:07:00::|number%1:23:00::|number%1:10:04::|number%1:10:03::	动词义依据基础英语常用义补充。
+nurse	noun=护士；保姆|verb=护理；养育；怀有	nurse%1:18:00::|nurse%1:18:01::|nurse%2:29:00::|nurse%2:37:00::	
+nut	noun=坚果；螺母；狂热者	nut%1:20:00::|nut%1:06:00::|nut%1:23:00::|nut%1:18:02::	
+nutrition	noun=营养；营养物；营养学	nutrition%1:22:00::|nutrition%1:13:00::|nutrition%1:09:00::	
+object	noun=物体；目标；宾语|verb=反对；提出异议	object%1:03:00::|object%1:09:00::|object%1:10:00::|object%1:09:01::	动词义依据基础英语常用义补充。
+objective	noun=目标；目的|adjective=客观的；真实的	objective%3:00:00::|objective%3:01:00::|objective%5:00:00:real:00|objective%5:00:00:concrete:00	名词义依据基础英语常用义补充。
+observe	verb=观察；注意到；遵守；庆祝	observe%2:39:02::|observe%2:32:00::|observe%2:39:01::|observe%2:39:00::	
+obtain	verb=获得；得到；存在；通行	obtain%2:40:00::|obtain%2:30:00::|obtain%2:42:00::	
+obviously	adverb=显然；明显地	obviously%4:02:00::	
+occasion	noun=场合；时机；特别事件；理由|verb=引起	occasion%1:11:00::|occasion%1:11:01::|occasion%1:16:00::|occasion%1:28:00::	动词义依据基础英语常用义补充。
+occupation	noun=职业；占用；占领；消遣	occupation%1:04:00::|occupation%1:04:02::|occupation%1:04:04::|occupation%1:04:01::	
+occupy	verb=占据；占用；使忙碌；居住	occupy%2:41:00::|occupy%2:42:00::|occupy%2:42:01::|occupy%2:42:04::	
+occur	verb=发生；出现；被想到	occur%2:30:00::|occur%2:31:00::|occur%2:42:03::	
+ocean	noun=海洋；大量	ocean%1:17:00::|ocean%1:23:00::	
+o’clock	adverb=……点钟		OEWN无该拼写候选释义；依据基础英语时间表达原创整理。
+October	proper_noun=十月	october%1:28:00::	
+odd	adjective=奇数的；奇怪的；零散的；大约的	odd%3:00:00::|odd%5:00:00:unusual:00|odd%5:00:00:inexact:00|odd%5:00:00:strange:00	
+of	preposition=属于；关于；由……组成；……的		OEWN无候选释义；依据基础英语功能词用法原创整理。
+off	adverb=离开；停止；关闭|preposition=从……离开|adjective=关闭的；不新鲜的	off%3:00:00::|off%5:00:00:unsatisfactory:00|off%3:00:02::|off%5:00:00:soured:00	副词和介词义依据基础英语常用义补充。
+offer	verb=提供；提出；出价|noun=提议；报价；优惠	offer%1:10:01::|offer%1:10:00::|offer%1:04:01::|offer%2:40:02::	
+office	noun=办公室；办事处；职位；职责	office%1:06:00::|office%1:14:01::|office%1:04:01::|office%1:26:00::	
+officer	noun=官员；军官；警官；高级职员	officer%1:18:03::|officer%1:18:02::|officer%1:18:01::|officer%1:18:04::	
+official	adjective=官方的；正式的；经批准的|noun=官员	official%3:00:00::|official%3:01:00::|official%5:00:00:confirmed:00|official%5:00:00:regular:00	名词义依据基础英语常用义补充。
+often	adverb=经常；常常	often%4:02:00::|often%4:02:01::|often%4:02:02::	
+oil	noun=油；石油；食用油|verb=给……加油；涂油	oil%1:27:00::|oil%1:06:01::|oil%1:27:01::|oil%1:13:00::	动词义依据基础英语常用义补充。
+OK	interjection=好的；可以|adjective=可以的；不错的|adverb=顺利地|noun=同意	ok%1:10:00::|ok%4:02:00::	形容词和感叹词义依据基础英语常用义补充。
+old	adjective=老的；旧的；从前的；熟悉的	old%3:00:02::|old%3:00:01::|old%5:00:00:familiar:00|old%5:00:00:experienced:00	
+Olympics	proper_noun=奥林匹克运动会；奥运会	olympics%1:11:00::	
+on	preposition=在……上；关于；依靠|adverb=继续；向前|adjective=开启的；正在进行的	on%3:00:00::|on%3:00:02::|on%4:02:00::|on%4:02:01::	介词义依据基础英语功能词用法补充。
+once	adverb=一次；曾经|conjunction=一旦	once%4:02:00::|once%4:02:02::|once%4:02:01::	连词义依据基础英语常用义补充。
+one	numeral=一；一个|pronoun=一个人或事物	one%5:00:00:cardinal:00|one%5:00:00:united:00|one%5:00:00:same:00|one%5:00:00:extraordinary:00	
+onion	noun=洋葱；葱头	onion%1:20:02::|onion%1:20:00::|onion%1:13:00::	
+online	adjective=在线的；联网的|adverb=在线地	online%3:00:02::|online%3:00:00::|online%5:00:00:current:00|online%4:02:03::	
+only	adjective=唯一的；仅有的|adverb=只；仅仅；不过	only%5:00:00:single:05|only%5:00:00:exclusive:00|only%4:02:02::|only%4:02:01::	
+onto	preposition=到……上面；朝向；对……有所察觉		OEWN无候选释义；依据基础英语功能词用法原创整理。
+open	adjective=开着的；开放的；公开的|verb=打开；开放；开始|noun=户外；公开赛	open%3:00:01::|open%3:00:02::|open%5:00:00:unprotected:00|open%5:00:00:public:00	动词和名词义依据基础英语常用义补充。
+opera	noun=歌剧；歌剧院	opera%1:10:00::|opera%1:06:00::	
+operation	noun=操作；运转；手术；行动	operation%1:26:00::|operation%1:04:06::|operation%1:04:03::|operation%1:22:00::	
+operator	noun=操作员；经营者；运算符；接线员	operator%1:24:00::|operator%1:18:00::|operator%1:18:01::|operator%1:18:02::	
+opinion	noun=意见；看法；评价；判断	opinion%1:09:00::|opinion%1:10:01::|opinion%1:09:01::|opinion%1:10:00::	
+opponent	noun=对手；反对者|adjective=对立的	opponent%5:00:00:hostile:01|opponent%1:18:02::|opponent%1:18:00::	
+opportunity	noun=机会；时机	opportunity%1:26:00::	
+oppose	verb=反对；抵制；与……竞争	oppose%2:32:01::|oppose%2:33:01::|oppose%2:42:00::|oppose%2:33:00::	
+opposite	adjective=相反的；对面的|noun=相反的人或物|preposition=在……对面|adverb=在对面	opposite%5:00:01:other:00|opposite%3:00:00::|opposite%5:00:02:other:00|opposite%5:00:00:other:00	其他词性义依据基础英语常用义补充。
+optimistic	adjective=乐观的；抱有希望的	optimistic%3:00:00::|optimistic%5:00:00:positive:01	
+option	noun=选择；选项；选择权	option%1:21:00::|option%1:09:00::|option%1:04:00::	
+or	conjunction=或；或者；否则	or%1:06:00::	OEWN候选为同形纹章术语；连词义依据基础英语语法原创整理。
+orange	noun=橙子；橙色|adjective=橙色的	orange%5:00:00:chromatic:00|orange%1:13:00::|orange%1:07:00::|orange%1:20:00::	
+orbit	noun=轨道；活动范围|verb=绕轨道运行	orbit%1:15:00::|orbit%1:26:00::|orbit%1:07:00::|orbit%1:15:01::	动词义依据基础英语常用义补充。
+order	noun=命令；顺序；订单；秩序|verb=命令；订购；整理	order%1:10:03::|order%1:07:01::|order%1:26:00::|order%1:14:00::	动词义依据基础英语常用义补充。
+ordinary	adjective=普通的；平常的|noun=普通事物	ordinary%3:00:00::|ordinary%5:00:02:common:01|ordinary%1:18:01::|ordinary%1:26:00::	
+organ	noun=器官；机构；风琴；传播工具	organ%1:08:00::|organ%1:14:00::|organ%1:06:01::|organ%1:10:00::	
+organic	adjective=有机的；有机物的；自然形成的|noun=有机物	organic%3:00:01::|organic%3:00:02::|organic%3:00:00::|organic%5:00:00:wholesome:00	名词义依据基础英语常用义补充。
+organisation	noun=组织；机构；安排；组织性	organisation%1:14:01::|organisation%1:14:00::|organisation%1:09:00::|organisation%1:07:00::	英式拼写。
+origin	noun=起源；来源；出身；原点	origin%1:15:00::|origin%1:07:00::|origin%1:11:00::|origin%1:09:00::	
+original	adjective=最初的；原创的；原件的|noun=原作；原件	original%5:00:01:first:00|original%5:00:00:primary:00|original%3:00:00::|original%5:00:00:underived:00	名词义依据基础英语常用义补充。
+other	adjective=其他的；另一个的|pronoun=其他人或事物	other%3:00:00::|other%5:00:00:past:00|other%5:00:02:past:00|other%5:00:00:strange:00	代词义依据基础英语常用义补充。
+otherwise	adverb=否则；在其他方面；以不同方式|adjective=不同的	otherwise%5:00:00:other:00|otherwise%4:02:01::|otherwise%4:02:03::	
+ought to	modal_verb=应该；应当；本应		OEWN无该短语候选释义；依据基础英语情态表达原创整理。
+our	determiner=我们的		OEWN无候选释义；依据基础英语物主限定词用法原创整理。
+ours	pronoun=我们的东西		OEWN无候选释义；依据基础英语物主代词用法原创整理。
+ourselves	pronoun=我们自己；我们亲自		OEWN无候选释义；依据基础英语反身代词用法原创整理。
+out	adverb=向外；在外；离开|preposition=从……出来|adjective=不在的；出局的|noun=出路	out%3:00:02::|out%5:00:00:dead:02|out%5:00:00:impossible:00|out%5:00:00:unsuccessful:00	副词、介词和名词义依据基础英语常用义补充。
+outcome	noun=结果；后果	outcome%1:11:00::|outcome%1:19:00::	
+outgoing	adjective=外向的；即将离任的；外出的	outgoing%3:00:00::|outgoing%3:00:01::|outgoing%5:00:00:sociable:00	
+outline	noun=轮廓；提纲；概要|verb=概述；勾勒	outline%1:15:00::|outline%1:10:00::|outline%1:09:00::|outline%2:32:00::	
+output	noun=产出；输出；产量|verb=输出	output%1:06:00::|output%1:04:00::|output%1:10:02::|output%1:23:00::	动词义依据名词核心语义补充。
+outside	noun=外部；外面|adjective=外部的；外界的|adverb=在外面|preposition=在……外面	outside%3:00:00::|outside%5:00:00:extrinsic:00|outside%5:00:00:external:00|outside%3:00:04::	其他词性义依据基础英语常用义补充。
+outstanding	adjective=杰出的；显著的；未解决的；未支付的	outstanding%5:00:00:superior:02|outstanding%5:00:00:conspicuous:00|outstanding%5:00:00:unpaid:00|outstanding%5:00:00:important:00	
+over	preposition=在……上方；越过；遍及|adverb=结束；翻转；再一次|adjective=结束的|noun=一轮投球	over%5:00:01:finished:01|over%1:28:00::|over%4:02:01::|over%4:02:02::	介词义依据基础英语功能词用法补充。
+overall	adjective=全面的；总体的|adverb=总的来说|noun=工装裤	overall%5:00:00:general:00|overall%5:00:00:gross:00|overall%1:06:00::|overall%1:06:02::	副词义依据基础英语常用义补充。
+overcome	verb=克服；战胜；使受不了	overcome%2:33:03::|overcome%2:33:01::|overcome%2:37:00::|overcome%2:33:02::	
+overseas	adjective=海外的；国外的|adverb=在海外；到海外	overseas%5:00:00:foreign:02|overseas%5:00:00:marine:00|overseas%4:02:00::|overseas%4:02:01::	
+owe	verb=欠；应给予；归因于	owe%2:40:01::|owe%2:42:00::|owe%2:40:00::	
+own	adjective=自己的|verb=拥有；承认	own%5:00:00:personal:00|own%2:40:00::	“承认”依据基础英语常用义补充。
+oxygen	noun=氧；氧气	oxygen%1:27:00::	
+pace	noun=速度；步速；一步|verb=踱步；调整速度	pace%1:28:00::|pace%1:23:01::|pace%1:07:01::|pace%1:04:00::	动词义依据基础英语常用义补充。
+Pacific	proper_noun=太平洋|adjective=太平洋的；和平的	pacific%3:01:00::	专名和“和平的”义依据通用地名及基础英语用法补充。
+pack	noun=包；一包；一群|verb=打包；挤满；包装	pack%1:23:00::|pack%1:14:03::|pack%1:06:00::|pack%1:14:02::	动词义依据基础英语常用义补充。
+package	noun=包裹；一揽子方案；软件包|verb=包装；打包	package%1:14:00::|package%1:06:00::|package%1:10:00::|package%2:35:00::	
+page	noun=页；页面；一页内容|verb=翻页；呼叫	page%1:10:00::	排除人物低相关义项；动词义依据基础英语用法补充。
+pain	noun=疼痛；痛苦；令人讨厌的人或事|verb=使痛苦	pain%1:26:00::|pain%1:12:00::|pain%1:09:00::|pain%1:09:01::	动词义依据名词核心语义补充。
+paint	noun=油漆；颜料|verb=绘画；涂漆；描绘	paint%1:06:00::|paint%1:15:00::|paint%1:06:01::|paint%2:36:01::	
+pair	noun=一双；一对；一对搭档|verb=配对；成对	pair%1:14:01::|pair%1:23:00::|pair%1:14:00::|pair%1:14:02::	动词义依据基础英语常用义补充。
+palace	noun=宫殿；王室；宏伟建筑	palace%1:06:01::|palace%1:14:00::|palace%1:06:02::|palace%1:06:00::	
+pale	adjective=苍白的；浅色的；微弱的|verb=变苍白；显得逊色	pale%5:00:00:light:05|pale%5:00:00:weak:00|pale%5:00:00:colorless:03|pale%5:00:00:colorless:02	动词义依据基础英语常用义补充。

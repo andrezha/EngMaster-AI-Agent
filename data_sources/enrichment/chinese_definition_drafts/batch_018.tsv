@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+mobile phone	noun=手机；移动电话	mobile_phone%1:06:00::	
+mode	noun=方式；模式；状态；众数	mode%1:07:00::|mode%1:26:00::|mode%1:24:00::|mode%1:24:02::	
+model	noun=模型；模范；模特；型号|verb=制作模型；展示|adjective=模范的	model%5:00:00:worthy:00|model%1:09:00::|model%1:09:03::|model%1:18:00::	动词义依据基础英语常用义补充。
+modern	adjective=现代的；新式的；时髦的	modern%3:00:00::|modern%5:00:00:fashionable:00|modern%5:00:00:nonclassical:00|modern%5:00:00:progressive:01	
+moment	noun=片刻；时刻；重要性；力矩	moment%1:28:00::|moment%1:28:01::|moment%1:28:02::|moment%1:07:00::	
+Monday	proper_noun=星期一	monday%1:28:00::	
+money	noun=钱；货币；财富	money%1:21:00::|money%1:21:02::|money%1:21:01::	
+monitor	noun=监视器；显示器；监督者|verb=监视；检测	monitor%1:18:01::|monitor%1:18:00::|monitor%1:06:02::|monitor%1:06:01::	动词义依据基础英语常用义补充。
+monkey	noun=猴子；顽皮的人|verb=胡闹；摆弄	monkey%1:05:00::|monkey%1:18:00::|monkey%2:35:12::|monkey%2:35:00::	
+month	noun=月；一个月；月份	month%1:28:01::|month%1:28:00::	
+monthly	adjective=每月的|noun=月刊|adverb=每月一次	monthly%5:00:00:periodic:00|monthly%1:10:00::|monthly%4:02:00::	
+mood	noun=心情；情绪；气氛；语气	mood%1:12:00::|mood%1:26:00::|mood%1:24:00::	
+moon	noun=月亮；卫星；月光|verb=闲荡	moon%1:17:02::|moon%1:28:00::|moon%1:17:00::|moon%2:41:01::	
+moral	adjective=道德的；精神上的|noun=寓意；道德准则	moral%3:00:00::|moral%5:00:00:mental:00|moral%1:10:00::	
+more	determiner=更多的|pronoun=更多的人或事物|adverb=更；更加	more%3:00:01::|more%3:00:02::|more%4:02:00::|more%4:02:01::	
+moreover	adverb=此外；而且	moreover%4:02:00::	
+morning	noun=早晨；上午；初期	morning%1:28:00::|morning%1:10:00::|morning%1:28:01::|morning%1:11:00::	
+mosquito	noun=蚊子	mosquito%1:05:00::	
+most	determiner=最多的；大多数的|pronoun=大多数|adverb=最；非常	most%3:00:02::|most%3:00:01::|most%4:02:00::|most%4:02:02::	
+mostly	adverb=主要地；通常；几乎全部	mostly%4:02:00::|mostly%4:02:03::	
+mother	noun=母亲；妈妈；起源|verb=照料；养育	mother%1:18:00::|mother%1:27:00::|mother%1:18:02::|mother%1:18:01::	动词义依据基础英语常用义补充。
+motion	noun=运动；动作；提议；手势|verb=示意	motion%1:10:00::|motion%1:11:00::|motion%1:04:00::|motion%1:26:00::	动词义依据名词核心语义补充。
+motivate	verb=激励；成为……的动机；促使	motivate%2:36:00::	
+motive	noun=动机；目的|adjective=引起运动的；推动的	motive%5:00:00:causative:00|motive%5:00:02:causative:00|motive%1:03:00::|motive%1:10:00::	
+motor	noun=发动机；马达|adjective=运动的；汽车的	motor%5:00:00:efferent:00|motor%5:00:00:causative:00|motor%1:06:00::|motor%1:17:00::	
+mount	verb=登上；安装；增加|noun=山；坐骑；支架	mount%1:05:00::|mount%1:04:00::|mount%1:17:00::|mount%1:06:01::	动词义依据基础英语常用义补充。
+mountain	noun=山；山脉；大量	mountain%1:17:00::|mountain%1:23:00::	
+mouse	noun=老鼠；鼠标|verb=捕鼠；用鼠标操作	mouse%1:05:00::|mouse%1:26:00::|mouse%1:18:00::|mouse%1:06:00::	动词义依据基础英语常用义补充。
+mouth	noun=嘴；口；入口；河口|verb=说；不出声地说	mouth%1:08:01::|mouth%1:08:00::|mouth%1:17:01::|mouth%1:17:00::	动词义依据基础英语常用义补充。
+move	verb=移动；搬家；行动；感动|noun=移动；行动；步骤	move%1:04:00::|move%1:04:01::|move%1:04:03::|move%1:04:04::	动词义依据基础英语常用义补充。
+movement	noun=运动；动作；活动；乐章	movement%1:04:00::|movement%1:04:04::|movement%1:11:00::|movement%1:14:00::	
+movie	noun=电影；影片	movie%1:10:00::	
+Mr	title=先生	mr%1:10:00::	用于男性姓氏或姓名前的称谓。
+Mrs	title=太太；夫人	mrs%1:10:00::	传统上用于已婚女性姓名前。
+Ms	title=女士	ms%1:10:02::	不说明婚姻状况的女性称谓。
+much	determiner=许多的；大量的|pronoun=许多|adverb=非常；很	much%3:00:00::|much%1:23:00::|much%4:02:00::|much%4:02:03::	
+mud	noun=泥；泥浆|verb=使沾上泥；弄浑浊	mud%1:27:00::|mud%2:35:00::|mud%2:35:01::	排除诽谤义项。
+multiple	adjective=多个的；多重的|noun=倍数	multiple%3:00:00::|multiple%1:09:00::	
+murder	noun=谋杀；凶杀|verb=谋杀；糟蹋	murder%1:04:00::|murder%2:41:00::|murder%2:30:00::	
+muscle	noun=肌肉；力量；实力|verb=强行挤入	muscle%1:08:00::|muscle%1:08:01::|muscle%1:18:00::|muscle%1:07:01::	动词义依据基础英语常用义补充。
+museum	noun=博物馆	museum%1:06:00::	
+mushroom	noun=蘑菇；蕈|verb=迅速增长；采蘑菇	mushroom%1:20:00::|mushroom%1:20:01::|mushroom%1:20:02::|mushroom%1:19:00::	动词义依据基础英语常用义补充。
+music	noun=音乐；乐曲；乐谱	music%1:10:00::|music%1:09:00::|music%1:04:00::|music%1:09:01::	
+musician	noun=音乐家；乐师	musician%1:18:01::|musician%1:18:00::	
+must	modal_verb=必须；一定|noun=必须做的事|adjective=必不可少的	must%5:00:00:essential:00|must%1:07:00::	情态动词义依据基础英语语法补充；排除同形名词低相关义项。
+my	determiner=我的		OEWN无候选释义；依据基础英语物主限定词用法原创整理。
+myself	pronoun=我自己；我亲自		OEWN无候选释义；依据基础英语反身代词用法原创整理。
+nail	noun=指甲；钉子|verb=钉牢；抓获；准确完成	nail%1:08:00::|nail%1:06:00::|nail%1:23:00::|nail%2:35:00::	
+name	noun=名字；名称；名声|verb=命名；说出……的名字	name%1:10:00::|name%1:26:00::|name%1:14:00::|name%1:18:00::	动词义依据基础英语常用义补充。
+narrow	adjective=窄的；狭隘的；有限的|verb=变窄；缩小范围	 narrow%3:00:00::|narrow%5:00:00:limited:00|narrow%3:00:06::|narrow%3:00:02::	动词义依据基础英语常用义补充。
+nation	noun=国家；民族；国民	 nation%1:14:00::|nation%1:14:01::|nation%1:14:02::	
+national	adjective=国家的；全国的；国有的|noun=国民；全国性比赛	 national%3:01:00::|national%3:00:00::|national%3:00:01::|national%5:00:00:public:00	名词义依据基础英语常用义补充。
+nationality	noun=国籍；民族	 nationality%1:14:00::|nationality%1:26:00::	
+native	adjective=出生地的；本土的；天生的|noun=本地人；本地物种	 native%3:00:01::|native%3:00:03::|native%3:00:02::|native%5:00:00:pure:02	名词义依据基础英语常用义补充。
+natural	adjective=自然的；天然的；正常的；天生的|noun=有天赋的人	 natural%3:00:01::|natural%3:00:02::|natural%3:00:03::|natural%5:00:00:normal:01	名词义依据基础英语常用义补充。
+nature	noun=自然；大自然；本质；天性	 nature%1:07:02::|nature%1:18:00::|nature%1:17:00::|nature%1:07:01::	
+navy	noun=海军；深蓝色	 navy%1:14:00::|navy%1:07:00::	
+near	adjective=近的；接近的|adverb=在附近；将近|preposition=靠近|verb=接近	 near%3:00:00::	其他词性义依据基础英语常用义补充。
+nearby	adjective=附近的|adverb=在附近	 nearby%5:00:00:near:00|nearby%4:02:00::	
+nearly	adverb=几乎；差不多	 nearly%4:02:00::|nearly%4:02:02::	
+neat	adjective=整洁的；利落的；巧妙的	 neat%5:00:00:tidy:00|neat%5:00:03:tidy:00|neat%5:00:00:adroit:00|neat%5:00:00:superficial:00	
+necessary	adjective=必要的；必需的|noun=必需品	 necessary%3:00:00::|necessary%5:00:00:inevitable:00|necessary%1:17:00::	
+neck	noun=脖子；颈部；狭窄部分	 neck%1:08:00::|neck%1:17:00::|neck%1:13:00::|neck%1:06:01::	
+need	verb=需要；必须|noun=需要；必要；缺乏	 need%1:26:00::|need%1:17:00::|need%1:03:00::|need%1:26:01::	动词义依据基础英语常用义补充。
+needle	noun=针；指针；针叶|verb=刺激；用针缝	 needle%1:20:00::|needle%1:06:01::|needle%1:06:00::|needle%1:06:02::	动词义依据基础英语常用义补充。
+negative	adjective=否定的；消极的；负的|noun=否定；负数	 negative%3:00:02::|negative%3:00:01::|negative%5:00:00:bad:00|negative%3:00:04::	名词义依据基础英语常用义补充。
+negotiate	verb=谈判；协商；顺利通过	 negotiate%2:32:00::|negotiate%2:38:00::	
+neighbour	noun=邻居；邻近的人或事物|verb=与……相邻	 neighbour%1:18:00::|neighbour%1:17:00::|neighbour%2:42:01::|neighbour%2:42:00::	
+neighbourhood	noun=街区；邻近地区；邻里	 neighbourhood%1:15:00::|neighbourhood%1:14:00::|neighborhood%1:15:00::|neighborhood%1:14:00::	英式拼写。
+neither	determiner=两者都不|pronoun=两者都不|adverb=也不	 neither%5:00:00:incomplete:00	功能词用法依据基础英语语法补充。
+nephew	noun=侄子；外甥	 nephew%1:18:00::	
+nervous	adjective=紧张的；焦虑的；神经的；易激动的	 nervous%5:00:00:tense:03|nervous%5:00:00:troubled:00|nervous%3:01:00::|nervous%5:00:00:excited:00	
+nest	noun=巢；窝；安乐窝|verb=筑巢；嵌套	 nest%1:17:00::|nest%1:06:00::|nest%1:15:00::|nest%1:14:00::	动词义依据基础英语常用义补充。
+net	noun=网；网络；净额|adjective=净的；最终的|verb=用网捕；净赚	 net%3:00:00::|net%5:00:00:ultimate:00|net%1:06:01::|net%1:06:02::	动词义依据基础英语常用义补充。
+network	noun=网络；网状系统；广播网|verb=建立联系；联网	 network%1:14:00::|network%1:06:01::|network%1:06:00::|network%1:06:03::	动词义依据基础英语常用义补充。
+never	adverb=从不；绝不	 never%4:02:00::	
+nevertheless	adverb=然而；不过；尽管如此	 nevertheless%4:02:00::	
+new	adjective=新的；新颖的；不熟悉的|adverb=新近地	 new%3:00:00::|new%3:00:09::|new%5:00:00:original:00|new%5:00:00:inexperienced:00	副词义依据基础英语常用义补充。
+news	noun=新闻；消息；新闻报道	 news%1:10:00::|news%1:10:01::|news%1:10:02::|news%1:10:03::	
+newspaper	noun=报纸；报社；新闻纸	 newspaper%1:10:00::|newspaper%1:14:00::|newspaper%1:06:00::|newspaper%1:27:00::	
+next	adjective=下一个的；紧接着的|adverb=接下来|noun=下一个	 next%5:00:00:succeeding:00|next%5:00:00:close:01|next%5:00:00:incoming:00|next%5:00:01:succeeding:00	副词和名词义依据基础英语常用义补充。
+nice	adjective=好的；友善的；令人愉快的；精细的	 nice%3:00:00::|nice%5:00:00:respectable:00|nice%5:00:02:precise:00|nice%5:00:00:fastidious:00	
+niece	noun=侄女；外甥女	 niece%1:18:00::	
+night	noun=夜；夜晚；黑暗时期	 night%1:28:00::|night%1:28:01::|night%1:28:04::|night%1:28:02::	
+nine	numeral=九|noun=九个；九人一组	 nine%5:00:00:cardinal:00|nine%1:23:00::|nine%1:14:00::|nine%1:06:00::	
+nineteen	numeral=十九	 nineteen%5:00:00:cardinal:00|nineteen%1:23:00::	
+ninety	numeral=九十	 ninety%5:00:00:cardinal:00|ninety%1:23:00::	
+ninth	ordinal=第九|noun=九分之一；第九个	 ninth%5:00:00:ordinal:00|ninth%1:24:00::|ninth%1:23:00::	
+no	determiner=没有；不是任何|interjection=不；不是|adverb=不；完全不	 no%3:00:00::|no%1:10:00::|no%4:02:02::|no%4:02:01::	
+noble	adjective=高尚的；贵族的；宏伟的|noun=贵族	 noble%5:00:00:impressive:00|noble%3:00:02::|noble%3:00:01::|noble%5:00:00:unreactive:00	名词义依据基础英语常用义补充。
+nobody	pronoun=没有人|noun=无足轻重的人	 nobody%1:18:00::	
+nod	verb=点头；打瞌睡|noun=点头；同意	 nod%1:10:01::|nod%1:04:00::|nod%2:32:01::|nod%2:32:00::	
+noise	noun=声音；噪声；干扰|verb=传播；发出噪声	 noise%1:11:00::|noise%1:09:00::|noise%1:11:01::|noise%1:10:00::	动词义依据基础英语常用义补充。
+noisy	adjective=吵闹的；嘈杂的；花哨的	 noisy%3:00:00::|noisy%5:00:00:colorful:03	
+none	pronoun=没有一个；毫无|adverb=一点也不	 none%5:00:00:no:00|none%4:02:00::	排除同形专名和低相关义项。
+noodle	noun=面条；笨蛋	 noodle%1:13:00::|noodle%1:08:00::	
+noon	noun=正午；中午十二点	 noon%1:28:00::	
+nor	conjunction=也不；也没有		OEWN无候选释义；依据基础英语并列连词用法原创整理。
+normal	adjective=正常的；通常的；标准的|noun=正常状态；常态	 normal%3:00:01::|normal%3:00:02::|normal%3:00:03::|normal%5:00:00:perpendicular:00	名词义依据基础英语常用义补充。
+north	noun=北；北方|adjective=北方的|adverb=向北	 north%3:00:00::|north%1:24:00::|north%1:15:00::|north%1:24:02::	副词义依据基础英语常用义补充。

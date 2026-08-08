@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+weak	adjective=虚弱的；薄弱的；稀释的；无力的	weak%3:00:00::|weak%5:00:00:diluted:00|weak%5:00:00:unstressed:00|weak%5:00:00:human:00	
+wealth	noun=财富；丰富；大量；富裕	wealth%1:26:00::|wealth%1:07:00::|wealth%1:21:02::|wealth%1:21:00::	
+weapon	noun=武器；手段	weapon%1:06:00::|weapon%1:10:00::	
+wear	verb=穿；戴；磨损|noun=穿着；磨损；服装	wear%1:26:00::|wear%1:06:00::|wear%1:04:00::|wear%2:29:00::	
+weather	noun=天气；气象|verb=经受住；风化|adjective=迎风的	weather%5:00:00:windward:00|weather%1:19:00::|weather%2:42:00::|weather%2:38:00::	
+website	noun=网站；站点	website%1:10:00::	
+wedding	noun=婚礼；结婚；结合	wedding%1:11:00::|wedding%1:04:00::|wedding%1:14:00::	
+Wednesday	proper_noun=星期三	wednesday%1:28:00::	
+weed	noun=杂草；水草|verb=除草；淘汰	weed%1:20:00::|weed%1:06:01::|weed%1:06:00::|weed%2:30:00::	
+week	noun=星期；一周；工作周	week%1:28:00::|week%1:28:01::|week%1:28:02::	
+weekday	noun=工作日；平日	weekday%1:28:00::	
+weekend	noun=周末|verb=度周末	weekend%1:28:00::|weekend%2:42:00::	
+weekly	adjective=每周的|noun=周刊|adverb=每周一次	weekly%5:00:00:periodic:00|weekly%1:10:00::|weekly%4:02:00::	
+weep	verb=哭泣；流泪；渗出液体	weep%2:29:00::	
+weigh	verb=称重量；重达；权衡；有影响	weigh%2:42:01::|weigh%2:32:00::|weigh%2:42:00::|weigh%2:42:03::	
+weight	noun=重量；体重；重物；重要性|verb=加重量；使负担	weight%1:07:00::|weight%1:06:01::|weight%1:07:01::|weight%1:06:00::	动词义依据基础英语常用义补充。
+welcome	verb=欢迎；乐意接受|noun=欢迎；迎接|adjective=受欢迎的	welcome%3:00:00::|welcome%1:26:00::|welcome%1:10:00::|welcome%2:40:00::	
+welfare	noun=福利；幸福；社会救济	welfare%1:04:00::|welfare%1:07:00::|welfare%1:26:00::	
+well	adverb=好；很好；充分地|adjective=健康的；适宜的|noun=井；泉|verb=涌出	well%3:00:01::|well%5:00:00:fortunate:00|well%5:00:00:advisable:00|well%1:06:00::	副词和动词义依据基础英语常用义补充。
+west	noun=西；西方|adjective=西方的|adverb=向西	west%3:00:00::|west%1:24:00::|west%1:24:02::|west%1:15:02::	
+western	adjective=西方的；西部的|noun=西部片；西方人	western%3:00:01::|western%3:00:02::|western%5:00:00:west:00|western%5:00:01:west:00	名词义依据基础英语常用义补充。
+wet	adjective=湿的；下雨的；未干的|verb=弄湿|noun=湿气；雨天	wet%3:00:01::|wet%3:00:05::|wet%3:00:04::|wet%3:00:02::	动词和名词义依据基础英语常用义补充。
+whale	noun=鲸；巨大的事物|verb=捕鲸；猛击	whale%1:18:00::|whale%1:05:00::|whale%2:33:00::	
+what	pronoun=什么；何物|determiner=什么样的；所……的|adverb=多么		OEWN无候选释义；依据基础英语疑问词用法原创整理。
+whatever	pronoun=无论什么；任何事物|determiner=任何的|adverb=一点也	whatever%5:00:00:some:00	其他词性义依据基础英语常用义补充。
+wheat	noun=小麦；小麦粒；麦黄色	wheat%1:20:00::|wheat%1:13:00::|wheat%1:07:00::	
+wheel	noun=轮；车轮；方向盘|verb=推；转动；盘旋	wheel%1:06:00::|wheel%1:06:05::|wheel%1:07:00::|wheel%1:06:01::	动词义依据基础英语常用义补充。
+when	adverb=什么时候；当时|conjunction=当……时；既然|pronoun=什么时候		OEWN无候选释义；依据基础英语疑问词和连词用法原创整理。
+whenever	conjunction=无论何时；每当|adverb=究竟什么时候		OEWN无候选释义；依据基础英语功能词用法原创整理。
+where	adverb=在哪里；到哪里|conjunction=在……的地方|pronoun=哪里		OEWN无候选释义；依据基础英语疑问词用法原创整理。
+whether	conjunction=是否；不管……还是		OEWN无候选释义；依据基础英语从属连词用法原创整理。
+which	pronoun=哪一个；哪些|determiner=哪个；哪些		OEWN无候选释义；依据基础英语疑问词和关系词用法原创整理。
+while	conjunction=当……时；而；虽然|noun=一会儿；一段时间|verb=消磨时间	while%1:28:00::	连词和动词义依据基础英语常用义补充。
+whisper	verb=耳语；低声说|noun=耳语；低语声；传闻	whisper%1:10:00::|whisper%1:11:00::|whisper%2:32:00::	
+white	adjective=白色的；洁白的；空白的|noun=白色；白色物|verb=使变白	white%3:00:01::|white%3:00:02::|white%5:00:00:pure:01|white%5:00:00:covered:00	名词和动词义依据基础英语常用义补充。
+who	pronoun=谁；……的人	who%1:14:00::	OEWN候选语义较宽；中文按基础英语疑问及关系代词用法整理。
+whole	adjective=全部的；完整的；健康的|noun=整体；全部|adverb=完全地	whole%3:00:00::|whole%3:00:02::|whole%5:00:00:uninjured:00|whole%5:00:00:healthy:00	名词和副词义依据基础英语常用义补充。
+whom	pronoun=谁；……的人		OEWN无候选释义；依据基础英语宾格疑问及关系代词用法原创整理。
+whose	determiner=谁的；……的|pronoun=谁的东西		OEWN无候选释义；依据基础英语物主疑问及关系词用法原创整理。
+why	adverb=为什么；为何|noun=原因；理由	why%1:16:00::	副词义依据基础英语疑问词用法补充。
+wide	adjective=宽的；广泛的；充分张开的|adverb=充分地；远离目标地	wide%3:00:00::|wide%5:00:00:comprehensive:00|wide%5:00:00:open:08|wide%5:00:00:large:00	副词义依据基础英语常用义补充。
+widespread	adjective=广泛的；普遍的；分布广的	widespread%5:00:00:general:00|widespread%5:00:00:distributed:00	
+wife	noun=妻子；太太	wife%1:18:00::	
+Wi-Fi	noun=无线网络；无线局域网		OEWN无该技术缩写候选释义；依据通用技术术语原创整理。
+wild	adjective=野生的；荒野的；狂热的；失控的|noun=荒野|adverb=失控地	wild%3:00:02::|wild%3:00:01::|wild%5:00:00:passionate:00|wild%5:00:01:uncontrolled:00	名词和副词义依据基础英语常用义补充。
+will	modal_verb=将；会；愿意|noun=意志；遗嘱|verb=决意；遗赠	will%1:09:00::|will%1:09:01::|will%1:10:00::|will%2:32:00::	情态动词义依据基础英语语法补充。
+win	verb=获胜；赢得；争取到|noun=胜利；赢得之物	win%1:11:00::|win%1:21:00::|win%2:33:00::|win%2:40:00::	
+wind	noun=风；气流；呼吸|verb=缠绕；蜿蜒；给……上发条	wind%1:19:00::|wind%1:19:01::|wind%1:04:01::|wind%1:10:01::	动词义依据基础英语常用义补充。
+window	noun=窗；窗口；橱窗；时间窗口	window%1:06:00::|window%1:06:01::|window%1:06:02::|window%1:17:00::	
+windy	adjective=多风的；风大的；空想的；冗长的	windy%5:00:00:stormy:00|windy%5:00:00:utopian:00|windy%5:00:00:fast:01|windy%5:00:00:prolix:00	
+wine	noun=葡萄酒；酒红色|verb=饮酒；用酒款待	wine%1:13:00::|wine%1:07:00::|wine%2:34:00::|wine%2:34:01::	
+wing	noun=翅膀；机翼；侧翼；派别|verb=飞行；快速送达	wing%1:05:00::|wing%1:06:00::|wing%1:06:03::|wing%1:14:00::	动词义依据基础英语常用义补充。
+winner	noun=获胜者；成功者；获奖作品	winner%1:18:00::|winner%1:18:01::|winner%1:18:02::	
+winter	noun=冬天；冬季|verb=过冬	winter%1:28:00::|winter%2:42:00::	
+wire	noun=金属丝；电线；电报|verb=给……接电线；发电报	wire%1:06:00::|wire%1:06:01::|wire%1:15:00::|wire%1:10:00::	动词义依据基础英语常用义补充。
+wisdom	noun=智慧；明智；知识；至理名言	wisdom%1:09:02::|wisdom%1:07:00::|wisdom%1:09:01::|wisdom%1:07:01::	
+wise	adjective=明智的；有智慧的；知情的	wise%3:00:00::|wise%5:00:00:prudent:00|wise%5:00:00:informed:00|wise%5:00:00:forward:02	
+wish	noun=愿望；祝愿；请求|verb=希望；祝愿	wish%1:12:00::|wish%1:10:00::|wish%1:10:01::|wish%1:09:00::	动词义依据基础英语常用义补充。
+with	preposition=和；与；带有；用；由于		OEWN无候选释义；依据基础英语功能词用法原创整理。
+withdraw	verb=撤回；退出；取款；戒除	withdraw%2:38:00::|withdraw%2:41:01::|withdraw%2:35:00::|withdraw%2:40:01::	
+within	preposition=在……之内；不超过|adverb=在内部	within%4:02:00::	介词义依据基础英语功能词用法补充。
+without	preposition=没有；不带；在……外面|adverb=在外面；没有		OEWN无候选释义；依据基础英语功能词用法原创整理。
+witness	noun=目击者；证人；证据|verb=目击；见证	witness%1:18:00::|witness%1:18:01::|witness%1:10:00::|witness%1:18:02::	动词义依据基础英语常用义补充。
+woman	noun=女人；女性；女职员	woman%1:18:00::|woman%1:18:01::|woman%1:14:00::|woman%1:18:02::	
+wonder	verb=想知道；感到惊奇|noun=惊奇；奇迹；奇才	wonder%1:12:00::|wonder%1:11:00::|wonder%1:09:00::|wonder%1:18:13::	
+wonderful	adjective=精彩的；极好的；令人惊叹的	wonderful%5:00:00:extraordinary:00	
+wood	noun=木材；树林；木制品	wood%1:27:00::|wood%1:14:00::|wood%1:06:01::|wood%1:06:02::	
+wool	noun=羊毛；毛线；毛织物	wool%1:06:00::|wool%1:27:00::|wool%1:05:00::	
+word	noun=单词；话；消息；承诺|verb=措辞	word%1:10:00::|word%1:10:03::|word%1:10:02::|word%1:10:06::	动词义依据基础英语常用义补充。
+work	noun=工作；劳动；作品；功课|verb=工作；运转；奏效	work%1:04:00::|work%1:06:00::|work%1:04:01::|work%1:09:00::	动词义依据基础英语常用义补充。
+worker	noun=工人；工作者；劳动者	worker%1:18:00::|worker%1:18:01::|worker%1:05:01::|worker%1:18:02::	
+world	noun=世界；地球；领域；世人|adjective=世界的	world%5:00:00:international:00|world%1:17:01::|world%1:14:01::|world%1:09:00::	
+worry	verb=担心；使烦恼|noun=担忧；烦恼	worry%1:09:00::|worry%1:12:00::|worry%2:37:00::|worry%2:37:12::	
+worse	adjective=更坏的；更严重的|noun=更坏的事|adverb=更坏地	worse%3:00:00::|worse%3:00:02::|worse%1:07:00::|worse%4:02:00::	
+worst	adjective=最坏的；最差的|noun=最坏的情况|adverb=最坏地|verb=击败	worst%3:00:00::|worst%1:11:00::|worst%1:07:00::|worst%1:04:00::	动词义依据基础英语常用义补充。
+worth	adjective=值得的；价值……的|noun=价值；意义	worth%5:00:00:worthy:00|worth%5:00:00:valuable:00|worth%1:23:00::|worth%1:07:00::	
+worthwhile	adjective=值得做的；有价值的	worthwhile%5:00:00:worthy:00	
+worthy	adjective=值得的；配得上的|noun=重要人物	worthy%3:00:00::|worthy%5:00:00:eligible:00|worthy%5:00:00:fit:02|worthy%1:18:00::	
+would	modal_verb=将会；愿意；过去常常；用于虚拟或礼貌表达		OEWN无候选释义；依据基础英语情态动词用法原创整理。
+wound	noun=伤口；创伤|verb=使受伤|adjective=缠绕的	wound%5:00:00:coiled:00|wound%1:26:00::|wound%1:11:00::|wound%1:12:00::	动词义依据基础英语常用义补充。
+wrap	verb=包；裹；缠绕|noun=披肩；包装物；卷饼	wrap%1:06:00::|wrap%1:13:00::|wrap%1:06:01::|wrap%2:35:00::	
+wrestle	verb=摔跤；奋力解决|noun=摔跤；搏斗	wrestle%1:04:00::|wrestle%2:33:01::|wrestle%2:32:00::|wrestle%2:38:00::	
+wrinkle	noun=皱纹；褶皱；小窍门|verb=起皱；使皱起	wrinkle%1:25:00::|wrinkle%1:09:01::|wrinkle%1:09:00::|wrinkle%2:35:01::	
+wrist	noun=手腕；腕关节	wrist%1:08:00::	
+write	verb=写；写作；填写；写信	write%2:36:00::|write%2:32:00::|write%2:32:08::|write%2:36:04::	
+writer	noun=作家；作者；撰稿人	writer%1:18:00::|writer%1:18:01::	
+wrong	adjective=错误的；不合适的；有故障的|adverb=错误地|noun=错误；不公|verb=冤枉	wrong%3:00:02::|wrong%3:00:01::|wrong%5:00:00:inappropriate:00|wrong%5:00:00:malfunctioning:00	其他词性义依据基础英语常用义补充。
+X-ray	noun=X射线；X光片|verb=用X射线检查	x-ray%1:19:00::|x-ray%1:06:00::	动词义依据基础英语常用义补充。
+yard	noun=码；院子；场地；帆桁	yard%1:23:00::|yard%1:06:02::|yard%1:15:00::|yard%1:23:02::	
+year	noun=年；年度；年龄；年级	year%1:28:01::|year%1:28:02::|year%1:28:00::|year%1:14:00::	
+yellow	adjective=黄色的；胆怯的；耸人听闻的|noun=黄色|verb=变黄	yellow%5:00:00:chromatic:00|yellow%5:00:00:cowardly:00|yellow%5:00:00:old:01|yellow%5:00:00:sensational:00	名词和动词义依据基础英语常用义补充。
+yes	interjection=是；好的|noun=肯定回答	yes%1:10:00::	
+yesterday	noun=昨天；过去|adverb=在昨天；最近	yesterday%1:28:01::|yesterday%1:28:00::|yesterday%4:02:00::|yesterday%4:02:01::	
+yet	adverb=还；尚；已经；然而|conjunction=然而；但是	yet%4:02:02::|yet%4:02:04::|yet%4:02:03::|yet%4:02:00::	连词义依据基础英语常用义补充。
+yoghurt	noun=酸奶；酸乳酪	yoghurt%1:13:00::	英式拼写。
+you	pronoun=你；你们		OEWN无候选释义；依据基础英语人称代词用法原创整理。
+young	adjective=年轻的；幼小的；早期的|noun=年轻人；幼崽	young%3:00:00::|young%5:00:00:early:02|young%5:00:01:young:00|young%5:00:00:new:00	名词义依据基础英语常用义补充。
+your	determiner=你的；你们的		OEWN无候选释义；依据基础英语物主限定词用法原创整理。
+yours	pronoun=你的东西；你们的东西		OEWN无候选释义；依据基础英语物主代词用法原创整理。
+yourself	pronoun=你自己；你亲自		OEWN无候选释义；依据基础英语反身代词用法原创整理。

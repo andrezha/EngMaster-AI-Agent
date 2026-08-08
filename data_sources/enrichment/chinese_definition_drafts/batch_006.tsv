@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+choke	verb=窒息；噎住；使无法呼吸；阻塞|noun=阻风门；扼流圈	choke%2:29:00::|choke%2:35:00::|choke%1:06:00::|choke%1:06:01::	主动省略暴力性非核心义。
+choose	verb=选择；挑选；决定	choose%2:31:00::|choose%2:31:02::|choose%2:31:01::	
+chopsticks	noun=筷子		通用餐具名称；OEWN 无对应候选义项，未使用旧词表释义。
+chorus	noun=合唱；合唱团；副歌；齐声|verb=齐声说或唱	chorus%1:14:00::|chorus%1:10:00::|chorus%1:11:00::|chorus%1:14:01::	OEWN 候选支持名词核心义；补充常用动词用法。
+Christmas	proper_noun=圣诞节；圣诞节期间	christmas%1:28:00::|christmas%1:28:01::	节日专名按专有名词展示。
+church	noun=教堂；教会；礼拜|verb=为……举行教会仪式	church%1:06:00::|church%1:14:00::|church%1:04:00::|church%2:38:00::	
+cigarette	noun=香烟；纸烟	cigarette%1:06:00::	
+cinema	noun=电影院；电影艺术；电影业	cinema%1:06:00::|cinema%1:10:00::	
+circle	noun=圆；圆圈；圈子；环行|verb=环绕；盘旋；圈出	circle%1:25:00::|circle%1:14:00::|circle%1:04:00::|circle%1:25:01::	OEWN 候选支持名词核心义；补充常用动词用法。
+circuit	noun=电路；环行路线；巡回；区域	circuit%1:06:00::|circuit%1:04:00::|circuit%1:15:00::|circuit%1:15:01::	
+circumstance	noun=情况；条件；环境；境况	circumstance%1:26:01::|circumstance%1:26:02::|circumstance%1:09:00::	
+circus	noun=马戏团；马戏表演；圆形竞技场；混乱场面	circus%1:14:00::|circus%1:04:00::|circus%1:06:00::|circus%1:04:01::	
+cite	verb=引用；引证；举例；表彰|noun=引文出处；引证	cite%2:32:00::|cite%2:36:00::|cite%2:32:02::|cite%2:32:01::|cite%1:10:00::	
+citizen	noun=公民；市民	citizen%1:18:00::	
+city	noun=城市；市；全市居民	city%1:15:00::|city%1:15:01::|city%1:14:00::	
+civil	adjective=公民的；民用的；民事的；国内的；有礼貌的	civil%5:00:00:civilian:00|civil%3:01:01::|civil%3:01:00::|civil%3:00:00::	
+civilian	noun=平民；文职人员|adjective=平民的；民用的	civilian%1:18:00::|civilian%3:00:00::	
+civilisation	noun=文明；文明社会；教化	civilisation%1:22:00::|civilisation%1:14:01::|civilisation%1:14:00::|civilisation%1:07:00::	
+claim	verb=声称；索取；认领；夺去生命|noun=声称；要求；权利；索赔	claim%1:10:02::|claim%1:10:00::|claim%1:04:00::|claim%1:07:01::	OEWN 候选支持名词核心义；补充中学阶段高频动词用法。
+clap	verb=拍手；鼓掌；猛地放置|noun=鼓掌；拍击声	clap%1:11:01::|clap%1:11:00::|clap%2:35:03::	主动排除疾病俚语义；补充最常用的拍手动词义。
+clarify	verb=阐明；说明；澄清；净化	clarify%2:32:00::|clarify%2:30:02::	
+class	noun=班级；课；阶级；类别|verb=把……分类	class%1:14:03::|class%1:04:00::|class%1:14:01::|class%1:14:00::	OEWN 候选支持名词核心义；补充常用动词用法。
+classic	adjective=经典的；典型的；一流的；传统的|noun=经典作品；名著	classic%3:00:00::|classic%5:00:00:typical:00|classic%5:00:00:superior:02|classic%5:00:00:traditional:00|classic%1:06:00::	
+classmate	noun=同班同学	classmate%1:18:00::	
+classroom	noun=教室；课堂	classroom%1:06:00::	
+clay	noun=黏土；陶土；泥土	clay%1:27:00::|clay%1:27:02::	主动排除表示尸体的古旧义。
+clean	adjective=干净的；清洁的；无污染的|verb=打扫；清洁|adverb=完全地	clean%3:00:01::|clean%5:00:01:pure:02|clean%5:00:00:pure:02	OEWN 候选支持形容词核心义；补充中学阶段高频动词、副词用法。
+clear	adjective=清楚的；明显的；透明的；畅通的|verb=清除；澄清；通过；变晴|adverb=完全地；一直	clear%3:00:00::|clear%5:00:00:clearheaded:00|clear%5:00:00:unobstructed:00|clear%3:00:02::	OEWN 候选支持形容词核心义；补充中学阶段常用动词、副词用法。
+clerk	noun=职员；办事员；店员|verb=当职员	clerk%1:18:00::|clerk%1:18:01::|clerk%2:41:00::	
+clever	adjective=聪明的；机灵的；熟练的；巧妙的	clever%5:00:00:intelligent:00|clever%5:00:00:adroit:00|clever%5:00:00:smart:00	
+click	noun=咔嗒声；鼠标点击|verb=点击；发出咔嗒声；突然明白	click%1:11:00::|click%1:04:00::|click%2:38:00::	补充现代英语高频的鼠标点击动词义和“突然明白”用法。
+client	noun=客户；委托人；客户端	client%1:18:01::|client%1:18:00::|client%1:06:00::	
+climate	noun=气候；社会风气；氛围	climate%1:26:00::|climate%1:26:01::	
+climb	verb=攀登；爬；上升|noun=攀登；上升；斜坡	climb%2:38:00::|climb%2:38:01::|climb%1:04:00::|climb%1:11:00::|climb%1:17:00::	
+clinic	noun=诊所；门诊部；专题辅导班	clinic%1:06:00::|clinic%1:14:00::|clinic%1:10:00::	
+clock	noun=时钟；钟|verb=计时；测出速度	clock%1:06:00::|clock%2:30:00::	
+clone	noun=克隆体；复制品|verb=克隆；复制	clone%1:14:00::|clone%1:06:00::|clone%1:18:00::|clone%2:36:00::	
+close	verb=关闭；闭合；结束|adjective=近的；亲密的；严密的|adverb=接近地；紧挨着|noun=结束	close%3:00:01::|close%3:00:02::|close%3:00:05::|close%5:00:00:careful:00	OEWN 当前候选支持形容词核心义；补充中学阶段高频动词、副词、名词用法。
+cloth	noun=布；织物；抹布	cloth%1:06:00::	
+clothes	noun=衣服；服装	clothes%1:06:00::	通常作为复数集合名词使用。
+cloud	noun=云；云状物；阴影|verb=使模糊；遮蔽；变阴沉	cloud%1:17:00::|cloud%1:19:01::|cloud%1:26:02::	OEWN 候选支持名词核心义；补充常用动词用法。
+cloudy	adjective=多云的；浑浊的；模糊的	cloudy%3:00:00::|cloudy%5:00:00:opaque:00|cloudy%5:00:00:indistinct:00	
+club	noun=俱乐部；社团；球棒；高尔夫球杆|verb=用棍棒打；聚集；泡夜店	club%1:14:00::|club%1:06:00::|club%1:06:01::|club%1:06:02::	OEWN 候选支持名词核心义；补充常用动词用法。
+clue	noun=线索；提示|verb=给……提供线索	clue%1:10:00::|clue%1:10:01::	主动排除线团动词生僻义；补充常用动词用法。
+coach	noun=教练；私人教师；长途客车；车厢|verb=训练；指导	coach%1:18:01::|coach%1:18:00::|coach%1:06:02::|coach%1:06:01::	OEWN 候选支持名词核心义；补充常用动词用法。
+coal	noun=煤；煤块；余烬|verb=给……加煤	coal%1:27:00::|coal%1:17:00::|coal%2:40:00::	
+coast	noun=海岸；海滨|verb=滑行；轻松取得进展	coast%1:17:00::|coast%1:04:00::|coast%2:38:00::	
+coat	noun=外套；覆盖层；动物皮毛|verb=给……涂层；覆盖	coat%1:06:00::|coat%1:06:01::|coat%1:05:00::|coat%2:35:00::	
+coffee	noun=咖啡；咖啡豆；咖啡树；咖啡色	coffee%1:13:00::|coffee%1:13:01::|coffee%1:20:00::|coffee%1:07:00::	
+coin	noun=硬币|verb=铸币；创造新词	coin%1:21:02::|coin%2:36:00::|coin%2:36:01::	
+cold	adjective=冷的；寒冷的；冷淡的|noun=寒冷；感冒|adverb=突然地；毫无准备地	cold%3:00:01::|cold%3:00:02::	OEWN 候选支持形容词核心义；补充中学阶段高频名词和副词用法。
+collapse	verb=倒塌；崩溃；昏倒|noun=倒塌；崩溃；虚脱	collapse%2:38:00::|collapse%1:11:00::|collapse%1:26:01::|collapse%1:04:01::|collapse%1:11:01::	
+collar	noun=衣领；项圈；环状零件|verb=抓住；给……戴上项圈	collar%1:06:00::|collar%1:06:05::|collar%1:06:04::	OEWN 候选支持名词核心义；补充常用动词用法。
+collect	verb=收集；领取；接走；募捐|adjective=由收件人付费的|adverb=由收件人付费地	collect%2:40:00::|collect%2:40:01::|collect%5:00:00:due:00|collect%4:02:00::	主动排除宗教短祷文生僻名词义。
+collection	noun=收藏；收集；收藏品；作品集	collection%1:14:00::|collection%1:04:00::|collection%1:10:00::	
+college	noun=学院；大学；学院师生	college%1:14:01::|college%1:06:00::|college%1:14:00::	
+colour	noun=颜色；色彩；特色|verb=给……着色；影响|adjective=彩色的	colour%1:27:00::|colour%1:07:03::|colour%3:00:02::	OEWN 当前候选未完整覆盖最基础的颜色名词及动词义，按中学常用用法补充。
+column	noun=柱；圆柱；列；专栏；队列	column%1:25:02::|column%1:14:01::|column%1:10:00::|column%1:14:00::	
+combine	verb=结合；联合；兼有|noun=联合企业；联合收割机	combine%2:30:02::|combine%2:42:00::|combine%1:14:00::|combine%1:06:00::	
+come	verb=来；到达；发生；进入某种状态	come%2:38:00::|come%2:38:04::|come%2:30:01::|come%2:30:03::	主动排除 OEWN 首个不适合基础教学的粗俗名词义。
+comedy	noun=喜剧；喜剧性事件	comedy%1:10:00::|comedy%1:10:01::	
+comfort	noun=舒适；安慰；慰藉|verb=安慰；使舒适	comfort%1:26:00::|comfort%1:12:00::|comfort%1:04:00::|comfort%1:26:02::	OEWN 候选支持名词核心义；补充常用动词用法。
+comfortable	adjective=舒适的；自在的；宽裕的	comfortable%3:00:00::|comfortable%3:00:01::|comfortable%5:00:00:sufficient:00|comfortable%5:00:00:rich:00	
+comic	adjective=滑稽的；喜剧的|noun=喜剧演员；漫画书	comic%5:00:00:humorous:00|comic%3:01:00::|comic%1:18:00::	补充现代英语高频的漫画书名词义。
+comment	noun=评论；意见；注释|verb=评论；解释	comment%1:10:00::|comment%1:10:01::|comment%2:32:00::|comment%2:32:10::	主动省略恶意传闻义。
+commercial	adjective=商业的；贸易的；以营利为目的的|noun=商业广告	commercial%3:00:00::|commercial%5:00:01:commercial:00|commercial%1:10:00::	
+commit	verb=犯（罪或错误）；承诺；投入；提交；收押	commit%2:41:00::|commit%2:32:01::|commit%2:30:01::|commit%2:40:02::	
+commitment	noun=承诺；投入；责任；合同义务	commitment%1:10:00::|commitment%1:04:00::|commitment%1:07:01::|commitment%1:04:02::	主动省略收押相关非核心义。
+committee	noun=委员会；专门小组	committee%1:14:00::|committee%1:14:01::	
+common	adjective=常见的；普通的；共同的；公共的|noun=公共用地；平民	common%3:00:01::|common%5:00:00:shared:00|common%3:00:02::|common%5:00:00:familiar:02	OEWN 候选支持形容词核心义；补充常见名词化用法。
+communicate	verb=交流；传达；传播；连接	communicate%2:32:01::|communicate%2:32:00::|communicate%2:32:02::|communicate%2:35:00::	
+communication	noun=交流；沟通；信息；通信；联系通道	communication%1:10:01::|communication%1:03:00::|communication%1:24:00::	
+communist	noun=共产主义者；共产党员|adjective=共产主义的；共产党的	communist%1:18:00::|communist%3:01:00::	
+community	noun=社区；群体；共同体；共同性	community%1:14:00::|community%1:14:03::|community%1:14:04::|community%1:26:00::	
+company	noun=公司；陪伴；剧团；连队；来客	company%1:14:01::|company%1:26:00::|company%1:14:02::|company%1:14:03::|company%1:18:00::	
+compare	verb=比较；对照；比作|noun=比较；相比	compare%2:31:00::|compare%2:42:00::|compare%2:31:01::|compare%1:07:00::	
+comparison	noun=比较；对照；相似关系	comparison%1:04:00::|comparison%1:24:00::|comparison%1:07:00::	
+compete	verb=竞争；比赛	compete%2:33:00::	
+competence	noun=能力；胜任；称职	competence%1:07:00::	
+competition	noun=竞争；比赛；竞争者	competition%1:04:00::|competition%1:11:00::|competition%1:24:01::|competition%1:18:00::	
+complain	verb=抱怨；投诉；正式控告	complain%2:32:00::|complain%2:32:01::	
+complete	adjective=完整的；完全的；完成的|verb=完成；使完整；填写	complete%3:00:00::|complete%5:00:00:perfect:00|complete%5:00:00:finished:01	OEWN 候选支持形容词核心义；补充中学阶段高频动词用法。
+complex	adjective=复杂的；难懂的|noun=综合体；建筑群；情结；复合物	complex%3:00:00::|complex%5:00:01:complex:00|complex%1:09:00::|complex%1:12:00::|complex%1:27:00::	
+complicated	adjective=复杂的；难处理的	complicated%5:00:00:complex:00	
+component	noun=组成部分；部件；成分|adjective=组成的；构成的	component%1:09:00::|component%1:24:00::|component%1:06:00::	补充常用形容词用法。
+compose	verb=组成；构成；创作；作曲；使镇静	compose%2:42:00::|compose%2:36:03::|compose%2:36:01::|compose%2:36:09::|compose%2:37:00::	
+composition	noun=组成；成分；作文；作品；作曲	composition%1:07:01::|composition%1:27:00::|composition%1:10:01::|composition%1:04:02::	补充学校教学中的高频“作文”义。
+comprehension	noun=理解；理解力；阅读理解	comprehension%1:09:00::|comprehension%1:24:00::	
+comprehensive	adjective=全面的；综合的；广泛的|noun=综合考试	comprehensive%3:00:00::|comprehensive%5:00:00:inclusive:00|comprehensive%1:10:00::	
+comprise	verb=包括；由……组成；构成	comprise%2:42:00::|comprise%2:42:01::|comprise%2:42:03::	
+computer	noun=计算机；电脑；计算人员	computer%1:06:00::|computer%1:18:00::	
+concentrate	verb=集中；专心；浓缩|noun=浓缩物；精矿	concentrate%2:31:00::|concentrate%2:30:01::|concentrate%1:13:00::|concentrate%1:27:00::	
+concept	noun=概念；观念	concept%1:09:00::	
+concern	noun=担忧；关心；有关的事；企业|verb=涉及；使担心；关心	concern%1:12:01::|concern%1:12:00::|concern%1:09:00::|concern%1:14:00::	OEWN 候选支持名词核心义；补充中学阶段高频动词用法。
+concert	noun=音乐会；演奏会|verb=共同商定；协调	concert%1:10:00::|concert%2:36:00::|concert%2:32:00::	
+conclude	verb=得出结论；结束；达成协议	conclude%2:31:00::|conclude%2:31:01::|conclude%2:42:02::|conclude%2:32:06::	
+conclusion	noun=结论；结束；推论	conclusion%1:09:00::|conclusion%1:28:00::|conclusion%1:11:00::|conclusion%1:10:01::	
+concrete	adjective=具体的；有形的|noun=混凝土|verb=用混凝土覆盖；凝固	concrete%3:00:00::|concrete%5:00:00:solid:01|concrete%1:27:00::|concrete%2:35:00::|concrete%2:30:00::	
+condition	noun=状况；条件；健康状态|verb=决定；使适应；训练；保养	condition%1:26:00::|condition%1:10:01::|condition%1:26:01::|condition%1:26:02::	OEWN 候选支持名词核心义；补充常用动词用法。
+conduct	verb=组织；实施；指挥；引导；传导|noun=行为；举止	conduct%2:41:00::|conduct%2:36:00::|conduct%2:38:01::|conduct%1:04:00::|conduct%1:07:00::	

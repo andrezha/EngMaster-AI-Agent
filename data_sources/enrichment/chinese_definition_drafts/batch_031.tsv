@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+youth	noun=青年；青春时期；年轻人群	youth%1:18:00::|youth%1:28:00::|youth%1:14:00::	
+zero	noun=零；零点|adjective=零的；没有的	zero%5:00:00:cardinal:00|zero%5:00:00:no:00	
+zone	noun=地区；区域；地带	zone%1:15:00::|zone%1:15:02::|zone%1:15:01::	
+zoo	noun=动物园	zoo%1:06:00::	
+abolish	verb=废除；取消	abolish%2:41:00::	
+abortion	noun=流产；人工流产	abortion%1:04:00::|abortion%1:11:00::	
+abrupt	adjective=突然的；唐突的；陡峭的	abrupt%5:00:00:sudden:00|abrupt%5:00:00:discourteous:00|abrupt%5:00:00:steep:00	
+absolute	adjective=绝对的；完全的；确凿无疑的	absolute%3:00:00::|absolute%5:00:01:complete:00|absolute%5:00:00:unequivocal:00	
+absurd	adjective=荒谬的；不合逻辑的|noun=荒诞；荒谬	absurd%5:00:00:illogical:00|absurd%5:00:00:foolish:00|absurd%1:26:00::	
+abundant	adjective=大量的；丰富的；充足的	abundant%3:00:00::	
+academy	noun=学院；专门学校；研究院	academy%1:14:00::|academy%1:14:02::|academy%1:14:01::	
+accelerate	verb=加速；促进；使加快	accelerate%2:30:00::|accelerate%2:30:01::	
+accessible	adjective=可到达的；可使用的；易理解的；平易近人的	accessible%3:00:00::|accessible%5:00:00:available:00|accessible%5:00:00:comprehensible:00|accessible%5:00:00:approachable:00	
+accomplish	verb=完成；实现；达到	accomplish%2:36:00::|accomplish%2:41:00::	
+accountant	noun=会计；会计师	accountant%1:18:00::	
+accumulate	verb=积累；积聚；逐渐增加	accumulate%2:40:00::|accumulate%2:30:00::	
+accuracy	noun=准确性；精确度	accuracy%1:07:02::|accuracy%1:07:03::	
+accustomed	adjective=习惯的；通常的	accustomed%5:00:00:usual:00	习惯于某事的常用义据词形和开放语义证据独立概括
+acquaintance	noun=认识的人；熟人；相识；了解	acquaintance%1:18:00::|acquaintance%1:26:00::|acquaintance%1:09:00::	
+acquisition	noun=获得；取得；购得物；学得	acquisition%1:04:00::|acquisition%1:21:00::|acquisition%1:09:00::	
+actual	adjective=实际的；真实的；确实的	actual%3:00:00::|actual%5:00:00:real:00|actual%5:00:00:true:00	
+acute	adjective=严重的；急性的；敏锐的；尖锐的	acute%3:00:00::|acute%3:00:02::|acute%5:00:00:perceptive:00|acute%5:00:00:sharp:04	
+adequate	adjective=足够的；适当的；合格的	adequate%3:00:00::|adequate%5:00:00:sufficient:00|adequate%5:00:00:satisfactory:00	
+adjustment	noun=调整；调节；适应；校准	adjustment%1:04:00::|adjustment%1:04:01::|adjustment%1:22:00::	
+admirable	adjective=令人钦佩的；值得赞赏的	admirable%5:00:01:reputable:00|admirable%5:00:00:pleasing:00	
+admission	noun=准许进入；入场；承认；入场费	admission%1:04:00::|admission%1:10:00::|admission%1:21:00::	
+adolescence	noun=青春期；青少年时期	adolescence%1:28:00::|adolescence%1:26:00::	
+adolescent	noun=青少年|adjective=青春期的；未成熟的	adolescent%3:01:00::|adolescent%5:00:00:young:00|adolescent%5:00:00:immature:02	名词义据开放语义证据独立概括
+adore	verb=爱慕；非常喜欢；崇拜	adore%2:37:00::	
+affection	noun=喜爱；感情；爱慕	affection%1:12:00::	
+agent	noun=代理人；经纪人；作用因素；特工	agent%1:18:02::|agent%1:18:01::|agent%1:27:00::	
+aggression	noun=侵略；攻击行为；挑衅；攻击性	aggression%1:04:00::|aggression%1:04:02::|aggression%1:07:00::	
+aggressive	adjective=好斗的；挑衅的；强势进取的；侵略性的	aggressive%3:00:00::|aggressive%5:00:00:hostile:01|aggressive%5:00:00:invasive:00	
+agricultural	adjective=农业的；农用的；农村的	agricultural%3:01:00::|agricultural%5:00:00:rural:00	
+aircraft	noun=飞行器；飞机	aircraft%1:06:00::	
+album	noun=相册；唱片集；专辑	album%1:06:00::|album%1:10:00::	
+alcoholic	adjective=含酒精的；酗酒的|noun=酗酒者；酒精成瘾者	alcoholic%3:00:00::|alcoholic%5:00:00:addicted:00|alcoholic%1:18:00::	
+alike	adjective=相像的；相同的|adverb=相似地；同样地	alike%3:00:00::|alike%4:02:00::|alike%4:02:01::	
+alley	noun=小巷；胡同；球道	alley%1:06:00::|alley%1:06:01::	
+allocate	verb=分配；拨给；划拨	allocate%2:40:00::	
+allowance	noun=津贴；零用钱；限额；折让	allowance%1:21:00::|allowance%1:21:02::|allowance%1:21:01::|allowance%1:07:00::	
+alphabet	noun=字母表；一套符号系统	alphabet%1:10:00::|alphabet%1:09:00::	
+altitude	noun=海拔；高度；高处	altitude%1:07:00::|altitude%1:25:00::|altitude%1:24:00::	
+amaze	verb=使惊奇；使惊愕	amaze%2:31:00::|amaze%2:31:01::	
+ambassador	noun=大使；使节；代表	ambassador%1:18:00::|ambassador%1:18:01::	
+ambiguous	adjective=含糊的；有歧义的；不明确的	ambiguous%3:00:04::|ambiguous%3:00:00::|ambiguous%5:00:00:unstructured:00	
+ample	adjective=充足的；丰富的；宽敞的	ample%3:00:00::|ample%5:00:00:abundant:00|ample%5:00:00:large:00	
+amusement	noun=娱乐；消遣；愉悦	amusement%1:04:00::|amusement%1:12:00::	
+analysis	noun=分析；解析；分析报告	analysis%1:04:00::|analysis%1:09:00::|analysis%1:10:00::	
+anchor	noun=锚；主持人；依靠|verb=抛锚；使固定；主持	anchor%1:06:00::|anchor%1:18:00::|anchor%2:35:01::	依靠义据常用比喻义独立概括
+anecdote	noun=轶事；趣闻	anecdote%1:10:00::	
+anniversary	noun=周年纪念日；周年纪念	anniversary%1:28:00::	
+announcement	noun=公告；通知；宣布	announcement%1:10:01::|announcement%1:10:00::	
+apology	noun=道歉；歉意；辩解	apology%1:10:00::|apology%1:10:02::|apology%1:09:00::	
+apparent	adjective=显而易见的；表面上的；貌似的	apparent%5:00:00:obvious:00|apparent%5:00:00:superficial:00	
+appearance	noun=外表；出现；露面；表象	appearance%1:07:00::|appearance%1:11:00::|appearance%1:04:01::|appearance%1:09:00::	
+appendix	noun=附录；阑尾	appendix%1:10:00::|appendix%1:08:00::	
+appoint	verb=任命；指定；安排	appoint%2:41:01::|appoint%2:41:00::|appoint%2:40:00::	
+appreciation	noun=欣赏；感激；理解；增值	appreciation%1:09:00::|appreciation%1:10:00::|appreciation%1:04:00::	增值义据开放语义证据独立概括
+approximately	adverb=大约；近似地	approximately%4:02:00::	
+apron	noun=围裙；停机坪；台口	apron%1:06:00::|apron%1:15:00::|apron%1:06:02::	
+arbitrary	adjective=任意的；武断的；随意决定的	arbitrary%3:00:00::	
+architecture	noun=建筑学；建筑风格；体系结构	architecture%1:09:00::|architecture%1:06:00::|architecture%1:07:00::	
+argument	noun=争论；论点；理由；论证	argument%1:10:02::|argument%1:10:03::|argument%1:10:00::|argument%1:10:01::	
+arithmetic	noun=算术|adjective=算术的	arithmetic%1:09:00::|arithmetic%3:01:00::	
+armchair	noun=扶手椅	armchair%1:06:00::	
+arrange	verb=安排；整理；布置；商定	arrange%2:35:00::|arrange%2:32:04::|arrange%2:36:03::|arrange%2:36:02::	
+arrival	noun=到达；到来；到达者	arrival%1:04:00::|arrival%1:04:01::|arrival%1:18:00::	
+ash	noun=灰；灰烬；梣树|verb=把……烧成灰	ash%1:27:01::|ash%1:20:00::|ash%2:30:00::	
+assessment	noun=评估；评价；估价；考核	assessment%1:09:00::|assessment%1:21:00::|assessment%1:04:00::	
+assist	verb=帮助；协助|noun=帮助；助攻	assist%2:41:02::|assist%2:41:00::|assist%1:04:01::|assist%1:04:00::	
+assistance	noun=帮助；援助；辅助	assistance%1:04:00::|assistance%1:07:00::|assistance%1:21:00::	
+associate	verb=联想；联系；交往|noun=同事；伙伴|adjective=副的；联合的	associate%1:18:00::|associate%1:18:01::|associate%5:00:00:subordinate:01	动词义据词形和开放语义证据独立概括
+astronomy	noun=天文学	astronomy%1:09:00::	
+athletic	adjective=运动的；健壮的；擅长运动的	athletic%3:01:00::|athletic%5:00:00:active:01|athletic%5:00:00:mesomorphic:00	
+athletics	noun=体育运动；田径运动	athletics%1:04:00::|athletics%1:11:00::|athletics%1:04:01::	
+atom	noun=原子；微粒	atom%1:27:00::|atom%1:27:01::	
+attraction	noun=吸引；吸引力；有吸引力的事物；景点	attraction%1:19:00::|attraction%1:07:00::|attraction%1:09:00::	景点义据常用具体义独立概括
+attractive	adjective=有吸引力的；迷人的；诱人的	attractive%3:00:01::|attractive%5:00:00:appealing:00|attractive%3:00:02::	
+authentic	adjective=真实的；真正的；可信的	authentic%5:00:00:genuine:00|authentic%5:00:00:trustworthy:00	
+avenue	noun=大街；林荫道；途径	avenue%1:06:00::|avenue%1:04:00::	
+bachelor	noun=未婚男子；学士|verb=过单身生活	bachelor%1:18:00::|bachelor%1:18:01::|bachelor%2:42:00::	
+badly	adverb=糟糕地；严重地；非常；迫切地	badly%4:02:02::|badly%4:02:00::|badly%4:02:06::|badly%4:02:05::	
+baggage	noun=行李；包袱	baggage%1:06:00::|baggage%1:06:01::	
+bake	verb=烘烤；烤制；晒热	bake%2:30:00::|bake%2:36:00::|bake%2:42:00::	
+balcony	noun=阳台；楼座	balcony%1:06:02::|balcony%1:06:01::	
+bandage	noun=绷带|verb=用绷带包扎	bandage%1:06:00::|bandage%2:35:03::|bandage%2:29:00::	
+bang	noun=巨响；猛击；刘海|verb=猛击；砰地关上	bang%1:11:01::|bang%1:11:00::|bang%1:08:00::	动词义据词形和开放语义证据独立概括
+bare	adjective=赤裸的；空的；无遮盖的；仅有的	bare%5:00:00:unclothed:00|bare%5:00:00:meager:00|bare%3:00:04::|bare%3:00:00::	
+bargain	noun=便宜货；协议|verb=讨价还价；谈判	bargain%1:21:01::|bargain%1:10:00::|bargain%2:40:00::|bargain%2:32:00::	
+basement	noun=地下室；地下层	basement%1:06:00::|basement%1:06:01::	
+bathe	verb=洗澡；给……洗澡；浸泡|noun=游泳；洗浴	bathe%2:29:00::|bathe%2:35:00::|bathe%2:38:00::|bathe%1:04:00::	
+beam	noun=光束；横梁；笑容|verb=发光；面露喜色	beam%1:19:01::|beam%1:06:00::|beam%1:10:00::	动词义据词形和开放语义证据独立概括
+beast	noun=野兽；牲畜；粗野的人	beast%1:03:00::|beast%1:18:00::	
+bedding	noun=床上用品；垫草	bedding%1:06:00::|bedding%1:06:01::	
+bee	noun=蜜蜂；聚会活动	bee%1:05:00::|bee%1:14:00::	
+beg	verb=乞求；请求；乞讨	beg%2:32:00::|beg%2:32:01::|beg%2:40:00::|beg%2:32:02::	
+beginning	noun=开始；开端；起源|adjective=开始的；初期的	beginning%1:11:00::|beginning%1:28:00::|beginning%1:09:00::|beginning%5:00:00:opening:00	
+belly	noun=腹部；肚子；内部；鼓起部分	belly%1:08:00::|belly%1:08:02::|belly%1:25:00::|belly%1:15:00::	
+bench	noun=长凳；工作台；法官席	bench%1:06:00::|bench%1:06:01::|bench%1:14:00::	

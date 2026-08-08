@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "dataset_id": "engmaster-release-vocabulary-3800-zh",
+  "generated_on": "2026-08-08",
+  "record_count": 3800,
+  "curriculum_record_count": 3004,
+  "extension_record_count": 796,
+  "definition_complete_count": 3800,
+  "automated_qa_passed_count": 3800,
+  "oewn_selected_sense_count": 3692,
+  "no_oewn_sense_with_note_count": 108,
+  "human_review_claimed": false,
+  "files": [
+    {
+      "name": "release_vocabulary_3800_zh.csv",
+      "size_bytes": 1054188,
+      "sha256": "67f2fc1460189f165e9983f4a308b33b62e4288debde12566aab77d8c2419792"
+    },
+    {
+      "name": "release_vocabulary_3800_zh.json",
+      "size_bytes": 2361364,
+      "sha256": "15c07587db35acb80c20a971600ea0c71f0175c8007c5d4ccd6613b911221c80"
+    },
+    {
+      "name": "release_vocabulary_3800_zh.xlsx",
+      "size_bytes": 425472,
+      "sha256": "f092071ddeed8d78f16a0ccba6e246c2aabcf36d65f78ab5dae1d3ea2fcf7aba"
+    },
+    {
+      "name": "automated_qa_report.md",
+      "size_bytes": 538,
+      "sha256": "4fff550127564c0e84fd88b779db316f3cd6cbb1f5fd3dd46534a79daca3cee5"
+    },
+    {
+      "name": "README.md",
+      "size_bytes": 860,
+      "sha256": "b97a29bb4af9543517ac6592f7a244a36888f2155d10323059717e0461c3c1c0"
+    }
+  ]
+}

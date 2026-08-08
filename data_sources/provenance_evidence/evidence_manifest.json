@@ -2,10 +2,10 @@
   "schema_version": 1,
   "evidence_set_id": "engmaster-vocabulary-provenance-20260808",
   "generated_on": "2026-08-08",
-  "release_dataset": "engmaster-release-word-master-3800",
-  "repository_head_at_generation": "b98c95955bc4ad863551a3600961e496cb68d1fa",
+  "release_dataset": "engmaster-release-vocabulary-3800-zh",
+  "repository_head_at_generation": "50f208c80c77a1d370cb020af124a20c5021b175",
   "git_commit_warning": "The repository HEAD is recorded, but this manifest does not assert that every listed file is committed. Verify git status, commit the evidence set, and create a release tag before external reliance.",
-  "file_count": 54,
+  "file_count": 155,
   "files": [
     {
       "category": "audit_reports",
@@ -45,6 +45,12 @@
     },
     {
       "category": "build_scripts",
+      "path": "tools/apply_chinese_definition_draft.py",
+      "size_bytes": 4592,
+      "sha256": "93c2037d1b077d32c3f0ae2a96a05e10fe341d0a62519088d6bbe91a8d7ff134"
+    },
+    {
+      "category": "build_scripts",
       "path": "tools/build_clean_curriculum_base.py",
       "size_bytes": 9792,
       "sha256": "72ef44e1cd013a8248bfa03730665ff2f8ebeb4f2649d3cc31b5d131541858f8"
@@ -63,6 +69,18 @@
     },
     {
       "category": "build_scripts",
+      "path": "tools/build_oewn_semantic_base.py",
+      "size_bytes": 11948,
+      "sha256": "50ac8ae7b58769b36d4748f87115a4593243e2fdf5ce9904d64631176c4e7cbf"
+    },
+    {
+      "category": "build_scripts",
+      "path": "tools/build_release_vocabulary_3800_zh.py",
+      "size_bytes": 13915,
+      "sha256": "e0bc18ade124fe59becdd5f215d3d009a475ace74ea2b939e34bc523bbd5d978"
+    },
+    {
+      "category": "build_scripts",
       "path": "tools/build_release_word_master_3800.py",
       "size_bytes": 15125,
       "sha256": "86f87a3cb4b0d92ab5517f6607ea15c6fd1bda8b82ebd0f00df0a1b3e265f0c3"
@@ -70,8 +88,14 @@
     {
       "category": "build_scripts",
       "path": "tools/build_vocabulary_provenance_evidence.py",
-      "size_bytes": 5940,
-      "sha256": "ece625650bb2fab4676605f697a014083a576f5f62caa4c6763b1e5f4242e233"
+      "size_bytes": 8374,
+      "sha256": "4b30ef81c1e22249b934f6b1621781154234231e5db35798cfc69cf61b4af170"
+    },
+    {
+      "category": "build_scripts",
+      "path": "tools/export_chinese_definition_preview.py",
+      "size_bytes": 2485,
+      "sha256": "b7778d2bd2eded37c4cc79fe119396e164d1167560219af4904f2c430bcf286a"
     },
     {
       "category": "build_scripts",
@@ -90,6 +114,12 @@
       "path": "tools/match_existing_vocab_to_curriculum.py",
       "size_bytes": 18007,
       "sha256": "925ef72543e14b969b51c92c7ec2021bc8fef5872bd161da9759c5f31dd96079"
+    },
+    {
+      "category": "build_scripts",
+      "path": "tools/prepare_chinese_definition_batches.py",
+      "size_bytes": 9277,
+      "sha256": "5906c322aa5f86ae1ad6d327605eebbf751c7d53577397b02b4031eaf2ca962c"
     },
     {
       "category": "build_scripts",
@@ -114,6 +144,510 @@
       "path": "tools/screen_extension_candidates.py",
       "size_bytes": 18000,
       "sha256": "49481c1c9fa61ef0a46b361e0c1b127a9f6d58aef4978783aed2a5ebb1239af9"
+    },
+    {
+      "category": "build_scripts",
+      "path": "tools/supplement_non_oewn_pos.py",
+      "size_bytes": 9884,
+      "sha256": "6199bbe3a09921873fa21bb345551aef81879bf125ec734f453e74050332acaa"
+    },
+    {
+      "category": "build_scripts",
+      "path": "tools/validate_chinese_definition_batches.py",
+      "size_bytes": 7531,
+      "sha256": "dfcb1d33ef13adf563412493db0eb079de8ecd0e4ed0a1fc1b697dc039eae117"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_001.json",
+      "size_bytes": 241858,
+      "sha256": "9428dda7a421181e95bee3cf9ae2c5f8a94067a697a759a629026c85e769abe2"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_002.json",
+      "size_bytes": 218373,
+      "sha256": "34c561e95eba8f9ba26daedce057129f4575a27c516c0a73f4c7d6f4d5be00c5"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_003.json",
+      "size_bytes": 297120,
+      "sha256": "84972a6676fe53b1df6e10cac290ab322835cc46490c0bdaa7165b6880f0f654"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_004.json",
+      "size_bytes": 330149,
+      "sha256": "a01effa8fa02eb95dad671165415656593b528ed281f1582b8d9f730eb931309"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_005.json",
+      "size_bytes": 327845,
+      "sha256": "349eae981c9eefeb959cf268fdf9d122dad057f329422ddadf408382b24d6f43"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_006.json",
+      "size_bytes": 309194,
+      "sha256": "18b8471446fd4fc01c7d26d9eaefed9df4b2b5a011c1bfa0dacc501d122a4361"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_007.json",
+      "size_bytes": 301245,
+      "sha256": "bfb4e9c5efcebe4bf83e7a19162833016155510d9aa07c415ad9f3a0d7ec2619"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_008.json",
+      "size_bytes": 279919,
+      "sha256": "fdd1b00fdf4a144ad4309b8f147679624dff1dfd173b5a4a0eec7a9c23637d59"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_009.json",
+      "size_bytes": 301162,
+      "sha256": "46e56f7f6c531af51505812a06a36f73fd3c95c56aadfe2251ebf1822b81e1a5"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_010.json",
+      "size_bytes": 229013,
+      "sha256": "d86b1b3687dd562a546fe3648542c00960e01d7b8b4ad8d27f6c442934182425"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_011.json",
+      "size_bytes": 358243,
+      "sha256": "4e08b8741f825320bea49f00a7fe80b15224f9b08858a0d25ee19898b13bf8a2"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_012.json",
+      "size_bytes": 289188,
+      "sha256": "b3ee991ea46353882f1bef30e689ab053972c53130d91e68d227925389c711f9"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_013.json",
+      "size_bytes": 305648,
+      "sha256": "5c31919e72c7ab6e20f2dbcad4bde8435425a059aae9c8c1231e4ded38e1e993"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_014.json",
+      "size_bytes": 256151,
+      "sha256": "a87b6edd92bcd4e20315e37361339632db0fbd01350fe4fa2aa36a2c0c575959"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_015.json",
+      "size_bytes": 260054,
+      "sha256": "6d868aa4b2f820a4323019f2db054b39c80582a5f1ba7d9ab7226d6f80c50ae9"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_016.json",
+      "size_bytes": 349795,
+      "sha256": "3a900d136d712a357a94e574274de154c38c0fdda3ed6cd29109022666642601"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_017.json",
+      "size_bytes": 280975,
+      "sha256": "6c47f98310a61e3db40c0fc562122aecf3fdb15164c525cf8508562f322fe3f1"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_018.json",
+      "size_bytes": 255188,
+      "sha256": "a1d34ff755dd7d1588a498c46a63a44d84f6a450ba6d89484c7f6e369eede20e"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_019.json",
+      "size_bytes": 281208,
+      "sha256": "2f32056b317967e3541c160211788a31701b211b4f2b4f2ae5b5afd35123b873"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_020.json",
+      "size_bytes": 302144,
+      "sha256": "d083a3de2fa6115730abb204ccbab29dd351b226ce74e96e689fb376746e5ba3"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_021.json",
+      "size_bytes": 302463,
+      "sha256": "8d78079f1cd45e42c04b14598ef54b19ddea206ccdec058448d31b9d212f835d"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_022.json",
+      "size_bytes": 321651,
+      "sha256": "4c7c0a4c6bf1c14b4779361633ae1cb2e162c14d5207b7dc8c8441375cb25313"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_023.json",
+      "size_bytes": 333909,
+      "sha256": "f332b90fe00d60134d454c080bafc53875bd0bdda77814676c741a274855e6ac"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_024.json",
+      "size_bytes": 337988,
+      "sha256": "fedc6d9091e6bcba1d783e63b80889cc33164f5221020cdd61f53cad2aec302c"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_025.json",
+      "size_bytes": 287656,
+      "sha256": "e83143099adb6f5ac69044a4559c5ab459a81c8c0e56c7b5bf38b16048704174"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_026.json",
+      "size_bytes": 347150,
+      "sha256": "1ff67b477256fb67a8cff88853febecbfeeea0726d84f7071466283b94e65b48"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_027.json",
+      "size_bytes": 266575,
+      "sha256": "9e165fe90286e232f1d7d2a1d68b5859b1ae5e670e546a5215f355c8b3465788"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_028.json",
+      "size_bytes": 301049,
+      "sha256": "c9b7e85639d98fe3fef5967057e902958171224839d41c36c4f2d25424291619"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_029.json",
+      "size_bytes": 257209,
+      "sha256": "49202b6f49b1e1c4c267e96727b60b1e7a916e938bc9ef33e623edae8b3fe52a"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_030.json",
+      "size_bytes": 257924,
+      "sha256": "00746aa469ad944e965d273aef42d34d10de4d4050f8310bf45ae17ec0fc1edb"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_031.json",
+      "size_bytes": 208000,
+      "sha256": "bc9e57207e03e38d3761979cc394aae719a9cb08ef5d7d1536fcaf72402c2516"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_032.json",
+      "size_bytes": 226912,
+      "sha256": "5b24b20a3ce71ad9d9aa7e2150a1bed1025773ced49ca3bfb49b872b846a194c"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_033.json",
+      "size_bytes": 219609,
+      "sha256": "44adcde781b7caba49574a9c90a2f9a3bab19b085e0f458d36527f75c6eb639a"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_034.json",
+      "size_bytes": 209554,
+      "sha256": "10f67a21c885be382d4af087d532f267cb818934079c33d13bc841fe5d1810ae"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_035.json",
+      "size_bytes": 198000,
+      "sha256": "728c02a7449e9cff6f6dbb2b742337ccc75e2cced12f6e9251b106a07a622b1a"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_036.json",
+      "size_bytes": 245983,
+      "sha256": "dcf77b171f746aa6c0d84c637db3fe4f065b33176aedbcef75f1a14d15f56de4"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_037.json",
+      "size_bytes": 240928,
+      "sha256": "e80ec33fcd8ec1d5a70b1fb3d360896378d6b304e9bfce376e7d075a8584be4a"
+    },
+    {
+      "category": "chinese_definition_batches",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_038.json",
+      "size_bytes": 207148,
+      "sha256": "7a21d40cb24b65684f434b2a89d9e77ac6882af6bab4c41dc5667e1ae91302bf"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_002.tsv",
+      "size_bytes": 10752,
+      "sha256": "0ed814f5b2488595fb0fec1fbde1f95669954bc33ea84a5b809cf84b50637be3"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_003.tsv",
+      "size_bytes": 12987,
+      "sha256": "77066c8010953ef35f600c899dc8519bd848cffc1ccee3c3e5d2e3b9ec7cc26f"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_004.tsv",
+      "size_bytes": 14060,
+      "sha256": "ff9368413fa43e3dbce5fde3f0473b54e60a87536d3a143e1f191b75dae2c804"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_005.tsv",
+      "size_bytes": 14314,
+      "sha256": "e6c7c34e58df4447e97ebd78d00e5cec323158b2436d842e0f323a7e613f4f6f"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_006.tsv",
+      "size_bytes": 14291,
+      "sha256": "06b7164725df64d255539ea327016da302e65f6a98b5923e0f1b660b8196f4fe"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_007.tsv",
+      "size_bytes": 14725,
+      "sha256": "bd6c633e17ec21a5382ee768c9e61d8b25585c58c28f11fbf3c4c88212985b64"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_008.tsv",
+      "size_bytes": 13156,
+      "sha256": "aab4e4025371ff4c89e81272080a7785b15259c7061a8603f5dbe2cdb0b9187a"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_009.tsv",
+      "size_bytes": 14726,
+      "sha256": "99fcc7caf22527d4efc73cf1858e6e076b610d9acb6e30d5b9d80ce717f02c26"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_010.tsv",
+      "size_bytes": 12946,
+      "sha256": "40d62d7fb22a9248b5d5c54f25c3bfab8f11abb0ca1315b2b01c19818c70fac1"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_011.tsv",
+      "size_bytes": 16780,
+      "sha256": "7d662474ef453f56589e4423e77f79e6658b5d4a52c365392b2a905120363009"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_012.tsv",
+      "size_bytes": 13441,
+      "sha256": "3f27855ccffcd6c7876380219a3b24670b94a9b3d6a34811935680122bffd8e0"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_013.tsv",
+      "size_bytes": 12227,
+      "sha256": "885cd4ca2d0d4d8439af9766f1046924d6e6c56ac316eb18f8706e2cbe5f93b2"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_014.tsv",
+      "size_bytes": 12005,
+      "sha256": "490c8dc748d209b1ce535707f5b4fedd8c3446a8608dda80c0bb9a59dcf829c2"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_015.tsv",
+      "size_bytes": 11989,
+      "sha256": "582ef45fd899a003f95c98c5cd0130258930834fc29785410205e34ed0675eae"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_016.tsv",
+      "size_bytes": 13318,
+      "sha256": "4c496218f122e279be34ef9e933506fbc0882c95c3bacfb0afdc23c50d256b06"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_017.tsv",
+      "size_bytes": 12200,
+      "sha256": "fb667c33d0a17207c892cca5ac6d9e7af45e430d2f18d34af5c47da8badc42da"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_018.tsv",
+      "size_bytes": 12495,
+      "sha256": "d2f8508b2a950e5fb5b16fa69878c43dd2aa9947ebcfbe3ae05284310715bc8f"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_019.tsv",
+      "size_bytes": 13777,
+      "sha256": "97a6f2a9b6e82335b95dd3741d475f99589d3ea3e2df7e81c63d96410558ecee"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_020.tsv",
+      "size_bytes": 13320,
+      "sha256": "f4215e4c0d964582b720acfdc9d44dcecad822cda2b3eacb3d308cd7dd3d3991"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_021.tsv",
+      "size_bytes": 13198,
+      "sha256": "5bbaf65ee5e1f508cada77a1b3c117ea6d13bca6c6f3959071e849f58ebda8c8"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_022.tsv",
+      "size_bytes": 13332,
+      "sha256": "d71fdd74e691925468bdc4ec8fd784b8ef84d0a717c6adcc03fa598d0a114108"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_023.tsv",
+      "size_bytes": 13338,
+      "sha256": "bf063aec48aa433f490f89f6cd29c75fa7d661c725d5371f0383e88e32ce6eef"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_024.tsv",
+      "size_bytes": 13662,
+      "sha256": "780879155504fddf7a7aa53472f411fd75cd35c707c5e2fcdc303548d56743e3"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_025.tsv",
+      "size_bytes": 13571,
+      "sha256": "735d4cc1437b0a2d9fc9f608cef15d18eae14cebe8866d487660d60985f77cf6"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_026.tsv",
+      "size_bytes": 14238,
+      "sha256": "b3c68f955a45437251c77697795ff1083b61a3b8b0d12743f6412f2ec472babf"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_027.tsv",
+      "size_bytes": 12669,
+      "sha256": "480ef5122f227c630b5152e030ee7aede355f55f5dfd69d47e9e97fbeebdb273"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_028.tsv",
+      "size_bytes": 11561,
+      "sha256": "aabbb493a66cbd48d94168b6e9a01042e105757db499dee18cf6575d951c6b8a"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_029.tsv",
+      "size_bytes": 12671,
+      "sha256": "e50b9f04677ceec57bd05f6d95a243e07bf2297ccaa1ebf557554555d0a97edc"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_030.tsv",
+      "size_bytes": 13374,
+      "sha256": "5ff8f9e0e580e43b24f766dca1614abccc97344b7bf0ad4d2aa85106c1bb4187"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_031.tsv",
+      "size_bytes": 10486,
+      "sha256": "0e13b3a2e40f035bd9abf0a8905ffe8e56c0e9c50605e9595e76301eacb03030"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_032.tsv",
+      "size_bytes": 11215,
+      "sha256": "fa3cf176bc76e072af00d8a62f31f0761c0eea4b479ee6ec64f5ccdb1fc2e9e6"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_033.tsv",
+      "size_bytes": 10929,
+      "sha256": "034ae88faf562bbe3b87868698337887b2d9519d5e733b31447f074f5c4ff0ed"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_034.tsv",
+      "size_bytes": 10624,
+      "sha256": "ff86394cac7676cd79920c1cff536efafec0ba1f5114abc64cd1ef034119e294"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_035.tsv",
+      "size_bytes": 10650,
+      "sha256": "e292cef84feca54f1ed1dc19fab1e35d469e1cc59a5ab6d5cb3967eaf5f3f836"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_036.tsv",
+      "size_bytes": 11904,
+      "sha256": "e8b37d298318e8609c60506775e0fc553980fb3aec28c3c02cda7cf25914e4f8"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_037.tsv",
+      "size_bytes": 11791,
+      "sha256": "3ece96294573d10e34c11a2c3ce52a14efdbc9f8df972e495fd9c177441e1e2d"
+    },
+    {
+      "category": "chinese_definition_drafts",
+      "path": "data_sources/enrichment/chinese_definition_drafts/batch_038.tsv",
+      "size_bytes": 11317,
+      "sha256": "380884c7e5e2b1a28040ee9b98db43118264d523d2e87aaf5598859e11dc8147"
+    },
+    {
+      "category": "chinese_release_3800",
+      "path": "data_sources/clean/release_vocabulary_3800_zh/README.md",
+      "size_bytes": 860,
+      "sha256": "b97a29bb4af9543517ac6592f7a244a36888f2155d10323059717e0461c3c1c0"
+    },
+    {
+      "category": "chinese_release_3800",
+      "path": "data_sources/clean/release_vocabulary_3800_zh/SHA256SUMS.txt",
+      "size_bytes": 538,
+      "sha256": "bede98a84f772ee1d5cae2c89cc8ab014f152ff384abe25e0e17d7e328a431d5"
+    },
+    {
+      "category": "chinese_release_3800",
+      "path": "data_sources/clean/release_vocabulary_3800_zh/automated_qa_report.md",
+      "size_bytes": 538,
+      "sha256": "4fff550127564c0e84fd88b779db316f3cd6cbb1f5fd3dd46534a79daca3cee5"
+    },
+    {
+      "category": "chinese_release_3800",
+      "path": "data_sources/clean/release_vocabulary_3800_zh/manifest.json",
+      "size_bytes": 1236,
+      "sha256": "accae7ee0433c1fd25ee681ce124ac1faec98dbd953e323304de14aec15c225f"
+    },
+    {
+      "category": "chinese_release_3800",
+      "path": "data_sources/clean/release_vocabulary_3800_zh/release_vocabulary_3800_zh.csv",
+      "size_bytes": 1054188,
+      "sha256": "67f2fc1460189f165e9983f4a308b33b62e4288debde12566aab77d8c2419792"
+    },
+    {
+      "category": "chinese_release_3800",
+      "path": "data_sources/clean/release_vocabulary_3800_zh/release_vocabulary_3800_zh.json",
+      "size_bytes": 2361364,
+      "sha256": "15c07587db35acb80c20a971600ea0c71f0175c8007c5d4ccd6613b911221c80"
+    },
+    {
+      "category": "chinese_release_3800",
+      "path": "data_sources/clean/release_vocabulary_3800_zh/release_vocabulary_3800_zh.xlsx",
+      "size_bytes": 425472,
+      "sha256": "f092071ddeed8d78f16a0ccba6e246c2aabcf36d65f78ab5dae1d3ea2fcf7aba"
     },
     {
       "category": "clean_curriculum",
@@ -178,8 +712,8 @@
     {
       "category": "governance",
       "path": ".gitattributes",
-      "size_bytes": 291,
-      "sha256": "318b1ca717501347f9b63f3968410427322548afd83a5e05cca489cd50e8454b"
+      "size_bytes": 342,
+      "sha256": "95fba5740f69130acb47ca3b482331f6bcab4a949a8dcc46f7a97594604f1242"
     },
     {
       "category": "governance",
@@ -190,8 +724,8 @@
     {
       "category": "governance",
       "path": "data_sources/provenance_evidence/词库来源与制作过程证明材料.md",
-      "size_bytes": 9300,
-      "sha256": "3ae1ee4a022e967d9b5c091501c6241e83bb4ed7105ad010dcf40ba16b348046"
+      "size_bytes": 11105,
+      "sha256": "0824fcdc53f9d78600f1e9a35cfd26c91619e2058a101fb2b550d584d6e213f9"
     },
     {
       "category": "governance",
@@ -330,6 +864,78 @@
       "path": "data_sources/clean/release_word_master_3800/release_word_master_3800.json",
       "size_bytes": 2375185,
       "sha256": "72f9db3465b3f1ec7017a6136131f803b39b9784c048e64cd625efeccd296ba7"
+    },
+    {
+      "category": "semantic_enrichment",
+      "path": "data_sources/enrichment/chinese_definition_batches/README.md",
+      "size_bytes": 1823,
+      "sha256": "092bbb21ffd595b4e6dcfc9a6ce74790ee9a536a8e985e0ccaa647c0467a4e8a"
+    },
+    {
+      "category": "semantic_enrichment",
+      "path": "data_sources/enrichment/chinese_definition_batches/SHA256SUMS.txt",
+      "size_bytes": 3240,
+      "sha256": "7b774049705ea2fae97ba149e9582ffb705b193f06d5837be64907d826971198"
+    },
+    {
+      "category": "semantic_enrichment",
+      "path": "data_sources/enrichment/chinese_definition_batches/batch_manifest.json",
+      "size_bytes": 13299,
+      "sha256": "be8f376bca0d87aebbc32c0b0c1fb14aa48bc55a1edd1616227a068411a78252"
+    },
+    {
+      "category": "semantic_enrichment",
+      "path": "data_sources/enrichment/non_oewn_pos_supplement/README.md",
+      "size_bytes": 782,
+      "sha256": "2cd95324482bfef075ba6ea5339902c8599c5592c40a3f2c4661e6917883460d"
+    },
+    {
+      "category": "semantic_enrichment",
+      "path": "data_sources/enrichment/non_oewn_pos_supplement/SHA256SUMS.txt",
+      "size_bytes": 269,
+      "sha256": "31910cdb1a6dd27310e1f83b42b5c541db7443769d9bd698f098c3c5517d33c5"
+    },
+    {
+      "category": "semantic_enrichment",
+      "path": "data_sources/enrichment/non_oewn_pos_supplement/non_oewn_pos_supplement.csv",
+      "size_bytes": 15893,
+      "sha256": "4133189f7983a5b6396ccdb8d79bc1a7f8dd6a35fd6874b49f8d88e225ed6cad"
+    },
+    {
+      "category": "semantic_enrichment",
+      "path": "data_sources/enrichment/non_oewn_pos_supplement/release_3800_pos_evidence.csv",
+      "size_bytes": 350305,
+      "sha256": "46e4e9ffd2efa833595efdcf2871414b24e2ebe7fc3eecc9818ab79e6e9b91e6"
+    },
+    {
+      "category": "semantic_enrichment",
+      "path": "data_sources/enrichment/oewn_semantic_base/README.md",
+      "size_bytes": 1308,
+      "sha256": "5131b0097045eecd5f08c520c05d617d8313df8702d096a73f7dcbc979f5fc26"
+    },
+    {
+      "category": "semantic_enrichment",
+      "path": "data_sources/enrichment/oewn_semantic_base/SHA256SUMS.txt",
+      "size_bytes": 359,
+      "sha256": "7323465b8dcb22ba4cd2413de09299f6956b3cca850711a0afe5cc525ab59fa8"
+    },
+    {
+      "category": "semantic_enrichment",
+      "path": "data_sources/enrichment/oewn_semantic_base/needs_non_oewn_review.csv",
+      "size_bytes": 8363,
+      "sha256": "e64240ae8e6b413750acef476a2ca762d88549d7ec22c120fa57e5beb7ac2042"
+    },
+    {
+      "category": "semantic_enrichment",
+      "path": "data_sources/enrichment/oewn_semantic_base/oewn_semantic_base.json",
+      "size_bytes": 10726594,
+      "sha256": "0e7c21a01763956293a3662672e95321aba68a3479c3062090b9e7fc28faf05c"
+    },
+    {
+      "category": "semantic_enrichment",
+      "path": "data_sources/enrichment/oewn_semantic_base/oewn_semantic_base_summary.csv",
+      "size_bytes": 1679745,
+      "sha256": "d75247cee8fe8d2f4a7c86ce9918d1cce95856034c125abb0925dba7b98ef8c0"
     }
   ]
 }

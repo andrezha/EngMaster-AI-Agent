@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+cute	adjective=可爱的；漂亮迷人的；机灵的	cute%5:00:00:attractive:01|cute%5:00:00:artful:00	
+cycle	noun=循环；周期；自行车|verb=骑自行车；循环	cycle%1:28:00::|cycle%1:11:02::|cycle%1:11:01::	OEWN 候选支持周期义；补充中学高频的自行车名词和动词用法。
+daily	adjective=每日的；日常的|noun=日报|adverb=每天；逐日地	daily%5:00:00:periodic:00|daily%5:00:00:informal:01|daily%1:10:00::|daily%4:02:00::|daily%4:02:01::	
+damage	noun=损害；损失；赔偿金|verb=损害；毁坏	damage%1:11:00::|damage%1:04:00::|damage%1:04:01::	主动省略来源中把 cost 误作 damage 的边缘义；补充常用动词用法。
+damp	adjective=潮湿的|noun=潮气；湿气|verb=使潮湿；抑制；减弱	damp%5:00:00:wet:01|damp%1:26:00::|damp%2:39:00::|damp%2:30:04::	
+dance	verb=跳舞；舞动|noun=舞蹈；舞会	dance%2:38:01::|dance%1:04:00::|dance%1:10:00::|dance%1:11:00::	
+danger	noun=危险；危险因素；险境	danger%1:26:00::|danger%1:26:01::|danger%1:15:00::	
+dangerous	adjective=危险的；可能造成伤害的	dangerous%3:00:00::|dangerous%5:00:00:critical:03	
+dare	modal_verb=敢；胆敢|verb=敢于；挑战|noun=挑战；激将	dare%2:41:01::|dare%2:32:00::|dare%1:10:00::	补充课标中 dare 作为情态动词的语法用法。
+dark	adjective=黑暗的；深色的；隐秘的；邪恶的|noun=黑暗；暗处	dark%3:00:01::|dark%3:00:02::|dark%5:00:00:concealed:00|dark%5:00:00:evil:00	OEWN 候选支持形容词义；补充常用名词化用法。
+data	noun=数据；资料	data%1:14:00::	在正式用法中可视为 datum 的复数，现代英语中也常作集合名词。
+database	noun=数据库；资料库	database%1:10:00::	
+date	noun=日期；约会；约会对象；海枣|verb=注明日期；约会；始于	date%1:28:00::|date%1:28:03::|date%1:14:00::|date%1:18:00::	OEWN 候选支持日期和约会义；补充海枣名词及高频动词用法。
+daughter	noun=女儿；子代事物	daughter%1:18:00::	补充比喻性的“子代事物”用法。
+day	noun=一天；白天；日子；时期；工作日	day%1:28:00::|day%1:28:02::|day%1:28:03::|day%1:28:04::	
+dead	adjective=死的；失去作用的；筋疲力尽的|noun=死者|adverb=完全地；恰好	dead%3:00:01::|dead%3:00:02::|dead%5:00:00:tired:00|dead%5:00:00:precise:00	补充常见名词化和副词用法。
+deadline	noun=截止日期；最后期限	deadline%1:28:00::	
+deaf	adjective=聋的；不愿听的|noun=聋人群体|verb=使耳聋	deaf%3:00:00::|deaf%5:00:01:heedless:00|deaf%1:14:00::|deaf%2:39:00::	
+deal	noun=交易；协议；大量|verb=处理；交易；发牌；分配	deal%1:04:02::|deal%1:10:00::|deal%1:23:00::	主动排除木材专门义；补充中学阶段高频动词用法。
+dear	adjective=亲爱的；珍爱的；昂贵的|noun=亲爱的人|adverb=高价地；深深地|interjection=哎呀	dear%5:00:00:loved:00|dear%5:00:00:close:02|dear%5:00:00:expensive:00|dear%1:18:00::	补充常用副词和感叹词用法。
+death	noun=死；死亡；终止	death%1:11:00::|death%1:19:00::|death%1:26:00::|death%1:28:00::	
+debate	noun=辩论；讨论|verb=辩论；讨论；斟酌	debate%1:10:01::|debate%1:10:00::|debate%2:31:00::|debate%2:32:00::|debate%2:32:02::	
+debt	noun=债；债务；欠下的人情或义务	debt%1:26:00::|debt%1:21:00::|debt%1:10:00::	
+decade	noun=十年；十个	decade%1:28:00::|decade%1:23:00::	
+December	proper_noun=十二月	december%1:28:00::	月份专名按专有名词展示。
+decent	adjective=体面的；得体的；相当好的；像样的	decent%5:00:00:respectable:00|decent%5:00:00:proper:00	主动省略性行为和衣着程度的边缘义。
+decide	verb=决定；裁决；使下决心；影响	decide%2:31:00::|decide%2:31:01::|decide%2:31:02::|decide%2:31:06::	
+decision	noun=决定；决策；判定；果断	decision%1:04:00::|decision%1:09:00::|decision%1:11:01::|decision%1:07:00::	
+declare	verb=宣布；声明；申报；断言	declare%2:32:00::|declare%2:32:05::|declare%2:32:01::|declare%2:32:04::	
+decline	verb=下降；衰退；婉拒|noun=下降；衰退；斜坡	decline%2:30:01::|decline%1:22:02::|decline%1:26:00::|decline%1:17:00::	补充中学高频的“婉拒”动词义。
+decorate	verb=装饰；装修；授勋	decorate%2:36:00::|decorate%2:35:00::|decorate%2:41:00::	
+decrease	verb=减少；降低|noun=减少；下降；减少量	decrease%2:30:00::|decrease%1:11:00::|decrease%1:22:00::|decrease%1:07:00::|decrease%1:04:00::	
+deep	adjective=深的；深刻的；强烈的；低沉的|adverb=深深地；在深处|noun=深处；海洋	deep%3:00:01::|deep%3:00:02::|deep%5:00:00:profound:00|deep%5:00:00:intense:00	补充常用副词和名词化用法。
+deer	noun=鹿	deer%1:05:00::	
+defeat	verb=击败；战胜；使落空|noun=失败；挫败	defeat%2:33:00::|defeat%2:41:00::|defeat%1:11:00::|defeat%1:12:00::	
+defence	noun=防御；保卫；辩护；防守方	defence%1:14:01::|defence%1:14:03::|defence%1:10:01::	主动排除精神分析和过度专业的司法集合义。
+defend	verb=保卫；防守；辩护；维护	defend%2:33:02::|defend%2:33:00::|defend%2:32:00::|defend%2:33:04::	
+definitely	adverb=肯定地；明确地；无疑	definitely%4:02:00::	
+definition	noun=定义；释义；清晰度	definition%1:10:00::|definition%1:07:00::	
+degree	noun=程度；度数；学位；等级	degree%1:07:00::|degree%1:23:00::|degree%1:10:00::|degree%1:26:01::	
+delay	verb=延迟；耽搁|noun=延迟；耽搁的时间	delay%2:30:00::|delay%2:42:00::|delay%1:28:00::|delay%1:04:00::	
+delete	verb=删除；删去	delete%2:32:00::|delete%2:30:00::|delete%2:35:00::	
+delicate	adjective=易碎的；脆弱的；精致的；微妙的	delicate%3:00:00::|delicate%5:00:00:breakable:00|delicate%5:00:00:tender:02|delicate%5:00:00:refined:01	
+delicious	adjective=美味的；令人愉快的	delicious%5:00:00:tasty:00|delicious%5:00:00:pleasing:00	
+deliver	verb=递送；发表；交付；解救；分娩	deliver%2:35:00::|deliver%2:32:00::|deliver%2:40:01::|deliver%2:41:01::	补充中学常用的分娩义。
+demand	noun=要求；需求；需要|verb=要求；需要；查问	demand%1:10:00::|demand%1:22:00::|demand%1:09:00::|demand%1:26:00::	OEWN 候选支持名词核心义；补充常用动词用法。
+demonstrate	verb=证明；演示；表现；示威	demonstrate%2:31:00::|demonstrate%2:39:01::|demonstrate%2:32:00::|demonstrate%2:41:00::	
+dentist	noun=牙科医生；牙医	dentist%1:18:00::	
+deny	verb=否认；拒绝；不给予；克制	deny%2:32:00::|deny%2:32:01::|deny%2:40:01::|deny%2:40:00::|deny%2:40:04::	
+department	noun=部门；系；行政区；领域	department%1:14:00::|department%1:15:00::|department%1:09:00::	
+departure	noun=离开；出发；背离；班次出发	departure%1:04:00::|departure%1:11:01::	主动省略死亡委婉语义；补充交通班次语境。
+depend	verb=依靠；依赖；取决于；信赖	depend%2:42:00::|depend%2:31:00::	
+depress	verb=使沮丧；压低；按下；抑制	depress%2:37:00::|depress%2:38:00::|depress%2:35:10::|depress%2:30:00::	
+depth	noun=深度；纵深；深刻；强度	depth%1:07:00::|depth%1:07:01::|depth%1:09:00::|depth%1:07:02::	主动省略道德低下的非核心义。
+describe	verb=描述；描绘；画出；分类说明	describe%2:32:00::|describe%2:32:01::|describe%2:35:00::|describe%2:31:00::	
+description	noun=描述；说明；种类	description%1:10:01::|description%1:10:00::|description%1:09:00::	
+desert	noun=沙漠；荒漠|verb=抛弃；遗弃；擅离|adjective=荒凉的	desert%1:15:00::|desert%2:31:00::|desert%2:41:00::|desert%2:38:02::	主动省略表示“应得赏罚”的生僻名词义；补充常用形容词用法。
+deserve	verb=值得；应得	deserve%2:42:00::	
+design	noun=设计；图案；计划；意图|verb=设计；计划；指定	design%1:04:00::|design%1:09:01::|design%1:09:02::|design%1:06:00::|design%1:09:03::	OEWN 候选支持名词核心义；补充常用动词用法。
+desire	noun=愿望；欲望；渴望的事物|verb=渴望；想要	desire%1:12:00::|desire%1:07:00::|desire%1:26:00::|desire%2:37:00::|desire%2:37:02::	
+desk	noun=书桌；办公桌；服务台	desk%1:06:00::	补充服务台等现代常用义。
+desperate	adjective=绝望的；不顾一切的；极度需要的；危急的	desperate%5:00:00:hopeless:00|desperate%5:00:00:resolute:00|desperate%5:00:00:imperative:00|desperate%5:00:01:dangerous:00	
+despite	preposition=尽管；不管	despite%1:12:00::|despite%1:04:00::	OEWN 候选只覆盖名词“蔑视”，来源义项仅作词源证据；按课标补充核心介词用法。
+dessert	noun=甜点；餐后甜食	dessert%1:13:00::	
+destination	noun=目的地；终点；目标	destination%1:15:00::|destination%1:09:00::	主动省略信件地址说明的边缘义。
+destroy	verb=破坏；毁灭；消灭；彻底击败	destroy%2:36:00::|destroy%2:35:00::|destroy%2:33:00::	主动省略动物安乐死的专业义。
+detail	noun=细节；详情；小部分|verb=详述；指派	detail%1:09:00::|detail%1:24:00::|detail%1:10:00::|detail%1:14:01::	OEWN 候选支持名词核心义；补充常用动词用法。
+detect	verb=发现；查明；侦测	detect%2:39:00::	
+detective	noun=侦探；刑警|adjective=侦查的	detective%1:18:00::|detective%1:18:01::	补充常用形容词用法。
+determine	verb=确定；查明；决定；影响	determine%2:32:00::|determine%2:31:01::|determine%2:32:03::|determine%2:31:02::	
+develop	verb=发展；开发；培养；形成；冲洗照片	develop%2:36:01::|develop%2:36:00::|develop%2:30:06::|develop%2:29:00::|develop%2:42:00::	补充摄影中的常用义。
+development	noun=发展；开发；成长；新情况	development%1:04:01::|development%1:22:02::|development%1:22:01::|development%1:11:01::|development%1:04:02::	
+device	noun=设备；装置；手段；技巧；图案	device%1:06:00::|device%1:10:00::|device%1:04:00::|device%1:06:02::	
+devote	verb=献身；投入；把……专用于	devote%2:32:00::|devote%2:31:00::|devote%2:40:00::	
+diagram	noun=图表；示意图	diagram%1:06:00::|diagram%2:36:00::	
+dialogue	noun=对话；对白；意见交流	dialogue%1:10:01::|dialogue%1:10:00::|dialogue%1:10:03::	
+diamond	noun=钻石；金刚石；菱形；方块牌	diamond%1:21:00::|diamond%1:27:00::|diamond%1:25:00::|diamond%1:06:01::	
+diary	noun=日记；日记本	diary%1:10:00::|diary%1:06:00::	
+dictionary	noun=词典；字典	dictionary%1:10:00::	
+die	verb=死；死亡；消失；停止运转|noun=骰子；模具	die%2:30:00::|die%2:39:00::|die%1:06:00::|die%1:06:01::	
+diet	noun=日常饮食；规定饮食；节食|verb=节食；按规定饮食	diet%1:13:01::|diet%1:13:00::|diet%1:04:00::|diet%2:34:01::	主动省略部分国家议会的专名化义。
+differ	verb=不同；有区别；意见不一致	differ%2:42:00::|differ%2:32:00::	
+difference	noun=差异；不同；分歧；差数	difference%1:07:00::|difference%1:11:00::|difference%1:10:00::|difference%1:23:00::	
+different	adjective=不同的；另外的；与众不同的	different%3:00:00::|different%5:00:00:other:00|different%5:00:00:unusual:00|different%5:00:01:other:00	
+difficult	adjective=困难的；难懂的；难对付的	difficult%3:00:00::|difficult%3:00:01::	
+difficulty	noun=困难；难题；费力	difficulty%1:07:00::|difficulty%1:04:00::	
+dig	verb=挖；掘；搜寻；喜欢|noun=挖掘；考古现场；挖苦	dig%1:04:01::|dig%1:15:00::|dig%1:10:00::	OEWN 候选支持名词核心义；补充常用动词用法。
+digest	verb=消化；理解；整理；忍受|noun=文摘；摘要汇编	digest%2:34:00::|digest%2:31:00::|digest%2:31:03::|digest%1:10:01::|digest%1:10:00::	
+digital	adjective=数字的；数码的；用手指的	digital%3:00:00::|digital%3:01:01::|digital%3:01:00::	
+dignity	noun=尊严；庄重；高贵身份	dignity%1:07:00::|dignity%1:07:01::|dignity%1:26:00::	
+dimension	noun=尺寸；维度；方面；程度|verb=标出尺寸	dimension%1:07:00::|dimension%1:09:00::|dimension%1:09:01::|dimension%1:07:01::|dimension%2:32:00::	
+dining	noun=用餐；进餐	dining%1:04:00::	
+dinner	noun=正餐；晚餐；宴会	dinner%1:13:00::|dinner%1:14:00::	
+dinosaur	noun=恐龙；过时庞大的事物	dinosaur%1:05:00::	补充常见比喻义。
+direct	adjective=直接的；径直的；坦率的|verb=指导；管理；导演；指向|adverb=直接地	direct%3:00:00::|direct%5:00:00:immediate:00|direct%3:00:02::	OEWN 候选支持形容词核心义；补充中学高频动词和副词用法。
+direction	noun=方向；趋势；指导；管理；用法说明	direction%1:15:00::|direction%1:24:00::|direction%1:09:00::|direction%1:10:00::|direction%1:04:00::	
+director	noun=负责人；董事；导演；指挥	director%1:18:00::|director%1:18:03::|director%1:18:04::|director%1:18:02::|director%1:18:01::	
+directory	noun=名录；目录；计算机目录	directory%1:10:00::|directory%1:10:01::	
+dirty	adjective=脏的；肮脏的；污染的；卑劣的|verb=弄脏；变脏	dirty%3:00:01::|dirty%3:00:03::|dirty%5:00:00:nasty:00	主动省略低俗语言和感染性专业义；补充常用动词用法。
+disability	noun=残疾；障碍；无能力	disability%1:26:00::	

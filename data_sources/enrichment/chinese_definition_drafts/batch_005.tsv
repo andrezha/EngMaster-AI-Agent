@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+calendar	noun=日历；历法；日程表|verb=把……列入日程	calendar%1:14:00::|calendar%1:28:00::|calendar%1:10:01::|calendar%2:31:00::	
+call	verb=打电话；呼叫；称呼；召集|noun=电话；喊声；要求；短暂拜访	call%1:10:01::|call%1:10:02::|call%1:10:05::|call%1:04:03::	OEWN 候选支持名词核心义；补充中学阶段高频动词用法。
+calligraphy	noun=书法；书法艺术	calligraphy%1:10:00::	
+calm	adjective=平静的；镇静的|noun=平静；镇静|verb=使平静；平静下来	calm%5:00:00:composed:00|calm%3:00:00::|calm%1:07:00::|calm%2:37:00::	
+calorie	noun=卡路里；卡（热量单位）	calorie%1:23:01::|calorie%1:23:02::	
+camel	noun=骆驼	camel%1:05:00::	
+camera	noun=照相机；摄像机	camera%1:06:00::|camera%1:06:01::	
+camp	noun=营地；阵营；一群人|verb=露营；扎营	camp%1:06:00::|camp%1:06:01::|camp%1:14:01::	主动排除非教学常用的贬义形容词义；补充常用动词用法。
+campaign	noun=运动；活动；竞选；战役|verb=参加运动；竞选	campaign%1:04:02::|campaign%1:04:00::|campaign%1:11:00::|campaign%2:33:01::	
+campus	noun=校园；大学校区	campus%1:15:00::	
+can	modal_verb=能；会；可以；可能|noun=罐；罐头；一罐的量|verb=把……装罐	can%1:06:00::|can%1:23:00::	按课标语法补充核心情态动词用法；OEWN 候选主要覆盖名词义，并补充装罐动词义。
+Canada	proper_noun=加拿大		通用国家专名；OEWN 无对应候选义项，未使用旧词表释义。
+Canadian	adjective=加拿大的；加拿大人的|noun=加拿大人	canadian%3:01:00::|canadian%1:18:00::	
+canal	noun=运河；水道；管道|verb=开运河；疏通水道	canal%1:06:00::|canal%1:08:00::|canal%2:40:00::	主动排除已被否定的火星“运河”旧义。
+cancel	verb=取消；撤销；抵消；删去|noun=还原号	cancel%2:41:03::|cancel%2:41:00::|cancel%2:42:00::|cancel%2:35:00::|cancel%1:10:00::	
+cancer	noun=癌；癌症	cancer%1:26:00::	
+candidate	noun=候选人；应试者；求职者	candidate%1:18:01::|candidate%1:18:00::	
+candle	noun=蜡烛；烛光强度单位|verb=用光照检查蛋	candle%1:06:00::|candle%1:23:00::|candle%2:39:00::	
+candy	noun=糖果|verb=用糖裹；制成蜜饯	candy%1:13:00::|candy%2:39:00::	
+canteen	noun=食堂；小卖部；水壶	canteen%1:06:01::|canteen%1:06:04::|canteen%1:06:00::	
+cap	noun=帽子；盖；上限|verb=给……加盖；限制；胜过	cap%1:06:00::|cap%1:06:02::|cap%1:06:03::	OEWN 候选支持名词核心义；补充上限名词义和常用动词用法。
+capable	adjective=有能力的；能胜任的；可能的	capable%3:00:00::|capable%5:00:00:competent:00|capable%5:00:00:susceptible:00	
+capacity	noun=能力；容量；生产能力；职位或身份	capacity%1:07:00::|capacity%1:23:00::|capacity%1:04:00::|capacity%1:04:01::	
+capital	noun=首都；资本；大写字母|adjective=主要的；极好的；大写的；死刑的	capital%1:21:01::|capital%1:21:00::|capital%5:00:00:primary:00|capital%5:00:00:superior:02|capital%5:00:00:uppercase:00	OEWN 当前候选支持资本和形容词义；补充中学阶段高频的首都、大写字母及死刑相关义。
+capsule	noun=胶囊；太空舱；小容器；概要|adjective=简明的	capsule%1:06:00::|capsule%1:06:02::|capsule%1:10:00::	补充太空舱和常用形容词用法。
+captain	noun=船长；机长；上尉；队长|verb=担任……的队长或船长	captain%1:18:02::|captain%1:18:03::|captain%1:18:05::|captain%1:18:06::	OEWN 候选支持名词核心义；补充常用动词用法。
+car	noun=汽车；车厢；缆车车厢	car%1:06:00::|car%1:06:01::|car%1:06:04::	
+carbon	noun=碳；复写纸；复写副本	carbon%1:27:00::|carbon%1:27:01::|carbon%1:06:00::	
+card	noun=卡片；贺卡；证件；纸牌|verb=在卡片上记录；要求出示证件	card%1:06:00::|card%1:10:00::|card%1:10:01::|card%1:27:00::	OEWN 候选支持名词核心义；补充常用动词用法。
+care	noun=照料；小心；关心；忧虑|verb=关心；在意；照料；喜欢	care%1:04:01::|care%1:09:00::|care%1:12:01::|care%1:04:02::	OEWN 候选支持名词核心义；补充中学阶段高频动词用法。
+career	noun=职业；事业；职业生涯|verb=飞奔；疾驰	career%1:04:00::|career%1:04:01::|career%2:38:00::	
+careful	adjective=小心的；仔细的；谨慎的	careful%3:00:00::|careful%5:00:00:mindful:00|careful%5:00:00:provident:00	
+careless	adjective=粗心的；疏忽的；不在意的	careless%3:00:00::|careless%5:00:01:heedless:00	
+carpet	noun=地毯；地毯状覆盖物|verb=给……铺地毯；完全覆盖	carpet%1:06:00::|carpet%1:17:00::|carpet%2:35:00::|carpet%2:35:01::	
+carrot	noun=胡萝卜；诱人的奖励	carrot%1:13:00::|carrot%1:20:02::|carrot%1:04:00::	
+carry	verb=携带；搬运；承载；传播；表达|noun=携带；搬运	carry%2:35:02::|carry%2:42:01::|carry%2:38:03::|carry%2:32:02::|carry%1:04:00::	
+cartoon	noun=漫画；动画片|verb=为……画漫画	cartoon%1:10:00::|cartoon%1:10:02::|cartoon%2:36:00::	
+carve	verb=雕刻；切开；开创	carve%2:35:01::|carve%2:35:02::|carve%2:35:00::	“开创”按 carve out 等通行用法补充。
+case	noun=情况；事例；案件；箱；盒	case%1:11:00::|case%1:26:00::|case%1:04:00::|case%1:09:00::|case%1:06:00::	
+cash	noun=现金；现款|verb=把……兑现；支付现金	cash%1:21:00::|cash%1:21:02::|cash%2:40:00::	
+cast	noun=全体演员；模具；石膏绷带；外观|verb=投；抛；选派角色；投射	cast%1:14:00::|cast%1:06:03::|cast%1:06:02::|cast%1:07:00::	OEWN 候选支持名词核心义；补充中学阶段常用动词用法。
+castle	noun=城堡；堡垒；国际象棋中的车|verb=进行王车易位	castle%1:06:00::|castle%1:06:02::|castle%1:06:01::|castle%2:33:00::	
+cat	noun=猫；猫科动物	cat%1:05:00::	主动排除冒犯性人物称呼、毒品植物和非基础教学义。
+catch	verb=抓住；接住；赶上；感染；听懂|noun=捕获物；接球；隐藏的问题	catch%1:17:00::|catch%1:23:00::|catch%1:07:00::	OEWN 候选支持名词核心义；补充中学阶段高频动词用法。
+category	noun=类别；范畴	category%1:14:00::|category%1:09:02::	
+cattle	noun=牛；牛群	cattle%1:05:00::	集合名词，通常不用单数形式。
+cause	noun=原因；起因；事业；理由|verb=导致；使发生	cause%1:11:00::|cause%1:03:00::|cause%1:04:01::|cause%1:10:00::	OEWN 候选支持名词核心义；补充中学阶段高频动词用法。
+cave	noun=洞穴；山洞|verb=挖洞；洞穴探险；屈服	cave%1:17:00::|cave%2:35:00::|cave%2:31:00::	“屈服”按 cave in 等通行用法补充。
+cease	verb=停止；终止|noun=停止	cease%2:42:00::|cease%2:42:13::|cease%1:28:00::	
+ceiling	noun=天花板；上限；最高限度	ceiling%1:06:00::|ceiling%1:10:00::|ceiling%1:07:01::	
+celebrate	verb=庆祝；赞美；举行仪式	celebrate%2:41:00::|celebrate%2:41:01::|celebrate%2:41:02::	
+celebrity	noun=名人；名望	celebrity%1:18:00::|celebrity%1:26:00::	
+cell	noun=细胞；小房间；电池；基层小组；手机	cell%1:03:00::|cell%1:06:03::|cell%1:06:00::|cell%1:14:00::|cell%1:06:04::	
+cent	noun=分（货币单位）；一分硬币	cent%1:23:00::|cent%1:21:00::	
+centimetre	noun=厘米；公分	centimetre%1:23:00::|centimeter%1:23:00::	
+central	adjective=中心的；中央的；最重要的|noun=电话交换中心	central%3:00:01::|central%5:00:00:important:00|central%1:06:00::	
+centre	noun=中心；中央；活动中心|verb=把……置于中心；集中|adjective=中间的；政治立场中间的	centre%1:15:00::|centre%1:15:01::|centre%1:15:03::|centre%3:00:01::	OEWN 候选支持名词和形容词义；补充常用动词用法。
+century	noun=世纪；一百年；一百个	century%1:28:00::|century%1:23:00::	
+certain	adjective=某一；某些；确定的；必然的	certain%5:00:00:definite:00|certain%3:00:02::|certain%3:00:01::|certain%3:00:03::	
+certainly	adverb=当然；无疑；确定地	certainly%4:02:00::	
+certificate	noun=证明书；证书；执照|verb=发证书给；认证	certificate%1:10:00::|certificate%1:21:00::|certificate%2:40:00::|certificate%2:32:00::	
+chain	noun=链；链条；一系列；连锁店；束缚|verb=用链拴住；把……连在一起	chain%1:06:00::|chain%1:14:00::|chain%1:14:02::|chain%1:06:03::	OEWN 候选支持名词核心义；补充常用动词用法。
+chair	noun=椅子；主席；教授职位|verb=主持；担任主席	chair%1:06:00::|chair%1:18:00::|chair%1:04:00::	OEWN 候选支持名词核心义；补充常用动词用法。
+chairman	noun=男主席；男主持人|verb=担任主席	chairman%1:18:01::|chairman%2:41:00::	在不强调性别时可优先使用 chairperson 或 chair。
+chairwoman	noun=女主席；女主持人	chairwoman%1:18:01::	在不强调性别时可优先使用 chairperson 或 chair。
+chalk	noun=粉笔；白垩|verb=用粉笔写或画	chalk%1:06:00::|chalk%1:27:00::|chalk%2:36:00::	主动排除毒品相关生僻义。
+challenge	noun=挑战；艰巨任务；质疑|verb=挑战；质疑；考验	challenge%1:26:00::|challenge%1:10:00::|challenge%1:10:01::	OEWN 候选支持名词核心义；补充常用动词用法。
+champion	noun=冠军；拥护者|adjective=冠军的；最优秀的|verb=拥护；捍卫	champion%1:18:01::|champion%1:18:00::|champion%5:00:00:best:00	OEWN 候选支持名词和形容词义；补充常用动词用法。
+chance	noun=机会；可能性；偶然；风险|adjective=偶然的；意外的|verb=偶然发生；冒险	chance%1:26:00::|chance%1:19:00::|chance%1:07:00::|chance%1:04:00::|chance%5:00:00:unplanned:00	OEWN 候选支持名词和形容词义；补充常用动词用法。
+change	noun=变化；改变；零钱|verb=改变；更换；兑换	change%1:11:00::|change%1:04:00::|change%1:19:00::|change%1:21:02::	OEWN 候选支持名词核心义；补充中学阶段高频动词用法。
+channel	noun=频道；渠道；水道；海峡|verb=引导；输送；把……用于	channel%1:10:00::|channel%1:10:01::|channel%1:06:00::|channel%1:17:00::	OEWN 候选支持名词核心义；补充常用动词用法。
+chaos	noun=混乱；混沌；混沌系统	chaos%1:26:00::|chaos%1:19:00::|chaos%1:09:00::	
+chapter	noun=章；篇；人生阶段；地方分会	chapter%1:10:00::|chapter%1:28:00::|chapter%1:14:00::|chapter%1:11:00::	
+character	noun=人物；角色；性格；品质；字符	character%1:18:02::|character%1:09:00::|character%1:07:01::|character%1:09:01::	“字符”按计算机和书写中的通行用法补充。
+characteristic	noun=特征；特点|adjective=典型的；特有的	characteristic%1:09:00::|characteristic%1:07:00::|characteristic%3:00:00::	
+charge	noun=费用；指控；电荷；负责；冲锋|verb=收费；指控；充电；冲向；委托	charge%1:21:02::|charge%1:10:00::|charge%1:19:00::|charge%1:04:00::|charge%1:04:01::	OEWN 候选支持名词核心义；补充中学阶段高频动词用法。
+charity	noun=慈善；慈善机构；善意；施舍	charity%1:04:00::|charity%1:14:01::|charity%1:14:00::|charity%1:07:00::	主动排除植物学同名义。
+chart	noun=图表；海图；排行榜|verb=绘制图表；详细规划	chart%1:10:00::|chart%1:06:00::|chart%1:10:01::|chart%2:31:13::|chart%2:31:00::	
+chat	noun=闲谈；聊天|verb=闲聊；聊天	chat%1:10:00::|chat%2:32:00::	主动排除鸟类同名义。
+cheap	adjective=便宜的；廉价的；质量差的；小气的|adverb=低价地	cheap%3:00:00::|cheap%5:00:00:inferior:02|cheap%5:00:00:stingy:00	补充口语中的副词用法。
+cheat	noun=骗子；欺骗；作弊|verb=欺骗；作弊	cheat%1:18:00::|cheat%1:04:01::|cheat%1:04:00::	主动排除杂草同名义；补充常用动词用法。
+check	verb=检查；核对；制止；托运|noun=检查；支票；账单；方格图案	check%1:09:00::|check%1:21:00::|check%1:10:00::|check%1:09:01::	OEWN 候选支持名词核心义；补充中学阶段高频动词用法。
+cheek	noun=脸颊；面颊；无礼|verb=对……无礼地说话	cheek%1:08:00::|cheek%1:10:00::|cheek%1:07:00::|cheek%2:32:00::	主动排除不适合基础教学的身体俚语义。
+cheer	verb=欢呼；鼓励；使振奋|noun=欢呼声；愉快的情绪	cheer%2:37:02::|cheer%2:32:02::|cheer%2:32:03::|cheer%1:10:00::|cheer%1:07:00::	
+cheese	noun=奶酪；干酪	cheese%1:13:00::	主动排除植物同名义和非基础口语命令义。
+chef	noun=厨师；主厨	chef%1:18:01::	
+chemical	adjective=化学的；化学制品造成的|noun=化学品；化学物质	chemical%3:01:00::|chemical%3:01:01::|chemical%1:27:00::	
+chemist	noun=化学家；药剂师	chemist%1:18:00::|chemist%1:18:01::	药剂师义主要见于英式英语。
+chemistry	noun=化学；化学性质；人与人之间的默契	chemistry%1:09:00::|chemistry%1:27:00::|chemistry%1:24:00::	
+chess	noun=国际象棋	chess%1:04:00::	主动排除 OEWN 首列中的杂草同名义。
+chest	noun=胸部；胸膛；大箱子；抽屉柜	chest%1:08:00::|chest%1:08:01::|chest%1:06:00::|chest%1:06:01::	
+chew	verb=咀嚼；嚼碎|noun=咀嚼；供咀嚼的东西	chew%2:34:00::|chew%1:04:00::|chew%1:13:00::	
+chicken	noun=鸡；鸡肉；胆小鬼|adjective=胆怯的；胆小的	chicken%1:05:01::|chicken%1:13:00::|chicken%1:18:00::|chicken%5:00:00:cowardly:00	
+chief	noun=首领；负责人；酋长|adjective=主要的；最重要的	chief%1:18:00::|chief%1:18:01::|chief%1:18:02::|chief%5:00:02:important:00	
+child	noun=儿童；孩子；子女	child%1:18:00::|child%1:18:01::	主动排除贬义和非核心族群义。
+China	proper_noun=中国		通用国家专名；OEWN 无对应候选义项，未使用旧词表释义，并与小写 china 分开。
+china	noun=瓷器；瓷餐具	china%1:06:00::|china%1:06:01::	小写普通名词，与国家专名 China 分开。
+Chinese	adjective=中国的；中国人的；汉语的|noun=中国人；汉语	chinese%3:01:00::|chinese%1:10:00::|chinese%1:18:00::	主动省略带有历史政治措辞的来源表述，保留中性教学释义。
+chocolate	noun=巧克力；热巧克力饮料；巧克力色|adjective=巧克力的；深棕色的	chocolate%1:13:00::|chocolate%1:13:02::|chocolate%1:07:00::	补充常用形容词用法。
+choice	noun=选择；选择权；入选者|adjective=优质的；精选的	choice%1:04:00::|choice%1:09:02::|choice%1:09:00::|choice%5:00:00:superior:02	

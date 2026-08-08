@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+expensive	adjective=昂贵的；费用高的	expensive%3:00:00::	
+experience	noun=经验；经历；体验|verb=经历；体验；感受	experience%1:09:01::|experience%1:09:00::|experience%1:11:00::|experience%2:39:01::|experience%2:31:00::	
+experiment	noun=实验；试验；尝试|verb=做实验；尝试	experiment%1:04:00::|experiment%1:09:00::|experiment%1:04:01::|experiment%2:41:01::|experiment%2:41:02::	
+expert	noun=专家；能手|adjective=熟练的；专业的	expert%1:18:00::|expert%5:00:00:skilled:00|expert%5:00:05:skilled:00	
+explain	verb=解释；说明；阐明	explain%2:32:00::|explain%2:32:01::|explain%2:32:02::	
+explode	verb=爆炸；引爆；激增；大发雷霆	explode%2:30:00::|explode%2:30:01::|explode%2:30:03::|explode%2:31:00::|explode%2:35:00::	
+explore	verb=探索；探究；考察；勘探	explore%2:31:00::|explore%2:31:01::|explore%2:31:02::	主动省略器官检查的医学专门义。
+export	noun=出口商品；输出|verb=出口；输出数据；传播	export%1:06:00::|export%2:40:00::|export%2:40:01::|export%2:35:04::	
+expose	verb=暴露；揭露；使接触；展示|noun=揭露报道	expose%2:39:02::|expose%2:32:01::|expose%2:39:00::|expose%1:10:00::	主动省略裸露身体的非核心义。
+exposure	noun=暴露；接触；曝光；揭露；面向	exposure%1:07:00::|exposure%1:04:06::|exposure%1:10:00::|exposure%1:09:00::|exposure%1:26:01::	补充摄影中的高频曝光义。
+express	verb=表达；表示；快递|adjective=明确的；特快的|noun=快车；快递|adverb=用快递方式	express%5:00:00:explicit:00|express%5:00:00:fast:01|express%1:06:00::|express%1:04:00::|express%1:10:00::	OEWN 候选支持形容词和名词义；补充高频动词、副词用法。
+extend	verb=延伸；扩大；延长；提供	extend%2:30:01::|extend%2:42:03::|extend%2:42:01::|extend%2:40:05::|extend%2:29:01::	
+extension	noun=延长；延期；扩建部分；分机；扩展名	extension%1:28:00::|extension%1:04:02::|extension%1:10:01::|extension%1:04:00::|extension%1:04:01::	补充电话分机和计算机扩展名义。
+extent	noun=程度；范围；面积	extent%1:26:00::|extent%1:07:00::	
+external	adjective=外部的；外来的；对外的|noun=外部特征	external%3:00:00::|external%5:00:00:extrinsic:00|external%5:00:00:foreign:02|external%1:09:00::	主动省略纯表面化的边缘义。
+extinction	noun=灭绝；消亡；熄灭	extinction%1:26:01::|extinction%1:26:02::|extinction%1:11:00::	主动省略物理辐射和条件反射专门义。
+extra	adjective=额外的；附加的|noun=额外事物；临时演员|adverb=格外；另外收费	extra%5:00:00:unnecessary:00|extra%5:00:00:unscheduled:00|extra%5:00:00:additive:00|extra%1:18:00::|extra%1:10:00::	补充常用副词用法。
+extraordinary	adjective=非凡的；不同寻常的；特别的	extraordinary%3:00:00::|extraordinary%5:00:00:immoderate:00	主动省略官员特殊职务的专业义。
+extremely	adverb=极其；非常	extremely%4:02:02::|extremely%4:02:00::	
+eye	noun=眼睛；眼光；关注；中心；针眼|verb=注视；审视	eye%1:08:00::|eye%1:09:00::|eye%1:09:01::|eye%1:15:00::|eye%1:06:00::	OEWN 候选支持名词核心义；补充常用动词用法。
+fabric	noun=织物；布料；结构	fabric%1:06:00::|fabric%1:07:00::	
+face	noun=脸；面部表情；表面；外观|verb=面对；朝向；正视	face%1:08:00::|face%1:07:03::|face%1:07:00::|face%1:06:02::	主动省略以脸代人的边缘义；补充高频动词用法。
+facilitate	verb=促进；使便利；帮助	facilitate%2:30:00::|facilitate%2:42:00::|facilitate%2:36:03::	
+facility	noun=设施；场所；服务；才能	facility%1:06:00::|facility%1:04:01::|facility%1:04:00::|facility%1:09:00::	
+fact	noun=事实；实际情况	fact%1:09:01::|fact%1:10:01::|fact%1:26:01::|fact%1:09:02::	
+factor	noun=因素；因数；要素；代理商|verb=把……作为因素；分解因式	factor%1:11:00::|factor%1:09:00::|factor%1:23:00::|factor%1:18:00::|factor%1:23:01::	补充常用动词用法。
+factory	noun=工厂；制造厂	factory%1:06:00::	
+fail	verb=失败；未能；不及格；出故障；使失望	fail%2:41:00::|fail%2:41:02::|fail%2:30:00::|fail%2:37:00::|fail%2:41:08::	
+failure	noun=失败；故障；不及格；失败者	failure%1:04:00::|failure%1:11:00::|failure%1:26:00::|failure%1:18:00::|failure%1:04:01::	
+fair	adjective=公平的；合理的；相当好的；晴朗的|noun=集市；展览会|adverb=公平地；正面地	fair%3:00:03::|fair%5:00:00:moderate:00|fair%5:00:00:ordinary:00	主动省略棒球和古旧美貌义；补充中学常用的集市、天气和副词义。
+faith	noun=信任；信念；信仰；忠诚	faith%1:09:01::|faith%1:09:00::|faith%1:14:00::|faith%1:04:00::	
+fall	verb=落下；跌倒；下降；进入某状态|noun=秋季；跌落；下降	fall%1:28:00::|fall%1:04:01::|fall%1:11:01::|fall%1:17:00::	主动省略宗教失堕专门义；补充中学高频动词用法。
+false	adjective=错误的；假的；不真诚的|adverb=不真实地	false%3:00:00::|false%5:00:00:incorrect:00|false%5:00:00:insincere:00|false%5:00:00:unrealistic:00	补充常用副词用法。
+familiar	adjective=熟悉的；常见的；亲近的|noun=熟人	familiar%3:00:00::|familiar%3:00:02::|familiar%5:00:00:informed:00|familiar%5:00:00:close:02	主动省略宗教高官侍从的旧义；补充常见名词化用法。
+family	noun=家庭；家族；一类相关事物|adjective=家庭的；适合全家的	family%1:14:00::|family%1:14:02::|family%1:14:01::|family%1:14:04::|family%1:18:00::	补充常用形容词用法。
+famous	adjective=著名的；出名的	famous%5:00:00:known:00	
+fan	noun=风扇；扇子；爱好者|verb=扇；煽动；呈扇形展开	fan%1:06:00::|fan%1:18:01::|fan%1:18:00::|fan%2:30:00::	主动省略棒球三振专门义；补充常用动词用法。
+fancy	adjective=花哨的；精致的；昂贵的|noun=想象；喜爱；幻想|verb=想象；喜欢；想要	fancy%3:00:00::|fancy%1:09:01::|fancy%1:12:00::|fancy%2:36:00::	主动省略多人错误信念的边缘义；补充高频动词用法。
+fantastic	adjective=极好的；奇异的；不切实际的；幻想的	fantastic%5:00:00:extraordinary:00|fantastic%5:00:00:strange:00|fantastic%5:00:00:unrealistic:00|fantastic%5:00:00:unreal:00	
+fantasy	noun=幻想；想象；奇幻作品|verb=幻想	fantasy%1:09:00::|fantasy%1:10:00::|fantasy%2:36:00::	主动省略多人错误信念的边缘义。
+far	adjective=远的；遥远的；极端的|adverb=远；大大地；到很大程度	far%3:00:00::|far%5:00:00:long:01|far%5:00:00:immoderate:00|far%4:02:02::	主动省略动物或车辆右侧的专门义。
+farm	noun=农场；养殖场|verb=务农；耕种；养殖	farm%1:06:00::|farm%2:41:00::|farm%2:36:00::	主动省略承包收费的边缘义。
+farmer	noun=农民；农场主	farmer%1:18:00::	
+fashion	noun=时尚；方式；流行款式|verb=制作；塑造	fashion%1:09:00::|fashion%1:07:00::|fashion%1:04:00::|fashion%1:06:00::|fashion%2:36:00::	
+fast	adjective=快的；牢固的；不褪色的|adverb=快速地；牢牢地|verb=禁食|noun=禁食	fast%3:00:01::|fast%3:00:03::|fast%3:00:02::|fast%5:00:00:impervious:00	OEWN 候选支持形容词核心义；补充副词、禁食动词和名词用法。
+fat	adjective=肥胖的；厚的；富含脂肪的|noun=脂肪；油脂	fat%3:00:01::|fat%5:00:00:thick:01|fat%3:00:02::	主动省略有利可图和丰产的边缘义；补充核心名词义。
+father	noun=父亲；创始人；先驱|verb=成为……的父亲；创立	father%1:18:00::|father%1:18:06::|father%1:18:03::	主动排除犯罪组织首领义；补充常用动词用法。
+fault	noun=错误；过失；缺陷；断层；故障|verb=挑剔；发现错误	fault%1:04:00::|fault%1:26:00::|fault%1:07:00::|fault%1:17:00::|fault%1:11:00::	补充常用动词用法。
+favour	noun=喜爱；赞同；帮助；恩惠|verb=支持；偏爱；有利于	favour%1:12:00::|favour%1:09:00::|favour%1:07:00::|favour%1:04:00::	主动省略派对纪念小礼物边缘义；补充常用动词用法。
+favourite	adjective=最喜欢的；最受欢迎的|noun=最喜欢的人或事物；夺冠热门	favourite%5:00:00:loved:00|favourite%5:00:00:popular:00|favourite%1:09:00::|favourite%1:18:01::|favourite%1:18:00::	
+fear	noun=恐惧；担心；敬畏|verb=害怕；担心	fear%1:12:00::|fear%1:12:01::|fear%1:12:02::|fear%2:37:03::|fear%2:37:00::	
+feature	noun=特征；面貌；专题报道；故事片|verb=以……为特色；由……主演	feature%1:09:00::|feature%1:08:00::|feature%1:10:01::|feature%1:10:00::	主动省略语言学专门义；补充常用动词用法。
+February	proper_noun=二月	february%1:28:00::	月份专名按专有名词展示。
+fee	noun=费用；服务费|verb=付小费	fee%1:21:00::|fee%2:40:01::	主动省略可继承地产权益的法律专门义。
+feed	verb=喂养；供给；输入|noun=饲料；一次喂食	feed%2:34:01::|feed%2:34:04::|feed%2:34:03::|feed%2:30:01::|feed%1:13:00::	
+feel	verb=感觉；觉得；触摸；认为|noun=感觉；气氛；手感	feel%2:37:00::|feel%1:09:00::|feel%1:26:00::|feel%1:07:00::	主动排除不适合基础教学的性接触名词义；补充其他高频动词用法。
+feeling	noun=感觉；情感；看法；气氛	feeling%1:03:00::|feeling%1:09:03::|feeling%1:26:00::|feeling%1:09:01::|feeling%1:09:02::	
+fellow	noun=男子；伙伴；同事；会员|adjective=同伴的；同类的	fellow%1:18:00::|fellow%1:18:02::|fellow%1:18:03::|fellow%1:18:05::	主动省略“一对中的一个”边缘义；补充常用形容词用法。
+female	adjective=女性的；雌性的|noun=女性；雌性动物	female%3:00:00::|female%5:00:02:feminine:01|female%5:00:01:female:00|female%1:05:00::|female%1:18:00::	
+fence	noun=栅栏；围栏|verb=用栅栏围住；击剑	fence%1:06:00::|fence%2:35:00::|fence%2:33:01::	主动排除销赃者和收赃动词义。
+festival	noun=节日；庆典；艺术节	festival%1:28:00::|festival%1:04:00::	
+fetch	verb=去拿来；请来；售得|noun=取回动作	fetch%2:35:00::|fetch%2:40:00::|fetch%1:04:00::	主动排除宗教传说中的“带去地狱”义。
+fever	noun=发烧；热病；狂热	fever%1:26:00::|fever%1:12:00::	
+few	determiner=少数的；几乎没有的|pronoun=少数；几个|noun=少数人	few%3:00:00::|few%1:14:00::	将来源量词形容词标签规范为限定词，并补充代词功能。
+fibre	noun=纤维；纤维质；膳食纤维；品格	fibre%1:27:00::|fibre%1:08:00::|fibre%1:13:02::|fibre%1:07:00::	主动省略压制纸布仿皮材料的专门义。
+fiction	noun=小说；虚构作品；虚构说法	fiction%1:10:00::|fiction%1:10:01::	
+field	noun=田地；领域；场地；野外；力场|verb=接球；派出；处理问题	field%1:15:00::|field%1:09:00::|field%1:15:01::|field%1:19:00::	主动省略战场专门义；补充常用动词用法。
+fifteen	numeral=十五|noun=十五	fifteen%5:00:00:cardinal:00|fifteen%1:23:00::	
+fifth	ordinal=第五|noun=五分之一；第五位；五度音程	fifth%5:00:00:ordinal:00|fifth%1:24:00::|fifth%1:23:00::|fifth%1:10:00::	主动省略美国加仑酒量单位义。
+fifty	numeral=五十|noun=五十；五十元钞票	fifty%5:00:00:cardinal:00|fifty%1:23:00::|fifty%1:21:00::	
+fight	verb=打架；战斗；争取；与……斗争|noun=战斗；争吵；比赛；斗志	fight%1:04:01::|fight%1:04:02::|fight%1:10:00::|fight%1:04:03::|fight%1:07:00::	OEWN 候选支持名词核心义；补充中学高频动词用法。
+figure	noun=数字；图形；人物；身材；图表|verb=认为；计算；弄明白	figure%1:23:00::|figure%1:10:00::|figure%1:18:00::|figure%1:08:00::|figure%1:06:00::	OEWN 候选支持名词核心义；补充常用动词用法。
+file	noun=文件；档案；文件夹；队列；锉刀|verb=归档；提交；锉平	file%1:10:00::|file%1:06:01::|file%1:14:00::|file%1:06:00::|file%2:32:02::	补充其他常用动词用法。
+fill	verb=装满；填充；占据；填写|noun=足量；填充物	fill%2:30:01::|fill%2:30:00::|fill%2:42:00::|fill%1:23:00::|fill%1:27:00::	
+film	noun=电影；胶片；薄膜|verb=拍摄；给……覆膜	film%1:10:01::|film%1:10:00::|film%1:06:01::|film%1:06:00::|film%1:06:02::	OEWN 候选支持名词核心义；补充常用动词用法。
+finally	adverb=最后；终于；最终	finally%4:02:02::|finally%4:02:00::|finally%4:02:03::	
+finance	noun=金融；财政；资金管理|verb=为……提供资金；赊购	finance%1:04:00::|finance%1:09:00::|finance%1:04:01::|finance%2:40:00::|finance%2:40:01::	
+financial	adjective=金融的；财政的；财务的	financial%3:01:00::	
+find	verb=找到；发现；查明；认为|noun=发现；发现物	find%2:40:00::|find%2:40:02::|find%2:39:02::|find%1:09:00::|find%1:04:00::	补充常用“认为”动词义。
+finding	noun=发现；研究结果；判决；被发现的物品	finding%1:04:00::|finding%1:04:01::|finding%1:17:00::	
+fine	adjective=好的；精细的；细微的；晴朗的|noun=罚款|verb=罚款|adverb=很好地	fine%5:00:00:satisfactory:00|fine%5:00:00:precise:00|fine%5:00:00:thin:01|fine%5:00:00:elegant:00|fine%3:00:00::	OEWN 候选支持形容词核心义；补充中学常用罚款、天气和副词用法。
+finger	noun=手指；手套的指部|verb=用手指触摸；摸索	finger%1:08:00::|finger%1:06:00::|finger%2:35:00::|finger%2:35:05::	主动省略指宽计量义。
+finish	verb=完成；结束；用完|noun=结束；终点；表面处理	finish%1:28:00::|finish%1:15:00::|finish%1:11:00::|finish%1:07:00::	OEWN 候选支持名词核心义；补充高频动词用法。
+fire	noun=火；火灾；射击；炉火|verb=开火；解雇；点燃	fire%1:11:00::|fire%1:22:00::|fire%1:04:00::|fire%1:06:00::	主动省略古代四元素义；补充高频动词用法。
+firm	adjective=坚固的；坚定的；稳固的|noun=公司；商行|adverb=稳固地	firm%5:00:00:resolute:00|firm%5:00:00:hard:01|firm%5:00:00:forceful:00|firm%5:00:00:settled:02|firm%5:00:00:steady:00	OEWN 候选支持形容词核心义；补充公司名词和副词用法。
+first	ordinal=第一|adjective=最初的；最重要的|noun=第一个；第一名|adverb=首先；第一次	first%3:00:00::|first%5:00:01:opening:00|first%5:00:00:best:00|first%5:00:02:opening:00	OEWN 候选支持形容词义；按课标补充序数词、名词和副词功能。
+fish	noun=鱼；鱼肉|verb=捕鱼；钓鱼；摸索寻找	fish%1:05:00::|fish%1:13:00::|fish%2:33:00::|fish%2:35:00::	
+fisherman	noun=渔民；渔夫；钓鱼者	fisherman%1:18:00::	
+fist	noun=拳；拳头	fist%1:08:00::	
+fit	adjective=合适的；健康的；能胜任的|verb=适合；安装；容纳|noun=发作；一阵；合身	fit%3:00:02::|fit%3:00:01::|fit%5:00:00:ready:00|fit%1:26:00::|fit%1:26:01::	OEWN 候选支持形容词和发作名词义；补充高频动词和合身名词义。
+five	numeral=五|noun=五；五人队；五点牌	five%5:00:00:cardinal:00|five%1:23:00::|five%1:14:00::|five%1:06:00::	
+fix	verb=修理；固定；解决；确定|noun=困境；修理；位置确定	fix%1:04:00::|fix%1:26:00::|fix%1:04:02::	主动排除毒品注射和行贿干预义；补充高频动词用法。
+flag	noun=旗；旗帜；信号标志|verb=标记；示意停车；衰弱	flag%1:06:00::|flag%1:10:00::|flag%1:06:02::	主动省略报刊刊头和植物同名义；补充常用动词用法。
+flash	noun=闪光；闪现；顿悟|verb=闪耀；快速显示|adjective=浮华的；短暂的	flash%1:11:00::|flash%1:07:00::|flash%1:11:01::|flash%1:09:00::|flash%5:00:00:tasteless:02	补充常用动词用法。
+flat	adjective=平的；扁平的；单调的；没气的|noun=公寓；平面；降音|adverb=平躺地；断然地	flat%5:00:00:even:01|flat%5:00:00:planar:00|flat%5:00:00:unqualified:02|flat%5:00:00:unerect:00|flat%3:00:03::	OEWN 候选支持形容词核心义；补充中学常用名词、副词用法。
+flavour	noun=味道；风味；特色|verb=给……调味	flavour%1:09:00::|flavour%1:26:00::|flavour%2:39:00::	主动省略粒子物理夸克味专门义。
+flexible	adjective=灵活的；柔韧的；可变通的	flexible%3:00:02::|flexible%3:00:01::|flexible%5:00:00:adaptable:00|flexible%5:00:00:elastic:00|flexible%3:00:04::	
+flight	noun=飞行；航班；逃跑；一段楼梯	flight%1:04:00::|flight%1:04:01::|flight%1:06:00::|flight%1:14:01::	主动省略空军编制专门义。
+flood	noun=洪水；大量；泛滥|verb=淹没；涌入；充满	flood%1:19:00::|flood%1:23:00::|flood%1:04:01::|flood%1:04:00::	主动省略摄影泛光灯专门义；补充高频动词用法。
+floor	noun=地板；楼层；底部；最低限度|verb=给……铺地板；击倒；使震惊	floor%1:06:00::|floor%1:06:01::|floor%1:10:00::|floor%1:17:00::|floor%1:17:01::	OEWN 候选支持名词核心义；补充常用动词用法。

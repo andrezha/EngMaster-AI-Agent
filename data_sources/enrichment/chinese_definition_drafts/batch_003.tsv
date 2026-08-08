@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+attitude	noun=态度；看法；姿势	attitude%1:09:00::|attitude%1:07:01::	
+attract	verb=吸引；引起……的兴趣；招引	attract%2:35:00::|attract%2:37:00::|attract%2:35:01::	
+audience	noun=观众；听众；读者群；会见	audience%1:14:00::|audience%1:14:01::|audience%1:10:00::	
+August	proper_noun=八月	august%1:28:00::	按月份专名规范展示词性。
+aunt	noun=姑母；姨母；伯母；婶母；舅母	aunt%1:18:00::	中文亲属称谓按父母姐妹或叔舅配偶的通用范围展开。
+Australia	proper_noun=澳大利亚；澳洲		通用国家名；OEWN 无对应候选义项，未使用旧词表释义。
+Australian	adjective=澳大利亚的；澳大利亚人的|noun=澳大利亚人	australian%3:01:00::|australian%1:18:00::	
+author	noun=作者；作家；创始人|verb=撰写；创作	author%1:18:00::|author%1:18:01::|author%2:36:00::	
+authority	noun=权力；权限；当局；权威人士；权威性	authority%1:07:00::|authority%1:18:01::|authority%1:18:00::|authority%1:14:00::	
+automatic	adjective=自动的；无意识的|noun=自动武器	automatic%3:00:00::|automatic%5:00:00:involuntary:02|automatic%1:06:01::	
+autonomous	adjective=自治的；自主的；独立的	autonomous%5:00:00:free:00|autonomous%5:00:02:independent:00|autonomous%5:00:01:independent:00	
+autumn	noun=秋天；秋季	autumn%1:28:00::	
+available	adjective=可获得的；可使用的；有空的	available%3:00:00::|available%5:00:00:free:00	
+average	noun=平均数；平均水平|adjective=平均的；普通的；中等的|verb=平均为；计算平均值	average%5:00:02:normal:01|average%5:00:00:ordinary:00|average%5:00:00:moderate:00	OEWN 候选支持形容词核心义；补充常用名词和动词用法。
+avoid	verb=避免；躲开；防止	avoid%2:32:00::|avoid%2:41:01::|avoid%2:41:03::	
+awake	adjective=醒着的；警觉的|verb=醒来；唤醒	awake%3:00:00::|awake%5:00:00:aware:00|awake%2:29:00::	
+award	noun=奖；奖品；裁定|verb=授予；判给	award%1:10:00::|award%1:21:00::|award%1:04:00::|award%2:40:00::|award%2:40:01::	
+aware	adjective=知道的；意识到的；留意的	aware%3:00:00::|aware%3:00:04::	
+away	adjective=不在的；客场的|adverb=离开；远离；不断地	away%5:00:00:absent:00|away%3:00:00::|away%4:02:00::	
+awesome	adjective=令人惊叹的；极好的；可畏的	awesome%5:00:00:impressive:00	
+awful	adjective=糟糕的；可怕的；非常严重的	awful%5:00:00:bad:00|awful%5:00:00:alarming:00|awful%5:00:00:extraordinary:00	
+awkward	adjective=笨拙的；尴尬的；难处理的；不方便的	awkward%3:00:00::|awkward%5:00:00:difficult:00|awkward%5:00:00:inconvenient:00	
+baby	noun=婴儿；幼崽；最年幼者|adjective=幼小的	baby%1:18:00::|baby%1:05:00::|baby%1:18:01::	
+back	noun=背部；后面；靠背|adjective=后面的；过去的|adverb=向后；回到原处|verb=支持；后退	back%1:08:00::|back%1:06:00::|back%3:00:00::|back%5:00:00:noncurrent:00	OEWN 候选支持名词和形容词核心义；补充常用副词、动词用法。
+background	noun=背景；经历；背景资料；底色	background%1:07:00::|background%1:09:00::|background%1:09:01::|background%1:11:01::	
+backward	adjective=向后的；落后的；迟缓的|adverb=向后；倒着	backward%3:00:01::|backward%5:00:00:undynamic:00|backward%4:02:03::	
+bacon	noun=培根；熏猪肉	bacon%1:13:00::	
+bad	adjective=坏的；糟糕的；严重的；变质的|noun=坏事；不良之处	bad%3:00:00::|bad%5:00:00:intense:00|bad%5:00:00:stale:00	OEWN 候选支持常用形容词义；补充固定名词化用法。
+badminton	noun=羽毛球运动	badminton%1:04:00::	
+bag	noun=袋；包；一袋的量|verb=把……装进袋；捕获	bag%1:06:00::|bag%1:06:02::|bag%1:23:00::	OEWN 候选支持名词核心义；补充对应的常用动词用法。
+bakery	noun=面包店；烘焙坊	bakery%1:06:00::	
+balance	noun=平衡；均衡；余额；剩余部分|verb=使平衡；权衡；结算	balance%1:26:00::|balance%1:07:00::|balance%1:21:00::|balance%1:24:00::	OEWN 候选支持名词核心义；补充对应的常用动词用法。
+ball	noun=球；球状物；舞会	ball%1:06:01::|ball%1:25:00::|ball%1:06:02::	保留中学常用义；舞会义依据通行用法补充。
+ballet	noun=芭蕾舞；芭蕾舞剧；芭蕾舞曲	ballet%1:04:00::|ballet%1:10:00::	
+balloon	noun=气球；热气球|verb=乘热气球；膨胀	balloon%1:06:00::|balloon%1:06:01::|balloon%2:38:00::|balloon%2:30:00::	
+bamboo	noun=竹；竹子；竹材	bamboo%1:20:00::|bamboo%1:20:02::	
+ban	noun=禁令；禁止|verb=禁止；取缔	ban%1:10:00::|ban%1:10:01::	OEWN 候选支持名词义；补充对应的常用动词用法。
+banana	noun=香蕉；香蕉树	banana%1:13:00::|banana%1:20:00::	
+band	noun=乐队；一群人；带；条纹|verb=用带捆扎；联合	band%1:14:00::|band%1:14:02::|band%1:14:01::|band%1:07:00::	OEWN 候选支持名词核心义；补充对应的常用动词用法。
+bank	noun=银行；河岸；堤；储备|verb=把钱存入银行；依靠；倾斜飞行	bank%1:14:00::|bank%1:17:01::|bank%1:17:00::|bank%1:21:00::	OEWN 候选支持名词核心义；补充常用动词用法。
+bar	noun=酒吧；柜台；条；障碍|verb=禁止；阻挡|preposition=除……外	bar%1:06:04::|bar%1:06:05::|bar%1:06:00::|bar%1:06:02::	OEWN 候选支持名词核心义；补充常用动词和介词用法。
+barbecue	noun=烧烤；烤肉；烤架|verb=烧烤	barbecue%1:13:00::|barbecue%1:13:02::|barbecue%1:06:00::|barbecue%2:30:00::	
+barely	adverb=仅仅；勉强；几乎不	barely%4:02:00::|barely%4:02:02::|barely%4:02:03::	
+bark	noun=树皮；狗叫声|verb=吠叫；厉声说	bark%1:20:00::|bark%1:11:00::|bark%2:32:01::	补充与名词狗叫声对应的常用动词用法。
+barrier	noun=障碍物；屏障；阻碍	barrier%1:06:00::|barrier%1:09:00::|barrier%1:17:00::	
+base	noun=基础；基地；底部；底座|verb=以……为基础；把基地设在|adjective=基本的；卑鄙的	base%5:00:00:basic:00|base%5:00:00:wrong:01|base%5:00:00:ignoble:01	OEWN 当前候选顺序以形容词义为主；补充中学阶段高频名词和动词用法。
+baseball	noun=棒球运动；棒球	baseball%1:04:00::|baseball%1:06:00::	
+basic	adjective=基本的；基础的；初级的|noun=基本要素；必需品	basic%3:00:00::|basic%5:00:02:first:00|basic%1:06:00::	
+basin	noun=盆；水池；盆地；流域	basin%1:06:00::|basin%1:17:00::|basin%1:15:00::|basin%1:06:01::	
+basis	noun=基础；根据；原则	basis%1:24:00::|basis%1:09:00::|basis%1:24:01::	
+basket	noun=篮；篮子；篮筐；投篮得分	basket%1:06:00::|basket%1:06:01::|basket%1:04:00::	
+basketball	noun=篮球运动；篮球	basketball%1:04:00::|basketball%1:06:00::	
+bat	noun=蝙蝠；球棒；球拍|verb=用球棒击球；眨眼	bat%1:05:00::|bat%1:06:00::|bat%1:06:03::	OEWN 候选支持名词核心义；补充常用动词用法。
+bath	noun=洗澡；浴缸；浴液	bath%1:04:00::|bath%1:06:02::	
+bathroom	noun=浴室；卫生间	bathroom%1:06:00::|bathroom%1:06:01::	
+battery	noun=电池；一组设备；炮兵连	battery%1:06:00::|battery%1:14:01::|battery%1:14:02::	
+battle	noun=战斗；斗争；较量|verb=战斗；抗争	battle%1:04:00::|battle%1:04:01::|battle%1:04:02::|battle%2:33:00::	
+bay	noun=海湾；舱位；月桂|adjective=红棕色的	bay%1:17:00::|bay%1:06:02::|bay%1:20:00::|bay%5:00:00:colored:00	
+BC	adverb=公元前	bc%4:02:00::	
+be	verb=是；存在；位于；成为|auxiliary_verb=用于构成进行时或被动语态	be%2:42:03::|be%2:42:06::|be%2:42:05::|be%2:42:00::	补充中学语法中的助动词功能。
+beach	noun=海滩；湖滩|verb=把船拖上岸；搁浅	beach%1:17:00::|beach%2:38:00::	
+bean	noun=豆；豆类植物	bean%1:13:00::|bean%1:20:00::	
+bean curd	noun=豆腐	bean_curd%1:13:00::|tofu%1:13:00::	课标原有多词表达。
+bear	noun=熊|verb=承受；忍受；承担；生育；带有	bear%1:05:00::|bear%2:42:01::|bear%2:37:01::|bear%2:29:01::	根据候选义项保留中学常用动词义，主动排除金融市场中的生僻名词义。
+beard	noun=胡须；络腮胡子	beard%1:08:00::	
+beat	verb=击打；打败；跳动；搅拌|noun=节拍；敲击；巡逻区域|adjective=筋疲力尽的	beat%1:10:00::|beat%1:11:00::|beat%1:15:00::|beat%5:00:00:tired:00	OEWN 当前截取候选以名词、形容词义为主；补充中学阶段高频动词用法。
+beautiful	adjective=美丽的；美好的	beautiful%3:00:00::|beautiful%5:00:00:pleasant:00	
+beauty	noun=美；美丽；美人；美好事物	beauty%1:07:00::|beauty%1:18:00::|beauty%1:09:00::	
+because	conjunction=因为；由于		按课标中的原因连词用法补充；OEWN 无对应候选义项。
+become	verb=变成；成为；适合；开始形成	become%2:30:00::|become%2:42:01::|become%2:42:00::|become%2:42:03::	
+bed	noun=床；花坛；河床；岩层|verb=安置睡觉；栽种	bed%1:06:00::|bed%1:06:01::|bed%1:17:00::|bed%1:17:01::	OEWN 候选支持名词核心义；补充常用动词用法。
+bedroom	noun=卧室	bedroom%1:06:00::	
+beef	noun=牛肉；肉牛；抱怨|verb=抱怨	beef%1:13:00::|beef%1:05:00::|beef%1:10:00::|beef%2:32:00::	
+beer	noun=啤酒	beer%1:13:00::	
+before	preposition=在……以前；在……前面|conjunction=在……以前|adverb=以前；先前	before%4:02:03::|before%4:02:01::	补充中学阶段常用介词和连词用法。
+begin	verb=开始；着手；首先出现	begin%2:30:00::|begin%2:42:00::|begin%2:30:01::|begin%2:42:02::	
+behalf	noun=代表；利益	behalf%1:04:00::|behalf%1:07:00::	主要用于 on behalf of 等固定搭配。
+behave	verb=表现；举止；守规矩	behave%2:29:00::|behave%2:41:00::	
+behaviour	noun=行为；举止；表现；运行状况	behaviour%1:07:00::|behaviour%1:04:00::|behaviour%1:26:00::	
+behind	preposition=在……后面；落后于；支持|adverb=在后面；留下；落后|noun=臀部	behind%4:02:00::|behind%4:02:01::|behind%5:00:00:down:00|behind%1:08:00::	补充中学阶段常用介词用法。
+being	noun=存在；生物；人	being%1:26:00::|being%1:03:00::	
+belief	noun=相信；信念；信仰	belief%1:09:00::|belief%1:09:01::	
+believe	verb=相信；认为；信任；信仰	believe%2:31:00::|believe%2:31:04::|believe%2:31:03::|believe%2:31:01::	
+bell	noun=钟；铃；钟声	bell%1:06:00::|bell%1:06:02::|bell%1:11:00::	
+belong	verb=属于；应在；适合；是……的成员	belong%2:40:00::|belong%2:42:03::|belong%2:42:02::|belong%2:42:07::	
+below	preposition=在……下面；低于|adverb=在下面；下文	below%4:02:01::|below%4:02:00::	补充中学阶段常用介词用法。
+belt	noun=腰带；传送带；地带|verb=用带系；猛击	belt%1:06:00::|belt%1:06:01::|belt%1:15:00::|belt%1:11:00::	OEWN 候选支持名词核心义；补充常用动词用法。
+bend	noun=弯曲；弯道|verb=弯曲；俯身；使屈服	bend%1:11:00::|bend%1:06:00::|bend%1:25:01::	OEWN 候选支持名词核心义；补充常用动词用法。
+beneath	preposition=在……下面；低于；不值得|adverb=在下方	beneath%4:02:00::	补充中学阶段常用介词用法。
+benefit	noun=好处；益处；救济金|verb=使受益；得益于	benefit%1:07:00::|benefit%1:21:00::|benefit%2:40:00::|benefit%2:40:01::	
+beside	preposition=在……旁边；与……相比		按课标中的常用介词用法补充；OEWN 无对应候选义项。
+best	adjective=最好的；最合适的|noun=最佳的人或事物；最大努力|adverb=最好地；最适合地	best%3:00:00::|best%5:00:00:advisable:00|best%1:18:00::|best%1:04:00::|best%4:02:01::	
+bet	noun=打赌；赌注|verb=打赌；确信	bet%1:04:00::|bet%1:21:00::|bet%2:33:00::|bet%2:31:00::	
+better	adjective=更好的；好转的；更合适的|noun=更好的人或事物|adverb=更好地|verb=改善；胜过	better%3:00:00::|better%3:00:02::|better%5:00:00:advisable:00|better%1:07:00::	OEWN 候选支持形容词和名词义；补充常用副词、动词用法。
+between	preposition=在……之间；介于；由……共同|adverb=在中间	between%4:02:03::|between%4:02:00::	补充中学阶段常用介词用法。
+beyond	preposition=在……之外；超过；非……所能|adverb=在更远处；在那一边；此外	beyond%4:02:01::|beyond%4:02:02::|beyond%4:02:00::	补充中学阶段常用介词用法。
+big	adjective=大的；重大的；严重的；受欢迎的|adverb=以给人深刻印象的方式	big%3:00:01::|big%5:00:00:important:00|big%5:00:00:intense:00|big%5:00:00:conspicuous:00	补充口语中的副词用法。
+bike	noun=自行车；摩托车|verb=骑自行车	bike%1:06:00::|bike%1:06:02::|bike%2:38:00::	
+bill	noun=账单；钞票；法案；广告单|verb=给……开账单；宣传	bill%1:10:01::|bill%1:21:00::|bill%1:10:04::|bill%1:10:02::	OEWN 候选支持名词核心义；补充常用动词用法。
+billion	numeral=十亿|noun=十亿；大量	billion%5:00:00:cardinal:00|billion%1:23:00::|billion%1:23:02::	采用现代英语常用短级数含义，即 1,000,000,000；不采用旧式英式万亿义。

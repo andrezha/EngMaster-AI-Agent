@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+flour	noun=面粉|verb=撒上面粉；把……磨成粉	flour%1:13:00::|flour%2:35:00::|flour%2:30:00::	
+flow	noun=流动；流量；连续不断的流|verb=流动；流淌；涌出	flow%1:11:00::|flow%1:28:00::|flow%1:04:00::|flow%1:22:00::	动词释义依据同一词条的流动语义概括。
+flower	noun=花；开花植物|verb=开花；繁荣	flower%1:20:00::|flower%1:20:02::|flower%1:28:00::|flower%2:30:00::	
+flu	noun=流行性感冒；流感	flu%1:26:00::	
+fluent	adjective=流利的；流畅的	fluent%5:00:00:articulate:00|fluent%5:00:01:graceful:00	
+fly	verb=飞；飞行；乘飞机|noun=苍蝇；飞虫	fly%1:05:00::	常用动词义依据基础英语用法补充；未收录服装开口等低相关义项。
+focus	noun=焦点；重点；注意力集中|verb=集中；聚焦；调焦	focus%1:09:00::|focus%1:07:01::|focus%1:07:03::|focus%1:26:01::	动词义依据名词核心语义和基础英语用法补充；排除医学义项。
+foggy	adjective=有雾的；模糊不清的；迷糊的	foggy%5:00:00:cloudy:00|foggy%5:00:00:indistinct:00|foggy%5:00:00:opaque:00|foggy%5:00:00:lethargic:00	
+fold	verb=折叠；合拢；对折|noun=褶；折痕；折叠部分	fold%1:25:00::	常用动词义依据基础英语用法补充；排除宗教团体等低相关义项。
+folk	noun=人们；某一群体；民众|adjective=民间的；民俗的	folk%1:14:00::|folk%1:14:01::|folk%1:14:02::|folk%1:10:00::	形容词义依据民间文化语义概括。
+follow	verb=跟随；接着发生；遵循；听从；理解	follow%2:38:00::|follow%2:42:00::|follow%2:42:05::|follow%2:38:01::|follow%2:41:00::	“理解”是常见基础义，依据整体词条用法补充。
+fond	adjective=喜爱的；深情的；溺爱的	fond%5:00:00:inclined:02|fond%5:00:02:loving:00|fond%5:00:01:loving:00	
+food	noun=食物；食品；精神食粮	food%1:03:00::|food%1:09:00::	
+foot	noun=脚；足；英尺；底部	foot%1:08:01::|foot%1:23:00::|foot%1:15:00::|foot%1:05:01::|foot%1:06:00::	
+football	noun=足球运动；足球	football%1:04:00::|football%1:06:00::	
+for	preposition=为了；给；对于；达；因为|conjunction=因为		OEWN无候选释义；依据基础英语功能词用法原创整理。
+force	noun=力量；力；影响力；武装力量|verb=强迫；迫使；用力推动	force%1:07:01::|force%1:19:00::|force%1:07:00::|force%1:14:00::|force%1:14:01::	动词义依据名词核心语义和基础英语用法补充。
+forecast	noun=预测；预报|verb=预测；预报	forecast%1:10:00::|forecast%2:32:00::|forecast%2:31:00::|forecast%2:32:01::	
+forehead	noun=额头；前额	forehead%1:08:00::	排除颅骨专业义项。
+foreign	adjective=外国的；国外的；外来的；不相干的	foreign%3:00:02::|foreign%3:00:01::|foreign%5:00:00:extrinsic:00|foreign%5:00:00:adulterating:00	
+forest	noun=森林；林区|verb=在……造林	forest%1:14:00::|forest%1:17:00::|forest%2:35:00::	
+forever	adverb=永远；长久地；总是	forever%4:02:00::|forever%4:02:02::|forever%4:02:03::	
+forget	verb=忘记；忘了做；遗忘；落下	forget%2:31:01::|forget%2:31:00::|forget%2:31:03::|forget%2:31:02::	
+forgive	verb=原谅；宽恕；免除债务	forgive%2:32:00::|forgive%2:41:00::	
+fork	noun=餐叉；叉状物；分岔处|verb=分叉；用叉叉起	fork%1:06:00::|fork%1:04:00::|fork%1:25:00::|fork%1:06:02::	动词义依据名词核心语义和基础英语用法补充；排除身体部位义项。
+form	noun=形式；形状；种类；表格|verb=形成；组成；填写	form%1:10:00::|form%1:09:01::|form%1:09:00::|form%1:07:01::	“表格”及动词义依据基础英语常用义补充。
+formal	adjective=正式的；正规的；庄重的；形式上的	formal%3:00:01::|formal%5:00:00:official:00|formal%3:00:02::|formal%5:00:00:logical:00	
+format	noun=格式；版式|verb=安排格式；格式化	format%1:10:00::|format%1:07:00::|format%2:36:00::|format%2:31:10::|format%2:30:09::	
+former	adjective=以前的；前任的|pronoun=前者	former%3:00:00::|former%5:00:01:past:00|former%5:00:02:past:00|former%5:00:00:past:00|former%1:24:00::	
+fortunately	adverb=幸运地；幸亏	fortunately%4:02:00::	
+forty	numeral=四十	forty%5:00:00:cardinal:00|forty%1:23:00::	
+forward	adverb=向前；往前|adjective=向前的；前部的；进步的|verb=转交；促进	forward%3:00:01::|forward%5:00:00:progressive:01|forward%1:18:00::	动词义依据基础英语常用义补充。
+found	verb=创立；建立；把……建立在……基础上	found%2:41:00::|found%2:36:00::|found%2:31:00::	此处为found原形；另可作find的过去式和过去分词。
+foundation	noun=基础；地基；基金会；基本原理	foundation%1:24:00::|foundation%1:14:00::|foundation%1:06:00::|foundation%1:09:01::|foundation%1:09:00::	
+fountain	noun=喷泉；泉水；喷水装置	fountain%1:06:02::|fountain%1:17:00::|fountain%1:06:01::|fountain%1:06:00::	
+four	numeral=四	four%5:00:00:cardinal:00|four%1:23:00::	
+fourteen	numeral=十四	fourteen%5:00:00:cardinal:00|fourteen%1:23:00::	
+fourth	ordinal=第四|noun=四分之一；第四个|adverb=第四地；第四点	fourth%5:00:00:ordinal:00|fourth%1:24:00::|fourth%1:23:00::|fourth%4:02:00::	
+fox	noun=狐狸|verb=欺骗；使困惑	fox%1:05:00::|fox%2:41:00::|fox%2:31:00::	
+France	proper_noun=法国		OEWN无候选释义；依据通用地名知识原创整理。
+frank	adjective=坦率的；直言不讳的	frank%5:00:00:direct:02|frank%5:00:00:obvious:00	保留常用形容词义，未收录邮政及香肠等低相关义项。
+free	adjective=自由的；免费的；空闲的；可用的|verb=释放；使自由|adverb=免费地	free%3:00:00::|free%5:00:00:unpaid:00|free%5:00:02:unoccupied:00|free%5:00:00:unfixed:00	动词和副词义依据基础英语常用义补充。
+freedom	noun=自由；自主；免除	freedom%1:26:00::|freedom%1:26:01::	
+freeze	verb=结冰；冷冻；冻住；僵住|noun=冻结；严寒；暂停	freeze%1:22:01::|freeze%1:19:00::|freeze%1:04:01::|freeze%1:04:02::|freeze%2:38:00::	
+French	adjective=法国的；法国人的；法语的|noun=法语；法国人	french%3:01:00::|french%1:10:00::|french%1:18:00::	
+frequency	noun=频率；发生次数；频繁程度	frequency%1:28:00::|frequency%1:24:00::|frequency%1:23:00::	
+frequently	adverb=经常；频繁地	frequently%4:02:00::	
+fresh	adjective=新鲜的；新近的；清新的；新颖的	fresh%3:00:01::|fresh%5:00:00:new:00|fresh%5:00:00:invigorating:00|fresh%5:00:00:original:00|fresh%3:00:02::	
+friction	noun=摩擦；摩擦力；冲突；不和	friction%1:26:00::|friction%1:19:00::|friction%1:04:00::	
+Friday	proper_noun=星期五	friday%1:28:00::	
+fridge	noun=冰箱；电冰箱	fridge%1:06:00::|refrigerator%1:06:00::	
+friend	noun=朋友；友人；支持者|verb=加为好友	friend%1:18:00::|friend%1:18:03::|friend%1:18:02::|friend%1:18:04::	动词义依据现代通用用法补充。
+friendly	adjective=友好的；亲切的；易于使用的	friendly%3:00:01::|friendly%5:00:00:amicable:00|friendly%3:00:03::|friendly%3:00:02::	
+friendship	noun=友谊；友情	friendship%1:26:00::	
+frightened	adjective=害怕的；受惊的	frightened%5:00:00:afraid:00|frightened%5:00:02:afraid:00	
+frog	noun=青蛙；蛙	frog%1:05:00::	排除侮辱性和低相关义项。
+from	preposition=从；来自；由；离；因为		OEWN无候选释义；依据基础英语功能词用法原创整理。
+front	noun=前面；前部；正面；前线|adjective=前面的|verb=面向；担任……的主持	front%3:00:00::|front%1:15:00::|front%1:15:01::|front%1:09:00::|front%1:06:00::	动词义依据基础英语常用义补充。
+frontier	noun=边境；边疆；前沿	frontier%1:15:00::|frontier%1:15:01::|frontier%1:09:00::	
+frost	noun=霜；严寒天气|verb=结霜；给……加糖霜	frost%1:27:00::|frost%1:19:00::|frost%1:22:01::|frost%2:35:00::	
+fruit	noun=水果；果实；成果|verb=结果实	fruit%1:20:00::|fruit%1:06:00::|fruit%1:11:00::|fruit%2:36:01::|fruit%2:36:00::	
+fry	verb=油煎；油炸；被晒得酷热|noun=鱼苗；炸制食品	fry%2:42:00::|fry%2:30:00::	名词常用义依据基础英语用法补充；排除电刑等低相关义项。
+fuel	noun=燃料；推动力|verb=给……加燃料；加剧；刺激	fuel%1:27:00::|fuel%2:40:00::|fuel%2:40:01::|fuel%2:40:03::|fuel%2:37:00::	
+full	adjective=满的；完整的；充分的；吃饱的	full%3:00:00::|full%5:00:01:whole:00|full%5:00:00:complete:00|full%5:00:00:nourished:00|full%3:00:01::	
+fun	noun=乐趣；玩笑；有趣的事|adjective=有趣的；好玩的	fun%1:04:00::|fun%1:10:00::|fun%1:04:01::|fun%1:07:00::	形容词义依据现代常用用法补充。
+function	noun=功能；作用；职能；函数|verb=起作用；运转	function%1:24:00::|function%1:07:00::|function%1:04:00::|function%1:24:01::|function%1:14:00::	动词义依据名词核心语义和基础英语用法补充。
+fund	noun=基金；资金；储备|verb=资助；拨款	fund%1:21:00::|fund%1:21:01::|fund%1:14:00::	动词义依据基础英语常用义补充。
+fundamental	adjective=基本的；根本的；重要的|noun=基本原则；根本要素	fundamental%5:00:00:important:00|fundamental%5:00:00:basic:00|fundamental%5:00:00:significant:00|fundamental%1:11:00::|fundamental%1:09:00::	
+funny	adjective=滑稽的；有趣的；奇怪的；可疑的|noun=笑话；滑稽故事	funny%5:00:00:humorous:00|funny%5:00:00:strange:00|funny%5:00:00:questionable:00|funny%1:10:00::	
+furniture	noun=家具	furniture%1:06:00::	
+further	adjective=更远的；进一步的|adverb=更远地；进一步；此外|verb=促进；推进	further%5:00:00:far:00|further%4:02:02::|further%4:02:03::|further%4:02:00::|further%2:41:01::	
+future	noun=未来；将来|adjective=未来的；将来的	future%3:00:00::|future%5:00:00:prospective:00|future%5:00:00:incoming:00|future%3:01:00::|future%1:28:00::	
+gain	verb=获得；赢得；增加|noun=收益；好处；增加量	gain%1:23:00::|gain%1:07:02::|gain%1:07:01::|gain%1:21:00::|gain%2:40:03::	
+gallery	noun=美术馆；画廊；楼座；长廊	gallery%1:14:00::|gallery%1:06:04::|gallery%1:06:03::|gallery%1:06:02::	
+game	noun=游戏；比赛；运动|adjective=愿意尝试的；勇敢的	game%5:00:00:brave:00|game%1:04:00::|game%1:04:03::|game%1:04:01::	排除跛足等低相关义项。
+gap	noun=缺口；间隙；差距；空白	gap%1:07:00::|gap%1:17:00::|gap%1:06:00::|gap%1:17:01::|gap%1:10:00::	
+garbage	noun=垃圾；废物；无用的信息	garbage%1:27:00::|garbage%1:10:00::	
+garden	noun=花园；菜园；庭院|verb=从事园艺；种植花木	garden%1:06:00::|garden%1:14:00::|garden%1:06:01::|garden%2:36:00::	
+garlic	noun=大蒜；蒜	garlic%1:20:00::|garlic%1:13:00::	
+gas	noun=气体；燃气；汽油|verb=给……加油；用气体处理	gas%1:26:00::|gas%1:27:00::|gas%1:27:02::|gas%1:06:00::	动词义依据基础英语常用义补充；排除身体相关义项。
+gate	noun=大门；登机口；闸门|verb=给……装门；控制通行	gate%1:06:00::|gate%1:06:01::|gate%1:21:00::|gate%1:06:02::|gate%2:40:00::	
+gather	verb=聚集；收集；逐渐增加；推断|noun=聚集；褶裥	gather%1:06:00::|gather%1:04:00::|gather%2:35:00::|gather%2:41:00::|gather%2:30:00::	“推断”依据基础英语常用义补充。
+gender	noun=性别；社会性别；语法上的性	gender%1:10:00::|gender%1:07:00::	中文采用现代中性表述；OEWN对应义项范围较窄。
+general	adjective=一般的；普遍的；总体的；大致的|noun=将军；一般情况	general%3:00:00::|general%5:00:00:undiversified:00|general%5:00:00:common:01|general%3:00:02::|general%5:00:00:imprecise:00	名词义依据基础英语常用义补充。
+generate	verb=产生；生成；引起；发电	generate%2:36:00::|generate%2:36:02::|generate%2:36:01::|generate%2:29:00::	
+generation	noun=一代人；一代；产生；发电	generation%1:14:01::|generation%1:14:00::|generation%1:28:00::|generation%1:28:01::|generation%1:11:00::	
+generous	adjective=慷慨的；宽宏大量的；丰富的	generous%3:00:01::|generous%3:00:02::|generous%5:00:00:ample:00	
+genius	noun=天才；天赋；才智	genius%1:18:00::|genius%1:09:02::|genius%1:18:01::|genius%1:09:00::|genius%1:09:01::	
+gentle	adjective=温和的；和善的；轻柔的；驯服的	gentle%5:00:00:mild:00|gentle%5:00:01:kind:00|gentle%5:00:00:soft:04|gentle%5:00:00:tame:01	
+gentleman	noun=绅士；有教养的男士；先生	gentleman%1:18:00::	排除旧式男仆义项。
+genuine	adjective=真正的；真实的；真诚的	genuine%3:00:00::|genuine%5:00:00:sincere:00|genuine%5:00:00:true:00	
+geography	noun=地理学；地理	geography%1:09:00::	
+geometry	noun=几何学；几何	geometry%1:09:00::	
+German	adjective=德国的；德国人的；德语的|noun=德国人；德语	german%3:01:00::|german%1:18:00::|german%1:10:00::	
+Germany	proper_noun=德国		OEWN无候选释义；依据通用地名知识原创整理。
+get	verb=得到；获得；到达；变得；理解；使得	get%2:40:00::|get%2:30:00::|get%2:30:02::|get%2:30:03::	归纳基础英语中最常用的核心义项。
+gift	noun=礼物；赠品；天赋|verb=赠送；赋予	gift%1:21:00::|gift%1:09:00::|gift%1:04:00::|gift%2:41:00::|gift%2:40:00::	
+gifted	adjective=有天赋的；有才华的	gifted%3:00:00::	
+giraffe	noun=长颈鹿	giraffe%1:05:00::	
+girl	noun=女孩；姑娘；女儿；女朋友	girl%1:18:00::|girl%1:18:02::|girl%1:18:04::|girl%1:18:01::|girl%1:18:03::	采用中性、常用中文表述。

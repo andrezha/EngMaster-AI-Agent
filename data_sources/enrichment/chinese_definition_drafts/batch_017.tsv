@@ -1,0 +1,101 @@
+word	definitions	sense_ids	notes
+lucky	adjective=幸运的；带来好运的	lucky%5:00:00:fortunate:00|lucky%3:00:00::|lucky%5:00:00:propitious:00	
+lunar	adjective=月球的；月亮的；阴历的	lunar%3:01:00::	
+lunch	noun=午餐|verb=吃午餐；请……吃午餐	lunch%1:13:00::|lunch%2:34:00::|lunch%2:34:01::	
+lung	noun=肺；肺部	lung%1:08:00::	
+luxury	noun=奢侈；奢侈品；享受	luxury%1:07:00::|luxury%1:07:01::|luxury%1:26:00::	
+machine	noun=机器；机械装置；机构|verb=用机器加工	machine%1:06:00::|machine%1:18:00::|machine%1:14:01::|machine%1:06:02::	动词义依据基础英语常用义补充。
+mad	adjective=发疯的；生气的；狂热的；愚蠢的	mad%5:00:00:angry:00|mad%5:00:00:insane:00|mad%5:00:00:wild:02|mad%5:00:00:foolish:00	
+madam	noun=女士；夫人	madam%1:18:00::	排除贬义人物义项。
+magazine	noun=杂志；弹匣；仓库	magazine%1:10:00::|magazine%1:06:02::|magazine%1:14:00::|magazine%1:06:04::	
+magic	noun=魔法；魔术；魅力|adjective=有魔力的；神奇的	magic%5:00:00:supernatural:00|magic%1:09:00::|magic%1:04:01::	
+mail	noun=邮件；邮政|verb=邮寄；发送邮件	mail%1:10:01::|mail%1:10:00::|mail%1:06:01::|mail%1:14:00::	动词义依据名词核心语义补充。
+main	adjective=主要的；最重要的|noun=主要部分；总管道	main%5:00:00:important:00|main%3:00:02::|main%5:00:00:intense:00|main%1:17:00::	
+maintain	verb=维持；保养；坚持；供养	maintain%2:42:00::|maintain%2:40:00::|maintain%2:34:00::|maintain%2:32:00::	
+major	adjective=主要的；重大的；较多的|noun=专业；主修学生|verb=主修	major%3:00:06::|major%3:00:02::|major%3:00:01::|major%3:00:05::	名词和动词义依据基础英语常用义补充。
+majority	noun=大多数；多数票；成年	majority%1:07:00::|majority%1:23:00::|majority%1:28:00::	
+make	verb=制作；使得；成为；赚得|noun=品牌；样式	make%1:09:00::|make%1:04:00::|make%2:41:00::|make%2:30:00::	
+male	adjective=男性的；雄性的|noun=男子；雄性动物	male%3:00:00::|male%5:00:02:masculine:01|male%5:00:01:male:00|male%1:05:00::	
+man	noun=男人；人类；人员|verb=为……配备人员	man%1:18:00::|man%1:18:04::|man%1:05:01::|man%1:18:08::	动词义依据基础英语常用义补充。
+manage	verb=管理；设法做到；应付；经营	manage%2:41:09::|manage%2:41:00::|manage%2:41:03::|manage%2:41:01::	
+manager	noun=经理；管理者；经纪人	manager%1:18:00::|manager%1:18:01::	
+mankind	noun=人类	mankind%1:05:00::	
+manner	noun=方式；举止；礼貌；风格	manner%1:07:02::|manner%1:07:01::|manner%1:09:01::	
+many	determiner=许多的|pronoun=许多人或事物	many%3:00:00::	代词用法依据基础英语语法补充。
+map	noun=地图；图示|verb=绘制地图；映射	map%1:06:00::|map%1:24:00::|map%2:36:00::|map%2:31:01::	
+marathon	noun=马拉松赛；持久的活动	marathon%1:04:00::|marathon%1:11:00::	
+March	proper_noun=三月	march%1:28:00::	
+march	verb=行进；游行|noun=行军；游行；进展	march%1:04:00::|march%1:04:02::|march%1:14:00::|march%1:15:00::	
+mark	noun=标记；分数；痕迹；目标|verb=做标记；评分；纪念	mark%1:09:01::|mark%1:10:02::|mark%1:10:04::|mark%1:10:03::	动词义依据名词核心语义补充。
+market	noun=市场；集市；需求|verb=销售；推销	market%1:04:00::|market%1:14:00::|market%1:06:00::|market%1:14:01::	动词义依据基础英语常用义补充。
+marriage	noun=婚姻；结婚；结合	marriage%1:26:00::|marriage%1:14:00::|marriage%1:04:00::|marriage%1:26:01::	
+marry	verb=结婚；嫁；娶；使结合	marry%2:41:00::|marry%2:41:01::	
+mass	noun=大量；团；质量；群众|adjective=大规模的；群众的	mass%5:00:00:collective:00|mass%1:07:00::|mass%1:23:00::|mass%1:14:02::	
+massive	adjective=巨大的；大规模的；厚重的	massive%5:00:00:large:00|massive%5:00:00:solid:02|massive%5:00:02:large:00|massive%5:00:00:heavy:01	
+master	noun=主人；大师；硕士|verb=掌握；精通|adjective=主要的；精通的	master%5:00:00:important:00|master%1:18:00::|master%1:18:04::|master%1:18:01::	动词义依据基础英语常用义补充。
+match	noun=比赛；火柴；相配的人或物|verb=相配；匹配；比得上	match%1:06:00::|match%1:11:00::|match%1:06:02::|match%1:06:01::	动词义依据基础英语常用义补充。
+material	noun=材料；原料；资料|adjective=物质的；重要的	material%5:00:00:worldly:00|material%3:00:01::|material%3:00:02::|material%5:00:00:physical:00	名词义依据基础英语常用义补充。
+maths	noun=数学	maths%1:09:00::|mathematics%1:09:00::	英式简称。
+matter	noun=事情；问题；物质|verb=要紧；有关系	matter%1:09:01::|matter%1:09:00::|matter%1:03:00::|matter%1:09:02::	动词义依据基础英语常用义补充。
+mature	adjective=成熟的；成年的|verb=成熟；使成熟	mature%3:00:02::|mature%5:00:00:developed:00|mature%3:00:01::|mature%3:00:06::	动词义依据基础英语常用义补充。
+maximum	adjective=最大的；最高的|noun=最大值；最高限度	maximum%3:00:00::|maximum%1:23:00::|maximum%1:07:00::|maximum%1:15:00::	
+May	proper_noun=五月	may%1:28:00::	
+may	modal_verb=可以；可能；也许	may%1:20:00::	OEWN候选为同形植物义；情态动词义依据基础英语语法原创整理。
+maybe	adverb=也许；可能	maybe%4:02:00::	
+me	pronoun=我；我本人		OEWN无候选释义；依据基础英语人称代词用法原创整理。
+meal	noun=一餐；膳食；进餐时间	meal%1:13:00::|meal%1:28:00::|meal%1:13:01::	
+mean	verb=意思是；意味着；打算|adjective=吝啬的；刻薄的；平均的|noun=平均数	mean%5:00:00:normal:01|mean%5:00:00:nasty:00|mean%5:00:00:ignoble:01|mean%5:00:00:poor:03	动词和名词义依据基础英语常用义补充。
+meaning	noun=意思；含义；意义|adjective=有意义的	meaning%5:00:00:meaningful:00|meaning%1:10:00::|meaning%1:09:00::	
+means	noun=方法；手段；收入；工具	means%1:04:00::|means%1:21:00::|means%1:06:01::	
+measure	verb=测量；衡量|noun=措施；尺度；测量	measure%1:04:01::|measure%1:03:00::|measure%1:10:02::|measure%1:04:00::	动词义依据名词核心语义补充。
+meat	noun=肉；肉类；核心内容	meat%1:13:01::|meat%1:20:00::|meat%1:09:00::	
+mechanic	noun=机械师；修理工|adjective=机械的	mechanic%5:00:00:mechanical:00|mechanic%1:18:00::|mechanic%1:18:01::	
+medal	noun=奖牌；勋章	medal%1:10:00::	
+medical	adjective=医学的；医疗的|noun=体检	medical%3:01:00::|medical%3:00:00::|medical%3:01:02::|medical%1:04:00::	
+medicine	noun=医学；药；治疗方法	medicine%1:09:00::|medicine%1:06:00::|medicine%1:04:00::|medicine%1:04:02::	
+medium	adjective=中等的；适中的|noun=媒介；方法；介质	medium%5:00:00:moderate:00|medium%5:00:00:cooked:00|medium%1:10:01::|medium%1:15:01::	
+meet	verb=遇见；会面；满足|noun=运动会|adjective=合适的	meet%5:00:00:just:00|meet%1:11:00::|meet%2:38:01::|meet%2:41:01::	
+meeting	noun=会议；会面；集合	meeting%1:14:00::|meeting%1:14:01::|meeting%1:11:00::|meeting%1:04:00::	
+member	noun=成员；会员；构件	member%1:18:00::|member%1:24:00::|member%1:08:00::|member%1:14:00::	
+membership	noun=会员资格；成员；会员人数	membership%1:14:00::|membership%1:26:00::	
+memorial	noun=纪念物；纪念碑；纪念活动|adjective=纪念的	memorial%1:10:00::|memorial%1:10:01::|memorial%1:06:00::	形容词义依据名词核心语义补充。
+memory	noun=记忆；记忆力；回忆；存储器	memory%1:09:02::|memory%1:09:01::|memory%1:09:00::|memory%1:06:00::	
+mental	adjective=精神的；心理的；智力的	mental%3:00:00::|mental%3:01:00::|mental%3:01:03::|mental%3:01:04::	
+mention	verb=提到；说起|noun=提及；表扬	mention%1:10:01::|mention%1:10:02::|mention%1:10:00::|mention%2:32:02::	
+menu	noun=菜单；菜肴清单；选项单	menu%1:10:00::|menu%1:13:00::|menu%1:10:01::|menu%1:09:00::	
+mercy	noun=仁慈；宽恕；幸运	mercy%1:04:00::|mercy%1:07:00::|mercy%1:12:00::|mercy%1:26:00::	
+merely	adverb=仅仅；只不过	merely%4:02:00::	
+merry	adjective=愉快的；欢乐的；活跃的	merry%5:00:02:joyous:00|merry%5:00:01:joyous:00|merry%5:00:00:energetic:00	
+mess	noun=混乱；脏乱；困境|verb=弄乱；搞砸	mess%1:26:00::|mess%1:26:02::|mess%1:13:01::|mess%1:13:00::	动词义依据基础英语常用义补充。
+message	noun=消息；信息；要旨|verb=发消息	message%1:10:01::|message%1:10:00::|message%2:32:02::|message%2:32:01::	
+metal	noun=金属；金属材料|adjective=金属制的|verb=用金属覆盖	metal%3:00:00::|metal%1:27:00::|metal%1:27:01::|metal%2:35:00::	
+method	noun=方法；办法；条理	method%1:09:00::|method%1:04:00::	
+metre	noun=米；公尺；韵律	metre%1:23:00::|metre%1:10:00::|metre%1:07:00::|meter%1:23:00::	英式拼写。
+microscope	noun=显微镜	microscope%1:06:00::	
+middle	noun=中间；中央|adjective=中部的；中等的	middle%5:00:00:intermediate:00|middle%5:00:01:central:01|middle%3:00:01::|middle%3:00:00::	名词义依据形容词核心语义补充。
+midnight	noun=午夜；半夜十二点	midnight%1:28:00::	
+might	modal_verb=可能；也许|noun=力量；威力	might%1:07:00::	情态动词义依据基础英语语法补充。
+mild	adjective=温和的；轻微的；暖和的	mild%3:00:00::|mild%5:00:00:humble:00|mild%5:00:00:clement:02	
+mile	noun=英里；很长的距离	mile%1:23:01::|mile%1:23:04::|mile%1:23:07::|mile%1:23:05::	
+military	adjective=军事的；军队的|noun=军队；军方	military%3:01:00::|military%3:00:02::|military%3:00:01::|military%1:14:00::	
+milk	noun=奶；乳汁|verb=挤奶；榨取	milk%1:13:01::|milk%1:08:00::|milk%1:13:02::|milk%2:30:00::	
+millimetre	noun=毫米	millimetre%1:23:00::|millimeter%1:23:00::	英式拼写。
+million	numeral=一百万；许多|noun=一百万个	million%5:00:00:cardinal:00|million%1:23:00::|million%1:23:01::	
+mind	noun=头脑；思想；注意|verb=介意；照料；留心	mind%1:09:00::|mind%1:09:01::|mind%1:09:04::|mind%1:18:00::	动词义依据基础英语常用义补充。
+mine	pronoun=我的东西|noun=矿；矿井；地雷|verb=开采	mine%1:06:01::|mine%1:06:00::|mine%2:34:00::|mine%2:33:00::	代词义依据基础英语物主代词用法补充。
+mineral	noun=矿物；矿物质|adjective=矿物的；无机的	mineral%3:01:01::|mineral%5:00:00:inorganic:02|mineral%1:27:00::	
+minimum	adjective=最小的；最低的|noun=最低限度；最小值	minimum%3:00:00::|minimum%1:23:00::|minimum%1:15:00::	
+minister	noun=部长；大臣；牧师|verb=照料；服侍	minister%1:18:00::|minister%1:18:02::|minister%1:18:01::|minister%1:04:00::	
+minor	adjective=较小的；次要的；未成年的|noun=未成年人；辅修科目	minor%3:00:06::|minor%3:00:02::|minor%3:00:01::|minor%3:00:04::	名词义依据基础英语常用义补充。
+minority	noun=少数；少数群体；未成年	minority%1:14:00::|minority%1:07:00::|minority%1:28:00::	
+minute	noun=分钟；片刻；会议记录|adjective=微小的；细致的	minute%5:00:00:small:00|minute%5:00:00:careful:00|minute%1:28:00::|minute%1:28:01::	
+mirror	noun=镜子；反映|verb=反映；映照	mirror%1:06:00::|mirror%1:09:00::|mirror%2:43:00::|mirror%2:32:00::	
+Miss	title=小姐；女士	miss%1:10:00::	称谓用法，保留大小写区别。
+miss	verb=错过；想念；未击中|noun=未击中；失败	miss%1:18:00::|miss%1:11:00::|miss%2:39:00::|miss%2:37:00::	
+missile	noun=导弹；投射物	missile%1:06:01::|missile%1:06:00::	
+missing	adjective=丢失的；失踪的；缺少的	missing%5:00:00:lost:01|missing%5:00:00:nonexistent:00	
+mission	noun=任务；使命；代表团；传教活动	mission%1:14:01::|mission%1:04:01::|mission%1:04:00::|mission%1:04:02::	
+mist	noun=薄雾；水汽|verb=蒙上薄雾；喷雾	mist%1:19:00::|mist%2:30:00::|mist%2:39:00::|mist%2:35:00::	
+mistake	noun=错误；误解|verb=误解；弄错	mistake%1:04:00::|mistake%1:09:00::|mistake%1:10:00::|mistake%2:31:02::	
+mix	verb=混合；调配；交往|noun=混合物；混合	mix%1:13:00::|mix%1:11:00::|mix%1:04:00::|mix%2:30:00::	
+mixture	noun=混合物；混合；混合体	mixture%1:27:00::|mixture%1:13:00::|mixture%1:14:00::|mixture%1:11:00::	
