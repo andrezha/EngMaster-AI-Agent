@@ -2285,6 +2285,10 @@
     },
     {
         "word": "café",
+        "accepted_answers": [
+            "cafe",
+            "café"
+        ],
         "content": "[ˈkæfeɪ; (US) kæˈfeɪ] n. 咖啡馆； 餐馆"
     },
     {

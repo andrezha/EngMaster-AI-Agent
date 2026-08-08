@@ -952,10 +952,10 @@ class VocabManager(QObject):  # 继承自 QObject
                 correct_count = self.mistake_vocabulary[i]["correct_count"]
                 print(
                     f"⬆️ 错词 '{word_obj['word']}' 正确计数: {correct_count}")
-                removed = correct_count >= 3
+                removed = correct_count >= 1
                 if removed:
                     del self.mistake_vocabulary[i]  # 移除单词
-                    print(f"🗑️ 错词 '{word_obj['word']}' 已从错词表移除 (正确3次)。")
+                    print(f"🗑️ 错词 '{word_obj['word']}' 已从错词表移除 (正确1次)。")
                 self._save_mistake_vocabulary()
                 self._update_mistake_count_label()
                 return correct_count, removed
@@ -1331,10 +1331,10 @@ class VocabManager(QObject):  # 继承自 QObject
                 feedback_text = "已纠正。本题的错词记录继续保留。"
             elif self.current_challenge_mode == "mistake_list":
                 if removed_from_mistake_list:
-                    feedback_text = "回答正确。连续 3 次答对，已从单词错词表删除。"
+                    feedback_text = "回答正确。已从单词错词表删除。"
                 else:
                     feedback_text = (
-                        f"回答正确。连续答对 {mistake_correct_count} / 3 次。"
+                        f"回答正确。当前已答对 {mistake_correct_count} 次。"
                     )
             self._show_current_answer_feedback(feedback_text)
 

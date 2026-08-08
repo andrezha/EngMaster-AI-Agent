@@ -52,16 +52,16 @@ class PurchaseActivationPanel(QtWidgets.QFrame):
                 "border-radius:8px; padding:9px 11px; font-size:13px; font-weight:600;")
             layout.addWidget(upgrade_notice)
 
-        layout.addWidget(self._step_label("1", "粘贴已付款的淘宝订单号（必填）"))
+        layout.addWidget(self._step_label(
+            "1", "填写订单号（必填；淘宝订单号或客服提供的登记号）"))
         order_row = QtWidgets.QHBoxLayout()
         order_row.setSpacing(8)
         self.order_input = QtWidgets.QLineEdit()
         self.order_input.setObjectName("purchase_order_number")
-        self.order_input.setPlaceholderText("请粘贴淘宝订单号")
+        self.order_input.setPlaceholderText("请输入淘宝订单号或客服提供的登记号")
         self.order_input.setClearButtonEnabled(True)
-        self.order_input.setMaxLength(32)
         self.order_input.setMinimumHeight(38)
-        self.order_input.setToolTip("订单号用于客服核对买家、付款状态和购买版本")
+        self.order_input.setToolTip("用于客户与客服登记和核对，可填写淘宝订单号或客服提供的数字编号")
         self.paste_order_button = QtWidgets.QPushButton("粘贴订单号")
         self.paste_order_button.setObjectName("btn_paste_purchase_order")
         self.paste_order_button.setMinimumHeight(38)
@@ -130,7 +130,7 @@ class PurchaseActivationPanel(QtWidgets.QFrame):
         layout.addLayout(consent_row)
 
         self.status_label = QtWidgets.QLabel(
-            "先填写淘宝订单号，再生成并复制客服核验信息。发送时还需附上订单卡片，客服将核对付款状态和商品规格。")
+            "订单号必填。普通买家填写淘宝订单号；朋友或测试人员可填写客服提供的登记号。")
         self.status_label.setObjectName("purchase_flow_status")
         self.status_label.setWordWrap(True)
         self.status_label.setStyleSheet(
@@ -150,20 +150,21 @@ class PurchaseActivationPanel(QtWidgets.QFrame):
         if order_number is None:
             return
         if not order_number:
-            self._show_error("请先粘贴已付款的淘宝订单号，再生成并复制客服核验信息。")
+            QtWidgets.QApplication.clipboard().clear()
+            message = "请先填写淘宝订单号或客服提供的登记号，再生成客服核验信息。"
+            self._show_error(message)
+            QtWidgets.QMessageBox.warning(self, "缺少订单号", message)
             self.order_input.setFocus()
             return
         customer_info = (
             "EngMaster客服核验信息\n"
-            f"淘宝订单号：{order_number}\n"
+            f"订单号：{order_number}\n"
             f"本机识别码：{self.machine_input.text()}\n"
-            "请核对我发送的淘宝订单卡片、付款状态和商品规格，"
-            "并按该订单规格生成对应的累计激活码。"
+            "请按此订单号核对对应登记记录和授权用途，并生成相应的累计激活码。"
         )
         QtWidgets.QApplication.clipboard().setText(customer_info)
         self.status_label.setText(
-            "客服信息已复制。请从已付款的对应淘宝订单联系卖家，并同时发送订单卡片；"
-            "不要只从店铺首页发送机器码。")
+            "客服信息已复制。请发送给对应客服，以便按订单号核对登记记录。")
         self.status_label.setStyleSheet(
             "border:none; color:#166534; background:#f0fdf4; "
             "border-radius:7px; padding:8px 10px; font-size:13px;")
@@ -174,13 +175,9 @@ class PurchaseActivationPanel(QtWidgets.QFrame):
         self.order_input.setFocus()
 
     def _normalized_order_number(self):
-        value = "".join(self.order_input.text().split())
+        value = self.order_input.text().strip()
         if not value:
             return ""
-        if not value.isascii() or not value.isdigit() or not 8 <= len(value) <= 32:
-            self._show_error("淘宝订单号格式不正确，请复制订单详情中的数字订单号。")
-            self.order_input.setFocus()
-            return None
         self.order_input.setText(value)
         return value
 

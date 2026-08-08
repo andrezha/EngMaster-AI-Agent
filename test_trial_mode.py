@@ -13,6 +13,7 @@ os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 from PySide6 import QtCore, QtWidgets
 
 import main
+import purchase_activation_panel
 import purchase_config
 from edition_config import (
     EDITIONS,
@@ -252,20 +253,33 @@ class TrialModeTests(unittest.TestCase):
             QtWidgets.QPushButton, "btn_copy_purchase_machine_id")
         original_clipboard = "UNCHANGED-WITHOUT-ORDER"
         QtWidgets.QApplication.clipboard().setText(original_clipboard)
-        copy_button.click()
-        self.assertEqual(
-            QtWidgets.QApplication.clipboard().text(), original_clipboard)
-        self.assertIn("请先粘贴", view.findChild(
+        with mock.patch.object(
+                purchase_activation_panel.QtWidgets.QMessageBox,
+                "warning") as missing_order_warning:
+            copy_button.click()
+        missing_order_warning.assert_called_once()
+        self.assertEqual(missing_order_warning.call_args.args[1], "缺少订单号")
+        self.assertEqual(QtWidgets.QApplication.clipboard().text(), "")
+        self.assertIn("请先填写", view.findChild(
             QtWidgets.QLabel, "purchase_flow_status").text())
+        order_input.setText("000001")
+        copy_button.click()
+        special_order_info = QtWidgets.QApplication.clipboard().text()
+        self.assertIn("订单号：000001", special_order_info)
+        self.assertIn("登记记录", special_order_info)
+        order_input.setText(" 客服-TEST/001 ")
+        copy_button.click()
+        self.assertIn(
+            "订单号：客服-TEST/001",
+            QtWidgets.QApplication.clipboard().text())
         order_input.setText(" 1234 5678 9012 3456 ")
         copy_button.click()
         copied = QtWidgets.QApplication.clipboard().text()
         self.assertNotIn("意向版本", copied)
-        self.assertIn("淘宝订单号：1234567890123456", copied)
+        self.assertIn("订单号：1234 5678 9012 3456", copied)
         self.assertIn("本机识别码：EMPC3-TEST-MACHINE", copied)
-        self.assertIn("订单卡片", copied)
-        self.assertIn("付款状态", copied)
-        self.assertIn("商品规格", copied)
+        self.assertIn("登记记录", copied)
+        self.assertIn("授权用途", copied)
         view.findChild(
             QtWidgets.QLineEdit, "purchase_activation_code").setText("EM3-TEST")
         view.findChild(

@@ -1,7 +1,9 @@
 # EngMaster shared path helpers
-import re
-import sys
+import json
 import os
+import re
+import shutil
+import sys
 
 def _normalize_full_width_to_half_width(text):
     """
@@ -139,6 +141,75 @@ def set_active_edition(edition_id):
 
 def get_active_edition():
     return _ACTIVE_EDITION_ID
+
+
+def import_legacy_data_to_current_app(source_dir, target_dir=None, keep_only_unanswered=False):
+    """
+    Import data from an older EngMaster installation into the current writable data folder.
+
+    Parameters
+    ----------
+    source_dir: str
+        Folder containing legacy data files such as mistake_words.json.
+    target_dir: str | None
+        Destination folder. If omitted, the current app data folder is used.
+    keep_only_unanswered: bool
+        When True, filter mistake_words.json so only entries with correct_count <= 0
+        are retained. This is useful when you want to keep only words that have never
+        been answered correctly in the old program.
+    """
+    source_dir = os.path.abspath(source_dir)
+    if target_dir is None:
+        target_dir = os.path.dirname(get_writable_data_path("mistake_words.json"))
+    else:
+        target_dir = os.path.abspath(target_dir)
+
+    os.makedirs(target_dir, exist_ok=True)
+
+    summary = {}
+    files_to_copy = [
+        "mistake_words.json",
+        "challenge_round_progress.json",
+        "challenge_learning_records.json",
+        "user_registered_vocab.json",
+    ]
+
+    for filename in files_to_copy:
+        source_path = os.path.join(source_dir, filename)
+        target_path = os.path.join(target_dir, filename)
+        if not os.path.exists(source_path):
+            summary[filename] = {"status": "skipped", "reason": "source_missing"}
+            continue
+
+        if filename == "mistake_words.json" and keep_only_unanswered:
+            with open(source_path, "r", encoding="utf-8") as handle:
+                raw_records = json.load(handle)
+
+            filtered_records = []
+            for record in raw_records or []:
+                if not isinstance(record, dict):
+                    continue
+                try:
+                    correct_count = int(record.get("correct_count", 0))
+                except (TypeError, ValueError):
+                    correct_count = 0
+                if correct_count <= 0:
+                    filtered_records.append(record)
+
+            with open(target_path, "w", encoding="utf-8") as handle:
+                json.dump(filtered_records, handle, ensure_ascii=False, indent=2)
+
+            summary[filename] = {
+                "status": "imported",
+                "source_count": len(raw_records or []),
+                "kept_count": len(filtered_records),
+                "filtered_out_count": len(raw_records or []) - len(filtered_records),
+            }
+        else:
+            shutil.copy2(source_path, target_path)
+            summary[filename] = {"status": "imported", "path": target_path}
+
+    return summary
 
 
 def get_writable_data_path(filename):

@@ -848,7 +848,7 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
             if key_func(mistake) == key:
                 mistake["correct_count"] = int(mistake.get("correct_count", 0)) + 1
                 correct_count = mistake["correct_count"]
-                removed = correct_count >= 3
+                removed = correct_count >= 1
                 if removed:
                     del data[index]
                 self._save_mistake_json(save_path, data)

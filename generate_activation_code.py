@@ -4,6 +4,9 @@ import datetime
 import hashlib
 import json
 import os
+import re
+import secrets
+import sys
 from pathlib import Path
 
 from cryptography.hazmat.primitives.serialization import load_pem_private_key
@@ -13,6 +16,89 @@ PRODUCT_ID = "engmaster-vocabulary-platform"
 FORMAL_EDITION_IDS = ("zhongkao", "gaokao", "cet4", "cet6", "kaoyan")
 RELEASED_EDITION_IDS = ("gaokao",)
 DEFAULT_PRIVATE_KEY_PATH = os.getenv("LICENSE_PRIVATE_KEY_PATH", "").strip()
+DEFAULT_ORDER_REGISTRY_PATH = Path(os.getenv(
+    "ENGMASTER_ORDER_REGISTRY",
+    str(Path(__file__).resolve().parent / ".license_generator_work" /
+        "internal_orders.json"),
+))
+
+
+def normalize_order_number(value: str) -> str:
+    order_number = str(value or "").strip()
+    if not order_number:
+        raise ValueError("订单号不能为空。")
+    return order_number
+
+
+def _load_order_registry(registry_path: Path) -> list:
+    if not registry_path.exists():
+        return []
+    data = json.loads(registry_path.read_text(encoding="utf-8"))
+    if not isinstance(data, list):
+        raise ValueError("内部订单登记文件格式错误。")
+    return data
+
+
+def _write_order_registry(registry_path: Path, orders: list):
+    registry_path.parent.mkdir(parents=True, exist_ok=True)
+    temporary_path = registry_path.with_suffix(registry_path.suffix + ".tmp")
+    temporary_path.write_text(
+        json.dumps(orders, ensure_ascii=False, indent=2), encoding="utf-8")
+    temporary_path.replace(registry_path)
+
+
+def create_internal_order(order_type: str, note: str, registry_path: Path) -> dict:
+    normalized_type = re.sub(r"[^A-Z0-9]", "", str(order_type).upper())
+    if not 2 <= len(normalized_type) <= 12:
+        raise ValueError("内部订单类型需为2至12位英文字母或数字，例如 TEST、FRIEND。")
+    now = datetime.datetime.now(datetime.timezone.utc)
+    orders = _load_order_registry(registry_path)
+    existing_numbers = {
+        str(item.get("order_number", "")) for item in orders
+        if isinstance(item, dict)}
+    while True:
+        suffix = f"{secrets.randbelow(1_000_000):06d}"
+        order_number = f"{now:%Y%m%d%H%M%S}{suffix}"
+        if order_number not in existing_numbers:
+            break
+    record = {
+        "order_number": order_number,
+        "order_type": normalized_type,
+        "note": str(note or "").strip(),
+        "status": "issued",
+        "created_at": now.isoformat(timespec="seconds"),
+        "activation_count": 0,
+    }
+    orders.append(record)
+    _write_order_registry(registry_path, orders)
+    return record
+
+
+def find_internal_order(order_number: str, registry_path: Path):
+    normalized = normalize_order_number(order_number)
+    for record in _load_order_registry(registry_path):
+        if (isinstance(record, dict) and
+                str(record.get("order_number", "")).upper() == normalized):
+            return record
+    return None
+
+
+def record_internal_order_activation(
+        order_number: str, machine_id: str, entitlements, registry_path: Path):
+    orders = _load_order_registry(registry_path)
+    normalized = normalize_order_number(order_number)
+    for record in orders:
+        if (isinstance(record, dict) and
+                str(record.get("order_number", "")).upper() == normalized):
+            record["status"] = "activation_generated"
+            record["activation_count"] = int(record.get("activation_count", 0)) + 1
+            record["last_machine_id"] = machine_id.strip().upper()
+            record["last_entitlements"] = list(entitlements)
+            record["last_activation_at"] = datetime.datetime.now(
+                datetime.timezone.utc).isoformat(timespec="seconds")
+            _write_order_registry(registry_path, orders)
+            return
+    raise ValueError("内部订单号不存在于客服登记文件中。")
 
 
 def get_machine_id():
@@ -38,7 +124,9 @@ def make_em2_code(machine_id: str, private_key_path: Path) -> str:
     return "EM2-" + base64.urlsafe_b64encode(sig_bytes).decode("ascii").rstrip("=")
 
 
-def make_em3_code(machine_id: str, entitlements, private_key_path: Path) -> str:
+def make_em3_code(
+        machine_id: str, entitlements, private_key_path: Path,
+        order_number: str = "") -> str:
     machine_id = machine_id.strip().upper().replace(" ", "")
     requested = {
         item.strip().lower()
@@ -65,6 +153,8 @@ def make_em3_code(machine_id: str, entitlements, private_key_path: Path) -> str:
         "issued_at": datetime.datetime.now(
             datetime.timezone.utc).isoformat(timespec="seconds"),
     }
+    if order_number:
+        payload["order_number"] = normalize_order_number(order_number)
     payload_bytes = json.dumps(
         payload, ensure_ascii=False, sort_keys=True,
         separators=(",", ":")).encode("utf-8")
@@ -115,11 +205,58 @@ def parse_args():
         action="store_true",
         help="Print the public key numbers that must match the client app.",
     )
+    parser.add_argument(
+        "--create-internal-order",
+        metavar="TYPE",
+        help="Create and register a support order, e.g. TEST or FRIEND.",
+    )
+    parser.add_argument(
+        "--order-note",
+        default="",
+        help="Internal note saved with a newly created EMO order.",
+    )
+    parser.add_argument(
+        "--list-internal-orders",
+        action="store_true",
+        help="List internal orders from the private support registry.",
+    )
+    parser.add_argument(
+        "--order-registry",
+        default=str(DEFAULT_ORDER_REGISTRY_PATH),
+        help="Private JSON registry used by support for internal orders.",
+    )
+    parser.add_argument(
+        "--order-number",
+        default="",
+        help="Taobao or support-provided order number to sign into EM3.",
+    )
     return parser.parse_args()
 
 
 def main():
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     args = parse_args()
+    registry_path = Path(args.order_registry)
+    if args.create_internal_order:
+        record = create_internal_order(
+            args.create_internal_order, args.order_note, registry_path)
+        print("internal_order_number=", record["order_number"])
+        print("registry=", registry_path.resolve())
+        return
+    if args.list_internal_orders:
+        orders = _load_order_registry(registry_path)
+        if not orders:
+            print("No internal orders found.")
+            return
+        for record in orders:
+            print(
+                record.get("order_number", ""),
+                record.get("status", ""),
+                record.get("note", ""),
+            )
+        print("registry=", registry_path.resolve())
+        return
     if not args.private_key:
         raise SystemExit("请用 --private-key 指定 private.pem，或先设置 LICENSE_PRIVATE_KEY_PATH 环境变量。")
     private_key_path = Path(args.private_key)
@@ -135,10 +272,22 @@ def main():
         raise SystemExit("请传入客户机器码；如需给本机测试，请使用 --local。")
 
     print("machine_id=", machine_id.strip().upper())
+    order_number = normalize_order_number(args.order_number) if args.order_number else ""
+    internal_order = (
+        find_internal_order(order_number, registry_path) if order_number else None)
     if args.legacy_em2:
+        if order_number:
+            raise SystemExit("旧版 EM2 不能记录订单号，请生成 EM3 激活码。")
         code = make_em2_code(machine_id, private_key_path)
     else:
-        code = make_em3_code(machine_id, args.editions, private_key_path)
+        code = make_em3_code(
+            machine_id, args.editions, private_key_path,
+            order_number=order_number)
+        if internal_order:
+            record_internal_order_activation(
+                order_number, machine_id, args.editions, registry_path)
+    if order_number:
+        print("order_number=", order_number)
     print("activation_code=", code)
 
 

@@ -95,6 +95,8 @@ class EditionConfigTests(unittest.TestCase):
         self.assertFalse({"burst", "steal", "swing"} & infinitives)
 
     def test_advanced_editions_use_independent_phrase_and_irregular_files(self):
+        master_rows = json.loads(
+            (ROOT / "assets" / "short_phrase.json").read_text(encoding="utf-8"))
         phrase_paths = {
             EDITIONS[edition_id].phrase_path
             for edition_id in ("gaokao", "cet4", "cet6", "kaoyan")
@@ -108,13 +110,14 @@ class EditionConfigTests(unittest.TestCase):
         for edition_id in ("gaokao", "cet4", "cet6", "kaoyan"):
             rows = json.loads(
                 (ROOT / EDITIONS[edition_id].phrase_path).read_text(encoding="utf-8"))
-            self.assertEqual(len(rows), 571)
+            self.assertEqual(len(rows), len(master_rows))
             self.assertEqual(
                 sum(row.get("tier") == "core" for row in rows), 350)
             self.assertEqual(
                 sum(row.get("tier") == "extension" for row in rows), 150)
             self.assertEqual(
-                sum(row.get("tier") == "candidate" for row in rows), 71)
+                sum(row.get("tier") == "candidate" for row in rows),
+                max(0, len(master_rows) - 500))
 
     def test_development_vocabulary_files_exist_and_have_expected_counts(self):
         expected_counts = {
