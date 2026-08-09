@@ -1,0 +1,51 @@
+record_id	phrase	meaning_zh	usage_note_zh	example_en	example_zh	content_method	qa_status	human_review_claimed
+PH-C6-0001	in the midst	在……之中；正当某事进行时	通常与 of 连用，表示处于某个地方、群体或过程的中间。	The company changed its strategy in the midst of a financial crisis.	这家公司在金融危机期间改变了战略。	original_project_authored	draft_auto_validated	false
+PH-C6-0002	in vogue	流行的；时髦的	通常作表语，表示某种风格、观念或做法在当前广受欢迎。	Minimalist design is once again in vogue.	极简设计再次流行起来。	original_project_authored	draft_auto_validated	false
+PH-C6-0003	at first blush	乍一看；最初看来	表示尚未仔细研究时形成的第一印象，语气较书面。	At first blush, the proposal seems fair to everyone.	乍一看，这项提议似乎对所有人都公平。	original_project_authored	draft_auto_validated	false
+PH-C6-0004	in effect	实际上；生效中	可说明实际结果，也可表示法律、规则或制度正在有效实施。	The new rule is already in effect across the organization.	这项新规定已经在整个组织内生效。	original_project_authored	draft_auto_validated	false
+PH-C6-0005	in private	私下地；非公开地	表示没有公众或无关人员在场时进行谈话或活动。	The two leaders continued their discussion in private.	两位领导人私下继续讨论。	original_project_authored	draft_auto_validated	false
+PH-C6-0006	in truth	事实上；的确	较书面地用于强调真实情况，尤其当它与表象或说法不同。	In truth, the apparent success depended on years of preparation.	事实上，表面上的成功依靠的是多年的准备。	original_project_authored	draft_auto_validated	false
+PH-C6-0007	to be sure	诚然；无可否认	用于承认某一点成立，后文常补充限制或不同看法。	To be sure, the plan is ambitious, but it is not impossible.	诚然，这项计划雄心勃勃，但并非不可能。	original_project_authored	draft_auto_validated	false
+PH-C6-0008	at large	在逃；总体而言；自由活动	含义随语境变化，可指未被捕获，也可指整个社会或群体。	The report examines the effects of automation on society at large.	这份报告考察自动化对整个社会的影响。	original_project_authored	draft_auto_validated	false
+PH-C6-0009	at will	任意地；随意地	表示能够在任何想要的时候自由行动或改变。	Authorized users can adjust the settings at will.	获授权的用户可以随意调整设置。	original_project_authored	draft_auto_validated	false
+PH-C6-0010	at worst	在最坏的情况下	用于说明可能出现的最不利结果。	At worst, the delay will add two days to the journey.	最坏的情况下，延误会使行程增加两天。	original_project_authored	draft_auto_validated	false
+PH-C6-0011	all in all	总的来说	用于综合考虑各方面后作出总体评价。	All in all, the experiment produced more useful data than expected.	总的来说，这次实验产生的有用数据比预期更多。	original_project_authored	draft_auto_validated	false
+PH-C6-0012	all of a sudden	突然	表示事情出乎意料地迅速发生。	All of a sudden, the lights went out and the room fell silent.	突然，灯熄灭了，房间安静下来。	original_project_authored	draft_auto_validated	false
+PH-C6-0013	not to mention	更不用说；还不算	用于补充一个使前述观点更明显或更有说服力的事实。	The route is long and steep, not to mention dangerous after dark.	这条路线又长又陡，更不用说天黑后还很危险。	original_project_authored	draft_auto_validated	false
+PH-C6-0014	pretty much	几乎；差不多	非正式表达，表示程度接近完全或情况大体如此。	The repairs are pretty much complete, apart from some painting.	除了部分粉刷工作，维修已经差不多完成了。	original_project_authored	draft_auto_validated	false
+PH-C6-0015	that is to say	也就是说	用于用更清楚或更准确的话重新解释前面的内容。	The material is biodegradable; that is to say, it can break down naturally.	这种材料可生物降解，也就是说，它能自然分解。	original_project_authored	draft_auto_validated	false
+PH-C6-0016	for the most part	大体上；在大多数情况下	表示陈述对绝大部分情况成立，但可能存在例外。	For the most part, the two studies reached similar conclusions.	总体而言，这两项研究得出了相似结论。	original_project_authored	draft_auto_validated	false
+PH-C6-0017	as yet	到目前为止；迄今	多用于否定句或疑问句，表示截至现在某事尚未发生。	No reliable explanation has emerged as yet.	到目前为止尚未出现可靠的解释。	original_project_authored	draft_auto_validated	false
+PH-C6-0018	by nature	天生；本质上	表示某种特点是天然具有的，而非后来形成或暂时出现。	The material is flexible by nature but becomes hard in cold weather.	这种材料本身具有柔韧性，但在寒冷天气中会变硬。	original_project_authored	draft_auto_validated	false
+PH-C6-0019	on average	平均而言	用于给出一组数值或情况的平均结果，不代表每个个体都相同。	The journey takes forty minutes on average.	这段行程平均需要四十分钟。	original_project_authored	draft_auto_validated	false
+PH-C6-0020	to date	迄今为止	通常与现在完成时连用，说明从过去到当前时点的累计情况。	This is the largest survey conducted to date.	这是迄今开展的最大规模调查。	original_project_authored	draft_auto_validated	false
+PH-C6-0021	for good	永久地；一劳永逸地	表示某种状态或行动不会再改变或恢复。	The factory closed for good after its final order was completed.	完成最后一笔订单后，这家工厂永久关闭了。	original_project_authored	draft_auto_validated	false
+PH-C6-0022	let alone	更不用说	用于否定或限制性陈述后，强调后一件事更加不可能或更困难。	The shelter lacks basic heating, let alone modern medical equipment.	这个避难所连基本供暖都没有，更不用说现代医疗设备了。	original_project_authored	draft_auto_validated	false
+PH-C6-0023	on the side	作为兼职；另外；在一旁	可表示在主要工作之外进行，也可表示额外提供或放在旁边。	She translates technical articles on the side.	她兼职翻译技术文章。	original_project_authored	draft_auto_validated	false
+PH-C6-0024	to the contrary	相反地；与此相反	常用于 evidence to the contrary，表示与前述说法相矛盾。	Despite claims to the contrary, the lake has not fully recovered.	尽管有相反说法，这座湖泊尚未完全恢复。	original_project_authored	draft_auto_validated	false
+PH-C6-0025	head on	迎面地；正面地	作副词时常写作 head-on 或 head on，表示直接面对冲突、问题或撞击。	The committee decided to address the controversy head on.	委员会决定正面处理这场争议。	original_project_authored	draft_auto_validated	false
+PH-C6-0026	on paper	在纸面上；理论上	可按字面表示书面记录，也可指方案理论上可行但实际情况未必如此。	The system looks efficient on paper but is difficult to operate.	这个系统在纸面上看起来高效，实际却很难操作。	original_project_authored	draft_auto_validated	false
+PH-C6-0027	by chance	偶然；碰巧	表示某事没有预先安排或明确原因而发生。	We discovered the error by chance while checking another file.	我们检查另一个文件时偶然发现了这个错误。	original_project_authored	draft_auto_validated	false
+PH-C6-0028	deep down	内心深处；实际上	表示某人隐藏在表面态度之下的真实感受或认识。	Deep down, he knew that the decision had been unfair.	在内心深处，他知道这个决定并不公平。	original_project_authored	draft_auto_validated	false
+PH-C6-0029	even so	即便如此	用于承认前述情况后，指出结果或观点仍然没有改变。	The evidence is limited; even so, it deserves careful examination.	证据有限；即便如此，仍值得认真研究。	original_project_authored	draft_auto_validated	false
+PH-C6-0030	for certain	肯定地；确切地	表示对事实有把握，常用于 know 或 say 等动词后。	We cannot know for certain how the ancient structure was built.	我们无法确切知道这座古代建筑是如何建造的。	original_project_authored	draft_auto_validated	false
+PH-C6-0031	for the moment	目前；暂时	表示情况在当前时点成立，但以后可能改变。	For the moment, the damaged road remains closed.	目前，受损道路仍然封闭。	original_project_authored	draft_auto_validated	false
+PH-C6-0032	high and low	到处；四面八方	常与 search 或 look 连用，强调在许多地方彻底寻找。	We searched high and low for the missing document.	我们到处寻找那份丢失的文件。	original_project_authored	draft_auto_validated	false
+PH-C6-0033	in concert	共同；协同	常与 with 连用，表示个人或组织协调行动；也可按字面指在音乐会上。	Several agencies worked in concert to restore essential services.	多个机构协同工作，恢复基本服务。	original_project_authored	draft_auto_validated	false
+PH-C6-0034	in any case	无论如何；不管怎样	表示无论其他情况如何，某个结论或行动仍然成立。	In any case, the data should be backed up before the upgrade.	无论如何，升级前都应该备份数据。	original_project_authored	draft_auto_validated	false
+PH-C6-0035	in the least	丝毫；一点	通常用于否定句或疑问句，加强任何微小程度都不存在的含义。	The unexpected question did not trouble her in the least.	这个意外问题一点也没有难住她。	original_project_authored	draft_auto_validated	false
+PH-C6-0036	inside out	里面朝外；彻底地	可表示衣物内外翻转，也可比喻对某事了解得非常透彻。	The sudden wind turned my umbrella inside out.	一阵突如其来的风把我的伞吹翻了。	original_project_authored	draft_auto_validated	false
+PH-C6-0037	off and on	断断续续地；偶尔	表示某事在一段时间内时而发生、时而停止。	It rained off and on throughout the afternoon.	整个下午雨断断续续地下。	original_project_authored	draft_auto_validated	false
+PH-C6-0038	once in a while	偶尔	表示某事间隔较长时间发生一次。	Even experts make simple mistakes once in a while.	即使专家偶尔也会犯简单错误。	original_project_authored	draft_auto_validated	false
+PH-C6-0039	out of the way	偏僻；不挡路；处理完毕	可表示位置偏远、移开障碍，或困难任务已经解决。	The village is beautiful but rather out of the way.	这个村庄很美，但位置相当偏僻。	original_project_authored	draft_auto_validated	false
+PH-C6-0040	day after day	日复一日	强调同一事情连续多日反复发生，有时暗示单调或坚持。	The researchers recorded temperature changes day after day.	研究人员日复一日地记录温度变化。	original_project_authored	draft_auto_validated	false
+PH-C6-0041	again and again	一再；反复地	强调同一动作或情况发生很多次。	The same warning appeared again and again in the records.	同一条警告在记录中反复出现。	original_project_authored	draft_auto_validated	false
+PH-C6-0042	at long last	终于；经过很久以后	强调在长时间等待、努力或延误之后某事终于发生。	At long last, the two sides reached an agreement.	经过漫长等待，双方终于达成协议。	original_project_authored	draft_auto_validated	false
+PH-C6-0043	at best	充其量；最好的情况下	表示即使按最乐观估计，结果也只能达到某个有限程度。	The repairs will take a week at best.	即使在最好的情况下，维修也需要一周。	original_project_authored	draft_auto_validated	false
+PH-C6-0044	by far	远远；显然	用于比较级或最高级前后，加强差距很大的含义。	This is by far the most detailed map of the region.	这是目前这一区域最详尽的地图。	original_project_authored	draft_auto_validated	false
+PH-C6-0045	in full	全部；完整地	表示没有删减、折扣或遗漏，常与 pay、publish、describe 等动词连用。	The interview will be published in full next week.	这篇访谈将于下周全文发表。	original_project_authored	draft_auto_validated	false
+PH-C6-0046	under way	正在进行中	通常作表语或状语；underway 也常见，尤其作定语时。	A major review of the safety rules is now under way.	对安全规定的大规模审查正在进行中。	original_project_authored	draft_auto_validated	false
+PH-C6-0047	dwell on	反复谈论；老是想着	后接令人不快或已发生的事情，表示花过多时间思考或谈论。	There is little value in continuing to dwell on past mistakes.	继续纠结过去的错误没有多大价值。	original_project_authored	draft_auto_validated	false
+PH-C6-0048	embark on	开始；着手	后接重要的新计划、事业、课程或旅程，语气较正式。	The university will embark on a ten-year research program.	这所大学将启动一项为期十年的研究计划。	original_project_authored	draft_auto_validated	false
+PH-C6-0049	collide with	与某物碰撞；与某观点冲突	可按字面表示物体相撞，也可比喻利益、观点或计划发生冲突。	The satellite could collide with a piece of space debris.	这颗卫星可能与一块太空碎片相撞。	original_project_authored	draft_auto_validated	false
+PH-C6-0050	quest for	对某物的探索；追求	名词短语，表示长期而艰难地寻找答案、目标或重要事物。	The scientist devoted her career to the quest for a safer material.	这位科学家把职业生涯投入到寻找更安全材料的探索中。	original_project_authored	draft_auto_validated	false
