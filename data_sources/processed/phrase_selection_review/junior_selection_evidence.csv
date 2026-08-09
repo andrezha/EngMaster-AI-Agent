@@ -1,0 +1,251 @@
+﻿sequence,phrase,normalized_phrase,introduced_level,evidence_route,form_evidence,oewn_sense_ids,moby_match,tatoeba_cc0_sentence_count,minimum_lexical_level,editorial_status,human_review_claimed
+1,a bit,a bit,junior,approved_dictionary_candidate_pool,OEWN,a_bit%4:02:00::,false,70,junior,selected_for_cross_level_review,false
+2,a few,a few,junior,approved_dictionary_candidate_pool,OEWN,a_few%5:00:00:few:00,false,142,junior,selected_for_cross_level_review,false
+3,a little,a little,junior,approved_dictionary_candidate_pool,OEWN,a_little%4:02:00::,false,128,junior,selected_for_cross_level_review,false
+4,a lot,a lot,junior,approved_dictionary_candidate_pool,OEWN,a_lot%4:02:00::,false,242,junior,selected_for_cross_level_review,false
+5,according to,according to,junior,approved_dictionary_candidate_pool,Moby,,true,192,junior,selected_for_cross_level_review,false
+6,after all,after all,junior,approved_dictionary_candidate_pool,OEWN,after_all%4:02:00::|after_all%4:02:01::,false,8,junior,selected_for_cross_level_review,false
+7,all over,all over,junior,approved_dictionary_candidate_pool,OEWN,all_over%4:02:00::|all_over%4:02:01::|all_over%5:00:00:finished:01,false,34,junior,selected_for_cross_level_review,false
+8,all right,all right,junior,approved_dictionary_candidate_pool,OEWN,all_right%4:02:00::|all_right%4:02:01::|all_right%4:02:02::|all_right%5:00:00:satisfactory:00,true,4,junior,selected_for_cross_level_review,false
+9,all the time,all the time,junior,approved_dictionary_candidate_pool,OEWN,all_the_time%4:02:01::,false,21,junior,selected_for_cross_level_review,false
+10,all the way,all the way,junior,approved_dictionary_candidate_pool,OEWN,all_the_way%4:02:03::|all_the_way%4:02:04::|all_the_way%4:02:09::,false,11,junior,selected_for_cross_level_review,false
+11,as usual,as usual,junior,approved_dictionary_candidate_pool,OEWN,as_usual%4:02:00::,false,9,junior,selected_for_cross_level_review,false
+12,as well,as well,junior,approved_dictionary_candidate_pool,OEWN,as_well%4:02:01::,false,120,junior,selected_for_cross_level_review,false
+13,at all,at all,junior,approved_dictionary_candidate_pool,OEWN,at_all%4:02:00::,false,69,junior,selected_for_cross_level_review,false
+14,at first,at first,junior,approved_dictionary_candidate_pool,OEWN,at_first%4:02:01::,false,21,cet4,selected_for_cross_level_review,false
+15,at home,at home,junior,approved_dictionary_candidate_pool,OEWN,at_home%1:14:00::|at_home%4:02:00::|at_home%4:02:01::,true,37,junior,selected_for_cross_level_review,false
+16,at last,at last,junior,approved_dictionary_candidate_pool,OEWN,at_last%4:02:00::,false,27,junior,selected_for_cross_level_review,false
+17,at least,at least,junior,approved_dictionary_candidate_pool,OEWN,at_least%4:02:00::|at_least%4:02:01::,false,101,junior,selected_for_cross_level_review,false
+18,at once,at once,junior,approved_dictionary_candidate_pool,OEWN,at_once%4:02:00::|at_once%4:02:03::,false,25,junior,selected_for_cross_level_review,false
+19,at the same time,at the same time,junior,approved_dictionary_candidate_pool,OEWN,at_the_same_time%4:02:03::|at_the_same_time%4:02:05::|at_the_same_time%4:02:06::,false,29,junior,selected_for_cross_level_review,false
+20,at a time,at a time,junior,approved_dictionary_candidate_pool,OEWN,at_a_time%4:02:00::,false,23,junior,selected_for_cross_level_review,false
+21,at work,at work,junior,approved_dictionary_candidate_pool,OEWN,at_work%5:00:00:busy:00,false,16,junior,selected_for_cross_level_review,false
+22,by hand,by hand,junior,approved_dictionary_candidate_pool,OEWN,by_hand%4:02:01::,false,8,junior,selected_for_cross_level_review,false
+23,by the way,by the way,junior,approved_dictionary_candidate_pool,OEWN,by_the_way%4:02:00::,false,6,junior,selected_for_cross_level_review,false
+24,day and night,day and night,junior,approved_dictionary_candidate_pool,OEWN,day-and-night%5:00:00:continuous:01,false,6,junior,selected_for_cross_level_review,false
+25,each other,each other,junior,approved_dictionary_candidate_pool,Moby,,true,138,junior,selected_for_cross_level_review,false
+26,every day,every day,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,32,manual_stage_check,selected_for_cross_level_review,false
+27,every week,every week,junior,approved_dictionary_candidate_pool,OEWN,every_week%4:02:00::,false,4,junior,selected_for_cross_level_review,false
+28,every year,every year,junior,approved_dictionary_candidate_pool,OEWN,every_year%4:02:00::,false,29,junior,selected_for_cross_level_review,false
+29,for a while,for a while,junior,approved_dictionary_candidate_pool,OEWN,for_a_while%4:02:01::,false,14,junior,selected_for_cross_level_review,false
+30,for example,for example,junior,approved_dictionary_candidate_pool,OEWN,for_example%4:02:00::,false,53,junior,selected_for_cross_level_review,false
+31,for free,for free,junior,approved_dictionary_candidate_pool,OEWN,for_free%4:02:00::,false,8,junior,selected_for_cross_level_review,false
+32,for short,for short,junior,approved_dictionary_candidate_pool,OEWN,for_short%4:02:00::,false,6,junior,selected_for_cross_level_review,false
+33,for sure,for sure,junior,approved_dictionary_candidate_pool,OEWN,for_sure%4:02:00::|for_sure%5:00:00:unquestionable:00,false,6,junior,selected_for_cross_level_review,false
+34,from time to time,from time to time,junior,approved_dictionary_candidate_pool,OEWN,from_time_to_time%4:02:00::,false,5,junior,selected_for_cross_level_review,false
+35,good luck,good luck,junior,approved_dictionary_candidate_pool,OEWN,good_luck%1:11:00::|good_luck%1:19:00::|good_luck%1:26:00::,false,9,junior,selected_for_cross_level_review,false
+36,here and there,here and there,junior,approved_dictionary_candidate_pool,OEWN,here_and_there%4:02:00::,false,4,junior,selected_for_cross_level_review,false
+37,in all,in all,junior,approved_dictionary_candidate_pool,OEWN,in_all%4:02:00::,false,49,junior,selected_for_cross_level_review,false
+38,in common,in common,junior,approved_dictionary_candidate_pool,OEWN,in_common%4:02:00::|in_common%4:02:01::,false,12,junior,selected_for_cross_level_review,false
+39,in fact,in fact,junior,approved_dictionary_candidate_pool,OEWN,in_fact%4:02:00::,false,42,junior,selected_for_cross_level_review,false
+40,in line,in line,junior,approved_dictionary_candidate_pool,OEWN,in_line%4:02:00::|in_line%5:00:00:eligible:00|in_line%5:00:00:succeeding:00,false,12,junior,selected_for_cross_level_review,false
+41,in order,in order,junior,approved_dictionary_candidate_pool,OEWN,in_order%5:00:00:ready:00,false,46,junior,selected_for_cross_level_review,false
+42,in short,in short,junior,approved_dictionary_candidate_pool,OEWN,in_short%4:02:01::,false,4,junior,selected_for_cross_level_review,false
+43,in the end,in the end,junior,approved_dictionary_candidate_pool,OEWN,in_the_end%4:02:00::|in_the_end%4:02:02::,false,17,junior,selected_for_cross_level_review,false
+44,in the way,in the way,junior,approved_dictionary_candidate_pool,OEWN,in_the_way%4:02:00::,false,10,junior,selected_for_cross_level_review,false
+45,just in time,just in time,junior,approved_dictionary_candidate_pool,OEWN,just_in_time%4:02:00::,false,5,junior,selected_for_cross_level_review,false
+46,later on,later on,junior,approved_dictionary_candidate_pool,OEWN,later_on%4:02:00::,false,4,junior,selected_for_cross_level_review,false
+47,more and more,more and more,junior,approved_dictionary_candidate_pool,OEWN,more_and_more%4:02:00::,false,17,junior,selected_for_cross_level_review,false
+48,next door,next door,junior,approved_dictionary_candidate_pool,OEWN,next_door%4:02:00::,false,5,junior,selected_for_cross_level_review,false
+49,no doubt,no doubt,junior,approved_dictionary_candidate_pool,OEWN,no_doubt%4:02:00::,false,11,junior,selected_for_cross_level_review,false
+50,no matter,no matter,junior,approved_dictionary_candidate_pool,OEWN,no_matter%4:02:00::,false,33,junior,selected_for_cross_level_review,false
+51,no more,no more,junior,approved_dictionary_candidate_pool,OEWN,no_more%4:02:01::|no_more%4:02:05::,false,18,junior,selected_for_cross_level_review,false
+52,now and then,now and then,junior,approved_dictionary_candidate_pool,OEWN,now_and_then%4:02:00::,false,8,junior,selected_for_cross_level_review,false
+53,of course,of course,junior,approved_dictionary_candidate_pool,OEWN,of_course%4:02:00::,false,55,junior,selected_for_cross_level_review,false
+54,on fire,on fire,junior,approved_dictionary_candidate_pool,OEWN,on_fire%5:00:00:lighted:00,false,12,junior,selected_for_cross_level_review,false
+55,on purpose,on purpose,junior,approved_dictionary_candidate_pool,OEWN,on_purpose%4:02:00::,false,8,junior,selected_for_cross_level_review,false
+56,on the way,on the way,junior,approved_dictionary_candidate_pool,OEWN,on_the_way%4:02:00::,false,12,junior,selected_for_cross_level_review,false
+57,on time,on time,junior,approved_dictionary_candidate_pool,OEWN,on_time%3:00:00::|on_time%4:02:00::|on_time%5:00:00:due:00,false,13,junior,selected_for_cross_level_review,false
+58,once again,once again,junior,approved_dictionary_candidate_pool,OEWN,once_again%4:02:00::,false,10,junior,selected_for_cross_level_review,false
+59,once more,once more,junior,approved_dictionary_candidate_pool,OEWN,once_more%4:02:00::,false,4,junior,selected_for_cross_level_review,false
+60,or else,or else,junior,approved_dictionary_candidate_pool,OEWN,or_else%4:02:01::,false,4,junior,selected_for_cross_level_review,false
+61,out loud,out loud,junior,approved_dictionary_candidate_pool,OEWN,out_loud%4:02:00::,false,4,junior,selected_for_cross_level_review,false
+62,over and over,over and over,junior,approved_dictionary_candidate_pool,OEWN,over_and_over%4:02:00::,false,7,junior,selected_for_cross_level_review,false
+63,right away,right away,junior,approved_dictionary_candidate_pool,OEWN,right_away%4:02:00::|right_away%4:02:03::,true,3,junior,selected_for_cross_level_review,false
+64,so far,so far,junior,approved_dictionary_candidate_pool,OEWN,so_far%4:02:00::|so_far%4:02:01::|so_far%4:02:02::,false,45,junior,selected_for_cross_level_review,false
+65,until now,until now,junior,approved_dictionary_candidate_pool,OEWN,until_now%4:02:00::,false,10,junior,selected_for_cross_level_review,false
+66,up and down,up and down,junior,approved_dictionary_candidate_pool,OEWN,up_and_down%4:02:01::|up_and_down%4:02:03::,true,4,junior,selected_for_cross_level_review,false
+67,very well,very well,junior,approved_dictionary_candidate_pool,OEWN,very_well%4:02:00::|very_well%4:02:01::,false,10,junior,selected_for_cross_level_review,false
+68,ask for,ask for,junior,approved_dictionary_candidate_pool,OEWN,ask_for%2:32:00::|ask_for%2:37:00::,true,17,junior,selected_for_cross_level_review,false
+69,arrive at,arrive at,junior,approved_dictionary_candidate_pool,OEWN,arrive_at%2:38:00::,false,7,junior,selected_for_cross_level_review,false
+70,be born,be born,junior,approved_dictionary_candidate_pool,OEWN,be_born%2:30:00::,false,6,junior,selected_for_cross_level_review,false
+71,believe in,believe in,junior,approved_dictionary_candidate_pool,OEWN,believe_in%2:31:01::,false,50,junior,selected_for_cross_level_review,false
+72,belong to,belong to,junior,approved_dictionary_candidate_pool,OEWN,belong_to%2:42:00::,false,15,junior,selected_for_cross_level_review,false
+73,break down,break down,junior,approved_dictionary_candidate_pool,OEWN,break_down%2:29:00::|break_down%2:30:00::|break_down%2:30:09::|break_down%2:31:00::|break_down%2:33:00::|break_down%2:35:01::|break_down%2:37:00::|break_down%2:38:00::,true,5,junior,selected_for_cross_level_review,false
+74,break in,break in,junior,approved_dictionary_candidate_pool,OEWN,break-in%1:04:00::|break_in%2:30:00::|break_in%2:30:01::|break_in%2:30:03::|break_in%2:32:00::|break_in%2:35:00::|break_in%2:41:00::,true,4,junior,selected_for_cross_level_review,false
+75,bring back,bring back,junior,approved_dictionary_candidate_pool,OEWN,bring_back%2:29:00::|bring_back%2:38:00::,false,6,junior,selected_for_cross_level_review,false
+76,bring down,bring down,junior,approved_dictionary_candidate_pool,OEWN,bring_down%2:30:00::|bring_down%2:32:00::|bring_down%2:37:00::|bring_down%2:38:00::|bring_down%2:38:01::|bring_down%2:41:00::,true,4,junior,selected_for_cross_level_review,false
+77,bring home,bring home,junior,approved_dictionary_candidate_pool,OEWN,bring_home%2:30:00::|bring_home%2:40:00::,false,2,junior,selected_for_cross_level_review,false
+78,call for,call for,junior,approved_dictionary_candidate_pool,OEWN,call_for%2:32:03::|call_for%2:32:04::|call_for%2:40:00::|call_for%2:42:00::,false,7,junior,selected_for_cross_level_review,false
+79,call out,call out,junior,approved_dictionary_candidate_pool,OEWN,call-out%1:10:00::|call_out%2:32:00::|call_out%2:32:01::|call_out%2:32:12::,true,4,junior,selected_for_cross_level_review,false
+80,calm down,calm down,junior,approved_dictionary_candidate_pool,OEWN,calm_down%2:30:03::|calm_down%2:37:00::|calm_down%2:37:01::,false,3,junior,selected_for_cross_level_review,false
+81,care for,care for,junior,approved_dictionary_candidate_pool,OEWN,care_for%2:29:00::|care_for%2:37:01::|care_for%2:37:08::,false,36,junior,selected_for_cross_level_review,false
+82,carry on,carry on,junior,approved_dictionary_candidate_pool,OEWN,carry-on%1:06:01::|carry_on%2:32:00::|carry_on%2:41:00::|carry_on%2:41:02::|carry_on%2:42:00::,true,3,junior,selected_for_cross_level_review,false
+83,check in,check in,junior,approved_dictionary_candidate_pool,OEWN,check-in%1:04:00::|check_in%2:32:00::,true,2,junior,selected_for_cross_level_review,false
+84,check out,check out,junior,approved_dictionary_candidate_pool,OEWN,check_out%2:31:00::|check_out%2:32:00::|check_out%2:32:01::|check_out%2:40:00::|check_out%2:40:02::|check_out%2:41:00::|check_out%2:42:06::,true,4,junior,selected_for_cross_level_review,false
+85,clean up,clean up,junior,approved_dictionary_candidate_pool,OEWN,clean_up%2:29:00::|clean_up%2:30:03::|clean_up%2:40:00::|clean_up%2:40:04::,true,8,junior,selected_for_cross_level_review,false
+86,climb up,climb up,junior,approved_dictionary_candidate_pool,OEWN,climb_up%2:30:02::|climb_up%2:38:00::,false,2,junior,selected_for_cross_level_review,false
+87,come along,come along,junior,approved_dictionary_candidate_pool,OEWN,come_along%2:30:00::|come_along%2:30:01::,true,5,junior,selected_for_cross_level_review,false
+88,come back,come back,junior,approved_dictionary_candidate_pool,OEWN,come_back%2:30:00::|come_back%2:32:00::|come_back%2:32:01::|come_back%2:38:01::,false,22,junior,selected_for_cross_level_review,false
+89,come down,come down,junior,approved_dictionary_candidate_pool,OEWN,come_down%2:29:00::|come_down%2:30:00::|come_down%2:32:12::|come_down%2:38:00::|come_down%2:43:00::,false,9,junior,selected_for_cross_level_review,false
+90,come in,come in,junior,approved_dictionary_candidate_pool,OEWN,come_in%2:31:00::|come_in%2:32:00::|come_in%2:38:01::|come_in%2:38:02::|come_in%2:42:00::,true,9,junior,selected_for_cross_level_review,false
+91,come on,come on,junior,approved_dictionary_candidate_pool,OEWN,come-on%1:07:00::|come-on%1:09:00::|come_on%2:30:00::|come_on%2:30:01::|come_on%2:30:02::|come_on%2:35:00::|come_on%2:38:00::,true,5,junior,selected_for_cross_level_review,false
+92,come out,come out,junior,approved_dictionary_candidate_pool,OEWN,come_out%2:30:00::|come_out%2:30:01::|come_out%2:30:03::|come_out%2:30:04::|come_out%2:31:00::|come_out%2:32:00::|come_out%2:32:01::|come_out%2:38:00::|come_out%2:38:01::|come_out%2:38:06::|come_out%2:42:00::,true,15,junior,selected_for_cross_level_review,false
+93,come over,come over,junior,approved_dictionary_candidate_pool,OEWN,come_over%2:32:00::,true,6,junior,selected_for_cross_level_review,false
+94,come up,come up,junior,approved_dictionary_candidate_pool,OEWN,come_up%2:30:00::|come_up%2:35:00::|come_up%2:35:01::|come_up%2:35:02::|come_up%2:36:03::|come_up%2:38:00::|come_up%2:38:01::|come_up%2:38:02::|come_up%2:38:03::|come_up%2:40:00::|come_up%2:42:00::|come_up%2:42:01::,true,23,junior,selected_for_cross_level_review,false
+95,cut down,cut down,junior,approved_dictionary_candidate_pool,OEWN,cut_down%2:30:00::|cut_down%2:33:00::|cut_down%2:35:00::|cut_down%2:35:01::|cut_down%2:35:02::|cut_down%2:35:03::,true,5,junior,selected_for_cross_level_review,false
+96,cut off,cut off,junior,approved_dictionary_candidate_pool,OEWN,cut_off%2:30:00::|cut_off%2:32:00::|cut_off%2:35:00::|cut_off%2:35:01::|cut_off%2:35:02::|cut_off%2:35:03::|cut_off%5:00:00:cut:01,true,6,junior,selected_for_cross_level_review,false
+97,cut out,cut out,junior,approved_dictionary_candidate_pool,OEWN,cut_out%2:30:00::|cut_out%2:30:01::|cut_out%2:33:00::|cut_out%2:35:01::|cut_out%2:35:02::|cut_out%2:35:03::|cut_out%5:00:00:cut:03,true,4,junior,selected_for_cross_level_review,false
+98,depend on,depend on,junior,approved_dictionary_candidate_pool,OEWN,depend_on%2:42:00::|depend_on%2:42:01::|depend_on%2:42:02::,false,9,junior,selected_for_cross_level_review,false
+99,dress up,dress up,junior,approved_dictionary_candidate_pool,OEWN,dress_up%2:29:00::|dress_up%2:29:04::|dress_up%2:29:06::|dress_up%2:30:00::|dress_up%2:36:00::,true,2,junior,selected_for_cross_level_review,false
+100,end up,end up,junior,approved_dictionary_candidate_pool,OEWN,end_up%2:30:01::,false,22,junior,selected_for_cross_level_review,false
+101,fall asleep,fall asleep,junior,approved_dictionary_candidate_pool,OEWN,fall_asleep%2:29:00::,false,6,junior,selected_for_cross_level_review,false
+102,fall down,fall down,junior,approved_dictionary_candidate_pool,OEWN,fall_down%2:38:15::,true,1,junior,selected_for_cross_level_review,false
+103,fall off,fall off,junior,approved_dictionary_candidate_pool,OEWN,fall_off%2:30:00::|fall_off%2:30:01::|fall_off%2:35:00::,true,1,junior,selected_for_cross_level_review,false
+104,fall over,fall over,junior,approved_dictionary_candidate_pool,OEWN,fall_over%2:29:00::,true,2,junior,selected_for_cross_level_review,false
+105,feed on,feed on,junior,approved_dictionary_candidate_pool,OEWN,feed_on%2:34:00::,false,9,junior,selected_for_cross_level_review,false
+106,feel like,feel like,junior,approved_dictionary_candidate_pool,OEWN,feel_like%2:37:00::,false,13,junior,selected_for_cross_level_review,false
+107,fill in,fill in,junior,approved_dictionary_candidate_pool,OEWN,fill-in%1:18:00::|fill_in%2:32:00::|fill_in%2:32:02::|fill_in%2:36:00::|fill_in%2:40:00::,true,4,junior,selected_for_cross_level_review,false
+108,fill up,fill up,junior,approved_dictionary_candidate_pool,OEWN,fill_up%2:30:00::|fill_up%2:30:01::|fill_up%2:34:00::|fill_up%2:35:03::,true,3,junior,selected_for_cross_level_review,false
+109,find out,find out,junior,approved_dictionary_candidate_pool,OEWN,find_out%2:31:00::|find_out%2:31:01::|find_out%2:32:00::|find_out%2:32:01::,false,17,junior,selected_for_cross_level_review,false
+110,get along,get along,junior,approved_dictionary_candidate_pool,OEWN,get_along%2:30:00::|get_along%2:41:00::|get_along%2:42:00::,true,8,junior,selected_for_cross_level_review,false
+111,get away,get away,junior,approved_dictionary_candidate_pool,OEWN,get_away%2:32:00::|get_away%2:38:00::|get_away%2:41:00::,true,8,junior,selected_for_cross_level_review,false
+112,get back,get back,junior,approved_dictionary_candidate_pool,OEWN,get_back%2:33:00::|get_back%2:33:01::|get_back%2:33:13::,true,16,junior,selected_for_cross_level_review,false
+113,get down,get down,junior,approved_dictionary_candidate_pool,OEWN,get_down%2:30:00::|get_down%2:32:00::|get_down%2:34:00::|get_down%2:37:00::|get_down%2:38:00::|get_down%2:38:01::|get_down%2:38:02::,true,2,junior,selected_for_cross_level_review,false
+114,get in,get in,junior,approved_dictionary_candidate_pool,OEWN,get_in%2:38:00::|get_in%2:38:01::|get_in%2:40:01::|get_in%2:41:00::,true,12,junior,selected_for_cross_level_review,false
+115,get into,get into,junior,approved_dictionary_candidate_pool,OEWN,get_into%2:29:00::|get_into%2:32:00::|get_into%2:38:00::|get_into%2:40:00::|get_into%2:42:00::,true,12,junior,selected_for_cross_level_review,false
+116,get off,get off,junior,approved_dictionary_candidate_pool,OEWN,get_off%2:32:00::|get_off%2:32:01::|get_off%2:32:04::|get_off%2:32:05::|get_off%2:34:00::|get_off%2:35:00::|get_off%2:38:00::|get_off%2:38:01::|get_off%2:38:02::|get_off%2:39:00::|get_off%2:41:00::,true,10,junior,selected_for_cross_level_review,false
+117,get on,get on,junior,approved_dictionary_candidate_pool,OEWN,get_on%2:30:00::|get_on%2:30:01::|get_on%2:30:03::|get_on%2:38:00::|get_on%2:38:02::|get_on%2:38:03::|get_on%2:41:00::,true,4,junior,selected_for_cross_level_review,false
+118,get out,get out,junior,approved_dictionary_candidate_pool,OEWN,get_out%2:32:00::|get_out%2:32:01::|get_out%2:32:03::|get_out%2:35:00::|get_out%2:38:00::|get_out%2:38:01::|get_out%2:38:02::,false,19,junior,selected_for_cross_level_review,false
+119,get over,get over,junior,approved_dictionary_candidate_pool,OEWN,get_over%2:30:00::|get_over%2:33:00::|get_over%2:36:00::|get_over%2:38:00::,true,2,junior,selected_for_cross_level_review,false
+120,get through,get through,junior,approved_dictionary_candidate_pool,OEWN,get_through%2:30:00::|get_through%2:31:00::|get_through%2:32:00::|get_through%2:38:00::|get_through%2:42:00::,true,5,junior,selected_for_cross_level_review,false
+121,get together,get together,junior,approved_dictionary_candidate_pool,OEWN,get_together%1:14:00::|get_together%2:41:01::|get_together%2:41:02::|get_together%2:41:03::,true,3,junior,selected_for_cross_level_review,false
+122,get up,get up,junior,approved_dictionary_candidate_pool,OEWN,get_up%2:29:00::|get_up%2:29:01::|get_up%2:29:02::|get_up%2:29:03::|get_up%2:31:00::|get_up%2:36:00::|get_up%2:38:00::|get_up%2:38:01::,true,8,junior,selected_for_cross_level_review,false
+123,give up,give up,junior,approved_dictionary_candidate_pool,OEWN,give_up%2:31:00::|give_up%2:33:00::|give_up%2:33:01::|give_up%2:34:00::|give_up%2:40:00::|give_up%2:40:01::|give_up%2:40:02::|give_up%2:40:03::|give_up%2:40:05::|give_up%2:41:00::|give_up%2:41:05::|give_up%2:42:00::,true,11,junior,selected_for_cross_level_review,false
+124,go ahead,go ahead,junior,approved_dictionary_candidate_pool,OEWN,go-ahead%1:07:00::|go-ahead%1:10:00::|go_ahead%2:32:00::,true,9,junior,selected_for_cross_level_review,false
+125,go away,go away,junior,approved_dictionary_candidate_pool,OEWN,go_away%2:30:00::|go_away%2:38:00::|go_away%2:38:05::|go_away%2:39:00::,true,5,junior,selected_for_cross_level_review,false
+126,go back,go back,junior,approved_dictionary_candidate_pool,OEWN,go_back%2:30:00::|go_back%2:32:00::|go_back%2:42:00::,true,28,junior,selected_for_cross_level_review,false
+127,go down,go down,junior,approved_dictionary_candidate_pool,OEWN,go_down%2:30:00::|go_down%2:30:14::|go_down%2:33:00::|go_down%2:34:00::|go_down%2:38:00::|go_down%2:38:01::|go_down%2:38:02::|go_down%2:42:00::,true,7,junior,selected_for_cross_level_review,false
+128,go home,go home,junior,approved_dictionary_candidate_pool,OEWN,go_home%2:38:00::,false,6,junior,selected_for_cross_level_review,false
+129,go in,go in,junior,approved_dictionary_candidate_pool,OEWN,go_in%2:38:00::,true,7,junior,selected_for_cross_level_review,false
+130,go into,go into,junior,approved_dictionary_candidate_pool,OEWN,go_into%2:38:00::|go_into%2:42:00::,true,7,junior,selected_for_cross_level_review,false
+131,go on,go on,junior,approved_dictionary_candidate_pool,OEWN,go_on%2:30:00::|go_on%2:32:00::|go_on%2:35:00::|go_on%2:38:00::|go_on%2:42:00::,true,12,junior,selected_for_cross_level_review,false
+132,go out,go out,junior,approved_dictionary_candidate_pool,OEWN,go_out%2:30:00::|go_out%2:38:00::|go_out%2:38:01::|go_out%2:38:02::|go_out%2:41:00::|go_out%2:42:00::,true,11,junior,selected_for_cross_level_review,false
+133,go over,go over,junior,approved_dictionary_candidate_pool,OEWN,go_over%2:29:00::|go_over%2:30:00::|go_over%2:31:00::|go_over%2:31:01::,true,4,junior,selected_for_cross_level_review,false
+134,go through,go through,junior,approved_dictionary_candidate_pool,OEWN,go_through%2:34:00::|go_through%2:34:01::|go_through%2:39:00::,true,10,junior,selected_for_cross_level_review,false
+135,go to bed,go to bed,junior,approved_dictionary_candidate_pool,OEWN,go_to_bed%2:29:00::,false,6,junior,selected_for_cross_level_review,false
+136,go up,go up,junior,approved_dictionary_candidate_pool,OEWN,go_up%2:30:00::|go_up%2:30:04::|go_up%2:38:00::|go_up%2:38:01::|go_up%2:38:02::|go_up%2:38:03::|go_up%2:38:10::,true,7,junior,selected_for_cross_level_review,false
+137,grow up,grow up,junior,approved_dictionary_candidate_pool,OEWN,grow_up%2:41:00::,true,13,junior,selected_for_cross_level_review,false
+138,hand in,hand in,junior,approved_dictionary_candidate_pool,Moby,,true,15,junior,selected_for_cross_level_review,false
+139,hang on,hang on,junior,approved_dictionary_candidate_pool,OEWN,hang_on%2:30:00::|hang_on%2:32:00::|hang_on%2:35:00::,true,2,junior,selected_for_cross_level_review,false
+140,help out,help out,junior,approved_dictionary_candidate_pool,OEWN,help_out%2:41:02::,false,3,junior,selected_for_cross_level_review,false
+141,hold on,hold on,junior,approved_dictionary_candidate_pool,OEWN,hold_on%2:30:00::|hold_on%2:30:05::|hold_on%2:32:00::|hold_on%2:35:00::|hold_on%2:40:00::,true,9,junior,selected_for_cross_level_review,false
+142,hurry up,hurry up,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,4,manual_stage_check,selected_for_cross_level_review,false
+143,keep in,keep in,junior,approved_dictionary_candidate_pool,OEWN,keep_in%2:41:00::,true,5,junior,selected_for_cross_level_review,false
+144,keep on,keep on,junior,approved_dictionary_candidate_pool,OEWN,keep_on%2:41:00::,true,3,junior,selected_for_cross_level_review,false
+145,keep up,keep up,junior,approved_dictionary_candidate_pool,OEWN,keep_up%2:29:00::|keep_up%2:30:00::|keep_up%2:33:00::|keep_up%2:40:00::|keep_up%2:42:00::,true,7,junior,selected_for_cross_level_review,false
+146,know how,know how,junior,approved_dictionary_candidate_pool,OEWN,know-how%1:09:00::,true,42,junior,selected_for_cross_level_review,false
+147,lay down,lay down,junior,approved_dictionary_candidate_pool,OEWN,lay_down%2:31:00::,true,7,junior,selected_for_cross_level_review,false
+148,learn from,learn from,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,8,manual_stage_check,selected_for_cross_level_review,false
+149,let go,let go,junior,approved_dictionary_candidate_pool,OEWN,let_go%2:35:00::|let_go%2:42:00::,false,12,junior,selected_for_cross_level_review,false
+150,let in,let in,junior,approved_dictionary_candidate_pool,OEWN,let_in%2:41:00::|let_in%2:41:02::,true,3,junior,selected_for_cross_level_review,false
+151,let out,let out,junior,approved_dictionary_candidate_pool,OEWN,let_out%2:30:00::|let_out%2:32:00::|let_out%2:32:02::|let_out%2:35:00::,true,5,junior,selected_for_cross_level_review,false
+152,lie down,lie down,junior,approved_dictionary_candidate_pool,OEWN,lie_down%2:38:00::,true,3,junior,selected_for_cross_level_review,false
+153,listen to,listen to,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,38,manual_stage_check,selected_for_cross_level_review,false
+154,live in,live in,junior,approved_dictionary_candidate_pool,OEWN,live_in%2:34:00::,false,96,junior,selected_for_cross_level_review,false
+155,live on,live on,junior,approved_dictionary_candidate_pool,OEWN,live_on%2:42:00::,false,26,junior,selected_for_cross_level_review,false
+156,look after,look after,junior,approved_dictionary_candidate_pool,OEWN,look_after%2:39:00::,true,1,junior,selected_for_cross_level_review,false
+157,look at,look at,junior,approved_dictionary_candidate_pool,OEWN,look_at%2:31:00::|look_at%2:39:01::,false,50,junior,selected_for_cross_level_review,false
+158,look back,look back,junior,approved_dictionary_candidate_pool,OEWN,look_back%2:31:00::|look_back%2:39:00::,true,5,junior,selected_for_cross_level_review,false
+159,look for,look for,junior,approved_dictionary_candidate_pool,OEWN,look_for%2:35:00::|look_for%2:37:00::,false,13,junior,selected_for_cross_level_review,false
+160,look like,look like,junior,approved_dictionary_candidate_pool,OEWN,look_like%2:42:00::,false,47,junior,selected_for_cross_level_review,false
+161,look out,look out,junior,approved_dictionary_candidate_pool,OEWN,look_out%2:33:10::|look_out%2:39:00::,false,6,junior,selected_for_cross_level_review,false
+162,look up,look up,junior,approved_dictionary_candidate_pool,OEWN,look_up%2:32:00::,true,6,junior,selected_for_cross_level_review,false
+163,make sense,make sense,junior,approved_dictionary_candidate_pool,OEWN,make_sense%2:42:00::,false,4,junior,selected_for_cross_level_review,false
+164,make sure,make sure,junior,approved_dictionary_candidate_pool,OEWN,make_sure%2:41:00::,false,40,junior,selected_for_cross_level_review,false
+165,make up,make up,junior,approved_dictionary_candidate_pool,OEWN,make-up%1:06:00::|make-up%1:07:00::|make-up%1:11:00::|make_up%2:29:00::|make_up%2:30:00::|make_up%2:32:00::|make_up%2:36:01::|make_up%2:36:03::|make_up%2:40:00::|make_up%2:41:00::|make_up%2:42:00::|make_up%2:42:03::,false,23,junior,selected_for_cross_level_review,false
+166,move around,move around,junior,approved_dictionary_candidate_pool,OEWN,move_around%2:38:00::|move_around%2:38:03::,false,5,junior,selected_for_cross_level_review,false
+167,move in,move in,junior,approved_dictionary_candidate_pool,OEWN,move_in%2:38:00::|move_in%2:38:01::|move_in%2:38:02::,true,5,junior,selected_for_cross_level_review,false
+168,move on,move on,junior,approved_dictionary_candidate_pool,OEWN,move_on%2:38:00::,false,5,junior,selected_for_cross_level_review,false
+169,move out,move out,junior,approved_dictionary_candidate_pool,OEWN,move_out%2:38:00::|move_out%2:41:00::,true,2,junior,selected_for_cross_level_review,false
+170,pay for,pay for,junior,approved_dictionary_candidate_pool,OEWN,pay_for%2:41:00::,true,13,junior,selected_for_cross_level_review,false
+171,pick out,pick out,junior,approved_dictionary_candidate_pool,OEWN,pick_out%2:31:00::|pick_out%2:39:00::,true,2,junior,selected_for_cross_level_review,false
+172,pick up,pick up,junior,approved_dictionary_candidate_pool,OEWN,pick_up%2:29:00::|pick_up%2:30:00::|pick_up%2:30:01::|pick_up%2:31:00::|pick_up%2:34:00::|pick_up%2:35:00::|pick_up%2:35:01::|pick_up%2:37:00::|pick_up%2:38:00::|pick_up%2:38:01::|pick_up%2:39:00::|pick_up%2:39:01::|pick_up%2:40:00::|pick_up%2:40:01::|pick_up%2:40:02::|pick_up%2:41:00::,false,20,junior,selected_for_cross_level_review,false
+173,play with,play with,junior,approved_dictionary_candidate_pool,Moby,,true,7,junior,selected_for_cross_level_review,false
+174,point out,point out,junior,approved_dictionary_candidate_pool,OEWN,point_out%2:32:01::|point_out%2:32:02::|point_out%2:32:03::,true,8,junior,selected_for_cross_level_review,false
+175,prepare for,prepare for,junior,approved_dictionary_candidate_pool,OEWN,prepare_for%2:30:00::,false,8,junior,selected_for_cross_level_review,false
+176,pull out,pull out,junior,approved_dictionary_candidate_pool,OEWN,pull_out%2:35:00::|pull_out%2:38:00::|pull_out%2:38:03::|pull_out%2:41:00::,true,2,junior,selected_for_cross_level_review,false
+177,put down,put down,junior,approved_dictionary_candidate_pool,OEWN,put-down%1:10:00::|put_down%2:32:00::|put_down%2:32:05::|put_down%2:35:00::|put_down%2:35:01::|put_down%2:35:02::|put_down%2:35:03::|put_down%2:37:00::|put_down%2:38:00::,true,4,junior,selected_for_cross_level_review,false
+178,put in,put in,junior,approved_dictionary_candidate_pool,OEWN,put_in%2:30:00::|put_in%2:32:00::|put_in%2:32:02::|put_in%2:33:00::|put_in%2:35:00::|put_in%2:40:00::,true,6,junior,selected_for_cross_level_review,false
+179,put on,put on,junior,approved_dictionary_candidate_pool,OEWN,put-on%1:04:00::|put-on%1:04:01::|put-on%1:10:00::|put_on%2:29:00::|put_on%2:29:03::|put_on%2:30:00::|put_on%2:30:01::|put_on%2:32:00::|put_on%2:35:00::|put_on%2:36:00::|put_on%2:36:01::|put_on%2:36:02::|put_on%5:00:00:counterfeit:00,true,22,junior,selected_for_cross_level_review,false
+180,put out,put out,junior,approved_dictionary_candidate_pool,OEWN,put_out%2:29:00::|put_out%2:29:01::|put_out%2:32:00::|put_out%2:33:00::|put_out%2:35:00::|put_out%2:35:01::|put_out%2:36:00::|put_out%2:41:00::|put_out%2:42:00::|put_out%2:43:00::,true,6,junior,selected_for_cross_level_review,false
+181,put together,put together,junior,approved_dictionary_candidate_pool,OEWN,put_together%2:36:00::,false,12,junior,selected_for_cross_level_review,false
+182,put up,put up,junior,approved_dictionary_candidate_pool,OEWN,put-up%5:00:00:planned:00|put_up%2:30:00::|put_up%2:31:00::|put_up%2:32:00::|put_up%2:35:00::|put_up%2:36:00::|put_up%2:40:00::|put_up%2:40:01::|put_up%2:41:00::|put_up%2:41:01::,true,5,junior,selected_for_cross_level_review,false
+183,run away,run away,junior,approved_dictionary_candidate_pool,OEWN,run_away%2:38:00::|run_away%2:38:04::,true,6,junior,selected_for_cross_level_review,false
+184,run into,run into,junior,approved_dictionary_candidate_pool,OEWN,run_into%2:35:00::|run_into%2:35:01::|run_into%2:38:01::|run_into%2:42:01::,true,5,junior,selected_for_cross_level_review,false
+185,run out,run out,junior,approved_dictionary_candidate_pool,OEWN,run_out%2:29:00::|run_out%2:30:02::|run_out%2:30:03::|run_out%2:30:12::|run_out%2:38:00::|run_out%2:38:01::|run_out%2:38:02::|run_out%2:42:00::,true,4,junior,selected_for_cross_level_review,false
+186,set out,set out,junior,approved_dictionary_candidate_pool,OEWN,set_out%2:30:00::|set_out%2:35:00::|set_out%2:38:00::,true,6,junior,selected_for_cross_level_review,false
+187,set up,set up,junior,approved_dictionary_candidate_pool,OEWN,set_up%2:30:00::|set_up%2:30:02::|set_up%2:30:03::|set_up%2:31:00::|set_up%2:35:00::|set_up%2:35:01::|set_up%2:35:02::|set_up%2:35:04::|set_up%2:36:00::|set_up%2:36:01::|set_up%2:36:02::|set_up%2:36:03::|set_up%2:41:00::|set_up%2:41:01::|set_up%2:41:02::,true,20,junior,selected_for_cross_level_review,false
+188,show up,show up,junior,approved_dictionary_candidate_pool,OEWN,show_up%2:30:00::|show_up%2:39:00::,true,8,junior,selected_for_cross_level_review,false
+189,shut down,shut down,junior,approved_dictionary_candidate_pool,OEWN,shut_down%2:41:00::,false,8,junior,selected_for_cross_level_review,false
+190,sign in,sign in,junior,approved_dictionary_candidate_pool,OEWN,sign_in%2:32:00::,true,2,junior,selected_for_cross_level_review,false
+191,sit down,sit down,junior,approved_dictionary_candidate_pool,OEWN,sit-down%1:04:00::|sit_down%2:35:00::|sit_down%2:35:03::|sit_down%2:38:00::,true,3,junior,selected_for_cross_level_review,false
+192,slow down,slow down,junior,approved_dictionary_candidate_pool,OEWN,slow_down%2:29:00::|slow_down%2:30:00::|slow_down%2:30:01::|slow_down%2:30:02::|slow_down%2:30:04::,false,4,junior,selected_for_cross_level_review,false
+193,speak to,speak to,junior,approved_dictionary_candidate_pool,Moby,,true,15,junior,selected_for_cross_level_review,false
+194,speak up,speak up,junior,approved_dictionary_candidate_pool,OEWN,speak_up%2:32:00::|speak_up%2:32:03::,true,4,junior,selected_for_cross_level_review,false
+195,stand up,stand up,junior,approved_dictionary_candidate_pool,OEWN,stand-up%5:00:00:erect:00|stand_up%2:32:00::|stand_up%2:33:00::|stand_up%2:35:00::|stand_up%2:35:03::|stand_up%2:38:00::|stand_up%2:38:06::|stand_up%2:42:00::,true,8,junior,selected_for_cross_level_review,false
+196,stay up,stay up,junior,approved_dictionary_candidate_pool,OEWN,stay_up%2:29:00::,false,3,junior,selected_for_cross_level_review,false
+197,step in,step in,junior,approved_dictionary_candidate_pool,OEWN,step-in%1:06:00::|step_in%2:41:00::|step_in%2:41:09::,true,5,junior,selected_for_cross_level_review,false
+198,stick to,stick to,junior,approved_dictionary_candidate_pool,OEWN,stick_to%2:30:00::|stick_to%2:35:03::,true,4,junior,selected_for_cross_level_review,false
+199,switch off,switch off,junior,approved_dictionary_candidate_pool,OEWN,switch_off%2:35:00::,true,1,senior_high,selected_for_cross_level_review,false
+200,switch on,switch on,junior,approved_dictionary_candidate_pool,OEWN,switch_on%2:35:00::,true,1,senior_high,selected_for_cross_level_review,false
+201,take care,take care,junior,approved_dictionary_candidate_pool,OEWN,take_care%2:41:00::|take_care%2:41:11::|take_care%2:41:12::,false,23,junior,selected_for_cross_level_review,false
+202,take down,take down,junior,approved_dictionary_candidate_pool,OEWN,take_down%2:32:00::|take_down%2:36:00::|take_down%2:37:00::|take_down%2:38:00::,true,5,junior,selected_for_cross_level_review,false
+203,take off,take off,junior,approved_dictionary_candidate_pool,OEWN,take_off%2:29:03::|take_off%2:30:00::|take_off%2:31:00::|take_off%2:35:00::|take_off%2:36:00::|take_off%2:38:00::|take_off%2:38:01::|take_off%2:38:02::|take_off%2:41:00::,true,8,junior,selected_for_cross_level_review,false
+204,take part,take part,junior,approved_dictionary_candidate_pool,OEWN,take_part%2:41:00::,false,7,junior,selected_for_cross_level_review,false
+205,take place,take place,junior,approved_dictionary_candidate_pool,OEWN,take_place%2:30:00::,false,11,junior,selected_for_cross_level_review,false
+206,take up,take up,junior,approved_dictionary_candidate_pool,OEWN,take-up%1:04:00::|take-up%1:06:00::|take_up%2:30:00::|take_up%2:30:01::|take_up%2:31:00::|take_up%2:34:00::|take_up%2:35:00::|take_up%2:35:01::|take_up%2:35:03::|take_up%2:35:04::|take_up%2:38:03::|take_up%2:40:00::|take_up%2:41:00::|take_up%2:41:01::|take_up%2:42:00::,true,4,junior,selected_for_cross_level_review,false
+207,talk about,talk about,junior,approved_dictionary_candidate_pool,OEWN,talk_about%2:32:00::|talk_about%2:32:01::,true,47,junior,selected_for_cross_level_review,false
+208,talk to,talk to,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,26,manual_stage_check,selected_for_cross_level_review,false
+209,think about,think about,junior,approved_dictionary_candidate_pool,OEWN,think_about%2:31:03::|think_about%2:31:05::,false,26,junior,selected_for_cross_level_review,false
+210,think of,think of,junior,approved_dictionary_candidate_pool,OEWN,think_of%2:31:00::|think_of%2:31:01::|think_of%2:31:02::|think_of%2:31:03::|think_of%2:31:04::|think_of%2:36:00::,false,30,junior,selected_for_cross_level_review,false
+211,throw away,throw away,junior,approved_dictionary_candidate_pool,OEWN,throw_away%2:35:00::|throw_away%2:40:00::,false,2,junior,selected_for_cross_level_review,false
+212,turn off,turn off,junior,approved_dictionary_candidate_pool,OEWN,turn_off%2:35:00::|turn_off%2:37:00::|turn_off%2:38:00::,false,5,junior,selected_for_cross_level_review,false
+213,turn on,turn on,junior,approved_dictionary_candidate_pool,OEWN,turn-on%1:09:00::|turn_on%2:30:00::|turn_on%2:34:00::|turn_on%2:35:00::|turn_on%2:37:00::|turn_on%2:37:02::|turn_on%2:39:00::|turn_on%2:42:00::,true,9,junior,selected_for_cross_level_review,false
+214,turn out,turn out,junior,approved_dictionary_candidate_pool,OEWN,turn_out%2:29:00::|turn_out%2:30:00::|turn_out%2:35:00::|turn_out%2:35:01::|turn_out%2:36:00::|turn_out%2:36:01::|turn_out%2:38:00::|turn_out%2:40:03::|turn_out%2:41:03::|turn_out%2:42:00::|turn_out%2:42:01::|turn_out%2:42:02::,true,6,junior,selected_for_cross_level_review,false
+215,turn to,turn to,junior,approved_dictionary_candidate_pool,OEWN,turn_to%2:32:01::,true,8,junior,selected_for_cross_level_review,false
+216,wake up,wake up,junior,approved_dictionary_candidate_pool,OEWN,wake_up%2:29:00::|wake_up%2:29:01::,true,12,junior,selected_for_cross_level_review,false
+217,warm up,warm up,junior,approved_dictionary_candidate_pool,OEWN,warm-up%1:04:00::|warm_up%1:04:00::|warm_up%2:29:00::|warm_up%2:29:01::|warm_up%2:30:00::|warm_up%2:30:01::|warm_up%2:41:00::,true,4,junior,selected_for_cross_level_review,false
+218,watch out,watch out,junior,approved_dictionary_candidate_pool,OEWN,watch_out%2:39:00::,false,3,junior,selected_for_cross_level_review,false
+219,work in,work in,junior,approved_dictionary_candidate_pool,OEWN,work-in%1:04:00::|work_in%2:30:00::,false,29,junior,selected_for_cross_level_review,false
+220,work on,work on,junior,approved_dictionary_candidate_pool,OEWN,work_on%2:36:00::|work_on%2:41:00::,true,12,junior,selected_for_cross_level_review,false
+221,work out,work out,junior,approved_dictionary_candidate_pool,OEWN,work_out%2:29:00::|work_out%2:29:01::|work_out%2:30:00::|work_out%2:30:01::|work_out%2:31:04::|work_out%2:31:06::|work_out%2:31:07::|work_out%2:42:00::,false,6,junior,selected_for_cross_level_review,false
+222,write down,write down,junior,approved_dictionary_candidate_pool,OEWN,write-down%1:21:00::|write_down%2:30:10::|write_down%2:32:01::,false,1,junior,selected_for_cross_level_review,false
+223,close to,close to,junior,approved_dictionary_candidate_pool,OEWN,close_to%4:02:00::,false,30,junior,selected_for_cross_level_review,false
+224,far from,far from,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,29,manual_stage_check,selected_for_cross_level_review,false
+225,in front of,in front of,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,37,manual_stage_check,selected_for_cross_level_review,false
+226,look forward to,look forward to,junior,approved_dictionary_candidate_pool,Moby,,true,3,junior,selected_for_cross_level_review,false
+227,on earth,on earth,junior,approved_dictionary_candidate_pool,OEWN,on_earth%4:02:00::,false,38,junior,selected_for_cross_level_review,false
+228,used to,used to,junior,approved_dictionary_candidate_pool,OEWN,used_to%3:00:03::|used_to%5:00:00:accustomed_to:00,true,210,senior_high,selected_for_cross_level_review,false
+229,would like,would like,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,13,manual_stage_check,selected_for_cross_level_review,false
+230,be able to,be able to,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,66,manual_stage_check,selected_for_cross_level_review,false
+231,be afraid of,be afraid of,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,1,manual_stage_check,selected_for_cross_level_review,false
+232,be different from,be different from,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,1,manual_stage_check,selected_for_cross_level_review,false
+233,be full of,be full of,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,3,manual_stage_check,selected_for_cross_level_review,false
+234,be good at,be good at,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,3,manual_stage_check,selected_for_cross_level_review,false
+235,be interested in,be interested in,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,3,manual_stage_check,selected_for_cross_level_review,false
+236,be late for,be late for,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,1,manual_stage_check,selected_for_cross_level_review,false
+237,be proud of,be proud of,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,4,manual_stage_check,selected_for_cross_level_review,false
+238,come from,come from,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,29,manual_stage_check,selected_for_cross_level_review,false
+239,go swimming,go swimming,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,7,manual_stage_check,selected_for_cross_level_review,false
+240,go with,go with,junior,approved_dictionary_candidate_pool,OEWN,go_with%2:42:00::|go_with%2:42:01::,true,3,junior,selected_for_cross_level_review,false
+241,good morning,good morning,junior,approved_dictionary_candidate_pool,OEWN,good_morning%1:10:00::,true,5,junior,selected_for_cross_level_review,false
+242,have a good time,have a good time,junior,approved_dictionary_candidate_pool,OEWN,have_a_good_time%2:34:00::,false,1,junior,selected_for_cross_level_review,false
+243,have fun,have fun,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,2,manual_stage_check,selected_for_cross_level_review,false
+244,hear from,hear from,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,4,manual_stage_check,selected_for_cross_level_review,false
+245,laugh at,laugh at,junior,approved_dictionary_candidate_pool,OEWN,laugh_at%2:32:00::,false,2,junior,selected_for_cross_level_review,false
+246,smile at,smile at,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,1,manual_stage_check,selected_for_cross_level_review,false
+247,take after,take after,junior,approved_dictionary_candidate_pool,OEWN,take_after%2:36:00::|take_after%2:42:00::,true,2,junior,selected_for_cross_level_review,false
+248,take photos,take photos,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,1,manual_stage_check,selected_for_cross_level_review,false
+249,wait for,wait for,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,11,manual_stage_check,selected_for_cross_level_review,false
+250,worry about,worry about,junior,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,6,manual_stage_check,selected_for_cross_level_review,false

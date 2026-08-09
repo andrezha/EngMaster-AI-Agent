@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "errors": [],
+  "completed_levels": [
+    "junior"
+  ],
+  "level_reports": {
+    "junior": {
+      "selected_count": 250,
+      "candidate_pool_evidence_count": 226,
+      "structure_plus_corpus_count": 24,
+      "zero_corpus_count": 0
+    }
+  },
+  "cross_level_duplicate_count": 0,
+  "old_phrase_file_read": false,
+  "human_review_claimed": false,
+  "english_master_scope_frozen": false
+}
