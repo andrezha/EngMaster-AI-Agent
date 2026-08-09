@@ -45,6 +45,12 @@ EVIDENCE_FILES: dict[str, list[str]] = {
         "data_sources/raw/ecdict/source.json",
         "data_sources/raw/ecdict/SHA256SUMS.txt",
     ],
+    "ipa_dict_en_us": [
+        "data_sources/raw/ipa_dict/en_US.txt",
+        "data_sources/raw/ipa_dict/LICENSE",
+        "data_sources/raw/ipa_dict/README.md",
+        "data_sources/raw/ipa_dict/source.json",
+    ],
     "build_scripts": [
         "tools/extract_moe_curriculum_vocab.py",
         "tools/match_existing_vocab_to_curriculum.py",
@@ -64,6 +70,7 @@ EVIDENCE_FILES: dict[str, list[str]] = {
         "tools/validate_chinese_definition_batches.py",
         "tools/export_chinese_definition_preview.py",
         "tools/build_release_vocabulary_3800_zh.py",
+        "tools/build_release_vocabulary_3800_ipa.py",
         "tools/build_vocabulary_provenance_evidence.py",
     ],
     "audit_reports": [
@@ -113,6 +120,11 @@ EVIDENCE_FILES: dict[str, list[str]] = {
         "data_sources/clean/release_vocabulary_3800_zh/manifest.json",
         "data_sources/clean/release_vocabulary_3800_zh/README.md",
         "data_sources/clean/release_vocabulary_3800_zh/SHA256SUMS.txt",
+    ],
+    "ipa_release_3800": [
+        "data_sources/clean/release_vocabulary_3800_ipa/release_vocabulary_3800_ipa.json",
+        "data_sources/clean/release_vocabulary_3800_ipa/automated_qa_report.md",
+        "data_sources/clean/release_vocabulary_3800_ipa/manifest.json",
     ],
 }
 
@@ -167,9 +179,9 @@ def main() -> None:
         json.dumps(
             {
                 "schema_version": 1,
-                "evidence_set_id": "engmaster-vocabulary-provenance-20260808",
-                "generated_on": "2026-08-08",
-                "release_dataset": "engmaster-release-vocabulary-3800-zh",
+                "evidence_set_id": "engmaster-vocabulary-provenance-20260809-ipa",
+                "generated_on": "2026-08-09",
+                "release_dataset": "engmaster-release-vocabulary-3800-zh-with-en-us-ipa",
                 "repository_head_at_generation": git_head(),
                 "git_commit_warning": "The repository HEAD is recorded, but this manifest does not assert that every listed file is committed. Verify git status, commit the evidence set, and create a release tag before external reliance.",
                 "file_count": len(entries),

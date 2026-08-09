@@ -1,120 +1,81 @@
 import json
 import re
+import unittest
+from collections import Counter
 from pathlib import Path
 
 
-VOCAB_PATH = Path(__file__).parent / "assets" / "vocabulary.json"
+VOCAB_PATH = (
+    Path(__file__).parent / "assets" / "editions" / "gaokao" / "vocabulary.json"
+)
 
 
 def load_vocab():
     return json.loads(VOCAB_PATH.read_text(encoding="utf-8"))
 
 
-def test_vocabulary_schema_and_pronunciation_fields_are_complete():
-    rows = load_vocab()
-    assert len(rows) == 3876
-    assert all(
-        {"word", "content"}.issubset(row)
-        and set(row).issubset({"word", "content", "accepted_answers"})
-        for row in rows
-    )
-    assert all(
-        isinstance(row.get("accepted_answers", []), list)
-        and all(
-            isinstance(answer, str) and answer.strip()
-            for answer in row.get("accepted_answers", [])
+class VocabularyDataQualityTests(unittest.TestCase):
+    def test_vocabulary_schema_and_pronunciation_fields_are_complete(self):
+        rows = load_vocab()
+        self.assertEqual(len(rows), 3800)
+        self.assertEqual(len({row["record_id"] for row in rows}), 3800)
+        self.assertTrue(all(
+            row["word"].strip() and row["content"].strip() for row in rows
+        ))
+        self.assertTrue(all(
+            re.search(r"[\u3400-\u9fff]", row["content"]) for row in rows
+        ))
+        self.assertTrue(all(
+            row.get("pronunciation", "").startswith("/")
+            and row["pronunciation"].endswith("/")
+            and row.get("pronunciation_source") == "ipa-dict en_US"
+            for row in rows
+        ))
+        self.assertEqual(
+            Counter(row["pronunciation_match_method"] for row in rows),
+            {
+                "direct": 3781,
+                "spelling_alias": 8,
+                "derived": 10,
+                "sense_variant_addition": 1,
+            },
         )
-        for row in rows
-    )
-    assert all(row["word"].strip() and row["content"].strip() for row in rows)
-    assert all(re.search(r"\[[^\]]+\]", row["content"]) for row in rows)
-    assert all(row["content"].count("[") == row["content"].count("]") for row in rows)
+
+    def test_headwords_do_not_contain_scraped_pronunciation_fragments(self):
+        rows = load_vocab()
+        self.assertFalse([
+            row["word"]
+            for row in rows
+            if re.search(r"[/\[*]$", row["word"])
+            or re.search(r"（.*(?:比较级|最高级|复).*）", row["word"])
+        ])
+
+    def test_known_heteronyms_keep_multiple_pronunciations(self):
+        by_word = {row["word"]: row for row in load_vocab()}
+        for word in (
+            "bow", "close", "conduct", "content", "desert", "lead", "live",
+            "minute", "object", "present", "produce", "project", "refuse",
+            "row", "subject", "tear", "use", "wind", "wound",
+        ):
+            self.assertIn(",", by_word[word]["pronunciation"], word)
+        self.assertEqual(by_word["row"]["pronunciation"], "/ˈɹoʊ/, /ˈɹaʊ/")
+
+    def test_known_non_direct_matches_remain_traceable(self):
+        by_word = {row["word"]: row for row in load_vocab()}
+        self.assertEqual(
+            by_word["analyse"]["pronunciation_match_method"],
+            "spelling_alias",
+        )
+        self.assertEqual(
+            by_word["according to"]["pronunciation_match_method"],
+            "derived",
+        )
+        self.assertEqual(by_word["PE"]["pronunciation"], "/ˌpiˈi/")
+        self.assertEqual(
+            by_word["stomachache"]["pronunciation"],
+            "/ˈstəməkˌeɪk/",
+        )
 
 
-def test_known_parenthesized_answer_rows_are_canonicalized():
-    rows = load_vocab()
-    by_word = {row["word"]: row for row in rows}
-    assert not {
-        "afterward(s)",
-        "backward(s)",
-        "department(缩Dept.)",
-        "outward(s)",
-        "the North (South) Pole",
-        "toward(s)",
-    }.intersection(by_word)
-    assert by_word["afterward"]["accepted_answers"] == [
-        "afterward", "afterwards"]
-    assert by_word["backward"]["accepted_answers"] == [
-        "backward", "backwards"]
-    assert by_word["outward"]["accepted_answers"] == [
-        "outward", "outwards"]
-    assert by_word["toward"]["accepted_answers"] == [
-        "toward", "towards"]
-    assert "accepted_answers" not in by_word["department"]
-    assert "the North Pole" in by_word
-    assert "the South Pole" in by_word
-
-
-def test_headwords_do_not_contain_scraped_pronunciation_or_footnote_fragments():
-    rows = load_vocab()
-    assert not [
-        row["word"]
-        for row in rows
-        if re.search(r"[/\[*]$", row["word"])
-        or re.search(r"\([^)]*,[^)]*\)", row["word"])
-        or re.search(r"（.*(?:比较级|最高级|复).*）", row["word"])
-    ]
-
-
-def test_headwords_do_not_contain_double_hyphens():
-    rows = load_vocab()
-    assert not [row["word"] for row in rows if "--" in row["word"]]
-
-    expected = {
-        "best-seller",
-        "boat race",
-        "bodybuilding",
-        "cold-blooded",
-        "easy-going",
-        "get-together",
-        "ice cream",
-    }
-    words = [row["word"] for row in rows]
-    assert all(words.count(word) == 1 for word in expected)
-
-
-def test_known_high_risk_alignment_repairs_remain_correct():
-    by_word = {}
-    for row in load_vocab():
-        by_word.setdefault(row["word"], []).append(row["content"])
-
-    expected = {
-        "cloud": "[klaʊd]",
-        "forget": "[fəˈɡet]",
-        "performance": "[pəˈfɔːməns]",
-        "pig": "[pɪɡ]",
-        "power": "[ˈpaʊə(r)]",
-        "sight": "[saɪt]",
-        "south": "[saʊθ]",
-        "with": "[wɪð, wɪθ]",
-        "writing": "[ˈraɪtɪŋ]",
-        "yourselves": "[jɔːˈselvz; (US) jʊrˈselvz]",
-    }
-    for word, ipa in expected.items():
-        assert any(content.startswith(ipa) for content in by_word[word])
-
-    assert by_word["perform"] == ["[pəˈfɔːm] v. 表演；履行；执行；表现"]
-    assert by_word["performance"] == ["[pəˈfɔːməns] n. 表演；演出；表现；性能"]
-    assert by_word["performer"] == ["[pəˈfɔːmə(r)] n. 表演者；演奏者"]
-
-    assert by_word["diverse"] == ["[daɪˈvɜːs] a. 不同的；多种多样的；形形色色的"]
-    assert by_word["fighter"] == ["[ˈfaɪtə(r)] n. 战士；斗士"]
-    assert by_word["vain"] == ["[veɪn] a. 自负的；自视过高的；徒劳的；无效的"]
-    assert by_word["statue"] == ["[ˈstætjuː] n. 雕像；塑像"]
-
-
-def test_heteronyms_include_pronunciations_for_each_listed_part_of_speech():
-    rows = load_vocab()
-    by_word = {row["word"]: row["content"] for row in rows}
-    for word in ("desert", "lead", "live", "present", "row", "subject", "tear", "use"):
-        assert ";" in by_word[word], f"{word} lost one of its distinct pronunciations"
+if __name__ == "__main__":
+    unittest.main()

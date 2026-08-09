@@ -1,0 +1,16 @@
+{
+  "source_id": "open-dict-data-ipa-dict-en-us",
+  "title": "ipa-dict English (General American)",
+  "repository": "https://github.com/open-dict-data/ipa-dict",
+  "retrieved_on": "2026-08-09",
+  "commit": "43c3570eb3553bdd19fccd2bd0091534889af023",
+  "data_url": "https://raw.githubusercontent.com/open-dict-data/ipa-dict/43c3570eb3553bdd19fccd2bd0091534889af023/data/en_US.txt",
+  "data_sha256": "2af6f154a5c363275f052d1f85acedef38ed185ca9745aa4314be77f6b70de67",
+  "license": "MIT for the repository material unless otherwise specified",
+  "license_sha256": "2c6a7e4c71f834a8fc0114fa4f65ca85e80bc4b4dc7ed08746963a09a7b0d177",
+  "readme_sha256": "7251a8159f6d1d1a981ae5e79e616e3c7181950c1b6023042a727056a47e87a0",
+  "selected_dataset": "en_US (General American)",
+  "selected_dataset_credit": "Based on the MIT-licensed cmudict-ipa conversion with stress-marker processing described by ipa-dict",
+  "excluded_dataset": "en_UK",
+  "exclusion_reason": "The upstream credits identify en_UK as derived from GPL-3.0 ipacards; it is not used in this proprietary release."
+}

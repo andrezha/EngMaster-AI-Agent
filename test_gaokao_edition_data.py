@@ -57,6 +57,31 @@ class GaokaoEditionDataTests(unittest.TestCase):
             rows = json.loads((DATA_DIR / name).read_text(encoding="utf-8"))
             self.assertEqual(len(rows), count)
         vocabulary = json.loads((DATA_DIR / "vocabulary.json").read_text(encoding="utf-8"))
+        self.assertTrue(all(row.get("pronunciation") for row in vocabulary))
+        self.assertEqual(
+            {row.get("pronunciation_source") for row in vocabulary},
+            {"ipa-dict en_US"},
+        )
+        self.assertEqual(
+            {
+                method: sum(
+                    row.get("pronunciation_match_method") == method
+                    for row in vocabulary
+                )
+                for method in (
+                    "direct", "spelling_alias", "derived",
+                    "sense_variant_addition",
+                )
+            },
+            {
+                "direct": 3781,
+                "spelling_alias": 8,
+                "derived": 10,
+                "sense_variant_addition": 1,
+            },
+        )
+        row_entry = next(row for row in vocabulary if row["word"] == "row")
+        self.assertEqual(row_entry["pronunciation"], "/ˈɹoʊ/, /ˈɹaʊ/")
         variants = {row["word"]: row.get("accepted_answers", []) for row in vocabulary}
         self.assertIn("an", variants["a"])
         self.assertIn("analyze", variants["analyse"])
@@ -126,6 +151,11 @@ class GaokaoEditionDataTests(unittest.TestCase):
                     self.fail("gaokao word list view did not finish loading")
                 time.sleep(0.01)
             self.assertEqual(len(window.word_list_widget.all_regular_words), 3800)
+            visible_word_list_text = " ".join(
+                label.text()
+                for label in window.word_list_widget.findChildren(QtWidgets.QLabel)
+            )
+            self.assertIn("/ˈeɪ/", visible_word_list_text)
             self.assertTrue(window._ensure_phrase_irregular_challenge_widget())
             self.assertEqual(len(window.phrase_irregular_challenge_widget.all_phrases), 450)
             self.assertEqual(len(window.phrase_irregular_challenge_widget.irregulars), 126)

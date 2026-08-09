@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "evidence_set_id": "engmaster-vocabulary-provenance-20260808",
-  "generated_on": "2026-08-08",
-  "release_dataset": "engmaster-release-vocabulary-3800-zh",
-  "repository_head_at_generation": "aca309f5af4d2e703b2e9358bd6fe2530d806185",
+  "evidence_set_id": "engmaster-vocabulary-provenance-20260809-ipa",
+  "generated_on": "2026-08-09",
+  "release_dataset": "engmaster-release-vocabulary-3800-zh-with-en-us-ipa",
+  "repository_head_at_generation": "ad851b44a0837d3a3a9fc4527afc7e3f4ba5c8f4",
   "git_commit_warning": "The repository HEAD is recorded, but this manifest does not assert that every listed file is committed. Verify git status, commit the evidence set, and create a release tag before external reliance.",
-  "file_count": 155,
+  "file_count": 163,
   "files": [
     {
       "category": "audit_reports",
@@ -75,6 +75,12 @@
     },
     {
       "category": "build_scripts",
+      "path": "tools/build_release_vocabulary_3800_ipa.py",
+      "size_bytes": 7244,
+      "sha256": "672f08a992ca3580855da2ec89e7fe6b11e0099938484b72f37557793965b0f8"
+    },
+    {
+      "category": "build_scripts",
       "path": "tools/build_release_vocabulary_3800_zh.py",
       "size_bytes": 13915,
       "sha256": "e0bc18ade124fe59becdd5f215d3d009a475ace74ea2b939e34bc523bbd5d978"
@@ -88,8 +94,8 @@
     {
       "category": "build_scripts",
       "path": "tools/build_vocabulary_provenance_evidence.py",
-      "size_bytes": 8374,
-      "sha256": "4b30ef81c1e22249b934f6b1621781154234231e5db35798cfc69cf61b4af170"
+      "size_bytes": 8943,
+      "sha256": "b095e6accf8231d4ee43dc28f55cb6dfe67deeea92da12844da3097a6b900c97"
     },
     {
       "category": "build_scripts",
@@ -718,20 +724,62 @@
     {
       "category": "governance",
       "path": "data_sources/provenance_evidence/THIRD_PARTY_NOTICES.md",
-      "size_bytes": 2878,
-      "sha256": "560b731b602282b520534e316679a5a65afd9b2c8938b9213acecc71705139a0"
+      "size_bytes": 5091,
+      "sha256": "04380679a45a9f48571472e9e94db05e42750b54faa4ee6d69b5c1248c4572bb"
     },
     {
       "category": "governance",
       "path": "data_sources/provenance_evidence/词库来源与制作过程证明材料.md",
-      "size_bytes": 11105,
-      "sha256": "0824fcdc53f9d78600f1e9a35cfd26c91619e2058a101fb2b550d584d6e213f9"
+      "size_bytes": 11167,
+      "sha256": "471d2dee8e25e5cede304c1494581e2bb942a41cdfc641385f47ce3f0478be66"
     },
     {
       "category": "governance",
       "path": "词库命名与开放数据来源策略.md",
-      "size_bytes": 12336,
-      "sha256": "a81a02e2041a057783524fd620c4a8327c2b17de354d8c8dcd7369fbc4dc4c20"
+      "size_bytes": 12558,
+      "sha256": "a783c63bd4e411564f7d83d8f3dd75ae8c4f88a8b96d220b8507a5f9d6fa0dac"
+    },
+    {
+      "category": "ipa_dict_en_us",
+      "path": "data_sources/raw/ipa_dict/LICENSE",
+      "size_bytes": 1073,
+      "sha256": "2c6a7e4c71f834a8fc0114fa4f65ca85e80bc4b4dc7ed08746963a09a7b0d177"
+    },
+    {
+      "category": "ipa_dict_en_us",
+      "path": "data_sources/raw/ipa_dict/README.md",
+      "size_bytes": 15495,
+      "sha256": "7251a8159f6d1d1a981ae5e79e616e3c7181950c1b6023042a727056a47e87a0"
+    },
+    {
+      "category": "ipa_dict_en_us",
+      "path": "data_sources/raw/ipa_dict/en_US.txt",
+      "size_bytes": 3180267,
+      "sha256": "2af6f154a5c363275f052d1f85acedef38ed185ca9745aa4314be77f6b70de67"
+    },
+    {
+      "category": "ipa_dict_en_us",
+      "path": "data_sources/raw/ipa_dict/source.json",
+      "size_bytes": 1070,
+      "sha256": "dba73af7496ce808bbe13df0a21cbb6a3df378e72257216df7068127f8610049"
+    },
+    {
+      "category": "ipa_release_3800",
+      "path": "data_sources/clean/release_vocabulary_3800_ipa/automated_qa_report.md",
+      "size_bytes": 355,
+      "sha256": "bc3c2943beb8d15e99bdd321ccd5b3931e9eefdf8a57f5511c8ddeb1233df264"
+    },
+    {
+      "category": "ipa_release_3800",
+      "path": "data_sources/clean/release_vocabulary_3800_ipa/manifest.json",
+      "size_bytes": 628,
+      "sha256": "44c224aa237603ec438cedf360f29f597db062173765fea724aac40115cd0fcf"
+    },
+    {
+      "category": "ipa_release_3800",
+      "path": "data_sources/clean/release_vocabulary_3800_ipa/release_vocabulary_3800_ipa.json",
+      "size_bytes": 1602179,
+      "sha256": "8a353648a5f247ab10bcf98eafd41fc082659850ebf9f3d40fe94256afc04479"
     },
     {
       "category": "moby",
@@ -802,8 +850,8 @@
     {
       "category": "open_english_wordnet",
       "path": "data_sources/raw/oewn/SHA256SUMS.txt",
-      "size_bytes": 173,
-      "sha256": "23dac6611feeecd50a39cd7551c099fdd9c250066a68bfb704c6f81e6d2c5581"
+      "size_bytes": 269,
+      "sha256": "ef28434934853eebd9daf1f1f6ba96b1fdcf820412f7f6521055cfc37f3d9c10"
     },
     {
       "category": "open_english_wordnet",
@@ -814,8 +862,8 @@
     {
       "category": "open_english_wordnet",
       "path": "data_sources/raw/oewn/source.json",
-      "size_bytes": 901,
-      "sha256": "1e1c1a1baaff88ec27186d607dd5c431ec8eb546fe219c2d0e85f042b0de7e83"
+      "size_bytes": 1343,
+      "sha256": "935ee1ee4e8a04a4366d0701cbf08a22ac780f2335456e0affc77a5313e72cb0"
     },
     {
       "category": "release_3800",

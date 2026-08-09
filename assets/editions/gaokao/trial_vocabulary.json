@@ -8,7 +8,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "noun",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/əˈbɪɫəˌti/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "accept",
@@ -19,7 +22,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "verb",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/ækˈsɛpt/, /əkˈsɛpt/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "achieve",
@@ -30,7 +36,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "verb",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/əˈtʃiv/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "active",
@@ -41,7 +50,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "adjective",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/ˈæktɪv/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "advantage",
@@ -52,7 +64,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "noun; verb",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/ædˈvæntɪdʒ/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "advice",
@@ -63,7 +78,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "noun",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/ædˈvaɪs/, /ədˈvaɪs/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "affect",
@@ -74,7 +92,10 @@
     "curriculum_level": "high_school_selective_compulsory",
     "parts_of_speech": "verb",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/əˈfɛkt/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "allow",
@@ -85,7 +106,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "verb",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/əˈɫaʊ/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "although",
@@ -96,7 +120,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "conjunction",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/ˌɔɫˈðoʊ/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "ancient",
@@ -107,7 +134,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "adjective; noun",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/ˈeɪnʃənt/, /ˈeɪntʃənt/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "appear",
@@ -118,7 +148,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "verb",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/əˈpɪɹ/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "attend",
@@ -129,7 +162,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "verb",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/əˈtɛnd/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "avoid",
@@ -140,7 +176,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "verb",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/əˈvɔɪd/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "believe",
@@ -151,7 +190,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "verb",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/bɪˈɫiv/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "communicate",
@@ -162,7 +204,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "verb",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/kəmˈjunəˌkeɪt/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "compare",
@@ -173,7 +218,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "verb; noun",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/kəmˈpɛɹ/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "complete",
@@ -184,7 +232,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "adjective; verb",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/kəmˈpɫit/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "consider",
@@ -195,7 +246,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "verb",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/kənˈsɪdɝ/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "continue",
@@ -206,7 +260,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "verb",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/kənˈtɪnju/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "culture",
@@ -217,7 +274,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "noun; verb",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/ˈkəɫtʃɝ/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "develop",
@@ -228,7 +288,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "verb",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/dɪˈvɛɫəp/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "environment",
@@ -239,7 +302,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "noun",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/ɪnˈvaɪɹənmənt/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "experience",
@@ -250,7 +316,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "noun; verb",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/ɪkˈspɪɹiəns/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "improve",
@@ -261,7 +330,10 @@
     "curriculum_level": "high_school_compulsory",
     "parts_of_speech": "verb",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/ˌɪmˈpɹuv/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "knowledge",
@@ -272,7 +344,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "noun",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/ˈnɑɫədʒ/, /ˈnɑɫɪdʒ/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "opportunity",
@@ -283,7 +358,10 @@
     "curriculum_level": "high_school_compulsory",
     "parts_of_speech": "noun",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/ˌɑpɝˈtunəti/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "possible",
@@ -294,7 +372,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "adjective; noun",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/ˈpɑsəbəɫ/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "protect",
@@ -305,7 +386,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "verb",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/pɹəˈtɛkt/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "provide",
@@ -316,7 +400,10 @@
     "curriculum_level": "compulsory_education",
     "parts_of_speech": "verb",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/pɹəˈvaɪd/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   },
   {
     "word": "responsibility",
@@ -327,6 +414,9 @@
     "curriculum_level": "high_school_selective_compulsory",
     "parts_of_speech": "noun",
     "definition_method": "AI_drafted_from_open_source_semantics",
-    "qa_status": "automated_checks_passed"
+    "qa_status": "automated_checks_passed",
+    "pronunciation": "/ɹiˌspɑnsəˈbɪɫəti/",
+    "pronunciation_source": "ipa-dict en_US",
+    "pronunciation_match_method": "direct"
   }
 ]

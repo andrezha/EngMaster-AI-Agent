@@ -18,19 +18,21 @@
   },
   "source_files": {
     "data_sources/clean/release_vocabulary_3800_zh/release_vocabulary_3800_zh.json": "15c07587db35acb80c20a971600ea0c71f0175c8007c5d4ccd6613b911221c80",
+    "data_sources/clean/release_vocabulary_3800_ipa/release_vocabulary_3800_ipa.json": "8a353648a5f247ab10bcf98eafd41fc082659850ebf9f3d40fe94256afc04479",
     "data_sources/clean/phrase_product_candidates/senior_high_phrases_product_candidate.json": "62decc01e8b1425c105e9cbaf27cf661da694a8eae81619fdc4a3c42c51fd0e5",
     "data_sources/clean/irregular_verbs/irregular_verbs_clean.json": "08137caee048de0862c1898c6f79c726a787635c3d76021d35cb474435ddd3ed"
   },
   "product_files": {
-    "vocabulary.json": "c67a51e9785177eb8272e9fc5fd3682745f521373c4051c77947ed529e3a19f1",
-    "trial_vocabulary.json": "3f20742843a8c8eed0ff209f5276859b73ea598da57e20d6187aaf9218797df9",
+    "vocabulary.json": "3541156164076661a5754b37232e4a01e803341f5ace6ad1a10f9462e8107b3e",
+    "trial_vocabulary.json": "08f7daf005abcc723c793e4fb85a5fdaca09ec1c6afee6ccf5df17deb86a5f9d",
     "phrases.json": "d37100179ffcdf3bdb654dfab100dc9860b59962cb4cc24c16bb3f56bd793c68",
     "irregular_verbs.json": "7b5bc7ba4fb0ee0f4f09633f27b8b39f621524b109a086816eedebce86cb547a",
-    "THIRD_PARTY_NOTICES.md": "e1a395ac363f6adc5a58ea0fa8dc15209ae445a45548af4ed777931b5c76cf72",
+    "THIRD_PARTY_NOTICES.md": "47eb24ac33789d57084dc2df28b90891541652b6fb52f032eff22fe6fcbb7e19",
     "OPEN_ENGLISH_WORDNET_LICENSE.md": "de49d4b628f3e6fbf1d171d64aa88696aaf11a9199396dd5dd10f92b644b8970",
     "PRINCETON_WORDNET_LICENSE.txt": "f495d7ce851972b63004d3a021c5b61ac61112bfa4d8de809852ef603bd051db",
     "ECDICT_LICENSE.txt": "f8552dd246f61a4e064569eae6194a01c6b3d63b03bf27c6ca863593c549ed0f",
-    "README.md": "61da19026d4fac7d2a979e43f87cead90f24510bcd99459e335edb461b271cf9"
+    "IPA_DICT_LICENSE.txt": "65476f8b94abc4e9c32666025e168658cb5d260518182b1e73f595388433dfa5",
+    "README.md": "eeed5b1e515d5eced0106c74ea2713b1f47c50c6d8cf663ce84a0e61e15d7d65"
   },
   "content_policy": {
     "legacy_vocabulary_content_reused": false,
@@ -38,7 +40,9 @@
     "legacy_irregular_index_used": true,
     "images_included": false,
     "audio_included": false,
-    "phonetics_included": false,
+    "phonetics_included": true,
+    "phonetics_dialect": "General American",
+    "phonetics_source": "ipa-dict en_US",
     "human_review_claimed": false
   }
 }

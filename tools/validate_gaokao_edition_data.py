@@ -67,6 +67,15 @@ def main() -> int:
             errors.append(f"vocabulary.json row {index}: missing word or Chinese content")
         if row.get("qa_status") != "automated_checks_passed":
             errors.append(f"vocabulary.json row {index}: QA status is not passed")
+        pronunciation = str(row.get("pronunciation", "")).strip()
+        if not pronunciation or "/" not in pronunciation:
+            errors.append(f"vocabulary.json row {index}: missing IPA pronunciation")
+        if row.get("pronunciation_source") != "ipa-dict en_US":
+            errors.append(f"vocabulary.json row {index}: invalid IPA source")
+        if row.get("pronunciation_match_method") not in {
+                "direct", "spelling_alias", "derived",
+                "sense_variant_addition"}:
+            errors.append(f"vocabulary.json row {index}: invalid IPA match method")
         variants = [
             value.strip()
             for value in str(row.get("variants", "")).split(";")
@@ -128,9 +137,13 @@ def main() -> int:
             if not path.exists() or sha256_file(path) != digest:
                 errors.append(f"manifest hash mismatch: {name}")
         policy = manifest.get("content_policy", {})
-        for key in ("images_included", "audio_included", "phonetics_included", "human_review_claimed"):
+        for key in ("images_included", "audio_included", "human_review_claimed"):
             if policy.get(key) is not False:
                 errors.append(f"manifest content policy must set {key}=false")
+        if policy.get("phonetics_included") is not True:
+            errors.append("manifest content policy must include phonetics")
+        if policy.get("phonetics_source") != "ipa-dict en_US":
+            errors.append("manifest content policy has invalid phonetics source")
     except (OSError, json.JSONDecodeError) as exc:
         errors.append(f"manifest.json: {exc}")
 
@@ -140,6 +153,7 @@ def main() -> int:
         "OPEN_ENGLISH_WORDNET_LICENSE.md",
         "PRINCETON_WORDNET_LICENSE.txt",
         "ECDICT_LICENSE.txt",
+        "IPA_DICT_LICENSE.txt",
     ):
         if not (DATA_DIR / name).is_file():
             errors.append(f"missing required notice: {name}")

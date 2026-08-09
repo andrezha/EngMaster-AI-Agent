@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "source_record": "data_sources/raw/ipa_dict/source.json",
+  "source_record_sha256": "dba73af7496ce808bbe13df0a21cbb6a3df378e72257216df7068127f8610049",
+  "source_data_sha256": "2af6f154a5c363275f052d1f85acedef38ed185ca9745aa4314be77f6b70de67",
+  "output_sha256": "8a353648a5f247ab10bcf98eafd41fc082659850ebf9f3d40fe94256afc04479",
+  "report_sha256": "bc3c2943beb8d15e99bdd321ccd5b3931e9eefdf8a57f5511c8ddeb1233df264",
+  "counts": {
+    "direct": 3781,
+    "spelling_alias": 8,
+    "derived": 10,
+    "sense_variant_addition": 1
+  },
+  "excluded_sources": [
+    "ipa-dict en_UK"
+  ]
+}

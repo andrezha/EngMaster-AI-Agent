@@ -14,6 +14,10 @@ VOCABULARY_SOURCE = (
     ROOT
     / "data_sources/clean/release_vocabulary_3800_zh/release_vocabulary_3800_zh.json"
 )
+IPA_SOURCE = (
+    ROOT
+    / "data_sources/clean/release_vocabulary_3800_ipa/release_vocabulary_3800_ipa.json"
+)
 PHRASE_SOURCE = (
     ROOT
     / "data_sources/clean/phrase_product_candidates/senior_high_phrases_product_candidate.json"
@@ -23,6 +27,8 @@ IRREGULAR_SOURCE = (
 )
 NOTICE_SOURCE = ROOT / "data_sources/provenance_evidence/THIRD_PARTY_NOTICES.md"
 OEWN_LICENSE_SOURCE = ROOT / "data_sources/raw/oewn/LICENSE.md"
+ECDICT_LICENSE_SOURCE = ROOT / "data_sources/raw/ecdict/LICENSE"
+IPA_DICT_LICENSE_SOURCE = ROOT / "data_sources/raw/ipa_dict/LICENSE"
 
 
 def sha256_file(path: Path) -> str:
@@ -45,6 +51,9 @@ def load_rows(path: Path) -> list[dict[str, object]]:
 
 def build_vocabulary() -> list[dict[str, object]]:
     rows = load_rows(VOCABULARY_SOURCE)
+    ipa_by_id = {
+        str(row["record_id"]): row for row in load_rows(IPA_SOURCE)
+    }
     output: list[dict[str, object]] = []
     for row in rows:
         variants = [
@@ -62,6 +71,11 @@ def build_vocabulary() -> list[dict[str, object]]:
             "parts_of_speech": row["parts_of_speech"],
             "definition_method": row["definition_method"],
             "qa_status": row["qa_status"],
+            "pronunciation": ipa_by_id[str(row["record_id"])]["pronunciation"],
+            "pronunciation_source": "ipa-dict en_US",
+            "pronunciation_match_method": ipa_by_id[
+                str(row["record_id"])
+            ]["match_method"],
         }
         if variants:
             item["accepted_answers"] = variants
@@ -117,13 +131,14 @@ def write_readme() -> Path:
 
 本目录是高中正式版在程序内实际读取的独立数据区：
 
-- `vocabulary.json`：3800条高中学习词汇及中文释义；
+- `vocabulary.json`：3800条高中学习词汇、中文释义及美式IPA音标；
+- `trial_vocabulary.json`：从正式词表原样提取的30条高中体验词；
 - `phrases.json`：450条高中短语，其中核心300条（6关）、扩展150条（3关）；
 - `irregular_verbs.json`：126条不规则动词；
 - `manifest.json`、`SHA256SUMS.txt`：来源和成品完整性记录；
-- `THIRD_PARTY_NOTICES.md`、`OPEN_ENGLISH_WORDNET_LICENSE.md`：第三方来源与许可证声明。
+- `THIRD_PARTY_NOTICES.md`、`OPEN_ENGLISH_WORDNET_LICENSE.md`、`PRINCETON_WORDNET_LICENSE.txt`、`ECDICT_LICENSE.txt`、`IPA_DICT_LICENSE.txt`：第三方来源与许可证声明。
 
-本数据包不含图片、音频和音标。中文释义、短语内容和不规则动词形式均来自仓库内已留档的干净母数据；不声明已经人工逐条审核。
+本数据包不含图片和音频。美式IPA、中文释义、短语内容和不规则动词形式均来自仓库内已留档的干净母数据；不声明已经人工逐条审核。
 """,
         encoding="utf-8",
     )
@@ -145,6 +160,14 @@ def main() -> int:
     phrases = build_phrases()
     irregulars = build_irregulars()
     write_json(OUTPUT_DIR / "vocabulary.json", vocabulary)
+    trial_ids = {
+        str(row["record_id"])
+        for row in load_rows(OUTPUT_DIR / "trial_vocabulary.json")
+    }
+    write_json(
+        OUTPUT_DIR / "trial_vocabulary.json",
+        [row for row in vocabulary if str(row["record_id"]) in trial_ids],
+    )
     write_json(OUTPUT_DIR / "phrases.json", phrases)
     write_json(OUTPUT_DIR / "irregular_verbs.json", irregulars)
     shutil.copyfile(NOTICE_SOURCE, OUTPUT_DIR / "THIRD_PARTY_NOTICES.md")
@@ -152,23 +175,38 @@ def main() -> int:
         OEWN_LICENSE_SOURCE,
         OUTPUT_DIR / "OPEN_ENGLISH_WORDNET_LICENSE.md",
     )
+    copy_text_normalized(
+        ECDICT_LICENSE_SOURCE,
+        OUTPUT_DIR / "ECDICT_LICENSE.txt",
+    )
+    copy_text_normalized(
+        IPA_DICT_LICENSE_SOURCE,
+        OUTPUT_DIR / "IPA_DICT_LICENSE.txt",
+    )
     readme_path = write_readme()
 
     data_files = [
         OUTPUT_DIR / "vocabulary.json",
+        OUTPUT_DIR / "trial_vocabulary.json",
         OUTPUT_DIR / "phrases.json",
         OUTPUT_DIR / "irregular_verbs.json",
         OUTPUT_DIR / "THIRD_PARTY_NOTICES.md",
         OUTPUT_DIR / "OPEN_ENGLISH_WORDNET_LICENSE.md",
+        OUTPUT_DIR / "PRINCETON_WORDNET_LICENSE.txt",
+        OUTPUT_DIR / "ECDICT_LICENSE.txt",
+        OUTPUT_DIR / "IPA_DICT_LICENSE.txt",
         readme_path,
     ]
-    source_files = [VOCABULARY_SOURCE, PHRASE_SOURCE, IRREGULAR_SOURCE]
+    source_files = [
+        VOCABULARY_SOURCE, IPA_SOURCE, PHRASE_SOURCE, IRREGULAR_SOURCE
+    ]
     manifest = {
         "schema_version": 1,
         "edition_id": "gaokao",
         "status": "product_data_complete_auto_validated",
         "counts": {
             "vocabulary": len(vocabulary),
+            "trial_vocabulary": 30,
             "phrases": len(phrases),
             "core_phrases": sum(row["tier"] == "core" for row in phrases),
             "extension_phrases": sum(
@@ -178,6 +216,7 @@ def main() -> int:
         },
         "application_paths": {
             "vocabulary": "assets/editions/gaokao/vocabulary.json",
+            "trial_vocabulary": "assets/editions/gaokao/trial_vocabulary.json",
             "phrases": "assets/editions/gaokao/phrases.json",
             "irregular_verbs": "assets/editions/gaokao/irregular_verbs.json",
         },
@@ -194,7 +233,9 @@ def main() -> int:
             "legacy_irregular_index_used": True,
             "images_included": False,
             "audio_included": False,
-            "phonetics_included": False,
+            "phonetics_included": True,
+            "phonetics_dialect": "General American",
+            "phonetics_source": "ipa-dict en_US",
             "human_review_claimed": False,
         },
     }

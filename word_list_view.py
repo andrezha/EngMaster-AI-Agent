@@ -504,8 +504,17 @@ class WordListView(QtWidgets.QWidget):
             idx.setText(f"{num + 1}")
             word = item.get('word') or item.get('english', '')
             trans = item.get('content') or item.get('translation', '')
+            pronunciation = str(item.get('pronunciation', '') or '').strip()
             w_lbl.setText("" if self.hide_english else str(word))
-            c_lbl.setText("" if self.hide_chinese else str(trans))
+            if self.hide_english:
+                detail_text = str(trans)
+            elif self.hide_chinese:
+                detail_text = pronunciation
+            else:
+                detail_text = "  ".join(
+                    part for part in (pronunciation, str(trans)) if part
+                )
+            c_lbl.setText(detail_text)
 
         layout.addWidget(idx); layout.addWidget(w_lbl); layout.addWidget(c_lbl, 1)
         return row
@@ -523,6 +532,7 @@ class WordListView(QtWidgets.QWidget):
             word for word in src
             if t in _normalize_search_text(word.get('word', ''))
             or t in _normalize_search_text(word.get('content', ''))
+            or t in _normalize_search_text(word.get('pronunciation', ''))
         ] if t else src.copy()
         label = (
             f"{self.initial_filter.upper()} 字母开头单词"

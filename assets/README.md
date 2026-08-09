@@ -4,7 +4,7 @@
 
 当前完整版本为 `assets/editions/gaokao/`：
 
-- `vocabulary.json`：3800 个单词
+- `vocabulary.json`：3800 个单词及美式IPA音标
 - `trial_vocabulary.json`：从上述正式词表逐条提取的 30 个高中体验词
 - `phrases.json`：450 个短语（核心 300、扩展 150）
 - `irregular_verbs.json`：126 组不规则动词

@@ -50,6 +50,19 @@ ECDICT Free English to Chinese Dictionary Database was used only for exact word 
 
 The MIT copyright and permission notice must be retained with copies or substantial portions of the ECDICT material.
 
+## ipa-dict English (General American)
+
+The released 3800-word vocabulary uses the `en_US` dataset from open-dict-data/ipa-dict for General American IPA transcriptions.
+
+- Project: <https://github.com/open-dict-data/ipa-dict>
+- Fixed commit: `43c3570eb3553bdd19fccd2bd0091534889af023`
+- Selected data: `data/en_US.txt`
+- License notice: MIT, Copyright (c) 2016 dohliam
+- Local source record: `data_sources/raw/ipa_dict/source.json`
+- Product license text: `IPA_DICT_LICENSE.txt`
+
+Of the 3800 released records, 3781 are direct case-insensitive headword matches, 8 use explicit equivalent-spelling mappings, 10 are deterministic compositions from matched source entries, and 1 adds a documented heteronym pronunciation required by the released meanings. These methods are recorded per item in the pronunciation evidence layer. The upstream `en_UK` data is not used because the ipa-dict credits identify it as derived from a GPL-3.0 source.
+
 ## Moby Words II and Moby Part-of-Speech II
 
 Moby Words II and Moby Part-of-Speech II by Grady Ward were used for auxiliary spelling and part-of-speech validation.
@@ -73,8 +86,8 @@ Tatoeba sentences are not copied into product examples. Raw occurrence counts ar
 
 ## No media data
 
-The released vocabulary dataset contains no images, audio, or phonetic transcriptions. Its Chinese definitions were reorganized and drafted by this project from documented open semantic evidence and checked by automated validation; no claim of item-by-item human review is made.
+The released vocabulary dataset contains no images or audio. It contains General American IPA transcriptions from the documented ipa-dict build described above. Its Chinese definitions were reorganized and drafted by this project from documented open semantic evidence and checked by automated validation; no claim of item-by-item human review is made.
 
 The released phrase examples were independently written for this product. Tatoeba sentences, default CC BY exports, and audio are not copied into the product.
 
-The complete ECDICT MIT license distributed with this edition is available in `ECDICT_LICENSE.txt`. The complete Open English WordNet and Creative Commons Attribution 4.0 terms are available in `OPEN_ENGLISH_WORDNET_LICENSE.md`. The underlying Princeton WordNet license is also distributed separately as `PRINCETON_WORDNET_LICENSE.txt`.
+The complete ECDICT and ipa-dict MIT licenses distributed with this edition are available in `ECDICT_LICENSE.txt` and `IPA_DICT_LICENSE.txt`. The complete Open English WordNet and Creative Commons Attribution 4.0 terms are available in `OPEN_ENGLISH_WORDNET_LICENSE.md`. The underlying Princeton WordNet license is also distributed separately as `PRINCETON_WORDNET_LICENSE.txt`.

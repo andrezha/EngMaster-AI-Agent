@@ -63,11 +63,13 @@ class LicenseEntitlementTests(unittest.TestCase):
         self.assertIn("ECDICT", data_notice)
         self.assertIn("Moby Words II", data_notice)
         self.assertIn("Tatoeba CC0", data_notice)
+        self.assertIn("ipa-dict en_US", data_notice)
         documents = main.load_public_license_documents()
-        self.assertEqual(len(documents), 4)
+        self.assertEqual(len(documents), 5)
         self.assertIn("Creative Commons Attribution 4.0", documents["OEWN与WordNet完整许可"])
         self.assertIn("WordNet 3.0 Copyright 2006", documents["Princeton WordNet许可"])
         self.assertIn("Permission is hereby granted", documents["ECDICT MIT许可证"])
+        self.assertIn("Copyright (c) 2016 dohliam", documents["ipa-dict MIT许可证"])
         self.assertIn("Third-Party Data Notices", documents["第三方数据声明"])
 
     def test_em3_signed_permissions_are_verified_and_tampering_fails(self):

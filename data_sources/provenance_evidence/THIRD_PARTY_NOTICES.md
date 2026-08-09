@@ -50,6 +50,18 @@ ECDICT Free English to Chinese Dictionary Database was used only for exact word 
 
 The MIT copyright and permission notice must be retained with copies or substantial portions of the ECDICT material.
 
+## ipa-dict English (General American)
+
+The released 3800-word vocabulary uses only the `en_US` dataset from open-dict-data/ipa-dict for General American IPA transcriptions.
+
+- Project: <https://github.com/open-dict-data/ipa-dict>
+- Fixed commit: `43c3570eb3553bdd19fccd2bd0091534889af023`
+- Selected data: `data/en_US.txt`
+- License notice: MIT, Copyright (c) 2016 dohliam
+- Local source record: `data_sources/raw/ipa_dict/source.json`
+
+The `en_UK` data is excluded because the upstream credits identify it as derived from a GPL-3.0 source. Pronunciation match and derivation methods are preserved in `data_sources/clean/release_vocabulary_3800_ipa/`.
+
 ## Moby Words II and Moby Part-of-Speech II
 
 Moby Words II and Moby Part-of-Speech II by Grady Ward were used for auxiliary spelling and part-of-speech validation.
@@ -73,4 +85,4 @@ Tatoeba sentences are not copied into product examples. Raw occurrence counts ar
 
 ## No media data
 
-The vocabulary dataset described by this notice contains no images and no audio. The current frozen English headword master also contains no Chinese definitions and no phonetic transcriptions; those fields are intentionally blank pending a separately documented build stage.
+The released vocabulary dataset contains no images or audio. Its Chinese definitions and General American IPA transcriptions were added in separately documented build stages; no claim of item-by-item human review is made.

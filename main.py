@@ -1948,7 +1948,7 @@ def get_copyright_notice_text() -> str:
         "释义、音标、例句、编号或原始顺序。\n\n"
         "短语释义、用法说明及产品例句由本项目重新整理和编写。本项目不宣称全部内容已经"
         "由人工逐条审核，用户应结合教材、教师指导及官方考试要求使用。\n\n"
-        "当前正式词汇数据不包含图片、音频和音标。\n\n"
+        "当前正式词汇数据不包含图片和音频；3800词配有来源已留档的美式IPA音标。\n\n"
         "四、权利边界\n\n"
         "本软件自有部分作为商业软件发行，保留依法享有的相关权利。第三方材料仍归相应"
         "权利人所有，并分别适用其原许可证。本软件的商业授权、激活限制或版权声明，不改变、"
@@ -1979,12 +1979,19 @@ def get_third_party_data_notice_text() -> str:
         "许可记录，本产品仍附带ECDICT的MIT许可证和原版权声明。\n"
         "项目：https://github.com/skywind3000/ECDICT\n"
         "许可：MIT License；Copyright (c) 2025 Linwei\n\n"
-        "4. Moby Words II / Moby Part-of-Speech II\n"
+        "4. ipa-dict en_US\n"
+        "用途：为正式版3800词提供General American（美式）IPA音标。3781条直接匹配，"
+        "其余词条通过留档的拼写映射、已匹配源词机械组合或同形异音义项校验补齐。\n"
+        "固定提交：43c3570eb3553bdd19fccd2bd0091534889af023\n"
+        "许可：MIT License；Copyright (c) 2016 dohliam。\n"
+        "项目：https://github.com/open-dict-data/ipa-dict\n"
+        "本产品未使用该项目注明派生自GPL-3.0来源的en_UK英式数据。\n\n"
+        "5. Moby Words II / Moby Part-of-Speech II\n"
         "用途：辅助拼写和词性核验。相关Project Gutenberg档案声明其为作者Grady Ward"
         "授予的Public Domain材料。\n"
         "https://www.gutenberg.org/ebooks/3201\n"
         "https://www.gutenberg.org/ebooks/3203\n\n"
-        "5. Tatoeba CC0英语句子子集\n"
+        "6. Tatoeba CC0英语句子子集\n"
         "用途：仅作为短语是否实际出现的辅助证据。产品例句不复制Tatoeba句子，Tatoeba"
         "音频和默认CC BY句子数据不进入本产品。\n"
         "https://tatoeba.org/\n\n"
@@ -1999,6 +2006,7 @@ def load_public_license_documents() -> dict[str, str]:
         ("OEWN与WordNet完整许可", "assets/editions/gaokao/OPEN_ENGLISH_WORDNET_LICENSE.md"),
         ("Princeton WordNet许可", "assets/editions/gaokao/PRINCETON_WORDNET_LICENSE.txt"),
         ("ECDICT MIT许可证", "assets/editions/gaokao/ECDICT_LICENSE.txt"),
+        ("ipa-dict MIT许可证", "assets/editions/gaokao/IPA_DICT_LICENSE.txt"),
         ("第三方数据声明", "assets/editions/gaokao/THIRD_PARTY_NOTICES.md"),
     ):
         try:
