@@ -28,6 +28,20 @@ def has_chinese(value: str) -> bool:
     return bool(re.search(r"[\u3400-\u9fff]", value))
 
 
+def realizes_target_phrase(phrase: str, example: str) -> bool:
+    """Accept exact forms plus a small audited set of separable structures."""
+    folded_phrase = phrase.casefold()
+    folded_example = example.casefold()
+    if folded_phrase in folded_example:
+        return True
+    separable_patterns = {
+        "regard as": r"\bregard\b(?:\s+\w+){1,6}\s+\bas\b",
+        "tide over": r"\btide\b(?:\s+\w+){1,6}\s+\bover\b",
+    }
+    pattern = separable_patterns.get(folded_phrase)
+    return bool(pattern and re.search(pattern, folded_example))
+
+
 def main() -> int:
     master_rows = json.loads(MASTER.read_text(encoding="utf-8"))
     master = {row["record_id"]: row for row in master_rows}
@@ -70,8 +84,8 @@ def main() -> int:
                     errors.append(f"{label}: example_zh has no Chinese")
                 if "/" in row["phrase"] or "/" in row["example_en"]:
                     errors.append(f"{label}: slash found in English content")
-                if row["phrase"].casefold() not in row["example_en"].casefold():
-                    warnings.append(f"{label}: target phrase is not an exact substring of example_en")
+                if not realizes_target_phrase(row["phrase"], row["example_en"]):
+                    warnings.append(f"{label}: target phrase is not realized in example_en")
                 normalized_example = re.sub(r"\s+", " ", row["example_en"].strip().casefold())
                 if normalized_example in seen_examples:
                     errors.append(
