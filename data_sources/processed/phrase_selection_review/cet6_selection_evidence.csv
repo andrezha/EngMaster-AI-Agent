@@ -98,7 +98,7 @@
 97,lead astray,lead astray,cet6,approved_dictionary_candidate_pool,OEWN,v,lead_astray%2:32:00::|lead_astray%2:38:00::|lead_astray%2:41:00::,false,0,cet6,selected_for_cross_level_review,false
 98,lounge around,lounge around,cet6,approved_dictionary_candidate_pool,OEWN,v,lounge_around%2:42:00::,false,0,cet6,selected_for_cross_level_review,false
 99,plea bargain,plea bargain,cet6,approved_dictionary_candidate_pool,OEWN,n|v,plea-bargain%2:32:00::|plea_bargain%1:10:00::,false,0,cet6,selected_for_cross_level_review,false
-100,poke fun,poke fun,cet6,approved_dictionary_candidate_pool,OEWN,v,poke_fun%2:32:00::,false,0,cet6,selected_for_cross_level_review,false
+100,foster care,foster care,cet6,approved_dictionary_candidate_pool,OEWN,n,foster_care%1:04:00::,false,3,cet6,selected_for_cross_level_review,false
 101,prop up,prop up,cet6,approved_dictionary_candidate_pool,OEWN,v,prop_up%2:35:00::,false,0,cet6,selected_for_cross_level_review,false
 102,vice president,vice president,cet6,approved_dictionary_candidate_pool,OEWN,n,vice_president%1:18:00::,true,15,cet6,selected_for_cross_level_review,false
 103,scrape up,scrape up,cet6,approved_dictionary_candidate_pool,OEWN,v,scrape_up%2:35:00::,false,0,cet6,selected_for_cross_level_review,false
@@ -213,7 +213,7 @@
 212,live with,live with,cet6,approved_dictionary_candidate_pool,OEWN,v,live_with%2:31:00::,false,1,junior,selected_for_cross_level_review,false
 213,look away,look away,cet6,approved_dictionary_candidate_pool,OEWN,v,look_away%2:39:00::,false,1,junior,selected_for_cross_level_review,false
 214,make a point,make a point,cet6,approved_dictionary_candidate_pool,OEWN,v,make_a_point%2:41:00::,false,1,junior,selected_for_cross_level_review,false
-215,make fun of,make fun of,cet6,approved_dictionary_candidate_pool,OEWN,v,make_fun_of%2:32:00::,false,1,junior,selected_for_cross_level_review,false
+215,volcanic eruption,volcanic eruption,cet6,approved_dictionary_candidate_pool,OEWN,n,volcanic_eruption%1:11:00::,false,2,cet6,selected_for_cross_level_review,false
 216,move over,move over,cet6,approved_dictionary_candidate_pool,OEWN,v,move_over%2:38:00::,false,1,junior,selected_for_cross_level_review,false
 217,own up,own up,cet6,approved_dictionary_candidate_pool,OEWN,v,own_up%2:32:00::,false,1,junior,selected_for_cross_level_review,false
 218,part with,part with,cet6,approved_dictionary_candidate_pool,OEWN,v,part_with%2:40:00::,false,1,junior,selected_for_cross_level_review,false

@@ -59,6 +59,8 @@ def pedagogical_key(value: str) -> str:
         "rattle off": "reel off",
         "sneak away": "sneak off",
         "close down": "shut down",
+        "make fun of": "laugh at",
+        "poke fun": "laugh at",
     }
     return audited_equivalents.get(key, key)
 
