@@ -4,4 +4,4 @@
 
 每条短语只出现一次，`introduced_level` 表示首次系统学习层级，`included_in` 表示累计产品视图。母表由开放词典候选或“独立结构＋Tatoeba CC0出现证据”支持，旧573条短语表未读取。
 
-当前只冻结英文形式和层级，尚未完成中文释义、英文例句、中文译文及答案变体，因此还不能替换产品数据。`human_review_claimed` 始终为 `false`，不宣称人工专家审核。
+英文形式和层级已经冻结；原创中文释义、用法说明及双语例句也已完成，正式合并结果见 `data_sources/clean/phrase_master_content/`。产品旧短语文件尚未替换，仍需单独进行产品格式适配和应用测试。`human_review_claimed` 始终为 `false`，不宣称人工专家审核。

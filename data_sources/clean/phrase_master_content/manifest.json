@@ -1,0 +1,49 @@
+{
+  "status": "complete",
+  "source_english_master": "data_sources/clean/phrase_master_english/phrase_master_english.json",
+  "source_content_batches": [
+    "data_sources/enrichment/phrase_content_batches/batch_001.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_002.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_003.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_004.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_005.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_006.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_007.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_008.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_009.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_010.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_011.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_012.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_013.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_014.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_015.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_016.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_017.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_018.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_019.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_020.tsv",
+    "data_sources/enrichment/phrase_content_batches/batch_021.tsv"
+  ],
+  "master_record_count": 1050,
+  "cumulative_view_counts": {
+    "junior": 250,
+    "senior_high": 450,
+    "cet4": 750,
+    "cet6": 1050
+  },
+  "old_phrase_file_read": false,
+  "human_review_claimed": false,
+  "content_method": "original_project_authored",
+  "file_sha256": {
+    "phrase_master_content_1050.json": "bfd7992e2a681af1cd7ff0298e285c6dbc5e905c9fcb4fe87ac615a14af3faa3",
+    "phrase_master_content_1050.csv": "43e8bb4c60752539a12c50a238c128089f500f4f790e7fe572b07a3edc97294e",
+    "junior_phrases_250.json": "907f74a0e8109d0e47504e971b7eae1f365a5e7116cea8a3e861da5e8758447b",
+    "junior_phrases_250.csv": "b27f7992ee2ed7ddb0ce1282e10b7434a7ce2da1f806766f8f73cb943bd510d4",
+    "senior_high_phrases_450.json": "5834d3d372a5c078eefcd6aa3a84a8d03afd98420afecc35b235a299f52ab9d6",
+    "senior_high_phrases_450.csv": "7130e85be552b46a1ddb3c885e6f80264e60263a5b909d836332cc8039811b8e",
+    "cet4_phrases_750.json": "6aec334a303815888a44f97f8b2b4dbbc1b6042fa8d210a565377301b8333550",
+    "cet4_phrases_750.csv": "834d090748fdfab7b0079a823ea0571f98315b8e3b8b2f125d46104f447450ab",
+    "cet6_phrases_1050.json": "a6e921afa7e81a1fe3ef61c745eb30cd1f8ae57bd55785b71678a1a155914ce1",
+    "cet6_phrases_1050.csv": "3e9f22c3fbebe4aa990c536ba39f546a984578ea72ee628a90042a64266ad402"
+  }
+}
