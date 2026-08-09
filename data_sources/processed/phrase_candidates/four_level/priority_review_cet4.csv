@@ -1,0 +1,901 @@
+﻿phrase,normalized_phrase,word_count,minimum_lexical_level,oewn_match,oewn_pos,oewn_sense_ids,moby_match,tatoeba_cc0_sentence_count,candidate_status,priority_score,human_review_claimed
+prime minister,prime minister,2,cet4,true,n,prime_minister%1:18:00::|prime_minister%1:18:01::,true,35,evidence_ready_review,55.699,false
+social media,social media,2,cet4,true,n,social_media%1:10:01::,false,34,evidence_ready_review,51.293,false
+at first,at first,2,cet4,true,r,at_first%4:02:01::,false,21,evidence_ready_review,49.594,false
+carbon dioxide,carbon dioxide,2,cet4,true,n,carbon_dioxide%1:27:00::,true,19,evidence_ready_review,47.219,false
+rid of,rid of,2,cet4,true,v,rid_of%2:42:00::,false,12,evidence_ready_review,47.004,false
+for one,for one,2,cet4,true,r,for_one%4:02:00::,false,16,evidence_ready_review,45.875,false
+be given,be given,2,cet4,true,v,be_given%2:42:00::,false,11,evidence_ready_review,45.85,false
+supreme court,supreme court,2,cet4,true,n,supreme_court%1:14:01::,false,22,evidence_ready_review,45.236,false
+one time,one time,2,cet4,true,a|r,one-time%5:00:00:past:00|one_time%4:02:00::,true,11,evidence_ready_review,44.85,false
+disagree with,disagree with,2,cet4,true,v,disagree_with%2:29:00::,false,9,evidence_ready_review,43.219,false
+one step,one step,2,cet4,true,n|v,one-step%1:04:00::|one-step%2:38:00::,true,6,evidence_ready_review,42.074,false
+get rid of,get rid of,3,cet4,true,v,get_rid_of%2:30:00::|get_rid_of%2:40:01::|get_rid_of%2:41:00::,false,8,evidence_ready_review,41.699,false
+immune system,immune system,2,cet4,true,n,immune_system%1:08:00::,false,17,evidence_ready_review,41.699,false
+one hundred,one hundred,2,cet4,true,a,one_hundred%5:00:00:cardinal:00,false,17,evidence_ready_review,41.699,false
+one another,one another,2,cet4,false,,,true,12,moby_corpus_review,41.004,false
+self improvement,self improvement,2,cet4,true,n,self-improvement%1:04:00::,true,11,evidence_ready_review,39.85,false
+economic growth,economic growth,2,cet4,true,n,economic_growth%1:22:00::,false,14,evidence_ready_review,39.069,false
+one way,one way,2,cet4,true,a,one-way%5:00:00:unidirectional:00,true,10,evidence_ready_review,38.594,false
+in vain,in vain,2,cet4,true,r,in_vain%4:02:00::,false,9,evidence_ready_review,38.219,false
+magnetic field,magnetic field,2,cet4,true,n,magnetic_field%1:19:00::,true,9,evidence_ready_review,37.219,false
+high tech,high tech,2,cet4,true,a|n,high-tech%3:00:00::|high_tech%1:04:00::,false,12,evidence_ready_review,37.004,false
+middle aged,middle aged,2,cet4,true,a,middle-aged%5:00:00:old:02,true,8,evidence_ready_review,35.699,false
+self determination,self determination,2,cet4,true,n,self-determination%1:07:00::|self-determination%1:26:00::,true,8,evidence_ready_review,35.699,false
+twenty four,twenty four,2,cet4,true,a|n,twenty-four%1:23:00::|twenty-four%5:00:00:cardinal:00,true,8,evidence_ready_review,35.699,false
+the devil,the devil,2,cet4,true,n,the_devil%1:04:00::,false,10,evidence_ready_review,34.594,false
+twenty five,twenty five,2,cet4,true,a|n,twenty-five%1:23:00::|twenty-five%5:00:00:cardinal:00,false,10,evidence_ready_review,34.594,false
+first aid,first aid,2,cet4,true,n,first_aid%1:04:00::,true,7,evidence_ready_review,34.0,false
+self defense,self defense,2,cet4,true,n,self-defense%1:04:00::,true,7,evidence_ready_review,34.0,false
+one half,one half,2,cet4,true,n,one-half%1:23:00::,false,9,evidence_ready_review,33.219,false
+one third,one third,2,cet4,true,n,one-third%1:23:00::,false,9,evidence_ready_review,33.219,false
+space shuttle,space shuttle,2,cet4,true,n,space_shuttle%1:06:00::,false,9,evidence_ready_review,33.219,false
+at one time,at one time,3,cet4,true,r,at_one_time%4:02:00::|at_one_time%4:02:01::,false,6,evidence_ready_review,33.074,false
+every one,every one,2,cet4,false,,,true,6,moby_corpus_review,32.074,false
+first person,first person,2,cet4,true,n,first_person%1:10:00::,true,6,evidence_ready_review,32.074,false
+five hundred,five hundred,2,cet4,true,a|n,five_hundred%1:04:00::|five_hundred%1:23:00::|five_hundred%5:00:00:cardinal:00,true,6,evidence_ready_review,32.074,false
+golden age,golden age,2,cet4,true,n,golden_age%1:28:01::|golden_age%1:28:02::,true,6,evidence_ready_review,32.074,false
+one man,one man,2,cet4,true,a,one-man%5:00:00:single:05,true,6,evidence_ready_review,32.074,false
+three dimensional,three dimensional,2,cet4,true,a,three-dimensional%3:00:02::|three-dimensional%5:00:00:multidimensional:00,true,6,evidence_ready_review,32.074,false
+federal government,federal government,2,cet4,true,n,federal_government%1:14:00::,false,8,evidence_ready_review,31.699,false
+law enforcement,law enforcement,2,cet4,true,n,law_enforcement%1:04:00::,false,8,evidence_ready_review,31.699,false
+one person,one person,2,cet4,true,a,one-person%5:00:00:single:05,false,8,evidence_ready_review,31.699,false
+in the first place,in the first place,4,cet4,true,r,in_the_first_place%4:02:00::|in_the_first_place%4:02:01::,false,6,evidence_ready_review,31.074,false
+blend in,blend in,2,cet4,true,v,blend_in%2:30:00::|blend_in%2:42:00::,false,3,evidence_ready_review,30.0,false
+colon cancer,colon cancer,2,cet4,true,n,colon_cancer%1:26:00::,false,7,evidence_ready_review,30.0,false
+crack down,crack down,2,cet4,true,v,crack_down%2:30:10::,false,3,evidence_ready_review,30.0,false
+fuck off,fuck off,2,cet4,true,v,fuck_off%2:35:00::|fuck_off%2:38:00::|fuck_off%2:42:00::,false,3,evidence_ready_review,30.0,false
+infectious disease,infectious disease,2,cet4,true,n,infectious_disease%1:26:00::,false,7,evidence_ready_review,30.0,false
+news media,news media,2,cet4,true,n,news_media%1:10:00::,false,7,evidence_ready_review,30.0,false
+one thousand,one thousand,2,cet4,true,a|n,one_thousand%1:23:00::|one_thousand%5:00:00:cardinal:00,false,7,evidence_ready_review,30.0,false
+parallel park,parallel park,2,cet4,true,v,parallel-park%2:38:00::,false,3,evidence_ready_review,30.0,false
+three hundred,three hundred,2,cet4,true,a,three_hundred%5:00:00:cardinal:00,false,7,evidence_ready_review,30.0,false
+two hundred,two hundred,2,cet4,true,a,two_hundred%5:00:00:cardinal:00,false,7,evidence_ready_review,30.0,false
+two year,two year,2,cet4,true,a,two-year%3:00:04::,false,7,evidence_ready_review,30.0,false
+number one,number one,2,cet4,true,n,number_one%1:18:00::|number_one%1:23:00::|number_one%1:24:00::,true,5,evidence_ready_review,29.85,false
+over the counter,over the counter,3,cet4,true,a,over-the-counter%3:00:00::|over-the-counter%5:00:00:unlisted:00,true,5,evidence_ready_review,29.85,false
+set forth,set forth,2,cet4,true,v,set_forth%2:32:00::|set_forth%2:38:00::,true,2,evidence_ready_review,29.85,false
+thirty three,thirty three,2,cet4,true,a,thirty-three%5:00:00:cardinal:00,true,5,evidence_ready_review,29.85,false
+whip up,whip up,2,cet4,true,v,whip_up%2:36:00::,true,2,evidence_ready_review,29.85,false
+in the meantime,in the meantime,3,cet4,true,r,in_the_meantime%4:02:00::,false,4,evidence_ready_review,28.219,false
+in writing,in writing,2,cet4,true,a|r,in_writing%4:02:00::|in_writing%5:00:00:written:00,false,4,evidence_ready_review,28.219,false
+big bang,big bang,2,cet4,true,n,big_bang%1:11:00::,false,6,evidence_ready_review,28.074,false
+executive director,executive director,2,cet4,true,n,executive_director%1:18:00::,false,6,evidence_ready_review,28.074,false
+first step,first step,2,cet4,true,n,first_step%1:04:00::,false,6,evidence_ready_review,28.074,false
+general assembly,general assembly,2,cet4,true,n,general_assembly%1:14:00::,false,6,evidence_ready_review,28.074,false
+hearing loss,hearing loss,2,cet4,true,n,hearing_loss%1:26:00::,false,6,evidence_ready_review,28.074,false
+immune response,immune response,2,cet4,true,n,immune_response%1:04:00::,false,6,evidence_ready_review,28.074,false
+all powerful,all powerful,2,cet4,true,a,all-powerful%5:00:00:powerful:00,true,4,evidence_ready_review,27.219,false
+drawing room,drawing room,2,cet4,true,n,drawing_room%1:06:00::|drawing_room%1:06:01::,true,4,evidence_ready_review,27.219,false
+evil eye,evil eye,2,cet4,true,n,evil_eye%1:04:00::,true,4,evidence_ready_review,27.219,false
+gentle breeze,gentle breeze,2,cet4,true,n,gentle_breeze%1:19:00::,true,4,evidence_ready_review,27.219,false
+intensive care,intensive care,2,cet4,true,n,intensive_care%1:04:00::,true,4,evidence_ready_review,27.219,false
+outer space,outer space,2,cet4,true,n,outer_space%1:15:00::,true,4,evidence_ready_review,27.219,false
+self conscious,self conscious,2,cet4,true,a,self-conscious%5:00:00:conscious:00|self-conscious%5:00:00:uncomfortable:01,true,4,evidence_ready_review,27.219,false
+self love,self love,2,cet4,true,n,self-love%1:07:00::|self-love%1:12:00::,true,4,evidence_ready_review,27.219,false
+self pity,self pity,2,cet4,true,n,self-pity%1:12:00::,true,4,evidence_ready_review,27.219,false
+self respect,self respect,2,cet4,true,n,self-respect%1:07:00::,true,4,evidence_ready_review,27.219,false
+stream of consciousness,stream of consciousness,3,cet4,true,n,stream_of_consciousness%1:09:00::|stream_of_consciousness%1:10:00::,true,4,evidence_ready_review,27.219,false
+twenty one,twenty one,2,cet4,true,a|n,twenty-one%1:04:00::|twenty-one%1:23:00::|twenty-one%5:00:00:cardinal:00,true,4,evidence_ready_review,27.219,false
+catch a glimpse,catch a glimpse,3,cet4,true,v,catch_a_glimpse%2:39:00::,false,2,evidence_ready_review,25.85,false
+classical music,classical music,2,cet4,true,n,classical_music%1:10:00::,false,5,evidence_ready_review,25.85,false
+cling to,cling to,2,cet4,true,v,cling_to%2:35:00::,false,2,evidence_ready_review,25.85,false
+conform to,conform to,2,cet4,true,v,conform_to%2:30:00::|conform_to%2:34:00::|conform_to%2:42:00::,false,2,evidence_ready_review,25.85,false
+four hundred,four hundred,2,cet4,true,a,four_hundred%5:00:00:cardinal:00,false,5,evidence_ready_review,25.85,false
+hook up,hook up,2,cet4,true,v,hook_up%2:35:00::,false,2,evidence_ready_review,25.85,false
+hundred thousand,hundred thousand,2,cet4,true,a|n,hundred_thousand%1:23:00::|hundred_thousand%5:00:00:cardinal:00,false,5,evidence_ready_review,25.85,false
+naked eye,naked eye,2,cet4,true,n,naked_eye%1:08:00::,false,5,evidence_ready_review,25.85,false
+one percent,one percent,2,cet4,true,n,one_percent%1:23:00::,false,5,evidence_ready_review,25.85,false
+one year,one year,2,cet4,true,a,one-year%3:00:04::,false,5,evidence_ready_review,25.85,false
+originate in,originate in,2,cet4,true,v,originate_in%2:42:00::,false,2,evidence_ready_review,25.85,false
+pop in,pop in,2,cet4,true,v,pop_in%2:38:00::,false,2,evidence_ready_review,25.85,false
+second half,second half,2,cet4,true,n,second_half%1:28:00::,false,5,evidence_ready_review,25.85,false
+second year,second year,2,cet4,true,a,second-year%5:00:00:intermediate:00,false,5,evidence_ready_review,25.85,false
+soak up,soak up,2,cet4,true,v,soak_up%2:31:00::|soak_up%2:35:00::,false,2,evidence_ready_review,25.85,false
+stem cell,stem cell,2,cet4,true,n,stem_cell%1:08:00::,false,5,evidence_ready_review,25.85,false
+stock up,stock up,2,cet4,true,v,stock_up%2:40:00::,false,2,evidence_ready_review,25.85,false
+tourist attraction,tourist attraction,2,cet4,true,n,tourist_attraction%1:09:00::,false,5,evidence_ready_review,25.85,false
+and so forth,and so forth,3,cet4,true,r,and_so_forth%4:02:00::,false,3,evidence_ready_review,25.0,false
+at first glance,at first glance,3,cet4,true,r,at_first_glance%4:02:00::|at_first_glance%4:02:01::,false,3,evidence_ready_review,25.0,false
+first of all,first of all,3,cet4,true,r,first_of_all%4:02:00::,false,3,evidence_ready_review,25.0,false
+in earnest,in earnest,2,cet4,true,r,in_earnest%4:02:00::,false,3,evidence_ready_review,25.0,false
+in hiding,in hiding,2,cet4,true,r,in_hiding%4:02:00::,false,3,evidence_ready_review,25.0,false
+in the beginning,in the beginning,3,cet4,true,r,in_the_beginning%4:02:00::|in_the_beginning%4:02:01::,false,3,evidence_ready_review,25.0,false
+one by one,one by one,3,cet4,true,r,one_by_one%4:02:00::|one_by_one%4:02:01::|one_by_one%4:02:02::,false,3,evidence_ready_review,25.0,false
+back and forth,back and forth,3,cet4,true,r,back_and_forth%4:02:00::,true,2,evidence_ready_review,24.85,false
+first class,first class,2,cet4,true,a|n|r,first-class%5:00:01:superior:02|first_class%1:06:00::|first_class%1:07:00::|first_class%1:10:00::|first_class%4:02:00::,true,2,evidence_ready_review,24.85,false
+second class,second class,2,cet4,true,a|n|r,second-class%5:00:00:inferior:02|second_class%1:06:00::|second_class%1:07:00::|second_class%1:26:00::|second_class%4:02:00::,true,2,evidence_ready_review,24.85,false
+associate professor,associate professor,2,cet4,true,n,associate_professor%1:18:00::,true,3,evidence_ready_review,24.0,false
+atomic number,atomic number,2,cet4,true,n,atomic_number%1:23:00::,true,3,evidence_ready_review,24.0,false
+attorney general,attorney general,2,cet4,true,n,attorney_general%1:04:02::|attorney_general%1:18:00::|attorney_general%1:18:01::,true,3,evidence_ready_review,24.0,false
+blood vessel,blood vessel,2,cet4,true,n,blood_vessel%1:08:00::,true,3,evidence_ready_review,24.0,false
+bump into,bump into,2,cet4,true,v,bump_into%2:35:00::,true,1,evidence_ready_review,24.0,false
+elementary school,elementary school,2,cet4,true,n,elementary_school%1:14:00::,true,3,evidence_ready_review,24.0,false
+fairy tale,fairy tale,2,cet4,true,n,fairy_tale%1:10:00::|fairy_tale%1:10:01::,true,3,evidence_ready_review,24.0,false
+first lady,first lady,2,cet4,true,n,first_lady%1:18:00::|first_lady%1:18:01::,true,3,evidence_ready_review,24.0,false
+first name,first name,2,cet4,true,n,first_name%1:10:00::,true,3,evidence_ready_review,24.0,false
+forty five,forty five,2,cet4,true,a|n,forty-five%1:06:00::|forty-five%5:00:00:cardinal:00,true,3,evidence_ready_review,24.0,false
+genetic code,genetic code,2,cet4,true,n,genetic_code%1:14:00::,true,3,evidence_ready_review,24.0,false
+go forth,go forth,2,cet4,true,v,go_forth%2:30:00::|go_forth%2:38:00::,true,1,evidence_ready_review,24.0,false
+mass media,mass media,2,cet4,false,,,true,3,moby_corpus_review,24.0,false
+mop up,mop up,2,cet4,true,n|v,mop_up%1:04:00::|mop_up%2:30:00::|mop_up%2:33:00::|mop_up%2:35:00::,true,1,evidence_ready_review,24.0,false
+mother tongue,mother tongue,2,cet4,true,n,mother_tongue%1:10:00::,true,3,evidence_ready_review,24.0,false
+natural selection,natural selection,2,cet4,true,n,natural_selection%1:22:00::,true,3,evidence_ready_review,24.0,false
+one piece,one piece,2,cet4,true,a,one-piece%3:00:00::,true,3,evidence_ready_review,24.0,false
+peanut butter,peanut butter,2,cet4,true,n,peanut_butter%1:13:00::,true,3,evidence_ready_review,24.0,false
+pin down,pin down,2,cet4,true,v,pin_down%2:31:00::|pin_down%2:35:00::|pin_down%2:41:00::,true,1,evidence_ready_review,24.0,false
+pitch in,pitch in,2,cet4,true,v,pitch_in%2:34:00::,true,1,evidence_ready_review,24.0,false
+pop up,pop up,2,cet4,true,n|v,pop-up%1:04:00::|pop-up%1:06:01::|pop-up%1:10:00::|pop_up%2:39:00::,true,1,evidence_ready_review,24.0,false
+rub off,rub off,2,cet4,true,v,rub_off%2:35:00::,true,1,evidence_ready_review,24.0,false
+screw up,screw up,2,cet4,true,v,screw_up%2:29:00::|screw_up%2:30:00::|screw_up%2:35:00::|screw_up%2:41:00::,true,1,evidence_ready_review,24.0,false
+self evident,self evident,2,cet4,true,a,self-evident%5:00:00:obvious:00,true,3,evidence_ready_review,24.0,false
+spin off,spin off,2,cet4,true,n|v,spin-off%1:06:00::|spin_off%2:30:00::,true,1,evidence_ready_review,24.0,false
+stock exchange,stock exchange,2,cet4,true,n,stock_exchange%1:06:00::,true,3,evidence_ready_review,24.0,false
+sugar cane,sugar cane,2,cet4,true,n,sugar_cane%1:20:00::|sugar_cane%1:20:02::,true,3,evidence_ready_review,24.0,false
+thirty two,thirty two,2,cet4,true,a,thirty-two%5:00:00:cardinal:00,true,3,evidence_ready_review,24.0,false
+two time,two time,2,cet4,true,v,two-time%2:41:00::,true,1,evidence_ready_review,24.0,false
+two way,two way,2,cet4,true,a,two-way%5:00:00:bidirectional:00|two-way%5:00:00:multilateral:00|two-way%5:00:00:nonpartisan:00,true,3,evidence_ready_review,24.0,false
+accustomed to,accustomed to,2,cet4,true,a,accustomed_to%3:00:00::,false,4,evidence_ready_review,23.219,false
+anxiety disorder,anxiety disorder,2,cet4,true,n,anxiety_disorder%1:26:00::,false,4,evidence_ready_review,23.219,false
+body mass index,body mass index,3,cet4,true,n,body_mass_index%1:10:00::,false,4,evidence_ready_review,23.219,false
+code of conduct,code of conduct,3,cet4,true,n,code_of_conduct%1:09:00::,false,4,evidence_ready_review,23.219,false
+comparable to,comparable to,2,cet4,true,a,comparable_to%5:00:00:comparable:00,false,4,evidence_ready_review,23.219,false
+death penalty,death penalty,2,cet4,true,n,death_penalty%1:04:00::,false,4,evidence_ready_review,23.219,false
+dependent on,dependent on,2,cet4,true,a,dependent_on%5:00:00:conditional:00,false,4,evidence_ready_review,23.219,false
+fashion designer,fashion designer,2,cet4,true,n,fashion_designer%1:18:00::,false,4,evidence_ready_review,23.219,false
+first half,first half,2,cet4,true,n,first_half%1:28:00::,false,4,evidence_ready_review,23.219,false
+language learning,language learning,2,cet4,true,n,language_learning%1:09:00::,false,4,evidence_ready_review,23.219,false
+last resort,last resort,2,cet4,true,n,last_resort%1:04:00::,false,4,evidence_ready_review,23.219,false
+ninety five,ninety five,2,cet4,true,a,ninety-five%5:00:00:cardinal:00,false,4,evidence_ready_review,23.219,false
+oral sex,oral sex,2,cet4,true,n,oral_sex%1:04:00::,false,4,evidence_ready_review,23.219,false
+population growth,population growth,2,cet4,true,n,population_growth%1:22:00::,false,4,evidence_ready_review,23.219,false
+self awareness,self awareness,2,cet4,true,n,self-awareness%1:09:00::,false,4,evidence_ready_review,23.219,false
+self discovery,self discovery,2,cet4,true,n,self-discovery%1:04:00::,false,4,evidence_ready_review,23.219,false
+spare tire,spare tire,2,cet4,true,n,spare_tire%1:08:00::,false,4,evidence_ready_review,23.219,false
+two dozen,two dozen,2,cet4,true,n,two_dozen%1:23:00::,false,4,evidence_ready_review,23.219,false
+on the one hand,on the one hand,4,cet4,true,r,on_the_one_hand%4:02:00::,false,3,evidence_ready_review,23.0,false
+a trifle,a trifle,2,cet4,true,r,a_trifle%4:02:00::,false,2,evidence_ready_review,20.85,false
+in darkness,in darkness,2,cet4,true,r,in_darkness%4:02:00::,false,2,evidence_ready_review,20.85,false
+bail out,bail out,2,cet4,true,v,bail_out%2:30:00::|bail_out%2:41:00::,false,1,evidence_ready_review,20.0,false
+biological process,biological process,2,cet4,true,n,biological_process%1:22:00::,false,3,evidence_ready_review,20.0,false
+chief executive,chief executive,2,cet4,true,n,chief_executive%1:18:01::,false,3,evidence_ready_review,20.0,false
+clinical trial,clinical trial,2,cet4,true,n,clinical_trial%1:04:00::,false,3,evidence_ready_review,20.0,false
+crystal clear,crystal clear,2,cet4,true,a,crystal_clear%5:00:00:clear:00|crystal_clear%5:00:00:clear:02,false,3,evidence_ready_review,20.0,false
+death toll,death toll,2,cet4,true,n,death_toll%1:07:00::,false,3,evidence_ready_review,20.0,false
+defense system,defense system,2,cet4,true,n,defense_system%1:06:00::,false,3,evidence_ready_review,20.0,false
+dispose of,dispose of,2,cet4,true,v,dispose_of%2:41:00::,false,1,evidence_ready_review,20.0,false
+drug trafficking,drug trafficking,2,cet4,true,n,drug_trafficking%1:04:00::,false,3,evidence_ready_review,20.0,false
+excel at,excel at,2,cet4,true,v,excel_at%2:42:00::,false,1,evidence_ready_review,20.0,false
+first year,first year,2,cet4,true,a,first-year%5:00:00:first:00,false,3,evidence_ready_review,20.0,false
+fossil fuel,fossil fuel,2,cet4,true,n,fossil_fuel%1:27:00::,false,3,evidence_ready_review,20.0,false
+fuck up,fuck up,2,cet4,true,v,fuck_up%2:41:00::,false,1,evidence_ready_review,20.0,false
+gang up,gang up,2,cet4,true,v,gang_up%2:33:00::,false,1,evidence_ready_review,20.0,false
+garment industry,garment industry,2,cet4,true,n,garment_industry%1:14:00::,false,3,evidence_ready_review,20.0,false
+give a damn,give a damn,3,cet4,true,v,give_a_damn%2:37:00::,false,1,evidence_ready_review,20.0,false
+growth rate,growth rate,2,cet4,true,n,growth_rate%1:28:00::,false,3,evidence_ready_review,20.0,false
+haul away,haul away,2,cet4,true,v,haul_away%2:35:00::,false,1,evidence_ready_review,20.0,false
+hedge in,hedge in,2,cet4,true,v,hedge_in%2:35:01::,false,1,evidence_ready_review,20.0,false
+high altitude,high altitude,2,cet4,true,a,high-altitude%5:00:00:high:01,false,3,evidence_ready_review,20.0,false
+hook up with,hook up with,3,cet4,true,v,hook_up_with%2:41:00::,false,1,evidence_ready_review,20.0,false
+light fixture,light fixture,2,cet4,true,n,light_fixture%1:06:01::,false,3,evidence_ready_review,20.0,false
+lodge in,lodge in,2,cet4,true,v,lodge_in%2:42:00::,false,1,evidence_ready_review,20.0,false
+ninety eight,ninety eight,2,cet4,true,a,ninety-eight%5:00:00:cardinal:00,false,3,evidence_ready_review,20.0,false
+no nonsense,no nonsense,2,cet4,true,a,no-nonsense%5:00:00:direct:02,false,3,evidence_ready_review,20.0,false
+one fifth,one fifth,2,cet4,true,n,one-fifth%1:23:00::,false,3,evidence_ready_review,20.0,false
+organ transplant,organ transplant,2,cet4,true,n,organ_transplant%1:04:00::,false,3,evidence_ready_review,20.0,false
+pepper spray,pepper spray,2,cet4,true,n,pepper_spray%1:06:00::,false,3,evidence_ready_review,20.0,false
+persist in,persist in,2,cet4,true,v,persist_in%2:42:00::,false,1,evidence_ready_review,20.0,false
+pop out,pop out,2,cet4,true,v,pop_out%2:30:00::|pop_out%2:38:00::|pop_out%2:38:01::|pop_out%2:39:02::,false,1,evidence_ready_review,20.0,false
+pour forth,pour forth,2,cet4,true,v,pour_forth%2:35:00::,false,1,evidence_ready_review,20.0,false
+rail in,rail in,2,cet4,true,v,rail_in%2:42:00::,false,1,evidence_ready_review,20.0,false
+retirement community,retirement community,2,cet4,true,n,retirement_community%1:15:00::,false,3,evidence_ready_review,20.0,false
+second language,second language,2,cet4,true,n,second_language%1:10:00::,false,3,evidence_ready_review,20.0,false
+self serving,self serving,2,cet4,true,a,self-serving%3:00:01::,false,3,evidence_ready_review,20.0,false
+shed light on,shed light on,3,cet4,true,v,shed_light_on%2:31:00::,false,1,evidence_ready_review,20.0,false
+squeeze by,squeeze by,2,cet4,true,v,squeeze_by%2:41:00::,false,1,evidence_ready_review,20.0,false
+straw hat,straw hat,2,cet4,true,n,straw_hat%1:06:00::,false,3,evidence_ready_review,20.0,false
+suck up,suck up,2,cet4,true,v,suck_up%2:32:00::|suck_up%2:35:00::|suck_up%2:37:09::,false,1,evidence_ready_review,20.0,false
+sympathize with,sympathize with,2,cet4,true,v,sympathize_with%2:37:00::,false,1,evidence_ready_review,20.0,false
+tag along,tag along,2,cet4,true,v,tag_along%2:38:00::,false,1,evidence_ready_review,20.0,false
+ten percent,ten percent,2,cet4,true,n,ten_percent%1:23:00::,false,3,evidence_ready_review,20.0,false
+theory of relativity,theory of relativity,3,cet4,true,n,theory_of_relativity%1:09:00::,false,3,evidence_ready_review,20.0,false
+three year old,three year old,3,cet4,true,a|n,three-year-old%5:00:00:young:00|three_year_old%1:05:00::,false,3,evidence_ready_review,20.0,false
+two way street,two way street,3,cet4,true,n,two-way_street%1:06:00::,false,3,evidence_ready_review,20.0,false
+user friendly,user friendly,2,cet4,true,a,user-friendly%5:00:00:easy:01,false,3,evidence_ready_review,20.0,false
+washing up,washing up,2,cet4,true,n,washing-up%1:04:00::,false,3,evidence_ready_review,20.0,false
+wipe out,wipe out,2,cet4,true,v,wipe_out%2:30:00::|wipe_out%2:30:02::|wipe_out%2:30:03::|wipe_out%2:30:04::|wipe_out%2:34:00::|wipe_out%2:36:00::,false,1,evidence_ready_review,20.0,false
+absolute zero,absolute zero,2,cet4,true,n,absolute_zero%1:07:00::,true,2,evidence_ready_review,19.85,false
+aircraft carrier,aircraft carrier,2,cet4,true,n,aircraft_carrier%1:06:00::,true,2,evidence_ready_review,19.85,false
+amusement park,amusement park,2,cet4,true,n,amusement_park%1:15:00::,true,2,evidence_ready_review,19.85,false
+assembly line,assembly line,2,cet4,true,n,assembly_line%1:06:00::,true,2,evidence_ready_review,19.85,false
+blue crab,blue crab,2,cet4,true,n,blue_crab%1:05:00::|blue_crab%1:13:00::,true,2,evidence_ready_review,19.85,false
+continental breakfast,continental breakfast,2,cet4,true,n,continental_breakfast%1:13:00::,true,2,evidence_ready_review,19.85,false
+crown prince,crown prince,2,cet4,true,n,crown_prince%1:18:00::,true,2,evidence_ready_review,19.85,false
+forty four,forty four,2,cet4,true,a,forty-four%5:00:00:cardinal:00,true,2,evidence_ready_review,19.85,false
+gas mask,gas mask,2,cet4,false,,,true,2,moby_corpus_review,19.85,false
+gold mining,gold mining,2,cet4,false,,,true,2,moby_corpus_review,19.85,false
+irrational number,irrational number,2,cet4,true,n,irrational_number%1:23:00::,true,2,evidence_ready_review,19.85,false
+life expectancy,life expectancy,2,cet4,true,n,life_expectancy%1:28:00::,true,2,evidence_ready_review,19.85,false
+light bulb,light bulb,2,cet4,true,n,light_bulb%1:06:00::,true,2,evidence_ready_review,19.85,false
+lightning rod,lightning rod,2,cet4,true,n,lightning_rod%1:06:00::|lightning_rod%1:18:00::,true,2,evidence_ready_review,19.85,false
+palm oil,palm oil,2,cet4,true,n,palm_oil%1:13:00::,true,2,evidence_ready_review,19.85,false
+prime number,prime number,2,cet4,true,n,prime_number%1:23:00::,true,2,evidence_ready_review,19.85,false
+prisoner of war,prisoner of war,3,cet4,true,n,prisoner_of_war%1:18:00::,true,2,evidence_ready_review,19.85,false
+prose poem,prose poem,2,cet4,true,n,prose_poem%1:10:00::,true,2,evidence_ready_review,19.85,false
+rat race,rat race,2,cet4,true,n,rat_race%1:04:00::,true,2,evidence_ready_review,19.85,false
+rear view mirror,rear view mirror,3,cet4,false,,,true,2,moby_corpus_review,19.85,false
+self confidence,self confidence,2,cet4,true,n,self-confidence%1:09:00::,true,2,evidence_ready_review,19.85,false
+self control,self control,2,cet4,true,n,self-control%1:04:00::|self-control%1:07:00::,true,2,evidence_ready_review,19.85,false
+self discipline,self discipline,2,cet4,true,n,self-discipline%1:04:00::|self-discipline%1:07:00::,true,2,evidence_ready_review,19.85,false
+self sufficient,self sufficient,2,cet4,true,a,self-sufficient%5:00:00:independent:00,true,2,evidence_ready_review,19.85,false
+shot put,shot put,2,cet4,true,n,shot_put%1:11:00::,true,2,evidence_ready_review,19.85,false
+stage fright,stage fright,2,cet4,true,n,stage_fright%1:12:00::,true,2,evidence_ready_review,19.85,false
+stock market,stock market,2,cet4,true,n,stock_market%1:06:00::,true,2,evidence_ready_review,19.85,false
+third person,third person,2,cet4,true,n,third_person%1:10:00::,true,2,evidence_ready_review,19.85,false
+twenty two,twenty two,2,cet4,true,a|n,twenty-two%1:06:00::|twenty-two%1:23:00::|twenty-two%5:00:00:cardinal:00,true,2,evidence_ready_review,19.85,false
+two dimensional,two dimensional,2,cet4,true,a,two-dimensional%3:00:02::|two-dimensional%5:00:00:multidimensional:00,true,2,evidence_ready_review,19.85,false
+urban renewal,urban renewal,2,cet4,true,n,urban_renewal%1:04:00::,true,2,evidence_ready_review,19.85,false
+water mill,water mill,2,cet4,true,n,water_mill%1:06:00::,true,2,evidence_ready_review,19.85,false
+chop chop,chop chop,2,cet4,true,r,chop-chop%4:02:00::,true,1,evidence_ready_review,19.0,false
+first rate,first rate,2,cet4,true,a|r,first-rate%4:02:00::|first-rate%5:00:00:superior:02,true,1,evidence_ready_review,19.0,false
+north northeast,north northeast,2,cet4,true,n|r,north-northeast%4:02:00::|north_northeast%1:24:00::,true,1,evidence_ready_review,19.0,false
+second hand,second hand,2,cet4,true,n|r,second_hand%1:06:00::|second_hand%1:18:00::|second_hand%4:02:00::,true,1,evidence_ready_review,19.0,false
+speak of the devil,speak of the devil,4,cet4,true,v,speak_of_the_devil%2:32:00::,false,1,evidence_ready_review,18.0,false
+ash tree,ash tree,2,cet4,true,n,ash_tree%1:20:00::,false,2,evidence_ready_review,15.85,false
+at odds,at odds,2,cet4,true,a,at_odds%5:00:00:inconsistent:00,false,2,evidence_ready_review,15.85,false
+beam of light,beam of light,3,cet4,true,n,beam_of_light%1:19:00::,false,2,evidence_ready_review,15.85,false
+bony fish,bony fish,2,cet4,true,n,bony_fish%1:05:00::,false,2,evidence_ready_review,15.85,false
+cargo ship,cargo ship,2,cet4,true,n,cargo_ship%1:06:00::,false,2,evidence_ready_review,15.85,false
+cost effective,cost effective,2,cet4,true,a,cost-effective%5:00:00:efficient:00,false,2,evidence_ready_review,15.85,false
+cowboy hat,cowboy hat,2,cet4,true,n,cowboy_hat%1:06:00::,false,2,evidence_ready_review,15.85,false
+day of remembrance,day of remembrance,3,cet4,true,n,day_of_remembrance%1:28:00::,false,2,evidence_ready_review,15.85,false
+digestive system,digestive system,2,cet4,true,n,digestive_system%1:08:00::,false,2,evidence_ready_review,15.85,false
+documentary film,documentary film,2,cet4,true,n,documentary_film%1:10:00::,false,2,evidence_ready_review,15.85,false
+dress code,dress code,2,cet4,true,n,dress_code%1:10:00::,false,2,evidence_ready_review,15.85,false
+drug dealer,drug dealer,2,cet4,true,n,drug_dealer%1:18:00::,false,2,evidence_ready_review,15.85,false
+eighty five,eighty five,2,cet4,true,a,eighty-five%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+eighty one,eighty one,2,cet4,true,a,eighty-one%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+eighty three,eighty three,2,cet4,true,a,eighty-three%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+fifty eight,fifty eight,2,cet4,true,a,fifty-eight%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+fifty one,fifty one,2,cet4,true,a,fifty-one%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+fifty seven,fifty seven,2,cet4,true,a,fifty-seven%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+forty nine,forty nine,2,cet4,true,a,forty-nine%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+forty six,forty six,2,cet4,true,a,forty-six%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+forty two,forty two,2,cet4,true,a,forty-two%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+fuck you,fuck you,2,cet4,true,n,fuck_you%1:04:01::,false,2,evidence_ready_review,15.85,false
+gasoline engine,gasoline engine,2,cet4,true,n,gasoline_engine%1:06:00::,false,2,evidence_ready_review,15.85,false
+genetic engineering,genetic engineering,2,cet4,true,n,genetic_engineering%1:09:00::,false,2,evidence_ready_review,15.85,false
+greeting card,greeting card,2,cet4,true,n,greeting_card%1:10:00::,false,2,evidence_ready_review,15.85,false
+gross domestic product,gross domestic product,3,cet4,true,n,gross_domestic_product%1:21:00::,false,2,evidence_ready_review,15.85,false
+intensive care unit,intensive care unit,3,cet4,true,n,intensive_care_unit%1:14:00::,false,2,evidence_ready_review,15.85,false
+iron ore,iron ore,2,cet4,true,n,iron_ore%1:27:00::,false,2,evidence_ready_review,15.85,false
+law enforcement agency,law enforcement agency,3,cet4,true,n,law_enforcement_agency%1:14:00::,false,2,evidence_ready_review,15.85,false
+law of gravitation,law of gravitation,3,cet4,true,n,law_of_gravitation%1:09:00::,false,2,evidence_ready_review,15.85,false
+light beam,light beam,2,cet4,true,n,light_beam%1:19:00::,false,2,evidence_ready_review,15.85,false
+lighting up,lighting up,2,cet4,true,a,lighting-up%5:00:00:light:06,false,2,evidence_ready_review,15.85,false
+low tech,low tech,2,cet4,true,a,low-tech%3:00:00::,false,2,evidence_ready_review,15.85,false
+monetary fund,monetary fund,2,cet4,true,n,monetary_fund%1:21:00::,false,2,evidence_ready_review,15.85,false
+musical scale,musical scale,2,cet4,true,n,musical_scale%1:10:00::,false,2,evidence_ready_review,15.85,false
+never ending,never ending,2,cet4,true,a,never-ending%5:00:00:continuous:01,false,2,evidence_ready_review,15.85,false
+ninety nine,ninety nine,2,cet4,true,a,ninety-nine%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+ninety seven,ninety seven,2,cet4,true,a,ninety-seven%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+ninety two,ninety two,2,cet4,true,a,ninety-two%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+off the hook,off the hook,3,cet4,true,a,off_the_hook%5:00:00:safe:01,false,2,evidence_ready_review,15.85,false
+one hundred eighty,one hundred eighty,3,cet4,true,a,one_hundred_eighty%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+one hundred fifty,one hundred fifty,3,cet4,true,a,one_hundred_fifty%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+one hundred twenty,one hundred twenty,3,cet4,true,a,one_hundred_twenty%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+one quarter,one quarter,2,cet4,true,n,one-quarter%1:23:00::,false,2,evidence_ready_review,15.85,false
+one shot,one shot,2,cet4,true,n,one_shot%1:06:00::,false,2,evidence_ready_review,15.85,false
+one year old,one year old,3,cet4,true,a,one-year-old%5:00:00:young:00,false,2,evidence_ready_review,15.85,false
+organ donor,organ donor,2,cet4,true,n,organ_donor%1:18:00::,false,2,evidence_ready_review,15.85,false
+ozone layer,ozone layer,2,cet4,true,n,ozone_layer%1:17:00::,false,2,evidence_ready_review,15.85,false
+pirate ship,pirate ship,2,cet4,true,n,pirate_ship%1:06:00::,false,2,evidence_ready_review,15.85,false
+pop music,pop music,2,cet4,true,n,pop_music%1:10:00::,false,2,evidence_ready_review,15.85,false
+possessive case,possessive case,2,cet4,true,n,possessive_case%1:10:00::,false,2,evidence_ready_review,15.85,false
+prescription drug,prescription drug,2,cet4,true,n,prescription_drug%1:06:00::,false,2,evidence_ready_review,15.85,false
+prime of life,prime of life,3,cet4,true,n,prime_of_life%1:28:00::,false,2,evidence_ready_review,15.85,false
+principal investigator,principal investigator,2,cet4,true,n,principal_investigator%1:18:00::,false,2,evidence_ready_review,15.85,false
+pyramid scheme,pyramid scheme,2,cet4,true,n,pyramid_scheme%1:09:00::,false,2,evidence_ready_review,15.85,false
+radiation therapy,radiation therapy,2,cet4,true,n,radiation_therapy%1:04:00::,false,2,evidence_ready_review,15.85,false
+road rage,road rage,2,cet4,true,n,road_rage%1:04:00::,false,2,evidence_ready_review,15.85,false
+ruling class,ruling class,2,cet4,true,n,ruling_class%1:14:00::,false,2,evidence_ready_review,15.85,false
+security deposit,security deposit,2,cet4,true,n,security_deposit%1:21:00::,false,2,evidence_ready_review,15.85,false
+self aware,self aware,2,cet4,true,a,self-aware%5:00:00:conscious:00,false,2,evidence_ready_review,15.85,false
+self worth,self worth,2,cet4,true,n,self-worth%1:07:00::,false,2,evidence_ready_review,15.85,false
+seventy five,seventy five,2,cet4,true,a,seventy-five%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+seventy one,seventy one,2,cet4,true,a,seventy-one%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+sexual abuse,sexual abuse,2,cet4,true,n,sexual_abuse%1:04:00::,false,2,evidence_ready_review,15.85,false
+shopping cart,shopping cart,2,cet4,true,n,shopping_cart%1:06:00::,false,2,evidence_ready_review,15.85,false
+sixty three,sixty three,2,cet4,true,a,sixty-three%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+social justice warrior,social justice warrior,3,cet4,true,n,social_justice_warrior%1:18:01::,false,2,evidence_ready_review,15.85,false
+sport utility,sport utility,2,cet4,true,n,sport_utility%1:06:00::,false,2,evidence_ready_review,15.85,false
+stem cell research,stem cell research,3,cet4,true,n,stem-cell_research%1:04:00::,false,2,evidence_ready_review,15.85,false
+storage room,storage room,2,cet4,true,n,storage_room%1:06:00::,false,2,evidence_ready_review,15.85,false
+surgical procedure,surgical procedure,2,cet4,true,n,surgical_procedure%1:04:00::,false,2,evidence_ready_review,15.85,false
+ten thousand,ten thousand,2,cet4,true,a|n,ten_thousand%1:23:00::|ten_thousand%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+terrorist group,terrorist group,2,cet4,true,n,terrorist_group%1:14:00::,false,2,evidence_ready_review,15.85,false
+third eye,third eye,2,cet4,true,n,third_eye%1:08:00::,false,2,evidence_ready_review,15.85,false
+thirty five,thirty five,2,cet4,true,a,thirty-five%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+thirty nine,thirty nine,2,cet4,true,a,thirty-nine%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+triple crown,triple crown,2,cet4,true,n,triple_crown%1:26:00::|triple_crown%1:26:01::,false,2,evidence_ready_review,15.85,false
+twentieth century,twentieth century,2,cet4,true,n,twentieth_century%1:28:00::,false,2,evidence_ready_review,15.85,false
+twenty first,twenty first,2,cet4,true,a,twenty-first%5:00:00:ordinal:00,false,2,evidence_ready_review,15.85,false
+twenty seven,twenty seven,2,cet4,true,a|n,twenty-seven%1:23:00::|twenty-seven%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+twenty three,twenty three,2,cet4,true,a|n,twenty-three%1:23:00::|twenty-three%5:00:00:cardinal:00,false,2,evidence_ready_review,15.85,false
+at first sight,at first sight,3,cet4,true,r,at_first_sight%4:02:00::|at_first_sight%4:02:01::,false,1,evidence_ready_review,15.0,false
+at stake,at stake,2,cet4,true,r,at_stake%4:02:00::|at_stake%4:02:01::,false,1,evidence_ready_review,15.0,false
+from scratch,from scratch,2,cet4,true,r,from_scratch%4:02:00::,false,1,evidence_ready_review,15.0,false
+in haste,in haste,2,cet4,true,r,in_haste%4:02:01::,false,1,evidence_ready_review,15.0,false
+like hell,like hell,2,cet4,true,r,like_hell%4:02:00::|like_hell%4:02:01::,false,1,evidence_ready_review,15.0,false
+like royalty,like royalty,2,cet4,true,r,like_royalty%4:02:00::,false,1,evidence_ready_review,15.0,false
+of necessity,of necessity,2,cet4,true,r,of_necessity%4:02:00::,false,1,evidence_ready_review,15.0,false
+one on one,one on one,3,cet4,true,a|r,one-on-one%4:02:00::|one-on-one%5:00:00:individual:00|one-on-one%5:00:00:private:00,false,1,evidence_ready_review,15.0,false
+ambassador at large,ambassador at large,3,cet4,false,,,true,1,moby_corpus_review,14.0,false
+aptitude test,aptitude test,2,cet4,false,,,true,1,moby_corpus_review,14.0,false
+army corps,army corps,2,cet4,true,n,army_corps%1:14:00::,true,1,evidence_ready_review,14.0,false
+atmospheric pressure,atmospheric pressure,2,cet4,true,n,atmospheric_pressure%1:19:00::,true,1,evidence_ready_review,14.0,false
+atom bomb,atom bomb,2,cet4,true,n|v,atom-bomb%2:33:00::|atom_bomb%1:06:00::,true,0,oewn_dictionary_review,14.0,false
+automatic pistol,automatic pistol,2,cet4,true,n,automatic_pistol%1:06:00::,true,1,evidence_ready_review,14.0,false
+baggage car,baggage car,2,cet4,true,n,baggage_car%1:06:00::,true,1,evidence_ready_review,14.0,false
+bang on,bang on,2,cet4,false,,,true,1,moby_corpus_review,14.0,false
+bang up,bang up,2,cet4,true,a|v,bang-up%5:00:00:good:01|bang_up%2:29:00::|bang_up%2:35:00::,true,0,oewn_dictionary_review,14.0,false
+beg off,beg off,2,cet4,true,v,beg_off%2:32:00::,true,0,oewn_dictionary_review,14.0,false
+belly dance,belly dance,2,cet4,true,n|v,belly_dance%1:04:00::|belly_dance%2:36:00::,true,0,oewn_dictionary_review,14.0,false
+bind over,bind over,2,cet4,true,v,bind_over%2:41:00::,true,0,oewn_dictionary_review,14.0,false
+blast off,blast off,2,cet4,true,v,blast_off%2:35:00::,true,0,oewn_dictionary_review,14.0,false
+blood donor,blood donor,2,cet4,true,n,blood_donor%1:18:00::,true,1,evidence_ready_review,14.0,false
+brain drain,brain drain,2,cet4,true,n,brain_drain%1:04:00::,true,1,evidence_ready_review,14.0,false
+brain stem,brain stem,2,cet4,true,n,brain-stem%1:08:00::|brain_stem%1:08:00::,true,1,evidence_ready_review,14.0,false
+buck up,buck up,2,cet4,true,v,buck_up%2:37:00::,true,0,oewn_dictionary_review,14.0,false
+buckle down,buckle down,2,cet4,true,v,buckle_down%2:41:00::,true,0,oewn_dictionary_review,14.0,false
+bulletin board,bulletin board,2,cet4,true,n,bulletin_board%1:06:00::|bulletin_board%1:06:01::,true,1,evidence_ready_review,14.0,false
+bump off,bump off,2,cet4,true,v,bump_off%2:41:00::,true,0,oewn_dictionary_review,14.0,false
+bundle up,bundle up,2,cet4,true,v,bundle_up%2:29:00::|bundle_up%2:35:00::,true,0,oewn_dictionary_review,14.0,false
+burial ground,burial ground,2,cet4,true,n,burial_ground%1:15:00::,true,1,evidence_ready_review,14.0,false
+call forth,call forth,2,cet4,true,v,call_forth%2:36:00::|call_forth%2:36:01::,true,0,oewn_dictionary_review,14.0,false
+cane sugar,cane sugar,2,cet4,true,n,cane_sugar%1:13:00::|cane_sugar%1:27:00::,true,1,evidence_ready_review,14.0,false
+carbon dating,carbon dating,2,cet4,true,n,carbon_dating%1:04:00::,true,1,evidence_ready_review,14.0,false
+carpenter bee,carpenter bee,2,cet4,true,n,carpenter_bee%1:05:00::,true,1,evidence_ready_review,14.0,false
+center punch,center punch,2,cet4,true,n|v,center_punch%1:06:00::|center_punch%2:35:00::,true,0,oewn_dictionary_review,14.0,false
+coastal plain,coastal plain,2,cet4,true,n,coastal_plain%1:17:00::,true,1,evidence_ready_review,14.0,false
+cold storage,cold storage,2,cet4,true,n,cold_storage%1:04:00::|cold_storage%1:26:00::,true,1,evidence_ready_review,14.0,false
+collective farm,collective farm,2,cet4,true,n,collective_farm%1:14:00::,true,1,evidence_ready_review,14.0,false
+commander in chief,commander in chief,3,cet4,true,n,commander-in-chief%1:18:00::|commander_in_chief%1:18:00::,true,1,evidence_ready_review,14.0,false
+cooperative society,cooperative society,2,cet4,false,,,true,1,moby_corpus_review,14.0,false
+cop out,cop out,2,cet4,true,v,cop_out%2:31:00::,true,0,oewn_dictionary_review,14.0,false
+cosmic ray,cosmic ray,2,cet4,true,n,cosmic_ray%1:19:00::,true,1,evidence_ready_review,14.0,false
+crack up,crack up,2,cet4,true,n|v,crack-up%1:26:00::|crack_up%2:29:00::|crack_up%2:32:00::|crack_up%2:37:00::,true,0,oewn_dictionary_review,14.0,false
+crane fly,crane fly,2,cet4,true,n,crane_fly%1:05:00::,true,1,evidence_ready_review,14.0,false
+cross index,cross index,2,cet4,true,n|v,cross-index%1:10:00::|cross-index%2:41:00::,true,0,oewn_dictionary_review,14.0,false
+crossing over,crossing over,2,cet4,true,n,crossing_over%1:22:00::,true,1,evidence_ready_review,14.0,false
+crystal ball,crystal ball,2,cet4,true,n,crystal_ball%1:06:00::,true,1,evidence_ready_review,14.0,false
+cue ball,cue ball,2,cet4,true,n,cue_ball%1:06:00::,true,1,evidence_ready_review,14.0,false
+curl up,curl up,2,cet4,true,v,curl_up%2:38:01::,true,0,oewn_dictionary_review,14.0,false
+date palm,date palm,2,cet4,true,n,date_palm%1:20:00::,true,1,evidence_ready_review,14.0,false
+deep six,deep six,2,cet4,true,v,deep-six%2:35:00::|deep-six%2:40:00::,true,0,oewn_dictionary_review,14.0,false
+definite article,definite article,2,cet4,true,n,definite_article%1:10:00::,true,1,evidence_ready_review,14.0,false
+dine out,dine out,2,cet4,true,v,dine_out%2:34:00::,true,0,oewn_dictionary_review,14.0,false
+double chin,double chin,2,cet4,true,n,double_chin%1:08:00::,true,1,evidence_ready_review,14.0,false
+double tongue,double tongue,2,cet4,true,v,double_tongue%2:36:00::,true,0,oewn_dictionary_review,14.0,false
+drip dry,drip dry,2,cet4,true,a|v,drip-dry%2:30:00::|drip-dry%5:00:00:unironed:00|drip-dry%5:00:00:washable:00,true,0,oewn_dictionary_review,14.0,false
+drum out,drum out,2,cet4,true,v,drum_out%2:41:00::,true,0,oewn_dictionary_review,14.0,false
+dry dock,dry dock,2,cet4,true,n|v,dry-dock%2:35:00::|dry_dock%1:06:00::,true,0,oewn_dictionary_review,14.0,false
+elephant seal,elephant seal,2,cet4,true,n,elephant_seal%1:05:00::,true,1,evidence_ready_review,14.0,false
+employment agency,employment agency,2,cet4,true,n,employment_agency%1:14:00::,true,1,evidence_ready_review,14.0,false
+engagement ring,engagement ring,2,cet4,true,n,engagement_ring%1:06:00::,true,1,evidence_ready_review,14.0,false
+executive officer,executive officer,2,cet4,true,n,executive_officer%1:18:00::,true,1,evidence_ready_review,14.0,false
+extended family,extended family,2,cet4,true,n,extended_family%1:14:00::,true,1,evidence_ready_review,14.0,false
+eye opening,eye opening,2,cet4,false,,,true,1,moby_corpus_review,14.0,false
+face harden,face harden,2,cet4,true,v,face-harden%2:30:00::,true,0,oewn_dictionary_review,14.0,false
+fade out,fade out,2,cet4,true,v,fade_out%2:30:00::,true,0,oewn_dictionary_review,14.0,false
+filling station,filling station,2,cet4,true,n,filling_station%1:06:00::,true,1,evidence_ready_review,14.0,false
+first edition,first edition,2,cet4,false,,,true,1,moby_corpus_review,14.0,false
+first floor,first floor,2,cet4,true,n,first_floor%1:06:00::,true,1,evidence_ready_review,14.0,false
+first foot,first foot,2,cet4,false,,,true,1,moby_corpus_review,14.0,false
+five star,five star,2,cet4,false,,,true,1,moby_corpus_review,14.0,false
+flesh and blood,flesh and blood,3,cet4,false,,,true,1,moby_corpus_review,14.0,false
+flight recorder,flight recorder,2,cet4,false,,,true,1,moby_corpus_review,14.0,false
+flour mill,flour mill,2,cet4,true,n,flour_mill%1:06:00::,true,1,evidence_ready_review,14.0,false
+four way,four way,2,cet4,false,,,true,1,moby_corpus_review,14.0,false
+free agent,free agent,2,cet4,true,n,free_agent%1:18:00::|free_agent%1:18:01::,true,1,evidence_ready_review,14.0,false
+freedom rider,freedom rider,2,cet4,true,n,freedom_rider%1:18:00::,true,1,evidence_ready_review,14.0,false
+freight train,freight train,2,cet4,true,n,freight_train%1:06:00::,true,1,evidence_ready_review,14.0,false
+front runner,front runner,2,cet4,true,n,front-runner%1:18:00::,true,1,evidence_ready_review,14.0,false
+funeral home,funeral home,2,cet4,true,n,funeral_home%1:06:00::,true,1,evidence_ready_review,14.0,false
+goose step,goose step,2,cet4,true,n|v,goose_step%1:04:00::|goose_step%2:38:00::,true,0,oewn_dictionary_review,14.0,false
+graph paper,graph paper,2,cet4,true,n,graph_paper%1:27:00::,true,1,evidence_ready_review,14.0,false
+gum up,gum up,2,cet4,true,v,gum_up%2:35:00::,true,0,oewn_dictionary_review,14.0,false
+hammer out,hammer out,2,cet4,true,v,hammer_out%2:32:00::,true,0,oewn_dictionary_review,14.0,false
+haul off,haul off,2,cet4,true,v,haul_off%2:35:00::,true,0,oewn_dictionary_review,14.0,false
+haul up,haul up,2,cet4,true,v,haul_up%2:38:00::,true,0,oewn_dictionary_review,14.0,false
+hay fever,hay fever,2,cet4,true,n,hay_fever%1:26:00::,true,1,evidence_ready_review,14.0,false
+heal all,heal all,2,cet4,true,n,heal_all%1:20:01::|heal_all%1:20:02::,true,1,evidence_ready_review,14.0,false
+hero worship,hero worship,2,cet4,true,n|v,hero-worship%2:37:00::|hero_worship%1:12:00::,true,0,oewn_dictionary_review,14.0,false
+high priest,high priest,2,cet4,true,n,high_priest%1:18:00::|high_priest%1:18:01::,true,1,evidence_ready_review,14.0,false
+highway robbery,highway robbery,2,cet4,true,n,highway_robbery%1:04:00::|highway_robbery%1:21:00::,true,1,evidence_ready_review,14.0,false
+historical materialism,historical materialism,2,cet4,false,,,true,1,moby_corpus_review,14.0,false
+hold forth,hold forth,2,cet4,true,v,hold_forth%2:32:00::,true,0,oewn_dictionary_review,14.0,false
+horn in,horn in,2,cet4,true,v,horn_in%2:39:00::,true,0,oewn_dictionary_review,14.0,false
+hunger strike,hunger strike,2,cet4,true,n,hunger_strike%1:04:00::,true,1,evidence_ready_review,14.0,false
+imaginary number,imaginary number,2,cet4,true,n,imaginary_number%1:23:00::,true,1,evidence_ready_review,14.0,false
+jet black,jet black,2,cet4,true,a|n,jet-black%5:00:00:achromatic:00|jet_black%1:07:00::,true,1,evidence_ready_review,14.0,false
+jump shot,jump shot,2,cet4,true,n,jump_shot%1:04:00::,true,1,evidence_ready_review,14.0,false
+land crab,land crab,2,cet4,false,,,true,1,moby_corpus_review,14.0,false
+landing gear,landing gear,2,cet4,true,n,landing_gear%1:06:00::,true,1,evidence_ready_review,14.0,false
+life span,life span,2,cet4,false,,,true,1,moby_corpus_review,14.0,false
+limited liability,limited liability,2,cet4,true,n,limited_liability%1:21:00::,true,1,evidence_ready_review,14.0,false
+literary agent,literary agent,2,cet4,true,n,literary_agent%1:18:00::,true,1,evidence_ready_review,14.0,false
+long shot,long shot,2,cet4,true,n,long_shot%1:04:00::|long_shot%1:18:00::,true,1,evidence_ready_review,14.0,false
+medical examiner,medical examiner,2,cet4,true,n,medical_examiner%1:18:00::,true,1,evidence_ready_review,14.0,false
+metric system,metric system,2,cet4,true,n,metric_system%1:23:00::,true,1,evidence_ready_review,14.0,false
+metric ton,metric ton,2,cet4,true,n,metric_ton%1:23:00::,true,1,evidence_ready_review,14.0,false
+mother of pearl,mother of pearl,3,cet4,true,n,mother-of-pearl%1:27:00::,true,1,evidence_ready_review,14.0,false
+mule deer,mule deer,2,cet4,true,n,mule_deer%1:05:00::,true,1,evidence_ready_review,14.0,false
+name calling,name calling,2,cet4,true,n,name_calling%1:10:00::,true,1,evidence_ready_review,14.0,false
+nursery school,nursery school,2,cet4,true,n,nursery_school%1:14:00::,true,1,evidence_ready_review,14.0,false
+oil painting,oil painting,2,cet4,true,n,oil_painting%1:04:00::|oil_painting%1:06:00::,true,1,evidence_ready_review,14.0,false
+one to one,one to one,3,cet4,true,a,one-to-one%5:00:00:matched:00,true,1,evidence_ready_review,14.0,false
+opt out,opt out,2,cet4,true,v,opt_out%2:31:00::,true,0,oewn_dictionary_review,14.0,false
+peanut oil,peanut oil,2,cet4,true,n,peanut_oil%1:13:00::,true,1,evidence_ready_review,14.0,false
+pension off,pension off,2,cet4,true,v,pension_off%2:40:01::|pension_off%2:41:00::,true,0,oewn_dictionary_review,14.0,false
+personality disorder,personality disorder,2,cet4,true,n,personality_disorder%1:26:00::,true,1,evidence_ready_review,14.0,false
+physical therapy,physical therapy,2,cet4,true,n,physical_therapy%1:04:00::,true,1,evidence_ready_review,14.0,false
+pitch into,pitch into,2,cet4,true,v,pitch_into%2:35:00::,true,0,oewn_dictionary_review,14.0,false
+pop off,pop off,2,cet4,true,v,pop_off%2:30:00::|pop_off%2:38:00::,true,0,oewn_dictionary_review,14.0,false
+postage stamp,postage stamp,2,cet4,true,n,postage_stamp%1:10:00::,true,1,evidence_ready_review,14.0,false
+preparatory school,preparatory school,2,cet4,true,n,preparatory_school%1:14:00::,true,1,evidence_ready_review,14.0,false
+pressure cooker,pressure cooker,2,cet4,true,n,pressure_cooker%1:06:00::,true,1,evidence_ready_review,14.0,false
+proportional representation,proportional representation,2,cet4,true,n,proportional_representation%1:04:00::,true,1,evidence_ready_review,14.0,false
+public utility,public utility,2,cet4,true,n,public_utility%1:14:00::,true,1,evidence_ready_review,14.0,false
+rack up,rack up,2,cet4,true,v,rack_up%2:30:00::|rack_up%2:33:00::|rack_up%2:33:01::|rack_up%2:35:00::,true,0,oewn_dictionary_review,14.0,false
+rear end,rear end,2,cet4,true,n|v,rear-end%2:35:00::|rear_end%1:08:00::,true,0,oewn_dictionary_review,14.0,false
+reception room,reception room,2,cet4,true,n,reception_room%1:06:00::,true,1,evidence_ready_review,14.0,false
+rock crystal,rock crystal,2,cet4,true,n,rock_crystal%1:27:00::,true,1,evidence_ready_review,14.0,false
+roller skate,roller skate,2,cet4,true,n|v,roller_skate%1:06:00::|roller_skate%2:38:00::,true,0,oewn_dictionary_review,14.0,false
+rub down,rub down,2,cet4,true,v,rub_down%2:35:00::|rub_down%2:35:01::,true,0,oewn_dictionary_review,14.0,false
+rub out,rub out,2,cet4,true,v,rub_out%2:35:00::,true,0,oewn_dictionary_review,14.0,false
+runner up,runner up,2,cet4,true,n,runner-up%1:18:00::,true,1,evidence_ready_review,14.0,false
+sea breeze,sea breeze,2,cet4,true,n,sea_breeze%1:19:00::,true,1,evidence_ready_review,14.0,false
+second childhood,second childhood,2,cet4,true,n,second_childhood%1:28:00::,true,1,evidence_ready_review,14.0,false
+second guess,second guess,2,cet4,true,v,second-guess%2:32:00::|second-guess%2:32:01::,true,0,oewn_dictionary_review,14.0,false
+second person,second person,2,cet4,true,n,second_person%1:10:00::,true,1,evidence_ready_review,14.0,false
+second thought,second thought,2,cet4,true,n,second_thought%1:09:00::,true,1,evidence_ready_review,14.0,false
+self help,self help,2,cet4,true,n,self-help%1:04:00::,true,1,evidence_ready_review,14.0,false
+self mastery,self mastery,2,cet4,false,,,true,1,moby_corpus_review,14.0,false
+self restraint,self restraint,2,cet4,true,n,self-restraint%1:07:00::,true,1,evidence_ready_review,14.0,false
+shot glass,shot glass,2,cet4,true,n,shot_glass%1:06:00::,true,1,evidence_ready_review,14.0,false
+shrug off,shrug off,2,cet4,true,v,shrug_off%2:32:00::,true,0,oewn_dictionary_review,14.0,false
+single combat,single combat,2,cet4,true,n,single_combat%1:04:00::,true,1,evidence_ready_review,14.0,false
+sitting room,sitting room,2,cet4,true,n,sitting_room%1:06:00::,true,1,evidence_ready_review,14.0,false
+six pack,six pack,2,cet4,true,n,six-pack%1:06:00::|six_pack%1:06:00::,true,1,evidence_ready_review,14.0,false
+sixty four,sixty four,2,cet4,true,a,sixty-four%5:00:00:cardinal:00,true,1,evidence_ready_review,14.0,false
+sixty nine,sixty nine,2,cet4,true,a|n,sixty-nine%1:04:00::|sixty-nine%5:00:00:cardinal:00,true,1,evidence_ready_review,14.0,false
+skinny dip,skinny dip,2,cet4,true,n|v,skinny-dip%1:04:00::|skinny-dip%2:38:00::,true,0,oewn_dictionary_review,14.0,false
+smash up,smash up,2,cet4,true,n|v,smash-up%1:11:00::|smash_up%2:35:00::,true,0,oewn_dictionary_review,14.0,false
+social democracy,social democracy,2,cet4,true,n,social_democracy%1:09:00::,true,1,evidence_ready_review,14.0,false
+soda ash,soda ash,2,cet4,true,n,soda_ash%1:27:00::,true,1,evidence_ready_review,14.0,false
+soft soap,soft soap,2,cet4,true,n|v,soft-soap%2:32:00::|soft-soap%2:32:01::|soft_soap%1:06:00::|soft_soap%1:10:00::,true,0,oewn_dictionary_review,14.0,false
+soul mate,soul mate,2,cet4,true,n,soul_mate%1:18:00::,true,1,evidence_ready_review,14.0,false
+spelling bee,spelling bee,2,cet4,true,n,spelling_bee%1:11:00::,true,1,evidence_ready_review,14.0,false
+spelling pronunciation,spelling pronunciation,2,cet4,false,,,true,1,moby_corpus_review,14.0,false
+spending money,spending money,2,cet4,true,n,spending_money%1:21:00::,true,1,evidence_ready_review,14.0,false
+spill over,spill over,2,cet4,true,v,spill_over%2:37:00::|spill_over%2:38:01::,true,0,oewn_dictionary_review,14.0,false
+spin dry,spin dry,2,cet4,true,v,spin-dry%2:30:00::,true,0,oewn_dictionary_review,14.0,false
+spin out,spin out,2,cet4,true,v,spin_out%2:30:00::,true,0,oewn_dictionary_review,14.0,false
+split second,split second,2,cet4,true,n,split_second%1:28:00::,true,1,evidence_ready_review,14.0,false
+stainless steel,stainless steel,2,cet4,true,n,stainless_steel%1:27:00::,true,1,evidence_ready_review,14.0,false
+stand pat,stand pat,2,cet4,true,v,stand_pat%2:32:00::,true,0,oewn_dictionary_review,14.0,false
+stir up,stir up,2,cet4,true,v,stir_up%2:32:00::|stir_up%2:35:00::|stir_up%2:37:00::|stir_up%2:41:00::,true,0,oewn_dictionary_review,14.0,false
+straighten out,straighten out,2,cet4,true,v,straighten_out%2:30:00::|straighten_out%2:30:01::|straighten_out%2:30:02::|straighten_out%2:31:00::|straighten_out%2:35:00::|straighten_out%2:35:01::,true,0,oewn_dictionary_review,14.0,false
+straighten up,straighten up,2,cet4,true,v,straighten_up%2:38:01::,true,0,oewn_dictionary_review,14.0,false
+straw man,straw man,2,cet4,true,n,straw_man%1:06:00::|straw_man%1:10:00::|straw_man%1:18:00::,true,1,evidence_ready_review,14.0,false
+suck in,suck in,2,cet4,true,v,suck_in%2:34:00::|suck_in%2:35:01::|suck_in%2:43:00::,true,0,oewn_dictionary_review,14.0,false
+supreme commander,supreme commander,2,cet4,false,,,true,1,moby_corpus_review,14.0,false
+swear in,swear in,2,cet4,true,v,swear_in%2:32:00::,true,0,oewn_dictionary_review,14.0,false
+swear off,swear off,2,cet4,true,v,swear_off%2:32:00::,true,0,oewn_dictionary_review,14.0,false
+sweet pea,sweet pea,2,cet4,true,n,sweet_pea%1:20:00::,true,1,evidence_ready_review,14.0,false
+swimming pool,swimming pool,2,cet4,true,n,swimming_pool%1:06:00::,true,1,evidence_ready_review,14.0,false
+third party,third party,2,cet4,true,n,third_party%1:14:00::|third_party%1:18:00::,true,1,evidence_ready_review,14.0,false
+third reading,third reading,2,cet4,false,,,true,1,moby_corpus_review,14.0,false
+thirty eight,thirty eight,2,cet4,true,a,thirty-eight%5:00:00:cardinal:00,true,1,evidence_ready_review,14.0,false
+three square,three square,2,cet4,false,,,true,1,moby_corpus_review,14.0,false
+tick off,tick off,2,cet4,true,v,tick_off%2:31:00::,true,0,oewn_dictionary_review,14.0,false
+tidal wave,tidal wave,2,cet4,true,n,tidal_wave%1:11:00::|tidal_wave%1:11:01::|tidal_wave%1:11:02::,true,1,evidence_ready_review,14.0,false
+tide over,tide over,2,cet4,true,v,tide_over%2:42:00::,true,0,oewn_dictionary_review,14.0,false
+toss off,toss off,2,cet4,true,v,toss_off%2:34:00::|toss_off%2:36:00::,true,0,oewn_dictionary_review,14.0,false
+trailer truck,trailer truck,2,cet4,true,n,trailer_truck%1:06:00::,true,1,evidence_ready_review,14.0,false
+trash can,trash can,2,cet4,true,n,trash_can%1:06:00::,true,1,evidence_ready_review,14.0,false
+two part time,two part time,3,cet4,false,,,true,1,moby_corpus_review,14.0,false
+two step,two step,2,cet4,true,n|v,two-step%1:04:00::|two-step%2:38:00::,true,0,oewn_dictionary_review,14.0,false
+venture capital,venture capital,2,cet4,true,n,venture_capital%1:21:00::,true,1,evidence_ready_review,14.0,false
+washing machine,washing machine,2,cet4,true,n,washing_machine%1:06:00::,true,1,evidence_ready_review,14.0,false
+white gum,white gum,2,cet4,false,,,true,1,moby_corpus_review,14.0,false
+white pine,white pine,2,cet4,true,n,white_pine%1:20:00::|white_pine%1:20:02::,true,1,evidence_ready_review,14.0,false
+white supremacy,white supremacy,2,cet4,true,n,white_supremacy%1:09:00::,true,1,evidence_ready_review,14.0,false
+wide angle lens,wide angle lens,3,cet4,true,n,wide-angle_lens%1:06:00::,true,1,evidence_ready_review,14.0,false
+wild goose chase,wild goose chase,3,cet4,true,n,wild-goose_chase%1:04:00::,true,1,evidence_ready_review,14.0,false
+wine cellar,wine cellar,2,cet4,true,n,wine_cellar%1:06:00::,true,1,evidence_ready_review,14.0,false
+letter of the alphabet,letter of the alphabet,4,cet4,true,n,letter_of_the_alphabet%1:10:00::,false,2,evidence_ready_review,13.85,false
+by a long shot,by a long shot,4,cet4,true,r,by_a_long_shot%4:02:00::,false,1,evidence_ready_review,13.0,false
+general theory of relativity,general theory of relativity,4,cet4,true,n,general_theory_of_relativity%1:09:00::,true,1,evidence_ready_review,12.0,false
+come hell or high water,come hell or high water,5,cet4,true,r,come_hell_or_high_water%4:02:00::,false,1,evidence_ready_review,11.0,false
+advisory board,advisory board,2,cet4,true,n,advisory_board%1:14:00::,false,1,evidence_ready_review,10.0,false
+air freight,air freight,2,cet4,true,v,air-freight%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+air marshal,air marshal,2,cet4,true,n,air_marshal%1:18:00::,false,1,evidence_ready_review,10.0,false
+alcoholic beverage,alcoholic beverage,2,cet4,true,n,alcoholic_beverage%1:13:00::,false,1,evidence_ready_review,10.0,false
+alcoholic drink,alcoholic drink,2,cet4,true,n,alcoholic_drink%1:13:00::,false,1,evidence_ready_review,10.0,false
+ally with,ally with,2,cet4,true,v,ally_with%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+ash grey,ash grey,2,cet4,true,a|n,ash-grey%5:00:00:achromatic:00|ash_grey%1:07:00::,false,1,evidence_ready_review,10.0,false
+associate degree,associate degree,2,cet4,true,n,associate_degree%1:10:00::,false,1,evidence_ready_review,10.0,false
+audio file,audio file,2,cet4,true,n,audio_file%1:10:01::,false,1,evidence_ready_review,10.0,false
+bad fairy,bad fairy,2,cet4,true,n,bad_fairy%1:18:00::,false,1,evidence_ready_review,10.0,false
+band oneself,band oneself,2,cet4,true,v,band_oneself%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+bang out,bang out,2,cet4,true,v,bang_out%2:36:00::,false,0,oewn_dictionary_review,10.0,false
+bar code,bar code,2,cet4,true,n,bar_code%1:10:00::,false,1,evidence_ready_review,10.0,false
+bargain down,bargain down,2,cet4,true,v,bargain_down%2:40:00::,false,0,oewn_dictionary_review,10.0,false
+be intimate,be intimate,2,cet4,true,v,be_intimate%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+beat a retreat,beat a retreat,3,cet4,true,v,beat_a_retreat%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+belly land,belly land,2,cet4,true,v,belly-land%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+belly out,belly out,2,cet4,true,v,belly_out%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+belt buckle,belt buckle,2,cet4,true,n,belt_buckle%1:06:00::,false,1,evidence_ready_review,10.0,false
+bend over backwards,bend over backwards,3,cet4,true,v,bend_over_backwards%2:29:00::,false,0,oewn_dictionary_review,10.0,false
+bind off,bind off,2,cet4,true,v,bind_off%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+blossom forth,blossom forth,2,cet4,true,v,blossom_forth%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+blossom out,blossom out,2,cet4,true,v,blossom_out%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+body forth,body forth,2,cet4,true,v,body_forth%2:42:00::,false,0,oewn_dictionary_review,10.0,false
+bolt down,bolt down,2,cet4,true,v,bolt_down%2:34:00::|bolt_down%2:34:01::,false,0,oewn_dictionary_review,10.0,false
+bolt out,bolt out,2,cet4,true,v,bolt_out%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+boom out,boom out,2,cet4,true,v,boom_out%2:39:00::,false,0,oewn_dictionary_review,10.0,false
+bracket out,bracket out,2,cet4,true,v,bracket_out%2:32:00::,false,0,oewn_dictionary_review,10.0,false
+brass section,brass section,2,cet4,true,n,brass_section%1:14:00::,false,1,evidence_ready_review,10.0,false
+breeze through,breeze through,2,cet4,true,v,breeze_through%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+bring forth,bring forth,2,cet4,true,v,bring_forth%2:29:00::|bring_forth%2:36:00::|bring_forth%2:36:01::|bring_forth%2:39:00::,false,0,oewn_dictionary_review,10.0,false
+bring oneself,bring oneself,2,cet4,true,v,bring_oneself%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+bubble over,bubble over,2,cet4,true,v,bubble_over%2:37:00::,false,0,oewn_dictionary_review,10.0,false
+bubble up,bubble up,2,cet4,true,v,bubble_up%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+bucket along,bucket along,2,cet4,true,v,bucket_along%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+buckle under,buckle under,2,cet4,true,v,buckle_under%2:32:00::,false,0,oewn_dictionary_review,10.0,false
+bulk large,bulk large,2,cet4,true,v,bulk_large%2:42:00::,false,0,oewn_dictionary_review,10.0,false
+bull through,bull through,2,cet4,true,v,bull_through%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+bullet vote,bullet vote,2,cet4,true,v,bullet_vote%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+bump around,bump around,2,cet4,true,v,bump_around%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+bump up,bump up,2,cet4,true,v,bump_up%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+bundle off,bundle off,2,cet4,true,v,bundle_off%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+burst forth,burst forth,2,cet4,true,v,burst_forth%2:30:00::|burst_forth%2:30:01::|burst_forth%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+bush out,bush out,2,cet4,true,v,bush_out%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+by bid,by bid,2,cet4,true,v,by-bid%2:40:00::,false,0,oewn_dictionary_review,10.0,false
+cable television,cable television,2,cet4,true,n,cable_television%1:06:00::|cable_television%1:10:00::,false,1,evidence_ready_review,10.0,false
+cargo hatch,cargo hatch,2,cet4,true,n,cargo_hatch%1:06:00::,false,1,evidence_ready_review,10.0,false
+cart away,cart away,2,cet4,true,v,cart_away%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+cart off,cart off,2,cet4,true,v,cart_off%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+cast anchor,cast anchor,2,cet4,true,v,cast_anchor%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+cat scratch disease,cat scratch disease,3,cet4,true,n,cat_scratch_disease%1:26:00::,false,1,evidence_ready_review,10.0,false
+cereal box,cereal box,2,cet4,true,n,cereal_box%1:06:00::,false,1,evidence_ready_review,10.0,false
+change by reversal,change by reversal,3,cet4,true,v,change_by_reversal%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+change intensity,change intensity,2,cet4,true,v,change_intensity%2:39:00::,false,0,oewn_dictionary_review,10.0,false
+change posture,change posture,2,cet4,true,v,change_posture%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+chase after,chase after,2,cet4,true,v,chase_after%2:38:00::|chase_after%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+chase away,chase away,2,cet4,true,v,chase_away%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+chemical analysis,chemical analysis,2,cet4,true,n,chemical_analysis%1:04:00::,false,1,evidence_ready_review,10.0,false
+chemical attraction,chemical attraction,2,cet4,true,n,chemical_attraction%1:19:00::,false,1,evidence_ready_review,10.0,false
+chief executive officer,chief executive officer,3,cet4,true,n,chief_executive_officer%1:18:00::,false,1,evidence_ready_review,10.0,false
+chill out,chill out,2,cet4,true,v,chill_out%2:37:00::,false,0,oewn_dictionary_review,10.0,false
+chin up,chin up,2,cet4,true,n|v,chin-up%1:04:00::|chin_up%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+chop down,chop down,2,cet4,true,v,chop_down%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+chop off,chop off,2,cet4,true,v,chop_off%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+chop shop,chop shop,2,cet4,true,n,chop_shop%1:06:00::,false,1,evidence_ready_review,10.0,false
+chop up,chop up,2,cet4,true,v,chop_up%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+civil defense,civil defense,2,cet4,true,n,civil_defense%1:04:00::,false,1,evidence_ready_review,10.0,false
+class warfare,class warfare,2,cet4,true,n,class_warfare%1:04:00::,false,1,evidence_ready_review,10.0,false
+classification system,classification system,2,cet4,true,n,classification_system%1:09:00::,false,1,evidence_ready_review,10.0,false
+clinical psychologist,clinical psychologist,2,cet4,true,n,clinical_psychologist%1:18:00::,false,1,evidence_ready_review,10.0,false
+clown around,clown around,2,cet4,true,v,clown_around%2:29:00::,false,0,oewn_dictionary_review,10.0,false
+cock up,cock up,2,cet4,true,v,cock_up%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+comb out,comb out,2,cet4,true,n|v,comb-out%1:04:00::|comb-out%1:04:01::|comb_out%2:29:00::|comb_out%2:40:00::,false,0,oewn_dictionary_review,10.0,false
+come forth,come forth,2,cet4,true,v,come_forth%2:30:00::|come_forth%2:42:00::,false,0,oewn_dictionary_review,10.0,false
+come in handy,come in handy,3,cet4,true,v,come_in_handy%2:42:00::,false,0,oewn_dictionary_review,10.0,false
+commuter train,commuter train,2,cet4,true,n,commuter_train%1:06:00::,false,1,evidence_ready_review,10.0,false
+computer code,computer code,2,cet4,true,n,computer_code%1:10:00::,false,1,evidence_ready_review,10.0,false
+confine to,confine to,2,cet4,true,v,confine_to%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+confirmation hearing,confirmation hearing,2,cet4,true,n,confirmation_hearing%1:10:00::,false,1,evidence_ready_review,10.0,false
+copper bottom,copper bottom,2,cet4,true,v,copper-bottom%2:40:00::,false,0,oewn_dictionary_review,10.0,false
+cosmic microwave background,cosmic microwave background,3,cet4,true,n,cosmic_microwave_background%1:19:00::,false,1,evidence_ready_review,10.0,false
+counter drill,counter drill,2,cet4,true,v,counter-drill%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+crawl in,crawl in,2,cet4,true,v,crawl_in%2:29:00::,false,0,oewn_dictionary_review,10.0,false
+creep in,creep in,2,cet4,true,v,creep_in%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+creep up,creep up,2,cet4,true,v,creep_up%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+criminal court,criminal court,2,cet4,true,n,criminal_court%1:14:00::,false,1,evidence_ready_review,10.0,false
+criminal offense,criminal offense,2,cet4,true,n,criminal_offense%1:04:00::,false,1,evidence_ready_review,10.0,false
+criminal record,criminal record,2,cet4,true,n,criminal_record%1:10:00::,false,1,evidence_ready_review,10.0,false
+cross oneself,cross oneself,2,cet4,true,v,cross_oneself%2:32:00::,false,0,oewn_dictionary_review,10.0,false
+cruise ship,cruise ship,2,cet4,true,n,cruise_ship%1:06:00::,false,1,evidence_ready_review,10.0,false
+crush out,crush out,2,cet4,true,v,crush_out%2:35:01::,false,0,oewn_dictionary_review,10.0,false
+cubic kilometer,cubic kilometer,2,cet4,true,n,cubic_kilometer%1:23:00::,false,1,evidence_ready_review,10.0,false
+cubic millimeter,cubic millimeter,2,cet4,true,n,cubic_millimeter%1:23:00::,false,1,evidence_ready_review,10.0,false
+cue stick,cue stick,2,cet4,true,n,cue_stick%1:06:00::,false,1,evidence_ready_review,10.0,false
+cultural movement,cultural movement,2,cet4,true,n,cultural_movement%1:14:00::,false,1,evidence_ready_review,10.0,false
+dairy farmer,dairy farmer,2,cet4,true,n,dairy_farmer%1:18:00::,false,1,evidence_ready_review,10.0,false
+dash down,dash down,2,cet4,true,v,dash_down%2:32:00::,false,0,oewn_dictionary_review,10.0,false
+dash off,dash off,2,cet4,true,v,dash_off%2:32:00::|dash_off%2:36:00::,false,0,oewn_dictionary_review,10.0,false
+deck out,deck out,2,cet4,true,v,deck_out%2:29:00::,false,0,oewn_dictionary_review,10.0,false
+deck up,deck up,2,cet4,true,v,deck_up%2:29:00::,false,0,oewn_dictionary_review,10.0,false
+declare oneself,declare oneself,2,cet4,true,v,declare_oneself%2:32:00::,false,0,oewn_dictionary_review,10.0,false
+deed over,deed over,2,cet4,true,v,deed_over%2:40:00::,false,0,oewn_dictionary_review,10.0,false
+deep dye,deep dye,2,cet4,true,v,deep-dye%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+defense attorney,defense attorney,2,cet4,true,n,defense_attorney%1:18:00::,false,1,evidence_ready_review,10.0,false
+defense lawyer,defense lawyer,2,cet4,true,n,defense_lawyer%1:18:00::,false,1,evidence_ready_review,10.0,false
+degree centigrade,degree centigrade,2,cet4,true,n,degree_centigrade%1:23:00::,false,1,evidence_ready_review,10.0,false
+dine in,dine in,2,cet4,true,v,dine_in%2:34:00::,false,0,oewn_dictionary_review,10.0,false
+dip into,dip into,2,cet4,true,v,dip_into%2:31:00::,false,0,oewn_dictionary_review,10.0,false
+disco music,disco music,2,cet4,true,n,disco_music%1:10:00::,false,1,evidence_ready_review,10.0,false
+dish the dirt,dish the dirt,3,cet4,true,v,dish_the_dirt%2:32:00::,false,0,oewn_dictionary_review,10.0,false
+domestic terrorism,domestic terrorism,2,cet4,true,n,domestic_terrorism%1:04:00::,false,1,evidence_ready_review,10.0,false
+dorm room,dorm room,2,cet4,true,n,dorm_room%1:06:00::,false,1,evidence_ready_review,10.0,false
+double dye,double dye,2,cet4,true,v,double_dye%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+drain the cup,drain the cup,3,cet4,true,v,drain_the_cup%2:34:00::,false,0,oewn_dictionary_review,10.0,false
+drainage system,drainage system,2,cet4,true,n,drainage_system%1:06:00::,false,1,evidence_ready_review,10.0,false
+drift apart,drift apart,2,cet4,true,v,drift_apart%2:37:00::,false,0,oewn_dictionary_review,10.0,false
+drift away,drift away,2,cet4,true,v,drift_away%2:37:03::,false,0,oewn_dictionary_review,10.0,false
+drift off,drift off,2,cet4,true,v,drift_off%2:29:00::,false,0,oewn_dictionary_review,10.0,false
+drop anchor,drop anchor,2,cet4,true,v,drop_anchor%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+drug lord,drug lord,2,cet4,true,n,drug_lord%1:18:00::,false,1,evidence_ready_review,10.0,false
+drug user,drug user,2,cet4,true,n,drug_user%1:18:00::,false,1,evidence_ready_review,10.0,false
+drum up,drum up,2,cet4,true,v,drum_up%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+economic assistance,economic assistance,2,cet4,true,n,economic_assistance%1:21:00::,false,1,evidence_ready_review,10.0,false
+edit out,edit out,2,cet4,true,v,edit_out%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+eighty eight,eighty eight,2,cet4,true,a,eighty-eight%5:00:00:cardinal:00,false,1,evidence_ready_review,10.0,false
+eighty nine,eighty nine,2,cet4,true,a,eighty-nine%5:00:00:cardinal:00,false,1,evidence_ready_review,10.0,false
+eighty seven,eighty seven,2,cet4,true,a,eighty-seven%5:00:00:cardinal:00,false,1,evidence_ready_review,10.0,false
+eighty six,eighty six,2,cet4,true,a,eighty-six%5:00:00:cardinal:00,false,1,evidence_ready_review,10.0,false
+eighty two,eighty two,2,cet4,true,a,eighty-two%5:00:00:cardinal:00,false,1,evidence_ready_review,10.0,false
+electronics industry,electronics industry,2,cet4,true,n,electronics_industry%1:14:00::,false,1,evidence_ready_review,10.0,false
+emergency landing,emergency landing,2,cet4,true,n,emergency_landing%1:04:01::,false,1,evidence_ready_review,10.0,false
+emotional intelligence,emotional intelligence,2,cet4,true,n,emotional_intelligence%1:09:01::,false,1,evidence_ready_review,10.0,false
+end user,end user,2,cet4,true,n,end_user%1:18:00::,false,1,evidence_ready_review,10.0,false
+environmental science,environmental science,2,cet4,true,n,environmental_science%1:09:00::,false,1,evidence_ready_review,10.0,false
+eternal life,eternal life,2,cet4,true,n,eternal_life%1:26:00::,false,1,evidence_ready_review,10.0,false
+executive branch,executive branch,2,cet4,true,n,executive_branch%1:14:00::,false,1,evidence_ready_review,10.0,false
+executive secretary,executive secretary,2,cet4,true,n,executive_secretary%1:18:00::,false,1,evidence_ready_review,10.0,false
+extend oneself,extend oneself,2,cet4,true,v,extend_oneself%2:33:00::,false,0,oewn_dictionary_review,10.0,false
+facial recognition,facial recognition,2,cet4,true,n,facial_recognition%1:10:00::,false,1,evidence_ready_review,10.0,false
+fade away,fade away,2,cet4,true,v,fade_away%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+fall from grace,fall from grace,3,cet4,true,v,fall_from_grace%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+fall over backwards,fall over backwards,3,cet4,true,v,fall_over_backwards%2:29:00::,false,0,oewn_dictionary_review,10.0,false
+fast dye,fast dye,2,cet4,true,v,fast_dye%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+fasten on,fasten on,2,cet4,true,v,fasten_on%2:31:00::,false,0,oewn_dictionary_review,10.0,false
+federal office,federal office,2,cet4,true,n,federal_office%1:14:00::,false,1,evidence_ready_review,10.0,false
+fifty four,fifty four,2,cet4,true,a,fifty-four%5:00:00:cardinal:00,false,1,evidence_ready_review,10.0,false
+fifty nine,fifty nine,2,cet4,true,a,fifty-nine%5:00:00:cardinal:00,false,1,evidence_ready_review,10.0,false
+fifty percent,fifty percent,2,cet4,true,n,fifty_percent%1:23:00::,false,1,evidence_ready_review,10.0,false
+fifty six,fifty six,2,cet4,true,a,fifty-six%5:00:00:cardinal:00,false,1,evidence_ready_review,10.0,false
+fifty two,fifty two,2,cet4,true,a,fifty-two%5:00:00:cardinal:00,false,1,evidence_ready_review,10.0,false
+filter out,filter out,2,cet4,true,v,filter_out%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+financial analyst,financial analyst,2,cet4,true,n,financial_analyst%1:18:00::,false,1,evidence_ready_review,10.0,false
+financial assistance,financial assistance,2,cet4,true,n,financial_assistance%1:21:00::,false,1,evidence_ready_review,10.0,false
+find oneself,find oneself,2,cet4,true,v,find_oneself%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+first aid kit,first aid kit,3,cet4,true,n,first-aid_kit%1:06:00::,false,1,evidence_ready_review,10.0,false
+first appearance,first appearance,2,cet4,true,n,first_appearance%1:04:00::,false,1,evidence_ready_review,10.0,false
+first degree,first degree,2,cet4,true,n,first_degree%1:09:00::,false,1,evidence_ready_review,10.0,false
+fishing boat,fishing boat,2,cet4,true,n,fishing_boat%1:06:00::,false,1,evidence_ready_review,10.0,false
+fishing gear,fishing gear,2,cet4,true,n,fishing_gear%1:06:00::,false,1,evidence_ready_review,10.0,false
+fishing net,fishing net,2,cet4,true,n,fishing_net%1:06:00::,false,1,evidence_ready_review,10.0,false
+flesh out,flesh out,2,cet4,true,v,flesh_out%2:29:00::|flesh_out%2:32:00::|flesh_out%2:34:00::,false,0,oewn_dictionary_review,10.0,false
+flight attendant,flight attendant,2,cet4,true,n,flight_attendant%1:18:00::,false,1,evidence_ready_review,10.0,false
+forty eight,forty eight,2,cet4,true,a,forty-eight%5:00:00:cardinal:00,false,1,evidence_ready_review,10.0,false
+forty fifth,forty fifth,2,cet4,true,a,forty-fifth%5:00:00:ordinal:00,false,1,evidence_ready_review,10.0,false
+forty first,forty first,2,cet4,true,a,forty-first%5:00:00:ordinal:00,false,1,evidence_ready_review,10.0,false
+forty seven,forty seven,2,cet4,true,a,forty-seven%5:00:00:cardinal:00,false,1,evidence_ready_review,10.0,false
+forty three,forty three,2,cet4,true,a,forty-three%5:00:00:cardinal:00,false,1,evidence_ready_review,10.0,false
+four year old,four year old,3,cet4,true,a,four-year-old%5:00:00:young:00,false,1,evidence_ready_review,10.0,false
+free associate,free associate,2,cet4,true,v,free-associate%2:31:00::,false,0,oewn_dictionary_review,10.0,false
+freedom of assembly,freedom of assembly,3,cet4,true,n,freedom_of_assembly%1:07:00::,false,1,evidence_ready_review,10.0,false
+frighten away,frighten away,2,cet4,true,v,frighten_away%2:37:00::,false,0,oewn_dictionary_review,10.0,false
+frighten off,frighten off,2,cet4,true,v,frighten_off%2:37:00::,false,0,oewn_dictionary_review,10.0,false
+fuck shit up,fuck shit up,3,cet4,true,v,fuck_shit_up%2:30:01::,false,0,oewn_dictionary_review,10.0,false
+gain vigor,gain vigor,2,cet4,true,v,gain_vigor%2:29:00::,false,0,oewn_dictionary_review,10.0,false
+garbage heap,garbage heap,2,cet4,true,n,garbage_heap%1:15:00::,false,1,evidence_ready_review,10.0,false
+gas mileage,gas mileage,2,cet4,true,n,gas_mileage%1:24:00::,false,1,evidence_ready_review,10.0,false
+gasoline station,gasoline station,2,cet4,true,n,gasoline_station%1:06:00::,false,1,evidence_ready_review,10.0,false
+gay man,gay man,2,cet4,true,n,gay_man%1:18:00::,false,1,evidence_ready_review,10.0,false
+gear up,gear up,2,cet4,true,v,gear_up%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+gene expression,gene expression,2,cet4,true,n,gene_expression%1:19:00::,false,1,evidence_ready_review,10.0,false
+general relativity,general relativity,2,cet4,true,n,general_relativity%1:09:00::,false,1,evidence_ready_review,10.0,false
+genetic disease,genetic disease,2,cet4,true,n,genetic_disease%1:26:00::,false,1,evidence_ready_review,10.0,false
+genetic disorder,genetic disorder,2,cet4,true,n,genetic_disorder%1:26:00::,false,1,evidence_ready_review,10.0,false
+genetic map,genetic map,2,cet4,true,n,genetic_map%1:09:00::,false,1,evidence_ready_review,10.0,false
+geological era,geological era,2,cet4,true,n,geological_era%1:28:00::,false,1,evidence_ready_review,10.0,false
+give chase,give chase,2,cet4,true,v,give_chase%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+give forth,give forth,2,cet4,true,v,give_forth%2:29:00::,false,0,oewn_dictionary_review,10.0,false
+give suck,give suck,2,cet4,true,v,give_suck%2:34:00::,false,0,oewn_dictionary_review,10.0,false
+give the sack,give the sack,3,cet4,true,v,give_the_sack%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+give tongue to,give tongue to,3,cet4,true,v,give_tongue_to%2:32:00::,false,0,oewn_dictionary_review,10.0,false
+go for broke,go for broke,3,cet4,true,v,go_for_broke%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+golden brown,golden brown,2,cet4,true,a,golden-brown%5:00:00:chromatic:00,false,1,evidence_ready_review,10.0,false
+government revenue,government revenue,2,cet4,true,n,government_revenue%1:21:00::,false,1,evidence_ready_review,10.0,false
+graphic design,graphic design,2,cet4,true,n,graphic_design%1:10:00::,false,1,evidence_ready_review,10.0,false
+graphic designer,graphic designer,2,cet4,true,n,graphic_designer%1:18:00::,false,1,evidence_ready_review,10.0,false
+grind away,grind away,2,cet4,true,v,grind_away%2:31:00::,false,0,oewn_dictionary_review,10.0,false
+grind down,grind down,2,cet4,true,v,grind_down%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+grind out,grind out,2,cet4,true,v,grind_out%2:36:00::,false,0,oewn_dictionary_review,10.0,false
+gross out,gross out,2,cet4,true,v,gross_out%2:37:00::|gross_out%2:39:00::,false,0,oewn_dictionary_review,10.0,false
+gun barrel,gun barrel,2,cet4,true,n,gun_barrel%1:06:00::,false,1,evidence_ready_review,10.0,false
+gym mat,gym mat,2,cet4,true,n,gym_mat%1:06:00::,false,1,evidence_ready_review,10.0,false
+hack on,hack on,2,cet4,true,v,hack_on%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+hair dye,hair dye,2,cet4,true,n,hair_dye%1:27:00::,false,1,evidence_ready_review,10.0,false
+hammer in,hammer in,2,cet4,true,v,hammer_in%2:31:00::,false,0,oewn_dictionary_review,10.0,false
+hand dye,hand dye,2,cet4,true,v,hand-dye%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+hardware store,hardware store,2,cet4,true,n,hardware_store%1:06:00::,false,1,evidence_ready_review,10.0,false
+harsh on,harsh on,2,cet4,true,v,harsh_on%2:32:00::,false,0,oewn_dictionary_review,10.0,false
+have the distinction,have the distinction,3,cet4,true,v,have_the_distinction%2:31:00::,false,0,oewn_dictionary_review,10.0,false
+haze over,haze over,2,cet4,true,v,haze_over%2:39:00::,false,0,oewn_dictionary_review,10.0,false
+heap up,heap up,2,cet4,true,v,heap_up%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+hell on earth,hell on earth,3,cet4,true,n,hell_on_earth%1:15:00::,false,1,evidence_ready_review,10.0,false
+help oneself,help oneself,2,cet4,true,v,help_oneself%2:42:00::,false,0,oewn_dictionary_review,10.0,false
+hi tech,hi tech,2,cet4,true,a,hi-tech%3:00:00::,false,1,evidence_ready_review,10.0,false
+historical document,historical document,2,cet4,true,n,historical_document%1:10:00::,false,1,evidence_ready_review,10.0,false
+historical record,historical record,2,cet4,true,n,historical_record%1:10:00::,false,1,evidence_ready_review,10.0,false
+hit the deck,hit the deck,3,cet4,true,v,hit_the_deck%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+hit the dirt,hit the dirt,3,cet4,true,v,hit_the_dirt%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+hit the hay,hit the hay,3,cet4,true,v,hit_the_hay%2:29:00::,false,0,oewn_dictionary_review,10.0,false
+hit the sack,hit the sack,3,cet4,true,v,hit_the_sack%2:29:00::,false,0,oewn_dictionary_review,10.0,false
+hold sway,hold sway,2,cet4,true,v,hold_sway%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+hollow out,hollow out,2,cet4,true,v,hollow_out%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+homeless person,homeless person,2,cet4,true,n,homeless_person%1:18:00::,false,1,evidence_ready_review,10.0,false
+hook on,hook on,2,cet4,true,v,hook_on%2:31:00::,false,0,oewn_dictionary_review,10.0,false
+hunting license,hunting license,2,cet4,true,n,hunting_license%1:10:00::,false,1,evidence_ready_review,10.0,false
+hydrogen atom,hydrogen atom,2,cet4,true,n,hydrogen_atom%1:27:00::,false,1,evidence_ready_review,10.0,false
+ice melt,ice melt,2,cet4,true,n,ice_melt%1:27:01::,false,1,evidence_ready_review,10.0,false
+immune reaction,immune reaction,2,cet4,true,n,immune_reaction%1:04:00::,false,1,evidence_ready_review,10.0,false
+impulse buy,impulse buy,2,cet4,true,v,impulse-buy%2:40:00::,false,0,oewn_dictionary_review,10.0,false
+information warfare,information warfare,2,cet4,true,n,information_warfare%1:04:00::,false,1,evidence_ready_review,10.0,false
+intrude on,intrude on,2,cet4,true,v,intrude_on%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+issue forth,issue forth,2,cet4,true,v,issue_forth%2:42:00::,false,0,oewn_dictionary_review,10.0,false
+jar against,jar against,2,cet4,true,v,jar_against%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+junk food,junk food,2,cet4,true,n,junk_food%1:13:00::,false,1,evidence_ready_review,10.0,false
+keep to oneself,keep to oneself,3,cet4,true,v,keep_to_oneself%2:40:00::|keep_to_oneself%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+kick ass,kick ass,2,cet4,true,v,kick_ass%2:42:01::,false,0,oewn_dictionary_review,10.0,false
+kick the bucket,kick the bucket,3,cet4,true,v,kick_the_bucket%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+kick upstairs,kick upstairs,2,cet4,true,v,kick_upstairs%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+kill oneself,kill oneself,2,cet4,true,v,kill_oneself%2:33:00::,false,0,oewn_dictionary_review,10.0,false
+kitchen appliance,kitchen appliance,2,cet4,true,n,kitchen_appliance%1:06:00::,false,1,evidence_ready_review,10.0,false
+labor intensive,labor intensive,2,cet4,true,a,labor-intensive%5:00:00:effortful:00,false,1,evidence_ready_review,10.0,false
+lace into,lace into,2,cet4,true,v,lace_into%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+lace up,lace up,2,cet4,true,v,lace_up%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+laugh loudly,laugh loudly,2,cet4,true,v,laugh_loudly%2:29:01::,false,0,oewn_dictionary_review,10.0,false
+lend oneself,lend oneself,2,cet4,true,v,lend_oneself%2:42:00::,false,0,oewn_dictionary_review,10.0,false
+line of defense,line of defense,3,cet4,true,n,line_of_defense%1:06:00::|line_of_defense%1:14:00::,false,1,evidence_ready_review,10.0,false
+liquor store,liquor store,2,cet4,true,n,liquor_store%1:06:00::,false,1,evidence_ready_review,10.0,false
+log cabin,log cabin,2,cet4,true,n,log_cabin%1:06:00::,false,1,evidence_ready_review,10.0,false
+long underwear,long underwear,2,cet4,true,n,long_underwear%1:06:00::,false,1,evidence_ready_review,10.0,false
+look alike,look alike,2,cet4,true,a|n,look-alike%1:18:00::|look-alike%5:00:00:like:00,false,1,evidence_ready_review,10.0,false
+loosen up,loosen up,2,cet4,true,v,loosen_up%2:29:00::|loosen_up%2:29:01::|loosen_up%2:29:03::|loosen_up%2:35:00::|loosen_up%2:41:02::,false,0,oewn_dictionary_review,10.0,false
+lord it over,lord it over,3,cet4,true,v,lord_it_over%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+lower oneself,lower oneself,2,cet4,true,v,lower_oneself%2:41:12::,false,0,oewn_dictionary_review,10.0,false
+lump sum,lump sum,2,cet4,true,n,lump_sum%1:21:00::,false,1,evidence_ready_review,10.0,false
+machine learning,machine learning,2,cet4,true,n,machine_learning%1:09:01::,false,1,evidence_ready_review,10.0,false
+machine translation,machine translation,2,cet4,true,n,machine_translation%1:09:00::,false,1,evidence_ready_review,10.0,false
+magnetic energy,magnetic energy,2,cet4,true,n,magnetic_energy%1:19:01::,false,1,evidence_ready_review,10.0,false
+main clause,main clause,2,cet4,true,n,main_clause%1:10:00::,false,1,evidence_ready_review,10.0,false
+make bold,make bold,2,cet4,true,v,make_bold%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+make hay,make hay,2,cet4,true,v,make_hay%2:34:00::,false,0,oewn_dictionary_review,10.0,false
+male reproductive system,male reproductive system,3,cet4,true,n,male_reproductive_system%1:08:00::,false,1,evidence_ready_review,10.0,false
+manual labor,manual labor,2,cet4,true,n,manual_labor%1:04:00::,false,1,evidence_ready_review,10.0,false
+marginal utility,marginal utility,2,cet4,true,n,marginal_utility%1:23:00::,false,1,evidence_ready_review,10.0,false
+marketing information,marketing information,2,cet4,true,n,marketing_information%1:10:01::,false,1,evidence_ready_review,10.0,false
+mat up,mat up,2,cet4,true,v,mat_up%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+meat loaf,meat loaf,2,cet4,true,n,meat_loaf%1:13:00::,false,1,evidence_ready_review,10.0,false
+medicine cabinet,medicine cabinet,2,cet4,true,n,medicine_cabinet%1:06:00::,false,1,evidence_ready_review,10.0,false
+melt down,melt down,2,cet4,true,v,melt_down%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+melt off,melt off,2,cet4,true,v,melt_off%2:29:00::,false,0,oewn_dictionary_review,10.0,false
+member of parliament,member of parliament,3,cet4,true,n,member_of_parliament%1:18:00::,false,1,evidence_ready_review,10.0,false
+mental disorder,mental disorder,2,cet4,true,n,mental_disorder%1:26:00::,false,1,evidence_ready_review,10.0,false
+middle aged man,middle aged man,3,cet4,true,n,middle-aged_man%1:18:00::,false,1,evidence_ready_review,10.0,false
+military governor,military governor,2,cet4,true,n,military_governor%1:18:00::,false,1,evidence_ready_review,10.0,false
+mill about,mill about,2,cet4,true,v,mill_about%2:38:00::|mill_about%2:42:00::,false,0,oewn_dictionary_review,10.0,false
+mill around,mill around,2,cet4,true,v,mill_around%2:38:00::|mill_around%2:42:00::,false,0,oewn_dictionary_review,10.0,false
+mining company,mining company,2,cet4,true,n,mining_company%1:14:00::,false,1,evidence_ready_review,10.0,false
+moral obligation,moral obligation,2,cet4,true,n,moral_obligation%1:04:00::,false,1,evidence_ready_review,10.0,false
+morning prayer,morning prayer,2,cet4,true,n,morning_prayer%1:28:00::,false,1,evidence_ready_review,10.0,false
+mountain trail,mountain trail,2,cet4,true,n,mountain_trail%1:06:00::,false,1,evidence_ready_review,10.0,false
+muddy up,muddy up,2,cet4,true,v,muddy_up%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+mug up,mug up,2,cet4,true,v,mug_up%2:31:00::,false,0,oewn_dictionary_review,10.0,false
+musical instrument,musical instrument,2,cet4,true,n,musical_instrument%1:06:00::,false,1,evidence_ready_review,10.0,false
+newspaper columnist,newspaper columnist,2,cet4,true,n,newspaper_columnist%1:18:00::,false,1,evidence_ready_review,10.0,false
+nickel and dime,nickel and dime,3,cet4,true,a|v,nickel-and-dime%2:35:00::|nickel-and-dime%2:40:00::|nickel-and-dime%5:00:00:cheap:00|nickel-and-dime%5:00:00:unimportant:00,false,0,oewn_dictionary_review,10.0,false
+ninety one,ninety one,2,cet4,true,a,ninety-one%5:00:00:cardinal:00,false,1,evidence_ready_review,10.0,false
+ninety six,ninety six,2,cet4,true,a,ninety-six%5:00:00:cardinal:00,false,1,evidence_ready_review,10.0,false
+oil production,oil production,2,cet4,true,n,oil_production%1:04:00::,false,1,evidence_ready_review,10.0,false
+one and one,one and one,3,cet4,true,n,one-and-one%1:04:00::,false,1,evidence_ready_review,10.0,false
+one and only,one and only,3,cet4,true,a,one_and_only%5:00:00:incomparable:00,false,1,evidence_ready_review,10.0,false
+one hundred seventy,one hundred seventy,3,cet4,true,a,one_hundred_seventy%5:00:00:cardinal:00,false,1,evidence_ready_review,10.0,false
+one spot,one spot,2,cet4,true,n,one-spot%1:06:00::,false,1,evidence_ready_review,10.0,false
+oral cancer,oral cancer,2,cet4,true,n,oral_cancer%1:26:00::,false,1,evidence_ready_review,10.0,false
+orbital plane,orbital plane,2,cet4,true,n,orbital_plane%1:25:00::,false,1,evidence_ready_review,10.0,false
+orientation course,orientation course,2,cet4,true,n,orientation_course%1:04:00::,false,1,evidence_ready_review,10.0,false
+over refine,over refine,2,cet4,true,v,over-refine%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+ozone hole,ozone hole,2,cet4,true,n,ozone_hole%1:17:00::,false,1,evidence_ready_review,10.0,false
+paddy field,paddy field,2,cet4,true,n,paddy_field%1:15:00::,false,1,evidence_ready_review,10.0,false
+paint the lily,paint the lily,3,cet4,true,v,paint_the_lily%2:30:00::|paint_the_lily%2:36:00::,false,0,oewn_dictionary_review,10.0,false
+palm off,palm off,2,cet4,true,v,palm_off%2:40:00::,false,0,oewn_dictionary_review,10.0,false
+palm tree,palm tree,2,cet4,true,n,palm_tree%1:20:00::,false,1,evidence_ready_review,10.0,false
+paper clip,paper clip,2,cet4,true,n,paper_clip%1:06:00::,false,1,evidence_ready_review,10.0,false
+park bench,park bench,2,cet4,true,n,park_bench%1:06:00::,false,1,evidence_ready_review,10.0,false
+parliamentary democracy,parliamentary democracy,2,cet4,true,n,parliamentary_democracy%1:14:00::,false,1,evidence_ready_review,10.0,false
+patch up,patch up,2,cet4,true,v,patch_up%2:30:00::|patch_up%2:32:00::,false,0,oewn_dictionary_review,10.0,false
+peace treaty,peace treaty,2,cet4,true,n,peace_treaty%1:10:00::,false,1,evidence_ready_review,10.0,false
+peer review,peer review,2,cet4,true,v,peer_review%2:32:00::,false,0,oewn_dictionary_review,10.0,false
+penny pinch,penny pinch,2,cet4,true,v,penny-pinch%2:40:00::,false,0,oewn_dictionary_review,10.0,false
+periodic table,periodic table,2,cet4,true,n,periodic_table%1:14:00::,false,1,evidence_ready_review,10.0,false
+physical exertion,physical exertion,2,cet4,true,n,physical_exertion%1:04:00::,false,1,evidence_ready_review,10.0,false
+physical therapist,physical therapist,2,cet4,true,n,physical_therapist%1:18:00::,false,1,evidence_ready_review,10.0,false
+piece dye,piece dye,2,cet4,true,v,piece-dye%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+pin on,pin on,2,cet4,true,v,pin_on%2:32:00::,false,0,oewn_dictionary_review,10.0,false
+pin up,pin up,2,cet4,true,n|v,pin-up%1:18:00::|pin_up%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+pine away,pine away,2,cet4,true,v,pine_away%2:30:00::,false,0,oewn_dictionary_review,10.0,false
+pine nut,pine nut,2,cet4,true,n,pine_nut%1:13:00::,false,1,evidence_ready_review,10.0,false
+pine tree,pine tree,2,cet4,true,n,pine_tree%1:20:00::,false,1,evidence_ready_review,10.0,false
+pistol whip,pistol whip,2,cet4,true,v,pistol-whip%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+place mat,place mat,2,cet4,true,n,place_mat%1:06:00::,false,1,evidence_ready_review,10.0,false
+place upright,place upright,2,cet4,true,v,place_upright%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+plant fiber,plant fiber,2,cet4,true,n,plant_fiber%1:27:00::,false,1,evidence_ready_review,10.0,false
+plough on,plough on,2,cet4,true,v,plough_on%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+plow ahead,plow ahead,2,cet4,true,v,plow_ahead%2:32:00::,false,0,oewn_dictionary_review,10.0,false
+pool cue,pool cue,2,cet4,true,n,pool_cue%1:06:00::,false,1,evidence_ready_review,10.0,false
+pop quiz,pop quiz,2,cet4,true,n,pop_quiz%1:10:00::,false,1,evidence_ready_review,10.0,false
+pop the question,pop the question,3,cet4,true,v,pop_the_question%2:32:00::,false,0,oewn_dictionary_review,10.0,false
+portion out,portion out,2,cet4,true,v,portion_out%2:40:00::,false,0,oewn_dictionary_review,10.0,false
+portrait painter,portrait painter,2,cet4,true,n,portrait_painter%1:18:00::,false,1,evidence_ready_review,10.0,false
+power cord,power cord,2,cet4,true,n,power_cord%1:06:00::,false,1,evidence_ready_review,10.0,false
+pride oneself,pride oneself,2,cet4,true,v,pride_oneself%2:37:09::,false,0,oewn_dictionary_review,10.0,false
+prince charming,prince charming,2,cet4,true,n,prince_charming%1:18:00::,false,1,evidence_ready_review,10.0,false
+probability theory,probability theory,2,cet4,true,n,probability_theory%1:09:00::,false,1,evidence_ready_review,10.0,false
+prohibition era,prohibition era,2,cet4,true,n,prohibition_era%1:28:00::,false,1,evidence_ready_review,10.0,false
+prove oneself,prove oneself,2,cet4,true,v,prove_oneself%2:31:00::,false,0,oewn_dictionary_review,10.0,false
+pub crawl,pub crawl,2,cet4,true,n|v,pub-crawl%2:34:00::|pub_crawl%1:04:00::,false,0,oewn_dictionary_review,10.0,false
+punch in,punch in,2,cet4,true,v,punch_in%2:32:00::,false,0,oewn_dictionary_review,10.0,false
+punch out,punch out,2,cet4,true,v,punch_out%2:32:00::,false,0,oewn_dictionary_review,10.0,false
+put one across,put one across,3,cet4,true,v,put_one_across%2:32:00::,false,0,oewn_dictionary_review,10.0,false
+put one over,put one over,3,cet4,true,v,put_one_over%2:32:03::,false,0,oewn_dictionary_review,10.0,false
+queue up,queue up,2,cet4,true,v,queue_up%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+rail off,rail off,2,cet4,true,v,rail_off%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+raise hell,raise hell,2,cet4,true,v,raise_hell%2:32:00::,false,0,oewn_dictionary_review,10.0,false
+rate of growth,rate of growth,3,cet4,true,n,rate_of_growth%1:28:00::,false,1,evidence_ready_review,10.0,false
+rear back,rear back,2,cet4,true,v,rear_back%2:38:00::|rear_back%2:38:01::,false,0,oewn_dictionary_review,10.0,false
+record album,record album,2,cet4,true,n,record_album%1:06:00::|record_album%1:10:00::,false,1,evidence_ready_review,10.0,false
+regulatory agency,regulatory agency,2,cet4,true,n,regulatory_agency%1:14:00::,false,1,evidence_ready_review,10.0,false
+regulatory authority,regulatory authority,2,cet4,true,n,regulatory_authority%1:14:00::,false,1,evidence_ready_review,10.0,false
+relieve oneself,relieve oneself,2,cet4,true,v,relieve_oneself%2:29:00::,false,0,oewn_dictionary_review,10.0,false
+religious ceremony,religious ceremony,2,cet4,true,n,religious_ceremony%1:04:00::,false,1,evidence_ready_review,10.0,false
+religious festival,religious festival,2,cet4,true,n,religious_festival%1:28:00::,false,1,evidence_ready_review,10.0,false
+remember oneself,remember oneself,2,cet4,true,v,remember_oneself%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+render set,render set,2,cet4,true,v,render-set%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+reproductive system,reproductive system,2,cet4,true,n,reproductive_system%1:08:00::,false,1,evidence_ready_review,10.0,false
+retail store,retail store,2,cet4,true,n,retail_store%1:06:00::,false,1,evidence_ready_review,10.0,false
+revolve about,revolve about,2,cet4,true,v,revolve_about%2:42:00::,false,0,oewn_dictionary_review,10.0,false
+revolve around,revolve around,2,cet4,true,v,revolve_around%2:38:00::|revolve_around%2:42:00::,false,0,oewn_dictionary_review,10.0,false
+ride herd on,ride herd on,3,cet4,true,v,ride_herd_on%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+ride the bench,ride the bench,3,cet4,true,v,ride_the_bench%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+right to privacy,right to privacy,3,cet4,true,n,right_to_privacy%1:07:00::,false,1,evidence_ready_review,10.0,false
+rip off,rip off,2,cet4,true,n|v,rip-off%1:04:00::|rip_off%2:30:00::|rip_off%2:40:00::|rip_off%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+rip out,rip out,2,cet4,true,v,rip_out%2:32:00::|rip_out%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+rip up,rip up,2,cet4,true,v,rip_up%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+roar off,roar off,2,cet4,true,v,roar_off%2:38:00::,false,0,oewn_dictionary_review,10.0,false
+rub along,rub along,2,cet4,true,v,rub_along%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+rubbish heap,rubbish heap,2,cet4,true,n,rubbish_heap%1:15:00::,false,1,evidence_ready_review,10.0,false
+sack out,sack out,2,cet4,true,v,sack_out%2:29:00::,false,0,oewn_dictionary_review,10.0,false
+sack up,sack up,2,cet4,true,v,sack_up%2:40:00::,false,0,oewn_dictionary_review,10.0,false
+say farewell,say farewell,2,cet4,true,v,say_farewell%2:32:00::,false,0,oewn_dictionary_review,10.0,false
+scent out,scent out,2,cet4,true,v,scent_out%2:39:00::,false,0,oewn_dictionary_review,10.0,false
+scratch along,scratch along,2,cet4,true,v,scratch_along%2:41:00::,false,0,oewn_dictionary_review,10.0,false
+scratch off,scratch off,2,cet4,true,v,scratch_off%2:36:00::,false,0,oewn_dictionary_review,10.0,false
+scratch out,scratch out,2,cet4,true,v,scratch_out%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+scratch paper,scratch paper,2,cet4,true,n,scratch_paper%1:27:00::,false,1,evidence_ready_review,10.0,false
+scratch up,scratch up,2,cet4,true,v,scratch_up%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+seal in,seal in,2,cet4,true,v,seal_in%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+seal off,seal off,2,cet4,true,v,seal_off%2:33:00::|seal_off%2:35:00::,false,0,oewn_dictionary_review,10.0,false
+second gear,second gear,2,cet4,true,n,second_gear%1:06:00::,false,1,evidence_ready_review,10.0,false
+second in command,second in command,3,cet4,true,n,second-in-command%1:18:00::,false,1,evidence_ready_review,10.0,false
+second place finish,second place finish,3,cet4,true,n,second-place_finish%1:11:00::,false,1,evidence_ready_review,10.0,false
+secretary of defense,secretary of defense,3,cet4,true,n,secretary_of_defense%1:04:02::|secretary_of_defense%1:18:01::,false,1,evidence_ready_review,10.0,false
+self acceptance,self acceptance,2,cet4,true,n,self_acceptance%1:07:00::,false,1,evidence_ready_review,10.0,false
+self contradictory,self contradictory,2,cet4,true,a,self-contradictory%5:00:00:inconsistent:00|self-contradictory%5:00:00:inexplicable:00,false,1,evidence_ready_review,10.0,false

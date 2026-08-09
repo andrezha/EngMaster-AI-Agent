@@ -247,12 +247,11 @@ def build_token_rows(
             add(token, level, HIGH_SOURCE_ID, str(row["raw_entry"]))
 
     for row in cet_rows:
-        if row["exam_level"] != "cet4":
-            continue
+        level = "cet6" if row["exam_level"] == "cet6_excluded" else "cet4"
         for token in lexical_tokens(str(row["entry"])):
-            add(token, "cet4", CET_SOURCE_ID, str(row["raw_entry"]))
+            add(token, level, CET_SOURCE_ID, str(row["raw_entry"]))
 
-    rank = {"junior": 0, "senior_high": 1, "cet4": 2}
+    rank = {"junior": 0, "senior_high": 1, "cet4": 2, "cet6": 3}
     output: list[dict[str, object]] = []
     for token, item in sorted(evidence.items()):
         levels = sorted(item["levels"], key=rank.get)

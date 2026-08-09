@@ -1,0 +1,43 @@
+{
+  "boundary_token_count": 8007,
+  "boundary_level_counts": {
+    "junior": 1651,
+    "senior_high": 1509,
+    "cet6": 1646,
+    "cet4": 3201
+  },
+  "candidate_pool_count": 20701,
+  "candidate_minimum_level_counts": {
+    "junior": 6819,
+    "senior_high": 4952,
+    "cet4": 6479,
+    "cet6": 2451
+  },
+  "candidate_status_counts": {
+    "moby_corpus_review": 155,
+    "evidence_ready_review": 3191,
+    "oewn_dictionary_review": 17355
+  },
+  "priority_queue_counts": {
+    "junior": 600,
+    "senior_high": 700,
+    "cet4": 900,
+    "cet6": 900
+  },
+  "old_phrase_file_read": false,
+  "chinese_content_created": false,
+  "final_selection_claimed": false,
+  "source_sha256": {
+    "stage_boundary": "06032b286a81aee39260beb4d86e77ab7420e7ae17b28cc7390b4ef440a02ba9",
+    "oewn": "7d749f6e2c39e6970e4997839dcf6e42fd281f3c2fae0171d2192bae8cfa4b51",
+    "moby": "c7aa03c522e9e28bba1db692372119f21c73c646671af24b53a840e2d6f84fa7",
+    "tatoeba": "6ab169264a28008c25bf63042bf7535fc63137c9d7e09b7b8bd7812d10117d1b"
+  },
+  "output_sha256": {
+    "candidate_pool": "9d117abdd855eeb538e76cb092d3e48d3d0f5148b8706885128f9eb79e91f7ec",
+    "queue_junior": "389be6c20c12d8e7dc18287c94878583b699a8223916462eaa12747389a53f77",
+    "queue_senior_high": "254338b834aae3d518c336ee3c0557c14b99af67b831a0b328e18717d82ba167",
+    "queue_cet4": "5a146f854d8bb9b281c716194b4fc676ef7d7981e049e2dc5f1a6c05c6b5b5f4",
+    "queue_cet6": "3529e777187c86667752b585a5d2b8535e5185cd1af6ca40f4d5b1d7b2c9f3a2"
+  }
+}

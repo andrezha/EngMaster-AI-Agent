@@ -11,7 +11,7 @@
   "file_size_bytes": 12070155,
   "status_checked_on": "2026-08-09",
   "status_note": "The official CET syllabus page still lists the 2016 revised English syllabus on the checked date.",
-  "phrase_scope_note": "The syllabus and its CET-4 word list define exam ability and vocabulary scope. The project did not find a separately enumerated official CET-4 required-phrase list on the official page.",
-  "usage": "Define the CET-4 ability and vocabulary boundary; never treat the document as a ready-made independent phrase list.",
+  "phrase_scope_note": "The syllabus defines CET-4 and CET-6 ability and vocabulary scope; CET-6 word families are marked with a star. The project did not find separately enumerated official CET-4 or CET-6 required-phrase lists on the official page.",
+  "usage": "Define the CET-4 and CET-6 ability and vocabulary boundaries; never treat the document as a ready-made independent phrase list.",
   "redistribution_policy": "Internal provenance archive. Do not bundle the full PDF in the customer-facing product."
 }

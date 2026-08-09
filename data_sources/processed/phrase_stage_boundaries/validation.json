@@ -16,16 +16,17 @@
     "cet6_excluded": 1263
   },
   "cet_counting_note": "The syllabus declares 5418 word items. This extraction groups the printed word-family lines by visual baseline; the two counts measure different units and must not be equated.",
-  "normalized_token_total": 6361,
+  "normalized_token_total": 8007,
   "token_earliest_level_counts": {
     "junior": 1651,
     "senior_high": 1509,
+    "cet6": 1646,
     "cet4": 3201
   },
   "old_phrase_file_read": false,
   "output_sha256": {
     "high": "68f584a2d9f00bf3e7396820bcfffb9bf0708c97e57e87f76ed60ef53c45e3da",
     "cet": "a297d4ce8cd9e7d948ffcb85f04d0a55171cccab8b732bb6575b095eb191e147",
-    "tokens": "b5159c28ea2a654c0af060fc852194b0f97ef15a715589e360b51b8d9bdde10e"
+    "tokens": "06032b286a81aee39260beb4d86e77ab7420e7ae17b28cc7390b4ef440a02ba9"
   }
 }
