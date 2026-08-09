@@ -1,0 +1,601 @@
+﻿phrase,normalized_phrase,word_count,oewn_match,oewn_pos,oewn_sense_ids,oewn_forms,moby_match,moby_forms,tatoeba_cc0_sentence_count,all_components_in_junior_boundary,candidate_status,priority_score,introduced_level_candidate,human_review_claimed
+to be,to be,2,false,,,,true,to-be,879,true,moby_corpus_review,101.814,junior,false
+out of,out of,2,true,r,out_of%4:02:00::,out of,false,,291,true,evidence_ready_review,86.898,junior,false
+more than,more than,2,true,a,more_than%3:00:00::,more than,false,,400,true,evidence_ready_review,86.475,junior,false
+a lot,a lot,2,true,r,a_lot%4:02:00::,a lot,false,,242,true,evidence_ready_review,84.248,junior,false
+go to,go to,2,true,n|v,go-to%1:06:01::|go_to%2:42:00::,go to|go-to,true,go to,101,true,evidence_ready_review,80.724,junior,false
+to do,to do,2,true,n,to-do%1:26:00::,to-do,true,to-do,194,true,evidence_ready_review,80.073,junior,false
+according to,according to,2,false,,,,true,according to,192,true,moby_corpus_review,79.925,junior,false
+would be,would be,2,true,a,would-be%5:00:00:ambitious:00,would-be,true,would-be,181,true,evidence_ready_review,79.078,junior,false
+in this,in this,2,true,r,in_this%4:02:00::,in this,false,,144,true,evidence_ready_review,76.799,junior,false
+live in,live in,2,true,v,live_in%2:34:00::,live in,false,,96,true,evidence_ready_review,75.999,junior,false
+each other,each other,2,false,,,,true,each other,138,true,moby_corpus_review,75.189,junior,false
+a little,a little,2,true,r,a_little%4:02:00::,a little,false,,128,true,evidence_ready_review,75.112,junior,false
+as well,as well,2,true,r,as_well%4:02:01::,as well,false,,120,true,evidence_ready_review,74.189,junior,false
+come to,come to,2,true,v,come_to%2:29:00::|come_to%2:39:00::|come_to%2:41:00::|come_to%2:42:03::,come to,true,come to,57,true,evidence_ready_review,72.58,junior,false
+at least,at least,2,true,r,at_least%4:02:00::|at_least%4:02:01::,at least,false,,101,true,evidence_ready_review,71.724,junior,false
+a few,a few,2,true,a,a_few%5:00:00:few:00,a few,false,,142,true,evidence_ready_review,71.599,junior,false
+up to,up to,2,true,a,up_to%5:00:00:adequate:00|up_to%5:00:00:busy:00,up to,false,,140,true,evidence_ready_review,71.396,junior,false
+kind of,kind of,2,true,r,kind_of%4:02:00::,kind of,false,,95,true,evidence_ready_review,70.85,junior,false
+talk about,talk about,2,true,v,talk_about%2:32:00::|talk_about%2:32:01::,talk about,true,talk about,47,true,evidence_ready_review,69.85,junior,false
+believe in,believe in,2,true,v,believe_in%2:31:01::,believe in,false,,50,true,evidence_ready_review,66.724,junior,false
+do it,do it,2,true,v,do_it%2:35:00::,do it,false,,50,true,evidence_ready_review,66.724,junior,false
+look at,look at,2,true,v,look_at%2:31:00::|look_at%2:39:01::,look at,false,,50,true,evidence_ready_review,66.724,junior,false
+a bit,a bit,2,true,r,a_bit%4:02:00::,a bit,false,,70,true,evidence_ready_review,66.497,junior,false
+at all,at all,2,true,r,at_all%4:02:00::,at all,false,,69,true,evidence_ready_review,66.293,junior,false
+make it,make it,2,true,v,make_it%2:41:00::|make_it%2:41:05::|make_it%2:42:00::,make it,false,,48,true,evidence_ready_review,66.147,junior,false
+look like,look like,2,true,v,look_like%2:42:00::,look like,false,,47,true,evidence_ready_review,65.85,junior,false
+too much,too much,2,true,r,too_much%4:02:00::,too much,false,,58,true,evidence_ready_review,63.826,junior,false
+make sure,make sure,2,true,v,make_sure%2:41:00::,make sure,false,,40,true,evidence_ready_review,63.576,junior,false
+of course,of course,2,true,r,of_course%4:02:00::,of course,false,,55,true,evidence_ready_review,63.074,junior,false
+go back,go back,2,true,v,go_back%2:30:00::|go_back%2:32:00::|go_back%2:42:00::,go back,true,go back,28,true,evidence_ready_review,62.58,junior,false
+for example,for example,2,true,r,for_example%4:02:00::,for example,false,,53,true,evidence_ready_review,62.549,junior,false
+care for,care for,2,true,v,care_for%2:29:00::|care_for%2:37:01::|care_for%2:37:08::,care for,false,,36,true,evidence_ready_review,62.095,junior,false
+out in,out in,2,true,v,out_in%2:38:00::,out in,false,,35,true,evidence_ready_review,61.699,junior,false
+at home,at home,2,true,n|r,at_home%1:14:00::|at_home%4:02:00::|at_home%4:02:01::,at home,true,at-home,37,true,evidence_ready_review,61.479,junior,false
+in all,in all,2,true,r,in_all%4:02:00::,in all,false,,49,true,evidence_ready_review,61.439,junior,false
+climate change,climate change,2,true,n,climate_change%1:22:00::,climate change,false,,68,true,evidence_ready_review,61.085,junior,false
+get to,get to,2,true,v,get_to%2:30:00::|get_to%2:37:00::|get_to%2:38:02::,get to,false,,32,true,evidence_ready_review,60.444,junior,false
+so far,so far,2,true,r,so_far%4:02:00::|so_far%4:02:01::|so_far%4:02:02::,so far,false,,45,true,evidence_ready_review,60.236,junior,false
+in that,in that,2,true,r,in_that%4:02:00::,in that,false,,44,true,evidence_ready_review,59.919,junior,false
+come up,come up,2,true,v,come_up%2:30:00::|come_up%2:35:00::|come_up%2:35:01::|come_up%2:35:02::|come_up%2:36:03::|come_up%2:38:00::|come_up%2:38:01::|come_up%2:38:02::|come_up%2:38:03::|come_up%2:40:00::|come_up%2:42:00::|come_up%2:42:01::,come up,true,come up,23,true,evidence_ready_review,59.85,junior,false
+think of,think of,2,true,v,think_of%2:31:00::|think_of%2:31:01::|think_of%2:31:02::|think_of%2:31:03::|think_of%2:31:04::|think_of%2:36:00::,think of,false,,30,true,evidence_ready_review,59.542,junior,false
+in fact,in fact,2,true,r,in_fact%4:02:00::,in fact,false,,42,true,evidence_ready_review,59.263,junior,false
+put on,put on,2,true,a|n|v,put-on%1:04:00::|put-on%1:04:01::|put-on%1:10:00::|put_on%2:29:00::|put_on%2:29:03::|put_on%2:30:00::|put_on%2:30:01::|put_on%2:32:00::|put_on%2:35:00::|put_on%2:36:00::|put_on%2:36:01::|put_on%2:36:02::|put_on%5:00:00:counterfeit:00,put on|put-on,true,put on|put-on,22,true,evidence_ready_review,59.236,junior,false
+work in,work in,2,true,n|v,work-in%1:04:00::|work_in%2:30:00::,work in|work-in,false,,29,true,evidence_ready_review,59.069,junior,false
+in front,in front,2,true,r,in_front%4:02:00::,in front,false,,40,true,evidence_ready_review,58.576,junior,false
+know how,know how,2,true,n,know-how%1:09:00::,know-how,true,know-how,42,true,evidence_ready_review,58.263,junior,false
+right wing,right wing,2,true,a|n,right-wing%5:00:00:right:03|right_wing%1:14:00::,right wing|right-wing,true,right wing,41,true,evidence_ready_review,57.923,junior,false
+set up,set up,2,true,v,set_up%2:30:00::|set_up%2:30:02::|set_up%2:30:03::|set_up%2:31:00::|set_up%2:35:00::|set_up%2:35:01::|set_up%2:35:02::|set_up%2:35:04::|set_up%2:36:00::|set_up%2:36:01::|set_up%2:36:02::|set_up%2:36:03::|set_up%2:41:00::|set_up%2:41:01::|set_up%2:41:02::,set up,true,set up,20,true,evidence_ready_review,57.923,junior,false
+on earth,on earth,2,true,r,on_earth%4:02:00::,on earth,false,,38,true,evidence_ready_review,57.854,junior,false
+live on,live on,2,true,v,live_on%2:42:00::,live on,false,,26,true,evidence_ready_review,57.549,junior,false
+think about,think about,2,true,v,think_about%2:31:03::|think_about%2:31:05::,think about,false,,26,true,evidence_ready_review,57.549,junior,false
+long time,long time,2,true,a|n,long-time%5:00:00:old:01|long_time%1:28:00::,long time|long-time,false,,52,true,evidence_ready_review,57.279,junior,false
+all over,all over,2,true,a|r,all_over%4:02:00::|all_over%4:02:01::|all_over%5:00:00:finished:01,all over,false,,34,true,evidence_ready_review,56.293,junior,false
+do with,do with,2,false,,,,true,do with,36,true,moby_corpus_review,56.095,junior,false
+no matter,no matter,2,true,r,no_matter%4:02:00::,no matter,false,,33,true,evidence_ready_review,55.875,junior,false
+make up,make up,2,true,n|v,make-up%1:06:00::|make-up%1:07:00::|make-up%1:11:00::|make_up%2:29:00::|make_up%2:30:00::|make_up%2:32:00::|make_up%2:36:01::|make_up%2:36:03::|make_up%2:40:00::|make_up%2:41:00::|make_up%2:42:00::|make_up%2:42:03::,make up|make-up,false,,23,true,evidence_ready_review,55.85,junior,false
+take care,take care,2,true,v,take_care%2:41:00::|take_care%2:41:11::|take_care%2:41:12::,take care,false,,23,true,evidence_ready_review,55.85,junior,false
+ask for,ask for,2,true,v,ask_for%2:32:00::|ask_for%2:37:00::,ask for,true,ask for,17,true,evidence_ready_review,55.699,junior,false
+in order,in order,2,true,a,in_order%5:00:00:ready:00,in order,false,,46,true,evidence_ready_review,55.546,junior,false
+just as,just as,2,true,r,just_as%4:02:02::,just as,false,,32,true,evidence_ready_review,55.444,junior,false
+come back,come back,2,true,v,come_back%2:30:00::|come_back%2:32:00::|come_back%2:32:01::|come_back%2:38:01::,come back,false,,22,true,evidence_ready_review,55.236,junior,false
+end up,end up,2,true,v,end_up%2:30:01::,end up,false,,22,true,evidence_ready_review,55.236,junior,false
+each year,each year,2,true,r,each_year%4:02:00::|each_year%4:02:01::,each year,false,,31,true,evidence_ready_review,55.0,junior,false
+in time,in time,2,true,n|r,in_time%1:28:00::|in_time%4:02:00::|in_time%4:02:01::,in time,false,,31,true,evidence_ready_review,55.0,junior,false
+on it,on it,2,true,r,on_it%4:02:00::,on it,false,,31,true,evidence_ready_review,55.0,junior,false
+out to,out to,2,true,a,out_to%5:00:00:resolute:00,out to,false,,44,true,evidence_ready_review,54.919,junior,false
+get back,get back,2,true,v,get_back%2:33:00::|get_back%2:33:01::|get_back%2:33:13::,get back,true,get back,16,true,evidence_ready_review,54.875,junior,false
+get it,get it,2,true,v,get_it%2:31:00::|get_it%2:41:01::,get it,false,,21,true,evidence_ready_review,54.594,junior,false
+close to,close to,2,true,r,close_to%4:02:00::,close to,false,,30,true,evidence_ready_review,54.542,junior,false
+space station,space station,2,true,n,space_station%1:06:00::,space station,true,space station,32,true,evidence_ready_review,54.444,junior,false
+every year,every year,2,true,r,every_year%4:02:00::,every year,false,,29,true,evidence_ready_review,54.069,junior,false
+come out,come out,2,true,v,come_out%2:30:00::|come_out%2:30:01::|come_out%2:30:03::|come_out%2:30:04::|come_out%2:31:00::|come_out%2:32:00::|come_out%2:32:01::|come_out%2:38:00::|come_out%2:38:01::|come_out%2:38:06::|come_out%2:42:00::,come out,true,come out,15,true,evidence_ready_review,54.0,junior,false
+focus on,focus on,2,true,v,focus_on%2:42:00::,focus on,false,,20,true,evidence_ready_review,53.923,junior,false
+pick up,pick up,2,true,v,pick_up%2:29:00::|pick_up%2:30:00::|pick_up%2:30:01::|pick_up%2:31:00::|pick_up%2:34:00::|pick_up%2:35:00::|pick_up%2:35:01::|pick_up%2:37:00::|pick_up%2:38:00::|pick_up%2:38:01::|pick_up%2:39:00::|pick_up%2:39:01::|pick_up%2:40:00::|pick_up%2:40:01::|pick_up%2:40:02::|pick_up%2:41:00::,pick up,false,,20,true,evidence_ready_review,53.923,junior,false
+and how,and how,2,true,r,and_how%4:02:00::,and how,false,,28,true,evidence_ready_review,53.58,junior,false
+on that,on that,2,true,r,on_that%4:02:00::,on that,false,,28,true,evidence_ready_review,53.58,junior,false
+get out,get out,2,true,v,get_out%2:32:00::|get_out%2:32:01::|get_out%2:32:03::|get_out%2:35:00::|get_out%2:38:00::|get_out%2:38:01::|get_out%2:38:02::,get out,false,,19,true,evidence_ready_review,53.219,junior,false
+at last,at last,2,true,r,at_last%4:02:00::,at last,false,,27,true,evidence_ready_review,53.074,junior,false
+to it,to it,2,true,r,to_it%4:02:00::,to it,false,,27,true,evidence_ready_review,53.074,junior,false
+high school,high school,2,true,n,high_school%1:14:00::,high school,true,high school,29,true,evidence_ready_review,53.069,junior,false
+walk in,walk in,2,true,a|n|v,walk-in%1:06:00::|walk-in%1:11:00::|walk-in%1:18:00::|walk-in%1:18:01::|walk-in%5:00:00:deep:01|walk_in%2:38:00::,walk in|walk-in,true,walk-in,14,true,evidence_ready_review,53.069,junior,false
+much as,much as,2,true,r,much_as%4:02:00::,much as,false,,26,true,evidence_ready_review,52.549,junior,false
+work at,work at,2,true,v,work_at%2:41:01::,work at,false,,18,true,evidence_ready_review,52.479,junior,false
+far right,far right,2,true,a,far-right%5:00:00:right:03,far-right,false,,36,true,evidence_ready_review,52.095,junior,false
+grow up,grow up,2,true,v,grow_up%2:41:00::,grow up,true,grow up,13,true,evidence_ready_review,52.074,junior,false
+pay for,pay for,2,true,v,pay_for%2:41:00::,pay for,true,pay for,13,true,evidence_ready_review,52.074,junior,false
+world war,world war,2,true,n,world_war%1:04:00::,world war,true,world war,27,true,evidence_ready_review,52.074,junior,false
+at the same time,at the same time,4,true,r,at_the_same_time%4:02:03::|at_the_same_time%4:02:05::|at_the_same_time%4:02:06::,at the same time,false,,29,true,evidence_ready_review,52.069,junior,false
+at once,at once,2,true,r,at_once%4:02:00::|at_once%4:02:03::,at once,false,,25,true,evidence_ready_review,52.004,junior,false
+find out,find out,2,true,v,find_out%2:31:00::|find_out%2:31:01::|find_out%2:32:00::|find_out%2:32:01::,find out,false,,17,true,evidence_ready_review,51.699,junior,false
+responsible for,responsible for,2,true,a,responsible_for%5:00:00:causative:00,responsible for,false,,34,true,evidence_ready_review,51.293,junior,false
+get in,get in,2,true,v,get_in%2:38:00::|get_in%2:38:01::|get_in%2:40:01::|get_in%2:41:00::,get in,true,get in,12,true,evidence_ready_review,51.004,junior,false
+get into,get into,2,true,v,get_into%2:29:00::|get_into%2:32:00::|get_into%2:38:00::|get_into%2:40:00::|get_into%2:42:00::,get into,true,get into,12,true,evidence_ready_review,51.004,junior,false
+go on,go on,2,true,v,go_on%2:30:00::|go_on%2:32:00::|go_on%2:35:00::|go_on%2:38:00::|go_on%2:42:00::,go on,true,go on,12,true,evidence_ready_review,51.004,junior,false
+shut up,shut up,2,true,a|v,shut_up%2:30:00::|shut_up%2:32:00::|shut_up%2:35:00::|shut_up%5:00:00:confined:00,shut up,true,shut up,12,true,evidence_ready_review,51.004,junior,false
+wake up,wake up,2,true,v,wake_up%2:29:00::|wake_up%2:29:01::,wake up,true,wake-up,12,true,evidence_ready_review,51.004,junior,false
+work on,work on,2,true,v,work_on%2:36:00::|work_on%2:41:00::,work on,true,work on,12,true,evidence_ready_review,51.004,junior,false
+can do,can do,2,true,a,can-do%5:00:00:dynamic:00,can-do,false,,33,true,evidence_ready_review,50.875,junior,false
+and so,and so,2,true,r,and_so%4:02:00::,and so,false,,23,true,evidence_ready_review,50.85,junior,false
+at a time,at a time,3,true,r,at_a_time%4:02:00::,at a time,false,,23,true,evidence_ready_review,50.85,junior,false
+to that,to that,2,true,r,to_that%4:02:00::,to that,false,,23,true,evidence_ready_review,50.85,junior,false
+close up,close up,2,true,n|r|v,close-up%1:06:01::|close_up%2:32:00::|close_up%2:35:00::|close_up%2:35:01::|close_up%2:41:00::|close_up%4:02:00::,close up|close-up,true,close-up,8,true,evidence_ready_review,50.699,junior,false
+belong to,belong to,2,true,v,belong_to%2:42:00::,belong to,false,,15,true,evidence_ready_review,50.0,junior,false
+give up,give up,2,true,v,give_up%2:31:00::|give_up%2:33:00::|give_up%2:33:01::|give_up%2:34:00::|give_up%2:40:00::|give_up%2:40:01::|give_up%2:40:02::|give_up%2:40:03::|give_up%2:40:05::|give_up%2:41:00::|give_up%2:41:05::|give_up%2:42:00::,give up,true,give up,11,true,evidence_ready_review,49.85,junior,false
+go out,go out,2,true,v,go_out%2:30:00::|go_out%2:38:00::|go_out%2:38:01::|go_out%2:38:02::|go_out%2:41:00::|go_out%2:42:00::,go out,true,go out,11,true,evidence_ready_review,49.85,junior,false
+in law,in law,2,true,n,in-law%1:18:00::,in-law,true,in-law,23,true,evidence_ready_review,49.85,junior,false
+young man,young man,2,true,n,young_man%1:18:00::,young man,true,young man,23,true,evidence_ready_review,49.85,junior,false
+all the time,all the time,3,true,r,all_the_time%4:02:01::,all the time,false,,21,true,evidence_ready_review,49.594,junior,false
+with it,with it,2,true,a,with-it%5:00:00:fashionable:00|with-it%5:00:00:smart:00,with-it,false,,30,true,evidence_ready_review,49.542,junior,false
+do in,do in,2,true,v,do_in%2:35:00::,do in,true,do in,10,true,evidence_ready_review,48.594,junior,false
+get off,get off,2,true,v,get_off%2:32:00::|get_off%2:32:01::|get_off%2:32:04::|get_off%2:32:05::|get_off%2:34:00::|get_off%2:35:00::|get_off%2:38:00::|get_off%2:38:01::|get_off%2:38:02::|get_off%2:39:00::|get_off%2:41:00::,get off,true,get off,10,true,evidence_ready_review,48.594,junior,false
+go through,go through,2,true,v,go_through%2:34:00::|go_through%2:34:01::|go_through%2:39:00::,go through,true,go through,10,true,evidence_ready_review,48.594,junior,false
+have not,have not,2,true,n,have-not%1:18:00::,have-not,true,have-not,21,true,evidence_ready_review,48.594,junior,false
+long term,long term,2,true,a,long-term%5:00:00:long:02,long-term,true,long-term,21,true,evidence_ready_review,48.594,junior,false
+be on,be on,2,true,v,be_on%2:30:00::,be on,false,,13,true,evidence_ready_review,48.074,junior,false
+feel like,feel like,2,true,v,feel_like%2:37:00::,feel like,false,,13,true,evidence_ready_review,48.074,junior,false
+look for,look for,2,true,v,look_for%2:35:00::|look_for%2:37:00::,look for,false,,13,true,evidence_ready_review,48.074,junior,false
+travel to,travel to,2,true,v,travel_to%2:38:00::,travel to,false,,13,true,evidence_ready_review,48.074,junior,false
+so long,so long,2,true,n,so_long%1:10:00::,so long,true,so long,20,true,evidence_ready_review,47.923,junior,false
+no more,no more,2,true,r,no_more%4:02:01::|no_more%4:02:05::,no more,false,,18,true,evidence_ready_review,47.479,junior,false
+carry out,carry out,2,true,v,carry_out%2:30:00::|carry_out%2:36:00::,carry out,true,carry out,9,true,evidence_ready_review,47.219,junior,false
+come in,come in,2,true,v,come_in%2:31:00::|come_in%2:32:00::|come_in%2:38:01::|come_in%2:38:02::|come_in%2:42:00::,come in,true,come in,9,true,evidence_ready_review,47.219,junior,false
+go ahead,go ahead,2,true,n|v,go-ahead%1:07:00::|go-ahead%1:10:00::|go_ahead%2:32:00::,go ahead|go-ahead,true,go ahead|go-ahead,9,true,evidence_ready_review,47.219,junior,false
+go for,go for,2,true,v,go_for%2:31:00::|go_for%2:32:00::|go_for%2:33:00::|go_for%2:37:00::|go_for%2:42:00::,go for,true,go for,9,true,evidence_ready_review,47.219,junior,false
+hold on,hold on,2,true,v,hold_on%2:30:00::|hold_on%2:30:05::|hold_on%2:32:00::|hold_on%2:35:00::|hold_on%2:40:00::,hold on,true,hold on,9,true,evidence_ready_review,47.219,junior,false
+turn on,turn on,2,true,n|v,turn-on%1:09:00::|turn_on%2:30:00::|turn_on%2:34:00::|turn_on%2:35:00::|turn_on%2:37:00::|turn_on%2:37:02::|turn_on%2:39:00::|turn_on%2:42:00::,turn on|turn-on,true,turn on,9,true,evidence_ready_review,47.219,junior,false
+home in,home in,2,true,v,home_in%2:33:12::,home in,false,,12,true,evidence_ready_review,47.004,junior,false
+let go,let go,2,true,v,let_go%2:35:00::|let_go%2:42:00::,let go,false,,12,true,evidence_ready_review,47.004,junior,false
+put together,put together,2,true,v,put_together%2:36:00::,put together,false,,12,true,evidence_ready_review,47.004,junior,false
+up on,up on,2,true,a,up_on%5:00:00:informed:00,up on,false,,25,true,evidence_ready_review,47.004,junior,false
+if not,if not,2,true,r,if_not%4:02:00::,if not,false,,17,true,evidence_ready_review,46.699,junior,false
+in the end,in the end,3,true,r,in_the_end%4:02:00::|in_the_end%4:02:02::,in the end,false,,17,true,evidence_ready_review,46.699,junior,false
+more and more,more and more,3,true,r,more_and_more%4:02:00::,more and more,false,,17,true,evidence_ready_review,46.699,junior,false
+full time,full time,2,true,a|r,full-time%3:00:00::|full-time%4:02:00::,full-time,true,full time|full-time,12,true,evidence_ready_review,46.004,junior,false
+in part,in part,2,true,r,in_part%4:02:00::,in part,false,,16,true,evidence_ready_review,45.875,junior,false
+in place,in place,2,true,r,in_place%4:02:00::,in place,false,,16,true,evidence_ready_review,45.875,junior,false
+take place,take place,2,true,v,take_place%2:30:00::,take place,false,,11,true,evidence_ready_review,45.85,junior,false
+clean up,clean up,2,true,v,clean_up%2:29:00::|clean_up%2:30:03::|clean_up%2:40:00::|clean_up%2:40:04::,clean up,true,clean up,8,true,evidence_ready_review,45.699,junior,false
+get along,get along,2,true,v,get_along%2:30:00::|get_along%2:41:00::|get_along%2:42:00::,get along,true,get along,8,true,evidence_ready_review,45.699,junior,false
+get away,get away,2,true,v,get_away%2:32:00::|get_away%2:38:00::|get_away%2:41:00::,get away,true,get away,8,true,evidence_ready_review,45.699,junior,false
+get up,get up,2,true,v,get_up%2:29:00::|get_up%2:29:01::|get_up%2:29:02::|get_up%2:29:03::|get_up%2:31:00::|get_up%2:36:00::|get_up%2:38:00::|get_up%2:38:01::,get up,true,get up,8,true,evidence_ready_review,45.699,junior,false
+lie in,lie in,2,true,n|v,lie-in%1:04:00::|lie_in%2:29:00::|lie_in%2:42:00::,lie in|lie-in,true,lie in,8,true,evidence_ready_review,45.699,junior,false
+old man,old man,2,true,n,old_man%1:18:01::|old_man%1:18:02::|old_man%1:18:03::|old_man%1:18:04::|old_man%1:20:00::,old man,true,old man,17,true,evidence_ready_review,45.699,junior,false
+point out,point out,2,true,v,point_out%2:32:01::|point_out%2:32:02::|point_out%2:32:03::,point out,true,point out,8,true,evidence_ready_review,45.699,junior,false
+show up,show up,2,true,v,show_up%2:30:00::|show_up%2:39:00::,show up,true,show up,8,true,evidence_ready_review,45.699,junior,false
+stand up,stand up,2,true,a|v,stand-up%5:00:00:erect:00|stand_up%2:32:00::|stand_up%2:33:00::|stand_up%2:35:00::|stand_up%2:35:03::|stand_up%2:38:00::|stand_up%2:38:06::|stand_up%2:42:00::,stand up|stand-up,true,stand up|stand-up,8,true,evidence_ready_review,45.699,junior,false
+take off,take off,2,true,v,take_off%2:29:03::|take_off%2:30:00::|take_off%2:31:00::|take_off%2:35:00::|take_off%2:36:00::|take_off%2:38:00::|take_off%2:38:01::|take_off%2:38:02::|take_off%2:41:00::,take off,true,take off,8,true,evidence_ready_review,45.699,junior,false
+take on,take on,2,true,v,take_on%2:30:00::|take_on%2:33:01::|take_on%2:40:00::|take_on%2:41:00::|take_on%2:41:01::,take on,true,take on,8,true,evidence_ready_review,45.699,junior,false
+thank you,thank you,2,true,n,thank_you%1:10:00::,thank you,true,thank-you,17,true,evidence_ready_review,45.699,junior,false
+turn to,turn to,2,true,v,turn_to%2:32:01::,turn to,true,turn to,8,true,evidence_ready_review,45.699,junior,false
+walk through,walk through,2,true,n|v,walk-through%1:04:00::|walk-through%1:04:01::|walk-through%1:06:00::|walk-through%1:10:00::|walk_through%2:36:00::,walk through|walk-through,true,walk-through,8,true,evidence_ready_review,45.699,junior,false
+across the country,across the country,3,true,r,across_the_country%4:02:00::,across the country,false,,15,true,evidence_ready_review,45.0,junior,false
+in general,in general,2,true,r,in_general%4:02:00::,in general,false,,15,true,evidence_ready_review,45.0,junior,false
+in the air,in the air,3,true,r,in_the_air%4:02:00::,in the air,false,,15,true,evidence_ready_review,45.0,junior,false
+or so,or so,2,true,r,or_so%4:02:00::,or so,false,,15,true,evidence_ready_review,45.0,junior,false
+all in,all in,2,true,a,all_in%5:00:00:tired:00,all in,true,all in,16,true,evidence_ready_review,44.875,junior,false
+left wing,left wing,2,true,a|n,left-wing%5:00:00:left:02|left_wing%1:14:00::,left wing|left-wing,true,left wing,16,true,evidence_ready_review,44.875,junior,false
+for a while,for a while,3,true,r,for_a_while%4:02:01::,for a while,false,,14,true,evidence_ready_review,44.069,junior,false
+quite a,quite a,2,true,r,quite_a%4:02:00::,quite a,false,,14,true,evidence_ready_review,44.069,junior,false
+account for,account for,2,true,v,account_for%2:32:00::|account_for%2:42:00::,account for,true,account for,7,true,evidence_ready_review,44.0,junior,false
+go down,go down,2,true,v,go_down%2:30:00::|go_down%2:30:14::|go_down%2:33:00::|go_down%2:34:00::|go_down%2:38:00::|go_down%2:38:01::|go_down%2:38:02::|go_down%2:42:00::,go down,true,go down,7,true,evidence_ready_review,44.0,junior,false
+go in,go in,2,true,v,go_in%2:38:00::,go in,true,go in,7,true,evidence_ready_review,44.0,junior,false
+go into,go into,2,true,v,go_into%2:38:00::|go_into%2:42:00::,go into,true,go into,7,true,evidence_ready_review,44.0,junior,false
+go up,go up,2,true,v,go_up%2:30:00::|go_up%2:30:04::|go_up%2:38:00::|go_up%2:38:01::|go_up%2:38:02::|go_up%2:38:03::|go_up%2:38:10::,go up,true,go up,7,true,evidence_ready_review,44.0,junior,false
+hand in,hand in,2,false,,,,true,hand in,15,true,moby_corpus_review,44.0,junior,false
+keep up,keep up,2,true,v,keep_up%2:29:00::|keep_up%2:30:00::|keep_up%2:33:00::|keep_up%2:40:00::|keep_up%2:42:00::,keep up,true,keep up,7,true,evidence_ready_review,44.0,junior,false
+lay down,lay down,2,true,v,lay_down%2:31:00::,lay down,true,lay down,7,true,evidence_ready_review,44.0,junior,false
+make out,make out,2,true,v,make_out%2:31:00::|make_out%2:32:00::|make_out%2:32:02::|make_out%2:32:03::|make_out%2:32:06::|make_out%2:35:00::|make_out%2:35:01::|make_out%2:39:00::|make_out%2:41:02::|make_out%2:42:00::,make out,true,make out,7,true,evidence_ready_review,44.0,junior,false
+speak to,speak to,2,false,,,,true,speak to,15,true,moby_corpus_review,44.0,junior,false
+health care,health care,2,true,n,health_care%1:04:00::|health_care%1:04:01::,health care,false,,20,true,evidence_ready_review,43.923,junior,false
+come down,come down,2,true,v,come_down%2:29:00::|come_down%2:30:00::|come_down%2:32:12::|come_down%2:38:00::|come_down%2:43:00::,come down,false,,9,true,evidence_ready_review,43.219,junior,false
+depend on,depend on,2,true,v,depend_on%2:42:00::|depend_on%2:42:01::|depend_on%2:42:02::,depend on,false,,9,true,evidence_ready_review,43.219,junior,false
+feed on,feed on,2,true,v,feed_on%2:34:00::,feed on,false,,9,true,evidence_ready_review,43.219,junior,false
+move through,move through,2,true,v,move_through%2:38:00::,move through,false,,9,true,evidence_ready_review,43.219,junior,false
+pass through,pass through,2,true,n|v,pass-through%1:06:00::|pass_through%2:38:00::|pass_through%2:38:01::|pass_through%2:38:02::,pass through|pass-through,false,,9,true,evidence_ready_review,43.219,junior,false
+a great deal,a great deal,3,true,r,a_great_deal%4:02:00::|a_great_deal%4:02:03::,a great deal,false,,13,true,evidence_ready_review,43.074,junior,false
+above all,above all,2,true,r,above_all%4:02:00::|above_all%4:02:01::,above all,false,,13,true,evidence_ready_review,43.074,junior,false
+in hand,in hand,2,true,r,in_hand%4:02:00::,in hand,false,,13,true,evidence_ready_review,43.074,junior,false
+on time,on time,2,true,a|r,on_time%3:00:00::|on_time%4:02:00::|on_time%5:00:00:due:00,on time,false,,13,true,evidence_ready_review,43.074,junior,false
+heart attack,heart attack,2,true,n,heart_attack%1:26:00::,heart attack,true,heart attack,14,true,evidence_ready_review,43.069,junior,false
+blood pressure,blood pressure,2,true,n,blood_pressure%1:19:00::,blood pressure,true,blood pressure,13,true,evidence_ready_review,42.074,junior,false
+come over,come over,2,true,v,come_over%2:32:00::,come over,true,come over,6,true,evidence_ready_review,42.074,junior,false
+cut off,cut off,2,true,a|v,cut_off%2:30:00::|cut_off%2:32:00::|cut_off%2:35:00::|cut_off%2:35:01::|cut_off%2:35:02::|cut_off%2:35:03::|cut_off%5:00:00:cut:01,cut off,true,cut off,6,true,evidence_ready_review,42.074,junior,false
+look up,look up,2,true,v,look_up%2:32:00::,look up,true,look up,6,true,evidence_ready_review,42.074,junior,false
+put in,put in,2,true,v,put_in%2:30:00::|put_in%2:32:00::|put_in%2:32:02::|put_in%2:33:00::|put_in%2:35:00::|put_in%2:40:00::,put in,true,put in,6,true,evidence_ready_review,42.074,junior,false
+put out,put out,2,true,v,put_out%2:29:00::|put_out%2:29:01::|put_out%2:32:00::|put_out%2:33:00::|put_out%2:35:00::|put_out%2:35:01::|put_out%2:36:00::|put_out%2:41:00::|put_out%2:42:00::|put_out%2:43:00::,put out,true,put out|put-out,6,true,evidence_ready_review,42.074,junior,false
+run away,run away,2,true,v,run_away%2:38:00::|run_away%2:38:04::,run away,true,run away,6,true,evidence_ready_review,42.074,junior,false
+set out,set out,2,true,v,set_out%2:30:00::|set_out%2:35:00::|set_out%2:38:00::,set out,true,set out,6,true,evidence_ready_review,42.074,junior,false
+sit in,sit in,2,true,n|v,sit-in%1:04:00::|sit_in%2:41:00::|sit_in%2:42:00::,sit in|sit-in,true,sit-in,6,true,evidence_ready_review,42.074,junior,false
+take in,take in,2,true,n|v,take-in%1:04:00::|take_in%2:30:00::|take_in%2:30:03::|take_in%2:31:00::|take_in%2:32:00::|take_in%2:34:00::|take_in%2:34:01::|take_in%2:35:00::|take_in%2:35:01::|take_in%2:35:02::|take_in%2:35:04::|take_in%2:39:00::|take_in%2:39:06::|take_in%2:40:00::|take_in%2:40:09::|take_in%2:41:00::|take_in%2:42:00::|take_in%2:43:00::,take in|take-in,true,take in,6,true,evidence_ready_review,42.074,junior,false
+take over,take over,2,true,v,take_over%2:40:00::|take_over%2:40:03::|take_over%2:40:05::|take_over%2:40:06::|take_over%2:40:07::|take_over%2:41:00::|take_over%2:41:01::|take_over%2:41:02::,take over,true,take over,6,true,evidence_ready_review,42.074,junior,false
+take to,take to,2,true,v,take_to%2:37:00::|take_to%2:41:01::,take to,true,take to,6,true,evidence_ready_review,42.074,junior,false
+turn out,turn out,2,true,v,turn_out%2:29:00::|turn_out%2:30:00::|turn_out%2:35:00::|turn_out%2:35:01::|turn_out%2:36:00::|turn_out%2:36:01::|turn_out%2:38:00::|turn_out%2:40:03::|turn_out%2:41:03::|turn_out%2:42:00::|turn_out%2:42:01::|turn_out%2:42:02::,turn out,true,turn out,6,true,evidence_ready_review,42.074,junior,false
+in case,in case,2,true,r,in_case%4:02:00::,in case,false,,12,true,evidence_ready_review,42.004,junior,false
+in common,in common,2,true,r,in_common%4:02:00::|in_common%4:02:01::,in common,false,,12,true,evidence_ready_review,42.004,junior,false
+in line,in line,2,true,a|r,in_line%4:02:00::|in_line%5:00:00:eligible:00|in_line%5:00:00:succeeding:00,in line,false,,12,true,evidence_ready_review,42.004,junior,false
+in public,in public,2,true,r,in_public%4:02:00::,in public,false,,12,true,evidence_ready_review,42.004,junior,false
+on the way,on the way,3,true,r,on_the_way%4:02:00::,on the way,false,,12,true,evidence_ready_review,42.004,junior,false
+act as,act as,2,true,v,act_as%2:29:00::|act_as%2:42:00::,act as,false,,8,true,evidence_ready_review,41.699,junior,false
+prepare for,prepare for,2,true,v,prepare_for%2:30:00::,prepare for,false,,8,true,evidence_ready_review,41.699,junior,false
+shut down,shut down,2,true,v,shut_down%2:41:00::,shut down,false,,8,true,evidence_ready_review,41.699,junior,false
+free speech,free speech,2,false,,,,true,free speech,12,true,moby_corpus_review,41.004,junior,false
+old age,old age,2,true,n,old_age%1:28:00::,old age,true,old age,12,true,evidence_ready_review,41.004,junior,false
+a couple of,a couple of,3,true,a,a_couple_of%5:00:00:few:00,a couple of,false,,16,true,evidence_ready_review,40.875,junior,false
+at work,at work,2,true,a,at_work%5:00:00:busy:00,at work,false,,16,true,evidence_ready_review,40.875,junior,false
+heart disease,heart disease,2,true,n,heart_disease%1:26:00::,heart disease,false,,16,true,evidence_ready_review,40.875,junior,false
+proud of,proud of,2,true,a,proud_of%5:00:00:proud:00,proud of,false,,16,true,evidence_ready_review,40.875,junior,false
+all the way,all the way,3,true,r,all_the_way%4:02:03::|all_the_way%4:02:04::|all_the_way%4:02:09::,all the way,false,,11,true,evidence_ready_review,40.85,junior,false
+hand in hand,hand in hand,3,true,r,hand_in_hand%4:02:01::|hand_in_hand%4:02:03::,hand in hand,false,,11,true,evidence_ready_review,40.85,junior,false
+in turn,in turn,2,true,r,in_turn%4:02:00::,in turn,false,,11,true,evidence_ready_review,40.85,junior,false
+no doubt,no doubt,2,true,r,no_doubt%4:02:00::,no doubt,false,,11,true,evidence_ready_review,40.85,junior,false
+together with,together with,2,true,r,together_with%4:02:00::,together with,false,,11,true,evidence_ready_review,40.85,junior,false
+arrive at,arrive at,2,true,v,arrive_at%2:38:00::,arrive at,false,,7,true,evidence_ready_review,40.0,junior,false
+buy it,buy it,2,true,v,buy_it%2:30:00::,buy it,false,,7,true,evidence_ready_review,40.0,junior,false
+call for,call for,2,true,v,call_for%2:32:03::|call_for%2:32:04::|call_for%2:40:00::|call_for%2:42:00::,call for,false,,7,true,evidence_ready_review,40.0,junior,false
+in for,in for,2,true,a,in_for%5:00:00:certain:03,in for,false,,15,true,evidence_ready_review,40.0,junior,false
+let go of,let go of,3,true,v,let_go_of%2:35:00::,let go of,false,,7,true,evidence_ready_review,40.0,junior,false
+real life,real life,2,true,n,real_life%1:09:00::,real life,false,,15,true,evidence_ready_review,40.0,junior,false
+run for,run for,2,true,v,run_for%2:42:00::,run for,false,,7,true,evidence_ready_review,40.0,junior,false
+stay on,stay on,2,true,v,stay_on%2:42:00::,stay on,false,,7,true,evidence_ready_review,40.0,junior,false
+take part,take part,2,true,v,take_part%2:41:00::,take part,false,,7,true,evidence_ready_review,40.0,junior,false
+break down,break down,2,true,v,break_down%2:29:00::|break_down%2:30:00::|break_down%2:30:09::|break_down%2:31:00::|break_down%2:33:00::|break_down%2:35:01::|break_down%2:37:00::|break_down%2:38:00::,break down,true,break down,5,true,evidence_ready_review,39.85,junior,false
+come along,come along,2,true,v,come_along%2:30:00::|come_along%2:30:01::,come along,true,come along,5,true,evidence_ready_review,39.85,junior,false
+come on,come on,2,true,n|v,come-on%1:07:00::|come-on%1:09:00::|come_on%2:30:00::|come_on%2:30:01::|come_on%2:30:02::|come_on%2:35:00::|come_on%2:38:00::,come on|come-on,true,come-on,5,true,evidence_ready_review,39.85,junior,false
+cut down,cut down,2,true,v,cut_down%2:30:00::|cut_down%2:33:00::|cut_down%2:35:00::|cut_down%2:35:01::|cut_down%2:35:02::|cut_down%2:35:03::,cut down,true,cut down,5,true,evidence_ready_review,39.85,junior,false
+fall back,fall back,2,true,v,fall_back%2:29:00::|fall_back%2:33:00::|fall_back%2:38:00::|fall_back%2:38:01::|fall_back%2:38:03::|fall_back%2:41:00::,fall back,true,fall back,5,true,evidence_ready_review,39.85,junior,false
+get through,get through,2,true,v,get_through%2:30:00::|get_through%2:31:00::|get_through%2:32:00::|get_through%2:38:00::|get_through%2:42:00::,get through,true,get through,5,true,evidence_ready_review,39.85,junior,false
+go away,go away,2,true,v,go_away%2:30:00::|go_away%2:38:00::|go_away%2:38:05::|go_away%2:39:00::,go away,true,go away,5,true,evidence_ready_review,39.85,junior,false
+hold back,hold back,2,true,v,hold_back%2:30:00::|hold_back%2:33:00::|hold_back%2:39:00::|hold_back%2:40:00::|hold_back%2:42:00::|hold_back%2:42:01::,hold back,true,hold back,5,true,evidence_ready_review,39.85,junior,false
+keep in,keep in,2,true,v,keep_in%2:41:00::,keep in,true,keep in,5,true,evidence_ready_review,39.85,junior,false
+let out,let out,2,true,v,let_out%2:30:00::|let_out%2:32:00::|let_out%2:32:02::|let_out%2:35:00::,let out,true,let out,5,true,evidence_ready_review,39.85,junior,false
+look back,look back,2,true,v,look_back%2:31:00::|look_back%2:39:00::,look back,true,look back,5,true,evidence_ready_review,39.85,junior,false
+mother in law,mother in law,3,true,n,mother-in-law%1:18:00::,mother-in-law,true,mother-in-law,11,true,evidence_ready_review,39.85,junior,false
+move in,move in,2,true,v,move_in%2:38:00::|move_in%2:38:01::|move_in%2:38:02::,move in,true,move in,5,true,evidence_ready_review,39.85,junior,false
+no good,no good,2,true,a,no-good%5:00:00:bad:00|no-good%5:00:00:worthless:00,no-good,true,no-good,11,true,evidence_ready_review,39.85,junior,false
+put up,put up,2,true,a|v,put-up%5:00:00:planned:00|put_up%2:30:00::|put_up%2:31:00::|put_up%2:32:00::|put_up%2:35:00::|put_up%2:36:00::|put_up%2:40:00::|put_up%2:40:01::|put_up%2:41:00::|put_up%2:41:01::,put up|put-up,true,put up|put-up,5,true,evidence_ready_review,39.85,junior,false
+run into,run into,2,true,v,run_into%2:35:00::|run_into%2:35:01::|run_into%2:38:01::|run_into%2:42:01::,run into,true,run into,5,true,evidence_ready_review,39.85,junior,false
+step in,step in,2,true,n|v,step-in%1:06:00::|step_in%2:41:00::|step_in%2:41:09::,step in|step-in,true,step in,5,true,evidence_ready_review,39.85,junior,false
+take down,take down,2,true,v,take_down%2:32:00::|take_down%2:36:00::|take_down%2:37:00::|take_down%2:38:00::,take down,true,take down,5,true,evidence_ready_review,39.85,junior,false
+all along,all along,2,true,r,all_along%4:02:00::,all along,false,,10,true,evidence_ready_review,39.594,junior,false
+in on,in on,2,true,r,in_on%4:02:00::,in on,false,,10,true,evidence_ready_review,39.594,junior,false
+in the way,in the way,3,true,r,in_the_way%4:02:00::,in the way,false,,10,true,evidence_ready_review,39.594,junior,false
+just about,just about,2,true,r,just_about%4:02:00::,just about,false,,10,true,evidence_ready_review,39.594,junior,false
+once again,once again,2,true,r,once_again%4:02:00::,once again,false,,10,true,evidence_ready_review,39.594,junior,false
+until now,until now,2,true,r,until_now%4:02:00::,until now,false,,10,true,evidence_ready_review,39.594,junior,false
+very well,very well,2,true,r,very_well%4:02:00::|very_well%4:02:01::,very well,false,,10,true,evidence_ready_review,39.594,junior,false
+in love,in love,2,true,a,in_love%5:00:00:loving:00,in love,false,,14,true,evidence_ready_review,39.069,junior,false
+tired of,tired of,2,true,a,tired_of%5:00:00:displeased:00,tired of,false,,14,true,evidence_ready_review,39.069,junior,false
+under way,under way,2,true,r,under_way%4:02:00::,under way,true,under way,7,true,evidence_ready_review,39.0,junior,false
+on the other hand,on the other hand,4,true,r,on_the_other_hand%4:02:00::,on the other hand,false,,11,true,evidence_ready_review,38.85,junior,false
+ice cream,ice cream,2,true,n,ice_cream%1:13:00::,ice cream,true,ice cream,10,true,evidence_ready_review,38.594,junior,false
+present day,present day,2,true,a,present-day%5:00:00:current:00,present-day,true,present-day,10,true,evidence_ready_review,38.594,junior,false
+toilet paper,toilet paper,2,true,n,toilet_paper%1:27:00::,toilet paper,true,toilet paper,10,true,evidence_ready_review,38.594,junior,false
+as it is,as it is,3,true,r,as_it_is%4:02:00::,as it is,false,,9,true,evidence_ready_review,38.219,junior,false
+as usual,as usual,2,true,r,as_usual%4:02:00::,as usual,false,,9,true,evidence_ready_review,38.219,junior,false
+in a way,in a way,3,true,r,in_a_way%4:02:00::,in a way,false,,9,true,evidence_ready_review,38.219,junior,false
+in full,in full,2,true,r,in_full%4:02:00::,in full,false,,9,true,evidence_ready_review,38.219,junior,false
+in person,in person,2,true,a|r,in-person%5:00:00:personal:00|in_person%4:02:01::,in person|in-person,false,,9,true,evidence_ready_review,38.219,junior,false
+per year,per year,2,true,r,per_year%4:02:00::,per year,false,,9,true,evidence_ready_review,38.219,junior,false
+to date,to date,2,true,r,to_date%4:02:00::,to date,false,,9,true,evidence_ready_review,38.219,junior,false
+be born,be born,2,true,v,be_born%2:30:00::,be born,false,,6,true,evidence_ready_review,38.074,junior,false
+bring back,bring back,2,true,v,bring_back%2:29:00::|bring_back%2:38:00::,bring back,false,,6,true,evidence_ready_review,38.074,junior,false
+center on,center on,2,true,v,center_on%2:42:00::|center_on%2:42:01::,center on,false,,6,true,evidence_ready_review,38.074,junior,false
+fall asleep,fall asleep,2,true,v,fall_asleep%2:29:00::,fall asleep,false,,6,true,evidence_ready_review,38.074,junior,false
+fall into,fall into,2,true,v,fall_into%2:42:00::,fall into,false,,6,true,evidence_ready_review,38.074,junior,false
+go far,go far,2,true,v,go_far%2:41:00::|go_far%2:42:00::,go far,false,,6,true,evidence_ready_review,38.074,junior,false
+go home,go home,2,true,v,go_home%2:38:00::,go home,false,,6,true,evidence_ready_review,38.074,junior,false
+go to bed,go to bed,3,true,v,go_to_bed%2:29:00::,go to bed,false,,6,true,evidence_ready_review,38.074,junior,false
+great deal,great deal,2,true,n,great_deal%1:23:00::,great deal,false,,13,true,evidence_ready_review,38.074,junior,false
+look out,look out,2,true,v,look_out%2:33:10::|look_out%2:39:00::,look out,false,,6,true,evidence_ready_review,38.074,junior,false
+look to,look to,2,true,v,look_to%2:31:01::|look_to%2:37:00::,look to,false,,6,true,evidence_ready_review,38.074,junior,false
+sleep in,sleep in,2,true,v,sleep_in%2:29:00::|sleep_in%2:34:00::,sleep in,false,,6,true,evidence_ready_review,38.074,junior,false
+watch over,watch over,2,true,v,watch_over%2:41:00::,watch over,false,,6,true,evidence_ready_review,38.074,junior,false
+work out,work out,2,true,v,work_out%2:29:00::|work_out%2:29:01::|work_out%2:30:00::|work_out%2:30:01::|work_out%2:31:04::|work_out%2:31:06::|work_out%2:31:07::|work_out%2:42:00::,work out,false,,6,true,evidence_ready_review,38.074,junior,false
+add up,add up,2,true,v,add_up%2:32:00::|add_up%2:42:00::|add_up%2:42:01::|add_up%2:42:03::,add up,true,add up,4,true,evidence_ready_review,37.219,junior,false
+break in,break in,2,true,n|v,break-in%1:04:00::|break_in%2:30:00::|break_in%2:30:01::|break_in%2:30:03::|break_in%2:32:00::|break_in%2:35:00::|break_in%2:41:00::,break in|break-in,true,break in,4,true,evidence_ready_review,37.219,junior,false
+bring down,bring down,2,true,v,bring_down%2:30:00::|bring_down%2:32:00::|bring_down%2:37:00::|bring_down%2:38:00::|bring_down%2:38:01::|bring_down%2:41:00::,bring down,true,bring down,4,true,evidence_ready_review,37.219,junior,false
+buy in,buy in,2,true,v,buy_in%2:40:00::,buy in,true,buy in,4,true,evidence_ready_review,37.219,junior,false
+call out,call out,2,true,n|v,call-out%1:10:00::|call_out%2:32:00::|call_out%2:32:01::|call_out%2:32:12::,call out|call-out,true,call out,4,true,evidence_ready_review,37.219,junior,false
+check out,check out,2,true,v,check_out%2:31:00::|check_out%2:32:00::|check_out%2:32:01::|check_out%2:40:00::|check_out%2:40:02::|check_out%2:41:00::|check_out%2:42:06::,check out,true,check out,4,true,evidence_ready_review,37.219,junior,false
+cover up,cover up,2,true,n|v,cover-up%1:04:00::|cover_up%2:39:00::,cover up|cover-up,true,cover-up,4,true,evidence_ready_review,37.219,junior,false
+cut out,cut out,2,true,a|v,cut_out%2:30:00::|cut_out%2:30:01::|cut_out%2:33:00::|cut_out%2:35:01::|cut_out%2:35:02::|cut_out%2:35:03::|cut_out%5:00:00:cut:03,cut out,true,cut out,4,true,evidence_ready_review,37.219,junior,false
+fill in,fill in,2,true,n|v,fill-in%1:18:00::|fill_in%2:32:00::|fill_in%2:32:02::|fill_in%2:36:00::|fill_in%2:40:00::,fill in|fill-in,true,fill in|fill-in,4,true,evidence_ready_review,37.219,junior,false
+fit in,fit in,2,true,v,fit_in%2:42:00::,fit in,true,fit in,4,true,evidence_ready_review,37.219,junior,false
+follow up,follow up,2,true,n|v,follow-up%1:04:00::|follow-up%1:04:01::|follow-up%1:06:00::|follow_up%2:30:00::|follow_up%2:30:01::,follow up|follow-up,true,follow up|follow-up,4,true,evidence_ready_review,37.219,junior,false
+get on,get on,2,true,v,get_on%2:30:00::|get_on%2:30:01::|get_on%2:30:03::|get_on%2:38:00::|get_on%2:38:02::|get_on%2:38:03::|get_on%2:41:00::,get on,true,get on,4,true,evidence_ready_review,37.219,junior,false
+go over,go over,2,true,v,go_over%2:29:00::|go_over%2:30:00::|go_over%2:31:00::|go_over%2:31:01::,go over,true,go over,4,true,evidence_ready_review,37.219,junior,false
+have on,have on,2,true,v,have_on%2:29:00::,have on,true,have on,4,true,evidence_ready_review,37.219,junior,false
+pay off,pay off,2,true,v,pay_off%2:33:00::|pay_off%2:40:00::|pay_off%2:40:01::|pay_off%2:40:02::|pay_off%2:40:03::|pay_off%2:40:04::,pay off,true,pay off,4,true,evidence_ready_review,37.219,junior,false
+put down,put down,2,true,n|v,put-down%1:10:00::|put_down%2:32:00::|put_down%2:32:05::|put_down%2:35:00::|put_down%2:35:01::|put_down%2:35:02::|put_down%2:35:03::|put_down%2:37:00::|put_down%2:38:00::,put down|put-down,true,put down|put-down,4,true,evidence_ready_review,37.219,junior,false
+run off,run off,2,true,v,run_off%2:33:00::|run_off%2:36:00::|run_off%2:38:00::|run_off%2:38:01::|run_off%2:38:02::|run_off%2:38:03::|run_off%2:38:04::,run off,true,run off,4,true,evidence_ready_review,37.219,junior,false
+run on,run on,2,true,a|v,run-on%3:00:00::|run_on%2:32:00::|run_on%2:42:00::,run on|run-on,true,run on,4,true,evidence_ready_review,37.219,junior,false
+run out,run out,2,true,v,run_out%2:29:00::|run_out%2:30:02::|run_out%2:30:03::|run_out%2:30:12::|run_out%2:38:00::|run_out%2:38:01::|run_out%2:38:02::|run_out%2:42:00::,run out,true,run out,4,true,evidence_ready_review,37.219,junior,false
+set in,set in,2,true,v,set_in%2:30:00::|set_in%2:42:00::|set_in%2:43:00::,set in,true,set in,4,true,evidence_ready_review,37.219,junior,false
+set to,set to,2,true,n,set-to%1:04:00::,set-to,true,set to,9,true,evidence_ready_review,37.219,junior,false
+sleep with,sleep with,2,true,v,sleep_with%2:35:00::,sleep with,true,sleep with,4,true,evidence_ready_review,37.219,junior,false
+speak up,speak up,2,true,v,speak_up%2:32:00::|speak_up%2:32:03::,speak up,true,speak up,4,true,evidence_ready_review,37.219,junior,false
+stand by,stand by,2,true,v,stand_by%2:42:00::|stand_by%2:42:01::|stand_by%2:42:02::,stand by,true,stand by,4,true,evidence_ready_review,37.219,junior,false
+stand for,stand for,2,true,v,stand_for%2:31:00::|stand_for%2:32:00::|stand_for%2:32:01::|stand_for%2:42:00::,stand for,true,stand for,4,true,evidence_ready_review,37.219,junior,false
+stand out,stand out,2,true,v,stand_out%2:33:01::|stand_out%2:38:00::|stand_out%2:42:00::|stand_out%2:42:02::,stand out,true,stand out,4,true,evidence_ready_review,37.219,junior,false
+stick to,stick to,2,true,v,stick_to%2:30:00::|stick_to%2:35:03::,stick to,true,stick to,4,true,evidence_ready_review,37.219,junior,false
+take up,take up,2,true,n|v,take-up%1:04:00::|take-up%1:06:00::|take_up%2:30:00::|take_up%2:30:01::|take_up%2:31:00::|take_up%2:34:00::|take_up%2:35:00::|take_up%2:35:01::|take_up%2:35:03::|take_up%2:35:04::|take_up%2:38:03::|take_up%2:40:00::|take_up%2:41:00::|take_up%2:41:01::|take_up%2:42:00::,take up|take-up,true,take up,4,true,evidence_ready_review,37.219,junior,false
+throw up,throw up,2,true,v,throw_up%2:29:00::,throw up,true,throw up,4,true,evidence_ready_review,37.219,junior,false
+trade in,trade in,2,true,n|v,trade-in%1:21:00::|trade_in%2:40:00::,trade in|trade-in,true,trade-in,4,true,evidence_ready_review,37.219,junior,false
+warm up,warm up,2,true,n|v,warm-up%1:04:00::|warm_up%1:04:00::|warm_up%2:29:00::|warm_up%2:29:01::|warm_up%2:30:00::|warm_up%2:30:01::|warm_up%2:41:00::,warm up|warm-up,true,warm-up,4,true,evidence_ready_review,37.219,junior,false
+fast food,fast food,2,true,n,fast_food%1:13:00::,fast food,false,,12,true,evidence_ready_review,37.004,junior,false
+on fire,on fire,2,true,a,on_fire%5:00:00:lighted:00,on fire,false,,12,true,evidence_ready_review,37.004,junior,false
+after all,after all,2,true,r,after_all%4:02:00::|after_all%4:02:01::,after all,false,,8,true,evidence_ready_review,36.699,junior,false
+by hand,by hand,2,true,r,by_hand%4:02:01::,by hand,false,,8,true,evidence_ready_review,36.699,junior,false
+for free,for free,2,true,r,for_free%4:02:00::,for free,false,,8,true,evidence_ready_review,36.699,junior,false
+in the south,in the south,3,true,r,in_the_south%4:02:00::,in the south,false,,8,true,evidence_ready_review,36.699,junior,false
+now and then,now and then,3,true,r,now_and_then%4:02:00::,now and then,false,,8,true,evidence_ready_review,36.699,junior,false
+on board,on board,2,true,r,on_board%4:02:00::,on board,false,,8,true,evidence_ready_review,36.699,junior,false
+on purpose,on purpose,2,true,r,on_purpose%4:02:00::,on purpose,false,,8,true,evidence_ready_review,36.699,junior,false
+child care,child care,2,true,n,child_care%1:04:00::,child care,false,,11,true,evidence_ready_review,35.85,junior,false
+come before,come before,2,true,v,come_before%2:41:00::,come before,false,,5,true,evidence_ready_review,35.85,junior,false
+do well,do well,2,true,v,do_well%2:42:00::,do well,false,,5,true,evidence_ready_review,35.85,junior,false
+go after,go after,2,true,v,go_after%2:35:00::|go_after%2:38:01::,go after,false,,5,true,evidence_ready_review,35.85,junior,false
+have the best,have the best,3,true,v,have_the_best%2:33:02::,have the best,false,,5,true,evidence_ready_review,35.85,junior,false
+look into,look into,2,true,v,look_into%2:31:00::|look_into%2:32:00::,look into,false,,5,true,evidence_ready_review,35.85,junior,false
+make good,make good,2,true,v,make_good%2:41:00::,make good,false,,5,true,evidence_ready_review,35.85,junior,false
+move around,move around,2,true,v,move_around%2:38:00::|move_around%2:38:03::,move around,false,,5,true,evidence_ready_review,35.85,junior,false
+move on,move on,2,true,v,move_on%2:38:00::,move on,false,,5,true,evidence_ready_review,35.85,junior,false
+out of it,out of it,3,true,a,out_of_it%5:00:00:unaware:00|out_of_it%5:00:00:unconscious:00|out_of_it%5:00:00:unwanted:00,out of it,false,,11,true,evidence_ready_review,35.85,junior,false
+reach out,reach out,2,true,v,reach_out%2:32:00::|reach_out%2:35:00::|reach_out%2:42:00::,reach out,false,,5,true,evidence_ready_review,35.85,junior,false
+research center,research center,2,true,n,research_center%1:06:00::,research center,false,,11,true,evidence_ready_review,35.85,junior,false
+see the light,see the light,3,true,v,see_the_light%2:30:00::,see the light,false,,5,true,evidence_ready_review,35.85,junior,false
+some other,some other,2,true,a,some_other%5:00:00:other:00,some other,false,,11,true,evidence_ready_review,35.85,junior,false
+space travel,space travel,2,true,n,space_travel%1:04:00::,space travel,false,,11,true,evidence_ready_review,35.85,junior,false
+step on,step on,2,true,v,step_on%2:38:00::,step on,false,,5,true,evidence_ready_review,35.85,junior,false
+turn back,turn back,2,true,v,turn_back%2:30:00::|turn_back%2:30:09::|turn_back%2:33:00::|turn_back%2:38:00::|turn_back%2:38:02::,turn back,false,,5,true,evidence_ready_review,35.85,junior,false
+turn off,turn off,2,true,v,turn_off%2:35:00::|turn_off%2:37:00::|turn_off%2:38:00::,turn off,false,,5,true,evidence_ready_review,35.85,junior,false
+all night,all night,2,true,a,all-night%5:00:00:long:02,all-night,true,all-night,8,true,evidence_ready_review,35.699,junior,false
+middle class,middle class,2,true,a|n,middle-class%3:00:00::|middle_class%1:14:00::,middle class|middle-class,true,middle class|middle-class,8,true,evidence_ready_review,35.699,junior,false
+sea level,sea level,2,true,a|n,sea-level%5:00:00:lowland:00|sea_level%1:07:00::,sea level|sea-level,true,sea level,8,true,evidence_ready_review,35.699,junior,false
+at heart,at heart,2,true,r,at_heart%4:02:00::,at heart,false,,7,true,evidence_ready_review,35.0,junior,false
+even as,even as,2,true,r,even_as%4:02:01::,even as,false,,7,true,evidence_ready_review,35.0,junior,false
+for good,for good,2,true,r,for_good%4:02:00::,for good,false,,7,true,evidence_ready_review,35.0,junior,false
+let alone,let alone,2,true,r|v,let_alone%2:30:00::|let_alone%4:02:00::,let alone,false,,3,true,evidence_ready_review,35.0,junior,false
+on the side,on the side,3,true,r,on_the_side%4:02:00::,on the side,false,,7,true,evidence_ready_review,35.0,junior,false
+over and over,over and over,3,true,r,over_and_over%4:02:00::,over and over,false,,7,true,evidence_ready_review,35.0,junior,false
+this evening,this evening,2,true,r,this_evening%4:02:00::,this evening,false,,7,true,evidence_ready_review,35.0,junior,false
+to order,to order,2,true,r,to_order%4:02:00::,to order,false,,7,true,evidence_ready_review,35.0,junior,false
+up here,up here,2,true,r,up_here%4:02:00::,up here,false,,7,true,evidence_ready_review,35.0,junior,false
+blood sugar,blood sugar,2,true,n,blood_sugar%1:27:00::,blood sugar,false,,10,true,evidence_ready_review,34.594,junior,false
+hard time,hard time,2,true,n,hard_time%1:26:00::|hard_time%1:28:00::,hard time,false,,10,true,evidence_ready_review,34.594,junior,false
+human right,human right,2,true,n,human_right%1:07:00::,human right,false,,10,true,evidence_ready_review,34.594,junior,false
+to the point,to the point,3,true,a,to_the_point%5:00:01:relevant:00,to the point,false,,10,true,evidence_ready_review,34.594,junior,false
+all time,all time,2,true,a,all-time%5:00:00:incomparable:00,all-time,true,all-time,7,true,evidence_ready_review,34.0,junior,false
+answer for,answer for,2,true,v,answer_for%2:32:00::,answer for,true,answer for,3,true,evidence_ready_review,34.0,junior,false
+back up,back up,2,true,v,back_up%2:30:00::|back_up%2:35:00::|back_up%2:36:00::|back_up%2:38:00::|back_up%2:41:00::,back up,true,back up,3,true,evidence_ready_review,34.0,junior,false
+black hole,black hole,2,true,n,black_hole%1:17:00::,black hole,true,black hole,7,true,evidence_ready_review,34.0,junior,false
+break up,break up,2,true,v,break_up%2:29:00::|break_up%2:30:00::|break_up%2:30:01::|break_up%2:30:02::|break_up%2:30:03::|break_up%2:30:04::|break_up%2:30:08::|break_up%2:30:09::|break_up%2:32:00::|break_up%2:35:01::|break_up%2:35:02::|break_up%2:35:03::|break_up%2:35:04::|break_up%2:35:10::|break_up%2:36:00::|break_up%2:37:04::|break_up%2:38:00::|break_up%2:38:01::|break_up%2:41:00::,break up,true,break up,3,true,evidence_ready_review,34.0,junior,false
+bring about,bring about,2,true,v,bring_about%2:36:03::|bring_about%2:38:00::,bring about,true,bring about,3,true,evidence_ready_review,34.0,junior,false
+carry on,carry on,2,true,n|v,carry-on%1:06:01::|carry_on%2:32:00::|carry_on%2:41:00::|carry_on%2:41:02::|carry_on%2:42:00::,carry on|carry-on,true,carry on,3,true,evidence_ready_review,34.0,junior,false
+come by,come by,2,true,v,come_by%2:40:00::|come_by%2:41:00::,come by,true,come by,3,true,evidence_ready_review,34.0,junior,false
+come into,come into,2,true,v,come_into%2:40:00::,come into,true,come into,3,true,evidence_ready_review,34.0,junior,false
+count on,count on,2,true,v,count_on%2:31:01::,count on,true,count on,3,true,evidence_ready_review,34.0,junior,false
+deep space,deep space,2,true,n,deep_space%1:15:00::,deep space,true,deep space,7,true,evidence_ready_review,34.0,junior,false
+double check,double check,2,true,n|v,double-check%2:31:00::|double_check%1:09:00::,double check|double-check,true,double-check,3,true,evidence_ready_review,34.0,junior,false
+fill up,fill up,2,true,v,fill_up%2:30:00::|fill_up%2:30:01::|fill_up%2:34:00::|fill_up%2:35:03::,fill up,true,fill up,3,true,evidence_ready_review,34.0,junior,false
+get by,get by,2,true,v,get_by%2:32:00::|get_by%2:38:00::|get_by%2:41:00::,get by,true,get by,3,true,evidence_ready_review,34.0,junior,false
+get together,get together,2,true,n|v,get_together%1:14:00::|get_together%2:41:01::|get_together%2:41:02::|get_together%2:41:03::,get together,true,get-together,3,true,evidence_ready_review,34.0,junior,false
+go by,go by,2,true,v,go_by%2:30:00::|go_by%2:32:00::|go_by%2:38:00::|go_by%2:38:01::,go by,true,go by|go-by,3,true,evidence_ready_review,34.0,junior,false
+go off,go off,2,true,v,go_off%2:30:00::|go_off%2:30:01::|go_off%2:30:02::|go_off%2:33:00::|go_off%2:35:00::|go_off%2:38:00::,go off,true,go off,3,true,evidence_ready_review,34.0,junior,false
+go with,go with,2,true,v,go_with%2:42:00::|go_with%2:42:01::,go with,true,go with,3,true,evidence_ready_review,34.0,junior,false
+keep on,keep on,2,true,v,keep_on%2:41:00::,keep on,true,keep on,3,true,evidence_ready_review,34.0,junior,false
+let in,let in,2,true,v,let_in%2:41:00::|let_in%2:41:02::,let in,true,let in,3,true,evidence_ready_review,34.0,junior,false
+lie down,lie down,2,true,v,lie_down%2:38:00::,lie down,true,lie down,3,true,evidence_ready_review,34.0,junior,false
+lie to,lie to,2,false,,,,true,lie to,7,true,moby_corpus_review,34.0,junior,false
+line up,line up,2,true,v,line_up%2:30:00::|line_up%2:33:00::|line_up%2:38:00::|line_up%2:38:01::|line_up%2:40:00::|line_up%2:42:00::,line up,true,line-up,3,true,evidence_ready_review,34.0,junior,false
+look on,look on,2,true,v,look_on%2:31:00::|look_on%2:39:00::,look on,true,look on,3,true,evidence_ready_review,34.0,junior,false
+open up,open up,2,true,v,open_up%2:30:00::|open_up%2:30:01::|open_up%2:32:00::|open_up%2:35:00::|open_up%2:35:06::|open_up%2:36:00::|open_up%2:41:00::,open up,true,open up,3,true,evidence_ready_review,34.0,junior,false
+pay up,pay up,2,true,v,pay_up%2:40:00::,pay up,true,pay up,3,true,evidence_ready_review,34.0,junior,false
+play with,play with,2,false,,,,true,play with,7,true,moby_corpus_review,34.0,junior,false
+pull up,pull up,2,true,n|v,pull-up%1:04:00::|pull-up%1:06:00::|pull_up%2:35:00::|pull_up%2:38:01::|pull_up%2:38:02::|pull_up%2:38:03::,pull up|pull-up,true,pull up,3,true,evidence_ready_review,34.0,junior,false
+push up,push up,2,true,v,push_up%2:38:00::|push_up%2:38:01::|push_up%2:42:00::,push up,true,push-up,3,true,evidence_ready_review,34.0,junior,false
+run up,run up,2,true,n|v,run-up%1:04:00::|run-up%1:11:00::|run_up%2:30:00::|run_up%2:35:00::|run_up%2:35:01::|run_up%2:36:00::|run_up%2:40:00::,run up|run-up,true,run up,3,true,evidence_ready_review,34.0,junior,false
+short term,short term,2,true,a,short-term%5:00:00:short:02,short-term,true,short-term,7,true,evidence_ready_review,34.0,junior,false
+sign up,sign up,2,true,v,sign_up%2:33:00::|sign_up%2:41:00::,sign up,true,sign up,3,true,evidence_ready_review,34.0,junior,false
+sit down,sit down,2,true,n|v,sit-down%1:04:00::|sit_down%2:35:00::|sit_down%2:35:03::|sit_down%2:38:00::,sit down|sit-down,true,sit down|sit-down,3,true,evidence_ready_review,34.0,junior,false
+speed up,speed up,2,true,v,speed_up%2:30:00::|speed_up%2:30:01::,speed up,true,speed up,3,true,evidence_ready_review,34.0,junior,false
+stand in,stand in,2,true,n|v,stand-in%1:18:00::|stand_in%2:40:00::,stand in|stand-in,true,stand-in,3,true,evidence_ready_review,34.0,junior,false
+start up,start up,2,true,v,start_up%2:36:00::|start_up%2:38:00::,start up,true,start up,3,true,evidence_ready_review,34.0,junior,false
+step up,step up,2,true,n|v,step-up%1:04:00::|step_up%2:30:00::|step_up%2:30:01::|step_up%2:38:00::,step up|step-up,true,step up|step-up,3,true,evidence_ready_review,34.0,junior,false
+wear off,wear off,2,true,v,wear_off%2:30:00::|wear_off%2:35:00::,wear off,true,wear off,3,true,evidence_ready_review,34.0,junior,false
+write off,write off,2,true,n|v,write-off%1:04:00::|write-off%1:21:00::|write_off%2:30:00::|write_off%2:31:00::|write_off%2:36:00::|write_off%2:41:00::,write off|write-off,true,write off|write-off,3,true,evidence_ready_review,34.0,junior,false
+year round,year round,2,true,a,year-round%3:00:00::,year-round,true,year-round,7,true,evidence_ready_review,34.0,junior,false
+add to,add to,2,true,v,add_to%2:30:00::,add to,false,,4,true,evidence_ready_review,33.219,junior,false
+drop in,drop in,2,true,v,drop_in%2:41:00::,drop in,false,,4,true,evidence_ready_review,33.219,junior,false
+go wrong,go wrong,2,true,v,go_wrong%2:41:00::,go wrong,false,,4,true,evidence_ready_review,33.219,junior,false
+good luck,good luck,2,true,n,good_luck%1:11:00::|good_luck%1:19:00::|good_luck%1:26:00::,good luck,false,,9,true,evidence_ready_review,33.219,junior,false
+large number,large number,2,true,n,large_number%1:23:00::,large number,false,,9,true,evidence_ready_review,33.219,junior,false
+let it go,let it go,3,true,v,let_it_go%2:41:00::,let it go,false,,4,true,evidence_ready_review,33.219,junior,false
+make sense,make sense,2,true,v,make_sense%2:42:00::,make sense,false,,4,true,evidence_ready_review,33.219,junior,false
+move ahead,move ahead,2,true,v,move_ahead%2:38:01::,move ahead,false,,4,true,evidence_ready_review,33.219,junior,false
+slow down,slow down,2,true,v,slow_down%2:29:00::|slow_down%2:30:00::|slow_down%2:30:01::|slow_down%2:30:02::|slow_down%2:30:04::,slow down,false,,4,true,evidence_ready_review,33.219,junior,false
+small town,small town,2,true,n,small_town%1:14:00::,small town,false,,9,true,evidence_ready_review,33.219,junior,false
+step forward,step forward,2,true,v,step_forward%2:38:00::,step forward,false,,4,true,evidence_ready_review,33.219,junior,false
+talk of,talk of,2,true,v,talk_of%2:32:00::,talk of,false,,4,true,evidence_ready_review,33.219,junior,false
+the true,the true,2,true,n,the_true%1:26:00::,the true,false,,9,true,evidence_ready_review,33.219,junior,false
+way out,way out,2,true,a|n,way-out%5:00:00:unconventional:01|way_out%1:06:00::,way out|way-out,false,,9,true,evidence_ready_review,33.219,junior,false
+by the way,by the way,3,true,r,by_the_way%4:02:00::,by the way,false,,6,true,evidence_ready_review,33.074,junior,false
+for short,for short,2,true,r,for_short%4:02:00::,for short,false,,6,true,evidence_ready_review,33.074,junior,false
+for sure,for sure,2,true,a|r,for_sure%4:02:00::|for_sure%5:00:00:unquestionable:00,for sure,false,,6,true,evidence_ready_review,33.074,junior,false
+of all time,of all time,3,true,r,of_all_time%4:02:00::,of all time,false,,6,true,evidence_ready_review,33.074,junior,false
+on paper,on paper,2,true,r,on_paper%4:02:01::|on_paper%4:02:02::,on paper,false,,6,true,evidence_ready_review,33.074,junior,false
+all right,all right,2,true,a|r,all_right%4:02:00::|all_right%4:02:01::|all_right%4:02:02::|all_right%5:00:00:satisfactory:00,all right,true,all right,4,true,evidence_ready_review,32.219,junior,false
+head on,head on,2,true,a|r,head-on%4:02:00::|head-on%4:02:01::|head-on%5:00:00:front:00|head-on%5:00:00:hostile:01,head-on,true,head-on,4,true,evidence_ready_review,32.219,junior,false
+up and down,up and down,3,true,r,up_and_down%4:02:01::|up_and_down%4:02:03::,up and down,true,up-and-down,4,true,evidence_ready_review,32.219,junior,false
+all out,all out,2,true,a,all-out%5:00:00:complete:00,all-out,true,all-out,6,true,evidence_ready_review,32.074,junior,false
+blood test,blood test,2,true,n,blood_test%1:09:00::,blood test,true,blood test,6,true,evidence_ready_review,32.074,junior,false
+central bank,central bank,2,true,n,central_bank%1:14:00::,central bank,true,central bank,6,true,evidence_ready_review,32.074,junior,false
+cold war,cold war,2,true,n,cold_war%1:26:00::,cold war,true,cold war,6,true,evidence_ready_review,32.074,junior,false
+daughter in law,daughter in law,3,true,n,daughter-in-law%1:18:00::,daughter-in-law,true,daughter-in-law,6,true,evidence_ready_review,32.074,junior,false
+deep sea,deep sea,2,true,a,deep-sea%5:00:00:marine:00,deep-sea,true,deep-sea,6,true,evidence_ready_review,32.074,junior,false
+do all,do all,2,false,,,,true,do-all,6,true,moby_corpus_review,32.074,junior,false
+fall to,fall to,2,false,,,,true,fall to,6,true,moby_corpus_review,32.074,junior,false
+high speed,high speed,2,true,a,high-speed%5:00:01:fast:01,high-speed,true,high-speed,6,true,evidence_ready_review,32.074,junior,false
+human nature,human nature,2,true,n,human_nature%1:07:00::,human nature,true,human nature,6,true,evidence_ready_review,32.074,junior,false
+international law,international law,2,true,n,international_law%1:14:00::,international law,true,international law,6,true,evidence_ready_review,32.074,junior,false
+know nothing,know nothing,2,true,n,know_nothing%1:18:00::,know nothing,true,know-nothing,6,true,evidence_ready_review,32.074,junior,false
+police officer,police officer,2,true,n,police_officer%1:18:00::,police officer,true,police officer,6,true,evidence_ready_review,32.074,junior,false
+potato chip,potato chip,2,true,n,potato_chip%1:13:00::,potato chip,true,potato chip,6,true,evidence_ready_review,32.074,junior,false
+good enough,good enough,2,true,a,good_enough%5:00:00:good:01,good enough,false,,8,true,evidence_ready_review,31.699,junior,false
+high level,high level,2,true,a,high-level%5:00:00:high:01|high-level%5:00:00:superior:01,high-level,false,,8,true,evidence_ready_review,31.699,junior,false
+on the table,on the table,3,true,a,on_the_table%5:00:00:flexible:02,on the table,false,,8,true,evidence_ready_review,31.699,junior,false
+poor people,poor people,2,true,n,poor_people%1:14:00::,poor people,false,,8,true,evidence_ready_review,31.699,junior,false
+all at once,all at once,3,true,r,all_at_once%4:02:00::|all_at_once%4:02:01::,all at once,false,,5,true,evidence_ready_review,30.85,junior,false
+as yet,as yet,2,true,r,as_yet%4:02:00::,as yet,false,,5,true,evidence_ready_review,30.85,junior,false
+by nature,by nature,2,true,r,by_nature%4:02:00::,by nature,false,,5,true,evidence_ready_review,30.85,junior,false
+every night,every night,2,true,r,every_night%4:02:00::,every night,false,,5,true,evidence_ready_review,30.85,junior,false
+in common with,in common with,3,true,r,in_common_with%4:02:00::,in common with,false,,5,true,evidence_ready_review,30.85,junior,false
+just in time,just in time,3,true,r,just_in_time%4:02:00::,just in time,false,,5,true,evidence_ready_review,30.85,junior,false
+long ago,long ago,2,true,a|r,long-ago%5:00:00:old:01|long_ago%4:02:00::,long ago|long-ago,false,,5,true,evidence_ready_review,30.85,junior,false
+never again,never again,2,true,r,never_again%4:02:00::,never again,false,,5,true,evidence_ready_review,30.85,junior,false
+next door,next door,2,true,r,next_door%4:02:00::,next door,false,,5,true,evidence_ready_review,30.85,junior,false
+of late,of late,2,true,r,of_late%4:02:00::,of late,false,,5,true,evidence_ready_review,30.85,junior,false
+on average,on average,2,true,r,on_average%4:02:00::,on average,false,,5,true,evidence_ready_review,30.85,junior,false
+at hand,at hand,2,true,a,at_hand%5:00:01:close:01|at_hand%5:00:02:close:01,at hand,false,,7,true,evidence_ready_review,30.0,junior,false
+bad person,bad person,2,true,n,bad_person%1:18:00::,bad person,false,,7,true,evidence_ready_review,30.0,junior,false
+burn down,burn down,2,true,v,burn_down%2:30:00::|burn_down%2:30:02::,burn down,false,,3,true,evidence_ready_review,30.0,junior,false
+calm down,calm down,2,true,v,calm_down%2:30:03::|calm_down%2:37:00::|calm_down%2:37:01::,calm down,false,,3,true,evidence_ready_review,30.0,junior,false
+come around,come around,2,true,v,come_around%2:30:06::|come_around%2:31:00::,come around,false,,3,true,evidence_ready_review,30.0,junior,false
+come to light,come to light,3,true,v,come_to_light%2:30:00::,come to light,false,,3,true,evidence_ready_review,30.0,junior,false
+come with,come with,2,true,v,come_with%2:42:00::,come with,false,,3,true,evidence_ready_review,30.0,junior,false
+cover for,cover for,2,true,v,cover_for%2:32:01::,cover for,false,,3,true,evidence_ready_review,30.0,junior,false
+cut back,cut back,2,true,v,cut_back%2:30:00::|cut_back%2:30:01::|cut_back%2:35:00::|cut_back%2:38:00::,cut back,false,,3,true,evidence_ready_review,30.0,junior,false
+cut to,cut to,2,true,v,cut_to%2:38:00::,cut to,false,,3,true,evidence_ready_review,30.0,junior,false
+fight back,fight back,2,true,v,fight_back%2:33:00::|fight_back%2:33:01::,fight back,false,,3,true,evidence_ready_review,30.0,junior,false
+give birth,give birth,2,true,v,give_birth%2:29:00::|give_birth%2:36:00::,give birth,false,,3,true,evidence_ready_review,30.0,junior,false
+help out,help out,2,true,v,help_out%2:41:02::,help out,false,,3,true,evidence_ready_review,30.0,junior,false
+hold fast,hold fast,2,true,v,hold_fast%2:35:00::,hold fast,false,,3,true,evidence_ready_review,30.0,junior,false
+in question,in question,2,true,a,in_question%5:00:00:questionable:00,in question,false,,7,true,evidence_ready_review,30.0,junior,false
+in store,in store,2,true,a,in_store%5:00:00:future:00,in store,false,,7,true,evidence_ready_review,30.0,junior,false
+in use,in use,2,true,a,in_use%5:00:00:occupied:00|in_use%5:00:00:used:00,in use,false,,7,true,evidence_ready_review,30.0,junior,false
+lie about,lie about,2,true,v,lie_about%2:42:00::,lie about,false,,3,true,evidence_ready_review,30.0,junior,false
+live up to,live up to,3,true,v,live_up_to%2:42:00::,live up to,false,,3,true,evidence_ready_review,30.0,junior,false
+look forward,look forward,2,true,v,look_forward%2:31:00::,look forward,false,,3,true,evidence_ready_review,30.0,junior,false
+matter to,matter to,2,true,v,matter_to%2:42:00::,matter to,false,,3,true,evidence_ready_review,30.0,junior,false
+medical care,medical care,2,true,n,medical_care%1:04:00::,medical care,false,,7,true,evidence_ready_review,30.0,junior,false
+medical school,medical school,2,true,n,medical_school%1:14:00::,medical school,false,,7,true,evidence_ready_review,30.0,junior,false
+modern day,modern day,2,true,a,modern-day%5:00:00:modern:00,modern-day,false,,7,true,evidence_ready_review,30.0,junior,false
+of age,of age,2,true,a,of_age%5:00:00:old:02,of age,false,,7,true,evidence_ready_review,30.0,junior,false
+on the road,on the road,3,true,n,on_the_road%1:04:00::,on the road,false,,7,true,evidence_ready_review,30.0,junior,false
+rich people,rich people,2,true,n,rich_people%1:14:00::,rich people,false,,7,true,evidence_ready_review,30.0,junior,false
+run by,run by,2,true,v,run_by%2:38:00::,run by,false,,3,true,evidence_ready_review,30.0,junior,false
+send back,send back,2,true,v,send_back%2:32:00::,send back,false,,3,true,evidence_ready_review,30.0,junior,false
+send out,send out,2,true,v,send_out%2:35:00::,send out,false,,3,true,evidence_ready_review,30.0,junior,false
+shy away from,shy away from,3,true,v,shy_away_from%2:32:00::,shy away from,false,,3,true,evidence_ready_review,30.0,junior,false
+side by side,side by side,3,true,a,side_by_side%5:00:00:close:01|side_by_side%5:00:00:related:02,side by side,false,,7,true,evidence_ready_review,30.0,junior,false
+side with,side with,2,true,v,side_with%2:33:01::,side with,false,,3,true,evidence_ready_review,30.0,junior,false
+stay up,stay up,2,true,v,stay_up%2:29:00::,stay up,false,,3,true,evidence_ready_review,30.0,junior,false
+take advantage,take advantage,2,true,v,take_advantage%2:40:00::|take_advantage%2:41:12::,take advantage,false,,3,true,evidence_ready_review,30.0,junior,false
+time of year,time of year,3,true,n,time_of_year%1:28:00::,time of year,false,,7,true,evidence_ready_review,30.0,junior,false
+too bad,too bad,2,true,a,too_bad%5:00:00:unfortunate:00,too bad,false,,7,true,evidence_ready_review,30.0,junior,false
+vote in,vote in,2,true,v,vote_in%2:41:00::,vote in,false,,3,true,evidence_ready_review,30.0,junior,false
+wall in,wall in,2,true,v,wall_in%2:35:00::,wall in,false,,3,true,evidence_ready_review,30.0,junior,false
+watch out,watch out,2,true,v,watch_out%2:39:00::,watch out,false,,3,true,evidence_ready_review,30.0,junior,false
+win over,win over,2,true,v,win_over%2:32:00::,win over,false,,3,true,evidence_ready_review,30.0,junior,false
+write about,write about,2,true,v,write_about%2:36:00::,write about,false,,3,true,evidence_ready_review,30.0,junior,false
+act on,act on,2,true,v,act_on%2:41:00::|act_on%2:41:01::,act on,true,act on,2,true,evidence_ready_review,29.85,junior,false
+all around,all around,2,true,a,all-around%5:00:00:comprehensive:00,all-around,true,all-around,5,true,evidence_ready_review,29.85,junior,false
+angry young man,angry young man,3,false,,,,true,angry young man,5,true,moby_corpus_review,29.85,junior,false
+beat up,beat up,2,true,a|v,beat-up%5:00:00:damaged:00|beat_up%2:35:00::|beat_up%2:35:01::,beat up|beat-up,true,beat up|beat-up,2,true,evidence_ready_review,29.85,junior,false
+black and white,black and white,3,true,a|n,black-and-white%3:00:00::|black-and-white%3:01:00::|black-and-white%5:00:00:divided:00|black_and_white%1:06:00::|black_and_white%1:10:00::|black_and_white%3:00:02::,black and white|black-and-white,true,black and white|black-and-white,5,true,evidence_ready_review,29.85,junior,false
+blow up,blow up,2,true,v,blow_up%2:30:00::|blow_up%2:30:01::|blow_up%2:30:02::|blow_up%2:30:03::|blow_up%2:30:04::|blow_up%2:30:05::|blow_up%2:32:00::|blow_up%2:37:00::,blow up,true,blow up,2,true,evidence_ready_review,29.85,junior,false
+break out,break out,2,true,v,break_out%2:30:00::|break_out%2:30:03::|break_out%2:30:04::|break_out%2:35:00::|break_out%2:38:00::,break out,true,break out,2,true,evidence_ready_review,29.85,junior,false
+bring in,bring in,2,true,v,bring_in%2:38:00::|bring_in%2:38:01::|bring_in%2:40:00::|bring_in%2:40:01::|bring_in%2:40:03::,bring in,true,bring in,2,true,evidence_ready_review,29.85,junior,false
+burn out,burn out,2,true,v,burn_out%2:30:00::,burn out,true,burn out,2,true,evidence_ready_review,29.85,junior,false
+check in,check in,2,true,n|v,check-in%1:04:00::|check_in%2:32:00::,check in|check-in,true,check in,2,true,evidence_ready_review,29.85,junior,false
+come across,come across,2,true,v,come_across%2:31:00::|come_across%2:32:00::|come_across%2:38:00::|come_across%2:39:00::|come_across%2:40:02::,come across,true,come across,2,true,evidence_ready_review,29.85,junior,false
+come forward,come forward,2,true,v,come_forward%2:38:00::,come forward,true,come forward,2,true,evidence_ready_review,29.85,junior,false
+come off,come off,2,true,v,come_off%2:30:00::|come_off%2:35:00::|come_off%2:35:01::,come off,true,come off,2,true,evidence_ready_review,29.85,junior,false
+cough up,cough up,2,true,v,cough_up%2:29:00::|cough_up%2:40:00::,cough up,true,cough up,2,true,evidence_ready_review,29.85,junior,false
+day to day,day to day,3,true,a,day-to-day%5:00:00:periodic:00,day-to-day,true,day-to-day,5,true,evidence_ready_review,29.85,junior,false
+die out,die out,2,true,v,die_out%2:30:00::|die_out%2:35:00::,die out,true,die out,2,true,evidence_ready_review,29.85,junior,false
+dress up,dress up,2,true,v,dress_up%2:29:00::|dress_up%2:29:04::|dress_up%2:29:06::|dress_up%2:30:00::|dress_up%2:36:00::,dress up,true,dress up,2,true,evidence_ready_review,29.85,junior,false
+fall in,fall in,2,true,v,fall_in%2:38:00::|fall_in%2:41:00::|fall_in%2:41:02::,fall in,true,fall in,2,true,evidence_ready_review,29.85,junior,false
+fall over,fall over,2,true,v,fall_over%2:29:00::,fall over,true,fall over,2,true,evidence_ready_review,29.85,junior,false
+free will,free will,2,true,n,free_will%1:07:00::,free will,true,free will,5,true,evidence_ready_review,29.85,junior,false
+front door,front door,2,true,n,front_door%1:06:00::,front door,true,front door,5,true,evidence_ready_review,29.85,junior,false
+get around,get around,2,true,v,get_around%2:32:00::|get_around%2:32:01::|get_around%2:38:00::|get_around%2:41:00::,get around,true,get around,2,true,evidence_ready_review,29.85,junior,false
+get down,get down,2,true,v,get_down%2:30:00::|get_down%2:32:00::|get_down%2:34:00::|get_down%2:37:00::|get_down%2:38:00::|get_down%2:38:01::|get_down%2:38:02::,get down,true,get down,2,true,evidence_ready_review,29.85,junior,false
+get over,get over,2,true,v,get_over%2:30:00::|get_over%2:33:00::|get_over%2:36:00::|get_over%2:38:00::,get over,true,get over,2,true,evidence_ready_review,29.85,junior,false
+go about,go about,2,true,v,go_about%2:41:00::,go about,true,go about,2,true,evidence_ready_review,29.85,junior,false
+go against,go against,2,true,v,go_against%2:41:00::|go_against%2:41:01::|go_against%2:42:00::,go against,true,go against,2,true,evidence_ready_review,29.85,junior,false
+good morning,good morning,2,true,n,good_morning%1:10:00::,good morning,true,good morning,5,true,evidence_ready_review,29.85,junior,false
+half hour,half hour,2,true,n,half-hour%1:28:00::,half-hour,true,half-hour,5,true,evidence_ready_review,29.85,junior,false
+hand over,hand over,2,true,v,hand_over%2:40:00::,hand over,true,hand over,2,true,evidence_ready_review,29.85,junior,false
+hang on,hang on,2,true,v,hang_on%2:30:00::|hang_on%2:32:00::|hang_on%2:35:00::,hang on,true,hang on,2,true,evidence_ready_review,29.85,junior,false
+high blood pressure,high blood pressure,3,true,n,high_blood_pressure%1:26:00::,high blood pressure,true,high blood pressure,5,true,evidence_ready_review,29.85,junior,false
+hold down,hold down,2,true,n|v,hold-down%1:04:00::|hold_down%2:30:00::|hold_down%2:40:00::,hold down|hold-down,true,hold down,2,true,evidence_ready_review,29.85,junior,false
+hold in,hold in,2,true,v,hold_in%2:39:00::|hold_in%2:41:00::|hold_in%2:42:00::,hold in,true,hold in,2,true,evidence_ready_review,29.85,junior,false
+hot dog,hot dog,2,true,n|v,hot-dog%2:38:00::|hot_dog%1:13:01::|hot_dog%1:13:02::|hot_dog%1:18:00::,hot dog|hot-dog,true,hot dog,2,true,evidence_ready_review,29.85,junior,false
+last minute,last minute,2,true,a|n,last-minute%5:00:00:unpunctual:00|last_minute%1:28:00::,last minute|last-minute,true,last-minute,5,true,evidence_ready_review,29.85,junior,false
+last name,last name,2,true,n,last_name%1:10:00::,last name,true,last name,5,true,evidence_ready_review,29.85,junior,false
+lay over,lay over,2,true,v,lay_over%2:35:00::|lay_over%2:42:00::,lay over,true,lay over,2,true,evidence_ready_review,29.85,junior,false
+leave behind,leave behind,2,true,v,leave_behind%2:30:00::|leave_behind%2:30:03::|leave_behind%2:38:00::,leave behind,true,leave behind,2,true,evidence_ready_review,29.85,junior,false
+let down,let down,2,true,v,let_down%2:37:00::|let_down%2:38:00::,let down,true,let down,2,true,evidence_ready_review,29.85,junior,false
+let on,let on,2,true,v,let_on%2:32:00::,let on,true,let on,2,true,evidence_ready_review,29.85,junior,false
+life size,life size,2,true,a,life-size%5:00:00:large:00,life-size,true,life-size,5,true,evidence_ready_review,29.85,junior,false
+little man,little man,2,false,,,,true,little man,5,true,moby_corpus_review,29.85,junior,false
+live together,live together,2,true,v,live_together%2:42:00::,live together,true,live together,2,true,evidence_ready_review,29.85,junior,false
+make for,make for,2,true,v,make_for%2:36:00::,make for,true,make for,2,true,evidence_ready_review,29.85,junior,false
+move out,move out,2,true,v,move_out%2:38:00::|move_out%2:41:00::,move out,true,move out,2,true,evidence_ready_review,29.85,junior,false
+new wave,new wave,2,true,n,new_wave%1:14:01::,new wave,true,new wave,5,true,evidence_ready_review,29.85,junior,false
+pick me up,pick me up,3,true,n,pick-me-up%1:06:00::|pick-me-up%1:06:01::,pick-me-up,true,pick-me-up,5,true,evidence_ready_review,29.85,junior,false
+pick out,pick out,2,true,v,pick_out%2:31:00::|pick_out%2:39:00::,pick out,true,pick out,2,true,evidence_ready_review,29.85,junior,false
+point of view,point of view,3,true,n,point_of_view%1:07:00::|point_of_view%1:09:00::,point of view,true,point of view,5,true,evidence_ready_review,29.85,junior,false
+pull out,pull out,2,true,v,pull_out%2:35:00::|pull_out%2:38:00::|pull_out%2:38:03::|pull_out%2:41:00::,pull out,true,pull out,2,true,evidence_ready_review,29.85,junior,false
+put off,put off,2,true,v,put_off%2:32:03::|put_off%2:37:00::|put_off%2:37:02::|put_off%2:37:04::|put_off%2:42:00::,put off,true,put off,2,true,evidence_ready_review,29.85,junior,false
+run down,run down,2,true,a|v,run-down%5:00:00:malfunctioning:00|run-down%5:00:00:worn:00|run_down%2:29:00::|run_down%2:29:01::|run_down%2:38:00::|run_down%2:38:02::|run_down%2:39:00::|run_down%2:40:00::|run_down%2:41:00::,run down|run-down,true,run down|run-down,2,true,evidence_ready_review,29.85,junior,false
+run through,run through,2,true,n|v,run-through%1:04:00::|run_through%2:34:00::|run_through%2:34:01::,run through|run-through,true,run through|run-through,2,true,evidence_ready_review,29.85,junior,false
+see through,see through,2,true,a|v,see-through%5:00:00:thin:01|see_through%2:30:00::|see_through%2:39:00::|see_through%2:40:00::,see through|see-through,true,see through|see-through,2,true,evidence_ready_review,29.85,junior,false
+set down,set down,2,true,v,set_down%2:32:00::|set_down%2:35:00::|set_down%2:35:01::|set_down%2:35:02::|set_down%2:38:00::|set_down%2:38:01::,set down,true,set down,2,true,evidence_ready_review,29.85,junior,false
+set on,set on,2,true,v,set_on%2:33:00::,set on,true,set on,2,true,evidence_ready_review,29.85,junior,false
+shoot up,shoot up,2,true,v,shoot_up%2:30:00::,shoot up,true,shoot up,2,true,evidence_ready_review,29.85,junior,false
+sign in,sign in,2,true,v,sign_in%2:32:00::,sign in,true,sign in,2,true,evidence_ready_review,29.85,junior,false
+sit up,sit up,2,true,n|v,sit-up%1:04:00::|sit_up%2:29:00::|sit_up%2:38:01::,sit up|sit-up,true,sit up,2,true,evidence_ready_review,29.85,junior,false
+take after,take after,2,true,v,take_after%2:36:00::|take_after%2:42:00::,take after,true,take after,2,true,evidence_ready_review,29.85,junior,false
+take for,take for,2,true,v,take_for%2:31:00::,take for,true,take for,2,true,evidence_ready_review,29.85,junior,false
+task force,task force,2,true,n,task_force%1:14:00::|task_force%1:14:01::,task force,true,task force,5,true,evidence_ready_review,29.85,junior,false
+throw off,throw off,2,true,v,throw_off%2:35:00::|throw_off%2:38:00::,throw off,true,throw off,2,true,evidence_ready_review,29.85,junior,false
+tie up,tie up,2,true,n|v,tie-up%1:11:00::|tie-up%1:26:00::|tie_up%2:35:00::|tie_up%2:35:01::|tie_up%2:35:04::|tie_up%2:35:05::|tie_up%2:40:00::,tie up|tie-up,true,tie-up,2,true,evidence_ready_review,29.85,junior,false
+wide open,wide open,2,true,a,wide-open%5:00:00:open:01|wide-open%5:00:00:unlawful:00,wide-open,true,wide-open,5,true,evidence_ready_review,29.85,junior,false
+part time,part time,2,true,a|r,part-time%3:00:00::|part-time%4:02:00::|part_time%3:00:00::,part time|part-time,true,part-time,3,true,evidence_ready_review,29.0,junior,false
+right away,right away,2,true,r,right_away%4:02:00::|right_away%4:02:03::,right away,true,right away,3,true,evidence_ready_review,29.0,junior,false
+from time to time,from time to time,4,true,r,from_time_to_time%4:02:00::,from time to time,false,,5,true,evidence_ready_review,28.85,junior,false
+a good deal,a good deal,3,true,r,a_good_deal%4:02:00::,a good deal,false,,4,true,evidence_ready_review,28.219,junior,false
+all the same,all the same,3,true,r,all_the_same%4:02:00::,all the same,false,,4,true,evidence_ready_review,28.219,junior,false
+at best,at best,2,true,r,at_best%4:02:00::,at best,false,,4,true,evidence_ready_review,28.219,junior,false
+by far,by far,2,true,r,by_far%4:02:00::,by far,false,,4,true,evidence_ready_review,28.219,junior,false
+every week,every week,2,true,r,every_week%4:02:00::,every week,false,,4,true,evidence_ready_review,28.219,junior,false
+for anything,for anything,2,true,r,for_anything%4:02:00::,for anything,false,,4,true,evidence_ready_review,28.219,junior,false
+here and there,here and there,3,true,r,here_and_there%4:02:00::,here and there,false,,4,true,evidence_ready_review,28.219,junior,false
+in short,in short,2,true,r,in_short%4:02:01::,in short,false,,4,true,evidence_ready_review,28.219,junior,false
+just then,just then,2,true,r,just_then%4:02:00::,just then,false,,4,true,evidence_ready_review,28.219,junior,false
+later on,later on,2,true,r,later_on%4:02:00::,later on,false,,4,true,evidence_ready_review,28.219,junior,false
+more or less,more or less,3,true,r,more_or_less%4:02:00::|more_or_less%4:02:01::,more or less,false,,4,true,evidence_ready_review,28.219,junior,false
+north east,north east,2,true,r,north-east%4:02:00::,north-east,false,,4,true,evidence_ready_review,28.219,junior,false
+on air,on air,2,true,r,on_air%4:02:00::,on air,false,,4,true,evidence_ready_review,28.219,junior,false
+once more,once more,2,true,r,once_more%4:02:00::,once more,false,,4,true,evidence_ready_review,28.219,junior,false
+only too,only too,2,true,r,only_too%4:02:00::,only too,false,,4,true,evidence_ready_review,28.219,junior,false
+or else,or else,2,true,r,or_else%4:02:01::,or else,false,,4,true,evidence_ready_review,28.219,junior,false
+out loud,out loud,2,true,r,out_loud%4:02:00::,out loud,false,,4,true,evidence_ready_review,28.219,junior,false
+over again,over again,2,true,r,over_again%4:02:00::,over again,false,,4,true,evidence_ready_review,28.219,junior,false
+over here,over here,2,true,r,over_here%4:02:00::,over here,false,,4,true,evidence_ready_review,28.219,junior,false
+south west,south west,2,true,r,south-west%4:02:00::,south-west,false,,4,true,evidence_ready_review,28.219,junior,false
+artificial intelligence,artificial intelligence,2,true,n,artificial_intelligence%1:09:00::,artificial intelligence,false,,6,true,evidence_ready_review,28.074,junior,false
+best friend,best friend,2,true,n,best_friend%1:18:00::,best friend,false,,6,true,evidence_ready_review,28.074,junior,false
+body temperature,body temperature,2,true,n,body_temperature%1:07:00::,body temperature,false,,6,true,evidence_ready_review,28.074,junior,false
+day and night,day and night,3,true,a,day-and-night%5:00:00:continuous:01,day-and-night,false,,6,true,evidence_ready_review,28.074,junior,false
+high rise,high rise,2,true,a|n,high-rise%1:06:00::|high-rise%3:00:00::,high-rise,false,,6,true,evidence_ready_review,28.074,junior,false
+human body,human body,2,true,n,human_body%1:08:00::,human body,false,,6,true,evidence_ready_review,28.074,junior,false
+long life,long life,2,true,a,long-life%5:00:00:long:02,long-life,false,,6,true,evidence_ready_review,28.074,junior,false
+real thing,real thing,2,true,n,real_thing%1:07:00::,real thing,false,,6,true,evidence_ready_review,28.074,junior,false
+real world,real world,2,true,n,real_world%1:09:00::,real world,false,,6,true,evidence_ready_review,28.074,junior,false
+cold water,cold water,2,true,n,cold_water%1:10:00::,cold water,true,cold water,4,true,evidence_ready_review,27.219,junior,false
+do for,do for,2,false,,,,true,do for,4,true,moby_corpus_review,27.219,junior,false
+down to earth,down to earth,3,true,a,down-to-earth%5:00:00:realistic:00,down-to-earth,true,down-to-earth,4,true,evidence_ready_review,27.219,junior,false
+fall on,fall on,2,false,,,,true,fall on,4,true,moby_corpus_review,27.219,junior,false
+far off,far off,2,true,a,far-off%5:00:01:far:00,far-off,true,far-off,4,true,evidence_ready_review,27.219,junior,false
+guide dog,guide dog,2,true,n,guide_dog%1:05:00::,guide dog,true,guide dog,4,true,evidence_ready_review,27.219,junior,false
+hand on,hand on,2,false,,,,true,hand on,4,true,moby_corpus_review,27.219,junior,false
+high water,high water,2,true,n,high_water%1:11:00::,high water,true,high water,4,true,evidence_ready_review,27.219,junior,false
+middle age,middle age,2,true,n,middle_age%1:28:00::,middle age,true,middle age,4,true,evidence_ready_review,27.219,junior,false
+middle school,middle school,2,true,n,middle_school%1:14:00::,middle school,true,middle school,4,true,evidence_ready_review,27.219,junior,false
+primary school,primary school,2,true,n,primary_school%1:14:00::,primary school,true,primary school,4,true,evidence_ready_review,27.219,junior,false
+to name,to name,2,false,,,,true,to-name,4,true,moby_corpus_review,27.219,junior,false
+work of art,work of art,3,true,n,work_of_art%1:06:00::,work of art,true,work of art,4,true,evidence_ready_review,27.219,junior,false
+for the most part,for the most part,4,true,r,for_the_most_part%4:02:00::,for the most part,false,,4,true,evidence_ready_review,26.219,junior,false
+that is to say,that is to say,4,true,r,that_is_to_say%4:02:00::,that is to say,false,,4,true,evidence_ready_review,26.219,junior,false
+end of the world,end of the world,4,true,n,end_of_the_world%1:11:00::|end_of_the_world%1:28:00::,end of the world,false,,6,true,evidence_ready_review,26.074,junior,false
+air out,air out,2,true,v,air_out%2:30:00::|air_out%2:39:00::,air out,false,,2,true,evidence_ready_review,25.85,junior,false
+back away,back away,2,true,v,back_away%2:32:00::,back away,false,,2,true,evidence_ready_review,25.85,junior,false
+bring home,bring home,2,true,v,bring_home%2:30:00::|bring_home%2:40:00::,bring home,false,,2,true,evidence_ready_review,25.85,junior,false
+build on,build on,2,true,v,build_on%2:42:00::,build on,false,,2,true,evidence_ready_review,25.85,junior,false
+cash out,cash out,2,true,v,cash_out%2:42:00::,cash out,false,,2,true,evidence_ready_review,25.85,junior,false
+climb up,climb up,2,true,v,climb_up%2:30:02::|climb_up%2:38:00::,climb up,false,,2,true,evidence_ready_review,25.85,junior,false

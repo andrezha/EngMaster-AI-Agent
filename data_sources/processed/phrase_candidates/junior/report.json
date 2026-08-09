@@ -1,0 +1,25 @@
+{
+  "junior_boundary_token_count": 1651,
+  "oewn_eligible_multiword_count": 6727,
+  "moby_eligible_multiword_count": 2600,
+  "candidate_pool_count": 6819,
+  "status_counts": {
+    "moby_corpus_review": 92,
+    "evidence_ready_review": 1701,
+    "dictionary_only_hold": 5026
+  },
+  "priority_review_count": 600,
+  "old_phrase_file_read": false,
+  "chinese_content_created": false,
+  "final_selection_claimed": false,
+  "source_sha256": {
+    "stage_boundary": "b5159c28ea2a654c0af060fc852194b0f97ef15a715589e360b51b8d9bdde10e",
+    "oewn": "7d749f6e2c39e6970e4997839dcf6e42fd281f3c2fae0171d2192bae8cfa4b51",
+    "moby": "c7aa03c522e9e28bba1db692372119f21c73c646671af24b53a840e2d6f84fa7",
+    "tatoeba": "6ab169264a28008c25bf63042bf7535fc63137c9d7e09b7b8bd7812d10117d1b"
+  },
+  "output_sha256": {
+    "candidate_pool": "b503c2b85aa16e57d643d3d3809de67bd4b2a06653118d5eff37f22f9b27d556",
+    "priority_review": "8d41e821dc3290387de7e6d88c4e89836c914d1fac1509a8244727b7b0cd5de2"
+  }
+}
