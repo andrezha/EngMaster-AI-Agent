@@ -1,0 +1,51 @@
+record_id	phrase	meaning_zh	usage_note_zh	example_en	example_zh	content_method	qa_status	human_review_claimed
+PH-H-0001	sort of	有点；在某种程度上；算是	常用于非正式表达，使判断或描述的语气不那么绝对。	I was sort of surprised by his calm response.	他平静的回答让我有点意外。	original_project_authored	draft_auto_validated	false
+PH-H-0002	in addition	此外；另外	用于补充与前文相关的信息，后接名词时通常加 to。	The course develops writing skills; in addition, it builds confidence.	这门课程培养写作技能，此外还能增强信心。	original_project_authored	draft_auto_validated	false
+PH-H-0003	in particular	尤其；特别	用于从一组人或事物中突出某一个，也可强调某个细节。	The exhibition will interest students who enjoy history in particular.	这场展览尤其会吸引喜欢历史的学生。	original_project_authored	draft_auto_validated	false
+PH-H-0004	for instance	例如	用于引出能够说明前面观点的一个具体例子。	Some habits, for instance, reading before bed, can reduce stress.	有些习惯，例如睡前阅读，可以减轻压力。	original_project_authored	draft_auto_validated	false
+PH-H-0005	in advance	预先；提前	表示在预定时间或某件事发生之前完成。	You should reserve a seat in advance during the holiday season.	假期期间你应该提前预订座位。	original_project_authored	draft_auto_validated	false
+PH-H-0006	in reality	实际上；事实上	用于指出真实情况与表象、想象或说法不同。	The route looks short on the map but is difficult in reality.	这条路线在地图上看起来很短，实际上却很难走。	original_project_authored	draft_auto_validated	false
+PH-H-0007	in detail	详细地	表示全面说明或仔细研究各个具体部分。	The report describes the rescue plan in detail.	报告详细描述了救援计划。	original_project_authored	draft_auto_validated	false
+PH-H-0008	on the contrary	恰恰相反	用于明确否定前面的说法，并指出相反的事实。	The task was not boring; on the contrary, it was quite creative.	这项任务并不枯燥，恰恰相反，它很有创造性。	original_project_authored	draft_auto_validated	false
+PH-H-0009	on the spot	当场；在现场	可表示立即在事情发生的地点作出决定，也可表示身处现场。	The mechanic repaired the bicycle on the spot.	修理工当场修好了自行车。	original_project_authored	draft_auto_validated	false
+PH-H-0010	out of sight	看不见；在视野之外	常与 be 或 move 连用，表示无法再从所在位置看到。	The boat sailed behind the island and went out of sight.	小船驶到岛后，消失在视野中。	original_project_authored	draft_auto_validated	false
+PH-H-0011	at random	随机地；随意地	表示没有按特定计划、顺序或标准进行选择。	The computer selects ten questions at random.	电脑随机选出十道题。	original_project_authored	draft_auto_validated	false
+PH-H-0012	by no means	绝不；一点也不	语气较强，表示完全否定；置于句首时常引起倒装。	This discovery is by no means the end of our research.	这一发现绝不是我们研究的终点。	original_project_authored	draft_auto_validated	false
+PH-H-0013	in theory	理论上	表示按照理论或计划应当如此，但现实结果可能不同。	In theory, the new system should save both time and energy.	理论上，新系统应该既省时又节能。	original_project_authored	draft_auto_validated	false
+PH-H-0014	at any rate	无论如何；至少	用于说明不论其他情况怎样，某个结论或行动仍然成立。	At any rate, we should inform the team before changing the plan.	无论如何，我们改变计划前都应该通知团队。	original_project_authored	draft_auto_validated	false
+PH-H-0015	free of charge	免费	通常作表语或状语，说明商品或服务无需付费。	Students can use the sports center free of charge after class.	学生放学后可以免费使用体育中心。	original_project_authored	draft_auto_validated	false
+PH-H-0016	in full swing	正如火如荼；处于高潮	表示活动已经全面展开，正处在最活跃的阶段。	Preparations for the cultural festival are now in full swing.	文化节的准备工作现在正如火如荼地进行。	original_project_authored	draft_auto_validated	false
+PH-H-0017	on a regular basis	定期地；经常地	表示按照稳定、重复的时间安排进行。	The equipment must be checked on a regular basis.	这些设备必须定期检查。	original_project_authored	draft_auto_validated	false
+PH-H-0018	for the time being	暂时；眼下	表示某种安排只在当前一段时间内有效，以后可能改变。	For the time being, the club will meet in the library.	俱乐部暂时将在图书馆举行活动。	original_project_authored	draft_auto_validated	false
+PH-H-0019	at bay	使无法靠近；使陷入困境	常与 keep 或 hold 连用，表示阻止危险靠近或控制住问题。	Firefighters worked through the night to keep the flames at bay.	消防员彻夜工作，控制火势不让其蔓延。	original_project_authored	draft_auto_validated	false
+PH-H-0020	in operation	在运转；在实施	可说明机器正在运行，也可说明制度或计划已经生效。	The new safety system has been in operation since June.	新的安全系统自六月以来一直在运行。	original_project_authored	draft_auto_validated	false
+PH-H-0021	on the loose	在逃；未受控制	常指危险的人或动物逃脱后尚未被控制。	Residents were warned that a wild animal was on the loose.	居民接到警告，有一只野生动物逃脱在外。	original_project_authored	draft_auto_validated	false
+PH-H-0022	on trial	在试用；受审	可指产品或制度处于试验阶段，也可指某人正在法庭受审。	The school is using the new timetable on trial this month.	学校本月正在试行新课表。	original_project_authored	draft_auto_validated	false
+PH-H-0023	at length	详细地；终于	可表示长时间详细讨论，也可表示经过很久之后终于发生。	The committee discussed the proposal at length before voting.	委员会在表决前详细讨论了这项提议。	original_project_authored	draft_auto_validated	false
+PH-H-0024	on occasion	有时；偶尔	表示某事并不经常，但会在某些时候发生。	Even experienced speakers feel nervous on occasion.	即使经验丰富的演讲者偶尔也会紧张。	original_project_authored	draft_auto_validated	false
+PH-H-0025	on the other hand	另一方面	用于引出同一问题的另一面或与前文形成对比的观点。	Online study is convenient; on the other hand, it requires self-discipline.	在线学习很方便；另一方面，它需要自律。	original_project_authored	draft_auto_validated	false
+PH-H-0026	figure out	弄清楚；想出；计算出	表示通过思考、调查或计算找到答案或解决办法。	We need to figure out what caused the sudden power failure.	我们需要查明突然停电的原因。	original_project_authored	draft_auto_validated	false
+PH-H-0027	stand firm	立场坚定；毫不动摇	表示面对压力或困难时不改变决定、原则或立场。	The students decided to stand firm against unfair treatment.	学生们决定坚定反对不公平待遇。	original_project_authored	draft_auto_validated	false
+PH-H-0028	rely on	依靠；信赖	后接提供支持的人、事物或条件。	Farmers rely on accurate forecasts when planning their work.	农民安排工作时依靠准确的天气预报。	original_project_authored	draft_auto_validated	false
+PH-H-0029	bounce back	恢复；重新振作	表示在失败、疾病或困难后较快恢复到良好状态。	The team managed to bounce back after losing its first match.	这支队伍在首场失利后成功恢复了状态。	original_project_authored	draft_auto_validated	false
+PH-H-0030	seek out	找出；寻找	强调主动而努力地寻找某人、某物或机会。	Good learners seek out chances to use new vocabulary.	善于学习的人会主动寻找使用新词汇的机会。	original_project_authored	draft_auto_validated	false
+PH-H-0031	escape from	从某处逃脱；摆脱	后接所离开的地点、危险或受限制的状态。	The villagers had little time to escape from the rising floodwater.	村民们几乎没有时间逃离不断上涨的洪水。	original_project_authored	draft_auto_validated	false
+PH-H-0032	ward off	避开；防止；抵御	后接疾病、危险或威胁，表示采取行动使其无法造成伤害。	Regular exercise may help ward off some health problems.	经常锻炼可能有助于预防一些健康问题。	original_project_authored	draft_auto_validated	false
+PH-H-0033	set aside	留出；把某物放在一边	可表示为特定目的预留时间或资源，也可表示暂不考虑某事。	Try to set aside half an hour each day for reading.	尽量每天留出半小时阅读。	original_project_authored	draft_auto_validated	false
+PH-H-0034	get used to	习惯于	to 是介词，后接名词、代词或动名词，表示逐渐适应。	It may take time to get used to studying in a new environment.	适应在新环境中学习可能需要时间。	original_project_authored	draft_auto_validated	false
+PH-H-0035	cave in	坍塌；屈服	可指墙壁或屋顶向内倒塌，也可指人在压力下让步。	The old roof could cave in under the weight of the snow.	旧屋顶可能会在积雪的重压下坍塌。	original_project_authored	draft_auto_validated	false
+PH-H-0036	plug in	接通电源；插入	表示把插头接入电源，也可指连接电子设备。	Do not plug in the machine with wet hands.	不要用湿手给机器接通电源。	original_project_authored	draft_auto_validated	false
+PH-H-0037	put aside	把某物放到一边；留出	可表示暂时搁置物品或分歧，也可表示储存时间或金钱。	Let us put aside our differences and solve the problem together.	让我们暂时搁置分歧，共同解决问题。	original_project_authored	draft_auto_validated	false
+PH-H-0038	track down	追查到；搜寻到	表示经过持续调查或寻找，最终找到某人、某物或信息。	The reporter managed to track down the original source of the story.	记者成功追查到了这则报道的原始来源。	original_project_authored	draft_auto_validated	false
+PH-H-0039	carve out	开创；争取到	表示通过努力为自己创造事业、地位、空间或时间。	She hopes to carve out a career in environmental research.	她希望在环境研究领域开创一番事业。	original_project_authored	draft_auto_validated	false
+PH-H-0040	fall apart	破裂；散架；崩溃	可指物体散开，也可指计划、关系或情绪失去稳定。	Without regular repairs, the wooden bridge may fall apart.	如果不定期维修，这座木桥可能会散架。	original_project_authored	draft_auto_validated	false
+PH-H-0041	break apart	破裂；分开	表示整体断裂或被分成若干部分。	Large waves can break apart weak sections of sea ice.	巨浪可能使薄弱的海冰断裂开来。	original_project_authored	draft_auto_validated	false
+PH-H-0042	factor in	把某因素考虑在内	后接会影响计算、判断或计划的因素。	We must factor in travel time when setting the meeting schedule.	安排会议时间时，我们必须把路途时间考虑在内。	original_project_authored	draft_auto_validated	false
+PH-H-0043	keep track	了解动态；记录	通常与 of 连用，表示持续掌握数量、进度或位置的变化。	A simple chart can help you keep track of your reading progress.	一张简单的图表可以帮助你记录阅读进度。	original_project_authored	draft_auto_validated	false
+PH-H-0044	link up	连接；会合；合作	可表示设备或系统连接，也可表示人与人会合或组织合作。	The two research teams plan to link up and share their results.	两个研究团队计划合作并共享成果。	original_project_authored	draft_auto_validated	false
+PH-H-0045	log in	登录	表示输入身份信息进入计算机系统或网络服务，常与 to 连用。	Students must log in with their school accounts.	学生必须使用学校账户登录。	original_project_authored	draft_auto_validated	false
+PH-H-0046	log on	登录；接入系统	通常与 to 连用，表示连接并进入计算机或网络系统。	You need a password to log on to the learning platform.	你需要密码才能登录学习平台。	original_project_authored	draft_auto_validated	false
+PH-H-0047	log out	退出登录	表示安全地结束计算机系统或网络账户的会话。	Always log out when you use a shared computer.	使用公用电脑时一定要退出登录。	original_project_authored	draft_auto_validated	false
+PH-H-0048	pan out	取得预期结果；成功	常用于否定或条件语境，说明计划、想法或情况最终如何发展。	If the plan does not pan out, we will try another approach.	如果这个计划没有成功，我们会尝试另一种方法。	original_project_authored	draft_auto_validated	false
+PH-H-0049	think twice	三思；慎重考虑	常与 before 连用，提醒人在行动前再次认真考虑。	Think twice before sharing personal information online.	在网上分享个人信息前要三思。	original_project_authored	draft_auto_validated	false
+PH-H-0050	drag in	把某人或某事牵扯进来	表示把原本无关的人或话题不必要地卷入某件事。	Do not drag in other students who had nothing to do with the argument.	不要把与争论无关的其他学生牵扯进来。	original_project_authored	draft_auto_validated	false
