@@ -321,7 +321,7 @@ class WordListView(QtWidgets.QWidget):
         # 加载常规词汇
         vocabulary_path = (
             self.edition.vocabulary_path if self.edition is not None
-            else "assets/vocabulary.json"
+            else "assets/editions/gaokao/vocabulary.json"
         )
         json_path = get_resource_path(vocabulary_path)
         if os.path.exists(json_path):
@@ -335,7 +335,7 @@ class WordListView(QtWidgets.QWidget):
         # Phrase resources are only loaded for editions that expose them.
         phrase_path = (
             self.edition.phrase_path if self.edition is not None
-            else "assets/short_phrase.json"
+            else "assets/editions/gaokao/phrases.json"
         )
         phrase_json_path = get_resource_path(phrase_path)
         if self.include_phrase_resources and os.path.exists(phrase_json_path):
@@ -355,7 +355,7 @@ class WordListView(QtWidgets.QWidget):
         # New: Load irregular verb data
         irregular_path = (
             self.edition.irregular_verbs_path if self.edition is not None
-            else "assets/irregular_verbs.json"
+            else "assets/editions/gaokao/irregular_verbs.json"
         )
         irregular_json_path = get_resource_path(irregular_path)
         if self.include_phrase_resources and os.path.exists(irregular_json_path):

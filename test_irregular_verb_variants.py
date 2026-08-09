@@ -39,7 +39,7 @@ class IrregularVerbVariantTests(unittest.TestCase):
 
     def test_every_multi_form_field_uses_spaces_only(self):
         with open(
-                "assets/irregular_verbs.json", "r", encoding="utf-8") as handle:
+                "assets/editions/gaokao/irregular_verbs.json", "r", encoding="utf-8") as handle:
             verbs = json.load(handle)
 
         multi_form_fields = 0

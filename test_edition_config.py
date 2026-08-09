@@ -96,7 +96,7 @@ class EditionConfigTests(unittest.TestCase):
 
     def test_advanced_editions_use_independent_phrase_and_irregular_files(self):
         master_rows = json.loads(
-            (ROOT / "assets" / "short_phrase.json").read_text(encoding="utf-8"))
+            (ROOT / EDITIONS["cet4"].phrase_path).read_text(encoding="utf-8"))
         phrase_paths = {
             EDITIONS[edition_id].phrase_path
             for edition_id in ("gaokao", "cet4", "cet6", "kaoyan")

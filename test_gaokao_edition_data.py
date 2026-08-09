@@ -61,6 +61,19 @@ class GaokaoEditionDataTests(unittest.TestCase):
         self.assertIn("an", variants["a"])
         self.assertIn("analyze", variants["analyse"])
 
+    def test_legacy_root_data_and_gaokao_samples_are_removed(self):
+        obsolete_paths = (
+            "assets/vocabulary.json",
+            "assets/short_phrase.json",
+            "assets/irregular_verbs.json",
+            "assets/mistake_words.json",
+            "assets/user_registered_vocab.json",
+            "research/edition_samples/gaokao_phrases.json",
+            "research/edition_samples/gaokao_irregular_verbs.json",
+        )
+        for relative_path in obsolete_paths:
+            self.assertFalse((ROOT / relative_path).exists(), relative_path)
+
     def test_challenge_loads_nine_phrase_levels_and_clean_irregulars(self):
         with tempfile.TemporaryDirectory() as data_dir, mock.patch.dict(
             os.environ, {"ENGMASTER_DATA_DIR": data_dir}

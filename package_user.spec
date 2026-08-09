@@ -22,8 +22,6 @@ a = Analysis(
         ('research/edition_samples/kaoyan_sample.json', 'research/edition_samples'),
         ('research/edition_samples/kaoyan_phrases.json', 'research/edition_samples'),
         ('research/edition_samples/kaoyan_irregular_verbs.json', 'research/edition_samples'),
-        ('research/edition_samples/gaokao_phrases.json', 'research/edition_samples'),
-        ('research/edition_samples/gaokao_irregular_verbs.json', 'research/edition_samples'),
     ],
     hiddenimports=[
         'vocab_module',

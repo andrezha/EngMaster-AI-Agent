@@ -776,7 +776,7 @@ class VocabManager(QObject):  # 继承自 QObject
         try:
             vocabulary_path = (
                 self.edition.vocabulary_path if self.edition is not None
-                else "assets/vocabulary.json"
+                else "assets/editions/gaokao/vocabulary.json"
             )
             vocab_path = get_resource_path(vocabulary_path)
             print(
@@ -840,7 +840,7 @@ class VocabManager(QObject):  # 继承自 QObject
             print(f"❌ 加载错词表失败: {e}")
             self.mistake_vocabulary = []  # Use self.main_window for QMessageBox
             QMessageBox.warning(
-                self.main_window, "错误", f"加载错词表失败: {e}\n请检查 assets/mistake_words.json 文件。")
+                self.main_window, "错误", f"加载错词表失败: {e}\n请检查当前版本的用户数据目录。")
 
     def _load_self_registered_vocabulary(self):  # NEW: 加载自主录入词汇
         """

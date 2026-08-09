@@ -41,7 +41,7 @@ class PhraseProductCandidateTests(unittest.TestCase):
             edition = SimpleNamespace(
                 edition_id="cet6",
                 phrase_path="data_sources/clean/phrase_product_candidates/cet6_phrases_product_candidate.json",
-                irregular_verbs_path="assets/irregular_verbs.json",
+                irregular_verbs_path="assets/editions/gaokao/irregular_verbs.json",
             )
             view = PhraseIrregularChallengeView(SimpleNamespace(edition=edition))
             self.assertEqual(len(view.phrase_levels), 21)

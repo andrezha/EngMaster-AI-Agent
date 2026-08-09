@@ -115,10 +115,10 @@ class _LegacyPhraseIrregularChallengeView(QtWidgets.QWidget):
         self.main_window = main_window
         edition = getattr(main_window, "edition", None)
         self.phrases = self._load_json(
-            getattr(edition, "phrase_path", "assets/short_phrase.json")
+            getattr(edition, "phrase_path", "assets/editions/gaokao/phrases.json")
         )
         self.irregulars = self._load_json(
-            getattr(edition, "irregular_verbs_path", "assets/irregular_verbs.json")
+            getattr(edition, "irregular_verbs_path", "assets/editions/gaokao/irregular_verbs.json")
         )
         self.phrases = _trial_limited_rows(
             edition, self.phrases, TRIAL_PHRASE_LIMIT)
@@ -461,7 +461,7 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
         self.all_phrases = _trial_limited_rows(
             edition,
             _visible_phrase_items(self._load_json(
-                getattr(edition, "phrase_path", "assets/short_phrase.json"))),
+                getattr(edition, "phrase_path", "assets/editions/gaokao/phrases.json"))),
             TRIAL_PHRASE_LIMIT,
         )
         self.phrase_levels = _phrase_level_groups(self.all_phrases)
@@ -472,7 +472,7 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
         self.irregulars = _trial_limited_rows(
             edition,
             self._load_json(getattr(
-                edition, "irregular_verbs_path", "assets/irregular_verbs.json")),
+                edition, "irregular_verbs_path", "assets/editions/gaokao/irregular_verbs.json")),
             TRIAL_IRREGULAR_LIMIT,
         )
         self.phrase_mistake_file_path = get_writable_data_path("mistake_phrases.json")
@@ -1292,7 +1292,7 @@ class PhraseIrregularListView(QtWidgets.QWidget):
         self.phrases = _trial_limited_rows(
             edition,
             _visible_phrase_items(self._load_json(
-                getattr(edition, "phrase_path", "assets/short_phrase.json"))),
+                getattr(edition, "phrase_path", "assets/editions/gaokao/phrases.json"))),
             TRIAL_PHRASE_LIMIT,
         )
         self.current_phrase_filter = "core"
@@ -1301,7 +1301,7 @@ class PhraseIrregularListView(QtWidgets.QWidget):
         self.irregulars = _trial_limited_rows(
             edition,
             self._load_json(getattr(
-                edition, "irregular_verbs_path", "assets/irregular_verbs.json")),
+                edition, "irregular_verbs_path", "assets/editions/gaokao/irregular_verbs.json")),
             TRIAL_IRREGULAR_LIMIT,
         )
         self.phrase_mistake_file_path = get_writable_data_path("mistake_phrases.json")

@@ -160,7 +160,8 @@ class ChallengeRoundStoreTests(unittest.TestCase):
     def test_real_3800_word_progress_at_1000_survives_upgrade_and_reopen(self):
         root = Path(__file__).resolve().parent
         vocabulary = json.loads(
-            (root / "assets" / "vocabulary.json").read_text(encoding="utf-8"))
+            (root / "assets" / "editions" / "gaokao" / "vocabulary.json").read_text(
+                encoding="utf-8"))
         alias_data = json.loads(
             (root / "assets" / "vocabulary_progress_aliases.json").read_text(
                 encoding="utf-8"))
