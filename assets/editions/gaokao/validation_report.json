@@ -5,7 +5,14 @@
     "phrases.json": 450,
     "irregular_verbs.json": 126
   },
-  "phrase_level_count": 9,
+  "phrase_tier_counts": {
+    "core": 300,
+    "extension": 150
+  },
+  "phrase_level_counts": {
+    "core": 6,
+    "extension": 3
+  },
   "errors": [],
   "warnings": [
     "intentional case-distinct headwords: China/china, March/march, May/may, Miss/miss, US/us"

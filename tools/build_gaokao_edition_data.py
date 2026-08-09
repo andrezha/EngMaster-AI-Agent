@@ -88,6 +88,21 @@ def build_irregulars() -> list[dict[str, object]]:
     ]
 
 
+def build_phrases() -> list[dict[str, object]]:
+    rows = load_rows(PHRASE_SOURCE)
+    output: list[dict[str, object]] = []
+    for index, original in enumerate(rows):
+        row = dict(original)
+        if index < 300:
+            row["tier"] = "core"
+            row["level"] = index // 50 + 1
+        else:
+            row["tier"] = "extension"
+            row["level"] = (index - 300) // 50 + 1
+        output.append(row)
+    return output
+
+
 def write_json(path: Path, payload: object) -> None:
     path.write_text(
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
@@ -103,7 +118,7 @@ def write_readme() -> Path:
 本目录是高中正式版在程序内实际读取的独立数据区：
 
 - `vocabulary.json`：3800条高中学习词汇及中文释义；
-- `phrases.json`：450条分为9关的高中短语；
+- `phrases.json`：450条高中短语，其中核心300条（6关）、扩展150条（3关）；
 - `irregular_verbs.json`：126条不规则动词；
 - `manifest.json`、`SHA256SUMS.txt`：来源和成品完整性记录；
 - `THIRD_PARTY_NOTICES.md`、`OPEN_ENGLISH_WORDNET_LICENSE.md`：第三方来源与许可证声明。
@@ -127,7 +142,7 @@ def main() -> int:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     vocabulary = build_vocabulary()
-    phrases = load_rows(PHRASE_SOURCE)
+    phrases = build_phrases()
     irregulars = build_irregulars()
     write_json(OUTPUT_DIR / "vocabulary.json", vocabulary)
     write_json(OUTPUT_DIR / "phrases.json", phrases)
@@ -155,6 +170,10 @@ def main() -> int:
         "counts": {
             "vocabulary": len(vocabulary),
             "phrases": len(phrases),
+            "core_phrases": sum(row["tier"] == "core" for row in phrases),
+            "extension_phrases": sum(
+                row["tier"] == "extension" for row in phrases
+            ),
             "irregular_verbs": len(irregulars),
         },
         "application_paths": {

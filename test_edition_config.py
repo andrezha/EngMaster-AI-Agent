@@ -112,8 +112,14 @@ class EditionConfigTests(unittest.TestCase):
                 (ROOT / EDITIONS[edition_id].phrase_path).read_text(encoding="utf-8"))
             if edition_id == "gaokao":
                 self.assertEqual(len(rows), 450)
-                self.assertTrue(all(row.get("tier") == "core" for row in rows))
-                self.assertEqual(max(row.get("level", 0) for row in rows), 9)
+                self.assertEqual(
+                    sum(row.get("tier") == "core" for row in rows), 300)
+                self.assertEqual(
+                    sum(row.get("tier") == "extension" for row in rows), 150)
+                self.assertEqual(
+                    max(row.get("level", 0) for row in rows[:300]), 6)
+                self.assertEqual(
+                    max(row.get("level", 0) for row in rows[300:]), 3)
             else:
                 self.assertEqual(len(rows), len(master_rows))
                 self.assertEqual(

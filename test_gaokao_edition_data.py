@@ -10,7 +10,7 @@ from unittest import mock
 
 os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 
-from PySide6 import QtCore, QtWidgets
+from PySide6 import QtCore, QtTest, QtWidgets
 
 import main
 from edition_config import EDITIONS
@@ -97,6 +97,26 @@ class GaokaoEditionDataTests(unittest.TestCase):
             self.assertTrue(window._ensure_phrase_irregular_challenge_widget())
             self.assertEqual(len(window.phrase_irregular_challenge_widget.all_phrases), 450)
             self.assertEqual(len(window.phrase_irregular_challenge_widget.irregulars), 126)
+            levels = window.phrase_irregular_challenge_widget.phrase_levels
+            self.assertEqual(
+                [len(level["items"]) for level in levels],
+                [50] * 9,
+            )
+            self.assertEqual(
+                [level["tier"] for level in levels],
+                ["core"] * 6 + ["extension"] * 3,
+            )
+
+            mistake = {"word": "test", "content": "测试", "correct_count": 0}
+            window.vocab_ctrl.mistake_vocabulary = [mistake]
+            QtTest.QTest.mouseClick(
+                window.vocab_ctrl.lbl_mistake_count,
+                QtCore.Qt.MouseButton.LeftButton,
+            )
+            self.app.processEvents()
+            self.assertIs(window.stack.currentWidget(), window.word_list_widget)
+            self.assertEqual(window.word_list_widget.current_list_type, "mistake")
+            self.assertEqual(window.word_list_widget.all_mistake_words, [mistake])
             window.close()
             self.app.processEvents()
             QtCore.QCoreApplication.sendPostedEvents(

@@ -80,7 +80,15 @@ def main() -> int:
         if any(not row.get(field) for field in required):
             errors.append(f"phrases.json row {index}: incomplete application fields")
         phrase_ids.add(str(row.get("id", "")))
-        if row.get("level") != (index - 1) // 50 + 1:
+        expected_tier = "core" if index <= 300 else "extension"
+        expected_level = (
+            (index - 1) // 50 + 1
+            if expected_tier == "core"
+            else (index - 301) // 50 + 1
+        )
+        if row.get("tier") != expected_tier:
+            errors.append(f"phrases.json row {index}: invalid tier")
+        if row.get("level") != expected_level:
             errors.append(f"phrases.json row {index}: invalid 50-item level")
         if row.get("human_review_claimed") is not False:
             errors.append(f"phrases.json row {index}: invalid review claim")
@@ -123,7 +131,14 @@ def main() -> int:
     report = {
         "status": "pass" if not errors else "fail",
         "counts": {name: len(rows_by_file.get(name, [])) for name in EXPECTED_COUNTS},
-        "phrase_level_count": max((int(row["level"]) for row in phrases), default=0),
+        "phrase_tier_counts": {
+            "core": sum(row.get("tier") == "core" for row in phrases),
+            "extension": sum(row.get("tier") == "extension" for row in phrases),
+        },
+        "phrase_level_counts": {
+            tier: len({row.get("level") for row in phrases if row.get("tier") == tier})
+            for tier in ("core", "extension")
+        },
         "errors": errors,
         "warnings": warnings,
     }

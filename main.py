@@ -1193,8 +1193,11 @@ class EngMasterApplication(QMainWindow):
     def show_word_mistake_list(self, data=None):
         if not self._ensure_word_list_widget() or self.word_list_index == -1:
             return
+        if data is None and self.vocab_ctrl is not None:
+            data = self.vocab_ctrl.mistake_vocabulary
         self.word_list_widget.open_mistake_list(data)
         self.stack.setCurrentIndex(self.word_list_index)
+        self._update_nav_button_styles(self.word_list_index)
 
     def _safe_nav_to_self_register(self):
         if self.self_register_vocab_ctrl is None:
