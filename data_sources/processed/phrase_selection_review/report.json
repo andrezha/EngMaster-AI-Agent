@@ -4,7 +4,8 @@
   "completed_levels": [
     "junior",
     "senior_high",
-    "cet4"
+    "cet4",
+    "cet6"
   ],
   "level_reports": {
     "junior": {
@@ -24,10 +25,21 @@
       "candidate_pool_evidence_count": 255,
       "structure_plus_corpus_count": 45,
       "zero_corpus_count": 52
+    },
+    "cet6": {
+      "selected_count": 300,
+      "candidate_pool_evidence_count": 280,
+      "structure_plus_corpus_count": 20,
+      "zero_corpus_count": 72
     }
   },
   "cross_level_duplicate_count": 0,
   "old_phrase_file_read": false,
   "human_review_claimed": false,
-  "english_master_scope_frozen": false
+  "english_master_scope_frozen": true,
+  "master_record_count": 1050,
+  "master_sha256": {
+    "csv": "09c273bd2ecfff179a47b48fab658ba502c7c12cc1be20789a3719f1a0a4294e",
+    "json": "f5969f3dd6d844e2851b800870d13860139d384b914c82b7372fcd4f5861ac06"
+  }
 }
