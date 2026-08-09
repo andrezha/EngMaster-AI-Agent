@@ -1,0 +1,51 @@
+record_id	phrase	meaning_zh	usage_note_zh	example_en	example_zh	content_method	qa_status	human_review_claimed
+PH-H-0151	climate change	气候变化	指气温、降水等气候模式在较长时期内发生的变化。	Climate change is altering the habitats of many species.	气候变化正在改变许多物种的栖息地。	original_project_authored	draft_auto_validated	false
+PH-H-0152	natural gas	天然气	指主要由甲烷组成、用作燃料和工业原料的气态化石能源。	The town once used natural gas to heat most homes.	这座城镇过去用天然气为大多数住宅供暖。	original_project_authored	draft_auto_validated	false
+PH-H-0153	space station	空间站；太空站	指在太空轨道上供人员长期生活和开展研究的航天器。	Astronauts conducted the experiment aboard the space station.	宇航员在空间站上进行了这项实验。	original_project_authored	draft_auto_validated	false
+PH-H-0154	large scale	大规模	常用于 on a large scale；放在名词前作定语时通常写成 large-scale。	The region began producing clean energy on a large scale.	该地区开始大规模生产清洁能源。	original_project_authored	draft_auto_validated	false
+PH-H-0155	small scale	小规模	常用于 on a small scale；放在名词前作定语时通常写成 small-scale。	The new farming method was first tested on a small scale.	这种新耕作方法最初进行了小规模试验。	original_project_authored	draft_auto_validated	false
+PH-H-0156	high resolution	高分辨率；高清晰度	说明图像或设备能呈现较多细节；放在名词前常写成 high-resolution。	The camera records images with high resolution even in low light.	即使光线较暗，这台相机也能记录高分辨率图像。	original_project_authored	draft_auto_validated	false
+PH-H-0157	full length	全长；完整长度	表示从一端到另一端的全部长度；放在名词前常写成 full-length。	The new pool has the full length required for official races.	新泳池达到了正式比赛要求的全长。	original_project_authored	draft_auto_validated	false
+PH-H-0158	long distance	长距离；远程	可表示相距很远；放在名词前作定语时通常写成 long-distance。	The rescue team carried supplies over a long distance.	救援队把物资运送了很远的距离。	original_project_authored	draft_auto_validated	false
+PH-H-0159	minimum wage	最低工资	指法律或规定允许雇主支付给劳动者的最低工资标准。	The government reviews the minimum wage each year.	政府每年审查最低工资标准。	original_project_authored	draft_auto_validated	false
+PH-H-0160	mountain range	山脉	指相互连接、在地理上形成一系列的山峰和山地。	The mountain range blocks cold winds from the north.	这条山脉阻挡了来自北方的寒风。	original_project_authored	draft_auto_validated	false
+PH-H-0161	secondary school	中学	通常指小学之后、大学之前的学校阶段，具体年级范围因国家而异。	She teaches chemistry at a secondary school near the coast.	她在海边的一所中学教化学。	original_project_authored	draft_auto_validated	false
+PH-H-0162	square root	平方根	指自乘后等于给定数值的数。	The square root of eighty-one is nine.	八十一的平方根是九。	original_project_authored	draft_auto_validated	false
+PH-H-0163	white collar	白领的；从事办公室工作的	常见于 white-collar worker 等复合定语，通常指办公室、专业或管理类工作。	The term white collar traditionally refers to office-based employment.	白领一词传统上指以办公室为基础的工作。	original_project_authored	draft_auto_validated	false
+PH-H-0164	wide angle	广角；宽视角	指相机镜头或视野能够覆盖较宽范围；作定语时常写成 wide-angle。	This lens provides a wide angle of view for landscape photography.	这个镜头为风景摄影提供宽广的视角。	original_project_authored	draft_auto_validated	false
+PH-H-0165	freedom of speech	言论自由	指依法表达观点和传递信息的自由，同时可能受适用法律规定的限制。	The debate explored why freedom of speech matters in public life.	辩论探讨了言论自由在公共生活中的重要性。	original_project_authored	draft_auto_validated	false
+PH-H-0166	inner city	市中心区；中心城区	通常指大城市靠近中心、人口较密集的城区。	The project will create more green spaces in the inner city.	该项目将在中心城区建设更多绿地。	original_project_authored	draft_auto_validated	false
+PH-H-0167	brand new	崭新的；全新的	强调物品从未使用或事物刚刚出现。	The laboratory received a brand new microscope this week.	实验室本周收到了一台崭新的显微镜。	original_project_authored	draft_auto_validated	false
+PH-H-0168	equal to	等于；胜任	可表示数量或价值相等，也可表示有能力应对任务。	One kilometer is equal to one thousand meters.	一公里等于一千米。	original_project_authored	draft_auto_validated	false
+PH-H-0169	responsible for	对某事负责；是某事的原因	可说明职责范围，也可指出导致某个结果的人或事物。	Each team is responsible for checking its own equipment.	每支队伍都负责检查自己的设备。	original_project_authored	draft_auto_validated	false
+PH-H-0170	be due	预定到达；到期；应当	可接时间说明预定安排，也可与 to 连用说明原因或应付事项。	The train will be due at platform four in ten minutes.	这趟列车预计十分钟后到达四号站台。	original_project_authored	draft_auto_validated	false
+PH-H-0171	in sight	看得见；目标可及	可表示处于视野内，也可比喻目标即将实现。	After hours of walking, the village finally came in sight.	走了几个小时后，村庄终于出现在视野中。	original_project_authored	draft_auto_validated	false
+PH-H-0172	most valuable	最有价值的	是 valuable 的最高级形式，通常与 the 或物主限定词连用。	Trust is our most valuable resource during a crisis.	危机期间，信任是我们最宝贵的资源。	original_project_authored	draft_auto_validated	false
+PH-H-0173	well being	健康幸福；身心福祉	现代英语中更常写作 well-being 或 wellbeing，本条保留母表词形用于识别。	Safe housing has a direct effect on people's well being.	安全的住房会直接影响人们的身心福祉。	original_project_authored	draft_auto_validated	false
+PH-H-0174	body and soul	全身心；身心	表示一个人的整个身心，常与投入、奉献等含义连用。	She devoted body and soul to caring for the injured animals.	她全身心投入到照顾受伤动物的工作中。	original_project_authored	draft_auto_validated	false
+PH-H-0175	heart and soul	全心全意；核心人物	可表示投入全部热情，也可指组织或活动最重要的推动者。	The volunteers put their heart and soul into rebuilding the playground.	志愿者们全心全意地重建操场。	original_project_authored	draft_auto_validated	false
+PH-H-0176	in common with	与某人或某物一样	用于指出与另一个对象共有的特征或情况。	In common with many coastal towns, this area depends on tourism.	与许多沿海城镇一样，这个地区依赖旅游业。	original_project_authored	draft_auto_validated	false
+PH-H-0177	in the air	在空中；可感觉到；悬而未决	可按字面表示在空气中，也可指气氛明显或事情尚未确定。	A sense of excitement was in the air before the final performance.	最后一场演出前，空气中洋溢着兴奋的气氛。	original_project_authored	draft_auto_validated	false
+PH-H-0178	in hand	在手头；在掌握中；正在处理	可表示拥有可用资源、控制住局面或正在处理事情。	With enough supplies in hand, the team continued its journey.	手头有了足够物资，队伍继续前行。	original_project_authored	draft_auto_validated	false
+PH-H-0179	in place	在适当位置；准备就绪；正在实施	可表示位置正确，也可说明制度或安排已经建立。	All safety measures must be in place before the event begins.	活动开始前，所有安全措施都必须落实到位。	original_project_authored	draft_auto_validated	false
+PH-H-0180	in turn	依次；转而；相应地	可表示按顺序行动，也可说明一个结果进一步引起另一个结果。	Each group will in turn present its findings to the class.	每个小组将依次向全班汇报研究结果。	original_project_authored	draft_auto_validated	false
+PH-H-0181	no longer	不再	表示过去存在的状态或动作现在已经停止。	The old bridge is no longer safe for heavy vehicles.	这座旧桥已不再适合重型车辆通行。	original_project_authored	draft_auto_validated	false
+PH-H-0182	rather than	而不是；宁可	用于连接两个对等成分，表示选择或对比。	We should repair useful items rather than throw them away.	我们应该修理有用的物品，而不是把它们扔掉。	original_project_authored	draft_auto_validated	false
+PH-H-0183	as a result	因此；结果	用于引出前述原因导致的结果，后接 of 时可引出原因。	The road was flooded; as a result, the bus service stopped.	道路被淹，因此公共汽车停运了。	original_project_authored	draft_auto_validated	false
+PH-H-0184	as if	好像；仿佛	引导方式或表语从句；与事实相反时常使用虚拟形式。	He spoke as if he had witnessed the event himself.	他说得仿佛亲眼目睹了这件事。	original_project_authored	draft_auto_validated	false
+PH-H-0185	even though	即使；尽管	引导让步状语从句，后接完整的主语和谓语。	Even though the route was steep, everyone reached the top safely.	尽管路线陡峭，所有人仍安全到达了山顶。	original_project_authored	draft_auto_validated	false
+PH-H-0186	instead of	代替；而不是	of 是介词，后接名词、代词或动名词。	We took the train instead of driving through the storm.	我们乘火车出行，没有冒雨开车。	original_project_authored	draft_auto_validated	false
+PH-H-0187	because of	因为；由于	后接名词、代词或动名词，不能直接连接完整句子。	The outdoor concert was canceled because of strong winds.	由于强风，露天音乐会被取消了。	original_project_authored	draft_auto_validated	false
+PH-H-0188	thanks to	多亏；由于	后接带来某种结果的人或事，常表示积极原因，也可用于反讽语境。	Thanks to careful planning, the move was completed in one day.	多亏周密计划，搬迁在一天内就完成了。	original_project_authored	draft_auto_validated	false
+PH-H-0189	take action	采取行动	常与 to do 或 against 连用，表示为解决问题而采取具体措施。	Communities must take action to protect local water sources.	社区必须采取行动保护当地水源。	original_project_authored	draft_auto_validated	false
+PH-H-0190	make a difference	产生影响；起作用	表示行动使情况发生明显改善或变化，常与 to 连用。	Even a small donation can make a difference to the project.	即使一小笔捐款也能对这个项目产生影响。	original_project_authored	draft_auto_validated	false
+PH-H-0191	deal with	处理；应对；涉及	可表示处理问题、与某人打交道，也可说明文章或课程的主题。	The training teaches staff how to deal with emergencies.	培训教员工如何应对紧急情况。	original_project_authored	draft_auto_validated	false
+PH-H-0192	lead to	导致；通向	可按字面表示道路通往某地，也可说明某事造成某种结果。	A lack of sleep can lead to poor concentration.	睡眠不足会导致注意力不集中。	original_project_authored	draft_auto_validated	false
+PH-H-0193	result in	导致；造成	后接结果，主语通常是引发该结果的原因。	Ignoring a minor fault may result in a costly repair later.	忽视小故障以后可能会导致高昂的维修费用。	original_project_authored	draft_auto_validated	false
+PH-H-0194	refer to	指的是；提到；查阅	可说明词语所指对象、在谈话中提及，或查阅资料。	In this report, the word youth will refer to people under twenty-five.	在本报告中，青年一词指二十五岁以下的人。	original_project_authored	draft_auto_validated	false
+PH-H-0195	apply for	申请	后接职位、课程、许可或资金等希望获得的事物。	Eligible students may apply for financial support online.	符合条件的学生可以在线申请经济资助。	original_project_authored	draft_auto_validated	false
+PH-H-0196	in a way	在某种程度上；从某一角度看	用于限定观点，说明陈述只在某个方面成立。	In a way, the unexpected delay gave us more time to prepare.	从某种角度看，意外的延误给了我们更多准备时间。	original_project_authored	draft_auto_validated	false
+PH-H-0197	be based on	以某事为基础；根据	后接作为依据、来源或原型的人或事物。	Scientific conclusions should be based on reliable evidence.	科学结论应该以可靠证据为基础。	original_project_authored	draft_auto_validated	false
+PH-H-0198	real life	现实生活	指实际发生的生活和经历，与小说、网络或模拟环境相对。	Communication can be more complex in real life than in a textbook.	现实生活中的交流可能比课本中更复杂。	original_project_authored	draft_auto_validated	false
+PH-H-0199	be related to	与某事有关；与某人有亲属关系	后接存在联系的人或事物，具体关系由语境决定。	The change may be related to a rise in water temperature.	这种变化可能与水温上升有关。	original_project_authored	draft_auto_validated	false
+PH-H-0200	social media	社交媒体	指用户创建、分享内容并进行社交互动的网络平台和服务。	Information on social media should be checked before it is shared.	社交媒体上的信息在分享前应该核实。	original_project_authored	draft_auto_validated	false
