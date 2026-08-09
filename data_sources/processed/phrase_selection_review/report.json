@@ -3,7 +3,8 @@
   "errors": [],
   "completed_levels": [
     "junior",
-    "senior_high"
+    "senior_high",
+    "cet4"
   ],
   "level_reports": {
     "junior": {
@@ -17,6 +18,12 @@
       "candidate_pool_evidence_count": 183,
       "structure_plus_corpus_count": 17,
       "zero_corpus_count": 16
+    },
+    "cet4": {
+      "selected_count": 300,
+      "candidate_pool_evidence_count": 255,
+      "structure_plus_corpus_count": 45,
+      "zero_corpus_count": 52
     }
   },
   "cross_level_duplicate_count": 0,
