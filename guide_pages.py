@@ -984,6 +984,91 @@ class InformationTextView(QtWidgets.QWidget):
         self.text_view.setTextCursor(cursor)
 
 
+class AboutCopyrightView(QtWidgets.QWidget):
+    """Three-part public record for version, copyright, and data licenses."""
+
+    def __init__(
+            self, version_text, copyright_text, data_notice_text,
+            license_documents=None, parent=None):
+        super().__init__(parent)
+        self.setObjectName("about_copyright_view")
+        self.license_documents = dict(license_documents or {})
+        outer = QtWidgets.QVBoxLayout(self)
+        outer.setContentsMargins(0, 0, 0, 0)
+        page, layout = _public_page(
+            "关于、版权与许可",
+            "查看软件版本、权利说明、数据来源及第三方开放许可证。",
+        )
+
+        self.tabs = QtWidgets.QTabWidget()
+        self.tabs.setObjectName("about_copyright_tabs")
+        self.tabs.setDocumentMode(True)
+        self.version_text_view = self._text_view("about_version_text", version_text)
+        self.copyright_text_view = self._text_view(
+            "about_copyright_text", copyright_text)
+        self.data_notice_text_view = self._text_view(
+            "about_data_notice_text", data_notice_text)
+        self.tabs.addTab(self.version_text_view, "版本与授权")
+        self.tabs.addTab(self.copyright_text_view, "版权说明")
+
+        data_tab = QtWidgets.QWidget()
+        data_layout = QtWidgets.QVBoxLayout(data_tab)
+        data_layout.setContentsMargins(0, 0, 0, 0)
+        data_layout.setSpacing(10)
+        data_layout.addWidget(self.data_notice_text_view, 1)
+        if self.license_documents:
+            button_row = QtWidgets.QHBoxLayout()
+            button_row.addStretch(1)
+            for index, title in enumerate(self.license_documents):
+                button = QtWidgets.QPushButton(f"查看{title}")
+                button.setObjectName(f"btn_about_license_{index}")
+                button.setMinimumHeight(38)
+                button.clicked.connect(
+                    lambda _checked=False, name=title: self.show_license_document(name)
+                )
+                button_row.addWidget(button)
+            data_layout.addLayout(button_row)
+        self.tabs.addTab(data_tab, "数据来源与第三方许可")
+        layout.addWidget(self.tabs, 1)
+        outer.addWidget(page)
+
+    @staticmethod
+    def _text_view(object_name, text):
+        view = QtWidgets.QPlainTextEdit()
+        view.setObjectName(object_name)
+        view.setReadOnly(True)
+        view.setLineWrapMode(QtWidgets.QPlainTextEdit.LineWrapMode.WidgetWidth)
+        view.setPlainText(text or "")
+        view.setStyleSheet(
+            "QPlainTextEdit { background:white; color:#334155; "
+            "border:1px solid #dce5f0; border-radius:10px; padding:16px; "
+            "font-family:'Microsoft YaHei UI','Microsoft YaHei'; font-size:14px; "
+            "selection-background-color:#bfdbfe; }"
+        )
+        return view
+
+    def set_version_text(self, text):
+        self.version_text_view.setPlainText(text or "")
+
+    def show_license_document(self, title):
+        dialog = QtWidgets.QDialog(self)
+        dialog.setWindowTitle(title)
+        dialog.resize(760, 600)
+        layout = QtWidgets.QVBoxLayout(dialog)
+        text_view = QtWidgets.QPlainTextEdit()
+        text_view.setReadOnly(True)
+        text_view.setLineWrapMode(QtWidgets.QPlainTextEdit.LineWrapMode.NoWrap)
+        text_view.setPlainText(self.license_documents.get(title, "未找到许可证正文。"))
+        layout.addWidget(text_view, 1)
+        close_button = QtWidgets.QPushButton("关闭")
+        close_button.clicked.connect(dialog.accept)
+        button_row = QtWidgets.QHBoxLayout()
+        button_row.addStretch(1)
+        button_row.addWidget(close_button)
+        layout.addLayout(button_row)
+        dialog.exec()
+
+
 class CommonQuestionsView(QtWidgets.QWidget):
     """Standalone FAQ page opened directly from the left navigation."""
 

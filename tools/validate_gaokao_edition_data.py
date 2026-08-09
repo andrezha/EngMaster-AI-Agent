@@ -138,6 +138,8 @@ def main() -> int:
         "README.md",
         "THIRD_PARTY_NOTICES.md",
         "OPEN_ENGLISH_WORDNET_LICENSE.md",
+        "PRINCETON_WORDNET_LICENSE.txt",
+        "ECDICT_LICENSE.txt",
     ):
         if not (DATA_DIR / name).is_file():
             errors.append(f"missing required notice: {name}")

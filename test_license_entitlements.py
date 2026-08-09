@@ -50,6 +50,25 @@ class LicenseEntitlementTests(unittest.TestCase):
         self.assertIn("国家英语课程标准", notice)
         self.assertIn("相关英语考试大纲", notice)
         self.assertIn("并非教育主管部门、学校或考试机构官方指定软件", notice)
+        self.assertIn("关于、版权与许可", notice)
+
+    def test_public_copyright_and_data_notices_are_formal_and_bounded(self):
+        copyright_notice = main.get_copyright_notice_text()
+        data_notice = main.get_third_party_data_notice_text()
+        self.assertIn("开发者署名：EngMaster", copyright_notice)
+        self.assertIn("不在本说明中宣称已经取得", copyright_notice)
+        self.assertIn("第三方开放许可证", copyright_notice)
+        self.assertIn("Open English WordNet 2025", data_notice)
+        self.assertIn("CC BY 4.0", data_notice)
+        self.assertIn("ECDICT", data_notice)
+        self.assertIn("Moby Words II", data_notice)
+        self.assertIn("Tatoeba CC0", data_notice)
+        documents = main.load_public_license_documents()
+        self.assertEqual(len(documents), 4)
+        self.assertIn("Creative Commons Attribution 4.0", documents["OEWN与WordNet完整许可"])
+        self.assertIn("WordNet 3.0 Copyright 2006", documents["Princeton WordNet许可"])
+        self.assertIn("Permission is hereby granted", documents["ECDICT MIT许可证"])
+        self.assertIn("Third-Party Data Notices", documents["第三方数据声明"])
 
     def test_em3_signed_permissions_are_verified_and_tampering_fails(self):
         code, _payload = _fake_em3(["gaokao", "cet4"])

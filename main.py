@@ -972,7 +972,7 @@ class EngMasterApplication(QMainWindow):
         self.btn_user_notice.setObjectName("btn_user_notice")
         self.btn_user_notice.setMinimumHeight(52)
         self.btn_user_notice.clicked.connect(self.show_user_notice_page)
-        self.btn_version_info = QPushButton("版本与授权信息")
+        self.btn_version_info = QPushButton("关于、版权与许可")
         self.btn_version_info.setObjectName("btn_version_info")
         self.btn_version_info.setMinimumHeight(52)
         self.btn_version_info.clicked.connect(self.show_version_info_page)
@@ -1145,21 +1145,21 @@ class EngMasterApplication(QMainWindow):
         self.stack.setCurrentIndex(self.user_notice_index)
 
     def show_version_info_page(self):
-        from guide_pages import InformationTextView
+        from guide_pages import AboutCopyrightView
         info_text = get_version_info_text()
         if self.version_info_widget is None:
-            self.version_info_widget = InformationTextView(
-                "版本与授权信息",
-                "查看当前软件版本、授权状态、已解锁内容和本机识别码。",
+            self.version_info_widget = AboutCopyrightView(
                 info_text,
-                "version_info_view",
+                get_copyright_notice_text(),
+                get_third_party_data_notice_text(),
+                load_public_license_documents(),
                 self,
             )
             self.stack.addWidget(self.version_info_widget)
             self.version_info_index = self.stack.indexOf(self.version_info_widget)
             self.nav_button_target_map["btn_version_info"] = self.version_info_index
         else:
-            self.version_info_widget.set_text(info_text)
+            self.version_info_widget.set_version_text(info_text)
         self.stack.setCurrentIndex(self.version_info_index)
 
     def show_trial_center(self):
@@ -1305,8 +1305,8 @@ class EngMasterApplication(QMainWindow):
 LICENSE_PRODUCT_ID = "engmaster-vocabulary-platform"
 TOOL_DISPLAY_NAME = "EngMaster英语词汇分级学习平台 V1.0"
 TOOL_VERSION = "v1.0.0"
-BUILD_DATE = "2026-08-01"
-TERMS_VERSION = "2026.06.28"
+BUILD_DATE = "2026-08-09"
+TERMS_VERSION = "2026.08.09"
 PRIVACY_VERSION = "2026.06.28"
 REFUND_VERSION = "2026.06.28"
 RECOMMENDED_OS_TEXT = "Windows 10 / Windows 11 64 位系统"
@@ -1880,6 +1880,7 @@ def get_legal_notice_text() -> str:
         "本工具中的词汇、短语、例句、解析、练习内容等仅供学习参考。由于资料整理、版本差异或输入错误等原因，"
         "内容可能存在不完善之处。用户应结合教材、课堂内容、教师指导及官方考试要求进行学习和判断。\n\n"
         "本工具内置练习题为模拟训练内容，不代表真实考试题目，不构成考试预测、押题承诺或提分保证。\n\n"
+        "有关软件版权、词库制作方式、第三方开放数据来源及许可证，请查看“关于、版权与许可”页面。\n\n"
         "4. 使用说明\n"
         "请用户在正常电脑环境下使用本工具。因系统环境、第三方安全工具拦截、误删文件、非正常修改工具文件、"
         "非官方渠道获取等原因导致无法正常使用的，可联系客服协助排查。\n"
@@ -1915,6 +1916,97 @@ def get_legal_notice_text() -> str:
         "11. 同意使用\n"
         "用户继续安装、激活或使用本工具，即表示已阅读、理解并同意以上内容。"
     )
+
+
+def get_copyright_notice_text() -> str:
+    return (
+        "《版权说明》\n\n"
+        "软件名称：EngMaster英语词汇分级学习平台\n"
+        "软件版本：V1.0\n"
+        "开发者署名：EngMaster\n"
+        "版权年份：2026\n"
+        "声明版本：2026.08\n\n"
+        "一、软件权利声明\n\n"
+        "Copyright © 2026 EngMaster.\n\n"
+        "除本说明明确列出的第三方材料外，本软件中的程序代码、界面设计、交互流程、"
+        "数据结构、学习流程，以及对词汇、短语和不规则动词内容进行的独立选择、整理、"
+        "校验和编排，依法受到保护。\n\n"
+        "本软件当前不在本说明中宣称已经取得计算机软件著作权登记。软件著作权登记状态"
+        "及权利主体，以正式登记证书和相关权利文件为准。\n\n"
+        "未经合法权利人许可，不得对本软件进行破解、冒名发行、转售盗版、删除权利标识"
+        "或未经授权的商业传播。法律规定及第三方开放许可证明确允许的使用不受本条限制。\n\n"
+        "二、学习内容和产品定位\n\n"
+        "本产品词汇范围以教育部《普通高中英语课程标准（2017年版2020年修订）》附录2"
+        "为基础，并按照高中英语一般学习和阅读需要独立补充拓展词汇。\n\n"
+        "本版本实际收录3800个单词、450个短语和126组不规则动词。“3800”是本产品实际"
+        "收录规模，不代表教育部门公布的固定考试词数。\n\n"
+        "本产品为独立开发的英语学习辅助工具，不属于教育主管部门、学校、考试机构或教材"
+        "出版社的官方产品，也不构成考试范围、押题或成绩保证。\n\n"
+        "三、内容制作说明\n\n"
+        "本项目对词条进行了独立筛选、规范化、分层和编排。中文释义根据开放英语语义资源"
+        "和高中学习需要重新组织、编写并经过自动化检查；产品不复制旧来源不明词表的中文"
+        "释义、音标、例句、编号或原始顺序。\n\n"
+        "短语释义、用法说明及产品例句由本项目重新整理和编写。本项目不宣称全部内容已经"
+        "由人工逐条审核，用户应结合教材、教师指导及官方考试要求使用。\n\n"
+        "当前正式词汇数据不包含图片、音频和音标。\n\n"
+        "四、权利边界\n\n"
+        "本软件自有部分作为商业软件发行，保留依法享有的相关权利。第三方材料仍归相应"
+        "权利人所有，并分别适用其原许可证。本软件的商业授权、激活限制或版权声明，不改变、"
+        "不替代，也不限制第三方许可证已经授予的合法权利。\n\n"
+        "教育部课程标准仅作为学习范围和课程层级依据。本项目不主张对课程标准、英语单词"
+        "本身、公共领域材料或第三方开放数据享有排他权利。"
+    )
+
+
+def get_third_party_data_notice_text() -> str:
+    return (
+        "《数据来源与第三方许可说明》\n\n"
+        "1. Open English WordNet 2025\n"
+        "用途：词形、词性、义项存在性和语义类别核验，并作为中文释义整理的开放语义依据之一。\n"
+        "许可：Creative Commons Attribution 4.0 International（CC BY 4.0）。\n"
+        "署名：Open English WordNet Team、Princeton WordNet。\n"
+        "本项目对相关材料进行了筛选、规范化、重新编排和中文表达整理。相关权利人不对本"
+        "产品提供背书，本产品也不代表其官方产品。\n"
+        "项目：https://en-word.net/\n"
+        "许可：https://creativecommons.org/licenses/by/4.0/\n\n"
+        "2. Princeton WordNet\n"
+        "Open English WordNet包含源自Princeton WordNet的材料。相关材料依据Princeton "
+        "WordNet License使用，并保留原版权声明、许可条件和免责声明。\n"
+        "许可：https://wordnet.princeton.edu/license-and-commercial-use\n\n"
+        "3. ECDICT\n"
+        "用途：精确词形查询、候选词审计标签及词频排名元数据辅助筛选。当前正式词表没有"
+        "复制ECDICT的中文翻译、音标、例句、详细释义或音频。为完整保留数据处理来源及"
+        "许可记录，本产品仍附带ECDICT的MIT许可证和原版权声明。\n"
+        "项目：https://github.com/skywind3000/ECDICT\n"
+        "许可：MIT License；Copyright (c) 2025 Linwei\n\n"
+        "4. Moby Words II / Moby Part-of-Speech II\n"
+        "用途：辅助拼写和词性核验。相关Project Gutenberg档案声明其为作者Grady Ward"
+        "授予的Public Domain材料。\n"
+        "https://www.gutenberg.org/ebooks/3201\n"
+        "https://www.gutenberg.org/ebooks/3203\n\n"
+        "5. Tatoeba CC0英语句子子集\n"
+        "用途：仅作为短语是否实际出现的辅助证据。产品例句不复制Tatoeba句子，Tatoeba"
+        "音频和默认CC BY句子数据不进入本产品。\n"
+        "https://tatoeba.org/\n\n"
+        "完整来源、许可条件和免责声明可通过本页下方按钮查看。如本说明与第三方许可证"
+        "原文存在不一致，以相应许可证原文为准。"
+    )
+
+
+def load_public_license_documents() -> dict[str, str]:
+    documents = {}
+    for title, relative_path in (
+        ("OEWN与WordNet完整许可", "assets/editions/gaokao/OPEN_ENGLISH_WORDNET_LICENSE.md"),
+        ("Princeton WordNet许可", "assets/editions/gaokao/PRINCETON_WORDNET_LICENSE.txt"),
+        ("ECDICT MIT许可证", "assets/editions/gaokao/ECDICT_LICENSE.txt"),
+        ("第三方数据声明", "assets/editions/gaokao/THIRD_PARTY_NOTICES.md"),
+    ):
+        try:
+            with open(get_resource_path(relative_path), "r", encoding="utf-8") as stream:
+                documents[title] = stream.read()
+        except OSError as exc:
+            documents[title] = f"许可证文件读取失败：{exc}"
+    return documents
 
 
 def get_version_info_text():

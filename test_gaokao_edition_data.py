@@ -139,6 +139,24 @@ class GaokaoEditionDataTests(unittest.TestCase):
                 ["core"] * 6 + ["extension"] * 3,
             )
 
+            self.assertEqual(window.btn_version_info.text(), "关于、版权与许可")
+            window.show_version_info_page()
+            about_page = window.version_info_widget
+            self.assertEqual(about_page.objectName(), "about_copyright_view")
+            self.assertEqual(about_page.tabs.count(), 3)
+            self.assertIn(
+                "Copyright © 2026 EngMaster",
+                about_page.copyright_text_view.toPlainText(),
+            )
+            self.assertIn(
+                "Open English WordNet 2025",
+                about_page.data_notice_text_view.toPlainText(),
+            )
+            self.assertTrue(all(
+                "读取失败" not in text
+                for text in about_page.license_documents.values()
+            ))
+
             mistake = {"word": "test", "content": "测试", "correct_count": 0}
             window.vocab_ctrl.mistake_vocabulary = [mistake]
             QtTest.QTest.mouseClick(

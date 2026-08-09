@@ -8,7 +8,7 @@ os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 from PySide6 import QtWidgets
 
 from experience_guide import ExperienceGuideView
-from guide_pages import CommonQuestionsView, InformationTextView, LearningLoopDiagram, OperationGuideView, QuickOverviewView
+from guide_pages import AboutCopyrightView, CommonQuestionsView, InformationTextView, LearningLoopDiagram, OperationGuideView, QuickOverviewView
 
 
 class _FakeVocabController:
@@ -156,6 +156,25 @@ class ExperienceGuideTests(unittest.TestCase):
         self.assertIn("授权状态：已激活", view.text_view.toPlainText())
         view.set_text("授权状态：未激活")
         self.assertEqual(view.text_view.toPlainText(), "授权状态：未激活")
+        view.close()
+
+    def test_about_page_separates_version_copyright_and_licenses(self):
+        view = AboutCopyrightView(
+            "授权状态：已激活",
+            "Copyright © 2026 EngMaster.",
+            "Open English WordNet 2025\nECDICT",
+            {"ECDICT MIT许可证": "MIT License"},
+        )
+        self.assertEqual(view.objectName(), "about_copyright_view")
+        self.assertEqual(view.tabs.count(), 3)
+        self.assertEqual(
+            [view.tabs.tabText(index) for index in range(view.tabs.count())],
+            ["版本与授权", "版权说明", "数据来源与第三方许可"],
+        )
+        self.assertIn("授权状态：已激活", view.version_text_view.toPlainText())
+        self.assertIn("EngMaster", view.copyright_text_view.toPlainText())
+        self.assertIn("ECDICT", view.data_notice_text_view.toPlainText())
+        self.assertEqual(len(view.findChildren(QtWidgets.QPushButton)), 1)
         view.close()
 
 

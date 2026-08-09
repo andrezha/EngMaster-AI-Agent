@@ -73,4 +73,8 @@ Tatoeba sentences are not copied into product examples. Raw occurrence counts ar
 
 ## No media data
 
-The vocabulary dataset described by this notice contains no images and no audio. The current frozen English headword master also contains no Chinese definitions and no phonetic transcriptions; those fields are intentionally blank pending a separately documented build stage.
+The released vocabulary dataset contains no images, audio, or phonetic transcriptions. Its Chinese definitions were reorganized and drafted by this project from documented open semantic evidence and checked by automated validation; no claim of item-by-item human review is made.
+
+The released phrase examples were independently written for this product. Tatoeba sentences, default CC BY exports, and audio are not copied into the product.
+
+The complete ECDICT MIT license distributed with this edition is available in `ECDICT_LICENSE.txt`. The complete Open English WordNet and Creative Commons Attribution 4.0 terms are available in `OPEN_ENGLISH_WORDNET_LICENSE.md`. The underlying Princeton WordNet license is also distributed separately as `PRINCETON_WORDNET_LICENSE.txt`.
