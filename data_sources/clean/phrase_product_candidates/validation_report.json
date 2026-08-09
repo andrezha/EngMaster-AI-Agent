@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "candidate_counts": {
+    "junior": 250,
+    "senior_high": 450,
+    "cet4": 750,
+    "cet6": 1050
+  },
+  "application_level_counts": {
+    "junior": 5,
+    "senior_high": 9,
+    "cet4": 15,
+    "cet6": 21
+  },
+  "errors": [],
+  "warnings": [],
+  "legacy_content_reused": false,
+  "formal_product_paths_changed": false,
+  "human_review_claimed": false
+}

@@ -575,26 +575,27 @@ class PhraseIrregularChallengeView(QtWidgets.QWidget):
             ]
             if not levels:
                 continue
-            row = QtWidgets.QHBoxLayout()
-            row.setSpacing(7)
-            tier_label = QtWidgets.QLabel(title)
-            tier_label.setFixedWidth(68)
-            tier_label.setStyleSheet(
-                "border:none; color:#374151; font-size:13px; font-weight:600;")
-            row.addWidget(tier_label)
-            for index, _level in levels:
-                button = QtWidgets.QPushButton()
-                button.setCheckable(True)
-                button.setMinimumWidth(88)
-                button.setFixedHeight(42)
-                button.clicked.connect(
-                    lambda _checked=False, level_index=index:
-                    self._select_phrase_level(level_index)
-                )
-                self.phrase_level_buttons.append((index, button))
-                row.addWidget(button)
-            row.addStretch()
-            phrase_level_layout.addLayout(row)
+            for row_offset in range(0, len(levels), 7):
+                row = QtWidgets.QHBoxLayout()
+                row.setSpacing(7)
+                tier_label = QtWidgets.QLabel(title if row_offset == 0 else "")
+                tier_label.setFixedWidth(68)
+                tier_label.setStyleSheet(
+                    "border:none; color:#374151; font-size:13px; font-weight:600;")
+                row.addWidget(tier_label)
+                for index, _level in levels[row_offset:row_offset + 7]:
+                    button = QtWidgets.QPushButton()
+                    button.setCheckable(True)
+                    button.setMinimumWidth(88)
+                    button.setFixedHeight(42)
+                    button.clicked.connect(
+                        lambda _checked=False, level_index=index:
+                        self._select_phrase_level(level_index)
+                    )
+                    self.phrase_level_buttons.append((index, button))
+                    row.addWidget(button)
+                row.addStretch()
+                phrase_level_layout.addLayout(row)
         layout.addWidget(self.phrase_level_panel)
         layout.addSpacing(10)
 

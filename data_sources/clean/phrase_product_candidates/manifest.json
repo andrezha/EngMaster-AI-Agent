@@ -1,0 +1,37 @@
+{
+  "status": "product_candidates_complete",
+  "source_directory": "data_sources/clean/phrase_master_content",
+  "candidate_counts": {
+    "junior": 250,
+    "senior_high": 450,
+    "cet4": 750,
+    "cet6": 1050
+  },
+  "fifty_item_level_counts": {
+    "junior": 5,
+    "senior_high": 9,
+    "cet4": 15,
+    "cet6": 21
+  },
+  "application_fields": [
+    "id",
+    "p",
+    "m",
+    "en",
+    "cn",
+    "answers",
+    "tier",
+    "level"
+  ],
+  "legacy_schema_reference": "assets/short_phrase.json",
+  "legacy_file_read_for_schema_only": true,
+  "legacy_content_reused": false,
+  "formal_product_paths_changed": false,
+  "human_review_claimed": false,
+  "file_sha256": {
+    "junior_phrases_product_candidate.json": "a9b457e756ae2941e0c4d144e0578d8082afce75c03a8bc255961c265bc9edd2",
+    "senior_high_phrases_product_candidate.json": "62decc01e8b1425c105e9cbaf27cf661da694a8eae81619fdc4a3c42c51fd0e5",
+    "cet4_phrases_product_candidate.json": "a43ddeb6b10046c8506ac349d5ae963ee96763be35288f382136401c1a99cb8b",
+    "cet6_phrases_product_candidate.json": "cf7979ca4f9955296efe57d5df55e6e914f2440a7ac74f9369c2081931046377"
+  }
+}
