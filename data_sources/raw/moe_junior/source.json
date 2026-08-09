@@ -12,5 +12,15 @@
   "file_size_bytes": 31502213,
   "phrase_scope_note": "课程标准说明词汇包括单词、短语、习惯用语和固定搭配，并要求学习一定数量的习惯用语或固定搭配，但未逐条给出全国统一的初中短语清单。",
   "usage": "Define the junior-stage vocabulary and ability boundary. The project independently selects phrases; the PDF is not treated as a ready-made phrase list.",
-  "redistribution_policy": "Internal provenance archive. Do not bundle the full PDF in the customer-facing product."
+  "redistribution_policy": "Internal provenance archive. Do not bundle the full PDF in the customer-facing product.",
+  "text_extraction_mirror": {
+    "purpose": "Text-layer copy of the same 2022 standard used only to extract and cross-check the scanned official PDF.",
+    "host": "Educational Science Publishing House public document service",
+    "url": "https://www.esph.com.cn/docs/2025-10/705da262a6e74b088ac658bfe2d757ba.pdf",
+    "retrieved_on": "2026-08-09",
+    "local_filename": "义务教育英语课程标准_2022年版_文本核验副本.pdf",
+    "sha256": "651d6d840680a926cafb02a7f83bcfb57cb8474ef5cd904a8a2c534a4f70c329",
+    "file_size_bytes": 9193739,
+    "authority_note": "The Ministry of Education PDF remains the authoritative archived source; extracted entries must be checked against the official edition and declared counts."
+  }
 }

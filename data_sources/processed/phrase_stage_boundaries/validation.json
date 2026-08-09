@@ -1,0 +1,31 @@
+{
+  "high_source_declared_total": 3100,
+  "high_printed_entry_total": 3099,
+  "high_printed_level_counts": {
+    "junior": 1600,
+    "senior_high_selective_compulsory": 997,
+    "senior_high_compulsory": 502
+  },
+  "high_first_entry": "a.m.",
+  "high_last_entry": "zoo",
+  "high_internal_consistency_note": "The PDF declares 3100 = 1600 + 500 + 1000, while its printed Appendix 2 contains 3099 rows = 1600 + 502 + 997. Printed entries and markers are preserved without invented corrections.",
+  "cet_source_declared_item_total": 5418,
+  "cet_reconstructed_print_line_total": 5377,
+  "cet_print_line_level_counts": {
+    "cet4": 4114,
+    "cet6_excluded": 1263
+  },
+  "cet_counting_note": "The syllabus declares 5418 word items. This extraction groups the printed word-family lines by visual baseline; the two counts measure different units and must not be equated.",
+  "normalized_token_total": 6361,
+  "token_earliest_level_counts": {
+    "junior": 1651,
+    "senior_high": 1509,
+    "cet4": 3201
+  },
+  "old_phrase_file_read": false,
+  "output_sha256": {
+    "high": "68f584a2d9f00bf3e7396820bcfffb9bf0708c97e57e87f76ed60ef53c45e3da",
+    "cet": "a297d4ce8cd9e7d948ffcb85f04d0a55171cccab8b732bb6575b095eb191e147",
+    "tokens": "b5159c28ea2a654c0af060fc852194b0f97ef15a715589e360b51b8d9bdde10e"
+  }
+}
