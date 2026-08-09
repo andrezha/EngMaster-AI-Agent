@@ -61,6 +61,7 @@ def pedagogical_key(value: str) -> str:
         "close down": "shut down",
         "make fun of": "laugh at",
         "poke fun": "laugh at",
+        "self esteem": "self worth",
     }
     return audited_equivalents.get(key, key)
 

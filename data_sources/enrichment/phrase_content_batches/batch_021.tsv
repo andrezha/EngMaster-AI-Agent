@@ -1,0 +1,51 @@
+record_id	phrase	meaning_zh	usage_note_zh	example_en	example_zh	content_method	qa_status	human_review_claimed
+PH-C6-0251	cruise liner	大型邮轮；巡游客轮	指为休闲旅行设计、提供住宿和娱乐设施的大型客船。	The cruise liner remained outside the port during the storm.	暴风雨期间，这艘大型邮轮停留在港口外。	original_project_authored	draft_auto_validated	false
+PH-C6-0252	diesel fuel	柴油	指供柴油发动机使用、通常由石油炼制而成的液体燃料。	The company is testing an alternative to conventional diesel fuel.	这家公司正在测试传统柴油的替代品。	original_project_authored	draft_auto_validated	false
+PH-C6-0253	elevator shaft	电梯井	指建筑物中供电梯轿厢上下运行的垂直空间。	Smoke entered the upper floors through the elevator shaft.	烟雾通过电梯井进入了较高楼层。	original_project_authored	draft_auto_validated	false
+PH-C6-0254	fiber optic	光纤的；光导纤维相关的	作复合形容词时常写作 fiber-optic，美式拼写为 fiber，英式拼写为 fibre。	The hospital installed a fiber optic network for faster data transfer.	医院安装了光纤网络，以提高数据传输速度。	original_project_authored	draft_auto_validated	false
+PH-C6-0255	herbal medicine	草药；草药医学	可指以植物为主要来源的药物，也可指使用草药的医疗传统；其安全性和效果因产品而异。	Patients should tell their doctors about any herbal medicine they use.	患者应该把自己使用的任何草药告知医生。	original_project_authored	draft_auto_validated	false
+PH-C6-0256	infant mortality	婴儿死亡率；婴儿死亡现象	在人口统计中通常指未满一岁的婴儿死亡情况，常与 rate 连用。	Clean water and basic health services can reduce infant mortality.	清洁用水和基本医疗服务能够降低婴儿死亡率。	original_project_authored	draft_auto_validated	false
+PH-C6-0257	intuitive feeling	直觉感受	指没有经过有意识的逐步推理而产生的感觉或判断。	An intuitive feeling may guide inquiry, but it cannot replace evidence.	直觉感受可以引导研究，但不能取代证据。	original_project_authored	draft_auto_validated	false
+PH-C6-0258	judicial system	司法体系	指法院、法官及处理法律争议和审判案件的制度整体。	An independent judicial system is essential to fair trials.	独立的司法体系对公平审判至关重要。	original_project_authored	draft_auto_validated	false
+PH-C6-0259	land tenure	土地保有制度；土地权属	指个人或群体依法拥有、占有或使用土地的规则和安排。	Secure land tenure can encourage farmers to invest in long-term improvements.	稳定的土地权属能够鼓励农民进行长期改良投资。	original_project_authored	draft_auto_validated	false
+PH-C6-0260	maritime law	海事法	指规范航运、海上贸易、船舶和相关海事活动的法律领域。	The dispute will be settled according to international maritime law.	这场争议将依据国际海事法解决。	original_project_authored	draft_auto_validated	false
+PH-C6-0261	mass hysteria	群体性恐慌；集体歇斯底里	指恐惧、错误信念或强烈反应在群体中迅速传播的现象。	False reports can trigger mass hysteria during an emergency.	虚假报道可能在紧急情况下引发群体性恐慌。	original_project_authored	draft_auto_validated	false
+PH-C6-0262	mortality rate	死亡率	指特定人群在一定时期内死亡人数所占的比例。	The study compares the mortality rate across different age groups.	这项研究比较不同年龄组的死亡率。	original_project_authored	draft_auto_validated	false
+PH-C6-0263	music genre	音乐流派；音乐类型	指依据风格、形式、传统或文化背景划分的音乐类别。	The platform allows listeners to search by music genre.	这个平台允许听众按音乐类型搜索。	original_project_authored	draft_auto_validated	false
+PH-C6-0264	optical instrument	光学仪器	指利用透镜、反射镜或其他光学元件观察、测量或成像的设备。	The telescope is an optical instrument designed to collect faint light.	望远镜是一种用于收集微弱光线的光学仪器。	original_project_authored	draft_auto_validated	false
+PH-C6-0265	panoramic view	全景；宽阔景观	指从某处能够看到的广阔、连续景色。	The hilltop offers a panoramic view of the entire valley.	山顶可以俯瞰整个山谷的全景。	original_project_authored	draft_auto_validated	false
+PH-C6-0266	power grid	电力网；电网	指发电设施、输电线路和配电系统相互连接形成的网络。	Extreme heat placed heavy demand on the regional power grid.	极端高温给区域电网带来巨大需求压力。	original_project_authored	draft_auto_validated	false
+PH-C6-0267	radioactive waste	放射性废物	指含有放射性物质、需要专门管理和处置的废弃材料。	Radioactive waste must be stored under carefully controlled conditions.	放射性废物必须在严格控制的条件下储存。	original_project_authored	draft_auto_validated	false
+PH-C6-0268	soil erosion	土壤侵蚀	指土壤表层被水、风或人类活动带走和破坏的过程。	Planting trees can reduce soil erosion on steep slopes.	植树能够减少陡坡上的土壤侵蚀。	original_project_authored	draft_auto_validated	false
+PH-C6-0269	tax deductible	可抵税的	现代英语中作形容词通常写作 tax-deductible，指费用可按适用税法从应税所得等项目中扣除。	Some business expenses may be tax deductible under local rules.	根据当地规定，一些经营费用可能可以抵税。	original_project_authored	draft_auto_validated	false
+PH-C6-0270	tax deduction	税收扣除；抵税额	指按照适用税法从应税收入或税额中扣除的金额或项目。	The guide explains how to claim a tax deduction for approved donations.	这份指南说明如何为符合条件的捐赠申请税收扣除。	original_project_authored	draft_auto_validated	false
+PH-C6-0271	western hemisphere	西半球	通常写作 the Western Hemisphere，指本初子午线以西、180 度经线以东的半个地球。	The storm became one of the strongest recorded in the western hemisphere.	这场风暴成为西半球有记录以来最强的风暴之一。	original_project_authored	draft_auto_validated	false
+PH-C6-0272	crude oil	原油	指从地下开采、尚未经过炼制的液态石油。	The refinery converts crude oil into fuels and other products.	炼油厂把原油转化为燃料和其他产品。	original_project_authored	draft_auto_validated	false
+PH-C6-0273	insurance premium	保险费	指投保人为获得保险保障而定期或一次性支付给保险人的费用。	The annual insurance premium depends on the level of coverage.	年度保险费取决于保障范围。	original_project_authored	draft_auto_validated	false
+PH-C6-0274	self indulgent	自我放纵的	现代英语中通常写作 self-indulgent，表示过分满足自己的欲望或享受。	The memoir is honest without becoming self indulgent.	这本回忆录很坦诚，却没有变得自我放纵。	original_project_authored	draft_auto_validated	false
+PH-C6-0275	auxiliary verb	助动词	指与主要动词共同构成时态、语态、疑问或情态意义的动词。	In the question, do functions as an auxiliary verb.	在这个问句中，do 用作助动词。	original_project_authored	draft_auto_validated	false
+PH-C6-0276	finite verb	限定动词	指随时态、语气或主语变化，并能充当从句谓语核心的动词形式。	Every complete English clause normally contains a finite verb.	每个完整的英语分句通常都包含一个限定动词。	original_project_authored	draft_auto_validated	false
+PH-C6-0277	rhetorical device	修辞手法	指为了增强表达、说服力或艺术效果而采用的语言技巧。	Repetition is a rhetorical device that can emphasize a central idea.	重复是一种能够强调核心观点的修辞手法。	original_project_authored	draft_auto_validated	false
+PH-C6-0278	economic recession	经济衰退	指经济活动在一段时期内广泛下降，常伴随产出、投资或就业减少。	The economic recession caused unemployment to rise sharply.	经济衰退导致失业率大幅上升。	original_project_authored	draft_auto_validated	false
+PH-C6-0279	social interaction	社会互动；人际交往	指个人或群体之间相互沟通、影响和回应的过程。	Remote work can reduce informal social interaction among colleagues.	远程工作可能减少同事之间的非正式社交互动。	original_project_authored	draft_auto_validated	false
+PH-C6-0280	economic inequality	经济不平等	指个人、群体或地区在收入、财富和经济机会方面存在差距。	The report examines the link between education and economic inequality.	这份报告研究教育与经济不平等之间的联系。	original_project_authored	draft_auto_validated	false
+PH-C6-0281	scientific evidence	科学证据	指通过可检验的观察、测量或实验获得并按科学方法评价的证据。	Public health advice should be based on the best available scientific evidence.	公共卫生建议应该以现有最佳科学证据为基础。	original_project_authored	draft_auto_validated	false
+PH-C6-0282	legal system	法律体系	指一个社会的法律、法律机构以及制定、解释和执行法律的整体制度。	The legal system provides procedures for resolving disputes.	法律体系为解决争议提供程序。	original_project_authored	draft_auto_validated	false
+PH-C6-0283	public policy	公共政策	指政府或公共机构为处理社会问题和实现公共目标制定的原则与行动。	Reliable data can improve the design of public policy.	可靠数据能够改善公共政策的设计。	original_project_authored	draft_auto_validated	false
+PH-C6-0284	economic recovery	经济复苏	指经济活动在衰退或危机后重新增长和改善的过程。	Consumer confidence may influence the speed of economic recovery.	消费者信心可能影响经济复苏的速度。	original_project_authored	draft_auto_validated	false
+PH-C6-0285	critical thinking	批判性思维	指主动分析信息、检验证据和推理，并作出有根据判断的能力。	Critical thinking helps students distinguish evidence from assertion.	批判性思维帮助学生区分证据与断言。	original_project_authored	draft_auto_validated	false
+PH-C6-0286	in light of	鉴于；根据	后接新的事实、证据或情况，表示据此重新考虑或采取行动。	The policy was revised in light of recent research.	鉴于近期研究，这项政策得到了修订。	original_project_authored	draft_auto_validated	false
+PH-C6-0287	in the wake of	在某事之后；作为某事的结果	后接通常具有重大影响的事件，表示随后发生或受其影响。	New safety rules were introduced in the wake of the accident.	事故发生后出台了新的安全规定。	original_project_authored	draft_auto_validated	false
+PH-C6-0288	in the face of	面对；尽管	后接困难、危险或反对，强调仍然坚持或采取行动。	The community remained united in the face of severe pressure.	面对巨大压力，社区仍然保持团结。	original_project_authored	draft_auto_validated	false
+PH-C6-0289	in line with	与某事一致；符合	后接规则、原则、趋势或预期，表示相互协调或相符。	The revised plan is in line with current safety standards.	修订后的计划符合现行安全标准。	original_project_authored	draft_auto_validated	false
+PH-C6-0290	with a view to	为了；着眼于	to 是介词，后接名词或动名词，表示行动的目的。	The city redesigned the crossing with a view to improving pedestrian safety.	这座城市重新设计了路口，旨在提高行人安全。	original_project_authored	draft_auto_validated	false
+PH-C6-0291	come to terms with	接受并适应	表示经过一段心理过程后接受困难、损失或无法改变的现实。	The town must come to terms with the decline of its old industry.	这座城镇必须接受并适应传统产业的衰落。	original_project_authored	draft_auto_validated	false
+PH-C6-0292	take for granted	认为理所当然；不珍惜	可用于 take something for granted，表示未经思考就假定为真或忽视其价值。	We should not take for granted the availability of clean water.	我们不应把清洁用水的供应视为理所当然。	original_project_authored	draft_auto_validated	false
+PH-C6-0293	be subject to	受制于；可能遭受；须经	后接规则、条件、变化或不利影响，具体含义随语境变化。	The schedule may be subject to change without notice.	日程可能会在不另行通知的情况下变更。	original_project_authored	draft_auto_validated	false
+PH-C6-0294	be confronted with	面对；遭遇	后接需要处理的困难、选择或事实，常用于被动结构。	New managers may be confronted with decisions that have no easy answer.	新任管理者可能会面对没有简单答案的决定。	original_project_authored	draft_auto_validated	false
+PH-C6-0295	be exposed to	接触；暴露于	后接环境、物质、风险或思想，可表示有意接触或受到不利影响。	Workers should not be exposed to harmful dust without protection.	没有防护时，工人不应暴露在有害粉尘中。	original_project_authored	draft_auto_validated	false
+PH-C6-0296	comply with	遵守；符合	后接法律、规则、要求或正式请求，语气较正式。	Manufacturers must comply with updated safety regulations.	制造商必须遵守更新后的安全规定。	original_project_authored	draft_auto_validated	false
+PH-C6-0297	refrain from	克制；避免	后接名词或动名词，较正式地要求或说明不做某事。	Visitors must refrain from touching the fragile objects.	访客不得触摸易损物品。	original_project_authored	draft_auto_validated	false
+PH-C6-0298	stem from	源于；由某事造成	后接根本原因、来源或起点，主语通常是结果。	Many of the delays stem from a shortage of trained staff.	许多延误源于受过培训的员工短缺。	original_project_authored	draft_auto_validated	false
+PH-C6-0299	subscribe to	订阅；赞同；定期捐助	后接服务、出版物、观点或组织，具体含义由语境决定。	Not every scientist will subscribe to the same interpretation.	并非每位科学家都会赞同同一种解释。	original_project_authored	draft_auto_validated	false
+PH-C6-0300	interfere with	妨碍；干扰	后接受到不利影响的活动、设备或过程。	Bright street lighting can interfere with astronomical observations.	明亮的街道照明会干扰天文观测。	original_project_authored	draft_auto_validated	false

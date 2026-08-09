@@ -271,7 +271,7 @@
 270,tax deduction,tax deduction,cet6,approved_dictionary_candidate_pool,OEWN,n,tax_deduction%1:21:00::,false,1,cet6,selected_for_cross_level_review,false
 271,western hemisphere,western hemisphere,cet6,approved_dictionary_candidate_pool,OEWN,n,western_hemisphere%1:15:00::,false,1,cet6,selected_for_cross_level_review,false
 272,crude oil,crude oil,cet6,approved_dictionary_candidate_pool,OEWN,n,crude_oil%1:27:00::,true,4,cet6,selected_for_cross_level_review,false
-273,self esteem,self esteem,cet6,approved_dictionary_candidate_pool,OEWN,n,self-esteem%1:12:00::,true,4,cet6,selected_for_cross_level_review,false
+273,insurance premium,insurance premium,cet6,approved_dictionary_candidate_pool,OEWN,n,insurance_premium%1:21:00::,false,2,cet6,selected_for_cross_level_review,false
 274,self indulgent,self indulgent,cet6,approved_dictionary_candidate_pool,OEWN,a,self-indulgent%5:00:00:indulgent:00,true,1,cet6,selected_for_cross_level_review,false
 275,auxiliary verb,auxiliary verb,cet6,approved_dictionary_candidate_pool,OEWN,n,auxiliary_verb%1:10:00::,true,1,cet6,selected_for_cross_level_review,false
 276,finite verb,finite verb,cet6,approved_dictionary_candidate_pool,Moby,,,true,1,cet6,selected_for_cross_level_review,false
