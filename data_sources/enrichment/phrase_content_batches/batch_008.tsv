@@ -1,0 +1,51 @@
+record_id	phrase	meaning_zh	usage_note_zh	example_en	example_zh	content_method	qa_status	human_review_claimed
+PH-H-0101	win over	赢得支持；说服	后接原本不赞同或尚未决定的人，表示使其转而支持。	Clear evidence may win over voters who are still uncertain.	清楚的证据可能会赢得尚未决定的选民的支持。	original_project_authored	draft_auto_validated	false
+PH-H-0102	solar system	太阳系；恒星系统	通常特指太阳系时可写作 the Solar System，也可泛指围绕恒星运行的天体系统。	Our solar system contains eight recognized planets.	我们的太阳系包含八颗公认的行星。	original_project_authored	draft_auto_validated	false
+PH-H-0103	mental health	心理健康	指人的情绪、心理和社会适应状态，常与 physical health 对照。	Regular sleep and social support can protect mental health.	规律睡眠和社会支持有助于保护心理健康。	original_project_authored	draft_auto_validated	false
+PH-H-0104	national park	国家公园	指由国家保护、用于自然保育和公众参观的区域。	The national park limits visitor numbers to protect wildlife.	这座国家公园限制游客数量以保护野生动物。	original_project_authored	draft_auto_validated	false
+PH-H-0105	science fiction	科幻小说；科幻作品	指以未来科技、太空或科学设想为主题的文学和影视类型。	The novel combines science fiction with a story about friendship.	这部小说把科幻元素与友情故事结合起来。	original_project_authored	draft_auto_validated	false
+PH-H-0106	credit card	信用卡	指持卡人可先消费后按约定还款的支付卡。	Never send your credit card details through an unknown website.	绝不要通过不明网站发送信用卡信息。	original_project_authored	draft_auto_validated	false
+PH-H-0107	air pollution	空气污染	指有害气体或颗粒物进入空气并对健康或环境造成影响。	Public transport can help reduce air pollution in large cities.	公共交通有助于减少大城市的空气污染。	original_project_authored	draft_auto_validated	false
+PH-H-0108	cell phone	手机	主要是美式英语用法，英式英语更常说 mobile phone。	Students should keep each cell phone silent during the lecture.	讲座期间，学生应把每部手机都调成静音。	original_project_authored	draft_auto_validated	false
+PH-H-0109	economic system	经济制度；经济体系	指社会组织生产、分配和消费活动的方式。	Every economic system must decide how limited resources are used.	每种经济体系都必须决定如何使用有限资源。	original_project_authored	draft_auto_validated	false
+PH-H-0110	economic development	经济发展	指经济规模、生产能力和生活水平等方面的长期变化。	Reliable infrastructure is important for regional economic development.	可靠的基础设施对区域经济发展很重要。	original_project_authored	draft_auto_validated	false
+PH-H-0111	economic crisis	经济危机	指经济活动严重衰退并对就业、企业和生活造成广泛影响的时期。	The economic crisis forced many small businesses to close.	经济危机迫使许多小企业停业。	original_project_authored	draft_auto_validated	false
+PH-H-0112	open source	开源；开放源代码	指源代码按相应许可证公开、允许查看并在许可条件下使用或修改的软件模式。	The team chose open source software that anyone could inspect.	团队选择了任何人都可以检查源代码的开源软件。	original_project_authored	draft_auto_validated	false
+PH-H-0113	public domain	公有领域	指作品不受版权专有权限制，可依法自由使用的状态；具体范围取决于适用法律。	The museum released the old photograph into the public domain.	博物馆把这张老照片开放为公有领域作品。	original_project_authored	draft_auto_validated	false
+PH-H-0114	real estate	房地产；不动产	指土地以及土地上的建筑物，也可泛指相关行业。	Rising interest rates can affect the real estate market.	利率上升会影响房地产市场。	original_project_authored	draft_auto_validated	false
+PH-H-0115	native language	母语	指一个人在幼年自然习得并首先使用的语言。	Students may compare the new grammar with their native language.	学生可以把新语法与自己的母语进行比较。	original_project_authored	draft_auto_validated	false
+PH-H-0116	native speaker	母语使用者	指从小自然习得并熟练使用某种语言的人。	A native speaker may still use different words in different regions.	母语使用者在不同地区仍可能使用不同词语。	original_project_authored	draft_auto_validated	false
+PH-H-0117	solar power	太阳能发电；太阳能动力	侧重把阳光转化为可使用的电力或动力。	The remote school uses solar power to run its computers.	这所偏远学校使用太阳能为电脑供电。	original_project_authored	draft_auto_validated	false
+PH-H-0118	solar energy	太阳能	指来自太阳辐射、可被转化和利用的能量。	Solar energy is most effective where sunlight is abundant.	太阳能在阳光充足的地区最为有效。	original_project_authored	draft_auto_validated	false
+PH-H-0119	greenhouse gas	温室气体	指能够吸收和释放红外辐射、促使大气保温的气体。	Carbon dioxide is a major greenhouse gas produced by human activity.	二氧化碳是人类活动产生的一种主要温室气体。	original_project_authored	draft_auto_validated	false
+PH-H-0120	endangered species	濒危物种	指种群数量下降到面临较高灭绝风险的物种。	Protecting habitat is essential for the survival of an endangered species.	保护栖息地对濒危物种的生存至关重要。	original_project_authored	draft_auto_validated	false
+PH-H-0121	human being	人；人类个体	表示一个人，复数 human beings 可泛指人类成员。	Every human being needs access to clean water.	每个人都需要获得清洁用水。	original_project_authored	draft_auto_validated	false
+PH-H-0122	nuclear power	核能发电；核动力	通常指利用核反应释放的能量发电或提供动力。	The debate considered both the benefits and risks of nuclear power.	这场辩论讨论了核能的益处与风险。	original_project_authored	draft_auto_validated	false
+PH-H-0123	intellectual property	知识产权	指依法保护的发明、作品、商标等智力成果及相关权利。	The agreement explains who owns the project's intellectual property.	协议说明了项目知识产权的归属。	original_project_authored	draft_auto_validated	false
+PH-H-0124	food chain	食物链	指生物之间通过取食形成的能量和营养传递关系。	Removing one species can affect the entire food chain.	移除一个物种可能影响整条食物链。	original_project_authored	draft_auto_validated	false
+PH-H-0125	cash register	收银机	指商店记录销售、计算金额并存放现金的设备。	The assistant entered the price into the cash register.	店员把价格输入了收银机。	original_project_authored	draft_auto_validated	false
+PH-H-0126	target language	目标语言；所学语言	语言学习中指学习者正在学习或翻译所要转换成的语言。	The teacher encourages students to speak the target language in class.	老师鼓励学生在课堂上使用目标语言。	original_project_authored	draft_auto_validated	false
+PH-H-0127	search engine	搜索引擎	指根据关键词查找互联网信息的软件服务。	A search engine can find many pages, but users must judge their reliability.	搜索引擎能找到许多网页，但用户必须判断其可靠性。	original_project_authored	draft_auto_validated	false
+PH-H-0128	virtual reality	虚拟现实	指通过计算机生成具有沉浸感的模拟环境的技术。	Virtual reality allows trainees to practice without entering a dangerous site.	虚拟现实让受训者无需进入危险现场就能练习。	original_project_authored	draft_auto_validated	false
+PH-H-0129	press conference	记者会；新闻发布会	指机构或个人向记者发布信息并回答问题的正式活动。	The coach answered questions at a press conference after the match.	比赛后，教练在记者会上回答了问题。	original_project_authored	draft_auto_validated	false
+PH-H-0130	security system	安保系统；安全系统	指用于防止入侵、盗窃或其他风险的一组设备和措施。	The new security system sends an alert when a door opens unexpectedly.	新安保系统会在门被意外打开时发出警报。	original_project_authored	draft_auto_validated	false
+PH-H-0131	health insurance	医疗保险；健康保险	指按合同为符合条件的医疗费用提供保障的保险。	The job includes health insurance for full-time employees.	这份工作为全职员工提供医疗保险。	original_project_authored	draft_auto_validated	false
+PH-H-0132	exchange rate	汇率	指一种货币兑换另一种货币时的比率。	A change in the exchange rate can make imported goods more expensive.	汇率变化可能使进口商品更昂贵。	original_project_authored	draft_auto_validated	false
+PH-H-0133	social welfare	社会福利	指社会为保障基本生活和福祉提供的制度、服务或援助。	The report examines how social welfare programs support older people.	报告研究了社会福利项目如何支持老年人。	original_project_authored	draft_auto_validated	false
+PH-H-0134	public transport	公共交通	指供公众使用的公共汽车、列车和地铁等交通服务。	Affordable public transport gives more people access to jobs.	价格合理的公共交通让更多人能够获得就业机会。	original_project_authored	draft_auto_validated	false
+PH-H-0135	speed limit	限速；最高车速限制	指道路或区域内法律规定的最高行驶速度。	Drivers must obey the speed limit near schools.	驾驶员在学校附近必须遵守限速规定。	original_project_authored	draft_auto_validated	false
+PH-H-0136	trial and error	反复试验；试错	指通过不断尝试、发现错误并调整来找到办法的过程。	The students improved the model through trial and error.	学生们通过反复试验改进了模型。	original_project_authored	draft_auto_validated	false
+PH-H-0137	academic year	学年	指学校或大学安排教学活动的一整年。	The new library will open at the start of the academic year.	新图书馆将在学年开始时开放。	original_project_authored	draft_auto_validated	false
+PH-H-0138	cost of living	生活成本	指维持住房、食物、交通等日常生活所需的费用水平。	The cost of living is usually higher in the city center.	市中心的生活成本通常更高。	original_project_authored	draft_auto_validated	false
+PH-H-0139	income tax	所得税	指政府根据个人或机构收入征收的税款。	The guide explains how income tax is calculated.	这份指南解释了所得税的计算方法。	original_project_authored	draft_auto_validated	false
+PH-H-0140	foreign exchange	外汇；货币兑换	可指不同国家货币的兑换，也可指用于国际支付的外国货币。	Tourism is an important source of foreign exchange for the country.	旅游业是该国外汇收入的重要来源。	original_project_authored	draft_auto_validated	false
+PH-H-0141	general election	大选；全国性选举	指由合格选民选举国家或地区主要立法机构成员的选举。	Voter participation increased during the latest general election.	最近一次大选中的选民参与率有所上升。	original_project_authored	draft_auto_validated	false
+PH-H-0142	investment bank	投资银行	指主要提供证券发行、并购和融资顾问等服务的金融机构。	The company hired an investment bank to advise on the sale.	公司聘请了一家投资银行为出售事宜提供建议。	original_project_authored	draft_auto_validated	false
+PH-H-0143	low profile	低调；不引人注意的状态	常与 keep 或 maintain 连用，表示避免公众关注。	The actor kept a low profile while working on his next film.	这位演员在筹备下一部电影期间保持低调。	original_project_authored	draft_auto_validated	false
+PH-H-0144	mail order	邮购	指通过邮寄或远程下单购买并接收商品的方式。	The small company began as a mail order business.	这家小公司最初经营邮购业务。	original_project_authored	draft_auto_validated	false
+PH-H-0145	mass produce	批量生产；大规模生产	作动词使用，表示用标准化方式大量制造同类产品。	The factory can mass produce the device at a lower cost.	这家工厂能以更低的成本批量生产这种设备。	original_project_authored	draft_auto_validated	false
+PH-H-0146	critical point	临界点；关键时刻	可指系统发生明显变化的临界状态，也可指决定结果的重要阶段。	The negotiations have reached a critical point.	谈判已经到了关键时刻。	original_project_authored	draft_auto_validated	false
+PH-H-0147	global climate change	全球气候变化	指全球气候模式在较长时期内发生的变化。	Global climate change affects rainfall, sea levels, and ecosystems.	全球气候变化影响降雨、海平面和生态系统。	original_project_authored	draft_auto_validated	false
+PH-H-0148	labor market	劳动力市场；就业市场	指劳动供给者与雇主之间形成的就业和工资体系，美式拼写为 labor。	New technology can change the skills demanded by the labor market.	新技术可能改变劳动力市场所需要的技能。	original_project_authored	draft_auto_validated	false
+PH-H-0149	market economy	市场经济	指主要通过市场供求和价格机制配置资源的经济体系。	Competition plays an important role in a market economy.	竞争在市场经济中发挥重要作用。	original_project_authored	draft_auto_validated	false
+PH-H-0150	theme park	主题公园	指围绕特定主题设计游乐设施、表演和环境的公园。	The theme park limits daily ticket sales during busy periods.	这家主题公园在繁忙时期限量出售每日门票。	original_project_authored	draft_auto_validated	false
