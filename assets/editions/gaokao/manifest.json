@@ -4,6 +4,7 @@
   "status": "product_data_complete_auto_validated",
   "counts": {
     "vocabulary": 3800,
+    "trial_vocabulary": 30,
     "phrases": 450,
     "core_phrases": 300,
     "extension_phrases": 150,
@@ -11,6 +12,7 @@
   },
   "application_paths": {
     "vocabulary": "assets/editions/gaokao/vocabulary.json",
+    "trial_vocabulary": "assets/editions/gaokao/trial_vocabulary.json",
     "phrases": "assets/editions/gaokao/phrases.json",
     "irregular_verbs": "assets/editions/gaokao/irregular_verbs.json"
   },
@@ -21,11 +23,12 @@
   },
   "product_files": {
     "vocabulary.json": "c67a51e9785177eb8272e9fc5fd3682745f521373c4051c77947ed529e3a19f1",
+    "trial_vocabulary.json": "3f20742843a8c8eed0ff209f5276859b73ea598da57e20d6187aaf9218797df9",
     "phrases.json": "d37100179ffcdf3bdb654dfab100dc9860b59962cb4cc24c16bb3f56bd793c68",
     "irregular_verbs.json": "7b5bc7ba4fb0ee0f4f09633f27b8b39f621524b109a086816eedebce86cb547a",
     "THIRD_PARTY_NOTICES.md": "d16a2e8ebb5d2bc5b8b38b2f075c977f80e27a3053d970b7fb531b0a0573656e",
     "OPEN_ENGLISH_WORDNET_LICENSE.md": "de49d4b628f3e6fbf1d171d64aa88696aaf11a9199396dd5dd10f92b644b8970",
-    "README.md": "0ffab9aab4d01d14a10505230ac55a0992e3da254817fe1904900a1df37be79d"
+    "README.md": "f35698a653224055a823d8d807bc4bf9bd8c90bb923b9b4452291aedac53db18"
   },
   "content_policy": {
     "legacy_vocabulary_content_reused": false,

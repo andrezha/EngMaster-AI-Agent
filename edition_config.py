@@ -125,7 +125,7 @@ RELEASED_EDITION_IDS = tuple(
 # are isolated both from formal products and from the other trial levels.
 _TRIAL_VOCABULARY_PATHS = {
     "zhongkao": "research/edition_samples/zhongkao_sample.json",
-    "gaokao": "research/edition_samples/trial_sample.json",
+    "gaokao": "assets/editions/gaokao/trial_vocabulary.json",
     "cet4": "research/edition_samples/cet4_sample.json",
     "cet6": "research/edition_samples/cet6_sample.json",
     "kaoyan": "research/edition_samples/kaoyan_sample.json",

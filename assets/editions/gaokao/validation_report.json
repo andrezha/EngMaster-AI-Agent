@@ -2,6 +2,7 @@
   "status": "pass",
   "counts": {
     "vocabulary.json": 3800,
+    "trial_vocabulary.json": 30,
     "phrases.json": 450,
     "irregular_verbs.json": 126
   },

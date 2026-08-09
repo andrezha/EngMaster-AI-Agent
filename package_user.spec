@@ -10,7 +10,6 @@ a = Analysis(
         ('resources/style.qss', 'resources'),
         ('assets', 'assets'),
         ('research/edition_samples/zhongkao_sample.json', 'research/edition_samples'),
-        ('research/edition_samples/trial_sample.json', 'research/edition_samples'),
         ('research/edition_samples/zhongkao_phrases.json', 'research/edition_samples'),
         ('research/edition_samples/zhongkao_irregular_verbs.json', 'research/edition_samples'),
         ('research/edition_samples/cet4_sample.json', 'research/edition_samples'),

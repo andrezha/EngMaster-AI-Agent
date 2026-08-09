@@ -13,7 +13,7 @@ os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 from PySide6 import QtCore, QtTest, QtWidgets
 
 import main
-from edition_config import EDITIONS
+from edition_config import EDITIONS, TRIAL_EDITIONS
 from phrase_irregular_module import PhraseIrregularChallengeView
 
 
@@ -70,9 +70,28 @@ class GaokaoEditionDataTests(unittest.TestCase):
             "assets/user_registered_vocab.json",
             "research/edition_samples/gaokao_phrases.json",
             "research/edition_samples/gaokao_irregular_verbs.json",
+            "research/edition_samples/trial_sample.json",
         )
         for relative_path in obsolete_paths:
             self.assertFalse((ROOT / relative_path).exists(), relative_path)
+
+    def test_gaokao_trial_is_an_exact_release_vocabulary_subset(self):
+        trial_edition = TRIAL_EDITIONS["trial_gaokao"]
+        self.assertEqual(
+            trial_edition.vocabulary_path,
+            "assets/editions/gaokao/trial_vocabulary.json",
+        )
+        release_rows = json.loads(
+            (DATA_DIR / "vocabulary.json").read_text(encoding="utf-8")
+        )
+        trial_rows = json.loads(
+            (DATA_DIR / "trial_vocabulary.json").read_text(encoding="utf-8")
+        )
+        release_by_id = {row["record_id"]: row for row in release_rows}
+        self.assertEqual(len(trial_rows), 30)
+        self.assertEqual(len({row["record_id"] for row in trial_rows}), 30)
+        for row in trial_rows:
+            self.assertEqual(row, release_by_id[row["record_id"]])
 
     def test_challenge_loads_nine_phrase_levels_and_clean_irregulars(self):
         with tempfile.TemporaryDirectory() as data_dir, mock.patch.dict(

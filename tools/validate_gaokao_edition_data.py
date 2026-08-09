@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "assets/editions/gaokao"
 EXPECTED_COUNTS = {
     "vocabulary.json": 3800,
+    "trial_vocabulary.json": 30,
     "phrases.json": 450,
     "irregular_verbs.json": 126,
 }
@@ -46,6 +47,7 @@ def main() -> int:
             errors.append(f"{name}: {exc}")
 
     vocabulary = rows_by_file.get("vocabulary.json", [])
+    trial_vocabulary = rows_by_file.get("trial_vocabulary.json", [])
     words = [str(row.get("word", "")).strip() for row in vocabulary]
     if len(set(words)) != len(words):
         errors.append("vocabulary.json: duplicate exact headwords")
@@ -72,6 +74,18 @@ def main() -> int:
         ]
         if variants and row.get("accepted_answers") != variants:
             errors.append(f"vocabulary.json row {index}: accepted variants differ")
+
+    release_by_record_id = {
+        str(row.get("record_id", "")): row for row in vocabulary
+    }
+    trial_ids = [str(row.get("record_id", "")) for row in trial_vocabulary]
+    if len(set(trial_ids)) != len(trial_ids):
+        errors.append("trial_vocabulary.json: duplicate record IDs")
+    for index, row in enumerate(trial_vocabulary, start=1):
+        if release_by_record_id.get(str(row.get("record_id", ""))) != row:
+            errors.append(
+                f"trial_vocabulary.json row {index}: not an exact release row"
+            )
 
     phrases = rows_by_file.get("phrases.json", [])
     phrase_ids: set[str] = set()
