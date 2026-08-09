@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "counts": {
+    "vocabulary.json": 3800,
+    "phrases.json": 450,
+    "irregular_verbs.json": 126
+  },
+  "phrase_level_count": 9,
+  "errors": [],
+  "warnings": [
+    "intentional case-distinct headwords: China/china, March/march, May/may, Miss/miss, US/us"
+  ]
+}

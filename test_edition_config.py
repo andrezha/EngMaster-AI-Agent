@@ -110,19 +110,24 @@ class EditionConfigTests(unittest.TestCase):
         for edition_id in ("gaokao", "cet4", "cet6", "kaoyan"):
             rows = json.loads(
                 (ROOT / EDITIONS[edition_id].phrase_path).read_text(encoding="utf-8"))
-            self.assertEqual(len(rows), len(master_rows))
-            self.assertEqual(
-                sum(row.get("tier") == "core" for row in rows), 350)
-            self.assertEqual(
-                sum(row.get("tier") == "extension" for row in rows), 150)
-            self.assertEqual(
-                sum(row.get("tier") == "candidate" for row in rows),
-                max(0, len(master_rows) - 500))
+            if edition_id == "gaokao":
+                self.assertEqual(len(rows), 450)
+                self.assertTrue(all(row.get("tier") == "core" for row in rows))
+                self.assertEqual(max(row.get("level", 0) for row in rows), 9)
+            else:
+                self.assertEqual(len(rows), len(master_rows))
+                self.assertEqual(
+                    sum(row.get("tier") == "core" for row in rows), 350)
+                self.assertEqual(
+                    sum(row.get("tier") == "extension" for row in rows), 150)
+                self.assertEqual(
+                    sum(row.get("tier") == "candidate" for row in rows),
+                    max(0, len(master_rows) - 500))
 
     def test_development_vocabulary_files_exist_and_have_expected_counts(self):
         expected_counts = {
             "zhongkao": 30,
-            "gaokao": 3876,
+            "gaokao": 3800,
             "cet4": 30,
             "cet6": 30,
             "kaoyan": 30,

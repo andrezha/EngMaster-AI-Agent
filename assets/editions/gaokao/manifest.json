@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "edition_id": "gaokao",
+  "status": "product_data_complete_auto_validated",
+  "counts": {
+    "vocabulary": 3800,
+    "phrases": 450,
+    "irregular_verbs": 126
+  },
+  "application_paths": {
+    "vocabulary": "assets/editions/gaokao/vocabulary.json",
+    "phrases": "assets/editions/gaokao/phrases.json",
+    "irregular_verbs": "assets/editions/gaokao/irregular_verbs.json"
+  },
+  "source_files": {
+    "data_sources/clean/release_vocabulary_3800_zh/release_vocabulary_3800_zh.json": "15c07587db35acb80c20a971600ea0c71f0175c8007c5d4ccd6613b911221c80",
+    "data_sources/clean/phrase_product_candidates/senior_high_phrases_product_candidate.json": "62decc01e8b1425c105e9cbaf27cf661da694a8eae81619fdc4a3c42c51fd0e5",
+    "data_sources/clean/irregular_verbs/irregular_verbs_clean.json": "08137caee048de0862c1898c6f79c726a787635c3d76021d35cb474435ddd3ed"
+  },
+  "product_files": {
+    "vocabulary.json": "c67a51e9785177eb8272e9fc5fd3682745f521373c4051c77947ed529e3a19f1",
+    "phrases.json": "62decc01e8b1425c105e9cbaf27cf661da694a8eae81619fdc4a3c42c51fd0e5",
+    "irregular_verbs.json": "7b5bc7ba4fb0ee0f4f09633f27b8b39f621524b109a086816eedebce86cb547a",
+    "THIRD_PARTY_NOTICES.md": "d16a2e8ebb5d2bc5b8b38b2f075c977f80e27a3053d970b7fb531b0a0573656e",
+    "OPEN_ENGLISH_WORDNET_LICENSE.md": "de49d4b628f3e6fbf1d171d64aa88696aaf11a9199396dd5dd10f92b644b8970",
+    "README.md": "5e6b806f4dd50ec691dda84d8a29938d078ea450579f43f852ca2b097069431f"
+  },
+  "content_policy": {
+    "legacy_vocabulary_content_reused": false,
+    "legacy_phrase_content_reused": false,
+    "legacy_irregular_index_used": true,
+    "images_included": false,
+    "audio_included": false,
+    "phonetics_included": false,
+    "human_review_claimed": false
+  }
+}
