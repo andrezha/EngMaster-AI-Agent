@@ -1,11 +1,12 @@
 {
-  "rows_checked": 150,
+  "rows_checked": 200,
   "batch_files": [
     "batch_001.tsv",
     "batch_002.tsv",
-    "batch_003.tsv"
+    "batch_003.tsv",
+    "batch_004.tsv"
   ],
-  "unique_record_ids": 150,
+  "unique_record_ids": 200,
   "errors": [],
   "warnings": [],
   "passed": true,

@@ -1,0 +1,51 @@
+record_id	phrase	meaning_zh	usage_note_zh	example_en	example_zh	content_method	qa_status	human_review_claimed
+PH-J-0151	let out	放出；泄露；发出声音	可表示让人或动物出去、泄露信息，或发出叫声。	Please open the gate and let out the dog.	请打开大门，让狗出去。	original_project_authored	draft_auto_validated	false
+PH-J-0152	lie down	躺下	lie 表示“躺”时是不及物动词，过去式为 lay。	You should lie down and rest if you feel dizzy.	如果你感到头晕，应该躺下休息。	original_project_authored	draft_auto_validated	false
+PH-J-0153	listen to	听；倾听	to 后接所听的人、声音或内容，listen 本身不能直接接宾语。	Please listen to the instructions before you begin.	开始之前请听清说明。	original_project_authored	draft_auto_validated	false
+PH-J-0154	live in	居住在	后接国家、城市、建筑物等居住地点。	My grandparents live in a quiet village near the sea.	我的祖父母住在海边一个安静的村庄里。	original_project_authored	draft_auto_validated	false
+PH-J-0155	live on	以某物为食；靠某物生活	可说明食物来源，也可说明赖以生活的收入或资源。	In this area, many families live on fishing.	在这个地区，许多家庭靠捕鱼为生。	original_project_authored	draft_auto_validated	false
+PH-J-0156	look after	照顾；照料	后接需要照顾的人、动物或事物。	Can you look after my cat while I am away?	我不在时你能照顾我的猫吗？	original_project_authored	draft_auto_validated	false
+PH-J-0157	look at	看；查看	后接观看或检查的对象，强调把视线转向某物。	Look at the clouds and tell me what shapes you see.	看看这些云，告诉我你看到了什么形状。	original_project_authored	draft_auto_validated	false
+PH-J-0158	look back	回头看；回顾	可表示向身后看，也可与 on 连用表示回顾往事。	When I look back on the trip, I remember the kind people most.	回顾那次旅行时，我最记得那些善良的人。	original_project_authored	draft_auto_validated	false
+PH-J-0159	look for	寻找	后接想找到的人或事物，强调寻找的过程。	We need to look for a safe place to cross the road.	我们需要找一个安全的地方过马路。	original_project_authored	draft_auto_validated	false
+PH-J-0160	look like	看起来像	后接名词或代词，询问外貌时常用 what 作宾语。	That island can look like a sleeping bear from here.	从这里看，那座岛可能像一只熟睡的熊。	original_project_authored	draft_auto_validated	false
+PH-J-0161	look out	当心；向外看	单独使用常表示警告，也可与 of 连用表示从某处向外看。	Look out! A bicycle is coming around the corner.	当心！一辆自行车正从拐角处过来。	original_project_authored	draft_auto_validated	false
+PH-J-0162	look up	查阅；抬头看	可表示在资料中查找信息，也可表示向上看。	You can look up the word in an online dictionary.	你可以在在线词典中查这个单词。	original_project_authored	draft_auto_validated	false
+PH-J-0163	make sense	有道理；讲得通	表示观点可以理解、符合逻辑，常用于否定句或疑问句。	Your plan will make sense if we have enough time.	如果我们有足够的时间，你的计划就行得通。	original_project_authored	draft_auto_validated	false
+PH-J-0164	make sure	确保；查明	后接 that 从句或 of 短语，表示确认某事无误。	Please make sure that every window is closed.	请确保每扇窗户都关好了。	original_project_authored	draft_auto_validated	false
+PH-J-0165	make up	编造；组成；和好；化妆	含义随宾语和语境变化，也可表示构成整体的一部分。	Do not make up an excuse for being late.	不要为迟到编造借口。	original_project_authored	draft_auto_validated	false
+PH-J-0166	move around	四处移动；走动	表示在某一区域内改变位置或到处活动。	Passengers may move around after the seat belt sign is off.	安全带指示灯熄灭后，乘客可以走动。	original_project_authored	draft_auto_validated	false
+PH-J-0167	move in	搬入；迁入	表示开始在新的房屋或地点居住。	Our new neighbors will move in next weekend.	我们的新邻居下周末会搬进来。	original_project_authored	draft_auto_validated	false
+PH-J-0168	move on	继续前进；转向下一项	表示离开当前地点、话题或阶段，继续下一步。	After a short rest, the hikers decided to move on.	短暂休息后，徒步者决定继续前进。	original_project_authored	draft_auto_validated	false
+PH-J-0169	move out	搬出；迁出	表示离开原来居住的房屋或地点。	They plan to move out at the end of the month.	他们计划在月底搬出去。	original_project_authored	draft_auto_validated	false
+PH-J-0170	pay for	为某物付款；为某事付出代价	后接购买的物品、服务或行为造成的后果。	I used my own money to pay for the notebook.	我用自己的钱买了这个笔记本。	original_project_authored	draft_auto_validated	false
+PH-J-0171	pick out	挑选；辨认出	可表示从一组中选择，也可表示从人群或背景中认出。	Help me pick out a present for my little brother.	帮我给弟弟挑一件礼物。	original_project_authored	draft_auto_validated	false
+PH-J-0172	pick up	捡起；接载；学会	可表示拿起物品、开车接人或自然学到知识和技能。	Could you pick up that piece of paper from the floor?	你能把地上的那张纸捡起来吗？	original_project_authored	draft_auto_validated	false
+PH-J-0173	play with	和某人玩；摆弄	后接玩伴、玩具或被随意摆弄的物品。	The children like to play with building blocks.	孩子们喜欢玩积木。	original_project_authored	draft_auto_validated	false
+PH-J-0174	point out	指出	表示让别人注意某个事实、问题或特征。	The guide will point out the oldest building in the town.	导游会指出镇上最古老的建筑。	original_project_authored	draft_auto_validated	false
+PH-J-0175	prepare for	为某事做准备	后接考试、活动或可能发生的情况。	We need to prepare for the school sports day.	我们需要为学校运动会做准备。	original_project_authored	draft_auto_validated	false
+PH-J-0176	pull out	拔出；驶出；退出	可表示从里面取出物品、车辆驶离，或停止参与。	The dentist had to pull out the damaged tooth.	牙医不得不拔掉那颗坏牙。	original_project_authored	draft_auto_validated	false
+PH-J-0177	put down	放下；写下；贬低	可表示把物品放到低处、记录内容或用言语贬低别人。	Please put down the glass before you open the door.	开门前请把玻璃杯放下。	original_project_authored	draft_auto_validated	false
+PH-J-0178	put in	放入；安装；投入	可表示把物品放进某处、安装设备或投入时间和精力。	We need to put in a new battery before using the clock.	使用这个钟之前，我们需要装入一节新电池。	original_project_authored	draft_auto_validated	false
+PH-J-0179	put on	穿上；戴上；上演	可接衣物或配饰，也可表示安排演出或增加重量。	Put on your helmet before you ride the bicycle.	骑自行车前戴上头盔。	original_project_authored	draft_auto_validated	false
+PH-J-0180	put out	扑灭；熄灭；发布	可表示灭火或关灯，也可表示生产、发布信息。	Use sand to put out a small campfire safely.	用沙子安全地扑灭小篝火。	original_project_authored	draft_auto_validated	false
+PH-J-0181	put together	组装；汇集	表示把不同部分组合成整体，也可指组织材料或想法。	It took us an hour to put together the new bookshelf.	我们花了一个小时组装新书架。	original_project_authored	draft_auto_validated	false
+PH-J-0182	put up	张贴；搭建；举起	可表示把东西固定在高处、搭建临时设施或举起物品。	The students will put up posters for the book fair.	学生们会为书展张贴海报。	original_project_authored	draft_auto_validated	false
+PH-J-0183	run away	逃跑；跑开	表示为了逃避危险、控制或责任而离开。	The frightened horse tried to run away from the noise.	受惊的马试图逃离噪声。	original_project_authored	draft_auto_validated	false
+PH-J-0184	run into	偶然遇见；撞上；遇到困难	后接偶遇的人、碰撞的物体或意外出现的问题。	I often run into my old neighbor at the market.	我经常在市场偶遇以前的邻居。	original_project_authored	draft_auto_validated	false
+PH-J-0185	run out	用完；耗尽	主语通常是供应物本身；表示某人用完某物时常接 of。	Our drinking water may run out before we reach camp.	我们可能在到达营地前耗尽饮用水。	original_project_authored	draft_auto_validated	false
+PH-J-0186	set out	出发；着手；陈列	可表示开始旅程、着手实现目标，或清楚陈述内容。	We plan to set out before sunrise tomorrow.	我们计划明天日出前出发。	original_project_authored	draft_auto_validated	false
+PH-J-0187	set up	建立；安装；安排	可表示创建组织、安装设备或安排活动。	The school will set up a new science club this term.	学校本学期将成立一个新的科学社团。	original_project_authored	draft_auto_validated	false
+PH-J-0188	show up	出现；到场	表示某人到达约定地点，常含终于出现或意外出现的意味。	Please show up ten minutes before the meeting begins.	请在会议开始前十分钟到场。	original_project_authored	draft_auto_validated	false
+PH-J-0189	shut down	关闭；停业	可表示关闭机器、系统或机构，常指停止运行。	Remember to shut down the computer before you leave.	离开前记得关闭电脑。	original_project_authored	draft_auto_validated	false
+PH-J-0190	sign in	签到；登录	可表示到场登记，也可表示进入计算机账户。	Visitors must sign in at the front desk.	访客必须在前台登记。	original_project_authored	draft_auto_validated	false
+PH-J-0191	sit down	坐下	表示从站立状态变为坐姿，也可用于礼貌地请人入座。	Please sit down and wait for your name to be called.	请坐下等待叫到你的名字。	original_project_authored	draft_auto_validated	false
+PH-J-0192	slow down	减速；放慢	可表示降低移动速度，也可指放慢工作或生活节奏。	Drivers should slow down near the school gate.	驾驶员在学校门口附近应减速。	original_project_authored	draft_auto_validated	false
+PH-J-0193	speak to	和某人说话；对某人讲话	后接谈话对象，也可表示就某个问题与某人交涉。	I would like to speak to the person in charge.	我想和负责人谈一谈。	original_project_authored	draft_auto_validated	false
+PH-J-0194	speak up	大声说；公开表达	可表示提高音量，也可表示公开说出意见。	Please speak up so that everyone can hear you.	请大声一点，让大家都能听见。	original_project_authored	draft_auto_validated	false
+PH-J-0195	stand up	站起来；维护	可表示从坐姿起立，也可与 for 连用表示支持或维护。	Please stand up when the guests enter the room.	客人进入房间时请起立。	original_project_authored	draft_auto_validated	false
+PH-J-0196	stay up	熬夜；不睡觉	表示到了通常睡觉的时间仍保持清醒。	Do not stay up too late before a school day.	上学日前不要熬夜太晚。	original_project_authored	draft_auto_validated	false
+PH-J-0197	step in	介入；干预	表示进入某处，也常指为了帮助或制止问题而介入。	A teacher had to step in and stop the argument.	一位老师不得不介入并制止争论。	original_project_authored	draft_auto_validated	false
+PH-J-0198	stick to	坚持；遵守	后接计划、规则、决定或观点，表示不偏离或不放弃。	If we stick to the plan, we can finish before noon.	如果我们坚持按计划做，就能在中午前完成。	original_project_authored	draft_auto_validated	false
+PH-J-0199	switch off	关掉	表示关闭电器、灯或设备的电源。	Please switch off the fan when you leave the room.	离开房间时请关掉风扇。	original_project_authored	draft_auto_validated	false
+PH-J-0200	switch on	打开	表示接通电器、灯或设备的电源。	Could you switch on the light in the hallway?	你能打开走廊里的灯吗？	original_project_authored	draft_auto_validated	false
