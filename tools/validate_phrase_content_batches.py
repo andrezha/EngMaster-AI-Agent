@@ -39,6 +39,8 @@ def realizes_target_phrase(phrase: str, example: str) -> bool:
         "take for": r"\btake\b(?:\s+\w+){1,6}\s+\bfor\b",
         "tide over": r"\btide\b(?:\s+\w+){1,6}\s+\bover\b",
         "pass away": r"\bpass(?:ed|es|ing)?\s+away\b",
+        "be likely to": r"\b(?:am|is|are|was|were|be|been|being)\s+likely\s+to\b",
+        "make use of": r"\b(?:make|makes|made|making)\s+use\s+of\b",
     }
     pattern = separable_patterns.get(folded_phrase)
     return bool(pattern and re.search(pattern, folded_example))

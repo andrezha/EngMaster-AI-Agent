@@ -22,8 +22,8 @@
     },
     "cet4": {
       "selected_count": 300,
-      "candidate_pool_evidence_count": 255,
-      "structure_plus_corpus_count": 45,
+      "candidate_pool_evidence_count": 256,
+      "structure_plus_corpus_count": 44,
       "zero_corpus_count": 52
     },
     "cet6": {
@@ -34,12 +34,13 @@
     }
   },
   "cross_level_duplicate_count": 0,
+  "pedagogical_cross_level_duplicate_count": 0,
   "old_phrase_file_read": false,
   "human_review_claimed": false,
   "english_master_scope_frozen": true,
   "master_record_count": 1050,
   "master_sha256": {
-    "csv": "09c273bd2ecfff179a47b48fab658ba502c7c12cc1be20789a3719f1a0a4294e",
-    "json": "f5969f3dd6d844e2851b800870d13860139d384b914c82b7372fcd4f5861ac06"
+    "csv": "5afc8015644cc3c20d926bc985cc4437c01d11c1039161aba80ace02cd5be618",
+    "json": "3751ee09ec6ccb10a2fd28817cacf8ff3f887fb174d2de180a00fd584eda12bb"
   }
 }

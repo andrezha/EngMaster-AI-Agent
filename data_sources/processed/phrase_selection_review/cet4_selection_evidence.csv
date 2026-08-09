@@ -252,7 +252,7 @@
 251,take into account,take into account,cet4,approved_dictionary_candidate_pool,OEWN,v,take_into_account%2:31:00::,false,0,junior,selected_for_cross_level_review,false
 252,be aware of,be aware of,cet4,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,,false,2,manual_stage_check,selected_for_cross_level_review,false
 253,be capable of,be capable of,cet4,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,,false,1,manual_stage_check,selected_for_cross_level_review,false
-254,be responsible for,be responsible for,cet4,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,,false,1,manual_stage_check,selected_for_cross_level_review,false
+254,first aid,first aid,cet4,approved_dictionary_candidate_pool,OEWN,n,first_aid%1:04:00::,true,7,cet4,selected_for_cross_level_review,false
 255,contribute to,contribute to,cet4,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,,false,17,manual_stage_check,selected_for_cross_level_review,false
 256,cope with,cope with,cet4,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,,false,7,manual_stage_check,selected_for_cross_level_review,false
 257,engage in,engage in,cet4,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,,false,3,manual_stage_check,selected_for_cross_level_review,false

@@ -47,6 +47,14 @@ def tokens(value: str) -> list[str]:
     return re.findall(r"[a-z]+(?:'[a-z]+)?", value.casefold())
 
 
+def pedagogical_key(value: str) -> str:
+    """Normalize a small set of function-word variants that teach the same item."""
+    parts = tokens(value)
+    if parts and parts[0] == "be":
+        parts = parts[1:]
+    return " ".join(parts)
+
+
 def read_selections() -> dict[str, list[str]]:
     output: dict[str, list[str]] = {}
     for level in LEVELS:
@@ -90,6 +98,16 @@ def main() -> int:
     )
     if duplicate_phrases:
         errors.append(f"cross-level duplicates: {duplicate_phrases}")
+    pedagogical_groups: dict[str, list[str]] = {}
+    for phrase in all_phrases:
+        pedagogical_groups.setdefault(pedagogical_key(phrase), []).append(phrase)
+    pedagogical_duplicates = {
+        key: values
+        for key, values in pedagogical_groups.items()
+        if len(values) > 1
+    }
+    if pedagogical_duplicates:
+        errors.append(f"pedagogical cross-level duplicates: {pedagogical_duplicates}")
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     level_reports: dict[str, object] = {}
@@ -147,6 +165,7 @@ def main() -> int:
         "completed_levels": list(selections),
         "level_reports": level_reports,
         "cross_level_duplicate_count": len(duplicate_phrases),
+        "pedagogical_cross_level_duplicate_count": len(pedagogical_duplicates),
         "old_phrase_file_read": False,
         "human_review_claimed": False,
         "english_master_scope_frozen": len(selections) == len(LEVELS) and not errors,
