@@ -1,0 +1,51 @@
+record_id	phrase	meaning_zh	usage_note_zh	example_en	example_zh	content_method	qa_status	human_review_claimed
+PH-C4-0001	in vain	徒劳；白费力气	表示努力没有取得预期结果，常与 try、attempt 等动词连用。	The rescue team searched in vain for a safe path through the snow.	救援队徒劳地寻找一条穿过雪地的安全道路。	original_project_authored	draft_auto_validated	false
+PH-C4-0002	in writing	以书面形式	表示信息通过文字正式记录，而非只作口头说明。	Any change to the agreement must be confirmed in writing.	协议的任何变更都必须以书面形式确认。	original_project_authored	draft_auto_validated	false
+PH-C4-0003	in the meantime	与此同时；在此期间	表示等待某事发生期间，另一件事正在进行。	The repairs will take two hours; in the meantime, passengers can use another entrance.	维修需要两小时，在此期间乘客可以使用另一个入口。	original_project_authored	draft_auto_validated	false
+PH-C4-0004	in earnest	认真地；正式开始	表示以严肃认真的态度行动，或某事真正全面展开。	After weeks of planning, construction began in earnest.	经过数周规划，施工正式全面开始。	original_project_authored	draft_auto_validated	false
+PH-C4-0005	in hiding	躲藏着；隐匿中	表示为了不被发现或抓获而藏在某处。	The stolen painting remained in hiding for more than a decade.	这幅失窃的画作被隐藏了十多年。	original_project_authored	draft_auto_validated	false
+PH-C4-0006	in the beginning	起初；最开始	表示某个过程最初的阶段，后文常说明随后发生的变化。	In the beginning, few residents supported the proposal.	起初，很少有居民支持这项提议。	original_project_authored	draft_auto_validated	false
+PH-C4-0007	over the counter	非处方地；在柜台交易	常指无需处方即可购买药品；作定语时通常写成 over-the-counter。	This medicine is available over the counter at most pharmacies.	这种药在大多数药店无需处方即可购买。	original_project_authored	draft_auto_validated	false
+PH-C4-0008	at stake	处于风险中；关系重大	表示可能因某个决定或事件而失去重要事物。	Thousands of jobs are at stake in the negotiations.	这场谈判关系到成千上万个工作岗位。	original_project_authored	draft_auto_validated	false
+PH-C4-0009	from scratch	从零开始	表示不依靠现成材料或已有成果，从最基础的阶段开始。	The students built the simple robot from scratch.	学生们从零开始制作了这个简易机器人。	original_project_authored	draft_auto_validated	false
+PH-C4-0010	in haste	匆忙地	表示因为时间紧迫而快速行动，有时暗示缺少充分考虑。	Decisions made in haste often create new problems.	匆忙作出的决定常常会带来新的问题。	original_project_authored	draft_auto_validated	false
+PH-C4-0011	at odds	意见不一致；不协调	常与 with 或 over 连用，表示人之间有分歧或事物彼此矛盾。	The two departments are at odds over how to divide the budget.	两个部门在如何分配预算的问题上存在分歧。	original_project_authored	draft_auto_validated	false
+PH-C4-0012	back and forth	来回地；反复地	可表示方向上的往返，也可指意见或信息反复交换。	The two sides sent revised plans back and forth for weeks.	双方连续数周来回发送修改后的方案。	original_project_authored	draft_auto_validated	false
+PH-C4-0013	and so forth	等等	用于列举末尾，表示还有其他同类事物未全部说出。	The workshop covers planning, budgeting, teamwork, and so forth.	研讨会涵盖规划、预算、团队合作等内容。	original_project_authored	draft_auto_validated	false
+PH-C4-0014	off the hook	摆脱困境或责任	非正式表达，表示不再需要承担责任、接受惩罚或面对难题。	The new evidence does not let the company off the hook.	新证据并不能让这家公司逃脱责任。	original_project_authored	draft_auto_validated	false
+PH-C4-0015	last resort	最后的办法	通常用于 as a last resort，表示其他办法都无效后才采取的措施。	Closing the road should be a last resort.	封闭道路应该是最后的办法。	original_project_authored	draft_auto_validated	false
+PH-C4-0016	no nonsense	严肃务实；不容胡闹	常用 no-nonsense 作定语；分开书写时可表示不接受借口或无意义行为。	Her message was clear: no nonsense would be tolerated during the exam.	她的信息很明确：考试期间不容许胡闹。	original_project_authored	draft_auto_validated	false
+PH-C4-0017	at first glance	乍一看	表示在尚未仔细观察或深入思考时形成的第一印象。	At first glance, the two graphs appear almost identical.	乍一看，这两张图表几乎完全相同。	original_project_authored	draft_auto_validated	false
+PH-C4-0018	in accordance with	依照；按照	后接法律、规则、原则或他人意愿，语气较正式。	The data must be stored in accordance with the new regulations.	这些数据必须按照新规定存储。	original_project_authored	draft_auto_validated	false
+PH-C4-0019	in terms of	就某方面而言；从某角度看	用于限定比较、评价或讨论所依据的具体方面。	The two designs differ greatly in terms of cost and reliability.	这两种设计在成本和可靠性方面差异很大。	original_project_authored	draft_auto_validated	false
+PH-C4-0020	with regard to	关于；就某事而言	较正式地引出要讨论、询问或说明的主题。	With regard to your application, we need one additional document.	关于你的申请，我们还需要一份文件。	original_project_authored	draft_auto_validated	false
+PH-C4-0021	on behalf of	代表；为了某人的利益	表示作为个人或组织的代表发言、行动，也可表示为了他人的利益。	On behalf of the volunteers, I would like to thank the local community.	我谨代表志愿者感谢当地社区。	original_project_authored	draft_auto_validated	false
+PH-C4-0022	as a matter of fact	事实上；其实	用于补充真实情况，常纠正或加强前面的说法。	As a matter of fact, the original plan was less expensive.	事实上，最初的方案成本更低。	original_project_authored	draft_auto_validated	false
+PH-C4-0023	for the sake of	为了；为了某人的利益	表示行动的目的在于帮助某人、保护某物或实现某个目标。	For the sake of safety, all visitors must wear a helmet.	为了安全，所有访客都必须佩戴头盔。	original_project_authored	draft_auto_validated	false
+PH-C4-0024	in favor of	支持；有利于	可表示赞成某项建议，也可说明选择一个方案而放弃另一个。	Most committee members voted in favor of the revised proposal.	大多数委员会成员投票支持修订后的提议。	original_project_authored	draft_auto_validated	false
+PH-C4-0025	in charge of	负责；管理	说明某人对某项工作、部门或人员负有管理责任。	A senior engineer is in charge of the safety inspection.	一名高级工程师负责安全检查。	original_project_authored	draft_auto_validated	false
+PH-C4-0026	in response to	作为对某事的回应	后接引起反应、回答或措施的事件和信息。	The city added more buses in response to public demand.	为回应公众需求，该市增加了公共汽车班次。	original_project_authored	draft_auto_validated	false
+PH-C4-0027	in contrast to	与某事形成对比	后接比较对象，突出两者之间的明显差异。	In contrast to the coastal area, the inland region remained dry.	与沿海地区不同，内陆地区仍然干燥。	original_project_authored	draft_auto_validated	false
+PH-C4-0028	in relation to	关于；与某事相比；与某事有关	用于说明讨论主题、相互联系或比较关系。	The report examines housing costs in relation to average income.	这份报告结合平均收入考察住房成本。	original_project_authored	draft_auto_validated	false
+PH-C4-0029	in spite of	尽管	后接名词、代词或动名词，表示结果不受所述困难影响。	In spite of heavy rain, the rescue operation continued.	尽管下着大雨，救援行动仍在继续。	original_project_authored	draft_auto_validated	false
+PH-C4-0030	with the help of	在某人或某物的帮助下	后接提供帮助的人、工具或方法。	With the help of satellite images, researchers mapped the damaged area.	借助卫星图像，研究人员绘制了受损区域地图。	original_project_authored	draft_auto_validated	false
+PH-C4-0031	get rid of	摆脱；除去	后接不需要的人、物、习惯或问题。	The new filter can get rid of most harmful particles in the water.	这种新过滤器能够去除水中的大部分有害颗粒。	original_project_authored	draft_auto_validated	false
+PH-C4-0032	disagree with	不同意；不适合	可表示不赞同某人或观点，也可指食物等使身体不适。	I disagree with the claim because the evidence is incomplete.	我不同意这一说法，因为证据并不完整。	original_project_authored	draft_auto_validated	false
+PH-C4-0033	set forth	阐明；提出；出发	正式用语，可表示清楚陈述观点或规则，也可表示启程。	The document will set forth the principles of the agreement.	这份文件将阐明协议的原则。	original_project_authored	draft_auto_validated	false
+PH-C4-0034	whip up	迅速做出；煽动	非正式用语，可表示快速做出食物，也可指激起强烈情绪。	The false report could whip up unnecessary fear.	这则虚假报道可能会煽动不必要的恐慌。	original_project_authored	draft_auto_validated	false
+PH-C4-0035	blend in	融入；协调	常与 with 连用，表示外观不显眼或人在群体中自然融入。	The building uses local stone to blend in with its surroundings.	这座建筑使用当地石材，以便与周围环境相协调。	original_project_authored	draft_auto_validated	false
+PH-C4-0036	crack down	严厉打击	常与 on 连用，表示当局采取强硬措施制止违法或有害行为。	The authorities promised to crack down on illegal dumping.	有关部门承诺严厉打击非法倾倒行为。	original_project_authored	draft_auto_validated	false
+PH-C4-0037	catch a glimpse	瞥见	常与 of 连用，表示只在很短时间内看到某人或某物。	We managed to catch a glimpse of the rare bird before it flew away.	那只稀有鸟飞走前，我们设法瞥见了它。	original_project_authored	draft_auto_validated	false
+PH-C4-0038	cling to	紧抓；坚持；依恋	可表示身体上紧紧抓住，也可指不愿放弃观念、希望或过去。	People sometimes cling to familiar routines during uncertain times.	在不确定的时期，人们有时会固守熟悉的日常习惯。	original_project_authored	draft_auto_validated	false
+PH-C4-0039	conform to	符合；遵守	后接规则、标准或普遍行为，表示与其一致。	All electrical equipment must conform to national safety standards.	所有电气设备都必须符合国家安全标准。	original_project_authored	draft_auto_validated	false
+PH-C4-0040	hook up	连接；接通	非正式用语，可表示连接设备或系统；其他语境中也可能有不同含义。	A technician will hook up the new printer to the network.	技术人员会把新打印机连接到网络。	original_project_authored	draft_auto_validated	false
+PH-C4-0041	originate in	起源于	后接某事物最早产生的地点、时期或环境。	The custom is believed to originate in a small mountain community.	人们认为这一习俗起源于一个小山村。	original_project_authored	draft_auto_validated	false
+PH-C4-0042	pop in	短暂来访；顺便进入	非正式用语，表示短时间进入某处或拜访某人。	I may pop in after work to return your book.	我下班后可能会顺便来还你的书。	original_project_authored	draft_auto_validated	false
+PH-C4-0043	soak up	吸收；尽情享受	可指液体或材料吸收水分，也可比喻吸收知识或享受氛围。	Young children soak up new sounds remarkably quickly.	幼儿吸收新语音的速度非常快。	original_project_authored	draft_auto_validated	false
+PH-C4-0044	stock up	大量储备	常与 on 连用，表示为将来需要提前储存足够的物品。	Residents began to stock up on drinking water before the storm.	暴风雨来临前，居民开始储备饮用水。	original_project_authored	draft_auto_validated	false
+PH-C4-0045	bump into	偶然遇见；撞上	可表示意外碰见某人，也可指身体或物体碰撞。	I happened to bump into a former classmate at the conference.	我碰巧在会议上遇到一位以前的同学。	original_project_authored	draft_auto_validated	false
+PH-C4-0046	mop up	完成清理；肃清	可表示擦净液体或处理剩余问题，也可指清除最后的抵抗。	Workers stayed behind to mop up the water after the pipe burst.	水管爆裂后，工人留下来把积水清理干净。	original_project_authored	draft_auto_validated	false
+PH-C4-0047	pin down	确定；迫使明确表态；压制	可表示获得准确细节，也可指迫使某人作出明确回答。	It is difficult to pin down the exact cause of the failure.	很难确定这次故障的确切原因。	original_project_authored	draft_auto_validated	false
+PH-C4-0048	pitch in	共同出力；主动帮忙	非正式用语，表示多人为共同任务贡献时间、劳动或金钱。	If everyone can pitch in, the hall will be ready by noon.	如果大家都来帮忙，大厅中午前就能准备好。	original_project_authored	draft_auto_validated	false
+PH-C4-0049	pop up	突然出现；弹出	可表示问题或事物意外出现，也可指计算机窗口弹出。	Small problems often pop up during the testing stage.	测试阶段经常会突然出现一些小问题。	original_project_authored	draft_auto_validated	false
+PH-C4-0050	rub off	擦掉；产生感染性影响	可表示通过摩擦去除，也常与 on 连用说明习惯或态度影响他人。	Her enthusiasm began to rub off on the rest of the team.	她的热情开始感染团队中的其他人。	original_project_authored	draft_auto_validated	false
