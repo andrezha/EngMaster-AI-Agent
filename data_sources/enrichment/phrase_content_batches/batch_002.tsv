@@ -1,0 +1,51 @@
+record_id	phrase	meaning_zh	usage_note_zh	example_en	example_zh	content_method	qa_status	human_review_claimed
+PH-J-0051	no more	不再；没有更多	可表示某事停止发生，也可说明数量已经没有剩余。	There is no more juice in the bottle.	瓶子里没有果汁了。	original_project_authored	draft_auto_validated	false
+PH-J-0052	now and then	有时；偶尔	表示某事不经常但会间或发生。	We eat at that small restaurant now and then.	我们偶尔会去那家小餐馆吃饭。	original_project_authored	draft_auto_validated	false
+PH-J-0053	of course	当然；自然	表示回答肯定、事情显而易见或愿意提供帮助。	Of course you can borrow my dictionary.	你当然可以借我的词典。	original_project_authored	draft_auto_validated	false
+PH-J-0054	on fire	着火；燃烧着	通常与 be 连用，表示某物正在燃烧。	The dry grass was on fire, so we called for help.	干草着火了，所以我们打电话求助。	original_project_authored	draft_auto_validated	false
+PH-J-0055	on purpose	故意地	表示某个行为是有意做出的，而非偶然。	She left the window open on purpose to let fresh air in.	她故意把窗户开着，好让新鲜空气进来。	original_project_authored	draft_auto_validated	false
+PH-J-0056	on the way	在路上；即将到来	常与 to 连用表示去某地途中，也可表示某事即将发生。	We bought some bread on the way to school.	我们在上学路上买了一些面包。	original_project_authored	draft_auto_validated	false
+PH-J-0057	on time	准时	表示在约定或规定的时刻，不早也不晚。	The school bus arrived on time this morning.	校车今天早上准时到达。	original_project_authored	draft_auto_validated	false
+PH-J-0058	once again	再一次；又一次	表示同一动作或情况再次发生。	Once again, our class won the basketball game.	我们班又一次赢得了篮球比赛。	original_project_authored	draft_auto_validated	false
+PH-J-0059	once more	再一次	常用于请求或说明动作再重复一次。	Please read the last sentence once more.	请把最后一句再读一遍。	original_project_authored	draft_auto_validated	false
+PH-J-0060	or else	否则；要不然	用于警告不采取前述行动会产生某种后果。	Wear your coat, or else you may feel cold outside.	穿上外套，否则你在外面可能会觉得冷。	original_project_authored	draft_auto_validated	false
+PH-J-0061	out loud	出声地；大声地	表示把原本可默念的内容说出声音来。	The teacher asked us to read the poem out loud.	老师让我们大声朗读这首诗。	original_project_authored	draft_auto_validated	false
+PH-J-0062	over and over	反复地；一再	强调同一动作发生很多次。	He practiced the difficult line over and over.	他反复练习那句困难的台词。	original_project_authored	draft_auto_validated	false
+PH-J-0063	right away	立刻；马上	表示毫不拖延地采取行动。	Please wash the cut right away.	请立即清洗伤口。	original_project_authored	draft_auto_validated	false
+PH-J-0064	so far	到目前为止	通常与现在完成时连用，说明截至现在的情况。	So far, we have collected fifty books for the library.	到目前为止，我们已经为图书馆募集了五十本书。	original_project_authored	draft_auto_validated	false
+PH-J-0065	until now	直到现在	强调某种情况从过去持续到现在，或直到现在才改变。	Until now, I have never traveled by plane.	直到现在，我还从未坐过飞机旅行。	original_project_authored	draft_auto_validated	false
+PH-J-0066	up and down	上上下下；来回	表示沿上下方向移动，也可表示来回走动。	The excited puppy jumped up and down.	兴奋的小狗跳上跳下。	original_project_authored	draft_auto_validated	false
+PH-J-0067	very well	很好；非常好	可表示动作完成得好，也可用于接受建议或安排。	Mina plays the piano very well.	米娜钢琴弹得很好。	original_project_authored	draft_auto_validated	false
+PH-J-0068	ask for	请求；要求得到	后接所请求的人、物或帮助。	You can ask for help when the task is difficult.	任务困难时，你可以请求帮助。	original_project_authored	draft_auto_validated	false
+PH-J-0069	arrive at	到达	通常后接较小的地点，也可表示经过思考得出结论。	We expect to arrive at the station before noon.	我们预计中午前到达车站。	original_project_authored	draft_auto_validated	false
+PH-J-0070	be born	出生	通常使用被动形式，后可接时间或地点状语。	The baby will be born in early spring.	这个宝宝将在初春出生。	original_project_authored	draft_auto_validated	false
+PH-J-0071	believe in	相信；信任	后接人或事物，表示相信其存在、价值或能力。	You must believe in yourself when facing a challenge.	面对挑战时，你必须相信自己。	original_project_authored	draft_auto_validated	false
+PH-J-0072	belong to	属于	后接拥有者，通常不用于进行时或被动语态。	These gloves belong to my sister.	这副手套属于我姐姐。	original_project_authored	draft_auto_validated	false
+PH-J-0073	break down	出故障；分解；崩溃	可指机器停止运转，也可指物质分解或人情绪失控。	Old buses may break down on long journeys.	旧公共汽车在长途行驶中可能会出故障。	original_project_authored	draft_auto_validated	false
+PH-J-0074	break in	闯入；插话	可指强行进入建筑物，也可指打断谈话。	Someone tried to break in through the back window.	有人试图从后窗闯入。	original_project_authored	draft_auto_validated	false
+PH-J-0075	bring back	带回；使想起	可指把人或物带回，也可表示唤起记忆。	This song can bring back happy childhood memories.	这首歌能唤起快乐的童年回忆。	original_project_authored	draft_auto_validated	false
+PH-J-0076	bring down	降低；使倒下	可指降低价格、数量或水平，也可指使某物倒下。	Better farming methods can bring down food prices.	更好的耕作方法能够降低食品价格。	original_project_authored	draft_auto_validated	false
+PH-J-0077	bring home	带回家；使充分认识	可指把某物带回家，也可表示使人清楚认识某事。	The accident should bring home the importance of road safety.	这起事故应让人深刻认识到道路安全的重要性。	original_project_authored	draft_auto_validated	false
+PH-J-0078	call for	需要；要求；呼吁	可表示某种情况需要某物，也可公开要求采取行动。	The problem will call for patience and teamwork.	解决这个问题需要耐心和团队合作。	original_project_authored	draft_auto_validated	false
+PH-J-0079	call out	大声呼喊；召集	可指提高声音喊话，也可指召集人员处理紧急情况。	If you see the guide, call out her name.	如果你看到导游，就大声喊她的名字。	original_project_authored	draft_auto_validated	false
+PH-J-0080	calm down	平静下来；使镇静	可单独使用，也可接宾语表示使某人镇静。	Take a slow breath and calm down before you answer.	回答前慢慢吸一口气，让自己平静下来。	original_project_authored	draft_auto_validated	false
+PH-J-0081	care for	照顾；喜欢	可表示照料某人，也可用于较正式语境表示喜欢某物。	Nurses care for people who are ill.	护士照顾生病的人。	original_project_authored	draft_auto_validated	false
+PH-J-0082	carry on	继续	表示在困难或中断后继续做某事。	Please carry on with your work while I answer the phone.	我接电话时，请继续做你的工作。	original_project_authored	draft_auto_validated	false
+PH-J-0083	check in	办理入住或登机手续	表示抵达酒店或机场后登记身份和相关信息。	We need to check in at the hotel before six.	我们需要在六点前办理酒店入住手续。	original_project_authored	draft_auto_validated	false
+PH-J-0084	check out	查看；办理退房；结账离开	可表示查看某物，也可表示办理离开酒店的手续。	Guests must check out before noon.	客人必须在中午前办理退房。	original_project_authored	draft_auto_validated	false
+PH-J-0085	clean up	打扫干净；清理	可不接宾语，也可接需要清理的地方或物品。	Everyone helped clean up the park after the picnic.	野餐后，大家一起清理了公园。	original_project_authored	draft_auto_validated	false
+PH-J-0086	climb up	向上爬；攀登	强调沿某物向上移动。	The children watched the cat climb up the tree.	孩子们看着猫爬上树。	original_project_authored	draft_auto_validated	false
+PH-J-0087	come along	一起来；进展	可用于邀请别人同行，也可说明事情的进展情况。	You may come along with us if you have time.	如果你有时间，可以和我们一起来。	original_project_authored	draft_auto_validated	false
+PH-J-0088	come back	回来；恢复	表示返回原处，也可表示某种事物重新出现。	Please come back before it gets dark.	请在天黑前回来。	original_project_authored	draft_auto_validated	false
+PH-J-0089	come down	下来；下降	可表示从高处向低处移动，也可指价格或温度下降。	Snow began to come down before sunrise.	日出前开始下雪了。	original_project_authored	draft_auto_validated	false
+PH-J-0090	come in	进来；进入	用于表示人进入室内，也可指某物开始流行或到达。	Please knock before you come in.	进来之前请敲门。	original_project_authored	draft_auto_validated	false
+PH-J-0091	come on	快点；加油；开始发生	常用于催促或鼓励，也可表示某事开始出现。	Come on, we do not want to miss the opening show.	快点，我们可不想错过开场表演。	original_project_authored	draft_auto_validated	false
+PH-J-0092	come out	出来；出版；显露	可表示从里面出来、书刊发行或信息被公开。	The new school magazine will come out next Monday.	新的校刊将在下周一出版。	original_project_authored	draft_auto_validated	false
+PH-J-0093	come over	过来；顺便来访	表示从别处来到说话人所在处，常用于非正式邀请。	Why not come over after school and study with us?	放学后为什么不过来和我们一起学习呢？	original_project_authored	draft_auto_validated	false
+PH-J-0094	come up	走近；出现；被提出	可表示向某处走近，也可指问题、机会或话题出现。	A question may come up during the class discussion.	课堂讨论中可能会出现一个问题。	original_project_authored	draft_auto_validated	false
+PH-J-0095	cut down	砍倒；削减	可表示砍倒树木，也可表示减少数量或用量。	We should cut down the amount of plastic we use.	我们应该减少塑料的使用量。	original_project_authored	draft_auto_validated	false
+PH-J-0096	cut off	切断；中断	可表示断开供应、联系或通路。	The storm may cut off electricity in some villages.	暴风雨可能会切断一些村庄的电力供应。	original_project_authored	draft_auto_validated	false
+PH-J-0097	cut out	剪下；停止使用；删除	可表示用剪刀剪下，也可指去掉不需要的部分。	Use these scissors to cut out the paper star.	用这把剪刀剪下纸星星。	original_project_authored	draft_auto_validated	false
+PH-J-0098	depend on	取决于；依靠	后接影响结果的条件，或提供支持的人和事物。	The picnic will depend on the weather.	野餐能否进行将取决于天气。	original_project_authored	draft_auto_validated	false
+PH-J-0099	dress up	穿上盛装；装扮	可表示穿得正式，也可表示装扮成某个角色。	The children will dress up as storybook characters.	孩子们会装扮成故事书中的人物。	original_project_authored	draft_auto_validated	false
+PH-J-0100	end up	最终成为；最后处于	后常接动名词、形容词或介词短语，表示意外或最终结果。	Without a map, we might end up in the wrong village.	没有地图，我们最后可能会走到错误的村庄。	original_project_authored	draft_auto_validated	false
