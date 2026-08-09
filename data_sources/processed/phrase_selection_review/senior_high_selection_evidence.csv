@@ -1,0 +1,201 @@
+﻿sequence,phrase,normalized_phrase,introduced_level,evidence_route,form_evidence,oewn_sense_ids,moby_match,tatoeba_cc0_sentence_count,minimum_lexical_level,editorial_status,human_review_claimed
+1,sort of,sort of,senior_high,approved_dictionary_candidate_pool,OEWN,sort_of%4:02:00::,false,40,senior_high,selected_for_cross_level_review,false
+2,in addition,in addition,senior_high,approved_dictionary_candidate_pool,OEWN,in_addition%4:02:01::,false,31,senior_high,selected_for_cross_level_review,false
+3,in particular,in particular,senior_high,approved_dictionary_candidate_pool,OEWN,in_particular%4:02:00::,false,13,senior_high,selected_for_cross_level_review,false
+4,for instance,for instance,senior_high,approved_dictionary_candidate_pool,OEWN,for_instance%4:02:00::,false,11,senior_high,selected_for_cross_level_review,false
+5,in advance,in advance,senior_high,approved_dictionary_candidate_pool,OEWN,in_advance%4:02:00::|in_advance%5:00:00:front:00,false,8,senior_high,selected_for_cross_level_review,false
+6,in reality,in reality,senior_high,approved_dictionary_candidate_pool,OEWN,in_reality%4:02:00::,false,7,senior_high,selected_for_cross_level_review,false
+7,in detail,in detail,senior_high,approved_dictionary_candidate_pool,OEWN,in_detail%4:02:00::,false,6,senior_high,selected_for_cross_level_review,false
+8,on the contrary,on the contrary,senior_high,approved_dictionary_candidate_pool,OEWN,on_the_contrary%4:02:02::,false,6,senior_high,selected_for_cross_level_review,false
+9,on the spot,on the spot,senior_high,approved_dictionary_candidate_pool,OEWN,on-the-spot%5:00:00:on-site:00|on_the_spot%4:02:00::|on_the_spot%4:02:01::|on_the_spot%4:02:02::,false,4,senior_high,selected_for_cross_level_review,false
+10,out of sight,out of sight,senior_high,approved_dictionary_candidate_pool,OEWN,out_of_sight%4:02:00::|out_of_sight%4:02:01::|out_of_sight%5:00:00:invisible:00,false,4,senior_high,selected_for_cross_level_review,false
+11,at random,at random,senior_high,approved_dictionary_candidate_pool,OEWN,at_random%4:02:00::,false,4,senior_high,selected_for_cross_level_review,false
+12,by no means,by no means,senior_high,approved_dictionary_candidate_pool,OEWN,by_no_means%4:02:00::,false,4,senior_high,selected_for_cross_level_review,false
+13,in theory,in theory,senior_high,approved_dictionary_candidate_pool,OEWN,in_theory%4:02:01::,false,3,senior_high,selected_for_cross_level_review,false
+14,at any rate,at any rate,senior_high,approved_dictionary_candidate_pool,OEWN,at_any_rate%4:02:00::|at_any_rate%4:02:01::,false,2,senior_high,selected_for_cross_level_review,false
+15,free of charge,free of charge,senior_high,approved_dictionary_candidate_pool,OEWN,free_of_charge%4:02:00::,false,2,senior_high,selected_for_cross_level_review,false
+16,in full swing,in full swing,senior_high,approved_dictionary_candidate_pool,OEWN,in_full_swing%4:02:00::,false,2,senior_high,selected_for_cross_level_review,false
+17,on a regular basis,on a regular basis,senior_high,approved_dictionary_candidate_pool,OEWN,on_a_regular_basis%4:02:00::,false,2,senior_high,selected_for_cross_level_review,false
+18,for the time being,for the time being,senior_high,approved_dictionary_candidate_pool,OEWN,for_the_time_being%4:02:02::,false,1,senior_high,selected_for_cross_level_review,false
+19,at bay,at bay,senior_high,approved_dictionary_candidate_pool,OEWN,at_bay%5:00:00:unfree:00,false,2,senior_high,selected_for_cross_level_review,false
+20,in operation,in operation,senior_high,approved_dictionary_candidate_pool,OEWN,in_operation%5:00:01:operative:00,false,2,senior_high,selected_for_cross_level_review,false
+21,on the loose,on the loose,senior_high,approved_dictionary_candidate_pool,OEWN,on_the_loose%5:00:00:free:00,false,2,senior_high,selected_for_cross_level_review,false
+22,on trial,on trial,senior_high,approved_dictionary_candidate_pool,OEWN,on_trial%5:00:00:unproved:00,false,2,senior_high,selected_for_cross_level_review,false
+23,at length,at length,senior_high,approved_dictionary_candidate_pool,OEWN,at_length%4:02:00::,false,1,senior_high,selected_for_cross_level_review,false
+24,on occasion,on occasion,senior_high,approved_dictionary_candidate_pool,OEWN,on_occasion%4:02:00::,false,1,senior_high,selected_for_cross_level_review,false
+25,on the other hand,on the other hand,senior_high,approved_dictionary_candidate_pool,OEWN,on_the_other_hand%4:02:00::,false,11,junior,selected_for_cross_level_review,false
+26,figure out,figure out,senior_high,approved_dictionary_candidate_pool,OEWN,figure_out%2:31:00::,true,14,senior_high,selected_for_cross_level_review,false
+27,stand firm,stand firm,senior_high,approved_dictionary_candidate_pool,OEWN,stand_firm%2:32:00::|stand_firm%2:33:00::,false,18,senior_high,selected_for_cross_level_review,false
+28,rely on,rely on,senior_high,approved_dictionary_candidate_pool,OEWN,rely_on%2:42:00::|rely_on%2:42:02::,false,11,senior_high,selected_for_cross_level_review,false
+29,bounce back,bounce back,senior_high,approved_dictionary_candidate_pool,OEWN,bounce_back%2:30:00::,true,6,senior_high,selected_for_cross_level_review,false
+30,seek out,seek out,senior_high,approved_dictionary_candidate_pool,OEWN,seek_out%2:35:00::,true,6,senior_high,selected_for_cross_level_review,false
+31,escape from,escape from,senior_high,approved_dictionary_candidate_pool,OEWN,escape_from%2:38:00::,false,8,senior_high,selected_for_cross_level_review,false
+32,ward off,ward off,senior_high,approved_dictionary_candidate_pool,OEWN,ward_off%2:33:00::|ward_off%2:41:00::,true,5,senior_high,selected_for_cross_level_review,false
+33,set aside,set aside,senior_high,approved_dictionary_candidate_pool,OEWN,set-aside%5:00:00:reserved:02|set_aside%2:30:00::|set_aside%2:31:00::|set_aside%2:41:00::,true,2,senior_high,selected_for_cross_level_review,false
+34,get used to,get used to,senior_high,approved_dictionary_candidate_pool,OEWN,get_used_to%2:30:00::,false,4,senior_high,selected_for_cross_level_review,false
+35,cave in,cave in,senior_high,approved_dictionary_candidate_pool,OEWN,cave_in%1:11:00::|cave_in%2:38:00::,true,3,senior_high,selected_for_cross_level_review,false
+36,plug in,plug in,senior_high,approved_dictionary_candidate_pool,OEWN,plug-in%1:06:00::|plug-in%1:10:00::|plug_in%2:35:00::,true,3,senior_high,selected_for_cross_level_review,false
+37,put aside,put aside,senior_high,approved_dictionary_candidate_pool,OEWN,put_aside%2:32:00::|put_aside%2:35:00::,true,2,senior_high,selected_for_cross_level_review,false
+38,track down,track down,senior_high,approved_dictionary_candidate_pool,OEWN,track_down%2:33:00::,true,2,senior_high,selected_for_cross_level_review,false
+39,carve out,carve out,senior_high,approved_dictionary_candidate_pool,OEWN,carve_out%2:30:00::|carve_out%2:36:00::,false,3,senior_high,selected_for_cross_level_review,false
+40,fall apart,fall apart,senior_high,approved_dictionary_candidate_pool,OEWN,fall_apart%2:30:03::|fall_apart%2:30:04::|fall_apart%2:35:00::|fall_apart%2:37:00::,false,3,senior_high,selected_for_cross_level_review,false
+41,break apart,break apart,senior_high,approved_dictionary_candidate_pool,OEWN,break_apart%2:30:01::|break_apart%2:35:00::|break_apart%2:36:00::,false,2,senior_high,selected_for_cross_level_review,false
+42,factor in,factor in,senior_high,approved_dictionary_candidate_pool,OEWN,factor_in%2:31:00::|factor_in%2:31:01::,false,2,senior_high,selected_for_cross_level_review,false
+43,keep track,keep track,senior_high,approved_dictionary_candidate_pool,OEWN,keep_track%2:31:00::,false,2,senior_high,selected_for_cross_level_review,false
+44,link up,link up,senior_high,approved_dictionary_candidate_pool,OEWN,link_up%2:31:00::|link_up%2:35:00::|link_up%2:42:00::,false,2,senior_high,selected_for_cross_level_review,false
+45,log in,log in,senior_high,approved_dictionary_candidate_pool,OEWN,log-in%2:40:00::|log_in%2:40:00::,false,2,senior_high,selected_for_cross_level_review,false
+46,log on,log on,senior_high,approved_dictionary_candidate_pool,OEWN,log_on%2:40:00::,false,2,senior_high,selected_for_cross_level_review,false
+47,log out,log out,senior_high,approved_dictionary_candidate_pool,OEWN,log_out%2:40:00::,false,1,senior_high,selected_for_cross_level_review,false
+48,pan out,pan out,senior_high,approved_dictionary_candidate_pool,OEWN,pan_out%2:35:00::|pan_out%2:41:00::,false,2,senior_high,selected_for_cross_level_review,false
+49,think twice,think twice,senior_high,approved_dictionary_candidate_pool,OEWN,think_twice%2:32:00::,false,2,senior_high,selected_for_cross_level_review,false
+50,drag in,drag in,senior_high,approved_dictionary_candidate_pool,OEWN,drag_in%2:42:00::,true,1,senior_high,selected_for_cross_level_review,false
+51,drag on,drag on,senior_high,approved_dictionary_candidate_pool,OEWN,drag_on%2:30:00::|drag_on%2:42:00::,false,1,senior_high,selected_for_cross_level_review,false
+52,roll up,roll up,senior_high,approved_dictionary_candidate_pool,OEWN,roll_up%2:30:00::|roll_up%2:30:01::|roll_up%2:30:02::|roll_up%2:35:00::|roll_up%2:35:01::|roll_up%2:38:03::|roll_up%2:40:03::,true,1,senior_high,selected_for_cross_level_review,false
+53,roll over,roll over,senior_high,approved_dictionary_candidate_pool,OEWN,roll_over%2:38:00::|roll_over%2:40:00::|roll_over%2:40:01::,false,1,senior_high,selected_for_cross_level_review,false
+54,sink in,sink in,senior_high,approved_dictionary_candidate_pool,OEWN,sink_in%2:31:00::|sink_in%2:35:00::,true,1,senior_high,selected_for_cross_level_review,false
+55,split up,split up,senior_high,approved_dictionary_candidate_pool,OEWN,split_up%1:04:00::|split_up%2:30:00::|split_up%2:41:00::|split_up%2:41:01::|split_up%2:41:02::,true,1,senior_high,selected_for_cross_level_review,false
+56,tear down,tear down,senior_high,approved_dictionary_candidate_pool,OEWN,tear_down%2:36:00::,true,1,senior_high,selected_for_cross_level_review,false
+57,burst out,burst out,senior_high,approved_dictionary_candidate_pool,OEWN,burst_out%2:30:00::|burst_out%2:32:00::|burst_out%2:39:01::,false,1,senior_high,selected_for_cross_level_review,false
+58,cast aside,cast aside,senior_high,approved_dictionary_candidate_pool,OEWN,cast_aside%2:40:00::,false,1,senior_high,selected_for_cross_level_review,false
+59,cast off,cast off,senior_high,approved_dictionary_candidate_pool,OEWN,cast-off%5:00:00:unwanted:00|cast_off%2:35:00::|cast_off%2:36:00::,true,0,senior_high,selected_for_cross_level_review,false
+60,gather up,gather up,senior_high,approved_dictionary_candidate_pool,OEWN,gather_up%2:38:00::|gather_up%2:40:00::,false,1,senior_high,selected_for_cross_level_review,false
+61,lean on,lean on,senior_high,approved_dictionary_candidate_pool,OEWN,lean_on%2:35:00::,false,1,senior_high,selected_for_cross_level_review,false
+62,phase out,phase out,senior_high,approved_dictionary_candidate_pool,OEWN,phase-out%1:04:00::|phase_out%2:36:00::,false,1,senior_high,selected_for_cross_level_review,false
+63,pipe down,pipe down,senior_high,approved_dictionary_candidate_pool,OEWN,pipe_down%2:39:00::,false,1,senior_high,selected_for_cross_level_review,false
+64,regard as,regard as,senior_high,approved_dictionary_candidate_pool,OEWN,regard_as%2:31:00::,false,1,senior_high,selected_for_cross_level_review,false
+65,settle on,settle on,senior_high,approved_dictionary_candidate_pool,OEWN,settle_on%2:30:00::,false,1,senior_high,selected_for_cross_level_review,false
+66,strike back,strike back,senior_high,approved_dictionary_candidate_pool,OEWN,strike_back%2:33:04::,false,1,senior_high,selected_for_cross_level_review,false
+67,take flight,take flight,senior_high,approved_dictionary_candidate_pool,OEWN,take_flight%2:38:00::,false,1,senior_high,selected_for_cross_level_review,false
+68,take root,take root,senior_high,approved_dictionary_candidate_pool,OEWN,take_root%2:30:01::,false,1,senior_high,selected_for_cross_level_review,false
+69,bow out,bow out,senior_high,approved_dictionary_candidate_pool,OEWN,bow_out%2:41:00::|bow_out%2:41:01::,true,0,senior_high,selected_for_cross_level_review,false
+70,branch out,branch out,senior_high,approved_dictionary_candidate_pool,OEWN,branch_out%2:30:00::,true,0,senior_high,selected_for_cross_level_review,false
+71,brush aside,brush aside,senior_high,approved_dictionary_candidate_pool,OEWN,brush_aside%2:32:00::,true,0,senior_high,selected_for_cross_level_review,false
+72,carve up,carve up,senior_high,approved_dictionary_candidate_pool,OEWN,carve_up%2:41:00::,true,0,senior_high,selected_for_cross_level_review,false
+73,cast about,cast about,senior_high,approved_dictionary_candidate_pool,OEWN,cast_about%2:31:00::,true,0,senior_high,selected_for_cross_level_review,false
+74,chew over,chew over,senior_high,approved_dictionary_candidate_pool,OEWN,chew_over%2:31:00::,true,0,senior_high,selected_for_cross_level_review,false
+75,choke up,choke up,senior_high,approved_dictionary_candidate_pool,OEWN,choke_up%2:35:00::,true,0,senior_high,selected_for_cross_level_review,false
+76,crop up,crop up,senior_high,approved_dictionary_candidate_pool,OEWN,crop_up%2:39:00::,true,0,senior_high,selected_for_cross_level_review,false
+77,drag up,drag up,senior_high,approved_dictionary_candidate_pool,OEWN,drag_up%2:32:00::,true,0,senior_high,selected_for_cross_level_review,false
+78,fold up,fold up,senior_high,approved_dictionary_candidate_pool,OEWN,fold_up%2:30:10::|fold_up%2:35:00::,true,0,senior_high,selected_for_cross_level_review,false
+79,frame up,frame up,senior_high,approved_dictionary_candidate_pool,OEWN,frame-up%1:04:00::|frame_up%2:36:00::,true,0,senior_high,selected_for_cross_level_review,false
+80,jazz up,jazz up,senior_high,approved_dictionary_candidate_pool,OEWN,jazz_up%2:30:00::,true,0,senior_high,selected_for_cross_level_review,false
+81,lay aside,lay aside,senior_high,approved_dictionary_candidate_pool,OEWN,lay_aside%2:40:00::,true,0,senior_high,selected_for_cross_level_review,false
+82,measure up,measure up,senior_high,approved_dictionary_candidate_pool,OEWN,measure_up%2:42:00::,true,0,senior_high,selected_for_cross_level_review,false
+83,reach out,reach out,senior_high,approved_dictionary_candidate_pool,OEWN,reach_out%2:32:00::|reach_out%2:35:00::|reach_out%2:42:00::,false,5,junior,selected_for_cross_level_review,false
+84,back up,back up,senior_high,approved_dictionary_candidate_pool,OEWN,back_up%2:30:00::|back_up%2:35:00::|back_up%2:36:00::|back_up%2:38:00::|back_up%2:41:00::,true,3,junior,selected_for_cross_level_review,false
+85,break up,break up,senior_high,approved_dictionary_candidate_pool,OEWN,break_up%2:29:00::|break_up%2:30:00::|break_up%2:30:01::|break_up%2:30:02::|break_up%2:30:03::|break_up%2:30:04::|break_up%2:30:08::|break_up%2:30:09::|break_up%2:32:00::|break_up%2:35:01::|break_up%2:35:02::|break_up%2:35:03::|break_up%2:35:04::|break_up%2:35:10::|break_up%2:36:00::|break_up%2:37:04::|break_up%2:38:00::|break_up%2:38:01::|break_up%2:41:00::,true,3,junior,selected_for_cross_level_review,false
+86,bring about,bring about,senior_high,approved_dictionary_candidate_pool,OEWN,bring_about%2:36:03::|bring_about%2:38:00::,true,3,junior,selected_for_cross_level_review,false
+87,come across,come across,senior_high,approved_dictionary_candidate_pool,OEWN,come_across%2:31:00::|come_across%2:32:00::|come_across%2:38:00::|come_across%2:39:00::|come_across%2:40:02::,true,2,junior,selected_for_cross_level_review,false
+88,come forward,come forward,senior_high,approved_dictionary_candidate_pool,OEWN,come_forward%2:38:00::,true,2,junior,selected_for_cross_level_review,false
+89,come to light,come to light,senior_high,approved_dictionary_candidate_pool,OEWN,come_to_light%2:30:00::,false,3,junior,selected_for_cross_level_review,false
+90,cover for,cover for,senior_high,approved_dictionary_candidate_pool,OEWN,cover_for%2:32:01::,false,3,junior,selected_for_cross_level_review,false
+91,cut back,cut back,senior_high,approved_dictionary_candidate_pool,OEWN,cut_back%2:30:00::|cut_back%2:30:01::|cut_back%2:35:00::|cut_back%2:38:00::,false,3,junior,selected_for_cross_level_review,false
+92,fight back,fight back,senior_high,approved_dictionary_candidate_pool,OEWN,fight_back%2:33:00::|fight_back%2:33:01::,false,3,junior,selected_for_cross_level_review,false
+93,hold back,hold back,senior_high,approved_dictionary_candidate_pool,OEWN,hold_back%2:30:00::|hold_back%2:33:00::|hold_back%2:39:00::|hold_back%2:40:00::|hold_back%2:42:00::|hold_back%2:42:01::,true,5,junior,selected_for_cross_level_review,false
+94,look forward,look forward,senior_high,approved_dictionary_candidate_pool,OEWN,look_forward%2:31:00::,false,3,junior,selected_for_cross_level_review,false
+95,move ahead,move ahead,senior_high,approved_dictionary_candidate_pool,OEWN,move_ahead%2:38:01::,false,4,junior,selected_for_cross_level_review,false
+96,point of view,point of view,senior_high,approved_dictionary_candidate_pool,OEWN,point_of_view%1:07:00::|point_of_view%1:09:00::,true,5,junior,selected_for_cross_level_review,false
+97,side by side,side by side,senior_high,approved_dictionary_candidate_pool,OEWN,side_by_side%5:00:00:close:01|side_by_side%5:00:00:related:02,false,7,junior,selected_for_cross_level_review,false
+98,slow motion,slow motion,senior_high,approved_dictionary_candidate_pool,OEWN,slow_motion%1:10:00::,true,2,senior_high,selected_for_cross_level_review,false
+99,step forward,step forward,senior_high,approved_dictionary_candidate_pool,OEWN,step_forward%2:38:00::,false,4,junior,selected_for_cross_level_review,false
+100,take advantage,take advantage,senior_high,approved_dictionary_candidate_pool,OEWN,take_advantage%2:40:00::|take_advantage%2:41:12::,false,3,junior,selected_for_cross_level_review,false
+101,win over,win over,senior_high,approved_dictionary_candidate_pool,OEWN,win_over%2:32:00::,false,3,junior,selected_for_cross_level_review,false
+102,solar system,solar system,senior_high,approved_dictionary_candidate_pool,OEWN,solar_system%1:17:00::,true,36,senior_high,selected_for_cross_level_review,false
+103,mental health,mental health,senior_high,approved_dictionary_candidate_pool,OEWN,mental_health%1:26:00::,false,37,senior_high,selected_for_cross_level_review,false
+104,national park,national park,senior_high,approved_dictionary_candidate_pool,OEWN,national_park%1:15:00::,true,23,senior_high,selected_for_cross_level_review,false
+105,science fiction,science fiction,senior_high,approved_dictionary_candidate_pool,OEWN,science_fiction%1:10:00::,true,13,senior_high,selected_for_cross_level_review,false
+106,credit card,credit card,senior_high,approved_dictionary_candidate_pool,OEWN,credit_card%1:21:01::,true,12,senior_high,selected_for_cross_level_review,false
+107,air pollution,air pollution,senior_high,approved_dictionary_candidate_pool,OEWN,air_pollution%1:26:00::,false,10,senior_high,selected_for_cross_level_review,false
+108,cell phone,cell phone,senior_high,approved_dictionary_candidate_pool,OEWN,cell_phone%2:32:00::,false,2,senior_high,selected_for_cross_level_review,false
+109,economic system,economic system,senior_high,approved_dictionary_candidate_pool,OEWN,economic_system%1:14:00::,false,5,senior_high,selected_for_cross_level_review,false
+110,economic development,economic development,senior_high,approved_dictionary_candidate_pool,OEWN,economic_development%1:09:01::,false,4,senior_high,selected_for_cross_level_review,false
+111,economic crisis,economic crisis,senior_high,approved_dictionary_candidate_pool,OEWN,economic_crisis%1:26:00::,false,7,senior_high,selected_for_cross_level_review,false
+112,open source,open source,senior_high,approved_dictionary_candidate_pool,OEWN,open-source%3:01:00::,false,10,senior_high,selected_for_cross_level_review,false
+113,public domain,public domain,senior_high,approved_dictionary_candidate_pool,OEWN,public_domain%1:21:00::,true,7,senior_high,selected_for_cross_level_review,false
+114,real estate,real estate,senior_high,approved_dictionary_candidate_pool,OEWN,real_estate%1:21:00::,true,7,senior_high,selected_for_cross_level_review,false
+115,native language,native language,senior_high,approved_dictionary_candidate_pool,OEWN,native_language%1:10:00::,false,8,senior_high,selected_for_cross_level_review,false
+116,native speaker,native speaker,senior_high,approved_dictionary_candidate_pool,OEWN,native_speaker%1:18:00::,false,8,senior_high,selected_for_cross_level_review,false
+117,solar power,solar power,senior_high,approved_dictionary_candidate_pool,OEWN,solar_power%1:19:00::,false,8,senior_high,selected_for_cross_level_review,false
+118,solar energy,solar energy,senior_high,approved_dictionary_candidate_pool,OEWN,solar_energy%1:19:00::,false,5,senior_high,selected_for_cross_level_review,false
+119,greenhouse gas,greenhouse gas,senior_high,approved_dictionary_candidate_pool,OEWN,greenhouse_gas%1:27:00::,false,7,senior_high,selected_for_cross_level_review,false
+120,endangered species,endangered species,senior_high,approved_dictionary_candidate_pool,OEWN,endangered_species%1:14:00::,false,7,senior_high,selected_for_cross_level_review,false
+121,human being,human being,senior_high,approved_dictionary_candidate_pool,OEWN,human_being%1:05:00::,true,5,senior_high,selected_for_cross_level_review,false
+122,nuclear power,nuclear power,senior_high,approved_dictionary_candidate_pool,OEWN,nuclear_power%1:19:00::,true,5,senior_high,selected_for_cross_level_review,false
+123,intellectual property,intellectual property,senior_high,approved_dictionary_candidate_pool,OEWN,intellectual_property%1:21:00::,false,6,senior_high,selected_for_cross_level_review,false
+124,food chain,food chain,senior_high,approved_dictionary_candidate_pool,OEWN,food_chain%1:19:00::,true,4,senior_high,selected_for_cross_level_review,false
+125,cash register,cash register,senior_high,approved_dictionary_candidate_pool,OEWN,cash_register%1:06:00::,true,4,senior_high,selected_for_cross_level_review,false
+126,target language,target language,senior_high,approved_dictionary_candidate_pool,OEWN,target_language%1:10:01::|target_language%1:10:02::,false,6,senior_high,selected_for_cross_level_review,false
+127,search engine,search engine,senior_high,approved_dictionary_candidate_pool,OEWN,search_engine%1:10:00::,false,5,senior_high,selected_for_cross_level_review,false
+128,virtual reality,virtual reality,senior_high,approved_dictionary_candidate_pool,OEWN,virtual_reality%1:04:00::,false,3,senior_high,selected_for_cross_level_review,false
+129,press conference,press conference,senior_high,approved_dictionary_candidate_pool,OEWN,press_conference%1:10:00::,true,3,senior_high,selected_for_cross_level_review,false
+130,security system,security system,senior_high,approved_dictionary_candidate_pool,OEWN,security_system%1:06:00::|security_system%1:06:01::,false,3,senior_high,selected_for_cross_level_review,false
+131,health insurance,health insurance,senior_high,approved_dictionary_candidate_pool,OEWN,health_insurance%1:21:00::,true,2,senior_high,selected_for_cross_level_review,false
+132,exchange rate,exchange rate,senior_high,approved_dictionary_candidate_pool,OEWN,exchange_rate%1:21:00::,true,2,senior_high,selected_for_cross_level_review,false
+133,social welfare,social welfare,senior_high,approved_dictionary_candidate_pool,OEWN,social_welfare%1:04:00::,true,2,senior_high,selected_for_cross_level_review,false
+134,public transport,public transport,senior_high,approved_dictionary_candidate_pool,OEWN,public_transport%1:06:00::,false,2,senior_high,selected_for_cross_level_review,false
+135,speed limit,speed limit,senior_high,approved_dictionary_candidate_pool,OEWN,speed_limit%1:10:00::,true,2,senior_high,selected_for_cross_level_review,false
+136,trial and error,trial and error,senior_high,approved_dictionary_candidate_pool,OEWN,trial-and-error%5:00:00:empirical:00|trial-and-error%5:00:00:heuristic:00|trial_and_error%1:04:00::,true,2,senior_high,selected_for_cross_level_review,false
+137,academic year,academic year,senior_high,approved_dictionary_candidate_pool,OEWN,academic_year%1:28:00::,true,1,senior_high,selected_for_cross_level_review,false
+138,cost of living,cost of living,senior_high,approved_dictionary_candidate_pool,OEWN,cost_of_living%1:21:00::,true,1,senior_high,selected_for_cross_level_review,false
+139,income tax,income tax,senior_high,approved_dictionary_candidate_pool,OEWN,income_tax%1:21:00::,true,1,senior_high,selected_for_cross_level_review,false
+140,foreign exchange,foreign exchange,senior_high,approved_dictionary_candidate_pool,OEWN,foreign_exchange%1:21:00::,true,1,senior_high,selected_for_cross_level_review,false
+141,general election,general election,senior_high,approved_dictionary_candidate_pool,OEWN,general_election%1:04:00::,true,1,senior_high,selected_for_cross_level_review,false
+142,investment bank,investment bank,senior_high,approved_dictionary_candidate_pool,Moby,,true,1,senior_high,selected_for_cross_level_review,false
+143,low profile,low profile,senior_high,approved_dictionary_candidate_pool,OEWN,low_profile%1:26:00::,true,1,senior_high,selected_for_cross_level_review,false
+144,mail order,mail order,senior_high,approved_dictionary_candidate_pool,OEWN,mail_order%1:10:00::,true,1,senior_high,selected_for_cross_level_review,false
+145,mass produce,mass produce,senior_high,approved_dictionary_candidate_pool,OEWN,mass-produce%2:36:00::,true,0,senior_high,selected_for_cross_level_review,false
+146,critical point,critical point,senior_high,approved_dictionary_candidate_pool,OEWN,critical_point%1:26:00::,true,1,senior_high,selected_for_cross_level_review,false
+147,global climate change,global climate change,senior_high,approved_dictionary_candidate_pool,OEWN,global_climate_change%1:22:00::,false,2,senior_high,selected_for_cross_level_review,false
+148,labor market,labor market,senior_high,approved_dictionary_candidate_pool,OEWN,labor_market%1:04:00::,false,2,senior_high,selected_for_cross_level_review,false
+149,market economy,market economy,senior_high,approved_dictionary_candidate_pool,OEWN,market_economy%1:14:00::,false,2,senior_high,selected_for_cross_level_review,false
+150,theme park,theme park,senior_high,approved_dictionary_candidate_pool,OEWN,theme_park%1:15:00::,false,2,senior_high,selected_for_cross_level_review,false
+151,climate change,climate change,senior_high,approved_dictionary_candidate_pool,OEWN,climate_change%1:22:00::,false,68,junior,selected_for_cross_level_review,false
+152,natural gas,natural gas,senior_high,approved_dictionary_candidate_pool,OEWN,natural_gas%1:27:00::,true,8,senior_high,selected_for_cross_level_review,false
+153,space station,space station,senior_high,approved_dictionary_candidate_pool,OEWN,space_station%1:06:00::,true,32,junior,selected_for_cross_level_review,false
+154,large scale,large scale,senior_high,approved_dictionary_candidate_pool,OEWN,large-scale%5:00:00:large:00|large-scale%5:00:02:large:00,true,4,senior_high,selected_for_cross_level_review,false
+155,small scale,small scale,senior_high,approved_dictionary_candidate_pool,OEWN,small-scale%5:00:00:limited:00|small-scale%5:00:00:small:00,true,2,senior_high,selected_for_cross_level_review,false
+156,high resolution,high resolution,senior_high,approved_dictionary_candidate_pool,OEWN,high-resolution%3:00:00::,false,5,senior_high,selected_for_cross_level_review,false
+157,full length,full length,senior_high,approved_dictionary_candidate_pool,OEWN,full-length%5:00:00:unabridged:00|full-length%5:00:00:whole:00,true,3,senior_high,selected_for_cross_level_review,false
+158,long distance,long distance,senior_high,approved_dictionary_candidate_pool,OEWN,long-distance%3:01:00::|long-distance%5:00:00:distant:01|long_distance%1:10:00::,true,1,senior_high,selected_for_cross_level_review,false
+159,minimum wage,minimum wage,senior_high,approved_dictionary_candidate_pool,OEWN,minimum_wage%1:21:00::,true,3,senior_high,selected_for_cross_level_review,false
+160,mountain range,mountain range,senior_high,approved_dictionary_candidate_pool,OEWN,mountain_range%1:17:00::,true,3,senior_high,selected_for_cross_level_review,false
+161,secondary school,secondary school,senior_high,approved_dictionary_candidate_pool,OEWN,secondary_school%1:14:00::,true,3,senior_high,selected_for_cross_level_review,false
+162,square root,square root,senior_high,approved_dictionary_candidate_pool,OEWN,square_root%1:23:00::,true,3,senior_high,selected_for_cross_level_review,false
+163,white collar,white collar,senior_high,approved_dictionary_candidate_pool,OEWN,white-collar%3:00:00::,true,1,senior_high,selected_for_cross_level_review,false
+164,wide angle,wide angle,senior_high,approved_dictionary_candidate_pool,OEWN,wide-angle%3:01:00::,true,1,senior_high,selected_for_cross_level_review,false
+165,freedom of speech,freedom of speech,senior_high,approved_dictionary_candidate_pool,OEWN,freedom_of_speech%1:07:00::,false,4,senior_high,selected_for_cross_level_review,false
+166,inner city,inner city,senior_high,approved_dictionary_candidate_pool,OEWN,inner_city%1:15:00::,false,4,senior_high,selected_for_cross_level_review,false
+167,brand new,brand new,senior_high,approved_dictionary_candidate_pool,OEWN,brand-new%5:00:00:new:00,true,5,senior_high,selected_for_cross_level_review,false
+168,equal to,equal to,senior_high,approved_dictionary_candidate_pool,OEWN,equal_to%5:00:00:adequate:00,false,9,senior_high,selected_for_cross_level_review,false
+169,responsible for,responsible for,senior_high,approved_dictionary_candidate_pool,OEWN,responsible_for%5:00:00:causative:00,false,34,junior,selected_for_cross_level_review,false
+170,be due,be due,senior_high,approved_dictionary_candidate_pool,OEWN,be_due%2:42:00::,false,2,senior_high,selected_for_cross_level_review,false
+171,in sight,in sight,senior_high,approved_dictionary_candidate_pool,OEWN,in_sight%5:00:00:visible:00,false,5,senior_high,selected_for_cross_level_review,false
+172,most valuable,most valuable,senior_high,approved_dictionary_candidate_pool,OEWN,most-valuable%5:00:00:important:00,false,5,senior_high,selected_for_cross_level_review,false
+173,well being,well being,senior_high,approved_dictionary_candidate_pool,OEWN,well-being%1:26:00::,true,9,senior_high,selected_for_cross_level_review,false
+174,body and soul,body and soul,senior_high,approved_dictionary_candidate_pool,OEWN,body_and_soul%4:02:00::,false,1,senior_high,selected_for_cross_level_review,false
+175,heart and soul,heart and soul,senior_high,approved_dictionary_candidate_pool,OEWN,heart_and_soul%1:09:00::|heart_and_soul%4:02:00::,false,1,senior_high,selected_for_cross_level_review,false
+176,in common with,in common with,senior_high,approved_dictionary_candidate_pool,OEWN,in_common_with%4:02:00::,false,5,junior,selected_for_cross_level_review,false
+177,in the air,in the air,senior_high,approved_dictionary_candidate_pool,OEWN,in_the_air%4:02:00::,false,15,junior,selected_for_cross_level_review,false
+178,in hand,in hand,senior_high,approved_dictionary_candidate_pool,OEWN,in_hand%4:02:00::,false,13,junior,selected_for_cross_level_review,false
+179,in place,in place,senior_high,approved_dictionary_candidate_pool,OEWN,in_place%4:02:00::,false,16,junior,selected_for_cross_level_review,false
+180,in turn,in turn,senior_high,approved_dictionary_candidate_pool,OEWN,in_turn%4:02:00::,false,11,junior,selected_for_cross_level_review,false
+181,no longer,no longer,senior_high,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,67,manual_stage_check,selected_for_cross_level_review,false
+182,rather than,rather than,senior_high,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,42,manual_stage_check,selected_for_cross_level_review,false
+183,as a result,as a result,senior_high,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,13,manual_stage_check,selected_for_cross_level_review,false
+184,as if,as if,senior_high,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,47,manual_stage_check,selected_for_cross_level_review,false
+185,even though,even though,senior_high,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,20,manual_stage_check,selected_for_cross_level_review,false
+186,instead of,instead of,senior_high,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,76,manual_stage_check,selected_for_cross_level_review,false
+187,because of,because of,senior_high,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,102,manual_stage_check,selected_for_cross_level_review,false
+188,thanks to,thanks to,senior_high,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,14,manual_stage_check,selected_for_cross_level_review,false
+189,take action,take action,senior_high,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,3,manual_stage_check,selected_for_cross_level_review,false
+190,make a difference,make a difference,senior_high,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,3,manual_stage_check,selected_for_cross_level_review,false
+191,deal with,deal with,senior_high,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,26,manual_stage_check,selected_for_cross_level_review,false
+192,lead to,lead to,senior_high,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,55,manual_stage_check,selected_for_cross_level_review,false
+193,result in,result in,senior_high,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,8,manual_stage_check,selected_for_cross_level_review,false
+194,refer to,refer to,senior_high,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,13,manual_stage_check,selected_for_cross_level_review,false
+195,apply for,apply for,senior_high,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,1,manual_stage_check,selected_for_cross_level_review,false
+196,in a way,in a way,senior_high,approved_dictionary_candidate_pool,OEWN,in_a_way%4:02:00::,false,9,junior,selected_for_cross_level_review,false
+197,be based on,be based on,senior_high,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,2,manual_stage_check,selected_for_cross_level_review,false
+198,real life,real life,senior_high,approved_dictionary_candidate_pool,OEWN,real_life%1:09:00::,false,15,junior,selected_for_cross_level_review,false
+199,be related to,be related to,senior_high,independent_structure_plus_tatoeba_cc0,Tatoeba CC0 exact normalized occurrence,,false,1,manual_stage_check,selected_for_cross_level_review,false
+200,social media,social media,senior_high,approved_dictionary_candidate_pool,OEWN,social_media%1:10:01::,false,34,cet4,selected_for_cross_level_review,false

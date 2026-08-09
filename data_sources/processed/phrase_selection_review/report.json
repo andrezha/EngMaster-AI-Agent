@@ -2,7 +2,8 @@
   "status": "pass",
   "errors": [],
   "completed_levels": [
-    "junior"
+    "junior",
+    "senior_high"
   ],
   "level_reports": {
     "junior": {
@@ -10,6 +11,12 @@
       "candidate_pool_evidence_count": 226,
       "structure_plus_corpus_count": 24,
       "zero_corpus_count": 0
+    },
+    "senior_high": {
+      "selected_count": 200,
+      "candidate_pool_evidence_count": 183,
+      "structure_plus_corpus_count": 17,
+      "zero_corpus_count": 16
     }
   },
   "cross_level_duplicate_count": 0,
