@@ -1,5 +1,5 @@
 {
-  "rows_checked": 850,
+  "rows_checked": 900,
   "batch_files": [
     "batch_001.tsv",
     "batch_002.tsv",
@@ -17,9 +17,10 @@
     "batch_014.tsv",
     "batch_015.tsv",
     "batch_016.tsv",
-    "batch_017.tsv"
+    "batch_017.tsv",
+    "batch_018.tsv"
   ],
-  "unique_record_ids": 850,
+  "unique_record_ids": 900,
   "coverage_by_level": {
     "junior": {
       "covered": 250,
@@ -40,10 +41,10 @@
       "missing_count": 0
     },
     "cet6": {
-      "covered": 100,
+      "covered": 150,
       "master_total": 300,
       "complete": false,
-      "missing_count": 200
+      "missing_count": 150
     }
   },
   "errors": [],

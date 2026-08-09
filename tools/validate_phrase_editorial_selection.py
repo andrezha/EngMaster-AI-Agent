@@ -54,7 +54,13 @@ def pedagogical_key(value: str) -> str:
         parts = parts[1:]
     if parts == ["frown", "upon"]:
         parts = ["frown", "on"]
-    return " ".join(parts)
+    key = " ".join(parts)
+    audited_equivalents = {
+        "rattle off": "reel off",
+        "sneak away": "sneak off",
+        "close down": "shut down",
+    }
+    return audited_equivalents.get(key, key)
 
 
 def read_selections() -> dict[str, list[str]]:

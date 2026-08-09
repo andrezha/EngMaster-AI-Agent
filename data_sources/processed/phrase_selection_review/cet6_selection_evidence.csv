@@ -100,7 +100,7 @@
 99,plea bargain,plea bargain,cet6,approved_dictionary_candidate_pool,OEWN,n|v,plea-bargain%2:32:00::|plea_bargain%1:10:00::,false,0,cet6,selected_for_cross_level_review,false
 100,poke fun,poke fun,cet6,approved_dictionary_candidate_pool,OEWN,v,poke_fun%2:32:00::,false,0,cet6,selected_for_cross_level_review,false
 101,prop up,prop up,cet6,approved_dictionary_candidate_pool,OEWN,v,prop_up%2:35:00::,false,0,cet6,selected_for_cross_level_review,false
-102,rattle off,rattle off,cet6,approved_dictionary_candidate_pool,OEWN,v,rattle_off%2:32:00::,false,0,cet6,selected_for_cross_level_review,false
+102,vice president,vice president,cet6,approved_dictionary_candidate_pool,OEWN,n,vice_president%1:18:00::,true,15,cet6,selected_for_cross_level_review,false
 103,scrape up,scrape up,cet6,approved_dictionary_candidate_pool,OEWN,v,scrape_up%2:35:00::,false,0,cet6,selected_for_cross_level_review,false
 104,skim off,skim off,cet6,approved_dictionary_candidate_pool,OEWN,v,skim_off%2:31:00::|skim_off%2:35:00::,false,0,cet6,selected_for_cross_level_review,false
 105,skim over,skim over,cet6,approved_dictionary_candidate_pool,OEWN,v,skim_over%2:31:00::|skim_over%2:35:00::,false,0,cet6,selected_for_cross_level_review,false
@@ -112,7 +112,7 @@
 111,snatch up,snatch up,cet6,approved_dictionary_candidate_pool,OEWN,v,snatch_up%2:35:00::,false,0,cet6,selected_for_cross_level_review,false
 112,sneak away,sneak away,cet6,approved_dictionary_candidate_pool,OEWN,v,sneak_away%2:38:00::,false,0,cet6,selected_for_cross_level_review,false
 113,sneak in,sneak in,cet6,approved_dictionary_candidate_pool,OEWN,v,sneak_in%2:32:00::|sneak_in%2:35:00::,false,0,cet6,selected_for_cross_level_review,false
-114,sneak off,sneak off,cet6,approved_dictionary_candidate_pool,OEWN,v,sneak_off%2:38:00::,false,0,cet6,selected_for_cross_level_review,false
+114,olive oil,olive oil,cet6,approved_dictionary_candidate_pool,OEWN,n,olive_oil%1:13:00::,true,10,cet6,selected_for_cross_level_review,false
 115,sneak out,sneak out,cet6,approved_dictionary_candidate_pool,OEWN,v,sneak_out%2:38:00::,false,0,cet6,selected_for_cross_level_review,false
 116,sneak up,sneak up,cet6,approved_dictionary_candidate_pool,OEWN,v,sneak_up%2:38:00::,false,0,cet6,selected_for_cross_level_review,false
 117,spice up,spice up,cet6,approved_dictionary_candidate_pool,OEWN,v,spice_up%2:30:00::|spice_up%2:39:00::,false,0,cet6,selected_for_cross_level_review,false
@@ -138,7 +138,7 @@
 137,clear out,clear out,cet6,approved_dictionary_candidate_pool,OEWN,v,clear_out%2:30:00::|clear_out%2:30:03::|clear_out%2:38:00::,true,1,junior,selected_for_cross_level_review,false
 138,clear up,clear up,cet6,approved_dictionary_candidate_pool,OEWN,v,clear_up%2:30:00::|clear_up%2:30:02::|clear_up%2:31:00::|clear_up%2:32:00::|clear_up%2:43:00::,true,1,junior,selected_for_cross_level_review,false
 139,climb down,climb down,cet6,approved_dictionary_candidate_pool,OEWN,n|v,climb-down%1:10:00::|climb_down%2:38:00::,true,1,junior,selected_for_cross_level_review,false
-140,close down,close down,cet6,approved_dictionary_candidate_pool,OEWN,v,close_down%2:41:00::,true,1,junior,selected_for_cross_level_review,false
+140,spinal cord,spinal cord,cet6,approved_dictionary_candidate_pool,OEWN,n,spinal_cord%1:08:00::,true,4,cet6,selected_for_cross_level_review,false
 141,come upon,come upon,cet6,approved_dictionary_candidate_pool,OEWN,v,come_upon%2:40:01::|come_upon%2:40:09::,true,1,junior,selected_for_cross_level_review,false
 142,cut up,cut up,cet6,approved_dictionary_candidate_pool,OEWN,a|n|v,cut-up%1:18:00::|cut_up%2:30:00::|cut_up%2:30:01::|cut_up%2:30:02::|cut_up%2:35:00::|cut_up%5:00:00:cut:01,true,1,junior,selected_for_cross_level_review,false
 143,dig in,dig in,cet6,approved_dictionary_candidate_pool,OEWN,v,dig_in%2:34:00::|dig_in%2:35:00::,true,1,junior,selected_for_cross_level_review,false
