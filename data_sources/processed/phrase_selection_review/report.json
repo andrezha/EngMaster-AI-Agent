@@ -30,7 +30,7 @@
       "selected_count": 300,
       "candidate_pool_evidence_count": 280,
       "structure_plus_corpus_count": 20,
-      "zero_corpus_count": 72
+      "zero_corpus_count": 71
     }
   },
   "cross_level_duplicate_count": 0,
@@ -40,7 +40,7 @@
   "english_master_scope_frozen": true,
   "master_record_count": 1050,
   "master_sha256": {
-    "csv": "5afc8015644cc3c20d926bc985cc4437c01d11c1039161aba80ace02cd5be618",
-    "json": "3751ee09ec6ccb10a2fd28817cacf8ff3f887fb174d2de180a00fd584eda12bb"
+    "csv": "f9a51caadbc2932542d68b2f0fba1367db363d8916c588b7fbfeaf0f763898ea",
+    "json": "dbed1b29287f046d4f465f59906fb8d1253319c763b08c2a3b8b9128da673604"
   }
 }

@@ -52,6 +52,8 @@ def pedagogical_key(value: str) -> str:
     parts = tokens(value)
     if parts and parts[0] == "be":
         parts = parts[1:]
+    if parts == ["frown", "upon"]:
+        parts = ["frown", "on"]
     return " ".join(parts)
 
 

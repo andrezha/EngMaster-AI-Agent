@@ -88,7 +88,7 @@
 87,flip over,flip over,cet6,approved_dictionary_candidate_pool,OEWN,v,flip_over%2:35:00::,false,0,cet6,selected_for_cross_level_review,false
 88,flirt with,flirt with,cet6,approved_dictionary_candidate_pool,OEWN,v,flirt_with%2:31:00::,false,0,cet6,selected_for_cross_level_review,false
 89,frown on,frown on,cet6,approved_dictionary_candidate_pool,OEWN,v,frown_on%2:31:00::,false,0,cet6,selected_for_cross_level_review,false
-90,frown upon,frown upon,cet6,approved_dictionary_candidate_pool,OEWN,v,frown_upon%2:31:00::,false,0,cet6,selected_for_cross_level_review,false
+90,solar eclipse,solar eclipse,cet6,approved_dictionary_candidate_pool,OEWN,n,solar_eclipse%1:11:00::,true,4,cet6,selected_for_cross_level_review,false
 91,give vent,give vent,cet6,approved_dictionary_candidate_pool,OEWN,v,give_vent%2:32:00::,false,0,cet6,selected_for_cross_level_review,false
 92,grope for,grope for,cet6,approved_dictionary_candidate_pool,OEWN,v,grope_for%2:35:00::,false,0,cet6,selected_for_cross_level_review,false
 93,hinge on,hinge on,cet6,approved_dictionary_candidate_pool,OEWN,v,hinge_on%2:42:00::,false,0,cet6,selected_for_cross_level_review,false
