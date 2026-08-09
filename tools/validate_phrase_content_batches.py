@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import json
 import re
+from collections import Counter
 from pathlib import Path
 
 
@@ -84,10 +85,29 @@ def main() -> int:
                 if row["human_review_claimed"].strip().casefold() != "false":
                     errors.append(f"{label}: human_review_claimed must be false")
 
+    master_counts = Counter(row["introduced_level"] for row in master_rows)
+    covered_counts = Counter(master[rid]["introduced_level"] for rid in seen_ids if rid in master)
+    missing_by_level = {
+        level: sorted(
+            row["record_id"]
+            for row in master_rows
+            if row["introduced_level"] == level and row["record_id"] not in seen_ids
+        )
+        for level in master_counts
+    }
     report = {
         "rows_checked": rows_checked,
         "batch_files": [p.name for p in batch_files],
         "unique_record_ids": len(seen_ids),
+        "coverage_by_level": {
+            level: {
+                "covered": covered_counts[level],
+                "master_total": master_counts[level],
+                "complete": covered_counts[level] == master_counts[level],
+                "missing_count": len(missing_by_level[level]),
+            }
+            for level in master_counts
+        },
         "errors": errors,
         "warnings": warnings,
         "passed": not errors,
@@ -100,4 +120,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
