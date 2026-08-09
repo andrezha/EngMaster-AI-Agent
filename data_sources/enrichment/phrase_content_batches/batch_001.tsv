@@ -1,0 +1,51 @@
+record_id	phrase	meaning_zh	usage_note_zh	example_en	example_zh	content_method	qa_status	human_review_claimed
+PH-J-0001	a bit	一点；稍微	修饰形容词、副词或动词，表示程度不大。	I feel a bit tired after the long walk.	走了很长一段路后，我觉得有点累。	original_project_authored	draft_auto_validated	false
+PH-J-0002	a few	几个；少数	修饰可数名词复数，表示数量虽少但并非没有。	A few students stayed to clean the classroom.	几个学生留下来打扫教室。	original_project_authored	draft_auto_validated	false
+PH-J-0003	a little	一点；少量	可修饰不可数名词，也可表示程度较小。	There is a little milk left in the fridge.	冰箱里还剩一点牛奶。	original_project_authored	draft_auto_validated	false
+PH-J-0004	a lot	很；非常；许多	可修饰动词表示程度，也可单独表示大量事物。	We learned a lot from the science project.	我们从这个科学项目中学到了很多。	original_project_authored	draft_auto_validated	false
+PH-J-0005	according to	根据；按照	后接名词或代词，说明信息来源或判断依据。	According to the map, the library is near the park.	根据地图，图书馆在公园附近。	original_project_authored	draft_auto_validated	false
+PH-J-0006	after all	毕竟；终究	用于补充一个应当考虑的理由或事实。	Be patient with him; after all, he is new here.	对他耐心一点，毕竟他刚来这里。	original_project_authored	draft_auto_validated	false
+PH-J-0007	all over	到处；遍及	表示某事物分布在某地的各处。	Wild flowers grow all over the hill in spring.	春天，野花开遍整座山丘。	original_project_authored	draft_auto_validated	false
+PH-J-0008	all right	可以；没关系；安然无恙	可表示同意、接受，也可说明情况良好。	Do not worry; everything will be all right.	别担心，一切都会好起来的。	original_project_authored	draft_auto_validated	false
+PH-J-0009	all the time	一直；始终	表示某种情况在一段时间内持续发生。	The baby smiled all the time during the visit.	在探访期间，宝宝一直在笑。	original_project_authored	draft_auto_validated	false
+PH-J-0010	all the way	一路上；自始至终	表示整个路程或过程没有中断。	We talked all the way home.	我们一路聊着回到家。	original_project_authored	draft_auto_validated	false
+PH-J-0011	as usual	像往常一样	表示事情按照平常的方式发生。	My father got up early as usual.	我父亲像往常一样早起。	original_project_authored	draft_auto_validated	false
+PH-J-0012	as well	也；还	通常放在肯定句句末，补充同类的人或事。	Lucy can speak French, and she can speak Spanish as well.	露西会说法语，也会说西班牙语。	original_project_authored	draft_auto_validated	false
+PH-J-0013	at all	根本；丝毫	常用于否定句或疑问句，加强“任何程度”的含义。	I was not nervous at all before the speech.	演讲前我一点也不紧张。	original_project_authored	draft_auto_validated	false
+PH-J-0014	at first	起初；开始时	用于说明最初的情况，后文常出现变化。	At first, the puzzle looked difficult, but we soon solved it.	起初这个谜题看起来很难，但我们很快就解开了。	original_project_authored	draft_auto_validated	false
+PH-J-0015	at home	在家；在国内	通常表示人在住所，也可表示处于熟悉自在的状态。	I will stay at home and finish my book tonight.	今晚我会待在家里把书读完。	original_project_authored	draft_auto_validated	false
+PH-J-0016	at last	终于；最后	强调经过等待、努力或耽搁后某事发生。	The rain stopped at last, and the match began.	雨终于停了，比赛开始了。	original_project_authored	draft_auto_validated	false
+PH-J-0017	at least	至少	表示数量或程度不低于某个限度。	Please read at least ten pages every day.	请每天至少读十页。	original_project_authored	draft_auto_validated	false
+PH-J-0018	at once	立刻；马上	表示不延迟地做某事。	When you smell smoke, leave the room at once.	闻到烟味时，要立刻离开房间。	original_project_authored	draft_auto_validated	false
+PH-J-0019	at the same time	同时；不过	表示两件事同时发生，也可引出与前文并存的另一面。	The twins reached the finish line at the same time.	这对双胞胎同时到达终点。	original_project_authored	draft_auto_validated	false
+PH-J-0020	at a time	每次；一次	表示每次只处理限定数量的人或事物。	Carry two boxes at a time to stay safe.	为了安全，每次搬两个箱子。	original_project_authored	draft_auto_validated	false
+PH-J-0021	at work	在工作；在起作用	可表示某人正在工作，也可表示某种力量正在发挥作用。	My mother is still at work, so she will come later.	我妈妈还在工作，所以她会晚些来。	original_project_authored	draft_auto_validated	false
+PH-J-0022	by hand	用手；手工	表示不用机器，而是亲手完成。	Grandpa made this wooden toy by hand.	爷爷亲手制作了这个木制玩具。	original_project_authored	draft_auto_validated	false
+PH-J-0023	by the way	顺便说一下	用于转换到与当前话题相关的补充内容。	By the way, did you bring your library card?	顺便问一下，你带图书证了吗？	original_project_authored	draft_auto_validated	false
+PH-J-0024	day and night	日夜；昼夜不停	强调某事持续进行或在白天和夜晚都发生。	The doctors worked day and night to help the patients.	医生们日夜工作，救助病人。	original_project_authored	draft_auto_validated	false
+PH-J-0025	each other	彼此；互相	用于两人或多人之间的相互行为。	Good teammates listen to each other.	优秀的队友会互相倾听。	original_project_authored	draft_auto_validated	false
+PH-J-0026	every day	每天	作时间状语，说明动作每日发生；与形容词 everyday 区分。	I water these plants every day.	我每天给这些植物浇水。	original_project_authored	draft_auto_validated	false
+PH-J-0027	every week	每周	作时间状语，说明动作每个星期发生。	Our class has a reading meeting every week.	我们班每周举行一次读书会。	original_project_authored	draft_auto_validated	false
+PH-J-0028	every year	每年	作时间状语，说明动作或事件每年发生。	Many visitors come to the town every year.	每年都有许多游客来到这个小镇。	original_project_authored	draft_auto_validated	false
+PH-J-0029	for a while	一会儿；一段时间	表示某个动作或状态持续一段不太长的时间。	Let us sit here and rest for a while.	我们坐在这里休息一会儿吧。	original_project_authored	draft_auto_validated	false
+PH-J-0030	for example	例如	用于引出能够说明前面观点的具体例子。	Some animals, for example, bears, sleep through much of the winter.	有些动物，例如熊，会睡过冬季的大部分时间。	original_project_authored	draft_auto_validated	false
+PH-J-0031	for free	免费地	表示获得某物或服务时不需要付钱。	Children can enter the museum for free on Sundays.	孩子们星期日可以免费进入博物馆。	original_project_authored	draft_auto_validated	false
+PH-J-0032	for short	简称；缩写为	用于说明一个较长名称的简短说法。	We call the International Space Station the ISS for short.	我们把国际空间站简称为 ISS。	original_project_authored	draft_auto_validated	false
+PH-J-0033	for sure	确实；肯定地	表示说话人对某事很有把握。	I cannot say for sure when the bus will arrive.	我无法确切地说公共汽车什么时候到。	original_project_authored	draft_auto_validated	false
+PH-J-0034	from time to time	不时；偶尔	表示某事间隔一段时间发生一次。	We visit our old teacher from time to time.	我们不时去看望以前的老师。	original_project_authored	draft_auto_validated	false
+PH-J-0035	good luck	祝你好运	用于祝愿别人顺利或成功。	Good luck with your English test tomorrow!	祝你明天的英语考试顺利！	original_project_authored	draft_auto_validated	false
+PH-J-0036	here and there	到处；各处	表示分散在不同地方，不一定遍及全部区域。	Small cafés appeared here and there along the street.	街道两旁零星分布着一些小咖啡馆。	original_project_authored	draft_auto_validated	false
+PH-J-0037	in all	总共；合计	用于给出全部数量。	There are thirty students in all in our music club.	我们的音乐社团总共有三十名学生。	original_project_authored	draft_auto_validated	false
+PH-J-0038	in common	共同；共有	常与 have 连用，说明人或事物具有相同点。	The two friends have a love of music in common.	这两个朋友都热爱音乐。	original_project_authored	draft_auto_validated	false
+PH-J-0039	in fact	事实上；其实	用于补充真实情况，或纠正可能的误解。	The task looks simple, but in fact it needs careful planning.	这项任务看起来简单，其实需要周密计划。	original_project_authored	draft_auto_validated	false
+PH-J-0040	in line	排成一列；成一直线	常用于 wait 或 stand 等动词后，表示按队列排列。	Please wait in line outside the ticket office.	请在售票处外排队等候。	original_project_authored	draft_auto_validated	false
+PH-J-0041	in order	井然有序；按顺序	表示事物排列整齐或处于适当状态。	Put the pictures in order to tell the story.	把图片按顺序排列来讲述这个故事。	original_project_authored	draft_auto_validated	false
+PH-J-0042	in short	总之；简而言之	用于用简短的话概括前面的内容。	In short, regular practice is the key to improvement.	总之，经常练习是进步的关键。	original_project_authored	draft_auto_validated	false
+PH-J-0043	in the end	最后；终于	表示经过一段过程后的最终结果。	We tried several routes and chose the safest one in the end.	我们尝试了几条路线，最后选择了最安全的一条。	original_project_authored	draft_auto_validated	false
+PH-J-0044	in the way	挡路；妨碍	表示阻挡通道或妨碍事情进行。	Your bicycle is in the way, so please move it.	你的自行车挡路了，请把它移开。	original_project_authored	draft_auto_validated	false
+PH-J-0045	just in time	正好及时	表示在最后时刻赶上，没有错过。	We reached the station just in time for the last train.	我们正好及时赶上末班火车。	original_project_authored	draft_auto_validated	false
+PH-J-0046	later on	后来；以后	表示在当前时间之后的某个时候。	I am busy now, but I can help you later on.	我现在很忙，但之后可以帮你。	original_project_authored	draft_auto_validated	false
+PH-J-0047	more and more	越来越多；越来越	表示数量或程度持续增加。	More and more students ride bicycles to school.	越来越多的学生骑自行车上学。	original_project_authored	draft_auto_validated	false
+PH-J-0048	next door	隔壁；在隔壁	表示紧邻的房屋或房间。	A friendly family moved in next door last week.	上周有一家友善的人搬到了隔壁。	original_project_authored	draft_auto_validated	false
+PH-J-0049	no doubt	无疑；很可能	表示确信，也可表示某事极有可能发生。	No doubt, teamwork helped us finish early.	毫无疑问，团队合作帮助我们提前完成了任务。	original_project_authored	draft_auto_validated	false
+PH-J-0050	no matter	不管；无论	通常与疑问词连用，引出不影响结果的条件。	No matter what happens, stay calm and ask for help.	无论发生什么，都要保持冷静并寻求帮助。	original_project_authored	draft_auto_validated	false

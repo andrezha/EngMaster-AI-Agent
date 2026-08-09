@@ -1,0 +1,11 @@
+{
+  "rows_checked": 50,
+  "batch_files": [
+    "batch_001.tsv"
+  ],
+  "unique_record_ids": 50,
+  "errors": [],
+  "warnings": [],
+  "passed": true,
+  "human_review_claimed": false
+}
