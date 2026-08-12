@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-EngMaster英语词汇分级学习平台 V1.0
+英思成英语词汇复习软件 V1.0
 【性能改善说明】：引入 QThread 异步调度，减少主线程阻塞。
 """
 import sys
@@ -62,6 +62,7 @@ try:
     from utils import get_writable_data_path, get_resource_path, set_active_edition
     from edition_config import (
         ALL_EDITIONS,
+        AVAILABLE_TRIAL_EDITION_IDS,
         EDITIONS,
         PAGE_PHRASE_CHALLENGE,
         PAGE_PHRASE_LIST,
@@ -74,6 +75,7 @@ try:
         edition_was_explicitly_requested,
         extract_edition_args,
         is_trial_edition,
+        is_available_trial_edition,
         resolve_edition,
     )
     from watermark_modes import parse_watermark_args
@@ -84,13 +86,13 @@ except ImportError as e:
 
 
 _feature_modules_loaded = False
-SETTINGS_ORGANIZATION = "EngMaster"
-SETTINGS_APPLICATION = "EnglishVocabularyPlatform"
+SETTINGS_ORGANIZATION = "RecallLex"
+SETTINGS_APPLICATION = "YingSiChengVocabularyReview"
 LAST_EDITION_SETTING_KEY = "edition/last_active"
 VOCABULARY_SCOPE_NOTICE = (
-    "本软件词汇及学习内容范围主要参考国家英语课程标准、相关英语考试大纲及公开考试要求，"
-    "由开发者结合不同学习阶段的实际需求整理编排。本软件为个人开发的英语学习辅助工具，"
-    "并非教育主管部门、学校或考试机构官方指定软件。"
+    "本软件用于英语词汇复习、主动回忆验证和薄弱词巩固，词汇及学习内容由开发者结合"
+    "公开语言资料、开放词汇资源及不同学习阶段的一般需求独立整理编排。本软件不是升学"
+    "考试服务，也并非教育主管部门、学校、考试机构或教材出版社的官方指定软件。"
 )
 
 
@@ -114,7 +116,9 @@ def save_last_edition(edition, settings=None):
 
 def load_last_trial_edition(settings=None):
     edition = load_last_edition(settings)
-    return edition if edition is not None and is_trial_edition(edition) else None
+    if edition is None or not is_trial_edition(edition):
+        return None
+    return edition if is_available_trial_edition(edition) else TRIAL_EDITION
 
 
 def _load_feature_modules():
@@ -142,7 +146,6 @@ class VocabLoaderWorker(QObject):
         self.vocabulary_path = vocabulary_path
 
     def run(self):
-        print("[DEBUG] VocabLoaderWorker.run started")
         try:
             vocab_path = get_resource_path(self.vocabulary_path)
             with open(vocab_path, "r", encoding="utf-8") as f:
@@ -178,7 +181,6 @@ class SelfRegisterVocabLoaderWorker(QObject):
         self.main_window_instance = main_window_instance
 
     def run(self):
-        print("[DEBUG] SelfRegisterVocabLoaderWorker.run started")
         try:
             user_data_path = get_writable_data_path("user_registered_vocab.json")
             user_vocab_data = []
@@ -203,8 +205,10 @@ class EngMasterApplication(QMainWindow):
         app = QtWidgets.QApplication.instance()
         if app is not None:
             apply_application_ui_baseline(app)
-        print("[DEBUG] EngMasterApplication.__init__ entered")
         self.edition = resolve_edition(edition)
+        if (is_trial_edition(self.edition)
+                and not is_available_trial_edition(self.edition)):
+            self.edition = TRIAL_EDITION
         self.is_trial = is_trial_edition(self.edition)
         app = QtWidgets.QApplication.instance()
         self.license_entitlements = frozenset(
@@ -217,6 +221,7 @@ class EngMasterApplication(QMainWindow):
         self.nav_buttons = {} 
         self._active_shared_nav_button = None
         self.nav_button_target_map = {
+            "btn_nav_scientific_memory": "scientific_memory_index",
             "btn_nav_vocab": 0, 
             "btn_nav_core_vocab": "word_list_index",
             "btn_nav_phrase_challenge": "phrase_irregular_challenge_index",
@@ -237,6 +242,7 @@ class EngMasterApplication(QMainWindow):
 
         # 属性预定义（线程安全的灯塔指针）
         self.word_list_index = -1
+        self.scientific_memory_index = -1
         self.self_register_vocab_index = -1
         self.phrase_irregular_challenge_index = -1
         self.phrase_irregular_list_index = -1
@@ -251,6 +257,7 @@ class EngMasterApplication(QMainWindow):
 
         self.vocab_ctrl = None
         self.word_list_widget = None
+        self.scientific_memory_widget = None
         self.self_register_vocab_ctrl = None
         self.phrase_irregular_challenge_widget = None
         self.phrase_irregular_list_widget = None
@@ -271,6 +278,11 @@ class EngMasterApplication(QMainWindow):
 
         res_dir = get_resource_path("resources")
         self.setCentralWidget(self.loading_widget)
+        # Keep restored/non-maximized windows usable on common laptop screens.
+        # The maximized launch remains unchanged; these values define the
+        # normal geometry when the user clicks Restore Down.
+        self.setMinimumSize(1000, 620)
+        self.resize(1160, 680)
         # Show only after an opaque page is attached; otherwise Windows may
         # briefly paint an empty/background window during edition changes.
         self.showMaximized()
@@ -297,7 +309,6 @@ class EngMasterApplication(QMainWindow):
 
             self.stack.insertWidget(0, loading_widget)
             self.stack.setCurrentIndex(0)
-            print(f"[DEBUG] loading screen inserted, currentIndex={self.stack.currentIndex()}, widget0={type(self.stack.widget(0)).__name__}")
             self.stack.currentChanged.connect(self._update_nav_button_styles)
 
             self._setup_trial_mode_banner()
@@ -364,6 +375,9 @@ class EngMasterApplication(QMainWindow):
                 "自主登记单词\n最多30词体验版" if self.is_trial
                 else "自主登记单词"),
         }
+        if self.edition.edition_id == "gaokao":
+            button_labels["btn_nav_vocab"] = "高中3800词闯关"
+            button_labels["btn_nav_core_vocab"] = "高中3800词汇表"
         for button_name, page_id in button_pages.items():
             button = self.ui_root.findChild(QPushButton, button_name)
             if button is None:
@@ -371,9 +385,23 @@ class EngMasterApplication(QMainWindow):
             button.setText(button_labels[button_name])
             button.setVisible(self.edition.page_enabled(page_id))
 
+        memory_button = self.ui_root.findChild(
+            QPushButton, "btn_nav_scientific_memory")
+        if memory_button is not None:
+            base_id = self.edition.edition_id.removeprefix("trial_")
+            memory_button.setText(
+                "初中词汇提分速记\n初中阶段·中考复习"
+                if base_id == "zhongkao"
+                else "3800词提分速记\n高中阶段·高考复习")
+            memory_button.setMinimumHeight(66)
+            memory_button.setVisible(
+                base_id in RELEASED_EDITION_IDS
+            )
+
         nav_layout = self.ui_root.findChild(QtWidgets.QVBoxLayout, "nav_v_layout")
         if nav_layout is not None:
             ordered_names = (
+                "btn_nav_scientific_memory",
                 "btn_nav_core_vocab", "btn_nav_vocab",
                 "btn_nav_phrase_list", "btn_nav_phrase_challenge",
                 "btn_nav_irregular_list", "btn_nav_irregular_challenge",
@@ -418,22 +446,28 @@ class EngMasterApplication(QMainWindow):
         main_layout = self.ui_root.findChild(QtWidgets.QHBoxLayout, "main_layout")
         if main_layout is None:
             return
+        nav_bar = self.ui_root.findChild(QtWidgets.QFrame, "nav_bar")
+        if nav_bar is None:
+            return
+        main_layout.removeWidget(nav_bar)
         main_layout.removeWidget(self.stack)
-        self.trial_content_container = QtWidgets.QWidget()
-        content_layout = QtWidgets.QVBoxLayout(self.trial_content_container)
-        content_layout.setContentsMargins(0, 0, 0, 0)
-        content_layout.setSpacing(0)
+        main_layout.setDirection(QtWidgets.QBoxLayout.Direction.TopToBottom)
         self.trial_mode_banner = QtWidgets.QLabel(
-            f"免费体验版  ·  {self.edition.base_display_name}30词体验词库  ·  自主登记最多30词")
+            "免费体验版  ·  高效记忆  ·  30词闯关识弱  ·  自主登记最多30词")
         self.trial_mode_banner.setObjectName("trial_mode_banner")
         self.trial_mode_banner.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.trial_mode_banner.setFixedHeight(42)
         self.trial_mode_banner.setStyleSheet(
             "background:#fef3c7; color:#92400e; border-bottom:2px solid #f59e0b; "
             "font-size:15px; font-weight:700; padding:0 14px;")
-        content_layout.addWidget(self.trial_mode_banner)
-        content_layout.addWidget(self.stack, 1)
-        main_layout.addWidget(self.trial_content_container, 1)
+        self.trial_body_container = QtWidgets.QWidget()
+        body_layout = QtWidgets.QHBoxLayout(self.trial_body_container)
+        body_layout.setContentsMargins(0, 0, 0, 0)
+        body_layout.setSpacing(0)
+        body_layout.addWidget(nav_bar)
+        body_layout.addWidget(self.stack, 1)
+        main_layout.addWidget(self.trial_mode_banner)
+        main_layout.addWidget(self.trial_body_container, 1)
 
     def _setup_edition_switcher(self):
         """Show the current edition and a permanent switch entry above navigation."""
@@ -553,7 +587,7 @@ class EngMasterApplication(QMainWindow):
         return get_machine_id()
 
     def activate_code_from_page(self, activation_code):
-        """Activate a cumulative code without reopening the legacy code dialog."""
+        """Activate a cumulative code from the in-page purchase workflow."""
         machine_id = self.get_purchase_machine_id()
         code = str(activation_code or "").strip()
         ok, payload = verify_activation_code(code, machine_id)
@@ -657,7 +691,9 @@ class EngMasterApplication(QMainWindow):
         self.activate_from_management()
 
     def request_trial_level_switch(self, edition_id):
-        """Switch from one of the five cards embedded in the trial center."""
+        """Switch only to a trial whose corresponding formal edition is released."""
+        if str(edition_id) not in AVAILABLE_TRIAL_EDITION_IDS:
+            return
         selected = TRIAL_EDITIONS.get(str(edition_id))
         if selected is None or selected.edition_id == self.edition.edition_id:
             return
@@ -743,7 +779,6 @@ class EngMasterApplication(QMainWindow):
         self.self_register_vocab_worker.finished.connect(self.self_register_vocab_worker.deleteLater, Qt.QueuedConnection)
         self.self_register_vocab_thread.finished.connect(self.self_register_vocab_thread.deleteLater, Qt.QueuedConnection)
 
-        print("[DEBUG] _start_async_loaders: starting vocab and self-register loader threads")
         self.loading_label.setText("正在加载核心词库，请稍候...")
         self.vocab_thread.start()
         self.self_register_vocab_thread.start()
@@ -764,12 +799,10 @@ class EngMasterApplication(QMainWindow):
         self._on_loader_done("self_register")
 
     def _on_vocab_loaded(self, vocab_data):
-        print("[DEBUG] _on_vocab_loaded called")
         self._pending_vocab_data = vocab_data
         self._apply_vocab_loaded()
 
     def _apply_vocab_loaded(self):
-        print("[DEBUG] _apply_vocab_loaded called")
         with QMutexLocker(self._data_mutex):
             try:
                 vocab_data = getattr(self, '_pending_vocab_data', {})
@@ -787,12 +820,10 @@ class EngMasterApplication(QMainWindow):
                 return
 
     def _on_self_register_vocab_loaded(self, self_register_vocab_data):
-        print("[DEBUG] _on_self_register_vocab_loaded called")
         self._pending_self_register_data = self_register_vocab_data
         self._apply_self_register_loaded()
 
     def _apply_self_register_loaded(self):
-        print("[DEBUG] _apply_self_register_loaded called")
         with QMutexLocker(self._data_mutex):
             try:
                 self.self_register_vocab_ctrl = SelfRegisterVocabManager(
@@ -833,6 +864,11 @@ class EngMasterApplication(QMainWindow):
         """
         Recompute dynamic page indices after the loading screen is removed or pages are added.
         """
+        if self.scientific_memory_widget is not None:
+            self.scientific_memory_index = self.stack.indexOf(
+                self.scientific_memory_widget)
+            self.nav_button_target_map["btn_nav_scientific_memory"] = (
+                self.scientific_memory_index)
         if self.self_register_vocab_ctrl is not None:
             self.self_register_vocab_index = self.stack.indexOf(self.self_register_vocab_ctrl)
             self.nav_button_target_map["btn_nav_self_register"] = self.self_register_vocab_index
@@ -867,14 +903,10 @@ class EngMasterApplication(QMainWindow):
             self.vocab_loader_done = True
         elif loader_name == "self_register":
             self.self_register_loader_done = True
-        print(f"[DEBUG] _on_loader_done: {loader_name}, vocab_loader_done={self.vocab_loader_done}, self_register_loader_done={self.self_register_loader_done}")
         self._check_all_loaders_finished()
 
     def _check_all_loaders_finished(self):
-        print(f"[DEBUG] _check_all_loaders_finished: vocab_loader_done={self.vocab_loader_done}, self_register_loader_done={self.self_register_loader_done}, loading_widget_index={self.stack.indexOf(self.loading_widget)}")
-
         if self.vocab_loader_done and self.self_register_loader_done:
-            print("[DEBUG] All loaders done, removing loading widget")
             if self.loading_widget and self.stack.indexOf(self.loading_widget) != -1:
                 self.stack.removeWidget(self.loading_widget)
                 self.loading_widget.deleteLater()
@@ -885,14 +917,16 @@ class EngMasterApplication(QMainWindow):
                     "在主页面查看正式版状态和授权")
             if hasattr(self, "btn_free_trial"):
                 self.btn_free_trial.setEnabled(True)
-                self.btn_free_trial.setToolTip("选择初中、高考、四级、六级或考研免费体验")
+                self.btn_free_trial.setToolTip("进入当前已开放正式版对应的免费体验")
             self.loading_progress_bar.setRange(0, 1)
             settings = _app_settings()
             if self.is_trial:
-                self._safe_nav_to_word_list()
+                self._safe_nav_to_scientific_memory()
             elif not settings.value("guides/quick_overview_seen_v1", False, type=bool):
                 self.show_quick_overview()
                 settings.setValue("guides/quick_overview_seen_v1", True)
+            elif self.edition.edition_id in RELEASED_EDITION_IDS:
+                self._safe_nav_to_scientific_memory()
             else:
                 self.stack.setCurrentIndex(0)
                 self._update_nav_button_styles(0)
@@ -907,6 +941,11 @@ class EngMasterApplication(QMainWindow):
 
     def _bind_nav_events(self):
         root = self.ui_root
+        memory_button = root.findChild(QPushButton, "btn_nav_scientific_memory")
+        if (memory_button is not None
+                and self.edition.edition_id.removeprefix("trial_") in RELEASED_EDITION_IDS):
+            memory_button.clicked.connect(self._safe_nav_to_scientific_memory)
+            self.nav_buttons["btn_nav_scientific_memory"] = memory_button
         nav_map = {
             "btn_nav_vocab": lambda: self.stack.setCurrentIndex(0), 
             "btn_nav_core_vocab": self._safe_nav_to_word_list,
@@ -1171,6 +1210,34 @@ class EngMasterApplication(QMainWindow):
             self.nav_button_target_map["btn_free_trial"] = self.trial_center_index
         self.stack.setCurrentIndex(self.trial_center_index)
 
+    def _ensure_scientific_memory_widget(self):
+        if self.edition.edition_id.removeprefix("trial_") not in RELEASED_EDITION_IDS:
+            return False
+        if self.scientific_memory_widget is None:
+            try:
+                from scientific_memory_view import ScientificMemoryView
+                self.scientific_memory_widget = ScientificMemoryView(self)
+                self.stack.addWidget(self.scientific_memory_widget)
+                self.scientific_memory_index = self.stack.indexOf(
+                    self.scientific_memory_widget)
+                self.nav_button_target_map["btn_nav_scientific_memory"] = (
+                    self.scientific_memory_index)
+            except Exception as exc:
+                QMessageBox.warning(
+                    self,
+                    "提分速记加载失败",
+                    f"词汇提分速记页面暂时无法加载：\n{exc}",
+                )
+                return False
+        return True
+
+    def _safe_nav_to_scientific_memory(self):
+        if not self._ensure_scientific_memory_widget():
+            return
+        self.scientific_memory_widget.reset_to_home()
+        self.stack.setCurrentIndex(self.scientific_memory_index)
+        self._update_nav_button_styles(self.scientific_memory_index)
+
     def _ensure_word_list_widget(self):
         if self.word_list_widget is None:
             if self.vocab_ctrl is None:
@@ -1273,7 +1340,7 @@ class EngMasterApplication(QMainWindow):
             QPushButton { min-height: 55px; border-radius: 10px; text-align: left; padding-left: 20px; font-family: "Microsoft YaHei UI", "Microsoft YaHei", sans-serif; font-size: 15px; font-weight: 600; background-color: #dbeafe; color: #1d4ed8; border: 1px solid #bfdbfe; }
             QPushButton:hover { background-color: #dbeafe; color: #1d4ed8; border-color: #bfdbfe; }
         """
-        nav_btns = ["btn_free_trial", "btn_switch_edition", "btn_nav_vocab", "btn_nav_core_vocab", "btn_nav_phrase_challenge", "btn_nav_phrase_list", "btn_nav_irregular_challenge", "btn_nav_irregular_list", "btn_nav_self_register", "btn_quick_overview", "btn_learning_guide", "btn_operation_guide", "btn_common_questions", "btn_user_notice", "btn_version_info"]
+        nav_btns = ["btn_free_trial", "btn_switch_edition", "btn_nav_scientific_memory", "btn_nav_vocab", "btn_nav_core_vocab", "btn_nav_phrase_challenge", "btn_nav_phrase_list", "btn_nav_irregular_challenge", "btn_nav_irregular_list", "btn_nav_self_register", "btn_quick_overview", "btn_learning_guide", "btn_operation_guide", "btn_common_questions", "btn_user_notice", "btn_version_info"]
         for name in nav_btns:
             btn = self.ui_root.findChild(QPushButton, name)
             if btn:
@@ -1303,10 +1370,10 @@ class EngMasterApplication(QMainWindow):
 
 # ============ [8. 👑 注入 5大任务之：一机一码离线授权激活大闸] ============
 LICENSE_PRODUCT_ID = "engmaster-vocabulary-platform"
-TOOL_DISPLAY_NAME = "EngMaster英语词汇分级学习平台 V1.0"
+TOOL_DISPLAY_NAME = "英思成英语词汇复习软件 V1.0"
 TOOL_VERSION = "v1.0.0"
-BUILD_DATE = "2026-08-09"
-TERMS_VERSION = "2026.08.09"
+BUILD_DATE = "2026-08-11"
+TERMS_VERSION = "2026.08.11"
 PRIVACY_VERSION = "2026.06.28"
 REFUND_VERSION = "2026.06.28"
 RECOMMENDED_OS_TEXT = "Windows 10 / Windows 11 64 位系统"
@@ -1317,27 +1384,20 @@ LICENSE_PUBLIC_N = int(
 LICENSE_PUBLIC_E = 65537
 LICENSE_FORMAT_VERSION = 3
 FORMAL_EDITION_IDS = tuple(EDITIONS.keys())
-LEGACY_LICENSE_ENTITLEMENTS = frozenset({"gaokao"})
 LICENSE_EDITION_NAMES = {
-    "zhongkao": "初中英语1600词汇版",
-    "gaokao": "高考英语3800词汇版",
+    "zhongkao": "初中英语核心词汇版",
+    "gaokao": "高中3800词汇版",
     "cet4": "大学英语四级4500词汇版",
     "cet6": "大学英语六级5500词汇版",
     "kaoyan": "考研英语5500词汇版",
 }
 
 
-def _license_b64encode(raw: bytes) -> str:
-    return base64.urlsafe_b64encode(raw).decode("ascii").rstrip("=")
-
-
 def _license_b64decode(text: str) -> bytes:
     return base64.urlsafe_b64decode(text + "=" * (-len(text) % 4))
 
 
-def _normalize_license_entitlements(values, *, legacy=False):
-    if legacy:
-        return LEGACY_LICENSE_ENTITLEMENTS
+def _normalize_license_entitlements(values):
     if not isinstance(values, (list, tuple, set, frozenset)):
         return frozenset()
     normalized = []
@@ -1360,8 +1420,9 @@ def _license_entitlements_from_payload(payload):
         version = int(payload.get("version", 0))
     except (TypeError, ValueError):
         version = 0
-    return _normalize_license_entitlements(
-        payload.get("entitlements"), legacy=version < LICENSE_FORMAT_VERSION)
+    if version != LICENSE_FORMAT_VERSION:
+        return frozenset()
+    return _normalize_license_entitlements(payload.get("entitlements"))
 
 
 def _license_entitlement_text(entitlements):
@@ -1374,7 +1435,7 @@ def _license_entitlement_text(entitlements):
 
 
 def get_license_path() -> str:
-    return os.path.join(os.path.expanduser("~"), ".EngMaster", "licensing.dat")
+    return os.path.join(os.path.expanduser("~"), ".RecallLex", "licensing.dat")
 
 
 def _license_now() -> str:
@@ -1490,8 +1551,7 @@ def _read_windows_smbios_ids() -> dict:
             if structure_type == 127:
                 break
         return result
-    except Exception as exc:
-        print(f"[DEBUG] SMBIOS read unavailable: {exc}")
+    except Exception:
         return {}
 
 
@@ -1627,42 +1687,7 @@ def verify_activation_code(activation_code: str, machine_id: str):
                 if edition_id in entitlements]
             return True, payload
 
-        if activation_code.startswith("EM2-"):
-            signature_bytes = _license_b64decode(activation_code[4:])
-            signature_int = int.from_bytes(signature_bytes, "big")
-            payload_bytes = f"{LICENSE_PRODUCT_ID}|{machine_id}|v2".encode("utf-8")
-            digest_int = int.from_bytes(hashlib.sha256(payload_bytes).digest(), "big")
-            if pow(signature_int, LICENSE_PUBLIC_E, LICENSE_PUBLIC_N) != digest_int:
-                return False, "激活码与当前电脑不匹配。"
-            return True, {
-                "product": LICENSE_PRODUCT_ID,
-                "machine_id": machine_id,
-                "version": 2,
-                "entitlements": ["gaokao"],
-                "legacy": True,
-            }
-
-        payload_part, signature_part = activation_code.strip().split(".", 1)
-        payload_bytes = _license_b64decode(payload_part)
-        signature_bytes = _license_b64decode(signature_part)
-        signature_int = int.from_bytes(signature_bytes, "big")
-        digest_int = int.from_bytes(hashlib.sha256(payload_bytes).digest(), "big")
-        if pow(signature_int, LICENSE_PUBLIC_E, LICENSE_PUBLIC_N) != digest_int:
-            return False, "激活码签名无效。"
-
-        payload = json.loads(payload_bytes.decode("utf-8"))
-        if payload.get("product") != LICENSE_PRODUCT_ID:
-            return False, "激活码不适用于当前软件。"
-        if not machine_ids_match(payload.get("machine_id", ""), machine_id):
-            return False, "激活码与当前电脑不匹配。"
-        payload = dict(payload)
-        entitlements = _license_entitlements_from_payload(payload)
-        if not entitlements:
-            return False, "激活码没有包含可用的正式版本权限。"
-        payload["entitlements"] = [
-            edition_id for edition_id in FORMAL_EDITION_IDS
-            if edition_id in entitlements]
-        return True, payload
+        return False, "激活码格式无效。"
     except Exception:
         return False, "激活码格式无效。"
 
@@ -1672,7 +1697,6 @@ def load_license_state(path: str, machine_id: str):
     try:
         data = _load_license_data(path)
         activation_code = str(data.get("activation_code", "")).strip()
-        licensed_machine_id = str(data.get("machine_id", "")).strip()
         stable_fingerprint = str(data.get("machine_fingerprint", "")).strip()
 
         # New licenses are signed for the stable ID directly.
@@ -1694,36 +1718,9 @@ def load_license_state(path: str, machine_id: str):
             _write_license_data(path, data)
             return payload
 
-        # Backward compatibility: an old code remains cryptographically checked
-        # against the ID it was originally issued for.  On the first upgraded
-        # start, bind that valid local license to this computer's stable ID.
-        if not licensed_machine_id:
-            return None
-        legacy_ok, payload = verify_activation_code(
-            activation_code, licensed_machine_id)
-        if not legacy_ok:
-            return None
-        if stable_fingerprint and not machine_ids_match(
-                stable_fingerprint, machine_id):
-            return None
-        if not stable_fingerprint:
-            data["machine_fingerprint"] = machine_id
-            data["machine_id_scheme"] = "stable-v2-migrated"
-            data["migrated_at"] = _license_now()
-        entitlements = _license_entitlements_from_payload(payload)
-        data["entitlements"] = [
-            edition_id for edition_id in FORMAL_EDITION_IDS
-            if edition_id in entitlements]
-        _write_license_data(path, data)
-        return payload
-    except Exception as e:
-        print(f"[DEBUG] license read/verify error: {e}")
         return None
-
-
-def load_license_file(path: str, machine_id: str) -> bool:
-    """Compatibility boolean used by older UI and diagnostic code."""
-    return load_license_state(path, machine_id) is not None
+    except Exception:
+        return None
 
 
 def save_license_file(
@@ -1762,20 +1759,10 @@ def save_license_file(
     _write_license_data(path, license_data)
 
 
-def _delete_license_and_exit(path: str, reason: str):
-    try:
-        if os.path.exists(path):
-            os.remove(path)
-    except Exception as e:
-        print(f"[DEBUG] failed to remove license file: {e}")
-    QMessageBox.critical(None, "授权已失效", f"当前授权状态无效：{reason}\n软件将退出。")
-    sys.exit(0)
-
-
 def show_activation_dialog(
         machine_id: str, parent=None, requested_entitlements=None):
     dialog = QtWidgets.QDialog(parent)
-    dialog.setWindowTitle("EngMaster英语词汇分级学习平台 单机激活")
+    dialog.setWindowTitle("英思成英语词汇复习软件 单机激活")
     dialog.setModal(True)
     dialog.setMinimumSize(600, 320)
 
@@ -1783,7 +1770,7 @@ def show_activation_dialog(
     layout.setContentsMargins(18, 18, 18, 18)
     layout.setSpacing(12)
 
-    title = QtWidgets.QLabel("EngMaster 正式版本单机激活")
+    title = QtWidgets.QLabel("英思成 正式版本单机激活")
     title.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
     title.setStyleSheet("font-size: 20px; font-weight: bold; color: #111827;")
     layout.addWidget(title)
@@ -1820,7 +1807,7 @@ def show_activation_dialog(
     purchase_label = QtWidgets.QLabel("单机激活码：")
     layout.addWidget(purchase_label)
     purchase_input = QtWidgets.QLineEdit()
-    purchase_input.setPlaceholderText("例如：EM3-xxxx（旧版 EM2 激活码仍可使用）")
+    purchase_input.setPlaceholderText("例如：EM3-xxxx")
     purchase_input.setMinimumHeight(36)
     layout.addWidget(purchase_input)
 
@@ -1868,7 +1855,7 @@ def get_legal_notice_text() -> str:
         f"隐私说明版本：{PRIVACY_VERSION}\n"
         f"退款说明版本：{REFUND_VERSION}\n"
         f"生效日期：{BUILD_DATE}\n\n"
-        "欢迎使用EngMaster英语词汇分级学习平台 V1.0。请您在使用前仔细阅读以下内容。\n\n"
+        "欢迎使用英思成英语词汇复习软件 V1.0。请您在使用前仔细阅读以下内容。\n\n"
         "1. 工具定位\n"
         "本工具仅作为英语学习、复习和练习辅助使用，主要用于词汇、短语、不规则动词和练习内容的整理与复习。"
         "本工具不属于官方教学系统、考试系统或认证软件，也不代表任何学校、考试机构或官方单位。\n\n"
@@ -1883,51 +1870,50 @@ def get_legal_notice_text() -> str:
         "有关软件版权、词库制作方式、第三方开放数据来源及许可证，请查看“关于、版权与许可”页面。\n\n"
         "4. 使用说明\n"
         "请用户在正常电脑环境下使用本工具。因系统环境、第三方安全工具拦截、误删文件、非正常修改工具文件、"
-        "非官方渠道获取等原因导致无法正常使用的，可联系客服协助排查。\n"
+        "非官方渠道获取等原因导致无法正常使用的，请参考购买页面或随程序提供的运行说明自行处理。\n"
         f"本工具推荐使用环境为：{RECOMMENDED_OS_TEXT}。Windows 7、Windows 8、精简版系统、受限账户环境、"
         "网吧或学校机房受限系统、虚拟机环境、ARM 版 Windows、Mac、iPad、手机、安卓平板等环境暂不作为推荐环境，"
         "可能出现无法启动、无法激活、界面异常或数据保存异常等情况。\n\n"
         "5. 使用限制与设备绑定\n"
         "本工具采用单机使用方式。一个单机激活码原则上仅限绑定一台电脑使用。单机激活码一经绑定设备后，如用户更换电脑、"
-        "重装系统、更换主板或因系统环境变化导致本机识别码改变，可能需要重新授权或通过购买平台联系客服处理。"
+        "重装系统、更换主板或因系统环境变化导致本机识别码改变，原激活码可能无法继续使用，具体处理规则以购买页面说明为准。"
         "未经许可，请勿转卖、共享、破解、修改、打包传播或用于其他商业分发行为。\n\n"
         "6. 隐私与本机识别码说明\n"
         "本工具为完成单机激活，会在本机生成本机识别码。本机识别码主要由设备环境信息经哈希计算生成，"
         "用于判断激活码是否适用于当前电脑。用户通过购买平台向客服提供本机识别码时，本方仅将其用于生成、"
         "核验和处理激活授权，不用于广告推广、用户画像或其他无关用途。本方会在合理必要范围内保存订单信息、"
-        "本机识别码及激活处理记录，用于售后、换绑核验和纠纷处理。\n\n"
+        "本机识别码及激活处理记录，用于订单核验、激活授权和纠纷处理。\n\n"
         "7. 本地数据\n"
         "本工具的错词记录、自主词库、学习记录或使用配置等数据主要保存在用户本机。删除软件、清理系统文件、"
         "重装系统、更换设备、磁盘损坏或用户误删文件，可能导致本地学习数据丢失。请用户自行妥善备份重要学习数据。"
-        "因上述原因造成的本地学习数据丢失，不属于软件质量问题；本方可尽力协助排查，但不保证完全恢复。\n\n"
+        "因上述原因造成的本地学习数据丢失，不属于软件质量问题，且不保证能够恢复。\n\n"
         "8. 退款说明\n"
-        "本工具属于数字化学习辅助工具，具有可复制、可下载、可激活使用的特点。一经发送下载链接、提供安装包、"
-        "生成或发送专属激活码、或完成激活后，非工具自身质量问题原则上不支持无理由退款。"
-        "如因本工具自身原因导致无法正常安装、激活或使用，请先通过购买平台联系客服处理；经客服排查确认确属"
-        "工具自身问题且无法解决的，可按平台规则协商退款或处理。因用户电脑系统环境、第三方安全工具拦截、"
-        "用户误删文件、非官方渠道获取、擅自修改文件、不会操作但拒绝配合排查、购买后主观不想使用、"
-        "使用非推荐系统环境等原因导致的问题，原则上不作为退款理由。\n\n"
-        "9. 服务支持\n"
-        "如使用过程中遇到安装、激活或功能问题，请通过购买平台联系客服，并提供订单信息、问题截图和本机识别码，"
-        "以便协助处理。\n\n"
+        "本工具属于数字化学习辅助工具，具有可复制、可下载、可激活使用的特点。一经生成或发送专属激活码，"
+        "或完成激活后，非工具自身质量问题原则上不支持无理由退款。退款处理以适用的法律法规"
+        "及交易平台规则为准。因用户电脑系统环境、第三方安全工具拦截、用户误删文件、非官方渠道获取、擅自修改文件、"
+        "购买后主观不想使用或使用非推荐系统环境等原因导致的问题，原则上不作为软件自身质量问题。下载、解压和运行步骤"
+        "请参考购买页面或随程序提供的运行说明。\n\n"
+        "9. 购买与激活\n"
+        "完成付款后，请在正式版管理页面生成包含订单号和本机识别码的核验信息，并发送给购买平台客服。"
+        "订单核验完成后，将收到与本机识别码对应的激活码。\n\n"
         "10. 责任说明\n"
         "在法律允许范围内，本工具按现状提供学习辅助服务。本方不对因使用或无法使用本工具导致的考试结果不理想、"
         "学习计划变化、间接损失等承担责任。但依法不能免除的责任除外。\n\n"
         "11. 同意使用\n"
-        "用户继续安装、激活或使用本工具，即表示已阅读、理解并同意以上内容。"
+        "用户继续下载、运行、激活或使用本工具，即表示已阅读、理解并同意以上内容。"
     )
 
 
 def get_copyright_notice_text() -> str:
     return (
         "《版权说明》\n\n"
-        "软件名称：EngMaster英语词汇分级学习平台\n"
+        "软件名称：英思成英语词汇复习软件\n"
         "软件版本：V1.0\n"
-        "开发者署名：EngMaster\n"
+        "产品品牌：英思成（RecallLex）\n"
         "版权年份：2026\n"
         "声明版本：2026.08\n\n"
         "一、软件权利声明\n\n"
-        "Copyright © 2026 EngMaster.\n\n"
+        "Copyright © 2026 英思成（RecallLex）。\n\n"
         "除本说明明确列出的第三方材料外，本软件中的程序代码、界面设计、交互流程、"
         "数据结构、学习流程，以及对词汇、短语和不规则动词内容进行的独立选择、整理、"
         "校验和编排，依法受到保护。\n\n"
@@ -1936,19 +1922,21 @@ def get_copyright_notice_text() -> str:
         "未经合法权利人许可，不得对本软件进行破解、冒名发行、转售盗版、删除权利标识"
         "或未经授权的商业传播。法律规定及第三方开放许可证明确允许的使用不受本条限制。\n\n"
         "二、学习内容和产品定位\n\n"
-        "本产品词汇范围以教育部《普通高中英语课程标准（2017年版2020年修订）》附录2"
-        "为基础，并按照高中英语一般学习和阅读需要独立补充拓展词汇。\n\n"
-        "本版本实际收录3800个单词、450个短语和126组不规则动词。“3800”是本产品实际"
-        "收录规模，不代表教育部门公布的固定考试词数。\n\n"
+        "本产品的初中版以教育部《义务教育英语课程标准（2022年版）》为课程层级依据；"
+        "高中版以《普通高中英语课程标准（2017年版2020年修订）》附录2为基础，并按照"
+        "相应阶段的一般学习和阅读需要独立整理。\n\n"
+        "初中正式版实际收录1609个产品词头、250个短语和90组不规则动词；高中正式版实际"
+        "收录3800个单词、450个短语和126组不规则动词。产品收录规模不代表教育部门公布的"
+        "固定考试词数。\n\n"
         "本产品为独立开发的英语学习辅助工具，不属于教育主管部门、学校、考试机构或教材"
         "出版社的官方产品，也不构成考试范围、押题或成绩保证。\n\n"
         "三、内容制作说明\n\n"
         "本项目对词条进行了独立筛选、规范化、分层和编排。中文释义根据开放英语语义资源"
-        "和高中学习需要重新组织、编写并经过自动化检查；产品不复制旧来源不明词表的中文"
+        "和对应学习阶段需要重新组织、编写并经过自动化检查；产品不复制旧来源不明词表的中文"
         "释义、音标、例句、编号或原始顺序。\n\n"
         "短语释义、用法说明及产品例句由本项目重新整理和编写。本项目不宣称全部内容已经"
         "由人工逐条审核，用户应结合教材、教师指导及官方考试要求使用。\n\n"
-        "当前正式词汇数据不包含图片和音频；3800词配有来源已留档的美式IPA音标。\n\n"
+        "当前正式词汇数据不包含图片和音频；初中版与高中版词汇均配有来源已留档的IPA音标。\n\n"
         "四、权利边界\n\n"
         "本软件自有部分作为商业软件发行，保留依法享有的相关权利。第三方材料仍归相应"
         "权利人所有，并分别适用其原许可证。本软件的商业授权、激活限制或版权声明，不改变、"
@@ -1960,43 +1948,23 @@ def get_copyright_notice_text() -> str:
 
 def get_third_party_data_notice_text() -> str:
     return (
-        "《数据来源与第三方许可说明》\n\n"
+        "《必要第三方许可说明》\n\n"
         "1. Open English WordNet 2025\n"
-        "用途：词形、词性、义项存在性和语义类别核验，并作为中文释义整理的开放语义依据之一。\n"
+        "本产品使用了经筛选、修改和重新编排的开放语义材料。\n"
+        "署名：The Open English WordNet Team、Princeton WordNet。\n"
         "许可：Creative Commons Attribution 4.0 International（CC BY 4.0）。\n"
-        "署名：Open English WordNet Team、Princeton WordNet。\n"
-        "本项目对相关材料进行了筛选、规范化、重新编排和中文表达整理。相关权利人不对本"
-        "产品提供背书，本产品也不代表其官方产品。\n"
-        "项目：https://en-word.net/\n"
+        "来源：https://en-word.net/\n"
         "许可：https://creativecommons.org/licenses/by/4.0/\n\n"
         "2. Princeton WordNet\n"
-        "Open English WordNet包含源自Princeton WordNet的材料。相关材料依据Princeton "
-        "WordNet License使用，并保留原版权声明、许可条件和免责声明。\n"
+        "本产品使用的Open English WordNet材料包含源自Princeton WordNet的内容。"
+        "Copyright 2006 Princeton University。相关内容适用Princeton WordNet License；"
+        "原版权声明、许可条件和免责声明见本页许可证正文。\n"
         "许可：https://wordnet.princeton.edu/license-and-commercial-use\n\n"
-        "3. ECDICT\n"
-        "用途：精确词形查询、候选词审计标签及词频排名元数据辅助筛选。当前正式词表没有"
-        "复制ECDICT的中文翻译、音标、例句、详细释义或音频。为完整保留数据处理来源及"
-        "许可记录，本产品仍附带ECDICT的MIT许可证和原版权声明。\n"
-        "项目：https://github.com/skywind3000/ECDICT\n"
-        "许可：MIT License；Copyright (c) 2025 Linwei\n\n"
-        "4. ipa-dict en_US\n"
-        "用途：为正式版3800词提供General American（美式）IPA音标。3781条直接匹配，"
-        "其余词条通过留档的拼写映射、已匹配源词机械组合或同形异音义项校验补齐。\n"
-        "固定提交：43c3570eb3553bdd19fccd2bd0091534889af023\n"
-        "许可：MIT License；Copyright (c) 2016 dohliam。\n"
-        "项目：https://github.com/open-dict-data/ipa-dict\n"
-        "本产品未使用该项目注明派生自GPL-3.0来源的en_UK英式数据。\n\n"
-        "5. Moby Words II / Moby Part-of-Speech II\n"
-        "用途：辅助拼写和词性核验。相关Project Gutenberg档案声明其为作者Grady Ward"
-        "授予的Public Domain材料。\n"
-        "https://www.gutenberg.org/ebooks/3201\n"
-        "https://www.gutenberg.org/ebooks/3203\n\n"
-        "6. Tatoeba CC0英语句子子集\n"
-        "用途：仅作为短语是否实际出现的辅助证据。产品例句不复制Tatoeba句子，Tatoeba"
-        "音频和默认CC BY句子数据不进入本产品。\n"
-        "https://tatoeba.org/\n\n"
-        "完整来源、许可条件和免责声明可通过本页下方按钮查看。如本说明与第三方许可证"
-        "原文存在不一致，以相应许可证原文为准。"
+        "3. ipa-dict en_US\n"
+        "本产品的部分美式IPA音标使用该开放数据。许可：MIT License；"
+        "Copyright (c) 2016 dohliam。完整许可见本页许可证正文。\n\n"
+        "上述权利人不对本产品提供背书。本说明仅用于履行第三方许可义务；"
+        "内部筛选、校验、加工流程及未进入成品的数据不对外公开。"
     )
 
 
@@ -2005,9 +1973,7 @@ def load_public_license_documents() -> dict[str, str]:
     for title, relative_path in (
         ("OEWN与WordNet完整许可", "assets/editions/gaokao/OPEN_ENGLISH_WORDNET_LICENSE.md"),
         ("Princeton WordNet许可", "assets/editions/gaokao/PRINCETON_WORDNET_LICENSE.txt"),
-        ("ECDICT MIT许可证", "assets/editions/gaokao/ECDICT_LICENSE.txt"),
         ("ipa-dict MIT许可证", "assets/editions/gaokao/IPA_DICT_LICENSE.txt"),
-        ("第三方数据声明", "assets/editions/gaokao/THIRD_PARTY_NOTICES.md"),
     ):
         try:
             with open(get_resource_path(relative_path), "r", encoding="utf-8") as stream:
@@ -2047,12 +2013,6 @@ def get_version_info_text():
         f"已同意条款时间：{license_data.get('accepted_at', '未记录')}\n"
         f"激活时间：{license_data.get('activated_at', '未记录')}\n"
     )
-
-
-def show_version_info_dialog(parent=None):
-    info_text = get_version_info_text()
-
-    QtWidgets.QMessageBox.information(parent, "版本与授权信息", info_text)
 
 
 def show_user_notice_dialog(require_accept=True):
@@ -2105,7 +2065,6 @@ def show_user_notice_dialog(require_accept=True):
 
 def check_licensing_gate():
     """Return locally verified formal-edition entitlements; empty means trial."""
-    print("[DEBUG] check_licensing_gate start")
     license_path = get_license_path()
 
     if os.path.exists(license_path):
@@ -2115,10 +2074,7 @@ def check_licensing_gate():
         payload = load_license_state(license_path, machine_id)
         if payload is not None:
             entitlements = _license_entitlements_from_payload(payload)
-            print(f"[DEBUG] local license verified: {sorted(entitlements)}")
             return entitlements
-        print("[DEBUG] existing local license is invalid for this computer")
-    print("[DEBUG] no valid license; continuing in isolated free trial mode")
     return frozenset()
 
 
@@ -2142,8 +2098,8 @@ def show_purchase_edition_dialog(current_entitlements=None, parent=None):
     layout.addWidget(title)
 
     hint = QtWidgets.QLabel(
-        "当前 V1.0 仅开放高考英语正式版。初中、四级、六级和考研正式版仍在开发中，"
-        "暂不开放购买；相应级别的30词免费体验仍可正常使用。")
+        "当前 V1.0 已开放初中英语和高中3800词正式版。四级、六级和考研正式版仍在开发中，"
+        "暂不开放购买；对应免费体验将在正式版开放时同步提供。")
     hint.setWordWrap(True)
     hint.setStyleSheet("font-size:14px; color:#4b5563; margin-bottom:6px;")
     layout.addWidget(hint)
@@ -2305,7 +2261,7 @@ def show_edition_selection_dialog(
     layout.addWidget(title)
 
     hint = QtWidgets.QLabel(
-        "高考英语正式版现已开放；其他正式版本仍在开发中，各级免费体验均可使用")
+        "初中英语、高中3800词正式版及对应免费体验现已开放；其他版本完成后同步开放")
     hint.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
     hint.setStyleSheet("font-size: 14px; color: #6b7280; margin-bottom: 8px;")
     layout.addWidget(hint)
@@ -2313,9 +2269,9 @@ def show_edition_selection_dialog(
     selected = {"edition": None}
     upgraded = {"done": False}
     edition_descriptions = {
-        "trial": "免费体验版（可选择初中、高考、四级、六级或考研）",
+        "trial": "高中3800词免费体验版（30词）",
         "zhongkao": "初中英语词汇",
-        "gaokao": "高考英语词汇与短语",
+        "gaokao": "高中3800词与常用短语",
         "cet4": "大学英语四级词汇",
         "cet6": "大学英语六级词汇",
         "kaoyan": "考研英语词汇",
@@ -2323,11 +2279,11 @@ def show_edition_selection_dialog(
 
     def choose(edition_id):
         if edition_id == "trial":
-            if is_trial_edition(default_config):
+            if (is_trial_edition(default_config)
+                    and is_available_trial_edition(default_config)):
                 selected["edition"] = default_config
             else:
-                selected["edition"] = TRIAL_EDITIONS.get(
-                    f"trial_{default_config.edition_id}", TRIAL_EDITION)
+                selected["edition"] = TRIAL_EDITION
         else:
             if edition_id not in RELEASED_EDITION_IDS:
                 QMessageBox.information(
@@ -2335,7 +2291,7 @@ def show_edition_selection_dialog(
                     "正式版开发中",
                     f"“{LICENSE_EDITION_NAMES[edition_id]}”正式版仍在开发中，"
                     "当前暂未开放购买和使用。\n\n"
-                    "您可以进入免费体验版，体验对应级别的30词学习流程。",
+                    "对应免费体验将在正式版开放时同步提供。",
                 )
                 return
             if edition_id not in unlocked_editions:
@@ -2448,12 +2404,15 @@ if __name__ == "__main__":
     watermark_settings, qt_argv = parse_watermark_args(edition_argv)
     sys.argv = qt_argv
     app = QApplication(sys.argv)
+    app_icon_path = get_resource_path("assets/branding/yingsicheng_app_icon.png")
+    if os.path.exists(app_icon_path):
+        app.setWindowIcon(QtGui.QIcon(app_icon_path))
     app.watermark_settings = watermark_settings
     app.setStyle("Fusion")
     apply_application_ui_baseline(app)
 
     # 1. 物理单实例锁：防止用户短时间内高频狂点导致多进程死锁
-    lock_path = os.path.join(QDir.tempPath(), "EngMaster_Vocabulary_Platform_Unique.lock")
+    lock_path = os.path.join(QDir.tempPath(), "RecallLex_Vocabulary_Review_Unique.lock")
     lock_file = QLockFile(lock_path)
 
     if not lock_file.tryLock(100):
@@ -2486,8 +2445,7 @@ if __name__ == "__main__":
             active_edition = TRIAL_EDITION
         save_last_edition(active_edition)
     else:
-        # A remembered or command-line formal edition may no longer be covered
-        # after a legacy-license migration. Never let that bypass entitlements.
+        # A remembered or command-line formal edition must never bypass entitlements.
         if (not is_trial_edition(active_edition)
                 and active_edition.edition_id not in license_entitlements):
             active_edition = EDITIONS[next(

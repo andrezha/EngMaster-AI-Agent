@@ -8,7 +8,7 @@ os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 from PySide6 import QtWidgets
 
 from experience_guide import ExperienceGuideView
-from guide_pages import AboutCopyrightView, CommonQuestionsView, InformationTextView, LearningLoopDiagram, OperationGuideView, QuickOverviewView
+from guide_pages import AboutCopyrightView, CommonQuestionsView, InformationTextView, OperationGuideView, QuickOverviewView
 
 
 class _FakeVocabController:
@@ -32,6 +32,7 @@ class ExperienceGuideTests(unittest.TestCase):
         window.vocab_ctrl = _FakeVocabController()
         window.opened = None
         window._safe_nav_to_word_list = lambda: setattr(window, "opened", "word_list")
+        window._safe_nav_to_scientific_memory = lambda: setattr(window, "opened", "memory")
         window.show_phrase_irregular_challenge = lambda: setattr(window, "opened", "phrase")
         window._safe_nav_to_self_register = lambda: setattr(window, "opened", "self_register")
         window.show_learning_guide = lambda: setattr(window, "opened", "learning_guide")
@@ -46,16 +47,18 @@ class ExperienceGuideTests(unittest.TestCase):
         self.assertEqual(len(buttons), 0)
         page_text = " ".join(
             label.text() for label in view.findChildren(QtWidgets.QLabel))
-        self.assertIn("先认识可以用来背诵和查看的词表", page_text)
-        self.assertIn("分级词汇表", page_text)
+        self.assertIn("先用高效方法记忆，再使用词表辅助查看", page_text)
+        self.assertIn("3800词提分速记", page_text)
         self.assertIn("不规则动词表", page_text)
         self.assertIn("再验证是否真正掌握", page_text)
-        self.assertIn("反复验证，直到完整一轮不再产生新错词", page_text)
-        self.assertIn("不知道应该重点背哪些", page_text)
-        self.assertIn("单词基础比较薄弱", page_text)
-        self.assertIn("单词基础比较好", page_text)
+        self.assertIn("3800词提分速记应该这样使用", page_text)
+        self.assertIn("主题场景为主", page_text)
+        self.assertIn("本组掌握验证", page_text)
+        self.assertIn("背得快、找得准、补得全", page_text)
+        self.assertIn("准高一　提前预习", page_text)
+        self.assertIn("高三　高考备考", page_text)
         self.assertIn("学习范围逐轮缩小", page_text)
-        self.assertIn("错词闯关", page_text)
+        self.assertIn("普通闯关识别薄弱词", page_text)
         self.assertIn("自主录入词表", page_text)
         self.assertIn("内置分级词库之外，建立自己的长期个人词库", page_text)
         self.assertIn("自主录入不是体验限制功能", page_text)
@@ -68,7 +71,7 @@ class ExperienceGuideTests(unittest.TestCase):
         self.assertEqual(len(view.findChildren(QtWidgets.QPushButton)), 5)
         page_text = " ".join(
             label.text() for label in view.findChildren(QtWidgets.QLabel))
-        self.assertIn("60秒了解 EngMaster", page_text)
+        self.assertIn("60秒了解英思成", page_text)
         self.assertIn("单机版 · 免安装", page_text)
         self.assertIn("下载一个程序文件，双击即可运行", page_text)
         self.assertIn("机器码与激活码", page_text)
@@ -78,20 +81,22 @@ class ExperienceGuideTests(unittest.TestCase):
             QtWidgets.QFrame, "standalone_assurance_card"))
         self.assertIn("录入自己的词汇表", page_text)
         self.assertIn("学习过程有记录", page_text)
-        self.assertIn("初高中生家长", page_text)
-        self.assertIn("大学四六级和考研学习者", page_text)
+        self.assertIn("学生可以掌握自己的实际进度", page_text)
+        self.assertIn("准高一", page_text)
+        self.assertIn("高一", page_text)
+        self.assertIn("高二", page_text)
+        self.assertIn("高三", page_text)
         self.assertIn("最近50轮记录", page_text)
-        self.assertIn("不同学习阶段", page_text)
-        self.assertIn("初中／高中：学生与家长", page_text)
-        self.assertIn("大学四六级／考研：学习者本人", page_text)
-        self.assertIn("电脑端的共同价值", page_text)
-        self.assertIn("不是年龄定位，而是训练方式的改变", page_text)
-        self.assertIn("你获得的不只是一张电子词表", page_text)
-        self.assertIn("发现不会、集中错词、反复验证并记录进度", page_text)
-        diagram = view.findChild(LearningLoopDiagram, "learning_loop_diagram")
-        self.assertIsNotNone(diagram)
-        self.assertIn("有新错词则返回错词表继续循环", diagram.accessibleDescription())
-        self.assertIn("直到完整一轮没有新错词", page_text)
+        self.assertIn("从准高一预习到高三备考", page_text)
+        self.assertIn("三个学习目的，一套高中3800词", page_text)
+        self.assertIn("提前预习", page_text)
+        self.assertIn("课内同步背诵", page_text)
+        self.assertIn("高效记忆", page_text)
+        self.assertIn("闯关识弱", page_text)
+        self.assertIn("自主登记", page_text)
+        self.assertIn("推荐学习方法", page_text)
+        self.assertIn("先选记忆分类", page_text)
+        self.assertIn("每次只学一组", page_text)
         view._open_regular_challenge()
         self.assertEqual(window.vocab_ctrl.mode, "regular")
         self.assertEqual(window.stack.currentIndex(), 0)
@@ -101,20 +106,27 @@ class ExperienceGuideTests(unittest.TestCase):
     def test_operation_manual_is_separate_and_task_oriented(self):
         window = self._window()
         view = OperationGuideView(window)
-        self.assertEqual(view.section_list.count(), 11)
-        self.assertIsNotNone(view.findChild(QtWidgets.QFrame, "maximize_window_notice"))
+        self.assertEqual(view.section_list.count(), 12)
+        self.assertIsNotNone(view.findChild(QtWidgets.QFrame, "window_display_notice"))
         all_text = " ".join(
             label.text() for label in view.findChildren(QtWidgets.QLabel))
-        self.assertIn("建议最大化窗口使用", all_text)
+        self.assertIn("窗口显示与滚动说明", all_text)
+        self.assertIn("常见笔记本窗口和最大化显示", all_text)
         self.assertIn("确认／下一题", all_text)
-        view.section_list.setCurrentRow(6)
+        view.section_list.setCurrentRow(3)
+        labels = view.manual_stack.currentWidget().findChildren(QtWidgets.QLabel)
+        memory_text = " ".join(label.text() for label in labels)
+        self.assertIn("词汇提分速记", memory_text)
+        self.assertIn("主题场景只收录主题明确", memory_text)
+        self.assertIn("初中版与高中版使用各自独立的主题目录", memory_text)
+        view.section_list.setCurrentRow(7)
         labels = view.manual_stack.currentWidget().findChildren(QtWidgets.QLabel)
         page_text = " ".join(label.text() for label in labels)
         self.assertIn("自主录入与闯关", page_text)
         self.assertIn("英语单词", page_text)
         self.assertIn("中文解释", page_text)
         self.assertIn("重要提示与常见疑问", page_text)
-        view.section_list.setCurrentRow(9)
+        view.section_list.setCurrentRow(10)
         labels = view.manual_stack.currentWidget().findChildren(QtWidgets.QLabel)
         history_text = " ".join(label.text() for label in labels)
         self.assertIn("轮次学习记录", history_text)
@@ -161,19 +173,19 @@ class ExperienceGuideTests(unittest.TestCase):
     def test_about_page_separates_version_copyright_and_licenses(self):
         view = AboutCopyrightView(
             "授权状态：已激活",
-            "Copyright © 2026 EngMaster.",
-            "Open English WordNet 2025\nECDICT",
-            {"ECDICT MIT许可证": "MIT License"},
+            "Copyright © 2026 英思成（RecallLex）。",
+            "Open English WordNet 2025\nipa-dict",
+            {"ipa-dict MIT许可证": "MIT License"},
         )
         self.assertEqual(view.objectName(), "about_copyright_view")
         self.assertEqual(view.tabs.count(), 3)
         self.assertEqual(
             [view.tabs.tabText(index) for index in range(view.tabs.count())],
-            ["版本与授权", "版权说明", "数据来源与第三方许可"],
+            ["版本与授权", "版权说明", "必要第三方许可"],
         )
         self.assertIn("授权状态：已激活", view.version_text_view.toPlainText())
-        self.assertIn("EngMaster", view.copyright_text_view.toPlainText())
-        self.assertIn("ECDICT", view.data_notice_text_view.toPlainText())
+        self.assertIn("英思成", view.copyright_text_view.toPlainText())
+        self.assertNotIn("ECDICT", view.data_notice_text_view.toPlainText())
         self.assertEqual(len(view.findChildren(QtWidgets.QPushButton)), 1)
         view.close()
 

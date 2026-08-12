@@ -1,0 +1,5852 @@
+[
+  {
+    "id": "PH-J-0001",
+    "p": "a bit",
+    "m": "一点；稍微",
+    "en": "I feel a bit tired after the long walk.",
+    "cn": "走了很长一段路后，我觉得有点累。",
+    "answers": [
+      "a bit"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "修饰形容词、副词或动词，表示程度不大。"
+  },
+  {
+    "id": "PH-J-0002",
+    "p": "a few",
+    "m": "几个；少数",
+    "en": "A few students stayed to clean the classroom.",
+    "cn": "几个学生留下来打扫教室。",
+    "answers": [
+      "a few"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "修饰可数名词复数，表示数量虽少但并非没有。"
+  },
+  {
+    "id": "PH-J-0003",
+    "p": "a little",
+    "m": "一点；少量",
+    "en": "There is a little milk left in the fridge.",
+    "cn": "冰箱里还剩一点牛奶。",
+    "answers": [
+      "a little"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "可修饰不可数名词，也可表示程度较小。"
+  },
+  {
+    "id": "PH-J-0004",
+    "p": "a lot",
+    "m": "很；非常；许多",
+    "en": "We learned a lot from the science project.",
+    "cn": "我们从这个科学项目中学到了很多。",
+    "answers": [
+      "a lot"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "可修饰动词表示程度，也可单独表示大量事物。"
+  },
+  {
+    "id": "PH-J-0005",
+    "p": "according to",
+    "m": "根据；按照",
+    "en": "According to the map, the library is near the park.",
+    "cn": "根据地图，图书馆在公园附近。",
+    "answers": [
+      "according to"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "后接名词或代词，说明信息来源或判断依据。"
+  },
+  {
+    "id": "PH-J-0006",
+    "p": "after all",
+    "m": "毕竟；终究",
+    "en": "Be patient with him; after all, he is new here.",
+    "cn": "对他耐心一点，毕竟他刚来这里。",
+    "answers": [
+      "after all"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "用于补充一个应当考虑的理由或事实。"
+  },
+  {
+    "id": "PH-J-0007",
+    "p": "all over",
+    "m": "到处；遍及",
+    "en": "Wild flowers grow all over the hill in spring.",
+    "cn": "春天，野花开遍整座山丘。",
+    "answers": [
+      "all over"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示某事物分布在某地的各处。"
+  },
+  {
+    "id": "PH-J-0008",
+    "p": "all right",
+    "m": "可以；没关系；安然无恙",
+    "en": "Do not worry; everything will be all right.",
+    "cn": "别担心，一切都会好起来的。",
+    "answers": [
+      "all right"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "可表示同意、接受，也可说明情况良好。"
+  },
+  {
+    "id": "PH-J-0009",
+    "p": "all the time",
+    "m": "一直；始终",
+    "en": "The baby smiled all the time during the visit.",
+    "cn": "在探访期间，宝宝一直在笑。",
+    "answers": [
+      "all the time"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示某种情况在一段时间内持续发生。"
+  },
+  {
+    "id": "PH-J-0010",
+    "p": "all the way",
+    "m": "一路上；自始至终",
+    "en": "We talked all the way home.",
+    "cn": "我们一路聊着回到家。",
+    "answers": [
+      "all the way"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示整个路程或过程没有中断。"
+  },
+  {
+    "id": "PH-J-0011",
+    "p": "as usual",
+    "m": "像往常一样",
+    "en": "My father got up early as usual.",
+    "cn": "我父亲像往常一样早起。",
+    "answers": [
+      "as usual"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示事情按照平常的方式发生。"
+  },
+  {
+    "id": "PH-J-0012",
+    "p": "as well",
+    "m": "也；还",
+    "en": "Lucy can speak French, and she can speak Spanish as well.",
+    "cn": "露西会说法语，也会说西班牙语。",
+    "answers": [
+      "as well"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "通常放在肯定句句末，补充同类的人或事。"
+  },
+  {
+    "id": "PH-J-0013",
+    "p": "at all",
+    "m": "根本；丝毫",
+    "en": "I was not nervous at all before the speech.",
+    "cn": "演讲前我一点也不紧张。",
+    "answers": [
+      "at all"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "常用于否定句或疑问句，加强“任何程度”的含义。"
+  },
+  {
+    "id": "PH-J-0014",
+    "p": "at first",
+    "m": "起初；开始时",
+    "en": "At first, the puzzle looked difficult, but we soon solved it.",
+    "cn": "起初这个谜题看起来很难，但我们很快就解开了。",
+    "answers": [
+      "at first"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "用于说明最初的情况，后文常出现变化。"
+  },
+  {
+    "id": "PH-J-0015",
+    "p": "at home",
+    "m": "在家；在国内",
+    "en": "I will stay at home and finish my book tonight.",
+    "cn": "今晚我会待在家里把书读完。",
+    "answers": [
+      "at home"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "通常表示人在住所，也可表示处于熟悉自在的状态。"
+  },
+  {
+    "id": "PH-J-0016",
+    "p": "at last",
+    "m": "终于；最后",
+    "en": "The rain stopped at last, and the match began.",
+    "cn": "雨终于停了，比赛开始了。",
+    "answers": [
+      "at last"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "强调经过等待、努力或耽搁后某事发生。"
+  },
+  {
+    "id": "PH-J-0017",
+    "p": "at least",
+    "m": "至少",
+    "en": "Please read at least ten pages every day.",
+    "cn": "请每天至少读十页。",
+    "answers": [
+      "at least"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示数量或程度不低于某个限度。"
+  },
+  {
+    "id": "PH-J-0018",
+    "p": "at once",
+    "m": "立刻；马上",
+    "en": "When you smell smoke, leave the room at once.",
+    "cn": "闻到烟味时，要立刻离开房间。",
+    "answers": [
+      "at once"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示不延迟地做某事。"
+  },
+  {
+    "id": "PH-J-0019",
+    "p": "at the same time",
+    "m": "同时；不过",
+    "en": "The twins reached the finish line at the same time.",
+    "cn": "这对双胞胎同时到达终点。",
+    "answers": [
+      "at the same time"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示两件事同时发生，也可引出与前文并存的另一面。"
+  },
+  {
+    "id": "PH-J-0020",
+    "p": "at a time",
+    "m": "每次；一次",
+    "en": "Carry two boxes at a time to stay safe.",
+    "cn": "为了安全，每次搬两个箱子。",
+    "answers": [
+      "at a time"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示每次只处理限定数量的人或事物。"
+  },
+  {
+    "id": "PH-J-0021",
+    "p": "at work",
+    "m": "在工作；在起作用",
+    "en": "My mother is still at work, so she will come later.",
+    "cn": "我妈妈还在工作，所以她会晚些来。",
+    "answers": [
+      "at work"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "可表示某人正在工作，也可表示某种力量正在发挥作用。"
+  },
+  {
+    "id": "PH-J-0022",
+    "p": "by hand",
+    "m": "用手；手工",
+    "en": "Grandpa made this wooden toy by hand.",
+    "cn": "爷爷亲手制作了这个木制玩具。",
+    "answers": [
+      "by hand"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示不用机器，而是亲手完成。"
+  },
+  {
+    "id": "PH-J-0023",
+    "p": "by the way",
+    "m": "顺便说一下",
+    "en": "By the way, did you bring your library card?",
+    "cn": "顺便问一下，你带图书证了吗？",
+    "answers": [
+      "by the way"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "用于转换到与当前话题相关的补充内容。"
+  },
+  {
+    "id": "PH-J-0024",
+    "p": "day and night",
+    "m": "日夜；昼夜不停",
+    "en": "The doctors worked day and night to help the patients.",
+    "cn": "医生们日夜工作，救助病人。",
+    "answers": [
+      "day and night"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "强调某事持续进行或在白天和夜晚都发生。"
+  },
+  {
+    "id": "PH-J-0025",
+    "p": "each other",
+    "m": "彼此；互相",
+    "en": "Good teammates listen to each other.",
+    "cn": "优秀的队友会互相倾听。",
+    "answers": [
+      "each other"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "用于两人或多人之间的相互行为。"
+  },
+  {
+    "id": "PH-J-0026",
+    "p": "every day",
+    "m": "每天",
+    "en": "I water these plants every day.",
+    "cn": "我每天给这些植物浇水。",
+    "answers": [
+      "every day"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "作时间状语，说明动作每日发生；与形容词 everyday 区分。"
+  },
+  {
+    "id": "PH-J-0027",
+    "p": "every week",
+    "m": "每周",
+    "en": "Our class has a reading meeting every week.",
+    "cn": "我们班每周举行一次读书会。",
+    "answers": [
+      "every week"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "作时间状语，说明动作每个星期发生。"
+  },
+  {
+    "id": "PH-J-0028",
+    "p": "every year",
+    "m": "每年",
+    "en": "Many visitors come to the town every year.",
+    "cn": "每年都有许多游客来到这个小镇。",
+    "answers": [
+      "every year"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "作时间状语，说明动作或事件每年发生。"
+  },
+  {
+    "id": "PH-J-0029",
+    "p": "for a while",
+    "m": "一会儿；一段时间",
+    "en": "Let us sit here and rest for a while.",
+    "cn": "我们坐在这里休息一会儿吧。",
+    "answers": [
+      "for a while"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示某个动作或状态持续一段不太长的时间。"
+  },
+  {
+    "id": "PH-J-0030",
+    "p": "for example",
+    "m": "例如",
+    "en": "Some animals, for example, bears, sleep through much of the winter.",
+    "cn": "有些动物，例如熊，会睡过冬季的大部分时间。",
+    "answers": [
+      "for example"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "用于引出能够说明前面观点的具体例子。"
+  },
+  {
+    "id": "PH-J-0031",
+    "p": "for free",
+    "m": "免费地",
+    "en": "Children can enter the museum for free on Sundays.",
+    "cn": "孩子们星期日可以免费进入博物馆。",
+    "answers": [
+      "for free"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示获得某物或服务时不需要付钱。"
+  },
+  {
+    "id": "PH-J-0032",
+    "p": "for short",
+    "m": "简称；缩写为",
+    "en": "We call the International Space Station the ISS for short.",
+    "cn": "我们把国际空间站简称为 ISS。",
+    "answers": [
+      "for short"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "用于说明一个较长名称的简短说法。"
+  },
+  {
+    "id": "PH-J-0033",
+    "p": "for sure",
+    "m": "确实；肯定地",
+    "en": "I cannot say for sure when the bus will arrive.",
+    "cn": "我无法确切地说公共汽车什么时候到。",
+    "answers": [
+      "for sure"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示说话人对某事很有把握。"
+  },
+  {
+    "id": "PH-J-0034",
+    "p": "from time to time",
+    "m": "不时；偶尔",
+    "en": "We visit our old teacher from time to time.",
+    "cn": "我们不时去看望以前的老师。",
+    "answers": [
+      "from time to time"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示某事间隔一段时间发生一次。"
+  },
+  {
+    "id": "PH-J-0035",
+    "p": "good luck",
+    "m": "祝你好运",
+    "en": "Good luck with your English test tomorrow!",
+    "cn": "祝你明天的英语考试顺利！",
+    "answers": [
+      "good luck"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "用于祝愿别人顺利或成功。"
+  },
+  {
+    "id": "PH-J-0036",
+    "p": "here and there",
+    "m": "到处；各处",
+    "en": "Small cafés appeared here and there along the street.",
+    "cn": "街道两旁零星分布着一些小咖啡馆。",
+    "answers": [
+      "here and there"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示分散在不同地方，不一定遍及全部区域。"
+  },
+  {
+    "id": "PH-J-0037",
+    "p": "in all",
+    "m": "总共；合计",
+    "en": "There are thirty students in all in our music club.",
+    "cn": "我们的音乐社团总共有三十名学生。",
+    "answers": [
+      "in all"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "用于给出全部数量。"
+  },
+  {
+    "id": "PH-J-0038",
+    "p": "in common",
+    "m": "共同；共有",
+    "en": "The two friends have a love of music in common.",
+    "cn": "这两个朋友都热爱音乐。",
+    "answers": [
+      "in common"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "常与 have 连用，说明人或事物具有相同点。"
+  },
+  {
+    "id": "PH-J-0039",
+    "p": "in fact",
+    "m": "事实上；其实",
+    "en": "The task looks simple, but in fact it needs careful planning.",
+    "cn": "这项任务看起来简单，其实需要周密计划。",
+    "answers": [
+      "in fact"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "用于补充真实情况，或纠正可能的误解。"
+  },
+  {
+    "id": "PH-J-0040",
+    "p": "in line",
+    "m": "排成一列；成一直线",
+    "en": "Please wait in line outside the ticket office.",
+    "cn": "请在售票处外排队等候。",
+    "answers": [
+      "in line"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "常用于 wait 或 stand 等动词后，表示按队列排列。"
+  },
+  {
+    "id": "PH-J-0041",
+    "p": "in order",
+    "m": "井然有序；按顺序",
+    "en": "Put the pictures in order to tell the story.",
+    "cn": "把图片按顺序排列来讲述这个故事。",
+    "answers": [
+      "in order"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示事物排列整齐或处于适当状态。"
+  },
+  {
+    "id": "PH-J-0042",
+    "p": "in short",
+    "m": "总之；简而言之",
+    "en": "In short, regular practice is the key to improvement.",
+    "cn": "总之，经常练习是进步的关键。",
+    "answers": [
+      "in short"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "用于用简短的话概括前面的内容。"
+  },
+  {
+    "id": "PH-J-0043",
+    "p": "in the end",
+    "m": "最后；终于",
+    "en": "We tried several routes and chose the safest one in the end.",
+    "cn": "我们尝试了几条路线，最后选择了最安全的一条。",
+    "answers": [
+      "in the end"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示经过一段过程后的最终结果。"
+  },
+  {
+    "id": "PH-J-0044",
+    "p": "in the way",
+    "m": "挡路；妨碍",
+    "en": "Your bicycle is in the way, so please move it.",
+    "cn": "你的自行车挡路了，请把它移开。",
+    "answers": [
+      "in the way"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示阻挡通道或妨碍事情进行。"
+  },
+  {
+    "id": "PH-J-0045",
+    "p": "just in time",
+    "m": "正好及时",
+    "en": "We reached the station just in time for the last train.",
+    "cn": "我们正好及时赶上末班火车。",
+    "answers": [
+      "just in time"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示在最后时刻赶上，没有错过。"
+  },
+  {
+    "id": "PH-J-0046",
+    "p": "later on",
+    "m": "后来；以后",
+    "en": "I am busy now, but I can help you later on.",
+    "cn": "我现在很忙，但之后可以帮你。",
+    "answers": [
+      "later on"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示在当前时间之后的某个时候。"
+  },
+  {
+    "id": "PH-J-0047",
+    "p": "more and more",
+    "m": "越来越多；越来越",
+    "en": "More and more students ride bicycles to school.",
+    "cn": "越来越多的学生骑自行车上学。",
+    "answers": [
+      "more and more"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示数量或程度持续增加。"
+  },
+  {
+    "id": "PH-J-0048",
+    "p": "next door",
+    "m": "隔壁；在隔壁",
+    "en": "A friendly family moved in next door last week.",
+    "cn": "上周有一家友善的人搬到了隔壁。",
+    "answers": [
+      "next door"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示紧邻的房屋或房间。"
+  },
+  {
+    "id": "PH-J-0049",
+    "p": "no doubt",
+    "m": "无疑；很可能",
+    "en": "No doubt, teamwork helped us finish early.",
+    "cn": "毫无疑问，团队合作帮助我们提前完成了任务。",
+    "answers": [
+      "no doubt"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "表示确信，也可表示某事极有可能发生。"
+  },
+  {
+    "id": "PH-J-0050",
+    "p": "no matter",
+    "m": "不管；无论",
+    "en": "No matter what happens, stay calm and ask for help.",
+    "cn": "无论发生什么，都要保持冷静并寻求帮助。",
+    "answers": [
+      "no matter"
+    ],
+    "tier": "core",
+    "level": 1,
+    "usage_note": "通常与疑问词连用，引出不影响结果的条件。"
+  },
+  {
+    "id": "PH-J-0051",
+    "p": "no more",
+    "m": "不再；没有更多",
+    "en": "There is no more juice in the bottle.",
+    "cn": "瓶子里没有果汁了。",
+    "answers": [
+      "no more"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可表示某事停止发生，也可说明数量已经没有剩余。"
+  },
+  {
+    "id": "PH-J-0052",
+    "p": "now and then",
+    "m": "有时；偶尔",
+    "en": "We eat at that small restaurant now and then.",
+    "cn": "我们偶尔会去那家小餐馆吃饭。",
+    "answers": [
+      "now and then"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "表示某事不经常但会间或发生。"
+  },
+  {
+    "id": "PH-J-0053",
+    "p": "of course",
+    "m": "当然；自然",
+    "en": "Of course you can borrow my dictionary.",
+    "cn": "你当然可以借我的词典。",
+    "answers": [
+      "of course"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "表示回答肯定、事情显而易见或愿意提供帮助。"
+  },
+  {
+    "id": "PH-J-0054",
+    "p": "on fire",
+    "m": "着火；燃烧着",
+    "en": "The dry grass was on fire, so we called for help.",
+    "cn": "干草着火了，所以我们打电话求助。",
+    "answers": [
+      "on fire"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "通常与 be 连用，表示某物正在燃烧。"
+  },
+  {
+    "id": "PH-J-0055",
+    "p": "on purpose",
+    "m": "故意地",
+    "en": "She left the window open on purpose to let fresh air in.",
+    "cn": "她故意把窗户开着，好让新鲜空气进来。",
+    "answers": [
+      "on purpose"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "表示某个行为是有意做出的，而非偶然。"
+  },
+  {
+    "id": "PH-J-0056",
+    "p": "on the way",
+    "m": "在路上；即将到来",
+    "en": "We bought some bread on the way to school.",
+    "cn": "我们在上学路上买了一些面包。",
+    "answers": [
+      "on the way"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "常与 to 连用表示去某地途中，也可表示某事即将发生。"
+  },
+  {
+    "id": "PH-J-0057",
+    "p": "on time",
+    "m": "准时",
+    "en": "The school bus arrived on time this morning.",
+    "cn": "校车今天早上准时到达。",
+    "answers": [
+      "on time"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "表示在约定或规定的时刻，不早也不晚。"
+  },
+  {
+    "id": "PH-J-0058",
+    "p": "once again",
+    "m": "再一次；又一次",
+    "en": "Once again, our class won the basketball game.",
+    "cn": "我们班又一次赢得了篮球比赛。",
+    "answers": [
+      "once again"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "表示同一动作或情况再次发生。"
+  },
+  {
+    "id": "PH-J-0059",
+    "p": "once more",
+    "m": "再一次",
+    "en": "Please read the last sentence once more.",
+    "cn": "请把最后一句再读一遍。",
+    "answers": [
+      "once more"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "常用于请求或说明动作再重复一次。"
+  },
+  {
+    "id": "PH-J-0060",
+    "p": "or else",
+    "m": "否则；要不然",
+    "en": "Wear your coat, or else you may feel cold outside.",
+    "cn": "穿上外套，否则你在外面可能会觉得冷。",
+    "answers": [
+      "or else"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "用于警告不采取前述行动会产生某种后果。"
+  },
+  {
+    "id": "PH-J-0061",
+    "p": "out loud",
+    "m": "出声地；大声地",
+    "en": "The teacher asked us to read the poem out loud.",
+    "cn": "老师让我们大声朗读这首诗。",
+    "answers": [
+      "out loud"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "表示把原本可默念的内容说出声音来。"
+  },
+  {
+    "id": "PH-J-0062",
+    "p": "over and over",
+    "m": "反复地；一再",
+    "en": "He practiced the difficult line over and over.",
+    "cn": "他反复练习那句困难的台词。",
+    "answers": [
+      "over and over"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "强调同一动作发生很多次。"
+  },
+  {
+    "id": "PH-J-0063",
+    "p": "right away",
+    "m": "立刻；马上",
+    "en": "Please wash the cut right away.",
+    "cn": "请立即清洗伤口。",
+    "answers": [
+      "right away"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "表示毫不拖延地采取行动。"
+  },
+  {
+    "id": "PH-J-0064",
+    "p": "so far",
+    "m": "到目前为止",
+    "en": "So far, we have collected fifty books for the library.",
+    "cn": "到目前为止，我们已经为图书馆募集了五十本书。",
+    "answers": [
+      "so far"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "通常与现在完成时连用，说明截至现在的情况。"
+  },
+  {
+    "id": "PH-J-0065",
+    "p": "until now",
+    "m": "直到现在",
+    "en": "Until now, I have never traveled by plane.",
+    "cn": "直到现在，我还从未坐过飞机旅行。",
+    "answers": [
+      "until now"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "强调某种情况从过去持续到现在，或直到现在才改变。"
+  },
+  {
+    "id": "PH-J-0066",
+    "p": "up and down",
+    "m": "上上下下；来回",
+    "en": "The excited puppy jumped up and down.",
+    "cn": "兴奋的小狗跳上跳下。",
+    "answers": [
+      "up and down"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "表示沿上下方向移动，也可表示来回走动。"
+  },
+  {
+    "id": "PH-J-0067",
+    "p": "very well",
+    "m": "很好；非常好",
+    "en": "Mina plays the piano very well.",
+    "cn": "米娜钢琴弹得很好。",
+    "answers": [
+      "very well"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可表示动作完成得好，也可用于接受建议或安排。"
+  },
+  {
+    "id": "PH-J-0068",
+    "p": "ask for",
+    "m": "请求；要求得到",
+    "en": "You can ask for help when the task is difficult.",
+    "cn": "任务困难时，你可以请求帮助。",
+    "answers": [
+      "ask for"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "后接所请求的人、物或帮助。"
+  },
+  {
+    "id": "PH-J-0069",
+    "p": "arrive at",
+    "m": "到达",
+    "en": "We expect to arrive at the station before noon.",
+    "cn": "我们预计中午前到达车站。",
+    "answers": [
+      "arrive at"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "通常后接较小的地点，也可表示经过思考得出结论。"
+  },
+  {
+    "id": "PH-J-0070",
+    "p": "be born",
+    "m": "出生",
+    "en": "The baby will be born in early spring.",
+    "cn": "这个宝宝将在初春出生。",
+    "answers": [
+      "be born"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "通常使用被动形式，后可接时间或地点状语。"
+  },
+  {
+    "id": "PH-J-0071",
+    "p": "believe in",
+    "m": "相信；信任",
+    "en": "You must believe in yourself when facing a challenge.",
+    "cn": "面对挑战时，你必须相信自己。",
+    "answers": [
+      "believe in"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "后接人或事物，表示相信其存在、价值或能力。"
+  },
+  {
+    "id": "PH-J-0072",
+    "p": "belong to",
+    "m": "属于",
+    "en": "These gloves belong to my sister.",
+    "cn": "这副手套属于我姐姐。",
+    "answers": [
+      "belong to"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "后接拥有者，通常不用于进行时或被动语态。"
+  },
+  {
+    "id": "PH-J-0073",
+    "p": "break down",
+    "m": "出故障；分解；崩溃",
+    "en": "Old buses may break down on long journeys.",
+    "cn": "旧公共汽车在长途行驶中可能会出故障。",
+    "answers": [
+      "break down"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可指机器停止运转，也可指物质分解或人情绪失控。"
+  },
+  {
+    "id": "PH-J-0074",
+    "p": "break in",
+    "m": "闯入；插话",
+    "en": "Someone tried to break in through the back window.",
+    "cn": "有人试图从后窗闯入。",
+    "answers": [
+      "break in"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可指强行进入建筑物，也可指打断谈话。"
+  },
+  {
+    "id": "PH-J-0075",
+    "p": "bring back",
+    "m": "带回；使想起",
+    "en": "This song can bring back happy childhood memories.",
+    "cn": "这首歌能唤起快乐的童年回忆。",
+    "answers": [
+      "bring back"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可指把人或物带回，也可表示唤起记忆。"
+  },
+  {
+    "id": "PH-J-0076",
+    "p": "bring down",
+    "m": "降低；使倒下",
+    "en": "Better farming methods can bring down food prices.",
+    "cn": "更好的耕作方法能够降低食品价格。",
+    "answers": [
+      "bring down"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可指降低价格、数量或水平，也可指使某物倒下。"
+  },
+  {
+    "id": "PH-J-0077",
+    "p": "bring home",
+    "m": "带回家；使充分认识",
+    "en": "The accident should bring home the importance of road safety.",
+    "cn": "这起事故应让人深刻认识到道路安全的重要性。",
+    "answers": [
+      "bring home"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可指把某物带回家，也可表示使人清楚认识某事。"
+  },
+  {
+    "id": "PH-J-0078",
+    "p": "call for",
+    "m": "需要；要求；呼吁",
+    "en": "The problem will call for patience and teamwork.",
+    "cn": "解决这个问题需要耐心和团队合作。",
+    "answers": [
+      "call for"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可表示某种情况需要某物，也可公开要求采取行动。"
+  },
+  {
+    "id": "PH-J-0079",
+    "p": "call out",
+    "m": "大声呼喊；召集",
+    "en": "If you see the guide, call out her name.",
+    "cn": "如果你看到导游，就大声喊她的名字。",
+    "answers": [
+      "call out"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可指提高声音喊话，也可指召集人员处理紧急情况。"
+  },
+  {
+    "id": "PH-J-0080",
+    "p": "calm down",
+    "m": "平静下来；使镇静",
+    "en": "Take a slow breath and calm down before you answer.",
+    "cn": "回答前慢慢吸一口气，让自己平静下来。",
+    "answers": [
+      "calm down"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可单独使用，也可接宾语表示使某人镇静。"
+  },
+  {
+    "id": "PH-J-0081",
+    "p": "care for",
+    "m": "照顾；喜欢",
+    "en": "Nurses care for people who are ill.",
+    "cn": "护士照顾生病的人。",
+    "answers": [
+      "care for"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可表示照料某人，也可用于较正式语境表示喜欢某物。"
+  },
+  {
+    "id": "PH-J-0082",
+    "p": "carry on",
+    "m": "继续",
+    "en": "Please carry on with your work while I answer the phone.",
+    "cn": "我接电话时，请继续做你的工作。",
+    "answers": [
+      "carry on"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "表示在困难或中断后继续做某事。"
+  },
+  {
+    "id": "PH-J-0083",
+    "p": "check in",
+    "m": "办理入住或登机手续",
+    "en": "We need to check in at the hotel before six.",
+    "cn": "我们需要在六点前办理酒店入住手续。",
+    "answers": [
+      "check in"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "表示抵达酒店或机场后登记身份和相关信息。"
+  },
+  {
+    "id": "PH-J-0084",
+    "p": "check out",
+    "m": "查看；办理退房；结账离开",
+    "en": "Guests must check out before noon.",
+    "cn": "客人必须在中午前办理退房。",
+    "answers": [
+      "check out"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可表示查看某物，也可表示办理离开酒店的手续。"
+  },
+  {
+    "id": "PH-J-0085",
+    "p": "clean up",
+    "m": "打扫干净；清理",
+    "en": "Everyone helped clean up the park after the picnic.",
+    "cn": "野餐后，大家一起清理了公园。",
+    "answers": [
+      "clean up"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可不接宾语，也可接需要清理的地方或物品。"
+  },
+  {
+    "id": "PH-J-0086",
+    "p": "climb up",
+    "m": "向上爬；攀登",
+    "en": "The children watched the cat climb up the tree.",
+    "cn": "孩子们看着猫爬上树。",
+    "answers": [
+      "climb up"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "强调沿某物向上移动。"
+  },
+  {
+    "id": "PH-J-0087",
+    "p": "come along",
+    "m": "一起来；进展",
+    "en": "You may come along with us if you have time.",
+    "cn": "如果你有时间，可以和我们一起来。",
+    "answers": [
+      "come along"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可用于邀请别人同行，也可说明事情的进展情况。"
+  },
+  {
+    "id": "PH-J-0088",
+    "p": "come back",
+    "m": "回来；恢复",
+    "en": "Please come back before it gets dark.",
+    "cn": "请在天黑前回来。",
+    "answers": [
+      "come back"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "表示返回原处，也可表示某种事物重新出现。"
+  },
+  {
+    "id": "PH-J-0089",
+    "p": "come down",
+    "m": "下来；下降",
+    "en": "Snow began to come down before sunrise.",
+    "cn": "日出前开始下雪了。",
+    "answers": [
+      "come down"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可表示从高处向低处移动，也可指价格或温度下降。"
+  },
+  {
+    "id": "PH-J-0090",
+    "p": "come in",
+    "m": "进来；进入",
+    "en": "Please knock before you come in.",
+    "cn": "进来之前请敲门。",
+    "answers": [
+      "come in"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "用于表示人进入室内，也可指某物开始流行或到达。"
+  },
+  {
+    "id": "PH-J-0091",
+    "p": "come on",
+    "m": "快点；加油；开始发生",
+    "en": "Come on, we do not want to miss the opening show.",
+    "cn": "快点，我们可不想错过开场表演。",
+    "answers": [
+      "come on"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "常用于催促或鼓励，也可表示某事开始出现。"
+  },
+  {
+    "id": "PH-J-0092",
+    "p": "come out",
+    "m": "出来；出版；显露",
+    "en": "The new school magazine will come out next Monday.",
+    "cn": "新的校刊将在下周一出版。",
+    "answers": [
+      "come out"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可表示从里面出来、书刊发行或信息被公开。"
+  },
+  {
+    "id": "PH-J-0093",
+    "p": "come over",
+    "m": "过来；顺便来访",
+    "en": "Why not come over after school and study with us?",
+    "cn": "放学后为什么不过来和我们一起学习呢？",
+    "answers": [
+      "come over"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "表示从别处来到说话人所在处，常用于非正式邀请。"
+  },
+  {
+    "id": "PH-J-0094",
+    "p": "come up",
+    "m": "走近；出现；被提出",
+    "en": "A question may come up during the class discussion.",
+    "cn": "课堂讨论中可能会出现一个问题。",
+    "answers": [
+      "come up"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可表示向某处走近，也可指问题、机会或话题出现。"
+  },
+  {
+    "id": "PH-J-0095",
+    "p": "cut down",
+    "m": "砍倒；削减",
+    "en": "We should cut down the amount of plastic we use.",
+    "cn": "我们应该减少塑料的使用量。",
+    "answers": [
+      "cut down"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可表示砍倒树木，也可表示减少数量或用量。"
+  },
+  {
+    "id": "PH-J-0096",
+    "p": "cut off",
+    "m": "切断；中断",
+    "en": "The storm may cut off electricity in some villages.",
+    "cn": "暴风雨可能会切断一些村庄的电力供应。",
+    "answers": [
+      "cut off"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可表示断开供应、联系或通路。"
+  },
+  {
+    "id": "PH-J-0097",
+    "p": "cut out",
+    "m": "剪下；停止使用；删除",
+    "en": "Use these scissors to cut out the paper star.",
+    "cn": "用这把剪刀剪下纸星星。",
+    "answers": [
+      "cut out"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可表示用剪刀剪下，也可指去掉不需要的部分。"
+  },
+  {
+    "id": "PH-J-0098",
+    "p": "depend on",
+    "m": "取决于；依靠",
+    "en": "The picnic will depend on the weather.",
+    "cn": "野餐能否进行将取决于天气。",
+    "answers": [
+      "depend on"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "后接影响结果的条件，或提供支持的人和事物。"
+  },
+  {
+    "id": "PH-J-0099",
+    "p": "dress up",
+    "m": "穿上盛装；装扮",
+    "en": "The children will dress up as storybook characters.",
+    "cn": "孩子们会装扮成故事书中的人物。",
+    "answers": [
+      "dress up"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "可表示穿得正式，也可表示装扮成某个角色。"
+  },
+  {
+    "id": "PH-J-0100",
+    "p": "end up",
+    "m": "最终成为；最后处于",
+    "en": "Without a map, we might end up in the wrong village.",
+    "cn": "没有地图，我们最后可能会走到错误的村庄。",
+    "answers": [
+      "end up"
+    ],
+    "tier": "core",
+    "level": 2,
+    "usage_note": "后常接动名词、形容词或介词短语，表示意外或最终结果。"
+  },
+  {
+    "id": "PH-J-0101",
+    "p": "fall asleep",
+    "m": "入睡；睡着",
+    "en": "It was hard to fall asleep because of the noise outside.",
+    "cn": "因为外面的噪声，很难入睡。",
+    "answers": [
+      "fall asleep"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "表示从清醒状态进入睡眠，fall 在句中随时态变化。"
+  },
+  {
+    "id": "PH-J-0102",
+    "p": "fall down",
+    "m": "跌倒；倒塌",
+    "en": "Be careful not to fall down on the wet floor.",
+    "cn": "小心别在湿滑的地板上摔倒。",
+    "answers": [
+      "fall down"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "可指人或物倒在地上，也可指建筑物倒塌。"
+  },
+  {
+    "id": "PH-J-0103",
+    "p": "fall off",
+    "m": "从某处掉下；脱落",
+    "en": "Loose buttons may fall off this old coat.",
+    "cn": "这件旧外套上松动的纽扣可能会脱落。",
+    "answers": [
+      "fall off"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "后面可直接接所离开的物体，不再加 from。"
+  },
+  {
+    "id": "PH-J-0104",
+    "p": "fall over",
+    "m": "摔倒；倒下",
+    "en": "The chair may fall over if you lean back too far.",
+    "cn": "如果你向后仰得太多，椅子可能会翻倒。",
+    "answers": [
+      "fall over"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "强调失去平衡而倒下，可用于人或直立物体。"
+  },
+  {
+    "id": "PH-J-0105",
+    "p": "feed on",
+    "m": "以某物为食",
+    "en": "Many small birds feed on seeds and insects.",
+    "cn": "许多小鸟以种子和昆虫为食。",
+    "answers": [
+      "feed on"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "主语通常是动物，后接其食物。"
+  },
+  {
+    "id": "PH-J-0106",
+    "p": "feel like",
+    "m": "想要；感觉像",
+    "en": "I feel like taking a short walk after dinner.",
+    "cn": "晚饭后我想散一会儿步。",
+    "answers": [
+      "feel like"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "后接名词或动名词可表示想做某事，也可表示某种感受。"
+  },
+  {
+    "id": "PH-J-0107",
+    "p": "fill in",
+    "m": "填写；填补",
+    "en": "Please fill in your name and class on this form.",
+    "cn": "请在这张表格上填写你的姓名和班级。",
+    "answers": [
+      "fill in"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "可表示填写表格中的信息，也可表示临时代替某人。"
+  },
+  {
+    "id": "PH-J-0108",
+    "p": "fill up",
+    "m": "装满；充满",
+    "en": "We need to fill up the water bottles before the hike.",
+    "cn": "徒步前我们需要把水瓶装满。",
+    "answers": [
+      "fill up"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "表示容器或空间变满，也可接宾语表示把某物装满。"
+  },
+  {
+    "id": "PH-J-0109",
+    "p": "find out",
+    "m": "查明；弄清楚",
+    "en": "Let us find out why the computer will not start.",
+    "cn": "我们来查明电脑为什么无法启动。",
+    "answers": [
+      "find out"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "表示通过询问、调查或观察获得未知信息。"
+  },
+  {
+    "id": "PH-J-0110",
+    "p": "get along",
+    "m": "相处；进展",
+    "en": "The new classmates get along well with one another.",
+    "cn": "新同学们彼此相处得很好。",
+    "answers": [
+      "get along"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "常与 with 连用表示与某人相处，也可说明事情进展情况。"
+  },
+  {
+    "id": "PH-J-0111",
+    "p": "get away",
+    "m": "离开；逃脱",
+    "en": "The thief tried to get away through the crowded market.",
+    "cn": "小偷试图穿过拥挤的市场逃走。",
+    "answers": [
+      "get away"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "表示离开某地，或从危险和控制中逃脱。"
+  },
+  {
+    "id": "PH-J-0112",
+    "p": "get back",
+    "m": "返回；取回",
+    "en": "We should get back to camp before sunset.",
+    "cn": "我们应该在日落前返回营地。",
+    "answers": [
+      "get back"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "可表示回到原处，也可表示重新得到某物。"
+  },
+  {
+    "id": "PH-J-0113",
+    "p": "get down",
+    "m": "下来；写下；使沮丧",
+    "en": "Use the ladder to get down from the roof safely.",
+    "cn": "用梯子安全地从屋顶下来。",
+    "answers": [
+      "get down"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "可表示移动到低处、记下内容或使人情绪低落。"
+  },
+  {
+    "id": "PH-J-0114",
+    "p": "get in",
+    "m": "进入；到达",
+    "en": "We can get in through the side door.",
+    "cn": "我们可以从侧门进去。",
+    "answers": [
+      "get in"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "表示进入车辆或场所，也可表示交通工具到达。"
+  },
+  {
+    "id": "PH-J-0115",
+    "p": "get into",
+    "m": "进入；陷入；开始从事",
+    "en": "Do not get into a car with a stranger.",
+    "cn": "不要上陌生人的车。",
+    "answers": [
+      "get into"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "后接地点、状态或活动，含义取决于宾语。"
+  },
+  {
+    "id": "PH-J-0116",
+    "p": "get off",
+    "m": "下车；离开；脱下",
+    "en": "We need to get off the bus at the next stop.",
+    "cn": "我们需要在下一站下车。",
+    "answers": [
+      "get off"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "常表示离开公共交通工具，也可表示从某物上下来。"
+  },
+  {
+    "id": "PH-J-0117",
+    "p": "get on",
+    "m": "上车；进展；相处",
+    "en": "Hurry, or we will not get on the train in time.",
+    "cn": "快点，否则我们不能及时上火车。",
+    "answers": [
+      "get on"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "可表示登上公共交通工具，也可与 with 连用表示进展或相处。"
+  },
+  {
+    "id": "PH-J-0118",
+    "p": "get out",
+    "m": "出去；离开",
+    "en": "Use the rear door to get out of the building.",
+    "cn": "请从后门离开这栋楼。",
+    "answers": [
+      "get out"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "表示从室内、车辆或某种处境中离开。"
+  },
+  {
+    "id": "PH-J-0119",
+    "p": "get over",
+    "m": "克服；从疾病中恢复",
+    "en": "With enough rest, you will soon get over the cold.",
+    "cn": "充分休息后，你很快就会从感冒中恢复。",
+    "answers": [
+      "get over"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "表示成功处理困难、情绪或疾病带来的影响。"
+  },
+  {
+    "id": "PH-J-0120",
+    "p": "get through",
+    "m": "通过；完成；接通电话",
+    "en": "We worked together to get through the difficult task.",
+    "cn": "我们共同努力完成了这项困难的任务。",
+    "answers": [
+      "get through"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "可表示通过考试或困难阶段、做完任务，也可表示电话接通。"
+  },
+  {
+    "id": "PH-J-0121",
+    "p": "get together",
+    "m": "聚会；相聚",
+    "en": "Our whole family will get together during the holiday.",
+    "cn": "假期里我们全家会团聚。",
+    "answers": [
+      "get together"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "表示人们来到一起参加活动或共同做事。"
+  },
+  {
+    "id": "PH-J-0122",
+    "p": "get up",
+    "m": "起床；站起来",
+    "en": "I usually get up at half past six on school days.",
+    "cn": "上学日我通常六点半起床。",
+    "answers": [
+      "get up"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "通常表示离开床铺，也可表示从坐姿或卧姿站起。"
+  },
+  {
+    "id": "PH-J-0123",
+    "p": "give up",
+    "m": "放弃；戒除",
+    "en": "Do not give up when the first attempt fails.",
+    "cn": "第一次尝试失败时不要放弃。",
+    "answers": [
+      "give up"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "后接名词或动名词，表示停止尝试或不再保持某种习惯。"
+  },
+  {
+    "id": "PH-J-0124",
+    "p": "go ahead",
+    "m": "开始吧；继续；先走",
+    "en": "If you are ready, go ahead and open the box.",
+    "cn": "如果你准备好了，就打开盒子吧。",
+    "answers": [
+      "go ahead"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "用于允许或鼓励某人开始行动，也可表示继续前进。"
+  },
+  {
+    "id": "PH-J-0125",
+    "p": "go away",
+    "m": "离开；走开",
+    "en": "The pain did not go away after a night's rest.",
+    "cn": "休息一夜后，疼痛并没有消失。",
+    "answers": [
+      "go away"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "表示离开当前地点，也可指问题或感觉消失。"
+  },
+  {
+    "id": "PH-J-0126",
+    "p": "go back",
+    "m": "回去；追溯到",
+    "en": "I need to go back home for my notebook.",
+    "cn": "我得回家拿笔记本。",
+    "answers": [
+      "go back"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "可表示返回原地，也可表示某事物起源于过去某时。"
+  },
+  {
+    "id": "PH-J-0127",
+    "p": "go down",
+    "m": "下降；下去",
+    "en": "The temperature may go down quickly after sunset.",
+    "cn": "日落后气温可能迅速下降。",
+    "answers": [
+      "go down"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "可指位置、温度、价格或数量降低。"
+  },
+  {
+    "id": "PH-J-0128",
+    "p": "go home",
+    "m": "回家",
+    "en": "Let us go home before the heavy rain starts.",
+    "cn": "我们在大雨开始前回家吧。",
+    "answers": [
+      "go home"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "home 在这里作副词，前面通常不用介词 to。"
+  },
+  {
+    "id": "PH-J-0129",
+    "p": "go in",
+    "m": "进去；进入",
+    "en": "The shop is open, so we can go in now.",
+    "cn": "商店开门了，我们现在可以进去。",
+    "answers": [
+      "go in"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "表示从外部进入某个地方。"
+  },
+  {
+    "id": "PH-J-0130",
+    "p": "go into",
+    "m": "进入；详细讨论；从事",
+    "en": "The teacher will go into more detail after the break.",
+    "cn": "休息后老师会讲得更详细。",
+    "answers": [
+      "go into"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "后接地点可表示进入，也可表示深入讨论或开始某种职业。"
+  },
+  {
+    "id": "PH-J-0131",
+    "p": "go on",
+    "m": "继续；发生",
+    "en": "The outdoor concert will go on despite the light rain.",
+    "cn": "尽管下着小雨，露天音乐会仍将继续。",
+    "answers": [
+      "go on"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "可表示动作继续进行，也可询问正在发生什么。"
+  },
+  {
+    "id": "PH-J-0132",
+    "p": "go out",
+    "m": "外出；熄灭",
+    "en": "The lights may go out during the storm.",
+    "cn": "暴风雨期间可能会停电。",
+    "answers": [
+      "go out"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "可表示离开家参加活动，也可指灯或火熄灭。"
+  },
+  {
+    "id": "PH-J-0133",
+    "p": "go over",
+    "m": "复习；仔细检查",
+    "en": "Let us go over the new words before the quiz.",
+    "cn": "小测验前我们复习一下生词吧。",
+    "answers": [
+      "go over"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "表示再次查看学习内容或认真检查细节。"
+  },
+  {
+    "id": "PH-J-0134",
+    "p": "go through",
+    "m": "经历；仔细检查；通过",
+    "en": "We must go through every answer before handing in the paper.",
+    "cn": "交卷前我们必须检查每个答案。",
+    "answers": [
+      "go through"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "可表示经历困难、逐项检查或从某处穿过。"
+  },
+  {
+    "id": "PH-J-0135",
+    "p": "go to bed",
+    "m": "上床睡觉",
+    "en": "You should go to bed early before an important exam.",
+    "cn": "重要考试前你应该早点睡觉。",
+    "answers": [
+      "go to bed"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "表示为了睡觉而上床，通常用于描述作息。"
+  },
+  {
+    "id": "PH-J-0136",
+    "p": "go up",
+    "m": "上升；向上走",
+    "en": "Food prices sometimes go up before a long holiday.",
+    "cn": "长假前食品价格有时会上涨。",
+    "answers": [
+      "go up"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "可指位置、价格、温度或数量升高。"
+  },
+  {
+    "id": "PH-J-0137",
+    "p": "grow up",
+    "m": "长大；成长",
+    "en": "What do you want to be when you grow up?",
+    "cn": "你长大后想做什么？",
+    "answers": [
+      "grow up"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "表示人或动物逐渐成年，也可谈论成长地点或经历。"
+  },
+  {
+    "id": "PH-J-0138",
+    "p": "hand in",
+    "m": "提交；上交",
+    "en": "Please hand in your homework before Friday.",
+    "cn": "请在星期五之前交作业。",
+    "answers": [
+      "hand in"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "表示把作业、文件或物品交给负责人。"
+  },
+  {
+    "id": "PH-J-0139",
+    "p": "hang on",
+    "m": "稍等；抓紧；坚持",
+    "en": "Hang on for a minute while I find the key.",
+    "cn": "请稍等一分钟，我找一下钥匙。",
+    "answers": [
+      "hang on"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "可用于让人等待，也可表示牢牢抓住或坚持下去。"
+  },
+  {
+    "id": "PH-J-0140",
+    "p": "help out",
+    "m": "帮忙；协助解决困难",
+    "en": "Could you help out at the school fair this Saturday?",
+    "cn": "这个星期六你能在学校义卖会上帮忙吗？",
+    "answers": [
+      "help out"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "表示在别人需要时提供实际帮助。"
+  },
+  {
+    "id": "PH-J-0141",
+    "p": "hold on",
+    "m": "稍等；抓牢",
+    "en": "Hold on to the rail as you walk down the steps.",
+    "cn": "下台阶时请抓紧扶手。",
+    "answers": [
+      "hold on"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "可用于电话中请对方等待，也可表示紧紧抓住。"
+  },
+  {
+    "id": "PH-J-0142",
+    "p": "hurry up",
+    "m": "赶快",
+    "en": "Hurry up, or the movie will begin without us.",
+    "cn": "快点，否则电影开始时我们还没到。",
+    "answers": [
+      "hurry up"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "用于催促某人加快动作，也可表示自己加快速度。"
+  },
+  {
+    "id": "PH-J-0143",
+    "p": "keep in",
+    "m": "使留在里面；抑制",
+    "en": "The teacher may keep in students who have not finished the task.",
+    "cn": "老师可能会让没有完成任务的学生留在教室里。",
+    "answers": [
+      "keep in"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "可表示让人或物留在某处，也可表示控制情绪不表露。"
+  },
+  {
+    "id": "PH-J-0144",
+    "p": "keep on",
+    "m": "继续",
+    "en": "If you keep on practicing, your pronunciation will improve.",
+    "cn": "如果你继续练习，发音会有所提高。",
+    "answers": [
+      "keep on"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "后接动名词，强调反复或持续做某事。"
+  },
+  {
+    "id": "PH-J-0145",
+    "p": "keep up",
+    "m": "保持；跟上",
+    "en": "Walk faster so that you can keep up with the group.",
+    "cn": "走快一点，这样你就能跟上队伍。",
+    "answers": [
+      "keep up"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "可表示保持某种水平，也可与 with 连用表示跟上进度。"
+  },
+  {
+    "id": "PH-J-0146",
+    "p": "know how",
+    "m": "知道怎样；懂得方法",
+    "en": "Do you know how to use this fire extinguisher?",
+    "cn": "你知道怎样使用这个灭火器吗？",
+    "answers": [
+      "know how"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "后常接带 to 的动词不定式，说明具备做某事的方法或技能。"
+  },
+  {
+    "id": "PH-J-0147",
+    "p": "lay down",
+    "m": "放下；制定",
+    "en": "Please lay down the tools when you finish the job.",
+    "cn": "完成工作后，请把工具放下。",
+    "answers": [
+      "lay down"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "lay 是及物动词，后接宾语，可指放置物品或制定规则。"
+  },
+  {
+    "id": "PH-J-0148",
+    "p": "learn from",
+    "m": "向某人学习；从某事中吸取经验",
+    "en": "We can learn from our mistakes and do better next time.",
+    "cn": "我们可以从错误中吸取经验，下次做得更好。",
+    "answers": [
+      "learn from"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "后接学习的对象、经历或错误。"
+  },
+  {
+    "id": "PH-J-0149",
+    "p": "let go",
+    "m": "松手；放开",
+    "en": "Do not let go of the rope until I tell you.",
+    "cn": "在我告诉你之前不要松开绳子。",
+    "answers": [
+      "let go"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "可表示不再抓住某物，也可表示放下某种情绪。"
+  },
+  {
+    "id": "PH-J-0150",
+    "p": "let in",
+    "m": "让某人或某物进入",
+    "en": "Please open the curtains and let in some sunlight.",
+    "cn": "请拉开窗帘，让阳光照进来。",
+    "answers": [
+      "let in"
+    ],
+    "tier": "core",
+    "level": 3,
+    "usage_note": "let 与 in 之间可放代词或名词作宾语。"
+  },
+  {
+    "id": "PH-J-0151",
+    "p": "let out",
+    "m": "放出；泄露；发出声音",
+    "en": "Please open the gate and let out the dog.",
+    "cn": "请打开大门，让狗出去。",
+    "answers": [
+      "let out"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "可表示让人或动物出去、泄露信息，或发出叫声。"
+  },
+  {
+    "id": "PH-J-0152",
+    "p": "lie down",
+    "m": "躺下",
+    "en": "You should lie down and rest if you feel dizzy.",
+    "cn": "如果你感到头晕，应该躺下休息。",
+    "answers": [
+      "lie down"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "lie 表示“躺”时是不及物动词，过去式为 lay。"
+  },
+  {
+    "id": "PH-J-0153",
+    "p": "listen to",
+    "m": "听；倾听",
+    "en": "Please listen to the instructions before you begin.",
+    "cn": "开始之前请听清说明。",
+    "answers": [
+      "listen to"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "to 后接所听的人、声音或内容，listen 本身不能直接接宾语。"
+  },
+  {
+    "id": "PH-J-0154",
+    "p": "live in",
+    "m": "居住在",
+    "en": "My grandparents live in a quiet village near the sea.",
+    "cn": "我的祖父母住在海边一个安静的村庄里。",
+    "answers": [
+      "live in"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "后接国家、城市、建筑物等居住地点。"
+  },
+  {
+    "id": "PH-J-0155",
+    "p": "live on",
+    "m": "以某物为食；靠某物生活",
+    "en": "In this area, many families live on fishing.",
+    "cn": "在这个地区，许多家庭靠捕鱼为生。",
+    "answers": [
+      "live on"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "可说明食物来源，也可说明赖以生活的收入或资源。"
+  },
+  {
+    "id": "PH-J-0156",
+    "p": "look after",
+    "m": "照顾；照料",
+    "en": "Can you look after my cat while I am away?",
+    "cn": "我不在时你能照顾我的猫吗？",
+    "answers": [
+      "look after"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "后接需要照顾的人、动物或事物。"
+  },
+  {
+    "id": "PH-J-0157",
+    "p": "look at",
+    "m": "看；查看",
+    "en": "Look at the clouds and tell me what shapes you see.",
+    "cn": "看看这些云，告诉我你看到了什么形状。",
+    "answers": [
+      "look at"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "后接观看或检查的对象，强调把视线转向某物。"
+  },
+  {
+    "id": "PH-J-0158",
+    "p": "look back",
+    "m": "回头看；回顾",
+    "en": "When I look back on the trip, I remember the kind people most.",
+    "cn": "回顾那次旅行时，我最记得那些善良的人。",
+    "answers": [
+      "look back"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "可表示向身后看，也可与 on 连用表示回顾往事。"
+  },
+  {
+    "id": "PH-J-0159",
+    "p": "look for",
+    "m": "寻找",
+    "en": "We need to look for a safe place to cross the road.",
+    "cn": "我们需要找一个安全的地方过马路。",
+    "answers": [
+      "look for"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "后接想找到的人或事物，强调寻找的过程。"
+  },
+  {
+    "id": "PH-J-0160",
+    "p": "look like",
+    "m": "看起来像",
+    "en": "That island can look like a sleeping bear from here.",
+    "cn": "从这里看，那座岛可能像一只熟睡的熊。",
+    "answers": [
+      "look like"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "后接名词或代词，询问外貌时常用 what 作宾语。"
+  },
+  {
+    "id": "PH-J-0161",
+    "p": "look out",
+    "m": "当心；向外看",
+    "en": "Look out! A bicycle is coming around the corner.",
+    "cn": "当心！一辆自行车正从拐角处过来。",
+    "answers": [
+      "look out"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "单独使用常表示警告，也可与 of 连用表示从某处向外看。"
+  },
+  {
+    "id": "PH-J-0162",
+    "p": "look up",
+    "m": "查阅；抬头看",
+    "en": "You can look up the word in an online dictionary.",
+    "cn": "你可以在在线词典中查这个单词。",
+    "answers": [
+      "look up"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "可表示在资料中查找信息，也可表示向上看。"
+  },
+  {
+    "id": "PH-J-0163",
+    "p": "make sense",
+    "m": "有道理；讲得通",
+    "en": "Your plan will make sense if we have enough time.",
+    "cn": "如果我们有足够的时间，你的计划就行得通。",
+    "answers": [
+      "make sense"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "表示观点可以理解、符合逻辑，常用于否定句或疑问句。"
+  },
+  {
+    "id": "PH-J-0164",
+    "p": "make sure",
+    "m": "确保；查明",
+    "en": "Please make sure that every window is closed.",
+    "cn": "请确保每扇窗户都关好了。",
+    "answers": [
+      "make sure"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "后接 that 从句或 of 短语，表示确认某事无误。"
+  },
+  {
+    "id": "PH-J-0165",
+    "p": "make up",
+    "m": "编造；组成；和好；化妆",
+    "en": "Do not make up an excuse for being late.",
+    "cn": "不要为迟到编造借口。",
+    "answers": [
+      "make up"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "含义随宾语和语境变化，也可表示构成整体的一部分。"
+  },
+  {
+    "id": "PH-J-0166",
+    "p": "move around",
+    "m": "四处移动；走动",
+    "en": "Passengers may move around after the seat belt sign is off.",
+    "cn": "安全带指示灯熄灭后，乘客可以走动。",
+    "answers": [
+      "move around"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "表示在某一区域内改变位置或到处活动。"
+  },
+  {
+    "id": "PH-J-0167",
+    "p": "move in",
+    "m": "搬入；迁入",
+    "en": "Our new neighbors will move in next weekend.",
+    "cn": "我们的新邻居下周末会搬进来。",
+    "answers": [
+      "move in"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "表示开始在新的房屋或地点居住。"
+  },
+  {
+    "id": "PH-J-0168",
+    "p": "move on",
+    "m": "继续前进；转向下一项",
+    "en": "After a short rest, the hikers decided to move on.",
+    "cn": "短暂休息后，徒步者决定继续前进。",
+    "answers": [
+      "move on"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "表示离开当前地点、话题或阶段，继续下一步。"
+  },
+  {
+    "id": "PH-J-0169",
+    "p": "move out",
+    "m": "搬出；迁出",
+    "en": "They plan to move out at the end of the month.",
+    "cn": "他们计划在月底搬出去。",
+    "answers": [
+      "move out"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "表示离开原来居住的房屋或地点。"
+  },
+  {
+    "id": "PH-J-0170",
+    "p": "pay for",
+    "m": "为某物付款；为某事付出代价",
+    "en": "I used my own money to pay for the notebook.",
+    "cn": "我用自己的钱买了这个笔记本。",
+    "answers": [
+      "pay for"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "后接购买的物品、服务或行为造成的后果。"
+  },
+  {
+    "id": "PH-J-0171",
+    "p": "pick out",
+    "m": "挑选；辨认出",
+    "en": "Help me pick out a present for my little brother.",
+    "cn": "帮我给弟弟挑一件礼物。",
+    "answers": [
+      "pick out"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "可表示从一组中选择，也可表示从人群或背景中认出。"
+  },
+  {
+    "id": "PH-J-0172",
+    "p": "pick up",
+    "m": "捡起；接载；学会",
+    "en": "Could you pick up that piece of paper from the floor?",
+    "cn": "你能把地上的那张纸捡起来吗？",
+    "answers": [
+      "pick up"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "可表示拿起物品、开车接人或自然学到知识和技能。"
+  },
+  {
+    "id": "PH-J-0173",
+    "p": "play with",
+    "m": "和某人玩；摆弄",
+    "en": "The children like to play with building blocks.",
+    "cn": "孩子们喜欢玩积木。",
+    "answers": [
+      "play with"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "后接玩伴、玩具或被随意摆弄的物品。"
+  },
+  {
+    "id": "PH-J-0174",
+    "p": "point out",
+    "m": "指出",
+    "en": "The guide will point out the oldest building in the town.",
+    "cn": "导游会指出镇上最古老的建筑。",
+    "answers": [
+      "point out"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "表示让别人注意某个事实、问题或特征。"
+  },
+  {
+    "id": "PH-J-0175",
+    "p": "prepare for",
+    "m": "为某事做准备",
+    "en": "We need to prepare for the school sports day.",
+    "cn": "我们需要为学校运动会做准备。",
+    "answers": [
+      "prepare for"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "后接考试、活动或可能发生的情况。"
+  },
+  {
+    "id": "PH-J-0176",
+    "p": "pull out",
+    "m": "拔出；驶出；退出",
+    "en": "The dentist had to pull out the damaged tooth.",
+    "cn": "牙医不得不拔掉那颗坏牙。",
+    "answers": [
+      "pull out"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "可表示从里面取出物品、车辆驶离，或停止参与。"
+  },
+  {
+    "id": "PH-J-0177",
+    "p": "put down",
+    "m": "放下；写下；贬低",
+    "en": "Please put down the glass before you open the door.",
+    "cn": "开门前请把玻璃杯放下。",
+    "answers": [
+      "put down"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "可表示把物品放到低处、记录内容或用言语贬低别人。"
+  },
+  {
+    "id": "PH-J-0178",
+    "p": "put in",
+    "m": "放入；安装；投入",
+    "en": "We need to put in a new battery before using the clock.",
+    "cn": "使用这个钟之前，我们需要装入一节新电池。",
+    "answers": [
+      "put in"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "可表示把物品放进某处、安装设备或投入时间和精力。"
+  },
+  {
+    "id": "PH-J-0179",
+    "p": "put on",
+    "m": "穿上；戴上；上演",
+    "en": "Put on your helmet before you ride the bicycle.",
+    "cn": "骑自行车前戴上头盔。",
+    "answers": [
+      "put on"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "可接衣物或配饰，也可表示安排演出或增加重量。"
+  },
+  {
+    "id": "PH-J-0180",
+    "p": "put out",
+    "m": "扑灭；熄灭；发布",
+    "en": "Use sand to put out a small campfire safely.",
+    "cn": "用沙子安全地扑灭小篝火。",
+    "answers": [
+      "put out"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "可表示灭火或关灯，也可表示生产、发布信息。"
+  },
+  {
+    "id": "PH-J-0181",
+    "p": "put together",
+    "m": "组装；汇集",
+    "en": "It took us an hour to put together the new bookshelf.",
+    "cn": "我们花了一个小时组装新书架。",
+    "answers": [
+      "put together"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "表示把不同部分组合成整体，也可指组织材料或想法。"
+  },
+  {
+    "id": "PH-J-0182",
+    "p": "put up",
+    "m": "张贴；搭建；举起",
+    "en": "The students will put up posters for the book fair.",
+    "cn": "学生们会为书展张贴海报。",
+    "answers": [
+      "put up"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "可表示把东西固定在高处、搭建临时设施或举起物品。"
+  },
+  {
+    "id": "PH-J-0183",
+    "p": "run away",
+    "m": "逃跑；跑开",
+    "en": "The frightened horse tried to run away from the noise.",
+    "cn": "受惊的马试图逃离噪声。",
+    "answers": [
+      "run away"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "表示为了逃避危险、控制或责任而离开。"
+  },
+  {
+    "id": "PH-J-0184",
+    "p": "run into",
+    "m": "偶然遇见；撞上；遇到困难",
+    "en": "I often run into my old neighbor at the market.",
+    "cn": "我经常在市场偶遇以前的邻居。",
+    "answers": [
+      "run into"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "后接偶遇的人、碰撞的物体或意外出现的问题。"
+  },
+  {
+    "id": "PH-J-0185",
+    "p": "run out",
+    "m": "用完；耗尽",
+    "en": "Our drinking water may run out before we reach camp.",
+    "cn": "我们可能在到达营地前耗尽饮用水。",
+    "answers": [
+      "run out"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "主语通常是供应物本身；表示某人用完某物时常接 of。"
+  },
+  {
+    "id": "PH-J-0186",
+    "p": "set out",
+    "m": "出发；着手；陈列",
+    "en": "We plan to set out before sunrise tomorrow.",
+    "cn": "我们计划明天日出前出发。",
+    "answers": [
+      "set out"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "可表示开始旅程、着手实现目标，或清楚陈述内容。"
+  },
+  {
+    "id": "PH-J-0187",
+    "p": "set up",
+    "m": "建立；安装；安排",
+    "en": "The school will set up a new science club this term.",
+    "cn": "学校本学期将成立一个新的科学社团。",
+    "answers": [
+      "set up"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "可表示创建组织、安装设备或安排活动。"
+  },
+  {
+    "id": "PH-J-0188",
+    "p": "show up",
+    "m": "出现；到场",
+    "en": "Please show up ten minutes before the meeting begins.",
+    "cn": "请在会议开始前十分钟到场。",
+    "answers": [
+      "show up"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "表示某人到达约定地点，常含终于出现或意外出现的意味。"
+  },
+  {
+    "id": "PH-J-0189",
+    "p": "shut down",
+    "m": "关闭；停业",
+    "en": "Remember to shut down the computer before you leave.",
+    "cn": "离开前记得关闭电脑。",
+    "answers": [
+      "shut down"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "可表示关闭机器、系统或机构，常指停止运行。"
+  },
+  {
+    "id": "PH-J-0190",
+    "p": "sign in",
+    "m": "签到；登录",
+    "en": "Visitors must sign in at the front desk.",
+    "cn": "访客必须在前台登记。",
+    "answers": [
+      "sign in"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "可表示到场登记，也可表示进入计算机账户。"
+  },
+  {
+    "id": "PH-J-0191",
+    "p": "sit down",
+    "m": "坐下",
+    "en": "Please sit down and wait for your name to be called.",
+    "cn": "请坐下等待叫到你的名字。",
+    "answers": [
+      "sit down"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "表示从站立状态变为坐姿，也可用于礼貌地请人入座。"
+  },
+  {
+    "id": "PH-J-0192",
+    "p": "slow down",
+    "m": "减速；放慢",
+    "en": "Drivers should slow down near the school gate.",
+    "cn": "驾驶员在学校门口附近应减速。",
+    "answers": [
+      "slow down"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "可表示降低移动速度，也可指放慢工作或生活节奏。"
+  },
+  {
+    "id": "PH-J-0193",
+    "p": "speak to",
+    "m": "和某人说话；对某人讲话",
+    "en": "I would like to speak to the person in charge.",
+    "cn": "我想和负责人谈一谈。",
+    "answers": [
+      "speak to"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "后接谈话对象，也可表示就某个问题与某人交涉。"
+  },
+  {
+    "id": "PH-J-0194",
+    "p": "speak up",
+    "m": "大声说；公开表达",
+    "en": "Please speak up so that everyone can hear you.",
+    "cn": "请大声一点，让大家都能听见。",
+    "answers": [
+      "speak up"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "可表示提高音量，也可表示公开说出意见。"
+  },
+  {
+    "id": "PH-J-0195",
+    "p": "stand up",
+    "m": "站起来；维护",
+    "en": "Please stand up when the guests enter the room.",
+    "cn": "客人进入房间时请起立。",
+    "answers": [
+      "stand up"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "可表示从坐姿起立，也可与 for 连用表示支持或维护。"
+  },
+  {
+    "id": "PH-J-0196",
+    "p": "stay up",
+    "m": "熬夜；不睡觉",
+    "en": "Do not stay up too late before a school day.",
+    "cn": "上学日前不要熬夜太晚。",
+    "answers": [
+      "stay up"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "表示到了通常睡觉的时间仍保持清醒。"
+  },
+  {
+    "id": "PH-J-0197",
+    "p": "step in",
+    "m": "介入；干预",
+    "en": "A teacher had to step in and stop the argument.",
+    "cn": "一位老师不得不介入并制止争论。",
+    "answers": [
+      "step in"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "表示进入某处，也常指为了帮助或制止问题而介入。"
+  },
+  {
+    "id": "PH-J-0198",
+    "p": "stick to",
+    "m": "坚持；遵守",
+    "en": "If we stick to the plan, we can finish before noon.",
+    "cn": "如果我们坚持按计划做，就能在中午前完成。",
+    "answers": [
+      "stick to"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "后接计划、规则、决定或观点，表示不偏离或不放弃。"
+  },
+  {
+    "id": "PH-J-0199",
+    "p": "switch off",
+    "m": "关掉",
+    "en": "Please switch off the fan when you leave the room.",
+    "cn": "离开房间时请关掉风扇。",
+    "answers": [
+      "switch off"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "表示关闭电器、灯或设备的电源。"
+  },
+  {
+    "id": "PH-J-0200",
+    "p": "switch on",
+    "m": "打开",
+    "en": "Could you switch on the light in the hallway?",
+    "cn": "你能打开走廊里的灯吗？",
+    "answers": [
+      "switch on"
+    ],
+    "tier": "core",
+    "level": 4,
+    "usage_note": "表示接通电器、灯或设备的电源。"
+  },
+  {
+    "id": "PH-J-0201",
+    "p": "take care",
+    "m": "当心；保重；照顾",
+    "en": "Take care when you cross this busy road.",
+    "cn": "穿过这条繁忙的道路时要当心。",
+    "answers": [
+      "take care"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "可单独用于提醒或告别；表示照顾某人时通常接 of。"
+  },
+  {
+    "id": "PH-J-0202",
+    "p": "take down",
+    "m": "取下；记下；拆除",
+    "en": "Please take down the phone number before you forget it.",
+    "cn": "请在忘记前记下这个电话号码。",
+    "answers": [
+      "take down"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "可表示从高处拿下、记录信息或拆除结构。"
+  },
+  {
+    "id": "PH-J-0203",
+    "p": "take off",
+    "m": "脱下；起飞；迅速流行",
+    "en": "The plane will take off in twenty minutes.",
+    "cn": "飞机将在二十分钟后起飞。",
+    "answers": [
+      "take off"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "可接衣物作宾语，也可不接宾语表示飞机离地。"
+  },
+  {
+    "id": "PH-J-0204",
+    "p": "take part",
+    "m": "参加",
+    "en": "Every student can take part in the art festival.",
+    "cn": "每名学生都可以参加艺术节。",
+    "answers": [
+      "take part"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "通常与 in 连用，后接活动、比赛或讨论。"
+  },
+  {
+    "id": "PH-J-0205",
+    "p": "take place",
+    "m": "发生；举行",
+    "en": "The final match will take place on Saturday afternoon.",
+    "cn": "决赛将在星期六下午举行。",
+    "answers": [
+      "take place"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "主语通常是事件或活动，不用于被动语态。"
+  },
+  {
+    "id": "PH-J-0206",
+    "p": "take up",
+    "m": "开始从事；占据；拿起",
+    "en": "Reading does not have to take up all your free time.",
+    "cn": "阅读不必占用你全部的空闲时间。",
+    "answers": [
+      "take up"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "可表示培养兴趣、占用时间或空间，也可表示拿起事物。"
+  },
+  {
+    "id": "PH-J-0207",
+    "p": "talk about",
+    "m": "谈论",
+    "en": "Let us talk about our plans for the summer holiday.",
+    "cn": "我们来谈谈暑假计划吧。",
+    "answers": [
+      "talk about"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接谈话的主题或事情。"
+  },
+  {
+    "id": "PH-J-0208",
+    "p": "talk to",
+    "m": "和某人交谈",
+    "en": "You should talk to a teacher if you need advice.",
+    "cn": "如果你需要建议，应该和老师谈谈。",
+    "answers": [
+      "talk to"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接谈话对象；强调双方交流时也常用 talk with。"
+  },
+  {
+    "id": "PH-J-0209",
+    "p": "think about",
+    "m": "考虑；思考",
+    "en": "Please think about the question before you answer.",
+    "cn": "回答前请认真思考这个问题。",
+    "answers": [
+      "think about"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接需要认真考虑的人、事或行动。"
+  },
+  {
+    "id": "PH-J-0210",
+    "p": "think of",
+    "m": "想到；认为",
+    "en": "Can you think of a better name for our team?",
+    "cn": "你能为我们的队伍想出一个更好的名字吗？",
+    "answers": [
+      "think of"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "可表示脑中出现某人或某事，也可用于询问看法。"
+  },
+  {
+    "id": "PH-J-0211",
+    "p": "throw away",
+    "m": "扔掉；丢弃",
+    "en": "Do not throw away paper that can be reused.",
+    "cn": "不要扔掉可以重复使用的纸。",
+    "answers": [
+      "throw away"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接不再需要的东西；代词作宾语时通常放在两词之间。"
+  },
+  {
+    "id": "PH-J-0212",
+    "p": "turn off",
+    "m": "关掉",
+    "en": "Remember to turn off the tap after washing your hands.",
+    "cn": "洗手后记得关水龙头。",
+    "answers": [
+      "turn off"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "表示关闭电器、水源或设备；代词作宾语时通常放在两词之间。"
+  },
+  {
+    "id": "PH-J-0213",
+    "p": "turn on",
+    "m": "打开",
+    "en": "Could you turn on the radio for the weather report?",
+    "cn": "你能打开收音机听天气预报吗？",
+    "answers": [
+      "turn on"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "表示开启电器、水源或设备；代词作宾语时通常放在两词之间。"
+  },
+  {
+    "id": "PH-J-0214",
+    "p": "turn out",
+    "m": "结果是；证明是；关掉",
+    "en": "The missing keys may turn out to be in your bag.",
+    "cn": "丢失的钥匙最后可能会发现就在你的包里。",
+    "answers": [
+      "turn out"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "常接形容词或不定式说明最终结果，也可表示关灯。"
+  },
+  {
+    "id": "PH-J-0215",
+    "p": "turn to",
+    "m": "转向；向某人求助",
+    "en": "You can turn to your parents when you face a difficult choice.",
+    "cn": "面临艰难选择时，你可以向父母求助。",
+    "answers": [
+      "turn to"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接方向、对象或可以提供帮助的人。"
+  },
+  {
+    "id": "PH-J-0216",
+    "p": "wake up",
+    "m": "醒来；唤醒",
+    "en": "I usually wake up before my alarm rings.",
+    "cn": "我通常在闹钟响之前醒来。",
+    "answers": [
+      "wake up"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "可不接宾语表示醒来，也可接宾语表示把某人叫醒。"
+  },
+  {
+    "id": "PH-J-0217",
+    "p": "warm up",
+    "m": "热身；变暖",
+    "en": "Players should warm up before they enter the game.",
+    "cn": "运动员上场比赛前应该热身。",
+    "answers": [
+      "warm up"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "可表示运动前活动身体，也可表示使食物或房间变暖。"
+  },
+  {
+    "id": "PH-J-0218",
+    "p": "watch out",
+    "m": "当心；留神",
+    "en": "Watch out! The steps are covered with ice.",
+    "cn": "当心！台阶上结了冰。",
+    "answers": [
+      "watch out"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "用于提醒某人注意眼前或即将出现的危险。"
+  },
+  {
+    "id": "PH-J-0219",
+    "p": "work in",
+    "m": "在某处工作；以某材料创作",
+    "en": "Many young people hope to work in science and technology.",
+    "cn": "许多年轻人希望在科技领域工作。",
+    "answers": [
+      "work in"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接行业、地点、领域或艺术创作所用材料。"
+  },
+  {
+    "id": "PH-J-0220",
+    "p": "work on",
+    "m": "从事；努力改进",
+    "en": "We will work on the class newspaper after lunch.",
+    "cn": "午饭后我们将制作班级报纸。",
+    "answers": [
+      "work on"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接正在处理的任务、项目或需要改善的能力。"
+  },
+  {
+    "id": "PH-J-0221",
+    "p": "work out",
+    "m": "解决；计算出；锻炼",
+    "en": "Try to work out the answer without a calculator.",
+    "cn": "试着不用计算器算出答案。",
+    "answers": [
+      "work out"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "可表示找到答案、计算结果，也可表示进行体育锻炼。"
+  },
+  {
+    "id": "PH-J-0222",
+    "p": "write down",
+    "m": "写下；记下",
+    "en": "Write down three things you learned today.",
+    "cn": "写下你今天学到的三件事。",
+    "answers": [
+      "write down"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接需要记录的信息；代词作宾语时通常放在两词之间。"
+  },
+  {
+    "id": "PH-J-0223",
+    "p": "close to",
+    "m": "靠近；接近",
+    "en": "Our school is close to the city library.",
+    "cn": "我们学校离市图书馆很近。",
+    "answers": [
+      "close to"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "可表示空间距离近，也可表示数量或关系接近。"
+  },
+  {
+    "id": "PH-J-0224",
+    "p": "far from",
+    "m": "远离；远非",
+    "en": "The campsite is far from the nearest town.",
+    "cn": "营地离最近的城镇很远。",
+    "answers": [
+      "far from"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "可表示空间距离远，也可强调实际情况与某种描述相差很大。"
+  },
+  {
+    "id": "PH-J-0225",
+    "p": "in front of",
+    "m": "在某物前面",
+    "en": "A large tree stands in front of our classroom.",
+    "cn": "我们的教室前面有一棵大树。",
+    "answers": [
+      "in front of"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "表示处于某人或某物外部的前方，与 in the front of 区分。"
+  },
+  {
+    "id": "PH-J-0226",
+    "p": "look forward to",
+    "m": "期待",
+    "en": "We look forward to meeting the exchange students.",
+    "cn": "我们期待见到交换生。",
+    "answers": [
+      "look forward to"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "to 是介词，后接名词、代词或动名词。"
+  },
+  {
+    "id": "PH-J-0227",
+    "p": "on earth",
+    "m": "究竟；到底；在地球上",
+    "en": "Why on earth is the classroom door locked?",
+    "cn": "教室门到底为什么锁着？",
+    "answers": [
+      "on earth"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "用于疑问词后加强语气，也可按字面表示在地球上。"
+  },
+  {
+    "id": "PH-J-0228",
+    "p": "used to",
+    "m": "过去常常",
+    "en": "We used to play football in this field after school.",
+    "cn": "我们过去常常放学后在这片场地踢足球。",
+    "answers": [
+      "used to"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接动词原形，表示过去的习惯或状态如今已经改变。"
+  },
+  {
+    "id": "PH-J-0229",
+    "p": "would like",
+    "m": "想要；愿意",
+    "en": "I would like to ask one more question.",
+    "cn": "我想再问一个问题。",
+    "answers": [
+      "would like"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接名词或不定式，比 want 语气更礼貌。"
+  },
+  {
+    "id": "PH-J-0230",
+    "p": "be able to",
+    "m": "能够",
+    "en": "With more practice, you will be able to swim farther.",
+    "cn": "多加练习后，你就能游得更远。",
+    "answers": [
+      "be able to"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接动词原形，可用于多种时态说明具备能力或条件。"
+  },
+  {
+    "id": "PH-J-0231",
+    "p": "be afraid of",
+    "m": "害怕",
+    "en": "It is normal to be afraid of making mistakes at first.",
+    "cn": "起初害怕犯错是正常的。",
+    "answers": [
+      "be afraid of"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接名词、代词或动名词，说明害怕的对象。"
+  },
+  {
+    "id": "PH-J-0232",
+    "p": "be different from",
+    "m": "与某物不同",
+    "en": "Life in a small town can be different from life in a large city.",
+    "cn": "小镇生活可能与大城市生活不同。",
+    "answers": [
+      "be different from"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "用于比较两个人或事物之间的差异。"
+  },
+  {
+    "id": "PH-J-0233",
+    "p": "be full of",
+    "m": "充满",
+    "en": "The garden will be full of flowers in May.",
+    "cn": "五月时花园里将开满鲜花。",
+    "answers": [
+      "be full of"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接构成内容或大量存在的人和事物。"
+  },
+  {
+    "id": "PH-J-0234",
+    "p": "be good at",
+    "m": "擅长",
+    "en": "You do not need to be good at everything.",
+    "cn": "你不必样样都擅长。",
+    "answers": [
+      "be good at"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接名词、代词或动名词，说明擅长的领域或活动。"
+  },
+  {
+    "id": "PH-J-0235",
+    "p": "be interested in",
+    "m": "对某事感兴趣",
+    "en": "More students may be interested in science after the visit.",
+    "cn": "参观后，可能会有更多学生对科学感兴趣。",
+    "answers": [
+      "be interested in"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接名词、代词或动名词，说明兴趣所在。"
+  },
+  {
+    "id": "PH-J-0236",
+    "p": "be late for",
+    "m": "迟到",
+    "en": "Leave now, or you may be late for the first class.",
+    "cn": "现在就走，否则你第一节课可能会迟到。",
+    "answers": [
+      "be late for"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接课程、会议、活动等被耽误的事情。"
+  },
+  {
+    "id": "PH-J-0237",
+    "p": "be proud of",
+    "m": "为某人或某事感到自豪",
+    "en": "Your family will be proud of your honest choice.",
+    "cn": "你的家人会为你诚实的选择感到自豪。",
+    "answers": [
+      "be proud of"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接值得自豪的人、成就或行为。"
+  },
+  {
+    "id": "PH-J-0238",
+    "p": "come from",
+    "m": "来自；源自",
+    "en": "These oranges come from a farm in the south.",
+    "cn": "这些橙子来自南方的一座农场。",
+    "answers": [
+      "come from"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接出生地、来源地或事物的根源。"
+  },
+  {
+    "id": "PH-J-0239",
+    "p": "go swimming",
+    "m": "去游泳",
+    "en": "We often go swimming at the sports center on Sundays.",
+    "cn": "星期日我们经常去体育中心游泳。",
+    "answers": [
+      "go swimming"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "采用 go 加动名词结构，表示去参加某项休闲活动。"
+  },
+  {
+    "id": "PH-J-0240",
+    "p": "go with",
+    "m": "与某物相配；和某人一起去",
+    "en": "This blue scarf will go with your white coat.",
+    "cn": "这条蓝围巾与你的白外套很相配。",
+    "answers": [
+      "go with"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "可表示衣物、颜色等协调，也可表示陪同。"
+  },
+  {
+    "id": "PH-J-0241",
+    "p": "good morning",
+    "m": "早上好",
+    "en": "Good morning, everyone. Please open your books.",
+    "cn": "大家早上好，请打开课本。",
+    "answers": [
+      "good morning"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "用于从早晨到中午前见面时的问候。"
+  },
+  {
+    "id": "PH-J-0242",
+    "p": "have a good time",
+    "m": "玩得开心；过得愉快",
+    "en": "I hope you have a good time at the school festival.",
+    "cn": "希望你在校园节上玩得开心。",
+    "answers": [
+      "have a good time"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "用于祝愿或描述某人在活动中享受快乐时光。"
+  },
+  {
+    "id": "PH-J-0243",
+    "p": "have fun",
+    "m": "玩得开心；获得乐趣",
+    "en": "Work safely and have fun during the experiment.",
+    "cn": "实验时既要注意安全，也要享受其中的乐趣。",
+    "answers": [
+      "have fun"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "可单独使用，也可接动名词说明从某项活动中获得乐趣。"
+  },
+  {
+    "id": "PH-J-0244",
+    "p": "hear from",
+    "m": "收到某人的来信或消息",
+    "en": "I hope to hear from my pen friend soon.",
+    "cn": "我希望很快收到笔友的消息。",
+    "answers": [
+      "hear from"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接消息的发送者，而不是所收到的具体内容。"
+  },
+  {
+    "id": "PH-J-0245",
+    "p": "laugh at",
+    "m": "嘲笑；因某事发笑",
+    "en": "It is unkind to laugh at someone who makes a mistake.",
+    "cn": "嘲笑犯错的人是不友善的。",
+    "answers": [
+      "laugh at"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接被嘲笑的人或引人发笑的事物。"
+  },
+  {
+    "id": "PH-J-0246",
+    "p": "smile at",
+    "m": "对某人微笑",
+    "en": "The little girl began to smile at her reflection.",
+    "cn": "小女孩开始对着自己的倒影微笑。",
+    "answers": [
+      "smile at"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接微笑所面对的人或事物。"
+  },
+  {
+    "id": "PH-J-0247",
+    "p": "take after",
+    "m": "像某位长辈",
+    "en": "I take after my father in both appearance and character.",
+    "cn": "我的外貌和性格都像父亲。",
+    "answers": [
+      "take after"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接家庭成员，表示外貌或性格与其相似。"
+  },
+  {
+    "id": "PH-J-0248",
+    "p": "take photos",
+    "m": "拍照",
+    "en": "Visitors may take photos in the garden but not inside the house.",
+    "cn": "游客可以在花园拍照，但不能在房屋内拍照。",
+    "answers": [
+      "take photos"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "可单独使用，也可接 of 表示拍摄的对象。"
+  },
+  {
+    "id": "PH-J-0249",
+    "p": "wait for",
+    "m": "等待",
+    "en": "We had to wait for the rain to stop.",
+    "cn": "我们不得不等雨停下来。",
+    "answers": [
+      "wait for"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接等待的人、事物或事件。"
+  },
+  {
+    "id": "PH-J-0250",
+    "p": "worry about",
+    "m": "担心",
+    "en": "Do not worry about problems that have not happened.",
+    "cn": "不要担心尚未发生的问题。",
+    "answers": [
+      "worry about"
+    ],
+    "tier": "core",
+    "level": 5,
+    "usage_note": "后接令人担忧的人、事情或可能出现的情况。"
+  },
+  {
+    "id": "PH-H-0001",
+    "p": "sort of",
+    "m": "有点；在某种程度上；算是",
+    "en": "I was sort of surprised by his calm response.",
+    "cn": "他平静的回答让我有点意外。",
+    "answers": [
+      "sort of"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "常用于非正式表达，使判断或描述的语气不那么绝对。"
+  },
+  {
+    "id": "PH-H-0002",
+    "p": "in addition",
+    "m": "此外；另外",
+    "en": "The course develops writing skills; in addition, it builds confidence.",
+    "cn": "这门课程培养写作技能，此外还能增强信心。",
+    "answers": [
+      "in addition"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "用于补充与前文相关的信息，后接名词时通常加 to。"
+  },
+  {
+    "id": "PH-H-0003",
+    "p": "in particular",
+    "m": "尤其；特别",
+    "en": "The exhibition will interest students who enjoy history in particular.",
+    "cn": "这场展览尤其会吸引喜欢历史的学生。",
+    "answers": [
+      "in particular"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "用于从一组人或事物中突出某一个，也可强调某个细节。"
+  },
+  {
+    "id": "PH-H-0004",
+    "p": "for instance",
+    "m": "例如",
+    "en": "Some habits, for instance, reading before bed, can reduce stress.",
+    "cn": "有些习惯，例如睡前阅读，可以减轻压力。",
+    "answers": [
+      "for instance"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "用于引出能够说明前面观点的一个具体例子。"
+  },
+  {
+    "id": "PH-H-0005",
+    "p": "in advance",
+    "m": "预先；提前",
+    "en": "You should reserve a seat in advance during the holiday season.",
+    "cn": "假期期间你应该提前预订座位。",
+    "answers": [
+      "in advance"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "表示在预定时间或某件事发生之前完成。"
+  },
+  {
+    "id": "PH-H-0006",
+    "p": "in reality",
+    "m": "实际上；事实上",
+    "en": "The route looks short on the map but is difficult in reality.",
+    "cn": "这条路线在地图上看起来很短，实际上却很难走。",
+    "answers": [
+      "in reality"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "用于指出真实情况与表象、想象或说法不同。"
+  },
+  {
+    "id": "PH-H-0007",
+    "p": "in detail",
+    "m": "详细地",
+    "en": "The report describes the rescue plan in detail.",
+    "cn": "报告详细描述了救援计划。",
+    "answers": [
+      "in detail"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "表示全面说明或仔细研究各个具体部分。"
+  },
+  {
+    "id": "PH-H-0008",
+    "p": "on the contrary",
+    "m": "恰恰相反",
+    "en": "The task was not boring; on the contrary, it was quite creative.",
+    "cn": "这项任务并不枯燥，恰恰相反，它很有创造性。",
+    "answers": [
+      "on the contrary"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "用于明确否定前面的说法，并指出相反的事实。"
+  },
+  {
+    "id": "PH-H-0009",
+    "p": "on the spot",
+    "m": "当场；在现场",
+    "en": "The mechanic repaired the bicycle on the spot.",
+    "cn": "修理工当场修好了自行车。",
+    "answers": [
+      "on the spot"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "可表示立即在事情发生的地点作出决定，也可表示身处现场。"
+  },
+  {
+    "id": "PH-H-0010",
+    "p": "out of sight",
+    "m": "看不见；在视野之外",
+    "en": "The boat sailed behind the island and went out of sight.",
+    "cn": "小船驶到岛后，消失在视野中。",
+    "answers": [
+      "out of sight"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "常与 be 或 move 连用，表示无法再从所在位置看到。"
+  },
+  {
+    "id": "PH-H-0011",
+    "p": "at random",
+    "m": "随机地；随意地",
+    "en": "The computer selects ten questions at random.",
+    "cn": "电脑随机选出十道题。",
+    "answers": [
+      "at random"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "表示没有按特定计划、顺序或标准进行选择。"
+  },
+  {
+    "id": "PH-H-0012",
+    "p": "by no means",
+    "m": "绝不；一点也不",
+    "en": "This discovery is by no means the end of our research.",
+    "cn": "这一发现绝不是我们研究的终点。",
+    "answers": [
+      "by no means"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "语气较强，表示完全否定；置于句首时常引起倒装。"
+  },
+  {
+    "id": "PH-H-0013",
+    "p": "in theory",
+    "m": "理论上",
+    "en": "In theory, the new system should save both time and energy.",
+    "cn": "理论上，新系统应该既省时又节能。",
+    "answers": [
+      "in theory"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "表示按照理论或计划应当如此，但现实结果可能不同。"
+  },
+  {
+    "id": "PH-H-0014",
+    "p": "at any rate",
+    "m": "无论如何；至少",
+    "en": "At any rate, we should inform the team before changing the plan.",
+    "cn": "无论如何，我们改变计划前都应该通知团队。",
+    "answers": [
+      "at any rate"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "用于说明不论其他情况怎样，某个结论或行动仍然成立。"
+  },
+  {
+    "id": "PH-H-0015",
+    "p": "free of charge",
+    "m": "免费",
+    "en": "Students can use the sports center free of charge after class.",
+    "cn": "学生放学后可以免费使用体育中心。",
+    "answers": [
+      "free of charge"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "通常作表语或状语，说明商品或服务无需付费。"
+  },
+  {
+    "id": "PH-H-0016",
+    "p": "in full swing",
+    "m": "正如火如荼；处于高潮",
+    "en": "Preparations for the cultural festival are now in full swing.",
+    "cn": "文化节的准备工作现在正如火如荼地进行。",
+    "answers": [
+      "in full swing"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "表示活动已经全面展开，正处在最活跃的阶段。"
+  },
+  {
+    "id": "PH-H-0017",
+    "p": "on a regular basis",
+    "m": "定期地；经常地",
+    "en": "The equipment must be checked on a regular basis.",
+    "cn": "这些设备必须定期检查。",
+    "answers": [
+      "on a regular basis"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "表示按照稳定、重复的时间安排进行。"
+  },
+  {
+    "id": "PH-H-0018",
+    "p": "for the time being",
+    "m": "暂时；眼下",
+    "en": "For the time being, the club will meet in the library.",
+    "cn": "俱乐部暂时将在图书馆举行活动。",
+    "answers": [
+      "for the time being"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "表示某种安排只在当前一段时间内有效，以后可能改变。"
+  },
+  {
+    "id": "PH-H-0019",
+    "p": "at bay",
+    "m": "使无法靠近；使陷入困境",
+    "en": "Firefighters worked through the night to keep the flames at bay.",
+    "cn": "消防员彻夜工作，控制火势不让其蔓延。",
+    "answers": [
+      "at bay"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "常与 keep 或 hold 连用，表示阻止危险靠近或控制住问题。"
+  },
+  {
+    "id": "PH-H-0020",
+    "p": "in operation",
+    "m": "在运转；在实施",
+    "en": "The new safety system has been in operation since June.",
+    "cn": "新的安全系统自六月以来一直在运行。",
+    "answers": [
+      "in operation"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "可说明机器正在运行，也可说明制度或计划已经生效。"
+  },
+  {
+    "id": "PH-H-0021",
+    "p": "on the loose",
+    "m": "在逃；未受控制",
+    "en": "Residents were warned that a wild animal was on the loose.",
+    "cn": "居民接到警告，有一只野生动物逃脱在外。",
+    "answers": [
+      "on the loose"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "常指危险的人或动物逃脱后尚未被控制。"
+  },
+  {
+    "id": "PH-H-0022",
+    "p": "on trial",
+    "m": "在试用；受审",
+    "en": "The school is using the new timetable on trial this month.",
+    "cn": "学校本月正在试行新课表。",
+    "answers": [
+      "on trial"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "可指产品或制度处于试验阶段，也可指某人正在法庭受审。"
+  },
+  {
+    "id": "PH-H-0023",
+    "p": "at length",
+    "m": "详细地；终于",
+    "en": "The committee discussed the proposal at length before voting.",
+    "cn": "委员会在表决前详细讨论了这项提议。",
+    "answers": [
+      "at length"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "可表示长时间详细讨论，也可表示经过很久之后终于发生。"
+  },
+  {
+    "id": "PH-H-0024",
+    "p": "on occasion",
+    "m": "有时；偶尔",
+    "en": "Even experienced speakers feel nervous on occasion.",
+    "cn": "即使经验丰富的演讲者偶尔也会紧张。",
+    "answers": [
+      "on occasion"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "表示某事并不经常，但会在某些时候发生。"
+  },
+  {
+    "id": "PH-H-0025",
+    "p": "on the other hand",
+    "m": "另一方面",
+    "en": "Online study is convenient; on the other hand, it requires self-discipline.",
+    "cn": "在线学习很方便；另一方面，它需要自律。",
+    "answers": [
+      "on the other hand"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "用于引出同一问题的另一面或与前文形成对比的观点。"
+  },
+  {
+    "id": "PH-H-0026",
+    "p": "figure out",
+    "m": "弄清楚；想出；计算出",
+    "en": "We need to figure out what caused the sudden power failure.",
+    "cn": "我们需要查明突然停电的原因。",
+    "answers": [
+      "figure out"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "表示通过思考、调查或计算找到答案或解决办法。"
+  },
+  {
+    "id": "PH-H-0027",
+    "p": "stand firm",
+    "m": "立场坚定；毫不动摇",
+    "en": "The students decided to stand firm against unfair treatment.",
+    "cn": "学生们决定坚定反对不公平待遇。",
+    "answers": [
+      "stand firm"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "表示面对压力或困难时不改变决定、原则或立场。"
+  },
+  {
+    "id": "PH-H-0028",
+    "p": "rely on",
+    "m": "依靠；信赖",
+    "en": "Farmers rely on accurate forecasts when planning their work.",
+    "cn": "农民安排工作时依靠准确的天气预报。",
+    "answers": [
+      "rely on"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "后接提供支持的人、事物或条件。"
+  },
+  {
+    "id": "PH-H-0029",
+    "p": "bounce back",
+    "m": "恢复；重新振作",
+    "en": "The team managed to bounce back after losing its first match.",
+    "cn": "这支队伍在首场失利后成功恢复了状态。",
+    "answers": [
+      "bounce back"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "表示在失败、疾病或困难后较快恢复到良好状态。"
+  },
+  {
+    "id": "PH-H-0030",
+    "p": "seek out",
+    "m": "找出；寻找",
+    "en": "Good learners seek out chances to use new vocabulary.",
+    "cn": "善于学习的人会主动寻找使用新词汇的机会。",
+    "answers": [
+      "seek out"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "强调主动而努力地寻找某人、某物或机会。"
+  },
+  {
+    "id": "PH-H-0031",
+    "p": "escape from",
+    "m": "从某处逃脱；摆脱",
+    "en": "The villagers had little time to escape from the rising floodwater.",
+    "cn": "村民们几乎没有时间逃离不断上涨的洪水。",
+    "answers": [
+      "escape from"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "后接所离开的地点、危险或受限制的状态。"
+  },
+  {
+    "id": "PH-H-0032",
+    "p": "ward off",
+    "m": "避开；防止；抵御",
+    "en": "Regular exercise may help ward off some health problems.",
+    "cn": "经常锻炼可能有助于预防一些健康问题。",
+    "answers": [
+      "ward off"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "后接疾病、危险或威胁，表示采取行动使其无法造成伤害。"
+  },
+  {
+    "id": "PH-H-0033",
+    "p": "set aside",
+    "m": "留出；把某物放在一边",
+    "en": "Try to set aside half an hour each day for reading.",
+    "cn": "尽量每天留出半小时阅读。",
+    "answers": [
+      "set aside"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "可表示为特定目的预留时间或资源，也可表示暂不考虑某事。"
+  },
+  {
+    "id": "PH-H-0034",
+    "p": "get used to",
+    "m": "习惯于",
+    "en": "It may take time to get used to studying in a new environment.",
+    "cn": "适应在新环境中学习可能需要时间。",
+    "answers": [
+      "get used to"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "to 是介词，后接名词、代词或动名词，表示逐渐适应。"
+  },
+  {
+    "id": "PH-H-0035",
+    "p": "cave in",
+    "m": "坍塌；屈服",
+    "en": "The old roof could cave in under the weight of the snow.",
+    "cn": "旧屋顶可能会在积雪的重压下坍塌。",
+    "answers": [
+      "cave in"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "可指墙壁或屋顶向内倒塌，也可指人在压力下让步。"
+  },
+  {
+    "id": "PH-H-0036",
+    "p": "plug in",
+    "m": "接通电源；插入",
+    "en": "Do not plug in the machine with wet hands.",
+    "cn": "不要用湿手给机器接通电源。",
+    "answers": [
+      "plug in"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "表示把插头接入电源，也可指连接电子设备。"
+  },
+  {
+    "id": "PH-H-0037",
+    "p": "put aside",
+    "m": "把某物放到一边；留出",
+    "en": "Let us put aside our differences and solve the problem together.",
+    "cn": "让我们暂时搁置分歧，共同解决问题。",
+    "answers": [
+      "put aside"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "可表示暂时搁置物品或分歧，也可表示储存时间或金钱。"
+  },
+  {
+    "id": "PH-H-0038",
+    "p": "track down",
+    "m": "追查到；搜寻到",
+    "en": "The reporter managed to track down the original source of the story.",
+    "cn": "记者成功追查到了这则报道的原始来源。",
+    "answers": [
+      "track down"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "表示经过持续调查或寻找，最终找到某人、某物或信息。"
+  },
+  {
+    "id": "PH-H-0039",
+    "p": "carve out",
+    "m": "开创；争取到",
+    "en": "She hopes to carve out a career in environmental research.",
+    "cn": "她希望在环境研究领域开创一番事业。",
+    "answers": [
+      "carve out"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "表示通过努力为自己创造事业、地位、空间或时间。"
+  },
+  {
+    "id": "PH-H-0040",
+    "p": "fall apart",
+    "m": "破裂；散架；崩溃",
+    "en": "Without regular repairs, the wooden bridge may fall apart.",
+    "cn": "如果不定期维修，这座木桥可能会散架。",
+    "answers": [
+      "fall apart"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "可指物体散开，也可指计划、关系或情绪失去稳定。"
+  },
+  {
+    "id": "PH-H-0041",
+    "p": "break apart",
+    "m": "破裂；分开",
+    "en": "Large waves can break apart weak sections of sea ice.",
+    "cn": "巨浪可能使薄弱的海冰断裂开来。",
+    "answers": [
+      "break apart"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "表示整体断裂或被分成若干部分。"
+  },
+  {
+    "id": "PH-H-0042",
+    "p": "factor in",
+    "m": "把某因素考虑在内",
+    "en": "We must factor in travel time when setting the meeting schedule.",
+    "cn": "安排会议时间时，我们必须把路途时间考虑在内。",
+    "answers": [
+      "factor in"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "后接会影响计算、判断或计划的因素。"
+  },
+  {
+    "id": "PH-H-0043",
+    "p": "keep track",
+    "m": "了解动态；记录",
+    "en": "A simple chart can help you keep track of your reading progress.",
+    "cn": "一张简单的图表可以帮助你记录阅读进度。",
+    "answers": [
+      "keep track"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "通常与 of 连用，表示持续掌握数量、进度或位置的变化。"
+  },
+  {
+    "id": "PH-H-0044",
+    "p": "link up",
+    "m": "连接；会合；合作",
+    "en": "The two research teams plan to link up and share their results.",
+    "cn": "两个研究团队计划合作并共享成果。",
+    "answers": [
+      "link up"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "可表示设备或系统连接，也可表示人与人会合或组织合作。"
+  },
+  {
+    "id": "PH-H-0045",
+    "p": "log in",
+    "m": "登录",
+    "en": "Students must log in with their school accounts.",
+    "cn": "学生必须使用学校账户登录。",
+    "answers": [
+      "log in"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "表示输入身份信息进入计算机系统或网络服务，常与 to 连用。"
+  },
+  {
+    "id": "PH-H-0046",
+    "p": "log on",
+    "m": "登录；接入系统",
+    "en": "You need a password to log on to the learning platform.",
+    "cn": "你需要密码才能登录学习平台。",
+    "answers": [
+      "log on"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "通常与 to 连用，表示连接并进入计算机或网络系统。"
+  },
+  {
+    "id": "PH-H-0047",
+    "p": "log out",
+    "m": "退出登录",
+    "en": "Always log out when you use a shared computer.",
+    "cn": "使用公用电脑时一定要退出登录。",
+    "answers": [
+      "log out"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "表示安全地结束计算机系统或网络账户的会话。"
+  },
+  {
+    "id": "PH-H-0048",
+    "p": "pan out",
+    "m": "取得预期结果；成功",
+    "en": "If the plan does not pan out, we will try another approach.",
+    "cn": "如果这个计划没有成功，我们会尝试另一种方法。",
+    "answers": [
+      "pan out"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "常用于否定或条件语境，说明计划、想法或情况最终如何发展。"
+  },
+  {
+    "id": "PH-H-0049",
+    "p": "think twice",
+    "m": "三思；慎重考虑",
+    "en": "Think twice before sharing personal information online.",
+    "cn": "在网上分享个人信息前要三思。",
+    "answers": [
+      "think twice"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "常与 before 连用，提醒人在行动前再次认真考虑。"
+  },
+  {
+    "id": "PH-H-0050",
+    "p": "drag in",
+    "m": "把某人或某事牵扯进来",
+    "en": "Do not drag in other students who had nothing to do with the argument.",
+    "cn": "不要把与争论无关的其他学生牵扯进来。",
+    "answers": [
+      "drag in"
+    ],
+    "tier": "core",
+    "level": 6,
+    "usage_note": "表示把原本无关的人或话题不必要地卷入某件事。"
+  },
+  {
+    "id": "PH-H-0051",
+    "p": "drag on",
+    "m": "拖延；持续过久",
+    "en": "The meeting began to drag on without reaching a decision.",
+    "cn": "会议拖了很久，却没有作出决定。",
+    "answers": [
+      "drag on"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "表示令人厌烦或不必要地持续很长时间。"
+  },
+  {
+    "id": "PH-H-0052",
+    "p": "roll up",
+    "m": "卷起；到达",
+    "en": "Please roll up the map carefully after using it.",
+    "cn": "地图用完后请小心卷起来。",
+    "answers": [
+      "roll up"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可表示把柔软物卷起来；非正式语境也可表示到达某地。"
+  },
+  {
+    "id": "PH-H-0053",
+    "p": "roll over",
+    "m": "翻身；翻转",
+    "en": "The patient was asked to roll over onto his left side.",
+    "cn": "病人被要求翻身朝左侧躺。",
+    "answers": [
+      "roll over"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "表示人或物转到另一面，也可指车辆翻覆。"
+  },
+  {
+    "id": "PH-H-0054",
+    "p": "sink in",
+    "m": "逐渐被理解；渗入",
+    "en": "It took several minutes for the surprising news to sink in.",
+    "cn": "大家过了几分钟才逐渐理解这个惊人的消息。",
+    "answers": [
+      "sink in"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可表示某个事实慢慢被充分理解，也可表示液体渗入。"
+  },
+  {
+    "id": "PH-H-0055",
+    "p": "split up",
+    "m": "分开；分手；拆分",
+    "en": "We will split up into teams of four for the activity.",
+    "cn": "这项活动中我们将分成四人小组。",
+    "answers": [
+      "split up"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可表示人群分组、关系结束或整体被分成部分。"
+  },
+  {
+    "id": "PH-H-0056",
+    "p": "tear down",
+    "m": "拆除；撕下",
+    "en": "The city plans to tear down the unsafe bridge.",
+    "cn": "这座城市计划拆除那座不安全的桥。",
+    "answers": [
+      "tear down"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可表示拆毁建筑物，也可表示把张贴物撕下来。"
+  },
+  {
+    "id": "PH-H-0057",
+    "p": "burst out",
+    "m": "突然开始；突然闯出",
+    "en": "The final joke made the audience burst out laughing.",
+    "cn": "最后一个笑话让观众突然大笑起来。",
+    "answers": [
+      "burst out"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "常与 laughing、crying 等动名词连用，表示情绪突然爆发。"
+  },
+  {
+    "id": "PH-H-0058",
+    "p": "cast aside",
+    "m": "抛弃；不再考虑",
+    "en": "We should not cast aside useful traditions without careful thought.",
+    "cn": "我们不应未经慎重考虑就抛弃有益的传统。",
+    "answers": [
+      "cast aside"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "表示把某物丢开，或不再接受某个想法、原则或顾虑。"
+  },
+  {
+    "id": "PH-H-0059",
+    "p": "cast off",
+    "m": "摆脱；解开缆绳",
+    "en": "The young writer tried to cast off the influence of her early work.",
+    "cn": "这位年轻作家试图摆脱早期作品的影响。",
+    "answers": [
+      "cast off"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可表示抛开限制或旧习，也可指船只解缆离岸。"
+  },
+  {
+    "id": "PH-H-0060",
+    "p": "gather up",
+    "m": "收拢；收集",
+    "en": "Please gather up the papers before the wind blows them away.",
+    "cn": "请在风把纸吹走前把它们收拢起来。",
+    "answers": [
+      "gather up"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "表示把散落的人或物集中到一起。"
+  },
+  {
+    "id": "PH-H-0061",
+    "p": "lean on",
+    "m": "倚靠；依赖；施压",
+    "en": "During difficult times, friends often lean on one another for support.",
+    "cn": "困难时期，朋友们常常相互依靠。",
+    "answers": [
+      "lean on"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可表示身体靠在某物上，也可表示依赖某人或迫使某人行动。"
+  },
+  {
+    "id": "PH-H-0062",
+    "p": "phase out",
+    "m": "逐步淘汰；逐步停止",
+    "en": "The company will phase out single-use plastic packaging.",
+    "cn": "这家公司将逐步停止使用一次性塑料包装。",
+    "answers": [
+      "phase out"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "表示经过一段时间逐渐停止使用产品、制度或做法。"
+  },
+  {
+    "id": "PH-H-0063",
+    "p": "pipe down",
+    "m": "安静下来",
+    "en": "The librarian asked the noisy group to pipe down.",
+    "cn": "图书管理员让吵闹的一群人安静下来。",
+    "answers": [
+      "pipe down"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "非正式用语，用于要求某人降低声音或停止吵闹。"
+  },
+  {
+    "id": "PH-H-0064",
+    "p": "regard as",
+    "m": "把某人或某物视为",
+    "en": "Many readers regard these novels as classics.",
+    "cn": "许多读者把这些小说视为经典。",
+    "answers": [
+      "regard as"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "常用结构为 regard A as B，被动形式为 A is regarded as B。"
+  },
+  {
+    "id": "PH-H-0065",
+    "p": "settle on",
+    "m": "选定；决定采用",
+    "en": "After comparing several designs, we decided to settle on the simplest one.",
+    "cn": "比较了几种设计后，我们决定采用最简单的一种。",
+    "answers": [
+      "settle on"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "表示经过考虑或讨论后最终选择某人、某物或方案。"
+  },
+  {
+    "id": "PH-H-0066",
+    "p": "strike back",
+    "m": "反击；回击",
+    "en": "The team refused to give up and prepared to strike back.",
+    "cn": "这支队伍拒绝放弃，并准备反击。",
+    "answers": [
+      "strike back"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "表示在受到攻击、批评或伤害后采取还击行动。"
+  },
+  {
+    "id": "PH-H-0067",
+    "p": "take flight",
+    "m": "起飞；逃走",
+    "en": "At the first sound of danger, the birds take flight.",
+    "cn": "一听到危险的声音，鸟儿便飞走了。",
+    "answers": [
+      "take flight"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可指鸟或飞机飞起，也可较正式地表示迅速逃离。"
+  },
+  {
+    "id": "PH-H-0068",
+    "p": "take root",
+    "m": "生根；扎根",
+    "en": "The young trees need regular water before they take root.",
+    "cn": "这些幼树生根前需要定期浇水。",
+    "answers": [
+      "take root"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可按字面指植物生根，也可比喻思想或做法开始被接受并稳固发展。"
+  },
+  {
+    "id": "PH-H-0069",
+    "p": "bow out",
+    "m": "退出；告退",
+    "en": "After ten years as captain, she decided to bow out gracefully.",
+    "cn": "担任队长十年后，她决定从容退出。",
+    "answers": [
+      "bow out"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "表示礼貌地退出活动、职位或竞争。"
+  },
+  {
+    "id": "PH-H-0070",
+    "p": "branch out",
+    "m": "拓展新领域；扩大业务",
+    "en": "The school newspaper plans to branch out into video reporting.",
+    "cn": "校报计划拓展到视频报道领域。",
+    "answers": [
+      "branch out"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "表示从原有活动或领域扩展到新的方向。"
+  },
+  {
+    "id": "PH-H-0071",
+    "p": "brush aside",
+    "m": "不理会；轻视",
+    "en": "It would be unwise to brush aside the safety warnings.",
+    "cn": "对安全警告置之不理是不明智的。",
+    "answers": [
+      "brush aside"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "表示未经认真考虑就忽视意见、担忧或问题。"
+  },
+  {
+    "id": "PH-H-0072",
+    "p": "carve up",
+    "m": "瓜分；分割",
+    "en": "The proposal would carve up the park into separate development areas.",
+    "cn": "这项提议会把公园分割成不同的开发区域。",
+    "answers": [
+      "carve up"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "表示把土地、资源或组织分割给不同的人或团体，常含批评意味。"
+  },
+  {
+    "id": "PH-H-0073",
+    "p": "cast about",
+    "m": "四处寻找；设法寻找",
+    "en": "The committee began to cast about for a practical solution.",
+    "cn": "委员会开始四处寻找可行的解决办法。",
+    "answers": [
+      "cast about"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "常与 for 连用，表示急切或费力地寻找办法、信息或物品。"
+  },
+  {
+    "id": "PH-H-0074",
+    "p": "chew over",
+    "m": "仔细考虑",
+    "en": "Take a day to chew over the offer before replying.",
+    "cn": "回复之前花一天时间仔细考虑这项提议。",
+    "answers": [
+      "chew over"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "非正式用语，表示在作决定前反复思考某个问题或建议。"
+  },
+  {
+    "id": "PH-H-0075",
+    "p": "choke up",
+    "m": "哽咽；堵塞",
+    "en": "He began to choke up while thanking his former teacher.",
+    "cn": "他感谢以前的老师时开始哽咽。",
+    "answers": [
+      "choke up"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可表示因激动而说不出话，也可指通道被堵住。"
+  },
+  {
+    "id": "PH-H-0076",
+    "p": "crop up",
+    "m": "突然出现",
+    "en": "Unexpected costs may crop up during a long project.",
+    "cn": "长期项目中可能会突然出现意外开支。",
+    "answers": [
+      "crop up"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "通常指问题或意外情况没有预料地出现。"
+  },
+  {
+    "id": "PH-H-0077",
+    "p": "drag up",
+    "m": "重新提起不愉快的往事",
+    "en": "There is no need to drag up an argument that ended years ago.",
+    "cn": "没有必要重提多年前已经结束的争论。",
+    "answers": [
+      "drag up"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "表示不必要地再次谈论旧问题或令人难堪的事情。"
+  },
+  {
+    "id": "PH-H-0078",
+    "p": "fold up",
+    "m": "折叠；倒闭",
+    "en": "Fold up the chairs and store them behind the stage.",
+    "cn": "把椅子折起来，存放在舞台后面。",
+    "answers": [
+      "fold up"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可表示把物品折小，也可非正式地表示企业停止经营。"
+  },
+  {
+    "id": "PH-H-0079",
+    "p": "frame up",
+    "m": "诬陷；陷害",
+    "en": "The story follows a detective who discovers an attempt to frame up an innocent man.",
+    "cn": "这个故事讲述一名侦探发现有人企图诬陷一名无辜男子。",
+    "answers": [
+      "frame up"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "表示通过伪造证据使无辜者看起来犯了罪，常用于被动语态。"
+  },
+  {
+    "id": "PH-H-0080",
+    "p": "jazz up",
+    "m": "使更有趣；使更活泼",
+    "en": "A few illustrations could jazz up the presentation.",
+    "cn": "添加几幅插图可以让演示更生动。",
+    "answers": [
+      "jazz up"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "非正式用语，表示通过增添内容、颜色或风格来改善某物。"
+  },
+  {
+    "id": "PH-H-0081",
+    "p": "lay aside",
+    "m": "把某物放在一边；搁置",
+    "en": "Both sides agreed to lay aside their disagreements for the day.",
+    "cn": "双方同意当天暂时搁置分歧。",
+    "answers": [
+      "lay aside"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可表示暂时放下物品，也可表示停止考虑分歧、习惯或任务。"
+  },
+  {
+    "id": "PH-H-0082",
+    "p": "measure up",
+    "m": "达到标准；符合期望",
+    "en": "The new material must measure up to strict safety standards.",
+    "cn": "这种新材料必须达到严格的安全标准。",
+    "answers": [
+      "measure up"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "常与 to 连用，表示达到要求、标准或他人的期待。"
+  },
+  {
+    "id": "PH-H-0083",
+    "p": "reach out",
+    "m": "伸出手；主动提供帮助；联系",
+    "en": "Do not hesitate to reach out to a counselor if you need support.",
+    "cn": "如果你需要支持，不要犹豫，主动联系辅导员。",
+    "answers": [
+      "reach out"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可表示身体动作，也常与 to 连用表示主动联系或帮助某人。"
+  },
+  {
+    "id": "PH-H-0084",
+    "p": "back up",
+    "m": "支持；备份；后退",
+    "en": "Remember to back up your files before updating the system.",
+    "cn": "更新系统前记得备份文件。",
+    "answers": [
+      "back up"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可表示用证据支持说法、复制数据以防丢失，或向后移动。"
+  },
+  {
+    "id": "PH-H-0085",
+    "p": "break up",
+    "m": "分裂；结束；驱散",
+    "en": "A teacher stepped in to break up the fight.",
+    "cn": "一名老师介入制止了打斗。",
+    "answers": [
+      "break up"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可指关系结束、团体解散，也可表示使人群散开。"
+  },
+  {
+    "id": "PH-H-0086",
+    "p": "bring about",
+    "m": "导致；引起",
+    "en": "Better public transport could bring about a major reduction in traffic.",
+    "cn": "更好的公共交通可能会大幅减少道路交通量。",
+    "answers": [
+      "bring about"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "后接变化、结果或事件，强调使其发生。"
+  },
+  {
+    "id": "PH-H-0087",
+    "p": "come across",
+    "m": "偶然遇到；给人某种印象",
+    "en": "You may come across unfamiliar terms while reading the article.",
+    "cn": "阅读这篇文章时，你可能会遇到不熟悉的术语。",
+    "answers": [
+      "come across"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可表示无意中发现人或物，也可与 as 连用说明给人的感觉。"
+  },
+  {
+    "id": "PH-H-0088",
+    "p": "come forward",
+    "m": "主动站出来；自告奋勇",
+    "en": "Several witnesses agreed to come forward after the appeal.",
+    "cn": "发出呼吁后，几名目击者同意站出来提供信息。",
+    "answers": [
+      "come forward"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "表示主动提供信息、帮助或承担责任。"
+  },
+  {
+    "id": "PH-H-0089",
+    "p": "come to light",
+    "m": "被发现；显露",
+    "en": "New evidence may come to light during the investigation.",
+    "cn": "调查期间可能会发现新的证据。",
+    "answers": [
+      "come to light"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "表示原本隐藏或未知的事实变得公开。"
+  },
+  {
+    "id": "PH-H-0090",
+    "p": "cover for",
+    "m": "代替；为某人掩饰",
+    "en": "Could you cover for me while I attend the training session?",
+    "cn": "我参加培训时，你能临时代替我吗？",
+    "answers": [
+      "cover for"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可表示临时代替某人的工作，也可隐瞒其错误或缺席原因。"
+  },
+  {
+    "id": "PH-H-0091",
+    "p": "cut back",
+    "m": "削减；减少",
+    "en": "The factory aims to cut back on water use by twenty percent.",
+    "cn": "这家工厂计划把用水量减少百分之二十。",
+    "answers": [
+      "cut back"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "常与 on 连用，表示减少消费、开支、产量或活动。"
+  },
+  {
+    "id": "PH-H-0092",
+    "p": "fight back",
+    "m": "还击；奋力抵抗",
+    "en": "Local residents organized to fight back against the illegal dumping.",
+    "cn": "当地居民组织起来，抵制非法倾倒垃圾的行为。",
+    "answers": [
+      "fight back"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可表示反击攻击者，也可表示努力抵抗疾病、不公或情绪。"
+  },
+  {
+    "id": "PH-H-0093",
+    "p": "hold back",
+    "m": "阻止；抑制；隐瞒",
+    "en": "Fear of failure should not hold back your progress.",
+    "cn": "对失败的恐惧不应阻碍你的进步。",
+    "answers": [
+      "hold back"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可表示阻碍进展、控制情绪或不公开信息。"
+  },
+  {
+    "id": "PH-H-0094",
+    "p": "look forward",
+    "m": "期待；向前看",
+    "en": "Rather than regret the past, we should look forward with confidence.",
+    "cn": "与其后悔过去，我们更应该满怀信心地向前看。",
+    "answers": [
+      "look forward"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "通常与 to 连用表示期待；按字面也可表示向前方看。"
+  },
+  {
+    "id": "PH-H-0095",
+    "p": "move ahead",
+    "m": "向前推进；取得进展",
+    "en": "The project cannot move ahead without final approval.",
+    "cn": "没有最终批准，这个项目无法推进。",
+    "answers": [
+      "move ahead"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可表示位置向前，也可指计划或工作继续进行。"
+  },
+  {
+    "id": "PH-H-0096",
+    "p": "point of view",
+    "m": "观点；角度",
+    "en": "Try to understand the issue from another point of view.",
+    "cn": "试着从另一个角度理解这个问题。",
+    "answers": [
+      "point of view"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "常与 from 连用，表示观察或评价问题的立场。"
+  },
+  {
+    "id": "PH-H-0097",
+    "p": "side by side",
+    "m": "并排；共同地",
+    "en": "Volunteers and residents worked side by side to clean the riverbank.",
+    "cn": "志愿者和居民并肩清理河岸。",
+    "answers": [
+      "side by side"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可表示位置相邻，也可比喻共同工作或生活。"
+  },
+  {
+    "id": "PH-H-0098",
+    "p": "slow motion",
+    "m": "慢动作",
+    "en": "The video shows the bird landing in slow motion.",
+    "cn": "这段视频用慢动作展示了鸟落地的过程。",
+    "answers": [
+      "slow motion"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "指以低于正常速度播放或观察动作，常与 in 连用。"
+  },
+  {
+    "id": "PH-H-0099",
+    "p": "step forward",
+    "m": "向前迈步；主动站出来",
+    "en": "One student chose to step forward and lead the discussion.",
+    "cn": "一名学生主动站出来主持讨论。",
+    "answers": [
+      "step forward"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "可按字面表示向前一步，也可表示主动提供帮助或承担责任。"
+  },
+  {
+    "id": "PH-H-0100",
+    "p": "take advantage",
+    "m": "利用；占便宜",
+    "en": "Students should take advantage of every chance to practice speaking.",
+    "cn": "学生应该利用每一个练习口语的机会。",
+    "answers": [
+      "take advantage"
+    ],
+    "tier": "extension",
+    "level": 1,
+    "usage_note": "与 of 连用时可中性地表示利用机会，也可指不公平地利用他人。"
+  },
+  {
+    "id": "PH-H-0101",
+    "p": "win over",
+    "m": "赢得支持；说服",
+    "en": "Clear evidence may win over voters who are still uncertain.",
+    "cn": "清楚的证据可能会赢得尚未决定的选民的支持。",
+    "answers": [
+      "win over"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "后接原本不赞同或尚未决定的人，表示使其转而支持。"
+  },
+  {
+    "id": "PH-H-0102",
+    "p": "solar system",
+    "m": "太阳系；恒星系统",
+    "en": "Our solar system contains eight recognized planets.",
+    "cn": "我们的太阳系包含八颗公认的行星。",
+    "answers": [
+      "solar system"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "通常特指太阳系时可写作 the Solar System，也可泛指围绕恒星运行的天体系统。"
+  },
+  {
+    "id": "PH-H-0103",
+    "p": "mental health",
+    "m": "心理健康",
+    "en": "Regular sleep and social support can protect mental health.",
+    "cn": "规律睡眠和社会支持有助于保护心理健康。",
+    "answers": [
+      "mental health"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指人的情绪、心理和社会适应状态，常与 physical health 对照。"
+  },
+  {
+    "id": "PH-H-0104",
+    "p": "national park",
+    "m": "国家公园",
+    "en": "The national park limits visitor numbers to protect wildlife.",
+    "cn": "这座国家公园限制游客数量以保护野生动物。",
+    "answers": [
+      "national park"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指由国家保护、用于自然保育和公众参观的区域。"
+  },
+  {
+    "id": "PH-H-0105",
+    "p": "science fiction",
+    "m": "科幻小说；科幻作品",
+    "en": "The novel combines science fiction with a story about friendship.",
+    "cn": "这部小说把科幻元素与友情故事结合起来。",
+    "answers": [
+      "science fiction"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指以未来科技、太空或科学设想为主题的文学和影视类型。"
+  },
+  {
+    "id": "PH-H-0106",
+    "p": "credit card",
+    "m": "信用卡",
+    "en": "Never send your credit card details through an unknown website.",
+    "cn": "绝不要通过不明网站发送信用卡信息。",
+    "answers": [
+      "credit card"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指持卡人可先消费后按约定还款的支付卡。"
+  },
+  {
+    "id": "PH-H-0107",
+    "p": "air pollution",
+    "m": "空气污染",
+    "en": "Public transport can help reduce air pollution in large cities.",
+    "cn": "公共交通有助于减少大城市的空气污染。",
+    "answers": [
+      "air pollution"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指有害气体或颗粒物进入空气并对健康或环境造成影响。"
+  },
+  {
+    "id": "PH-H-0108",
+    "p": "cell phone",
+    "m": "手机",
+    "en": "Students should keep each cell phone silent during the lecture.",
+    "cn": "讲座期间，学生应把每部手机都调成静音。",
+    "answers": [
+      "cell phone"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "主要是美式英语用法，英式英语更常说 mobile phone。"
+  },
+  {
+    "id": "PH-H-0109",
+    "p": "economic system",
+    "m": "经济制度；经济体系",
+    "en": "Every economic system must decide how limited resources are used.",
+    "cn": "每种经济体系都必须决定如何使用有限资源。",
+    "answers": [
+      "economic system"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指社会组织生产、分配和消费活动的方式。"
+  },
+  {
+    "id": "PH-H-0110",
+    "p": "economic development",
+    "m": "经济发展",
+    "en": "Reliable infrastructure is important for regional economic development.",
+    "cn": "可靠的基础设施对区域经济发展很重要。",
+    "answers": [
+      "economic development"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指经济规模、生产能力和生活水平等方面的长期变化。"
+  },
+  {
+    "id": "PH-H-0111",
+    "p": "economic crisis",
+    "m": "经济危机",
+    "en": "The economic crisis forced many small businesses to close.",
+    "cn": "经济危机迫使许多小企业停业。",
+    "answers": [
+      "economic crisis"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指经济活动严重衰退并对就业、企业和生活造成广泛影响的时期。"
+  },
+  {
+    "id": "PH-H-0112",
+    "p": "open source",
+    "m": "开源；开放源代码",
+    "en": "The team chose open source software that anyone could inspect.",
+    "cn": "团队选择了任何人都可以检查源代码的开源软件。",
+    "answers": [
+      "open source"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指源代码按相应许可证公开、允许查看并在许可条件下使用或修改的软件模式。"
+  },
+  {
+    "id": "PH-H-0113",
+    "p": "public domain",
+    "m": "公有领域",
+    "en": "The museum released the old photograph into the public domain.",
+    "cn": "博物馆把这张老照片开放为公有领域作品。",
+    "answers": [
+      "public domain"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指作品不受版权专有权限制，可依法自由使用的状态；具体范围取决于适用法律。"
+  },
+  {
+    "id": "PH-H-0114",
+    "p": "real estate",
+    "m": "房地产；不动产",
+    "en": "Rising interest rates can affect the real estate market.",
+    "cn": "利率上升会影响房地产市场。",
+    "answers": [
+      "real estate"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指土地以及土地上的建筑物，也可泛指相关行业。"
+  },
+  {
+    "id": "PH-H-0115",
+    "p": "native language",
+    "m": "母语",
+    "en": "Students may compare the new grammar with their native language.",
+    "cn": "学生可以把新语法与自己的母语进行比较。",
+    "answers": [
+      "native language"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指一个人在幼年自然习得并首先使用的语言。"
+  },
+  {
+    "id": "PH-H-0116",
+    "p": "native speaker",
+    "m": "母语使用者",
+    "en": "A native speaker may still use different words in different regions.",
+    "cn": "母语使用者在不同地区仍可能使用不同词语。",
+    "answers": [
+      "native speaker"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指从小自然习得并熟练使用某种语言的人。"
+  },
+  {
+    "id": "PH-H-0117",
+    "p": "solar power",
+    "m": "太阳能发电；太阳能动力",
+    "en": "The remote school uses solar power to run its computers.",
+    "cn": "这所偏远学校使用太阳能为电脑供电。",
+    "answers": [
+      "solar power"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "侧重把阳光转化为可使用的电力或动力。"
+  },
+  {
+    "id": "PH-H-0118",
+    "p": "solar energy",
+    "m": "太阳能",
+    "en": "Solar energy is most effective where sunlight is abundant.",
+    "cn": "太阳能在阳光充足的地区最为有效。",
+    "answers": [
+      "solar energy"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指来自太阳辐射、可被转化和利用的能量。"
+  },
+  {
+    "id": "PH-H-0119",
+    "p": "greenhouse gas",
+    "m": "温室气体",
+    "en": "Carbon dioxide is a major greenhouse gas produced by human activity.",
+    "cn": "二氧化碳是人类活动产生的一种主要温室气体。",
+    "answers": [
+      "greenhouse gas"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指能够吸收和释放红外辐射、促使大气保温的气体。"
+  },
+  {
+    "id": "PH-H-0120",
+    "p": "endangered species",
+    "m": "濒危物种",
+    "en": "Protecting habitat is essential for the survival of an endangered species.",
+    "cn": "保护栖息地对濒危物种的生存至关重要。",
+    "answers": [
+      "endangered species"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指种群数量下降到面临较高灭绝风险的物种。"
+  },
+  {
+    "id": "PH-H-0121",
+    "p": "human being",
+    "m": "人；人类个体",
+    "en": "Every human being needs access to clean water.",
+    "cn": "每个人都需要获得清洁用水。",
+    "answers": [
+      "human being"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "表示一个人，复数 human beings 可泛指人类成员。"
+  },
+  {
+    "id": "PH-H-0122",
+    "p": "nuclear power",
+    "m": "核能发电；核动力",
+    "en": "The debate considered both the benefits and risks of nuclear power.",
+    "cn": "这场辩论讨论了核能的益处与风险。",
+    "answers": [
+      "nuclear power"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "通常指利用核反应释放的能量发电或提供动力。"
+  },
+  {
+    "id": "PH-H-0123",
+    "p": "intellectual property",
+    "m": "知识产权",
+    "en": "The agreement explains who owns the project's intellectual property.",
+    "cn": "协议说明了项目知识产权的归属。",
+    "answers": [
+      "intellectual property"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指依法保护的发明、作品、商标等智力成果及相关权利。"
+  },
+  {
+    "id": "PH-H-0124",
+    "p": "food chain",
+    "m": "食物链",
+    "en": "Removing one species can affect the entire food chain.",
+    "cn": "移除一个物种可能影响整条食物链。",
+    "answers": [
+      "food chain"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指生物之间通过取食形成的能量和营养传递关系。"
+  },
+  {
+    "id": "PH-H-0125",
+    "p": "cash register",
+    "m": "收银机",
+    "en": "The assistant entered the price into the cash register.",
+    "cn": "店员把价格输入了收银机。",
+    "answers": [
+      "cash register"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指商店记录销售、计算金额并存放现金的设备。"
+  },
+  {
+    "id": "PH-H-0126",
+    "p": "target language",
+    "m": "目标语言；所学语言",
+    "en": "The teacher encourages students to speak the target language in class.",
+    "cn": "老师鼓励学生在课堂上使用目标语言。",
+    "answers": [
+      "target language"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "语言学习中指学习者正在学习或翻译所要转换成的语言。"
+  },
+  {
+    "id": "PH-H-0127",
+    "p": "search engine",
+    "m": "搜索引擎",
+    "en": "A search engine can find many pages, but users must judge their reliability.",
+    "cn": "搜索引擎能找到许多网页，但用户必须判断其可靠性。",
+    "answers": [
+      "search engine"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指根据关键词查找互联网信息的软件服务。"
+  },
+  {
+    "id": "PH-H-0128",
+    "p": "virtual reality",
+    "m": "虚拟现实",
+    "en": "Virtual reality allows trainees to practice without entering a dangerous site.",
+    "cn": "虚拟现实让受训者无需进入危险现场就能练习。",
+    "answers": [
+      "virtual reality"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指通过计算机生成具有沉浸感的模拟环境的技术。"
+  },
+  {
+    "id": "PH-H-0129",
+    "p": "press conference",
+    "m": "记者会；新闻发布会",
+    "en": "The coach answered questions at a press conference after the match.",
+    "cn": "比赛后，教练在记者会上回答了问题。",
+    "answers": [
+      "press conference"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指机构或个人向记者发布信息并回答问题的正式活动。"
+  },
+  {
+    "id": "PH-H-0130",
+    "p": "security system",
+    "m": "安保系统；安全系统",
+    "en": "The new security system sends an alert when a door opens unexpectedly.",
+    "cn": "新安保系统会在门被意外打开时发出警报。",
+    "answers": [
+      "security system"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指用于防止入侵、盗窃或其他风险的一组设备和措施。"
+  },
+  {
+    "id": "PH-H-0131",
+    "p": "health insurance",
+    "m": "医疗保险；健康保险",
+    "en": "The job includes health insurance for full-time employees.",
+    "cn": "这份工作为全职员工提供医疗保险。",
+    "answers": [
+      "health insurance"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指按合同为符合条件的医疗费用提供保障的保险。"
+  },
+  {
+    "id": "PH-H-0132",
+    "p": "exchange rate",
+    "m": "汇率",
+    "en": "A change in the exchange rate can make imported goods more expensive.",
+    "cn": "汇率变化可能使进口商品更昂贵。",
+    "answers": [
+      "exchange rate"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指一种货币兑换另一种货币时的比率。"
+  },
+  {
+    "id": "PH-H-0133",
+    "p": "social welfare",
+    "m": "社会福利",
+    "en": "The report examines how social welfare programs support older people.",
+    "cn": "报告研究了社会福利项目如何支持老年人。",
+    "answers": [
+      "social welfare"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指社会为保障基本生活和福祉提供的制度、服务或援助。"
+  },
+  {
+    "id": "PH-H-0134",
+    "p": "public transport",
+    "m": "公共交通",
+    "en": "Affordable public transport gives more people access to jobs.",
+    "cn": "价格合理的公共交通让更多人能够获得就业机会。",
+    "answers": [
+      "public transport"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指供公众使用的公共汽车、列车和地铁等交通服务。"
+  },
+  {
+    "id": "PH-H-0135",
+    "p": "speed limit",
+    "m": "限速；最高车速限制",
+    "en": "Drivers must obey the speed limit near schools.",
+    "cn": "驾驶员在学校附近必须遵守限速规定。",
+    "answers": [
+      "speed limit"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指道路或区域内法律规定的最高行驶速度。"
+  },
+  {
+    "id": "PH-H-0136",
+    "p": "trial and error",
+    "m": "反复试验；试错",
+    "en": "The students improved the model through trial and error.",
+    "cn": "学生们通过反复试验改进了模型。",
+    "answers": [
+      "trial and error"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指通过不断尝试、发现错误并调整来找到办法的过程。"
+  },
+  {
+    "id": "PH-H-0137",
+    "p": "academic year",
+    "m": "学年",
+    "en": "The new library will open at the start of the academic year.",
+    "cn": "新图书馆将在学年开始时开放。",
+    "answers": [
+      "academic year"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指学校或大学安排教学活动的一整年。"
+  },
+  {
+    "id": "PH-H-0138",
+    "p": "cost of living",
+    "m": "生活成本",
+    "en": "The cost of living is usually higher in the city center.",
+    "cn": "市中心的生活成本通常更高。",
+    "answers": [
+      "cost of living"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指维持住房、食物、交通等日常生活所需的费用水平。"
+  },
+  {
+    "id": "PH-H-0139",
+    "p": "income tax",
+    "m": "所得税",
+    "en": "The guide explains how income tax is calculated.",
+    "cn": "这份指南解释了所得税的计算方法。",
+    "answers": [
+      "income tax"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指政府根据个人或机构收入征收的税款。"
+  },
+  {
+    "id": "PH-H-0140",
+    "p": "foreign exchange",
+    "m": "外汇；货币兑换",
+    "en": "Tourism is an important source of foreign exchange for the country.",
+    "cn": "旅游业是该国外汇收入的重要来源。",
+    "answers": [
+      "foreign exchange"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "可指不同国家货币的兑换，也可指用于国际支付的外国货币。"
+  },
+  {
+    "id": "PH-H-0141",
+    "p": "general election",
+    "m": "大选；全国性选举",
+    "en": "Voter participation increased during the latest general election.",
+    "cn": "最近一次大选中的选民参与率有所上升。",
+    "answers": [
+      "general election"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指由合格选民选举国家或地区主要立法机构成员的选举。"
+  },
+  {
+    "id": "PH-H-0142",
+    "p": "investment bank",
+    "m": "投资银行",
+    "en": "The company hired an investment bank to advise on the sale.",
+    "cn": "公司聘请了一家投资银行为出售事宜提供建议。",
+    "answers": [
+      "investment bank"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指主要提供证券发行、并购和融资顾问等服务的金融机构。"
+  },
+  {
+    "id": "PH-H-0143",
+    "p": "low profile",
+    "m": "低调；不引人注意的状态",
+    "en": "The actor kept a low profile while working on his next film.",
+    "cn": "这位演员在筹备下一部电影期间保持低调。",
+    "answers": [
+      "low profile"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "常与 keep 或 maintain 连用，表示避免公众关注。"
+  },
+  {
+    "id": "PH-H-0144",
+    "p": "mail order",
+    "m": "邮购",
+    "en": "The small company began as a mail order business.",
+    "cn": "这家小公司最初经营邮购业务。",
+    "answers": [
+      "mail order"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指通过邮寄或远程下单购买并接收商品的方式。"
+  },
+  {
+    "id": "PH-H-0145",
+    "p": "mass produce",
+    "m": "批量生产；大规模生产",
+    "en": "The factory can mass produce the device at a lower cost.",
+    "cn": "这家工厂能以更低的成本批量生产这种设备。",
+    "answers": [
+      "mass produce"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "作动词使用，表示用标准化方式大量制造同类产品。"
+  },
+  {
+    "id": "PH-H-0146",
+    "p": "critical point",
+    "m": "临界点；关键时刻",
+    "en": "The negotiations have reached a critical point.",
+    "cn": "谈判已经到了关键时刻。",
+    "answers": [
+      "critical point"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "可指系统发生明显变化的临界状态，也可指决定结果的重要阶段。"
+  },
+  {
+    "id": "PH-H-0147",
+    "p": "global climate change",
+    "m": "全球气候变化",
+    "en": "Global climate change affects rainfall, sea levels, and ecosystems.",
+    "cn": "全球气候变化影响降雨、海平面和生态系统。",
+    "answers": [
+      "global climate change"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指全球气候模式在较长时期内发生的变化。"
+  },
+  {
+    "id": "PH-H-0148",
+    "p": "labor market",
+    "m": "劳动力市场；就业市场",
+    "en": "New technology can change the skills demanded by the labor market.",
+    "cn": "新技术可能改变劳动力市场所需要的技能。",
+    "answers": [
+      "labor market"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指劳动供给者与雇主之间形成的就业和工资体系，美式拼写为 labor。"
+  },
+  {
+    "id": "PH-H-0149",
+    "p": "market economy",
+    "m": "市场经济",
+    "en": "Competition plays an important role in a market economy.",
+    "cn": "竞争在市场经济中发挥重要作用。",
+    "answers": [
+      "market economy"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指主要通过市场供求和价格机制配置资源的经济体系。"
+  },
+  {
+    "id": "PH-H-0150",
+    "p": "theme park",
+    "m": "主题公园",
+    "en": "The theme park limits daily ticket sales during busy periods.",
+    "cn": "这家主题公园在繁忙时期限量出售每日门票。",
+    "answers": [
+      "theme park"
+    ],
+    "tier": "extension",
+    "level": 2,
+    "usage_note": "指围绕特定主题设计游乐设施、表演和环境的公园。"
+  },
+  {
+    "id": "PH-H-0151",
+    "p": "climate change",
+    "m": "气候变化",
+    "en": "Climate change is altering the habitats of many species.",
+    "cn": "气候变化正在改变许多物种的栖息地。",
+    "answers": [
+      "climate change"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "指气温、降水等气候模式在较长时期内发生的变化。"
+  },
+  {
+    "id": "PH-H-0152",
+    "p": "natural gas",
+    "m": "天然气",
+    "en": "The town once used natural gas to heat most homes.",
+    "cn": "这座城镇过去用天然气为大多数住宅供暖。",
+    "answers": [
+      "natural gas"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "指主要由甲烷组成、用作燃料和工业原料的气态化石能源。"
+  },
+  {
+    "id": "PH-H-0153",
+    "p": "space station",
+    "m": "空间站；太空站",
+    "en": "Astronauts conducted the experiment aboard the space station.",
+    "cn": "宇航员在空间站上进行了这项实验。",
+    "answers": [
+      "space station"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "指在太空轨道上供人员长期生活和开展研究的航天器。"
+  },
+  {
+    "id": "PH-H-0154",
+    "p": "large scale",
+    "m": "大规模",
+    "en": "The region began producing clean energy on a large scale.",
+    "cn": "该地区开始大规模生产清洁能源。",
+    "answers": [
+      "large scale"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "常用于 on a large scale；放在名词前作定语时通常写成 large-scale。"
+  },
+  {
+    "id": "PH-H-0155",
+    "p": "small scale",
+    "m": "小规模",
+    "en": "The new farming method was first tested on a small scale.",
+    "cn": "这种新耕作方法最初进行了小规模试验。",
+    "answers": [
+      "small scale"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "常用于 on a small scale；放在名词前作定语时通常写成 small-scale。"
+  },
+  {
+    "id": "PH-H-0156",
+    "p": "high resolution",
+    "m": "高分辨率；高清晰度",
+    "en": "The camera records images with high resolution even in low light.",
+    "cn": "即使光线较暗，这台相机也能记录高分辨率图像。",
+    "answers": [
+      "high resolution"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "说明图像或设备能呈现较多细节；放在名词前常写成 high-resolution。"
+  },
+  {
+    "id": "PH-H-0157",
+    "p": "full length",
+    "m": "全长；完整长度",
+    "en": "The new pool has the full length required for official races.",
+    "cn": "新泳池达到了正式比赛要求的全长。",
+    "answers": [
+      "full length"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "表示从一端到另一端的全部长度；放在名词前常写成 full-length。"
+  },
+  {
+    "id": "PH-H-0158",
+    "p": "long distance",
+    "m": "长距离；远程",
+    "en": "The rescue team carried supplies over a long distance.",
+    "cn": "救援队把物资运送了很远的距离。",
+    "answers": [
+      "long distance"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "可表示相距很远；放在名词前作定语时通常写成 long-distance。"
+  },
+  {
+    "id": "PH-H-0159",
+    "p": "minimum wage",
+    "m": "最低工资",
+    "en": "The government reviews the minimum wage each year.",
+    "cn": "政府每年审查最低工资标准。",
+    "answers": [
+      "minimum wage"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "指法律或规定允许雇主支付给劳动者的最低工资标准。"
+  },
+  {
+    "id": "PH-H-0160",
+    "p": "mountain range",
+    "m": "山脉",
+    "en": "The mountain range blocks cold winds from the north.",
+    "cn": "这条山脉阻挡了来自北方的寒风。",
+    "answers": [
+      "mountain range"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "指相互连接、在地理上形成一系列的山峰和山地。"
+  },
+  {
+    "id": "PH-H-0161",
+    "p": "secondary school",
+    "m": "中学",
+    "en": "She teaches chemistry at a secondary school near the coast.",
+    "cn": "她在海边的一所中学教化学。",
+    "answers": [
+      "secondary school"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "通常指小学之后、大学之前的学校阶段，具体年级范围因国家而异。"
+  },
+  {
+    "id": "PH-H-0162",
+    "p": "square root",
+    "m": "平方根",
+    "en": "The square root of eighty-one is nine.",
+    "cn": "八十一的平方根是九。",
+    "answers": [
+      "square root"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "指自乘后等于给定数值的数。"
+  },
+  {
+    "id": "PH-H-0163",
+    "p": "white collar",
+    "m": "白领的；从事办公室工作的",
+    "en": "The term white collar traditionally refers to office-based employment.",
+    "cn": "白领一词传统上指以办公室为基础的工作。",
+    "answers": [
+      "white collar"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "常见于 white-collar worker 等复合定语，通常指办公室、专业或管理类工作。"
+  },
+  {
+    "id": "PH-H-0164",
+    "p": "wide angle",
+    "m": "广角；宽视角",
+    "en": "This lens provides a wide angle of view for landscape photography.",
+    "cn": "这个镜头为风景摄影提供宽广的视角。",
+    "answers": [
+      "wide angle"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "指相机镜头或视野能够覆盖较宽范围；作定语时常写成 wide-angle。"
+  },
+  {
+    "id": "PH-H-0165",
+    "p": "freedom of speech",
+    "m": "言论自由",
+    "en": "The debate explored why freedom of speech matters in public life.",
+    "cn": "辩论探讨了言论自由在公共生活中的重要性。",
+    "answers": [
+      "freedom of speech"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "指依法表达观点和传递信息的自由，同时可能受适用法律规定的限制。"
+  },
+  {
+    "id": "PH-H-0166",
+    "p": "inner city",
+    "m": "市中心区；中心城区",
+    "en": "The project will create more green spaces in the inner city.",
+    "cn": "该项目将在中心城区建设更多绿地。",
+    "answers": [
+      "inner city"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "通常指大城市靠近中心、人口较密集的城区。"
+  },
+  {
+    "id": "PH-H-0167",
+    "p": "brand new",
+    "m": "崭新的；全新的",
+    "en": "The laboratory received a brand new microscope this week.",
+    "cn": "实验室本周收到了一台崭新的显微镜。",
+    "answers": [
+      "brand new"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "强调物品从未使用或事物刚刚出现。"
+  },
+  {
+    "id": "PH-H-0168",
+    "p": "equal to",
+    "m": "等于；胜任",
+    "en": "One kilometer is equal to one thousand meters.",
+    "cn": "一公里等于一千米。",
+    "answers": [
+      "equal to"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "可表示数量或价值相等，也可表示有能力应对任务。"
+  },
+  {
+    "id": "PH-H-0169",
+    "p": "responsible for",
+    "m": "对某事负责；是某事的原因",
+    "en": "Each team is responsible for checking its own equipment.",
+    "cn": "每支队伍都负责检查自己的设备。",
+    "answers": [
+      "responsible for"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "可说明职责范围，也可指出导致某个结果的人或事物。"
+  },
+  {
+    "id": "PH-H-0170",
+    "p": "be due",
+    "m": "预定到达；到期；应当",
+    "en": "The train will be due at platform four in ten minutes.",
+    "cn": "这趟列车预计十分钟后到达四号站台。",
+    "answers": [
+      "be due"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "可接时间说明预定安排，也可与 to 连用说明原因或应付事项。"
+  },
+  {
+    "id": "PH-H-0171",
+    "p": "in sight",
+    "m": "看得见；目标可及",
+    "en": "After hours of walking, the village finally came in sight.",
+    "cn": "走了几个小时后，村庄终于出现在视野中。",
+    "answers": [
+      "in sight"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "可表示处于视野内，也可比喻目标即将实现。"
+  },
+  {
+    "id": "PH-H-0172",
+    "p": "most valuable",
+    "m": "最有价值的",
+    "en": "Trust is our most valuable resource during a crisis.",
+    "cn": "危机期间，信任是我们最宝贵的资源。",
+    "answers": [
+      "most valuable"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "是 valuable 的最高级形式，通常与 the 或物主限定词连用。"
+  },
+  {
+    "id": "PH-H-0173",
+    "p": "well being",
+    "m": "健康幸福；身心福祉",
+    "en": "Safe housing has a direct effect on people's well being.",
+    "cn": "安全的住房会直接影响人们的身心福祉。",
+    "answers": [
+      "well being"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "现代英语中更常写作 well-being 或 wellbeing，本条保留母表词形用于识别。"
+  },
+  {
+    "id": "PH-H-0174",
+    "p": "body and soul",
+    "m": "全身心；身心",
+    "en": "She devoted body and soul to caring for the injured animals.",
+    "cn": "她全身心投入到照顾受伤动物的工作中。",
+    "answers": [
+      "body and soul"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "表示一个人的整个身心，常与投入、奉献等含义连用。"
+  },
+  {
+    "id": "PH-H-0175",
+    "p": "heart and soul",
+    "m": "全心全意；核心人物",
+    "en": "The volunteers put their heart and soul into rebuilding the playground.",
+    "cn": "志愿者们全心全意地重建操场。",
+    "answers": [
+      "heart and soul"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "可表示投入全部热情，也可指组织或活动最重要的推动者。"
+  },
+  {
+    "id": "PH-H-0176",
+    "p": "in common with",
+    "m": "与某人或某物一样",
+    "en": "In common with many coastal towns, this area depends on tourism.",
+    "cn": "与许多沿海城镇一样，这个地区依赖旅游业。",
+    "answers": [
+      "in common with"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "用于指出与另一个对象共有的特征或情况。"
+  },
+  {
+    "id": "PH-H-0177",
+    "p": "in the air",
+    "m": "在空中；可感觉到；悬而未决",
+    "en": "A sense of excitement was in the air before the final performance.",
+    "cn": "最后一场演出前，空气中洋溢着兴奋的气氛。",
+    "answers": [
+      "in the air"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "可按字面表示在空气中，也可指气氛明显或事情尚未确定。"
+  },
+  {
+    "id": "PH-H-0178",
+    "p": "in hand",
+    "m": "在手头；在掌握中；正在处理",
+    "en": "With enough supplies in hand, the team continued its journey.",
+    "cn": "手头有了足够物资，队伍继续前行。",
+    "answers": [
+      "in hand"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "可表示拥有可用资源、控制住局面或正在处理事情。"
+  },
+  {
+    "id": "PH-H-0179",
+    "p": "in place",
+    "m": "在适当位置；准备就绪；正在实施",
+    "en": "All safety measures must be in place before the event begins.",
+    "cn": "活动开始前，所有安全措施都必须落实到位。",
+    "answers": [
+      "in place"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "可表示位置正确，也可说明制度或安排已经建立。"
+  },
+  {
+    "id": "PH-H-0180",
+    "p": "in turn",
+    "m": "依次；转而；相应地",
+    "en": "Each group will in turn present its findings to the class.",
+    "cn": "每个小组将依次向全班汇报研究结果。",
+    "answers": [
+      "in turn"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "可表示按顺序行动，也可说明一个结果进一步引起另一个结果。"
+  },
+  {
+    "id": "PH-H-0181",
+    "p": "no longer",
+    "m": "不再",
+    "en": "The old bridge is no longer safe for heavy vehicles.",
+    "cn": "这座旧桥已不再适合重型车辆通行。",
+    "answers": [
+      "no longer"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "表示过去存在的状态或动作现在已经停止。"
+  },
+  {
+    "id": "PH-H-0182",
+    "p": "rather than",
+    "m": "而不是；宁可",
+    "en": "We should repair useful items rather than throw them away.",
+    "cn": "我们应该修理有用的物品，而不是把它们扔掉。",
+    "answers": [
+      "rather than"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "用于连接两个对等成分，表示选择或对比。"
+  },
+  {
+    "id": "PH-H-0183",
+    "p": "as a result",
+    "m": "因此；结果",
+    "en": "The road was flooded; as a result, the bus service stopped.",
+    "cn": "道路被淹，因此公共汽车停运了。",
+    "answers": [
+      "as a result"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "用于引出前述原因导致的结果，后接 of 时可引出原因。"
+  },
+  {
+    "id": "PH-H-0184",
+    "p": "as if",
+    "m": "好像；仿佛",
+    "en": "He spoke as if he had witnessed the event himself.",
+    "cn": "他说得仿佛亲眼目睹了这件事。",
+    "answers": [
+      "as if"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "引导方式或表语从句；与事实相反时常使用虚拟形式。"
+  },
+  {
+    "id": "PH-H-0185",
+    "p": "even though",
+    "m": "即使；尽管",
+    "en": "Even though the route was steep, everyone reached the top safely.",
+    "cn": "尽管路线陡峭，所有人仍安全到达了山顶。",
+    "answers": [
+      "even though"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "引导让步状语从句，后接完整的主语和谓语。"
+  },
+  {
+    "id": "PH-H-0186",
+    "p": "instead of",
+    "m": "代替；而不是",
+    "en": "We took the train instead of driving through the storm.",
+    "cn": "我们乘火车出行，没有冒雨开车。",
+    "answers": [
+      "instead of"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "of 是介词，后接名词、代词或动名词。"
+  },
+  {
+    "id": "PH-H-0187",
+    "p": "because of",
+    "m": "因为；由于",
+    "en": "The outdoor concert was canceled because of strong winds.",
+    "cn": "由于强风，露天音乐会被取消了。",
+    "answers": [
+      "because of"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "后接名词、代词或动名词，不能直接连接完整句子。"
+  },
+  {
+    "id": "PH-H-0188",
+    "p": "thanks to",
+    "m": "多亏；由于",
+    "en": "Thanks to careful planning, the move was completed in one day.",
+    "cn": "多亏周密计划，搬迁在一天内就完成了。",
+    "answers": [
+      "thanks to"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "后接带来某种结果的人或事，常表示积极原因，也可用于反讽语境。"
+  },
+  {
+    "id": "PH-H-0189",
+    "p": "take action",
+    "m": "采取行动",
+    "en": "Communities must take action to protect local water sources.",
+    "cn": "社区必须采取行动保护当地水源。",
+    "answers": [
+      "take action"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "常与 to do 或 against 连用，表示为解决问题而采取具体措施。"
+  },
+  {
+    "id": "PH-H-0190",
+    "p": "make a difference",
+    "m": "产生影响；起作用",
+    "en": "Even a small donation can make a difference to the project.",
+    "cn": "即使一小笔捐款也能对这个项目产生影响。",
+    "answers": [
+      "make a difference"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "表示行动使情况发生明显改善或变化，常与 to 连用。"
+  },
+  {
+    "id": "PH-H-0191",
+    "p": "deal with",
+    "m": "处理；应对；涉及",
+    "en": "The training teaches staff how to deal with emergencies.",
+    "cn": "培训教员工如何应对紧急情况。",
+    "answers": [
+      "deal with"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "可表示处理问题、与某人打交道，也可说明文章或课程的主题。"
+  },
+  {
+    "id": "PH-H-0192",
+    "p": "lead to",
+    "m": "导致；通向",
+    "en": "A lack of sleep can lead to poor concentration.",
+    "cn": "睡眠不足会导致注意力不集中。",
+    "answers": [
+      "lead to"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "可按字面表示道路通往某地，也可说明某事造成某种结果。"
+  },
+  {
+    "id": "PH-H-0193",
+    "p": "result in",
+    "m": "导致；造成",
+    "en": "Ignoring a minor fault may result in a costly repair later.",
+    "cn": "忽视小故障以后可能会导致高昂的维修费用。",
+    "answers": [
+      "result in"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "后接结果，主语通常是引发该结果的原因。"
+  },
+  {
+    "id": "PH-H-0194",
+    "p": "refer to",
+    "m": "指的是；提到；查阅",
+    "en": "In this report, the word youth will refer to people under twenty-five.",
+    "cn": "在本报告中，青年一词指二十五岁以下的人。",
+    "answers": [
+      "refer to"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "可说明词语所指对象、在谈话中提及，或查阅资料。"
+  },
+  {
+    "id": "PH-H-0195",
+    "p": "apply for",
+    "m": "申请",
+    "en": "Eligible students may apply for financial support online.",
+    "cn": "符合条件的学生可以在线申请经济资助。",
+    "answers": [
+      "apply for"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "后接职位、课程、许可或资金等希望获得的事物。"
+  },
+  {
+    "id": "PH-H-0196",
+    "p": "in a way",
+    "m": "在某种程度上；从某一角度看",
+    "en": "In a way, the unexpected delay gave us more time to prepare.",
+    "cn": "从某种角度看，意外的延误给了我们更多准备时间。",
+    "answers": [
+      "in a way"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "用于限定观点，说明陈述只在某个方面成立。"
+  },
+  {
+    "id": "PH-H-0197",
+    "p": "be based on",
+    "m": "以某事为基础；根据",
+    "en": "Scientific conclusions should be based on reliable evidence.",
+    "cn": "科学结论应该以可靠证据为基础。",
+    "answers": [
+      "be based on"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "后接作为依据、来源或原型的人或事物。"
+  },
+  {
+    "id": "PH-H-0198",
+    "p": "real life",
+    "m": "现实生活",
+    "en": "Communication can be more complex in real life than in a textbook.",
+    "cn": "现实生活中的交流可能比课本中更复杂。",
+    "answers": [
+      "real life"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "指实际发生的生活和经历，与小说、网络或模拟环境相对。"
+  },
+  {
+    "id": "PH-H-0199",
+    "p": "be related to",
+    "m": "与某事有关；与某人有亲属关系",
+    "en": "The change may be related to a rise in water temperature.",
+    "cn": "这种变化可能与水温上升有关。",
+    "answers": [
+      "be related to"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "后接存在联系的人或事物，具体关系由语境决定。"
+  },
+  {
+    "id": "PH-H-0200",
+    "p": "social media",
+    "m": "社交媒体",
+    "en": "Information on social media should be checked before it is shared.",
+    "cn": "社交媒体上的信息在分享前应该核实。",
+    "answers": [
+      "social media"
+    ],
+    "tier": "extension",
+    "level": 3,
+    "usage_note": "指用户创建、分享内容并进行社交互动的网络平台和服务。"
+  }
+]

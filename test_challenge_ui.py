@@ -524,6 +524,34 @@ class ChallengeUiSmokeTests(unittest.TestCase):
         view.close()
         window.close()
 
+    def test_word_list_pager_is_on_header_right(self):
+        window = QtWidgets.QMainWindow()
+        view = word_list_view.WordListView(window)
+        layout = view.header_navigation_row
+        self.assertLess(layout.indexOf(view.btn_prev), layout.indexOf(view.lbl_page))
+        self.assertLess(layout.indexOf(view.lbl_page), layout.indexOf(view.btn_next))
+        self.assertEqual(view.btn_prev.text(), "← 上一页")
+        self.assertEqual(view.btn_next.text(), "下一页 →")
+        self.assertIs(view.btn_prev.parent(), view.btn_show_both.parent())
+        view.close()
+        window.close()
+
+    def test_word_list_search_is_on_second_row_beside_left_controls(self):
+        window = QtWidgets.QMainWindow()
+        view = word_list_view.WordListView(window)
+        self.assertEqual(view.header_primary_row.indexOf(view.search_input), -1)
+        self.assertGreaterEqual(
+            view.header_display_row.indexOf(view.search_input), 0)
+        self.assertLess(
+            view.header_display_row.indexOf(view.btn_only_chinese),
+            view.header_display_row.indexOf(view.search_input),
+        )
+        self.assertGreaterEqual(
+            view.header_navigation_row.indexOf(view.initial_filter_combo), 0)
+        self.assertEqual(view.search_input.size().width(), 220)
+        view.close()
+        window.close()
+
     def test_word_list_can_filter_one_initial_and_search_within_it(self):
         window = QtWidgets.QMainWindow()
         view = word_list_view.WordListView(window)
@@ -603,6 +631,48 @@ class ChallengeUiSmokeTests(unittest.TestCase):
         manager.close()
         window.close()
 
+    def test_self_registered_pager_is_on_display_bar_right(self):
+        window = QtWidgets.QMainWindow()
+        manager = self_register_vocab_module.SelfRegisterVocabManager(
+            window,
+            initial_user_vocab_data=[{"word": "layout", "content": "布局"}],
+        )
+        layout = manager.display_layout
+        self.assertLess(
+            layout.indexOf(manager.prev_page_button),
+            layout.indexOf(manager.page_label),
+        )
+        self.assertLess(
+            layout.indexOf(manager.page_label),
+            layout.indexOf(manager.next_page_button),
+        )
+        self.assertEqual(manager.prev_page_button.text(), "← 上一页")
+        self.assertEqual(manager.next_page_button.text(), "下一页 →")
+        self.assertIs(
+            manager.prev_page_button.parent(), manager.btn_show_both.parent())
+        manager.close()
+        window.close()
+
+    def test_self_registered_search_filters_from_second_row(self):
+        window = QtWidgets.QMainWindow()
+        manager = self_register_vocab_module.SelfRegisterVocabManager(
+            window,
+            initial_user_vocab_data=[
+                {"word": "layout", "content": "布局"},
+                {"word": "search", "content": "搜索"},
+            ],
+        )
+        self.assertIs(manager.search_input.parent(), manager.btn_show_both.parent())
+        self.assertLess(
+            manager.display_layout.indexOf(manager.search_input),
+            manager.display_layout.indexOf(manager.prev_page_button),
+        )
+        manager.search_input.setText("搜索")
+        self.assertEqual(manager.vocab_table.item(0, 1).text(), "search")
+        self.assertEqual(manager.vocab_table.item(0, 2).text(), "搜索")
+        manager.close()
+        window.close()
+
     def test_trial_self_registration_stops_at_thirty_words(self):
         window = QtWidgets.QMainWindow()
         window.edition = TRIAL_EDITIONS["trial_gaokao"]
@@ -667,6 +737,28 @@ class ChallengeUiSmokeTests(unittest.TestCase):
         view.close()
         window.close()
 
+    def test_phrase_and_irregular_share_second_row_search(self):
+        window = QtWidgets.QMainWindow()
+        view = phrase_irregular_module.PhraseIrregularListView(window)
+        self.assertIs(view.table_search_input.parent(), view.display_mode_bar)
+        self.assertEqual(view.table_search_input.size().width(), 220)
+
+        phrase = next(
+            item for item in view.phrases if item.get("tier") == "core")
+        view.table_search_input.setText(phrase["p"])
+        self.assertGreaterEqual(view.phrase_table.rowCount(), 1)
+        self.assertEqual(view.phrase_table.item(0, 1).text(), phrase["p"])
+
+        view._show_table("irregular")
+        irregular = view.irregulars[0]
+        view.table_search_input.setText(irregular["infinitive"])
+        self.assertGreaterEqual(view.irregular_table.rowCount(), 1)
+        self.assertEqual(
+            view.irregular_table.item(0, 1).text(), irregular["infinitive"])
+        self.assertIn("原形", view.table_search_input.placeholderText())
+        view.close()
+        window.close()
+
     def test_irregular_tables_offer_memorization_display_modes(self):
         window = QtWidgets.QMainWindow()
         view = phrase_irregular_module.PhraseIrregularListView(window)
@@ -709,13 +801,11 @@ class ChallengeUiSmokeTests(unittest.TestCase):
         self.assertGreaterEqual(view.btn_export.minimumWidth(), 158)
         self.assertIn("#16a34a", view.btn_export.styleSheet())
         self.assertEqual(view.header_primary_row.indexOf(view.btn_mis) + 1,
-                         view.header_primary_row.indexOf(view.search_input))
-        self.assertEqual(view.header_primary_row.indexOf(view.search_input) + 1,
                          view.header_primary_row.indexOf(view.btn_export))
         self.assertEqual(view.header_display_row.indexOf(view.btn_only_chinese) + 1,
-                         view.header_display_row.indexOf(view.initial_filter_combo))
-        self.assertEqual(view.header_display_row.indexOf(view.initial_filter_combo) + 1,
-                         view.header_display_row.indexOf(view.btn_show_all_letters))
+                         view.header_display_row.indexOf(view.search_input))
+        self.assertEqual(view.header_navigation_row.indexOf(view.initial_filter_combo) + 1,
+                         view.header_navigation_row.indexOf(view.btn_show_all_letters))
         self.assertGreaterEqual(view.initial_filter_combo.width(), 205)
         self.assertEqual(view.btn_show_all_letters.text(), "显示全部")
         self.assertGreaterEqual(view.btn_show_both.minimumWidth(), 112)

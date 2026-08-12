@@ -157,7 +157,7 @@ class PurchaseActivationPanel(QtWidgets.QFrame):
             self.order_input.setFocus()
             return
         customer_info = (
-            "EngMaster客服核验信息\n"
+            "英思成客服核验信息\n"
             f"订单号：{order_number}\n"
             f"本机识别码：{self.machine_input.text()}\n"
             "请按此订单号核对对应登记记录和授权用途，并生成相应的累计激活码。"

@@ -13,7 +13,6 @@ from challenge_rounds import (
     ChallengeLearningStore,
     ChallengeRoundStore,
     atomic_write_json,
-    backup_learning_upgrade_once,
     backup_existing_file_once,
     round_summary_text,
 )
@@ -41,297 +40,6 @@ def _accepted_answer_texts(word_obj):
     }
 
 
-def _load_vocab_progress_aliases():
-    """Load old-to-new item hashes so corrected words keep round progress."""
-    try:
-        path = get_resource_path("assets/vocabulary_progress_aliases.json")
-        with open(path, "r", encoding="utf-8") as file:
-            data = json.load(file)
-        regular = data.get("regular", {}) if isinstance(data, dict) else {}
-        if isinstance(regular, dict):
-            return {"regular": regular}
-    except (FileNotFoundError, json.JSONDecodeError, OSError):
-        pass
-    return {}
-
-
-LEGACY_ANSWER_RECORD_MIGRATIONS = {
-    "afterward(s)": [
-        {
-            "word": "afterward",
-            "accepted_answers": ["afterward", "afterwards"],
-            "content": "[ˈɑːftəwəd(z)] ad. 后来",
-        }
-    ],
-    "backward(s)": [
-        {
-            "word": "backward",
-            "accepted_answers": ["backward", "backwards"],
-            "content": "[ˈbækwəd] ad. 向后",
-        }
-    ],
-    "department(缩Dept.)": [
-        {
-            "word": "department",
-            "content": "[dɪˈpɑːtmənt] n. 部门；（机关的）司，处；（大学的）系",
-        }
-    ],
-    "outward(s)": [
-        {
-            "word": "outward",
-            "accepted_answers": ["outward", "outwards"],
-            "content": "[ˈaʊtwəd] ad. 向外的，外出的",
-        }
-    ],
-    "the North (South) Pole": [
-        {
-            "word": "the North Pole",
-            "content": "[ðə nɔːθ pəʊl] （地球的）北极，极地",
-        },
-        {
-            "word": "the South Pole",
-            "content": "[ðə saʊθ pəʊl] （地球的）南极，极地",
-        },
-    ],
-    "toward(s)": [
-        {
-            "word": "toward",
-            "accepted_answers": ["toward", "towards"],
-            "content": "[təˈwɔːd] prep. 向，朝，对于",
-        }
-    ],
-}
-
-LEGACY_ANSWER_RECORD_CONTENTS = {
-    "afterward(s)": "[ˈɑːftəwəd(z)] ad. 后来",
-    "backward(s)": "[ˈbækwəd] ad. 向后",
-    "department(缩Dept.)": "[dɪˈpɑːtmənt] n. 部门；（机关的）司，处；（大学的）系",
-    "outward(s)": "[ˈaʊtwəd] ad. 向外的，外出的",
-    "the North (South) Pole": "[ðə nɔːθ (saʊθ) pəʊl] （地球的）北（南）极，极地",
-    "toward(s)": "[təˈwɔːd] prep. 向，朝，对于",
-}
-
-
-def _merge_migrated_mistake_records(records):
-    merged = []
-    by_word = {}
-    for record in records:
-        key = str(record.get("word", "")).strip().casefold()
-        existing = by_word.get(key)
-        if existing is None:
-            by_word[key] = record
-            merged.append(record)
-            continue
-        existing["correct_count"] = max(
-            int(existing.get("correct_count", 0)),
-            int(record.get("correct_count", 0)),
-        )
-        for field, value in record.items():
-            if field == "correct_count":
-                continue
-            if field not in existing or existing[field] in (None, "", [], {}):
-                existing[field] = value
-    return merged
-
-
-def _expand_migrated_keys(values, key_migrations):
-    expanded = []
-    for value in values if isinstance(values, list) else []:
-        expanded.extend(key_migrations.get(value, [value]))
-    return list(dict.fromkeys(expanded))
-
-
-def _merge_wrong_round_record(existing, incoming):
-    if not isinstance(existing, dict):
-        return dict(incoming) if isinstance(incoming, dict) else incoming
-    if not isinstance(incoming, dict):
-        return existing
-    merged = dict(existing)
-    merged["count"] = max(
-        int(existing.get("count", 0)),
-        int(incoming.get("count", 0)),
-    )
-    merged["last_round"] = max(
-        int(existing.get("last_round", 0)),
-        int(incoming.get("last_round", 0)),
-    )
-    return merged
-
-
-def _migrate_legacy_answer_data(data_dir):
-    """Migrate the six legacy answer rows before round stores load them."""
-    mistake_path = os.path.join(data_dir, "mistake_words.json")
-    original_mistakes = None
-    if os.path.isfile(mistake_path):
-        try:
-            with open(mistake_path, "r", encoding="utf-8") as file:
-                candidate = json.load(file)
-            if isinstance(candidate, list):
-                original_mistakes = candidate
-        except (OSError, UnicodeError, json.JSONDecodeError):
-            pass
-
-    migrated_mistakes = []
-    word_migrations = {
-        old_word: [replacement["word"] for replacement in replacements]
-        for old_word, replacements in LEGACY_ANSWER_RECORD_MIGRATIONS.items()
-    }
-    mistake_changed = False
-    legacy_mistake_keys = {}
-    for original in original_mistakes or []:
-        if not isinstance(original, dict):
-            migrated_mistakes.append(original)
-            continue
-        old_word = str(original.get("word", "")).strip()
-        replacements = LEGACY_ANSWER_RECORD_MIGRATIONS.get(old_word)
-        if not replacements:
-            migrated_mistakes.append(dict(original))
-            continue
-        mistake_changed = True
-        legacy_mistake_keys[
-            ChallengeRoundStore._base_key(original) + ":0"
-        ] = old_word
-        for replacement in replacements:
-            migrated = dict(original)
-            migrated.update(replacement)
-            if "accepted_answers" not in replacement:
-                migrated.pop("accepted_answers", None)
-            migrated_mistakes.append(migrated)
-
-    if original_mistakes is not None:
-        migrated_mistakes = _merge_migrated_mistake_records(
-            migrated_mistakes
-        )
-    key_migrations = {}
-    for old_word, new_words in word_migrations.items():
-        new_keys = [
-            ChallengeRoundStore._identity_key({"word": word}) + ":0"
-            for word in new_words
-        ]
-        old_identity_key = ChallengeRoundStore._identity_key(
-            {"word": old_word}
-        ) + ":0"
-        old_full_row_key = ChallengeRoundStore._base_key({
-            "word": old_word,
-            "content": LEGACY_ANSWER_RECORD_CONTENTS[old_word],
-        }) + ":0"
-        key_migrations[old_identity_key] = new_keys
-        key_migrations[old_full_row_key] = new_keys
-    for old_full_row_key, old_word in legacy_mistake_keys.items():
-        key_migrations[old_full_row_key] = [
-            ChallengeRoundStore._identity_key({"word": word}) + ":0"
-            for word in word_migrations[old_word]
-        ]
-
-    round_path = os.path.join(data_dir, "challenge_round_progress.json")
-    round_data = None
-    try:
-        with open(round_path, "r", encoding="utf-8") as file:
-            candidate = json.load(file)
-        if isinstance(candidate, dict):
-            round_data = candidate
-    except (FileNotFoundError, OSError, UnicodeError, json.JSONDecodeError):
-        pass
-
-    round_changed = False
-    if round_data is not None:
-        mode_inventory_counts = {
-            "regular": (3875, 3876),
-            "mistake_list": (
-                len(original_mistakes or []),
-                len(migrated_mistakes),
-            ),
-        }
-        for mode, (before_count, after_count) in mode_inventory_counts.items():
-            state = round_data.get("modes", {}).get(mode)
-            if not isinstance(state, dict):
-                continue
-            remaining_before = list(state.get("remaining", []))
-            completed_before = int(state.get("completed", 0))
-            remaining_after = _expand_migrated_keys(
-                remaining_before, key_migrations
-            )
-            wrong_before = list(state.get("wrong", []))
-            wrong_after = _expand_migrated_keys(
-                state.get("wrong", []), key_migrations
-            )
-            if remaining_after != remaining_before:
-                state["remaining"] = remaining_after
-                round_changed = True
-            if wrong_after != wrong_before:
-                state["wrong"] = wrong_after
-                round_changed = True
-            retry_key = state.get("retry_key")
-            if retry_key in key_migrations:
-                state["retry_key"] = key_migrations[retry_key][0]
-                round_changed = True
-            if completed_before + len(remaining_before) == before_count:
-                completed_after = max(0, after_count - len(remaining_after))
-                if completed_after != completed_before:
-                    state["completed"] = completed_after
-                    round_changed = True
-
-    learning_path = os.path.join(
-        data_dir, "challenge_learning_records.json"
-    )
-    learning_data = None
-    try:
-        with open(learning_path, "r", encoding="utf-8") as file:
-            candidate = json.load(file)
-        if isinstance(candidate, dict):
-            learning_data = candidate
-    except (FileNotFoundError, OSError, UnicodeError, json.JSONDecodeError):
-        pass
-
-    learning_changed = False
-    if learning_data is not None:
-        wrong_round_modes = learning_data.get("wrong_rounds", {})
-        mode_records_list = (
-            wrong_round_modes.values()
-            if isinstance(wrong_round_modes, dict)
-            else []
-        )
-        for mode_records in mode_records_list:
-            if not isinstance(mode_records, dict):
-                continue
-            for old_word, new_words in word_migrations.items():
-                old_key = f"word:{old_word.casefold()}"
-                old_record = mode_records.get(old_key)
-                if not isinstance(old_record, dict):
-                    continue
-                for new_word in new_words:
-                    new_key = f"word:{new_word.casefold()}"
-                    mode_records[new_key] = _merge_wrong_round_record(
-                        mode_records.get(new_key), old_record
-                    )
-                del mode_records[old_key]
-                learning_changed = True
-
-    if not (mistake_changed or round_changed or learning_changed):
-        return None
-
-    changed_paths = []
-    if mistake_changed:
-        changed_paths.append(mistake_path)
-    if round_changed:
-        changed_paths.append(round_path)
-    if learning_changed:
-        changed_paths.append(learning_path)
-    for path in changed_paths:
-        backup_existing_file_once(path, "answer_variants_migration")
-    if mistake_changed:
-        atomic_write_json(mistake_path, migrated_mistakes, indent=4)
-    if round_changed:
-        atomic_write_json(round_path, round_data)
-    if learning_changed:
-        atomic_write_json(learning_path, learning_data)
-    print(
-        "✅ 已迁移旧版可选答案词条："
-        f"{len(original_mistakes or [])} -> {len(migrated_mistakes)}"
-    )
-    return migrated_mistakes if mistake_changed else None
-
-
 class VocabManager(QObject):  # 继承自 QObject
     """
     词汇学习模块管理器，负责加载词汇、显示单词、检查用户输入和计时。
@@ -344,7 +52,7 @@ class VocabManager(QObject):  # 继承自 QObject
         self.edition = getattr(main_window_instance, "edition", None)
         self.regular_challenge_title = (
             self.edition.challenge_title if self.edition is not None
-            else "高考3800词闯关"
+            else "高中3800词闯关"
         )
 
         self.initial_vocabulary = initial_vocabulary
@@ -356,24 +64,9 @@ class VocabManager(QObject):  # 继承自 QObject
         self.mistake_word_file_path = get_writable_data_path(
             "mistake_words.json")
         backup_existing_file_once(self.mistake_word_file_path)
-        data_dir = os.path.dirname(self.mistake_word_file_path)
-        backup_learning_upgrade_once(data_dir, [
-            "mistake_words.json",
-            "mistake_phrases.json",
-            "mistake_irregular_verbs.json",
-            "user_registered_vocab.json",
-            "challenge_round_progress.json",
-            "challenge_learning_records.json",
-        ])
-        migrated_mistakes = _migrate_legacy_answer_data(data_dir)
-        if migrated_mistakes is not None:
-            self.initial_mistake_vocabulary = migrated_mistakes
         self.round_progress_path = get_writable_data_path(
             "challenge_round_progress.json")
-        self.round_store = ChallengeRoundStore(
-            self.round_progress_path,
-            key_aliases_by_mode=_load_vocab_progress_aliases(),
-        )
+        self.round_store = ChallengeRoundStore(self.round_progress_path)
         self.learning_store = ChallengeLearningStore(get_writable_data_path(
             "challenge_learning_records.json"))
         # Find the vocabulary page widget from the main window's stacked widget.
@@ -409,7 +102,6 @@ class VocabManager(QObject):  # 继承自 QObject
             self.btn_challenge_regular = QtWidgets.QPushButton(self.regular_challenge_title)
             self.btn_challenge_regular.setObjectName("btn_challenge_regular")
             self.btn_challenge_regular.setCheckable(True)  # 使按钮可选中
-            print("DEBUG: btn_challenge_regular created dynamically.")
         self.btn_challenge_regular.setText(self.regular_challenge_title)
 
         self.btn_challenge_mistake = self.vocab_page_widget.findChild(
@@ -419,7 +111,6 @@ class VocabManager(QObject):  # 继承自 QObject
             self.btn_challenge_mistake.setObjectName("btn_challenge_mistake")
             self.btn_challenge_mistake.setCheckable(True)  # 使按钮可选中
             # This line was moved up.
-            print("DEBUG: btn_challenge_mistake created dynamically.")
 
         # NEW: 自主录入闯关按钮
         self.btn_challenge_self_register = self.vocab_page_widget.findChild(
@@ -429,14 +120,12 @@ class VocabManager(QObject):  # 继承自 QObject
             self.btn_challenge_self_register.setObjectName(
                 "btn_challenge_self_register")
             self.btn_challenge_self_register.setCheckable(True)
-            print("DEBUG: btn_challenge_self_register created dynamically.")
 
         self.lbl_mistake_count = self.vocab_page_widget.findChild(
             QtWidgets.QLabel, "lbl_mistake_count")  # 查找现有标签
         if not self.lbl_mistake_count:  # 如果没找到，则创建
             self.lbl_mistake_count = QtWidgets.QLabel("错词表 (0 词)")
             self.lbl_mistake_count.setObjectName("lbl_mistake_count")
-            print("DEBUG: lbl_mistake_count created dynamically.")
 
         # NEW: 自主录入单词数标签
         self.lbl_self_register_count = self.vocab_page_widget.findChild(
@@ -445,7 +134,6 @@ class VocabManager(QObject):  # 继承自 QObject
             self.lbl_self_register_count = QtWidgets.QLabel("自主录入 (0 词)")
             self.lbl_self_register_count.setObjectName(
                 "lbl_self_register_count")
-            print("DEBUG: lbl_self_register_count created dynamically.")
 
         self.lbl_round_progress = QtWidgets.QLabel("")
         self.lbl_round_progress.setObjectName("lbl_round_progress")
@@ -779,8 +467,6 @@ class VocabManager(QObject):  # 继承自 QObject
                 else "assets/editions/gaokao/vocabulary.json"
             )
             vocab_path = get_resource_path(vocabulary_path)
-            print(
-                f"DEBUG: Attempting to load regular vocabulary from: {vocab_path}")
             if not os.path.exists(vocab_path):
                 print(
                     f"ERROR: Regular vocabulary file not found: {vocab_path}")
@@ -790,14 +476,12 @@ class VocabManager(QObject):  # 继承自 QObject
                 self.vocabulary = json.load(f)
                 random.shuffle(self.vocabulary)
             print(f"✅ 常规词汇表加载成功，共 {len(self.vocabulary)} 词。")
-            print(f"DEBUG: First 3 words loaded: {self.vocabulary[:3]}")
         except Exception as e:  # Use self.main_window for QMessageBox
             print(f"❌ 加载常规词汇表失败: {e}")
             self.vocabulary = [{"word": "apple", "content": "苹果", "pronunciation": "/ˈæpl/",
                                 "example": "An apple a day keeps the doctor away."}]  # Fallback with more details
             QMessageBox.warning(
                 self.main_window, "错误", f"加载常规词汇表失败: {e}\n请检查当前版本词汇文件。已加载默认词汇。")
-            print(f"DEBUG: Fallback vocabulary loaded: {self.vocabulary}")
 
     def _load_mistake_vocabulary(self):
         """
@@ -1018,26 +702,17 @@ class VocabManager(QObject):  # 继承自 QObject
 
         self._update_mistake_count_label()  # 确保在加载完词汇后更新标签
         self._update_self_register_count_label()  # NEW: 确保在加载完词汇后更新标签
-        print(
-            f"DEBUG: Active vocabulary after loading: {len(self.active_vocabulary)} words.")
         if not self.active_vocabulary:  # 如果两种模式都加载失败，提供一个默认词汇
             self.active_vocabulary = [{"word": "hello", "content": "你好", "pronunciation": "/həˈloʊ/",
                                        "example": "Hello, how are you?"}]  # Fallback with more details
 
-        had_round_state = self.round_store.has_mode(self.current_challenge_mode)
         self.active_vocabulary = self.round_store.activate(
             self.current_challenge_mode, self.active_vocabulary)
         self.current_idx = 0
         round_progress = self.round_store.progress(self.current_challenge_mode)
-        legacy_started = had_round_state and (
-            round_progress["round"] > 1
-            or round_progress["current"] > 1
-            or round_progress["wrong"] > 0
-        )
         self.learning_store.ensure_round(
             self.current_challenge_mode,
             round_progress,
-            started_before_tracking=legacy_started,
         )
         if self.current_challenge_mode == "regular":
             round_number = self.round_store.progress("regular")["round"]
@@ -1114,7 +789,6 @@ class VocabManager(QObject):  # 继承自 QObject
             self.v_input.setEnabled(False)
             self.btn_confirm.setEnabled(False)
             self.timer.stop()  # Ensure timer is stopped
-            print("DEBUG: Active vocabulary is empty, displaying error message.")
             return
         else:
             self.v_input.setEnabled(True)
@@ -1137,9 +811,6 @@ class VocabManager(QObject):  # 继承自 QObject
                 return
 
         curr = self.active_vocabulary[self.current_idx]
-        print(
-            f"DEBUG: Displaying word: {curr.get('word', 'N/A')}, content: {curr.get('content', 'N/A')}")
-
         # Apply normalization to the content before displaying
         normalized_content = _normalize_full_width_to_half_width(
             curr['content'])
@@ -1379,8 +1050,6 @@ class VocabManager(QObject):  # 继承自 QObject
             # NEW: 只有在常规闯关或错词闯关模式下才更新错词表
             if not already_retrying and self.current_challenge_mode in ["regular", "mistake_list", "self_register"]:
                 self._add_or_reset_mistake_word(current_word_obj)
-                print(
-                    f"DEBUG: Word '{current_word_obj['word']}' added/reset in mistake list.")
             self.v_input.selectAll()
             self.v_input.setFocus()
 

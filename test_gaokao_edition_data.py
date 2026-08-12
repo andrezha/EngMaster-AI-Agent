@@ -120,7 +120,7 @@ class GaokaoEditionDataTests(unittest.TestCase):
 
     def test_challenge_loads_nine_phrase_levels_and_clean_irregulars(self):
         with tempfile.TemporaryDirectory() as data_dir, mock.patch.dict(
-            os.environ, {"ENGMASTER_DATA_DIR": data_dir}
+            os.environ, {"RECALLLEX_DATA_DIR": data_dir}
         ):
             view = PhraseIrregularChallengeView(
                 SimpleNamespace(edition=EDITIONS["gaokao"])
@@ -132,7 +132,7 @@ class GaokaoEditionDataTests(unittest.TestCase):
 
     def test_full_gaokao_window_loads_all_three_data_sections(self):
         with tempfile.TemporaryDirectory() as data_dir, mock.patch.dict(
-            os.environ, {"ENGMASTER_DATA_DIR": data_dir}
+            os.environ, {"RECALLLEX_DATA_DIR": data_dir}
         ), mock.patch.object(main, "_app_settings", return_value=_MemorySettings()):
             window = main.EngMasterApplication("gaokao")
             deadline = time.monotonic() + 20
@@ -175,7 +175,7 @@ class GaokaoEditionDataTests(unittest.TestCase):
             self.assertEqual(about_page.objectName(), "about_copyright_view")
             self.assertEqual(about_page.tabs.count(), 3)
             self.assertIn(
-                "Copyright © 2026 EngMaster",
+                "Copyright © 2026 英思成（RecallLex）",
                 about_page.copyright_text_view.toPlainText(),
             )
             self.assertIn(

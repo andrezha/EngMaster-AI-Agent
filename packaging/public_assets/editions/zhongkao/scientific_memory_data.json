@@ -1,0 +1,2951 @@
+{
+  "schema_version": "2.0",
+  "source_vocabulary": "zhongkao-core",
+  "scene_catalogue_policy": "independently_curated_clear_junior_scenes_only",
+  "scene_group_size_limit": 12,
+  "scene_word_count": 712,
+  "scene_unique_word_count": 712,
+  "scene_excluded_word_count": 897,
+  "scene_groups": [
+    {
+      "id": "junior_scene:01:1",
+      "parent": "学校学习",
+      "title": "校园场所",
+      "subtitle": "学校里常见的地点和空间",
+      "records": [
+        "release-word-0525",
+        "release-word-0556",
+        "release-word-1256",
+        "release-word-1262",
+        "release-word-1506",
+        "release-word-1556",
+        "release-word-1989",
+        "release-word-2321",
+        "release-word-2820"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:02:1",
+      "parent": "学校学习",
+      "title": "课堂用品",
+      "subtitle": "上课、书写和整理学习资料时使用",
+      "records": [
+        "release-word-0310",
+        "release-word-0466",
+        "release-word-0761",
+        "release-word-0779",
+        "release-word-0955",
+        "release-word-1805",
+        "release-word-1935",
+        "release-word-1936",
+        "release-word-2285",
+        "release-word-2322"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:03:1",
+      "parent": "学校学习",
+      "title": "课程学习",
+      "subtitle": "课堂学习、作业和考试活动",
+      "records": [
+        "release-word-0522",
+        "release-word-0664",
+        "release-word-0891",
+        "release-word-0982",
+        "release-word-1326",
+        "release-word-1549",
+        "release-word-2041",
+        "release-word-2088",
+        "release-word-2327",
+        "release-word-2577",
+        "release-word-2682"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:04:1",
+      "parent": "学校学习",
+      "title": "学校学科 · 1",
+      "subtitle": "初中阶段常见课程名称",
+      "records": [
+        "release-word-0170",
+        "release-word-0301",
+        "release-word-0489",
+        "release-word-0498",
+        "release-word-0933",
+        "release-word-1192",
+        "release-word-1222"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "形容词",
+        "形容词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:04:2",
+      "parent": "学校学习",
+      "title": "学校学科 · 2",
+      "subtitle": "初中阶段常见课程名称",
+      "records": [
+        "release-word-1318",
+        "release-word-1574",
+        "release-word-1637",
+        "release-word-1743",
+        "release-word-1931",
+        "release-word-1964",
+        "release-word-2323"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:05:1",
+      "parent": "学校学习",
+      "title": "语言学习 · 1",
+      "subtitle": "英语听说读写和语言知识",
+      "records": [
+        "release-word-0638",
+        "release-word-0776",
+        "release-word-1516",
+        "release-word-1571",
+        "release-word-1647",
+        "release-word-1907",
+        "release-word-2091"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "动词",
+        "名词",
+        "名词",
+        "动词"
+      ]
+    },
+    {
+      "id": "junior_scene:05:2",
+      "parent": "学校学习",
+      "title": "语言学习 · 2",
+      "subtitle": "英语听说读写和语言知识",
+      "records": [
+        "release-word-2157",
+        "release-word-2354",
+        "release-word-2504",
+        "release-word-2512",
+        "release-word-2772",
+        "release-word-2969",
+        "release-word-2985"
+      ],
+      "hints": [
+        "动词",
+        "名词",
+        "动词",
+        "动词",
+        "动词",
+        "名词",
+        "动词"
+      ]
+    },
+    {
+      "id": "junior_scene:06:1",
+      "parent": "家庭生活",
+      "title": "家庭成员 · 1",
+      "subtitle": "家庭和亲属关系中的人物",
+      "records": [
+        "release-word-0205",
+        "release-word-0376",
+        "release-word-0495",
+        "release-word-0666",
+        "release-word-0714",
+        "release-word-1035",
+        "release-word-1047",
+        "release-word-1226",
+        "release-word-1227"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:06:2",
+      "parent": "家庭生活",
+      "title": "家庭成员 · 2",
+      "subtitle": "家庭和亲属关系中的人物",
+      "records": [
+        "release-word-1355",
+        "release-word-1721",
+        "release-word-1910",
+        "release-word-2197",
+        "release-word-2428",
+        "release-word-2488",
+        "release-word-2812",
+        "release-word-2943"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "形容词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:07:1",
+      "parent": "家庭生活",
+      "title": "年龄阶段",
+      "subtitle": "从婴儿到老年的常见年龄称呼",
+      "records": [
+        "release-word-0054",
+        "release-word-0223",
+        "release-word-0337",
+        "release-word-0902",
+        "release-word-1479",
+        "release-word-1489",
+        "junior-word-0028",
+        "release-word-2997",
+        "release-word-3001"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "名词",
+        "形容词",
+        "形容词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:08:1",
+      "parent": "家庭生活",
+      "title": "住宅房间 · 1",
+      "subtitle": "家中的房间、区域和基本结构",
+      "records": [
+        "release-word-0141",
+        "release-word-0255",
+        "release-word-0272",
+        "release-word-0839",
+        "release-word-1100",
+        "release-word-1178",
+        "release-word-1181"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:08:2",
+      "parent": "家庭生活",
+      "title": "住宅房间 · 2",
+      "subtitle": "家中的房间、区域和基本结构",
+      "records": [
+        "release-word-1324",
+        "release-word-1338",
+        "release-word-1499",
+        "release-word-2270",
+        "release-word-2740",
+        "release-word-2883",
+        "release-word-2949"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:09:1",
+      "parent": "家庭生活",
+      "title": "家具家电",
+      "subtitle": "家庭中常见的家具和电器",
+      "records": [
+        "release-word-0271",
+        "release-word-0463",
+        "release-word-0536",
+        "release-word-1037",
+        "release-word-1151",
+        "release-word-1513",
+        "release-word-1691",
+        "junior-word-0019",
+        "release-word-2388",
+        "release-word-2406",
+        "release-word-2471",
+        "release-word-2640"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:10:1",
+      "parent": "家庭生活",
+      "title": "家务劳动",
+      "subtitle": "整理、清洁和照料家庭",
+      "records": [
+        "junior-word-0006",
+        "release-word-0527",
+        "release-word-0640",
+        "release-word-1340",
+        "release-word-2630",
+        "release-word-2725",
+        "release-word-2892"
+      ],
+      "hints": [
+        "名词",
+        "形容词",
+        "名词",
+        "名词",
+        "动词",
+        "形容词",
+        "动词"
+      ]
+    },
+    {
+      "id": "junior_scene:11:1",
+      "parent": "饮食健康",
+      "title": "一日三餐",
+      "subtitle": "进餐时间、餐食和用餐活动",
+      "records": [
+        "release-word-0359",
+        "release-word-0793",
+        "release-word-0858",
+        "release-word-0886",
+        "release-word-1113",
+        "release-word-1603",
+        "release-word-1645",
+        "release-word-1967",
+        "release-word-2239",
+        "release-word-2460"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "动词",
+        "动词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:12:1",
+      "parent": "饮食健康",
+      "title": "餐具容器",
+      "subtitle": "盛放、制作和食用食物的物品",
+      "records": [
+        "release-word-0349",
+        "release-word-0503",
+        "release-word-0692",
+        "release-word-0813",
+        "release-word-1125",
+        "release-word-1502",
+        "release-word-1985",
+        "release-word-2034",
+        "release-word-2517"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:13:1",
+      "parent": "饮食健康",
+      "title": "水果",
+      "subtitle": "常见水果",
+      "records": [
+        "release-word-0148",
+        "release-word-0238",
+        "release-word-1230",
+        "release-word-1545",
+        "release-word-1862",
+        "release-word-1934",
+        "release-word-2562",
+        "release-word-2897"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:14:1",
+      "parent": "饮食健康",
+      "title": "蔬菜",
+      "subtitle": "常见蔬菜和植物性食材",
+      "records": [
+        "release-word-0262",
+        "release-word-0395",
+        "release-word-0435",
+        "release-word-0646",
+        "junior-word-0007",
+        "release-word-1846",
+        "release-word-1938",
+        "release-word-2035",
+        "release-word-2742",
+        "release-word-2849"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:15:1",
+      "parent": "饮食健康",
+      "title": "主食小吃 · 1",
+      "subtitle": "常见主食、甜点和小吃",
+      "records": [
+        "release-word-0263",
+        "release-word-0305",
+        "release-word-0357",
+        "release-word-0399",
+        "release-word-0419",
+        "release-word-0499",
+        "release-word-0641",
+        "release-word-0867",
+        "release-word-1264"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:15:2",
+      "parent": "饮食健康",
+      "title": "主食小吃 · 2",
+      "subtitle": "常见主食、甜点和小吃",
+      "records": [
+        "release-word-1796",
+        "release-word-1902",
+        "release-word-1969",
+        "junior-word-0022",
+        "junior-word-0023",
+        "release-word-2250",
+        "release-word-2305",
+        "release-word-2496"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:16:1",
+      "parent": "饮食健康",
+      "title": "肉蛋奶饮品 · 1",
+      "subtitle": "常见肉类、奶制品和饮料",
+      "records": [
+        "release-word-0273",
+        "release-word-0391",
+        "release-word-0485",
+        "release-word-0493",
+        "release-word-0549",
+        "release-word-0673",
+        "release-word-0896",
+        "release-word-1328"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:16:2",
+      "parent": "饮食健康",
+      "title": "肉蛋奶饮品 · 2",
+      "subtitle": "常见肉类、奶制品和饮料",
+      "records": [
+        "release-word-1474",
+        "release-word-1650",
+        "release-word-1680",
+        "junior-word-0016",
+        "release-word-2022",
+        "release-word-2657",
+        "release-word-2995"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:17:1",
+      "parent": "饮食健康",
+      "title": "健康饮食",
+      "subtitle": "饮食习惯、味道和营养状态",
+      "records": [
+        "release-word-0744",
+        "release-word-0781",
+        "release-word-1148",
+        "release-word-1289",
+        "release-word-1350",
+        "release-word-2300",
+        "release-word-2597",
+        "release-word-2631",
+        "release-word-2706"
+      ],
+      "hints": [
+        "形容词",
+        "名词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "名词",
+        "名词",
+        "形容词",
+        "形容词"
+      ]
+    },
+    {
+      "id": "junior_scene:18:1",
+      "parent": "身体健康",
+      "title": "身体部位 · 1",
+      "subtitle": "人体常见部位",
+      "records": [
+        "release-word-0163",
+        "release-word-0224",
+        "release-word-0319",
+        "release-word-0325",
+        "release-word-0354",
+        "release-word-0877",
+        "release-word-1020",
+        "release-word-1022",
+        "release-word-1082",
+        "release-word-1114",
+        "release-word-1260",
+        "release-word-1265"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:18:2",
+      "parent": "身体健康",
+      "title": "身体部位 · 2",
+      "subtitle": "人体常见部位",
+      "records": [
+        "release-word-1286",
+        "release-word-1291",
+        "release-word-1501",
+        "release-word-1542",
+        "release-word-1729",
+        "release-word-1763",
+        "release-word-1802",
+        "release-word-2403",
+        "release-word-2549",
+        "release-word-3700",
+        "release-word-2749"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:19:1",
+      "parent": "身体健康",
+      "title": "疾病症状 · 1",
+      "subtitle": "常见疾病、疼痛和身体不适",
+      "records": [
+        "release-word-0027",
+        "release-word-0416",
+        "release-word-0655",
+        "release-word-0812",
+        "release-word-1063",
+        "release-word-1104",
+        "release-word-1368"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "形容词"
+      ]
+    },
+    {
+      "id": "junior_scene:19:2",
+      "parent": "身体健康",
+      "title": "疾病症状 · 2",
+      "subtitle": "常见疾病、疼痛和身体不适",
+      "records": [
+        "release-word-1370",
+        "release-word-1896",
+        "release-word-2409",
+        "junior-word-0026",
+        "release-word-2732",
+        "release-word-2863",
+        "release-word-2980"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:20:1",
+      "parent": "身体健康",
+      "title": "医院就医",
+      "subtitle": "医院中的人员、用品和健康照护",
+      "records": [
+        "release-word-0748",
+        "release-word-0830",
+        "release-word-1288",
+        "release-word-1333",
+        "release-word-1654",
+        "release-word-1816",
+        "release-word-1928",
+        "release-word-2988"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:21:1",
+      "parent": "身体健康",
+      "title": "身体状态",
+      "subtitle": "身体能力、感官和休息状态",
+      "records": [
+        "release-word-0089",
+        "release-word-0180",
+        "release-word-0216",
+        "release-word-0316",
+        "release-word-0716",
+        "release-word-0718",
+        "release-word-1090",
+        "release-word-2445",
+        "release-word-2572",
+        "release-word-2901"
+      ],
+      "hints": [
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "名词",
+        "形容词",
+        "形容词"
+      ]
+    },
+    {
+      "id": "junior_scene:22:1",
+      "parent": "交通旅行",
+      "title": "道路交通",
+      "subtitle": "道路、车辆和日常通行",
+      "records": [
+        "release-word-0298",
+        "release-word-0386",
+        "release-word-0427",
+        "release-word-0545",
+        "release-word-0860",
+        "release-word-1920",
+        "release-word-2261",
+        "release-word-2537",
+        "release-word-2564",
+        "release-word-2656",
+        "release-word-2768",
+        "release-word-2786"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:23:1",
+      "parent": "交通旅行",
+      "title": "长途交通",
+      "subtitle": "长途交通工具和交通地点",
+      "records": [
+        "release-word-0086",
+        "release-word-1981",
+        "release-word-2139",
+        "release-word-2392",
+        "release-word-2769"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:24:1",
+      "parent": "交通旅行",
+      "title": "水域与船只",
+      "subtitle": "江河湖海和常见水上交通工具",
+      "records": [
+        "release-word-0324",
+        "release-word-0547",
+        "release-word-1450",
+        "release-word-1511",
+        "release-word-1828",
+        "release-word-2260",
+        "release-word-2331"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:25:1",
+      "parent": "交通旅行",
+      "title": "旅行度假 · 1",
+      "subtitle": "旅行、参观、住宿和假期活动",
+      "records": [
+        "release-word-0408",
+        "release-word-1250",
+        "release-word-1311",
+        "release-word-1323",
+        "release-word-1336",
+        "release-word-1471",
+        "release-word-1741",
+        "release-word-1923"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:25:2",
+      "parent": "交通旅行",
+      "title": "旅行度假 · 2",
+      "subtitle": "旅行、参观、住宿和假期活动",
+      "records": [
+        "release-word-3687",
+        "release-word-2724",
+        "release-word-2756",
+        "release-word-2757",
+        "release-word-2775",
+        "release-word-2783",
+        "release-word-2839",
+        "release-word-2866"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "动词",
+        "名词",
+        "名词",
+        "动词"
+      ]
+    },
+    {
+      "id": "junior_scene:26:1",
+      "parent": "交通旅行",
+      "title": "移动动作 · 1",
+      "subtitle": "出发、到达和途中移动",
+      "records": [
+        "release-word-0168",
+        "release-word-0534",
+        "release-word-0685",
+        "release-word-0859",
+        "release-word-0939",
+        "release-word-1106",
+        "release-word-1208",
+        "release-word-1539"
+      ],
+      "hints": [
+        "动词",
+        "动词",
+        "动词",
+        "动词",
+        "动词",
+        "动词",
+        "动词",
+        "动词"
+      ]
+    },
+    {
+      "id": "junior_scene:26:2",
+      "parent": "交通旅行",
+      "title": "移动动作 · 2",
+      "subtitle": "出发、到达和途中移动",
+      "records": [
+        "release-word-2154",
+        "release-word-2244",
+        "release-word-2253",
+        "release-word-2286",
+        "release-word-2552",
+        "release-word-2797",
+        "release-word-2882"
+      ],
+      "hints": [
+        "动词",
+        "动词",
+        "动词",
+        "动词",
+        "动词",
+        "动词",
+        "动词"
+      ]
+    },
+    {
+      "id": "junior_scene:27:1",
+      "parent": "自然世界",
+      "title": "天气气候 · 1",
+      "subtitle": "天气状态和气象现象",
+      "records": [
+        "release-word-0533",
+        "release-word-0541",
+        "release-word-0542",
+        "release-word-3303",
+        "release-word-2140",
+        "release-word-2463",
+        "release-word-2554"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "形容词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:27:2",
+      "parent": "自然世界",
+      "title": "天气气候 · 2",
+      "subtitle": "天气状态和气象现象",
+      "records": [
+        "release-word-2607",
+        "release-word-2670",
+        "release-word-2721",
+        "release-word-2905",
+        "release-word-2948",
+        "release-word-2950"
+      ],
+      "hints": [
+        "形容词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "形容词"
+      ]
+    },
+    {
+      "id": "junior_scene:28:1",
+      "parent": "自然世界",
+      "title": "四季时段",
+      "subtitle": "季节和一天中的常见时段",
+      "records": [
+        "release-word-0070",
+        "release-word-0212",
+        "release-word-0970",
+        "release-word-1717",
+        "release-word-1784",
+        "release-word-1797",
+        "release-word-2333",
+        "release-word-2521",
+        "release-word-2604",
+        "release-word-2954"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:29:1",
+      "parent": "自然世界",
+      "title": "山川地貌 · 1",
+      "subtitle": "陆地上的自然环境和地形",
+      "records": [
+        "release-word-0261",
+        "release-word-0660",
+        "release-word-0757",
+        "release-word-1067",
+        "release-word-1121",
+        "release-word-1242",
+        "release-word-1312"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:29:2",
+      "parent": "自然世界",
+      "title": "山川地貌 · 2",
+      "subtitle": "陆地上的自然环境和地形",
+      "records": [
+        "release-word-1514",
+        "release-word-1515",
+        "release-word-1727",
+        "release-word-2264",
+        "release-word-2304",
+        "release-word-2551"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:30:1",
+      "parent": "自然世界",
+      "title": "天空宇宙",
+      "subtitle": "天空、天体和宇宙",
+      "records": [
+        "release-word-1713",
+        "release-word-1982",
+        "release-word-2141",
+        "release-word-2265",
+        "release-word-2444",
+        "release-word-2532",
+        "release-word-2605",
+        "release-word-2819",
+        "release-word-2972"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:31:1",
+      "parent": "自然世界",
+      "title": "植物花木",
+      "subtitle": "常见植物及其组成部分",
+      "records": [
+        "release-word-0236",
+        "release-word-1103",
+        "release-word-1232",
+        "release-word-1533",
+        "release-word-1983",
+        "release-word-2273",
+        "release-word-2779",
+        "release-word-2967"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:32:1",
+      "parent": "动物世界",
+      "title": "昆虫鸟类",
+      "subtitle": "昆虫和常见鸟类",
+      "records": [
+        "release-word-0128",
+        "release-word-3096",
+        "release-word-0302",
+        "release-word-3125",
+        "release-word-0865",
+        "release-word-0876",
+        "release-word-1298",
+        "release-word-1410"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:33:1",
+      "parent": "动物世界",
+      "title": "家养动物",
+      "subtitle": "家庭或农场中常见的动物",
+      "records": [
+        "release-word-0443",
+        "release-word-0669",
+        "release-word-0832",
+        "release-word-1332",
+        "release-word-1954",
+        "release-word-1971",
+        "release-word-2133",
+        "release-word-2386"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:34:1",
+      "parent": "动物世界",
+      "title": "野生动物",
+      "subtitle": "陆地上的常见野生动物",
+      "records": [
+        "release-word-0264",
+        "release-word-0909",
+        "release-word-1139",
+        "release-word-1199",
+        "release-word-1568",
+        "release-word-1709",
+        "release-word-1903",
+        "junior-word-0020",
+        "release-word-2461",
+        "release-word-2727",
+        "release-word-3787"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:35:1",
+      "parent": "动物世界",
+      "title": "水生动物",
+      "subtitle": "生活在水中或水边的动物",
+      "records": [
+        "release-word-1087",
+        "release-word-2382",
+        "release-word-2923"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:36:1",
+      "parent": "动物世界",
+      "title": "动物身体",
+      "subtitle": "描述动物时常见的身体部位",
+      "records": [
+        "release-word-2643",
+        "release-word-2952"
+      ],
+      "hints": [
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:37:1",
+      "parent": "穿着外貌",
+      "title": "日常服装 · 1",
+      "subtitle": "日常穿着的衣物",
+      "records": [
+        "release-word-0320",
+        "release-word-0421",
+        "release-word-0540",
+        "release-word-0548",
+        "release-word-0856",
+        "release-word-1281",
+        "release-word-1456",
+        "release-word-1463"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:37:2",
+      "parent": "穿着外貌",
+      "title": "日常服装 · 2",
+      "subtitle": "日常穿着的衣物",
+      "records": [
+        "release-word-2393",
+        "release-word-2401",
+        "release-word-2443",
+        "release-word-2600",
+        "release-word-2629",
+        "release-word-2792",
+        "release-word-2785",
+        "release-word-2816"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:38:1",
+      "parent": "穿着外貌",
+      "title": "衣物细节与配饰",
+      "subtitle": "鞋袜、衣物细节和随身配饰",
+      "records": [
+        "release-word-0287",
+        "release-word-1206",
+        "release-word-1998",
+        "release-word-2317",
+        "release-word-2395",
+        "release-word-2470",
+        "release-word-2884"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:39:1",
+      "parent": "穿着外貌",
+      "title": "人物外貌",
+      "subtitle": "描述人的外表和体型",
+      "records": [
+        "release-word-0267",
+        "release-word-0701",
+        "release-word-1046",
+        "release-word-1269",
+        "release-word-1597",
+        "release-word-2059",
+        "release-word-2450",
+        "release-word-2649",
+        "release-word-2808"
+      ],
+      "hints": [
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词"
+      ]
+    },
+    {
+      "id": "junior_scene:40:1",
+      "parent": "颜色形状",
+      "title": "常见颜色 · 1",
+      "subtitle": "基础颜色和明暗",
+      "records": [
+        "release-word-0309",
+        "release-word-0322",
+        "release-word-0368",
+        "release-word-0377",
+        "release-word-0557",
+        "release-word-0710",
+        "release-word-1237"
+      ],
+      "hints": [
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "名词",
+        "形容词",
+        "形容词"
+      ]
+    },
+    {
+      "id": "junior_scene:40:2",
+      "parent": "颜色形状",
+      "title": "常见颜色 · 2",
+      "subtitle": "基础颜色和明暗",
+      "records": [
+        "release-word-1240",
+        "release-word-1974",
+        "release-word-2115",
+        "release-word-2180",
+        "release-word-2935",
+        "release-word-2991"
+      ],
+      "hints": [
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词"
+      ]
+    },
+    {
+      "id": "junior_scene:41:1",
+      "parent": "颜色形状",
+      "title": "形状大小 · 1",
+      "subtitle": "常见形状和大小描述",
+      "records": [
+        "release-word-0297",
+        "release-word-0509",
+        "release-word-1095",
+        "release-word-1345",
+        "release-word-1520",
+        "release-word-1589",
+        "release-word-1750",
+        "release-word-2274"
+      ],
+      "hints": [
+        "形容词",
+        "名词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词"
+      ]
+    },
+    {
+      "id": "junior_scene:41:2",
+      "parent": "颜色形状",
+      "title": "形状大小 · 2",
+      "subtitle": "常见形状和大小描述",
+      "records": [
+        "release-word-2399",
+        "release-word-2453",
+        "release-word-2523",
+        "release-word-2556",
+        "release-word-2700",
+        "release-word-2701",
+        "release-word-2730",
+        "release-word-2941"
+      ],
+      "hints": [
+        "形容词",
+        "形容词",
+        "名词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词"
+      ]
+    },
+    {
+      "id": "junior_scene:42:1",
+      "parent": "运动娱乐",
+      "title": "球类运动",
+      "subtitle": "常见球类和持拍运动",
+      "records": [
+        "release-word-0229",
+        "release-word-0247",
+        "release-word-0252",
+        "release-word-1115",
+        "junior-word-0021",
+        "release-word-2676",
+        "release-word-2874"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:43:1",
+      "parent": "运动娱乐",
+      "title": "运动比赛 · 1",
+      "subtitle": "体育人物、比赛和训练",
+      "records": [
+        "release-word-0192",
+        "release-word-0468",
+        "release-word-0578",
+        "release-word-0992",
+        "release-word-1175",
+        "release-word-1635",
+        "junior-word-0017"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "动词",
+        "名词",
+        "名词",
+        "名词",
+        "形容词"
+      ]
+    },
+    {
+      "id": "junior_scene:43:2",
+      "parent": "运动娱乐",
+      "title": "运动比赛 · 2",
+      "subtitle": "体育人物、比赛和训练",
+      "records": [
+        "release-word-2134",
+        "release-word-2518",
+        "release-word-2660",
+        "junior-word-0027",
+        "release-word-2770",
+        "release-word-2947",
+        "release-word-2953"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "动词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:44:1",
+      "parent": "运动娱乐",
+      "title": "个人运动与棋类",
+      "subtitle": "常见个人运动项目和棋类活动",
+      "records": [
+        "release-word-0490",
+        "release-word-1476",
+        "junior-word-0013",
+        "release-word-2437",
+        "release-word-2439",
+        "release-word-2632"
+      ],
+      "hints": [
+        "名词",
+        "动词",
+        "名词",
+        "名词",
+        "名词",
+        "动词"
+      ]
+    },
+    {
+      "id": "junior_scene:45:1",
+      "parent": "文化娱乐",
+      "title": "音乐舞台",
+      "subtitle": "音乐、舞蹈和舞台表演",
+      "records": [
+        "release-word-0595",
+        "release-word-0706",
+        "release-word-0851",
+        "release-word-1253",
+        "release-word-1851",
+        "release-word-3492",
+        "release-word-1965",
+        "release-word-2424",
+        "release-word-2489",
+        "release-word-2688",
+        "release-word-2860"
+      ],
+      "hints": [
+        "名词",
+        "动词",
+        "名词",
+        "名词",
+        "名词",
+        "动词",
+        "名词",
+        "动词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:46:1",
+      "parent": "文化娱乐",
+      "title": "影视阅读 · 1",
+      "subtitle": "影视、故事和阅读材料",
+      "records": [
+        "release-word-0171",
+        "release-word-0331",
+        "release-word-0437",
+        "release-word-0508",
+        "release-word-0778",
+        "release-word-1075",
+        "release-word-1609"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:46:2",
+      "parent": "文化娱乐",
+      "title": "影视阅读 · 2",
+      "subtitle": "影视、故事和阅读材料",
+      "records": [
+        "release-word-1732",
+        "release-word-1779",
+        "release-word-1780",
+        "release-word-1808",
+        "release-word-1999",
+        "release-word-2555",
+        "release-word-2668"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:47:1",
+      "parent": "文化娱乐",
+      "title": "节日庆祝",
+      "subtitle": "节日、庆祝和聚会活动",
+      "records": [
+        "release-word-0304",
+        "release-word-0451",
+        "release-word-0505",
+        "release-word-1061",
+        "junior-word-0010",
+        "release-word-1197",
+        "release-word-1917"
+      ],
+      "hints": [
+        "名词",
+        "动词",
+        "词语",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:48:1",
+      "parent": "科技媒体",
+      "title": "电脑网络 · 1",
+      "subtitle": "电脑、网络和数字技术",
+      "records": [
+        "junior-word-0002",
+        "release-word-0150",
+        "junior-word-0005",
+        "release-word-0591",
+        "release-word-0789",
+        "release-word-0844",
+        "release-word-0913",
+        "release-word-1435"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "形容词",
+        "动词",
+        "名词",
+        "词语"
+      ]
+    },
+    {
+      "id": "junior_scene:48:2",
+      "parent": "科技媒体",
+      "title": "电脑网络 · 2",
+      "subtitle": "电脑、网络和数字技术",
+      "records": [
+        "release-word-1487",
+        "release-word-1519",
+        "release-word-1847",
+        "release-word-2263",
+        "release-word-2329",
+        "release-word-2664",
+        "release-word-2906"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "形容词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:49:1",
+      "parent": "科技媒体",
+      "title": "通讯影像",
+      "subtitle": "通信、拍摄和大众媒体设备",
+      "records": [
+        "release-word-0407",
+        "release-word-1669",
+        "release-word-1959",
+        "release-word-1960",
+        "release-word-2137",
+        "release-word-2856"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:50:1",
+      "parent": "社会生活",
+      "title": "常见职业 · 1",
+      "subtitle": "社会生活中常见的工作",
+      "records": [
+        "release-word-0038",
+        "release-word-0039",
+        "release-word-0173",
+        "release-word-0339",
+        "release-word-0931",
+        "release-word-1043",
+        "junior-word-0009",
+        "junior-word-0011",
+        "release-word-1527"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:50:2",
+      "parent": "社会生活",
+      "title": "常见职业 · 2",
+      "subtitle": "社会生活中常见的工作",
+      "records": [
+        "release-word-1836",
+        "release-word-1973",
+        "release-word-2007",
+        "release-word-2008",
+        "release-word-2032",
+        "release-word-2325",
+        "release-word-2476",
+        "release-word-2659",
+        "release-word-2971"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:51:1",
+      "parent": "社会生活",
+      "title": "城市建筑",
+      "subtitle": "城市中常见的建筑和公共地点",
+      "records": [
+        "release-word-0240",
+        "release-word-0366",
+        "release-word-0382",
+        "release-word-1027",
+        "release-word-1835",
+        "release-word-1899",
+        "release-word-1911",
+        "release-word-2761",
+        "release-word-3004"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:52:1",
+      "parent": "社会生活",
+      "title": "社区人物",
+      "subtitle": "身边的人和社区关系",
+      "records": [
+        "release-word-0524",
+        "release-word-1152",
+        "release-word-1248",
+        "release-word-1334",
+        "release-word-1768",
+        "release-word-1916",
+        "release-word-2876"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:53:1",
+      "parent": "社会生活",
+      "title": "国家与城市 · 1",
+      "subtitle": "国家、城乡和公共社会",
+      "records": [
+        "release-word-0424",
+        "release-word-0514",
+        "release-word-0515",
+        "release-word-0574",
+        "release-word-0659",
+        "release-word-1216",
+        "release-word-1325"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:53:2",
+      "parent": "社会生活",
+      "title": "国家与城市 · 2",
+      "subtitle": "国家、城乡和公共社会",
+      "records": [
+        "release-word-1751",
+        "release-word-2107",
+        "release-word-2469",
+        "release-word-2536",
+        "release-word-2762",
+        "release-word-2858"
+      ],
+      "hints": [
+        "名词",
+        "形容词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:54:1",
+      "parent": "社会生活",
+      "title": "购物消费 · 1",
+      "subtitle": "商店、商品和买卖行为",
+      "records": [
+        "release-word-0393",
+        "release-word-0440",
+        "release-word-0480",
+        "release-word-0651",
+        "release-word-0699",
+        "release-word-1001",
+        "junior-word-0015",
+        "release-word-1629",
+        "release-word-1707"
+      ],
+      "hints": [
+        "动词",
+        "名词",
+        "形容词",
+        "名词",
+        "名词",
+        "形容词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:54:2",
+      "parent": "社会生活",
+      "title": "购物消费 · 2",
+      "subtitle": "商店、商品和买卖行为",
+      "records": [
+        "release-word-1930",
+        "release-word-2062",
+        "release-word-2079",
+        "release-word-2297",
+        "release-word-2349",
+        "release-word-2397",
+        "release-word-2553",
+        "release-word-2611"
+      ],
+      "hints": [
+        "动词",
+        "名词",
+        "名词",
+        "名词",
+        "动词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:55:1",
+      "parent": "社会生活",
+      "title": "人物称谓 · 1",
+      "subtitle": "常见礼貌称谓和身份头衔",
+      "records": [
+        "release-word-0918",
+        "junior-word-0008",
+        "release-word-1495",
+        "release-word-1510",
+        "release-word-1608",
+        "release-word-1733",
+        "release-word-1734"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "词语",
+        "词语"
+      ]
+    },
+    {
+      "id": "junior_scene:55:2",
+      "parent": "社会生活",
+      "title": "人物称谓 · 2",
+      "subtitle": "常见礼貌称谓和身份头衔",
+      "records": [
+        "release-word-1735",
+        "release-word-2055",
+        "junior-word-0024",
+        "junior-word-0025",
+        "release-word-2126",
+        "release-word-2427"
+      ],
+      "hints": [
+        "词语",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:56:1",
+      "parent": "情感交往",
+      "title": "正面情绪",
+      "subtitle": "快乐、希望和积极感受",
+      "records": [
+        "release-word-0404",
+        "release-word-0989",
+        "release-word-1202",
+        "release-word-1273",
+        "release-word-1330",
+        "release-word-1472",
+        "release-word-1596",
+        "release-word-1992",
+        "release-word-2063",
+        "release-word-2101",
+        "release-word-2966"
+      ],
+      "hints": [
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "动词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "形容词",
+        "形容词"
+      ]
+    },
+    {
+      "id": "junior_scene:57:1",
+      "parent": "情感交往",
+      "title": "负面情绪",
+      "subtitle": "害怕、难过和紧张感受",
+      "records": [
+        "release-word-0066",
+        "release-word-0120",
+        "release-word-1051",
+        "release-word-1283",
+        "release-word-1772",
+        "release-word-2192",
+        "release-word-2291",
+        "release-word-2316",
+        "release-word-2379",
+        "release-word-2394",
+        "release-word-2492",
+        "release-word-2973"
+      ],
+      "hints": [
+        "形容词",
+        "形容词",
+        "名词",
+        "动词",
+        "形容词",
+        "动词",
+        "形容词",
+        "动词",
+        "名词",
+        "名词",
+        "形容词",
+        "动词"
+      ]
+    },
+    {
+      "id": "junior_scene:58:1",
+      "parent": "情感交往",
+      "title": "良好品格",
+      "subtitle": "与人相处时的积极品质",
+      "records": [
+        "release-word-0356",
+        "release-word-0432",
+        "release-word-0675",
+        "release-word-0695",
+        "release-word-1153",
+        "release-word-1297",
+        "release-word-1327",
+        "release-word-1493",
+        "release-word-2011",
+        "release-word-2237",
+        "release-word-2957"
+      ],
+      "hints": [
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词",
+        "形容词"
+      ]
+    },
+    {
+      "id": "junior_scene:59:1",
+      "parent": "情感交往",
+      "title": "幽默交流",
+      "subtitle": "玩笑、幽默和欢笑",
+      "records": [
+        "release-word-1169",
+        "junior-word-0012",
+        "release-word-1468",
+        "release-word-1524"
+      ],
+      "hints": [
+        "形容词",
+        "名词",
+        "名词",
+        "动词"
+      ]
+    },
+    {
+      "id": "junior_scene:60:1",
+      "parent": "情感交往",
+      "title": "不良行为",
+      "subtitle": "需要识别和避免的不良行为",
+      "records": [
+        "junior-word-0004",
+        "release-word-0433",
+        "release-word-0481",
+        "release-word-1071",
+        "release-word-1529",
+        "release-word-1558",
+        "release-word-2542"
+      ],
+      "hints": [
+        "名词",
+        "形容词",
+        "名词",
+        "动词",
+        "形容词",
+        "动词",
+        "动词"
+      ]
+    },
+    {
+      "id": "junior_scene:61:1",
+      "parent": "情感交往",
+      "title": "礼貌交流",
+      "subtitle": "见面、告别、感谢和道歉",
+      "records": [
+        "release-word-0991",
+        "release-word-1214",
+        "release-word-1239",
+        "release-word-1295",
+        "release-word-1307",
+        "release-word-1441",
+        "release-word-1447",
+        "release-word-1909",
+        "release-word-1991",
+        "release-word-2685",
+        "release-word-2917"
+      ],
+      "hints": [
+        "名词",
+        "感叹词",
+        "动词",
+        "感叹词",
+        "感叹词",
+        "动词",
+        "动词",
+        "名词",
+        "动词",
+        "动词",
+        "动词"
+      ]
+    },
+    {
+      "id": "junior_scene:62:1",
+      "parent": "环境安全",
+      "title": "环境保护",
+      "subtitle": "环境问题和保护行动",
+      "records": [
+        "release-word-0948",
+        "release-word-2015",
+        "release-word-2098",
+        "release-word-2179",
+        "release-word-2280",
+        "release-word-2894"
+      ],
+      "hints": [
+        "名词",
+        "动词",
+        "动词",
+        "动词",
+        "名词",
+        "动词"
+      ]
+    },
+    {
+      "id": "junior_scene:63:1",
+      "parent": "环境安全",
+      "title": "灾害与救援",
+      "subtitle": "自然灾害、事故和紧急救援",
+      "records": [
+        "release-word-0020",
+        "release-word-0082",
+        "release-word-0707",
+        "release-word-0804",
+        "release-word-0881",
+        "release-word-0916",
+        "release-word-1084",
+        "release-word-1099",
+        "release-word-2259",
+        "release-word-2292",
+        "release-word-2293"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "形容词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:64:1",
+      "parent": "日常生活",
+      "title": "日期时间 · 1",
+      "subtitle": "日期、时间单位和日程",
+      "records": [
+        "release-word-0401",
+        "release-word-0458",
+        "release-word-0713",
+        "release-word-0715",
+        "release-word-1172",
+        "release-word-1337",
+        "release-word-1690",
+        "release-word-1705",
+        "release-word-1710"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:64:2",
+      "parent": "日常生活",
+      "title": "日期时间 · 2",
+      "subtitle": "日期、时间单位和日程",
+      "records": [
+        "release-word-2738",
+        "release-word-2743",
+        "release-word-2746",
+        "release-word-2910",
+        "release-word-2911",
+        "release-word-2912",
+        "release-word-2990",
+        "release-word-2993"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:65:1",
+      "parent": "日常生活",
+      "title": "常用工具",
+      "subtitle": "生活和手工活动中的常见工具",
+      "records": [
+        "release-word-0378",
+        "release-word-1486",
+        "release-word-1584",
+        "release-word-2272",
+        "release-word-2326",
+        "release-word-2546",
+        "release-word-2651",
+        "release-word-2748"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    },
+    {
+      "id": "junior_scene:66:1",
+      "parent": "日常生活",
+      "title": "包装容器",
+      "subtitle": "收纳和盛放物品的容器",
+      "records": [
+        "release-word-0230",
+        "release-word-0251",
+        "junior-word-0003",
+        "release-word-0343",
+        "release-word-0351",
+        "release-word-3476"
+      ],
+      "hints": [
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词",
+        "名词"
+      ]
+    }
+  ],
+  "relation_groups": [
+    {
+      "id": "synonym:2",
+      "title": "同义词组 · 2",
+      "subtitle": "高中常用义相同或高度接近",
+      "records": [
+        "release-word-0092",
+        "release-word-1760"
+      ],
+      "hints": [
+        "几乎",
+        "几乎"
+      ]
+    },
+    {
+      "id": "synonym:3",
+      "title": "同义词组 · 3",
+      "subtitle": "高中常用义相同或高度接近",
+      "records": [
+        "release-word-0127",
+        "release-word-2215"
+      ],
+      "hints": [
+        "回答",
+        "回答"
+      ]
+    },
+    {
+      "id": "synonym:5",
+      "title": "同义词组 · 5",
+      "subtitle": "高中常用义相同或高度接近",
+      "records": [
+        "release-word-0276",
+        "release-word-2534"
+      ],
+      "hints": [
+        "开始",
+        "开始"
+      ]
+    },
+    {
+      "id": "synonym:6",
+      "title": "同义词组 · 6",
+      "subtitle": "高中常用义相同或高度接近",
+      "records": [
+        "release-word-0297",
+        "release-word-1520"
+      ],
+      "hints": [
+        "大的",
+        "大的"
+      ]
+    },
+    {
+      "id": "synonym:8",
+      "title": "同义词组 · 8",
+      "subtitle": "高中常用义相同或高度接近",
+      "records": [
+        "release-word-0538",
+        "release-word-2407"
+      ],
+      "hints": [
+        "关闭",
+        "关闭"
+      ]
+    },
+    {
+      "id": "synonym:11",
+      "title": "同义词组 · 11",
+      "subtitle": "高中常用义相同或高度接近",
+      "records": [
+        "release-word-1368",
+        "release-word-2409"
+      ],
+      "hints": [
+        "生病的",
+        "生病的"
+      ]
+    },
+    {
+      "id": "synonym:12",
+      "title": "同义词组 · 12",
+      "subtitle": "高中常用义相同或高度接近",
+      "records": [
+        "release-word-1643",
+        "release-word-1945"
+      ],
+      "hints": [
+        "也许",
+        "也许"
+      ]
+    },
+    {
+      "id": "synonym:14",
+      "title": "同义词组 · 14",
+      "subtitle": "高中常用义相同或高度接近",
+      "records": [
+        "release-word-2128",
+        "release-word-2147"
+      ],
+      "hints": [
+        "迅速的",
+        "迅速的"
+      ]
+    },
+    {
+      "id": "antonym:1",
+      "title": "反义词组 · 1",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-0089",
+        "release-word-0716"
+      ],
+      "hints": [
+        "活着的",
+        "死的"
+      ]
+    },
+    {
+      "id": "antonym:2",
+      "title": "反义词组 · 2",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-0116",
+        "release-word-1704"
+      ],
+      "hints": [
+        "古代的",
+        "现代的"
+      ]
+    },
+    {
+      "id": "antonym:3",
+      "title": "反义词组 · 3",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-0297",
+        "release-word-2453"
+      ],
+      "hints": [
+        "大的",
+        "小的"
+      ]
+    },
+    {
+      "id": "antonym:4",
+      "title": "反义词组 · 4",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-0309",
+        "release-word-2935"
+      ],
+      "hints": [
+        "黑色的",
+        "白色的"
+      ]
+    },
+    {
+      "id": "antonym:5",
+      "title": "反义词组 · 5",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-0480",
+        "release-word-1001"
+      ],
+      "hints": [
+        "便宜的",
+        "昂贵的"
+      ]
+    },
+    {
+      "id": "antonym:6",
+      "title": "反义词组 · 6",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-0527",
+        "release-word-0799"
+      ],
+      "hints": [
+        "干净的",
+        "脏的"
+      ]
+    },
+    {
+      "id": "antonym:7",
+      "title": "反义词组 · 7",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-0538",
+        "release-word-1850"
+      ],
+      "hints": [
+        "关闭",
+        "开着的"
+      ]
+    },
+    {
+      "id": "antonym:8",
+      "title": "反义词组 · 8",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-0551",
+        "release-word-1335"
+      ],
+      "hints": [
+        "冷的",
+        "热的"
+      ]
+    },
+    {
+      "id": "antonym:9",
+      "title": "反义词组 · 9",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-0649",
+        "release-word-2987"
+      ],
+      "hints": [
+        "正确的",
+        "错误的"
+      ]
+    },
+    {
+      "id": "antonym:11",
+      "title": "反义词组 · 11",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-0878",
+        "release-word-1522"
+      ],
+      "hints": [
+        "早的",
+        "迟的"
+      ]
+    },
+    {
+      "id": "antonym:12",
+      "title": "反义词组 · 12",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-0921",
+        "release-word-1164"
+      ],
+      "hints": [
+        "空的",
+        "满的"
+      ]
+    },
+    {
+      "id": "antonym:14",
+      "title": "反义词组 · 14",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-1028",
+        "release-word-2590"
+      ],
+      "hints": [
+        "失败",
+        "成功"
+      ]
+    },
+    {
+      "id": "antonym:15",
+      "title": "反义词组 · 15",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-1045",
+        "release-word-2452"
+      ],
+      "hints": [
+        "快的",
+        "慢的"
+      ]
+    },
+    {
+      "id": "antonym:16",
+      "title": "反义词组 · 16",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-1046",
+        "release-word-2701"
+      ],
+      "hints": [
+        "肥胖的",
+        "薄的"
+      ]
+    },
+    {
+      "id": "antonym:17",
+      "title": "反义词组 · 17",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-1064",
+        "release-word-1623"
+      ],
+      "hints": [
+        "少数的",
+        "许多的"
+      ]
+    },
+    {
+      "id": "antonym:19",
+      "title": "反义词组 · 19",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-1123",
+        "release-word-2207"
+      ],
+      "hints": [
+        "忘记",
+        "记得"
+      ]
+    },
+    {
+      "id": "antonym:20",
+      "title": "反义词组 · 20",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-1273",
+        "release-word-2291"
+      ],
+      "hints": [
+        "高兴的",
+        "悲伤的"
+      ]
+    },
+    {
+      "id": "antonym:21",
+      "title": "反义词组 · 21",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-1309",
+        "release-word-1598"
+      ],
+      "hints": [
+        "高的",
+        "低的"
+      ]
+    },
+    {
+      "id": "antonym:22",
+      "title": "反义词组 · 22",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-1411",
+        "release-word-1882"
+      ],
+      "hints": [
+        "内部",
+        "外部"
+      ]
+    },
+    {
+      "id": "antonym:23",
+      "title": "反义词组 · 23",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-1589",
+        "release-word-2399"
+      ],
+      "hints": [
+        "长的",
+        "短的"
+      ]
+    },
+    {
+      "id": "antonym:24",
+      "title": "反义词组 · 24",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-1596",
+        "release-word-1283"
+      ],
+      "hints": [
+        "爱",
+        "憎恨"
+      ]
+    },
+    {
+      "id": "antonym:27",
+      "title": "反义词组 · 27",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-1715",
+        "release-word-1548"
+      ],
+      "hints": [
+        "更多的",
+        "较少的"
+      ]
+    },
+    {
+      "id": "antonym:28",
+      "title": "反义词组 · 28",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-1758",
+        "release-word-1041"
+      ],
+      "hints": [
+        "近的",
+        "远的"
+      ]
+    },
+    {
+      "id": "antonym:29",
+      "title": "反义词组 · 29",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-1778",
+        "release-word-1841"
+      ],
+      "hints": [
+        "新的",
+        "老的"
+      ]
+    },
+    {
+      "id": "antonym:30",
+      "title": "反义词组 · 30",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-1800",
+        "release-word-2499"
+      ],
+      "hints": [
+        "北",
+        "南"
+      ]
+    },
+    {
+      "id": "antonym:31",
+      "title": "反义词组 · 31",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-2026",
+        "release-word-1766"
+      ],
+      "hints": [
+        "积极的",
+        "否定的"
+      ]
+    },
+    {
+      "id": "antonym:32",
+      "title": "反义词组 · 32",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-2071",
+        "release-word-2107"
+      ],
+      "hints": [
+        "私人的",
+        "公共的"
+      ]
+    },
+    {
+      "id": "antonym:33",
+      "title": "反义词组 · 33",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-2110",
+        "release-word-2119"
+      ],
+      "hints": [
+        "拉",
+        "推"
+      ]
+    },
+    {
+      "id": "antonym:34",
+      "title": "反义词组 · 34",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-2251",
+        "release-word-2019"
+      ],
+      "hints": [
+        "富有的",
+        "贫穷的"
+      ]
+    },
+    {
+      "id": "antonym:35",
+      "title": "反义词组 · 35",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-2258",
+        "release-word-1032"
+      ],
+      "hints": [
+        "上升",
+        "落下"
+      ]
+    },
+    {
+      "id": "antonym:36",
+      "title": "反义词组 · 36",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-2292",
+        "release-word-0708"
+      ],
+      "hints": [
+        "安全的",
+        "危险的"
+      ]
+    },
+    {
+      "id": "antonym:37",
+      "title": "反义词组 · 37",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-2302",
+        "release-word-0784"
+      ],
+      "hints": [
+        "相同的",
+        "不同的"
+      ]
+    },
+    {
+      "id": "antonym:38",
+      "title": "反义词组 · 38",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-2572",
+        "release-word-2901"
+      ],
+      "hints": [
+        "强壮的",
+        "虚弱的"
+      ]
+    },
+    {
+      "id": "antonym:39",
+      "title": "反义词组 · 39",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-2787",
+        "release-word-1033"
+      ],
+      "hints": [
+        "真的",
+        "错误的"
+      ]
+    },
+    {
+      "id": "antonym:40",
+      "title": "反义词组 · 40",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-2824",
+        "release-word-0843"
+      ],
+      "hints": [
+        "向上",
+        "向下"
+      ]
+    },
+    {
+      "id": "antonym:42",
+      "title": "反义词组 · 42",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-2922",
+        "release-word-0864"
+      ],
+      "hints": [
+        "湿的",
+        "干的"
+      ]
+    },
+    {
+      "id": "antonym:43",
+      "title": "反义词组 · 43",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-2997",
+        "release-word-1841"
+      ],
+      "hints": [
+        "年轻的",
+        "老的"
+      ]
+    },
+    {
+      "id": "antonym:44",
+      "title": "反义词组 · 44",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-2028",
+        "release-word-1379"
+      ],
+      "hints": [
+        "可能的",
+        "不可能的"
+      ]
+    },
+    {
+      "id": "antonym:47",
+      "title": "反义词组 · 47",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-2887",
+        "release-word-1932"
+      ],
+      "hints": [
+        "战争",
+        "和平"
+      ]
+    },
+    {
+      "id": "antonym:48",
+      "title": "反义词组 · 48",
+      "subtitle": "高中常用义明确相反",
+      "records": [
+        "release-word-0715",
+        "release-word-1784"
+      ],
+      "hints": [
+        "白天",
+        "夜"
+      ]
+    }
+  ]
+}

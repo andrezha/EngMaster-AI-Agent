@@ -27,29 +27,6 @@ def backup_existing_file_once(path, tag="round_upgrade"):
         return ""
 
 
-def backup_learning_upgrade_once(data_dir, filenames):
-    """Snapshot all existing study files once before learning-records are enabled."""
-    try:
-        existing = sorted(glob.glob(os.path.join(
-            data_dir, "backup_before_learning_records_*")))
-        if existing:
-            return existing[0]
-        source_paths = [os.path.join(data_dir, name) for name in filenames]
-        source_paths = [path for path in source_paths if os.path.isfile(path)]
-        if not source_paths:
-            return ""
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        backup_dir = os.path.join(
-            data_dir, f"backup_before_learning_records_{timestamp}")
-        os.makedirs(backup_dir, exist_ok=False)
-        for source_path in source_paths:
-            shutil.copy2(source_path, os.path.join(
-                backup_dir, os.path.basename(source_path)))
-        return backup_dir
-    except OSError:
-        return ""
-
-
 def atomic_write_json(path, data, indent=2):
     directory = os.path.dirname(path)
     if directory:
@@ -95,11 +72,9 @@ class ChallengeRoundStore:
 
     VERSION = 3
 
-    def __init__(self, path, rng=None, key_aliases_by_mode=None):
+    def __init__(self, path, rng=None):
         self.path = path
         self.rng = rng or random.Random()
-        self.key_aliases_by_mode = key_aliases_by_mode or {}
-        backup_existing_file_once(path, "stable_identity_upgrade")
         self.storage_error = False
         self.recovered_from_backup = False
         self.data = self._load()
@@ -146,7 +121,7 @@ class ChallengeRoundStore:
 
     @staticmethod
     def _base_key(item):
-        """Legacy full-row hash retained for migration alias generation."""
+        """Hash a complete row when it has no standard identity field."""
         stable_item = {
             key: value for key, value in item.items()
             if key not in {"correct_count"}
@@ -186,43 +161,6 @@ class ChallengeRoundStore:
             inventory[key] = item
         return inventory
 
-    def _legacy_key_migrations(self, mode, items):
-        """Map version-2 full-row hashes (and known aliases) to stable identities."""
-        migrations = {}
-        legacy_occurrences = {}
-        identity_occurrences = {}
-        aliases = self.key_aliases_by_mode.get(mode, {})
-        reverse_aliases = {}
-        for old_base, current_base in aliases.items():
-            reverse_aliases.setdefault(current_base, []).append(old_base)
-        for item in items:
-            if not isinstance(item, dict):
-                continue
-            legacy_base = self._base_key(item)
-            identity_base = self._identity_key(item)
-            legacy_occurrence = legacy_occurrences.get(legacy_base, 0)
-            legacy_occurrences[legacy_base] = legacy_occurrence + 1
-            identity_occurrence = identity_occurrences.get(identity_base, 0)
-            identity_occurrences[identity_base] = identity_occurrence + 1
-            stable_key = f"{identity_base}:{identity_occurrence}"
-            migrations[f"{legacy_base}:{legacy_occurrence}"] = stable_key
-            for old_base in reverse_aliases.get(legacy_base, []):
-                migrations[f"{old_base}:{legacy_occurrence}"] = stable_key
-        return migrations
-
-    def _migrate_saved_key(self, mode, key, migrations=None):
-        """Map a persisted pre-correction item hash to its corrected hash."""
-        if not isinstance(key, str):
-            return key
-        if migrations and key in migrations:
-            return migrations[key]
-        base, separator, occurrence = key.rpartition(":")
-        if not separator or not occurrence.isdigit():
-            return key
-        aliases = self.key_aliases_by_mode.get(mode, {})
-        aliased_key = f"{aliases.get(base, base)}:{occurrence}"
-        return migrations.get(aliased_key, aliased_key) if migrations else aliased_key
-
     def _start_round(self, mode, inventory, round_number):
         order = list(inventory)
         self.rng.shuffle(order)
@@ -237,23 +175,11 @@ class ChallengeRoundStore:
 
     def activate(self, mode, items):
         inventory = self._build_inventory(items)
-        migrations = self._legacy_key_migrations(mode, items)
         self._inventories[mode] = inventory
         state = self.data["modes"].get(mode)
         if not isinstance(state, dict):
             self._start_round(mode, inventory, 1)
         else:
-            state["remaining"] = [
-                self._migrate_saved_key(mode, key, migrations)
-                for key in state.get("remaining", [])
-            ] if isinstance(state.get("remaining"), list) else []
-            state["wrong"] = [
-                self._migrate_saved_key(mode, key, migrations)
-                for key in state.get("wrong", [])
-            ] if isinstance(state.get("wrong"), list) else []
-            state["retry_key"] = self._migrate_saved_key(
-                mode, state.get("retry_key"), migrations
-            )
             state["round"] = max(1, _safe_nonnegative_int(state.get("round"), 1))
             state["completed"] = _safe_nonnegative_int(state.get("completed"), 0)
             wrong = state.get("wrong", [])
@@ -267,10 +193,6 @@ class ChallengeRoundStore:
                 key for key in remaining if key in inventory
             ]
             retry_key = state.get("retry_key")
-            if retry_key is None and state["remaining"] and state["remaining"][0] in state["wrong"]:
-                # Version 1 could be closed during the old auto-advance delay.
-                # Treat that current, already-wrong item as awaiting correction.
-                retry_key = state["remaining"][0]
             if not state["remaining"] or retry_key != state["remaining"][0]:
                 retry_key = None
             state["retry_key"] = retry_key
@@ -378,6 +300,8 @@ class ChallengeLearningStore:
         data, status = _load_json_dict_with_recovery(
             self.path,
             lambda value: (
+                value.get("version") == self.VERSION
+                and
                 isinstance(value.get("modes", {}), dict)
                 and isinstance(value.get("wrong_rounds", {}), dict)
             ),
@@ -387,15 +311,6 @@ class ChallengeLearningStore:
         if data is not None:
             data.setdefault("modes", {})
             data.setdefault("wrong_rounds", {})
-            if _safe_nonnegative_int(data.get("version"), 0) < 2:
-                for mode_data in data["modes"].values():
-                    ongoing = mode_data.get("ongoing") if isinstance(mode_data, dict) else None
-                    if isinstance(ongoing, dict):
-                        ongoing["started_at"] = None
-                        ongoing["tracking_started_at"] = None
-                        ongoing["active_seconds"] = 0.0
-                        ongoing["pending_start_migration"] = True
-                data["version"] = self.VERSION
             return data
         return {"version": self.VERSION, "modes": {}, "wrong_rounds": {}}
 
@@ -412,7 +327,7 @@ class ChallengeLearningStore:
     def _now_text():
         return datetime.now().astimezone().isoformat(timespec="seconds")
 
-    def ensure_round(self, mode, progress, started_before_tracking=False):
+    def ensure_round(self, mode, progress):
         data = self._load()
         mode_data = data["modes"].setdefault(mode, {"history": []})
         mode_data.setdefault("history", [])
@@ -423,14 +338,11 @@ class ChallengeLearningStore:
                 "round": round_number,
                 "started_at": None,
                 "tracking_started_at": None,
-                "started_before_tracking": bool(started_before_tracking),
                 "active_seconds": 0.0,
                 "total": _safe_nonnegative_int(progress.get("total"), 0),
             }
             mode_data["ongoing"] = ongoing
         else:
-            if ongoing.pop("pending_start_migration", False):
-                ongoing["started_before_tracking"] = bool(started_before_tracking)
             ongoing["total"] = _safe_nonnegative_int(
                 progress.get("total"), ongoing.get("total", 0))
         self._save(data)
@@ -443,7 +355,7 @@ class ChallengeLearningStore:
         now = self._now_text()
         if not ongoing.get("tracking_started_at"):
             ongoing["tracking_started_at"] = now
-        if not ongoing.get("started_before_tracking") and not ongoing.get("started_at"):
+        if not ongoing.get("started_at"):
             ongoing["started_at"] = now
         self._save(data)
         self.resume(mode)
@@ -480,7 +392,6 @@ class ChallengeLearningStore:
                 "round": summary.get("round", 1),
                 "started_at": None,
                 "tracking_started_at": self._now_text(),
-                "started_before_tracking": True,
                 "active_seconds": 0.0,
             }
         ongoing.update({

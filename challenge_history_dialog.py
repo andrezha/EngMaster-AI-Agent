@@ -4,7 +4,7 @@ from PySide6 import QtCore, QtWidgets
 
 
 MODE_NAMES = {
-    "regular": "高考3800词闯关",
+    "regular": "高中3800词闯关",
     "mistake_list": "错词闯关",
     "self_register": "自主录入闯关",
     "phrase": "短语闯关",
@@ -14,9 +14,9 @@ MODE_NAMES = {
 }
 
 
-def _format_time(value, legacy=False):
+def _format_time(value):
     if not value:
-        return "升级前已开始" if legacy else "—"
+        return "—"
     try:
         parsed = datetime.fromisoformat(str(value))
         return parsed.strftime("%Y-%m-%d %H:%M")
@@ -38,11 +38,6 @@ def _format_duration(seconds):
 def _format_start(record):
     if record.get("started_at"):
         return _format_time(record.get("started_at"))
-    if record.get("started_before_tracking"):
-        if record.get("tracking_started_at"):
-            tracked_at = _format_time(record.get("tracking_started_at"))
-            return f"升级前已开始（记录自 {tracked_at}）"
-        return "升级前已开始（尚未开始计时）"
     return "尚未开始"
 
 

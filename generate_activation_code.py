@@ -14,10 +14,10 @@ from cryptography.hazmat.primitives.serialization import load_pem_private_key
 
 PRODUCT_ID = "engmaster-vocabulary-platform"
 FORMAL_EDITION_IDS = ("zhongkao", "gaokao", "cet4", "cet6", "kaoyan")
-RELEASED_EDITION_IDS = ("gaokao",)
+RELEASED_EDITION_IDS = ("zhongkao", "gaokao")
 DEFAULT_PRIVATE_KEY_PATH = os.getenv("LICENSE_PRIVATE_KEY_PATH", "").strip()
 DEFAULT_ORDER_REGISTRY_PATH = Path(os.getenv(
-    "ENGMASTER_ORDER_REGISTRY",
+    "RECALLLEX_ORDER_REGISTRY",
     str(Path(__file__).resolve().parent / ".license_generator_work" /
         "internal_orders.json"),
 ))
@@ -114,16 +114,6 @@ def _load_private_numbers(private_key_path: Path):
     return private_key.private_numbers()
 
 
-def make_em2_code(machine_id: str, private_key_path: Path) -> str:
-    machine_id = machine_id.strip().upper()
-    private_numbers = _load_private_numbers(private_key_path)
-    payload = f"{PRODUCT_ID}|{machine_id}|v2".encode("utf-8")
-    digest_int = int.from_bytes(hashlib.sha256(payload).digest(), "big")
-    sig_int = pow(digest_int, private_numbers.d, private_numbers.public_numbers.n)
-    sig_bytes = sig_int.to_bytes((private_numbers.public_numbers.n.bit_length() + 7) // 8, "big")
-    return "EM2-" + base64.urlsafe_b64encode(sig_bytes).decode("ascii").rstrip("=")
-
-
 def make_em3_code(
         machine_id: str, entitlements, private_key_path: Path,
         order_number: str = "") -> str:
@@ -140,7 +130,7 @@ def make_em3_code(
     unavailable = requested - set(RELEASED_EDITION_IDS)
     if unavailable:
         raise ValueError(
-            "当前 V1.0 只开放高考英语正式授权；以下版本仍在开发中："
+            "当前 V1.0 只开放高中3800词正式授权；以下版本仍在开发中："
             + ", ".join(sorted(unavailable)))
     ordered = [item for item in FORMAL_EDITION_IDS if item in requested]
     if not ordered:
@@ -177,7 +167,7 @@ def private_key_public_numbers(private_key_path: Path):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Generate an EM2 machine-bound activation code.")
+    parser = argparse.ArgumentParser(description="Generate an EM3 machine-bound activation code.")
     parser.add_argument("machine_id", nargs="?", help="Customer machine ID shown in the activation window.")
     parser.add_argument(
         "--private-key",
@@ -189,11 +179,6 @@ def parse_args():
         nargs="+",
         default=["gaokao"],
         help="Cumulative formal permissions: zhongkao gaokao cet4 cet6 kaoyan.",
-    )
-    parser.add_argument(
-        "--legacy-em2",
-        action="store_true",
-        help="Generate the old gaokao-only EM2 code (compatibility/testing only).",
     )
     parser.add_argument(
         "--local",
@@ -275,17 +260,12 @@ def main():
     order_number = normalize_order_number(args.order_number) if args.order_number else ""
     internal_order = (
         find_internal_order(order_number, registry_path) if order_number else None)
-    if args.legacy_em2:
-        if order_number:
-            raise SystemExit("旧版 EM2 不能记录订单号，请生成 EM3 激活码。")
-        code = make_em2_code(machine_id, private_key_path)
-    else:
-        code = make_em3_code(
-            machine_id, args.editions, private_key_path,
-            order_number=order_number)
-        if internal_order:
-            record_internal_order_activation(
-                order_number, machine_id, args.editions, registry_path)
+    code = make_em3_code(
+        machine_id, args.editions, private_key_path,
+        order_number=order_number)
+    if internal_order:
+        record_internal_order_activation(
+            order_number, machine_id, args.editions, registry_path)
     if order_number:
         print("order_number=", order_number)
     print("activation_code=", code)

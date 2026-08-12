@@ -2,6 +2,7 @@
 
 from PySide6 import QtCore, QtWidgets
 from ui_styles import SECONDARY_BUTTON_STYLE, tab_button_style
+from edition_config import EDITIONS, RELEASED_EDITION_IDS
 
 
 class TrialCenterView(QtWidgets.QWidget):
@@ -9,6 +10,8 @@ class TrialCenterView(QtWidgets.QWidget):
         super().__init__()
         self.main_window = main_window
         audience_name = self.main_window.edition.display_name.removesuffix("体验")
+        formal_id = self.main_window.edition.edition_id.removeprefix("trial_")
+        junior = formal_id == "zhongkao"
         self.setObjectName("trial_center_view")
 
         outer = QtWidgets.QVBoxLayout(self)
@@ -29,13 +32,18 @@ class TrialCenterView(QtWidgets.QWidget):
         )
         hero_layout = QtWidgets.QVBoxLayout(hero)
         hero_layout.setContentsMargins(26, 21, 26, 22)
-        title = QtWidgets.QLabel(f"EngMaster {audience_name}免费体验版（30词）")
+        title = QtWidgets.QLabel(
+            "初中核心词汇，从准初一预习到初三中考"
+            if junior else "高中3800词，从准高一预习到高三备考")
         title.setStyleSheet(
             "border:none; color:white; font-size:27px; font-weight:700; "
             "font-family:'Microsoft YaHei UI','Microsoft YaHei'; background:transparent;")
         subtitle = QtWidgets.QLabel(
-            f"这是为{audience_name}学习者准备的30词体验词库，词汇难度与目标级别匹配。"
-            "这里用于完整体验“筛查不会—建立错词—集中巩固—再次验证”的学习方法。"
+            (("适用：准初一｜初一｜初二｜初三　　用途：提前预习｜课内同步｜中考备考\n"
+             if junior else
+             "适用：准高一｜高一｜高二｜高三　　用途：提前预习｜课内同步｜高考备考\n") +
+            f"{audience_name}免费版用代表性内容体验“高效记忆、闯关识弱、自主登记”三大核心功能。"
+            )
         )
         subtitle.setWordWrap(True)
         subtitle.setStyleSheet(
@@ -50,11 +58,11 @@ class TrialCenterView(QtWidgets.QWidget):
         level_layout = QtWidgets.QVBoxLayout(level_frame)
         level_layout.setContentsMargins(18, 14, 18, 16)
         level_layout.setSpacing(10)
-        level_title = QtWidgets.QLabel("选择适合自己的体验级别")
+        level_title = QtWidgets.QLabel("当前开放的免费体验")
         level_title.setStyleSheet(
             "border:none; color:#111827; font-size:17px; font-weight:700;")
         level_hint = QtWidgets.QLabel(
-            "直接在这里切换，不会弹出选择窗口；每类词汇难度和体验记录分别保存。")
+            "体验版与正式版一一对应；正式版开放后，对应体验才会同步开放。")
         level_hint.setWordWrap(True)
         level_hint.setStyleSheet("border:none; color:#64748b; font-size:13px;")
         level_layout.addWidget(level_title)
@@ -62,11 +70,8 @@ class TrialCenterView(QtWidgets.QWidget):
         level_buttons = QtWidgets.QHBoxLayout()
         level_buttons.setSpacing(9)
         choices = [
-            ("trial_zhongkao", "初中（30词）"),
-            ("trial_gaokao", "高考（30词）"),
-            ("trial_cet4", "四级（30词）"),
-            ("trial_cet6", "六级（30词）"),
-            ("trial_kaoyan", "考研（30词）"),
+            (f"trial_{edition_id}", f"{EDITIONS[edition_id].base_display_name}（30词）")
+            for edition_id in RELEASED_EDITION_IDS
         ]
         for edition_id, label in choices:
             active = edition_id == self.main_window.edition.edition_id
@@ -92,9 +97,12 @@ class TrialCenterView(QtWidgets.QWidget):
             "QFrame { background:white; border:1px solid #dbe3ee; border-radius:12px; }")
         status_layout = QtWidgets.QHBoxLayout(status)
         status_layout.setContentsMargins(18, 13, 18, 13)
-        words = QtWidgets.QLabel("体验内容\n固定30词")
-        storage = QtWidgets.QLabel("数据保存\n体验区独立保存")
-        for label, color in ((words, "#2563eb"), (storage, "#059669")):
+        memory = QtWidgets.QLabel("背得快\n体验代表性记忆方法")
+        challenge = QtWidgets.QLabel("找得准\n固定30词闯关识弱")
+        personal = QtWidgets.QLabel("补得全\n自主登记最多30词")
+        for label, color in (
+            (memory, "#7c3aed"), (challenge, "#2563eb"), (personal, "#059669")
+        ):
             label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
             label.setStyleSheet(
                 f"border:none; color:{color}; background:#f8fafc; border-radius:9px; "
@@ -102,7 +110,7 @@ class TrialCenterView(QtWidgets.QWidget):
             status_layout.addWidget(label, 1)
         layout.addWidget(status)
 
-        section_title = QtWidgets.QLabel("建议按这个顺序完成一次体验")
+        section_title = QtWidgets.QLabel("免费体验三大核心功能")
         section_title.setStyleSheet(
             "color:#111827; font-size:19px; font-weight:700; background:transparent;")
         layout.addWidget(section_title)
@@ -110,15 +118,15 @@ class TrialCenterView(QtWidgets.QWidget):
         steps.setHorizontalSpacing(12)
         steps.setVerticalSpacing(12)
         step_defs = [
-            ("1", "查看体验词汇表", "先认识30个示例词；可以隐藏中英文，错词积累后可生成错词打印表。", "#eff6ff", "#2563eb"),
-            ("2", "普通词汇闯关", "不看词表独立作答，把真正不会的词自动筛入体验错词表。", "#ecfdf5", "#047857"),
-            ("3", "背诵体验错词", "只集中学习自己答错的单词，缩小需要重复背诵的范围。", "#fff7ed", "#c2410c"),
-            ("4", "错词闯关与复测", "连续答对后清除错词，再进行下一轮普通闯关验证。", "#f5f3ff", "#7c3aed"),
+            ("1", "高效记忆", "体验主题场景、词根、音形拼读和同义反义的代表内容，让单词先形成联系。", "#f5f3ff", "#7c3aed"),
+            ("2", "闯关识弱", "用30个体验词主动拼写；不会和掌握不稳定的单词自动进入个人错词表。", "#eff6ff", "#2563eb"),
+            ("3", "自主登记", "把课本、作业、试卷和阅读生词加入个人词库，再进行独立训练。", "#ecfdf5", "#047857"),
         ]
         for index, definition in enumerate(step_defs):
-            steps.addWidget(self._step_card(*definition), index // 2, index % 2)
+            steps.addWidget(self._step_card(*definition), 0, index)
         steps.setColumnStretch(0, 1)
         steps.setColumnStretch(1, 1)
+        steps.setColumnStretch(2, 1)
         layout.addLayout(steps)
 
         isolation = QtWidgets.QFrame()
@@ -126,7 +134,7 @@ class TrialCenterView(QtWidgets.QWidget):
             "QFrame { background:#fffbeb; border:1px solid #fbbf24; border-radius:11px; }")
         isolation_layout = QtWidgets.QVBoxLayout(isolation)
         isolation_layout.setContentsMargins(17, 12, 17, 13)
-        isolation_title = QtWidgets.QLabel("各类体验数据与正式版本完全隔离")
+        isolation_title = QtWidgets.QLabel("体验数据与正式版本完全隔离")
         isolation_title.setStyleSheet(
             "border:none; color:#92400e; font-size:15px; font-weight:700;")
         isolation_text = QtWidgets.QLabel(
@@ -147,8 +155,10 @@ class TrialCenterView(QtWidgets.QWidget):
         purchase_layout = QtWidgets.QHBoxLayout(purchase)
         purchase_layout.setContentsMargins(17, 13, 17, 13)
         purchase_copy = QtWidgets.QLabel(
-            "想使用正式完整词库？请进入正式版购买页面查看各版本状态、"
-            "对应淘宝商品和统一激活入口。")
+            ("正式版面向准初一至初三学生，开放完整初中核心词汇提分速记、"
+             if junior else
+             "正式版面向准高一至高三学生，开放完整高中3800词提分速记、")
+            + "完整闯关识弱和持续学习记录。")
         purchase_copy.setWordWrap(True)
         purchase_copy.setStyleSheet(
             "border:none; color:#3730a3; font-size:14px; font-weight:600;")

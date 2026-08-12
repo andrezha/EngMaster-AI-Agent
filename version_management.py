@@ -53,6 +53,9 @@ class VersionManagementView(QtWidgets.QWidget):
         self.content_layout = QtWidgets.QVBoxLayout(self.content)
         self.content_layout.setContentsMargins(0, 2, 8, 12)
         self.content_layout.setSpacing(14)
+        self._discard_bin = QtWidgets.QWidget(self)
+        self._discard_bin.setObjectName("version_management_discard_bin")
+        self._discard_bin.hide()
         self.scroll.setWidget(self.content)
         outer.addWidget(self.scroll, 1)
         self.refresh()
@@ -90,11 +93,11 @@ class VersionManagementView(QtWidgets.QWidget):
             "淘宝购买规格说明\n"
             "可购买单个英语版本，也可选择包含多个版本的组合规格，一次购买多个版本。\n"
             "示例：\n"
-            "• 单版本：高考英语3800词版\n"
-            "• 双版本组合：初中英语词汇版＋高考英语3800词版\n"
+            "• 单版本：高中3800词版\n"
+            "• 双版本组合：初中英语词汇版＋高中3800词版\n"
             "• 四六级组合：大学英语四级版＋大学英语六级版\n"
             "• 多版本组合：以淘宝商品页面实际提供的规格为准\n"
-            "当前只有高考英语正式版开放购买，开发中的版本及相关组合暂不销售。"
+            "当前已开放初中英语和高中3800词两个正式版；开发中的版本及相关组合暂不销售。"
         )
         purchase_options.setObjectName("taobao_purchase_options_notice")
         purchase_options.setWordWrap(True)
@@ -177,7 +180,7 @@ class VersionManagementView(QtWidgets.QWidget):
             child_layout = item.layout()
             if widget is not None:
                 widget.hide()
-                widget.setParent(None)
+                widget.setParent(self._discard_bin)
                 widget.deleteLater()
             elif child_layout is not None:
                 self._clear_layout(child_layout)

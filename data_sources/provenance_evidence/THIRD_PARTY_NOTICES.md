@@ -1,6 +1,6 @@
 # Third-Party Data Notices / 第三方数据声明
 
-This notice applies to the EngMaster vocabulary and independently compiled phrase-data build processes.
+This notice applies to the 英思成 (RecallLex) vocabulary and independently compiled phrase-data build processes.
 
 ## Ministry of Education curriculum standard
 

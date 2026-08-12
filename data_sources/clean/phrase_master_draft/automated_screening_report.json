@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "errors": [],
+  "record_count": 1050,
+  "introduced_level_counts": {
+    "junior": 250,
+    "senior_high": 200,
+    "cet4": 300,
+    "cet6": 300
+  },
+  "unique_phrase_count": 1050,
+  "excluded_reason_counts": {
+    "infinitive fragment rather than stable phrase": 24,
+    "free combination or incomplete expression": 19,
+    "context-dependent fragment": 54,
+    "narrow institutional title or expression": 62,
+    "mechanical number expression": 465,
+    "sensitive or overly narrow topic": 171,
+    "taxonomic or narrow animal term": 137
+  },
+  "old_phrase_file_read": false,
+  "chinese_content_created": false,
+  "human_review_claimed": false,
+  "release_ready": false,
+  "next_required_step": "AI-assisted row-level tail review and replacement before freezing English scope"
+}

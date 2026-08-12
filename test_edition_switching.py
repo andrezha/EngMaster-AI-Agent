@@ -47,6 +47,13 @@ class EditionSwitchingTests(unittest.TestCase):
         main.save_last_edition("trial_cet4", settings)
         self.assertEqual(main.load_last_edition(settings).edition_id, "trial_cet4")
 
+    def test_unreleased_remembered_trial_migrates_to_available_trial(self):
+        settings = _MemorySettings({main.LAST_EDITION_SETTING_KEY: "trial_cet4"})
+        self.assertEqual(
+            main.load_last_trial_edition(settings).edition_id,
+            "trial_gaokao",
+        )
+
     def test_sidebar_switcher_shows_current_edition_above_navigation(self):
         window = main.EngMasterApplication.__new__(main.EngMasterApplication)
         QtWidgets.QMainWindow.__init__(window)
@@ -96,7 +103,7 @@ class EditionSwitchingTests(unittest.TestCase):
     def test_loaded_window_can_be_replaced_inside_same_process(self):
         settings = _MemorySettings({"guides/quick_overview_seen_v1": True})
         with tempfile.TemporaryDirectory() as data_dir, mock.patch.dict(
-            os.environ, {"ENGMASTER_DATA_DIR": data_dir}
+            os.environ, {"RECALLLEX_DATA_DIR": data_dir}
         ), mock.patch.object(main, "_app_settings", return_value=settings):
             window = main.EngMasterApplication("zhongkao")
             self.app.main_window = window

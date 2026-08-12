@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "edition_id": "zhongkao",
+  "status": "product_data_complete_auto_validated",
+  "counts": {
+    "vocabulary": 1609,
+    "trial_vocabulary": 30,
+    "phrases": 250,
+    "core_phrases": 250,
+    "extension_phrases": 0,
+    "irregular_verbs": 90,
+    "curated_scene_words": 712
+  },
+  "application_paths": {
+    "vocabulary": "assets/editions/zhongkao/vocabulary.json",
+    "trial_vocabulary": "assets/editions/zhongkao/trial_vocabulary.json",
+    "phrases": "assets/editions/zhongkao/phrases.json",
+    "irregular_verbs": "assets/editions/zhongkao/irregular_verbs.json",
+    "scientific_memory_data": "assets/editions/zhongkao/scientific_memory_data.json"
+  },
+  "source_files": {
+    "data_sources/processed/phrase_stage_boundaries/phrase_stage_vocabulary_tokens.csv": "06032b286a81aee39260beb4d86e77ab7420e7ae17b28cc7390b4ef440a02ba9",
+    "assets/editions/gaokao/vocabulary.json": "3541156164076661a5754b37232e4a01e803341f5ace6ad1a10f9462e8107b3e",
+    "assets/editions/gaokao/scientific_memory_data.json": "3b00c0b681b34939de068105553329c6b6e4e543bc59794a71aaca9856202d39",
+    "data_sources/clean/phrase_product_candidates/junior_phrases_product_candidate.json": "a9b457e756ae2941e0c4d144e0578d8082afce75c03a8bc255961c265bc9edd2",
+    "data_sources/clean/irregular_verbs/irregular_verbs_clean.json": "08137caee048de0862c1898c6f79c726a787635c3d76021d35cb474435ddd3ed",
+    "research/edition_samples/zhongkao_irregular_verbs.json": "2fdd32fc64503a175eaedb53ad317b38773990232bbee474517794ddc99647de"
+  },
+  "product_files": {
+    "vocabulary.json": "6aeb096e07252678977768222a6b549238d48ce224c39926e7757eee7292ef27",
+    "trial_vocabulary.json": "e7ff74c412847346c33a41b40cc4fde644e3c6fa601de2213e670c327448d73c",
+    "phrases.json": "cb87d856f454d08aa89fc59fce6b072a025b18465d1214adb635206d5395a3a7",
+    "irregular_verbs.json": "1f1a15a1ca6edd9e217c3f929195c76090230bd1e13d5c5c0394af02515a9900",
+    "scientific_memory_data.json": "16105ac90bc19f77805d851b4acaa7bcfe78c1124eee795323f80436bffc7f95",
+    "validation_report.json": "f66d8a0d986bb7206777312a19d81f7f0b5424ff180fc1249b9478eb04269e32",
+    "README.md": "c59b556e9334e87b9ed911a28850cabbb8e375281298fa93984a39be33eed769"
+  },
+  "content_policy": "Junior scope is derived from the audited curriculum boundary; junior scenes are independently curated and include only clear, teachable themes."
+}

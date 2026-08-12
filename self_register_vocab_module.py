@@ -3,12 +3,13 @@ import os
 from PySide6 import QtWidgets, QtCore, QtGui
 from PySide6.QtWidgets import QTableWidgetItem, QPushButton, QMessageBox, QDialog, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QFrame, QHeaderView
 from PySide6.QtCore import Qt
-from utils import _normalize_legacy as _normalize_full_width_to_half_width, get_writable_data_path
+from utils import get_writable_data_path
 from edition_config import is_trial_edition
 from ui_styles import (
     CHECKABLE_BUTTON_STYLE,
     DANGER_BUTTON_STYLE,
     PRIMARY_BUTTON_STYLE,
+    SEARCH_INPUT_STYLE,
     SECONDARY_BUTTON_STYLE,
 )
 
@@ -104,8 +105,6 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
         self.words_per_physical_row = 3
         self.physical_rows_per_page = 15
         self.words_per_page = self.words_per_physical_row * self.physical_rows_per_page
-
-        print(f"DEBUG: SelfRegisterVocabManager initialized. Version with {self.physical_rows_per_page} physical rows per page.")
 
         self._build_ui()
         
@@ -207,9 +206,9 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
 
         display_frame = QFrame()
         display_frame.setObjectName("display_mode_frame")
-        display_layout = QHBoxLayout(display_frame)
-        display_layout.setContentsMargins(16, 10, 16, 10)
-        display_layout.setSpacing(10)
+        self.display_layout = QHBoxLayout(display_frame)
+        self.display_layout.setContentsMargins(16, 10, 16, 10)
+        self.display_layout.setSpacing(10)
 
         self.btn_show_both = QPushButton("📚 中英对照")
         self.btn_only_english = QPushButton("📖 只看英语")
@@ -225,27 +224,31 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
             button.setFixedHeight(36)
             button.setMinimumWidth(112)
             self.language_display_group.addButton(button)
-            display_layout.addWidget(button)
+            self.display_layout.addWidget(button)
         self.btn_show_both.setChecked(True)
-        display_layout.addStretch()
+        self.search_input = QLineEdit()
+        self.search_input.setObjectName("self_register_search_input")
+        self.search_input.setPlaceholderText("检索单词或释义...")
+        self.search_input.setClearButtonEnabled(True)
+        self.search_input.setFixedSize(220, 36)
+        self.search_input.setStyleSheet(SEARCH_INPUT_STYLE)
+        self.search_input.textChanged.connect(self._on_search_changed)
+        self.display_layout.addWidget(self.search_input)
+        self.prev_page_button = QPushButton("← 上一页")
+        self.next_page_button = QPushButton("下一页 →")
+        self.page_label = QLabel("第 1 / 1 页")
+        self.page_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.page_label.setMinimumWidth(88)
+        self.display_layout.addStretch()
+        self.display_layout.addWidget(self.prev_page_button)
+        self.display_layout.addWidget(self.page_label)
+        self.display_layout.addWidget(self.next_page_button)
         main_v_layout.addWidget(display_frame)
 
         self.vocab_table = QtWidgets.QTableWidget()
         self.vocab_table.setMinimumHeight(self.physical_rows_per_page * 50)
         self.vocab_table.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
         main_v_layout.addWidget(self.vocab_table)
-
-        pagination_layout = QHBoxLayout()
-        self.prev_page_button = QPushButton("上一页")
-        self.next_page_button = QPushButton("下一页")
-        self.page_label = QLabel("第 1 / 1 页")
-        self.page_label.setAlignment(Qt.AlignLeft)
-        
-        pagination_layout.addWidget(self.prev_page_button)
-        pagination_layout.addWidget(self.page_label)
-        pagination_layout.addWidget(self.next_page_button)
-        pagination_layout.addStretch()
-        main_v_layout.addLayout(pagination_layout)
 
         self.setObjectName("SelfRegisterVocabPage")
         self.title_label.setObjectName("title_label")
@@ -305,7 +308,15 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
         if not self.vocab_table:
             return
 
-        total_words = len(self.user_vocab_data)
+        query = self.search_input.text().strip().casefold()
+        visible_rows = [
+            (index, item)
+            for index, item in enumerate(self.user_vocab_data)
+            if not query or query in " ".join((
+                str(item.get("word", "")), str(item.get("content", ""))
+            )).casefold()
+        ]
+        total_words = len(visible_rows)
         self._update_limit_status()
         total_pages = (total_words + self.words_per_page - 1) // self.words_per_page
         if total_pages == 0:
@@ -331,9 +342,9 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
                 base_col_idx = word_in_physical_row_idx * 5
 
                 if data_idx < total_words:
-                    item_data = self.user_vocab_data[data_idx]
+                    source_idx, item_data = visible_rows[data_idx]
                     
-                    item_index = QTableWidgetItem(str(data_idx + 1))
+                    item_index = QTableWidgetItem(str(source_idx + 1))
                     item_index.setTextAlignment(Qt.AlignLeft | Qt.AlignVCenter)
                     self.vocab_table.setItem(physical_row_idx, base_col_idx, item_index)
                     
@@ -358,7 +369,7 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
                     edit_layout.setAlignment(Qt.AlignCenter)
                     edit_button = QPushButton("修改")
                     edit_button.setFixedSize(60, 30)
-                    edit_button.clicked.connect(lambda checked, r=data_idx: self._edit_word(r))
+                    edit_button.clicked.connect(lambda checked, r=source_idx: self._edit_word(r))
                     edit_button.setStyleSheet(SECONDARY_BUTTON_STYLE)
                     edit_layout.addWidget(edit_button)
                     self.vocab_table.setCellWidget(physical_row_idx, base_col_idx + 3, edit_widget)
@@ -370,7 +381,7 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
                     delete_layout.setAlignment(Qt.AlignCenter)
                     delete_button = QPushButton("删除")
                     delete_button.setFixedSize(60, 30)
-                    delete_button.clicked.connect(lambda checked, r=data_idx: self._delete_word(r))
+                    delete_button.clicked.connect(lambda checked, r=source_idx: self._delete_word(r))
                     delete_button.setStyleSheet(DANGER_BUTTON_STYLE)
                     delete_layout.addWidget(delete_button)
                     self.vocab_table.setCellWidget(physical_row_idx, base_col_idx + 4, delete_widget)
@@ -389,6 +400,10 @@ class SelfRegisterVocabManager(QtWidgets.QWidget):
         for row in range(self.physical_rows_per_page):
             if self.vocab_table.rowHeight(row) < 50:
                 self.vocab_table.setRowHeight(row, 50)
+
+    def _on_search_changed(self, _text=""):
+        self.current_page = 0
+        self._refresh_table()
 
     def _set_display_mode(self, mode):
         if mode not in {"both", "english", "chinese"}:

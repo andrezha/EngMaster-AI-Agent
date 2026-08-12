@@ -1,0 +1,2071 @@
+[
+  {
+    "sequence": 1,
+    "infinitive": "be",
+    "accepted_past_tense": [
+      "was",
+      "were"
+    ],
+    "accepted_past_participle": [
+      "been"
+    ],
+    "past_tense": "was / were",
+    "past_participle": "been",
+    "meaning_zh": "是；存在；位于；成为；用于构成进行时或被动语态",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0260",
+    "usage_note": "过去式按人称和单复数使用 was 或 were。",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "是；存在；位于；成为；用于构成进行时或被动语态",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0260"
+  },
+  {
+    "sequence": 2,
+    "infinitive": "beat",
+    "accepted_past_tense": [
+      "beat"
+    ],
+    "accepted_past_participle": [
+      "beaten"
+    ],
+    "past_tense": "beat",
+    "past_participle": "beaten",
+    "meaning_zh": "击打；打败；跳动；搅拌",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0266",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "击打；打败；跳动；搅拌",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0266"
+  },
+  {
+    "sequence": 3,
+    "infinitive": "become",
+    "accepted_past_tense": [
+      "became"
+    ],
+    "accepted_past_participle": [
+      "become"
+    ],
+    "past_tense": "became",
+    "past_participle": "become",
+    "meaning_zh": "变成；成为；适合；开始形成",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0270",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "变成；成为；适合；开始形成",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0270"
+  },
+  {
+    "sequence": 4,
+    "infinitive": "begin",
+    "accepted_past_tense": [
+      "began"
+    ],
+    "accepted_past_participle": [
+      "begun"
+    ],
+    "past_tense": "began",
+    "past_participle": "begun",
+    "meaning_zh": "开始；着手；首先出现",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0276",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "开始；着手；首先出现",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0276"
+  },
+  {
+    "sequence": 5,
+    "infinitive": "bite",
+    "accepted_past_tense": [
+      "bit"
+    ],
+    "accepted_past_participle": [
+      "bitten"
+    ],
+    "past_tense": "bit",
+    "past_participle": "bitten",
+    "meaning_zh": "咬；叮；刺痛",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0307",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "咬；叮；刺痛",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": false,
+    "edition_record_id": ""
+  },
+  {
+    "sequence": 6,
+    "infinitive": "blow",
+    "accepted_past_tense": [
+      "blew"
+    ],
+    "accepted_past_participle": [
+      "blown"
+    ],
+    "past_tense": "blew",
+    "past_participle": "blown",
+    "meaning_zh": "吹；刮；吹响；爆炸",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0321",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "吹；刮；吹响；爆炸",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0321"
+  },
+  {
+    "sequence": 7,
+    "infinitive": "break",
+    "accepted_past_tense": [
+      "broke"
+    ],
+    "accepted_past_participle": [
+      "broken"
+    ],
+    "past_tense": "broke",
+    "past_participle": "broken",
+    "meaning_zh": "打破；弄坏；违反；中断；休息",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0358",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "打破；弄坏；违反；中断；休息",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0358"
+  },
+  {
+    "sequence": 8,
+    "infinitive": "bring",
+    "accepted_past_tense": [
+      "brought"
+    ],
+    "accepted_past_participle": [
+      "brought"
+    ],
+    "past_tense": "brought",
+    "past_participle": "brought",
+    "meaning_zh": "带来；拿来；使处于；引起",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0370",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "带来；拿来；使处于；引起",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0370"
+  },
+  {
+    "sequence": 9,
+    "infinitive": "build",
+    "accepted_past_tense": [
+      "built"
+    ],
+    "accepted_past_participle": [
+      "built"
+    ],
+    "past_tense": "built",
+    "past_participle": "built",
+    "meaning_zh": "建造；建立；逐渐增强",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0381",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "建造；建立；逐渐增强",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0381"
+  },
+  {
+    "sequence": 10,
+    "infinitive": "burn",
+    "accepted_past_tense": [
+      "burned",
+      "burnt"
+    ],
+    "accepted_past_participle": [
+      "burned",
+      "burnt"
+    ],
+    "past_tense": "burned / burnt",
+    "past_participle": "burned / burnt",
+    "meaning_zh": "燃烧；烧伤；烧毁",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0384",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "燃烧；烧伤；烧毁",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0384"
+  },
+  {
+    "sequence": 11,
+    "infinitive": "buy",
+    "accepted_past_tense": [
+      "bought"
+    ],
+    "accepted_past_participle": [
+      "bought"
+    ],
+    "past_tense": "bought",
+    "past_participle": "bought",
+    "meaning_zh": "购买；买到；换取",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0393",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "购买；买到；换取",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0393"
+  },
+  {
+    "sequence": 12,
+    "infinitive": "can",
+    "accepted_past_tense": [
+      "could"
+    ],
+    "accepted_past_participle": [],
+    "past_tense": "could",
+    "past_participle": "—",
+    "meaning_zh": "能；会；可以；可能；把……装罐",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0411",
+    "usage_note": "could 是历史上的过去式，也常表达较弱语气；没有过去分词。",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "能；会；可以；可能；把……装罐",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0411"
+  },
+  {
+    "sequence": 13,
+    "infinitive": "catch",
+    "accepted_past_tense": [
+      "caught"
+    ],
+    "accepted_past_participle": [
+      "caught"
+    ],
+    "past_tense": "caught",
+    "past_participle": "caught",
+    "meaning_zh": "抓住；接住；赶上；感染；听懂",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0444",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "抓住；接住；赶上；感染；听懂",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0444"
+  },
+  {
+    "sequence": 14,
+    "infinitive": "choose",
+    "accepted_past_tense": [
+      "chose"
+    ],
+    "accepted_past_participle": [
+      "chosen"
+    ],
+    "past_tense": "chose",
+    "past_participle": "chosen",
+    "meaning_zh": "选择；挑选；决定",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0502",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "选择；挑选；决定",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0502"
+  },
+  {
+    "sequence": 15,
+    "infinitive": "come",
+    "accepted_past_tense": [
+      "came"
+    ],
+    "accepted_past_participle": [
+      "come"
+    ],
+    "past_tense": "came",
+    "past_participle": "come",
+    "meaning_zh": "来；到达；发生；进入某种状态",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0560",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "来；到达；发生；进入某种状态",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0560"
+  },
+  {
+    "sequence": 16,
+    "infinitive": "cost",
+    "accepted_past_tense": [
+      "cost"
+    ],
+    "accepted_past_participle": [
+      "cost"
+    ],
+    "past_tense": "cost",
+    "past_participle": "cost",
+    "meaning_zh": "价钱为；使付出代价",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0651",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "价钱为；使付出代价",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0651"
+  },
+  {
+    "sequence": 17,
+    "infinitive": "cut",
+    "accepted_past_tense": [
+      "cut"
+    ],
+    "accepted_past_participle": [
+      "cut"
+    ],
+    "past_tense": "cut",
+    "past_participle": "cut",
+    "meaning_zh": "切；割；削减；中断",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0700",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "切；割；削减；中断",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0700"
+  },
+  {
+    "sequence": 18,
+    "infinitive": "do",
+    "accepted_past_tense": [
+      "did"
+    ],
+    "accepted_past_participle": [
+      "done"
+    ],
+    "past_tense": "did",
+    "past_participle": "done",
+    "meaning_zh": "做；进行；完成；处理；用于疑问、否定或强调",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0829",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "做；进行；完成；处理；用于疑问、否定或强调",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0829"
+  },
+  {
+    "sequence": 19,
+    "infinitive": "draw",
+    "accepted_past_tense": [
+      "drew"
+    ],
+    "accepted_past_participle": [
+      "drawn"
+    ],
+    "past_tense": "drew",
+    "past_participle": "drawn",
+    "meaning_zh": "画；拉；吸引；抽取；得出",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0853",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "画；拉；吸引；抽取；得出",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0853"
+  },
+  {
+    "sequence": 20,
+    "infinitive": "drink",
+    "accepted_past_tense": [
+      "drank"
+    ],
+    "accepted_past_participle": [
+      "drunk"
+    ],
+    "past_tense": "drank",
+    "past_participle": "drunk",
+    "meaning_zh": "喝；饮",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0858",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "喝；饮",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0858"
+  },
+  {
+    "sequence": 21,
+    "infinitive": "drive",
+    "accepted_past_tense": [
+      "drove"
+    ],
+    "accepted_past_participle": [
+      "driven"
+    ],
+    "past_tense": "drove",
+    "past_participle": "driven",
+    "meaning_zh": "驾驶；驱动；迫使；推动",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0859",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "驾驶；驱动；迫使；推动",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0859"
+  },
+  {
+    "sequence": 22,
+    "infinitive": "eat",
+    "accepted_past_tense": [
+      "ate"
+    ],
+    "accepted_past_participle": [
+      "eaten"
+    ],
+    "past_tense": "ate",
+    "past_participle": "eaten",
+    "meaning_zh": "吃；用餐；消耗；侵蚀",
+    "in_release_3800": true,
+    "release_record_id": "release-word-0886",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "吃；用餐；消耗；侵蚀",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-0886"
+  },
+  {
+    "sequence": 23,
+    "infinitive": "fall",
+    "accepted_past_tense": [
+      "fell"
+    ],
+    "accepted_past_participle": [
+      "fallen"
+    ],
+    "past_tense": "fell",
+    "past_participle": "fallen",
+    "meaning_zh": "落下；跌倒；下降；进入某状态",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1032",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "落下；跌倒；下降；进入某状态",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1032"
+  },
+  {
+    "sequence": 24,
+    "infinitive": "feed",
+    "accepted_past_tense": [
+      "fed"
+    ],
+    "accepted_past_participle": [
+      "fed"
+    ],
+    "past_tense": "fed",
+    "past_participle": "fed",
+    "meaning_zh": "喂养；供给；输入",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1055",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "喂养；供给；输入",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1055"
+  },
+  {
+    "sequence": 25,
+    "infinitive": "feel",
+    "accepted_past_tense": [
+      "felt"
+    ],
+    "accepted_past_participle": [
+      "felt"
+    ],
+    "past_tense": "felt",
+    "past_participle": "felt",
+    "meaning_zh": "感觉；觉得；触摸；认为",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1056",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "感觉；觉得；触摸；认为",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1056"
+  },
+  {
+    "sequence": 26,
+    "infinitive": "fight",
+    "accepted_past_tense": [
+      "fought"
+    ],
+    "accepted_past_participle": [
+      "fought"
+    ],
+    "past_tense": "fought",
+    "past_participle": "fought",
+    "meaning_zh": "打架；战斗；争取；与……斗争",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1071",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "打架；战斗；争取；与……斗争",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1071"
+  },
+  {
+    "sequence": 27,
+    "infinitive": "find",
+    "accepted_past_tense": [
+      "found"
+    ],
+    "accepted_past_participle": [
+      "found"
+    ],
+    "past_tense": "found",
+    "past_participle": "found",
+    "meaning_zh": "找到；发现；查明；认为",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1079",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "找到；发现；查明；认为",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1079"
+  },
+  {
+    "sequence": 28,
+    "infinitive": "fly",
+    "accepted_past_tense": [
+      "flew"
+    ],
+    "accepted_past_participle": [
+      "flown"
+    ],
+    "past_tense": "flew",
+    "past_participle": "flown",
+    "meaning_zh": "飞；飞行；乘飞机",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1106",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "飞；飞行；乘飞机",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1106"
+  },
+  {
+    "sequence": 29,
+    "infinitive": "forget",
+    "accepted_past_tense": [
+      "forgot"
+    ],
+    "accepted_past_participle": [
+      "forgotten"
+    ],
+    "past_tense": "forgot",
+    "past_participle": "forgotten",
+    "meaning_zh": "忘记；忘了做；遗忘；落下",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1123",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "忘记；忘了做；遗忘；落下",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1123"
+  },
+  {
+    "sequence": 30,
+    "infinitive": "freeze",
+    "accepted_past_tense": [
+      "froze"
+    ],
+    "accepted_past_participle": [
+      "frozen"
+    ],
+    "past_tense": "froze",
+    "past_participle": "frozen",
+    "meaning_zh": "结冰；冷冻；冻住；僵住",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1144",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "结冰；冷冻；冻住；僵住",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1144"
+  },
+  {
+    "sequence": 31,
+    "infinitive": "get",
+    "accepted_past_tense": [
+      "got"
+    ],
+    "accepted_past_participle": [
+      "got",
+      "gotten"
+    ],
+    "past_tense": "got",
+    "past_participle": "got / gotten",
+    "meaning_zh": "得到；获得；到达；变得；理解；使得",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1196",
+    "usage_note": "got 为常见过去分词；gotten 主要见于美式英语及部分固定意义。",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "得到；获得；到达；变得；理解；使得",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1196"
+  },
+  {
+    "sequence": 32,
+    "infinitive": "give",
+    "accepted_past_tense": [
+      "gave"
+    ],
+    "accepted_past_participle": [
+      "given"
+    ],
+    "past_tense": "gave",
+    "past_participle": "given",
+    "meaning_zh": "给；给予；赠送；提供；使产生",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1201",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "给；给予；赠送；提供；使产生",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1201"
+  },
+  {
+    "sequence": 33,
+    "infinitive": "go",
+    "accepted_past_tense": [
+      "went"
+    ],
+    "accepted_past_participle": [
+      "gone"
+    ],
+    "past_tense": "went",
+    "past_participle": "gone",
+    "meaning_zh": "去；走；进行；变得",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1208",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "去；走；进行；变得",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1208"
+  },
+  {
+    "sequence": 34,
+    "infinitive": "grow",
+    "accepted_past_tense": [
+      "grew"
+    ],
+    "accepted_past_participle": [
+      "grown"
+    ],
+    "past_tense": "grew",
+    "past_participle": "grown",
+    "meaning_zh": "生长；种植；增长；逐渐变得",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1244",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "生长；种植；增长；逐渐变得",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1244"
+  },
+  {
+    "sequence": 35,
+    "infinitive": "have",
+    "accepted_past_tense": [
+      "had"
+    ],
+    "accepted_past_participle": [
+      "had"
+    ],
+    "past_tense": "had",
+    "past_participle": "had",
+    "meaning_zh": "有；拥有；经历；吃；使",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1284",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "有；拥有；经历；吃；使",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1284"
+  },
+  {
+    "sequence": 36,
+    "infinitive": "hear",
+    "accepted_past_tense": [
+      "heard"
+    ],
+    "accepted_past_participle": [
+      "heard"
+    ],
+    "past_tense": "heard",
+    "past_participle": "heard",
+    "meaning_zh": "听见；听说；倾听；审理",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1290",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "听见；听说；倾听；审理",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1290"
+  },
+  {
+    "sequence": 37,
+    "infinitive": "hide",
+    "accepted_past_tense": [
+      "hid"
+    ],
+    "accepted_past_participle": [
+      "hidden"
+    ],
+    "past_tense": "hid",
+    "past_participle": "hidden",
+    "meaning_zh": "隐藏；躲藏；隐瞒",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1308",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "隐藏；躲藏；隐瞒",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1308"
+  },
+  {
+    "sequence": 38,
+    "infinitive": "hit",
+    "accepted_past_tense": [
+      "hit"
+    ],
+    "accepted_past_participle": [
+      "hit"
+    ],
+    "past_tense": "hit",
+    "past_participle": "hit",
+    "meaning_zh": "击；打；撞击；达到",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1319",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "击；打；撞击；达到",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1319"
+  },
+  {
+    "sequence": 39,
+    "infinitive": "hold",
+    "accepted_past_tense": [
+      "held"
+    ],
+    "accepted_past_participle": [
+      "held"
+    ],
+    "past_tense": "held",
+    "past_participle": "held",
+    "meaning_zh": "拿着；保持；容纳；举行",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1321",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "拿着；保持；容纳；举行",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1321"
+  },
+  {
+    "sequence": 40,
+    "infinitive": "hurt",
+    "accepted_past_tense": [
+      "hurt"
+    ],
+    "accepted_past_participle": [
+      "hurt"
+    ],
+    "past_tense": "hurt",
+    "past_participle": "hurt",
+    "meaning_zh": "使受伤；感到疼痛；伤害",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1354",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "使受伤；感到疼痛；伤害",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1354"
+  },
+  {
+    "sequence": 41,
+    "infinitive": "keep",
+    "accepted_past_tense": [
+      "kept"
+    ],
+    "accepted_past_participle": [
+      "kept"
+    ],
+    "past_tense": "kept",
+    "past_participle": "kept",
+    "meaning_zh": "保持；保留；遵守；继续",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1484",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "保持；保留；遵守；继续",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1484"
+  },
+  {
+    "sequence": 42,
+    "infinitive": "know",
+    "accepted_past_tense": [
+      "knew"
+    ],
+    "accepted_past_participle": [
+      "known"
+    ],
+    "past_tense": "knew",
+    "past_participle": "known",
+    "meaning_zh": "知道；了解；认识；懂得",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1504",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "知道；了解；认识；懂得",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1504"
+  },
+  {
+    "sequence": 43,
+    "infinitive": "lead",
+    "accepted_past_tense": [
+      "led"
+    ],
+    "accepted_past_participle": [
+      "led"
+    ],
+    "past_tense": "led",
+    "past_participle": "led",
+    "meaning_zh": "领导；引导；通向",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1530",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "领导；引导；通向",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1530"
+  },
+  {
+    "sequence": 44,
+    "infinitive": "learn",
+    "accepted_past_tense": [
+      "learned",
+      "learnt"
+    ],
+    "accepted_past_participle": [
+      "learned",
+      "learnt"
+    ],
+    "past_tense": "learned / learnt",
+    "past_participle": "learned / learnt",
+    "meaning_zh": "学习；学会；得知；记住",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1536",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "学习；学会；得知；记住",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1536"
+  },
+  {
+    "sequence": 45,
+    "infinitive": "leave",
+    "accepted_past_tense": [
+      "left"
+    ],
+    "accepted_past_participle": [
+      "left"
+    ],
+    "past_tense": "left",
+    "past_participle": "left",
+    "meaning_zh": "离开；留下；让……处于",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1539",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "离开；留下；让……处于",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1539"
+  },
+  {
+    "sequence": 46,
+    "infinitive": "lend",
+    "accepted_past_tense": [
+      "lent"
+    ],
+    "accepted_past_participle": [
+      "lent"
+    ],
+    "past_tense": "lent",
+    "past_participle": "lent",
+    "meaning_zh": "借给；提供；增添",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1546",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "借给；提供；增添",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1546"
+  },
+  {
+    "sequence": 47,
+    "infinitive": "let",
+    "accepted_past_tense": [
+      "let"
+    ],
+    "accepted_past_participle": [
+      "let"
+    ],
+    "past_tense": "let",
+    "past_participle": "let",
+    "meaning_zh": "让；允许；出租",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1550",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "让；允许；出租",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1550"
+  },
+  {
+    "sequence": 48,
+    "infinitive": "lie",
+    "accepted_past_tense": [
+      "lay"
+    ],
+    "accepted_past_participle": [
+      "lain"
+    ],
+    "past_tense": "lay",
+    "past_participle": "lain",
+    "meaning_zh": "躺；位于；说谎",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1558",
+    "usage_note": "本行表示“躺；位于”；表示“说谎”时规则变化为 lied。",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "躺；位于；说谎",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1558"
+  },
+  {
+    "sequence": 49,
+    "infinitive": "lose",
+    "accepted_past_tense": [
+      "lost"
+    ],
+    "accepted_past_participle": [
+      "lost"
+    ],
+    "past_tense": "lost",
+    "past_participle": "lost",
+    "meaning_zh": "失去；输掉；迷路；减少",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1592",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "失去；输掉；迷路；减少",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1592"
+  },
+  {
+    "sequence": 50,
+    "infinitive": "make",
+    "accepted_past_tense": [
+      "made"
+    ],
+    "accepted_past_participle": [
+      "made"
+    ],
+    "past_tense": "made",
+    "past_participle": "made",
+    "meaning_zh": "制作；使得；成为；赚得",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1616",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "制作；使得；成为；赚得",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1616"
+  },
+  {
+    "sequence": 51,
+    "infinitive": "may",
+    "accepted_past_tense": [
+      "might"
+    ],
+    "accepted_past_participle": [],
+    "past_tense": "might",
+    "past_participle": "—",
+    "meaning_zh": "可以；可能；也许",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1642",
+    "usage_note": "might 是历史上的过去式，也常表达较弱可能性；没有过去分词。",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "可以；可能；也许",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1642"
+  },
+  {
+    "sequence": 52,
+    "infinitive": "mean",
+    "accepted_past_tense": [
+      "meant"
+    ],
+    "accepted_past_participle": [
+      "meant"
+    ],
+    "past_tense": "meant",
+    "past_participle": "meant",
+    "meaning_zh": "意思是；意味着；打算",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1646",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "意思是；意味着；打算",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1646"
+  },
+  {
+    "sequence": 53,
+    "infinitive": "meet",
+    "accepted_past_tense": [
+      "met"
+    ],
+    "accepted_past_participle": [
+      "met"
+    ],
+    "past_tense": "met",
+    "past_participle": "met",
+    "meaning_zh": "遇见；会面；满足",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1656",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "遇见；会面；满足",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1656"
+  },
+  {
+    "sequence": 54,
+    "infinitive": "must",
+    "accepted_past_tense": [],
+    "accepted_past_participle": [],
+    "past_tense": "—",
+    "past_participle": "—",
+    "meaning_zh": "必须；一定",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1745",
+    "usage_note": "现代英语中没有独立过去式或过去分词；过去时意义通常用 had to。",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "必须；一定",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1745"
+  },
+  {
+    "sequence": 55,
+    "infinitive": "pay",
+    "accepted_past_tense": [
+      "paid"
+    ],
+    "accepted_past_participle": [
+      "paid"
+    ],
+    "past_tense": "paid",
+    "past_participle": "paid",
+    "meaning_zh": "支付；付出代价；有收益",
+    "in_release_3800": true,
+    "release_record_id": "release-word-1930",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "支付；付出代价；有收益",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-1930"
+  },
+  {
+    "sequence": 56,
+    "infinitive": "put",
+    "accepted_past_tense": [
+      "put"
+    ],
+    "accepted_past_participle": [
+      "put"
+    ],
+    "past_tense": "put",
+    "past_participle": "put",
+    "meaning_zh": "放；安置；表达；使处于",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2120",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "放；安置；表达；使处于",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2120"
+  },
+  {
+    "sequence": 57,
+    "infinitive": "read",
+    "accepted_past_tense": [
+      "read"
+    ],
+    "accepted_past_participle": [
+      "read"
+    ],
+    "past_tense": "read",
+    "past_participle": "read",
+    "meaning_zh": "阅读；读懂；显示",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2157",
+    "usage_note": "过去式和过去分词拼写仍为 read，但读音与原形不同。",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "阅读；读懂；显示",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2157"
+  },
+  {
+    "sequence": 58,
+    "infinitive": "ride",
+    "accepted_past_tense": [
+      "rode"
+    ],
+    "accepted_past_participle": [
+      "ridden"
+    ],
+    "past_tense": "rode",
+    "past_participle": "ridden",
+    "meaning_zh": "骑；乘坐；驾驶",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2253",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "骑；乘坐；驾驶",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2253"
+  },
+  {
+    "sequence": 59,
+    "infinitive": "ring",
+    "accepted_past_tense": [
+      "rang"
+    ],
+    "accepted_past_participle": [
+      "rung"
+    ],
+    "past_tense": "rang",
+    "past_participle": "rung",
+    "meaning_zh": "响铃；打电话；包围",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2256",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "响铃；打电话；包围",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2256"
+  },
+  {
+    "sequence": 60,
+    "infinitive": "run",
+    "accepted_past_tense": [
+      "ran"
+    ],
+    "accepted_past_participle": [
+      "run"
+    ],
+    "past_tense": "ran",
+    "past_participle": "run",
+    "meaning_zh": "跑；运行；经营；延伸",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2286",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "跑；运行；经营；延伸",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2286"
+  },
+  {
+    "sequence": 61,
+    "infinitive": "say",
+    "accepted_past_tense": [
+      "said"
+    ],
+    "accepted_past_participle": [
+      "said"
+    ],
+    "past_tense": "said",
+    "past_participle": "said",
+    "meaning_zh": "说；表明；假设",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2314",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "说；表明；假设",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2314"
+  },
+  {
+    "sequence": 62,
+    "infinitive": "see",
+    "accepted_past_tense": [
+      "saw"
+    ],
+    "accepted_past_participle": [
+      "seen"
+    ],
+    "past_tense": "saw",
+    "past_participle": "seen",
+    "meaning_zh": "看见；明白；会见；参观",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2342",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "看见；明白；会见；参观",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2342"
+  },
+  {
+    "sequence": 63,
+    "infinitive": "sell",
+    "accepted_past_tense": [
+      "sold"
+    ],
+    "accepted_past_participle": [
+      "sold"
+    ],
+    "past_tense": "sold",
+    "past_participle": "sold",
+    "meaning_zh": "出售；销售；说服",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2349",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "出售；销售；说服",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2349"
+  },
+  {
+    "sequence": 64,
+    "infinitive": "send",
+    "accepted_past_tense": [
+      "sent"
+    ],
+    "accepted_past_participle": [
+      "sent"
+    ],
+    "past_tense": "sent",
+    "past_participle": "sent",
+    "meaning_zh": "发送；派遣；使进入；传达",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2350",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "发送；派遣；使进入；传达",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2350"
+  },
+  {
+    "sequence": 65,
+    "infinitive": "set",
+    "accepted_past_tense": [
+      "set"
+    ],
+    "accepted_past_participle": [
+      "set"
+    ],
+    "past_tense": "set",
+    "past_participle": "set",
+    "meaning_zh": "放置；设定；安排",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2363",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "放置；设定；安排",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2363"
+  },
+  {
+    "sequence": 66,
+    "infinitive": "shake",
+    "accepted_past_tense": [
+      "shook"
+    ],
+    "accepted_past_participle": [
+      "shaken"
+    ],
+    "past_tense": "shook",
+    "past_participle": "shaken",
+    "meaning_zh": "摇动；颤抖；动摇",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2376",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "摇动；颤抖；动摇",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2376"
+  },
+  {
+    "sequence": 67,
+    "infinitive": "shall",
+    "accepted_past_tense": [
+      "should"
+    ],
+    "accepted_past_participle": [],
+    "past_tense": "should",
+    "past_participle": "—",
+    "meaning_zh": "将；应该；必须",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2377",
+    "usage_note": "should 是历史上的过去式，也可表达建议或义务；没有过去分词。",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "将；应该；必须",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2377"
+  },
+  {
+    "sequence": 68,
+    "infinitive": "show",
+    "accepted_past_tense": [
+      "showed"
+    ],
+    "accepted_past_participle": [
+      "shown",
+      "showed"
+    ],
+    "past_tense": "showed",
+    "past_participle": "shown / showed",
+    "meaning_zh": "展示；表明；带领",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2405",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "展示；表明；带领",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2405"
+  },
+  {
+    "sequence": 69,
+    "infinitive": "shut",
+    "accepted_past_tense": [
+      "shut"
+    ],
+    "accepted_past_participle": [
+      "shut"
+    ],
+    "past_tense": "shut",
+    "past_participle": "shut",
+    "meaning_zh": "关闭；合上",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2407",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "关闭；合上",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2407"
+  },
+  {
+    "sequence": 70,
+    "infinitive": "sing",
+    "accepted_past_tense": [
+      "sang"
+    ],
+    "accepted_past_participle": [
+      "sung"
+    ],
+    "past_tense": "sang",
+    "past_participle": "sung",
+    "meaning_zh": "唱歌；鸣叫；歌颂；告密",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2424",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "唱歌；鸣叫；歌颂；告密",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2424"
+  },
+  {
+    "sequence": 71,
+    "infinitive": "sit",
+    "accepted_past_tense": [
+      "sat"
+    ],
+    "accepted_past_participle": [
+      "sat"
+    ],
+    "past_tense": "sat",
+    "past_participle": "sat",
+    "meaning_zh": "坐；坐落；参加考试；担任委员",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2429",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "坐；坐落；参加考试；担任委员",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2429"
+  },
+  {
+    "sequence": 72,
+    "infinitive": "sleep",
+    "accepted_past_tense": [
+      "slept"
+    ],
+    "accepted_past_participle": [
+      "slept"
+    ],
+    "past_tense": "slept",
+    "past_participle": "slept",
+    "meaning_zh": "睡觉；容纳住宿",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2445",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "睡觉；容纳住宿",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2445"
+  },
+  {
+    "sequence": 73,
+    "infinitive": "speak",
+    "accepted_past_tense": [
+      "spoke"
+    ],
+    "accepted_past_participle": [
+      "spoken"
+    ],
+    "past_tense": "spoke",
+    "past_participle": "spoken",
+    "meaning_zh": "说话；发言；讲某种语言；表明",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2504",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "说话；发言；讲某种语言；表明",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2504"
+  },
+  {
+    "sequence": 74,
+    "infinitive": "spell",
+    "accepted_past_tense": [
+      "spelled",
+      "spelt"
+    ],
+    "accepted_past_participle": [
+      "spelled",
+      "spelt"
+    ],
+    "past_tense": "spelled / spelt",
+    "past_participle": "spelled / spelt",
+    "meaning_zh": "拼写；招致；轮替",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2512",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "拼写；招致；轮替",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2512"
+  },
+  {
+    "sequence": 75,
+    "infinitive": "spend",
+    "accepted_past_tense": [
+      "spent"
+    ],
+    "accepted_past_participle": [
+      "spent"
+    ],
+    "past_tense": "spent",
+    "past_participle": "spent",
+    "meaning_zh": "花费；度过；耗尽",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2513",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "花费；度过；耗尽",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2513"
+  },
+  {
+    "sequence": 76,
+    "infinitive": "stand",
+    "accepted_past_tense": [
+      "stood"
+    ],
+    "accepted_past_participle": [
+      "stood"
+    ],
+    "past_tense": "stood",
+    "past_participle": "stood",
+    "meaning_zh": "站立；忍受；位于",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2530",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "站立；忍受；位于",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2530"
+  },
+  {
+    "sequence": 77,
+    "infinitive": "stick",
+    "accepted_past_tense": [
+      "stuck"
+    ],
+    "accepted_past_participle": [
+      "stuck"
+    ],
+    "past_tense": "stuck",
+    "past_participle": "stuck",
+    "meaning_zh": "粘；刺；坚持",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2546",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "粘；刺；坚持",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2546"
+  },
+  {
+    "sequence": 78,
+    "infinitive": "sweep",
+    "accepted_past_tense": [
+      "swept"
+    ],
+    "accepted_past_participle": [
+      "swept"
+    ],
+    "past_tense": "swept",
+    "past_participle": "swept",
+    "meaning_zh": "扫；席卷；迅速移动",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2630",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "扫；席卷；迅速移动",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2630"
+  },
+  {
+    "sequence": 79,
+    "infinitive": "swim",
+    "accepted_past_tense": [
+      "swam"
+    ],
+    "accepted_past_participle": [
+      "swum"
+    ],
+    "past_tense": "swam",
+    "past_participle": "swum",
+    "meaning_zh": "游泳；漂浮；眩晕",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2632",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "游泳；漂浮；眩晕",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2632"
+  },
+  {
+    "sequence": 80,
+    "infinitive": "take",
+    "accepted_past_tense": [
+      "took"
+    ],
+    "accepted_past_participle": [
+      "taken"
+    ],
+    "past_tense": "took",
+    "past_participle": "taken",
+    "meaning_zh": "拿；带走；接受；花费",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2645",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "拿；带走；接受；花费",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2645"
+  },
+  {
+    "sequence": 81,
+    "infinitive": "teach",
+    "accepted_past_tense": [
+      "taught"
+    ],
+    "accepted_past_participle": [
+      "taught"
+    ],
+    "past_tense": "taught",
+    "past_participle": "taught",
+    "meaning_zh": "教；教授；使懂得",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2658",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "教；教授；使懂得",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2658"
+  },
+  {
+    "sequence": 82,
+    "infinitive": "tell",
+    "accepted_past_tense": [
+      "told"
+    ],
+    "accepted_past_participle": [
+      "told"
+    ],
+    "past_tense": "told",
+    "past_participle": "told",
+    "meaning_zh": "告诉；讲述；辨别；命令",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2669",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "告诉；讲述；辨别；命令",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2669"
+  },
+  {
+    "sequence": 83,
+    "infinitive": "think",
+    "accepted_past_tense": [
+      "thought"
+    ],
+    "accepted_past_participle": [
+      "thought"
+    ],
+    "past_tense": "thought",
+    "past_participle": "thought",
+    "meaning_zh": "想；认为；思考；料想",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2703",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "想；认为；思考；料想",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2703"
+  },
+  {
+    "sequence": 84,
+    "infinitive": "throw",
+    "accepted_past_tense": [
+      "threw"
+    ],
+    "accepted_past_participle": [
+      "thrown"
+    ],
+    "past_tense": "threw",
+    "past_participle": "thrown",
+    "meaning_zh": "投；扔；使陷入",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2720",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "投；扔；使陷入",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2720"
+  },
+  {
+    "sequence": 85,
+    "infinitive": "understand",
+    "accepted_past_tense": [
+      "understood"
+    ],
+    "accepted_past_participle": [
+      "understood"
+    ],
+    "past_tense": "understood",
+    "past_participle": "understood",
+    "meaning_zh": "理解；明白；得知；认为",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2815",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "理解；明白；得知；认为",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2815"
+  },
+  {
+    "sequence": 86,
+    "infinitive": "wake",
+    "accepted_past_tense": [
+      "woke",
+      "waked"
+    ],
+    "accepted_past_participle": [
+      "woken",
+      "waked"
+    ],
+    "past_tense": "woke / waked",
+    "past_participle": "woken / waked",
+    "meaning_zh": "醒来；唤醒",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2881",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "醒来；唤醒",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2881"
+  },
+  {
+    "sequence": 87,
+    "infinitive": "wear",
+    "accepted_past_tense": [
+      "wore"
+    ],
+    "accepted_past_participle": [
+      "worn"
+    ],
+    "past_tense": "wore",
+    "past_participle": "worn",
+    "meaning_zh": "穿；戴；磨损",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2904",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "穿；戴；磨损",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2904"
+  },
+  {
+    "sequence": 88,
+    "infinitive": "will",
+    "accepted_past_tense": [
+      "would"
+    ],
+    "accepted_past_participle": [],
+    "past_tense": "would",
+    "past_participle": "—",
+    "meaning_zh": "将；会；愿意；决意；遗赠",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2946",
+    "usage_note": "would 是历史上的过去式，也用于条件、意愿等结构；没有过去分词。",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "将；会；愿意；决意；遗赠",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2946"
+  },
+  {
+    "sequence": 89,
+    "infinitive": "win",
+    "accepted_past_tense": [
+      "won"
+    ],
+    "accepted_past_participle": [
+      "won"
+    ],
+    "past_tense": "won",
+    "past_participle": "won",
+    "meaning_zh": "获胜；赢得；争取到",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2947",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "获胜；赢得；争取到",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2947"
+  },
+  {
+    "sequence": 90,
+    "infinitive": "write",
+    "accepted_past_tense": [
+      "wrote"
+    ],
+    "accepted_past_participle": [
+      "written"
+    ],
+    "past_tense": "wrote",
+    "past_participle": "written",
+    "meaning_zh": "写；写作；填写；写信",
+    "in_release_3800": true,
+    "release_record_id": "release-word-2985",
+    "usage_note": "",
+    "form_source": "OEWN 2025 verb.exc + documented form rules",
+    "meaning_source": "release_vocabulary_3800_zh",
+    "qa_status": "automated_checks_passed",
+    "meaning": "写；写作；填写；写信",
+    "edition": "zhongkao",
+    "in_edition_vocabulary": true,
+    "edition_record_id": "release-word-2985"
+  }
+]

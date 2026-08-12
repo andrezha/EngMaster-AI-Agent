@@ -1,4 +1,4 @@
-"""Edition registry for the single-codebase EngMaster application."""
+"""Edition registry for the single-codebase 英思成 application."""
 
 from __future__ import annotations
 
@@ -38,10 +38,14 @@ class EditionConfig:
 
     @property
     def word_list_title(self) -> str:
+        if self.edition_id == "gaokao":
+            return "高中3800词汇表"
         return f"{self.base_display_name}词汇表（{self.word_count}词）"
 
     @property
     def challenge_title(self) -> str:
+        if self.edition_id == "gaokao":
+            return "高中3800词闯关"
         return f"{self.base_display_name}词汇闯关（{self.word_count}词）"
 
     def page_enabled(self, page_id: str) -> bool:
@@ -61,18 +65,18 @@ EDITIONS = {
     "zhongkao": EditionConfig(
         edition_id="zhongkao",
         display_name="初中英语",
-        window_title="EngMaster 初中英语1600词汇版 v1.0",
-        vocabulary_path="research/edition_samples/zhongkao_sample.json",
-        phrase_path="research/edition_samples/zhongkao_phrases.json",
-        irregular_verbs_path="research/edition_samples/zhongkao_irregular_verbs.json",
+        window_title="英思成 初中英语核心词汇版 v1.0",
+        vocabulary_path="assets/editions/zhongkao/vocabulary.json",
+        phrase_path="assets/editions/zhongkao/phrases.json",
+        irregular_verbs_path="assets/editions/zhongkao/irregular_verbs.json",
         enabled_pages=_ALL_VOCABULARY_PAGES,
-        production_ready=False,
-        word_count=1600,
+        production_ready=True,
+        word_count=1609,
     ),
     "gaokao": EditionConfig(
         edition_id="gaokao",
-        display_name="高考英语",
-        window_title="EngMaster 高考英语3800词汇版 v1.0",
+        display_name="高中",
+        window_title="英思成 高中3800词汇版 v1.0",
         vocabulary_path="assets/editions/gaokao/vocabulary.json",
         phrase_path="assets/editions/gaokao/phrases.json",
         irregular_verbs_path="assets/editions/gaokao/irregular_verbs.json",
@@ -83,7 +87,7 @@ EDITIONS = {
     "cet4": EditionConfig(
         edition_id="cet4",
         display_name="大学英语四级",
-        window_title="EngMaster 大学英语四级4500词汇版 v1.0",
+        window_title="英思成 大学英语四级4500词汇版 v1.0",
         vocabulary_path="research/edition_samples/cet4_sample.json",
         phrase_path="research/edition_samples/cet4_phrases.json",
         irregular_verbs_path="research/edition_samples/cet4_irregular_verbs.json",
@@ -94,7 +98,7 @@ EDITIONS = {
     "cet6": EditionConfig(
         edition_id="cet6",
         display_name="大学英语六级",
-        window_title="EngMaster 大学英语六级5500词汇版 v1.0",
+        window_title="英思成 大学英语六级5500词汇版 v1.0",
         vocabulary_path="research/edition_samples/cet6_sample.json",
         phrase_path="research/edition_samples/cet6_phrases.json",
         irregular_verbs_path="research/edition_samples/cet6_irregular_verbs.json",
@@ -105,7 +109,7 @@ EDITIONS = {
     "kaoyan": EditionConfig(
         edition_id="kaoyan",
         display_name="考研英语",
-        window_title="EngMaster 考研英语5500词汇版 v1.0",
+        window_title="英思成 考研英语5500词汇版 v1.0",
         vocabulary_path="research/edition_samples/kaoyan_sample.json",
         phrase_path="research/edition_samples/kaoyan_phrases.json",
         irregular_verbs_path="research/edition_samples/kaoyan_irregular_verbs.json",
@@ -124,7 +128,7 @@ RELEASED_EDITION_IDS = tuple(
 # deliberately keep their own IDs so progress, mistakes and self-entered words
 # are isolated both from formal products and from the other trial levels.
 _TRIAL_VOCABULARY_PATHS = {
-    "zhongkao": "research/edition_samples/zhongkao_sample.json",
+    "zhongkao": "assets/editions/zhongkao/trial_vocabulary.json",
     "gaokao": "assets/editions/gaokao/trial_vocabulary.json",
     "cet4": "research/edition_samples/cet4_sample.json",
     "cet6": "research/edition_samples/cet6_sample.json",
@@ -134,7 +138,7 @@ TRIAL_EDITIONS = {
     f"trial_{formal_id}": EditionConfig(
         edition_id=f"trial_{formal_id}",
         display_name=f"{formal.display_name}体验",
-        window_title=f"EngMaster {formal.display_name}免费体验版（30词） v1.0",
+        window_title=f"英思成 {formal.display_name}免费体验版（30词） v1.0",
         vocabulary_path=_TRIAL_VOCABULARY_PATHS[formal_id],
         phrase_path=formal.phrase_path,
         irregular_verbs_path=formal.irregular_verbs_path,
@@ -147,6 +151,9 @@ TRIAL_EDITIONS = {
 # Backward-compatible alias: old builds remembered "trial".  It now opens the
 # high-school trial and is rewritten as trial_gaokao on the next save.
 TRIAL_EDITION = TRIAL_EDITIONS["trial_gaokao"]
+AVAILABLE_TRIAL_EDITION_IDS = tuple(
+    f"trial_{edition_id}" for edition_id in RELEASED_EDITION_IDS
+)
 ALL_EDITIONS = {**EDITIONS, **TRIAL_EDITIONS, "trial": TRIAL_EDITION}
 
 DEFAULT_EDITION_ID = "gaokao"
@@ -171,11 +178,19 @@ def is_trial_edition(edition) -> bool:
     return edition_id == "trial" or edition_id.startswith("trial_")
 
 
+def is_available_trial_edition(edition) -> bool:
+    if isinstance(edition, EditionConfig):
+        edition_id = edition.edition_id
+    else:
+        edition_id = str(edition or "").strip().lower()
+    return edition_id == "trial" or edition_id in AVAILABLE_TRIAL_EDITION_IDS
+
+
 def extract_edition_args(argv: Iterable[str]) -> tuple[EditionConfig, list[str]]:
     """Remove the internal --edition option before Qt parses command-line args."""
     args = list(argv)
     cleaned = [args[0]] if args else []
-    requested = os.environ.get("ENGMASTER_EDITION", DEFAULT_EDITION_ID)
+    requested = os.environ.get("RECALLLEX_EDITION", DEFAULT_EDITION_ID)
     index = 1
     while index < len(args):
         arg = args[index]
@@ -192,7 +207,7 @@ def extract_edition_args(argv: Iterable[str]) -> tuple[EditionConfig, list[str]]
 
 def edition_was_explicitly_requested(argv: Iterable[str]) -> bool:
     """Return whether startup already selected an edition outside the UI."""
-    if os.environ.get("ENGMASTER_EDITION"):
+    if os.environ.get("RECALLLEX_EDITION"):
         return True
     return any(
         arg == "--edition" or arg.startswith("--edition=")

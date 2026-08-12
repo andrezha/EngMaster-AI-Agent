@@ -75,7 +75,7 @@ class TrialModeTests(unittest.TestCase):
 
     def test_trial_writable_data_is_isolated_from_formal_editions(self):
         with tempfile.TemporaryDirectory() as temp_dir, mock.patch.dict(
-            os.environ, {"ENGMASTER_DATA_DIR": temp_dir}
+            os.environ, {"RECALLLEX_DATA_DIR": temp_dir}
         ):
             set_active_edition("trial_zhongkao")
             trial_path = Path(get_writable_data_path("mistake_words.json"))
@@ -138,7 +138,7 @@ class TrialModeTests(unittest.TestCase):
 
     def test_trial_center_explains_scope_actions_and_data_isolation(self):
         window = QtWidgets.QMainWindow()
-        window.edition = TRIAL_EDITIONS["trial_zhongkao"]
+        window.edition = TRIAL_EDITIONS["trial_gaokao"]
         window.stack = QtWidgets.QStackedWidget()
         window.stack.addWidget(QtWidgets.QWidget())
         window.vocab_ctrl = SimpleNamespace(switch_challenge_mode=lambda _mode: None)
@@ -157,11 +157,15 @@ class TrialModeTests(unittest.TestCase):
         window.has_formal_license = False
         view = TrialCenterView(window)
         page_text = " ".join(label.text() for label in view.findChildren(QtWidgets.QLabel))
-        self.assertIn("初中英语学习者准备的30词体验词库", page_text)
+        self.assertIn("高中3800词，从准高一预习到高三备考", page_text)
+        self.assertIn("高效记忆", page_text)
+        self.assertIn("闯关识弱", page_text)
+        self.assertIn("自主登记", page_text)
         self.assertNotIn("当前级别", page_text)
-        self.assertIn("各类体验数据与正式版本完全隔离", page_text)
+        self.assertIn("体验数据与正式版本完全隔离", page_text)
+        self.assertIn("正式版开放后，对应体验才会同步开放", page_text)
         self.assertIn("不会自动混入或覆盖正式数据", page_text)
-        self.assertEqual(len(view.findChildren(QtWidgets.QPushButton)), 6)
+        self.assertEqual(len(view.findChildren(QtWidgets.QPushButton)), 3)
         self.assertIsNotNone(view.findChild(
             QtWidgets.QPushButton, "btn_trial_go_purchase"))
         self.assertIsNone(view.findChild(
@@ -170,11 +174,13 @@ class TrialModeTests(unittest.TestCase):
             QtWidgets.QPushButton, "btn_trial_word_list"))
         self.assertIsNone(view.findChild(
             QtWidgets.QPushButton, "btn_trial_phrase_challenge"))
+        self.assertIsNone(view.findChild(
+            QtWidgets.QPushButton, "btn_trial_level_trial_cet6"))
         level_button = view.findChild(
-            QtWidgets.QPushButton, "btn_trial_level_trial_cet6")
+            QtWidgets.QPushButton, "btn_trial_level_trial_gaokao")
         self.assertIsNotNone(level_button)
-        level_button.click()
-        self.assertEqual(requested_levels, ["trial_cet6"])
+        self.assertFalse(level_button.isEnabled())
+        self.assertEqual(requested_levels, [])
         view.close()
         window.close()
 
@@ -444,10 +450,10 @@ class TrialModeTests(unittest.TestCase):
                 "gaokao", entitlements={"gaokao"})
         self.assertEqual(selected.edition_id, "trial_gaokao")
 
-    def test_real_trial_window_loads_center_and_hides_non_word_pages(self):
+    def test_released_junior_trial_request_opens_matching_trial(self):
         settings = _MemorySettings({"guides/quick_overview_seen_v1": True})
         with tempfile.TemporaryDirectory() as data_dir, mock.patch.dict(
-            os.environ, {"ENGMASTER_DATA_DIR": data_dir}
+            os.environ, {"RECALLLEX_DATA_DIR": data_dir}
         ), mock.patch.object(main, "_app_settings", return_value=settings):
             self.app.license_active = False
             self.app.license_entitlements = frozenset()
@@ -460,15 +466,27 @@ class TrialModeTests(unittest.TestCase):
                 time.sleep(0.01)
             self.app.processEvents()
             self.assertTrue(window.is_trial)
+            self.assertEqual(window.edition.edition_id, "trial_zhongkao")
             self.assertEqual(window.lbl_current_edition.text(), "初中英语免费体验版（30词）")
             self.assertEqual(window.btn_free_trial.text(), "免费体验")
             self.assertEqual(window.btn_switch_edition.text(), "正式版管理与购买")
             self.assertTrue(window.btn_free_trial.isEnabled())
             self.assertEqual(len(window.vocab_ctrl.vocabulary), 30)
-            self.assertIs(window.stack.currentWidget(), window.word_list_widget)
+            self.assertIs(window.stack.currentWidget(), window.scientific_memory_widget)
             self.assertIsNone(window.trial_center_widget)
             self.assertEqual(window.lbl_learning_section.text(), "体验版学习功能")
             self.assertIn("免费体验版", window.trial_mode_banner.text())
+            main_layout = window.ui_root.findChild(
+                QtWidgets.QBoxLayout, "main_layout")
+            nav_bar = window.ui_root.findChild(QtWidgets.QFrame, "nav_bar")
+            self.assertEqual(
+                main_layout.direction(),
+                QtWidgets.QBoxLayout.Direction.TopToBottom,
+            )
+            self.assertEqual(main_layout.indexOf(window.trial_mode_banner), 0)
+            self.assertEqual(main_layout.indexOf(window.trial_body_container), 1)
+            self.assertEqual(window.trial_body_container.layout().indexOf(nav_bar), 0)
+            self.assertEqual(window.trial_body_container.layout().indexOf(window.stack), 1)
             self.assertIn("30词体验版", window.ui_root.findChild(
                 QtWidgets.QPushButton, "btn_nav_core_vocab").text())
             self.assertIn("最多30词体验版", window.ui_root.findChild(

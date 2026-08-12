@@ -1,4 +1,4 @@
-"""Shared typography and interaction styles for EngMaster."""
+"""Shared typography and interaction styles for 英思成."""
 
 from PySide6 import QtCore, QtGui, QtWidgets
 
@@ -96,6 +96,17 @@ SECONDARY_BUTTON_STYLE = """
     QPushButton:disabled {
         background:#f1f5f9; color:#94a3b8; border-color:#e2e8f0;
     }
+"""
+
+
+SEARCH_INPUT_STYLE = """
+    QLineEdit {
+        background:#ffffff; color:#334155; border:1px solid #cbd5e1;
+        border-radius:8px; padding:0 11px; font-size:13px;
+        selection-background-color:#bfdbfe;
+    }
+    QLineEdit:hover { border-color:#93c5fd; }
+    QLineEdit:focus { background:#ffffff; border-color:#3b82f6; }
 """
 
 

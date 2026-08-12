@@ -1,0 +1,212 @@
+[
+  {
+    "word": "classroom",
+    "content": "noun：教室；课堂",
+    "record_id": "release-word-0525",
+    "variants": "",
+    "pronunciation": "/ˈkɫæsˌɹum/"
+  },
+  {
+    "word": "family",
+    "content": "noun：家庭；家族；一类相关事物 | adjective：家庭的；适合全家的",
+    "record_id": "release-word-1035",
+    "variants": "",
+    "pronunciation": "/ˈfæməɫi/, /ˈfæmɫi/"
+  },
+  {
+    "word": "parent",
+    "content": "noun：父亲或母亲；母体 | verb：养育；做父母",
+    "record_id": "release-word-1910",
+    "variants": "",
+    "pronunciation": "/ˈpɛɹənt/"
+  },
+  {
+    "word": "subject",
+    "content": "noun：主题；科目；对象；主语 | adjective：易受……影响的；服从的 | verb：使遭受",
+    "record_id": "release-word-2581",
+    "variants": "",
+    "pronunciation": "/ˈsəbdʒɪkt/, /səbˈdʒɛkt/"
+  },
+  {
+    "word": "homework",
+    "content": "noun：家庭作业；准备工作",
+    "record_id": "release-word-1326",
+    "variants": "",
+    "pronunciation": "/ˈhoʊmˌwɝk/"
+  },
+  {
+    "word": "library",
+    "content": "noun：图书馆；藏书；资料库",
+    "record_id": "release-word-1556",
+    "variants": "",
+    "pronunciation": "/ˈɫaɪbɹɛˌɹi/"
+  },
+  {
+    "word": "weather",
+    "content": "noun：天气；气象 | verb：经受住；风化 | adjective：迎风的",
+    "record_id": "release-word-2905",
+    "variants": "",
+    "pronunciation": "/ˈwɛðɝ/"
+  },
+  {
+    "word": "season",
+    "content": "noun：季节；时期；赛季 | verb：给……调味；使适应",
+    "record_id": "release-word-2333",
+    "variants": "",
+    "pronunciation": "/ˈsizən/"
+  },
+  {
+    "word": "healthy",
+    "content": "adjective：健康的；有益健康的；正常的；可观的",
+    "record_id": "release-word-1289",
+    "variants": "",
+    "pronunciation": "/ˈhɛɫθi/"
+  },
+  {
+    "word": "exercise",
+    "content": "noun：锻炼；练习；运用；仪式 | verb：锻炼；行使；使担忧",
+    "record_id": "release-word-0992",
+    "variants": "",
+    "pronunciation": "/ˈɛksɝˌsaɪz/"
+  },
+  {
+    "word": "breakfast",
+    "content": "noun：早餐 | verb：吃早餐；给……提供早餐",
+    "record_id": "release-word-0359",
+    "variants": "",
+    "pronunciation": "/ˈbɹɛkfəst/"
+  },
+  {
+    "word": "vegetable",
+    "content": "noun：蔬菜；植物 | adjective：蔬菜的；植物的",
+    "record_id": "release-word-2849",
+    "variants": "",
+    "pronunciation": "/ˈvɛdʒtəbəɫ/"
+  },
+  {
+    "word": "hospital",
+    "content": "noun：医院；医疗机构",
+    "record_id": "release-word-1333",
+    "variants": "",
+    "pronunciation": "/ˈhɑˌspɪtəɫ/"
+  },
+  {
+    "word": "travel",
+    "content": "verb：旅行；行进；传播 | noun：旅行；移动",
+    "record_id": "release-word-2775",
+    "variants": "",
+    "pronunciation": "/ˈtɹævəɫ/"
+  },
+  {
+    "word": "holiday",
+    "content": "noun：假日；假期 | verb：度假",
+    "record_id": "release-word-1323",
+    "variants": "",
+    "pronunciation": "/ˈhɑɫəˌdeɪ/, /ˈhɑɫɪˌdeɪ/"
+  },
+  {
+    "word": "museum",
+    "content": "noun：博物馆",
+    "record_id": "release-word-1741",
+    "variants": "",
+    "pronunciation": "/ˈmjuziəm/, /mjuˈziəm/"
+  },
+  {
+    "word": "country",
+    "content": "noun：国家；国民；乡村；地区",
+    "record_id": "release-word-0659",
+    "variants": "",
+    "pronunciation": "/ˈkəntɹi/"
+  },
+  {
+    "word": "language",
+    "content": "noun：语言；言语；表达方式",
+    "record_id": "release-word-1516",
+    "variants": "",
+    "pronunciation": "/ˈɫæŋɡwədʒ/, /ˈɫæŋɡwɪdʒ/"
+  },
+  {
+    "word": "future",
+    "content": "noun：未来；将来 | adjective：未来的；将来的",
+    "record_id": "release-word-1172",
+    "variants": "",
+    "pronunciation": "/ˈfjutʃɝ/"
+  },
+  {
+    "word": "dream",
+    "content": "noun：梦；梦想；幻想 | verb：做梦；梦想",
+    "record_id": "release-word-0855",
+    "variants": "",
+    "pronunciation": "/ˈdɹim/"
+  },
+  {
+    "word": "environment",
+    "content": "noun：环境；周围状况",
+    "record_id": "release-word-0948",
+    "variants": "",
+    "pronunciation": "/ɪnˈvaɪɹənmənt/"
+  },
+  {
+    "word": "protect",
+    "content": "verb：保护；防护；投保",
+    "record_id": "release-word-2098",
+    "variants": "",
+    "pronunciation": "/pɹəˈtɛkt/"
+  },
+  {
+    "word": "volunteer",
+    "content": "noun：志愿者；自愿参加者 | verb：自愿；主动提供 | adjective：志愿的",
+    "record_id": "release-word-2876",
+    "variants": "",
+    "pronunciation": "/ˌvɑɫənˈtɪɹ/"
+  },
+  {
+    "word": "culture",
+    "content": "noun：文化；文明；修养；培养物 | verb：培养；培育",
+    "record_id": "release-word-0691",
+    "variants": "",
+    "pronunciation": "/ˈkəɫtʃɝ/"
+  },
+  {
+    "word": "festival",
+    "content": "noun：节日；庆典；艺术节",
+    "record_id": "release-word-1061",
+    "variants": "",
+    "pronunciation": "/ˈfɛstəvəɫ/, /ˈfɛstɪvəɫ/"
+  },
+  {
+    "word": "traffic",
+    "content": "noun：交通；车流；通信量 | verb：非法买卖",
+    "record_id": "release-word-2768",
+    "variants": "",
+    "pronunciation": "/ˈtɹæfɪk/"
+  },
+  {
+    "word": "important",
+    "content": "adjective：重要的；有重大影响的",
+    "record_id": "release-word-1378",
+    "variants": "",
+    "pronunciation": "/ˌɪmˈpɔɹtənt/"
+  },
+  {
+    "word": "different",
+    "content": "adjective：不同的；另外的；与众不同的",
+    "record_id": "release-word-0784",
+    "variants": "",
+    "pronunciation": "/ˈdɪfɝənt/, /ˈdɪfɹənt/"
+  },
+  {
+    "word": "because",
+    "content": "conjunction：因为；由于",
+    "record_id": "release-word-0269",
+    "variants": "",
+    "pronunciation": "/bɪˈkɑz/, /bɪˈkəz/, /bɪˈkɔz/, /bɪkəz/"
+  },
+  {
+    "word": "together",
+    "content": "adverb：一起；共同；相互 | adjective：情绪稳定的",
+    "record_id": "release-word-2739",
+    "variants": "",
+    "pronunciation": "/təˈɡɛðɝ/"
+  }
+]

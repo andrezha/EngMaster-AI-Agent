@@ -18,7 +18,7 @@ COMMON_QUESTIONS = (
     ),
     (
         "为什么看不到确认或下一题按钮？",
-        "先点击窗口右上角的最大化按钮。窗口未最大化、分辨率较低或系统显示缩放较大时，页面下方控件可能暂时不在可见区域。",
+        "页面支持常见笔记本窗口和最大化显示。窗口较小时可向下滚动；如果仍看不到，请适当扩大窗口。",
     ),
     (
         "答错后为什么不能直接跳到下一题？",
@@ -38,7 +38,7 @@ COMMON_QUESTIONS = (
     ),
     (
         "程序为什么提示已经运行？",
-        "先在任务栏查找已经打开的 EngMaster 窗口，不要连续双击重复启动。",
+        "先在任务栏查找已经打开的英思成窗口，不要连续双击重复启动。",
     ),
     (
         "怎样切换英语版本或增加权限？",
@@ -46,167 +46,9 @@ COMMON_QUESTIONS = (
     ),
     (
         "怎样购买英语正式版？",
-        "从免费体验点击“前往购买正式版”，进入正式版管理页面；点击统一的“前往淘宝购买”，在淘宝商品规格中选择单版本或组合版本并付款。当前只有高考英语正式版开放，其他组合将在相关版本完成后上线。普通买家填写淘宝订单号；朋友或测试人员可填写客服提供的登记号。生成客服核验信息后发送给对应客服。客服需要人工核对，请耐心等待；收到累计激活码后回到软件粘贴并立即激活。升级购买采用相同流程，新码会保留原有权限并加入新增权限。",
+        "从免费体验点击“前往购买正式版”，进入正式版管理页面；点击统一的“前往淘宝购买”，在淘宝商品规格中选择初中版、高中版或组合版本并付款。普通买家填写淘宝订单号；朋友或测试人员可填写客服提供的登记号。生成客服核验信息后发送给对应客服。客服需要人工核对，请耐心等待；收到累计激活码后回到软件粘贴并立即激活。升级购买采用相同流程，新码会保留原有权限并加入新增权限。",
     ),
 )
-
-
-class LearningLoopDiagram(QtWidgets.QWidget):
-    """Compact flowchart that makes the repeated mistake-learning cycle visible."""
-
-    def __init__(self, parent=None):
-        super().__init__(parent)
-        self.setObjectName("learning_loop_diagram")
-        self.setMinimumHeight(485)
-        self.setAccessibleName("推荐学习循环流程图")
-        self.setAccessibleDescription(
-            "词表学习或直接筛查，进入普通词汇闯关，再依次进行个人错词表背诵、"
-            "错词闯关和下一轮普通闯关；有新错词则返回错词表继续循环，无新错词则完成当前范围。"
-        )
-
-    @staticmethod
-    def _rect(center_x, top, width, height):
-        return QtCore.QRectF(center_x - width / 2, top, width, height)
-
-    @staticmethod
-    def _draw_arrow(painter, start, end, color="#64748b", width=2.2):
-        pen = QtGui.QPen(QtGui.QColor(color), width)
-        pen.setCapStyle(QtCore.Qt.PenCapStyle.RoundCap)
-        painter.setPen(pen)
-        painter.drawLine(start, end)
-        direction = start - end
-        length = max(1.0, (direction.x() ** 2 + direction.y() ** 2) ** 0.5)
-        unit_x, unit_y = direction.x() / length, direction.y() / length
-        side_x, side_y = -unit_y, unit_x
-        arrow_size = 8.0
-        point_1 = end + QtCore.QPointF(
-            unit_x * arrow_size + side_x * arrow_size * 0.55,
-            unit_y * arrow_size + side_y * arrow_size * 0.55,
-        )
-        point_2 = end + QtCore.QPointF(
-            unit_x * arrow_size - side_x * arrow_size * 0.55,
-            unit_y * arrow_size - side_y * arrow_size * 0.55,
-        )
-        painter.setBrush(QtGui.QColor(color))
-        painter.drawPolygon(QtGui.QPolygonF([end, point_1, point_2]))
-
-    @staticmethod
-    def _draw_node(painter, rect, title, subtitle, background, border):
-        painter.setPen(QtGui.QPen(QtGui.QColor(border), 1.6))
-        painter.setBrush(QtGui.QColor(background))
-        painter.drawRoundedRect(rect, 10, 10)
-        title_font = QtGui.QFont()
-        title_font.setPointSize(10)
-        title_font.setBold(True)
-        painter.setFont(title_font)
-        painter.setPen(QtGui.QColor(border))
-        title_rect = QtCore.QRectF(rect.left() + 8, rect.top() + 9, rect.width() - 16, 22)
-        painter.drawText(title_rect, QtCore.Qt.AlignmentFlag.AlignCenter, title)
-        detail_font = QtGui.QFont()
-        detail_font.setPointSize(8)
-        painter.setFont(detail_font)
-        painter.setPen(QtGui.QColor("#475569"))
-        detail_rect = QtCore.QRectF(rect.left() + 8, rect.top() + 32, rect.width() - 16, rect.height() - 38)
-        painter.drawText(
-            detail_rect,
-            QtCore.Qt.AlignmentFlag.AlignHCenter | QtCore.Qt.AlignmentFlag.AlignTop,
-            subtitle,
-        )
-
-    def paintEvent(self, event):
-        super().paintEvent(event)
-        painter = QtGui.QPainter(self)
-        painter.setRenderHint(QtGui.QPainter.RenderHint.Antialiasing)
-        width = float(self.width())
-        center_x = width * 0.43
-        node_width = min(410.0, max(300.0, width * 0.4))
-        node_height = 55.0
-        regular = self._rect(center_x, 12, node_width, node_height)
-        mistakes = self._rect(center_x, 88, node_width, node_height)
-        mistake_challenge = self._rect(center_x, 164, node_width, node_height)
-        next_round = self._rect(center_x, 240, node_width, node_height)
-        decision = self._rect(center_x, 316, node_width, node_height)
-        complete = self._rect(center_x, 407, node_width, node_height)
-        return_x = min(width - 34.0, regular.right() + 175.0)
-
-        loop_area = QtCore.QRectF(
-            mistakes.left() - 25, mistakes.top() - 23,
-            return_x - mistakes.left() + 45, decision.bottom() - mistakes.top() + 44)
-        painter.setPen(QtGui.QPen(QtGui.QColor("#fecaca"), 1.4))
-        painter.setBrush(QtGui.QColor("#fffafa"))
-        painter.drawRoundedRect(loop_area, 14, 14)
-        loop_font = QtGui.QFont()
-        loop_font.setPointSize(10)
-        loop_font.setBold(True)
-        painter.setFont(loop_font)
-        painter.setPen(QtGui.QColor("#b91c1c"))
-        painter.drawText(
-            QtCore.QRectF(loop_area.left() + 12, loop_area.top() + 2, 150, 22),
-            QtCore.Qt.AlignmentFlag.AlignLeft | QtCore.Qt.AlignmentFlag.AlignVCenter,
-            "重复循环训练区",
-        )
-
-        self._draw_node(painter, regular, "① 普通词汇闯关", "完整筛查：答错词自动进入个人错词表", "#eff6ff", "#2563eb")
-        self._draw_node(painter, mistakes, "② 背诵个人错词表", "只集中学习本轮不会和不稳定的单词", "#fff7ed", "#c2410c")
-        self._draw_node(painter, mistake_challenge, "③ 错词闯关至清空", "针对错词反复练习，连续答对后移出", "#f5f3ff", "#7c3aed")
-        self._draw_node(painter, next_round, "④ 下一轮普通词汇闯关", "重新验证全部单词，检查是否真正记住", "#ecfdf5", "#059669")
-        self._draw_node(painter, decision, "⑤ 这一轮还有新错词吗？", "有：继续循环　　没有：完成当前范围", "#fefce8", "#ca8a04")
-        self._draw_node(painter, complete, "当前词表基本掌握", "完整一轮没有产生新错词", "#ecfdf5", "#15803d")
-
-        gap = 7.0
-        for upper, lower in (
-            (regular, mistakes),
-            (mistakes, mistake_challenge),
-            (mistake_challenge, next_round),
-            (next_round, decision),
-        ):
-            self._draw_arrow(
-                painter,
-                QtCore.QPointF(upper.center().x(), upper.bottom() + gap),
-                QtCore.QPointF(lower.center().x(), lower.top() - gap),
-            )
-        self._draw_arrow(
-            painter,
-            QtCore.QPointF(decision.center().x(), decision.bottom() + gap),
-            QtCore.QPointF(complete.center().x(), complete.top() - gap),
-            "#15803d",
-            2.5,
-        )
-
-        return_pen = QtGui.QPen(QtGui.QColor("#dc2626"), 2.6)
-        return_pen.setCapStyle(QtCore.Qt.PenCapStyle.RoundCap)
-        return_pen.setJoinStyle(QtCore.Qt.PenJoinStyle.RoundJoin)
-        painter.setPen(return_pen)
-        painter.setBrush(QtCore.Qt.BrushStyle.NoBrush)
-        return_path = QtGui.QPainterPath(QtCore.QPointF(decision.right() + gap, decision.center().y()))
-        return_path.lineTo(return_x, decision.center().y())
-        return_path.lineTo(return_x, mistakes.center().y())
-        painter.drawPath(return_path)
-        self._draw_arrow(
-            painter,
-            QtCore.QPointF(return_x, mistakes.center().y()),
-            QtCore.QPointF(mistakes.right() + gap, mistakes.center().y()),
-            "#dc2626",
-            2.6,
-        )
-
-        label_font = QtGui.QFont()
-        label_font.setPointSize(10)
-        label_font.setBold(True)
-        painter.setFont(label_font)
-        painter.setPen(QtGui.QColor("#dc2626"))
-        painter.drawText(
-            QtCore.QRectF(decision.right() + 16, decision.center().y() - 25,
-                          return_x - decision.right() - 22, 22),
-            QtCore.Qt.AlignmentFlag.AlignCenter,
-            "有新错词：回到②",
-        )
-        painter.setPen(QtGui.QColor("#15803d"))
-        painter.drawText(
-            QtCore.QRectF(center_x + 18, decision.bottom() + 8, 125, 24),
-            QtCore.Qt.AlignmentFlag.AlignLeft | QtCore.Qt.AlignmentFlag.AlignVCenter,
-            "没有新错词：完成",
-        )
 
 
 def _public_page(title, subtitle):
@@ -241,6 +83,8 @@ class QuickOverviewView(QtWidgets.QWidget):
     def __init__(self, main_window):
         super().__init__()
         self.main_window = main_window
+        edition_id = str(getattr(getattr(main_window, "edition", None), "edition_id", "gaokao"))
+        junior = edition_id.removeprefix("trial_") == "zhongkao"
         self.setObjectName("quick_overview_view")
         outer = QtWidgets.QVBoxLayout(self)
         outer.setContentsMargins(0, 0, 0, 0)
@@ -248,8 +92,10 @@ class QuickOverviewView(QtWidgets.QWidget):
         scroll.setWidgetResizable(True)
         scroll.setFrameShape(QtWidgets.QFrame.Shape.NoFrame)
         page, layout = _public_page(
-            "60秒了解 EngMaster",
-            "面向初高中、大学四六级和考研学习者：把手机里容易被打断的碎片化背词，变成电脑上可验证、可追踪的完整训练。",
+            "60秒了解英思成",
+            ("面向准初一、初一、初二和初三学生：一套初中核心词汇，覆盖提前预习、课内同步和中考备考。"
+             if junior else
+             "面向准高一、高一、高二和高三学生：一套高中3800词，覆盖提前预习、课内同步和高考备考。"),
         )
 
         standalone = QtWidgets.QFrame()
@@ -300,25 +146,30 @@ class QuickOverviewView(QtWidgets.QWidget):
         standalone_layout.addWidget(standalone_note)
         layout.addWidget(standalone)
 
-        computer_title = QtWidgets.QLabel("不同学习阶段，都有一个共同问题：手机很难只用来学习")
+        computer_title = QtWidgets.QLabel(
+            "从准初一预习到初三中考，每个阶段都有明确用法"
+            if junior else "从准高一预习到高三备考，每个阶段都有明确用法")
         computer_title.setStyleSheet(
             "color:#991b1b; font-size:21px; font-weight:700; background:transparent;")
         layout.addWidget(computer_title)
 
         audience_cards = QtWidgets.QGridLayout()
-        audience_cards.setHorizontalSpacing(14)
-        audience_cards.addWidget(self._route(
-            "初中／高中：学生与家长",
-            "家长关心：孩子到底有没有真正完成训练？",
-            "孩子拿着手机背词，下一刻可能切到消息、短视频或游戏。家长看不到实际训练量，"
-            "孩子也容易在反复切换中失去专注。电脑端把学习放回固定场景，并留下每轮数量、时间和错词记录。",
-            "#fff7ed", "#c2410c"), 0, 0)
-        audience_cards.addWidget(self._route(
-            "大学四六级／考研：学习者本人",
-            "自己关心：今天是否完成了真正有效的一轮？",
-            "本想用手机背十分钟单词，却被通知、聊天或短视频带走；快速划过很多词，"
-            "也难判断自己是否会拼。电脑端减少应用切换，用实体键盘主动作答，并用轮次记录监督自己的进度。",
-            "#f5f3ff", "#6d28d9"), 0, 1)
+        audience_cards.setHorizontalSpacing(12)
+        audience_cards.setVerticalSpacing(12)
+        audience_defs = ((
+            ("准初一", "提前预习", "提前认识初中核心词汇，进入初中后更从容。", "#f5f3ff", "#7c3aed"),
+            ("初一", "课程同步", "配合课本和课堂持续背诵，打好初中词汇基础。", "#eff6ff", "#2563eb"),
+            ("初二", "积累补弱", "继续扩充词汇，并通过闯关找出薄弱部分。", "#ecfdf5", "#047857"),
+            ("初三", "中考备考", "系统复习初中核心词汇，反复验证掌握情况。", "#fff7ed", "#c2410c"),
+        ) if junior else (
+            ("准高一", "提前预习", "提前认识高中核心词汇，进入高中后更从容。", "#f5f3ff", "#7c3aed"),
+            ("高一", "课程同步", "配合课本和课堂持续背诵，打好高中词汇基础。", "#eff6ff", "#2563eb"),
+            ("高二", "积累补弱", "继续扩充词汇，并通过闯关找出薄弱部分。", "#ecfdf5", "#047857"),
+            ("高三", "高考备考", "系统复习高中3800词，反复验证掌握情况。", "#fff7ed", "#c2410c"),
+        ))
+        for index, definition in enumerate(audience_defs):
+            audience_cards.addWidget(
+                self._route(*definition), index // 2, index % 2)
         audience_cards.setColumnStretch(0, 1)
         audience_cards.setColumnStretch(1, 1)
         layout.addLayout(audience_cards)
@@ -329,12 +180,14 @@ class QuickOverviewView(QtWidgets.QWidget):
         shared_layout = QtWidgets.QVBoxLayout(shared_value)
         shared_layout.setContentsMargins(18, 11, 18, 12)
         shared_layout.setSpacing(4)
-        shared_title = QtWidgets.QLabel("电脑端的共同价值：不是年龄定位，而是训练方式的改变")
+        shared_title = QtWidgets.QLabel(
+            "三个学习目的，一套初中核心词汇"
+            if junior else "三个学习目的，一套高中3800词")
         shared_title.setStyleSheet(
             "border:none; color:#047857; font-size:15px; font-weight:700;")
         shared_text = QtWidgets.QLabel(
-            "固定学习场景　｜　较大显示区域　｜　实体键盘主动拼写　｜　完整轮次验证　｜　"
-            "错词自动集中　｜　训练结果留痕"
+            "提前预习　｜　课内同步背诵　｜　中考系统备考"
+            if junior else "提前预习　｜　课内同步背诵　｜　高考系统备考"
         )
         shared_text.setWordWrap(True)
         shared_text.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
@@ -345,7 +198,7 @@ class QuickOverviewView(QtWidgets.QWidget):
         layout.addWidget(shared_value)
 
         product_value = QtWidgets.QLabel(
-            "你获得的不只是一张电子词表，而是一套能发现不会、集中错词、反复验证并记录进度的系统词汇训练工具。"
+            "背得快：高效记忆　｜　找得准：闯关识弱　｜　补得全：自主登记"
         )
         product_value.setWordWrap(True)
         product_value.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
@@ -364,19 +217,15 @@ class QuickOverviewView(QtWidgets.QWidget):
         layout.addWidget(computer_hint)
 
         routes = QtWidgets.QGridLayout()
-        routes.setHorizontalSpacing(14)
-        routes.addWidget(self._route(
-            "单词基础较弱",
-            "先用词汇表学习",
-            "使用中英对照、隐藏英语或隐藏中文完成初步记忆，再通过闯关筛查错词。",
-            "#eff6ff", "#1d4ed8"), 0, 0)
-        routes.addWidget(self._route(
-            "单词基础较好",
-            "直接普通闯关",
-            "已经会的快速通过；答错和掌握不稳定的自动进入个人错词表。",
-            "#ecfdf5", "#047857"), 0, 1)
-        routes.setColumnStretch(0, 1)
-        routes.setColumnStretch(1, 1)
+        routes.setHorizontalSpacing(12)
+        core_defs = (
+            ("高效记忆", "让单词先形成联系", "通过主题场景、词根、音形拼读和同义反义，建立更清楚的记忆线索。", "#f5f3ff", "#7c3aed"),
+            ("闯关识弱", "找出真正不会的词", "主动输入英文答案，把不会和掌握不稳定的单词自动整理进个人错词表。", "#eff6ff", "#2563eb"),
+            ("自主登记", "补充自己的学习范围", "课本、课堂、作业、试卷和阅读中遇到的生词，可以收进个人词库继续训练。", "#ecfdf5", "#047857"),
+        )
+        for index, definition in enumerate(core_defs):
+            routes.addWidget(self._route(*definition), 0, index)
+            routes.setColumnStretch(index, 1)
         layout.addLayout(routes)
 
         loop = QtWidgets.QFrame()
@@ -384,19 +233,32 @@ class QuickOverviewView(QtWidgets.QWidget):
             "QFrame { background:white; border:1px solid #dce5f0; border-radius:12px; }")
         loop_layout = QtWidgets.QVBoxLayout(loop)
         loop_layout.setContentsMargins(18, 13, 18, 14)
-        loop_title = QtWidgets.QLabel("推荐学习循环")
+        loop_title = QtWidgets.QLabel("推荐学习方法")
         loop_title.setStyleSheet(
             "border:none; color:#111827; font-size:17px; font-weight:700;")
-        flow = LearningLoopDiagram(loop)
+        methods = QtWidgets.QHBoxLayout()
+        methods.setSpacing(10)
+        method_defs = (
+            ("① 先选记忆分类", "默认从主题场景开始，也可以选择词根、音形拼读或同义反义。", "#f5f3ff", "#7c3aed"),
+            ("② 每次只学一组", "理解当前小组的联系，使用“本组掌握验证”隐藏英语并主动回忆。", "#eff6ff", "#2563eb"),
+            ("③ 再用闯关识弱", "完成若干小组后进入普通闯关，把不会和不稳定的词自动筛出来。", "#ecfdf5", "#047857"),
+        )
+        for title, text, background, accent in method_defs:
+            methods.addWidget(
+                self._route(
+                    title,
+                    "初中词汇提分速记" if junior else "3800词提分速记",
+                    text, background, accent),
+                1,
+            )
         hint = QtWidgets.QLabel(
-            "关键不是只练一次：下一轮如果再次产生错词，就回到个人错词表继续循环；"
-            "直到完整一轮没有新错词，才说明当前范围基本掌握。"
+            "自主登记用于随时补充课本、课堂、作业、试卷和阅读生词；它可以和上述方法同时使用。"
         )
         hint.setWordWrap(True)
         hint.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         hint.setStyleSheet("border:none; color:#64748b; font-size:12px;")
         loop_layout.addWidget(loop_title)
-        loop_layout.addWidget(flow)
+        loop_layout.addLayout(methods)
         loop_layout.addWidget(hint)
         layout.addWidget(loop)
 
@@ -425,7 +287,7 @@ class QuickOverviewView(QtWidgets.QWidget):
             "border:none; color:#166534; font-size:14px; font-weight:700;")
         record_text = QtWidgets.QLabel(
             "每轮都会记录开始与结束时间、有效学习时长、验证数量和错词数量。"
-            "初高中生家长可以了解孩子当天的实际训练情况；大学四六级和考研学习者可以用来掌握进度、自我监督。"
+            "学生可以掌握自己的实际进度，家长也可以了解当天完成了多少有效训练。"
         )
         record_text.setWordWrap(True)
         record_text.setStyleSheet("border:none; color:#475569; font-size:12px;")
@@ -440,9 +302,9 @@ class QuickOverviewView(QtWidgets.QWidget):
         actions = QtWidgets.QHBoxLayout()
         actions.setSpacing(10)
         action_defs = [
-            ("基础较弱：从词汇表开始", self.main_window._safe_nav_to_word_list),
-            ("基础较好：直接普通闯关", self._open_regular_challenge),
-            ("录入我自己的生词", self.main_window._safe_nav_to_self_register),
+            ("开始高效记忆", self.main_window._safe_nav_to_scientific_memory),
+            ("开始闯关识弱", self._open_regular_challenge),
+            ("自主登记生词", self.main_window._safe_nav_to_self_register),
         ]
         for text, callback in action_defs:
             actions.addWidget(self._action_button(text, callback))
@@ -584,7 +446,7 @@ class OperationGuideView(QtWidgets.QWidget):
                 "根据个人释义提示输入英文答案。",
                 "新增或修改个人词汇后，数量会同步更新。",
             ],
-            "内置分级词库负责考试范围，自主录入词库负责学生自己的新单词。",
+            "内置分级词库负责阶段性复习范围，自主录入词库负责学生自己的新单词。",
         ),
         (
             "短语与不规则动词",
@@ -623,15 +485,15 @@ class OperationGuideView(QtWidgets.QWidget):
                 "完成窗口、版本和帮助页面的基本设置",
                 "启动软件后",
                 [
-                    "点击窗口右上角的最大化按钮，建议始终在最大化窗口下学习。",
+                    "软件支持常见笔记本窗口和最大化显示，可根据使用习惯调整窗口大小。",
                     "未激活时直接进入分级体验；已有授权时只会进入激活码包含的正式版本。",
-                    "首次进入会自动显示“60秒快速了解”，先认识电脑端优势和推荐学习循环。",
+                    "首次进入会自动显示“60秒快速了解”，先认识适用年级、三大核心功能和推荐学习方法。",
                     "使用左侧菜单进入词汇表、词汇闯关、自主录入、短语或不规则动词功能。",
                     "需要帮助时，随时打开左侧的四个学习帮助页面。",
                 ],
-                "窗口最大化并选择版本后，即可开始本次学习；帮助页面对所有用户开放。",
+                "选择版本后即可开始本次学习；帮助页面对所有用户开放。",
                 [
-                    "找不到“确认／下一题”按钮时，首先检查窗口是否已经最大化。",
+                    "窗口较小时，页面内容会调整排列；需要时可向下滚动或适当扩大窗口。",
                     "关闭软件不会清空已经正常保存的错词、个人词库和学习记录。",
                 ],
             ),
@@ -641,30 +503,30 @@ class OperationGuideView(QtWidgets.QWidget):
                 "未激活时直接进入；已激活时点击左侧“免费体验”",
                 [
                     "未检测到正式授权时，软件直接进入体验中心，不要求先输入机器码，也不弹体验级别选择框。",
-                    "体验中心页面常驻初中、高考、四级、六级和考研五个选择按钮，可随时直接切换。",
+                    "体验中心只显示已经开放正式版所对应的体验入口。",
                     "已经激活正式版的用户，也可以从版本入口进入体验中心进行演示。",
                     "每类提供难度匹配的30词；打开免费体验中心可查看体验范围和建议顺序。",
                     "先查看体验词汇表，再进入普通词汇闯关筛查不会的单词。",
                     "答错词自动进入体验错词表，可以继续进行错词背诵和错词闯关。",
                     "体验版还提供常用短语和常用不规则动词的表格、普通闯关与错词闯关。",
-                    "每类体验开放20条短语和15个不规则动词，用于体验完整操作；当前高考正式版提供完整内容。",
-                    "五类体验的进度、错词和轮次记录分别保存，也不与正式版混合。",
+                    "当前开放初中英语和高中3800词体验；以后正式版开放时，对应体验同步开放。",
+                    "体验版的进度、错词和轮次记录独立保存，不与正式版混合。",
                     "需要正式完整词库时，点击体验页底部“前往购买正式版”，进入统一购买管理页面。",
                     "体验页不显示机器码和激活框，购买与客服处理集中在正式版管理页面完成。",
                     "已激活用户从体验版点击“返回正式版”，无需再次输入激活码。",
                 ],
                 "体验版可以完整验证学习流程，但不包含任何考试版本的正式完整词库。",
                 [
-                    "体验词库按初中、高考、四级、六级和考研分类，避免难度不适合造成挫败感。",
+                    "体验词汇从对应正式词库中选取，保证体验内容与发布版同步。",
                     "购买后正式数据重新建立，体验数据不会自动混入或覆盖正式版本。",
                 ],
             ),
             (
                 "选择英语版本",
-                "在一个程序中进入初中、高考、四级、六级或考研词汇",
+                "在一个程序中进入已经正式开放的英语词汇版本",
                 "左侧顶部 → 免费体验／正式版管理与购买",
                 [
-                    "点击“免费体验”后，可选择初中、高考、大学四级、大学六级或考研30词体验。",
+                    "点击“免费体验”后，可进入当前已开放正式版对应的30词体验。",
                     "点击“正式版管理与购买”后，可切换已解锁英语正式版，并查看未解锁或开发中状态。",
                     "每个正式版本分别显示已解锁、可购买或开发中状态。",
                     "点击统一的“前往淘宝购买”，软件打开淘宝商品页；购买版本完全由用户在淘宝商品规格中选择。",
@@ -674,19 +536,38 @@ class OperationGuideView(QtWidgets.QWidget):
                     "客服按订单号核对对应登记记录后生成权限；机器码本身不代表购买版本。",
                     "客服采用人工核验，激活码不会自动即时发送，请耐心等待淘宝客服处理，不要重复下单。",
                     "取得客服提供的单机激活码后，回到页面粘贴并点击“立即激活”。",
-                    "高考英语是当前 V1.0 唯一开放购买的正式版；激活后显示绿色“已解锁”。",
-                    "初中、四级、六级和考研正式版标记为“开发中”，暂不开放购买和进入。",
-                    "五个级别均可使用30词免费体验，体验数据不会混入高考正式版。",
-                    "购买高考英语正式版后，输入客服提供的单机激活码完成本地激活。",
+                    "初中英语和高中3800词是当前 V1.0 已开放购买的正式版；激活后显示绿色“已解锁”。",
+                    "四级、六级和考研正式版标记为“开发中”，暂不开放购买和进入。",
+                    "体验版与正式版一一对应，体验数据不会混入对应正式版。",
+                    "购买初中版、高中版或组合版后，输入客服提供的单机激活码完成本地激活。",
                     "进入主界面后，词汇表和闯关名称会按照所选版本显示。",
                     "软件会记住本次选择，下次启动自动进入上次使用的版本。",
                 ],
-                "当前 V1.0 的正式授权只开放高考英语；程序结构保留以后增加版本的能力。",
+                "当前 V1.0 的正式授权已开放初中英语和高中3800词；程序结构保留以后增加版本的能力。",
                 [
                     "激活和追加权限都在本机离线验证，不需要联网。",
                     "后续正式版本开放时，新增权限仍会采用累计激活方式保留已有权限。",
                     "升级购买与首次购买流程相同；客服核对新订单后生成同时包含原权限和新增权限的新累计激活码。",
                     "各版本的内置词库、短语、错词和学习进度分别保存。",
+                ],
+            ),
+            (
+                "词汇提分速记",
+                "按可靠的主题、构词或音形联系分组记忆单词",
+                "左侧菜单 → 初中词汇提分速记／3800词提分速记",
+                [
+                    "进入后先显示主题场景、词根记忆、音形拼读和同义反义四种分类总入口。体验版进入任一分类目录时，购买入口都会紧邻当前分类标题显示。",
+                    "先在目录中选择一个主题或记忆组；可以使用顶部搜索框查找主题、分组或单词。",
+                    "打开分组后，先理解组内单词为什么放在一起，再结合音标、中文含义进行记忆。",
+                    "点击“本主题掌握验证”或当前方法对应的验证按钮，页面会隐藏英文并保留音标和中文。",
+                    "根据提示主动回忆英文；检查完成后点击“取消验证”恢复显示。",
+                    "使用“上一组”“下一组”连续学习，也可以返回目录改用其他记忆方法。",
+                ],
+                "提分速记用于建立可靠联系，不代替完整词表和闯关；学完若干小组后应进入普通词汇闯关验证。",
+                [
+                    "主题场景只收录主题明确、能够自然归类的词，不会为了覆盖整张词表而硬塞抽象词或功能词。",
+                    "同一个单词不一定适合所有记忆方法；目录中没有出现不代表它不属于当前版本词表。",
+                    "初中版与高中版使用各自独立的主题目录，数据互不混用。",
                 ],
             ),
             (
@@ -712,7 +593,7 @@ class OperationGuideView(QtWidgets.QWidget):
                 "完整筛查当前版本中已经会和仍不会的单词",
                 "左侧菜单 → 当前版本词汇闯关 → 普通词汇闯关",
                 [
-                    "先把软件窗口最大化，确认输入框、确认按钮和下一题区域都能完整显示。",
+                    "进入页面后确认输入框、确认按钮和下一题区域均可见；窗口较小时可向下滚动。",
                     "选择普通词汇闯关，阅读中文释义、词性和页面提示。",
                     "不查看词汇表，独立输入英文答案并提交。",
                     "答对后进入下一题；答错后先查看系统显示的正确答案。",
@@ -722,7 +603,7 @@ class OperationGuideView(QtWidgets.QWidget):
                 ],
                 "普通闯关会把整张大词表逐步筛选为只属于自己的错词范围。",
                 [
-                    "看不到“确认／下一题”时，请先点击右上角最大化按钮；非最大化窗口可能隐藏页面下方控件。",
+                    "看不到“确认／下一题”时，可向下滚动或适当扩大窗口。",
                     "提示后重新输入正确答案属于纠正，不等于本题首次答对。",
                 ],
             ),
@@ -757,7 +638,7 @@ class OperationGuideView(QtWidgets.QWidget):
                     "返回词汇闯关页面，选择自主录入闯关。",
                     "根据自己填写的中文释义输入英文答案，完成个人词库训练。",
                 ],
-                "内置词库负责考试范围，自主录入词库负责学习者自己的新增生词。",
+                "内置词库负责阶段性复习范围，自主录入词库负责学习者自己的新增生词。",
                 [
                     "英语和中文解释都不能为空，录入前建议检查拼写。",
                     "自主词库为空时不能开始闯关，请先至少录入一个单词。",
@@ -847,25 +728,25 @@ class OperationGuideView(QtWidgets.QWidget):
             "软件操作说明",
             "按功能查看入口、完整步骤、结果保存和常见问题。学习理念与训练循环请查看“学习方法指南”。",
         )
-        maximize_notice = QtWidgets.QFrame()
-        maximize_notice.setObjectName("maximize_window_notice")
-        maximize_notice.setStyleSheet(
+        window_notice = QtWidgets.QFrame()
+        window_notice.setObjectName("window_display_notice")
+        window_notice.setStyleSheet(
             "QFrame { background:#fef2f2; border:2px solid #ef4444; border-radius:10px; }")
-        notice_layout = QtWidgets.QVBoxLayout(maximize_notice)
+        notice_layout = QtWidgets.QVBoxLayout(window_notice)
         notice_layout.setContentsMargins(16, 9, 16, 10)
         notice_layout.setSpacing(3)
-        notice_title = QtWidgets.QLabel("重要：建议最大化窗口使用")
+        notice_title = QtWidgets.QLabel("窗口显示与滚动说明")
         notice_title.setStyleSheet(
             "border:none; color:#b91c1c; font-size:15px; font-weight:700;")
         notice_text = QtWidgets.QLabel(
-            "窗口没有最大化时，受屏幕大小、分辨率或系统显示缩放影响，闯关页面下方的“确认／下一题”按钮可能暂时不在可见区域。"
-            "如果找不到按钮，请先点击窗口右上角的最大化按钮。"
+            "页面支持常见笔记本窗口和最大化显示，并会根据窗口宽度调整排列。"
+            "窗口较小时，可使用页面滚动条查看下方内容。"
         )
         notice_text.setWordWrap(True)
         notice_text.setStyleSheet("border:none; color:#7f1d1d; font-size:12px;")
         notice_layout.addWidget(notice_title)
         notice_layout.addWidget(notice_text)
-        layout.addWidget(maximize_notice)
+        layout.addWidget(window_notice)
 
         splitter = QtWidgets.QSplitter(QtCore.Qt.Orientation.Horizontal)
         splitter.setChildrenCollapsible(False)
@@ -985,7 +866,7 @@ class InformationTextView(QtWidgets.QWidget):
 
 
 class AboutCopyrightView(QtWidgets.QWidget):
-    """Three-part public record for version, copyright, and data licenses."""
+    """Public record for version, copyright, and required third-party licenses."""
 
     def __init__(
             self, version_text, copyright_text, data_notice_text,
@@ -997,7 +878,7 @@ class AboutCopyrightView(QtWidgets.QWidget):
         outer.setContentsMargins(0, 0, 0, 0)
         page, layout = _public_page(
             "关于、版权与许可",
-            "查看软件版本、权利说明、数据来源及第三方开放许可证。",
+            "查看软件版本、权利说明及依法需要保留的第三方许可证。",
         )
 
         self.tabs = QtWidgets.QTabWidget()
@@ -1028,7 +909,7 @@ class AboutCopyrightView(QtWidgets.QWidget):
                 )
                 button_row.addWidget(button)
             data_layout.addLayout(button_row)
-        self.tabs.addTab(data_tab, "数据来源与第三方许可")
+        self.tabs.addTab(data_tab, "必要第三方许可")
         layout.addWidget(self.tabs, 1)
         outer.addWidget(page)
 

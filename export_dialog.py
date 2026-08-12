@@ -1,9 +1,8 @@
-# EngMaster vocabulary export dialog
+# 英思成 vocabulary export dialog
 import os
 from datetime import datetime
 from PySide6.QtWidgets import (QDialog, QVBoxLayout, QHBoxLayout, QLabel, QComboBox,
                                QLineEdit, QPushButton, QFileDialog, QMessageBox)
-import sys # Import sys for debugging
 from PySide6.QtCore import Qt
 
 class ExportDialog(QDialog):
@@ -12,7 +11,6 @@ class ExportDialog(QDialog):
         self.setWindowTitle("保存单词表")
         self.setMinimumWidth(400)
         
-        print(f"DEBUG: ExportDialog __init__ called from: {__file__}") # Add this debug print
         self.regular_vocab_data = regular_vocab_data if regular_vocab_data is not None else []
         self.mistake_vocab_data = mistake_vocab_data if mistake_vocab_data is not None else []
         self.self_registered_vocab_data = self_registered_vocab_data if self_registered_vocab_data is not None else []
@@ -94,7 +92,7 @@ class ExportDialog(QDialog):
         elif "自主录入" in selected_text: # New condition
             vocab_source_name = "自主录入"
 
-        file_name_parts = ["EngMaster_Vocabulary"]
+        file_name_parts = ["RecallLex_Vocabulary"]
         file_name_parts.append(vocab_source_name)
 
         if "中文+ 英语表" in selected_text or "自主录入单词表" in selected_text: # Added new condition

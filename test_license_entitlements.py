@@ -47,30 +47,31 @@ class LicenseEntitlementTests(unittest.TestCase):
     def test_legal_notice_contains_general_vocabulary_scope_statement(self):
         notice = main.get_legal_notice_text()
         self.assertIn(main.VOCABULARY_SCOPE_NOTICE, notice)
-        self.assertIn("国家英语课程标准", notice)
-        self.assertIn("相关英语考试大纲", notice)
-        self.assertIn("并非教育主管部门、学校或考试机构官方指定软件", notice)
+        self.assertIn("公开语言资料、开放词汇资源", notice)
+        self.assertIn("不是升学考试服务", notice)
+        self.assertIn("不同学习阶段的一般需求", notice)
+        self.assertIn("教育主管部门、学校、考试机构或教材出版社", notice)
         self.assertIn("关于、版权与许可", notice)
 
     def test_public_copyright_and_data_notices_are_formal_and_bounded(self):
         copyright_notice = main.get_copyright_notice_text()
         data_notice = main.get_third_party_data_notice_text()
-        self.assertIn("开发者署名：EngMaster", copyright_notice)
+        self.assertIn("产品品牌：英思成（RecallLex）", copyright_notice)
         self.assertIn("不在本说明中宣称已经取得", copyright_notice)
         self.assertIn("第三方开放许可证", copyright_notice)
         self.assertIn("Open English WordNet 2025", data_notice)
         self.assertIn("CC BY 4.0", data_notice)
-        self.assertIn("ECDICT", data_notice)
-        self.assertIn("Moby Words II", data_notice)
-        self.assertIn("Tatoeba CC0", data_notice)
         self.assertIn("ipa-dict en_US", data_notice)
+        self.assertNotIn("ECDICT", data_notice)
+        self.assertNotIn("Moby Words II", data_notice)
+        self.assertNotIn("Tatoeba", data_notice)
+        self.assertNotIn("固定提交", data_notice)
+        self.assertIn("内部筛选、校验、加工流程及未进入成品的数据不对外公开", data_notice)
         documents = main.load_public_license_documents()
-        self.assertEqual(len(documents), 5)
+        self.assertEqual(len(documents), 3)
         self.assertIn("Creative Commons Attribution 4.0", documents["OEWN与WordNet完整许可"])
         self.assertIn("WordNet 3.0 Copyright 2006", documents["Princeton WordNet许可"])
-        self.assertIn("Permission is hereby granted", documents["ECDICT MIT许可证"])
         self.assertIn("Copyright (c) 2016 dohliam", documents["ipa-dict MIT许可证"])
-        self.assertIn("Third-Party Data Notices", documents["第三方数据声明"])
 
     def test_em3_signed_permissions_are_verified_and_tampering_fails(self):
         code, _payload = _fake_em3(["gaokao", "cet4"])
@@ -103,13 +104,13 @@ class LicenseEntitlementTests(unittest.TestCase):
         self.assertTrue(ok)
         self.assertEqual(verified["entitlements"], ["gaokao"])
 
-    def test_legacy_em2_code_remains_valid_as_gaokao_only(self):
+    def test_legacy_em2_code_is_rejected(self):
         payload = f"{main.LICENSE_PRODUCT_ID}|{MACHINE_ID}|v2".encode("utf-8")
         code = "EM2-" + _b64(hashlib.sha256(payload).digest())
         with mock.patch.object(main, "LICENSE_PUBLIC_E", 1):
             ok, verified = main.verify_activation_code(code, MACHINE_ID)
-        self.assertTrue(ok)
-        self.assertEqual(verified["entitlements"], ["gaokao"])
+        self.assertFalse(ok)
+        self.assertEqual(verified, "激活码格式无效。")
 
     def test_license_file_persists_signed_entitlements(self):
         code, payload = _fake_em3(["zhongkao", "cet6"])
@@ -151,7 +152,7 @@ class LicenseEntitlementTests(unittest.TestCase):
         self.assertEqual(selected.edition_id, "gaokao")
         self.assertIn("🔓 已解锁", inspected["texts"]["gaokao"])
         self.assertIn("开发中", inspected["texts"]["cet4"])
-        self.assertIsNone(inspected["upgrade"])
+        self.assertIsNotNone(inspected["upgrade"])
         notice.assert_called_once()
 
 

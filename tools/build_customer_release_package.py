@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import html
 import shutil
+import sys
 import zipfile
 from pathlib import Path
 
@@ -23,7 +24,7 @@ def _technical_guide_html(exe_name: str, sha256: str) -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>EngMaster 运行前必读</title>
+<title>英思成 运行前必读</title>
 <style>
 body {{ margin:0; background:#f4f7fb; color:#1f2937; font-family:"Microsoft YaHei","Segoe UI",sans-serif; line-height:1.75; }}
 main {{ max-width:900px; margin:32px auto; padding:0 20px 50px; }}
@@ -42,14 +43,14 @@ a {{ color:#1d4ed8; }}
 </head>
 <body><main>
 <section class="hero">
-<h1>EngMaster 运行前必读</h1>
+<h1>英思成 运行前必读</h1>
 <p>本版本是免安装的 Windows 单文件程序，目前未购买数字签名证书。因此 Windows 或第三方杀毒软件可能显示“未知发布者”、SmartScreen 提醒或误报。请先完成下面的安全核对，再决定是否运行。</p>
 </section>
 
 <section class="card safe">
 <h2>第一步：先确认文件来源和校验值</h2>
 <ol>
-<li>只使用官方购买页面或客服正式发送的压缩包，不运行群聊转发、网盘二次分享或陌生邮件附件。</li>
+<li>只使用官方购买页面提供的压缩包，不运行群聊转发、网盘二次分享或陌生邮件附件。</li>
 <li>确认程序文件名为 <code>{safe_name}</code>。</li>
 <li>当前正式文件 SHA-256：</li>
 </ol>
@@ -64,7 +65,6 @@ a {{ color:#1d4ed8; }}
 <ol>
 <li>右键下载的 ZIP，选择“全部解压缩”。</li>
 <li>不要直接在压缩包预览窗口中运行 EXE。</li>
-<li>如文件属性底部显示“此文件来自其他计算机”，在确认来源和 SHA-256 后，可右键 EXE → 属性 → 常规 → 勾选“解除锁定” → 应用。</li>
 </ol>
 </section>
 
@@ -74,8 +74,16 @@ a {{ color:#1d4ed8; }}
 <ol>
 <li>再次确认文件名和 SHA-256。</li>
 <li>确认无误后点击“更多信息”，核对应用名称，再选择“仍要运行”。</li>
-<li>如果没有“更多信息/仍要运行”，或者设备启用了严格的 Smart App Control、单位策略，请不要关闭系统安全功能；停止操作并联系管理员或客服。</li>
+<li>如果没有“更多信息/仍要运行”，请查看是否为 Smart App Control（智能应用控制）或单位设备管理策略拦截。</li>
 </ol>
+<p>解压后双击软件，如果软件没有打开，同时 Windows 弹出“智能应用控制已阻止此应用”“智能应用控制已阻止可能不安全的应用”或类似提示，并且没有“更多信息”或“仍要运行”选项，说明本次运行被智能应用控制阻止。</p>
+<p>用户可以自行选择：</p>
+<ul>
+<li>自行关闭“智能应用控制”后运行（安装）。</li>
+<li>不修改系统设置，暂不在这台电脑上运行（不安装）。</li>
+</ul>
+<p><strong>关闭路径通常为：</strong><br>Windows 安全中心 → 应用和浏览器控制 → 智能应用控制设置 → 关闭</p>
+<p><strong>请注意：</strong>智能应用控制与杀毒软件实时防护不是同一个功能。无需关闭 Microsoft Defender、第三方杀毒软件或防火墙。</p>
 </section>
 
 <section class="card warn">
@@ -84,7 +92,7 @@ a {{ color:#1d4ed8; }}
 <li>打开“Windows 安全中心” → “病毒和威胁防护” → “保护历史记录”。</li>
 <li>找到与本程序文件名和下载时间完全对应的记录，先查看检测名称和受影响文件。</li>
 <li>只有在来源可信且 SHA-256 完全一致时，才可对这个文件选择“允许在设备上”或“还原”；若文件已经被移除，允许后需要重新下载。</li>
-<li>若检测级别高、文件名不一致、校验失败或无法判断，请保持隔离并联系客服。</li>
+<li>若检测级别高、文件名不一致、校验失败或无法判断，请保持隔离，不要继续运行。</li>
 </ol>
 </section>
 
@@ -94,18 +102,7 @@ a {{ color:#1d4ed8; }}
 <ul>
 <li>先查看隔离区、查杀历史或安全日志，确认拦截对象确实是本 EXE。</li>
 <li>核对官方来源和 SHA-256 后，只还原或信任这个具体文件。</li>
-<li>不要关闭整个杀毒软件，不要关闭实时防护，不要把“下载”“桌面”或整个磁盘加入排除项。</li>
-<li>仍有疑问时，保留隔离并把检测名称、截图和文件校验值发给客服；开发方应向对应厂商提交误报样本。</li>
-</ul>
-</section>
-
-<section class="card stop">
-<h2>遇到这些情况，请立即停止</h2>
-<ul>
-<li>文件不是从官方渠道取得，或 SHA-256 与本指南不一致。</li>
-<li>安全软件提示的文件路径、文件名与 EngMaster 不一致。</li>
-<li>程序要求关闭防火墙、关闭全部杀毒保护、添加整个磁盘排除或提供系统账号密码。</li>
-<li>学校、公司或机构电脑提示由管理员策略阻止。</li>
+<li>仍有疑问时，请保持隔离，并参考购买页面、随程序提供的说明或安全软件厂商的官方操作指引。</li>
 </ul>
 </section>
 
@@ -127,7 +124,7 @@ def guide_html(exe_name: str, sha256: str) -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>EngMaster 运行前必读</title>
+<title>英思成 运行前必读</title>
 <style>
 body {{ margin:0; background:#f4f7fb; color:#253247; font-family:"Microsoft YaHei","Segoe UI",sans-serif; line-height:1.8; }}
 main {{ max-width:780px; margin:30px auto; padding:0 18px 48px; }}
@@ -146,7 +143,7 @@ h2 {{ margin:2px 0 8px; color:#174f91; font-size:21px; }}
 </head>
 <body><main>
 <section class="card hero">
-<h1>EngMaster 运行前必读</h1>
+<h1>英思成 运行前必读</h1>
 <p>本软件暂时没有数字签名，所以第一次打开时，Windows 或杀毒软件可能弹出提醒。这不代表软件一定有病毒，请按照下面三步操作。</p>
 </section>
 
@@ -171,28 +168,24 @@ h2 {{ margin:2px 0 8px; color:#174f91; font-size:21px; }}
 </div></section>
 
 <section class="card warn">
+<h2>如果“智能应用控制”阻止运行</h2>
+<p>解压后双击软件，如果软件没有打开，同时 Windows 弹出“智能应用控制已阻止此应用”“智能应用控制已阻止可能不安全的应用”或类似提示，并且没有“更多信息”或“仍要运行”选项，说明本次运行被智能应用控制阻止。</p>
+<p>用户可以自行选择：</p>
+<ul>
+<li>自行关闭“智能应用控制”后运行（安装）。</li>
+<li>不修改系统设置，暂不在这台电脑上运行（不安装）。</li>
+</ul>
+<p><strong>关闭路径通常为：</strong><br>Windows 安全中心 → 应用和浏览器控制 → 智能应用控制设置 → 关闭</p>
+<p><strong>请注意：</strong>智能应用控制与杀毒软件实时防护不是同一个功能。无需关闭 Microsoft Defender、第三方杀毒软件或防火墙。</p>
+</section>
+
+<section class="card warn">
 <h2>如果杀毒软件拦截了怎么办？</h2>
 <p><strong>不要关闭杀毒软件，也不要随便修改电脑设置。</strong></p>
-<p>请把提示窗口截图发给客服。客服确认文件后，会根据你电脑上的杀毒软件一步一步告诉你怎样恢复这个程序。</p>
+<p>请参考所使用安全软件的官方管理方法，仅对本软件文件执行允许、信任或恢复操作；不熟悉电脑操作的用户，可以请熟悉计算机操作的人士协助处理。</p>
 </section>
 
-<section class="card tip">
-<h2>还是打不开？</h2>
-<p>右键程序 → 属性。如果窗口底部有“解除锁定”，勾选后点击“确定”，然后重新双击程序。</p>
-<p>如果没有这个选项，直接把提示截图发给客服即可。</p>
-</section>
-
-<section class="card stop">
-<h2>下面这些情况不要继续</h2>
-<ul>
-<li>程序不是从官方购买页面或官方客服取得的。</li>
-<li>有人要求你关闭所有杀毒保护或关闭防火墙。</li>
-<li>学校或单位电脑提示“由管理员阻止”。</li>
-</ul>
-<p>遇到以上情况，请停止操作并联系客服。</p>
-</section>
-
-<p class="small">文件校验信息已经随安装包保存，主要供客服排查使用，普通用户无需操作。客服核验值：{sha256}</p>
+<p class="small">文件校验信息已经随压缩包保存，可用于自行核对文件是否完整。SHA-256：{sha256}</p>
 </main></body></html>"""
 
 
@@ -205,12 +198,12 @@ def build_package(exe: Path, output_dir: Path) -> tuple[Path, Path]:
 
     guide = output_dir / "00_运行前必读_未签名程序安全说明.html"
     guide.write_text(guide_html(copied_exe.name, digest), encoding="utf-8")
-    legacy_checksum = output_dir / "01_文件校验值_SHA256.txt"
-    legacy_checksum.unlink(missing_ok=True)
-    checksum = output_dir / "01_客服核验文件_普通用户无需打开.txt"
+    old_customer_checksum = output_dir / "01_客服核验文件_普通用户无需打开.txt"
+    old_customer_checksum.unlink(missing_ok=True)
+    checksum = output_dir / "01_文件校验值_SHA256.txt"
     checksum.write_text(
-        "本文件仅供客服在排查下载损坏、文件被替换或杀毒软件误报时使用。\n"
-        "普通用户无需进行任何操作。\n\n"
+        "本文件用于自行核对程序文件是否完整。\n"
+        "核对步骤请参考随程序提供的《运行前必读》说明。\n\n"
         f"SHA-256: {digest}\n文件名: {copied_exe.name}\n",
         encoding="utf-8",
     )
@@ -223,6 +216,8 @@ def build_package(exe: Path, output_dir: Path) -> tuple[Path, Path]:
 
 
 def main():
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(errors="backslashreplace")
     parser = argparse.ArgumentParser(description="Build the safe customer delivery ZIP.")
     parser.add_argument("exe", type=Path)
     parser.add_argument("output_dir", type=Path)

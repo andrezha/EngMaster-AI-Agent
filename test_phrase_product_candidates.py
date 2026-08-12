@@ -36,7 +36,7 @@ class PhraseProductCandidateTests(unittest.TestCase):
 
     def test_cet6_challenge_wraps_twenty_one_levels_into_three_rows(self):
         with tempfile.TemporaryDirectory() as data_dir, mock.patch.dict(
-            os.environ, {"ENGMASTER_DATA_DIR": data_dir}
+            os.environ, {"RECALLLEX_DATA_DIR": data_dir}
         ):
             edition = SimpleNamespace(
                 edition_id="cet6",

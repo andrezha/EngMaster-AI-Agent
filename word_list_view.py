@@ -10,7 +10,12 @@ from datetime import datetime
 
 # 🟢 挪到根目录后，直接导入邻居模块，最简单最稳健
 from utils import get_resource_path, get_writable_data_path, _normalize_full_width_to_half_width
-from ui_styles import CHECKABLE_BUTTON_STYLE, SECONDARY_BUTTON_STYLE, SUCCESS_TOOLBUTTON_STYLE
+from ui_styles import (
+    CHECKABLE_BUTTON_STYLE,
+    SEARCH_INPUT_STYLE,
+    SECONDARY_BUTTON_STYLE,
+    SUCCESS_TOOLBUTTON_STYLE,
+)
 from edition_config import is_trial_edition
 
 
@@ -40,7 +45,7 @@ class WordListView(QtWidgets.QWidget):
         self.is_trial = is_trial_edition(self.edition)
         self.word_list_title = (
             self.edition.word_list_title if self.edition is not None
-            else "高考3800词汇表"
+            else "高中3800词汇表"
         )
         self.include_phrase_resources = bool(
             self.edition is None
@@ -73,7 +78,7 @@ class WordListView(QtWidgets.QWidget):
         main_layout.setSpacing(0)
 
         header = QtWidgets.QFrame()
-        header.setFixedHeight(100)
+        header.setFixedHeight(142)
         header.setStyleSheet("background: #F8F9FA; border-bottom: 1px solid #DEE2E6;")
         header_layout = QtWidgets.QVBoxLayout(header)
         header_layout.setContentsMargins(15, 8, 15, 8)
@@ -82,6 +87,8 @@ class WordListView(QtWidgets.QWidget):
         self.header_primary_row.setSpacing(9)
         self.header_display_row = QtWidgets.QHBoxLayout()
         self.header_display_row.setSpacing(10)
+        self.header_navigation_row = QtWidgets.QHBoxLayout()
+        self.header_navigation_row.setSpacing(10)
 
         self.btn_reg = QtWidgets.QPushButton(self.word_list_title)
         self.btn_mis = QtWidgets.QPushButton("查看单词错词表（0） →")
@@ -113,8 +120,9 @@ class WordListView(QtWidgets.QWidget):
 
         self.search_input = QtWidgets.QLineEdit()
         self.search_input.setPlaceholderText("检索单词或释义...")
-        self.search_input.setFixedWidth(145)
-        self.search_input.setFixedHeight(34)
+        self.search_input.setClearButtonEnabled(True)
+        self.search_input.setFixedSize(220, 36)
+        self.search_input.setStyleSheet(SEARCH_INPUT_STYLE)
 
         self.initial_filter_combo = QtWidgets.QComboBox()
         self.initial_filter_combo.setObjectName("initial_filter_combo")
@@ -148,6 +156,18 @@ class WordListView(QtWidgets.QWidget):
         self.lbl_filter_status = QtWidgets.QLabel("当前：全部词汇")
         self.lbl_filter_status.setStyleSheet(
             "color:#64748b; font-size:13px; padding-left:8px;")
+        self.lbl_page = QtWidgets.QLabel("第 1 / 1 页")
+        self.lbl_page.setObjectName("word_list_page_label")
+        self.lbl_page.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.lbl_page.setMinimumWidth(88)
+        self.lbl_page.setStyleSheet("color:#64748b;font-size:13px;")
+        self.btn_prev = QtWidgets.QPushButton("← 上一页")
+        self.btn_next = QtWidgets.QPushButton("下一页 →")
+        self.btn_prev.setObjectName("word_list_previous_page")
+        self.btn_next.setObjectName("word_list_next_page")
+        for button in (self.btn_prev, self.btn_next):
+            button.setFixedHeight(36)
+            button.setStyleSheet(SECONDARY_BUTTON_STYLE)
         self.language_display_group = QtWidgets.QButtonGroup(self)
         self.language_display_group.setExclusive(True)
         for button in [self.btn_show_both, self.btn_only_english, self.btn_only_chinese]:
@@ -162,7 +182,6 @@ class WordListView(QtWidgets.QWidget):
             button.setFixedHeight(34)
             button.setStyleSheet(button_style)
             self.header_primary_row.addWidget(button)
-        self.header_primary_row.addWidget(self.search_input)
         self.header_primary_row.addWidget(self.btn_export)
         self.header_primary_row.addStretch()
 
@@ -171,12 +190,18 @@ class WordListView(QtWidgets.QWidget):
             button.setMinimumWidth(112)
             button.setStyleSheet(button_style)
             self.header_display_row.addWidget(button)
-        self.header_display_row.addWidget(self.initial_filter_combo)
-        self.header_display_row.addWidget(self.btn_show_all_letters)
-        self.header_display_row.addWidget(self.lbl_filter_status)
+        self.header_display_row.addWidget(self.search_input)
         self.header_display_row.addStretch()
+        self.header_navigation_row.addWidget(self.initial_filter_combo)
+        self.header_navigation_row.addWidget(self.btn_show_all_letters)
+        self.header_navigation_row.addWidget(self.lbl_filter_status)
+        self.header_navigation_row.addStretch()
+        self.header_navigation_row.addWidget(self.btn_prev)
+        self.header_navigation_row.addWidget(self.lbl_page)
+        self.header_navigation_row.addWidget(self.btn_next)
         header_layout.addLayout(self.header_primary_row)
         header_layout.addLayout(self.header_display_row)
+        header_layout.addLayout(self.header_navigation_row)
         main_layout.addWidget(header)
 
         self.scroll = QtWidgets.QScrollArea()
@@ -187,20 +212,6 @@ class WordListView(QtWidgets.QWidget):
         self.list_layout.setContentsMargins(0, 0, 0, 0)
         self.scroll.setWidget(self.container)
         main_layout.addWidget(self.scroll)
-
-        footer = QtWidgets.QFrame()
-        footer.setFixedHeight(40)
-        footer.setStyleSheet("background: #F8F9FA; border-top: 1px solid #DEE2E6;")
-        f_layout = QtWidgets.QHBoxLayout(footer)
-        self.lbl_page = QtWidgets.QLabel("第 1 / 1 页")
-        self.btn_prev = QtWidgets.QPushButton("← 上一页")
-        self.btn_next = QtWidgets.QPushButton("下一页 →")
-        self.btn_prev.setFixedHeight(34)
-        self.btn_next.setFixedHeight(34)
-        self.btn_prev.setStyleSheet(SECONDARY_BUTTON_STYLE)
-        self.btn_next.setStyleSheet(SECONDARY_BUTTON_STYLE)
-        f_layout.addWidget(self.lbl_page); f_layout.addStretch(); f_layout.addWidget(self.btn_prev); f_layout.addWidget(self.btn_next)
-        main_layout.addWidget(footer)
 
         self.btn_reg.clicked.connect(lambda: self._switch_list("regular"))
         self.btn_mis.clicked.connect(lambda: self._switch_list("mistake"))
@@ -329,8 +340,8 @@ class WordListView(QtWidgets.QWidget):
                 with open(json_path, 'r', encoding='utf-8') as f:
                     self.all_regular_words = json.load(f)
                     self.all_regular_words.sort(key=lambda x: (str(x.get('word',''))).lower())
-            except Exception as e:
-                print(f"DEBUG: 加载常规词汇失败 {e}")
+            except Exception:
+                pass
         
         # Phrase resources are only loaded for editions that expose them.
         phrase_path = (
@@ -348,8 +359,7 @@ class WordListView(QtWidgets.QWidget):
                     ]
                     self.all_phrases.sort(key=lambda x: (str(x.get('p',''))).lower()) # Sort by phrase 'p' key
                 print(f"✅ 短语表加载成功，共 {len(self.all_phrases)} 词")
-            except Exception as e:
-                print(f"DEBUG: 加载短语表失败 {e}")
+            except Exception:
                 self.all_phrases = []
 
         # New: Load irregular verb data
@@ -364,8 +374,7 @@ class WordListView(QtWidgets.QWidget):
                     self.all_irregulars = json.load(f)
                     self.all_irregulars.sort(key=lambda x: (str(x.get('infinitive',''))).lower()) # Sort by infinitive key
                 print(f"✅ 不规则动词表加载成功，共 {len(self.all_irregulars)} 词")
-            except Exception as e:
-                print(f"DEBUG: 加载不规则动词表失败 {e}")
+            except Exception:
                 self.all_irregulars = []
 
         # 加载错词表
@@ -377,8 +386,7 @@ class WordListView(QtWidgets.QWidget):
                     if self.all_mistake_words:
                         self.all_mistake_words.sort(key=lambda x: (str(x.get('word',''))).lower())
                         print(f"✅ 错词表加载成功，共 {len(self.all_mistake_words)} 词")
-            except Exception as e:
-                print(f"DEBUG: 加载错词表失败 {e}")
+            except Exception:
                 self.all_mistake_words = []
 
         # 保留外部跳转已经指定的目标页，不能在延迟初始化完成后强制切回常规词表。
@@ -398,8 +406,7 @@ class WordListView(QtWidgets.QWidget):
             data.sort(key=lambda x: str(x.get(sort_key, "")).lower())
             print(f"✅ {label}加载成功，共 {len(data)} 条")
             return data
-        except Exception as e:
-            print(f"DEBUG: 加载{label}失败 {e}")
+        except Exception:
             return []
 
     def _get_mistake_phrases(self):
@@ -569,10 +576,8 @@ class WordListView(QtWidgets.QWidget):
         ctrl = getattr(self.main_window, 'self_register_vocab_ctrl', None)
         if ctrl:
             data = getattr(ctrl, 'user_vocab_data', [])
-            print(f"DEBUG: 获取自主录入数据，共 {len(data)} 词")
             return data
         else:
-            print("DEBUG: 自主录入模块未初始化")
             return []
 
     def _change_page(self, delta):

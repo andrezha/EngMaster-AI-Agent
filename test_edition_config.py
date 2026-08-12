@@ -6,6 +6,7 @@ import unittest
 from unittest import mock
 
 from edition_config import (
+    AVAILABLE_TRIAL_EDITION_IDS,
     EDITIONS,
     PAGE_PHRASE_CHALLENGE,
     PAGE_PHRASE_LIST,
@@ -29,15 +30,15 @@ class EditionConfigTests(unittest.TestCase):
             set(EDITIONS), {"zhongkao", "gaokao", "cet4", "cet6", "kaoyan"}
         )
         self.assertTrue(EDITIONS["gaokao"].production_ready)
-        self.assertFalse(EDITIONS["zhongkao"].production_ready)
+        self.assertTrue(EDITIONS["zhongkao"].production_ready)
         self.assertFalse(EDITIONS["cet4"].production_ready)
         self.assertFalse(EDITIONS["cet6"].production_ready)
         self.assertFalse(EDITIONS["kaoyan"].production_ready)
-        self.assertEqual(RELEASED_EDITION_IDS, ("gaokao",))
+        self.assertEqual(RELEASED_EDITION_IDS, ("zhongkao", "gaokao"))
 
     def test_fixed_product_word_counts_are_shown_without_approximation(self):
         expected = {
-            "zhongkao": 1600,
+            "zhongkao": 1609,
             "gaokao": 3800,
             "cet4": 4500,
             "cet6": 5500,
@@ -47,7 +48,12 @@ class EditionConfigTests(unittest.TestCase):
             edition = EDITIONS[edition_id]
             self.assertEqual(edition.word_count, count)
             self.assertIn(str(count), edition.product_title)
-            self.assertIn(f"（{count}词）", edition.challenge_title)
+            if edition_id == "gaokao":
+                self.assertEqual(edition.challenge_title, "高中3800词闯关")
+                self.assertEqual(edition.word_list_title, "高中3800词汇表")
+                self.assertEqual(edition.product_title, "高中3800词汇版")
+            else:
+                self.assertIn(f"（{count}词）", edition.challenge_title)
             self.assertNotIn("约", edition.product_title)
 
     def test_every_edition_enables_phrase_and_irregular_pages(self):
@@ -61,10 +67,10 @@ class EditionConfigTests(unittest.TestCase):
         edition = EDITIONS["zhongkao"]
         self.assertEqual(
             edition.phrase_path,
-            "research/edition_samples/zhongkao_phrases.json",
+            "assets/editions/zhongkao/phrases.json",
         )
         rows = json.loads((ROOT / edition.phrase_path).read_text(encoding="utf-8"))
-        self.assertEqual(len(rows), 90)
+        self.assertEqual(len(rows), 250)
         self.assertTrue(
             all(row.get("p") and row.get("m") for row in rows)
         )
@@ -76,7 +82,7 @@ class EditionConfigTests(unittest.TestCase):
         edition = EDITIONS["zhongkao"]
         self.assertEqual(
             edition.irregular_verbs_path,
-            "research/edition_samples/zhongkao_irregular_verbs.json",
+            "assets/editions/zhongkao/irregular_verbs.json",
         )
         rows = json.loads(
             (ROOT / edition.irregular_verbs_path).read_text(encoding="utf-8")
@@ -132,7 +138,7 @@ class EditionConfigTests(unittest.TestCase):
 
     def test_development_vocabulary_files_exist_and_have_expected_counts(self):
         expected_counts = {
-            "zhongkao": 30,
+            "zhongkao": 1609,
             "gaokao": 3800,
             "cet4": 30,
             "cet6": 30,
@@ -143,6 +149,16 @@ class EditionConfigTests(unittest.TestCase):
             rows = json.loads(path.read_text(encoding="utf-8"))
             self.assertEqual(len(rows), expected_counts[edition_id])
             self.assertTrue(all(row.get("word") and row.get("content") for row in rows))
+
+    def test_primary_packaging_spec_excludes_unreleased_trial_assets(self):
+        spec_text = (ROOT / "main.spec").read_text(encoding="utf-8")
+        self.assertNotIn("research/edition_samples", spec_text)
+
+    def test_only_released_formal_editions_expose_trials(self):
+        self.assertEqual(
+            AVAILABLE_TRIAL_EDITION_IDS,
+            ("trial_zhongkao", "trial_gaokao"),
+        )
 
     def test_cli_edition_option_is_removed_before_qt(self):
         with mock.patch.dict(os.environ, {}, clear=False):
@@ -163,14 +179,14 @@ class EditionConfigTests(unittest.TestCase):
             )
             self.assertFalse(edition_was_explicitly_requested(["main.py"]))
         with mock.patch.dict(
-            os.environ, {"ENGMASTER_EDITION": "zhongkao"}, clear=True
+            os.environ, {"RECALLLEX_EDITION": "zhongkao"}, clear=True
         ):
             self.assertTrue(edition_was_explicitly_requested(["main.py"]))
 
     def test_new_editions_have_isolated_writable_directories(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             with mock.patch.dict(
-                os.environ, {"ENGMASTER_DATA_DIR": temp_dir}, clear=False
+                os.environ, {"RECALLLEX_DATA_DIR": temp_dir}, clear=False
             ):
                 set_active_edition("gaokao")
                 gaokao = Path(get_writable_data_path("progress.json"))

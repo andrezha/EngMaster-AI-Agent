@@ -11,6 +11,8 @@ class ExperienceGuideView(QtWidgets.QWidget):
     def __init__(self, main_window):
         super().__init__()
         self.main_window = main_window
+        edition_id = str(getattr(getattr(main_window, "edition", None), "edition_id", "gaokao"))
+        self.is_junior = edition_id.removeprefix("trial_") == "zhongkao"
         self.setObjectName("experience_guide_view")
         self._build_ui()
 
@@ -51,11 +53,17 @@ class ExperienceGuideView(QtWidgets.QWidget):
         layout = QtWidgets.QVBoxLayout(frame)
         layout.setContentsMargins(28, 23, 28, 23)
         layout.setSpacing(8)
-        title = QtWidgets.QLabel("不必盲目重背整张词表，先找出真正不会的单词")
+        title = QtWidgets.QLabel(
+            "初中核心词汇，从准初一预习到初三中考"
+            if self.is_junior else "高中3800词，从准高一预习到高三备考")
         title.setStyleSheet(
             "color:white; font-size:27px; font-weight:700; background:transparent;")
         subtitle = QtWidgets.QLabel(
-            "单词掌握不是一口吃成的。正确的方法是反复经历“学习记忆—主动验证—发现错词—精准巩固—再次验证”。"
+            (("适用：准初一｜初一｜初二｜初三　　用途：提前预习｜课内同步｜中考备考\n"
+             if self.is_junior else
+             "适用：准高一｜高一｜高二｜高三　　用途：提前预习｜课内同步｜高考备考\n") +
+            "先用高效方法建立记忆，再通过闯关识别薄弱词，并把课内外生词持续加入个人词库。"
+            )
         )
         subtitle.setWordWrap(True)
         subtitle.setStyleSheet(
@@ -79,14 +87,15 @@ class ExperienceGuideView(QtWidgets.QWidget):
 
     def _problem_section(self):
         frame, layout = self._section_frame(
-            "为什么",
-            "很多学生不是不愿意背，而是不知道应该重点背哪些",
-            "面对一张几千词的词汇表，已经会的、看着眼熟的和完全不会的混在一起。从头反复背整张表，"
-            "很容易把时间浪费在已经掌握的单词上，也很难看见自己的真实进步。",
+            "三大核心",
+            "背得快、找得准、补得全",
+            "英语词汇学习不只是反复看词表：需要先建立清楚的记忆联系，再验证是否真正掌握，"
+            "还要能随时补充课本、课堂、作业、试卷和阅读中的个人生词。",
         )
         statement = QtWidgets.QLabel(
-            "EngMaster 的核心作用：通过普通词汇闯关逐轮筛查，把答错和掌握不稳定的单词自动整理成个人错词表，"
-            "让学习范围从“整张词表”逐步缩小到“我真正不会的单词”。"
+            "高效记忆：主题场景、词根、音形拼读、同义反义　｜　"
+            "闯关识弱：自动找出不会和不稳定的词　｜　"
+            "自主登记：建立自己的课内外生词库"
         )
         statement.setWordWrap(True)
         statement.setStyleSheet(
@@ -97,39 +106,33 @@ class ExperienceGuideView(QtWidgets.QWidget):
         return frame
 
     def _start_paths_section(self):
+        if self.is_junior:
+            level_name, range_text = "初中核心词汇", "准初一到初三"
+            stage_defs = (
+                ("准初一　提前预习", "先认识初中核心词汇", ["优先使用主题场景和音形拼读建立印象", "按小组学习，不急于一次完成全部词汇", "通过简单闯关逐步适应初中英语"], "#f5f3ff", "#7c3aed"),
+                ("初一　课程同步", "配合课本和课堂持续背诵", ["用提分速记学习当前课程相关词汇", "课堂、作业和课本生词随时自主登记", "阶段性闯关检查是否能够独立拼写"], "#eff6ff", "#2563eb"),
+                ("初二　积累补弱", "扩大词汇量并找出薄弱部分", ["继续完成初中核心词汇的系统积累", "用普通闯关筛出不会和不稳定的单词", "返回对应记忆分类集中巩固错词"], "#ecfdf5", "#047857"),
+                ("初三　中考备考", "完整复习并反复验证", ["按初中核心词汇查漏补缺", "通过完整闯关建立个人薄弱词范围", "错词清空后开始下一轮完整复测"], "#fff7ed", "#c2410c"),
+            )
+        else:
+            level_name, range_text = "高中3800词", "准高一到高三"
+            stage_defs = (
+                ("准高一　提前预习", "先认识高中核心词汇", ["优先使用主题场景和音形拼读建立印象", "按小组学习，不急于一次完成全部3800词", "通过简单闯关逐步适应高中词汇"], "#f5f3ff", "#7c3aed"),
+                ("高一　课程同步", "配合课本和课堂持续背诵", ["用提分速记提前学习当前课程相关词汇", "课堂、作业和课本生词随时自主登记", "阶段性闯关检查是否能够独立拼写"], "#eff6ff", "#2563eb"),
+                ("高二　积累补弱", "扩大词汇量并找出薄弱部分", ["继续完成高中3800词的系统积累", "用普通闯关筛出不会和不稳定的单词", "返回对应记忆分类并集中巩固错词"], "#ecfdf5", "#047857"),
+                ("高三　高考备考", "完整复习并反复验证", ["按高中3800词完成系统复习和查漏补缺", "通过完整闯关建立个人薄弱词范围", "错词清空后开始下一轮完整复测"], "#fff7ed", "#c2410c"),
+            )
         frame, layout = self._section_frame(
-            "先选择",
-            "根据当前单词基础，选择适合自己的起点",
-            "两条路线没有好坏之分。基础薄弱先学习，基础较好先筛查，最终都会进入个人错词的精准巩固循环。",
+            "按阶段使用",
+            f"同一套{level_name}，在不同年级解决不同问题",
+            f"不是建立四套不同词表，而是根据{range_text}的学习任务，选择更适合自己的使用顺序。",
         )
         grid = QtWidgets.QGridLayout()
         grid.setHorizontalSpacing(14)
-        weak = self._route_card(
-            "路线 A　单词基础比较薄弱",
-            "先利用词汇表学习和背诵",
-            [
-                "中英对照：先建立单词和含义的联系",
-                "隐藏英语：根据中文回忆英文和拼写",
-                "隐藏中文：根据英文回忆中文含义",
-                "分段背诵：按当前学习范围逐步建立初步记忆",
-                "完成初步背诵后，再进入普通闯关筛查",
-            ],
-            "#eff6ff", "#1d4ed8",
-        )
-        strong = self._route_card(
-            "路线 B　单词基础比较好",
-            "直接通过普通闯关验证掌握程度",
-            [
-                "已经掌握的单词快速通过，不再重复背诵",
-                "不会、拼写错误或掌握不稳定的自动进入错词表",
-                "完成一轮后，只背诵自己的个人错词表",
-                "用更小的学习范围减少无效重复",
-                "错词巩固后，再开始下一轮完整验证",
-            ],
-            "#ecfdf5", "#047857",
-        )
-        grid.addWidget(weak, 0, 0)
-        grid.addWidget(strong, 0, 1)
+        grid.setVerticalSpacing(14)
+        stages = tuple(self._route_card(*definition) for definition in stage_defs)
+        for index, card in enumerate(stages):
+            grid.addWidget(card, index // 2, index % 2)
         grid.setColumnStretch(0, 1)
         grid.setColumnStretch(1, 1)
         layout.addLayout(grid)
@@ -211,17 +214,24 @@ class ExperienceGuideView(QtWidgets.QWidget):
     def _learning_resources_section(self):
         frame, layout = self._section_frame(
             "学习工具",
-            "先认识可以用来背诵和查看的词表",
-            "基础薄弱的学生先利用词表建立记忆；普通闯关结束后，也要回到个人错词表集中背诵。",
+            "先用高效方法记忆，再使用词表辅助查看",
+            "提分速记负责建立单词之间的联系；普通词表负责完整浏览和搜索，两者共同完成背词准备。",
         )
         grid = QtWidgets.QGridLayout()
         grid.setHorizontalSpacing(12)
         grid.setVerticalSpacing(12)
         resources = [
             (
-                "分级词汇表",
-                "浏览当前版本的完整词汇；支持搜索、中英对照、只看英文和只看中文。",
-                "用处：系统学习考试范围内的单词，并快速找到薄弱词。",
+                "初中词汇提分速记" if self.is_junior else "3800词提分速记",
+                "按主题场景、词根、音形拼读和同义反义组织适合关联记忆的单词。",
+                "用处：不再面对一张没有联系的长词表，先建立清楚、简单的记忆线索。",
+            ),
+            (
+                "初中核心词汇表" if self.is_junior else "高中3800词表",
+                ("浏览完整初中词汇；支持搜索、中英对照、只看英文和只看中文。"
+                 if self.is_junior else
+                 "浏览完整高中词汇；支持搜索、中英对照、只看英文和只看中文。"),
+                "用处：查看完整学习范围，并辅助查找和复习具体单词。",
             ),
             (
                 "常用短语表",
@@ -331,31 +341,43 @@ class ExperienceGuideView(QtWidgets.QWidget):
 
     def _learning_loop_section(self):
         frame, layout = self._section_frame(
-            "推荐流程",
-            "反复验证，直到完整一轮不再产生新错词",
-            "错词表清空只代表本轮错词已经巩固，并不代表永久不会遗忘；下一轮普通闯关会重新验证全部单词。",
+            "推荐方法",
+            ("初中词汇提分速记应该这样使用"
+             if self.is_junior else "3800词提分速记应该这样使用"),
+            "不要从头硬背整张词表，也不用一次看很多。先选择适合当前单词的记忆分类，每次只学一个小组。",
         )
-        flow = QtWidgets.QHBoxLayout()
-        flow.setSpacing(7)
-        nodes = [
-            ("1", "学习或筛查", "按基础起步"),
-            ("2", "普通闯关", "完整验证"),
-            ("3", "错词表背诵", "缩小范围"),
-            ("4", "错词闯关", "直到清空"),
-            ("5", "下一轮普通闯关", "再次验证"),
-            ("6", "无新错词", "基本掌握"),
-        ]
-        for index, node in enumerate(nodes):
-            flow.addWidget(self._flow_node(*node), 1)
-            if index < len(nodes) - 1:
-                arrow = QtWidgets.QLabel("→")
-                arrow.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-                arrow.setStyleSheet(
-                    "border:none; color:#3b82f6; font-size:21px; font-weight:700;")
-                flow.addWidget(arrow)
-        layout.addLayout(flow)
+        grid = QtWidgets.QGridLayout()
+        grid.setHorizontalSpacing(12)
+        grid.setVerticalSpacing(12)
+        methods = (
+            (
+                "1　主题场景为主",
+                "进入提分速记后默认从主题场景开始",
+                "按身体、学校、交通、科学等明确主题建立单词之间的联系。",
+            ),
+            (
+                "2　规律记忆为辅",
+                "词根、音形拼读和同义反义按需选择",
+                "只有符合明显规律的单词才使用这些方法，不要求每个单词硬套。",
+            ),
+            (
+                "3　每次只学一组",
+                "使用上一组和下一组连续学习",
+                "先看懂当前组为什么放在一起，再记英语、发音和中文含义。",
+            ),
+            (
+                "4　马上主动回忆",
+                "点击“本组掌握验证”隐藏英语",
+                "根据中文主动回忆整组英文；完成后恢复显示，再进入下一组。",
+            ),
+        )
+        for index, values in enumerate(methods):
+            grid.addWidget(self._info_card(*values), index // 2, index % 2)
+        grid.setColumnStretch(0, 1)
+        grid.setColumnStretch(1, 1)
+        layout.addLayout(grid)
         loop_hint = QtWidgets.QLabel(
-            "普通闯关产生新错词，就再次进入“错词表背诵—错词闯关—下一轮验证”的循环；建议轮次之间适当休息或间隔复测。"
+            "完成若干记忆小组后，再进入普通闯关识别薄弱词；课内外遇到的新词随时加入自主登记。"
         )
         loop_hint.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         loop_hint.setWordWrap(True)

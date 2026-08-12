@@ -16,9 +16,17 @@
        <property name="margin"><number>10</number></property>
        <property name="alignment"><set>Qt::AlignTop</set></property>
        <item>
+        <widget class="QPushButton" name="btn_nav_scientific_memory">
+         <property name="minimumSize"><size><width>0</width><height>52</height></size></property>
+         <property name="text"><string>3800词提分速记&#10;高中阶段·高考复习</string></property>
+         <property name="checkable"><bool>true</bool></property>
+         <property name="styleSheet"><string>QPushButton { color: #34495e; background: transparent; border: none; font-family: "Microsoft YaHei UI", "Microsoft YaHei", sans-serif; font-size: 15px; text-align: left; padding-left: 20px; outline: none; border-radius: 10px; font-weight: 600; } QPushButton:hover { background-color: #e4e7ed; } QPushButton:checked { background-color: #2c3e50; color: white; }</string></property>
+        </widget>
+       </item>
+       <item>
         <widget class="QPushButton" name="btn_nav_vocab">
          <property name="minimumSize"><size><width>0</width><height>52</height></size></property>
-         <property name="text"><string>高考3800词闯关</string></property>
+         <property name="text"><string>高中3800词闯关</string></property>
          <property name="checkable"><bool>true</bool></property>
           <property name="styleSheet"><string>QPushButton { color: #34495e; background: transparent; border: none; font-family: "Microsoft YaHei UI", "Microsoft YaHei", sans-serif; font-size: 15px; text-align: left; padding-left: 20px; outline: none; border-radius: 10px; font-weight: 600; } QPushButton:hover { background-color: #e4e7ed; } QPushButton:checked { background-color: #2c3e50; color: white; }</string></property>
         </widget>
@@ -26,7 +34,7 @@
        <item>
         <widget class="QPushButton" name="btn_nav_core_vocab">
          <property name="minimumSize"><size><width>0</width><height>52</height></size></property>
-         <property name="text"><string>高考3800词汇表</string></property>
+         <property name="text"><string>高中3800词汇表</string></property>
          <property name="checkable"><bool>true</bool></property>
           <property name="styleSheet"><string>QPushButton { color: #34495e; background: transparent; border: none; font-family: "Microsoft YaHei UI", "Microsoft YaHei", sans-serif; font-size: 15px; text-align: left; padding-left: 20px; outline: none; border-radius: 10px; font-weight: 600; } QPushButton:hover { background-color: #e4e7ed; } QPushButton:checked { background-color: #2c3e50; color: white; }</string></property>
         </widget>
@@ -111,7 +119,7 @@
               <item>
                 <widget class="QPushButton" name="btn_challenge_regular">
                  <property name="text">
-                   <string>高考3800词闯关</string>
+                   <string>高中3800词闯关</string>
                  </property>
                 </widget>
               </item>

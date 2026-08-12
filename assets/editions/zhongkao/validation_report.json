@@ -1,0 +1,33 @@
+{
+  "edition_id": "zhongkao",
+  "status": "passed",
+  "coverage": {
+    "scope_source": "data_sources/processed/phrase_stage_boundaries/phrase_stage_vocabulary_tokens.csv",
+    "scope_tokens": 1651,
+    "product_headwords": 1609,
+    "coverage": {
+      "headword": 1580,
+      "existing_variant": 32,
+      "added_variant": 9,
+      "structural_component": 3,
+      "new_headword": 27
+    },
+    "structural_tokens": {
+      "curd": "bean curd",
+      "kung": "kung fu",
+      "fu": "kung fu"
+    },
+    "unresolved_tokens": [],
+    "note": "课程表中的多词条目拆分词元通过产品词头、明确变体或原多词条目完整覆盖。"
+  },
+  "checks": {
+    "unique_headwords": true,
+    "all_have_pronunciation": true,
+    "trial_exact_subset": true,
+    "scene_ids_exist": true,
+    "scene_no_duplicates": true,
+    "scene_selective_not_forced": true,
+    "scene_groups_have_context": true,
+    "scene_no_generic_fallback": true
+  }
+}
